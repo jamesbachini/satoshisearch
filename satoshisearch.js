@@ -108,7 +108,7 @@ const checkScores = (authorData) => {
       satoshi = author.name;
     }
   });
-  console.log(`\n\nSatoshi Nakomoto is ${satoshi}`);
+  console.log(`\n\n${satoshi} is the closest match to Satoshi Nakamoto`);
 };
 
 
