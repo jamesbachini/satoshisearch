@@ -41,21 +41,30 @@ This is a fairly low sample size analysis. More data could be pulled from the wh
 
 #### Hal Finney is the closest match to Satoshi Nakamoto.
 
-Hal's use of words that Satoshi also uses like pseudonymous are quite unique. I ran the data for post-2008 which could well be corrupted by who's talking about the same tech after the paper had been released and Hal got the second highest score on that behind Ray Dillinger. Ray Dillinger was also the bear profile above and he was involved in auditing the code. Makes sense that he would be using the same terminology after the release
+No major surprises or revalations here. Hal has always been one of the most likely suspects and this just adds a bit more weight to that case. I was hoping to find a British candidate as spelling alternates between US and British English at times, something I do myself when writing for a more US audience but I've never seen Americans adjust their English before.
 
-Hal has always been one of the most likely suspects with Dorian 'Satoshi' Nakomoto living a couple of blocks away and his account being the only one to write something possitive about the original whitepaper post. He was also the first receiver of a bitcoin transaction etc. 
+Hal was always suspected because of him being the first person other than Satoshi to take an interest. An elderly gentlemen named Dorian 'Satoshi' Nakomoto lived a couple of blocks away from Hal and it's believed this is where the alias came from as it's a unique name. Hal was also the only person to write something possitive about the original whitepaper post. He was also the first receiver of a bitcoin transaction etc.
+
+From this analysis Hal's use of words that Satoshi also uses like "pseudonymous" are quite unique, even for a cryptography group.
+
+I also ran the data for post-2008 which could well be corrupted by who's talking about the same tech after the paper had been released and Hal got the second highest score on that behind Ray Dillinger. Ray Dillinger was also the bear profile above and he was involved in auditing the code. Makes sense that he would be using the same terminology after the release.
 
 Unfortunately Hal died in 2014 but his legacy remains.
 
 https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)
 
-Could Hal have been working with someone else like Ray or Nick Szabo? Quite possibly, there's certainly a case for Satoshi being a British expat living in the States. Maybe someone could do some further research and find out.
+Could Hal have been working with someone else like Ray or Nick Szabo? Quite possibly, there's certainly a case for Satoshi having a British link which is unclear with Hal.
 
 
-Installation:
+## Installation:
+```
+apt install nodejs;
 
-apt install nodejs
-apt install npm
-npm install request
-npm install request-promise
-node satoshisearch.js
+apt install npm;
+
+npm install request;
+
+npm install request-promise;
+
+node satoshisearch.js;
+```
