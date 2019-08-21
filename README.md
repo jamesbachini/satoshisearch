@@ -1,6 +1,6 @@
 # satoshisearch
  
-Fairly simple little scraper and analyser of the https://www.metzdowd.com cryptography mailing list archives where Satoshi first posted the Bitcoin whitepaper.
+Fairly simple little scraper and vocabulary analyser of the https://www.metzdowd.com cryptography mailing list archives where Satoshi first posted the Bitcoin whitepaper.
 
 Blog post: https://jamesbachini.com/search-for-satoshi/ 
 
