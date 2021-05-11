@@ -1,0 +1,54 @@
+<PRE><A HREF="http://www.physorg.com/news123951684.html">http://www.physorg.com/news123951684.html</A>
+
+
+The technique is called EPIC, short for Ending Piracy of Integrated
+Circuits. It relies on established cryptography methods and introduces
+subtle changes into the chip design process. But it does not affect the
+chips' performance or power consumption.
+
+There's also the paper:
+
+<A HREF="http://www.eecs.umich.edu/~imarkov/pubs/conf/date08-epic.pdf">http://www.eecs.umich.edu/~imarkov/pubs/conf/date08-epic.pdf</A>
+
+Random number generators, public keys, remote attestation, oh my!
+
+There appears to be an assumption that a potential 'pirate' isn't inside the
+cryptographic boundary  which includes the chip design and tools,
+fabrication process, and programming/testing facility.  I'm not sure the
+vulnerability assessment includes all the threat models for gray market ICs.
+ There seems to be a bit of hand waving involved.  It may narrow the avenues
+available to the potential pirate.  From the article:
+
+ &quot;However, even in U.S. facilities, working chips are sometimes reported
+defective by individual employees and later sold in gray markets,&quot;
+Koushanfar said.&quot;
+
+By itself it doesn't stop silicon from being diverted after unlocking, for
+instance.  I'd imagine the things you would do to increase threat coverage
+might be sufficient in and of themselves to preclude the need for this lock
+mechanism.
+
+An attack on the random number generator appears a likely vector.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

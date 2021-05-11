@@ -1,0 +1,41 @@
+<PRE>|<i> SNMPv3 Authentication Bypass Vulnerability
+</I>|<i> 
+</I>|<i>    Original release date: June 10, 2008
+</I>|<i>    Last revised: --
+</I>|<i>    Source: US-CERT
+</I>|<i> 
+</I>|<i> Systems Affected
+</I>|<i> 
+</I>|<i>      * Multiple Implementations of SNMPv3
+</I>|<i> 
+</I>|<i> Overview
+</I>|<i> 
+</I>|<i>   A  vulnerability in the way implementations of SNMPv3 handle specially
+</I>|<i>   crafted packets may allow authentication bypass.  [Based on shortened
+</I>|<i>   authentication....]
+</I>There's another ... issue with SNMPv3, this time with encryption keys.
+
+The SNMPv3 standard defines a mechanism for converting an entered pass
+phrase into an AES key.  The standard also specifies a(n appropriate)
+minimum length for the pass phrase.
+
+SNMP agents running in devices sold by a certain, err, very large vendor
+do not enforce the minimum length, and it is in fact common to see
+devices configured using short pass phrases.  Software that needs to
+talk to such devices, and which *does* enforce the requirements of the
+standard, will of course be unable to do so.  (Well, I suppose there is
+almost certainly an equivalent pass phrase that's long enough, but
+finding is impractical if the key derivation function is any good.)  So
+such software must necessarily ignore the security requirements of the
+standard as well.
+
+Not only is it hard to define technically correct solutions to security
+problems ... it's damn difficult to get them fielded!
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

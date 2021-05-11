@@ -1,0 +1,48 @@
+<PRE>On Wed, Aug 6, 2008 at 9:23 AM, Peter Saint-Andre wrote:
+&gt;<i>
+</I>&gt;<i> Wells Fargo is requiring their online banking customers to provide answers to security questions such as these:
+</I>&gt;<i>
+</I>&gt;<i> ***
+</I>&gt;<i>
+</I>&gt;<i> What is name of the hospital in which your first child was born?
+</I>...
+&gt;<i> What was your most memorable gift as a child?
+</I>&gt;<i>
+</I>&gt;<i> ***
+</I>&gt;<i>
+</I>&gt;<i> It strikes me that the answers to many of these questions might be public information or subject to social engineering attacks...
+</I>&gt;<i>
+</I>&gt;<i> Peter
+</I>
+Of course, this problem isn't limited to Wells Fargo:  I think pretty
+much all banks do it.
+
+I've given this some thought, and am writing a program called &quot;maiden&quot;
+(short for &quot;mother's maiden name&quot;) for cryptographically answering
+these questions.
+
+The basic idea is that you take either a pass phrase or strong secret,
+combine it with the question, compute the SHA hash, and use this to
+create a word that looks semi-pronounceable as the answer to the
+question.
+
+Right now, I don't answer any of these questions with any guessable
+information -- it's all the result of a cryptographic operation on the
+question and a hidden secret.
+
+Cheers,
+-Matt
+
+--
+Thanks!
+Matt Ball, IEEE P1619.x SISWG Chair
+M.V. Ball Technical Consulting, Inc.
+Phone: 303-469-2469, Cell: 303-717-2717
+<A HREF="http://www.mvballtech.com">http://www.mvballtech.com</A>
+<A HREF="http://www.linkedin.com/in/matthewvball">http://www.linkedin.com/in/matthewvball</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

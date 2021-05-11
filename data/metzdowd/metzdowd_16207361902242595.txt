@@ -1,0 +1,43 @@
+<PRE>Sidney Markowitz wrote:
+&gt;<i> IanG wrote, On 7/9/08 2:06 AM:
+</I>&gt;&gt;<i> Then, when a new Thunderbird comes out, you load that up and the other 
+</I>&gt;&gt;<i> packages cease to work
+</I>&gt;<i> 
+</I>&gt;<i> As far as I recall, the last time Thunderbird had an upgrade it told me 
+</I>&gt;<i> that one was available, I clicked to upgrade, and the addons, including 
+</I>&gt;<i> Enigmail, continue to work. When there was an upgrade available to 
+</I>&gt;<i> Enigmail, same thing. And the upgrade to GNUgpg also installed cleanly 
+</I>&gt;<i> with no reconfiguration necessary. It has all been as transparent as can 
+</I>&gt;<i> be.
+</I>
+...
+
+My experience was the same, although I needed some initial help with 
+GPG.  Since then, updates have been trouble-free.
+
+My only problem with the security model is that Thunderbird/Enigmail 
+stores encrypted messages in encrypted form, and there is no option to 
+store the plaintext.  This use of a communications key for stored data 
+is potentially a nuisance - a key corruption or other compromise, or 
+just a wish to delete an old key for forward security, would cause much 
+trouble.  (I keep my mail in an encrypted container anyway, so don't 
+need this feature.)
+
+This apart, the system runs with remarkable simplicity.
+
+Nicholas Bohm
+-- 
+Salkyns, Great Canfield, Takeley,
+Bishop's Stortford CM22 6SX, UK
+
+Phone  01279 870285    (+44 1279 870285)
+Mobile  07715 419728    (+44 7715 419728)
+
+PGP public key ID: 0x899DD7FF.  Fingerprint:
+5248 1320 B42E 84FC 1E8B  A9E6 0912 AE66 899D D7FF
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

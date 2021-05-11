@@ -1,0 +1,100 @@
+<PRE>On Thu, 7 Aug 2008, John Ioannidis wrote:
+|<i> Does anyone know how this &quot;security questions&quot; disease started, and
+</I>|<i> why it is spreading the way it is?  If your company does this, can you
+</I>|<i> find the people responsible and ask them what they were thinking?
+</I>|<i> 
+</I>|<i> My theory is that no actual security people have ever been involved,
+</I>|<i> and that it's just another one of those stupid design practices that
+</I>|<i> are perpetuated because &quot;nobody has ever complained&quot; or &quot;that's what
+</I>|<i> everybody is doing&quot;.
+</I>As best I can determine - based on external observation, not insider
+information - the evolution went something like this:
+
+	- It used to be when you needed to access an account by
+		phone, whoever you called just believed you were
+		who you said.
+
+	- Social engineering of such calls started to become a pain,
+		so something else was needed.  Call centers started to
+		ask for some additional data - mother's maiden name,
+		birthday, last four digits of SSN.  This was data that
+		was usually available anyway - SSN's have been used as
+		account id's for years, birthday and mother's maiden
+		name have been standard disambiguators among people with
+		similar names forever.
+
+	- In parallel, passwords started to infiltrate everyday life.
+		It's hard to recall that before ATM's became widely
+		used (mid to late '70's) there would really have been
+		no place the average consumer ever used a password.
+		Account numbers, sure - but they came pre-printed on
+		your statement or credit card and no one expected to
+		memorize them - and no one really thought of them as
+		passwords.
+
+	- Once people had to remember passwords, they started to forget
+		them.  Of course, before resetting a password, you have
+		to validate that the person asking for the reset is who
+		he said he is.  The cheapest approach is to use the
+		&quot;validation&quot; system you already have:  Those simple
+		security questions about birthdays and mothers.
+
+	- Password resetting became a significant cost; people to
+		talk on the phone to some idiot customer who's managed
+		to forget his password for the 3rd time in a month is
+		expensive.  So password reset services moved on-line.
+		But now identity validation became more of an issue:  It
+		was always assumed (with little justification) that it
+		was hard to fool a customer service guy into believing
+		you were someone else.  But a Web page?  You need to
+		provide *something* that a machine can check.
+		Initially, the same information that the humans check
+		was used - but in plain text on the screen, that felt
+		weak.  So ... why not have the user provide answers to a
+		couple of &quot;security questions&quot; that the program can then
+		use to validate him before assigning him a new password?
+
+	- Fast forward to a couple of years ago.  Identity theft is
+		becoming big business.  Most of that is due to really
+		bad security practices - laptops with tens of thousands
+		of unencrypted account records left in coffee shops,
+		unencrypted WiFi used to transfer credit card info at
+		large stores - but that's too embarrassing to talk about.
+		Various agencies, government and other get into the
+		act, demand &quot;accountability&quot; and &quot;best practices&quot;.
+		One best practice that gets written into actual
+		regulation in the banking business is &quot;two-factor
+		authentication&quot;.  That spreads as a &quot;best practice&quot; -
+		and your best defense against legal and other
+		problems is that you show you followed the industries
+		established &quot;best practice&quot;.  So now everyone needs to
+		do two-factor authentication.
+
+	- Ah, but just what does &quot;two-factor authentication&quot; mean?
+		We in the security biz know, but apparently none of
+		that makes it into the regs.  So, some company - I'm
+		sure with sufficient research one could even figure
+		out who - decides that, for them, &quot;two-factor&quot; means
+		&quot;the password plus the answer to a security question&quot;.
+		Cheap, easy to implement - they probably already have
+		such a system in place for password resets.  People
+		are used to it and accept it; no training is needed.
+		And ... somehow *they convice the regulatory agency
+		involved that this satisfies the regs*.
+
+	- The rest is history.  Everyone must do &quot;two-factor
+		authentication&quot;.  It's accepted in the industry
+		that security questions count.  It's cheap and
+		easy to apply.  What's there to discuss?  (Keep in
+		mind that, if you're following accepted &quot;best
+		practices,&quot; any *costs* that result from a
+		break-in will likely be born by your customer,
+		not you.  So why would you choose any other
+		approach?)
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

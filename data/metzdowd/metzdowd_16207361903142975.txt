@@ -1,0 +1,17 @@
+<PRE>On Wed, Sep 10, 2008 at 01:29:32PM -0400, William Allen Simpson wrote:
+&gt;<i> I agree.   I'm sure this is a world-wide problem, and head-in-the-sand
+</I>&gt;<i> cyber-libertarianism has long prevented better solutions.  The &quot;market&quot;
+</I>&gt;<i> doesn't work for this, as there is a competitive *disadvantage* to
+</I>&gt;<i> providing improved security, and it's hard to quantify safety.
+</I>
+Or maybe there's a civil liability law issue that causes the market to
+fail in this instance.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

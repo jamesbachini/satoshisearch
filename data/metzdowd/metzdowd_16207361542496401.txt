@@ -1,0 +1,42 @@
+<PRE>On 19 September 2007 22:01, Nash Foster wrote:
+
+&gt;<i> <A HREF="http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/">http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/</A>
+</I>&gt;<i> 
+</I>&gt;<i> Any actual cryptographers care to comment on this? 
+</I>
+  IANAAC.
+
+&gt;<i> I don't feel qualified to judge.
+</I>
+  Nor do I, but I'll have a go anyway.  Any errors are all my own work.  AIUI,
+the weakness is that if you control one end of the DH exchange, you can force
+a weak key to be selected for the subsequent encrypted exchange that an
+external observer can easily guess.  I would summarize the main findings as:
+
+
+  &quot;If you are one participant in a DH key exchange, it is possible for you to
+reveal the agreed-upon shared secret&quot;.
+
+  &quot;If you pwn an IKE server, you can decrypt and read all the traffic it is
+exchanging with peers.  The clients of that server won't know that it's giving
+up all their data&quot;.
+
+
+  Whether you do it by forcing the implementation to choose a weak key, or by
+just revealing the information that in each situation you already have under
+your control, seems to me like a mere technicality.  I can't envisage any
+situation under which this would actually *increase* your exposure.  However
+it is an implementation flaw and should be addressed just for the sake of
+tying up loose ends and doing things properly.
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

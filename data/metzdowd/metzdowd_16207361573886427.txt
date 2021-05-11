@@ -1,0 +1,77 @@
+<PRE>Following up on an old thread with some new information:
+
+&gt;<i> Hitachi's white paper is available from:
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.hitachigst.com/tech/techlib.nsf/techdocs/74D8260832F2F75E862572D7004AE077/$file/bulk_encryption_white_paper.pdf">http://www.hitachigst.com/tech/techlib.nsf/techdocs/74D8260832F2F75E862572D7004AE077/$file/bulk_encryption_white_paper.pdf</A>
+</I>...
+&gt;<i> The interesting part is the final sentence of the white paper:
+</I>&gt;<i>
+</I>&gt;<i>    Hitachi will be offering the Bulk Data Encryption option on all new
+</I>&gt;<i>    2.5-inch hard disk drive models launched in 2007, including both the
+</I>&gt;<i>    7200 RPM and 5400 RPM product lines. At the request of the customer,
+</I>&gt;<i>                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</I>&gt;<i>    this option can be enabled or not, at the factory, without any impact
+</I>&gt;<i>    on the drive?s storage capacity, features or performance.
+</I>
+Interestingly, Hitachi has updated that paragraph in the paper (re-using
+the same URL), and now it reads:
+
+  Hitachi will be offering the Bulk Data Encryption option on specific
+  part numbers of all new 2.5-inch hard disk drive products launched in
+  2007, including both the 7200 RPM and 5400 RPM product lines. For a
+  list of specific part numbers that include the Bulk Disk Encryption
+  feature or for more information on how to use the encryption feature,
+  see the ?How To Guide? for Bulk Data Encryption Technology available
+  on our website.
+
+The How To Guide includes screen shots from BIOS configuration.  The
+disk appear to be using the standard ATA BIOS password lock mechanism.
+The guide is available from:
+
+<A HREF="http://hitachigst.com/tech/techlib.nsf/products/Travelstar_7K200">http://hitachigst.com/tech/techlib.nsf/products/Travelstar_7K200</A>
+<A HREF="http://hitachigst.com/tech/techlib.nsf/techdocs/F08FCD6C41A7A3FF8625735400620E6A/$file/HowToGuide_BulkDataEncryption_final.pdf">http://hitachigst.com/tech/techlib.nsf/techdocs/F08FCD6C41A7A3FF8625735400620E6A/$file/HowToGuide_BulkDataEncryption_final.pdf</A>
+
+Without access to the device (I've contacted Hitachi EMEA to find out if
+it is possible to purchase the special disks) it is difficult to infer
+how it works, but the final page of the howto seems strange:
+
+   Disable security
+   ----------------
+
+   For an end user to disable security (i.e., turn off the password
+   access control):
+
+     1. Enter the BIOS and unlock the drive (when required, BIOS
+     dependent).
+
+     2. Find the security portion of your BIOS and disable the HDD user
+     password, NOT the BIOS password. The master password is still set.
+...
+
+   NOTE: All data on the hard drive will be accessible. A secure erase
+   should be performed before disposing or redeploying the drive to
+   avoid inadvertent disclosure of data.
+
+One would assume that if you disable the password, the data would NOT be
+accessible.  Making it accessible should require a read+decrypt+write of
+the entire disk, which would be quite time consuming.  It may be that
+this is happening in the background, although it isn't clear.
+
+Another interesting remark is:
+
+  Note that the access method to the drive is stored in an encrypted
+  form in redundant locations on the drive.
+
+It sounds to me as if they are storing the AES key used for bulk
+encryption somewhere on the disk, and that it can be unlocked via the
+password.  So it may be that the bulk data encryption AES key is
+randomized by the device (using what entropy?) or possibly generated in
+the factory, rather than derived from the password.
+
+/Simon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

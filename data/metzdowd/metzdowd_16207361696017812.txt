@@ -1,0 +1,60 @@
+<PRE>Dan Kaminsky &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at doxpara.com</A>&gt; writes:
+
+&gt;<i>For example, the following construction:
+</I>&gt;<i>
+</I>&gt;<i>Start with an RNG.  Retrieve 64K of &quot;random data&quot;.  Assume there might be a
+</I>&gt;<i>bias somewhere in there, but that at least 256 bits are good. SHA-256 the
+</I>&gt;<i>data.  AES-256 encrypt the data with the result from the SHA-256.  XOR the
+</I>&gt;<i>random data against its encrypted self.  Return 64K of PNRG-hardened RNG
+</I>&gt;<i>data.
+</I>&gt;<i>
+</I>&gt;<i>Aside from the obvious rejoinder to maybe XOR *another* batch of entropy
+</I>&gt;<i>against the previous batch's encrypted self (a change that halves
+</I>&gt;<i>performance), I can't see much wrong.  I rather deeply doubt I'm the first to
+</I>&gt;<i>come up with a suggestion like that either.
+</I>
+PRNG design starts getting into the philosophy of paranoia fairly quickly.
+How much safety is enough?  When do you stop?  For example I designed my PRNG
+so that any one critical-path component in it can fail completely without it
+affecting the security of the generator (barring pathological failures like
+every byte of code spontaneously transmuting itself into a NOP).  In other
+words you can replace (say) the SHA-1 operation with a memcpy() and it won't
+affect overall security.  OTOH other designers have assumed that their mixing
+operation has the desired properties and therefore adding this level of
+redundancy is complete overkill.  Who's right?  (You are not expected to
+answer this :-).
+
+&gt;<i>So, uh, why do weak RNG's keep showing up?  Is there something fundamentally
+</I>&gt;<i>breakable in the above design?
+</I>
+I think the answer to this generalises to &quot;why does weak security keep showing
+up&quot;?  The answer, to quote Bruce Schneier, is that people will deploy
+technology that's as insecure as they can possibly get away with.  Ages ago
+when DPA attacks were first publicised I talked to some folks who had designed
+a particular piece of crypto gear that happened to be completely immune to any
+attempts to mount DPA attacks (and various other side-channel attacks) on it.
+They hadn't designed it to be specifically immune to DPA attacks, all they'd
+done was apply sound engineering design with good power-supply decoupling,
+filtering of all signal lines, and so on.  The result was that the NRE cost
+was higher, the manufacturing cost was higher, and it took a bit longer to get
+to market, but they had a device that severely annoyed the pen-testers because
+everything they tried simply bounced off.  The competitors' engineers probably
+got a bonus for bringing their product to market faster and at lower cost by
+being less conservative with their design. The folks in the competitors'
+manufacturing department who figured out that you could omit several of the
+security features in the product once it had been evaluated in order to save
+money almost certainly got a bonus for their clever cost-cutting.  Ask
+hardcode geeks and they'll say that the former product is better.  Ask almost
+anyone else and they'll say the latter product is better - it's much cheaper,
+and who cares about a few theoretical attacks that never happen in the real
+world.
+
+I did warn you that it'd get philosophical...
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

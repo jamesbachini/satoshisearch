@@ -1,0 +1,27 @@
+<PRE>&gt;<i> I'm looking for a halfway self-contained set of ITU-T recommendations
+</I>&gt;<i> which are relevant for implementing X.509v3 certificates.  The
+</I>&gt;<i> references in RFC 3280 appear to be incomplete; for instance, a
+</I>&gt;<i> reference for ASN.1 itself is missing.
+</I>
+The ITU/ISO ASN1 standards are available for free download; see 
+<A HREF="http://asn1.elibel.tm.fr/standards/">http://asn1.elibel.tm.fr/standards/</A>
+
+&gt;<i> Or is it unreasonable to expect that the specs match what is actually
+</I>&gt;<i> needed for interoperability with existing implementations (mostly in the
+</I>&gt;<i> TLS, S/MIME area)?
+</I>
+It's no worse than any other spec-vs-reality.  You're more likely to find 
+issues with the IETF specs layered on top of ASN1 than with ASN1 itself.
+
+        /r$
+
+--
+STSM, DataPower Chief Programmer
+WebSphere DataPower SOA Appliances
+<A HREF="http://www.ibm.com/software/integration/datapower/">http://www.ibm.com/software/integration/datapower/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

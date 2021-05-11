@@ -1,0 +1,25 @@
+<PRE>Ivan Krsti&#263; wrote:
+&gt;<i> On Jul 14, 2007, at 2:43 PM, Ed Gerck wrote:
+</I>&gt;&gt;<i> 1. firewall port-knocking to block scanning and attacks
+</I>&gt;&gt;<i> 2. firewall logging and IP disabling for repeated attacks (prevent DoS,
+</I>&gt;&gt;<i> block dictionary attacks)
+</I>&gt;&gt;<i> 3. pre- and post-filtering to prevent SSH from advertising itself and
+</I>&gt;&gt;<i> server OS
+</I>&gt;&gt;<i> 4. block empty authentication requests
+</I>&gt;&gt;<i> 5. block sending host key fingerprint for invalid or no username
+</I>&gt;&gt;<i> 6. drop SSH reply (send no response) for invalid or no username
+</I>&gt;<i> 
+</I>&gt;<i> None of these are crypto issues. 
+</I>
+Perhaps not the way they are solved today (see above), and that IS
+the problem. For example, the lack of good crypto solutions to protocol
+bootstrap contributes significantly to security holes 1-7.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

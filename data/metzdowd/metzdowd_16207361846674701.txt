@@ -1,0 +1,21 @@
+<PRE>I've got a function f : S -&gt; X x S where S = (Z/2Z)**96 and
+X = (Z/2Z)**32.  Suppose that s_0 is fixed and (x_i, s_i) = f(s_{i-1}).
+(f implements a PRNG.  The s_i are subsequent internal states and the
+x_i are results.)
+
+Now f happens to be linear.  I know the values of x_i, x_{i+1}, ...,
+x_{i+k} module N, for a fixed, known N.  N is odd (but divisible by 9).
+Is it possible to recover s_i with reasonable effort (better than brute
+force, and k should be in the hundreds, not thousands)?  And if yes, how?
+Prediction of candidates for x_{i+k+1} with high probability would be
+helpful, too.
+
+(Obviously, using f as an unpredictable PRNG is not a good idea.  But if
+there's a real attack I can present, convincing the authors to replace
+it would be so much easier.)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

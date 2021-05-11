@@ -1,0 +1,23 @@
+<PRE>There are high assurance systems that exist that do eactly this. There
+are two different implementations of the security unit processing the
+same data. The outputs are compared by a seperate high assurance and
+validated module that enters into an alarm mode should the outputs
+differ.
+
+However, these are generally costly affairs, you need to pay two
+implementation teams etc, therefore remain the luxury of only the most
+critical systems.
+
+
+For hardware, this
+&gt;<i> would mean running multiple chips in parallel checking each others
+</I>&gt;<i> states/outputs.  Architectures like that have been built for
+</I>&gt;<i> reliability (e.g., Stratus), but generally they assume identical
+</I>&gt;<i> processors.  Whether you can actually build such a thing with
+</I>&gt;<i> deliberately different processors is an open question.
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

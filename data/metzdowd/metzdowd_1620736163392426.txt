@@ -1,0 +1,57 @@
+<PRE>
+On Dec 3, 2007, at 2:47 PM, William Allen Simpson wrote:
+
+&gt;<i> Dirk-Willem van Gulik wrote:
+</I>
+&gt;<i>
+</I>&gt;&gt;<i> Keep in mind that the notary is still 'careful' -- effectively they  
+</I>&gt;&gt;<i> sign the hash -- rather than the document; and state either such  
+</I>&gt;&gt;<i> (e.g. in the case of some software/code where you do not hand over  
+</I>&gt;&gt;<i> the actual code) or state that _a_ document was presented with said  
+</I>&gt;&gt;<i> hash.
+</I>&gt;&gt;<i>
+</I>&gt;<i> And that makes all the difference.  The digital notary is not  
+</I>&gt;<i> certifying the
+</I>&gt;<i> original document.  You described the notary generating its own tuples
+</I>&gt;<i> (credentials as presented, the hash, a timestamp, and a notarized  
+</I>&gt;<i> declaration
+</I>&gt;<i> that such was presented).  There is no problem, and the described  
+</I>&gt;<i> attack does
+</I>&gt;<i> not apply.
+</I>
+Not sure - lets take a similar example - the role of Chamber of  
+Commerce in repetitive/renewal public tender/bid processes - who  
+essentially makes you use an RFC 3161 service to sign any MD5 (Well -  
+SHA1 is the actual default) for companies; typically a PDF or Word  
+document of a bid for the purpose of 'locking' in the date of  
+sumbission. And on unsealing day, which for tax reasons can be months  
+later,  the govt. entity just checks the MD5's versus the RFC3161  
+attest. (The reason for this time-stamping is threefold a) make it  
+fair between entities regardless as to how good their postal system  
+is, b) 'date of postoffice' is a bit buyable in some places of the  
+world and c) some bid processes require the digital document to be  
+hand delivered on sealing day to alleviate the confidentially burden  
+of the govt. of keeping the bids secure).
+
+An in-house Mallory (at the bidder) may well want to tweak things a  
+bit and make several doctored copies with different bid levels; and  
+send in the one joint MD5 through the RFC3161 service.
+
+And then depending on the information leaking/gossip of the industry -  
+choose later than the others which one to 'really' submit. As its  
+competitors, as is common in the industry, tend to get a lot less  
+tight lipped once the deadline has passed.
+
+What is new is that Mallory can generate several documents with the  
+same MD5 with a few days of 'work'.
+
+That endagers workflows where you assume that a party cannot  
+intentionally create more than one asset with has the same MD5.
+
+Dw
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

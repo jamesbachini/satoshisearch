@@ -1,0 +1,69 @@
+<PRE>At 11:23 PM 1/3/2008 +0000, Steven M. Bellovin wrote:
+&gt;<i>On Thu, 03 Jan 2008 11:52:21 -0500
+</I>&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+</I>&gt;<i>
+</I>&gt;<i> &gt; The aspect of this that is directly relevant to this
+</I>&gt;<i> &gt; list is that while &quot;we&quot; have labored to make network
+</I>&gt;<i> &gt; comms safe in an unsafe transmission medium, the
+</I>&gt;<i> &gt; world has now reached the point where the odds favor
+</I>&gt;<i> &gt; the hypothesis that whomever you are talking to is
+</I>&gt;<i> &gt; themselves already 0wned, i.e., it does not matter if
+</I>&gt;<i> &gt; the comms are clean when the opponent already owns
+</I>&gt;<i> &gt; your counterparty.
+</I>&gt;<i> &gt;
+</I>&gt;<i>Right -- remember Spaf's famous line about how using strong crypto on
+</I>&gt;<i>the Internet is like using an armored car to carry money between
+</I>&gt;<i>someone living in a cardboard shack and someone living on a park bench?
+</I>&gt;<i>
+</I>&gt;<i>Crypto solves certain problems very well.  Against others, it's worse
+</I>&gt;<i>than useless -- &quot;worse&quot;, because it blocks out friendly IDSs as well as
+</I>&gt;<i>hostile parties.
+</I>
+I agree with these statements.  I have a couple of comments
+regarding crypto and IDS.  I think that we will have to move toward
+encrypting more data at rest in some manner that is that is easy for
+the user to use (like ATM cash cards) yet difficult for a malicious
+piece of software on the user's machine to circumvent.  This will
+require that all PC's ship with a trusted hardware/firmware chip
+AKA a reference monitor on the motherboard that can safely handle
+any red keys.  This also means the PC needs a trusted path to
+the user like the pin pad in ATM machines.  Many laptops now
+ship with fingerprint scanners, so maybe these things are not such
+an onerous requirement on PC manufacturers anymore.  Also
+the reference monitor could be used to prevent viruses being able
+to completely taking over the user's machine (maybe at least
+to maintain some sort of host IDS capability).
+
+For IDS, I think we need to think of it in more the context of policing.
+These virus writers are human beings, and I suspect for the most
+part a very small fraction of the total Internet population.  We need to
+have tools and international Interpol-like treaties in place that allow
+police to track down and arrest these people (or deny them access
+via an ISP or a carrier).  Many of the tier 1 carriers apparently are
+refusing to share IDS information with one another.  This needs to
+change.  We need really good IDS tools that track down the control
+lines of the botnets, etc., back to their actual handlers.  This may
+mean that each carrier must archive large amounts of either netflow
+data or even raw packets (say for non-TCP traffic) so that detailed
+L7 analysis can take place to track botnet control lines back to their
+handlers in after-the-fact investigations.  Also, I hate to say this, we
+may need to also require that all encrypted traffic allow inspection of
+their contents under proper authority (CALEA essentially).  If we
+can do this then we can put real policing pressure on these virus
+writers, essentially removing them from being able to attack us
+over the Internet.
+
+- Alex
+
+--
+
+Alex Alten
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

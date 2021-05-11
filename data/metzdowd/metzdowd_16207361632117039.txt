@@ -1,0 +1,102 @@
+<PRE>In my experience of doing security evaluations for large financial
+institutions in AsiaPac, I suspect the biggest problem you'll face in
+doing this is hubris from the app developers.  I don't know why, but
+these guys so often have a problem taking advice, at least in my
+experience (which now covers ~15 different financial institutions in 4
+countries.)
+
+The level of ignorance runs deep, and almost without exception, most
+don't see any complexity in crypto protocols or implementation, and have
+a strong &quot;security by obscurity&quot; mentality.  Oh, and &quot;roll your own&quot;
+algorithms are surprisingly common. I've even offered to do 1st order
+algorithm reviews in a couple of cases, but been told that revealing the
+algorithm compromised it's security.  &quot;And you don't think that's a
+problem in itself?&quot;  &quot;No.&quot;
+
+So, good luck.  I personally have a boilerplate risk disclosure section
+which basically says &quot;your in-house app developers know squat about
+crypto, and you're at risk if you're trusting their designs and
+implementation as a consequence.&quot;  It's a bit nicer phrased, but that's
+the gist of the ~4 page section.
+
+Ian.
+
+-----Original Message-----
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>
+[mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] On Behalf Of
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A>
+Sent: Tuesday, 18 December 2007 3:39 AM
+To: Cryptography
+Subject: crypto class design
+
+So... supposing I was going to design a crypto library for use within a
+financial organization, which mostly deals with credit card numbers and
+bank accounts, and wanted to create an API for use by developers, does
+anyone have any advice on it?
+
+It doesn't have to be terribly complete, but it does have to be
+relatively easy to use correctly (i.e. securely).
+
+I was thinking of something like this:
+
+class crypto_api
+{
+    ...
+    // developers call these based on what they're trying to do
+    // these routines simply call crypto_logic layer
+    Buffer encrypt_credit_card(Buffer credit_card_number, key_t key);
+    Buffer encrypt_bank_account(Buffer bank_account, key_t key);
+    Buffer encrypt_other(Buffer buffer, key_t key);
+    ...
+};
+
+class crypto_logic
+{
+    ...
+    algo_default = ALGO_AES256CBC;
+    // encrypt with a given algorithm
+    Buffer encrypt(Buffer buffer, key_t key, algo_t aid = algo_default);
+    // calls different routines in crypto_implementation layer depending
+on algorithm used
+    Buffer decrypt(Buffer buffer, key_t key);
+    ...
+};
+
+class crypto_glue
+{
+    ...
+    // calls routines in libraries such as OpenSSL
+    // mostly wrappers that translate between our data types and theirs
+    Buffer aes256cbc-encrypt(...);
+    Buffer aes256cbc-decrypt(...);
+    ...
+};
+
+The general idea is that crypto_api provides domain-specific APIs that
+are easy for anyone to understand, that the logic layer allows for the
+selection of different algorithms, and the glue layer is basically a
+translation layer to underlying libraries.
+
+It is very important that the API remain stable, because the code base
+is large and owned by various groups.
+
+One thing that I'm wondering is how to indicate (e.g.) the overhead in
+terms of padding, or whatever, for various algorithms... or if it
+matters.  The old code had some really disturbing practices like
+assuming that the output buffer was 16 octets bigger, and stuff like
+that... scary.
+
+Intend to skim the OpenSSL design and Gutmann's &quot;Design of a
+Cryptographic Security Architecture&quot; for ideas.
+
+Comments?
+--
+In God We Trust, All Others Must Provide Source Code
+&lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my email blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

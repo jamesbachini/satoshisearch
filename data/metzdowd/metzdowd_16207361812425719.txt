@@ -1,0 +1,22 @@
+<PRE>[Moderator's note: I'm letting just this one through, because I think
+Peter's point bears repeating. --Perry]
+
+&quot;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A>&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A>&gt; writes:
+
+&gt;<i>IT departments put corporate trusted CA certificates in employees computers.
+</I>&gt;<i>The US DoD puts their trusted root certificates in DoD computers. All these
+</I>&gt;<i>actions copy trust with high fidelity.
+</I>
+They don't copy any trust at all, they copy a (usually expensive)
+cryptographic cookie that turns off browser warning messages.
+
+(They do copy the cookies with high fidelity though, if one bit is corrupted
+then the cookie becomes invalid).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

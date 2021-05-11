@@ -1,0 +1,30 @@
+<PRE>On 8/17/07, Ivan Krstic &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; wrote:
+&gt;<i> How so? If your computer goes bad, you need a *backup*. That's
+</I>&gt;<i> entirely orthogonal to the drive encryption problem.
+</I>
+One of the functions provided by the TPM is to wrap/bind and store the
+bulk encryption keys. Now let's us say the mother board or the TPM
+goes bad on your notebook or you simply want to upgrade the computer.
+You need to be able to restore+transfer the information stored in the
+TPM to your new computer. This is where you need TPM management suite
+that support key backup/restore and transfer.
+
+A large company's (name withheld) strategy regarding TPM was to ignore
+it. Not too long ago few key engineers from that company decided that
+a TPM enabled encrypted vault would be good place to secure their
+documents. Somehow they managed to lock themselves out of the
+encrypted vaults (maybe forgotten password / or lost keys). Had that
+company not ignored the TPM and instituted a key backup/archive
+program, the engineers would have been able to recover their
+confidential documents. We can blame the engineers, but at the end of
+the day it was the whole company that lost money and valuable design
+documents.
+
+saqib
+<A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

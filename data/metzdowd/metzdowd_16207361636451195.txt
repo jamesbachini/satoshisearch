@@ -1,0 +1,33 @@
+<PRE>On Wed, Dec 19, 2007 at 08:22:09AM +0100, Luis Martin wrote:
+&gt;<i> I am not sure I understood what you want but here's my suggestion.
+</I>
+The problem is that client code assumes that there is a fixed (constant)
+relationship between the size of the output and the size of the input,
+and does its own memory allocation for the output, and uses pointers.
+
+This makes it difficult to change that relationship safely; I
+basically have to track down and change all the calling code, which
+may be near-impossible.
+
+I think the right solution in this case is to pass objects and not
+pointers, unless performance dictates otherwise.
+
+But, are there similar assumptions implicit in the calling code which
+I can avoid through proper design, now?
+
+That having been said, your suggestion for a data type for this
+purpose, with semantically-useful subdivisions, is an interesting one;
+thank you (and everyone else who gave suggestions!)
+
+-- 
+In God We Trust, All Others Must Provide Source Code
+&lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my email blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071220/d6607361/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071220/d6607361/attachment.pgp</A>&gt;
+</PRE>

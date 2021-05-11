@@ -1,0 +1,36 @@
+<PRE>* William Allen Simpson:
+
+&gt;<i> Assuming,
+</I>&gt;<i>   Dp := any electronic document submitted by some person, converted to its
+</I>&gt;<i>         canonical form
+</I>&gt;<i>   Cp := a electronic certificate irrefutably identifying the other person
+</I>&gt;<i>         submitting the document
+</I>&gt;<i>   Cn := certificate of the notary
+</I>&gt;<i>   Tn := timestamp of the notary
+</I>&gt;<i>   S() := signature of the notary
+</I>&gt;<i>
+</I>&gt;<i>   S( MD5(Tn || Dp || Cp || Cn) ).
+</I>&gt;<i>
+</I>&gt;<i> Of course, I'm sure the formula could be improved, and there are
+</I>&gt;<i> traditionally fields identifying the algorithms used, etc. -- or something
+</I>&gt;<i> else I've forgotten off the top of my head -- but please argue about the
+</I>&gt;<i> actual topic of this thread, instead of incessant strawmen.
+</I>
+The problem is not the outer MD5 (explicitly mentioned in your
+description), but that Dp is typically (well, to the extent such
+services have been deployed) some kind of hash.  This has got the
+advantage that the timestamping service does not need to know the
+contents of the document.  On the other hand, if the timestamping
+service archives Dp and can reveal it in a dispute, evil twins can be
+identified and analyzed -- which undermine the submitting party's claim
+that it submitted the second document instead of the first.
+
+Of course, this is actually cheating by substituting proven protocols
+for fragile cryptography.  And the result is still open to
+interpretation, but all evidence is.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,75 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i>   <A HREF="http://eprint.iacr.org/2008/058">http://eprint.iacr.org/2008/058</A>
+</I>&gt;<i>   
+</I>&gt;<i>   Physical Cryptanalysis of KeeLoq Code Hopping Applications
+</I>
+Addition (<A HREF="http://www.heise-online.co.uk/security/news/print/110446">http://www.heise-online.co.uk/security/news/print/110446</A>):
+
+Scientists at the Ruhr-Universit&#228;t Bochum[1] have defeated the Keeloq[2]
+immobiliser and door opener used in many cars. Attackers need only
+intercept two transmissions between the transmitter and receiver in
+order to clone the digital key and gain access to the car. Microchip
+Technology's RFID-based KeeLoq process, is used in automobiles
+manufactured by Chrysler, Daewoo, Fiat, General Motors, Honda, Toyota
+(Lexus), Volvo, Volkswagen and Jaguar. KeeLoq is also used in building
+access systems and garage door openers. Signal interception is possible
+at a range of 100 metres, according to Professor Christof Paar of the
+School of Electronics and Information Technology. In addition to gaining
+unauthorised access, the systems can be manipulated, denying the
+rightful owners access.
+
+Both the KeeLoq transmitter and receiver encrypt their signals. A
+proprietary, non-linear encryption algorithm is used which encrypts
+controller commands with a unique code before transmission to the
+vehicle. A 32 bit initialisation vector together with a 32 bit hopping
+code is used as a key. An ID unique to each electronic key is added to
+the calculation.
+
+But there is also a manufacturer's master key for all of the products in
+a series. This is precisely what Professor Paar's Bochum group was able
+to retrieve using a procedure known as side channel analysis. To obtain
+the master key the researchers used differential power analysis (DPA)
+and differential electromagnetic analysis (DEMA) at both the transmitter
+and receiver during the transmission. Once the master key is known, only
+two transmissions are needed in order to obtain the crypto key of a
+particular KeeLoq remote control. The vulnerability was tested on
+commercial systems, according the Bochum scientists.
+
+In early February the researchers presented a detailed description[3] of
+the attack that required them to intercept a number of activation
+procedures in order to obtain the manufacturer's key. At the CRYPTO 2007
+cryptography conference, an international group of researchers presented
+a method by which the individual keys could be cracked[4] using
+distributed computing.
+
+Cheers,
+
+	Stefan.
+
+  [1] <A HREF="http://www.crypto.rub.de/en_news.html">http://www.crypto.rub.de/en_news.html</A>
+  [2]
+<A HREF="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2074">http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2074</A>
+  [3] <A HREF="http://eprint.iacr.org/2008/058">http://eprint.iacr.org/2008/058</A>
+  [4]
+<A HREF="http://www.heise-online.co.uk/security/Computer-farm-cracks-car-key-code--/news/94874">http://www.heise-online.co.uk/security/Computer-farm-cracks-car-key-code--/news/94874</A>
+
+---------------------------------------------------------
+Identity Management Symposium 22.-23.04.2008 KA/Ettlingen
+<A HREF="http://www.identity-management-symposium.de/">http://www.identity-management-symposium.de/</A>
+---------------------------------------------------------
+Stefan Kelm
+Security Consultant
+
+Secorvo Security Consulting GmbH
+Ettlinger Strasse 12-14, D-76137 Karlsruhe
+Tel. +49 721 255171-304, Fax +49 721 255171-100
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stefan.kelm at secorvo.de</A>, <A HREF="http://www.secorvo.de/">http://www.secorvo.de/</A>
+PGP: 87AE E858 CCBC C3A2 E633 D139 B0D9 212B
+
+Mannheim HRB 108319, Geschaeftsfuehrer: Dirk Fox
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

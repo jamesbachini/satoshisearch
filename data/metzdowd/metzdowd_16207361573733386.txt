@@ -1,0 +1,43 @@
+<PRE>Stephan Somogyi &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at lt.gross.net</A>&gt; writes:
+
+&gt;<i>FIPS 140(-2) is about validating cryptographic implementations. It is not
+</I>&gt;<i>about certifying entire products that contain ample functionality well
+</I>&gt;<i>outside the scope of cryptographic evaluation. That's more of a Common
+</I>&gt;<i>Criteria thing.
+</I>
+Not necessarily.  It's up to the vendor to draw the boundary around what they
+want evaluated.  In some cases it's purely a single crypto module, in others
+it's significant portions of the application using the crypto (and I guess
+this would be the case for FDE, where pretty much the entire application does
+nothing but crypto).  The advantage of the former is that there's less to
+evaluate, the advantage of the latter is that there's less paperwork to handle
+things like data crossing cryptomodule boundaries, which can happen in cases
+where most of your key management is done outside the core crypto code.
+However with the latter you can also declare large chunks of your code non-
+security-relevant and therefore out of scope, so you get the benefits of a
+fairly broad perimeter but not too much actual code to get checked.  It's
+give-and-take with the evaluators, generally you juggle things to get the most
+benefit for the least amount of work (which doesn't necessarily correspond to
+the most thorough evaluation).
+
+&gt;<i>OpenSSL FIPS Object Module 1.1.1 has FIPS 140-2 when running on SUSE 9.0 and
+</I>&gt;<i>HPUX 11i, according to
+</I>&gt;<i>
+</I>&gt;<i>&lt;<A HREF="http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2007.htm#733">http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2007.htm#733</A>&gt;
+</I>&gt;<i>
+</I>&gt;<i>In the context of a conversation about whether something formally has FIPS
+</I>&gt;<i>validation or not, the details are important.
+</I>
+Only if you know what FIPS 140 is.  For procurement people, FIPS 140 is a
+capitalised word and a small integer value printed next to a checklist item.
+If the software meets their requirements and pricing expectations then they'll
+look for something somewhere in the vicinity of the product that's close
+enough to saying &quot;FIPS 140&quot;, check the box, and they're done.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

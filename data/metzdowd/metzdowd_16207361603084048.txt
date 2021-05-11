@@ -1,0 +1,77 @@
+<PRE>On Tue, Oct 30, 2007 at 12:27:53PM -0400, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">auto37159 at hushmail.com</A> wrote:
+&gt;<i> I stumbled across this filing:
+</I>&gt;<i> <A HREF="http://static.bakersfield.com/smedia/2007/09/25/15/steroids.source.p">http://static.bakersfield.com/smedia/2007/09/25/15/steroids.source.p</A>
+</I>&gt;<i> rod_affiliate.25.pdf
+</I>
+I probably shouldn't say anything about this, but whoever made this
+PDF failed to properly redact the personal information in #10, just
+like the NYT failed to do with the names of the people who helped the
+US in Iran.
+
+I can simply switch desktops and see the numbers underneath before the
+rectangles are drawn over them (possibly on another layer).  Actually
+the box on #14 seems to work, possibly because it is larger, or was
+done differently.
+
+&gt;<i> What I found interesting was:
+</I>&gt;<i> 1.  The amount of data which Hushmail was required to turn over to
+</I>&gt;<i> the US DEA relating to 3 email addresses.  3 + 9 = 12 CDs  What
+</I>&gt;<i> kind of and for what length of time does Hushmail store logs?
+</I>
+You would think that they would store the minimum or none, so that
+they didn't have to answer such requests.  In the US, companies can
+require compensation for resources spent filling these requests, but
+many do not for fear of increased scrutiny by law enforcement.
+
+I have been around when my department at a Usenet server had to fill
+these kinds of requests on posts from people selling GHB or something
+like that.  They pretty much write their subpoenas as wide as
+possible, pretty much &quot;any record you have about...&quot; and then they
+give you every relevant piece of identifying information they have.  I
+think you have to swear under penalty that you got them everything.
+Sorry bro....
+
+IIRC, there were laws passed in Europe dictating minimum retention
+times for ISPs and such.  They may have been passed in Canada and the
+US as well.  I guess the legal theory is that when a business offers
+services to the public they give up some rights over private property.
+
+Probably they did the minimum work to comply, which means that the
+CDs are either mostly empty, or full of unrelated data.
+
+&gt;<i> 2.  That items #5 and #15 indicated that the _contents_ of emails
+</I>&gt;<i> between several Hushmail accounts were &quot;reviewed&quot;.
+</I>
+Yep.
+
+&gt;<i> 3.  The request was submitted to the ISP for IP addresses related
+</I>&gt;<i> to a specific hushmail address (#9).  How would the ISP be able to
+</I>&gt;<i> link a specific email address to an IP when Hushmail uses SSL/TLS
+</I>&gt;<i> for both web and POP3/IMAP interfaces?
+</I>
+It appears he used IP addresses gathered from #4.
+
+&gt;<i> Since email between hushmail accounts is generally PGPed.  (That is
+</I>&gt;<i> the point, right?)  And the MLAT was used to establish probable
+</I>&gt;<i> cause, I assume that the passphrases were not squeezed out of the
+</I>&gt;<i> plaintiff.  How did the contents get divulged?
+</I>
+My guess is that Hushmail has had subpoenas before and had to develop
+and install a modified java applet which captures the passphrase when
+the user enters it.  With that and the stored keys, it can decrypt all
+the stored communications.
+
+If that's true, I wouldn't expect them to trumpet it, since it would
+mostly negate their value proposition.
+-- 
+Life would be so much easier if it was open-source.
+&lt;URL:<A HREF="http://www.subspacefield.org/~travis/">http://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071105/0276815d/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071105/0276815d/attachment.pgp</A>&gt;
+</PRE>

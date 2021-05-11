@@ -1,0 +1,32 @@
+<PRE>|<i> &gt; The key size would imply PKI; that being true, then the ransom may
+</I>|<i> &gt; be for a session key (specific per machine) rather than the master
+</I>|<i> &gt; key it is unwrapped with.
+</I>|<i> 
+</I>|<i> Per the computerworld.com article:
+</I>|<i> 
+</I>|<i>    &quot;Kaspersky has the public key in hand ? it is included in the
+</I>|<i>    Trojan's code ? but not the associated private key necessary to
+</I>|<i>    unlock the encrypted files.&quot;
+</I>|<i> 
+</I>|<i> <A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818</A>
+</I>|<i> 
+</I>|<i> This would seem to imply they already verified the public key was
+</I>|<i> constant in the trojan and didn't differ between machines (or that
+</I>|<i> I'm giving Kaspersky's team too much credit with my assumptions).
+</I>Returning to the point of the earlier question - why doesn't someone
+pay the ransom once and then use the key to decrypt everyone's files:
+Assuming, as seems reasonable, that there is a &quot;session&quot; key created
+per machine and then encrypted with the public key, what you'd get
+for your ransom money is the decryption of that one session key.
+Enough to decrypt your files, not useful on any other machine.
+
+There's absolutely no reason the blackmailer should ever reveal the
+actual private key to anyone (short of rubber-hose treatment of some
+sort).
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

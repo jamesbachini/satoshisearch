@@ -1,0 +1,51 @@
+<PRE>Dirk-Willem van Gulik &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dirkx at webweaving.org</A>&gt; writes:
+
+&gt;<i>As to technical options to accomplish this
+</I>
+The mechanisms for this actually already exist, they're just not used.  First
+of all, you need to admit that you have a problem: SSL certs by themselves are
+more or less useless in providing assurance, the phishers are buying genuine
+CA-issued certs for soundalike domains using stolen credit cards just as
+easily as legit sites are buying certs for genuine domains, and no amount of
+signature checking and CRLs and other PKI paraphernalia will fix that.  As
+Matt Blaze once said, &quot;A commercial CA will protect you from fraud by anyone
+whose money it refuses to accept&quot;, which was meant tongue-in-cheek at the time
+but given current practice by phishers that's exactly what a commercial CA
+will do, and no more.
+
+It's only once developers have accepted this that you can start looking for a
+real solution:
+
+- Use TLS-PSK, which performs mutual auth of client and server without ever
+  communicating the password.  This vastly complicated phishing since the
+  phisher has to prove advance knowledge of your credentials in order to
+  obtain your credentials (there are a pile of nitpicks that people will come
+  up with for this, I can send you a link to a longer writeup that addresses
+  them if you insist, I just don't want to type in pages of stuff here).
+
+- Implement key-continuity at the client, i.e. warn if submitting a password
+  or credit card number to a site you've never visited before; display the
+  password in cleartext if submitting over a non-SSL connection (this is
+  better than any explicit warning); (insert standard list, I have a whole
+  pile of these, including responses to objections).
+
+- Use a service like Perspectives,
+  <A HREF="http://www.cs.cmu.edu/~perspectives/index.html,">http://www.cs.cmu.edu/~perspectives/index.html,</A> to catch here-today-gone-
+  tomorrow phishing sites (this is actually a service that someone like Google
+  could provide, they crawl the web anyway so keeping track of how long a
+  server key's been in use should be a relatively minor change to the existing
+  process.  Anyone from Google security reading this list?).
+
+- ... and many more, I won't list them all here.
+
+So it's a two-step process, the first of which is to admit that you have a
+problem.  As EV certs have shown, we haven't really even reached that first
+step yet.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

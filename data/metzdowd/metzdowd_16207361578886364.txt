@@ -1,0 +1,54 @@
+<PRE>On Oct 23, 2007, at 12:46 AM, Arcane Jill wrote:
+
+&gt;<i> Can anyone tell me... is there a Firefox plugin which allows one to  
+</I>&gt;<i> view the fingerprint of the SSL certificate of each page you visit  
+</I>&gt;<i> (e.g. in the status bar or address bar or something)?
+</I>&gt;<i>
+</I>&gt;<i> Better still if it can learn which ones you trust, but just being  
+</I>&gt;<i> able to view them without having to jump through hoops would be a  
+</I>&gt;<i> good start.
+</I>
+Suppose you did have a convenient way to display the SSL certificate  
+for every site whenever you loaded a page from the site.  You  
+probably wouldn't want to memorize all the certificates for the  
+secure sites that you care about, so you might instead write some  
+notes on a piece of paper next to your computer, for example writing  
+down an SSL certificate and then next to it writing &quot;bank&quot;, and then  
+writing down another one and then next to it writing &quot;mail&quot;, and so on.
+
+Then, whenever you load a page, you would look at the SSL certificate  
+that is linked to that page and glance at your notepad to see which  
+description it maps to.  If you are looking at a random web site that  
+you've never seen before, and the certificate doesn't appear on your  
+notes, then no big deal.  If you are looking at a page that appears  
+to belong to your bank, and the certificate that came with that page  
+doesn't appear on your notes, then this is a big red flag!  Likewise,  
+if you are looking at a page that appears to belong to your bank, and  
+the certificate appears on your notes, but the note next to it  
+doesn't say &quot;bank&quot;, then this is a red flag, too!  For example, it  
+might be the certificate of your mail service, which appears on your  
+paper along with the note &quot;mail&quot;.  Or it might just be a certificate  
+that appears on your paper along with the note &quot;joke site from Harry&quot;.
+
+Note that a system which classified certificates into &quot;trusted&quot; or  
+&quot;untrusted&quot; categories might give you the green flag even when a  
+certificate that you trust to serve up good jokes is serving up  
+something that appears to be your bank account.
+
+So, the thing about writing down certificates and mapping them to  
+short hand-written notes is what the Pet Name Toolbar automates for you:
+
+<A HREF="https://addons.mozilla.org/en-US/firefox/addon/957">https://addons.mozilla.org/en-US/firefox/addon/957</A>
+
+Please let us know how it works for you.
+
+Regards,
+
+Zooko
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

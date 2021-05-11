@@ -1,0 +1,175 @@
+<PRE>
+
+Begin forwarded message:
+
+From: &quot;Yu Chen&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ychen at binghamton.edu</A>&gt;
+Date: January 21, 2008 5:40:26 PM EST
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mycolleagues at grid.lrg.ufsc.br</A>, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cistc at comsoc.org</A>
+Subject: [Mycolleagues] MUSIC'08 CFP
+
+(Apologies for multiple copies. Appreciated if you can forward to  
+potentially interested persons)
+
+============================================
+
+2008 International Workshop on Multimedia Security in Communication  
+(MUSIC'08)
+In Conjunction with ChinaCom'08
+
+Beijing, China, August 25 - 27, 2008
+
+<A HREF="http://home.simula.no/~yanzhang/MUSIC/">http://home.simula.no/~yanzhang/MUSIC/</A>
+
+================================================
+
+The rapid development of communication techniques allows us to  
+transmit more than text/binary data in real time. Due to unique  
+characteristics of multimedia content, such as large data volumes,  
+interactive operations, and requires real-time responses, the problems  
+multimedia security need to address are different from text/binary  
+data security. Furthermore, multimedia security is highly services- 
+dependable. Different services require different methods for content  
+transmission or distribution, paying, interaction, etc.
+
+This workshop aims to bring together research work covering various  
+aspects of multimedia security in emerging services. The services may  
+work in the following environment: Internet, mobile TV, IPTV, IMS,  
+VoIP, P2P, sensor network, network convergence, etc. The paper may  
+focus on architecture construction, algorithm designing or hardware  
+implementation. Both review paper and technical paper are expected.
+
+This workshop solicits papers reporting recent unpublished works in  
+the general area of multimedia security. The topics include but not  
+limited to:
+
+Security threats to multimedia content in new services
+Security model for new services
+Lightweight multimedia encryption for services
+Information hiding in multimedia content
+Multimedia forensics
+Secure multimedia adaptation
+Multimedia copy tracking
+Multimedia content authentication
+Multimedia content filtering
+Secure payment for services
+Key management/distribution
+User authentication in services
+Biometric Security
+Intrusion detection/prevention
+Network filtering
+Secure set-top box
+Secure Smart Cards
+Secure SIM card
+Secure telecom/broadcast convergence
+Secure mobile/Internet convergence
+Interoperable DRM systems
+Conditional access systems
+Security protocols or standards
+Denial-of-Service (DoS) attacks in multimedia application
+
+Submission
+=================================
+
+The submission should be done according to the guidelines on <A HREF="http://www.chinacom.org/">http://www.chinacom.org/</A> 
+. The revised or extended versions of the accepted and presented  
+papers will be published in the special issue of International Journal  
+of Security and Communication Network (SCN) <A HREF="http://www3.interscience.wiley.com/journal/114299116/home">http://www3.interscience.wiley.com/journal/114299116/home</A> 
+  or International Journal of Universal Computer Science (JUCS)  
+(pending) <A HREF="http://www.jucs.org/jucs_info/aims.">http://www.jucs.org/jucs_info/aims.</A>
+
+Important Dates
+===================================
+
+Submission deadline: March 31, 2008
+Notification date:        May 15, 2008
+Camera-ready due:     May 31, 2008
+Conference dates:      August 25-27, 2008
+
+Organizing Committee
+=====================================
+
+General Chair:      Dr. Stefanos Gritzalis
+                            University of the Aegean, Greece
+                            Email: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sgritz at aegean.gr</A>
+
+General Co-Chair: Dr. Yan Zhang
+                            Simula Research Laboratory, Norway
+                            Email: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">yanzhang at ieee.org</A>
+
+TPC Chair:           Dr. Shiguo Lian
+                            France Telecom R&amp;D Beijing Center, China
+                            Email: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">shiguo.lian at orange-ftgroup.com</A>
+
+TPC Co-Chair:     Dr. Yu Chen
+                           SUNY - Binghamton, USA
+                           Email: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ychen at binghamton.edu</A>
+
+Technical Committee
+=================================
+
+Sasan Adibi, University of Waterloo, CA
+Khalil El-Khatib, University of Ontario Institute of Technology, CA
+Jiankun Hu, RMIT University, Australia
+Yuan Dong, Beijing University of Posts and Telecommunications, China
+Ala Al-Fuqaha, Western Michigan University, USA
+Weifeng Chen, California University of Pennsylvania, USA
+El-Sayed El-Alfy, King Fahd University of Petroleum and Minerals,  
+Saudi Arabia
+Jiwu Huang, Sun Yat-Sen University, China
+Zhiquan Wang, Nanjing University of Science and Technology, China
+Giovanni Bodini, University of Rome Tor Vergata, Italy
+Noureddine BOUDRIGA, University of the 7th of November at Carthage,  
+Tunisia
+Andreas U. Schmidt, Fraunhofer-Institute for Secure Information  
+Technology (SIT), Germany
+Zhili Sun, University of Surrey, UK
+Frank Y. Shih, New Jersey Institute of Technology, USA
+Mark Stamp, San Jose State University, USA
+Xin Wang, ContentGuard, Inc., USA
+Chun-Shien Lu, Academia Sinica, Taiwan
+Peter Reiher, University of California, Los Angeles, USA
+Tarek BEJAOUI, University of Carthage, Tunisia
+Jianhong Zhang, North China University of Technology, China
+Xiamu Niu, Harbin Institute of Technology (HIT), China
+Esther Palomar, Carlos III University, Spain
+Theodore Stergiou, KPMG Advisors AE, Greece
+Paris Kitsos, Hellenic Open University (HOU), Greece
+Hsiao-Hwa Chen, National Sun Yat-Sen University, Taiwan
+Zheng Yan, Nokia Research Center, Finland
+Raouf Boutaba, University of Waterloo, Canada
+Sajal Das, University Texas at Arlington, USA
+George Kambourakis, University of the Aegean, Greece
+Tom Karygiannis, NIST, USA
+Igor Kotenko, SPIIRAS Russian Academy of Science, Russia
+Costas Lambrinoudakis, University of the Aegean, Greece
+Peter Mueller, IBM Zurich Research Lab, Switzerland
+Jong Hyuk Park, Kyungnam University, Korea
+Jianying Zhou, Institute for Infocomm Research I2R, Singapore
+Selma Boumerdassi, CNAM CEDRIC Laboratory, France
+Eric Renault, GET/INT, France
+Shuiming Ye, EPFL, Switzerland
+Benamar KADRI, University of Tlemcien, DZ, Algeria
+Zhou Su, Waseda University, Japan
+Wei-Shinn Ku, Auburn University, USA
+Javier Lopez, University of Malaga, Spain
+--
+----------------------------------------------------
+Yu Chen, Ph.D.
+Assistant Professor
+Dept. of Electrical &amp; Computer Engineering
+State University of New York - Binghamton
+Binghamton, NY 13902
+Tel: (607) 777 - 6133
+Fax:(607) 777 - 4464
+Email: ychen AT binghamton DOT edu
+URL: <A HREF="http://bingweb.binghamton.edu/~ychen/">http://bingweb.binghamton.edu/~ychen/</A>
+-------------------------------------------------------
+_______________________________________________
+Mycolleagues mailing list
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Mycolleagues at grid.lrg.ufsc.br</A>
+<A HREF="http://grid.lrg.ufsc.br/mailman/listinfo/mycolleagues">http://grid.lrg.ufsc.br/mailman/listinfo/mycolleagues</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

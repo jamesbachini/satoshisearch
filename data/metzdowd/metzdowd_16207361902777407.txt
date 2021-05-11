@@ -1,0 +1,61 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> Unfortunately I think the only way it (and a pile of other things as well) may 
+</I>&gt;<i> get stamped out is through a multi-pronged approach that includes legislation, 
+</I>&gt;<i> and specifically properly thought-out requirements rather than big-business- 
+</I>&gt;<i> bought legislation like UCITA/UCC or easily-circumvented recommendations like 
+</I>&gt;<i> the FFIEC ones (the banks quickly discovered that by redefining &quot;two-factor 
+</I>&gt;<i> auth&quot; to mean &quot;twice as much one-factor auth&quot; they could meet the requirements 
+</I>&gt;<i> without having to do anything to improve security).
+</I>
+The average cryptographic expert finds it tricky to set up something 
+that is actually secure.  The average bureaucrat could not run a pie 
+stand.  Legislation and so forth requires wise and good legislators and 
+administrators, which is unlikely.
+
+Visualize Obama, McCain, or Sarah Palin setting up your network 
+security.  Then realize that whoever they appoint as Czar in charge of 
+network security is likely to be less competent than they are.
+
+&gt;<i> 
+</I>&gt;<i> I'm saying that under the influence of &quot;Zero Day Threat&quot; by Byron Acohido and
+</I>&gt;<i> Jon Swartz, which looks at some of the financial and credit-reporting industry
+</I>&gt;<i> practices that make identity fraud possible.  If you haven't read this
+</I>&gt;<i> already, go and get it now, apart from the annoyingly frequent context-
+</I>&gt;<i> switching between threads (one every few pages instead of the more usual one
+</I>&gt;<i> per chapter) it's a very scary read.  Given what it reveals about how the US
+</I>&gt;<i> financial/credit reporting industry works it should really be subtitled &quot;We're
+</I>&gt;<i> all going to die&quot;, since there's no obvious handbrake mechanism present in the
+</I>&gt;<i> system to slow down identity theft - the rate-limiting step is the fact that
+</I>&gt;<i> the crooks simply can't use all the stolen identities they have, not any
+</I>&gt;<i> security measures that may be present.  If you don't believe me, visit any of
+</I>&gt;<i> the hits from the following search:
+</I>&gt;<i> 
+</I>&gt;<i>   <A HREF="http://www.google.com/search?q=fullz+dumps">http://www.google.com/search?q=fullz+dumps</A>
+</I>&gt;<i> 
+</I>&gt;<i> (that's the easiest way to demo the problem to the masses without requiring
+</I>&gt;<i> people to learn to read cyrillic first :-).
+</I>&gt;<i> 
+</I>&gt;<i> Yup, we're all going to die.
+</I>&gt;<i> 
+</I>&gt;&gt;<i> So that there becomes a directly attributable financial impact to the sites
+</I>&gt;&gt;<i> that deploy in that way.
+</I>&gt;<i> 
+</I>&gt;<i> The &quot;financial impact&quot; point is the key word, at the moment it's cheaper and
+</I>&gt;<i> easier for the banks/credit reporting companies to be non-compliant/insecure
+</I>&gt;<i> than it is for them to be secure.  I'm not sure that the browser is the most
+</I>&gt;<i> effective way to hit them over this though.
+</I>&gt;<i> 
+</I>&gt;<i> Discuss :-).
+</I>&gt;<i> 
+</I>&gt;<i> Peter.
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

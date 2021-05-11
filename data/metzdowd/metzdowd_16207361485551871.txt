@@ -1,0 +1,90 @@
+<PRE>* Ian G.:
+
+&gt;<i> Banks are the larger and more informed party.
+</I>
+But not as far as client-side fraudulent activity is concerned.  After
+all, the attacked systems are not under their administrative control.
+
+&gt;<i> They need to provide systems that are reasonable given the situation
+</I>&gt;<i> (anglo courts generally take this line, when pushed, I'm unsure what
+</I>&gt;<i> continental courts would do with that logic).
+</I>
+We have courts that are traditionally bank-friendly, and courts that
+aren't.  While we do not heavily rely on case law, it's a bit of luck
+which one sets the precedent (which will eventually help to shape
+legislation).
+
+And what's worse, the situation is so unstable that a case that gets
+decided in favor of one party might actually end up shifting the risks
+to the other party in the long run because the environment keeps
+changing rapidly.
+
+&gt;<i> Customers aren't in any position to dictate security requirements to
+</I>&gt;<i> banks.
+</I>
+And vice versa.
+
+It might even happen that we see competion from foreign, EU-based
+banks that offer transactions without the safeguards German banks have
+agreed to among each other.  We'll see if this increase in convenience
+turns out to be a major selling point.
+
+&gt;<i> Unfortunately for the banks, there is a vast body of evidence that
+</I>&gt;<i> we knew and they knew or should have known that the PC was insecure
+</I>&gt;<i> [1].
+</I>
+I think the extent to which end users, hardware and software
+manufacturers, and ISPs don't care about compromised machines was a
+real surprise.  If there's malware on the PC, it's not just banking
+that is affected.  You'd expect people to do something about it, but
+no one does without significant external pressure.
+
+And if you look closely at which attacks security experts predict (and
+not just self-proclaimed ones!), and which actually materialize, there
+are significant differences.  These differences are usually mulled
+over by ambiguous terminology, but the gap is there.
+
+&gt;<i> So, by fielding a system -- online commerce -- with a known
+</I>&gt;<i> weakness, they took responsibility for the fraud (from all places).
+</I>
+They didn't build the Internet, they didn't provide the PC and its
+software, they don't even run the most-frequented online commerce
+applications.  But in a moment of weakness, they started to take
+responsibility.  And the real difficulties began.
+
+For a rare security success story, look at how ISPs manage to sell a
+completely insecure product which puts their customers at significant
+risk, and take virtually no blame for it.  And technologically, banks
+are not that different from mail providers.  They just pass around
+messages.  Why should they be responsible for their content, if ISPs
+aren't?
+
+&gt;<i> Now they are in the dilemma.  The customer can't provide evidence of
+</I>&gt;<i> the fraud, because the system fielded doesn't support it (it's login
+</I>&gt;<i> authentication not transaction authorisation).
+</I>
+Non-digital crime faces the same problem.  You haven't got a
+cryptographically secured audit trail, either.  But clues can still be
+found.
+
+&gt;<i> [1] To my knowledge, continental banks knew of the risks and acted in
+</I>&gt;<i> the 90s, then scaled it down because the risks proved overstated.
+</I>&gt;<i> Brit banks knew of the risks and didn't care.  American banks didn't
+</I>&gt;<i> care.
+</I>
+The American banking system is mainly protected by its obsolescence.
+It's not an end-to-end transaction system, unlike the European ones.
+
+&gt;<i> [2] Again, continental banks are shifting to SMS authorisation
+</I>&gt;<i> (dual-channel) ... Brit banks are unsure what to do ...
+</I>
+The new APACS standard should be a huge leap forward for the UK.
+AFAIK, it includes the limited form of transaction signing that is
+possible within the constraints.  Of course, it's still not foolproof,
+but the non-fools can actually detect a compromised terminal.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

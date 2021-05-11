@@ -1,0 +1,43 @@
+<PRE>On 11 February 2008 17:37, Crawford Nathan-HMGT87 wrote:
+
+&gt;&gt;<i> EE Times: Toshiba tips random-number generator IC
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i>   SAN FRANCISCO -- Toshiba Corp. has claimed a major breakthrough in
+</I>&gt;&gt;<i>   the field of security technology: It has devised the world's
+</I>&gt;&gt;<i>   highest-performance physical random-number generator (RNG)   circuit.
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i>   The device generates random numbers at a data rate of 2.0 megabits
+</I>&gt;&gt;<i>   a second, according to Toshiba in a paper presented at the
+</I>&gt;&gt;<i>   International Solid-State Circuits Conference (ISSCC) here.
+</I>&gt;<i> 
+</I>&gt;<i> I'm wondering if they've considered the possibility of EMI skewing the
+</I>&gt;<i> operation of the device, or other means of causing the device to
+</I>&gt;<i> genearate &quot;less than completely random&quot; numbers.
+</I>
+  Not necessarily a problem, although it does depend on their design.  Even if
+by saturating the chip in an intense EM field you can skew the result almost
+all the way to 1 or 0, won't the standard debiassing trick of examining
+successive pairs of bits handle that?
+
+&gt;<i> There used to be (maybe still) a TCP spoofing exploit that relied on the
+</I>&gt;<i> timing of packets; there are also various de-anonymization attacks based
+</I>&gt;<i> on clock skew.  With a chip like this, you could add a small, random
+</I>&gt;<i> number to the timestamp, or even packet delay, and effectively thwart
+</I>&gt;<i> such attacks.  Such systems need high-bandwidth, random number
+</I>&gt;<i> generators.
+</I>
+  The original paper on the clock skew identity tracking technique suggested
+that naive randomisation doesn't help; adding a bit of randomisation just
+introduces noise into your dataset, but you can still clearly see the slope of
+the line they're clustered around.
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

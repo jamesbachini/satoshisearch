@@ -1,0 +1,45 @@
+<PRE>someone wrote:
+&gt;<i> what about RC4, the most important stream
+</I>&gt;<i> cipher in the Internet world?
+</I>
+So I cornered Adi for a while. Of course he'd thought of almost
+everything I wanted to ask.
+
+You're not the first to think of RC4 (I confess I wasn't either). No, if
+you try to express shuffling as a polynomial, its degree is off the planet.
+
+As for some of the other things I said:
+
+when you compound s-boxes, the degrees multiply. For some reason I can
+no longer explain, I thought they added. So there's good news and bad news.
+
+The good news is that my/our old designs are safe: degrees ~= 64.
+
+The bad news (if you think of it that way), Skipjack is also safe, the
+degree is 4096 (not 32), that is, 8^4 not 8*4.
+
+... and I realised I forgot to mention probably the most interesting 
+thing about
+the attack! It treats the cipher as a black box. You don't need to know
+anything about it, except access to an implementation that will accept
+variable keys for the precomputation phase. If it isn't vulnerable, the
+precomputation fails. But if it is vulnerable, you'll recover the keys
+even though you have no idea what the algorithm itself is. Somewhere
+along there you discover a distinguishing attack. Amazing.
+
+Someone else suggested Bluetooth (E0). Probably not vulnerable because
+the key scheduling is high degree, but neither Adi nor I can remember
+enough detail to be sure; the keystream generator would be vulnerable if
+the key-IV scheduling was simple enough.
+
+I'm not sure whether Adi's invited talk or Wang's rump session (breaking
+MD5, SHA-0, HAVAL, ...) is the high point of Crypto for me... I think Cube.
+
+Greg.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

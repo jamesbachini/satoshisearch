@@ -1,0 +1,18 @@
+<PRE>At 07:02 PM 2/9/2008, Peter Gutmann wrote:
+&gt;<i>I've always wondered why RNG speed is such a big deal for anything but a few
+</I>&gt;<i>highly specialised applications.  For security use you've got two options:
+</I>&gt;<i>1. Use it with standard security protocols, in which case you need all of 128
+</I>&gt;<i>    or so bits every now and then (and very rarely a few thousand bits for
+</I>&gt;<i>    asymmetric keygen).
+</I>
+One obvious application I can think of is Diffie-Hellman session key generation
+for web or email servers that handle lots of sessions.
+Sure, you _could_ use PRNGs to generate the keys, with real RNG now and then,
+but a fast RNG can help protect you against one popular threat model, which 
+is &quot;auditors&quot;.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

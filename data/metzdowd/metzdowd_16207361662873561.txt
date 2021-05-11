@@ -1,0 +1,30 @@
+<PRE>On Sat, 5 Jan 2008 15:28:50 -0800
+Stephan Somogyi &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at lt.gross.net</A>&gt; wrote:
+
+&gt;<i> At 16:38 +1300 04.01.2008, Peter Gutmann wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;At $1.40 each (at least in sub-1K quantities) you wonder whether
+</I>&gt;<i> &gt;it's costing them more to add the DRM (spread over all battery
+</I>&gt;<i> &gt;sales) than any marginal gain in preventing use of third-party
+</I>&gt;<i> &gt;batteries by a small subset of users.
+</I>&gt;<i> 
+</I>&gt;<i> I don't think I agree with the &quot;DRM for batteries&quot; characterization.
+</I>&gt;<i> It's not my data in that battery that they're preventing me from
+</I>&gt;<i> getting at.
+</I>
+Correct.  In a similar case, Lexmark sued a maker of print cartridges
+under the DMCA.  Lexmark lost in the Court of Appeals and the Supreme
+Court declined to hear the case.  See
+<A HREF="http://www.eff.org/cases/lexmark-v-static-control-case-archive">http://www.eff.org/cases/lexmark-v-static-control-case-archive</A> and
+<A HREF="http://www.scc-inc.com/SccVsLexmark/">http://www.scc-inc.com/SccVsLexmark/</A>
+
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

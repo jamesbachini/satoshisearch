@@ -1,0 +1,21 @@
+<PRE>Allen wrote:
+&gt;<i> Now take the phrase &quot;Mary had a lamb, and its fleece was as white as
+</I>&gt;<i> snow.&quot; Not counting the quotes it is 52 characters and has both upper
+</I>&gt;<i> and lower case characters, spaces and two specials or a total of 55 key
+</I>&gt;<i> space. How big would the rainbow table be to contain that? How long
+</I>&gt;<i> would it take to compute with 1,000 3 GHz CPUs?
+</I>
+You have given english sentence of 12 words as passphrase. If we count
+about 2.5bits of information per word and hash without adding salt, it
+results in about 2^30 combinations. When we divide it over botnet of
+1000 computers, each must try about 10^6 hashes. I guess you can
+calculate the rest of the anwers.
+
+-- 
+Martin Tomasek
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

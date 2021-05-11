@@ -1,0 +1,68 @@
+<PRE>On 12/13/2007 08:23 PM, Taral wrote:
+&gt;<i> On 12/12/07, John Denker &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jsd at av8n.com</A>&gt; wrote:
+</I>&gt;&gt;<i> Several important steps in the process must be carried out in
+</I>&gt;&gt;<i> secret, and if there is any leakage, there is unbounded potential
+</I>&gt;&gt;<i> for vote-buying and voter coercion.
+</I>&gt;<i> 
+</I>&gt;<i> I've done quite a bit of work with this protocol. The protocol assumes
+</I>&gt;<i> the existence of an Election Authority. The Authority has the master
+</I>&gt;<i> keys required to generate certain data sets, and these keys give the
+</I>&gt;<i> Authority the ability to associate ballot numbers with votes. Note
+</I>&gt;<i> that this doesn't necessarily give the Authority the ability to
+</I>&gt;<i> associate people with votes.
+</I>&gt;<i> 
+</I>&gt;<i> There are no per-ballot keys, so there is no partial exposure risk.
+</I>&gt;<i> It's all-or-nothing.
+</I>&gt;<i> 
+</I>&gt;&gt;<i> 1) It would be nice to see some serious cryptological protection
+</I>&gt;&gt;<i> of election processes and results.
+</I>&gt;<i> 
+</I>&gt;&gt;<i> 2b) In particular I don't think PunchScan really solves &quot;the&quot;
+</I>&gt;&gt;<i> whole problem.
+</I>&gt;<i> 
+</I>&gt;<i> What is &quot;the&quot; whole problem? Please provide an attack model.
+</I>
+Well, that's the right question.  That's the sort of question
+the punchscan team should be asking themselves, and answering
+in more detail that I have heretofore seen.  What threats does
+punchscan claim to defend against?  What threats does it leave
+to be mitigated by other (non-punchscan) means?
+
+As an example: Let's look at the plant where the ballots are
+printed.  Suppose somebody attaches a tiny &quot;spy camera&quot; to
+the frame of one of the printing presses, so as to obtain an
+image of both parts of the two-part ballot (for some subset
+of the ballots).
+
+Obviously anybody who gets this information can defeat all the
+cryptologic protections that the protocol is supposed to provide
+(for that subset of the ballots).
+
+  Note that the spy camera can be hiding in plain sight, in
+  the guise of a &quot;security camera&quot;.  Many election-related
+  facilities are /required/ to have security cameras.
+
+  There's a difference between mathematical cryptology and real-
+  world security.
+
+&gt;<i> There are no per-ballot keys, so there is no partial exposure risk.
+</I>&gt;<i> It's all-or-nothing.
+</I>
+It's bad luck to prove things that aren't true.  I just gave an
+example of a &quot;partial exposure risk&quot;, since some of the ballots
+were seen by the spy camera and some weren't.
+
+&gt;<i> The protocol assumes
+</I>&gt;<i> the existence of an Election Authority. 
+</I>
+Ah yes, but what is being assumed about the /properties/ of
+this Election Authority?  Is the EA omnipresent and omnipotent,
+like the FSM, or does it have boundaries and limitations?
+For example, does it ever need to rely on employees or
+subcontractors?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

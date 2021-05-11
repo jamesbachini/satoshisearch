@@ -1,0 +1,23 @@
+<PRE>Arshad Noor wrote on 30 April 2008 20:36:
+
+&gt;<i> It can be &quot;ordered to decrypt system passwords&quot;???  So, I wonder
+</I>&gt;<i> what attackers can do with this...
+</I>
+  They can run pwdump, lsadump, samdump, dump the pstore, snarf the SAM, all
+that kind of stuff that is completely routine and everyday.
+
+  See here for a very similar device that's a couple of years old:
+<A HREF="http://wiki.hak5.org/wiki/USB_Switchblade">http://wiki.hak5.org/wiki/USB_Switchblade</A>
+
+  Honestly, this is nothing extraordinary or even new.
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

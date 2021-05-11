@@ -1,0 +1,11 @@
+<PRE>Saqib Ali wrote:
+&gt;<i> <A HREF="http://www.freepatentauction.com/patent.php?nb=950">http://www.freepatentauction.com/patent.php?nb=950</A>
+</I>
+googlepatent gives me:
+<A HREF="http://www.google.com/patents?id=HaN6AAAAEBAJ&amp;dq=7,088,821">http://www.google.com/patents?id=HaN6AAAAEBAJ&amp;dq=7,088,821</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

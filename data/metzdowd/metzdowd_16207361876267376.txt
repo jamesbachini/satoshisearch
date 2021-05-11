@@ -1,0 +1,42 @@
+<PRE>
+&quot;Ben Laurie&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">benl at google.com</A>&gt; writes:
+&gt;&gt;<i> It's easy to compute all the public keys that will be generated
+</I>&gt;&gt;<i> by the broken PRNG. The clients could embed that list and refuse
+</I>&gt;&gt;<i> to accept any certificate containing one of them. So, this
+</I>&gt;&gt;<i> is distinct from CRLs in that it doesn't require knowing
+</I>&gt;&gt;<i> which servers have which cert...
+</I>&gt;<i>
+</I>&gt;<i> It also only fixes this single type of key compromise. Surely it is
+</I>&gt;<i> time to stop ignoring CRLs before something more serious goes wrong?
+</I>
+The problem is, the CRL mechanism itself is also dangerous.  Sadly,
+clients are required to keep on going if they can't reach a CRL
+server. That means that if you DoSing the CRL servers or use DNS
+attacks to effectively take them offline, you've also effectively
+eliminated the certificate revocation.
+
+I'm not going to tell you that paying attention to CRLs wouldn't be
+better than what happens now, but it will not eliminate the
+problem. It is too hard to &quot;prove a negative&quot; (that is, to prove to
+yourself that no revocation exists.)
+
+The kerberos style of having credentials expire very quickly is one
+(somewhat less imperfect) way to deal with such things, but it is far
+from perfect and it could not be done for the ad-hoc certificate
+system https: depends on -- the infrastructure for refreshing all the
+world's certs every eight hours doesn't exist, and if it did imagine
+the chaos if it failed for a major CA one fine morning.
+
+One also worries about what will happen in the UI when a certificate
+has been revoked. If it just says &quot;this cert has been revoked,
+continue anyway?&quot; the wrong thing will almost always happen.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

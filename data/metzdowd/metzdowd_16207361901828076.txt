@@ -1,0 +1,47 @@
+<PRE>On Tue, 2008-09-23 at 00:09 -0700, Jon Callas wrote:
+&gt;<i> &gt;&gt; A cheap USB camera would make a good source.
+</I>&gt;<i> &gt;&gt; The cheaper the better, too. Pull a frame off,
+</I>&gt;<i> &gt;&gt; hash it, and it's got entropy, even against a
+</I>&gt;<i> &gt;&gt; white background. No lava lamp needed.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; I sort of agree, but I feel cautious about recommending that people
+</I>&gt;<i> &gt; use their holiday snaps.  And then post them on line...  if you see
+</I>&gt;<i> &gt; where I am going :)
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; But it is a good suggestion.
+</I>&gt;<i> 
+</I>&gt;<i> That's not at all what I suggested. There are so many ways that one  
+</I>&gt;<i> can creatively screw up reasonable cryptographic advice that I don't  
+</I>&gt;<i> think it's worth bothering with.
+</I>&gt;<i> 
+</I>&gt;<i> The point is that if you take a cheap 640x480 (or 320x240) webcam and  
+</I>&gt;<i> point it against a photographic grey card, there's going to be a lot  
+</I>&gt;<i> of noise in it, and this noise is at its bottom quantum in nature.  
+</I>&gt;<i> Thus, there's a lot of entropy in that noise. Photographic engineers  
+</I>&gt;<i> work *hard* to remove that noise, and you pay for a lack of noise.
+</I>&gt;<i> 
+</I>&gt;<i> I'm willing to bet that if I give you hashes of frames, knowing this  
+</I>&gt;<i> process, you can't get pre-images. I'll bet that you can't get pre- 
+</I>&gt;<i> images even if I let you put a similar camera next to the one I'm  
+</I>&gt;<i> using. In short, I'm willing to bet that a cheap camera is a decent  
+</I>&gt;<i> random number source, even if you try to control the image source, to  
+</I>&gt;<i> the tune of 128-256 bits of entropy per frame.
+</I>&gt;<i> 
+</I>&gt;<i> No lava lamps are needed, no weird hardware. Just use the noise in a  
+</I>&gt;<i> CCD.
+</I>
+Another option would be to use noise.  If you have a webcam, you also
+have some sort of sound input usually.  Crappy microphones will give you
+all sorts of hashable input.  (My non-webcam enabled laptop has two tiny
+microphones above the screen.  It would be good to put them to some
+use...)  And is it every truly quiet?  Not certain how long of a sample
+you would need.  I suspect not that long.
+
+&quot;To generate a random seed, please scream at your computer for 30
+seconds.&quot;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

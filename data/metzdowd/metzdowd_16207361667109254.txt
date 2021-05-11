@@ -1,0 +1,22 @@
+<PRE>On 07 January 2008 17:14, Leichter, Jerry wrote:
+
+&gt;<i> Reported on Computerworld recently:  To &quot;improve security&quot;, a system
+</I>&gt;<i> was modified to ask one of a set of fixed-form questions after the
+</I>&gt;<i> password was entered.  Users had to provide the answers up front to
+</I>&gt;<i> enroll.  One question:  Mother's maiden name.  User provides the
+</I>&gt;<i> 4-character answer.  System refuses to accept it:  Answer must have
+</I>&gt;<i> at least 6 characters.
+</I>
+  See also &quot;Favorite Color (RED is not a valid option)&quot; at
+<A HREF="http://thedailywtf.com/Articles/Banking-So-Advanced.aspx">http://thedailywtf.com/Articles/Banking-So-Advanced.aspx</A>
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

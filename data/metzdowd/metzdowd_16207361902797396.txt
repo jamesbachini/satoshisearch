@@ -1,0 +1,23 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A> (Perry E. Metzger) on Wednesday, September 24, 2008 wrote:
+
+&gt;<i>there are clearly people we do not allow to cross
+</I>&gt;<i>the street on their own (young children, some mentally ill people,
+</I>&gt;<i>etc), so there is perhaps a class of people who should not be allowed
+</I>&gt;<i>to do unsupervised banking on the basis that they cannot be trusted to
+</I>&gt;<i>protect themselves adequately.
+</I>
+My 96 year old mother does not have a check book or credit cards.
+All her bills are paid through her lawyer's office. QED.
+
+Cheers - Bill
+
+-----------------------------------------------------------------------
+Bill Frantz        | gets() remains as a monument | Periwinkle
+(408)356-8506      | to C's continuing support of | 16345 Englewood Ave
+www.pwpconsult.com | buffer overruns.             | Los Gatos, CA 95032
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

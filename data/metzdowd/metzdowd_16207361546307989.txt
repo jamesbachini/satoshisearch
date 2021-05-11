@@ -1,0 +1,93 @@
+<PRE>Aloha!
+
+Leichter, Jerry skrev:
+&gt;<i> So presumably the model is:  Put each manufactured chip into a testing
+</I>&gt;<i> device that repeatedly power cycles it and reads all of memory.  By
+</I>&gt;<i> simply comparing values on multiple cycles, it assigns locations to
+</I>&gt;<i> Class 1 or 2 (or 3, if you like).  Once you've done this enough to have
+</I>&gt;<i> reasonable confidence in your assignments, you pick a bunch of Class 1
+</I>&gt;<i> locations and use them for the id; and a bunch of Class 2 locations and
+</I>&gt;<i> call them the entropy source.  You burn the chosen locations into ROM on
+</I>&gt;<i> the chip.  At power up, the chip checks the ROM, and constructs an ID
+</I>&gt;<i> from the list of Class 1 locations and a random value from the list of
+</I>&gt;<i> Class 2 locations.  (Obviously, you want to be a bit more clever - e.g.,
+</I>&gt;<i> if all your Class 1 locations hold the same value on every power up,
+</I>&gt;<i> something is wrong with your assumptions and you reject the chip rather
+</I>&gt;<i> than using an ID of all 0's or all 1's.  The paper is asserting that
+</I>&gt;<i> this won't happen often enough to matter.)
+</I>
+Yes, that is one way to do it - but its not the way they do it in the 
+paper. Doing it your way, that is writing the bit locations for the ID 
+and RNG sources into an index mem on chip, goes against the purpose of 
+the presented scheme. As they write in the paper:
+
+&lt;quote&gt;
+The non-volatile approach involves programming an identity into a tag at 
+the time of manufacture using EPROM, EEPROM, flash, fuse, or more exotic 
+strategies. While non-volatile identities are static and fully reliable, 
+they have drawbacks in terms of the process cost and the area cost of 
+supporting circuitry. Even if only a small amount of non-volatile 
+storage is used, the process cost must be paid across the entire chip area.
+&lt;/quote&gt;
+
+One could also argue that if you add the functionality (the non volatile 
+storage) and take the post-production time (and cost) to write down the 
+locations, you could just as well write down a normal ID. (You have the 
+same conclusion futher down in your mail.)
+
+If you do it the way they do it in the paper - communicate the SRAM mem 
+state to an extrnal source to have your ID extracted for you - doesn't 
+that change the ID and authentication protocol?
+
+
+&gt;<i> This is only done during manufacturing.  Presumably it would be
+</I>&gt;<i> integrated into the testing process, which you're doing anyway.
+</I>
+Nope, again the paper is (pretty) clear that the external reader 
+receives the mem dump and then extracts the ID fingerprint using hamming 
+distance to match the mem dump with a DB of known IDs. This also means 
+that your Class 2 bits (the RNG sources) will be communicated, something 
+that I see as a security problem.
+
+Finally. I have been in contact with the authors regarding their view on 
+rememanence problemns and they simply wait &quot;long enough&quot; to allow 
+remanence effects to be nullified.
+
+But as I see it the device have no way of knowing that &quot;long enough&quot; 
+time have passed. And if it hasn't, communicating the SRAM state might 
+lead to appication information leakage. Correct?
+
+&gt;<i> The unique ID stuff is clever, but it's not clear how much it gains
+</I>&gt;<i> you:  Since you need to do some final per-device programming anyway to
+</I>&gt;<i> identify the locations to be used for the ID, why not just burn in a
+</I>&gt;<i> unique ID?
+</I>
+Exactly.
+
+&gt;<i>  The random generator is clever, but the question is whether
+</I>&gt;<i> &quot;produces an unpredictable result&quot; is really a stable characteristic
+</I>&gt;<i> of memory.
+</I>
+As Peter Gutmann stated earlier in this thread: &quot;RAM state is entropy 
+chicken soup, you may as well use it because it can't make things any 
+worse, but I wouldn't trust it as the sole source of entropy.&quot;
+
+Device aging, changes is the manufacturing process, electrical and 
+environmental changes (accidental or deliberately) will all affect the 
+RNG, and there is no easy way for the (low cost) device to know how good 
+or bad quality of the RNG is.
+
+-- 
+Med v&#228;nlig h&#228;lsning, Yours
+
+Joachim Str&#246;mbergson - Alltid i harmonisk sv&#228;ngning.
+========================================================================
+Kryptoblog - IT-s&#228;kerhet p&#229; svenska
+<A HREF="http://www.strombergson.com/kryptoblog">http://www.strombergson.com/kryptoblog</A>
+========================================================================
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

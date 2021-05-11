@@ -1,0 +1,70 @@
+<PRE>On Tue, May 27, 2008 at 12:29:11PM -0600, Chad Perrin wrote:
+&gt;<i> My understanding of the situation is that the way you get secure
+</I>&gt;<i> use of a PRNG is by feeding it &quot;real&quot; entropy,
+</I>[...]
+&gt;<i> the reason /dev/random is cryptographically secure is that it
+</I>&gt;<i> *does* require &quot;real&quot; entropy, which of course means that it slows
+</I>&gt;<i> down a lot when you run out of &quot;real&quot; entropy in the pool.
+</I>[...]
+
+This statement seems a little confused. If you 'man 4 random' on a
+Linux system, you will see:
+
+   The random number generator gathers environmental noise from
+   device drivers and other sources into an entropy pool. The
+   generator also keeps an estimate of the number of bits of noise
+   in the entropy pool. From this entropy pool random numbers are
+   created. When read, the /dev/random device will only return
+   random bytes within the estimated number of bits of noise in the
+   entropy pool. /dev/random should be suitable for uses that need
+   very high quality randomness such as one-time pad or key
+   generation. When the entropy pool is empty, reads from
+   /dev/random will block until additional environmental noise is
+   gathered.
+
+So /dev/random on Linux isn't so much a PRNG seeded by entropy, as a
+direct means of pulling (hashed) entropy directly out of the pool.
+For each byte of /dev/random you read, the entropy pool is depleted
+by the same amount. When there are no estimated bits of entropy
+remaining, further reads are blocked until new entropy is available
+(it doesn't just &quot;slow down a lot&quot;). Since /dev/random use depletes
+the pool directly, it is imperative that wasteful reads of this
+pseudo-device be avoided at all costs. By contrast, /dev/urandom
+*is* a PRNG (optionally) seeded by available entropy. If its seed
+value is known, output sequence can be determined until it gets
+re-seeded.
+
+&gt;<i> An additional entropy pool would need more places to *get*
+</I>&gt;<i> entropy, of course.
+</I>
+For the sake of this discussion, &quot;the entropy pool&quot; should be
+defined as a pool of all entropy sources available to the system.
+Thus, the idea of &quot;an additional entropy pool&quot; wouldn't make any
+sense, though &quot;additional sources of entropy feeding/mixed into the
+entropy pool&quot; might be what you were getting at (such as a hardware
+RNG chip, webcam pointed at a few lava lamps, microphone aimed at
+the nearest freeway, et cetera).
+
+&gt;<i> Essentially, giving the characteristics of cryptographically
+</I>&gt;<i> useful randomness and perfect forward secrecy to /dev/urandom
+</I>&gt;<i> would ultimately mean you turned it into a duplicate of
+</I>&gt;<i> /dev/random.
+</I>[...]
+
+Well, /dev/urandom (on Linux) represents a PRNG while /dev/random
+does not. I suppose if you read from /dev/urandom byte-at-a-time and
+reseed it with a byte from /dev/random between each read, it will
+essentially be (deterministically because you know how to predict
+the mapping between seed and sequence number n) a duplicate of
+/dev/random, but this argument is superfluous.
+-- 
+{ IRL(Jeremy_Stanley); PGP(9E8DFF2E4F5995F8FEADDC5829ABF7441FB84657);
+SMTP(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>); IRC(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at irc.yuggoth.org</A>#ccl); ICQ(114362511);
+AIM(dreadazathoth); YAHOO(crawlingchaoslabs); FINGER(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>);
+MUD(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at katarsis.mudpy.org</A>:6669); WWW(<A HREF="http://fungi.yuggoth.org/">http://fungi.yuggoth.org/</A>); }
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

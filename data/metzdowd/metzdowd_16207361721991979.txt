@@ -1,0 +1,19 @@
+<PRE>On Tue, Mar 18, 2008 at 09:46:45AM -0700, Jon Callas wrote:
+
+&gt;<i> What operates like a block cipher on a large chunk?
+</I>&gt;<i> Tweakable modes like EME.
+</I>
+Or as a non-patented alternative one could use the Bear/Lion
+constructions [1], which can encrypt arbitrary size blocks at
+reasonably good speeds (depending on the performance characteristics
+of the stream cipher and hash function they are instantiated with).
+
+-Jack
+
+[1] <A HREF="http://www.cl.cam.ac.uk/~rja14/Papers/bear-lion.pdf">http://www.cl.cam.ac.uk/~rja14/Papers/bear-lion.pdf</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

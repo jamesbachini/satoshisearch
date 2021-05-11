@@ -1,0 +1,57 @@
+<PRE>
+Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; writes:
+&gt;<i> I find it odd that the responses all seem to focus on pure brute force
+</I>&gt;<i> when I did mention three other factors that might be in play: a defect
+</I>&gt;<i> in the algorithm much like the attack on MD5 which reduces it to an
+</I>&gt;<i> effective length of about 80 bits, if I recall correctly, and/or a
+</I>&gt;<i> different analytical tool/approach much like differential analysis has
+</I>&gt;<i> had an affect on cryptanalysis as a whole, and a purpose built
+</I>&gt;<i> machine.
+</I>
+I think everyone replying mentioned that possibility.
+
+However, if your message really was centered on AES possibly being
+defective, which was not obvious from the text, your calculation was
+even more inaccurate. If AES is defective, all bets whatsoever are off
+-- it is possible one might be able to break an arbitrary defective
+algorithm even faster than, say, A5/1. Making up numbers about how
+fast a crack &quot;might&quot; be is even less justified than speculation on how
+fast computers will be in 100 years. The crack &quot;might&quot; take order
+microseconds. The crack &quot;might&quot; never come at all.
+
+The way to (effectively) worry about AES being defective is to look
+for defects. We are all adults and know there may be defects and that
+we merely don't know of any defects so far.
+
+&gt;<i> I see the argument as much like the way the Titanic was built.
+</I>
+Again, I think most people around here really do understand the issues
+fairly well. We all know that AES &quot;might&quot; be defective, and many
+people spend time worrying about issues like algorithm
+agility. (Several of our list members had lots of work to do when MD5
+started looking weak and have long memories.)
+
+&gt;<i> Given all of this, I'm not sure of the value of arguing 128 bit is
+</I>&gt;<i> good enough when 256 is not all that much harder to implement and with
+</I>&gt;<i> in a couple of years will be just as fast in processing while even
+</I>&gt;<i> now, for the size of files being protected, such as credit card data
+</I>&gt;<i> and such, is small enough that the wait time probably wouldn't be
+</I>&gt;<i> noticed in network latency.
+</I>
+There are a variety of issues. Smart cards have limited capacity. Many
+key agreement protocols yield only limited amounts of key
+material. I'll leave it to others to describe why a rational engineer
+might use fewer key bits, but suffice it to say, there are quite
+rational reasons. I'll agree that if you have no tradeoffs, you might
+as well use longer keys, but if you really have no tradeoffs, you
+would prefer to use a one time pad, too. All real engineering is about
+tradeoffs.
+
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

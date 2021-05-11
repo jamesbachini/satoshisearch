@@ -1,0 +1,42 @@
+<PRE>
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> No. It really does not. Shannon's tenth theorem is about correcting
+</I>&gt;&gt;<i> lossy channels with statistically random noise. This is about making
+</I>&gt;&gt;<i> sure something bad doesn't happen to your computer like having someone
+</I>&gt;&gt;<i> transmit blocks of your hard drive out on the network. I assure you
+</I>&gt;&gt;<i> that Shannon's theorem doesn't speak about that possibility. 
+</I>&gt;<i>
+</I>&gt;<i> Yet, Shannons' tenth theorem can be proven without a hypothesis that
+</I>&gt;<i> noise is random, or that the signal is anything in particular.
+</I>
+Not quite. If I inject noise into a channel in the right way, I can
+completely eradicate the signal. For example, I can inject a different
+signal of exactly opposite phase.
+
+However, in any case, this doesn't matter. We're not talking about
+receiving a signal without errors at all. We're talking about assuring
+that your microprocessor possesses no features such that it does
+something evil, and that something can be completely in addition to
+doing the things that you expect it to do, which it might continue to
+do without pause.
+
+Lets be completely concrete here. Nothing you have suggested would
+work against the described attack in the paper AT ALL. You cannot find
+&quot;evil chips&quot; with statistical sampling because you don't know what to
+look for, and you can't detect them by running them part of the time
+against good chips because they only behave evilly once in a blue moon
+when the attacker chooses to have them behave that way. Indeed, I
+don't even see how someone who had read the paper could suggest what
+you have -- it makes no sense in context.
+
+And with that, I'm cutting off this branch of the conversation.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

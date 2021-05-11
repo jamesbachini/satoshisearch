@@ -1,0 +1,32 @@
+<PRE>On Sun, Sep 02, 2007 at 06:26:33PM -0400, Vin McLellan wrote:
+&gt;<i> At 12:40 PM 9/2/2007, Paul Walker wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;I didn't realise the current SecurID tokens had been broken. A quick Google
+</I>&gt;<i> &gt;doesn't show anything, but I'm probably using the wrong terms. Do you have
+</I>&gt;<i> &gt;references for this that I could have a look at?
+</I>&gt;<i> 
+</I>&gt;<i> I'd also be interested in any evidence that the SecurID has been cracked.
+</I>&gt;<i> 
+</I>&gt;<i> Any credible report would have the immediate attention of tens of 
+</I>&gt;<i> thousands of RSA installations. Not to speak of EMC/RSA. itself, for 
+</I>&gt;<i> which I have been a consultant for many years.
+</I>
+That's right, you have.  As I recall, the last time you posted here was
+when you tried to defend RSA's decision to sell no-human-interaction
+tokens.  At that time, I asked you whether you were posting for yourself
+or whether someone at RSA had asked you to post here, and you declined
+to respond.
+
+I think it's important that we know, when flaws in commercial
+cryptographic products are being discussed, what the interests of the
+parties to the discussion are.  So, I'll ask again, as I did last time:
+when you post here, both in this instance and in past instances, is it
+at your own behest, or that of RSA?
+
+Thor
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

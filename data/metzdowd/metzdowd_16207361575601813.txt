@@ -1,0 +1,32 @@
+<PRE>On Mon, May 21, 2007 at 01:44:23PM +1200, Peter Gutmann wrote:
+&gt;<i> &gt;Ignoring special-purpose hardware, does anyone have thoughts on what the
+</I>&gt;<i> &gt;requirements for a kernel-level key management subsystem should be?
+</I>&gt;<i> 
+</I>&gt;<i> Yes, but first you'd have to tell me what you're trying to do.
+</I>
+Protect keys in kernel land rather than userland.
+
+Allows for things like e.g.
+1) marking memory unpageable (avoiding swap hazard)
+2) relocating the data to different physical pages to prevent
+   burn-in
+3) secure wiping
+4) providing a common system for storing and protecting them
+   rather than doing it in each individual application
+5) allowing for them to be shared securely among processes (like
+   ssh-agent and gpg-agent)
+6) provide protection against userland snooping
+   programs (gdb anyone?)
+etc.
+
+-- 
+&lt;URL:<A HREF="http://www.subspacefield.org/~travis/">http://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071008/a546820b/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071008/a546820b/attachment.pgp</A>&gt;
+</PRE>

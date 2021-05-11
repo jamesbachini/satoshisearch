@@ -1,0 +1,25 @@
+<PRE>
+I was shocked that several people posted in response to Peter
+Gutmann's note about Wachovia, asking (I paraphrase):
+
+&quot;What is the problem here? Wachovia's front page is only http
+protected, but the login information is posted with https! Surely this
+is just fine, isn't it?&quot;
+
+I'm not going to explain why this is wrong. It should be obvious. If
+it isn't obvious to you, you should try thinking like an attacker for
+a few moments. If it still isn't obvious to you why this is very bad,
+read the list archives.
+
+(I won't be forwarding followups to this unless they are unusually
+interesting.)
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

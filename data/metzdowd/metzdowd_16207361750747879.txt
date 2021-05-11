@@ -1,0 +1,35 @@
+<PRE>Perry E. Metzger &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+
+&gt;<i>  Now, it is entirely possible that someone will come up with a much
+</I>&gt;<i>  smarter attack against AES than brute force. I'm just speaking of how
+</I>&gt;<i>  bad brute force is. The fact that brute force is so bad is why people
+</I>&gt;<i>  go for better attacks, and even the A5/1 attackers do not use brute
+</I>&gt;<i>  force.
+</I>&gt;<i>
+</I>&gt;<i>  I'd suggest that Allen should be a bit more careful when doing back of
+</I>&gt;<i>  the envelope calculations...
+</I>
+Another back-of-the-envelope estimate would be to look at the EFF
+machine that could brute force s 56-bit DES key in a few days and
+cost $200-odd thousand. That was 10 years ago and Moore's Law
+applies, so it should be about 100 times faster or cheaper now.
+
+Round numbers are nice. Overestimating the attacker a bit is
+better than underestimating. So assume an attacker can brute
+force a a 64-bit key (256 times harder than DES) in a second
+(a few 100 thousand times faster).
+
+Brute force against a 96-bit key should take 2^32 times as long.
+Since pi seconds is a nano-century, that's somewhat over a
+century. For a 128-bit key, over 2^32 centuries. If brute force
+is the best attack, this is obviously secure.
+
+-- 
+Sandy Harris,
+Nanjing, China
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

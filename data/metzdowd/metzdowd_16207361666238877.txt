@@ -1,0 +1,25 @@
+<PRE>On Fri, Jan 04, 2008 at 04:38:07PM +1300, Peter Gutmann wrote:
+&gt;<i>At $1.40 each (at least in sub-1K quantities) you wonder whether it's costing
+</I>&gt;<i>them more to add the DRM (spread over all battery sales) than any marginal
+</I>&gt;<i>gain in preventing use of third-party batteries by a small subset of users.
+</I>
+The calculus here has little to do with unit profit margins.  It has
+everything to do with mitigating product liability suits, recalls,
+and bad press.  (You won't read a report of &quot;Chiwonkistan Knock-off
+Battery Destroys WidgetCo Laptop&quot;.  You'll read the report &quot;WidgetCo
+Laptop Catches Fire.&quot;)
+
+It is an industry still reeling from a hit of many megabux in a
+recall of perfectly good batteries.  I suspect that kind of insurance
+is, in their minds, a small price to pay.
+
+-- 
+. ___ ___  .   .  ___
+.  \    /  |\  |\ \
+.  _\_ /__ |-\ |-\ \__
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

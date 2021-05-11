@@ -1,0 +1,68 @@
+<PRE>On Wed, 6 Aug 2008, Peter Saint-Andre wrote:
+|<i> Wells Fargo is requiring their online banking customers to provide
+</I>|<i> answers to security questions such as these:
+</I>|<i> 
+</I>|<i> ***
+</I>|<i> 
+</I>|<i> What is name of the hospital in which your first child was born?
+</I>|<i> What is your mother's birthday? (MMDD)
+</I>|<i> What is the first name of your first roommate in college?
+</I>|<i> What is the name of the first street you lived on as a child?
+</I>|<i> What year did you start junior high/middle school? (YYYY)
+</I>|<i> What is your oldest sibling's nickname?
+</I>|<i> What is your dream occupation?
+</I>|<i> What is your spouse's nickname?
+</I>|<i> In what city was your father born?
+</I>|<i> What is the name of the high school you attended?
+</I>|<i> What is your best friend's first name?
+</I>|<i> What is the name of the junior high/middle school you attended?
+</I>|<i> What is the first name of your maternal grandfather (mother's father)?
+</I>|<i> What is the name of your favorite childhood superhero?
+</I>|<i> In what city did you meet your spouse?
+</I>|<i> In what city did your parents meet?
+</I>|<i> In what city did you attend high school?
+</I>|<i> What is name of the hospital in which you were born?
+</I>|<i> What is the last name of your favorite teacher?
+</I>|<i> In what city was your maternal grandmother (mother's mother) born?
+</I>|<i> What was your most memorable gift as a child?
+</I>|<i> 
+</I>|<i> ***
+</I>|<i> 
+</I>|<i> It strikes me that the answers to many of these questions might be
+</I>|<i> public information or subject to social engineering attacks...
+</I>These kinds of questions used to bother me.  Then I realized that
+*I could lie*.  As long as *I* remember that I answer &quot;What is your
+mother's maiden name&quot; with &quot;xyzzy&quot;, the site and I can be happy.
+
+Well ... happier, anyway.  The only way to remain sane if you take
+this approach is to use the same answer at every site that asks
+these security questions.  But that's not good, especially since
+most of these sites appear to make the *actual value you specified*
+available to their call centers.  This is nice if you can't remember
+the exact capitalization you used, but it does, of course, leak more
+information that you'd rather have out there readily accessible.
+
+For Web sites these days, I generate random strong passwords and keep
+them on a keychain on my Mac.  Actually, the keychain gets synchronized
+automatically across all my Mac's using .mac/MobileMe (for all their
+flaws).  When I do this, I enter random values that I don't even
+record for the security questions.  Should something go wrong, I'm
+going to end up on the phone with a rep anyway, and they will have
+some other method for authenticating me (or, of course, a clever
+social-engineering attacker).
+
+The only alternative I've seen to this whole approach is sold by
+RSA (owned by EMC; I have nothing to do with the product, but will
+note my association with the companies) which authenticates based on
+real-world data.  For example, you might be asked where you got
+coffee this morning if your credit card shows such a charge.  This
+approach is apparently quite effective if used correctly - though
+it does feel pretty creepy.  (They were watching me buy coffee?)
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

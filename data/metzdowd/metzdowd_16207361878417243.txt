@@ -1,0 +1,35 @@
+<PRE>At Fri, 8 Aug 2008 17:31:15 +0100,
+Dave Korn wrote:
+&gt;<i> 
+</I>&gt;<i> Eric Rescorla wrote on 08 August 2008 16:06:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; At Fri, 8 Aug 2008 11:50:59 +0100,
+</I>&gt;<i> &gt; Ben Laurie wrote:
+</I>&gt;<i> &gt;&gt; However, since the CRLs will almost certainly not be checked, this
+</I>&gt;<i> &gt;&gt; means the site will still be vulnerable to attack for the lifetime of
+</I>&gt;<i> &gt;&gt; the certificate (and perhaps beyond, depending on user
+</I>&gt;<i> &gt;&gt; behaviour). Note that shutting down the site DOES NOT prevent the attack.
+</I>&gt;<i> &gt;&gt; 
+</I>&gt;<i> &gt;&gt; Therefore mitigation falls to other parties.
+</I>&gt;<i> &gt;&gt; 
+</I>&gt;<i> &gt;&gt; 1. Browsers must check CRLs by default.
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; Isn't this a good argument for blacklisting the keys on the client
+</I>&gt;<i> &gt; side?
+</I>&gt;<i> 
+</I>&gt;<i>   Isn't that exactly what &quot;Browsers must check CRLs&quot; means in this context
+</I>&gt;<i> anyway?  What alternative client-side blacklisting mechanism do you suggest?
+</I>
+It's easy to compute all the public keys that will be generated
+by the broken PRNG. The clients could embed that list and refuse
+to accept any certificate containing one of them. So, this
+is distinct from CRLs in that it doesn't require knowing 
+which servers have which cert...
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

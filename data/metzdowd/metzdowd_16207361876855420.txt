@@ -1,0 +1,30 @@
+<PRE>Cat Okita wrote:
+&gt;<i> ... or in other words, EKMI leaves all of the hard/impossible problems
+</I>&gt;<i> to be solved by somebody else.  I'd have to agree with Ben that I'm
+</I>&gt;<i> not seeing the value add of an additional layer of complexity.
+</I>
+I view EKMI as using the best tools the cryptographic community has to
+offer to solve specific business problems.  As I stated in an earlier
+e-mail, one man's meat is another man's poison.  What you see as
+additional layer of complexity is viewed as a layer of simplification
+by some people - no different from how one might view a self-starter
+in an automobile, as a layer of complexity over a crank-starter.
+
+  &gt; That's an interesting presumption that you're making -- are you familiar
+&gt;<i> with your audience?
+</I>&gt;<i> 
+</I>
+To the extent that anyone can claim familiarity with something as
+fickle and temporal as the needs of an audience, I believe I do (for
+the moment).  I recognize that I cannot please everyone in any
+audience, and must therefore, do/say what what I believe is right for
+my customers.  Only time will tell if I got it right - temporarily.
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

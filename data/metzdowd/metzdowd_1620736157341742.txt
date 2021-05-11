@@ -1,0 +1,43 @@
+<PRE>This might work, although 90% of the steps seem to unnecessarily (and  
+perilously) complicate the algorithm.  What's wrong with starting  
+with input SALT || PASSWORD and iterating N times, where N is chosen  
+(but variable) to make brute-force attacks take longer?  It seems  
+like the designers are trying to specify a cryptographic hash  
+algorithm...where they make black box calls to SHA-256 or SHA-512.   
+It's much simpler to just let SHA-256 and SHA-512 do the work.
+
+Adding a requirement that the salt be 128 bits (or more) would  
+improve the security against brute-force attacks more than any of the  
+other (convoluted) parts of the algorithm.  I suppose one could argue  
+that 8 ASCII characters for the salt is relatively secure today, but  
+what about in 20 years?
+
+Martin
+
+On Oct 11, 2007, at 11:49 PM, james hughes wrote:
+
+&gt;<i> I forgot to add the links...
+</I>&gt;<i> 	<A HREF="http://people.redhat.com/drepper/sha-crypt.html">http://people.redhat.com/drepper/sha-crypt.html</A>
+</I>&gt;<i> 	<A HREF="http://people.redhat.com/drepper/SHA-crypt.txt">http://people.redhat.com/drepper/SHA-crypt.txt</A>
+</I>&gt;<i>
+</I>&gt;<i> On Oct 11, 2007, at 10:19 PM, james hughes wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> A proposal for a new password hashing based on SHA-256 or SHA-512  
+</I>&gt;&gt;<i> has been proposed by RedHat but to my knowledge has not had any  
+</I>&gt;&gt;<i> rigorous analysis. The motivation for this is to replace MD-5  
+</I>&gt;&gt;<i> based password hashing at banks where MD-5 is on the list of &quot;do  
+</I>&gt;&gt;<i> not use&quot; algorithms. I would prefer not to have the discussion  
+</I>&gt;&gt;<i> &quot;MD-5 is good enough for this algorithm&quot; since it is not an  
+</I>&gt;&gt;<i> argument that the customers requesting these changes are going to  
+</I>&gt;&gt;<i> accept.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Jim
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

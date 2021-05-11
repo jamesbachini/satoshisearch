@@ -1,0 +1,21 @@
+<PRE>
+Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; writes:
+&gt;<i> I think that's blatantly untrue. For example, if I look at an AND
+</I>&gt;<i> gate, I can be absolutely sure about its security properties.
+</I>
+An AND gate isn't Turing Equivalent.
+
+&gt;<i> Rice's theorem says you can't _always_ solve this problem. It says
+</I>&gt;<i> nothing about figuring out special cases.
+</I>
+Any modern processor is sufficiently larger than an AND gate that it
+is no longer tractable. It isn't even possible to describe the
+security properties one would need to (formally) prove.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

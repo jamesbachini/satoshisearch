@@ -1,0 +1,28 @@
+<PRE>Hi Florian,
+
+&gt;<i> I'm looking for a halfway self-contained set of ITU-T recommendations
+</I>&gt;<i> which are relevant for implementing X.509v3 certificates.  The
+</I>&gt;<i> references in RFC 3280 appear to be incomplete; for instance, a
+</I>&gt;<i> reference for ASN.1 itself is missing.
+</I>
+The ITU recently started allowing free downloads of all their  
+standards. The ASN.1 standards have been free for download for several  
+years. You can download them at &lt;<A HREF="http://www.itu.int/rec/T-REC-X/en">http://www.itu.int/rec/T-REC-X/en</A>&gt;.
+
+&gt;<i> Or is it unreasonable to expect that the specs match what is actually
+</I>&gt;<i> needed for interoperability with existing implementations (mostly in  
+</I>&gt;<i> the
+</I>&gt;<i> TLS, S/MIME area)?
+</I>
+I can't help you there. You can see my opinion on this issue towards  
+the middle of Peter Gutmann's page at &lt;<A HREF="http://www.cs.auckland.ac.nz/~pgut001/">http://www.cs.auckland.ac.nz/~pgut001/</A> 
+ &gt;.
+
+Regards,
+Aram Perez
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

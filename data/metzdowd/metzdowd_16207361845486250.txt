@@ -1,0 +1,70 @@
+<PRE>
+Arshad Noor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt; writes:
+&gt;<i> &quot;There are, of course, obstacles that must still be overcome by EKMI
+</I>&gt;<i> proponents. For example, the proposed components are somewhat simple
+</I>&gt;<i> by design, which concerns some encryption purists who prefer more
+</I>&gt;<i> complex protocols, on the logic that they're more difficult to break
+</I>&gt;<i> into.&quot;
+</I>&gt;<i>
+</I>&gt;<i> In light of the recent discussions about experts in cryptography,
+</I>&gt;<i> I thought I'd ask this forum to comment on the above author's
+</I>&gt;<i> statement: is this true?
+</I>&gt;<i>
+</I>&gt;<i> Do cryptography experts deliberately choose complexity over simplicity
+</I>&gt;<i> when the latter might provide the same strength of protection?
+</I>
+No. In fact, it is about as far from the truth as I've ever
+seen. No real expert would choose to deliberately make a protocol more
+complicated.
+
+Complexity makes a protocol hard to analyze, and thus makes it hard to
+know if the protocol is secure. The author of the quoted article, one
+Dan Brown, clearly does not know how cryptographic protocol experts
+analyze a protocol. (I've CCed him on this message to give him a
+chance to reply, and I'll forward his replies if they're interesting.)
+
+Indeed, I've often seen people forced to alter a protocol specifically
+to make it analyzable -- see, for example, the JFK protocol that was
+proposed in the IETF as an IKE replacement, which was formally
+verified only after it had been changed specifically to improve the
+ability to analyze it.
+
+Complexity also makes secure implementation of a protocol much
+harder. Indeed, it often makes it impossible to really know that an
+implementation is secure even if it appears to meet the
+specification. For example, see the numerous encoder flaws that have
+been found over the years in protocols like SNMP specifically because
+producing a safe ASN.1 compiler is so hard. For another example, see
+the enormous interoperability challenges that people have had with
+X.509 certificates, many of which have had security implications,
+because the complexity has made proper operation in all instances
+extremely difficult to implement.
+
+Complexity also does not make something &quot;harder to break
+into&quot;. Indeed, it is usually the complexity of a system that provides
+the unintended edge conditions necessary to find a hole. If anything,
+simple systems are (usually) harder to find flaws in.
+
+In general, complexity is the enemy of security, and any real security
+professional could tell you that. Simple and tractable is always
+better than complicated, all things being equal -- certainly NOT
+the other way around.
+
+&gt;<i> Since I do not consider myself a cryptography expert, and have
+</I>&gt;<i> instinctively preferred simpler - but strong - technical solutions,
+</I>&gt;<i> have my instincts been wrong all along?
+</I>
+Your instincts are not wrong. The details of what is simple yet secure
+are, of course, not trivial. You can make things *too* simple. A
+Caesar cipher isn't secure, even though it is much simpler than
+AES. That said, complexity is never something people deliberately
+seek.
+
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

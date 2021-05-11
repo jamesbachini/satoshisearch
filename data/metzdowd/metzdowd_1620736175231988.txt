@@ -1,0 +1,24 @@
+<PRE>Jack Lloyd &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">lloyd at randombit.net</A>&gt; wrote:
+
+&gt;<i>  Making a cipher that uses an N bit key but is only secure to 2^M
+</I>&gt;<i>  operations with M&lt;N is, firstly, considered broken in many circles, as
+</I>&gt;<i>  well as being inefficient (why generate/transmit/store 512 bit keys
+</I>&gt;<i>  when it only provides the security of a ~300 bit (or whatever) key
+</I>&gt;<i>  used with a perfect algorithm aka ideal cipher - why not use the
+</I>&gt;<i>  better cipher and save the bits).
+</I>
+Saving bits may not matter, or may not be possible. For example,
+if you are ealing with a hybrid system -- say, using RSA to transmit
+the symmetric cipher key or Diffie-Hellamn to construct it -- then for
+any symmetric cipher key size less than the public key size, your
+overheads are the same.
+
+-- 
+Sandy Harris,
+Nanjing, China
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

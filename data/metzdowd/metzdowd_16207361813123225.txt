@@ -1,0 +1,72 @@
+<PRE>
+
+Nicolas Williams wrote:
+&gt;<i> On Mon, Jun 30, 2008 at 07:16:17AM -0700, Allen wrote:
+</I>&gt;&gt;<i> Given this, the real question is, /&quot;Quis custodiet ipsos custodes?&quot;/ 
+</I>&gt;<i> 
+</I>&gt;<i> Putting aside the fact that cryptographers aren't custodians of
+</I>&gt;<i> anything, it's all about social institutions.
+</I>
+Well, I wouldn't say they aren't custodians. Perhaps not in the 
+sense that the word is commonly used, but most certainly in the 
+sense custodians of the wisdom used to make the choices. This is 
+exemplified by Bruce Schneier, an &quot;acknowledged expert,&quot;  changing 
+his mind about the way to do security from &quot;encrypt everything&quot; to 
+&quot;monitor everything.&quot; Yes, I have simplified his stance, but just to 
+make the point that even experts learn and change over time.
+
+&gt;<i> There are well-attended conferences, papers published online and in many
+</I>&gt;<i> journals, etcetera.  So it's not so difficult for people who don't know
+</I>&gt;<i> anything about security and crypto to eventually figure out who does, in
+</I>&gt;<i> the process also learning who else knows who the experts are.
+</I>
+Actually I think it is just about as difficult to tell who is a 
+trustworthy expert in the field of cryptography as it is in any 
+field of science or medicine. Just look at the junk science and 
+medical studies. One retrospective study of 90+ clinical trials 
+found that over 600 potentially important reaction to the drugs 
+occurred but only 39 were reported in the papers. I suspect if we 
+did the same sort of retrospective study for cryptography we would 
+find some similar issues, just, perhaps, not as large because there 
+is not as much money to be made with junk cryptography as junk 
+pharmaceuticals.
+
+&gt;<i> For example, in the IETF there's an institutional structure that makes
+</I>&gt;<i> finding out who to ask relatively simple.  Large corporations tend to
+</I>&gt;<i> have some experts in house, even if they are only expert in finding the
+</I>&gt;<i> real experts.
+</I>&gt;<i> 
+</I>&gt;<i> We (society) have new experts joining the field, with very low barriers
+</I>&gt;<i> to entry (financial and political barriers to entry are minimal -- it's
+</I>&gt;<i> all about brain power), and diversity amongst the existing experts.
+</I>&gt;<i> 
+</I>&gt;<i> There's no major personal gain to be had, besides fame, and too much
+</I>&gt;<i> diversity and openness for anyone to have a prayer of manipulating the
+</I>&gt;<i> field undetected for too long.
+</I>
+I'm curious, how does software get sold for so long that is clearly 
+weak or broken? Detected, yes, but still sold like Windows LANMAN 
+backward compatibility.
+
+&gt;<i> When it comes to expertise in crypto, Quis custodiet ipsos custodes
+</I>&gt;<i> seems like a relatively simple problem.  I'm sure it's much, much more
+</I>&gt;<i> difficult a problem for, say, police departments, financial
+</I>&gt;<i> organizations, intelligence organizations, etc...
+</I>
+Well, Nico, this is where I diverge from your view. It is the 
+&quot;police departments, financial organizations, intelligence 
+organizations, etc...&quot; who deploy the cryptography. Why should they 
+be able to do that any better than they do anything else? I suspect 
+that a weakness in oversight in one area is likely to reflect a 
+weakness in others as well. Not total failure, just not done the 
+best possible.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

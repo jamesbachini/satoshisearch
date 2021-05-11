@@ -1,0 +1,59 @@
+<PRE>|<i> ...Taking as our metric the venerable McCabe score:
+</I>|<i> 
+</I>|<i>    v(G) = e - n + 2
+</I>|<i> 
+</I>|<i> where e and n are the number of edges and nodes in the
+</I>|<i> control flow graph, and where you are in trouble when
+</I>|<i> v(G)&gt;10 in a single module, the simplest patch adds two
+</I>|<i> edges and one node, i.e., v'(G)=v(G)+1, and that minimum
+</I>|<i> obtains only for patches with no conditional branches in
+</I>|<i> the patch....
+</I>While I agree with your general point, this particular argument
+is a misuse of the McCabe score.  Replacing:
+
+	X
+	Y
+
+with
+
+	X
+	goto L
+	Y
+L':
+	...
+L:	Y'
+	goto L'
+
+*at the machine code level* should have absolutely no effect on the
+complexity of the algorithm (beyond any delta between Y and Y').  If you
+insist on computing your McCabe score from the generated code, and it
+gives you a different answer, then the score you are deriving is
+meaningless.
+
+The whole point of measurements like McCabe is to measure the complexity
+of the algorithm *as seen by a human being*.  Automated code transforma-
+tions that no human being ever sees should not affect it.  Otherwise,
+you're going to have to throw out all your optimizing compilers.  The
+transformation above occurs not just in patching but in other contexts -
+e.g., this might be adventageous, with Y and Y' semantically equivalent,
+if Y contains a bunch of calls that can't be reached with short
+call sequences when at their original location, but can be if they are
+relocated to L.  Or there might be cache interference effects that are
+avoided by relocating.
+
+Roughly similar patterns are used in generating code for loops, where
+the surface semantics might require two copies of a test (one at loop
+entry, one at the bottom of the loop) but this transformation lets you
+get by with a single copy.
+
+As long as the algorithm developer's view is that control flows directly
+from X to Y (and there are no incoming edges at Y), this is one node, no
+matter how the compiler or patch generator decides to shake and bake it
+into memory.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,40 @@
+<PRE>
+On Aug 26, 2008, at 10:15, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A> wrote:
+
+&gt;<i> On Tue, Aug 26, 2008 at 9:24 AM, Perry E. Metzger  
+</I>&gt;<i> &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> <A HREF="http://www.technologyreview.com/Infotech/21301/?a=f">http://www.technologyreview.com/Infotech/21301/?a=f</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> From the article: &quot;other toll systems, like E-Z Pass and I-Pass, need
+</I>&gt;<i> to be looked at too&quot;
+</I>&gt;<i>
+</I>&gt;<i> A couple years ago I got a letter from E-Z Pass a few days after I
+</I>&gt;<i> used my transponder in my new car without registering my new car. They
+</I>&gt;<i> gave me a grace period to register before making me pay some sort of
+</I>&gt;<i> penalty.
+</I>&gt;<i>
+</I>&gt;<i> So, I believe, at least for E-Z Pass, the attack would have to include
+</I>&gt;<i> cloning the license plate and pictures may still be available whenever
+</I>&gt;<i> a victim realizes they have been charged for trips they did not take.
+</I>
+
+I believe that's correct.  In fact, the plate recognition technology  
+they
+use seems to be good enough to make the transponder itself redundant.
+I know several people with E-Z Pass who disconnected the internal
+battery of their transponder (out of concern that there might be
+hidden readers around town that track vehicles at places other than
+toll gates).   Even with dead transponders, their accounts are still
+charged accurately when they pass toll gates.  (The sign displays &quot;EZ  
+Pass
+not read&quot; or some such thing, but the account is debited within a day
+or two anyway).
+
+-matt
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,64 @@
+<PRE>I forwarded a couple of messages about US Customs seizing computers, 
+sometimes failing to return them, and demanding passwords. Cellphones 
+are also sometimes seized. The TSA claims it does not do this. This 
+can cause problems for people who travel with company-sensitive or 
+other private information. Some companies avoid the problem by wiping 
+all data from the laptop and having the user access it by SSL or 
+other secure method over the network. Other solutions are possible.
+
+The following may be a solution for individual travelers without 
+access to high-speed internet connections when in the field, or who 
+lack access to secure connections to a secure server.
+
+From: David Farber &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave at farber.net</A>&gt;
+
+
+
+________________________________________
+From:
+Sent: Friday, February 08, 2008 11:27 PM
+To: David Farber
+Subject: Re: [IP] Encrypted laptop poses legal dilemma
+
+Dave,
+
+Check this as the perfect technological answer to the problem presented below.
+
+Given my position , however, please do not use my name or my 
+company's name if you post this.  Like anything, it has as many 
+legitimate as illegitimate uses; this is public information and, 
+ironically, was brought to my attention by some of the top security 
+experts in the industry.
+
+<A HREF="http://www.truecrypt.org/">http://www.truecrypt.org/</A>
+
+Creates a virtual drive inside of any object of your choosing.  But 
+goes one better.  You can encrypt within the encryption in ways 
+undetectable.  Thus you can give a password and allow others to open 
+it and inspect.  Those looking will never know that within the 
+encrypted space there is another deeper form of encryption.  That 
+said, I'd really hate to see the gov't or someone else shut this 
+down.  At the same time, for people traveling who are doing 
+legitimate things that overreaching gov't officials have no right to 
+see (and for which it is too late once compromise), this presents a 
+valid solution.  It is also incredibly useful for anyone carrying 
+sensitive information b/c it gives you two layers of protection if 
+your storage device or laptop is stolen.  Know that if you mount it 
+to a flash drive, it formats the entire drive.  Most people create an 
+object and mount it to that.  Also, never, ever forget your password 
+- did that once - and lost 50 megs worth of data.  (might want to use 
+roboform, which encrypts and protetcts your passwords).  There's no 
+getting inside of this. Ever.  It's about as rock solid as it gets.
+
+Thanks,
+
+-------------------------------------------
+Archives: <A HREF="http://v2.listbox.com/member/archive/247/=now">http://v2.listbox.com/member/archive/247/=now</A>
+RSS Feed: <A HREF="http://v2.listbox.com/member/archive/rss/247/">http://v2.listbox.com/member/archive/rss/247/</A>
+Powered by Listbox: <A HREF="http://www.listbox.com">http://www.listbox.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

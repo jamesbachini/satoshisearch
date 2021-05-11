@@ -1,0 +1,14 @@
+<PRE>
+Several people have sent in a link to a New York Times story on ACH fraud:
+
+<A HREF="http://www.nytimes.com/2008/08/30/business/yourmoney/30theft.html">http://www.nytimes.com/2008/08/30/business/yourmoney/30theft.html</A>
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

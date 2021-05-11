@@ -1,0 +1,49 @@
+<PRE>
+On Sep 23, 2008, at 6:15 PM, Sandy Harris wrote:
+
+&gt;&gt;<i> From Slashdot: Psychologists gave university students phony
+</I>&gt;<i> popups with various malware warning signs. Many just clicked.
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://arstechnica.com/news.ars/post/20080923-study-confirms-users-are-idiots.html">http://arstechnica.com/news.ars/post/20080923-study-confirms-users-are-idiots.html</A>
+</I>
+I think it's got to be said that it's not apparent that the end-users  
+are the /idiots/ who
+should be called out for &quot;failing&quot; this study.
+
+&quot;We&quot; gave them these interfaces, protocols and technologies that allow  
+for things to go
+so badly wrong. Nothing in the world required the technology ecosystem  
+to become
+what it is, except design decisions that were (and are) made well out  
+of the sphere of
+influence of  mere &quot;idiot users.&quot;
+
+This stuff was designed and shepherded to market by the modern  
+captains of industry,
+by rock star developers and w&#252;nderkinden.
+
+When a real engineer builds a bridge that falls down, we blame the  
+engineer, not gravity.
+Bad people have always existed in the world. When developers pretend  
+they don't exist
+and people are then victimized, we're supposed to continue to accept  
+the bluster about
+technology rock stars, and therefore conclude that the customers (who  
+outnumber the
+developers by what, 1,000 to 1?)  are the &quot;idiots&quot;?
+
+Let's reconsider that. Seriously, let's shout it down. It's a  
+ridiculous proposition that's
+tiring to hear time and again.
+
+I'll even argue from the other direction just to make it complete.
+Even if they are all idiots: when a population you serve outnumbers  
+you by 1,000 to 1
+and keeps blowing itself up when using your stuff, it's time to idiot- 
+proof the product.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

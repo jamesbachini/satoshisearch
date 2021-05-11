@@ -1,0 +1,38 @@
+<PRE>&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+
+&gt;<i>Between encrypted VOIP over WIFI and eventually over broadband cell - keeping
+</I>&gt;<i>people from running voice over their broadband connections is a battle the
+</I>&gt;<i>telco's can't win in the long run - and just plain encrypted cell phone
+</I>&gt;<i>calls, I think in a couple of years anyone who wants secure phone connections
+</I>&gt;<i>will have them.
+</I>
+I think you're looking at this a bit wrong.  I rememeber the same opinion as
+the above being expressed on the brew-a-stu list about fifteen years ago, and
+no doubt some other list will carry it in another fifteen years time, with
+nothing else having changed.  Anyone who wants secure voice connections
+(governments/military and a vanishingly small number of hardcore geeks)
+already have them, and have had them for years.  Everyone else just doesn't
+care, and probably never will.  This is why every single encrypted-phones-for-
+the-masses project has failed in the market.  People don't see phone
+eavesdropping as a threat, and therefore any product that has a nonzero price
+difference or nonzero usability difference over an unencrypted one will fail.
+This is why the only successful encrypted phone to date has been Skype,
+because the crypto comes for free.
+
+I once had a chat with someone who was responsible for indoctrinating the
+newbies that turn up in government after each election into things like phone
+security practices.  He told me that after a full day of drilling it into them
+(well, alongside a lot of other stuff from other departments) it sometimes
+took them as long as a week before they were back to loudly discussing
+sensitive information on a cellphone in the middle of a crowded restaurant.
+
+So in terms of secure voice communications, the military and geeks are already
+well served, and everyone else doesn't care.  Next, please.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

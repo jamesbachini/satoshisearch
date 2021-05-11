@@ -1,0 +1,33 @@
+<PRE>The Lava Lamp Random Number generator (at <A HREF="http://www.lavarnd.org/">http://www.lavarnd.org/</A>)  
+generates true random numbers from the images of a couple of lava  
+lamps.  Of course, as a source of randomness for cryptographic  
+purposes, it's useless because it's visible to everyone (though I  
+suppose it might be used for Rabin's beacons).
+
+At ThinkGeek, you can now, for only $6.99, buy yourself a USB-powered  
+mini lava lamp (see <A HREF="http://www.thinkgeek.com/gadgets/lights/7825/">http://www.thinkgeek.com/gadgets/lights/7825/</A>).   
+&quot;All you need&quot; is some way to watch the thing - perhaps a USB camera -  
+and some software to extract random bits.  (This isn't *really* a lava  
+lamp - the lamp is filled with a fluid containing many small  
+reflective plastic chips, lit from below by a small incandescent bulb  
+which also generates the heat that keeps the fluid circulating.  From  
+any given vantage point, you get flashes as one of the plastic chips  
+gets into just the right position to give you a reflected view of the  
+bulb.  These should be pretty easy to extract, and should be quite   
+random.  Based on observation, the bit rate won't be very high - a bit  
+every couple of seconds - though perhaps you can use cameras at a  
+couple of vantage points.  Still, worth it for the bragging rights.)
+
+An alternative, also at ThinkGeek, is a USB-powered Plasma Ball (at <A HREF="http://www.thinkgeek.com/geektoys/science/964e/">http://www.thinkgeek.com/geektoys/science/964e/</A>) 
+.  The arc discharges should be even easier to convert into a  
+bitstream, though it's probably a more biased source than the lava  
+lamp, so will need more post-processing.
+
+                                                         -- Jerry
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,30 @@
+<PRE>
+Hi,
+
+This reminds me the most weird SSL related error message I have ever
+seen and which is there since ages:
+
+<A HREF="https://www.fbi.gov">https://www.fbi.gov</A>
+
+Beside that the certificate is wrong :-)
+
+regards,
+Sebastian
+
+On Mon, Sep 08, 2008 at 01:29:34AM +1200, Peter Gutmann wrote:
+
+&gt;<i> In the ongoing comedy of errors that is US online banking &quot;security&quot; I've just
+</I>&gt;<i> run into another one that's good for a giggle: Go to www.wachovia.com and,
+</I>[...]
+
+---
+~~ perl self.pl
+~~ $_='print&quot;\$_=\47$_\47;eval&quot;';eval
+~~ <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krahmer at suse.de</A> - SuSE Security Team
+~~ SUSE LINUX Products GmbH, GF: Markus Rex, HRB 16746 (AG Nuernberg)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

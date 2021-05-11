@@ -1,0 +1,33 @@
+<PRE>Also interesting is the requirement that all DOD computers include TPM (1.2
+or higher).  See next to last paragraph of the memorandum at
+<A HREF="http://iase.disa.mil/policy-guidance/dod-dar-tpm-decree07-03-07.pdf">http://iase.disa.mil/policy-guidance/dod-dar-tpm-decree07-03-07.pdf</A> 
+
+This memo was pointed to by the story referenced below.
+
+Chuck Jackson
+
+
+
+-----Original Message-----
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>
+[mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] On Behalf Of Steven M. Bellovin
+Sent: Wednesday, August 15, 2007 9:25 AM
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+Subject: New DoD encryption mandate
+
+According to <A HREF="http://www.fcw.com/article103467-08-13-07-Print">http://www.fcw.com/article103467-08-13-07-Print</A> the US
+Defense Department has mandated that all sensitive but unclassified
+information on mobile devices must be encrypted in compliance with FIPS
+140-2.  &quot;Mobile devices&quot; include laptops, PDAs, CDs, flash drives, etc.
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

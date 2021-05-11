@@ -1,0 +1,15 @@
+<PRE>I've got two presentations I've given on encrypted storage technologies here:
+
+<A HREF="http://www.subspacefield.org/security/">http://www.subspacefield.org/security/</A>
+
+There's also a book I'm writing, if anyone is interested.
+-- 
+<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>
+I need a better strategy for being less analytical.
+For a good time on my email blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

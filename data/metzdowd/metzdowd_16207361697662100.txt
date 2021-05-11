@@ -1,0 +1,67 @@
+<PRE>Victor Duchovni wrote:
+&gt;<i> Jumping in late, but the idea that *TCP* (and not TLS protocol design)
+</I>&gt;<i> adds round-trips to SSL warrants some evidence (it is very temping to
+</I>&gt;<i> express this skepticism more bluntly).
+</I>&gt;<i> 
+</I>&gt;<i> With unextended SMTP for example, the minimum RTT count is:
+</I>&gt;<i> 
+</I>&gt;<i> 	0. SYN	SYN-ACK
+</I>&gt;<i> 	1. ACK	220
+</I>&gt;<i> 	2. HELO 250
+</I>&gt;<i> 	3. MAIL 250
+</I>&gt;<i> 	4. RCPT 250
+</I>&gt;<i> 	... n recipients
+</I>&gt;<i> 	   RCPT 250
+</I>&gt;<i> 	4+n DATA 354
+</I>&gt;<i> 	5+n ... stream of message content segments &lt;CRLF.CRLF&gt;
+</I>&gt;<i> 		 250
+</I>&gt;<i> 
+</I>&gt;<i> so it takes at least 6 RTTs to perform a delivery (of a short
+</I>&gt;<i> single-recipient message), but only 1 of the 6 RTTs is TCP
+</I>&gt;<i> &quot;overhead&quot;. This is improved with PIPELINING:
+</I>&gt;<i> 
+</I>&gt;<i> 	0. SYN				SYN-ACK
+</I>&gt;<i> 	1. ACK				220
+</I>&gt;<i> 	2. EHLO				250 ... PIPELINING ...
+</I>&gt;<i> 	3. MAIL RCPT(n times) DATA	250 250 (n times) 354
+</I>&gt;<i> 	4. ... stream of message content segments &lt;CRLF.CRLF&gt;
+</I>&gt;<i> 		 			250
+</I>&gt;<i> 
+</I>&gt;<i> Here the application protocol is pipelined, and 5+n RTTs becomes 4 RTTs.
+</I>&gt;<i> The solution is not replacing TCP, but reducing the number of lock-step
+</I>&gt;<i> interactions in the application protocol.
+</I>&gt;<i> 
+</I>&gt;<i> If someone has a faster than 3-way handshake connection establishment
+</I>&gt;<i> protocol that SSL could leverage instead of TCP, please explain the
+</I>&gt;<i> design.
+</I>
+You are asking for a layered design that works better than the existing 
+layered design.  My claim is that you get an additional round trip for 
+each layer - which your examples have just demonstrated.
+
+SSL has to be on top of a reliable transport layer, hence has to have an 
+extra round trip.  I was not proposing something better *for* SSL, I was 
+proposing something better *instead* *of* SSL.  If one takes SSL as a 
+given, then indeed, *three* round trips are needed before the client can 
+send any actual data - which is precisely my objection to SSL.
+
+
+
+&gt;<i> 
+</I>&gt;<i> The TCP handshake adds a 1-RTT delay at the start of the connection.
+</I>&gt;<i> What 0-RTT algorithm will allow the server to delay creating expensive
+</I>&gt;<i> connections to clients until the client acks the server response or
+</I>&gt;<i> discover the MSS before sending the first segment? With TCP, at least
+</I>&gt;<i> SYN floods require unspoofed client IPs.
+</I>&gt;<i> 
+</I>&gt;<i> Most of the application protocols we wrap in TLS are not DNS. Sure if
+</I>&gt;<i> you can guarantee a single packet response to a single packet request,
+</I>&gt;<i> TCP is not the answer. Otherwise, claiming that SSL is less efficient
+</I>&gt;<i> over TCP smacks of arrogance.
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

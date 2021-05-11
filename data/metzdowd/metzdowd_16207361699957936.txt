@@ -1,0 +1,16 @@
+<PRE>Do business people get it?  Do security professionals get it?
+Apparently not.
+
+Arshad Noor
+StrongAuth, Inc.
+
+Huge losses reported by Soci&#233;t&#233; G&#233;n&#233;rale were apparently enabled
+by forgotten low-level IT chores such as password management.
+
+<A HREF="http://www.infoworld.com/article/08/02/04/Poor-password-management-may-have-led-to-bank-meltdown_1.html">http://www.infoworld.com/article/08/02/04/Poor-password-management-may-have-led-to-bank-meltdown_1.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,92 @@
+<PRE>Allen wrote:
+&gt;<i> I don't know what the policy is in Ireland, but here in the USA there 
+</I>&gt;<i> is no stop loss on debit cards so the banks are not obligated to make 
+</I>&gt;<i> good on fraudulent withdrawals. I believe that most have out of fear 
+</I>&gt;<i> of bad PR, but you have to fight for it if it is just a few that it 
+</I>&gt;<i> happens to. If this happens too much then people might stop using 
+</I>&gt;<i> debit cards. I have advised my mother, 87, to not use them as she is 
+</I>&gt;<i> getting a little slow on the uptake and might miss something like this 
+</I>&gt;<i> if it happened to her.
+</I>&gt;<i>
+</I>&gt;<i> Now to show how screwy the system is, I was shopping the other day and 
+</I>&gt;<i> the power went off in the grocery store I was at. They had backup 
+</I>&gt;<i> power so they were able to check out people; however, they couldn't 
+</I>&gt;<i> use debit cards, except.... Well, the screwy thing was if you entered 
+</I>&gt;<i> the charge at terminal as a credit card, even when it was only a debit 
+</I>&gt;<i> card, it would accept it. I checked my bank, and sure enough the 
+</I>&gt;<i> charge showed as a POS charge!
+</I>&gt;<i>
+</I>&gt;<i> I think the logic is a little screwy and might be able to be exploited 
+</I>&gt;<i> though I'm not sure how at the moment.
+</I>in theory &quot;signature&quot; debit (i.e. debit transaction w/o PIN) and credit 
+could both work ...  since they both go thru the same way.
+
+pin-debit goes thru in real time and the merchant has assurance that the 
+transaction has been approved (and pin authenticated).  as a result, the 
+interchange fee is much lower ... because the related risk/fraud is 
+presumed to be much lower.
+
+signature debit and credit basically go thru the network the very same 
+way. the machine (either the actual POS terminal or a store controller) 
+remembers all the transactions and there is periodic batch &quot;settlement&quot; 
+(end of shift, or end of day). Settled transaction may or may not have a 
+separate, associated &quot;real time authorization&quot; transaction.
+
+The merchant pays extra charge for each &quot;real time authorization&quot; 
+transaction (which tend to be credit card specific regarding whether the 
+account is active and the new transaction is within the card's credit 
+limit or &quot;open to buy&quot;).
+
+the associated &quot;interchange fee&quot; is lower on transactions with &quot;real 
+time authorizations&quot; (presumably transactions with &quot;real time 
+authorizations&quot; tend to have lower risk/fraud). However, transactions 
+may also be settled w/o an associated &quot;real time authorization&quot; (which 
+will have a higher interchange fee since there is presumption of higher 
+risk/fraud). there are some old merchant &quot;small fraud&quot; stories ... where 
+the merchant claimed in the settlement transaction to have a separate 
+&quot;real time authorization&quot; ... when there wasn't one (they got both the 
+lower interchange fee w/o actually having to pay for a real-time 
+authorization transaction ... this was before some financial 
+institutions had the ability to reconcile the information).
+
+All have associated risk/fraud ... one of the tricks is for the 
+financial institution to appropriately adjust the interchange fee to 
+cover the financial institutions associated risk.
+
+There has been recent congressional hearings, EU anti-trust actions and 
+merchant complaints that the financial institutions have adjusted the 
+interchange fees way over what is needed to cover the associated risk. 
+There were snide articles that financial institutions are making 
+significant profits off of the risk adjusted interchange fees. 2-3 yrs 
+ago supposedly something like 40percent of US financial institution 
+bottom line was coming from these (risk adjusted) interchange fees ... 
+and for many retailers it represented their single largest expense.
+
+this is been highlighted in the significant expense going into TV spots 
+to promote &quot;signature debit&quot; .... since the &quot;interchange fee&quot; and 
+especially the profit is significantly higher (vis-a-vis pin-debit).
+
+some of this was discussed in the &quot;bank fraud blame game&quot; thread that 
+went on in this mailing list
+last june, july ... my posts archived here.
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#31">http://www.garlic.com/~lynn/aadsm27.htm#31</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#32">http://www.garlic.com/~lynn/aadsm27.htm#32</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#33">http://www.garlic.com/~lynn/aadsm27.htm#33</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#34">http://www.garlic.com/~lynn/aadsm27.htm#34</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#35">http://www.garlic.com/~lynn/aadsm27.htm#35</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#37">http://www.garlic.com/~lynn/aadsm27.htm#37</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#38">http://www.garlic.com/~lynn/aadsm27.htm#38</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#39">http://www.garlic.com/~lynn/aadsm27.htm#39</A> a fraud is a sale, Re: The 
+bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#40">http://www.garlic.com/~lynn/aadsm27.htm#40</A> a fraud is a sale, Re: The 
+bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#41">http://www.garlic.com/~lynn/aadsm27.htm#41</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#42">http://www.garlic.com/~lynn/aadsm27.htm#42</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#43">http://www.garlic.com/~lynn/aadsm27.htm#43</A> a fraud is a sale, Re: The 
+bank fraud blame game
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">william.allen.simpson at gmail.com</A> wrote:
+
+&gt;<i>  Dp := any electronic document submitted by some person, converted to its
+</I>&gt;<i>        canonical form
+</I>&gt;<i>  Cp := a electronic certificate irrefutably identifying the other person
+</I>&gt;<i>        submitting the document
+</I>&gt;<i>  Cn := certificate of the notary
+</I>&gt;<i>  Tn := timestamp of the notary
+</I>&gt;<i>  S() := signature of the notary
+</I>&gt;<i> 
+</I>&gt;<i>  S( MD5(Tn || Dp || Cp || Cn) ).
+</I>
+In this context, the only thing that guards agains an attack by
+&quot;some person&quot; is the faint hope that she can't predict the Tn
+that the notary will use for a Dp that she submits.
+
+That's because if Tn is known (including chosen) to &quot;some person&quot;,
+then (due to the weakness in MD5 we are talking about), she can
+generate Dp and Dp' such that
+  S( MD5(Tn || Dp || Cp || Cn) ) = S( MD5(Tn || Dp' || Cp || Cn) )
+whatever Cp, Cn and S() are.
+
+If Tn was hashed after Dp rather than before, poof goes security.
+
+
+  Francois Grieu
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

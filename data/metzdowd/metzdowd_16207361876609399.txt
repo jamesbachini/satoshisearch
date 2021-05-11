@@ -1,0 +1,27 @@
+<PRE>Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; writes:
+
+&gt;<i>There's noting inherently wrong with this mechanism, but like all stream
+</I>&gt;<i>ciphers, it can't be used if you want to encrypt multiple independent values,
+</I>&gt;<i>e.g., credit cards in a database--without a randomizer (which implies
+</I>&gt;<i>expansion) you have the usual two-time pad problems. A B-R style block cipher
+</I>&gt;<i>can, albeit with lookup table issues.
+</I>
+Sure, thus the thread on sci.crypt about all the little situation-specific
+tweaks you can apply.  In this case it was being used to encrypt ongoing ASCII
+streams (computer terminal traffic, SMS, and other stuff) so there weren't
+multiple independent values (the terminal-traffic one was particularly
+interesting because it needed to encrypt discontinuous ranges so that control
+characters went through without encryption).  As you say, if you're processing
+independent values you'd need to tweak it somehow, for example by using a
+public value like the account number as an IV if you're using this to encrypt
+the credit card number stored next to the account number (with standard
+caveats about IV reuse, birthday attacks, and so on, pedants please assume a
+two-page enumeration of requirements here :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

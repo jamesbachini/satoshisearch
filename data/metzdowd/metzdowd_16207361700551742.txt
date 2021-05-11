@@ -1,0 +1,31 @@
+<PRE>&quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+
+&gt;<i>Remember the Clipper chip?
+</I>
+Clipper (or more specifically Capstone, via the Fortezza card) is a great
+example of the NSA's sound engineering approach to generating random data [0].
+They used a physical randomness source of an unpublished type, presumably a
+standard noise-based source.  And a Skipjack-based ANSI X9.17 PRNG with a pre-
+set random seed.  *And* a 48-bit counter.  All were mixed up with SHA-1.  The
+design was such that there was no single point of failure in the sources
+themselves, so that as long as SHA-1 was at least vaguely useful as a mixing
+function the sources themselves didn't have to be totally failure-proof.  For
+example if some environmental condition reduced the utility of the noise-based
+source, the PRNG would still provide strong input.  If the PRNG locked up for
+some reason, the secret seed for that combined with the counter would still
+provide varying input to the SHA-1 step.  I assume they also sampled the
+output as per FIPS 140 to detect a lockup of the SHA-1 step.  The result was a
+failure-tolerant design that didn't rely on the totally failure-proof
+operation of a single component in order to function.
+
+Peter.
+
+[0] I'm calling it a &quot;sound engineering approach&quot; because I did the same thing
+    in my PRNG design (independent of Fortezza).  Others may wish to call it
+    &quot;excessively paranoid&quot; and other things :-).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

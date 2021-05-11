@@ -1,0 +1,28 @@
+<PRE>* John Ioannidis:
+
+&gt;<i> Florian Weimer wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> It's also an open question whether network operators subject to
+</I>&gt;&gt;<i> interception requirements can legally offer built-in E2E encryption
+</I>&gt;&gt;<i> capabilities without backdoors.
+</I>&gt;&gt;<i> 
+</I>&gt;<i>
+</I>&gt;<i> You probably meant device vendors, not network operators. The whole
+</I>&gt;<i> *point* of E2E security is that network operators are not involved. If
+</I>&gt;<i> they were, it wouldn't be end-to-end!
+</I>
+Uh-oh, no.  The protocol characteristics don't change depending on who
+is selling you the device.  Many telcos have an aversion to end-to-end
+protocols.  Building reliable networks for ill-behaving end systems
+has been a pretty recent idea (and we are still far away from a
+complete solution).
+
+There aren't any interception requirements for device vendors, either,
+at least not any I'm aware of.  They aren't telcos.  Projects like
+OpenMoko should not be affected.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

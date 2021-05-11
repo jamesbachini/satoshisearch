@@ -1,0 +1,52 @@
+<PRE>When I looked at this circa 2001-2002, for another company, other 27MHz
+keyboards didn't even bother to encrypt.  Most of the data was sent in
+the clear, with neither encryption nor robust authentication.
+
+Exactly what makes this problem so difficult eludes me, although one
+suspects that the savage profit margins on consumables like keyboards
+and mice might have something to do with it.
+
+Ian. 
+
+-----Original Message-----
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>
+[mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] On Behalf Of Leichter, Jerry
+Sent: Friday, 7 December 2007 10:13 AM
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+Subject: Intercepting Microsoft wireless keyboard communications
+
+<A HREF="http://www.dreamlab.net/download/articles/Press%20Release%20Dreamlab%20T">http://www.dreamlab.net/download/articles/Press%20Release%20Dreamlab%20T</A>
+echnologies%20Wireless%20Keyboard.pdf
+
+Computerworld coverage at
+
+<A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;</A>
+articleId=9051480
+
+The main protection against interception is the proprietary protocol,
+which these guys were able to reverse engineer.  The exchange is
+&quot;encrypted&quot; using a Caeser cipher (XOR with a single byte that is the
+common key, which is the only secret in the system); they say they can
+determine the right key within 30 characters or so.  Their current
+hardware can read the data from 33 feet away; with a better antenna,
+well over a hundred feet should be possible.  These things operate at
+27 MHz, which will penetrate walls easily.
+
+Reading multiple keyboards at once is possible and they already do it.
+They are looking at injecting data into the stream - presumably not very
+hard.
+
+Many other brands of wireless keyboard may well be equally vulnerable.
+
+ 							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

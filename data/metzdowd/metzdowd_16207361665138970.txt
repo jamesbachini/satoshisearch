@@ -1,0 +1,56 @@
+<PRE>On Wed, 2 Jan 2008 21:26:47 +0000 (UTC)
+Jason &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jason at lunkwill.org</A>&gt; wrote:
+
+ 
+&gt;<i> On the other hand, writing an OS that doesn't get infected in the
+</I>&gt;<i> first place is a fundamentally winning battle: OSes are insecure
+</I>&gt;<i> because people make mistakes, not because they're fundamentally
+</I>&gt;<i> insecurable.
+</I>&gt;<i> 
+</I>~~20 years ago, after the Internet Worm, I went and reread the Orange
+Book.  I concluded, to my horror, that *nothing* in it, including an
+A1-rated system, would have stopped the worm from spreading.  Being
+rather new to the theoretical security game (though I'd caught my first
+hackers around 1971), I asked someone older and wiser.  &quot;Oh, no; a B2
+system would have prevented it.&quot;  I asked how.  &quot;B2 requires a thorough
+search for bugs.&quot;
+
+Worms and viruses have essentially nothing to do with the operating
+system.  As long as whatever context the vulnerable application is run
+in -- the mailer, the browser, the word processor, whatever -- can
+write to the network or to a file, the malware can spread.
+
+Another approach is to run such things at a lower privilege level.
+(Vista does that with IE7.)  The problem is that you sometimes have to
+cross the barrier; that's another way the malware can spread.
+&gt;<i> 
+</I>&gt;<i> The maddening part is that security as an industry is almost always
+</I>&gt;<i> forced to fight on the losing battlefields, even though we've had
+</I>&gt;<i> beautiful, efficient, impregnable fortresses available for many
+</I>&gt;<i> years.  Any crypto book from 20 years ago can show you how to send an
+</I>&gt;<i> unforgeable email or sign a binary, yet these notions still haven't
+</I>&gt;<i> widely caught on (and when they have, as in the Xbox, they get
+</I>&gt;<i> hijacked for things like DRM and privacy invasion).
+</I>&gt;<i>
+</I>Cryptography provides authentication and integrity.  It does not
+provide authorization, nor does it provide protection against bugs.
+Your suggested approach -- better OS and better crypto -- is exactly
+what's failed for the last 25 years.
+
+If you included all applications as part of the OS, you'd be right --
+except that it isn't possible to secure such a code base.
+
+References:
+<A HREF="http://www.csl.sri.com/users/neumann/insiderisks06.html#196">http://www.csl.sri.com/users/neumann/insiderisks06.html#196</A>
+<A HREF="http://www.cs.columbia.edu/~smb/papers/sub-browser.pdf">http://www.cs.columbia.edu/~smb/papers/sub-browser.pdf</A>
+<A HREF="http://vx.netlux.org/lib/vtd01.html">http://vx.netlux.org/lib/vtd01.html</A>
+<A HREF="http://homes.cerias.purdue.edu/~spaf/tech-reps/823.pdf">http://homes.cerias.purdue.edu/~spaf/tech-reps/823.pdf</A>
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

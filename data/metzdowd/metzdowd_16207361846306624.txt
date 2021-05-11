@@ -1,0 +1,35 @@
+<PRE>
+On Jul 7, 2008, at 10:54 AM, Ali, Saqib wrote:
+
+&gt;<i> Quoting the Foxbusiness article:
+</I>&gt;<i>
+</I>&gt;<i> &quot;PermanentPrivacy announces the world's first practical data
+</I>&gt;<i> encryption system that is absolutely unbreakable. And is offering a
+</I>&gt;<i> $1,000,000 challenge to anyone who can crack it.
+</I>&gt;<i>
+</I>&gt;<i> Permanent Privacy (patent pending) has been verified by Peter
+</I>&gt;<i> Schweitzer, one of Harvard's top cryptanalysts, and for the inevitable
+</I>&gt;<i> cynics Permanent Privacy is offering $1,000,000 to anyone who can
+</I>&gt;<i> decipher a sample of ciphertext.&quot;
+</I>
+My favorite part of that web site is from their &quot;How it Works&quot; section:
+
+---
+``For example, suppose that the plain text message is simply one 5- 
+letter word. At first glance, you would think that this must be easy  
+to break. But there are, let us say, about 100 printable characters on  
+a computer keyboard, so there are some 100x100x100x100x100 ways of  
+producing a 5-letter word.''
+---
+
+So, let me get this straight.  You appear to be using a one-time pad,  
+but you discard all output that the robotic hand you send me is unable  
+to type on my keyboard?
+
+-wps
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

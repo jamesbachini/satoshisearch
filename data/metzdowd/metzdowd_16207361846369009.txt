@@ -1,0 +1,35 @@
+<PRE>Secure64 Develops First Automated DNSSEC Signing Application to Help 
+Secure the Internet Worldwide
+<A HREF="http://www.businesswire.com/news/google/20080730005428/en">http://www.businesswire.com/news/google/20080730005428/en</A>
+
+from above:
+
+Secure64 Software Corporation has developed a product that
+dramatically simplifies the implementation and management of
+DNSSEC. Secure64 DNS Signer&#8482; is the first and only product that
+addresses each of the obstacles that have slowed the widespread
+deployment of DNSSEC zone signing, including the need for simplicity,
+security, auditability and scalability. While recent patching efforts
+have mitigated the impact of the cache poisoning vulnerability
+identified by Dan Kaminsky and widely reported by the media,
+deployment of DNSSEC is widely regarded as the only viable long-term
+solution to securing the Domain Name System (DNS).
+
+... snip ...
+
+One of the people behind Itanium design ... was one of the Secure64
+founders ... somewhat as part of demonstrating what could be done with
+features that had been included in Itanium chip architecture. I've
+noted before that they had been heavily involved in earlier RISC chip
+efforts ... including original 801 risc chip. misc. past posts
+mentioning 801, risc, romp, rios, somerset, fort knox, power/pc, etc
+<A HREF="http://www.garlic.com/~lynn/subtopic.html#801">http://www.garlic.com/~lynn/subtopic.html#801</A>
+
+-- 
+40+yrs virtualization experience (since Jan68), online at home since Mar70
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

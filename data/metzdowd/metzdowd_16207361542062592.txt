@@ -1,0 +1,38 @@
+<PRE>On Mon, 17 Sep 2007 11:20:32 -0700
+Netsecurity &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; wrote:
+
+&gt;<i> Back in the late 60's I was playing with audio and a magazine I
+</I>&gt;<i> subscribed to had a circut for creating warble tones for standing
+</I>&gt;<i> wave and room resonance testing.
+</I>&gt;<i> 
+</I>&gt;<i> The relevance of this is that they were using a &quot;random&quot; noise
+</I>&gt;<i> generating chip that they acknowledged was not random enough for good
+</I>&gt;<i> measurements. The fix suggested was to parallel a number, six as I
+</I>&gt;<i> recall, to improve the randomness by mixing the signals to achieve
+</I>&gt;<i> better randomness. I don't recall the math but the approach improved
+</I>&gt;<i> the randomness by more than an order of magnitude. 
+</I>&gt;<i> 
+</I>&gt;<i> I have also seen the same effect on reverse biased zener diodes used
+</I>&gt;<i> as random noise generators and that seemed - no real hard
+</I>&gt;<i> measurements that I can recall - to work quite well. Mind you these
+</I>&gt;<i> were not zeners all fabricated on a single chip, but rather
+</I>&gt;<i> individuals soldered together so the charateristics of each were more
+</I>&gt;<i> random because of the semi-randomness of the manufacturing process.
+</I>&gt;<i> 
+</I>This is an old technique.  We could even go back to von Neumann's
+scheme: look at two successive bits.  If they're equal, discard them.
+Otherwise, map &lt;0,1&gt; to 0 and &lt;1,0&gt; to 1.
+
+See the section on &quot;Software whitening&quot; in
+<A HREF="http://en.wikipedia.org/wiki/Hardware_random_number_generator">http://en.wikipedia.org/wiki/Hardware_random_number_generator</A> (which
+was correct as of when I looked at it, a few minutes before the
+timestamp on this email; check the Wiki history to be sure....).
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

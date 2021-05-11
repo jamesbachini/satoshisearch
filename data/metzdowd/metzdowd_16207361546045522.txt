@@ -1,0 +1,30 @@
+<PRE>&quot;Nash Foster&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leaf at google.com</A>&gt; writes:
+
+&gt;<i><A HREF="http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/">http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/</A>
+</I>&gt;<i>
+</I>&gt;<i>Any actual cryptographers care to comment on this? I don't feel qualified to
+</I>&gt;<i>judge.
+</I>
+It's quite possible that many implementations do this.  When the Mozilla folks
+changed their code a year or two back to reject RSA keys with an exponent of
+one (which in itself means that they'd been accepting those keys for years), a
+number of certs broke because CAs were issuing exponent-one keys, which in
+turn means that many other implementations that never complained about these
+certs were freely accepting them.  Windows CryptoAPI, for example, still
+allows exponent-one keys as a by-design feature to allow the export of
+&quot;wrapped&quot; keys in plaintext form.  So it's quite believable that a number of
+DH implementations allow bad key parameter values, and that this has been
+going on for years.
+
+(Even the level of validation discussed on the web page doesn't help entirely,
+FIPS 186 provides extra parameters that you can use for checking the key
+(p,q,g) while the still widely-used PKCS #3 doesn't (p,g), so even just using
+PKCS #3 rather than FIPS 186 is a problem).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

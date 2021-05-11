@@ -1,0 +1,19 @@
+<PRE>On Wed, Jun 4, 2008 at 12:51 PM, Perry E. Metzger &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+&gt;<i> An object lesson in this just fell in my lap -- I just got my first
+</I>&gt;<i> email from a spammer that links to a web site that uses such a cert,
+</I>&gt;<i> certified by a CA I've never heard of (&quot;Starfield Technologies, Inc.&quot;)
+</I>
+starfield = godaddy.
+
+see <A HREF="https://www.godaddy.com/gdshop/ssl/ssl.asp?app_hdr=&amp;ci=12421">https://www.godaddy.com/gdshop/ssl/ssl.asp?app_hdr=&amp;ci=12421</A> and
+click on the fluffy little webtrust icons to get the reports.
+<A HREF="https://cert.webtrust.org/ViewSeal?id=355">https://cert.webtrust.org/ViewSeal?id=355</A>
+
+-- 
+GDB has a 'break' feature; why doesn't it have 'fix' too?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

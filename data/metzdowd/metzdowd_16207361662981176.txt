@@ -1,0 +1,28 @@
+<PRE>Alex Alten wrote:
+ &gt; Generally any standard encrypted protocols will
+ &gt; probably eventually have to support some sort of CALEA
+ &gt; capability. For example, using a Verisign ICA
+ &gt; certificate to do MITM of SSL, or possibly requiring
+ &gt; Ebay to provide some sort of legal access to Skype
+ &gt; private keys.
+
+And all the criminals will of course obey the law.
+
+Why not just require them to set an evil flag on all
+their packets?
+
+ &gt; If there is a 2nd layer of encryption then this would
+ &gt; require initial key exchanges that may be vulnerable
+ &gt; to interception or after-the-fact analysis of the
+ &gt; decrypted SSL payloads.
+
+I guarantee I can make any payload look like any other
+payload.  If the only permitted communications are
+prayers to Allah, I can encode key exchange in prayers
+to Allah.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

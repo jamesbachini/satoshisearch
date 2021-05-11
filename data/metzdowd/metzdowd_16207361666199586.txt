@@ -1,0 +1,33 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">lists at notatla.org.uk</A> writes:
+&gt;&gt;<i> His firm routinely discovers attempted credit card fraud. However,
+</I>&gt;&gt;<i> since there is no way for them to report attempted fraud to the credit
+</I>&gt;&gt;<i> card network (the protocol literally does not allow for it), all they
+</I>&gt;&gt;<i> can do is refuse the transaction -- they literally have no mechanism
+</I>&gt;&gt;<i> to let the issuing bank know that the card number was likely stolen.
+</I>&gt;<i>
+</I>&gt;<i> A former boss has become &quot;Head of Fraud Technology&quot; (I asked him who
+</I>&gt;<i> was &quot;Head of Anti-Fraud Technology&quot;) and he answers like this.
+</I>&gt;<i>
+</I>&gt;<i>   I am not really a cards man but I would have said the good
+</I>&gt;<i>   old telephone, a call to the acquirer, would be the way. The
+</I>&gt;<i>   acquirer would then pass that on to the issuer. Granted the
+</I>&gt;<i>   merchant may not know for certain that had happened, but he
+</I>&gt;<i>   has done his duty at that point.
+</I>
+That's not practical. If you're a large online merchant, and your
+automated systems are picking up lots of fraud, you want an automated
+system for reporting it. Having a team of people on the phone 24x7
+talking to your acquirer and reading them credit card numbers over the
+phone, and then expecting the acquirer to do something with them when
+they don't have an automated system either, is just not reasonable.
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

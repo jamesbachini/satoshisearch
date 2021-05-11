@@ -1,0 +1,40 @@
+<PRE>Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+
+&gt;<i>Some issues could be minimized by turning off password authentication, which
+</I>&gt;<i>is not practical in many cases.
+</I>
+That would probably make things much worse.  A study of SSH attacks a few
+years ago showed that nearly two thirds of all SSH private keys were stored on
+disk with no protection at all, so that simply being able to read a hard drive
+will get you access to any number of systems without having to trojan the SSH
+client or plant a keyboard logger as you'd need for an SSH password.  So
+turning off password auth would make things less secure, not more.
+
+&gt;<i>1. firewall port-knocking to block scanning and attacks
+</I>&gt;<i>2. firewall logging and IP disabling for repeated attacks (prevent DoS, block
+</I>&gt;<i>dictionary attacks)
+</I>
+I started work on an paper that looked at doing exactly this based on traces
+from SSH scanning attacks a year or two back, and realised that this is an
+arms race that you can't win.  No matter what heuristics you use, all an
+attacker has to do is change their scanning pattern to avoid them and all your
+work is rendered useless.
+
+The reason I never finished the paper (well, apart from that fact that this
+type of defence is a lost cause) is because there's a much easier way to do
+this than at the firewall or network level.  There's a paper by Pinkas and
+Sander, &quot;Securing Passwords Against Dictionary Attacks&quot;, later updated by van
+Oorschot in a TISSEC paper (sorry, don't have the ref.handy) that contains a
+very nice, elegant way to defeat SSH (and, in general, any password-based
+protocol) scanning attacks.  I have an RFC draft to add this to SSH on the
+back burner, I just haven't finished it yet because (a) too many other things
+to do and (b) I'm not sure how it'll be received by the SSH community, who
+seem to see public-key auth as the answer to any problem.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

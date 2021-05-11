@@ -1,0 +1,107 @@
+<PRE>So I'm looking for a minimum cost transformation with _only_ the
+following characteristic:
+
+Given a set of m input bits X, produce a set of n output bits Y such
+that knowledge of some subset of X and Y gives a minimum knowledge of
+the remainder (of Y if that makes it simple, but of X would be nice).
+
+This is not unlike the &quot;all-or-nothing&quot; package transform proposed
+by Rivest; the basic idea is that you have to know all of X in order
+to know anything about Y - sort of.
+
+My first iteration is as follows:
+
+Let ^ represent xor.
+Let p be the exclusive or of all bits of x (i.e. the parity).
+
+Let Y = f(X), where f(x) = p ^ x
+
+Basically, each bit of Y is the xor of every _other_ bit of x
+(x was actually xored into p, so by xoring again, it cancels out)
+
+However, my problem is that no matter how few bits of X you know, you
+only have to guess one bit, p, in order to know the bits of Y that
+correspond to the bits you know of X.
+
+Let me be concrete; suppose that I know only bits 0 of X and bit
+0 of Y.  I can then compute p, and from that I can use any further
+knowledge of bits of X to compute corresponding bits of Y.
+
+Note that p = x[0] ^ y[0].
+Then if I know x[1], I can reveal y[1] = p ^ x[1].
+And so forth.
+
+Obviously I need something more complex.  The problem seems to be that
+the equations for every bit y depend only on x and p; that is, if we
+know x, we only have to guess p once for the whole array.
+
+In a way, this reminds me of an idea I had earlier, whereby this
+variable p is what I call a common subexpression, a key which unlocks
+the equation, a sort of trapdoor.
+
+Suppose I had written Y = f(X) as follows:
+
+y[0] = x[1] ^ x[2] ^ x[3] ^ x[4]
+y[1] = x[0] ^ x[2] ^ x[3] ^ x[4]
+y[2] = x[0] ^ x[1] ^ x[3] ^ x[4]
+...
+
+A novice may have not have realized that each bit of y depends _only_
+on x ^ p, and that knowing or guessing p would reveal every bit of Y
+for each known bit of X, without having to know any other bit of X.
+
+Now, what I sometimes wonder is whether the equations and tables in
+things like DES or SHA-1 are not similar... a table allows for several
+boolean logic representations, and depending on which you pick for
+each output bit, it may be possible that a common subexpression like p
+falls out of the equations, minimizing the amount of unknowns, or
+the amount of compute power necessary to brute-force it.
+
+For a Feistel cipher like DES, one might pick different boolean logic
+representations in different rounds, to minimize the complexity of
+the equations you get at the end.
+
+This is why I don't try to design ciphers.  I could possibly come up
+with some complicated-looking tables and equations, but I'd have no
+assurance that a simple common subexpression did not exist.
+
+Do I need to resort to a conventional hash like SHA-1?  I am not
+convinced that it is necessary, or that I'd have any more assurance
+from SHA-1 than I'd have with a randomly-generated set of equations.
+
+Does it have to be random?  Isn't there a regular structure I could
+exploit here?  It seems like there should be!
+
+Randomly-generated equations remind me a bit of the following AI Koan:
+
+In the days when Sussman was a novice, Minsky once came to him as he
+sat hacking at the PDP-6.
+
+&quot;What are you doing?&quot;, asked Minsky.
+
+&quot;I am training a randomly wired neural net to play Tic-Tac-Toe&quot;,
+Sussman replied.
+
+&quot;Why is the net wired randomly?&quot;, asked Minsky.
+
+&quot;I do not want it to have any preconceptions of how to play&quot;, Sussman
+said.
+
+Minsky then shut his eyes.
+
+&quot;Why do you close your eyes?&quot;, Sussman asked his teacher.
+
+&quot;So that the room will be empty.&quot;
+
+At that moment, Sussman was enlightened.
+-- 
+&lt;URL:<A HREF="http://www.subspacefield.org/~travis/">http://www.subspacefield.org/~travis/</A>&gt; -&gt;&lt;- dharma &lt;&gt;&lt; advaita
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070807/e03120f8/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20070807/e03120f8/attachment.pgp</A>&gt;
+</PRE>

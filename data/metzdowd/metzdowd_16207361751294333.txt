@@ -1,0 +1,23 @@
+<PRE>
+Stephan Neuhaus &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">neuhaus at st.cs.uni-sb.de</A>&gt; writes:
+&gt;<i> On Apr 28, 2008, at 23:56, Perry E. Metzger wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> If you have a rotten apple engineer, he will be able to hide what he's
+</I>&gt;&gt;<i> trying to do and make it look completely legit. If he's really good,
+</I>&gt;&gt;<i> it may not be possible to catch what he's done EVEN IN PRINCIPLE.
+</I>&gt;<i>
+</I>&gt;<i> Fred Cohen proved in 1984 in his &quot;Computer Viruses, Theory and
+</I>&gt;<i> Experiments&quot;[1] that &quot;Program P is a virus&quot; is undecidable.
+</I>
+He needn't have bothered. All non-trivial properties of programs
+are undecidable. Rice's Theorem, you know. Such a proof is one line --
+you need merely assert that &quot;X is a virus&quot; is a non-trivial property
+(that is, a property that is only true of some programs).
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

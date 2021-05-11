@@ -1,0 +1,37 @@
+<PRE>
+On Mar 16, 2008, at 8:50 AM, John Levine wrote:
+
+&gt;&gt;&gt;<i> So at the company I work for, most of the internal systems have
+</I>&gt;&gt;&gt;<i> expired SSL certs, or self-signed certs.  Obviously this is bad.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> You only think this is bad because you believe CAs add some value.
+</I>&gt;<i>
+</I>&gt;<i> Presumably the value they add is that they keep browsers from popping
+</I>&gt;<i> up scary warning messages.  There are all sorts of reasonable
+</I>&gt;<i> arguments to be made that the browsers are doing the wrong thing (and
+</I>&gt;<i> the way that Microsoft prevents you from ever deleting any of their
+</I>&gt;<i> preinstalled CA certs is among the wrongest.)
+</I>
+Yes, but.
+
+If a browser handled unknown certificates similarly to the way SSH  
+does -- to alert the user when it sees an unknown, unrooted  
+certificate, and then only again when there is a mis-match, you would  
+have an incentive to get a CA certificate (because businesses don't  
+want their customers to see that scary message even once), while  
+supporting ad-hoc infrastructures.
+
+This would require only software changes, not changes in the trust  
+models, CAs, procedures, etc.
+
+A wicked person would suggest that this is because the present system  
+was designed to support the business model, not the security model.  
+I'm not a wicked person and would never suggest that.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

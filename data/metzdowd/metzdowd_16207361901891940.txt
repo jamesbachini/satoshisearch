@@ -1,0 +1,43 @@
+<PRE>Ben Laurie wrote:
+&gt;<i> IanG wrote:
+</I>&gt;&gt;<i> 2.  GPG + Engimail + Thunderbird.  Will never be totally robust because
+</I>&gt;&gt;<i> there is too much dependency.
+</I>&gt;<i> 
+</I>&gt;<i> What does this mean? GPG + Enigmail, whilst not the best architecture I
+</I>&gt;<i> ever heard of, is a tiny increment to the complexity of Thunderbird.
+</I>&gt;<i> 
+</I>&gt;<i> Are you saying anything other than &quot;big software has bugs&quot;?
+</I>
+
+No, interaction between different software packages has 
+costs.  When you spend time to load up Thunderbird, then 
+load up enigmail, then load up gpg ... this is more work 
+than just loading up Tbird and sticking with it.
+
+Then, when a new Thunderbird comes out, you load that up and 
+the other packages cease to work.  What do you do?  Wait a 
+few months until the others come back into line?  Or stop 
+using encrypted email.  The masses do the latter, the geeks 
+might do the former.
+
+Most people download one thing and stick to it.  They follow 
+the automated upgrades, or don't upgrade at all.  Most 
+people have a life other than package management.  These are 
+the masses.  For them, the softare has to work first time, 
+every time, all the time.  And upgrade itself.
+
+These are the target.  Aiming to do security for geeks alone 
+is pointless, it just marks us out for special treatment. 
+Using gpg is evidence of your guilt.  Using skype is normal, 
+it's just the easiest way to chat and phone.
+
+
+
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

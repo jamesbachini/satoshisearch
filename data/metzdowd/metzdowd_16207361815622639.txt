@@ -1,0 +1,102 @@
+<PRE>On Wed, 4 Jun 2008, Perry E. Metzger wrote:
+|<i> As some of you know, one can now buy &quot;Enhanced Security&quot; certificates,
+</I>|<i> and Firefox and other browsers will show the URL box at the top with a
+</I>|<i> special distinctive color when such a cert is in use.
+</I>|<i> 
+</I>|<i> Many of us have long contended that such things are worthless and
+</I>|<i> prove only that you can pay more money, not that you're somehow more
+</I>|<i> trustworthy.
+</I>|<i> 
+</I>|<i> An object lesson in this just fell in my lap -- I just got my first
+</I>|<i> email from a spammer that links to a web site that uses such a cert,
+</I>|<i> certified by a CA I've never heard of (&quot;Starfield Technologies, Inc.&quot;)
+</I>|<i> Doubtless they sell discount &quot;Enhanced Security&quot; certs so you don't
+</I>|<i> have to worry about paying more money either. I haven't checked the
+</I>|<i> website for drive by malware, but I wouldn't be shocked if it was
+</I>|<i> there.
+</I>|<i> 
+</I>|<i> I'm thinking of starting a CA that sells &quot;super duper enhanced
+</I>|<i> security&quot; certs, where we make the company being certified sign a
+</I>|<i> document in which they promise that they're absolutely trustworthy.
+</I>|<i> To be really sure, we'll make them fax said document in on genuine
+</I>|<i> company letterhead, since no one can forge letterhead.
+</I>This message, shortly after our discussion of trust, makes me think of
+the applicability of an aspect liguistic theory, namely speech acts.
+Speech acts are expressions that go beyond simply communication to
+actually produce real-world effects.  The classic example:  If I say
+&quot;John and Sarah are married&quot;, that's a bit of communication; I've passed
+along to listeners my belief in the state of the world.  When a
+minister, in the right circumstances, says &quot;John and Sarah are married&quot;,
+those words actually create the reality:  They *are* now married.
+
+There are many more subtle examples.  A standard example is that of
+a promise:  To be effective as a speech act, the promise must be
+made in a way that makes it clear that the promiser is undertaking
+some obligation, and the promiser must indeed take on that obligation.
+There's a whole cultural context involved here in what is needed for
+an obligation to exist and what it actually means to be obligated.
+(Ultimately, the theory gets pushed to the point where it breaks;
+but we don't have to go that far.)
+
+In human-to-human communication, we naturally understand and apply the
+distinction between speech acts and purely communicative speech.  It's
+not that we can't be fooled - a person who speaks with authority is
+often taken to have it, which may allow him to create speech acts he
+should not be able to - but this is relatively rare.
+
+When exchanging data with a machine, the line between communication and
+speech acts gets very blurry.  (You can think of this as the blurry line
+between data and program.)  When I go into a store and ask for
+information, I see myself and the salesman as engaging in pure
+communication.  There are definite, well-understood ways - socially and
+even legally defined steps - that identify when I've crossed over into
+speech acts and have, for example, taken on an obligation to pay for
+something.  When, on the other hand, I look at a Web site, things are
+not at all clear.  From my point of view, the data coming to my screen
+is purely communication to me.  From the computer's point of view, the
+HTML is all &quot;speech acts,&quot; causing the computer to take some actions.
+My clicks are all &quot;speech acts&quot; to the server.  Problems arise when what
+I see as pure communication is somehow transformed, without my consent
+or even knowledge, into speech acts that implicate *me*, rather than my
+computer.  This happens all too easily, exactly because the boundary
+between me and my computer is so permeable, in a Web world.
+
+Receiving an SSL cert, in the proper context (corresponds to the URL
+I typed, signed by a trusted CA), is supposed to be a speech act to
+me as a human being:  It's supposed to cause me to believe that I've
+reached the site I meant to reach.  (My machine, of course, doesn't
+care - it has no beliefs and has nothing at risk.)  The reason the model
+is so appealing is that it maps to normal human discourse.  If my friend
+tells me &quot;I'll bring dinner,&quot; I don't cook something while waiting for
+him to arrive.
+
+Unfortunately, as we've discussed here many times, the analogy is
+deeply, fundamentally flawed.  SSL certs don't really work like trusted
+referals from friends, and the very familiarity of the transactions is
+what makes them so dangerous:  It makes it too easy for us to treat
+something as a speech act when we really shouldn't.
+
+Enhanced security certs simply follow the same line of reasoning.  They
+will ultimately prove just as hazardous.
+
+Going back to promises as speech acts:  When a politician promises to
+improve the economy, we've all come to recognize that, although that's
+in the *from* of a promise, it doesn't actually create any obligation.
+&quot;Improving the economy&quot; isn't something anyone can actually do - even if
+we could agree on what it means.  Such a promise is simply a way of
+saying &quot;I think the economy should be better&quot;.  Politicians make
+statements in this form because at some level, even though we know
+better, we *do* treat them as speech acts.  It's a many-millenia-long
+struggle between those trying to rouse the rabble and the &quot;rabble&quot;
+trying to avoid being improperly roused.
+
+Somehow, we're going to need to develop a better way for humans to
+understand which computer communications are &quot;just information,&quot; and
+which should be treated as speech acts.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

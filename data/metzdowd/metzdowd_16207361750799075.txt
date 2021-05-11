@@ -1,0 +1,28 @@
+<PRE>  <A HREF="http://eprint.iacr.org/2008/166">http://eprint.iacr.org/2008/166</A>
+
+  Algebraic Attacks on the Crypto-1 Stream Cipher in MiFare Classic and Oyster
+  Cards
+
+  Nicolas T. Courtois and Karsten Nohl and Sean O'Neil
+
+  MiFare Crypto 1 is a lightweight stream cipher used in London's Oyster card,
+  Netherland's OV-Chipcard, US Boston's CharlieCard, and in numerous wireless
+  access control and ticketing systems worldwide. Recently, researchers have
+  been able to recover this algorithm by reverse engineering.
+
+  We have examined MiFare from the point of view of the so called &quot;algebraic
+  attacks&quot;. We can recover the full 48-bit key of MiFare algorithm in 200
+  seconds on a PC, given 1 known IV (from one single encryption).
+
+  The security of this cipher is therefore close to zero. This is particularly
+  shocking, given the fact that, according to the Dutch press, 1 billion of
+  MiFare Classic chips are used worldwide, including in many governmental
+  security systems.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

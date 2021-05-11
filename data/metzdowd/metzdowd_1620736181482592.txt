@@ -1,0 +1,42 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A> wrote:
+&gt;<i> You don't have to trust the target site's self assertions about
+</I>&gt;<i> its own identity because you trust the root to only validate for sites
+</I>&gt;<i> that are what they claim to be.
+</I>
+ From the viewpoint of the user (which is the viewpoint used by 
+Kelly), we see that trust can be copied when different users, 
+accessing different servers for the same domain, do not know that they 
+are using different copies of the /same/ SSL cert. In fact, no copy is 
+less of an original than the original itself!
+
+We see that the trust relationship represented by that SSL cert can be 
+copied without any loss, as many times as you wish (for the possible 
+dismay of the CA). If the CA bit is set, trust can even be transferred 
+to multiple domains, and the trust represented by each such SSL cert 
+in each domain can be copied without limit as well.
+
+As to another point of your comment, the problem most people have with 
+PKI is not that SSL does not work. SSL does not even need PKI.
+
+The problem can be explained in terms of extent of trust. If you don't 
+define your extent of trust in a CA, for example in your acceptance 
+policy of records signed by certs from a CA, you may run into 
+difficulties. The difficulties are /solved/ (within your risk model) 
+when you correctly define the extent of trust -- rather than just 
+taking a &quot;trust in all matters&quot; attitude.
+
+For example, even though I do not trust a CA's CRLs, I may trust that 
+CA to prevent rogue use of its private-key for signing end-user certs. 
+This trust, limited by this extent, can be used in automating use of 
+certs from that CA -- for example, only accept signatures from 
+end-user certs of that CA if the cert is less than 31 days old (or, 15 
+days -- whatever your risk model says).
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

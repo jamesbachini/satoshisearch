@@ -1,0 +1,39 @@
+<PRE>&gt;<i> everything forever.  With disk prices falling
+</I>&gt;<i> as they are, keeping everything is cheaper
+</I>&gt;<i> than careful selective deletion, that's for
+</I>&gt;<i> sure.
+</I>
+I disagree.
+
+We've been helping the German &quot;Toll Collect&quot; system (as
+discussed in this thread as well) setting up and implementing
+their data privacy concept. This concept requires Toll Collect
+to delete almost any data after a certain (quite short, actually)
+amount of time. Even with disk prices falling they save lots
+and lots of money (even compared to what we charged them for
+telling them... :-) ).
+
+Cheers,
+
+	Stefan.
+
+--------------------------------------------------------
+Symposium Wirtschaftsspionage 03.09.2008 KA/Ettlingen
+<A HREF="http://www.symposium-wirtschaftsspionage.de/">http://www.symposium-wirtschaftsspionage.de/</A>
+---------------------------------------------------------
+Stefan Kelm
+Security Consulting
+
+Secorvo Security Consulting GmbH
+Ettlinger Strasse 12-14, D-76137 Karlsruhe
+Tel. +49 721 255171-304, Fax +49 721 255171-100
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stefan.kelm at secorvo.de</A>, <A HREF="http://www.secorvo.de/">http://www.secorvo.de/</A>
+PGP: 87AE E858 CCBC C3A2 E633 D139 B0D9 212B
+
+Mannheim HRB 108319, Geschaeftsfuehrer: Dirk Fox
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,18 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+&gt;<i> (The usage model is that you do the UI portion on the PC, but
+</I>&gt;<i> perform the actual transaction on the external device, which has a
+</I>&gt;<i> two-line LCD display for source and destination of transaction,
+</I>&gt;<i> amount, and purpose of the transaction.  All communications enter
+</I>&gt;<i> and leave the device encrypted, with the PC acting only as a proxy.
+</I>&gt;<i> Bill of materials shouldn't be more than about $20).
+</I>
+I've been thinking this was the way to go for years now.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,55 @@
+<PRE>Francois Grieu wrote:
+&gt;<i> That's because if Tn is known (including chosen) to &quot;some person&quot;,
+</I>&gt;<i> then (due to the weakness in MD5 we are talking about), she can
+</I>&gt;<i> generate Dp and Dp' such that
+</I>&gt;<i>   S( MD5(Tn || Dp || Cp || Cn) ) = S( MD5(Tn || Dp' || Cp || Cn) )
+</I>&gt;<i> whatever Cp, Cn and S() are.
+</I>&gt;<i> 
+</I>First of all, the weakness in MD5 (computational feasibility over time)
+that &quot;we are talking about&quot; is not (yet) a preimage or second preimage
+attack.  Please don't extrapolate your argument.
+
+Second of all, you need to read my messages more carefully.  No good
+canonical format allows random hidden fields or images.
+
+Third of all, that's not a weakness of a notary protocol -- it's a trap!
+The whole point of a notary is to bind a document to a person.  That the
+person submitted two or more different documents at different times is
+readily observable.  After all, the notary has the document(s)!
+
+Remember, the notary is not vouching for the validity of the content of
+the document.  A notary only certifies that something was submitted by
+some person at some time.  And that cannot be broken by making multiple
+submissions, or submissions that themselves have the same hash.
+
+That's one reason I'm much more interested in the attack on X.509.
+
+
+&gt;<i> If Tn was hashed after Dp rather than before, poof goes security.
+</I>&gt;<i> 
+</I>But since it's not, that's a ridiculous strawman.  I was remembering PGP
+off the top of my head.  Fairly certain that Kerberos does, too.  Not
+everybody is naive!
+
+And since the timestamp is &quot;predictable&quot; (within some range, although
+picoseconds really aren't very predictable), the protocols that I've
+designed include message identifiers, nonces, and sequence numbers, too.
+
+As you may recall, I mentioned that there were other fields....
+
+He asked for an explanation about how a document is identified, he got
+one.  Don't expect me to redesign an entire notary (or even a timestamp)
+protocol on a Sunday evening for a mailing list....  Really, there are
+fairly secure standards already available.
+
+However, the actual topic of this thread is code distribution.  In that
+case, there is no &quot;other&quot; party certifying the documents.  The code
+packager is also the certifier.  There is (as yet) no weakness in the
+MD4 family (including MD5 and SHA1) that allows this attack by another
+party.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,39 @@
+<PRE>At 8:28 PM -0400 7/1/08, Perry E. Metzger wrote:
+&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+</I>&gt;&gt;<i>  &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i>No. In fact, it is about as far from the truth as I've ever seen. No real
+</I>&gt;&gt;&gt;<i>expert would choose to deliberately make a protocol more complicated.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  IPsec.  Anything to do with PKI.  XMLdsig.  Gimme a few minutes and I can
+</I>&gt;&gt;<i>  provide a list as long as your arm.  Protocol designers *love* complexity.
+</I>&gt;&gt;<i>  The more complex and awkward they can make a protocol, the better it has to
+</I>&gt;&gt;<i>  be.
+</I>&gt;<i>
+</I>&gt;<i>The problem, Peter, is that people who don't know you may mistake your
+</I>&gt;<i>sarcasm for agreement with misconception in the article Arshad quoted.
+</I>&gt;<i>
+</I>
+The quote from the article was:
+
+&quot;There are, of course, obstacles that must still be overcome by EKMI 
+proponents. For example, the proposed components are somewhat simple 
+by design, which concerns some encryption purists who prefer more 
+complex protocols, on the logic that they're more difficult to break 
+into.&quot;
+
+It jumps from &quot;components&quot; to &quot;protocols&quot;. In general, &quot;encryption 
+purists&quot; like simpler algorithms. OTOH, when &quot;encryption purists&quot; get 
+involved in protocol design, the protocols usually become complex to 
+the point of opacity.
+
+So, I agree with Peter that that article is probably correct about protocols.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

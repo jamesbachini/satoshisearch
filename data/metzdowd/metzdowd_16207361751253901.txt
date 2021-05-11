@@ -1,0 +1,43 @@
+<PRE>
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+</I>&gt;&gt;&gt;<i> Each chip does not have to be 100% independent, and does not have to
+</I>&gt;&gt;&gt;<i> be used 100% of the time.
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> Assuming a random selection of both outputs and chips for testing, and
+</I>&gt;&gt;&gt;<i> a finite set of possible outputs, it is possible to calculate what
+</I>&gt;&gt;&gt;<i> sampling ratio would provide an adequate confidence level -- a good
+</I>&gt;&gt;&gt;<i> guess is 5% sampling.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Not likely.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Sampling will not work. Sampling theory assumes statistical
+</I>&gt;&gt;<i> independence and that the events that you're looking for are randomly
+</I>&gt;&gt;<i> distributed. 
+</I>&gt;<i>
+</I>&gt;<i> Provided you have access to enough chip diversity so as to build a
+</I>&gt;<i> correction channel with sufficient capacity, Shannon's Tenth Theorem
+</I>&gt;<i> assures you that it is possible to reduce the effect of bad chips on
+</I>&gt;<i> the output to an error rate /as close to zero/ as you desire. There is
+</I>&gt;<i> no lower, limiting value but zero.
+</I>
+No. It really does not. Shannon's tenth theorem is about correcting
+lossy channels with statistically random noise. This is about making
+sure something bad doesn't happen to your computer like having someone
+transmit blocks of your hard drive out on the network. I assure you
+that Shannon's theorem doesn't speak about that possibility. The two
+are not really related. It would be wonderful if they were, but they
+aren't. Indeed, Shannon's tenth theorem doesn't even hold for error
+correction if the noise on the channel is produced by an adversary
+rather than being random.
+
+I'm not particularly inclined to argue this at length.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

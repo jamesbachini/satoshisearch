@@ -1,0 +1,32 @@
+<PRE>Victor Duchovni wrote:
+ &gt; A
+ &gt; security savvy user will recognize this as a second password, that
+ &gt; multiple sites seem to want to share, and enter something unique and
+ &gt; unmemorable (stored on a &quot;keychain&quot; or just discarded if the primary
+ &gt; password is similarly safely stored).
+
+In fact, I see security questions as a security weakness.
+
+My typical answer is random garbage, such as output of pwgen -s -y 48 1. 
+This can be discarded then. Or, at least, gpw 1 60 (gpw output is less 
+secure, but can be stored, remembered, and even written in on simplified 
+keyboards)
+
+Leichter, Jerry wrote:
+ &gt; I can just see the day when someone's fingerprint is rejected as
+ &gt; &quot;insufficiently complex&quot;.
+
+:<i>-) Or iris scan, or body dimensions. I call it security through 
+</I>stupidity. :-)
+
+But never mind, these people will be picked up by by government 
+datamining as un-normal (terrorist suspects) and imprisoned. Problem solved.
+
+-- 
+Martin Tomasek
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

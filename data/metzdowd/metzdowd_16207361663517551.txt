@@ -1,0 +1,19 @@
+<PRE>Dave Howe &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">DaveHowe at gmx.co.uk</A>&gt; writes:
+
+&gt;<i>SSL - Cludge thrown together by a browser manufacturer,
+</I>
+To paraphrase Winston Churchill, &quot;SSL is the worst secure-pipe protocol,
+except for all the others&quot;.  Like most people here, I can find assorted nits
+to pick with it (mostly message-formatting stuff and the like, which is
+actually relatively trivial), but every time I look at its competitors I
+realise that they're all much, much worse.  Conversely, it's amazing how many
+other protocols are just SSL reinvented badly (or in several cases, really
+really badly).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

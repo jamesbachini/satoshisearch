@@ -1,0 +1,16 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A> wrote:
+&gt;<i> eWeek Insider Channel published an interesting article today about, &#8220;Skype working with domain owners to shut down malicious sites infecting Skype for Windows users via instant messages.&#8221;
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.channelinsider.com/article/Skype%20Worm%20Attacks%20Security%">http://www.channelinsider.com/article/Skype%20Worm%20Attacks%20Security%</A>
+</I>&gt;<i>   
+</I>
+That link is incorrect, the article can be found here:
+<A HREF="http://www.channelinsider.com/article/Skype+Worm+Attacks+Security+Software/214935_1.aspx">http://www.channelinsider.com/article/Skype+Worm+Attacks+Security+Software/214935_1.aspx</A>
+
+- Ian
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

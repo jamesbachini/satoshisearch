@@ -1,0 +1,57 @@
+<PRE>
+
+Leichter, Jerry wrote:
+
+&gt;<i> If the function is defined as I suggested - as a static or inline - you
+</I>&gt;<i> can, indeed, takes its address.  (In the case of an inline, this forces
+</I>&gt;<i> the compiler to materialize a copy somewhere that it might not otherwise
+</I>&gt;<i> have produced, but not to actually *use* that copy, except when you take
+</I>&gt;<i> the address.)  You are allowed to invoke the function using the address
+</I>&gt;<i> you just took.  However, what in that tells you that the compiler -
+</I>&gt;<i> knowing exactly what code will be invoked - can't elide the call?
+</I>
+Case of static function definition: the standard says that standard 
+library headers *declare* functions, not *define* them.
+
+Case of inline: I don't know if inline definition falls in the standard 
+definition of declaration.
+
+Also, the standard refers to these identifiers as external linkage. This 
+language *might* not creare a mandatory provision if there was a 
+compelling reason to have static or inline implementation, but I doubt 
+the very infrequent use of (memset)(?,0,?) instead of memset(?,0,?) is a 
+significant optimization opportunity. The compiler writer risks a 
+non-compliance assessment in making such strectched reading of the 
+standard in the present instance, for no gain in any benchmark or 
+production software speed measurement.
+
+Obviously, a pointer to an external linkage scope function must adhere 
+to the definition of pointer equality (==) operator.
+
+Maybe a purposedly stretched reading of the standard might let you make 
+your point. I don't want to argue too theoretically. Peter and I just 
+want to clear memory!
+
+Kind regards,
+
+
+-- 
+
+- Thierry Moreau
+
+CONNOTECH Experts-conseils inc.
+9130 Place de Montgolfier
+Montreal, Qc
+Canada   H2M 2A1
+
+Tel.: (514)385-5691
+Fax:  (514)385-5900
+
+web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

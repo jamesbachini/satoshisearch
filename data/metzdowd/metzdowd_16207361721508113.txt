@@ -1,0 +1,24 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> writes:
+
+&gt;<i>I would think this would be rather common, and I may have heard about certs
+</I>&gt;<i>that had authority to sign other certs in some circumstances...
+</I>
+The desire to do it isn't uncommon, but it runs into problems with PKI
+religious dogma that only a CA can ever issue a certificate.  For example I
+proposed this on the PKIX working group nearly a decade ago, specifically the
+ability for end entities with signing certs to issue their own encryption
+certs, since there's absolutely no need to involve a CA in this.  I've still
+got the draft online at
+<A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/autonomous.txt.">http://www.cs.auckland.ac.nz/~pgut001/pubs/autonomous.txt.</A>  The WG chair's
+response was &quot;we don't want to turn X.509 into PGP&quot;, and that was the end of
+it.  The grid computing folks eventually got something through in the form of
+proxy certificates for the Globus GSI, but that probably isn't what you're
+looking for.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

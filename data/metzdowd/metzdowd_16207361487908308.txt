@@ -1,0 +1,85 @@
+<PRE>|<i> &gt;Between encrypted VOIP over WIFI and eventually over broadband cell -
+</I>|<i> &gt;keeping people from running voice over their broadband connections is
+</I>|<i> &gt;a battle the telco's can't win in the long run - and just plain
+</I>|<i> &gt;encrypted cell phone calls, I think in a couple of years anyone who
+</I>|<i> &gt;wants secure phone connections will have them.
+</I>|<i> 
+</I>|<i> I think you're looking at this a bit wrong.  I rememeber the same
+</I>|<i> opinion as the above being expressed on the brew-a-stu list about
+</I>|<i> fifteen years ago, and no doubt some other list will carry it in
+</I>|<i> another fifteen years time, with nothing else having changed.  Anyone
+</I>|<i> who wants secure voice connections (governments/military and a
+</I>|<i> vanishingly small number of hardcore geeks) already have them, and
+</I>|<i> have had them for years.  Everyone else just doesn't care, and
+</I>|<i> probably never will.  This is why every single encrypted-phones-for-
+</I>|<i> the-masses project has failed in the market.  People don't see phone
+</I>|<i> eavesdropping as a threat, and therefore any product that has a
+</I>|<i> nonzero price difference or nonzero usability difference over an
+</I>|<i> unencrypted one will fail.  This is why the only successful encrypted
+</I>|<i> phone to date has been Skype, because the crypto comes for free.
+</I>|<i> 
+</I>|<i> I once had a chat with someone who was responsible for indoctrinating
+</I>|<i> the newbies that turn up in government after each election into things
+</I>|<i> like phone security practices.  He told me that after a full day of
+</I>|<i> drilling it into them (well, alongside a lot of other stuff from other
+</I>|<i> departments) it sometimes took them as long as a week before they were
+</I>|<i> back to loudly discussing sensitive information on a cellphone in the
+</I>|<i> middle of a crowded restaurant.
+</I>|<i> 
+</I>|<i> So in terms of secure voice communications, the military and geeks are
+</I>|<i> already well served, and everyone else doesn't care.  Next, please.
+</I>I won't disagree with you here.  Most people don't perceive voice
+monitoring as a threat to them - and if you're talking about monitoring
+by many governments and by business intelligence snoopers, they are
+perfectly correct.  (I say &quot;many governments&quot; because those governments
+that actively monitor and control large portions of their citizenry
+hardly make a secret of that fact, and citizens of those countries
+just assume they might be overheard and act accordingly.  The citizens
+of, for lack of a better general phrase, the Western democracies, are
+quite right in their assessment that their governments really don't care
+about what they are saying on the phone, unless they are part of a very
+small subpopulation involved, whether legitimately or otherwise, in
+politics or intelligence or a couple of other pretty well understood
+areas.)
+
+Selling protection against voice snooping to most people under current
+circumstances is like selling flood insurance to people living in the
+desert.  If you're an insurance hacker - like a security hacker - you
+can point out that flash floods *can* happen, but if they are so rare
+that no one is likely to be affected in their lifetime, your sales
+pitch *should* fail.
+
+What will change things is not the technology but the perception of a
+threat.  Forty years ago, the perceived threat from airplane hijacking
+was that it was non-existent, and no one would consider paying the cost.
+Today, we play a very significant cost.  The threat is certainly
+greater, but the *perceived* threat is orders of magnitude beyond even
+that.
+
+The moment the perceived threat from phone eavesdropping exceeds some
+critical level, the market for solutions (good and, of course,
+worthless) will materialize.  As you note, in the military and
+intelligence community, the real and perceived threats have been there
+for years.  And the crypto hackers will perceive a threat whether it
+exists or not.
+
+I'd guess that the next step will be in the business community.  All it
+will take is one case where a deal is visibly lost because of &quot;proven&quot;
+eavesdropping (&quot;proven&quot; in quotes because it's unlikely that there will
+really be any proof - just a *perception* of a smoking gun - and in fact
+it could well be that the trigger case will really be someone covering
+his ass over a loss for entirely different reasons) and all of a sudden
+there will be a demand for strong crypto on every Blackberry phone link.
+Things have a way of spreading from there:  If the CEO's need this, then
+maybe I need it, too.  If &quot;it&quot; is expensive or inconvenient, I may feel
+the need, but I won't act on it.  But the CEO's will ensure that it
+isn't inconvenient - they won't put up with anything that isn't
+invisible to them - and technology will quickly drive down the cost.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

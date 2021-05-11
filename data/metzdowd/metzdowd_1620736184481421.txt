@@ -1,0 +1,23 @@
+<PRE>Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; writes:
+&gt;<i>* Peter Gutmann:
+</I>&gt;&gt;&gt;<i>Or is it unreasonable to expect that the specs match what is actually needed
+</I>&gt;&gt;&gt;<i>for interoperability with existing implementations (mostly in the TLS, S/MIME
+</I>&gt;&gt;&gt;<i>area)?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> There is very little correspondence between PKI specs and reality.
+</I>&gt;<i>
+</I>&gt;<i>I should have written that my main goal was to extract the public key
+</I>&gt;<i>material, and perhaps the validity period.  I want to use the
+</I>&gt;<i>certificates as interoperable public key containers, 
+</I>
+That's the best way to use them.  For one thing it doesn't create any mistaken 
+impression that setting a particular extension will have any useful effect 
+when the software at the other end sees it :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

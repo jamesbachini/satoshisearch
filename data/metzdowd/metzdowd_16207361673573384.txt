@@ -1,0 +1,45 @@
+<PRE>
+Forwarded from Dave Farber's list:
+
+________________________________________
+From: Rich Kulawiec [<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rsk at gsp.org</A>]
+Sent: Monday, January 14, 2008 6:41 PM
+To: Fergie; David Farber; Richard Forno; Lauren Weinstein
+Subject: US drafting plan to allow government access to any email or Web search
+
+Quoting from:
+
+        <A HREF="http://rawstory.com/news/2007/US_drafting_plan_to_allow_government_0114.html">http://rawstory.com/news/2007/US_drafting_plan_to_allow_government_0114.html</A>
+
+        National Intelligence Director Mike McConnell is drawing up
+        plans for cyberspace spying that would make the current debate
+        on warrantless wiretaps look like a &quot;walk in the park,&quot; according
+        to an interview published in the New Yorker's print edition today.
+
+        Debate on the Foreign Intelligence Surveillance Act &quot;will be a
+        walk in the park compared to this,&quot; McConnell said. &quot;this is going
+        to be a goat rope on the Hill. My prediction is that we're going
+        to screw around with this until something horrendous happens.&quot;
+
+        The article, which profiles the 65-year-old former admiral
+        appointed by President George W. Bush in January 2007 to oversee
+        all of America's intelligence agencies, was not published on
+        the New Yorker's Web site. (It can be read here in pdf).
+
+        [...]
+
+The PDF link points to:
+
+        <A HREF="http://online.wsj.com/public/resources/documents/WashWire.pdf">http://online.wsj.com/public/resources/documents/WashWire.pdf</A>
+
+which I'm unable to access at the moment.
+
+---Rsk
+
+-------------------------------------------
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

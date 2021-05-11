@@ -1,0 +1,38 @@
+<PRE>* Perry E. Metzger:
+
+&gt;<i> Marcos el Ruptor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>&gt; writes:
+</I>
+&gt;&gt;<i> Nonsense. Total nonsense. A half-decent reverse engineer does not
+</I>&gt;&gt;<i> need the source code and can easily determine the exact operation of
+</I>&gt;&gt;<i> all the security-related components from the compiled executables,
+</I>&gt;&gt;<i> extracted ROM/EPROM code or reversed FPGA/ASIC layout
+</I>&gt;<i>
+</I>&gt;<i> I'm glad to know that you have managed to disprove Rice's
+</I>&gt;<i> Theorem.
+</I>
+Call me a speciest, but it's not clear if Rice's Theorem applies to
+humans.
+
+While Marcos' approach is somewhat off the mark (&quot;source-code
+equivalent that works for me&quot; vs. &quot;conformance of potentially
+malicious code to a harmless spec&quot;), keep in mind that object code
+validation has been performed for safety-critical code for quite a
+while.  The idea is that code for which some soundness property cannot
+be shown simply fails validation.  It doesn't matter if the validator
+is not clever enough, or if the code is actually bogus.
+
+(And for most (all?) non-trivial software, source code acquisition
+costs are way below validiation costs, so public availability of
+source code is indeed a red herring.)
+
+-- 
+Florian Weimer                &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fweimer at bfk.de</A>&gt;
+BFK edv-consulting GmbH       <A HREF="http://www.bfk.de/">http://www.bfk.de/</A>
+Kriegsstra&#223;e 100              tel: +49-721-96201-1
+D-76133 Karlsruhe             fax: +49-721-96201-99
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,26 @@
+<PRE>[Not sure if this is still of general list interest, let's take the followups
+ off-list.  If anyone else wants to be included in the off-list discussion,
+ let me know].
+
+Stefan Kelm &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stefan.kelm at secorvo.de</A>&gt; writes:
+
+&gt;<i>Did the &quot;Golden Reader Tool&quot; (GRT) recognize the Cardman reader w/o any
+</I>&gt;<i>modifications? The most current version I have (GRT v2.9) says in the
+</I>&gt;<i>&quot;ePassport Reader List&quot;:
+</I>&gt;<i>
+</I>&gt;<i> - Integrated Engineering Smart-ID
+</I>&gt;<i> - NMDA Tx-PR-400
+</I>&gt;<i> - Philips Pegoda
+</I>
+I sense Vista running on your machine :-).  To get it to work I had to fire up
+XP and explicitly install the Omnikey drivers from their web site rather than
+using Windows auto-install to get them.  It also runs well in Parallels on a
+Mac, although I haven't been able to get it to work under Vista.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,20 @@
+<PRE>On May 25, 2008, at 6:02 AM, Ben Laurie wrote:
+&gt;<i> I meant: how good are the PRNGs underneath them?
+</I>
+
+Not a direct answer to your question, but somewhat relevant as context  
+is Michal Zalewski's analysis of TCP/IP sequence number predictability  
+across operating systems:
+
+     &lt;<A HREF="http://lcamtuf.coredump.cx/newtcp/">http://lcamtuf.coredump.cx/newtcp/</A>&gt;
+
+It's several years out of date, however.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

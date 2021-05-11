@@ -1,0 +1,22 @@
+<PRE>
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+&gt;<i> If the user is used to logging in by a user interface that is not easy
+</I>&gt;<i> for forge remotely - click on bookmark to bring up a user interface
+</I>&gt;<i> that is difficult to remotely forge - then this does indeed work.
+</I>
+It might have been secure enough back in the days before almost every
+machine was infected by things like drive-by malware. Now that the
+hardware the user is on can no longer be trusted, this would only
+raise the bar slightly, and cause the bad guys, who already own half
+the machines on the net, to work a few more hours.
+
+I won't say such a thing would be bad if it already existed, but it
+seems like it would no longer be enough.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

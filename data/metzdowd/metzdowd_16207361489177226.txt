@@ -1,0 +1,74 @@
+<PRE>Doesn't this belong on the old SSHv2 WG's mailing list?
+
+On Sat, Jul 14, 2007 at 11:43:53AM -0700, Ed Gerck wrote:
+&gt;<i> SSH (OpenSSH) is routinely used in secure access for remote server
+</I>&gt;<i> maintenance. However, as I see it, SSH has a number of security issues
+</I>&gt;<i> that have not been addressed (as far I know), which create unnecessary
+</I>&gt;<i> vulnerabilities.
+</I>
+The SSHv2 protocol or OpenSSH (an implementation of SSHv1 and SSHv2)?
+
+&gt;<i> Some issues could be minimized by turning off password authentication,
+</I>&gt;<i> which is not practical in many cases. Other issues can be addressed by
+</I>&gt;<i> additional means, for example:
+</I>&gt;<i> 
+</I>&gt;<i> 1. firewall port-knocking to block scanning and attacks
+</I>
+Do you think that implementations of the protocol should implement this?
+(From what you say below I think your answer is &quot;yes.&quot;  Which brings up
+the questions &quot;why?&quot; and &quot;how?&quot;)
+
+&gt;<i> 2. firewall logging and IP disabling for repeated attacks (prevent DoS,
+</I>&gt;<i> block dictionary attacks)
+</I>
+SSH servers could integrate features like this without needing firewall
+APIs.
+
+&gt;<i> 3. pre- and post-filtering to prevent SSH from advertising itself and
+</I>&gt;<i> server OS
+</I>
+Unfortunately SSH implementations tend to depend on accurate client and
+server software version strings in order to work around bugs.
+
+Anyways, security by obscurity doesn't help.
+
+&gt;<i> 4. block empty authentication requests
+</I>
+What are those?
+
+Are they requests with an empty username?  The only SSHv2 userauth
+methods that support that are the GSS ones, and that's a good feature
+(it allows the server to derive the username from the client's principal
+name).
+
+&gt;<i> 5. block sending host key fingerprint for invalid or no username
+</I>
+Currently the only way to do this is to configure SSH servers to support
+only SSHv2 and only the gss-* key exchange algorithms (see RFC4462,
+section 2).  There exist implementations that support this.
+
+To get rid of the &quot;host authenticates itself first&quot; attitude for all
+non-GSS-based SSHv2 userauth methods will require radical changes to the
+protocol and deployment transitions.
+
+&gt;<i> 6. drop SSH reply (send no response) for invalid or no username
+</I>
+The server has to answer with something.  Silence is still an answer.
+So is closing the TCP connection.
+
+&gt;<i> I believe it would be better to solve them in SSH itself, as one would
+</I>&gt;<i> not have to change the environment in order to further secure SSH.
+</I>&gt;<i> Changing firewall rules, for example, is not always portable and may
+</I>&gt;<i> have unintended consequences.
+</I>
+Coding to firewall APIs is even less portable (heck, not all OSes have
+firewall APIs).
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

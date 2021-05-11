@@ -1,0 +1,73 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+</I>&gt;&gt;<i> Each chip does not have to be 100% independent, and does not have to
+</I>&gt;&gt;<i> be used 100% of the time.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Assuming a random selection of both outputs and chips for testing, and
+</I>&gt;&gt;<i> a finite set of possible outputs, it is possible to calculate what
+</I>&gt;&gt;<i> sampling ratio would provide an adequate confidence level -- a good
+</I>&gt;&gt;<i> guess is 5% sampling.
+</I>&gt;<i> 
+</I>&gt;<i> Not likely.
+</I>&gt;<i> 
+</I>&gt;<i> Sampling will not work. Sampling theory assumes statistical
+</I>&gt;<i> independence and that the events that you're looking for are randomly
+</I>&gt;<i> distributed. 
+</I>
+Provided you have access to enough chip diversity so as to build a 
+correction channel with sufficient capacity, Shannon's Tenth Theorem 
+assures you that it is possible to reduce the effect of bad chips on 
+the output to an error rate /as close to zero/ as you desire. There is 
+no lower, limiting value but zero.
+
+Statistical independence is not required to be 100%. Events are not 
+required to be randomly flat either. Sampling is required to  be 
+independent, but also not 100%.
+
+&gt;<i> We're dealing with a situation in which the opponent is
+</I>&gt;<i> doing things that are very much in violation of those assumptions.
+</I>
+The counter-point is that the existence of a violation can be tested 
+within a desired confidence level, which confidence level is dynamic.
+
+&gt;<i> The opponent is, on very very rare occasions, going to send you a
+</I>&gt;<i> malicious payload that will do something bad. Almost all the time
+</I>&gt;<i> they're going to do nothing at all. You need to be watching 100% of
+</I>&gt;<i> the time if you're going to catch him with reasonable confidence, but
+</I>&gt;<i> of course, I doubt even that will work given a halfway smart attacker.
+</I>
+The more comparison channels you have, and the more independent they 
+are, the harder it is to compromise them /at the same time/.
+
+In regard to time, one strategy is indeed to watch 100% of the time 
+but for random windows of certain lengths and intervals. The duty 
+ratio for a certain desired detection threshold depends on the 
+correction channel total capacity, the signal dynamics, and some other 
+variables. Different implementations will allow for different duty 
+ratios for the same error detection capability.
+
+&gt;<i> The paper itself describes reasonable ways to prevent detection on the
+</I>&gt;<i> basis of most other obvious methods -- power utilization, timing
+</I>&gt;<i> issues, etc, can all be patched over well enough to render the
+</I>&gt;<i> malhardware invisible to ordinary methods of analysis.
+</I>
+Except as above; using a correction channel with enough capacity the 
+problem can /always/ be solved (ie, with an error rate as close to 
+zero as desired).
+
+&gt;<i> Truth be told, I think there is no defense against malicious hardware
+</I>&gt;<i> that I've heard of that will work reliably, and indeed I'm not sure
+</I>&gt;<i> that one can be devised.
+</I>
+As above, the problem is solvable (existence proof provided by 
+Shannon's Tenth Theorem).  It is not a matter of whether it works -- 
+the solution exists; it's a matter of implementation.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

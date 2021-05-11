@@ -1,0 +1,70 @@
+<PRE>Frank Siebenlist wrote:
+
+&gt;<i> Why do the browser companies not care?
+</I>
+I spent a few years trying to interest (at least) one 
+browser vendor with looking at new security problems 
+(phishing) and using the knowledge that we had to solve this 
+(opportunistic cryptography).  No luck whatsoever.  My view 
+of why it is impractical / impossible to interest the 
+browser vendors in new ideas and new security might be 
+summed as this:
+
+* Browser vendors operate a closed security shop.  I think 
+this is because of a combination of things.  Mostly, all 
+security shops are closed, and there aren't any good 
+examples of open security shops (at least that I can think 
+of).  We see some outreach in the last few years (blogs or 
+lists by some) but they are very ... protected, the moat is 
+still there.
+
+* Browser vendors are influenced heavily by companies, which 
+have strong agendas.  Security programmers at the open 
+browsers are often employed by big companies who want their 
+security in.  They are not interested in user security. 
+Security programmers need jobs, they don't do this stuff for 
+fun.  So it is not as if you can blame them.
+
+* Browser vendors don't employ security people as we know 
+them on this mailgroup, they employ cryptoplumbers. 
+Completely different layer.  These people are mostly good 
+(and often very good) at fixing security bugs.  We thank 
+them for that!  But they are completely at sea when it comes 
+to systemic security failings or designing new systems.
+
+* Which also means it is rather difficult to have a 
+conversation with them.  For example, programmers don't know 
+what governance is, so they don't know how to deal with PKI 
+(which is governance with some certificate sugar), and they 
+can't readily map a multi-party failure.  OTOH, they know 
+what code is, so if you code it up you can have a 
+conversation.  But if your conversation needs non-code 
+elements ... glug glug...
+
+* Browser vendors work to a limited subset of the old PKI 
+book.  Unfortunately, the book itself isn't written, with 
+consequent problems.  So certain myths (like &quot;all CAs must 
+be the same&quot;) have arisen which are out of sync with the 
+original PKI thinking ... and out of sync with reality ... 
+but there is no easy way to deal with this because of the 
+previous points.
+
+* Browser vendors may be on the hook for phishing.  When you 
+start to talk in terms like that, legal considerations make 
+people go gooey and vague.  Nobody in a browser vendor can 
+have that conversation.
+
+Which is all to say ... it's not the people!  It's the 
+assumptions and history and finance and all other structural 
+issues.  That won't change until they are ready to change, 
+and there are only limited things that outsiders can do.
+
+Just a personal opinion.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,31 @@
+<PRE>On Wed, 29 Oct 2008 23:41:40 -0500
+Thierry Moreau &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>&gt; wrote:
+ 
+&gt;<i> Does SCA protection enter the picture? Marginally at best.
+</I>&gt;<i> 
+</I>You're forgetting the first questions you need to ask: who are your
+enemies, what are you trying to protect, and what can you enemy spend?
+And regardless of the answer to the last part, it's safe to assume that
+your enemy would prefer to spend as little as possible.  Note that
+&quot;spend&quot; includes not just dollars, euros, zorkmids, or linden dollars,
+but also reputation if discovered, attack techniques you may or may not
+want to reveal, etc.  
+
+So -- why do a side-channel attack involving, say, a million SSL
+messages (see <A HREF="http://www.cert.org/advisories/CA-1998-07.html">http://www.cert.org/advisories/CA-1998-07.html</A>), when
+that's the sort of thing that will show up in a log file, when you can
+send a simple RPC query
+(<A HREF="http://www.microsoft.com/technet/security/Bulletin/ms08-067.mspx">http://www.microsoft.com/technet/security/Bulletin/ms08-067.mspx</A>) to
+learn a private key?
+
+But -- if you're a transit getting ready to deploy fare cards that
+depend on a chip being secure, you'd better be very careful about side
+channels, because those attacks can be tried offline.
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,33 @@
+<PRE>
+Bill Frantz writes, in part:
+-+--------------------------
+ | In the San Francisco Bay Area, they are using the transponder codes
+ | to measure how fast traffic is moving from place to place. They
+ | post the times to various destinations on the electric signs when
+ | there are no Amber alerts or other more important things to
+ | display. It is quite convenient, and they promise they don't use it
+ | to track people's trips.
+ |
+
+
+Look for general tracking to appear everywhere.
+Fast declining gasoline tax revenues will be
+replaced with per-mile usage fees, i.e., every
+major road becomes a toll road.  Most likely
+first in will be California and/or Oregon.
+
+The relationship to this list may then be thin
+excepting that the collection and handling of
+such data remains of substantial interest.  Of
+course, everyone who carries a cell phone has
+already decided that convenience trumps security,
+at least the kind of security that says &quot;they
+can't misuse what they ain't got.&quot;
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

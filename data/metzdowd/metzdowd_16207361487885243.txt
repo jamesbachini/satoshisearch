@@ -1,0 +1,19 @@
+<PRE>
+A fascinating IEEE Spectrum article on the incident in which lawful
+intercept facilities were hacked to permit the secret tapping of
+the mobile phones of a large number of Greek government officials,
+including the Prime Minister:
+
+<A HREF="http://www.spectrum.ieee.org/print/5280">http://www.spectrum.ieee.org/print/5280</A>
+
+Hat tip: Steve Bellovin.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

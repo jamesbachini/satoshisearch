@@ -1,0 +1,56 @@
+<PRE>
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+&gt;<i> James A. Donald:
+</I>&gt;&gt;&gt;<i> SSL is layered on top of TCP, and then one layers
+</I>&gt;&gt;&gt;<i> one's actual protocol on top of SSL, with the result
+</I>&gt;&gt;&gt;<i> that a transaction involves a painfully large number
+</I>&gt;&gt;&gt;<i> of round trips.
+</I>&gt;<i>
+</I>&gt;<i> Richard Salz wrote:
+</I>&gt;&gt;<i> Perhaps theoretically painful, but in practice this is
+</I>&gt;&gt;<i> not the case; commerce on the web is the
+</I>&gt;&gt;<i> counter-example.
+</I>&gt;<i>
+</I>&gt;<i> The delay is often humanly perceptible.  If humanly
+</I>&gt;<i> perceptible, too much.
+</I>
+The initial delay in connecting is usually DNS related, not SSL
+related, and is often experienced even in ordinary http: web
+surfing. I don't think that the delays involved in the SSL handshake
+are particularly perceptible amidst the other delays involved in
+connection setup, unless you're on a very high delay network like one
+of the older cellular data systems that are now going away
+anyway. Protocol hacks also make subsequent connections to the same
+server quite fast.
+
+In any case, although SSL has some compromises in the design, it is
+pretty good overall, and I can't see a good reason why one would pick
+something else in almost any ordinary situation. A real expert might
+find corner cases where it is not suitable, but there are very few
+experts out there, though lots of people who incorrectly think they
+are. I've seen idiots produce many things that were slower and had
+horrible security properties, all the while costing far more in
+software development, because they thought they knew better -- I've
+never seen anyone actually do better, though. For practical purposes,
+the rule is &quot;don't use something else&quot;, and &quot;if you think you're smart
+enough to do better, you almost certainly aren't&quot;.
+
+(No, I'm not a fan of X.509 certs, but those are not core to the
+protocol, and you can think of them as nothing more than a fancy key
+container format if you like. Key management is not addressed by SSL,
+so there is no reason that fixing key management has anything to do
+with SSL per se.)
+
+I'm sure you're going to disagree with me, James, but I won't be
+responding -- I don't think you're right, but I also see no reason to
+beat a dead horse. My opinion (and just about everyone else's) is well
+known. We live in a world where you are free to have a dissenting view.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

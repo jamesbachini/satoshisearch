@@ -1,0 +1,36 @@
+<PRE>Quoting &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt;:
+
+&gt;<i>
+</I>&gt;<i> Excerpt:
+</I>&gt;<i>
+</I>&gt;<i>   In a major change of stance, Canada-based Research In Motion (RIM)
+</I>&gt;<i>   may allow the Indian government to intercept non-corporate emails
+</I>&gt;<i>   sent over BlackBerrys.
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://economictimes.indiatimes.com/Telecom/Govt_may_get_keys_to_your_BlackBerry_mailbox_soon/articleshow/3041313.cms">http://economictimes.indiatimes.com/Telecom/Govt_may_get_keys_to_your_BlackBerry_mailbox_soon/articleshow/3041313.cms</A>
+</I>&gt;<i>
+</I>&gt;<i> Hat tip: Bruce Schneier's blog.
+</I>
+Wow, and April 1st was almost two months ago.  This is just a bunch
+of FUD.  If someone actually talked to RIM they would find out that
+it's technically impossible for them to do this because THEY DONT HAVE
+THE DEVICE KEYS.
+
+<A HREF="http://news.yahoo.com/s/afp/20080527/tc_afp/indiacanadacompanyrimblackberrytelecomsecurity">http://news.yahoo.com/s/afp/20080527/tc_afp/indiacanadacompanyrimblackberrytelecomsecurity</A>
+
+Apparently even the security &quot;experts&quot; are suspect to sensationalism
+without appropriate research.  I would have expected better.
+
+-derek
+
+-- 
+       Derek Atkins, SB '93 MIT EE, SM '95 MIT Media Laboratory
+       Member, MIT Student Information Processing Board  (SIPB)
+       URL: <A HREF="http://web.mit.edu/warlord/">http://web.mit.edu/warlord/</A>    PP-ASEL-IA     N1NWH
+       <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">warlord at MIT.EDU</A>                        PGP key available
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

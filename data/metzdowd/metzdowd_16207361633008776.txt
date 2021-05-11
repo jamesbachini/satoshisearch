@@ -1,0 +1,29 @@
+<PRE>|<i> What does it say about the integrity of the FIPS program, and its CMTL
+</I>|<i> evaluation process, when it is left to competitors to point out
+</I>|<i> non-compliance of evaluated products -- proprietary or open source --
+</I>|<i> to basic architectural requirements of the standard?
+</I>I was going to ask the same question.  My answer:  This proves yet again
+how far we are from a servicable ability to produce secure software.
+
+Software that's been through the FIPS process has been vetted to the limits
+of our current abilities under the constraints of being even vaguely
+commercially viable.  OpenSSL is open source software that's been around
+for a long time, examined by many, many people.  It had a very rough
+journey through the FIPS process, so was presumably checked even more
+than software that just breezes through.  Even so ... it had a security
+bug.  It's hard to suggest something that could have been done differently
+to guarantee that this couldn't happen.  Anyone who might argue - as I'm
+sure they will - that this &quot;proves you should use commercial software
+rather than OSS if you need security&quot; is speaking nonsense - that's not
+at all what this incident is about.
+
+It is, of course, the height of irony that the bug was introduced in the
+very process, and for the very purpose, of attaining FIPS compliance!
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

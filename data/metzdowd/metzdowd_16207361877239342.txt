@@ -1,0 +1,58 @@
+<PRE>Hal Finney wrote:
+&gt;<i> I thought of one possible mitigation that can protect OpenID end users
+</I>&gt;<i> against remote web sites which have not patched their DNS. OpenID
+</I>&gt;<i> providers who used weak OpenSSL certs would have to change their URLs
+</I>&gt;<i> so that their old X.509 CA certs on their old URLs no longer work on the
+</I>&gt;<i> new ones. This will require all of their clients (users who log in with
+</I>&gt;<i> their OpenID credentials) to change their identifiers. DNS based MITMs
+</I>&gt;<i> will not be able to forge messages related to the new identifiers.
+</I>
+Yeah, I considered this scheme. The problem is that it doesn't really 
+help the relying parties, who can still be fooled into believing an 
+existing user is returning (or a new one is arriving) from the original 
+site. This is particularly a problem for Sun's OpenID Provider, which 
+makes the additional assertion (out of band) that the user is a Sun 
+employee. So, anyone can become a Sun employee, as of a few days ago.
+
+This is why the lack of CRL checking in OpenID libraries is an issue.
+
+&gt;<i> Again, I see fixing the DNS as the path of least resistance here,
+</I>&gt;<i> especially so since the end user is the one bearing most of the risk,
+</I>&gt;<i> typically DNS is provided by an ISP or some other agency with a formal
+</I>&gt;<i> legal relationship, and there is the possibility of liability on the
+</I>&gt;<i> part of the lax DNS provider. Hopefully we will continue to see rapid
+</I>&gt;<i> uptake of the DNS fix over the next few weeks.
+</I>
+In general, DNS is not fixable without deploying DNSSEC.
+
+a) The current &quot;fix&quot; just reduces the probability of an attack. If 
+attacker and victim have sufficient bandwidth, it can still be done in 
+under a day.
+
+b) There are many scenarios, mostly revolving around the use of wireless 
+hotspots, where users are easily fooled into using a malicious DNS provider.
+
+So, DNS patching is not, IMO, the real answer to this problem. Of 
+course, the second scenario has been around forever, but is conveniently 
+ignored when explaining why CRLs are not necessary (and all other things 
+that rely on perfect DNS). All that's happened recently is we've made 
+people who are sitting still just as vulnerable as travellers.
+
+But increasingly we are all travellers some of the time, from a &quot;how we 
+get our 'net&quot; POV. We really can't ignore this use case.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

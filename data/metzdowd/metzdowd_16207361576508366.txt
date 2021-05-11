@@ -1,0 +1,34 @@
+<PRE>Marcos el Ruptor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>&gt; writes:
+
+&gt;<i>I found those threads:
+</I>&gt;<i>
+</I>&gt;<i><A HREF="http://forums.ceruleanstudios.com/showthread.php?t=53433">http://forums.ceruleanstudios.com/showthread.php?t=53433</A>
+</I>&gt;<i>
+</I>&gt;<i><A HREF="http://forums.ceruleanstudios.com/showthread.php?t=56207">http://forums.ceruleanstudios.com/showthread.php?t=56207</A>
+</I>
+One of them contains a link to an older thread:
+
+<A HREF="http://www.ceruleanstudios.com/forums/showthread.php?s=&amp;threadid=33279">http://www.ceruleanstudios.com/forums/showthread.php?s=&amp;threadid=33279</A>
+
+with this gem:
+
+  Speaking as a software developer, if I ever had someone on my forums who's
+  posts consisted solely of questions about how my private encryption systems
+  work [an earlier post by a crypto-savvy person had asked about use of DH
+  primes, the block cipher encryption mode used, and so on], I would ban them
+  and report them to their ISP without a second thought.
+
+  If you're interested in creating good encryption, learn the principles:
+  encryption schemes are weakened when they are based on someone else's work.
+  So if you're honestly wanting to make good encryption for Trillian, its a
+  bad idea to try to use CS's work as a base.
+
+Bruce, one for your next Cryptogram?
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

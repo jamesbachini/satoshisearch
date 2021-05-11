@@ -1,0 +1,36 @@
+<PRE>Dirk-Willem van Gulik wrote:
+&gt;<i>  &gt; ... discussion on CA/cert acceptance hurdles in the UI ....
+</I>&gt;<i> 
+</I>&gt;<i> I am just wondering if we need a dose of PGP-style reality here.
+</I>&gt;<i> 
+</I>&gt;<i> We're really seeing 3 or 4 levels of SSL/TLS happening here - and whilst
+</I>&gt;<i> they all appear use the same technology - the assurances, UI, operational
+</I>&gt;<i> regimen, 'investment' and user expectations are way different:
+</I>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+I seriously doubt that even a single digit percentage of end users out 
+on the internet know anything about the different types of certificates 
+used in SSL/TLS and what they mean.   I know none of my family (other 
+than my wife: but given she worked for a large CA doing authentication 
+and verification) knows what SSL really means never mind what the 
+different types of cert are supposed to indicate and what to do about 
+them, yet they buy stuff on the internet.  It doesn't mean they are 
+ignorant it is just the normal case.
+
+&gt;<i> So my take is that it is pretty much impossible to get the UI to do
+</I>&gt;<i> the right thing - until it has this information* - and even then
+</I>&gt;<i> you have a fair chunk of education left to do :). 
+</I>
+Even if you got the UI to do &quot;the right thing&quot; it still doesn't mean 
+anything real about trust all it really means is how much money was 
+invested in getting the cert and setting up the &quot;correct&quot; information 
+about the &quot;company identity&quot; behind it.
+
+
+-- 
+Darren J Moffat
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

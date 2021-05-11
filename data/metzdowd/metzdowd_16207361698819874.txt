@@ -1,0 +1,43 @@
+<PRE>Tim Dierks writes:
+&gt;<i>(there are totally different reasons that client certs aren't being
+</I>&gt;<i>widely adopted, but that's beside the point).
+</I>
+I'd be interested in hearing your take on why SSL client certs aren't
+widely adopted.  It seems like they could potentially help with the
+phishing problem (at least, the problem of theft of web authenticators
+-- it obviously won't help with theft of SSNs).  If users don't know
+the authentication secret, they can't reveal it.  The nice thing about
+using client certs instead of passwords is that users don't know the
+private key -- only the browser knows the secret key.
+
+The standard concerns I've heard are: (a) SSL client supports aren't
+supported very well by some browsers; (b) this doesn't handle the
+mobility problem, where the user wants to log in from multiple different
+browsers.  So you'd need a different mechanism for initially registering
+the user's browser.
+
+By the way, it seems like one thing that might help with client certs
+is if they were treated a bit like cookies.  Today, a website can set
+a cookie in your browser, and that cookie will be returned every time
+you later visit that website.  This all happens automatically.  Imagine
+if a website could instruct your browser to transparently generate a
+public/private keypair for use with that website only and send the
+public key to that website.  Then, any time that the user returns to
+that website, the browser would automatically use that private key to
+authenticate itself.  For instance, boa.com might instruct my browser
+to create one private key for use with *.boa.com; later,
+citibank.com could instruct my browser to create a private key for
+use with *.citibank.com.  By associating the private key with a specific
+DNS domain (just as cookies are), this means that the privacy
+implications of client authentication would be comparable to the
+privacy implications of cookies.  Also, in this scheme, there wouldn't
+be any need to have your public key signed by a CA; the site only needs
+to know your public key (e.g., your browser could send self-signed
+certs), which eliminates the dependence upon the third-party CAs.
+Any thoughts on this?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

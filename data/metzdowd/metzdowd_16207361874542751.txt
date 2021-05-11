@@ -1,0 +1,50 @@
+<PRE>
+
+Peter Gutmann wrote:
+&gt;<i> Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> I just got a warning that a certificate had expired and yet the data in it
+</I>&gt;&gt;<i> says:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> [From: Tue Aug 05 17:00:00 PDT 2003,
+</I>&gt;&gt;&gt;<i>  To: Mon Aug 05 16:59:59 PDT 2013]
+</I>&gt;&gt;<i> The error message says: &quot;The digital signature was generated with a trusted
+</I>&gt;&gt;<i> certificate but has expired.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> What's the expiry date for the CA certificate that signed it, and its CA
+</I>&gt;<i> certificate?  What's the clock on your PC set to?  And why aren't you just
+</I>&gt;<i> clicking &quot;Continue anyway&quot; like everyone else does? :-).
+</I>
+Hi Peter,
+
+I checked the chain - goes directly from <A HREF="http://online.ccsf.edu">http://online.ccsf.edu</A>'s 
+certificate to Thwate. All of Thwate's on my list expire 
+12/31/2020 15:59:59 PM except for the primary root CA which is 
+7/16/2036 16:59:59 PM, and the Thwate Extended Validation SSL CA 
+which is 11/16/2016 15:59:59 PM.
+
+As to my system clock, I was asked off list about this and here 
+is what I said: &quot;(I) Connect to time.nist.gov or one of a long 
+list every 24 hours. My clock says 3:00 PDT August 18th and I 
+just double checked by re-syncing:
+
+SYNC-ATTEMPT    Host: mizbeaver.udel.edu    Aug-18-2008 15:00:22 
+SUCCESS    39678.9169097222    39678.9169243634 
+1.46411985042505E-5!
+
+39678.9169243634
+39678.9169097222
+-----------------
+00000.0000146412 (rounded) is I think quite good enough. :)
+
+As to just clicking through, either stupid for not trusting that 
+everything is okay, cautious, or just plain curious why. Take 
+your pick. ;-&gt;
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

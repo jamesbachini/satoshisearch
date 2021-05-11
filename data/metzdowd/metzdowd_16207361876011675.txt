@@ -1,0 +1,26 @@
+<PRE>On Tue, Aug 12, 2008 at 9:55 AM, Clausen, Martin (DK - Copenhagen)
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mclausen at deloitte.dk</A>&gt; wrote:
+&gt;<i> You could use the SSL Blacklist plugin
+</I>&gt;<i> (<A HREF="http://codefromthe70s.org/sslblacklist.asp">http://codefromthe70s.org/sslblacklist.asp</A>) for Firefox or heise SSL
+</I>&gt;<i> Guardian
+</I>&gt;<i> (<A HREF="http://www.heise-online.co.uk/security/Heise-SSL-Guardian--/features/11">http://www.heise-online.co.uk/security/Heise-SSL-Guardian--/features/11</A>
+</I>&gt;<i> 1039/) for IE to do this. If presented with a Debian key the show a
+</I>&gt;<i> warning.
+</I>&gt;<i>
+</I>&gt;<i> The blacklists are implemented using either a traditional blacklist
+</I>&gt;<i> (text file) or distributed using DNS.
+</I>
+There are two parties that are vulnerable: the user logging into the
+OpenID Provider (OP), and the Relying Party (RP). If the RP
+communicates with the OP, then it needs to use TLS and CRLs or OCSP.
+Browser plugins do not bail it out.
+
+Cheers,
+
+Ben.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

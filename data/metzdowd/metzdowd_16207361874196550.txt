@@ -1,0 +1,26 @@
+<PRE>Does anyone know where and when the use of &quot;red&quot; (inside networks) and
+&quot;black&quot; (outside, encrypted networks for crypto gear) started?  I'm
+especially intrigued by the use of &quot;red&quot;, since in other military
+nomenclature (in the US) blue is the usual color for US and friendly
+forces and red is (for obvious geopolitical reasons) the enemy.
+
+One hypothesis I've come up with is that the color was chosen by the
+British from the so-called &quot;all-red route&quot; -- the web of underseas
+telegraph links that touched only Britain and its colonies.  It was
+named for the usual map color of the time (~100 years ago) for the
+British empire.  The all-red route gave the British protection against
+(some) foreign eavesdropping; it was also useful offensively, since the
+1920 Official Secrets Act contained a provision requiring cable
+companies to turn over copies of all telegrams to the government.
+(Source: &quot;The Invisible Weapon: Telecommunications and International
+Politics, 1851-1945&quot;, by Daniel R. Headrick, Oxford University Press,
+1991.)
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

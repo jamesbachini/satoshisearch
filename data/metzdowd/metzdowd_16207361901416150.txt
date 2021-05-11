@@ -1,0 +1,31 @@
+<PRE>On Tue, Sep 16, 2008 at 09:01:51PM +0200, Weger, B.M.M. de wrote:
+
+&gt;<i> There's a new biggest known RSA modulus.
+</I>&gt;<i> It is (in hexadecimal notation):
+</I>&gt;<i> 
+</I>&gt;<i> FF...(total of 9289166 F's)...FFDFF...(total of 1488985
+</I>&gt;<i> F's)...FF800...(total of 9289165 0's)...001
+</I>&gt;<i> 
+</I>&gt;<i> It is guaranteed to be the product of two different large primes, 
+</I>
+Are the primes actually known, or just &quot;guaranteed to exist&quot;?
+
+&gt;<i> and it has more than 80 million bits. Impressive security...
+</I>
+In what sense is this &quot;impressive security&quot;?
+
+    - Impressive 10 MB wide RSA signatures?
+    - Impressively long time on super-computers to verify said signatures
+    - Impressively few potential users, with at most one known key pair?
+
+This is likely real progress in computational number theory, but it is
+not clear how it is an advance in &quot;security&quot;.
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

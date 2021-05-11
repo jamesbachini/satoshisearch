@@ -1,0 +1,25 @@
+<PRE>
+On Jun 3, 2008, at 11:51 AM, Adam Aviv wrote:
+
+&gt;<i> Depending on the level of protection you want, you could just add a
+</I>&gt;<i> script to your .forward to encrypt your email before delivery using
+</I>&gt;<i> PGP/GPG. However, this will leave the headers in the clear, so you
+</I>&gt;<i> will likely want to create an entirely new envelope for the message
+</I>&gt;<i> with the original message encrypted as the body or an attachment.
+</I>
+Does anybody have a recipe for this first mode handy?  plain text e- 
+mails seem simple enough, but there needs to be a bit of MIME  
+unwrapping and rewrapping to correctly handle attachments so that the  
+client sees/decrypts them correctly I think.  I've searched from time  
+to time and never found a good HowTo...
+
+Thanks,
+Eric
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: PGP.sig
+Type: application/pgp-signature
+Size: 486 bytes
+Desc: This is a digitally signed message part
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080603/2c5b693a/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080603/2c5b693a/attachment.pgp</A>&gt;
+</PRE>

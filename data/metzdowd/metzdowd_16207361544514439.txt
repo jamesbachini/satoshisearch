@@ -1,0 +1,21 @@
+<PRE>[fwiw, Pascal Junod had sent this to this list under the subject &quot;provable 
+security&quot; on 9-Aug]
+
+&gt;<i> A critique of modern cryptography
+</I>
+well, in my reading it's not a &quot;critique of modern cryptography&quot; -- rather, 
+it's (1) a comparison of the cultural differences between mathematical 
+research and crypto research, and (2) a critique of the crypto research 
+subfield known as &quot;provable security&quot;, done using examples culled from Mr. 
+Koblitz's personal experience.
+
+and yes, it's worth reading. 
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

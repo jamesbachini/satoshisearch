@@ -1,0 +1,24 @@
+<PRE>&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+
+&gt;<i>At every block boundary, keyboard transmits a special signal in the clear
+</I>&gt;<i>that signifies block boundary.  Any time that no key has been pressed for a
+</I>&gt;<i>while, then when a key is finally pressed, keyboard transmits a bunch of no-
+</I>&gt;<i>ops sufficient to ensure that the recipient has recently received an entire
+</I>&gt;<i>block, followed by a complete description of current keyboard state, so that
+</I>
+... the battery runs down in a fraction of the time that it does for any other
+keyboard on the market.
+
+Would it be possible to use load modulation (e.g. ISO 14443, for which
+transponders are readily available) to get around this, where the power for
+the communication is supplied by the PC?  That way you could have a protocol
+that's as chatty as you like without your keyboard ending up as an advertising
+device to make your competitors' products look good.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

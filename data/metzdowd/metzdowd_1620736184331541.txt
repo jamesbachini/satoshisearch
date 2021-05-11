@@ -1,0 +1,22 @@
+<PRE>
+&gt;<i> Date: Wed, 30 Jul 2008 21:22:59 +0200
+</I>&gt;<i> From: &quot;Pierre-Evariste Dagand&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pedagand at gmail.com</A>&gt;
+</I>&gt;<i> To: &quot;Ben Laurie&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt;, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> Subject: Re: On the &quot;randomness&quot; of DNS
+</I>&gt;<i> 
+</I>[...]
+&gt;<i> 
+</I>&gt;<i> For sure, it would be better if we could check the source code and
+</I>&gt;<i> match the implemented RNG against an already known RNG.
+</I>&gt;<i> 
+</I>[...]
+
+So... Download BIND and check. URL is <A HREF="http://www.isc.org/index.pl">http://www.isc.org/index.pl</A> and
+select &quot;bind 9.5.0-P1&quot; and then select &quot;BIND-9.5.0-P1&quot;
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

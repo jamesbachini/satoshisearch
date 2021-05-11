@@ -1,0 +1,218 @@
+<PRE>Hi,
+
+&gt;<i> Huh? What are you claiming the problem with sending client certificates
+</I>&gt;<i> in plaintext is 
+</I>
+* It&#180;s a privacy problem
+* It&#180;s a security problem for people with a security policy that requires the 
+their identities to be kept secret, and only to be used to authenticate to 
+the particular server they need
+* It&#180;s an availability problem for people that need high-security 
+authentication mechanisms, combined with high-privacy demands
+* It&#180;s a identity theft problem in case the certificate contains personal data 
+that can be used for identity theft
+
+Quoted from Lynns email:
+&gt;<i>i.e. the x.509 identity digital certificates from the early 90s, were 
+</I>&gt;<i>becoming
+</I>&gt;<i>more and more overloaded with personal information ... and by the
+</I>&gt;<i>mid-90s, lots of institutions were starting to realize all that personal
+</I>&gt;<i>information represented significant privacy and liability issues ... and
+</I>&gt;<i>the RPO digital certificates were born.
+</I>
+* It&#180;s a liability issue
+
+(Lynn, can you go into more details here? On the other hand, I would say it&#180;s 
+self-explaining ...)
+
+&gt;<i> (as if anyone uses client certificates anyway)? 
+</I>
+Guess why so few people are using it ...
+If it were secure, more people would be able to use it.
+
+If you want a &quot;public&quot; example of client certificate usage:
+<A HREF="https://secure.cacert.org/">https://secure.cacert.org/</A>
+(You need a (free) client certificate from www.CAcert.org to be able to access 
+this page)
+
+There are ISPs out there who provide internet access based on client 
+certificates, authenticated in HTTPS sessions
+
+Creative Commons is running a registry for digital works, based on authors 
+client certificate authentication:
+<A HREF="http://www.registeredcommons.org/">http://www.registeredcommons.org/</A>
+
+The Austrian governmental inhabitant register is using client certificates for 
+about 10,000 users all around Austria since 2001. (If I remember the details 
+correctly)  <A HREF="http://zmr.bmi.gv.at/pages/home.htm">http://zmr.bmi.gv.at/pages/home.htm</A>
+
+And there are hundreds of internal systems I heard of that are using client 
+certificates in reality every day.
+
+&gt;<i> That the phisher gets to see the client's identity?
+</I>
+Validated email addresses for spamming. Spear-phishing perhaps, ...
+
+&gt;<i> So what? 
+</I>
+Why doesn&#180;t SSH leak the client identity in plaintext?
+
+The problem isn&#180;t a key-agreement problem. The problem is a 
+client-authentication problem. 
+
+&gt;<i> It doesn't let them impersonate the client to anyone. 
+</I>
+It does let them impersonate the client to anyone who doesn&#180;t care about the 
+public key. (There are applications that just use the DN+Issuer information 
+that they normally extract out of the certificates, ...)
+But impersonation is just one threat out of the huge SSL/TLS threat-model.
+
+&gt;<i> Certificates 
+</I>&gt;<i> shouldn't contain sensitive information anyway.
+</I>
+There are CA&#180;s on this planet that put things like social security numbers 
+into certificates.
+
+(I guess those CA&#180;s would say that SSL shouldn&#180;t leak certificates in 
+plaintext anyway.) Shovling around responsibility won&#180;t help us. Let&#180;s fix 
+the problems. (Yes, we are already trying to get those CA&#180;s to stop doing 
+that ... but it&#180;s a bit like asking credit card companies to not print those 
+sensitive creditcard numbers on those credit cards ...)
+
+And there are a lot of people who would be interested to use certificates for 
+more applications than pure identity. (which aren&#180;t necessarily sensitive, 
+but they are personal related data)
+
+Where does the SSL specification say that certificates shouldn&#180;t contain 
+sensitive information? I am missing that detail in the security consideration 
+section of the RFC.
+
+There is a market demand for using sensitive information in certificates, 
+dating back to the mid 90's (according to Lynn), and showing itself in 
+various forms like Stefan Brands credentials, Attribute Certificates, and 
+even the OACerts by Jiangtao Li and Ninghui Li. 
+I have been talking to many people about client certificates and client 
+authentication, and a lot of them are interested in using client certificates 
+for authentication, and also to add other attributes to the certificates.
+
+&gt;<i> &gt; We have the paradox situation that I have to tell people that they should
+</I>&gt;<i> &gt; use HTTPS with server-certificates and username+password inside the HTTPS
+</I>&gt;<i> &gt; session, because that&#180;s more secure than client certificates ...
+</I>&gt;<i>
+</I>&gt;<i> No it isn't more secure.
+</I>
+Using username+password inside HTTPS does not leak the client&#180;s identity in 
+cleartext on the line. (If I am wrong and HTTPS leaks usernames sent as HTTP 
+Forms or with HTTP Basic Authentication, please tell me)
+
+&gt;<i> &gt; Does anyone have an idea how we can fix this flaw within SSL/TLS within a
+</I>&gt;<i> &gt; reasonable timeframe, so that it can be implemented and shipped by the
+</I>&gt;<i> &gt; vendors in this century?
+</I>
+Do we have any more ideas how we can get this flaw fixed before it starts 
+hurting too much?
+
+
+&gt;<i> This gets discussed on the TLS mailing list occasionally, but the
+</I>&gt;<i> arguments for making this change aren't very convincing.
+</I>
+Yes, there are regularly people popping up there that need it, but they always 
+get ignored there, it seems.
+
+I think we have the boiling frog problem here. (Frog not recognizing that the 
+water in the pot gets hotter and hotter, since it happens to slowly and not 
+at once ...)
+Since all those people asked one after each other on the list, they were all 
+ignored, since everyone had just one single case and one single argument.
+If they had come up at the same time and coordinated their arguments ...
+(But I don&#180;t think that we can blame all those people for not coordinating 
+their arguments.)
+
+We have an issue here. And the issue isn&#180;t going to go away, until we 
+deprecate SSL/TLS, or it gets solved.
+
+&gt;<i> If you have 
+</I>&gt;<i> an actual credible security argument you should post it to
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tls at ietf.org.</A>
+</I>
+Do you think the the security arguments I summed up above qualify on the tls 
+list? Should I go into more detail? Present practical examples?
+Or does it take a Slashdot article with some governmental CA&#180;s certificates 
+that contain social security numbers, some SSL sniffing logfiles, ... for the 
+responsible people to react? Or is it possible that we can pro-act and fix  
+this issue, without giving SSL and TLS a bad name in the press?
+I am not interested in reading &quot;SSL leaks personal details&quot; in the media.
+
+Has anyone counted the amount of people that asked for it in all the years on 
+the TLS mailinglist? 
+
+
+I see several possible options:
+* We fix SSL  
+Does anyone have a solution for SSL/TLS available that we could propose on the 
+TLS list? 
+If not: Can anyone with enough protocol design experience please develop it?
+
+* We deprecate SSL for client certificate authentication.
+We write in the RFC that people MUST NOT use SSL for client authentication.
+(Perhaps we get away by pretending that client certificates accidently slipped 
+into the specification.)
+
+* We switch from TLS to hmmm ... perhaps SSH, which has fixed the problem 
+already.
+Hmm, there we would have to write all the glue RFCs like &quot;HTTP over SSH&quot; 
+again ...
+
+* We will all have to answer nasty questions, why we didn&#180;t do anything about 
+it that SSL leaks personal certificates in plaintext ...
+
+* We change the rules of the market, and tell the people that they MUST NOT 
+ask for additional data in their certificates anymore
+
+* Does anyone have any better and perhaps more realistic options?
+
+
+Come on guys, let&#180;s solve this issue together before it hurts.
+
+Ok, what I can do to get it fixed?
+
+-------------------------
+Different topic: Fixing TCP/SSL
+
+&gt;<i> &gt; TCP could need some stronger integrity protection. 8 Bits of checksum
+</I>&gt;<i> &gt; isn&#180;t enough in reality. (1 out of 256 broken packets gets injected into
+</I>&gt;<i> &gt; your TCP stream)  Does IPv6 have a stronger TCP?
+</I>&gt;<i>
+</I>&gt;<i> Whether this is true or not depends critically on the base rate
+</I>&gt;<i> of errors in packets delivered to TCP by the IP layer, since
+</I>&gt;<i> the rate of errors delivered to SSL is 1/256th of those delivered
+</I>&gt;<i> to the TCP layer. Since link layer checksums are very common,
+</I>&gt;<i> as a practical matter errored packets getting delivered to protocols
+</I>&gt;<i> above TCP is quite rare.
+</I>
+Try to send a DVD iso image (4GB) over a SSL or SSH encrypted link with bit 
+errors every 10000 bits with a client software like scp that cannot resume 
+downloads. I gave up after 5 tries that all broke down in average after 1 GB.
+(In that case it was a hardware (bad cable) initiated denial of service 
+attack ;-)
+
+The problem is that you can&#180;t work around this issue with standard software. 
+You can&#180;t tell Putty or OpenSSH or any normal IP stack or any network card to 
+add more protection there, to solve that problem. You could try to setup some 
+tunneling to get more protection, but that&#180;s usually highly impractical for 
+copying a single file from one computer to the next.
+
+If the link layer gives you 1/256, and the TCP layer gives you 1/65536, and 
+the SSL layer demands 0/16777216, then end up with 1/16777216 too much.
+
+(And there is no guarantee that the link layer actually gives you the 1/256. 
+It could also give you 1/1)
+
+Best regards,
+Philipp G&#252;hring
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

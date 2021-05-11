@@ -1,0 +1,141 @@
+<PRE>Saqib,
+
+ALL the solutions include a KMS.  They all must, because encryption keys
+must be generated, escrowed, recovered, managed, policies defined, etc.
+for any encryption to work.
+
+And *that* is the problem - each of the KMSs is implemented in the 
+vendors own design, using the vendor's proprietary API and protocol.
+Since the DAR RFP finally settled on 9 different FDE solutions, the 
+end-result is that the agencies must now manage nine different KMSs 
+and deal with all that that entails: 9 different KMS implementations,
+9 different operating procedures, 9 different training sessions, 9 
+different audits, and on and on...
+
+In reality, the agencies are probably going to have to manage more than
+9 KMS, because the RFP did not address encryption of databases, devices
+(other than disks) and application data that is not persisted to disk.
+
+And that is the precise problem that StrongKey addresses.  It is a single
+enterprise-wide symmetric key-management system (SKMS) that provides an
+open-source API for any application to integrate, and a potential OASIS
+protocol that can work in most environments and platforms.  Our design
+goal for StrongKey was that it must function like DNS or DHCP - a 
+centralized server environment that defines and manages all KM functions
+and a single library on the client to handle requests for any application
+on the client while using an industry-standard protocol to get KM services 
+from the server, securely.
+
+Even the IEEE 1619.3 WG has recognized the importance of integrating 
+their KM protocol for storage devices into an Enterprise Key Management 
+Infrastructure (EKMI) and has carved out a name-space within its protocol 
+for the OASIS work.
+
+WRT transparency, StrongKey provides key-management services - not FDE - 
+unless an OS driver integrated the StrongKey API or the SKSML protocol.  
+The open-source implementation provides file, directory and column-level 
+database encryption - but does not perform any of this automatically unless 
+the application has integrated the Symmetric Key Client Library (SKCL) into
+it.
+
+While the standard response to this statement is - &quot;applications will never
+get modified to perform encryption and that all customers want automatic
+and transparent encryption/decryption at the storage layer&quot;, our contention 
+is that once you automatically encrypt/decrypt at the disk-drive layer, the 
+attackers will just move up one layer above the application/OS stack and 
+read-off the plaintext (see slides 21 and 22 for graphics) as the disk-drive
+decrypts it for them.  Customers will then need to encrypt at a higher-layer
+to protect data agin:
+
+<A HREF="http://www.oasis-open.org/committees/download.php/24594/ekmi-webinar.pdf">http://www.oasis-open.org/committees/download.php/24594/ekmi-webinar.pdf</A>
+
+Customers need to protect data - but they do not need to address the same
+problem more than once.  Encrypting at the disk-firmware layer is a short-
+term solution that will diminish in protection-value very quickly.  Until
+the data is encrypted/decrypted in the final application that uses it, 
+attackers will keep moving up the application stack.  
+
+Note that this does not mean that encryption-enabled applications are
+invulnerable to attacks; all it means is that the attack-surface has now
+been reduced to a minimum and that developers/security professionals can
+focus their energy on protecting the area that matters most - the actual
+applications that use sensitive data.
+
+Arshad Noor
+StrongAuth, Inc.
+
+----- Original Message -----
+From: &quot;Saqib Ali&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt;
+To: &quot;Arshad Noor&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt;
+Cc: &quot;Cryptography&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+Sent: Monday, October 8, 2007 11:52:28 AM (GMT-0800) America/Los_Angeles
+Subject: Re: Full Disk Encryption solutions selected for US Government use
+
+Arshad,
+
+Some of the solutions already include a KMS. One of the key
+requirements of this particular RFP was &quot;Transparency&quot;. Can you please
+elaborate more on how StrongKey KMS would have improved on
+transparency?
+
+Thanks
+saqib
+<A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+
+
+
+On 10/8/07, Arshad Noor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt; wrote:
+&gt;<i> We submitted a letter to the Program Manager, that while they RFP
+</I>&gt;<i> was asking for an FDE solution, they really needed to focus on Key
+</I>&gt;<i> Management across the agency, rather than the actual encryption
+</I>&gt;<i> solution itself, before they deployed any encryption product.
+</I>&gt;<i>
+</I>&gt;<i> We proposed our open-source Symmetric Key Management System (SKMS)
+</I>&gt;<i> software - StrongKey - as a solution since it includes utilities to
+</I>&gt;<i> perform file, directory and column-level database encryption using
+</I>&gt;<i> FIPS-certified tokens: smartcards, HSMs and software modules (NSS).
+</I>&gt;<i>
+</I>&gt;<i> Given that the solution we proposed was OSS, that it could leverage
+</I>&gt;<i> any FIPS-certified token through their published JCE/PKCS11 library,
+</I>&gt;<i> and that the StrongKey protocol is winding its way through OASIS
+</I>&gt;<i> towards becoming the Symmetric Key Services Markup Language (SKSML)
+</I>&gt;<i> with the support of 33 companies/individuals including the DoD, we
+</I>&gt;<i> believed that this solution was optimal for the government from many
+</I>&gt;<i> different points of view.
+</I>&gt;<i>
+</I>&gt;<i> However, because the RFP was narrowly written for FDE products only,
+</I>&gt;<i> our submission was not accepted.  That's life in the Federal
+</I>&gt;<i> procurement lane.... they think they're buying a state of the art
+</I>&gt;<i> security solution and they don't realize that the state of the art
+</I>&gt;<i> has already shifted under their feet.
+</I>&gt;<i>
+</I>&gt;<i> Arshad Noor
+</I>&gt;<i> StrongAuth, Inc.
+</I>&gt;<i>
+</I>&gt;<i> ----- Original Message -----
+</I>&gt;<i> From: &quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt;
+</I>&gt;<i>
+</I>&gt;<i> On Mon, 18 Jun 2007 22:57:36 -0700
+</I>&gt;<i> &quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+</I>&gt;<i>
+</I>&gt;<i> &gt; US Government has select 9 security vendors that will product drive
+</I>&gt;<i> &gt; and file level encryption software.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; See:
+</I>&gt;<i> &gt; <A HREF="http://security-basics.blogspot.com/2007/06/fde-fde-solutions-selected-for-us.html">http://security-basics.blogspot.com/2007/06/fde-fde-solutions-selected-for-us.html</A>
+</I>&gt;<i> &gt; OR
+</I>&gt;<i> &gt; <A HREF="http://tinyurl.com/2xffax">http://tinyurl.com/2xffax</A>
+</I>&gt;<i> &gt;
+</I>&gt;<i>
+</I>&gt;<i> Out of curiousity, are any open source FDE products being evaluated?
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

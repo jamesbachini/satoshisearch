@@ -1,0 +1,19 @@
+<PRE>On Dec 29, 2007, at 6:37 PM, Anne &amp; Lynn Wheeler wrote:
+&gt;<i> Virtualization still hot, death of antivirus software imminent
+</I>
+My, that sounds awfully familiar:
+&lt;<A HREF="http://radian.org/~krstic/talks/2007/auscert/slides.pdf">http://radian.org/~krstic/talks/2007/auscert/slides.pdf</A>&gt;
+
+I note that, come the January OLPC software update, I will be using my  
+XO laptop for all my e-banking and related needs. It provides a  
+drastically more secure platform for doing so than any mainstream  
+computer I know exists.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

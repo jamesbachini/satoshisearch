@@ -1,0 +1,122 @@
+<PRE>John Ioannidis wrote:
+&gt;<i> Hmmm... a how about a market-data feed for warez?
+</I>&gt;<i> 
+</I>That would be useful for research. My colleague Karl Chen pointed out 
+that it would probably be more useful for the underground market.
+
+For the case of drug street prices, the U.S. Drug Enforcement Agency 
+does keep a database of prices, called STRIDE, obtained from informant 
+and undercover agent buys of drugs. These are records from actual buys, 
+so they partially address the concern Richard Clayton raises about going 
+by advertised list price -- but there are concerns (to which Richard 
+alludes) about whether agents systematically overpay or informants 
+systematically lie about the  price they paid for drugs in order to 
+pocket the difference between money given to them for drug buys and the 
+actual price.
+
+STRIDE also includes data on purity of drugs assayed in DEA labs. This 
+includes drugs seized by the feds, but not usually drugs seized by local 
+agencies. There's actually a trio of papers here in particular that 
+might be of interest to people who want to look at possible parallels 
+between data gathering on drug street prices and illegal digital goods.
+
+The first is an overview paper that discusses the conceptual and 
+practical problems in doing price and purity analyses over time for 
+illegal drugs. The paper also points out some interesting features of 
+the drug market. For example, the author points out that drugs are 
+&quot;experience goods.&quot; That is, the purchaser does not know the actual 
+quality of the good until after making the purchase. For drugs, quality 
+means purity of the drug. What this boils down to is that when looking 
+at time series of drug street prices, it turns out you need to model 
+what the buyer believes the purity of the drug will be to make sense of 
+the data.
+
+&quot;Price and purity analysis for illicit drugs: Data and conceptual issues&quot;
+J.P. Caulkins
+Drug and Alcohol Dependence , Volume 90 , Pages S61 - S68
+<A HREF="http://linkinghub.elsevier.com/retrieve/pii/S0376871606003061">http://linkinghub.elsevier.com/retrieve/pii/S0376871606003061</A>
+(Unfortunately the article is behind a paywall.)
+
+The second looks at the STRIDE data and argues it is not suitable for 
+use in economic analyses of the drug market. The primary criticism is 
+that the data are mainly gathered from buys intended to produce evidence 
+for busts, except for a smaller program aimed solely at heroin. They are 
+therefore not a uniform sample of any kind. More interesting to me, 
+however, is the author's contention that the data are not internally 
+consistent: he is able to separate out prices reported by the DEA from 
+prices reported by the DC metro police, then does a analysis showing 
+that the two agencies report a statistically significant difference in 
+prices. He concludes that the difference is greater than can be 
+accounted for by normal price differences within a single city and that 
+therefore something is wrong with the data.
+
+&quot;Should the DEA's STRIDE Data Be Used for Economic Analyses of Markets 
+for Illegal Drugs?&quot;
+Horowitz, Joel L
+<A HREF="http://www.biz.uiowa.edu/econ/papers/uia/STRIDE_rev1a.pdf">http://www.biz.uiowa.edu/econ/papers/uia/STRIDE_rev1a.pdf</A>
+
+The third and final paper is a rebuttal of the second. The authors claim 
+that the second paper improperly lumps together retail and wholesale 
+purchases of illegal drugs. They also claim that the second paper does 
+not properly account for the relationship between price and purity of a 
+drug. Once they toss the appropriate magic indicator variables into 
+their regressions and stratify by purchase type, the supposed conflict 
+between DEA and DC police reported prices disappears.
+
+Why the DEA STRIDE Data are Still Useful for Understanding Drug Markets
+Jeremy Arkes, Rosalie Liccardo Pacula, Susan M. Paddock, Jonathan P. 
+Caulkins, Peter Reuter
+NBER Working Paper No. 14224
+Issued in August 2008
+<A HREF="http://www.nber.org/papers/w14224">http://www.nber.org/papers/w14224</A>
+(Also paywalled, unfortunately)
+
+What is the relevance to us? Well, I see a couple of points:
+
+1) Like drugs, compromised PayPal accounts appear to be experience 
+goods. In the case of drugs, quality is purity. In the case of 
+compromised PayPal accounts, quality is something like the amount of 
+money that can be successfully moved out of the account. Therefore, I 
+would expect the same kind of modelling the buyer's &quot;expected quality&quot; 
+of the good would be useful for us. In particular, failing to take it 
+into account when analyzing price series could lead to the same kind of 
+internal inconsistencies noted by Horowitz.
+
+Not clear to me where other illegal digital goods stand. Botnets for 
+example seem easy enough to test whether they are real. Also as Peter 
+Gutmann points out, escrow services are possible and exist with illegal 
+digital goods to aid fair exchange -- this is not reported for drugs.
+
+2) Unlike STRIDE, the data sets we have reported so far were gathered 
+specifically for research in mind, and not as part of some other 
+mission. Unfortunately, they still are almost certainly not uniform 
+samples of illegal prices, and unlike STRIDE, as pointed out, they are 
+not actual transaction prices.
+
+3) One of the complicating factors in drug data is the lack of 
+standardized units. For example, Caulkins notes that 16% of all meth 
+data reported in the STRIDE data was sold in units other than 
+grams...and a few early analyses of the data didn't notice, yielding 
+bogus results. A more serious issue is purity, again; the same $10 bag 
+of pot may have wildly different amounts of THC. Similarly, as others 
+have pointed out here, it is hard to do an apples to apples comparison 
+of &quot;compromised online banking accounts&quot; if the lots of compromised 
+accounts come in different sizes, from different banks, etc.
+
+4) Finally, the sheer amount of money spent on drug enforcement and 
+market disruption is huge. The NBER paper cites $8.3 billion expended by 
+the federal government for the purpose of disrupting illicit drug 
+markets, and $13 billion overall. How much do you think is spent, total, 
+by everyone everywhere, on disrupting markets for illegal digital goods?
+
+-David Molnar
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 250 bytes
+Desc: OpenPGP digital signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080920/07a4faf6/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080920/07a4faf6/attachment.pgp</A>&gt;
+</PRE>

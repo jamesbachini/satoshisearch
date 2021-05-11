@@ -1,0 +1,91 @@
+<PRE>At Mon, 4 Feb 2008 09:33:37 -0500 (EST),
+Leichter, Jerry wrote:
+&gt;<i> 
+</I>&gt;<i> Commenting on just one portion:
+</I>&gt;<i> | 2. VoIP over DTLS
+</I>&gt;<i> | As Perry indicated in another message, you can certainly run VoIP
+</I>&gt;<i> | over DTLS, which removes the buffering and retransmit issues 
+</I>&gt;<i> | James is alluding to. Similarly, you could run VoIP over IPsec
+</I>&gt;<i> | (AH/ESP). However, for performance reasons, this is not the favored
+</I>&gt;<i> | approach inside IETF.
+</I>&gt;<i> | 
+</I>&gt;<i> | The relevant issue here is packet size. Say you're running a 
+</I>&gt;<i> | low bandwidth codec like G.729 at 8 kbps. If you're operating at
+</I>&gt;<i> | the commonly used 50 pps, then each packet is 160 bits == 20 bytes.
+</I>&gt;<i> | The total overhead of the IP, UDP, and RTP headers is 40 bytes,
+</I>&gt;<i> | so you're sending 60 byte packets. 
+</I>&gt;<i> | 
+</I>&gt;<i> | - If you use DTLS with AES in CBC mode, you have the 4 byte DTLS
+</I>&gt;<i> |   header, plus a 16 byte IV, plus 10 bytes of MAC (in truncated MAC
+</I>&gt;<i> |   mode), plus 2 bytes of padding to bring you up to the AES block
+</I>&gt;<i> |   boundary: DTLS adds 32 bytes of overhead, increasing packet
+</I>&gt;<i> |   size by over 50%. The IPsec situation is similar.
+</I>&gt;<i> | 
+</I>&gt;<i> | - If you use CTR mode and use the RTP header to form the initial
+</I>&gt;<i> |   CTR state, you can remove all the overhead but the MAC itself,
+</I>&gt;<i> |   reducing the overhead down to 10 bytes with only 17% packet
+</I>&gt;<i> |   expansion (this is how SRTP works)
+</I>&gt;<i> If efficiency is your goal - and realistically it has to be *a* goal -
+</I>&gt;<i> then you need to think about the semantics of what you're securing.  By
+</I>&gt;<i> the nature of VOIP, there's very little semantic content in any given
+</I>&gt;<i> packet, and because VOIP by its nature is a real-time protocol, that
+</I>&gt;<i> semantic content loses all value in a very short time.  Is it really
+</I>&gt;<i> worth 17% overhead to provide this level of authentication for data that
+</I>&gt;<i> isn't, in and of itself, so significant?  At least two alternative
+</I>&gt;<i> approach suggest themselves:
+</I>&gt;<i>
+</I>&gt;<i> 	- Truncate the MAC to, say, 4 bytes.  Yes, a simple brute
+</I>&gt;<i> 		force attack lets one forge so short a MAC - but
+</I>&gt;<i> 		is such an attack practically mountable in real
+</I>&gt;<i> 		time by attackers who concern you?
+</I>
+In fact, 32-bit authentication tags are a feature of
+SRTP (RFC 3711). 
+
+
+
+&gt;<i> 	- Even simpler, send only one MAC every second - i.e.,
+</I>&gt;<i> 		every 50 packets, for the assumed parameters.
+</I>&gt;<i> 		Yes, an attacker can insert a second's worth
+</I>&gt;<i> 		of false audio - after which he's caught.  I
+</I>&gt;<i> 		suppose one could come up with scenarios in
+</I>&gt;<i> 		which that matters - but they are very specialized.
+</I>&gt;<i> 		VOIP is for talking to human beings, and for
+</I>&gt;<i> 		human beings in all but extraordinary circumstances
+</I>&gt;<i> 		a second is a very short time.
+</I>
+Not sending a MAC on every packet has difficult interactions with
+packet loss. If you do the naive thing and every N packets send a MAC
+covering the previous N packets, then if you lose even one of those
+packets you can't verify the MAC. But since some packet loss is
+normal, an attacker can cover their tracks simply by removing one out
+of every N packets.
+
+Since (by definition) you don't have a copy of the packet you've lost,
+you need a MAC that survives that--and is still compact. This makes
+life rather more complicated. I'm not up on the most recent lossy
+MACing literature, but I'm unaware of any computationally efficient
+technique which has a MAC of the same size with a similar security
+level. (There's an inefficient technique of having the MAC cover
+all 2^50 combinations of packet loss, but that's both prohibitively
+expensive and loses you significant security.)
+
+
+&gt;<i> The NSA quote someone - Steve Bellovin? - has repeated comes to mind:
+</I>&gt;<i> Amateurs talk about algorithms.  Professionals talk about economics.
+</I>&gt;<i> Using DTLS for VOIP provides you with an extremely high level of
+</I>&gt;<i> security, but costs you 50% packet overhead.  Is that worth it to you?
+</I>&gt;<i> It really depends - and making an intelligent choice requires that
+</I>&gt;<i> various alternatives along the cost/safety curve actually be available.
+</I>
+Which there are, as indicated above and in my previous message. 
+
+-Ekr
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

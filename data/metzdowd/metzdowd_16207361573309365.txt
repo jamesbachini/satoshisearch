@@ -1,0 +1,43 @@
+<PRE>On Thu, 11 Oct 2007 21:50:06 -0700
+Bill Stewart &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bill.stewart at pobox.com</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> &gt; &gt; | Which is by the way exactly the case with SecureIM. How
+</I>&gt;<i> &gt; &gt; | hard is it to brute-force 128-bit DH ? My &quot;guesstimate&quot;
+</I>&gt;<i> &gt; &gt; | is it's an order of minutes or even seconds, depending
+</I>&gt;<i> &gt; &gt; | on CPU resources.
+</I>&gt;<i> 
+</I>&gt;<i> Sun's &quot;Secure NFS&quot; product from the 1980s had 192-bit Diffie-Hellman,
+</I>&gt;<i> and a comment in one of the O'Reilly NFS books says that
+</I>&gt;<i>          &quot;However, by 1990, advances in RISC processors produced
+</I>&gt;<i>          workstation machines that could, by brute force,
+</I>&gt;<i>          derive the private key from any public key in under a day.&quot;
+</I>&gt;<i> but that in 1987 there were still a lot of Motorola 68010 machines
+</I>&gt;<i> that took several minutes to generate keys so they didn't want it
+</I>&gt;<i> longer. I'm guessing that a 1990 RISC machine was around 50 MIPS,
+</I>&gt;<i> so it's maybe 1/100 the speed of a modern single-core CPU.
+</I>&gt;<i> 
+</I>&gt;<i> 128-bit DH sounds like as good a decision as using 40-bit RC4 keys
+</I>&gt;<i> would be today.
+</I>&gt;<i> 
+</I>It wasn't just brute force, it was math.
+
+@Article{         nfscrack, 
+  author        = {Brian A. LaMacchia and Andrew M. Odlyzko},
+  journal       = {Designs, Codes, and Cryptography},
+  pages         = {46--62},
+  title         = {Computation of Discrete Logarithms in Prime Fields},
+  volume        = {1},
+  year          = {1991},
+  annote        = {Describes how the authors cryptanalyzed Secure RPC.}
+}
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

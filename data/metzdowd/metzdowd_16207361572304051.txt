@@ -1,0 +1,55 @@
+<PRE>Just combining several of my thoughts into a single email.
+
+On the Red Hat proposal:
+Why does every undereducated person believe that complexity==security? It is 
+far better to rely on little things called &quot;proofs.&quot; There are several 
+proofs out there with significant impact on this. In particular the really 
+nice HMAC proof. The absurd complexity makes it highly likely that there is 
+at least some shortcut in it that hasn't been seen yet.
+
+On SALT || PASSWORD:
+In doing that you are assuming collision resistence, and no shortcuts in 
+computation. It is better than the RedHat proposal, but not optimal.
+
+On NetBSD HMAC-SHA1:
+There is a shortcut in the design as listed, using the non-changing password 
+as the key allows for the optimization that a single HMAC can be keyed, then 
+copied and reused with each seed. this shortcut actually speeds attack by a 
+factor of 3. The fix is to use the salt as the HMAC key, this assumes much 
+less of the hash function.
+
+On PDKDF2:
+Also appears to suffer from the same precomputation flaw, possibly more I 
+haven't looked at it too closely for this purpose.
+
+On USERID || SALT || PASSWORD:
+Close, anything that is fixed (USERID and PASSWORD) should be put at the 
+end, so the there is round to round variation before it, preventing 
+precomputation. It also assumes the same collision resistence and no 
+shortcut.
+
+
+The better solution, with aspects borrowed from the others:
+IV[0] = Salt
+IV[i] = HMAC(key=IV[i-1], data=USERID||PASSWORD)
+PasswordHash=IV[k]
+
+Of course nonambiguous formatting for USERID||PASSWORD is necessary to avoid 
+any shortcuts or precomputations, but any nonambiguous method is sufficient, 
+including a fixed length USERID.
+
+By using an HMAC instead of just a hash function allows it to make use of 
+most of the HMAC proof, reducing the assumptions on the underlying hash to 
+the effective minimum. By ordering everything to place the SALT and later 
+prior result as the HMAC key this prevents any precomputation under the 
+assumption that there is no method of computing the hash shorter than 3 hash 
+compression iterations, a quite small window of opportunity, and any result 
+will likely benefit the rightful computation of the PasswordHash resulting 
+in a simple increase in the value of k.
+                    Joe 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,55 @@
+<PRE>It's an interesting question for sure.
+
+I can't help but think that if the hardware platforms were to open up, and
+the handsets obtain some sort of ubiquity that this sort of thing would
+spontaneously evolve.
+
+I saw this link today:
+<A HREF="http://www.gizmodo.com.au/2007/07/openmokocom_goes_live_get_your.html">http://www.gizmodo.com.au/2007/07/openmokocom_goes_live_get_your.html</A>
+And apart from the fact that I was just plain out impressed that it has 2 3d
+accelerometers, I thought it was only a matter of time before someone
+inserts a cryptographic layer between the voice and the transmission.
+
+Cheers,
+
+Chris
+
+
+-----Original Message-----
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>
+[mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] On Behalf Of Steven M. Bellovin
+Sent: Tuesday, 10 July 2007 12:57 AM
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ifarquha at cisco.com</A>
+Cc: 'John Ioannidis'; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">silvio at burst.net</A>; 'Perry E. Metzger';
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+Subject: Re: How the Greek cellphone network was tapped.
+
+On Mon, 9 Jul 2007 17:52:38 +1000
+&quot;Ian Farquhar \(ifarquha\)&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ifarquha at cisco.com</A>&gt; wrote:
+
+
+&gt;<i> 
+</I>&gt;<i> And don't forget, some of the biggest markets are still
+</I>&gt;<i> crypto-phobic.  Every time I enter China I have to tick a box on the
+</I>&gt;<i> entry form indicating that I am not carrying any &quot;communications
+</I>&gt;<i> security equipment&quot;. 
+</I>
+
+That's interesting -- the news just came out about Blackberry entering
+the Chinese market...  See
+<A HREF="http://www.technewsworld.com/story/58167.html">http://www.technewsworld.com/story/58167.html</A> which (briefly) discusses
+such issues.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

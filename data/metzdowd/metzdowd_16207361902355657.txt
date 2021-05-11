@@ -1,0 +1,23 @@
+<PRE>
+&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+&gt;<i> (I saw this on another mailing list -- a follow-on to earlier
+</I>&gt;<i> discussions about Blackberry in India. No idea how believable any of
+</I>&gt;<i> it is because there is a great deal of difference between the way
+</I>&gt;<i> Blackberries work in a corporate and non-corporate context -- this
+</I>&gt;<i> could just be interception at the mail server provided by the
+</I>&gt;<i> cellphone company. --Perry)
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://economictimes.indiatimes.com/At_last_govt_cracks_BlackBerry_code/articleshow/3510719.cms">http://economictimes.indiatimes.com/At_last_govt_cracks_BlackBerry_code/articleshow/3510719.cms</A>
+</I>
+Another followup seems to indicate they are indeed only looking at
+traffic that wasn't encrypted end-to-end to enterprise customers.
+
+<A HREF="http://www.heise-online.co.uk/security/Times-of-India-reports-alleged-BlackBerry-decryption--/news/111584">http://www.heise-online.co.uk/security/Times-of-India-reports-alleged-BlackBerry-decryption--/news/111584</A>
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

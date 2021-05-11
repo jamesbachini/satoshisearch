@@ -1,0 +1,56 @@
+<PRE>&quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) wrote:
+</I>&gt;&gt;<i> - Use TLS-PSK, which performs mutual auth of client and server
+</I>&gt;&gt;<i> without ever communicating the password.  This vastly complicated
+</I>&gt;&gt;<i> phishing since the phisher has to prove advance knowledge of your
+</I>&gt;&gt;<i> credentials in order to obtain your credentials (there are a pile of
+</I>&gt;&gt;<i> nitpicks that people will come up with for this, I can send you a
+</I>&gt;&gt;<i> link to a longer writeup that addresses them if you insist, I just
+</I>&gt;&gt;<i> don't want to type in pages of stuff here).
+</I>&gt;<i>
+</I>&gt;<i>Once upon a time, this would have been possible, I think.  Today, though, the
+</I>&gt;<i>problem is the user entering their key in a box that is (a) not remotely
+</I>&gt;<i>forgeable by a web site that isn't using the browser's TLS-PSK mechanism; and
+</I>&gt;<i>(b) will *always* be recognized by users, even dumb ones.
+</I>
+Yeah, I knew someone would say that which is why I included the note at the
+end saying that there was a (much) longer discussion of the issues available.
+The problem is that the default has always been to be insecure, and there's no
+effective way to get people to move to the secure non-default, or at least
+none that isn't relatively easily circumvented by a bit of creative thinking
+and/or social engineering.  The problem is really a multi-part one, some parts
+of which are easily solveable, others which aren't.
+
+The easy part: New developments.  SSL seems to be pretty much the de facto
+substrate for securing network applications (even more so now that we have
+DTLS), there's no need to repeat the same mistakes over and over again when
+rolling out new SSL-enabled apps - build in TLS-PSK (or TLS-SRP, or whatever),
+make it the default, and mark anything else as insecure with big red flags. To
+quote Ian Grigg, &quot;there is only one mode and it's secure&quot;.  Heck, even getting
+away from the current &quot;Connect to remote system, hand over username+password&quot;
+would be a massive step forward into the 1980s.
+
+That leaves the harder part, existing apps:
+
+&gt;<i>If this had been done in the beginning, before users -- and web site
+</I>&gt;<i>designers, and browser vendors -- were mistrained, it might have worked.
+</I>&gt;<i>Now, though?  I'm skeptical.
+</I>
+For existing apps with habituated users, so am I.  So how about the following
+strawman: Take an existing browser (say Firefox), brand it as some special-
+case secure online banking browser, and use the &quot;new developments&quot; solution
+above, i.e. it only talks mutual-auth challenge-response crypto and nothing
+else.  At that point you've reduced &quot;Reformat user and reinstall browsing
+habits&quot; to &quot;Train users to only use safe-browser when they do their banking,
+i.e. 'Never enter banking details using anything other than safe-browser'&quot;.
+Even if you only get a subset of users doing this, it's still a massive attack
+surface reduction because you've raised the bar from any idiot who buys a
+phishing kit to having to perform a man-in-the-browser attack.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,77 @@
+<PRE>On Mon, 28 Apr 2008, Ryan Phillips wrote:
+|<i> Matt's blog post [1] gets to the heart of the matter of what we can
+</I>|<i> trust.
+</I>|<i> 
+</I>|<i> I may have missed the discussion, but I ran across Netronome's 'SSL
+</I>|<i> Inspector' appliance [2] today and with the recent discussion on this
+</I>|<i> list regarding malicious hardware, I find this appliance appalling.
+</I>It's not the first.  Blue Coat, a company that's been building various
+Web optimization/filtering appliances for 12 years, does the same thing.
+I'm sure there are others.
+
+|<i> Basically a corporation can inject a SSL Trusted CA key in the
+</I>|<i> keystore within their corporate operating system image and have this
+</I>|<i> device generate a new server certificate to every SSL enabled website,
+</I>|<i> signed by the Trusted CA, and handed to the client.  The client does a
+</I>|<i> validation check and trusts the generated certificate, since the CA is
+</I>|<i> trusted.  A very nice man-in-the-middle and would trick most casual
+</I>|<i> computer users.
+</I>|<i> 
+</I>|<i> I'm guessing these bogus certificates can be forged to look like the
+</I>|<i> real thing, but only differ by the fingerprint and root CA that was
+</I>|<i> used to sign it.
+</I>|<i>
+</I>|<i> What are people's opinions on corporations using this tactic?  I can't
+</I>|<i> think of a great way of alerting the user, but I would expect a pretty
+</I>|<i> reasonable level of privacy while using an SSL connection at work.
+</I>I'm very uncomfortable with the whole business.
+
+Corporations will of course tell you it's their equipment and is there
+for business purposes, and you have no expectation of privacy while
+using it.  I can understand the issues they face:  Between various
+regulatory laws that impinge on the white-hot topic of &quot;data leakage&quot;
+and issues of workplace discrimination arising out of questionable
+sites, they are under a great deal of pressure to control what goes over
+their networks.  But if monitoring everything is the stance they have to
+take, I would rather that they simply block encrypted connections
+entirely.
+
+As this stuff gets rolled out, there *will* be legal issues.  On the
+one hand, the whole industry is telling you &quot;HTTPS to a secure web
+site - see that green bar in your browser? - is secure and private&quot;.
+On the other, your employer is doing a man-in-the-middle attack and,
+without your knowing it, reading your discussions with your doctor.
+Or maybe gaining access to your credit card accounts - and who knows
+who in the IT department might be able to sneak a peak.
+
+Careful companies will target these appliances at particular sites.
+They'll want to be able to prove that they aren't watching you order
+your medications on line, lest they run into ADA problems, for example.
+
+It's going to be very interesting to see how this all plays out.  We've
+got two major trends crashing headlong into each other.  One is toward
+tighter and tighter control over what goes on on a company's machines
+and networks, some of it forced by regulation, some of it &quot;because we
+can&quot;.  The other is the growing technological workarounds.  If I don't
+like the rules on my company's network, I can buy over-the-air broadband
+service and use it from my desk.  It's still too expensive for most
+people today, but the price will come down rapidly.  Corporate IT will
+try to close up machines to make that harder and harder to do, but at
+the same time there's a growing push for IT to get out of the business
+of buying, financing, and maintaining rapidly depreciating laptops.
+Better to give employees a stipend and let them buy what they want -
+and carry the risks.
+							-- Jerry
+
+
+|<i> Regards,
+</I>|<i> Ryan
+</I>|<i> 
+</I>|<i> [1] <A HREF="http://www.crypto.com/blog/hardware_security/">http://www.crypto.com/blog/hardware_security/</A>
+</I>|<i> [2] <A HREF="http://www.netronome.com/web/guest/products/ssl_appliance">http://www.netronome.com/web/guest/products/ssl_appliance</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

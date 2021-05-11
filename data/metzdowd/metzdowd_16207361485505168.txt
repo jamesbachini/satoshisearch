@@ -1,0 +1,28 @@
+<PRE>* Jerry Leichter:
+
+&gt;<i> OK, I could live with that as stated.  But:
+</I>&gt;<i>
+</I>&gt;<i> 	The code also adds: &quot;We reserve the right to request access to
+</I>&gt;<i> 	your computer or device in order to verify that you have taken
+</I>&gt;<i> 	all reasonable steps to protect your computer or device and
+</I>&gt;<i> 	safeguard your secure information in accordance with this code.
+</I>&gt;<i>
+</I>&gt;<i> 	&quot;If you refuse our request for access then we may refuse your
+</I>&gt;<i> 	claim.&quot;
+</I>
+&gt;<i> The delay between when you were defrauded and when they request
+</I>&gt;<i> access is unspecified.
+</I>
+But if you don't do this, customers can repudiate *any* transaction,
+even those they have actually issued.  In other words, you run into
+tons of secondary fraud, where people claim they are victims, but they
+actually aren't.
+
+Customers need to provide some evidence that they are actually
+victims.  Just claiming &quot;the virus did it&quot; can't be sufficient.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

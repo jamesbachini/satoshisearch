@@ -1,0 +1,104 @@
+<PRE>Alex Alten wrote:
+&gt;<i> It seems that a large chunk (and probably relative soon nearly all)
+</I>&gt;<i> voice is now via VoIP. And to date, Skype not withstanding, this has 
+</I>&gt;<i> all been cleartext traffic.  Using router netflow records, etc., one 
+</I>&gt;<i> can now pinpoint any phone conversation and then do a pcap dump. Many
+</I>&gt;<i> Tier 1 through Tier 3 internet carriers are now deploying this type of
+</I>&gt;<i> L7 deep packet inspection directed analysis.  Currently they are limited
+</I>&gt;<i> to about 10 Gbps (L4 DPI), but soon 40 Gbps will be available.
+</I>
+
+Endace in New Zealand has a product for OC-768 concatenated.
+<A HREF="http://endace.co.nz/what-we-do/ninja-appliances/ninjaprobe-40g1">http://endace.co.nz/what-we-do/ninja-appliances/ninjaprobe-40g1</A>
+It feeds four of their 10G boxes, with a software layer running the whole
+thing as a virtual system.  Management can be over authenticated and secure
+links.
+
+The ability for a hacker or organization to exploit vulnerabilities would
+come from loss of control of the monitoring capability, and diverting the
+results.
+
+Corporate uses for commercial purposes or regulatory compliance imply a
+level of vulnerability and a duty of care that might require regulatory
+mandate from some number of agencies.  Some regulated uses have no teeth for
+failure of duty of care.  Taking advantage of corporate DPI could be viewed
+as hit or miss although the use is growing to the point it could be
+seriously exploited.
+
+Law enforcement intercept monitoring is a bit more worrisome.  Who controls
+the equipment?  What regulatory oversight is mandated?  We've seen that the
+FBI and DOJ aren't trustworthy or competent, what happens when you throw
+state and local law enforcement in the mix?  It's been demonstrated that
+without a controlling infrastructure that law enforcement intercept
+capability can be suborned as in the case of the Greek wiretapping.  The
+attraction for mis use by foreign intelligence concerns or criminal elements
+is that the law enforcement intercept infrastructure will become ubiquitous.
+There isn't currently a defined control infrastructure, and the agency
+responsible for driving development of intercept capability isn't competent
+to direct development of a control infrastructure.
+
+National security monitoring is made safer by equipment partitioning such as
+found in the description of the separate rooms in the AT&amp;T case.  All the
+pipes go through a controlled facility containing monitoring equipment. They
+don't want anyone to know what they are monitoring so they don't want to
+share infrastructure.  The monitoring output links from these rooms go to
+Ft. Huacua, San Antonio or wherever and would be encrypted.  The equipment
+is under control of the TLA directly, There's around $300K-500K worth of
+equipment installed in one of these major switching centers to monitor the
+Internet.  The threat is more TLA misuse than exploitation  by foreign or
+criminal concerns. The TLA won't merge capability with law enforcement
+intercept capability because law enforcement capability doesn't have a
+controlling infrastructure the TLA can dominate, nor do costs dictate the
+capabilities be merged.
+
+The Landau Op-Ed could be viewed as railing against infrastructure already
+in place for national security purposes now being 'legitimized' and
+confusing the distinction between law enforcement access and national
+security monitoring.  I don't subscribe to the notion that classified
+information is inherently accessible by Internet penetration, certainly not
+communications intelligence.  I'd have serious doubts that a penetration at
+Ft. Huachuca could gain someone control of the monitoring equipment in AT&amp;Ts
+San Francisco office for purposes of targeting national security monitoring
+capability.
+
+The long and the short of it is, the NSA can already monitor everything at
+least connected internationally, and it's legality fluctuates.  Foreign and
+criminal interests probably can't exploit that capability.
+
+Law enforcement intercept and corporate Deep Packet Inspection capabilities
+are probably vulnerable to foreign or criminal exploitation.  The scope of
+the individual vulnerabilities tends to be a bit more localized.
+
+And I don't really want the NSA to get into the business of domestic
+monitoring for law enforcement purposes as a partial solution, it has impact
+on net neutrality above and beyond legal issues.
+
+
+
+
+&gt;<i> At 05:12 PM 8/9/2007 -0400, Perry E. Metzger wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> <A HREF="http://www.washingtonpost.com/wp-dyn/content/article/2007/08/08/AR2007080801961.html">http://www.washingtonpost.com/wp-dyn/content/article/2007/08/08/AR2007080801961.html</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Selected quote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>    To avoid wiretapping every communication, NSA will need to build
+</I>&gt;&gt;<i>    massive automatic surveillance capabilities into telephone
+</I>&gt;&gt;<i>    switches. Here things get tricky: Once such infrastructure is in
+</I>&gt;&gt;<i>    place, others could use it to intercept communications.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>    Grant the NSA what it wants, and within 10 years the United States
+</I>&gt;&gt;<i>    will be vulnerable to attacks from hackers across the globe, as
+</I>&gt;&gt;<i>    well as the militaries of China, Russia and other nations.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Perry
+</I>&gt;&gt;<i>
+</I>&gt;<i> 
+</I>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

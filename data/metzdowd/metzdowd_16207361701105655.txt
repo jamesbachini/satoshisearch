@@ -1,0 +1,79 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> Frank Siebenlist &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">franks at mcs.anl.gov</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> That's actually a sad observation.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I keep telling my colleagues that this technology is coming &quot;any day now&quot; to
+</I>&gt;&gt;<i> a browser near you - didn't realize that that there was no interest with the
+</I>&gt;&gt;<i> browser companies to add support for this...
+</I>&gt;<i> 
+</I>&gt;<i> I know of a number of organisations (mostly governmental, but also some
+</I>&gt;<i> financial) in various countries who are really, really keen to get support for
+</I>&gt;<i> (as James Donald pointed out) cryptographically secured relationships (not
+</I>&gt;<i> requiring PKI would be a big feature) into browsers, but no-one knows who to
+</I>&gt;<i> beat over the head about it.  The last group I talked to (banks) were hoping
+</I>&gt;<i> to use commercial pressure to get MS to add support for it in IE7^H^H8 at
+</I>&gt;<i> which point Firefox would be forced to follow, but it's a slow process.
+</I>
+
+With the big browser war still going strong, wouldn't that provide 
+fantastic marketing opportunities for Firefox?
+
+If Firefox would support these secure password protocols, and the banks 
+would openly recommend their customers to use Firefox because its safer 
+and protects them better from phishing, that would be great publicity 
+for Firefox, draw more users, and force M$ to support it too in the long 
+run...
+
+
+&gt;&gt;<i> Why do the browser companies not care?
+</I>&gt;&gt;<i> What is the adoption issue?
+</I>&gt;&gt;<i> Still the dark cloud of patents looming over it?
+</I>&gt;&gt;<i> Not enough understanding about the benefits? (marketing)
+</I>&gt;&gt;<i> Economic reasons that we wouldn't buy anymore server certs?
+</I>&gt;<i> 
+</I>&gt;<i> I think it's a combination of two factors:
+</I>&gt;<i> 
+</I>&gt;<i> 1. Everyone knows that passwords are insecure, so it's not worth trying to do
+</I>&gt;<i>    anything with them.
+</I>&gt;<i> 
+</I>&gt;<i>    (My counter-argument to this is that passwords are only insecure because
+</I>&gt;<i>    protocol designers have chosen to make them insecure, see my previous post
+</I>&gt;<i>    about the quaint 1970s-vintage hand-over-the-password model used by SSH and
+</I>&gt;<i>    SSL/TLS).
+</I>
+
+...these protocol would even make the use of one-time-passwords more 
+secure (no MITM exposure - phishing), and make them securely usable 
+without any server-certs...
+
+
+&gt;<i> 2. If you add failsafe authentication to browsers, CAs become redundant.
+</I>&gt;<i> 
+</I>&gt;<i>    (My counter-argument to this is to ask whether browser security exists in
+</I>&gt;<i>    order to provide a business model for CAs or to protect users.  Currently
+</I>&gt;<i>    it seems to be the former, with EV certs being a prime example).
+</I>
+
+I was afraid that this cynical argument would play a role... so the 
+server-cert racketeering scheme has just been made more profitable 
+through more expensive but equally &quot;trustworthy&quot; EV-certs, which makes 
+it more difficult to introduce alternatives that don't fit into this 
+&quot;business model&quot;...
+
+On the other hand, I'm sure that the marketeers will be able to sell 
+server-certs together with those secure passwords protocols to the naive 
+customers as it will be very difficult to explain why you do/don't need 
+the certs and why it would more/less secure...
+
+-Frank.
+
+-- 
+Frank Siebenlist               <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">franks at mcs.anl.gov</A>
+The Globus Alliance - Argonne National Laboratory
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

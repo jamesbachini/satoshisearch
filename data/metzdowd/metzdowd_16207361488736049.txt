@@ -1,0 +1,200 @@
+<PRE>Florian Weimer wrote:
+&gt;<i> 
+</I>&gt;<i> Oh really?
+</I>&gt;<i> 
+</I>&gt;<i> In Germany, early digital banking had no cryptographic protection at
+</I>&gt;<i> all.  Integrity and confidentiality were inherited from the underlying
+</I>&gt;<i> phone system.  There were no end-to-end digital signatures.  Nothing.
+</I>&gt;<i> Just a one-time password for each transaction, but the password was
+</I>&gt;<i> not tied to the transaction in any way.
+</I>&gt;<i> 
+</I>&gt;&gt;<i> This has the added benefit of eliminating the horribly complex
+</I>&gt;&gt;<i> and vulnerable PKI-type of operation
+</I>&gt;<i> 
+</I>&gt;<i> Except that there aren't any attacks on the browser PKI.  That's part
+</I>&gt;<i> of the reason why the certificate prices plummeted. 8-/
+</I>&gt;<i> 
+</I>
+re:
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#31">http://www.garlic.com/~lynn/aadsm27.htm#31</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#32">http://www.garlic.com/~lynn/aadsm27.htm#32</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#33">http://www.garlic.com/~lynn/aadsm27.htm#33</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#34">http://www.garlic.com/~lynn/aadsm27.htm#34</A> The bank fraud blame game
+
+there had been lots of home banking with PCs starting in the 80s. these
+were dial-up into private bank modem pools (both consumer and
+business cash management). one of the trade-offs looking at
+going to internet based operation is the enormous infrastructure
+savings to financial institutions. 
+
+in 1995, a presentation by one financial institutions figured that 
+they were supporting something like 65 different software modem drivers 
+(different modems, different operating systems, different platforms, 
+etc). transitioning to internet met that they could eliminate all of 
+that (lots of help desk, lots of serial port issues, lots of hardware
+issues ... a much smaller precursor to the later smartcard PC/SC serial
+port disaster).
+
+they talked about what trade-offs were with any conversion to internet, 
+the operating system vendors  and ISPs would  go to a common connectivity 
+operation,  bearing the cost of all  the online connectivity ... amortized 
+over a lot of online use (not just online  banking). This eliminated an
+enormous cost for online banking. The downside was that the security issues 
+significantly increased.
+
+the dedicated financial applications have some similarities to
+that earlier dial-up phone environment ... except they are using
+something akin to a controlled SSL encrypted path (tunneled thru
+the internet) where the remote PC application has preloaded information
+about the financial institution's server (not needing traditional PKI 
+trusted 3rd party certification authority to provide information about unknown
+parties).
+
+now with respect to weakness of using PKI for such purposes, i've contended 
+in the past that the image/picture authentication helped increase the 
+possibility that the consumer/client was dealing with valid financial 
+institution (that they had previously registered the image/picture with).
+
+in that sense, it can be viewed as countermeasure to common phishing attacks
+... where clients are convinced to click on some field that takes their
+browser to some webserver. Given that the attacker can supply both the
+actual URL and the corresponding SSL digital certificate ... and majority
+of clients have very weak binding between websites and the corresponding
+URL (i.e. SSL PKI digital certificate is just checking that the webserver
+contacted actually corresponds to the supplied URL) .... then attackers
+have found an enormous PKI weak link in the current way SSL is deployed 
+(it relies on the user to provide the binding between the webserver
+they think they are talking to and that webserver's URL ... where
+SSL PKI is then only providing the binding between a URL and a webserver).
+
+As a result, active MITM attacks have happened ... where consumer is 
+convinced to click on a field purported to connect them to their
+financial institution. The attack actually provides a URL to their
+own webserver for which they have a valid SSL digital certificate ...
+then they can transparently pass communication between the real
+financial institution website and the consumer (with two different
+SSL sessions connected at the attackers website) ... aka the image/picture
+authentication stuff is to imcrease the sense of comfort a customer
+would have that they are actually talking to their financial institution
+(in view of all the SSL short-comings ... however, it doesn't actually
+preclude the security attacks).
+
+lots of past posts mentioning MITM-attacks
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#mitm">http://www.garlic.com/~lynn/subintegrity.html#mitm</A>
+
+some specific past posts about MITM-attacks and bank site authentication
+<A HREF="http://www.garlic.com/~lynn/aadsm19.htm#21">http://www.garlic.com/~lynn/aadsm19.htm#21</A> Citibank discloses private information to improve security
+<A HREF="http://www.garlic.com/~lynn/aadsm26.htm#28">http://www.garlic.com/~lynn/aadsm26.htm#28</A> man in the middle, SSL
+<A HREF="http://www.garlic.com/~lynn/aadsm26.htm#30">http://www.garlic.com/~lynn/aadsm26.htm#30</A> man in the middle, SSL
+<A HREF="http://www.garlic.com/~lynn/aadsm26.htm#31">http://www.garlic.com/~lynn/aadsm26.htm#31</A> man in the middle, SSL ... addenda 2
+<A HREF="http://www.garlic.com/~lynn/aadsm26.htm#56">http://www.garlic.com/~lynn/aadsm26.htm#56</A> Threatwatch: MITB spotted: MITM over SSL from within the browser
+<A HREF="http://www.garlic.com/~lynn/2007d.html#26">http://www.garlic.com/~lynn/2007d.html#26</A> Securing financial transactions a high priority for 2007
+
+part of this harks back to when were originally called into consult
+with this small client/server startup that wanted to do payments on
+their servers ... they had this technology called SSL they wanted
+to use and it has since come to be frequently called electronic commerce
+<A HREF="http://www.garlic.com/~lynn/subnetwork.html#gateway">http://www.garlic.com/~lynn/subnetwork.html#gateway</A>
+
+the end-to-end security &quot;assumptions&quot; at the time was that the user
+would type into the browser, the URL of the website they wanted to
+connect to. This created the trusted binding between the website the
+user wanted to talk to and the URL. Then the browser using SSL, digital
+certificates, PKI, etc ... would validate the correspondence between
+the URL and the webserver that was actually contacted (two part trust
+operation, both required).
+
+however, fairly early in the deployment, merchants found that using
+SSL for the whole shopping experience cut there thruput by 90-90 percent.
+as a result, they cut SSL use back to just the part for payment.
+Now the user can enter a URL ... and it isn't validate with SSL ...
+so the user can be talking to an attackers website. Then when they
+go to pay/checkout ... they click on a button (provided by potential
+fraudulent website). The button provides the URL for the checkout
+portion ... allowing an attacker to provide both the URL and an
+digital certificate that corresponds to that URL.
+
+Now longer is SSL being used to provide the correspondence between
+the webserver that the user thinks they are talking to and the webserver
+they are actually talking to ... the user is getting both the
+URL and the digital certificate off the net ... so all an attacker
+has to show that the URL they claim to be is the URL that they
+have a valid digital certificate for. 
+
+lots of past posts about SSL (and effectively SSL digital certificates
+turning into a &quot;comfort&quot; item as opposed to a real security feature)
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#sslcerts">http://www.garlic.com/~lynn/subpubkey.html#sslcerts</A>
+
+For other topic drift, in the mid-90s at one of the large security
+conferences (in the US), one of the large German banks gave a talk on relying
+party only digital certificates ... lots of past posts mentioning
+RPO certificates
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#rpo">http://www.garlic.com/~lynn/subpubkey.html#rpo</A>
+
+They had realized that the X.509 identity digital certificates from the early
+90s and potentially overloaded with enormous amounts of personal information ...
+represented significant privacy and liability issues. As a result, they
+had retrenched to RPO-certificates containing little more than an account
+number (or other kind of record locater) and public key ... if you actually
+wanted to do something ... it was necessary to read the information from
+the correct account. It wasn't just large German financial institutions that
+had come to this realization ... numerous financial institutions were 
+retrenching from the x.509 identity digital certificates of the early 90s.
+
+Note, however, examining all the business processes that would make use of
+RPO-certificates ... we were able to demonstrate that it was trivial to
+include the public key in the specified account record ... making the 
+associated PKI and digital certificates redundant and superfluous.
+
+This also significantly influenced our work on the X9.59 financial standard
+in the X9A10 financial standard working group (which in the mid-90s had been
+given the requirement to preserve the integrity of the financial infrastructure
+for all retail payments)
+<A HREF="http://www.garlic.com/~lynn/x959.html#x959">http://www.garlic.com/~lynn/x959.html#x959</A>
+
+It wasn't just that the RPO-certificates were redundant and superfluous. The
+typical RPO-certificates being tested in that time-frame were contributed
+enormous payload bloat (PKI and digital certificate payload overhead was
+on the order of one hundred times larger than the typical financial transaction
+size). misc. past posts mentioning the enormous payload bloat of redundant
+and superfluous digital certificates
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#bloat">http://www.garlic.com/~lynn/subpubkey.html#bloat</A>
+
+In the same timeframe as x9a10 work on x9.59, the X9F committee was attempting
+to take another approach. They had a standard work item for &quot;compressed&quot; digital
+certificates (objective to try and get payload bloat of RPO-certificates and PKI
+overhead down to possibly only 5-10 times larger than the base financial transaction 
+size).
+
+One of their suggested approaches ... was that all fields that were common to
+an issuers RPO-certificate would be eliminated ... i.e. only the fields that
+were unique to every RPO-certificate would be included. I had a slightly different
+suggestion ... instead eliminate all fields in the RPO-certificate that the
+financial institution already had on file for the entity. Since by definition,
+it could be shown that the financial institution already had all fields 
+(if nothing else from having issued the RPO-certificate in the first place),
+then it would be possible to eliminate all fields, reducing an RPO-certificate
+to zero bytes. 
+
+So as an alternative to deploying a certificateless public key infrastructure
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#certless">http://www.garlic.com/~lynn/subpubkey.html#certless</A>
+
+it would be possible to deploy a fully functional PKI operation that depended
+on attaching zero byte digital certificates to every transaction (which would
+also address the enormous PKI payload bloat). some old posts discussing the
+enormous advantages of a PKI with zero byte digital certificates
+<A HREF="http://www.garlic.com/~lynn/aadsm3.htm#cstech3">http://www.garlic.com/~lynn/aadsm3.htm#cstech3</A> cardtech/securetech &amp; CA PKI
+<A HREF="http://www.garlic.com/~lynn/aadsm3.htm#cstech6">http://www.garlic.com/~lynn/aadsm3.htm#cstech6</A> cardtech/securetech &amp; CA PKI
+<A HREF="http://www.garlic.com/~lynn/aadsm3.htm#kiss1">http://www.garlic.com/~lynn/aadsm3.htm#kiss1</A> KISS for PKIX. (Was: RE: ASN.1 vs XML (used to be RE: I-D ACTION :draft-ietf-pkix-scvp- 00.txt))
+<A HREF="http://www.garlic.com/~lynn/aadsm3.htm#kiss6">http://www.garlic.com/~lynn/aadsm3.htm#kiss6</A> KISS for PKIX. (Was: RE: ASN.1 vs XML (used to be RE: I-D ACTION :draft-ietf-pkix-scvp- 00.txt))
+<A HREF="http://www.garlic.com/~lynn/aadsm4.htm#6">http://www.garlic.com/~lynn/aadsm4.htm#6</A> Public Key Infrastructure: An Artifact...
+<A HREF="http://www.garlic.com/~lynn/aadsm4.htm#9">http://www.garlic.com/~lynn/aadsm4.htm#9</A> Thin PKI won - You lost
+<A HREF="http://www.garlic.com/~lynn/aadsm5.htm#x959">http://www.garlic.com/~lynn/aadsm5.htm#x959</A> X9.59 Electronic Payment Standard
+<A HREF="http://www.garlic.com/~lynn/aadsm5.htm#shock">http://www.garlic.com/~lynn/aadsm5.htm#shock</A> revised Shocking Truth about Digital Signatures
+<A HREF="http://www.garlic.com/~lynn/aadsm5.htm#spki2">http://www.garlic.com/~lynn/aadsm5.htm#spki2</A> Simple PKI
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

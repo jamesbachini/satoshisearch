@@ -1,0 +1,64 @@
+<PRE>
+On Sep 24, 2008, at 6:39 PM, Perry E. Metzger wrote:
+&gt;<i>
+</I>&gt;<i> The whole point of the study (which you feel had an &quot;inappropriate
+</I>&gt;<i> tone&quot;) and of such gedankenexperiments is to understand the problem
+</I>&gt;<i> space better.
+</I>
+Clarification: not the study.
+
+I believe the article had an inappropriate tone. Calling victims of
+inadequate user interfaces &quot;idiots&quot; is inappropriate and spits in the
+face of the evidence.
+
+It's still a fact that when a majority of a population of operators of  
+any
+equipment is experiencing poor outcomes just using it as normal
+people do, then there is a screaming need to fix that equipment.
+
+If the &quot;blame the idiot&quot; thinking were accepted in other domains, we'd
+still have factory workers chopping off their limbs on a daily basis  
+because
+any non-idiot should be smart enough to step back when the press
+is coming down. The simple fact is that normal people make mistakes and
+experience momentary slips as part of their ordinary existence.
+
+It's a designer's job to consider the users of an engineered device, to
+consider what their /entirely expected/ failings will be, and to work
+to prevent them. The current approaches do not work well to prevent
+the expected human failures.
+
+Therefore, the current approaches are inadequate.
+
+The study suggests that people should be expected to make errors using
+current user interfaces shoved in their faces by the stuff behind the
+scenes that never should have been so insecure in the first place.
+Why all the shock and outrage then?
+
+Security and OS builders would do well to consider how nuanced certain
+other things are, that &quot;just work right&quot;. As a quick example, I've not
+looked at the code but i can definitely tell that a hell of a lot of
+scrubbing is done on the trackpad inputs from this laptop, so that
+cursor motion is reliable and predictable, despite my imprecise finger
+movements. I look forward to seeing such nuance in user safety
+someday and will never be satisfied calling the majority of the  
+population
+&quot;idiots&quot; because some human-built device has gotten lots of them
+into unexpected trouble.
+
+&gt;<i> At one time, we believed that with enough crypto, we would be safe,
+</I>&gt;<i> but we were disabused of that notion -- crypto is a great tool but not
+</I>&gt;<i> a panacea. Now the notion seems to be that with enough human factors,
+</I>&gt;<i> we will be safe. It appears this, too, is not a panacea.
+</I>&gt;<i> protect themselves adequately.
+</I>
+
+Human factors haven't received nearly enough attention, and as long as
+human factors failings are dismissed as the fault of &quot;idiot users&quot;, they
+never will.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

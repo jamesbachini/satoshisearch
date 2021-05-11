@@ -1,0 +1,17 @@
+<PRE>Martin James Cochran &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Martin.Cochran at Colorado.EDU</A>&gt; writes:
+
+&gt;<i>This might work, although 90% of the steps seem to unnecessarily (and
+</I>&gt;<i>perilously) complicate the algorithm.  What's wrong with starting with input
+</I>&gt;<i>SALT || PASSWORD and iterating N times, where N is chosen (but variable) to
+</I>&gt;<i>make brute-force attacks take longer?
+</I>
+Or just use PBKDF2, RFC 2898.  It does what's required, has been vetted by
+cryptographers, is an IETF standard, has free implementations available, ...
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

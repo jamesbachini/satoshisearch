@@ -1,0 +1,37 @@
+<PRE>
+On Dec 3, 2007, at 16:51 , Paul Hoffman wrote:
+
+&gt;<i> At 9:58 AM -0500 12/3/07, Perry E. Metzger wrote:
+</I>&gt;&gt;<i> I don't know if people have been following this, but it is  
+</I>&gt;&gt;<i> interesting
+</I>&gt;&gt;<i> from the point of view of studying how the FIPS process does (or does
+</I>&gt;&gt;<i> not) interact with the underlying goal of producing assured systems.
+</I>&gt;<i>
+</I>&gt;<i> Another interesting part is that open-source systems are much more  
+</I>&gt;<i> susceptible to being attacked by competitors (that is, having their  
+</I>&gt;<i> validation suspended) than are closed-source systems.
+</I>
+Hi Paul,
+
+this may have been true in the past. Enter tools like BinDiff [1] and  
+BinNavi [2] and a skilled reverse engineer is able to shoot down  
+you're closed-source implementation almost as quickly as one for which  
+she has source (assuming she has binaries, of course).
+
+Cheers,
+Ralf
+
+[1] Zynamics BinNavi
+     <A HREF="http://www.zynamics.com/index.php?page=binnavi">http://www.zynamics.com/index.php?page=binnavi</A>
+
+[2] Zynamics BinDiff
+     <A HREF="http://www.zynamics.com/index.php?page=bindiff">http://www.zynamics.com/index.php?page=bindiff</A>
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/pkcs7-signature
+Size: 1846 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071205/765e36e9/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20071205/765e36e9/attachment.bin</A>&gt;
+</PRE>

@@ -1,0 +1,85 @@
+<PRE>On Tue, 22 Apr 2008, Leichter, Jerry wrote:
+&gt;<i> Interestingly, if you add physics to the picture, you can convert
+</I>&gt;<i> &quot;no practical brute force attack&quot; into &quot;no possible brute force
+</I>&gt;<i> attack given known physics&quot;.  Current physical theories all place a
+</I>&gt;<i> granularity on space and time:  There is a smallest unit of space
+</I>&gt;<i> beyond which you can't subdivide things, and a smallest unit of
+</I>&gt;<i> time.
+</I>
+I guess you are talking about Planck units, so let's make the
+calculations:
+
+ Planck length is L = \sqrt{hbar G / c^3} ~ 1.6E-35 m,
+
+ Planck time T = L/c ~ 5.4E-44 s,
+
+so a cubic-meter-computer can have
+
+ N = (1/L)^3 ~ 2.4E104 elements
+
+and thus
+
+ N/T ~ 4.5E147 operations per second
+
+that is approximately 2^{490} operations per second in a cubic meter
+of &quot;Planck computer&quot;. Given a year (3.15E7 s) on a Earth-size
+(1.08E21 m^3) Planck computer we can make approximately 2^{585}
+operations.
+
+OK, it was amusing to do these calculations, but does it mean
+anything? I think it is more like garbage-in-garbage-out process.
+
+If I understand correctly, L and T are not non-divisible units of
+space-time, but rather boundaries for which we understand that our
+current theories do not work, because this scale requires unification
+of general relativity and quantum mechanics.
+
+Even more bizarre is to think about the above &quot;processing element&quot; as
+representing a single bit: according to quantum mechanics, states of a
+system are represented by unit vectors in associated Hilbert space of
+the system and each observable is represented by a linear operator
+acting on the state space. Even if we have only two qubits they are
+not described by two complex numbers, but rather by 4:
+
+ a_0|00&gt; + a_1|01&gt; + a_2|10&gt; + a_3|11&gt;
+
+and thus description of the state of quantum registers requires
+exponential number of complex numbers a_i and each operation
+simultaneously process all those a_i. Since we cannot measure
+them all, it is an open question whether quantum computations
+provide exponential speed-up and all we know right now is that
+they give at least quadratic one.
+
+By the way, if you have a computer with the processing power larger
+than that of all the cryptanalysts in the world, it makes sense to use
+your computer to &quot;think&quot; to find a better attack than a brute-force
+search :-)
+
+&gt;<i> One place this shows up, as an example:  It turns out give a volume
+</I>&gt;<i> of space, the configuration with the maximum entropy for that volume
+</I>&gt;<i> of is exactly a black hole with that volume
+</I>
+[OT] This is a strange thesis because all black hole solutions in
+general relativity can be completely characterized by only three
+externally observable parameters: mass, electric charge, and angular
+momentum (the no-hair theorem) and thus in some sense they have zero
+entropy (it is not necessary a contradiction with something, because
+it takes an infinite time for matter to reach the event horizon).
+
+&gt;<i> and its entropy turns out to be the area of the black hole, in units
+</I>&gt;<i> of square Planck lengths.
+</I>
+[OT] Although Hawking showed that the total area of the event horizons
+of a collection of black holes can never decrease, which is *similar*
+to the second law of thermodynamics (with entropy replaced by area),
+it is not clear that it allows to conclude that area *is* entropy.
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

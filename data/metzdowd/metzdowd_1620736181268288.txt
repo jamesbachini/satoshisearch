@@ -1,0 +1,128 @@
+<PRE>[Moderator's note: this seems to be much more about the open source
+ wars and such than about crypto and security. I'm not going to
+ forward replies on this topic that don't specifically address
+ security issues -- those who were not interested in the original
+ thread may want to skip this message, too. --Perry]
+
+
+David G. Koontz wrote:
+&gt;<i> zooko wrote:
+</I>&gt;&gt;<i> On Jun 12, 2008, at 4:35 PM, David G. Koontz wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> There's the aspect of competition.
+</I>&gt;&gt;&gt;<i> I've also wondered if a reason they didn't release it is because they
+</I>&gt;&gt;&gt;<i> bought
+</I>&gt;&gt;&gt;<i> the 'IP' from someone.
+</I>&gt;&gt;<i> Those are good guesses, David, and I guessed similar things myself and
+</I>&gt;&gt;<i> inquired of various Sun folks if this was the &quot;real&quot; reason.  Nobody
+</I>&gt;&gt;<i> could give me any definite answer, however, until Sridhar Vajapey wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  &quot;US export control regulations prevent Sun from opensourcing the crypto
+</I>&gt;&gt;<i> portion of N2.&quot;.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> You've got to admit, that the work load for implementation is quite a bit
+</I>&gt;<i> higher without the PCI-E, 10GE MACs, and crypto, for a piece of competitive
+</I>&gt;<i> silicon.  All the sudden you don't have that 'Server On a Chip' that Sun
+</I>&gt;<i> sells.
+</I>&gt;<i> 
+</I>&gt;<i> The net result is still that you can't compete directly with Sun, but you
+</I>&gt;<i> can still expand the range of applications for Sun processors, and oh by the
+</I>&gt;<i> way, Sun's silicon works perfectly well in any new markets.  It still walks
+</I>&gt;<i> like a duck.
+</I>&gt;<i> 
+</I>&gt;<i> For the record I don't begrudge Sun captive markets, it supports a fairly
+</I>&gt;<i> decent 64 bit architecture and isn't Intel.  What they have released isn't
+</I>&gt;<i> what they sell.  They're demonstrably Rice Christian open source advocates.
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://en.wikipedia.org/wiki/Rice_Christian">http://en.wikipedia.org/wiki/Rice_Christian</A>
+</I>&gt;<i> 
+</I>
+On June 5th, Sun released more of the T2 RTL source, in this case for the
+NIU (Network Interface Unit) which includes the 10G Ethernet interfaces.
+
+This was presented by the fellow responsible on several blogs and
+announcement on opensparc.net.
+
+<A HREF="http://blogs.sun.com/dv/entry/10g_ethernet_design_open_sourced">http://blogs.sun.com/dv/entry/10g_ethernet_design_open_sourced</A>
+<A HREF="http://blogs.sun.com/dwaynelee/entry/latest_opensparc_t1_and_t2">http://blogs.sun.com/dwaynelee/entry/latest_opensparc_t1_and_t2</A>
+<A HREF="http://www.opensparc.net/2008-06/durgam-vahia-10g-ethernet-design-open-sourced.html">http://www.opensparc.net/2008-06/durgam-vahia-10g-ethernet-design-open-sourced.html</A>
+<A HREF="http://www.opensparc.net/opensparc-t2/version-1.1-released.html">http://www.opensparc.net/opensparc-t2/version-1.1-released.html</A>
+announcement in which:
+
+  OpenSPARC T2 System-on-chip (SoC) micro-architecture document has a new
+  chapter on NIU. The document now is also divided in two volumes to reduce
+  the size of the each book.
+
+This new System-on-chip (SoC) micro-architecture documents are not in
+evidence for download, the SoC document available is from December 2007
+(without the NIU).
+
+One could note that lack of open release of documentation on the NIU would
+not be a major impediment to a Sun partner with a close working relationship
+(and access to the UltraSPARC T2 full documentation).  One could likewise
+view it to be detrimental to an independent effort.
+
+The reasoning for why I labeled Sun as faint hearted open source advocates
+can be summed up by how well they fit into the open source community.
+
+<A HREF="http://www.groklaw.net/article.php?story=20080626160554713">http://www.groklaw.net/article.php?story=20080626160554713</A>
+Pamela Jone's Groklaw article entitled  'A Sun Update on the NetApp
+Litigation', 26 June 2008:
+
+  Brendan Scott of Open Source Law was interviewed recently and he made
+  this point:
+
+        Open source is about community. You need to understand the community
+    to operate effectively in it and this means changing your own behaviour.
+    For example, if you start a new job and there is a cake morning on
+    Monday, then you are going to have to find a cake shop or hone your
+    baking skills if you want to be part of the team. Popping out for group
+    coffee on a Friday like you did at your last employer won't work. That
+    is why it's important to connect with people who are already members of
+    the community and know their way around it - people from the Monday set,
+    not the Friday set.
+
+  In other words, you have to fit in. Releasing code is not all there is to
+  it. Ethics, fairness, honesty -- it's the FOSS culture, and it's the value
+  add. Any company that tries to play by the old rules undercuts that
+  advantage.
+
+<A HREF="http://www.computerworld.com.au/index.php/id;1993045790;pp;1;fp;16;fpid;1">http://www.computerworld.com.au/index.php/id;1993045790;pp;1;fp;16;fpid;1</A>
+(Brenden Scott interview)
+
+Mike Dillon, Sun's General Counsel comments on the NetApp v. Sun litigation
+over ZFS and on his blog <A HREF="http://blogs.sun.com/dillon/entry/netapp_draft">http://blogs.sun.com/dillon/entry/netapp_draft</A>
+firmly declares Sun as a FOSS player.
+
+&gt;<i>From what we see with Sun's opensparc.net effort, their part of the Friday
+</I>coffee crowd and not part of the Monday effort.  The difference between
+getting by as an open source advocate while continuing your proprietary
+behaviors, versus really changing and pro actively supporting open source.
+Sun has lots of irons in the fire for open source,  but as far as I know the
+opensparc effort is furthest along the path as far as using GPL licenses,
+favoring the CDDL for various other efforts, particularly historically.
+
+Sun is still hedging their open source efforts to the point of the
+appearance of maintaining a proprietary advantage.  This can be demonstrated
+by nickel and dime releases, as well as multi year hedges for releasing
+things like java under the GPL.  It boils down to an acknowledgment that
+what they use internally isn't what the release as open source.  A hedge to
+'play by the old rules' in PJ's words, and that makes them Rice Christian
+open source advocates.  Essentially clinging to the words of faith during
+fair weather, and reverting to the old ways during hard times, they aren't
+committed irrevocably to their new 'FOSS' faith.
+
+If it's any conciliation, Sun appears to be moving closer toward that
+commitment.
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

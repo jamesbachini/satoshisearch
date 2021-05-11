@@ -1,0 +1,23 @@
+<PRE>I feel I should add a followup to the earlier post, this was implied by the
+rhetorical question about what the LINPACK performance of a botnet is, but
+I'll make it explicit here:
+
+The standard benchmark for supercomputers is the LINPACK linear-algebra
+mathematical benchmark.  Now in practice the LINPACK performance of a botnet
+is likely to be nowhere near that of a specially-designed supercomputer, since
+it's more a distributed grid than a monolithic system.  On the other hand bot-
+herders are unlikely to care much about the linear algebra performance of
+their botnet since it doesn't represent the workload of any of the tasks that
+such a system would be used for.
+
+Where Storm leaves every conventional supercomputer in the dust is in terms of
+the sheer hardware resources (number of CPUs, amount of memory, and network
+bandwidth) at its disposal.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

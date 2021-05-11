@@ -1,0 +1,24 @@
+<PRE>Perry E. Metzger wrote:
+ &gt; The call-the-customer-and-reissue mechanism is a
+ &gt; mediocre solution to the fraud problem, but it is the
+ &gt; one we have these days.
+
+Why is it a mediocre solution?
+
+The credit card number is a widely shared secret.  It
+has been known for centuries that widely shared secrets
+have a short life expectancy and should be frequently
+re-issued.
+
+The only better solution is unshared secrets.  Is that
+what you had in mind?  Instead of the customer sharing
+his secret with the merchant, and the merchant checking
+it with the bank, customer should prove to bank that the
+person who knows the secret wishes to pay the merchant
+for the identified promise.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

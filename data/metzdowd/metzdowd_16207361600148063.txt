@@ -1,0 +1,20 @@
+<PRE>A random thought that's been kicking around in my head: if someone were
+looking for a project, an open-source permissive action link (
+<A HREF="http://www.cs.columbia.edu/~smb/nsam-160/pal.html">http://www.cs.columbia.edu/~smb/nsam-160/pal.html</A> is a good link, thank you
+Mr. Bellovin) seems like it might be a great public resource: I suspect it's
+something that some nuclear states could use some education on, but even if
+the US is willing to share technology, the recipient may not really trust
+the source.
+
+As such, an open-source PAL technology might substantially improve global
+safety.
+
+Thoughts?
+
+ - Tim
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

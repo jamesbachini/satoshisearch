@@ -1,0 +1,33 @@
+<PRE> &gt;&gt;&gt;     Ben wrote:
+&gt;<i> &gt;  But just how GREAT is that, really? Well, we don'
+</I>&gt;<i> &gt;  t know. Why? Because there isn't actually a way test for randomness. Your
+</I>&gt;<i> &gt; DNS resolver could be using some easily predicted random number generator
+</I>&gt;<i> &gt; like, say, a linear congruential one, as is common in the rand() library
+</I>&gt;<i> &gt; function, but DNS-OARC would still say it was GREAT.
+</I>
+At 11:57 AM 7/30/2008, Pierre-Evariste Dagand wrote:
+&gt;<i>Well, they are some tests to judge the &quot;quality&quot; of a random number
+</I>&gt;<i>generator. The best known being the Diehard tests:
+</I>
+Random number quality is contextual.
+In this case, for 95-99% of the market, the real test is between
+         &quot;Patched&quot; &quot;Badly Broken Not patched yet&quot; &quot;Didn't need patching&quot;,
+and if you'd prefer the term &quot;Best we can do until DNSSEC&quot;
+instead of &quot;GREAT&quot; I won't be the one to argue with you.
+
+There are some other possible conditions, like
+         &quot;Rolled their own with open source, badly&quot;
+or      &quot;Maliciously subtle malware DNS resolver&quot;.
+The latter is way too much work compared to cruder approaches
+(like targeting queries directly to your evil DNS server).
+The former is not too common, though it probably exists,
+but once most systems get patched,
+it may not be a big enough target to interest crackers.
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

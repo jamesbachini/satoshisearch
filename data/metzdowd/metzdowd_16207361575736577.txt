@@ -1,0 +1,38 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A> writes:
+
+&gt;<i>food for consideration. yes, #s are from MSFT as he notes, but are the only
+</I>&gt;<i>ones we have presently wrt actual Storm extent, yes? If not, pls post
+</I>&gt;<i>pointers...
+</I>
+I have two problems with this report.  Firstly, I don't think this is a very
+representative sampling technique compared to the estimates from security
+companies.  If you look at the sample that's being used, &quot;Windows machines
+that have automatic updates turned on&quot;, then the typical machine is going to
+be configured with something like Windows XP SP2 with all available hotfixes
+and updates applied, in other words the very systems that are (one would hope
+:<i>-) the *least* likely to be affected by malware.  If you take the rule-of-
+</I>thumb estimate that's sometimes used on MSDN blogs of 1B Windows machines out
+there then 2.6M machines is &lt; 0.3% of that total.  Now this in itself wouldn't
+be so bad if it was an unbiased sample, but in fact it's probably a rather
+non-representative 0.3%.  Although some of the numbers from security companies
+for infections may be just guesswork, they also use broad sampling across all
+Windows machines (not just ones with Windows Defender), honeypots, monitoring
+of botnet traffic patterns, and other methods as well.  So while it's valid to
+say that this provides data for Storm on fully patched, up-to-date machines
+running Windows Defender, I don't think this generalises for all Windows
+machines.
+
+Secondly, the text completely contradicts the figures given.  If the figures
+really are accurate and not a typo, then 274K machines infected out of 2.6M
+puts Storm on 10% of Windows PCs, which would make the worldwide infection
+rate 100M systems, or ten times larger than the previous worst-possible case
+estimate.  Storm may be big, but it's not *that* big.  I think there's
+something wrong with the figures.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

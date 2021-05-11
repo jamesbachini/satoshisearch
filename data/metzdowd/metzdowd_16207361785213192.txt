@@ -1,0 +1,19 @@
+<PRE>
+Just a few reminders from your moderator about posting etiquette:
+
+0) Text only, please. HTML and text encoded weird ways like base-64,
+   as well as MIME multiparts, are a big pain in the neck. I generally
+   just reject them rather than repairing them.
+1) Please do not top post when replying to other people.
+2) If you're replying to someone else's email, edit down the quoted
+   text to the minimum needed for comprehension.
+3) Try to be concise.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

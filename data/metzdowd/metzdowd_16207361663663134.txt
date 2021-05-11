@@ -1,0 +1,123 @@
+<PRE>Forwarded with permission.
+
+This is part of a discussion of the proposed SHA-3 API for the NIST
+competition.  Those interested in discussing it should subscribe to the
+list; see <A HREF="http://csrc.nist.gov/groups/ST/hash/email_list.html">http://csrc.nist.gov/groups/ST/hash/email_list.html</A> for
+instructions.
+
+Begin forwarded message:
+
+Date: Fri, 4 Jan 2008 10:21:24 -0500
+From: &quot;Ronald L. Rivest&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rivest at mit.edu</A>&gt;
+To: Multiple recipients of list &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hash-forum at NIST.GOV</A>&gt;
+Subject: SHA-3 API
+
+
+
+Dear Larry Bassham --
+
+Since you indicated that you might be producing a revised
+API for the SHA-3 submissions, here are some suggestions and
+thoughts for your consideration:
+
+(1) Make hashState totally opaque.
+
+     In other words, eliminate the requirement to include
+     a field &quot;hashbitlen&quot;.  While an implementation presumably
+     includes such a field, there is no need that I can see
+     for standardizing its name and making it a requirement.
+
+(2) Measure all input to be hashed in bytes, not bits.
+
+     While the theoretical literature on hashing measures
+     lengths in bits, in practice all data is an integral
+     number of bytes.  That is, theory uses base-2, practice
+     uses base-256.  I have never seen an application that
+     cared about hashing an input that was not an integral
+     number of bytes.
+
+     An application that really needs bit-lengths for hashing
+     can apply the &quot;standard&quot; transformation to the data first:
+     always append a 1-bit, then enough 0-bits to make the data
+     an integral number of bytes.
+
+     I think that using a bit-length convention for the standard
+     input will cause errors, as callers are likely to forget
+     multiplying the input chunk length by 8.  This will cause
+     the wrong result, but it will be undetectable---only 1/8 of
+     the data will be hashed.  A security vulnerability will be
+     created, as it will no longer be collision-resistant...
+
+     I think the risk of application-level mistakes in this manner
+     outweighs the (non-existent) need for bit-lengths on inputs.
+
+(3) Eliminate the &quot;offset&quot; input to the Update function.
+
+     First of all, it is too short, if you are going to admit
+     inputs of 2**64 bits.
+
+     But more importantly, there is no understandable need for
+     such an input.
+
+     I don't think you are contemplating giving the inputs
+     out-of-order.  If this is to support parallel implementations
+     somehow, you would need other functions, beyond Update, to
+     combine the hash results for various portions of the input.
+
+     Thus, the offset is merely the sum of the previous datalen
+     values, and can be kept by the hash function implementation
+     internally in hashState.
+
+     Best to eliminate it.
+
+(4) Make datalen a 64-bit input to Update.
+
+     I think you need to &quot;bit the 64-bit bullet&quot; and insist that
+     all C implementations support 64-bit data values, particularly
+     when you have inputs that may often be larger than 2*32 bits
+     (or 2**32 bytes, even).  Your SHA-1 example on page 4 of the
+     proposed API breaks for long inputs.
+
+     Having an int parameter here is another place where users may
+     have errors, when they don't realize that their inputs may be
+     exceeding the int length bound.  We shouldn't build in hazards
+     for the unwary into the API.
+
+(5) Make it clear what kinds of &quot;endian-ness&quot; should be supported.
+
+     While the inputs are supplied as byte-strings, implementations
+     may immediately copy these over into words for processing.
+     What are the possibilities that an implementation needs to
+     handle for endian-ness during this copying?  Big/little endian-ness
+     within 16/32/64 bit words?
+
+(6) Make it clear that threads are not allowed in reference
+     implementation.
+
+     You stated that the standard implementation should not
+     make use of available parallelism on the reference platform.
+
+
+Cheers,
+Ron Rivest
+
+
+
+
+
+
+-- 
+     Ronald L. Rivest
+     Room 32-G692, Stata Center, MIT, Cambridge MA 02139
+     Tel 617-253-5880, Email &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rivest at mit.edu</A>&gt;
+
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

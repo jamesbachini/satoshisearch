@@ -1,0 +1,27 @@
+<PRE>On Thu, 21 Feb 2008 13:37:20 -0800
+&quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+
+&gt;<i> &gt;  Umm, pardon my bluntness, but what do you think the FDE stores the
+</I>&gt;<i> &gt; key in, if not DRAM? The encrypting device controller is a computer
+</I>&gt;<i> &gt; system with a CPU and memory. I can easily imagine what you'd need
+</I>&gt;<i> &gt; to build to do this to a disk drive. This attack works on anything
+</I>&gt;<i> &gt; that has RAM.
+</I>&gt;<i> 
+</I>&gt;<i> How about TPM? Would this type of attack work on a tamper-resistant
+</I>&gt;<i> ver1.2 TPM?
+</I>
+See
+<A HREF="http://technet2.microsoft.com/windowsserver2008/en/library/d2ff5c4e-4a68-4fd3-81d1-665e95a59dd91033.mspx?mfr=true">http://technet2.microsoft.com/windowsserver2008/en/library/d2ff5c4e-4a68-4fd3-81d1-665e95a59dd91033.mspx?mfr=true</A>
+
+Briefly, there's a bit in the TPM that means &quot;there are keys present;
+zero RAM when booting&quot;.  This does nothing against the guy with the
+Dewar flask of liquid nitrogen, of course.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

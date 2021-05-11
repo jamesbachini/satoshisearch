@@ -1,0 +1,63 @@
+<PRE>On Thu, Nov 15, 2007 at 10:28:43AM +0200, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Pasi.Eronen at nokia.com</A> wrote:
+&gt;<i> There's a dependency from &quot;negotiated capabililities&quot;
+</I>&gt;<i> to the cryptographic things included in the first message
+</I>&gt;<i> from client to server (since e.g. what algorithm is 
+</I>&gt;<i> used by the client, or even what certificate is selected,
+</I>&gt;<i> depends on these &quot;non-crypto&quot; capability/feature parts.)
+</I>&gt;<i> 
+</I>&gt;<i> But as James pointed out, you could probably handle this 
+</I>&gt;<i> in &quot;optimistic&quot; mode; i.e. make a guess what the &quot;negotiated
+</I>&gt;<i> capabilities&quot; are likely to be, and fall back to more
+</I>&gt;<i> RTTs if the guess is wrong.
+</I>
+One could theoretically send all of the permutations prior to
+negotiation.  However, there would be a bandwidth penalty, a privacy
+penalty (any listener knows all cryptographic identities), and a
+possible security penalty (if any of the supported methods are
+undesirably weak).
+
+However, if you only have strong ciphers and don't care about
+cryptographic identity protection, it could be useful.
+
+Note that all these weaknesses already exist, as they could be
+triggered by communicating with a less-capable client, or one
+controlled by an adversary.  Whether or not it matters depends on some
+contextual details.
+
+&gt;<i> (BTW, usually we also want the capability negotiation
+</I>&gt;<i> to be secure; SSL simply exchanges MACs of all messages
+</I>&gt;<i> once the key for MAC has been agreed on. Would this
+</I>&gt;<i> add 0.5 or 1RTT? Or perhaps there's some clever
+</I>&gt;<i> way to do it without additional RTT?)
+</I>
+Schneier suggests keeping a running MAC over the entire datastream,
+the state of which is sent with each logical message.  I think that's
+a simple and safe way to do it, and so there's no extra messages
+involved.  You always check the MAC first, before operating on the
+data, and you abort whenever you receive one with a message with an
+invalid MAC.  The MAC with each message attests to the integrity of
+all data ever sent over that connection, period.
+
+The obvious way - doing a specific step just to verify the handshake -
+is the kind of code-centric thinking that I'm trying to avoid.  I'm
+having trouble finding the right words for it.  Basically an encrypted
+network protocol is a language in which a transmission is
+syntactically correct if and only if all the security properties hold.
+In some ways current protocols are like a poorly-written language
+whose parser that needs a seperator character between statements
+instead of being able to detect the syntax error when it starts
+processing the following statement.  Basically it lacks even a single
+symbol look-ahead.
+
+-- 
+Life would be so much easier if it was open-source.
+&lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071129/5ec6705d/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071129/5ec6705d/attachment.pgp</A>&gt;
+</PRE>

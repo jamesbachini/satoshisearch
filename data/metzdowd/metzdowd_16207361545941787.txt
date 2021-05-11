@@ -1,0 +1,81 @@
+<PRE>Leichter, Jerry wrote:
+&gt;<i> &gt; | A couple of questions. How did you come up with the ~2.5 bits per
+</I>&gt;<i> &gt; | word? Would a longer word have more bits?
+</I>&gt;<i> &gt; He misapplied an incorrect estimate!   :-)  The usual estimate - going
+</I>&gt;<i> &gt; back to Shannon's original papers on information theory, actually - is
+</I>&gt;<i> &gt; that natural English text has about 2.5 (I think it's usually given as
+</I>&gt;<i> &gt; 2.4) bits of entropy per *character*.  There are several problems here:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; 	- The major one is that the estimate should be for *characters*,
+</I>&gt;<i> &gt; 		not *words*.  So the number of bits of entropy in
+</I>&gt;<i> &gt; 		a 55-character phrase is about 137 (132, if you use
+</I>&gt;<i> &gt; 		2.4 bits/character), not 30.
+</I>
+
+I think in weird ways.  :-)  The rationale behind it follows:
+
+I assume that the passphrase is in syntactically correct English. So,
+number of possible combinations is reduced by the great amount. Also, I
+ want to reduce the number of combinations, so I focus on the most
+probable sentences.
+
+It seems ideal to use some stochastic grammar to describe this problem.
+This type of grammar can be used to produce:
+
+1) probabilities for the sentences so:
+	a) total count (state space) can be reduced by threshold
+	b) sentences could be sorted by probability
+2) estimate of shannon entropy (which allows me to estimate bits per
+sentence or per word and possibly to craft more effective algorithm to
+walk through the space)
+
+At this point I did a little test for one phrase and played with it a
+little. I wanted to know, how likely is that using stochastic grammar
+description, someone can infer that passphrase. I asked google for
+aproximate count on phrases (results sorted by count):
+
+&quot;had a look&quot; 2100000
+&quot;had a car&quot;   591000
+&quot;had a little lamb&quot; 590000
+&quot;had a drink&quot; 562000
+&quot;mary had a little lamb&quot; 522000
+&quot;had a fight&quot; 466000
+mary had a little fleece white snow 322000 //not a phrase
+&quot;had a president&quot; 80200
+&quot;had a snow&quot;   42400
+&quot;had a lamb&quot;   27300
+
+and also:
+
+&quot;I have been there&quot;  947000
+&quot;to rescue&quot;         2190000
+
+&quot;had&quot; 1.2E9
+&quot;is&quot;  3.68E9
+&quot;the&quot; 5E9
+&quot;a&quot;  7.2E9
+
+&gt;<i>From this I assumed that google indexes about 5*109 pages. It can bee
+</I>seen clearly, that &quot;had a little lamb&quot; is common phrase (relatively,
+between similar phrases). It can be also seen, that the whole rhyme has
+about an half count of phrase &quot;had a little lamb&quot;.
+
+At this point I decided not to continue further and assumed, that this
+passphrase has very low information content, so I used value of about
+2.5bits/word (which don't seem unreasonable when looking at the numbers
+above). I didn't calculated the actual value, it can be higher or lower.
+If the passphrase is &quot;The car looked at me with a telescope.&quot;, I would
+estimate it higher (unusual combination of words).
+
+Thinking about that original passphrase at character level shannon way
+is incorrect. It overestimates information in that sentence. Word level
+is better, but still not good enough. Information content is
+overestimated by many, especially for political speeches.  ;-)
+
+-- Martin Tomasek
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

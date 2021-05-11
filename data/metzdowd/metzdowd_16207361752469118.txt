@@ -1,0 +1,34 @@
+<PRE>On Tue, Apr 01, 2008 at 12:47:45AM +1300, Peter Gutmann wrote:
+
+&gt;<i> Actually there are already companies doing something like this
+</I>
+Which ones do you think are doing a decent job of this?
+
+&gt;<i> but they've
+</I>&gt;<i> run into a problem that no-one has ever considered so far: The GTCYM needs a
+</I>&gt;<i> (relatively) high-bandwidth connection to a remote server, and there's no easy
+</I>&gt;<i> way to do this.
+</I>&gt;<i> 
+</I>&gt;<i> (Hint: You can't use anything involving USB because many corporates lock down
+</I>&gt;<i> USB ports to prevent data leaking onto other corporates' networks, or
+</I>&gt;<i> conversely to prevent other corporates' data leaking onto their networks. Same
+</I>&gt;<i> for Ethernet, Firewire, ...).
+</I>
+Lock USB down completely, or block most devices and allow approved
+ones?  There is a non-empty set folks doing the latter, which opens
+the possibility of this type of device being permitted, while others
+are restricted.
+
+Since *all* it needs is the ability to call &quot;home&quot; to its server, and
+register to send/receive messages, it will not look like mass-storage,
+and should not look like a network interface. Data leakage should not
+be a concern if the device is built/marketted correctly.
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

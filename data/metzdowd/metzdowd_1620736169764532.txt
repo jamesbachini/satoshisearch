@@ -1,0 +1,23 @@
+<PRE>David Wagner &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">daw at cs.berkeley.edu</A>&gt; writes:
+&gt;<i>Tim Dierks writes:
+</I>&gt;&gt;<i>(there are totally different reasons that client certs aren't being
+</I>&gt;&gt;<i>widely adopted, but that's beside the point).
+</I>&gt;<i>
+</I>&gt;<i>I'd be interested in hearing your take on why SSL client certs aren't widely
+</I>&gt;<i>adopted.
+</I>
+Because they're essentially unworkable.  At the risk of spamming this
+reference a bit too often here:
+
+<A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/usability.pdf">http://www.cs.auckland.ac.nz/~pgut001/pubs/usability.pdf</A>
+
+There's detailed discussion there of results of user studies, conference
+papers, references, (hopefully) all the information you need.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

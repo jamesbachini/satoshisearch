@@ -1,0 +1,41 @@
+<PRE>At Sat, 20 Sep 2008 15:55:12 -0400,
+Steven M. Bellovin wrote:
+&gt;<i> 
+</I>&gt;<i> On Thu, 18 Sep 2008 17:18:00 +1200
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; - Use TLS-PSK, which performs mutual auth of client and server
+</I>&gt;<i> &gt; without ever communicating the password.  This vastly complicated
+</I>&gt;<i> &gt; phishing since the phisher has to prove advance knowledge of your
+</I>&gt;<i> &gt; credentials in order to obtain your credentials (there are a pile of
+</I>&gt;<i> &gt; nitpicks that people will come up with for this, I can send you a
+</I>&gt;<i> &gt; link to a longer writeup that addresses them if you insist, I just
+</I>&gt;<i> &gt; don't want to type in pages of stuff here).
+</I>&gt;<i> &gt; 
+</I>&gt;<i> Once upon a time, this would have been possible, I think.  Today,
+</I>&gt;<i> though, the problem is the user entering their key in a box that is (a)
+</I>&gt;<i> not remotely forgeable by a web site that isn't using the browser's
+</I>&gt;<i> TLS-PSK mechanism; and (b) will *always* be recognized by users, even
+</I>&gt;<i> dumb ones.  Today, sites want *pretty* login screens, with *friendly*
+</I>&gt;<i> ways to recover your (or Palin's) password, and not just generic grey
+</I>&gt;<i> boxes.  Then imagine the phishing page that displays an artistic but
+</I>&gt;<i> purely imaginary &quot;login&quot; screen, with a message about &quot;NEW!  Better
+</I>&gt;<i> naviation on our login page!&quot;
+</I>
+This is precisely the issue.
+
+There are any number of cryptographic techniques that would allow
+clients and servers to authenticate to each other in a phishing
+resistant fashion, but they all depend on ensuring that the
+*client* has access to the password and that the attacker can't
+convince the user to type their password into some dialog
+that the attacker controls. That's the challenging technical
+issue, but it's UI, not cryptographic.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

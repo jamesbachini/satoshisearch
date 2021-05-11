@@ -1,0 +1,44 @@
+<PRE>On Wed, 24 Sep 2008 18:52:24 -0400
+Jim Youll &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jim at cr-labs.com</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> On Sep 24, 2008, at 6:39 PM, Perry E. Metzger wrote:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; The whole point of the study (which you feel had an &quot;inappropriate
+</I>&gt;<i> &gt; tone&quot;) and of such gedankenexperiments is to understand the problem
+</I>&gt;<i> &gt; space better.
+</I>&gt;<i> 
+</I>&gt;<i> Clarification: not the study.
+</I>&gt;<i> 
+</I>&gt;<i> I believe the article had an inappropriate tone. Calling victims of
+</I>&gt;<i> inadequate user interfaces &quot;idiots&quot; is inappropriate and spits in the
+</I>&gt;<i> face of the evidence.
+</I>&gt;<i> 
+</I>&gt;<i> It's still a fact that when a majority of a population of operators
+</I>&gt;<i> of any
+</I>&gt;<i> equipment is experiencing poor outcomes just using it as normal
+</I>&gt;<i> people do, then there is a screaming need to fix that equipment.
+</I>&gt;<i> 
+</I>Yes.  Don Norman said it quite eloquently at
+<A HREF="http://catless.ncl.ac.uk/Risks/23.07.html#subj10">http://catless.ncl.ac.uk/Risks/23.07.html#subj10</A> -- &quot;If we assume that
+the people who use technology are stupid (&quot;Bubbas&quot;) then we will
+continue to design poorly conceived equipment, procedures, and
+software, thus leading to more and more accidents, all of which can be
+blamed upon the hapless users rather than the root cause --
+ill-conceived software, ill-conceived procedural requirements,
+ill-conceived business practices, and ill-conceived design in general.&quot; 
+&gt;<i> 
+</I>&gt;<i> Human factors haven't received nearly enough attention, and as long as
+</I>&gt;<i> human factors failings are dismissed as the fault of &quot;idiot users&quot;,
+</I>&gt;<i> they never will.
+</I>&gt;<i> 
+</I>Strong agreement.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

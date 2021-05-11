@@ -1,0 +1,25 @@
+<PRE>&quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+
+&gt;<i>There's another issue: initial account setup.  People will still need to rely
+</I>&gt;<i>on certificate-checking for that.  It's a real problem at some hotspots,
+</I>&gt;<i>where Evil Twin attacks are easy and lots of casual users are signing up for
+</I>&gt;<i>the first time.
+</I>
+It really depends on the value of the account, for high-value ones I would
+hope it's done out-of-band (so you can't just sign up for online banking by
+going to a bank's purported web page and saying &quot;Hi, I'm Bob, give me access
+to my account&quot;), and for low-value stuff like Facebook I'm not sure how much
+effort your password is worth to an attacker when they can get a million
+others from the same site.  I agree that it's still a problem, but switching
+to failsafe auth is a major attack surface reduction since now an attacker has
+to be there at the initial signup rather than at any arbitrary time of their
+choosing.  It's turning an open channel into a time- and location-limited
+channel.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

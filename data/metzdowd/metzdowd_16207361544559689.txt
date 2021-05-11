@@ -1,0 +1,18 @@
+<PRE>to some degree, Schneier is already doing this with his &quot;doghouse&quot; section of 
+the Crypto-gram newsletter. Although it sounds like you're being more 
+ambitious in terms of desiring to publish cracks/hacks or whatever.
+
+Perhaps thumbing through the various Doghouses would provide some reasonable 
+targets for a more thorough inspection than what Bruce has often done? They 
+are typically companies and that would certainly fit with the view of some of 
+the other comentors on this thread.
+
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

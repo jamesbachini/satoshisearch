@@ -1,0 +1,92 @@
+<PRE>On Sat, Jul 21, 2007 at 12:56:00PM -0400, Steven M. Bellovin wrote:
+&gt;<i> On Sat, 21 Jul 2007 04:46:51 -0700 (PDT)
+</I>&gt;<i> look at 18 USC 2512
+</I>&gt;<i> (<A HREF="http://www4.law.cornell.edu/uscode/html/uscode18/usc_sec_18_00002512----000-.html">http://www4.law.cornell.edu/uscode/html/uscode18/usc_sec_18_00002512----000-.html</A>)
+</I>&gt;<i> 
+</I>&gt;<i> 	any person who intentionally ...
+</I>&gt;<i> 
+</I>&gt;<i> 	manufactures, assembles, possesses, or sells any electronic,
+</I>&gt;<i> 	mechanical, or other device, knowing or having reason to know
+</I>&gt;<i> that the design of such device renders it primarily useful for the
+</I>&gt;<i> 	purpose of the surreptitious interception of wire, oral, or
+</I>&gt;<i> 	electronic communications, and that such device or any component
+</I>&gt;<i> 	thereof has been or will be sent through the mail or transported
+</I>&gt;<i> 	in interstate or foreign commerce;
+</I>&gt;<i> 
+</I>&gt;<i> 	...
+</I>&gt;<i> 
+</I>&gt;<i> So simple possession of a surreptitious interception device is illegal,
+</I>&gt;<i> with exceptions for things like sale to law enforcement or
+</I>&gt;<i> communications companies.
+</I>
+	This language was originally aimed at &quot;bugs&quot;, hidden
+microphones,  and other similar devices with essentially no purpose
+other than intercepting conversations. These devices are usually called
+&quot;Title III&quot; devices and are indeed illegal as defined above except in
+the hands of law enforcement and the like. Private use and even
+possession is forbidden. 
+ 
+	And there have been many prosecutions for possession, sale,
+trafficking in, and importing &quot;bugs&quot; and similar intercept hardware -
+mostly of &quot;Spy Shop&quot; operators who import this stuff from abroad and
+sell it to sleazy private investigators and divorcing spouses.
+
+	This language has been around since the 1968 Omnibus Act was
+passed and was extended with the passage of the 1986 ECPA to cover
+&quot;wire, oral, or electronic communications&quot;.  It is not new and did not
+result from the Newt Gingrich intercept or other more recent incidents.
+
+	AFAIK, (and IANL), the DOJ has rarely if ever applied Title III 
+to ordinary radio receivers or other hardware which has general purpose
+uses. Scanners and other radio receivers sold to the general public are
+regulated by the FCC under authority created in 1993, and FCC rules were
+substantially toughened around 1999 to require scanners not be readily
+modifiable to tune analog cellular frequencies and meet certain design
+criteria intended to make this harder and make it harder to hear
+cellular calls on image frequencies. These rules also make it illegal to
+modify scanners to tune cellular calls.
+
+	I know of no court case which has established that sale or
+possession of scanners or radio receivers built before the ban on
+cellular reception went into effect is illegal, and many tens of
+thousands if not hundreds of thousands of such radios are in circulation
+(and sold regularly on eBay).
+
+	In recent years there have a small number of  prosecutions for
+sale or possession of radio equipment and software to intercept
+commercial common carrier pager transmissions under Title III.   There
+is at least one precedent that defines such software as a Title III
+device.
+
+	This probably means that software specifically intended to
+enable intercept of any other  signal that is not legal to listen to
+might also be declared a Title III device, though I am unaware of this
+having happened as of yet.
+
+	However, even though the cell industry asked the FCC to do so,
+the FCC has declined to regulate test equipment - including test
+equipment that can tune and demodulate digital cellular and other
+forbidden RF signals - provided it is not marketed to the general
+public.   It is not illegal to possess or sell, import or export,
+manufacture or modify such gear though of course it is illegal to
+actually use such gear to intercept signals not included in the list of
+allowed to listen to signals in section 119 of Title III.
+
+	And obviously regulation of test equipment would pose some very
+difficult problems - since many many common real world RF tests require
+DC to daylight  coverage without gaps to spot spurious signals, mixing
+products, noise, interference etc... and crippled test equipment COULD
+not do this job.
+
+
+-- 
+  Dave Emery N1PRE/AE, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">die at dieconsulting.com</A>  DIE Consulting, Weston, Mass 02493
+&quot;An empty zombie mind with a forlorn barely readable weatherbeaten
+'For Rent' sign still vainly flapping outside on the weed encrusted pole - in 
+celebration of what could have been, but wasn't and is not to be now either.&quot;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

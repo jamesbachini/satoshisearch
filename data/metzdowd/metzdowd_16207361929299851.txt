@@ -1,0 +1,107 @@
+<PRE>On 10/28/2008 09:43 AM, Leichter, Jerry wrote:
+
+&gt;<i> | We start with a group comprising N members (machines or 
+</I>&gt;<i> | persons).  Each of them, on demand, puts out a 160 bit 
+</I>&gt;<i> | word, called a &quot;member&quot; word.  We wish to combine these 
+</I>&gt;<i> | to form a single word, the &quot;group&quot; word, also 160 bits 
+</I>&gt;<i> | in length.
+</I>&gt;<i> This isn't enough.  Somehow, you have to state that the values emitted
+</I>&gt;<i> on demand in any given round i (where a round consists of exactly one
+</I>&gt;<i> demand on all N member and produces a single output result) cannot
+</I>&gt;<i> receive any input from any other members.  Otherwise, if N=2 and member
+</I>&gt;<i> 0 produces true random values that member 1 can see before it responds
+</I>&gt;<i> to the demand it received, then member 1 can cause the final result to
+</I>&gt;<i> be anything it likes.
+</I>
+
+Perhaps an example will make it clear where I am coming
+from.  Suppose I start with a deck of cards that has been 
+randomly shuffled.  It can provide log2(52!) bits of 
+entropy.  That's a little more than 225 bits.  Now suppose 
+I have ten decks of cards all arranged alike.  You could 
+set this up by shuffling one of them and then stacking 
+the others to match ... or by some more symmetric process. 
+In any case the result is symmetric w.r.t interchange of 
+decks.  In this situation, I can choose any one of the 
+decks and obtain 225 bits of entropy.  The funny thing 
+is that if I choose N of the decks, I still get only 225 
+bits of entropy, not N*225.
+
+This can be summarized by saying that entropy is not an
+extensive quantity in this situation.  The graph of
+entropy versus N goes like this:
+
+     225        *   *   *   *   *
+
+       0    *
+            0   1   2   3   4   5  (# of decks)
+
+The spooky aspect of this situation is the whack-a-mole 
+aspect:  You cannot decide in advance which one of the 
+decks has entropy and which N-1 of them do not.  That's 
+the wrong question.  The first deck we choose to look 
+at has 225 bits of entropy, and only then can we say 
+that the other N-1 decks have zero additional entropy.
+
+The original question spoke of &quot;trusted&quot; sources of
+entropy, and I answered accordingly.  To the extent
+that the sources are correlated, they were never eligible 
+to be considered trusted sources of entropy.  To say 
+the same thing the other way around, to the extent
+that each source can be trusted to provide a certain
+amount of entropy, it must be to that extent independent 
+of the others.
+
+It is possible for a source to be partially dependent
+and partially independent.  For example, if you take
+each of the ten aforementioned decks and &quot;cut the deck&quot;
+randomly and independently, that means the first deck
+we look at will provide 225 bits of entropy, and each
+one thereafter will provide 5.7 bits of additional
+entropy, since log2(52)=5.7.  So in this situation,
+each deck can be /trusted/ to provide 5.7 bits of
+entropy.
+
+In this situation, requiring each deck to have &quot;no
+input&quot; from the other decks would be an overly strict
+requirement.  We do not need full independence;  we
+just need some independence, as quantified by the
+provable lower bound on the entropy.
+
+If you wanted, you could do a deeper analysis of this 
+example, taking into account the fact that 5.7 is not 
+the whole story.  It is easy to use 5.7 bits as a valid 
+and trustworthy lower bound, but under some conditions 
+more entropy is available, and can be quantified by
+considering the _joint_ probability distribution and
+computing the entropy of that distribution.  Meanwhile
+the fact remains that under a wide range of practical 
+conditions, it makes sense to engineer a randomness 
+generator based on provable lower bounds, since that 
+is good enough to get the job done, and a deeper
+analysis would not be worth the trouble.
+  <A HREF="http://www.av8n.com/turbid/paper/turbid.htm">http://www.av8n.com/turbid/paper/turbid.htm</A>
+
+
+&gt;<i> If the issue is how to make sure you get out at least all the randomness
+</I>&gt;<i> that was there,
+</I>
+I'm going to ignore the &quot;At least&quot;.  It is very hard to 
+get out more than you put in.
+
+On a less trivial note:  The original question did not
+require getting out every last bit of available randomness.
+In situations where the sources might be partially
+independent and partially dependent, that would be a 
+very hard challenge, and I do not wish to accept that 
+challenge.
+
+Dealing with provable lower bounds on the entropy is
+more tractable, and sufficient for a wide range of
+practical purposes.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

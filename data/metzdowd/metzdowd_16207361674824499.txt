@@ -1,0 +1,172 @@
+<PRE>At Thu, 31 Jan 2008 03:04:00 +0100,
+Philipp G&#252;hring wrote:
+&gt;<i> 
+</I>&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> &gt; Huh? What are you claiming the problem with sending client certificates
+</I>&gt;<i> &gt; in plaintext is 
+</I>&gt;<i> 
+</I>&gt;<i> * It&#180;s a privacy problem
+</I>&gt;<i> * It&#180;s a security problem for people with a security policy that requires the 
+</I>&gt;<i> their identities to be kept secret, and only to be used to authenticate to 
+</I>&gt;<i> the particular server they need
+</I>&gt;<i> * It&#180;s an availability problem for people that need high-security 
+</I>&gt;<i> authentication mechanisms, combined with high-privacy demands
+</I>&gt;<i> * It&#180;s a identity theft problem in case the certificate contains personal data 
+</I>&gt;<i> that can be used for identity theft
+</I>
+I don't find this at all convincing. There are a variety of different
+threat vectors here:
+
+1. Phishing.
+2. Pharming (DNS spoofing).
+3. Passive attacks.
+
+In the case of phishing, the fact that the client sends its certificates
+in the clear is totally irrelevant, since the client would simply send
+its identity encrypted under the server's certificate. The only
+fix for this alleged privacy leak in the phishing context is for
+the client to refuse to deliver his certificate to anyone but people
+who present valid certs that he otherwise trusts.
+
+Now, this is potentially an attack if the attacker is passive but
+on-path, either via pharming or via subverting some router, but
+I'm unaware of any evidence that this is used as a certificate
+disclosure attack vector.
+
+
+&gt;<i> &gt; (as if anyone uses client certificates anyway)? 
+</I>&gt;<i> 
+</I>&gt;<i> Guess why so few people are using it ...
+</I>&gt;<i> If it were secure, more people would be able to use it.
+</I>
+No, if it were *convenient* people would use it. I know of absolutely
+zero evidence (nor have you presented any) that people choose not
+to use certs because of this kind of privacy issue--but I know
+of plenty that they find getting certs way too inconvenient.
+
+
+&gt;<i> &gt; That the phisher gets to see the client's identity?
+</I>&gt;<i> 
+</I>&gt;<i> Validated email addresses for spamming. Spear-phishing perhaps, ...
+</I>
+Validated email addresses are not exactly hard to obtain.
+
+
+&gt;<i> &gt; It doesn't let them impersonate the client to anyone. 
+</I>&gt;<i> 
+</I>&gt;<i> It does let them impersonate the client to anyone who doesn&#180;t care about the 
+</I>&gt;<i> public key. (There are applications that just use the DN+Issuer information 
+</I>&gt;<i> that they normally extract out of the certificates, ...)
+</I>
+If those applications do not force the client to do proof of possession
+of the private key, then they are fatally broken. It's not our job
+to fix them.
+
+
+&gt;<i> &gt; &gt; We have the paradox situation that I have to tell people that they should
+</I>&gt;<i> &gt; &gt; use HTTPS with server-certificates and username+password inside the HTTPS
+</I>&gt;<i> &gt; &gt; session, because that&#180;s more secure than client certificates ...
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; No it isn't more secure.
+</I>&gt;<i> 
+</I>&gt;<i> Using username+password inside HTTPS does not leak the client&#180;s identity in 
+</I>&gt;<i> cleartext on the line. (If I am wrong and HTTPS leaks usernames sent as HTTP 
+</I>&gt;<i> Forms or with HTTP Basic Authentication, please tell me)
+</I>
+No, it just leaks the password to the phishing server. Yeah, that's totally
+a lot better.
+
+
+
+&gt;<i> &gt; This gets discussed on the TLS mailing list occasionally, but the
+</I>&gt;<i> &gt; arguments for making this change aren't very convincing.
+</I>&gt;<i> 
+</I>&gt;<i> Yes, there are regularly people popping up there that need it, but they always 
+</I>&gt;<i> get ignored there, it seems.
+</I>
+Because the arguments they present are handwavy and unconvincing, just like
+yours.
+
+
+
+&gt;<i> &gt; If you have 
+</I>&gt;<i> &gt; an actual credible security argument you should post it to
+</I>&gt;<i> &gt; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tls at ietf.org.</A>
+</I>&gt;<i> 
+</I>&gt;<i> Do you think the the security arguments I summed up above qualify on the tls 
+</I>&gt;<i> list?
+</I>
+It's an open list. Feel free to make these arguments.
+
+
+&gt;<i> Should I go into more detail? Present practical examples?
+</I>
+I would certainly find practical examples more convincing than the ones
+you've presented.
+
+
+
+&gt;<i> I see several possible options:
+</I>&gt;<i> * We fix SSL  
+</I>&gt;<i> Does anyone have a solution for SSL/TLS available that we could propose on the 
+</I>&gt;<i> TLS list? 
+</I>&gt;<i> If not: Can anyone with enough protocol design experience please develop it?
+</I>
+There's already a solution: double handshake. You do an ordinary
+handshake with server auth only and then you do a second handshake
+with client auth. This hides the certificate perfectly well.  Yes, you
+have to do two private key ops on the server, but if this issue is as
+important as you say, this is a tradeoff you should be happy to make.
+I've pointed this out on the TLS mailing list a number of times, but
+maybe you missed it.
+
+
+&gt;<i> * We change the rules of the market, and tell the people that they MUST NOT 
+</I>&gt;<i> ask for additional data in their certificates anymore
+</I>
+Fundamentally, this *is* the fix. Even if SSL guaranteeed that nobody
+but the person you were handshaking with got the certificate, this
+is still incredibly brittle because any random server can ask you
+for your cert and users can't be trusted not to hand them over.
+The basic premise of certs is that they're public info. If you
+want to carry private data around in them then you should encrypt
+that data.
+
+
+
+&gt;<i> &gt; &gt; TCP could need some stronger integrity protection. 8 Bits of checksum
+</I>&gt;<i> &gt; &gt; isn&#180;t enough in reality. (1 out of 256 broken packets gets injected into
+</I>&gt;<i> &gt; &gt; your TCP stream)  Does IPv6 have a stronger TCP?
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Whether this is true or not depends critically on the base rate
+</I>&gt;<i> &gt; of errors in packets delivered to TCP by the IP layer, since
+</I>&gt;<i> &gt; the rate of errors delivered to SSL is 1/256th of those delivered
+</I>&gt;<i> &gt; to the TCP layer. Since link layer checksums are very common,
+</I>&gt;<i> &gt; as a practical matter errored packets getting delivered to protocols
+</I>&gt;<i> &gt; above TCP is quite rare.
+</I>&gt;<i> 
+</I>&gt;<i> Try to send a DVD iso image (4GB) over a SSL or SSH encrypted link with bit 
+</I>&gt;<i> errors every 10000 bits with a client software like scp that cannot resume 
+</I>
+If you have a connection with a .01 BER, then you need to run some sort
+of error correction over the link, not complain that TCP doesn't solve
+your problem. As a thought experiment, consider that a .01 BER used
+with a standard 1500-byte MTU means that nearly every TCP packet will
+contain at least one error. If the TCP checksum caught all such errors
+and dropped the packets, the effect on the TCP congestion control would
+be catastrophic in terms of throughput. TCP was not designed to operate
+correctly in settings with this kind of error rate.
+
+More to the point, SSL/SSH are doing you a favor here: they're telling
+you about bit errors that would otherwise be undetected corruption in
+the file you moved around. The fix for this is to use client software
+that can resume.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

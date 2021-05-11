@@ -1,0 +1,46 @@
+<PRE>On 13 September 2007 04:18, Aram Perez wrote:
+
+&gt;<i> 	&quot;to circumvent keylogging spyware&quot; - More on this later...
+</I>
+&gt;<i> 	&quot;The first time you plug it in, you initialize it with a password&quot; -
+</I>&gt;<i> Oh, wait until I disable my keylogging spyware.
+</I>&gt;<i> 	&quot;You enter that password to unlock your secure files&quot; - Did I
+</I>&gt;<i> disable my keyloggin spyware?
+</I> 
+&gt;<i> Protected by a password that is entered on whatever PC you plug the
+</I>&gt;<i> IronKey into and that is somehow auto-magically protected against all
+</I>&gt;<i> keylogging spyware that may exist on that PC.
+</I>
+&gt;<i> &quot;Decrypting your files is then as easy as dragging and dropping them
+</I>&gt;<i> onto the desktop&quot; and by any malware that detects that the IronKey is
+</I>&gt;<i> present and has been unlocked and copies the files to a hidden folder.
+</I>
+  So by your exacting standards, PGP, gpg, openssh, in fact basically
+_everything_ is snake oil.  Endpoint security is a real issue, but it's not
+within the remit of this product to address.  I feel your complaint is
+overblown.  Marketspeak alone doesn't make a product snakeoil, its security
+has to actually be bogus too.
+
+
+&gt;&gt;<i> 	Encryption Keys
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> 	The encryption keys used to protect your data are generated
+</I>&gt;&gt;<i> 	in hardware by a FIPS 140-2 compliant True Random Number
+</I>&gt;<i> 
+</I>&gt;<i> As opposed to a FIPS 140-2 compliant False Random Number Generator.
+</I>
+  No, as opposed to a *Pseudo* Random Number Generator.  This is a really
+silly thing to attempt to complain about; they're correctly using technical
+terminology that you should be perfectly familiar with.
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

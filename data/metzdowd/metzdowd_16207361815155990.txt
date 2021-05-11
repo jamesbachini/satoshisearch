@@ -1,0 +1,31 @@
+<PRE>On Jun 9, 2008, at 11:54 AM, Leichter, Jerry wrote:
+
+&gt;<i> Computerworld reports:
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818</A>
+</I>&gt;<i>  [...]
+</I>&gt;<i> Apparently earlier versions of this ransomware were broken because  
+</I>&gt;<i> of a
+</I>&gt;<i> faulty implementation of the encryption.  This one seems to get it
+</I>&gt;<i> right.  It uses a 1024-bit RSA key.  Vesselin Bontchev, a long-time
+</I>&gt;<i> antivirus developer at another company, claims that Kaspersky is just
+</I>&gt;<i> looking for publicity:  The encryption in this case is done right and
+</I>&gt;<i> there's no real hope of breaking it.
+</I>
+If there's just one key, then Kaspersky could get maximum press by
+paying the ransom and publishing it. If there are many keys, then  
+Kaspersky
+still has reached its press-coverage quota, just not as dramatically.
+
+&gt;<i> Speculation about this kind of attack has made the rounds for years.
+</I>&gt;<i> It appears the speculations have now become reality.
+</I>
+But press gambits from security companies have been in the realm of  
+reality for
+quite some time!
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

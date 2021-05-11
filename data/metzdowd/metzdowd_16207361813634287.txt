@@ -1,0 +1,24 @@
+<PRE>Arshad Noor wrote:
+&gt;<i> While programmers or business=people could be ill-informed, Allen,
+</I>&gt;<i> I think the greater danger is that IT auditors do not know enough
+</I>&gt;<i> about cryptography, and consequently pass unsafe business processes
+</I>&gt;<i> and/or software as being secure.
+</I>
+Committees of experts regularly get cryptography wrong - consider, for 
+example the Wifi debacle.  Each wifi release contains classic and 
+infamous errors - for example WPA-Personal is subject to offline 
+dictionary attack.
+
+One would have thought that after the first disaster they would have 
+hired someone who could do it right, but as Ian long ago pointed out, in 
+&quot;the market for silver bullets&quot;, they are unable to tell who can do it 
+right.  The only people who know who the real experts are, are the real 
+experts.   If you knew who to hire, you could do it yourself, and 
+probably should do it yourself.  So they hire expert salesmen, not 
+cryptography experts.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

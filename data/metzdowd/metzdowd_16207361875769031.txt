@@ -1,0 +1,69 @@
+<PRE>|<i> &gt; | My theory is that no actual security people have ever been involved,
+</I>|<i> &gt; | that it's just another one of those stupid design practices that are
+</I>|<i> &gt; | perpetuated because &quot;nobody has ever complained&quot; or &quot;that's what
+</I>|<i> &gt; | everybody is doing&quot;.
+</I>|<i> &gt; 
+</I>|<i> &gt; Your theory is incorrect. There is considerable analysis on what
+</I>|<i> 
+</I>|<i> Can you reference it please?  There has been some analysis on the
+</I>|<i> entropy of passphrases as a password replacement, but it is not
+</I>|<i> relevant.
+</I>RSA sells a product that is based on such research.  I don't have
+references; perhaps someone else does.
+
+I think the accurate statement here is:  There's been some research on
+this matter, and there are some reasonable implementations out there;
+but there are also plenty of &quot;me-too&quot; implementations that are quite
+worthless.
+
+In fact, I've personally never run into an implementation that I would
+not consider worthless.  (Oddly, the list of questions that started
+this discussion is one of the better ones I've seen.  Unfortunately,
+what it demonstrates is that producing a useful implementation with
+a decent amount of total entropy probably involves more setup time
+than the average user will want to put up with.)
+
+|<i> &gt; constitute good security questions based on the anticipated entropy
+</I>|<i> &gt; of the responses. This is why, for example, no good security
+</I>|<i> &gt; question has a yes/no answer (i.e., 1-bit). Aren't security
+</I>|<i> &gt; questions just an automation of what happens once you get a customer
+</I>|<i> &gt; service representative on the phone? In some regards they may be
+</I>|<i> &gt; more secure as they're less subject to social manipulation (i.e., if
+</I>|<i> &gt; I mention a few possible answers to a customer support person, I can
+</I>|<i> &gt; probably get them to confirm an answer for me).
+</I>|<i> The difference is that when you are interfacing with a human, you have
+</I>|<i> to go through a low-speed interface, namely, voice. In that respect, a
+</I>|<i> security question, coupled with a challenge about recent transactions,
+</I>|<i> makes for adequate security.  The on-line version of the security
+</I>|<i> question is vulnerable to automated dictionary attacks.
+</I>Actually, this cuts both ways.  Automated interfaces generally require
+exact matches; at most, they will be case-blind.  This is appropriate
+and understood for passwords.  It is inappropriate for what people
+perceive as natural-text questions and answers.  When I first started
+running into such systems, when asked for where I was born, I would
+answer &quot;New York&quot; - or maybe &quot;New York City&quot;, or maybe &quot;NY&quot; or &quot;NYC&quot;.
+I should have thought about the consequences of providing a natural-
+text answer to a natural-text question - but I didn't.  Sure enough,
+when I actually needed to reset my password - I ended up getting locked
+out of the system because there was no way I could remember, 6 months
+later, what exact answer I'd given.
+
+A human being is more forgiving.  This makes the system more vulnerable
+to social engineering - but it makes it actually useable.  The
+tradeoff here is very difficult to make.  By its nature, a secondary
+access system will be rarely used.  People may, by dint of repetition,
+learn to parrot back exact answers, even a random bunch of characters,
+if they have to use them every day.  There's no way anything but a
+fuzzy match on meaning will work for an answer people have to give
+once every couple of months - human memory simply doesn't work that
+way.
+
+I learned my lesson and never provide actual answers to these questions
+any more.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

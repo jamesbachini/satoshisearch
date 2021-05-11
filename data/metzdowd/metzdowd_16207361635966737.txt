@@ -1,0 +1,72 @@
+<PRE>
+
+Leichter, Jerry wrote:
+
+&gt;<i> 
+</I>&gt;<i> On Wed, 12 Dec 2007, Thierry Moreau wrote:
+</I>&gt;<i> 
+</I>&gt;<i> | Date: Wed, 12 Dec 2007 16:24:43 -0500
+</I>&gt;<i> | From: Thierry Moreau &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>&gt;
+</I>&gt;<i> | To: &quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt;
+</I>&gt;<i> | Cc: Peter Gutmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A>&gt;, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> | Subject: Re: More on in-memory zeroisation
+</I>&gt;<i> | 
+</I>&gt;<i> | /************ testf.c ************/
+</I>&gt;<i> | #include &lt;stdio.h&gt;
+</I>&gt;<i> | #include &lt;string.h&gt;
+</I>&gt;<i> | 
+</I>&gt;<i> | typedef void *(*fpt_t)(void *, int, size_t);
+</I>&gt;<i> | 
+</I>&gt;<i> | void f(fpt_t arg)
+</I>&gt;<i> | {
+</I>&gt;<i> | 	if (memset==arg)
+</I>&gt;<i> | 		printf(&quot;Hello world!\n&quot;);
+</I>&gt;<i> | }
+</I>&gt;<i> | 
+</I>&gt;<i> | /************ test.c ************/
+</I>&gt;<i> | #include &lt;stdlib.h&gt;
+</I>&gt;<i> | #include &lt;string.h&gt;
+</I>&gt;<i> | 
+</I>&gt;<i> | typedef void *(*fpt_t)(void *, int, size_t);
+</I>&gt;<i> | 
+</I>&gt;<i> | extern void f(fpt_t arg);
+</I>&gt;<i> | 
+</I>&gt;<i> | int main(int argc, char *argv[])
+</I>&gt;<i> | {
+</I>&gt;<i> | 	f(memset);
+</I>&gt;<i> | 	return EXIT_SUCCESS;
+</I>&gt;<i> | }
+</I>&gt;<i> | 
+</I>&gt;<i> | /*   I don't want to argue too theoretically.
+</I>&gt;<i> | 
+</I>&gt;<i> |             - Thierry Moreau */
+</I>&gt;<i> I'm not sure what you are trying to prove here.  Yes, I believe that
+</I>&gt;<i> in most implementations, this will print &quot;Hello world\n&quot;.  Is it,
+</I>&gt;<i> however, a strictly conforming program (I think that's the right
+</I>&gt;<i> standardese) - i.e., are the results guaranteed to be the same on
+</I>&gt;<i> all conforming implementations?  I think you'll find it difficult
+</I>&gt;<i> to prove that.
+</I>
+If there is a consensus among comforming implementation developers that 
+the above program is comforming, that's a good enough &quot;proof&quot; for me.
+
+As a consequence of alleged consensus above, my understanding of the C 
+standard would prevail and (memset)(?,0,?) would refer to an external 
+linkage function, which would guarantee (to the sterngth of the above 
+consensus) resetting an arbitrary memory area for secret intermediate 
+result protection.
+
+Reading ANSI X3.159-1989, I believe there would be such a consensus, and 
+I find it quite obvious. You may disagree, and I will no further argument.
+
+Regards,
+
+-- 
+
+- Thierry Moreau
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

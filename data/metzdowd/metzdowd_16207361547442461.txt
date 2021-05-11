@@ -1,0 +1,27 @@
+<PRE>On Tue, 18 Sep 2007, James A. Donald wrote:
+
+&gt;<i> Using SRAM as a source of either randomness or unique
+</I>&gt;<i> device ID is fragile.  It might well work, but one
+</I>&gt;<i> cannot know with any great confidence that it is going
+</I>&gt;<i> to work.  It might work fine for every device for a
+</I>&gt;<i> year, and then next batch arrives, and it completely
+</I>&gt;<i> fails.  Worse still, it might work fine on the test
+</I>&gt;<i> batch, and then on the production run fail in ways that
+</I>&gt;<i> are subtle and not immediately obvious.
+</I>
+And you might get better results from cheaper ram which may fail more 
+often.  (Adding a different sort of randomness.)
+
+I have a friend who is a hardware engineer who is preparing a talk on just 
+this sort of issue with the state of DRAM chips.  It will be interesting 
+to see what he says.  (For those people in Portland, OR, it will be given 
+at the PLUG Advanced Topics meeting sometime early next year.)
+
+-- 
+Never trust a queue structure designed by a cryptographer.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

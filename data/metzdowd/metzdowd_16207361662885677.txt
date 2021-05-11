@@ -1,0 +1,28 @@
+<PRE>On Thu, 03 Jan 2008 11:52:21 -0500
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+
+&gt;<i> The aspect of this that is directly relevant to this
+</I>&gt;<i> list is that while &quot;we&quot; have labored to make network
+</I>&gt;<i> comms safe in an unsafe transmission medium, the
+</I>&gt;<i> world has now reached the point where the odds favor
+</I>&gt;<i> the hypothesis that whomever you are talking to is
+</I>&gt;<i> themselves already 0wned, i.e., it does not matter if
+</I>&gt;<i> the comms are clean when the opponent already owns
+</I>&gt;<i> your counterparty.
+</I>&gt;<i>
+</I>Right -- remember Spaf's famous line about how using strong crypto on
+the Internet is like using an armored car to carry money between
+someone living in a cardboard shack and someone living on a park bench?
+
+Crypto solves certain problems very well.  Against others, it's worse
+than useless -- &quot;worse&quot;, because it blocks out friendly IDSs as well as
+hostile parties.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

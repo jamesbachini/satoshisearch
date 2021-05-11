@@ -1,0 +1,39 @@
+<PRE>Hello,
+
+On 11/2/2008 06:13, Ali, Saqib wrote:
+&gt;<i> I installed TrueCrypt on my laptop and ran some benchmark tests/
+</I>&gt;<i> 
+</I>&gt;<i> Benchmark Results:
+</I>&gt;<i> <A HREF="http://www.full-disk-encryption.net/wiki/index.php/TrueCrypt#Benchmarks">http://www.full-disk-encryption.net/wiki/index.php/TrueCrypt#Benchmarks</A>
+</I>&gt;<i> 
+</I>&gt;<i> Pros:
+</I>&gt;<i> 1) Easy to use product. Simple clean interface. Very user-friendly!
+</I>&gt;<i> 2) Free and Open Source
+</I>&gt;<i> 3) Multiple Encryption and Hashing algorithm available.
+</I>&gt;<i> 
+</I>&gt;<i> Cons:
+</I>&gt;<i> 1) Buffered Read and Buffered Transfer Rate was almost halved after
+</I>&gt;<i> TrueCrypt FDE was enabled :-(.
+</I>&gt;<i> 2) Access Time for large file (250+MB) increased by 11%.
+</I>&gt;<i> 3) The initial encryption of the 120 GB HDD took 2 hours.
+</I>
+
+Actually, there is one major (but temporary) limitation to TC5: It does 
+not process too well partitions that are not the system partition, but 
+which share the same physical drive as the system partition, if you 
+elect to encrypt the entire drive.
+
+That is, if you decide to encrypt a whole physical drive that stores 
+both C: (system) and D: (another partition), you are going to face a 
+situation in which your D: partition is logically gone (until you 
+re-decrypt the whole thing back). Next version will fix it, the team 
+promises.
+
+Hagai.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

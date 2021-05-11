@@ -1,0 +1,38 @@
+<PRE>On 30 January 2008 17:03, Eric Rescorla wrote:
+
+
+&gt;&gt;&gt;<i> We really do need to reinvent and replace SSL/TCP,
+</I>&gt;&gt;&gt;<i> though doing it right is a hard problem that takes more
+</I>&gt;&gt;&gt;<i> than morning coffee.
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> TCP could need some stronger integrity protection. 8 Bits of checksum isn&#180;t
+</I>&gt;&gt;<i> enough in reality. (1 out of 256 broken packets gets injected into your TCP
+</I>&gt;&gt;<i> stream)  Does IPv6 have a stronger TCP?
+</I>&gt;<i> 
+</I>&gt;<i> Whether this is true or not depends critically on the base rate
+</I>&gt;<i> of errors in packets delivered to TCP by the IP layer, since
+</I>&gt;<i> the rate of errors delivered to SSL is 1/256th of those delivered
+</I>&gt;<i> to the TCP layer. 
+</I>
+  Out of curiosity, what kind of TCP are you guys using that has 8-bit
+checksums?
+
+&gt;<i> Since link layer checksums are very common,
+</I>&gt;<i> as a practical matter errored packets getting delivered to protocols
+</I>&gt;<i> above TCP is quite rare.
+</I>
+  Is it not also worth mentioning that TCP has some added degree of protection
+in that if the ACK sequence num isn't right, the packet is likely to be
+dropped (or just break the stream altogether by desynchronising the seqnums)?
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

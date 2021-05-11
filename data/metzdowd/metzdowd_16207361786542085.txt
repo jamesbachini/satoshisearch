@@ -1,0 +1,64 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> On Tue, 13 May 2008 14:10:45 +0100
+</I>&gt;<i> Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> Debian have a stunning example of how blindly fixing &quot;problems&quot;
+</I>&gt;&gt;<i> pointed out by security tools can be disastrous.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I've blogged about it here: <A HREF="http://www.links.org/?p=327">http://www.links.org/?p=327</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Vendors Are Bad For Security
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I?ve ranted about this at length before, I?m sure - even in print, in 
+</I>&gt;&gt;<i> O?Reily?s Open Sources 2. But now Debian have proved me right (again) 
+</I>&gt;&gt;<i> beyond my wildest expectations. Two years ago, they ?fixed? a
+</I>&gt;&gt;<i> ?problem? in OpenSSL reported by valgrind[1] by removing any
+</I>&gt;&gt;<i> possibility of adding any entropy to OpenSSL?s pool of randomness[2].
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> The result of this is that for the last two years (from Debian?s
+</I>&gt;&gt;<i> ?Edgy? release until now), anyone doing pretty much any crypto on
+</I>&gt;&gt;<i> Debian (and hence Ubuntu) has been using easily guessable keys. This
+</I>&gt;&gt;<i> includes SSH keys, SSL keys and OpenVPN keys.
+</I>&gt;&gt;<i>
+</I>&gt;<i> ....
+</I>&gt;&gt;<i> [2] Valgrind tracks the use of uninitialised memory. Usually it is
+</I>&gt;&gt;<i> bad to have any kind of dependency on uninitialised memory, but
+</I>&gt;&gt;<i> OpenSSL happens to include a rare case when its OK, or even a good
+</I>&gt;&gt;<i> idea: its randomness pool. Adding uninitialised memory to it can do
+</I>&gt;&gt;<i> no harm and might do some good, which is why we do it. It does cause
+</I>&gt;&gt;<i> irritating errors from some kinds of debugging tools, though,
+</I>&gt;&gt;<i> including valgrind and Purify. For that reason, we do have a flag
+</I>&gt;&gt;<i> (PURIFY) that removes the offending code. However, the Debian
+</I>&gt;&gt;<i> maintainers, instead of tracking down the source of the uninitialised
+</I>&gt;&gt;<i> memory instead chose to remove any possibility of adding memory to
+</I>&gt;&gt;<i> the pool at all. Clearly they had not understood the bug before
+</I>&gt;&gt;<i> fixing it.
+</I>&gt;&gt;<i>
+</I>&gt;<i> Ben: I haven't looked at the actual code in question -- are you saying
+</I>&gt;<i> that the *only* way to add more entropy is via this pool of
+</I>&gt;<i> uninitialized memory?
+</I>
+No. That would be fantastically stupid.
+
+&gt;<i> If so, is there any support in the relevant
+</I>&gt;<i> standards that dictate that this memory MUST NOT be cleared?  I was
+</I>&gt;<i> thinking of things like SELinux, which may (or may not) clear memory
+</I>&gt;<i> areas before handing it to an application.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

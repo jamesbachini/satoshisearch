@@ -1,0 +1,37 @@
+<PRE>Student hacker exposes Carleton U cash, ID card security holes
+
+<A HREF="http://www.cbc.ca/canada/ottawa/story/2008/09/08/ot-security-080908.html">http://www.cbc.ca/canada/ottawa/story/2008/09/08/ot-security-080908.html</A>
+
+&quot;A Carleton University student has revealed that he stole data containing
+e-mail passwords, financial data and library account information from 32
+students at the university in order to expose security holes in the system.
+
+The card's design for both financial and identification purposes and its
+&quot;inadequate safeguards against information leakage&quot; could lead to identity or
+financial fraud, said the 20-year-old student of the Ottawa university in a
+document e-mailed to the victims Sunday evening under the alias Kasper
+Holmberg.&quot;
+
+...
+
+There's a few inconsistencies in this story, first claiming that this student
+is from one university in Ottawa, Ontario, then the other, except that Ottawa
+University is in Ottawa, Kansas while the University of Ottawa is in Ottawa,
+Ontario.  CBC should have been able to get those mundane details right so who
+knows about the other details...
+
+As usual, the institution involved missed the point...
+
+	slainte mhath, RGB
+
+-- 
+Richard Guy Briggs               --  ~\    -- ~\            &lt;hpv.tricolour.net&gt;
+&lt;www.TriColour.net&gt;                --  \___   o \@       @       Ride yer bike!
+Ottawa, ON, CANADA                  --  Lo_&gt;__M__\\/\%__\\/\%
+Vote! -- &lt;greenparty.ca&gt;_____GTVS6#790__(*)__(*)________(*)(*)_________________
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

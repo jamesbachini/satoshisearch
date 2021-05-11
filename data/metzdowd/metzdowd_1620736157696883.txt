@@ -1,0 +1,18 @@
+<PRE>&gt;<i> A proposal for a new password hashing based on SHA-256 or SHA-512 has  
+</I>&gt;<i> been proposed by RedHat but to my knowledge has not had any rigorous  
+</I>&gt;<i> analysis. The motivation for this is to replace MD-5 based password  
+</I>&gt;<i> hashing at banks where MD-5 is on the list of &quot;do not use&quot; algorithms.  
+</I>&gt;<i> I would prefer not to have the discussion &quot;MD-5 is good enough for  
+</I>&gt;<i> this algorithm&quot; since it is not an argument that the customers  
+</I>&gt;<i> requesting these changes are going to accept.
+</I>
+	blowfish anyone?
+	<A HREF="http://www.usenix.org/events/usenix99/provos/provos_html/">http://www.usenix.org/events/usenix99/provos/provos_html/</A>
+
+itojun
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

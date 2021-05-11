@@ -1,0 +1,27 @@
+<PRE>Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at morganstanley.com</A>&gt; writes:
+
+&gt;<i>Lock USB down completely, or block most devices and allow approved ones?
+</I>&gt;<i>There is a non-empty set folks doing the latter, which opens the possibility
+</I>&gt;<i>of this type of device being permitted, while others are restricted.
+</I>
+Lock it down completely.  What really panicked the mgt. wasn't so much the
+thought of their data appearing on other organisations' networks but cases
+where other organisations' data had appeared on *their* network (due to, in
+some cases, overzealous employees, in another case an outside contractor, and
+in another someone who wanted to sell them &quot;commercially useful information&quot;).
+
+&gt;<i>Data leakage should not be a concern if the device is built/marketted
+</I>&gt;<i>correctly.
+</I>
+You want to explain that to management terrified of criminal prosecution?  I
+got the feeling from talking to the IT security guy in the case of the
+suspected commercial espionage that the management really wanted to pour
+quick-setting concrete into the USB ports just to be absolutely sure.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

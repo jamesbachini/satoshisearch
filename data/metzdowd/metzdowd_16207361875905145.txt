@@ -1,0 +1,18 @@
+<PRE>On Sat, 09 Aug 2008 17:11:11 -0400, &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt;
+wrote:
+&gt;<i>     Las Vegas - Three students at the Massachusetts Institute of
+</I>&gt;<i>     Technology (MIT) were ordered this morning by a federal court
+</I>&gt;<i>     judge to cancel their scheduled presentation about vulnerabilities
+</I>&gt;<i>     in Boston's transit fare payment system, violating their First
+</I>&gt;<i>     Amendment right to discuss their important research.
+</I>
+&lt;<A HREF="http://www-tech.mit.edu/V128/N30/subway/Defcon_Presentation.pdf">http://www-tech.mit.edu/V128/N30/subway/Defcon_Presentation.pdf</A>&gt;
+
+-- 
+Ivan Krsti? &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

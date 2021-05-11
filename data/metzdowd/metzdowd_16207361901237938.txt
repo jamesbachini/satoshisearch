@@ -1,0 +1,34 @@
+<PRE>&gt;<i>
+</I>&gt;<i> Does anyone know of a cheap USB random number source?
+</I>&gt;<i>
+</I>&gt;<i> As a meandering comment, it would be extremely good for us if we had
+</I>&gt;<i> cheap pocket random number sources of arguable quality [1].
+</I>&gt;<i>
+</I>&gt;<i> I've often thought that if we had an open source hardware design of
+</I>&gt;<i> a USB random number generator ... that cost a few pennies to add
+</I>&gt;<i> onto any other USB toy ... then we could ask the manufacturers to
+</I>&gt;<i> throw it in for laughs.  Something like a small mountable disk that
+</I>&gt;<i> returns randoms on every block read, so the interface is trivial.
+</I>&gt;<i>
+</I>&gt;<i> Then, when it comes time to generate those special keys, we could
+</I>&gt;<i> simply plug it in, run it, clean up the output in software and use
+</I>&gt;<i> it.  Hey presto, all those nasty software and theoretical
+</I>&gt;<i> difficulties evaporate.
+</I>
+A TPM has random numbers of arguable quality. I'm happy to argue  
+either side of it, but that's not what you asked.
+
+A cheap USB camera would make a good source. The cheaper the better,  
+too. Pull a frame off, hash it, and it's got entropy, even against a  
+white background. No lava lamp needed.
+
+	Jon
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

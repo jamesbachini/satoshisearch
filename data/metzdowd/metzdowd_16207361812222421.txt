@@ -1,0 +1,29 @@
+<PRE>On Tue, Jun 03, 2008 at 04:37:20PM -0400, Eric Cronin wrote:
+
+&gt;<i> 
+</I>&gt;<i> On Jun 3, 2008, at 11:51 AM, Adam Aviv wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;Depending on the level of protection you want, you could just add a
+</I>&gt;<i> &gt;script to your .forward to encrypt your email before delivery using
+</I>&gt;<i> &gt;PGP/GPG. However, this will leave the headers in the clear, so you
+</I>&gt;<i> &gt;will likely want to create an entirely new envelope for the message
+</I>&gt;<i> &gt;with the original message encrypted as the body or an attachment.
+</I>&gt;<i> 
+</I>&gt;<i> Does anybody have a recipe for this first mode handy?  plain text e- 
+</I>&gt;<i> mails seem simple enough, but there needs to be a bit of MIME  
+</I>&gt;<i> unwrapping and rewrapping to correctly handle attachments so that the  
+</I>&gt;<i> client sees/decrypts them correctly I think.  I've searched from time  
+</I>&gt;<i> to time and never found a good HowTo...
+</I>
+S/MIME supports enveloped MIME objects, if PGP does not work out for MIME
+entities, you could try that. S/MIME is natively supported in Thunderbird,
+Apple Mail, and similar MUAs.
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

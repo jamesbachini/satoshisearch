@@ -1,0 +1,59 @@
+<PRE>Quoting Paul Hoffman &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">paul.hoffman at vpnc.org</A>&gt;:
+
+&gt;<i> At 11:31 PM +0200 8/14/07, Christian Rechberger wrote:
+</I>&gt;&gt;<i> The mentioned article is indeed confusing, the information in there  
+</I>&gt;&gt;<i> took apparently several hops.
+</I>&gt;<i>
+</I>&gt;<i> Welcome to the world of public cryptography! :-) At least I haven't  
+</I>&gt;<i> seen anyone so far suggest that you will find pre-images.
+</I>
+Stay tuned, you never know ;-)
+Something similar happened last year with our example for &quot;meaningful   
+collisions&quot; for SHA-1 to reduced to 80% of its steps. We gave two  
+meaningful but different ASCII texts followed by some random chunk as  
+an example of our new technique back then. Suddenly someone invented  
+HTML as an example of another application that ended up on a newsticker.
+
+
+
+&gt;&gt;<i> To address your questions: Indeed, we have our own &quot;path&quot;, but more  
+</I>&gt;&gt;<i> importantly we developed a new method to speed-up generation and  
+</I>&gt;&gt;<i> testing of candidate message pairs and apply it to SHA-1. The  
+</I>&gt;&gt;<i> resulting work factor is still quite high, hence we ask for  
+</I>&gt;&gt;<i> contributions via the BOINC framework.
+</I>&gt;<i>
+</I>&gt;<i> Is there any estimation of how high? Specifically, do you believe  
+</I>&gt;<i> there is a good chance of having less work effort than the current  
+</I>&gt;<i> Wang strategy?
+</I>
+Seriously, if we wouldn't be convinced that the new method is more  
+efficient than anything else we know of and hence interesting enough  
+to explore further, we wouldn't have started such a project. So yes,  
+this is much faster than Wang's published method, and based on all we  
+know also faster than what is estimated for Wang's latest unpublished  
+methods.
+
+Exact comparison is a complicated and delicate issue, and I have to  
+put you of to our upcoming paper on that issue. Your contribution of  
+CPU cycles is of course very welcome.
+
+&gt;&gt;<i> More information on cryptanalytic details, type of collision, and  
+</I>&gt;&gt;<i> resulting work factor will appear later this year.
+</I>&gt;<i>
+</I>&gt;<i> That's good to hear. It would also be interesting if you could keep  
+</I>&gt;<i> a running meter of approximately how much work you are getting from  
+</I>&gt;<i> the participants. This isn't nearly as &quot;sexy&quot; as finding ETs or even  
+</I>&gt;<i> protein folding...
+</I>
+We first plan to provide support for more platforms to increase the  
+size of our potential user base, but next, some meaningful statistics  
+are indeed on our todo-list.
+
+-Christian
+   (only sporadic access to mail this week)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

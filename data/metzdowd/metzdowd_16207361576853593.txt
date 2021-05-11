@@ -1,0 +1,14 @@
+<PRE>Can anyone tell me... is there a Firefox plugin which allows one to view the 
+fingerprint of the SSL certificate of each page you visit (e.g. in the status 
+bar or address bar or something)?
+
+Better still if it can learn which ones you trust, but just being able to view 
+them without having to jump through hoops would be a good start.
+
+Arcane Jill
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

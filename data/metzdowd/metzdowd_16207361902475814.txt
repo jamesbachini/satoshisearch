@@ -1,0 +1,32 @@
+<PRE>
+
+Peter Gutmann wrote:
+&gt;<i> 
+</I>&gt;<i> For existing apps with habituated users, so am I.  So how about the following
+</I>&gt;<i> strawman: Take an existing browser (say Firefox), brand it as some special-
+</I>&gt;<i> case secure online banking browser, and use the &quot;new developments&quot; solution
+</I>&gt;<i> above, i.e. it only talks mutual-auth challenge-response crypto and nothing
+</I>&gt;<i> else.  At that point you've reduced &quot;Reformat user and reinstall browsing
+</I>&gt;<i> habits&quot; to &quot;Train users to only use safe-browser when they do their banking,
+</I>&gt;<i> i.e. 'Never enter banking details using anything other than safe-browser'&quot;.
+</I>&gt;<i> Even if you only get a subset of users doing this, it's still a massive attack
+</I>&gt;<i> surface reduction because you've raised the bar from any idiot who buys a
+</I>&gt;<i> phishing kit to having to perform a man-in-the-browser attack.
+</I>&gt;<i> 
+</I>
+We did a version of this for CEAS this year (paper here:
+<A HREF="http://www.parc.com/research/publications/details.php?id=6496">http://www.parc.com/research/publications/details.php?id=6496</A>).
+
+I agree, I think it's not hard to come up with an 
+architecture that increases user security, while reducing 
+the amount they have to learn. Though, as per Perry's 
+comment, you do need to be able to say that *some* (not 
+all) of the software on your machine is not totally 
+borked... (an interesting question is: how much, and what).
+--Diana
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

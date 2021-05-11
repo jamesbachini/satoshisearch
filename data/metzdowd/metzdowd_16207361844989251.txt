@@ -1,0 +1,40 @@
+<PRE>Florian Weimer wrote:
+&gt;<i> * Arshad Noor:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> <A HREF="http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937">http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937</A>
+</I>&gt;<i> 
+</I>&gt;<i> On a more serious note, I think the criticism probably refers to the
+</I>&gt;<i> fact that SKSML does not cryptopgrahically enforce proper key
+</I>&gt;<i> management.  If a participant turns bad (for instance, by storing key
+</I>&gt;<i> material longer than permitted by the protocol), there's nothing in the
+</I>&gt;<i> protocol that stops them.
+</I>
+Thank you for your comment, Florian.
+
+I may be a little naive, but can a protocol itself enforce proper
+key-management?  I can certainly see it facilitating the required
+discipline, but I can't see how a protocol alone can enforce it.
+Any examples you can cite where this has been done, would be very
+helpful.
+
+The design paradigm we chose for EKMI was to have:
+
+1) the centralized server be the focal point for defining policy;
+2) the protocol carry the payload with its corresponding policy;
+3) and the client library enforce the policy on client devices;
+
+In some form or another, don't all cryptographic systems follow a
+similar paradigm?
+
+Arshad Noor
+StrongAuth, Inc.
+
+P.S. Companies deploying an EKMI must have an external process in
+place to ensure their applications are using &quot;verified&quot; libraries
+on the client devices, so their polices are not subverted.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

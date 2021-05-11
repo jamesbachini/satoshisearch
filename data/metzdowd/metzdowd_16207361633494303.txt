@@ -1,0 +1,35 @@
+<PRE>/************ testf.c ************/
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+typedef void *(*fpt_t)(void *, int, size_t);
+
+void f(fpt_t arg)
+{
+	if (memset==arg)
+		printf(&quot;Hello world!\n&quot;);
+}
+
+/************ test.c ************/
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+typedef void *(*fpt_t)(void *, int, size_t);
+
+extern void f(fpt_t arg);
+
+int main(int argc, char *argv[])
+{
+	f(memset);
+	return EXIT_SUCCESS;
+}
+
+/*   I don't want to argue too theoretically.
+
+             - Thierry Moreau */
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

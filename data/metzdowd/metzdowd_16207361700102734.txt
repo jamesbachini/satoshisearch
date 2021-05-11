@@ -1,0 +1,57 @@
+<PRE>David Wagner wrote:
+&gt;<i> I'd be interested in hearing your take on why SSL client certs aren't
+</I>&gt;<i> widely adopted.  It seems like they could potentially help with the
+</I>&gt;<i> phishing problem (at least, the problem of theft of web authenticators
+</I>&gt;<i> -- it obviously won't help with theft of SSNs).  If users don't know
+</I>&gt;<i> the authentication secret, they can't reveal it.  The nice thing about
+</I>&gt;<i> using client certs instead of passwords is that users don't know the
+</I>&gt;<i> private key -- only the browser knows the secret key.
+</I>&gt;<i>
+</I>&gt;<i> The standard concerns I've heard are: (a) SSL client supports aren't
+</I>&gt;<i> supported very well by some browsers; (b) this doesn't handle the
+</I>&gt;<i> mobility problem, where the user wants to log in from multiple different
+</I>&gt;<i> browsers.  So you'd need a different mechanism for initially registering
+</I>&gt;<i> the user's browser.
+</I>&gt;<i>
+</I>&gt;<i> By the way, it seems like one thing that might help with client certs
+</I>&gt;<i> is if they were treated a bit like cookies.  Today, a website can set
+</I>&gt;<i> a cookie in your browser, and that cookie will be returned every time
+</I>&gt;<i> you later visit that website.  This all happens automatically.  Imagine
+</I>&gt;<i> if a website could instruct your browser to transparently generate a
+</I>&gt;<i> public/private keypair for use with that website only and send the
+</I>&gt;<i> public key to that website.  Then, any time that the user returns to
+</I>&gt;<i> that website, the browser would automatically use that private key to
+</I>&gt;<i> authenticate itself.  For instance, boa.com might instruct my browser
+</I>&gt;<i> to create one private key for use with *.boa.com; later,
+</I>&gt;<i> citibank.com could instruct my browser to create a private key for
+</I>&gt;<i> use with *.citibank.com.  By associating the private key with a specific
+</I>&gt;<i> DNS domain (just as cookies are), this means that the privacy
+</I>&gt;<i> implications of client authentication would be comparable to the
+</I>&gt;<i> privacy implications of cookies.  Also, in this scheme, there wouldn't
+</I>&gt;<i> be any need to have your public key signed by a CA; the site only needs
+</I>&gt;<i> to know your public key (e.g., your browser could send self-signed
+</I>&gt;<i> certs), which eliminates the dependence upon the third-party CAs.
+</I>&gt;<i> Any thoughts on this?
+</I>&gt;<i>    
+</I>
+in AADS
+<A HREF="http://www.garlic.com/~lynn/x959.html#aads">http://www.garlic.com/~lynn/x959.html#aads</A>
+and certificateless public key
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#certless">http://www.garlic.com/~lynn/subpubkey.html#certless</A>
+
+we referred to the scenario as person-centric ... as a contrast
+to institutional-centric oriented implementations.
+
+past posts in this thread:
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#20">http://www.garlic.com/~lynn/aadsm28.htm#20</A> Fixing SSL (was Re: Dutch 
+Transport Card Broken)
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#24">http://www.garlic.com/~lynn/aadsm28.htm#24</A> Fixing SSL (was Re: Dutch 
+Transport Card Broken)
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#26">http://www.garlic.com/~lynn/aadsm28.htm#26</A> Fixing SSL (was Re: Dutch 
+Transport Card Broken)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

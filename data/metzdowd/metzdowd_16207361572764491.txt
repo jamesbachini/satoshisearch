@@ -1,0 +1,21 @@
+<PRE>&gt;<i> Right -- I was unaware that Windows actually had any real (pre-boot)
+</I>&gt;<i> FDE solutions before about the time of BitLocker. But I only
+</I>&gt;<i> peripherally have any idea about Windows crypto solutions, so I
+</I>&gt;<i> wouldn't be surprised if I'm wrong. Cheers,
+</I>
+Windows have had FDE (with pre-boot) solutions for a  long while. Here
+is a list: <A HREF="http://www.full-disk-encryption.net/Full_Disc_Encryption.html">http://www.full-disk-encryption.net/Full_Disc_Encryption.html</A>
+
+Note: BitLocker is NOT true FDE. It is only volume based encryption.
+It has 3 modes. In one of the mode you can store the key on a external
+USB device. Only in that mode BitLocker acts as a FDE solution with
+pre-boot.
+
+saqib
+<A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

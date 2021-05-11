@@ -1,0 +1,113 @@
+<PRE>
+&gt;&gt;<i> (as if anyone uses client certificates anyway)? 
+</I>&gt;&gt;<i>     
+</I>&gt;<i>
+</I>&gt;<i> Guess why so few people are using it ...
+</I>&gt;<i> If it were secure, more people would be able to use it.
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>People don't use it because the workload of getting signed up is vastly
+beyond their skillset, and the user experience using the things is
+pretty bad too.
+&gt;<i> And there are hundreds of internal systems I heard of that are using client 
+</I>&gt;<i> certificates in reality every day.
+</I>&gt;<i>   
+</I>There's always a few people using a technology.  It's certainly a
+nonplayer out there.  Probably more servers out there authing with
+Digest, honestly.
+&gt;<i> Validated email addresses for spamming. Spear-phishing perhaps, ...
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>&gt;<i> There are CA&#180;s on this planet that put things like social security numbers 
+</I>&gt;<i> into certificates.
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>Who?  Seriously, that's pretty significant, I'd like to know who does this.
+&gt;<i> Where does the SSL specification say that certificates shouldn&#180;t contain 
+</I>&gt;<i> sensitive information? I am missing that detail in the security consideration 
+</I>&gt;<i> section of the RFC.
+</I>&gt;<i>   
+</I>The word &quot;public&quot; in Public Key isn't exactly subtle.
+
+&gt;<i> Do we have any more ideas how we can get this flaw fixed before it starts 
+</I>&gt;<i> hurting too much?
+</I>&gt;<i>   
+</I>Make it really easy to use some future version of SSL client certs, and
+quietly add the property you seek.  Ease of use drives technology
+adoption; making the tech actually work is astonishingly secondary.
+
+Heh, you asked :)
+&gt;<i> We have an issue here. And the issue isn&#180;t going to go away, until we 
+</I>&gt;<i> deprecate SSL/TLS, or it gets solved.
+</I>&gt;<i>   
+</I>To be clear, we'd *have* an issue, if any serious number of people used
+SSL client certs. I think you have a point that if SSL client certs
+become very popular going forward, then every website you go to will
+quietly grab your identity through their ad banners. 
+&gt;<i> * We fix SSL  
+</I>&gt;<i> Does anyone have a solution for SSL/TLS available that we could propose on the 
+</I>&gt;<i> TLS list? 
+</I>&gt;<i> If not: Can anyone with enough protocol design experience please develop it?
+</I>&gt;<i>   
+</I>What solution could there be?  You're actually going to SSL to the
+banner ad network, and you're going to give them your client cert.
+&gt;<i> * We deprecate SSL for client certificate authentication.
+</I>&gt;<i> We write in the RFC that people MUST NOT use SSL for client authentication.
+</I>&gt;<i> (Perhaps we get away by pretending that client certificates accidently slipped 
+</I>&gt;<i> into the specification.)
+</I>&gt;<i>   
+</I>People by in large do not use SSL client cert authentication.  This is
+problematic, as there's some very nice cryptographic aspects of the system.
+&gt;<i> * We switch from TLS to hmmm ... perhaps SSH, which has fixed the problem 
+</I>&gt;<i> already.
+</I>&gt;<i> Hmm, there we would have to write all the glue RFCs like &quot;HTTP over SSH&quot; 
+</I>&gt;<i> again ...
+</I>&gt;<i>   
+</I>I used to code for SSH.  SSL is an entire top-to-bottom stack, replete
+with a deep PKI infrastructure.  SSH?  Tunneling transport, barely even
+librarized.
+
+&gt;<i> Try to send a DVD iso image (4GB) over a SSL or SSH encrypted link with bit 
+</I>&gt;<i> errors every 10000 bits with a client software like scp that cannot resume 
+</I>&gt;<i> downloads. I gave up after 5 tries that all broke down in average after 1 GB.
+</I>&gt;<i> (In that case it was a hardware (bad cable) initiated denial of service 
+</I>&gt;<i> attack ;-)
+</I>&gt;<i>   
+</I>The problem here isn't checksums.  SSH is notoriously buggy when packets
+are dropped.  I think there are certain windows in which OpenSSH assumes
+it will get a response.  If it doesn't, it just dies.  So, outages more
+than a few hundred milliseconds have a small percentage chance of
+causing the session to permanently stall.
+
+&quot;Corrupted MAC on input&quot; -- this is a decent sign of corruption at the
+app layer.
+
+Did you really try this with OpenSSL?  I've had much better luck there.
+
+&gt;<i> If the link layer gives you 1/256, and the TCP layer gives you 1/65536, and 
+</I>&gt;<i> the SSL layer demands 0/16777216, then end up with 1/16777216 too much.
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>Actually, 256*65536 = 1677216 :)  In actuality, you have both IP and TCP
+checksums.  So you get 8 bits from link, 16 bits from IP, and 16 bits
+from TCP.  A random corrupt packet has about 2^40 odds of getting through.
+
+Of course, one real problem is that the checksum algorithms don't
+exactly distribute noise randomly, and noise is not random.  Still,
+corruption doesn't start being a problem until you get some pretty
+serious amounts of transfer.  (Interestingly, I've been looking at IPsec
+lately, not for encryption, but for better checksumming.)
+
+&gt;<i> Best regards,
+</I>&gt;<i> Philipp G&#252;hring
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>   
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

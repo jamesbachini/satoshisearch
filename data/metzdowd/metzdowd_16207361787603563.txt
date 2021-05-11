@@ -1,0 +1,14 @@
+<PRE>
+The International Association for Cryptologic Research (<A HREF="http://www.iacr.org/">http://www.iacr.org/</A> 
+) is seeking presentations and demos of e-voting systems. For its next  
+meeting in August-17, 2008 (in Santa-Barbara, CA, USA), the IACR board  
+would like to invite presentations and demos of cryptographic e-voting  
+systems that are open source and freely available for all.
+
+For more information see <A HREF="http://www.iacr.org/elections/cfp.html">http://www.iacr.org/elections/cfp.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

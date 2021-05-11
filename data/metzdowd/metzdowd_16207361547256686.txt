@@ -1,0 +1,48 @@
+<PRE>On Thu, 6 Sep 2007 09:28:40 -0400 (EDT)
+&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; wrote:
+
+&gt;<i> | Hi Martin,
+</I>&gt;<i> | 
+</I>&gt;<i> | I did forget to say that it would be salted so that throws it off by
+</I>&gt;<i> | 2^12
+</I>&gt;<i> | 
+</I>&gt;<i> | A couple of questions. How did you come up with the ~2.5 bits per
+</I>&gt;<i> | word? Would a longer word have more bits?
+</I>&gt;<i> He misapplied an incorrect estimate!  :-) The usual estimate - going
+</I>&gt;<i> back to Shannon's original papers on information theory, actually - is
+</I>&gt;<i> that natural English text has about 2.5 (I think it's usually given as
+</I>&gt;<i> 2.4) bits of entropy per *character*.  There are several problems
+</I>&gt;<i> here:
+</I>
+It's less than that.  See, for example, the bottom of the first page of
+<A HREF="http://www.cs.brown.edu/courses/cs195-5/extras/shannon-1951.pdf">http://www.cs.brown.edu/courses/cs195-5/extras/shannon-1951.pdf</A> :
+
+	From this analysis it appears that, in ordinary literary
+	English, the long range statistical effects (up to 100 letters)
+	reduce the entropy to something of the order of one bit per
+	letter, with a corresponding redundancy of roughly 75%. The
+	redundancy may be still higher when structure extending over
+	paragraphs, chapters, etc. is included.
+
+&gt;<i> 
+</I>&gt;<i> 	- The major one is that the estimate should be for
+</I>&gt;<i> *characters*, not *words*.  So the number of bits of entropy in
+</I>&gt;<i> 		a 55-character phrase is about 137 (132, if you use
+</I>&gt;<i> 		2.4 bits/character), not 30.
+</I>&gt;<i> 
+</I>&gt;<i> 	- The minor one is that the English entropy estimate looks
+</I>&gt;<i> just at letters and spaces, not punctuation and capitalization.
+</I>&gt;<i> 		So it's probably low anyway.  However, this is a much
+</I>&gt;<i> 		smaller effect.
+</I>
+The interesting question is whether or not one can effectively
+enumerate candidate phrases for a guessing program.  For that problem,
+punctuation and capitalization are important.
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

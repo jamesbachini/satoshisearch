@@ -1,0 +1,56 @@
+<PRE>As soon as I heard about this research I had to try it out. My laptop 
+(Thinkpad) has an encrypted Truecrypt partition.  I quickly made a 
+modified bootable DSL usb memory dumper, powered the machine down, 
+waited a minute, dumped memory, and found that I could recover passwords 
+from multiple prior reboots. I was able to recover my Truecrypt password 
+even if the volume was not mapped at the time of reboot, as well as GPG 
+passwords, SSH passwords, etc etc. It was really easy.
+
+During physical pentests, when I grab an encrypted laptop from an 
+office, my clients usually respond that the laptop was &quot;encrypted&quot; and 
+the data was therefore safe. That's not necessarily true, of course, but 
+we don't have the time during these engagements to test out the security 
+of the encryption products/implementation, and neither do most attackers.
+
+Now attackers (or customs) just have to grab a live laptop, plug in a 
+USB memory dumper and power cycle the system in order to obtain a 
+dictionary of likely passwords and potentially recover encryption keys. 
+Presumably tools to to accomplish this will soon be found in the wild 
+and will become accessible to attackers with even low levels of 
+technical skill.
+
+I imagine this will eventually have a big impact on the way 
+organizations respond to stolen mobile device incidents. With the 
+current technology, if a laptop or mobile device is on when it's stolen, 
+companies will need to assume that the data is gone, regardless of 
+whether or not encryption products have been deployed.
+
+Anyone familar with the laws in the arena? Are there regulations which 
+require reporting only if data on a stolen device is not encrypted?
+
+Sherri
+
+
+
+Ali, Saqib wrote:
+&gt;<i> interesting paper. but i fail to see how this could be &quot;deadly&quot; (as
+</I>&gt;<i> the author puts it) to the disk encryption products.
+</I>&gt;<i> 
+</I>&gt;<i> This methods requires the computer to be &quot;recently&quot; turned-on and unlocked.
+</I>&gt;<i> 
+</I>&gt;<i> So the only way it would work is that the victim unlocks the disks
+</I>&gt;<i> i.e. enter their preboot password and turn off the computer and
+</I>&gt;<i> &quot;immediately&quot; handover (conveniently) the computer to the attacker so
+</I>&gt;<i> that the attacker remove the DRAM chip and store in nitrogen. And the
+</I>&gt;<i> attacker has to do all this in less then 2 seconds.... :) If the
+</I>&gt;<i> attacker is standing right next to the victim, why even let the victim
+</I>&gt;<i> turn-off the unlocked computer????
+</I>&gt;<i> 
+</I>&gt;<i> Or am I missing something?
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

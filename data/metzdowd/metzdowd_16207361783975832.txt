@@ -1,0 +1,22 @@
+<PRE>Arshad Noor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt; writes:
+
+&gt;<i> Even if RIM does not have the device keys, in order to share encrypted
+</I>&gt;<i> data with applications on the RIM server, the device must share a session 
+</I>&gt;<i> key with the server; must it not?.  Isn't RIM (their software, actually) 
+</I>&gt;<i> now in a position to decrypt content sent between Blackberry users?  Or, 
+</I>&gt;<i> does the Blackberry encryption protocol work like S/MIME?
+</I>
+The enterprise solution does work something like S/MIME.
+
+-derek
+-- 
+       Derek Atkins, SB '93 MIT EE, SM '95 MIT Media Laboratory
+       Member, MIT Student Information Processing Board  (SIPB)
+       URL: <A HREF="http://web.mit.edu/warlord/">http://web.mit.edu/warlord/</A>    PP-ASEL-IA     N1NWH
+       <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">warlord at MIT.EDU</A>                        PGP key available
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

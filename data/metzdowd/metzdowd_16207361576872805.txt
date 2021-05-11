@@ -1,0 +1,32 @@
+<PRE>
+
+-----Original Message-----
+From: zooko [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">zooko at zooko.com</A>]
+Sent: 24 October 2007 06:52
+To: Arcane Jill
+Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+Subject: Re: Fingerprint Firefox Plugin?
+
+&gt;<i> Please let us know how it works for you.
+</I>
+My experience is very positive. It seems to be /exactly/ what I want, because I
+don't necessarily trust Verisign or Thwarte or any of the other hundreds of
+Root CAs which my browser trusts. I don't believe that every single one of them
+would say no if some government, or military, or corporation with enough money,
+asked/ordered them to issue a bogus certificate, but I do know that if that
+were to happen, the fingerprint would change, and Petname Tool would flag me a
+warning. It is an absolutely wonderful tool, as it moves trust from where it
+doesn't belong (a bunch of faceless organisations whom I have no more reason to
+trust than the websites I'm visiting) to where it does belong (in my own
+hands). I love it!
+
+I guess other people might want to know this, either because they need to adopt
+the same security principles (if they are sound), or to criticize it (if not).
+
+Arcane Jill
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

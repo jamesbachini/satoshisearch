@@ -1,0 +1,123 @@
+<PRE>
+On Jan 4, 2008, at 12:50 PM, Thierry Moreau wrote:
+
+&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Jon Callas wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> They let strong crypto through all the time. I can't imagine what   
+</I>&gt;&gt;<i> *technology* you couldn't get through.
+</I>&gt;<i>
+</I>&gt;<i> Do you have an example of allowed strong crypto having good key  
+</I>&gt;<i> management and not already widely-implemented/easily-implementable  
+</I>&gt;<i> by competitors outside of the Wasseenar zone?
+</I>
+I'm sorry, but I don't understand the question. I've read it about  
+ten times and don't know what you're asking. Let me try to answer by  
+talking around it.
+
+If you look at the basic components we have, the ciphers, hash  
+functions, and so on, they're all secure enough that a major  
+government can't crack them. Yes, we know that there are weaknesses  
+in lots of hash functions, but by now, we have a pretty good handle  
+on that. We know about how broken they are, and there are  
+workarounds. Furthermore, if you look at the push to fix this --  
+where is it coming from? NIST, NESSIE, etc.
+
+If you look at the medium-level functions, like HMAC, salted hashing,  
+tweakable cipher modes, and so on, they are *more* secure. For  
+example, even if you don't like SHA-1, a SHA-1 HMAC is still  
+considered secure.
+
+If you look at the protocols, like TLS, IPsec, OpenPGP, S/MIME, and  
+so on, they're also secure, because they assemble the reasonably  
+secure components together reasonably securely. Yes, we can have  
+discussions about some of them, but again, we know lots about their  
+security, and can actually discuss it rationally. It was much harder  
+to do that ten to twenty years ago.
+
+All of these things are freely exportable. It's just a matter of  
+filling out paperwork.
+
+I don't have an example of a cryptosystem that I'd actually want to  
+use that is non-exportable. And I'm sure that if someone made  
+something that is custom, it's exportable. I have direct evidence of  
+this.
+
+Back in 1999, when we were at Counterpane together, John Kelsey and I  
+created a set of incompatible Blowfish variants. We were going to use  
+them in TLS so that Counterpane gear would have its own little walled  
+garden. We could have used a family key, but this was fun, and also a  
+test of the export regime. Blowfish, as you may or may not know, has  
+some initialization constants that are hex digits of pi. These  
+&quot;colorfish&quot; ciphers used different digits of pi for the  
+initialization. I constructed the family of: Blackfish, Brownfish,  
+Redfish, Orangefish, Yellowfish, Greenfish, Bluefish, Indigofish,  
+Purplefish, Whitefish, Silverfish, Goldfish, Octarinefish, and  
+Plaidfish. I sent them for export and there wasn't a peep. Nothing.  
+These days, British Telecom owns them.
+
+There are cryptosystems I know of from non-Wassenaar countries that I  
+wouldn't go near. I don't think they're very good. I don't care if  
+that's a matter of competence or malice; I'm not favorably impressed.  
+I am, however, quite sure they're exportable.
+
+I don't have an example of any crypto technology that I would think  
+wouldn't be exportable.
+
+
+&gt;<i>
+</I>&gt;&gt;<i> Definitely, however, there are  *people* who couldn't get an  
+</I>&gt;&gt;<i> export license because they've been bad  in the past.
+</I>&gt;<i>
+</I>&gt;<i> If one were to look emprircally at these *poeple*, is it possible  
+</I>&gt;<i> that, e.g. as if by chance, they would be designers of good crypto  
+</I>&gt;<i> having good key management and not widely-implemented/easily- 
+</I>&gt;<i> implementable by competitors outside the Wasseenar zone?
+</I>&gt;<i>
+</I>&gt;&gt;<i> So the answer to your questions is that they're vetting who you  
+</I>&gt;&gt;<i> are  far more than what you're exporting.
+</I>&gt;<i>
+</I>&gt;<i> Do you mean that they judge whether your are competent to design  
+</I>&gt;<i> good crypto of the above type? Perhaps even they assess whether you  
+</I>&gt;<i> are &quot;organizationally unimpeded&quot; to do so?
+</I>
+No, I don't mean that. Crypto is a &quot;dual use&quot; technology. Most things  
+are dual use. There are obvious dual use things, like nuclear  
+materials, but video games are also dual use, as are milling  
+machines, laser diodes, navigation equipment, and so on. Basically,  
+if it's fun, it's dual use.
+
+You have to have export licenses for dual use items. Sometimes the  
+license is very easy to get. In some cases, it is nothing more than  
+giving them your web logs if they ask for them and there's nothing  
+requiring you to keep them. (Most open source software falls here.)  
+Other times, there's more. For some people, like Ivan at OLPC and me  
+(at PGP), we jump through hoops we don't necessarily have to because  
+we don't want to end up on the wrong side of things.
+
+If you violate export rules, there can be legal and administrative  
+penalties. The administrative penalties can be much worse, because  
+they can essentially just decide you can't ever export anything.  
+These days, I suspect this would also be a good way to end up on the  
+permanent SSSS list for flying.
+
+When I took a course on all of this, I was told about a guy in the  
+import-export biz who was known for being able to get things into  
+countries with sanctions. Eventually, he was caught and never  
+prosecuted, but the &quot;administrative&quot; penalties against him mean that  
+he had to find a new career. He couldn't get an export license to  
+send an Xbox to Canada.
+
+The Treasury Department maintains a list of Bad People. It's on the  
+web. Osama bin Laden is one of them, and so is this guy.
+
+That's what I meant.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

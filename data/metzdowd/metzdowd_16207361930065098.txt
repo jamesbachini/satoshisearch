@@ -1,0 +1,118 @@
+<PRE>
+
+Peter Gutmann wrote:
+
+&gt;<i> Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;&gt;<i>Peter Gutmann wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i>Given the string of
+</I>&gt;&gt;&gt;<i>attacks on crypto in embedded devices (XBox, iPhone, iOpener, Wii, some
+</I>&gt;&gt;&gt;<i>not-yet-published ones on HDCP devices :-), etc) this is by far the most
+</I>&gt;&gt;&gt;<i>at-risk category because there's a huge incentive to attack them, the result
+</I>&gt;&gt;&gt;<i>affects tens/hundreds of millions of devices, and the attacks are immediately
+</I>&gt;&gt;&gt;<i>and widely actively exploited (modchips/device unlocking/etc, an important
+</I>&gt;&gt;&gt;<i>difference between this and academic proof-of-concept attacks), so this is the
+</I>&gt;&gt;&gt;<i>one where I'd expect the vendors to care most.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>But they've all been unlocked using easier attacks, surely?
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> The published ones seem to be the (relatively) easy ones, but the ones that
+</I>&gt;<i> have been tried (and either not published or just had the easy outcome
+</I>&gt;<i> published) have been pretty amazing.  This is another one of these things
+</I>&gt;<i> where real figures are going to be near-impossible to come by, even harder
+</I>&gt;<i> than my hypothetical public vendor survey of who uses SCA protection.  You'd
+</I>&gt;<i> have to read about 20 blogs and a hundred mailing lists, many private, just to
+</I>&gt;<i> keep up, but from various informal contacts with people working in this area
+</I>&gt;<i> it seems you're not looking at anything like the conventional &quot;identify the
+</I>&gt;<i> weakest point, then attack there&quot; approach.  Instead what's being done is more
+</I>&gt;<i> like the Iraqi weapons program prior to 1991 where they were using every
+</I>&gt;<i> imaginable type of approach, including ones like calutrons that had been
+</I>&gt;<i> abandoned decades earlier by everyone else, for a first-past-the-post finish,
+</I>&gt;<i> they'd try anything and everything and whatever got them there first would be
+</I>&gt;<i> declared the winner.  It's the same with these attacks, whenever I've asked
+</I>&gt;<i> &quot;have you tried X&quot; the answer is invariably &quot;yes, we have&quot;.
+</I>&gt;<i> 
+</I>&gt;<i> This style of attack is quite different from the usual academic model, it
+</I>&gt;<i> neatly illustrates Bruce Schneier's comment that a defender has to defend
+</I>&gt;<i> every single point along the line while an attacker only has to find a single
+</I>&gt;<i> weakness.  In this case it seems to be literally true, and the weakness won't
+</I>&gt;<i> necessarily be the actual weakest point but merely the point where an attacker
+</I>&gt;<i> with sufficient skill and access to the right tools got in.  Look at the XBox
+</I>&gt;<i> attacks for example, there's everything from security 101 lack of
+</I>&gt;<i> checking/validation and 1980s MSDOS-era A20# issues through to Bunnie Huang's
+</I>&gt;<i> FPGA-based homebrew logic analyser and use of timing attacks to recover device
+</I>&gt;<i> keys (oh, and there's an example of a real-world side-channel attack for you),
+</I>&gt;<i> there's no rhyme or reason to them, it's just &quot;hammer away at everything with
+</I>&gt;<i> anything you've got and exploit the first bit that fails&quot;.
+</I>&gt;<i> 
+</I>
+Now you seem to answer the question yourself: SCA protections apply to a 
+single class of attacks, while there are many.
+
+Going back to &quot;who cares&quot;, having done certification consulting 
+assignments for some devices with crypto, when there was no 
+checklist-based standard to apply, &quot;good practice&quot; security criteria (to 
+be briefly documented in the report) would include the following questions:
+
+(A) Is the secret key inside a device unit applicable to this single 
+unit, or is it a system-wide, or domain-wide key?
+
+That's a key management scheme question.
+
+(B) Is the attack destructive? Which device unit features (especially 
+&quot;be in working order&quot;, but also &quot;be absent of actual tampering evidence&quot; 
+or even &quot;remain under the control of the legitimate user without 
+interruptions longer than X&quot; ) need to be impaired for a given class of 
+attack to succeed? This question pertains to the secret key as in (A) 
+and also to any public-key-to-be-integrity-protected which would prevent 
+malicious code download.
+
+That's a product design question.
+
+(C) What are the incentives, if any, for the legitimate user to remain 
+well-behaved in the human aspects of device protection? (E.g. a merchant 
+has some incentive to maintain a payment authorization device in good 
+working order.) This leads to the question of insider threats, so 
+satisfactory answers in this area are seldom present.
+
+This is an application design question.
+
+This gives an idea of analyses that drives security-related spendings 
+(in my limited experience). Clients (intend to) pay for protections that 
+will prevent financial losses and major public relations impacts (and 
+then cut operating budgets soon after the project gets its 
+authorization!). The consultant study must clearly link attackers' 
+motivations to impacts and to countermeasures.
+
+Refinements to the above analysis methodology call for the same creative 
+mind that you assume from the part of the attackers. E.g. the usefulness 
+of a device unit clone for the attacker should be considered for 
+questions (B) and (C).
+
+Does SCA protection enter the picture? Marginally at best.
+
+Regards,
+
+
+-- 
+
+- Thierry Moreau
+
+CONNOTECH Experts-conseils inc.
+9130 Place de Montgolfier
+Montreal, Qc
+Canada   H2M 2A1
+
+Tel.: (514)385-5691
+Fax:  (514)385-5900
+
+web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

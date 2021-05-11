@@ -1,0 +1,59 @@
+<PRE>On Mon, Dec 17, 2007 at 10:38:59AM -0600, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+
+&gt;<i> So... supposing I was going to design a crypto library for use within
+</I>&gt;<i> a financial organization, which mostly deals with credit card numbers
+</I>&gt;<i> and bank accounts, and wanted to create an API for use by developers,
+</I>&gt;<i> does anyone have any advice on it?
+</I>&gt;<i> 
+</I>&gt;<i> It doesn't have to be terribly complete, but it does have to be
+</I>&gt;<i> relatively easy to use correctly (i.e. securely).
+</I>
+APIs don't solve security problems, just code re-use problems. Teaching
+smart people how to do threat analysis is a better bet. Untrained
+developers will choose an API that solves the wrong problem.
+
+&gt;<i> class crypto_api
+</I>&gt;<i> {
+</I>&gt;<i>     ...
+</I>&gt;<i>     // developers call these based on what they're trying to do
+</I>&gt;<i>     // these routines simply call crypto_logic layer
+</I>&gt;<i>     Buffer encrypt_credit_card(Buffer credit_card_number, key_t key);
+</I>&gt;<i>     Buffer encrypt_bank_account(Buffer bank_account, key_t key);
+</I>&gt;<i>     Buffer encrypt_other(Buffer buffer, key_t key);
+</I>
+And who does key management? I bet the key will be right there with
+the data on the same disk, probably logged in the clear in application
+logs too...
+
+&gt;<i> The general idea is that crypto_api provides domain-specific APIs that
+</I>&gt;<i> are easy for anyone to understand, that the logic layer allows for the
+</I>&gt;<i> selection of different algorithms, and the glue layer is basically a
+</I>&gt;<i> translation layer to underlying libraries.
+</I>
+Encryption is almost never the problem, design is the problem, with a
+good design, the crypto is already available.
+
+&gt;<i> Comments?
+</I>
+Why yet another crypto library? Invest your energy in complete designs and
+code of realistic show-case solutions to real-world problems, not APIs.
+
+Good designs will get copied whole-sale, and morphed. If well documented,
+the developers can learn by reading the sample code, and training can
+be based around the approaches taken in the show-case systems.
+
+When I hear developers demanding &quot;security APIs&quot; I pretend to be deaf...
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

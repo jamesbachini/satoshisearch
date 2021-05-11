@@ -1,0 +1,69 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) on Monday, February 4, 2008 wrote:
+
+&gt;<i>Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; writes:
+</I>&gt;<i>
+</I>&gt;&gt;<i>I don't propose to get into an extended debate about whether it is better to
+</I>&gt;&gt;<i>use SRTP or to use generic DTLS. That debate has already happened in IETF and
+</I>&gt;&gt;<i>SRTP is what the VoIP vendors are doing. However, the good news here is that
+</I>&gt;&gt;<i>you can use DTLS to key SRTP (draft-ietf-avt-dtls-srtp), so there's no need
+</I>&gt;&gt;<i>to invent a new key management scheme.
+</I>&gt;<i>
+</I>&gt;<i>Hmm, given this X-to-key-Y pattern (your DTLS-for-SRTP example, as well as
+</I>&gt;<i>OpenVPN using ESP with TLS keying), I wonder if it's worth unbundling the key
+</I>&gt;<i>exchange from the transport?  At the moment there's (at least):
+</I>&gt;<i>
+</I>&gt;<i>  TLS-keying --+-- TLS transport
+</I>&gt;<i>               |
+</I>&gt;<i>               +-- DTLS transport
+</I>&gt;<i>               |
+</I>&gt;<i>               +-- IPsec (ESP) transport
+</I>&gt;<i>               |
+</I>&gt;<i>               +-- SRTP transport
+</I>&gt;<i>               |
+</I>&gt;<i>               +-- Heck, SSH transport if you really want
+</I>&gt;<i>
+</I>&gt;<i>Is the TLS handshake the universal impedance-matcher of secure-session
+</I>&gt;<i>mechanisms?
+</I>
+If there had been a separation between the key exchange and
+validation part of SSL (early TLS) and the transport part, the E
+language protocol[1] almost certainly would have used the transport
+part of the protocol.  The reasons at the time for not using SSL are
+described in [2].  They are all associated with the connection and
+cryptograph setup.
+
+Simplified overview:
+
+When an E program needs to contact a remote E program, it starts
+with a hash of the other program's public key and large random
+number, the &quot;Swiss number&quot;.  It gets the IP and port of the remote
+program from a well-known network service called the Process Location
+Service.  It then contacts that IP and port, sends its public key,
+receives the remote public key, performs a Diffie Hellman exchange
+for forward secrecy, checks the hash of the remote public key, and
+sends a signature over the exchange.  It checks the remote programs
+signature over the exchange, and if all the checks pass, sends the
+encrypted Swiss number to identify the specific remote resource.
+
+I couldn't see any way to take this self-authenticating key exchange
+and jam it into a x.509 structure.  Perhaps I wasn't inventive
+enough, but I ended up rolling my own transport protocol, at certain
+extra cost in development and testing, and a significant risk of
+security errors.
+
+Cheers - Bill
+
+[1] &lt;<A HREF="http://www.erights.org/elib/distrib/vattp/index.html">http://www.erights.org/elib/distrib/vattp/index.html</A>&gt;
+
+[2] &lt;<A HREF="http://www.erights.org/elib/distrib/vattp/SSLvsDataComm.html">http://www.erights.org/elib/distrib/vattp/SSLvsDataComm.html</A>&gt;
+
+-----------------------------------------------------------------------
+Bill Frantz        | gets() remains as a monument | Periwinkle
+(408)356-8506      | to C's continuing support of | 16345 Englewood Ave
+www.pwpconsult.com | buffer overruns.             | Los Gatos, CA 95032
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

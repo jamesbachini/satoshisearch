@@ -1,0 +1,45 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> writes:
+&gt;<i> The design space for practical network security
+</I>&gt;<i> has always been:
+</I>&gt;<i>
+</I>&gt;<i>    I'm OK
+</I>&gt;<i>    You're OK
+</I>&gt;<i>    The Internet is a problem
+</I>&gt;<i>
+</I>&gt;<i> A gathering storm of compromised machines, now
+</I>&gt;<i> variously estimated in the 30-70% range depending
+</I>&gt;<i> on with whom you are talking, means that the 
+</I>&gt;<i> situation is now:
+</I>&gt;<i>
+</I>&gt;<i>    I'm OK, I think
+</I>&gt;<i>    I have to assume that you are 0wned
+</I>&gt;<i>    The Internet might make this worse
+</I>&gt;<i>
+</I>&gt;<i> Put differently, network security has now come
+</I>&gt;<i> close to Spaf's famous line about netsec in the
+</I>&gt;<i> absence of host security being assured delivery
+</I>&gt;<i> of gold bars from a guy living in a cardboard box
+</I>&gt;<i> to a guy sleeping on a park bench.
+</I>
+This is indeed a big new problem -- indeed, I'd say that how you deal
+with partially trusted people logged on to untrusted equipment is now
+the name of the game.
+
+&gt;<i> BTW, it is probably time to turn off your software's
+</I>&gt;<i> autoupdate feature.
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.infobyte.com.ar/down/isr-evilgrade-Readme.txt">http://www.infobyte.com.ar/down/isr-evilgrade-Readme.txt</A>
+</I>&gt;<i>
+</I>&gt;<i> Likely off-topic,
+</I>
+Not entirely. :)
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

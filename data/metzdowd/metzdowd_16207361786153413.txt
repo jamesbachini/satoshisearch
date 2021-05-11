@@ -1,0 +1,96 @@
+<PRE>On 2008-05-12, Perry E. Metzger wrote:
+
+&gt;<i> I'd been wondering for years when someone would set malware up to run 
+</I>&gt;<i> in systems management mode on x86 processors. Now someone has done it:
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.pcworld.com/businesscenter/article/145703/hackers_find_a_new_place_to_hide_rootkits.html">http://www.pcworld.com/businesscenter/article/145703/hackers_find_a_new_place_to_hide_rootkits.html</A>
+</I>
+In the information preservation circles which of course mind failure and 
+error tolerance, they they talk about &quot;hard/fast vs. soft/slow&quot; 
+failures. Soft failure implies the sort of slow, creeping, difficult to 
+detect failure mode that constitutes corrosion, bit rot and the like. A 
+hard fail is one that either happens, catastrophically, or doesn't 
+happen at all. I.e. a hard fail is the prototypical &quot;digital&quot; failure 
+mode and the soft one is its &quot;analog&quot; counterpart. For example the use 
+of error correcting codes has lead to hard drives and high end 
+microprosessors being the hard, binary failing type, by design, whereas 
+voice communication seems very difficult to make anything but &quot;soft&quot;.
+
+That happens because CPU's are designed to fail fast and to be replaced, 
+whereas analog tape degrades controllably and is gone when it is, 
+gradually but expectedly. RAID tries to stage the process so that a) we 
+can detect when harm was done, b) replace the faulty component, and then 
+c) fully reconstitute the data with perfect ditital fidelity before 
+irretrievable loss has even happened. Even that is predicated on the 
+assumption that the distribution of loss is bounded in some sense, which 
+it usually isn't, but at least we're approximating the relevant 
+probabilistic loss-of-value curve with more precision...
+
+I think the distinction between soft and hard failure well describes the 
+failure mode that is inherent to secure(d) hardware, protected modes and 
+the like. Here, there's a hard obstacle to be beaten if you want to 
+surmount the protective cover; otherwise it just works and if it 
+doesn't, then it fails completely. The first barrigade is what the 
+designers concentrated at, in order to protect the soft, all-powered 
+interior core/trench of the supervisor mode.
+
+They wanted to produce an insurmountable obstacle, and don't get me 
+wrong, perhaps they even succeeded at that. Perhaps they actually 
+managed to prove the security under plausible assumptions.
+
+But then, perhaps not, and after that the soft underbelly always lends 
+itself to misuse. Even the designers of RMS Titanic didn't consider that 
+one final, fatal failure mode, which then bought the ultimate, historic 
+failure upon them. The design certainly was very good and based on the 
+entire body of existing knowledge at the time, accessible to the 
+designers. A priori it should have been more than sufficient to keep the 
+ship afloat, ex post it suddenly wasn't.
+
+In the security/crypto frame of thought, I would translate that as two 
+separate things, a la Frank Knight (in &quot;Risk, Uncertainty and Profit&quot;): 
+a) you'll want to control the known, quantifiable, statistical risk so 
+that the costs and benefits equal out, and b) defend against what you 
+genuinely do *not* know (&quot;uncertainty&quot;) by building in additional 
+categorical protections.
+
+In the security context, and in both cases, you'll also want to follow 
+economics as best you can. With regard to risk, you'll want to follow 
+the continuous marginal effort/benefit curve of attack. It's always 
+going to be nonlinear, so any fixed, single counter-measure likely won't 
+be enough to cover all of the bases, because it would lead to a 
+step/kink in your countervailing curve. Usually you also cannot device 
+easy countermeasures that yield continuous and comparable incentives. 
+So, you'll have to approximate from below; that leads to a number of 
+counter-defences approximating the threat curve from below.
+
+As for uncertainty, that cannot be quantified by definition, but we do 
+have qualitative/categorical defences against it. Like using &quot;different 
+modes of defense/thought&quot;. &quot;Distributed concerns.&quot; Quantitative burdens 
+on distributed clouds of executives, arranged to be &quot;less susceptible to 
+influence than the general social network.&quot; There we have to apply the 
+(very underdeveloped) theory of coalitional game theory, social choice, 
+public choice and what not.
+
+Finally, to return to the ground, in the scenario Perry describes, the 
+problem is that nobody even *tried* categorical defense *beyond* the 
+first breach. It was just assumed that the one impregnable wall (the one 
+between SMM and the rest of the x86 modes) was enough and perfect. In 
+reality, in order to defend against what you do *not* know, you'll need 
+multiple walls, of different kinds and degrees of fortification, or a 
+fundamentally different sort of authorization structure (which won't 
+*remove* the problem, but *will* shift the threat curve in the single 
+user, home application).
+
+That eventual privacy catastrophe might never come about, but as Perry 
+says, in the current state of things, it's bound to happen over and over 
+again. As it just happened with SMM.
+-- 
+Sampo Syreeni, aka decoy - mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">decoy at iki.fi</A>, tel:+358-50-5756111
+student/math+cs/helsinki university, <A HREF="http://www.iki.fi/~decoy/front">http://www.iki.fi/~decoy/front</A>
+openpgp: 050985C2/025E D175 ABE5 027C 9494 EEB0 E090 8BA9 0509 85C2
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

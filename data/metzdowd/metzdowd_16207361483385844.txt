@@ -1,0 +1,58 @@
+<PRE>Adam Back &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">adam at cypherspace.org</A>&gt; writes:
+&gt;<i> I do not believe the mentioned conflict exists.  The aim of these
+</I>&gt;<i> calculator-like devices is to make sure that no malware, virus etc can
+</I>&gt;<i> create unauthorized transactions.  The user should still be able to
+</I>&gt;<i> debug, and inspect the software in the calculator-like device, or
+</I>&gt;<i> virtual software compartment, just that installation of software or
+</I>&gt;<i> upgrades into that area should be under direct explicit user control.
+</I>&gt;<i> (eg with BIOS jumper required to even make any software change!)
+</I>&gt;<i>
+</I>&gt;<i> The ring -1 and loss-of-control aspects of TPM are different, they are
+</I>&gt;<i> saying that you are not really root on your own machine anymore!  In
+</I>&gt;<i> the sense that if you do load under a debugger the remote party can
+</I>&gt;<i> tell this and refuse to talk with you.
+</I>
+I agree with Adam that the unique and defining aspect of TPM technology
+is this property that users can prove their machine state without being
+able to lie about it (modulo hardware attacks etc).  This can easily work
+to the user's detriment - lying is often useful - but could sometimes
+be to the user's advantage as well - being able to provably tell the
+truth is useful too.
+
+In the case of bank security, the question is whether there is any
+point in trying to keep users from being able to falsify information
+about their system configuration and software status.  Generally, the
+user has no incentive to do so.  The question is whether attackers could
+somehow exploit the ability of users to make undetected changes to their
+&quot;secure computing base&quot; via social engineering and similar hacks.
+
+In the case of the calculator-like device, for example, if it is fully
+reprogrammable by the user, is there a risk that he could be fooled
+into hooking it up to his computer in that mode and letting attackers
+change its workings?  Or in the case of a TPM-like chip with an owner
+override, could he be manipulated into using the override so as to make
+fake banking software look real?
+
+Such questions have two sides to them: the case of a user who does
+get fooled into taking these actions and is harmed by them; and the
+case of a user who merely pretends to have gotten tricked like this
+in order to escape liability for transactions he truly did originate.
+Defending against the latter class of frauds may give the bank incentive
+to prefer systems where users cannot override their security, so as to
+reduce the chance of false repudiations.
+
+Looking at the system as a whole, then, there may indeed be a case for
+financial security systems that cannot be overridden by end users.
+If such measures reduce the overall costs of fraud in the system,
+then users do benefit at least indirectly from giving up this degree
+of control.  Sometimes in life, paradoxically, you do better by being
+able to give up certain options, in a verifiable way.  TPM technology's
+benefits to the user would arise from such paradoxical situations.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,47 @@
+<PRE>
+
+Richard Salz wrote:
+
+&gt;<i> I would expect hardware designs to be treated more like hardware than 
+</I>&gt;<i> software.
+</I>&gt;<i> 
+</I>
+That's an interesting observation, raising the issue of what is &quot;speech&quot; 
+  vs hardware.
+
+When I looked into this issue, I found the &quot;Common Criteria&quot; 
+certification methodology as evidence that &quot;speech&quot; covers everything 
+from the most high level abstract design description to the most 
+concrete representation of the hardware that you would look at, e.g. for 
+security certification assurance that electronic gates are properly 
+positioned by the Computer-Aided-Design tools. Hence, any information is 
+&quot;speech&quot;, and if it's in the public domain, I would expect an export 
+control exception would apply. Only the actual silicon, and non 
+human-readable dies for the silicon, would be hardware.
+
+Otherwise, I see no legal base to locate a cut-off point between 
+&quot;speech&quot; and hardware in the process of design refinements leading to 
+the actual processor.
+
+Regards,
+
+-- 
+
+- Thierry Moreau
+
+CONNOTECH Experts-conseils inc.
+9130 Place de Montgolfier
+Montreal, Qc
+Canada   H2M 2A1
+
+Tel.: (514)385-5691
+Fax:  (514)385-5900
+
+web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

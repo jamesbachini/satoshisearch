@@ -1,0 +1,37 @@
+<PRE>I think it might be fun to start up a collection of snake oil
+cryptographic methods and cryptanalytic attacks against them.  It
+would be more fun for me than crossword puzzles, and educational for
+all the would-be cryptographers.
+
+I'd like to start with the really simple stuff; classical
+cryptography, systems with clean and obvious &quot;breaks&quot;.  Although I
+find the magazine entertaining to read, I'm finding that 2600 Magazine
+is a particularly good source of this brand of snake oil.
+
+So, when you find a particularly obnoxious dilettante going on about
+his bone-headed unbreakable scheme, please forward it to me and I'll
+see about breaking it, and then publish the schemes and the results on
+a web site for publicly &quot;educating&quot; them.  Honestly, there's probably
+no better way to educate people than to see schemes submitted and
+broken, and I'm not sure there's a good site for it, although there
+are plenty of books.  Unfortunately, these types won't be bothered to
+buy books since they already know everything.
+
+If you have a break of some scheme you wish to contribute, please
+do forward me a URL and I'll link to it.
+
+Perhaps this should be a wiki?
+
+I'm revamping my web site, so the crypto wiki has been down
+temporarily but will be back up.
+-- 
+&lt;URL:<A HREF="http://www.subspacefield.org/~travis/">http://www.subspacefield.org/~travis/</A>&gt; -&gt;&lt;- dharma &lt;&gt;&lt; advaita
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070830/dd342548/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20070830/dd342548/attachment.pgp</A>&gt;
+</PRE>

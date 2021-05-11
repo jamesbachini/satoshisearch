@@ -1,0 +1,18 @@
+<PRE>Hi list
+
+Has anybody already gained experience concerning the technical
+implementation of SRP (<A HREF="http://srp.stanford.edu">http://srp.stanford.edu</A>)? There is one point I
+couldn't find in any documentation: Should the modulus and the generator
+(N and g) be unique for each client or can they be chosen
+application-wide? What are the (security-related) implications in each
+case?
+
+Thanks,
+
+Michael
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

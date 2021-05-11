@@ -1,0 +1,17 @@
+<PRE>* Peter Gutmann:
+
+&gt;<i> On a semi-related topic, it'd be interesting to get some discussion about FF3 
+</I>&gt;<i> removing the FF2 SSL indicators of the padlock and (more visibly) the 
+</I>&gt;<i> background colour-change for the URL bar when SSL is active and replacing it 
+</I>&gt;<i> with a spoof-friendly indicator that's part of the favicon, i.e. part of the 
+</I>&gt;<i> attacker-controlled content.
+</I>
+To keep this in perspective, note that you could disable the location
+bar altogether in FF2 (and that default changed in FF3), so the FF3
+approach is actually an improvement.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

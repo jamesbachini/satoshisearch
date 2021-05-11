@@ -1,0 +1,59 @@
+<PRE>R. Hirschfeld wrote:
+&gt;<i> During the course of the CAFE project some commercial electronic purse
+</I>&gt;<i> systems emerged, notably Proton (from Banksys in Belgium, replicated
+</I>&gt;<i> in other counties under other names) and Mondex.  These were in many
+</I>&gt;<i> ways less sophisticated than CAFE's system (which was multi-issuer,
+</I>&gt;<i> multi-currency, privacy-respecting, etc.) but had serious commercial
+</I>&gt;<i> backing.  For the most part these seem to have stagnated or died.  I
+</I>&gt;<i> suspect that getting them to catch on would require drastic measures
+</I>&gt;<i> such as:
+</I>
+we had gotten tasked to do a design and costing of mondex implementation
+in the states (all the transaction processing dataprocessing, sizing
+capacity and resources, etc) ... and looking at pricing various kinds
+of mondex related transactions (&quot;super brick&quot; from mondex international
+and how it flowed thru the rest of the infrastructure).
+
+the conclusion we came up with was that nearly all the financial
+justification for mondex was in the float. later there were scenarios
+where mondex international was encouraging deployment in various
+countries by offering to split the float with the chartered
+mondex national body (and then it seemed like float offerings were
+starting to peculate down to financial institutions lower in
+the mondex hierarchy)
+
+then along came an EU statement that mondex (and similar implementations)
+would only be given a grace period with regard to retaining the float
+(as a mechanism to underwrite start-up costs) ... but after a period
+of 2-3 yrs, they were then going to be required to start paying interest on
+balances carried in the cards. after that, much of the interest(?) seemed
+to evaporate.
+
+separately there were some issues with the chip technology being
+used in the mondex cards.
+
+misc. past posts mentioning mondex.
+<A HREF="http://www.garlic.com/~lynn/aepay6.htm#cacr7">http://www.garlic.com/~lynn/aepay6.htm#cacr7</A> 7th CACR Information Security Workshop
+<A HREF="http://www.garlic.com/~lynn/aadsm6.htm#digcash">http://www.garlic.com/~lynn/aadsm6.htm#digcash</A> IP: Re: Why we don't use digital cash
+<A HREF="http://www.garlic.com/~lynn/aadsm7.htm#idcard2">http://www.garlic.com/~lynn/aadsm7.htm#idcard2</A> AGAINST ID CARDS
+<A HREF="http://www.garlic.com/~lynn/aadsm18.htm#42">http://www.garlic.com/~lynn/aadsm18.htm#42</A> Payment Application Programmers Interface (API) for IOTP
+<A HREF="http://www.garlic.com/~lynn/aadsm20.htm#7">http://www.garlic.com/~lynn/aadsm20.htm#7</A> EMV
+<A HREF="http://www.garlic.com/~lynn/aadsm21.htm#1">http://www.garlic.com/~lynn/aadsm21.htm#1</A> Is there any future for smartcards?
+<A HREF="http://www.garlic.com/~lynn/aadsm23.htm#23">http://www.garlic.com/~lynn/aadsm23.htm#23</A> Payment systems - the explosion of 1995 is happening in 2006
+<A HREF="http://www.garlic.com/~lynn/aadsm25.htm#31">http://www.garlic.com/~lynn/aadsm25.htm#31</A> On-card displays
+<A HREF="http://www.garlic.com/~lynn/2002e.html#14">http://www.garlic.com/~lynn/2002e.html#14</A> EMV cards
+<A HREF="http://www.garlic.com/~lynn/2002e.html#18">http://www.garlic.com/~lynn/2002e.html#18</A> Opinion  on smartcard security requested
+<A HREF="http://www.garlic.com/~lynn/2002g.html#53">http://www.garlic.com/~lynn/2002g.html#53</A> Are you sure about MONDEX?
+<A HREF="http://www.garlic.com/~lynn/2002g.html#54">http://www.garlic.com/~lynn/2002g.html#54</A> Are you sure about MONDEX?
+<A HREF="http://www.garlic.com/~lynn/2004j.html#12">http://www.garlic.com/~lynn/2004j.html#12</A> US fiscal policy (Was: Bob Bemer, Computer Pioneer,Father of ASCII,Invento
+<A HREF="http://www.garlic.com/~lynn/2004j.html#14">http://www.garlic.com/~lynn/2004j.html#14</A> US fiscal policy (Was: Bob Bemer, Computer Pioneer,Father of ASCII,Invento
+<A HREF="http://www.garlic.com/~lynn/2005i.html#10">http://www.garlic.com/~lynn/2005i.html#10</A> Revoking the Root
+<A HREF="http://www.garlic.com/~lynn/2005v.html#1">http://www.garlic.com/~lynn/2005v.html#1</A> Is Mondex secure?
+<A HREF="http://www.garlic.com/~lynn/2007b.html#47">http://www.garlic.com/~lynn/2007b.html#47</A> newbie need help (ECC and wireless)
+<A HREF="http://www.garlic.com/~lynn/2007i.html#57">http://www.garlic.com/~lynn/2007i.html#57</A> John W. Backus, 82, Fortran developer, dies
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

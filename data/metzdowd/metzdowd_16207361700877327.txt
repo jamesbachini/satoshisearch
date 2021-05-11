@@ -1,0 +1,54 @@
+<PRE>Daniel Carosone &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geek.com.au</A>&gt; writes:
+&gt;<i>On Mon, Feb 04, 2008 at 02:48:08PM -0700, Martin James Cochran wrote:
+</I>&gt;&gt;<i> Additionally, in order to conserve bandwidth you might want to make a
+</I>&gt;&gt;<i> trade-off where some packets may be forged with small probability (in the
+</I>&gt;&gt;<i> VOIP case, that means an attacker gets to select a fraction of a second of
+</I>&gt;&gt;<i> sound, which is probably harmless)
+</I>&gt;<i>
+</I>&gt;<i>This is ok, if you consider the only threat to be against the final endpoint:
+</I>&gt;<i>a human listening to a short-term, disposable conversation. I can think of
+</I>&gt;<i>some counter-examples where these assumptions don't hold:
+</I>&gt;<i>
+</I>&gt;<i>- A data-driven exploit against an implementation vulnerability in your codec
+</I>&gt;<i>  of choice.  Always a possibility, but a risk you might rate differently (or
+</I>&gt;<i>  a patch you might deploy on a different schedule) for conversations with
+</I>&gt;<i>  known and trusted peers than you would for arbitrary peers, let alone
+</I>&gt;<i>  maliciously-inserted traffic. How many image decoding vulnerabilities have
+</I>&gt;<i>  we seen lately, again?
+</I>&gt;<i>[...]
+</I>&gt;<i>Particularly for the first point, early validation for packet integrity in
+</I>&gt;<i>general can be a useful defensive tool against unknown potential
+</I>&gt;<i>implementation vulnerabilities.
+</I>
+This is an example of what psychologists call own-side bias (&quot;everyone thinks
+like us&quot;), in this case the assumption that after a peer has authenticated
+itself it'd never dream of sending a malformed packet and so we don't need to
+do any checking after the handshake has completed.  Why would you trust data
+coming from a remote system just because they've jumped through a few hoops
+before sending it?  I can steal the remote system's credentials or hijack the
+session and then send you anything I want, it's no safer to blindly accept the
+data if there's a MAC attached or not.
+
+More scarily, and specifically for the case of VoIP, the security of many SIP
+devices is absolutely appalling (for German speakers there's a paper on this
+at the DFN-Cert workshop in a few days,
+<A HREF="https://www.dfn-cert.de/events/ws/2008/programm.html">https://www.dfn-cert.de/events/ws/2008/programm.html</A>).  So the obvious attack
+vector is to 0wn the peer's SIP device and ensure that it creates malformed
+data packets well before the security layer ever takes effect.  As a result
+your secured tunnel is pouring out carefully authenticated attack packets as
+fast as it can send them.  The bad guys have been exploiting this for years,
+spamming their malware out to &quot;trusted&quot; friends on contact lists, and it's
+proven quite successful.
+
+Hostile data inside a secure tunnel or wrapper is still hostile data.  As the
+OP said, as long as you can deterministically detect attacks (which a 1-of-n
+packet MAC will do) you're not giving up much security by not MAC'ing all
+packets.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

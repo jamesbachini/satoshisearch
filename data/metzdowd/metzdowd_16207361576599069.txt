@@ -1,0 +1,22 @@
+<PRE>Marcos el Ruptor wrote:
+&gt;&gt;<i> If that's DH exchange, then it's 128 bit one. Fertile ground
+</I>&gt;&gt;<i> for some interesting speculation, don't you think ?
+</I>&gt;<i> 
+</I>&gt;<i> There is no speculation. It is 128-bit DH.
+</I>&gt;<i> 
+</I>&gt;<i> I have reported over three years ago to the Trillian forum that they are 
+</I>&gt;<i> using 128-bit DH and that it is not secure. You can look up my messages 
+</I>&gt;<i> about it and how much I got abused for it by everyone trying to explain 
+</I>&gt;<i> to me that 1) it IS secure and 2) no one cares anyway. They did not 
+</I>&gt;<i> change it since then although they promised to. 
+</I>
+Had a look, but it seems to me they said they wouldn't fix it unless 
+there was an actual, active exploit for it, and my guess would be even 
+then they would just make cosmetic changes to stop that particular 
+instance of an exploit from working..
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

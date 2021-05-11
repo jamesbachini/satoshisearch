@@ -1,0 +1,34 @@
+<PRE>On Sun, Mar 30, 2008 at 05:13:07PM -0400, Ivan Krsti?? wrote:
+
+&gt;<i> That's a brute force search. If your convergence key, instead of being  
+</I>&gt;<i> a simple file hash, is obtained through a deterministic but  
+</I>&gt;<i> computationally expensive function such as PBKDF2 (or the OpenBSD  
+</I>&gt;<i> bcrypt, etc), then step 3 makes an exhaustive search prohibitive in  
+</I>&gt;<i> most cases while not interfering with normal filesystem operation.  
+</I>&gt;<i> What am I missing?
+</I>
+PBKDFS2 is excellent for turning interactively typed pass-phrases into
+keys. It is not entirely clear that it is a good fit for a filesystem.
+Updating any single file is now a computationally intensive process, the
+performance impact may be unacceptable. With PBKDF2 and the iteration
+count set to the for now popular &quot;1000&quot;, a 64K byte file will now trigger
+~~2 million sha1 compression function computations (if I remember the
+sha1 block size correctly as 512 bits or 64 bytes).
+
+A crude cost estimate on typical hardware (openssl speed):
+
+    Doing sha1 for 3s on 8192 size blocks: 57316 sha1's in 3.00s
+
+Extrapolating from this, on 64K sized files, we get ~1200 HMAC operations
+per second. If we iterate that 1000 times, 1.2 key derivations per
+second. The throughput to disk is CPU bound at ~64KB/s, which is rather
+poor.
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,35 @@
+<PRE>
+Harald Koch &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">chk at pobox.com</A>&gt; writes:
+&gt;<i> Crawford Nathan-HMGT87 wrote:
+</I>&gt;&gt;<i> Why require contactless in the first place?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Is swiping one's card, credit-card style too difficult for the average
+</I>&gt;&gt;<i> user?
+</I>&gt;<i>
+</I>&gt;<i> As compared to slapping your wallet on the reader? yes.
+</I>&gt;<i>
+</I>&gt;<i> I swipe my Visa / debit / Tim Horton's cards regularly. With the
+</I>&gt;<i> plethora of bad reader technology out there, no matter how practiced I
+</I>&gt;<i> am it sometimes takes 2-3 tries to get a good read. Heck, sales clerks
+</I>&gt;<i> who swipe hundreds of times per day sometimes have trouble. And that's
+</I>&gt;<i> with a relatively easy to read magnetic stripe...
+</I>
+Here in New York City, we use a swipe based system called Metrocard.
+New Yorkers are not known for passive, accepting behavior, and yet no
+one seems to complain about the swipe system -- it seems to work more
+than well enough, and I have to double swipe at most once every few
+dozen times. The system has held up quite well to quite determined
+attacks, and the cards themselves are insanely cheap to produce.
+
+I therefore expect no one else will ever use the technology --
+anything cheap, secure and well tested in the field can't possibly see
+wide adoption.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

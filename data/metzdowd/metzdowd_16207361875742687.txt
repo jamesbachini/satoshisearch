@@ -1,0 +1,76 @@
+<PRE>William Allen Simpson wrote:
+&gt;<i> I've changed the subject.  Some of my own rants are about mathematical
+</I>&gt;<i> cryptographers that are looking for the &quot;perfect&quot; solution, instead of
+</I>&gt;<i> practical security solution.  Always think about the threat first!
+</I>&gt;<i> 
+</I>&gt;<i> In this threat environment, the attacker is unlikely to have perfect
+</I>&gt;<i> knowledge of the sequence.  Shared resolvers are the most critical
+</I>&gt;<i> vulnerability, but the attacker isn't necessarily in the packet path, and
+</I>&gt;<i> cannot discern more than a few scattered numbers in the sequence.  The
+</I>&gt;<i> more sharing (and greater impact), the more sparse the information.
+</I>&gt;<i> 
+</I>&gt;<i> In any case, the only &quot;perfect&quot; solution is DNS-security.  Over many
+</I>&gt;<i> years, I've given *many* lectures to local university, network, and
+</I>&gt;<i> commercial institutions about the need to upgrade and secure our zones.
+</I>&gt;<i> But the standards kept changing, and the roots and TLDs were not secured.
+</I>&gt;<i> 
+</I>&gt;<i> Now, the lack of collective attention to known security problems has
+</I>&gt;<i> bitten us collectively.
+</I>&gt;<i> 
+</I>&gt;<i> Never-the-less, with rephrasing, Ben has some good points....
+</I>
+I don't see any actual rephrasing below, unless you are suggesting I 
+should have said &quot;unpredictable&quot; instead of &quot;random&quot;. I think that's a 
+perfectly fine substitution to make.
+
+&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;<i> But just how GREAT is that, really? Well, we don't know. Why? Because 
+</I>&gt;&gt;<i> there isn't actually a way test for randomness. ...
+</I>&gt;<i> 
+</I>&gt;<i> While randomness is sufficient for &quot;perfect&quot; unpredictability, it isn't
+</I>&gt;<i> necessary in this threat environment.
+</I>
+I agree, but my point is unaltered if you switch &quot;randomness&quot; to 
+&quot;unpredictability&quot;.
+
+&gt;<i> Keep in mind that the likely unpredictability is about 2**24.  In many
+</I>&gt;<i> or most cases, that will be implementation limited to 2**18 or less.
+</I>
+Why?
+
+&gt;&gt;<i> Your DNS resolver could be using some easily predicted random number 
+</I>&gt;&gt;<i> generator like, say, a linear congruential one, as is common in the 
+</I>&gt;&gt;<i> rand() library function, but DNS-OARC would still say it was GREAT.
+</I>&gt;<i> 
+</I>&gt;<i> In this threat environment, a better test would be for determination of a
+</I>&gt;<i> possible seed for any of several common PRNG.  Or lack of PRNG.
+</I>
+I don't see why. A perfectly reasonable threat is that the attacker 
+reverse engineers the PRNG (or just checks out the source). It doesn't 
+need to be common to be predictable.
+
+&gt;&gt;<i> Oh, and I should say that number of ports and standard deviation are 
+</I>&gt;&gt;<i> not a GREAT way to test for &quot;randomness&quot;. For example, the sequence 
+</I>&gt;&gt;<i> 1000, 2000, ..., 27000 has 27 ports and a standard deviation of over 
+</I>&gt;&gt;<i> 7500, which looks pretty GREAT to me. But not very &quot;random&quot;.
+</I>&gt;&gt;<i>
+</I>&gt;<i> Again, the question is not randomness, but unpredictability.
+</I>
+Again, changing the words does not alter my point in any way, though I 
+do agree that unpredictable is a better word.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

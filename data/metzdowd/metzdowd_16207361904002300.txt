@@ -1,0 +1,33 @@
+<PRE>Darren Lasko wrote:
+&gt;<i> Arshad Noor wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> &quot;6.5 Develop all web applications based on secure coding guidelines
+</I>&gt;&gt;<i> such as the Open Web Application Security Project guidelines&quot;
+</I>&gt;&gt;<i>
+</I>&gt;<i> 
+</I>&gt;<i> Isn't this vulnerability already in the Top 10, specifically &quot;A7 - Broken 
+</I>&gt;<i> Authentication and Session Management&quot; (
+</I>&gt;<i> <A HREF="http://www.owasp.org/index.php/Top_10_2007-A7">http://www.owasp.org/index.php/Top_10_2007-A7</A>)?
+</I>&gt;<i> 
+</I>
+I was just informed of this 10 minutes ago, privately.
+
+Not sure how I missed this the last time I read the document
+(perhaps because I was focusing on remediating an application
+related to two other vulnerabilities on a project), but the
+bank examiners also apparently missed this for Wachovia.
+
+While login pages are not required to be PCI-DSS compliant
+(since they generally do not deal with credit card numbers,
+it has been my impression that many companies are adopting
+OWASP guidelines for all their web-projects.  Perhaps its
+taking time for some more than others.
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

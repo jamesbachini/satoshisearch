@@ -1,0 +1,23 @@
+<PRE>my impression has been that with lack of takeup of various kinds of security
+solutions that were extensively marketed in the 90s ... that the current
+situation has many of those same organizations heavily involved in behind
+the scenes lobbying
+
+saw some of that nearly a decade ago when we were brought in to
+help wordsmith the cal. state electronic signature legislation which
+led to also be brought in on federal electronic signature legislation
+... some past posts
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#signature">http://www.garlic.com/~lynn/subpubkey.html#signature</A>
+
+some other references ...
+
+Hackers break into transport smart card
+<A HREF="http://www.dutchnews.nl/news/archives/2008/01/german_hackers_break_transport.php">http://www.dutchnews.nl/news/archives/2008/01/german_hackers_break_transport.php</A>
+Transport smart card hacked again (update)
+<A HREF="http://www.dutchnews.nl/news/archives/2008/01/transport_smart_card_hacked_ag.php">http://www.dutchnews.nl/news/archives/2008/01/transport_smart_card_hacked_ag.php</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

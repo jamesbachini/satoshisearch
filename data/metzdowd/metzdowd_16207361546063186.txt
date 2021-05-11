@@ -1,0 +1,105 @@
+<PRE>
+From: Radu Sion &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sion at crypto.cs.sunysb.edu</A>&gt;
+Subject: [ias-opportunities] CFP: FC 2008
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ias-opportunities at cerias.purdue.edu</A>
+Date: Mon, 24 Sep 2007 18:04:40 -0400
+Reply-To: Radu Sion &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sion at crypto.cs.sunysb.edu</A>&gt;
+
+
+Dear Colleague,
+
+This is a call for papers for the Financial Cryptography and Data
+Security Conference in Cozumel, Mexico, 28-31 January, 2008
+(<A HREF="http://fc08.ifca.ai">http://fc08.ifca.ai</A>).
+
+Financial Cryptography and Data Security is a major international
+forum for research, advanced development, education, exploration, and
+debate regarding information assurance in the context of finance and
+commerce. The conference covers all aspects of securing transactions
+and systems. Submissions focusing on both fundamental and applied
+real-world deployments are solicited.
+
+This year, for the first time, we are also accepting submissions for
+posters and short papers. The poster session is the perfect venue to
+share a provocative opinion, interesting established or preliminary
+work, or a cool idea that will spark discussion. Poster presenters
+will benefit from a multi-hour session to discuss their work, get
+exposure, and receive feedback from attendees. The intention behind
+short papers (peer-reviewed) is to encourage authors to introduce
+work in progress, novel applications and corporate or industrial
+experiences. Short papers will be evaluated with a focus on novelty
+and potential for sparking participants' interest and future
+research.
+
+Free Child Care
+
+We are also happy to offer free child care as part of the conference.
+The hotel offers a kids' club, with supervised childcare and
+activities from 9am to 5pm for children of age 5-12 whose parents are
+somewhere on the premises (in the conference room is fine). This is
+free of charge for hotel guests. Baby-sitting is available for US$5
+per child per hour. Additionally, as part of the room rate for
+conference attendees, children of age 0-12 are free of charge
+(including food).
+
+Financial Assistance for Primary Care Giver
+
+We will also provide financial assistance to a scholar who is a
+primary care giver, and who has their research paper accepted for
+presentation. $750 will be awarded to pay for childcare and other
+family-related expenses related to attending the conference.
+
+DATES
+
+Submission: 10 October 
+Posters: 13 November 
+Panels: 13 November 
+
+ORGANIZERS
+
+Program Chair: Gene Tsudik, UC Irvine
+General Chair: Radu Sion, Stony Brook
+
+Local Arrangement Chair: Rafael Hirschfeld, Unipay
+Poster Chair: Bogdan Carbunar, Motorola Labs
+Publicity &amp; Sponsorship Co-Chair: Roberto Gomez, Tecnologico de Monterrey
+
+Program Committee
+
+N. Asokan, Nokia Research
+Giuseppe Ateniese, Johns Hopkins University
+Nikita Borisov, University of Illinois, Urbana-Champaign
+George Danezis, Katholic University of Leuven
+Stefan Dziembowski, University of Rome
+Kevin Fu, University of Massachusetts, Amherst
+Philippe Golle, PARC
+Dieter Gollmann, Technical University of Hamburg-Harburg
+Aggelos Kiayias, Univeristy of Connecticut
+Javier Lopez, University of Malaga
+Arjen Lenstra, Swiss Federal Institute of Technology Lausanne
+Ninghui Li, Purdue University
+Patrick McDaniel, Pennsylvania State University
+Alessandro Mei, University of Rome
+Refik Molva, Eurecom Institute
+Pino Persiano, University of Salerno
+Ahmed Sadeghi, University of Bochum
+Michael Szydlo, Akamai Technologies
+Suzanne Wetzel, Stevens Institute of Technology 
+
+For more details please see <A HREF="http://fc08.ifca.ai.">http://fc08.ifca.ai.</A>
+
+We apologize if you receive multiple copies of this 
+message. We did our best to avoid this. Moreover, 
+please let us know asap if you would like to be 
+removed from this mailing list -- we would not 
+like you to perceive this as spam. Please help 
+us distribute this to other interested colleagues.
+
+Best Regards,
+Financial Cryptography and Data Security 2008 Organizers
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

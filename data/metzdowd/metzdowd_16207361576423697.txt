@@ -1,0 +1,29 @@
+<PRE>&gt;<i> If that's DH exchange, then it's 128 bit one. Fertile ground
+</I>&gt;<i> for some interesting speculation, don't you think ?
+</I>
+There is no speculation. It is 128-bit DH.
+
+I have reported over three years ago to the Trillian forum that they  
+are using 128-bit DH and that it is not secure. You can look up my  
+messages about it and how much I got abused for it by everyone trying  
+to explain to me that 1) it IS secure and 2) no one cares anyway.  
+They did not change it since then although they promised to. I'd also  
+made an open-source replacement DLL back then with 512-bit ECDH,  
+which also supported their 128-bit DH clients if they initiated  
+secure communication first, but it may have some compatibility issues  
+with later versions of Trillian. It's supposed to display the common  
+key fingerprint, not sure if it works now. Feel free to correct it  
+and to improve it, but Cerulean Studios won't pay for it. It's still  
+on <A HREF="http://cryptolib.com/ruptor/">http://cryptolib.com/ruptor/</A>
+
+Marcos el Ruptor
+
+PS: There was also a buffer overflow in their original DLL if you  
+send a very long key. I don't know if they have fixed it or not. I  
+haven't used Trillian since I bought a Mac.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

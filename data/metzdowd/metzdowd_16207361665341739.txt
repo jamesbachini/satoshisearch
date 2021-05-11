@@ -1,0 +1,29 @@
+<PRE>On Jan 5, 2008, at 3:47 AM, Alexander Klimov wrote:
+&gt;<i> It sounds like: we cannot make secure OS because it is too large --
+</I>&gt;<i> let us don't bother to make a smaller secure OS, just add some more
+</I>&gt;<i> software and hardware to an existent system and then it will be
+</I>&gt;<i> secure. Sounds like a fairytale
+</I>
+I don't think this is really being said. In fact, I've been pretty  
+concretely saying &quot;here's an OS not designed from scratch, but with  
+certain pieces modified, that's likely to be extremely resistant to  
+viruses, malware and other pests&quot;, in regard to the OS being designed  
+for the OLPC. We're still implementing large chunks of the security  
+system, but my spec[0] has been public for a year, our security  
+working group contains a number of people from this list, and no one  
+so far has claimed that this design won't successfully resist most --  
+though not all -- classes of attacks we've seen or can presently  
+imagine seeing in the desktop security realm.
+
+
+
+[0] <A HREF="http://wiki.laptop.org/go/OLPC_Bitfrost">http://wiki.laptop.org/go/OLPC_Bitfrost</A>
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

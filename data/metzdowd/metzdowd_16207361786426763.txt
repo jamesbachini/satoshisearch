@@ -1,0 +1,72 @@
+<PRE>[Moderator's note: A quick reminder: please use ASCII except if you
+need Unicode to spell your name right. Microsoft's proprietary quote
+marks are not a standard and don't look right on non-Microsoft
+displays. I edited them out of this by hand. --Perry]
+
+Debian have a stunning example of how blindly fixing &quot;problems&quot; pointed 
+out by security tools can be disastrous.
+
+I've blogged about it here: <A HREF="http://www.links.org/?p=327">http://www.links.org/?p=327</A>
+
+Vendors Are Bad For Security
+
+I've ranted about this at length before, I'm sure - even in print, in 
+O'Reily's Open Sources 2. But now Debian have proved me right (again) 
+beyond my wildest expectations. Two years ago, they &quot;fixed&quot; a &quot;problem&quot; 
+in OpenSSL reported by valgrind[1] by removing any possibility of adding 
+any entropy to OpenSSL's pool of randomness[2].
+
+The result of this is that for the last two years (from Debian's &quot;Edgy&quot; 
+release until now), anyone doing pretty much any crypto on Debian (and 
+hence Ubuntu) has been using easily guessable keys. This includes SSH 
+keys, SSL keys and OpenVPN keys.
+
+What can we learn from this? Firstly, vendors should not be fixing 
+problems (or, really, anything) in open source packages by patching them 
+locally - they should contribute their patches upstream to the package 
+maintainers. Had Debian done this in this case, we (the OpenSSL Team) 
+would have fallen about laughing, and once we had got our breath back, 
+told them what a terrible idea this was. But no, it seems that every 
+vendor wants to &quot;add value&quot; by getting in between the user of the 
+software and its author.
+
+Secondly, if you are going to fix bugs, then you should install this 
+maxim of mine firmly in your head: never fix a bug you don't understand. 
+I'm not sure I've ever put that in writing before, but anyone who's 
+worked with me will have heard me say it multiple times.
+
+Incidentally, while I am talking about vendors who are bad for security, 
+it saddens me to have to report that FreeBSD, my favourite open source 
+operating system, are also guilty. Not only do they have local patches 
+in their ports system that should clearly be sent upstream, but they 
+also install packages without running the self-tests. This has bitten me 
+twice by installing broken crypto, most recently in the py-openssl package.
+
+[1] Valgrind is a wonderful tool, I recommend it highly.
+
+[2] Valgrind tracks the use of uninitialised memory. Usually it is bad 
+to have any kind of dependency on uninitialised memory, but OpenSSL 
+happens to include a rare case when its OK, or even a good idea: its 
+randomness pool. Adding uninitialised memory to it can do no harm and 
+might do some good, which is why we do it. It does cause irritating 
+errors from some kinds of debugging tools, though, including valgrind 
+and Purify. For that reason, we do have a flag (PURIFY) that removes the 
+offending code. However, the Debian maintainers, instead of tracking 
+down the source of the uninitialised memory instead chose to remove any 
+possibility of adding memory to the pool at all. Clearly they had not 
+understood the bug before fixing it.
+
+P.S. I'd link to the offending patch in Debian's source repository. If I 
+could find a source repository. But I can't.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

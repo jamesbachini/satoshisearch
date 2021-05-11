@@ -1,0 +1,33 @@
+<PRE>On Wed, 2 Jul 2008, Peter Gutmann wrote:
+
+|<i> Date: Wed, 02 Jul 2008 12:08:18 +1200
+</I>|<i> From: Peter Gutmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A>&gt;
+</I>|<i> To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+</I>|<i> Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dbrown at forsythe.com</A>
+</I>|<i> Subject: Re: Strength in Complexity?
+</I>|<i> 
+</I>|<i> &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+</I>|<i> 
+</I>|<i> &gt;No. In fact, it is about as far from the truth as I've ever seen.
+</I>|<i> &gt;No real expert would choose to deliberately make a protocol more 
+</I>|<i> &gt;complicated.
+</I>|<i> 
+</I>|<i> IPsec.  Anything to do with PKI.  XMLdsig.  Gimme a few minutes and
+</I>|<i> I can provide a list as long as your arm.  Protocol designers *love*
+</I>|<i> complexity.  The more complex and awkward they can make a protocol,
+</I>|<i> the better it has to be.
+</I>The cynical among us might rephrase that as:  &quot;The more complex and
+awkward they can make a protocol, the better it will be at generating
+future consulting work.&quot;  :-(
+
+(I don't think that applies to your list, where the root causes have
+more to do with design-by-committee and the consequent need to make
+everyone happy.)
+							-- Jerry
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

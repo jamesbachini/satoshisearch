@@ -1,0 +1,88 @@
+<PRE>re:
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#30">http://www.garlic.com/~lynn/aadsm28.htm#30</A> Fixing SSL
+
+so lots of the AADS
+<A HREF="http://www.garlic.com/~lynn/x959.html#aads">http://www.garlic.com/~lynn/x959.html#aads</A>
+
+scenarios are that every place a password might appear, have
+a public key instead.
+
+for various of the cookie authentication operations ... also
+think kerberos tickets. recent reference
+<A HREF="http://www.garlic.com/~lynn/2008c.html#31">http://www.garlic.com/~lynn/2008c.html#31</A> Kerberized authorization service
+
+part of the scenario for cookie/ticket encryption ... involving
+servers, is brute force attack on the server secret key. the cookie
+instead of all encrypted data ... has some sort of client registration
+value ... analogous to an account number or userid. the cookie caries the
+registration value followed by the server encrypted data.  the
+encryption part uses a derived key ... formed by combination of the
+server's secret key and the client's registration value. these derived
+key scenarios are also found in transit system operation (both
+magstripe and memory chip) as well as financial transactions.
+
+the issue then is initial registration ... the part where the user
+chooses their userid (and/or the client registration value is
+otherwise selected) and supplies a password (but in this case a public
+key). m'soft and others have been using CAPTCHA to weed-out the
+non-humans, but this has come under attacks. reference to recent news
+items
+<A HREF="http://www.garlic.com/~lynn/2008d.html#2">http://www.garlic.com/~lynn/2008d.html#2</A> Spammer' bot cracks Microsoft's 
+CAPTCHA
+
+the ticket/cookie carries the clients public key (and whatever other
+characteristics) ... which then can be used by the server(s) to
+perform dynamic authentication (digital signing of some server
+supplied, random data, countermeasure to replay attacks). this is in
+lieu of server having to maintain the client account record ... ala a
+RADIUS scenario where public key has been registered in lieu of a
+password (some sort of online access to RADIUS account
+records). various RADIUS public key in lieu of password postings:
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#radius">http://www.garlic.com/~lynn/subpubkey.html#radius</A>
+
+the ticket/cookie scenario (with derived key encryption) is cross
+between dynamic server-side account record data (say RADIUS
+repository) and stale, static digital certificate scenario. as in the
+transit gate operation, the ticket/cookie could also be retrieved,
+decrypted, updated, re-encrypted, and returned as part of the
+operation. initial server hand-shakes can include server sending some
+random challenge data. The client returns the digital signature
+and their previously obtained cookie. in the straight RADIUS public
+key handshake scenario, just the digital signature and client
+userid/account-number is returned since the rest of the cookie/ticket
+equivalent info is online in the RADIUS account repository.
+
+The straight RADIUS scenario would be to combine the server-side
+random challenge data and combine it with the client registration
+value (account number, userid) and whatever else the client-side
+digital signing requires ... and return the userid/account-number
+any other data and digital signature (i.e. server-side has to be
+able to reconstruct what the client actually digitally signed
+as part of verifying the digital signature). In the straight RADIUS
+scenario, the public key (and any associated permissions, authorization,
+etc) is obtained from the RADIUS repository. In cookie/ticket
+scenario, it is obtained from the cookie/ticket appended to the
+message.
+
+The business process still has the initial registration phase
+... where the original cookie is created (or in the RADIUS
+scenario, where the userid definitiion is initially created) and the
+public key is supplied (in lieu of a password).
+
+This is also effectively the original certificateless pk-init scenario
+for kerberos (aka public key in lieu of password)
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#kerberos">http://www.garlic.com/~lynn/subpubkey.html#kerberos</A>
+
+The cookie scenario is standard client/server ... attempting
+to eliminate the server having to retain the account
+record on behalf of every client (as in either the RADIUS
+and/or KERBEROS scenario). Encrypting of the cookie data
+is standard ... although transit systems and financial transactions
+have gone to derived key for the situation ... as countermeasure
+to brute force attack on the infrastructure secret key.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

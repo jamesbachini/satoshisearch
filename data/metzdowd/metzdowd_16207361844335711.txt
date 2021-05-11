@@ -1,0 +1,55 @@
+<PRE>On Sun, Jul 20, 2008 at 04:14:33PM -0600, Matt Ball wrote:
+
+&gt;<i> &gt;From a little bit of off-line discussion, I think I've got a restatement of
+</I>&gt;<i> the problem that is more suitable to those with a stronger programming
+</I>&gt;<i> background than mathematical background:
+</I>&gt;<i> 
+</I>&gt;<i>     &quot;If someone uses the __random32 function as defined in the 2.6.26 Linux
+</I>&gt;<i> kernel, and leaks to you the result of taking successive outputs modulo
+</I>&gt;<i> 28233 (= 9 * 3137), can you determine the probable 96-bit internal state
+</I>&gt;<i> with fewer than 1000 outputs and with modest processing power (e.g., a
+</I>&gt;<i> laptop computer running less than a day)?&quot;
+</I>&gt;<i> 
+</I>&gt;<i> Here is a C implementation of __random32:
+</I>&gt;<i> 
+</I>&gt;<i> typedef unsigned long u32;
+</I>&gt;<i> struct rnd_state { u32 s1, s2, s3; };
+</I>&gt;<i> static u32 __random32(struct rnd_state *state)
+</I>&gt;<i> {
+</I>&gt;<i> #define TAUSWORTHE(s,a,b,c,d) ((s&amp;c)&lt;&lt;d) ^ (((s &lt;&lt;a) ^ s)&gt;&gt;b)
+</I>&gt;<i> 
+</I>&gt;<i>     state-&gt;s1 = TAUSWORTHE(state-&gt;s1, 13, 19, 4294967294UL, 12);
+</I>&gt;<i>     state-&gt;s2 = TAUSWORTHE(state-&gt;s2,  2, 25, 4294967288UL, 4);
+</I>&gt;<i>     state-&gt;s3 = TAUSWORTHE(state-&gt;s3,  3, 11, 4294967280UL, 17);
+</I>&gt;<i> 
+</I>&gt;<i>     return (state-&gt;s1 ^ state-&gt;s2 ^ state-&gt;s3);
+</I>&gt;<i> }
+</I>
+After any consecutive 96 outputs, the 97th is a fixed linear function of
+those just observed. It is not necessary to determine the internal state.
+
+The internal state is s_n = (A**n)(s_0) for a fixed 96x96 matrix A (the
+fact that it is a direct product of 3 32-bit matrices is not important).
+This matrix has a minimum polynomial of degree at most 96.
+
+	A**96 = c_95 * A**95 + c_94 * A**94 ... + c_0 * I
+
+The 32-bit output then also satisfies:
+
+	x_96 = c_95 * x_95 + c_94 * x_94 ... + c_0
+
+for the same coefficients.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

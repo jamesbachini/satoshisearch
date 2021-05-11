@@ -1,0 +1,22 @@
+<PRE>Perry wrote:
+
+&gt;<i> His firm routinely discovers attempted credit card fraud. However,
+</I>&gt;<i> since there is no way for them to report attempted fraud to the credit
+</I>&gt;<i> card network (the protocol literally does not allow for it), all they
+</I>&gt;<i> can do is refuse the transaction -- they literally have no mechanism
+</I>&gt;<i> to let the issuing bank know that the card number was likely stolen.
+</I>
+A former boss has become &quot;Head of Fraud Technology&quot; (I asked him who
+was &quot;Head of Anti-Fraud Technology&quot;) and he answers like this.
+
+  I am not really a cards man but I would have said the good
+  old telephone, a call to the acquirer, would be the way. The
+  acquirer would then pass that on to the issuer. Granted the
+  merchant may not know for certain that had happened, but he
+  has done his duty at that point.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

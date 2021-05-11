@@ -1,0 +1,28 @@
+<PRE>Ben Laurie wrote:
+&gt;<i> But doesn't that prove the point? The trust that you consequently place 
+</I>&gt;<i> in the web server because of the certificate _cannot_ be copied to 
+</I>&gt;<i> another webserver. That other webserver has to go out and buy its own 
+</I>&gt;<i> copy, with its own domain name it it.
+</I>
+A copy is something identical. So, in fact you can copy that server 
+cert to another server that has the same domain (load balancing), and 
+it will work. Web admins do it all the time. The user will not notice 
+any difference in how the SSL will work.
+
+Another point: When we talk about a copy, we're technically talking 
+about a transmission. To copy a web page to your hard disk is to 
+transmit bits from the web server to your disk. To say that we cannot 
+copy trust would, thus, be the same as to say that we cannot transmit 
+trust. But we can and do transmit trust -- we just have to do it right 
+(see refs in previous post). Similarly, we have to do it right when we 
+transmit data (for example, if we don't have enough bandwidth or if 
+there is too much noise, the data will be not be 100% transferred).
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

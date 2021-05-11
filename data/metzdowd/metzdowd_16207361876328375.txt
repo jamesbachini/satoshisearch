@@ -1,0 +1,50 @@
+<PRE>
+Arshad Noor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt; writes:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> That said, kerberos tickets can persist even in the face of
+</I>&gt;&gt;<i> disconnects, so once you've connected tickets can survive as long as
+</I>&gt;&gt;<i> you wish.
+</I>&gt;<i>
+</I>&gt;<i> But, can the tickets be used for anything useful when the
+</I>&gt;<i> network does not exist?
+</I>
+If you have a locally service that uses them, sure. In any case, a
+ticket gives you access to a crypto key, and you can use that for all
+sorts of things.
+
+&gt;<i> SKMS clients can continue to provide the capability they were
+</I>&gt;<i> designed for, even when the network is unavailable - it was a
+</I>&gt;<i> critical design goal.
+</I>
+Well, again, you can do the same thing with Kerberos, and Kerberos has
+the added advantage that there is a complete spec that fully handles
+all the details and is actually implemented and available off the
+shelf -- even built in to Windows. SKMS is vaporware that leaves all
+the hard parts of the specification out.
+
+&gt;<i> If this comes back to Ben's original statement about it being
+</I>&gt;<i> just a key-escrow service, then so be it.  But lets not dismiss
+</I>&gt;<i> the value standardization and abstraction of this capability
+</I>&gt;<i> provides
+</I>
+I'm inclined to dismiss it, if only because you can do all of it with
+existing, implemented and fully specified tools with no added
+complexity. I actually have much larger reservations, but I think that
+alone eliminates the reason to consider it.
+
+&gt;<i> - after all people didn't really need DBMS's 30 years
+</I>&gt;<i> ago because they could do all the data-management operations
+</I>&gt;<i> inside each application quite well, thank you!
+</I>
+I think that comparing the advance SQL made with SKMS seems a bit
+unreasonable.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

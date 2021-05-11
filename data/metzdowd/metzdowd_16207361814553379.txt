@@ -1,0 +1,48 @@
+<PRE>Lawerence Spracklen's Blog:
+<A HREF="http://blogs.sun.com/sprack/entry/detailed_t2_crypto_info">http://blogs.sun.com/sprack/entry/detailed_t2_crypto_info</A>
+
+  Detailed T2 crypto info
+
+  Very detailed info on the UltraSPARC T2 cryptographic accelerators can be
+  found here on the OpenSPARC website (the pertinent info can be found in
+  chapter-21 of the doc)
+
+  Posted on: Sep 11, 2007
+
+With a rebuttal that the Ch 21 in the document found there contained the PCI
+Express Interface Unit:
+
+  Unfortunately, it looks like the accelerator details have been removed :-(
+  The SPU is not technically part of OpenSPARC....
+
+  Posted by Lawrence Spracklen on November 05, 2007 at 11:39 AM PST #
+
+There's the aspect of competition.  The on core crypto gives one heck of a
+competitive edge for networking applications, and performance figures found
+on Dr. Spracklen's site show that the crypto stream processors across the
+CMT can keep up with the 10G Ethernet ports.  I can't see them giving a
+potential competitor everything needed to compete directly.  It'd be
+reminiscent of IBM and Amdahl clones, captive markets and margins for
+hardware threatened as easily as National's memory boards.  I'm sure Sun is
+wiley enough to have some key patents, too.  A case of encouraging help to
+enlarge the ecosystem, but not empowering direct competition.  They don't
+mind if you develop more markets, after all Sun can play there, too.
+
+I've also wondered if a reason they didn't release it is because they bought
+the 'IP' from someone.  There are other instances - parts of the System on a
+Chip.  In the OpenSPARC T2 System on a Chip Micro Architecture pdf there is
+a disclaimer on page 3:
+
+  Note ? OpenSPARC T2 currently does not include PCI-Express and 10Gigabit
+  Ethernet design implementation due to current legal restrictions.
+  Equivalent models may be available in the subsequent releases of OpenSPARC
+  T2.
+
+If the real reason is competition, it's always nice to have a good excuse,
+too.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

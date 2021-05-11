@@ -1,0 +1,26 @@
+<PRE>Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; writes:
+
+&gt;<i>I have a question about all this. There seems to be a disconnect between the
+</I>&gt;<i>approximate prices mentioned here - too cheap to only do small transactions,
+</I>&gt;<i>etc - and what I have seen when looking at various of the sites. Maybe I'm
+</I>&gt;<i>missing something and you could correct my thinking.
+</I>
+The difference is that you're paying for service with the higher-priced
+vendors (and this is something new that's only really come in in the last
+couple of years).  Cheap ones are just a dump of some looted merchant database
+or whatever where you may or may not get the data after paying some fly-by-
+night operator and when it arrives half the cards will be invalid.  The
+premium-priced ones are established vendors charging for the level of service
+they provide: You get a guaranteed-good card (typically with 48- or 72-hour
+replacement guarantee), you can use escrow services to guarantee delivery of
+goods, you may get a tech support hotline (assuming you speak Russian), and so
+on (it varies from seller to seller, obviously).  But what you're paying for
+isn't really the card but the level of service that comes with it.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

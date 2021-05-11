@@ -1,0 +1,113 @@
+<PRE>|<i> &gt;   SAN FRANCISCO -- Toshiba Corp. has claimed a major breakthrough in
+</I>|<i> &gt;   the field of security technology: It has devised the world's
+</I>|<i> &gt;   highest-performance physical random-number generator (RNG)
+</I>|<i> &gt;   circuit.
+</I>|<i> &gt;
+</I>|<i> &gt;   The device generates random numbers at a data rate of 2.0 megabits
+</I>|<i> &gt;   a second, according to Toshiba in a paper presented at the
+</I>|<i> &gt;   International Solid-State Circuits Conference (ISSCC) here.
+</I>|<i> 
+</I>|<i> I'm wondering if they've considered the possibility of EMI skewing the
+</I>|<i> operation of the device, or other means of causing the device to
+</I>|<i> genearate &quot;less than completely random&quot; numbers.
+</I>I wonder if they considered the possibility that the device will be
+destroyed by a static discharge?
+
+It's one thing to criticize a design about which you know nothing on
+the basis of a broad, little-known or brand new, attack.  But the
+fact that EMI can skew devices has been known for years.  Hardware
+that may need to work in (deliberately or otherwise) high-EMI
+environments has to be appropriately designed and shielded (just as
+devices have for years been protected against static discharge
+through multiple layers of protection, from the chip design itself
+through ground straps for people handling them).
+
+I know nothing at all about Toshiba or its designers.  Do you know
+something that makes you think they are so incompetent that they
+are unaware of well-known issues that arise in the design of the
+kinds of devices they work with?
+
+|<i> It is certainly an interesting device; I think this would find
+</I>|<i> considerable use in communication infrastructure and high-bandwidth
+</I>|<i> applications.  As someone else mentioned, generating a single, random,
+</I>|<i> 128 bit seed is not too difficult with current technology, but it
+</I>|<i> doesn't address the issue that often times you want more than just a
+</I>|<i> single key.  One of the problems with the Linux random number generator
+</I>|<i> is that it happens to be quite slow, especially if you need a lot of
+</I>|<i> data.
+</I>|<i> 
+</I>|<i> Some potential uses:
+</I>|<i> 1.) Secure file erasure.
+</I>Why?  Writing &quot;hard random&quot; values over the previous data is neither
+more nor less secure than writing zeroes, unless you descend to the
+level of attacking the disk surface and making use of remnance effects.
+Once you do that ... it's still not clear that writing random values is
+better or worse than writing all zeroes!  (As Peter Gutmann showed
+years ago, there are *highly technology-specific sets of patterns*
+that do a better job than all zeroes, or all ones, or whatever.
+There's little reason to believe that a random set of bits is good
+for much of anything in this direction.)
+
+If you're concerned about someone distinguishing between erased
+data and real data ... if the real data is unencrypted, then the
+game is over anyway.  If the real data is encrypted, you want the
+erased data to look &quot;exactly as random&quot; as the encrypted real
+data.  That is, if you believe that your AES-encrypted (say)
+data can be distinguished from random bits without knowning the
+key, then if you fill the erased blocks with *really* random bits,
+the distinguisher will tell you exactly where the real data is!
+Better to use exactly the same encryption algorithm to generate
+your &quot;random&quot; erasure pattern.
+
+BTW, even pretty average disks these days can write 50 MB/second,
+or 200 times the rate at which this device can generate random bits.
+
+|<i> 2.) OTP keygen for those _really_ high security applications.
+</I>OK.
+
+|<i> 3.) Faster symmetric keyset generation.  You know, when you need to
+</I>|<i> build 32k keys...
+</I>OK, though given the computational overhead involved in generating
+symmetric keys, it's hard to see the random number generation as the
+throttling factor.
+
+|<i> 4.) Random seeding of communication packets.
+</I>If you're talking about inserting fillers to thwart traffic analysis,
+the same argument as for erasing disk blocks:  Either you believe
+your encrypted packets can't be distinguished from random, in which
+case you don't need the generator; or you are afraid they *can* be,
+in which case you'd better not use the generator!
+
+|<i> There used to be (maybe still) a TCP spoofing exploit that relied on the
+</I>|<i> timing of packets; there are also various de-anonymization attacks based
+</I>|<i> on clock skew.  With a chip like this, you could add a small, random
+</I>|<i> number to the timestamp, or even packet delay, and effectively thwart
+</I>|<i> such attacks.  Such systems need high-bandwidth, random number
+</I>|<i> generators.
+</I>I don't buy it.  First off, the rates are pretty low - how many packets
+per second do you send?  Second, the attacks involved are probably
+impossible to counter using software, because the timing resolutions are
+too small.  Maybe you can build random jitter into the hardware itself -
+but that brings in all kinds of other issues.  (The hardware is, of
+course, *already* introducing random jitter - that's the basis of the
+attack.  Just adding more without getting rid of the bias that enables
+the attacks is little help; at worst, it just requires the attacker to
+take more samples to average away the extra noise.  But if you can get
+rid of the bias - do you still need the random jitter?)
+
+I think this is a technically interesting innovation, and if as a result
+chips come with reasonable random number generators - that would be
+good.  But I'm unconvinced that there are many real applications that
+need data rates even approaching the numbers here.  (If it's as cheap to
+produce 2 Mb/sec as 2 Kb/sec - then it can't hurt to have the higher
+value.  As someone else remarked, we can always stir a whole bunch of
+bits together into one to make attacks that much harder.  But there are
+few cases where 2 Mb/sec solves a problem that 2 Kb/sec can't.)
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

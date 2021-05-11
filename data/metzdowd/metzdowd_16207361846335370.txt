@@ -1,0 +1,26 @@
+<PRE>A recent press release about a new cryptographic product, &quot;Permanent  
+Privacy&quot; (P.P.), mentioning my name, has led to a slew of  
+dramatically mistaken reports. Corrections: I have never had a  
+cryptography-related connection to Harvard. I had nothing to  do with  
+the press release.
+
+Concerning my alleged support for the claim that P.P. provides  
+&quot;...the world's first practical data encryption system that is  
+absolutely unbreakable.&quot;:
+
+Its &quot;practical&quot; versions are not &quot;absolutely unbreakable&quot;, as I tried  
+hard to convince them. The only claim I ever supported was that if  
+the additive stream cipher that is one component of P.P. consists of  
+a properly managed 'One-Time-Pad', it (obviously) provides  
+unbreakable encryption.
+
+Peter Schweitzer
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

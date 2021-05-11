@@ -1,0 +1,119 @@
+<PRE>
+Today's hall of shame entrant is, oddly, not a bank, but Yahoo!.
+
+     Yahoo! Wallet. Because shopping is more fun than typing.
+
+     o Store all your credit card, shipping and billing information.
+       (Never type it in again!)
+     o Easy check out at 1000s of merchants.
+     o Use Wallet for purchases all around Yahoo!
+     o Safe, Simple, and Secure.
+
+     Sign up now.
+
+        -- <A HREF="http://wallet.yahoo.com/">http://wallet.yahoo.com/</A>
+
+Earlier today, I discovered that someone had stolen my credit card
+number.
+
+These days, it is important to test out the credit card you've stolen
+somehow before using it for a big purchase. If you have physical
+possession of the card, the usual means these days is to do a small
+charge at a gas station. If you don't have physical possession, you
+need other means. Apparently, the means by which my particular thieves
+tested out their new acquisition was with the use of Yahoo!'s &quot;Yahoo!
+Wallet&quot; facility, and this is apparently a spreading practice.
+It is with no small irony that &quot;Yahoo! Wallet&quot; advertises itself as
+&quot;Safe, Simple and Secure&quot;.
+
+My issuing bank shut off my card after a charge was made with &quot;Yahoo!
+Wallet&quot;. The charge was for $1. There was also a much larger
+suspicious charge, but the test was apparently via &quot;Yahoo!  Wallet&quot;.
+
+I suggested to the guy at my issuing bank's fraud department that we
+call up the &quot;Yahoo! Wallet&quot; people up, just to make sure the attempted
+$1 charge (which Yahoo! makes and afterwards reverses to test the card
+numbers they are given -- kind of them to automate that step for
+fraudsters) wasn't somehow triggered by something I had done without
+realizing it, and to see if we could find out anything about who had
+made the charge.
+
+The fellow at my issuing bank's fraud department thought it would do
+no good, but he called up Yahoo! with me on the phone anyway, with a
+sound of resignation in his voice as he did it. I later learned why he
+sounded so unenthusiastic. He'd been down this route before.  &quot;Yahoo!
+Wallet&quot;'s customer service is run out of the Philippines, and has the
+same keen sense of organization, training and fraud prevention that
+one might find among kindergarteners with lifelong iodine deficiency.
+
+We were quickly informed of about four or five things by the customer
+service representative, all of them mutually contradictory and some of
+them frankly incomprehensible because of the mangled grammar. However,
+one thing he did say consistently was that he could not release
+information on the account that had been created with my credit card
+-- not even if I, the lawful owner of the account, requested it, and
+not even if the issuing bank requested it. They would only release
+such information if they got a legal order to do so, although there is
+no right to financial privacy in US law on the part of people using
+another person's account fraudulently.
+
+It was explained to us, by the fairly confused and not entirely well
+trained representative, that he could only release the information to
+us if the credit card number that had been entered in was incorrect
+and had not been successfully charged -- a policy that made just about
+as close to no sense as one can imagine.
+
+I asked to speak to a supervisor, and my bank's rep and I were
+transferred after some time to an equally clueless individual.
+
+&quot;So let me get this straight. You are not allowed to give the fraud
+investigation department at the issuing bank information about a
+fraudulent account opened using a credit card from the issuing bank
+even if both the issuing bank and the legitimate owner of the card
+request it.&quot;
+
+&quot;Yes sir.&quot;
+
+&quot;But if the credit card number had been incorrect and we had somehow
+gave it you, you could give us the account information.&quot;
+
+&quot;Yes sir.&quot;
+
+&quot;You do realize that not only does this make absolutely no sense, it
+also makes ``Yahoo! Wallet'' the ideal way for people to check cards
+before committing credit card fraud, right?&quot;
+
+And the rep went on to explain that wasn't their intent -- but their
+intent clearly doesn't matter, only the results matter.
+
+After the Yahoo! people (well, not really Yahoo! but almost certainly
+the low bid contractor) got off the phone with us, the guy from my
+bank noted to me that he had suspected the whole thing would be a
+waste of time, as it was. I asked him how it was that Yahoo! could
+operate with policies like this without getting their merchant account
+pulled, and he opined that he didn't know, but he was no more pleased
+with it than me.
+
+So, let me note to all of you out there trying to commit financial
+fraud, that &quot;Yahoo! Wallet&quot; is an especially Safe, Simple and Secure
+way for you to verify that an account you have stolen is good. It is
+especially Safe and Secure because Yahoo! will do their utmost to
+block legitimate investigation into fraudulent use of credit
+cards.
+
+One wonders what exactly the people who came up with these policies
+were thinking, since doubtless this costs them money and will
+eventually result in serious trouble for them, but my experience in
+such matters is that, for the people who set such services up,
+thinking is the last thing on their minds.
+
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

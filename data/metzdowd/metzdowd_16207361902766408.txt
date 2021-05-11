@@ -1,0 +1,21 @@
+<PRE>IanG wrote, On 7/9/08 2:06 AM:
+&gt;<i> Then, when a new Thunderbird comes out, you load that up and 
+</I>&gt;<i> the other packages cease to work
+</I>
+As far as I recall, the last time Thunderbird had an upgrade it told me 
+that one was available, I clicked to upgrade, and the addons, including 
+Enigmail, continue to work. When there was an upgrade available to 
+Enigmail, same thing. And the upgrade to GNUgpg also installed cleanly 
+with no reconfiguration necessary. It has all been as transparent as can be.
+
+My only problem with it is that I keep having this nagging feeling in 
+the back of my mind that &quot;set it and forget it&quot; is not the best approach 
+to security.
+
+  -- sidney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

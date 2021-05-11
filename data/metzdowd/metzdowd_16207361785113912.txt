@@ -1,0 +1,50 @@
+<PRE>I didn't see Ben forward this himself, but it's definitely relevant to
+the discussion of malware hiding in hardware:
+
+&quot;Without needlessly boring everyone with the various steps allow me to
+share an interesting observation: drivers often assume the hardware is
+misbehaved but never malicious. It is fascinating to discover what can
+be done by making the hardware malicious.
+
+[...]
+
+3) from 1 &amp; 2 above, after about two years, I've reached my goal of
+   writing a totally transparent firewall bypass engine for those
+   firewalls which are PC-based: you simply overwrite the firmware in
+   both NICs and then perform PCI-to-PCI transfers between the two
+   cards for suitably formatted IP packets (modern NICs have IP
+   &quot;offload engines&quot; in hardware and therefore can trigger on incoming
+   and outgoing packets). The &quot;Jedi Packet Trick&quot; (sorry, couldn't
+   resist) fools, amongst others, CheckPoint FW-1, Linux-based
+   Strongwall, etc. This is of course obvious as none of them check
+   PCI-to-PCI transfers,
+
+4) I have extended the technique to provide VM escape support: one
+   writes packets from a bridged guest into the network which
+   initiates the NIC firmware update, updates the firmware and then
+   the NIC firmware is used to inject code into the underlying VM
+   host. The requirement to write to the network is then dropped as
+   all that is required is the pivoting in the NIC firmware.
+&quot;
+
+<A HREF="http://www.links.org/?p=330">http://www.links.org/?p=330</A>
+
+-- 
+				- Adam
+
+** Expert Technical Project and Business Management
+**** System Performance Analysis and Architecture
+****** [ <A HREF="http://www.adamfields.com">http://www.adamfields.com</A> ]
+
+[ <A HREF="http://www.morningside-analytics.com">http://www.morningside-analytics.com</A> ] .. Latest Venture
+[ <A HREF="http://www.confabb.com">http://www.confabb.com</A> ] ................ Founder
+[ <A HREF="http://www.aquick.org/blog">http://www.aquick.org/blog</A> ] ............ Blog
+[ <A HREF="http://www.adamfields.com/resume.html">http://www.adamfields.com/resume.html</A> ].. Experience
+[ <A HREF="http://www.flickr.com/photos/fields">http://www.flickr.com/photos/fields</A> ] ... Photos
+[ <A HREF="http://www.aquicki.com/wiki">http://www.aquicki.com/wiki</A> ].............Wiki
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

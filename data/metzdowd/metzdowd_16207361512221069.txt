@@ -1,0 +1,21 @@
+<PRE>The first is simply a MSFT Vista requirement for BitLocker file
+encryption. The second is for example present in ACER laptops
+(Aspire 5920) as eLock -- it allows you to protect and then
+unlock storage devices that can be mounted as a file system when
+plugged into the trusted system (the laptop), or keep them locked
+otherwise.
+
+&gt;<i> Also interesting is the requirement that all DOD computers include TPM (1.2
+</I>&gt;<i> or higher).  See next to last paragraph of the memorandum at
+</I>&gt;<i> <A HREF="http://iase.disa.mil/policy-guidance/dod-dar-tpm-decree07-03-07.pdf">http://iase.disa.mil/policy-guidance/dod-dar-tpm-decree07-03-07.pdf</A> 
+</I>
+&gt;<i> According to <A HREF="http://www.fcw.com/article103467-08-13-07-Print">http://www.fcw.com/article103467-08-13-07-Print</A> the US
+</I>&gt;<i> Defense Department has mandated that all sensitive but unclassified
+</I>&gt;<i> information on mobile devices must be encrypted in compliance with FIPS
+</I>&gt;<i> 140-2.  &quot;Mobile devices&quot; include laptops, PDAs, CDs, flash drives, etc.
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

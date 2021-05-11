@@ -1,0 +1,50 @@
+<PRE>
+ &gt; however, another interpretation is that the defenders
+ &gt; have chosen extremely poor position to defend ... and are
+ &gt; therefor at enormous disadvantage. it may be necessary
+ &gt; to change the paradigm (and/or find the high ground)
+ &gt; in order to successfully defend.
+
+
+First, it is evident that the malware writers have
+reached a level of sophistication where stealth is
+more attractive than persistence, i.e., prey are
+sufficiently abundant that it does not matter if your
+code survives reboot -- you can always get a new
+machine soon enough.  Second, as soon as one of these
+guys figures out how to hook the memory manager
+(which may already have happened), then the ability
+to find the otherwise in-core-only malware goes away
+as your act of scanning memory will be seen by the
+now-corrupted memory manager and the malware will be
+thus relocated as you search such that you are
+playing blindman's bluff without knowing that you
+are.  Third, targetted malware does not defeat the AV
+paradigm technically, rather it defeats the business
+model as no AV company can afford to craft, test, and
+distribute signatures for any malware that does not
+already have, say, 50,000 victims.  Fourth, under
+so-called Service-Oriented-Architecture, there is no
+one anywhere who knows where all the moving parts
+are.
+
+The aspect of this that is directly relevant to this
+list is that while &quot;we&quot; have labored to make network
+comms safe in an unsafe transmission medium, the
+world has now reached the point where the odds favor
+the hypothesis that whomever you are talking to is
+themselves already 0wned, i.e., it does not matter if
+the comms are clean when the opponent already owns
+your counterparty.
+
+I blogged on this recently (guest for Ryan Naraine)
+and it made the top of Slashdot.  Apologies for
+boring those who've already seen it.
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

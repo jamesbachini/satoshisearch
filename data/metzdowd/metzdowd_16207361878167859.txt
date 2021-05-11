@@ -1,0 +1,17 @@
+<PRE>
+According to Bruce Schneier...
+
+<A HREF="http://www.schneier.com/blog/archives/2008/08/adi_shamirs_cub.html">http://www.schneier.com/blog/archives/2008/08/adi_shamirs_cub.html</A>
+
+...Adi Shamir described a new generalized cryptanalytic attack at
+Crypto today.
+
+Anyone have details to share?
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

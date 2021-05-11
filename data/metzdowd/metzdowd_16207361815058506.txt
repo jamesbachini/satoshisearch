@@ -1,0 +1,45 @@
+<PRE>On 11 Jun 2008, at 20:13, Dave Howe wrote:
+
+&gt;&gt;<i> This would seem to imply they already verified the public key was
+</I>&gt;&gt;<i> constant in the trojan and didn't differ between machines (or that
+</I>&gt;&gt;<i> I'm giving Kaspersky's team too much credit with my assumptions).
+</I>
+
+I've just looked at the virus. Upon invocation, it generates a random  
+128-bit RC4 key with CryptGenKey, then for each file it generates a  
+random IV with a very weak generator only capable of producing 256  
+different 128-bit values for 99.9% of the files, prepends each file  
+with its IV, then it encrypts that IV with the main RC4 key, hashes  
+that with MD5 and that hash becomes the 128-bit RC4 encryption key  
+for each file. It encrypts all the potentially valuable files like  
+that while deleting the originals, then it encrypts the main RC4 key  
+with one of its two hard-coded 1024-bit RSA public keys and saves it  
+with one of the 4 e-mail addresses it comes with to contact the  
+asshole who did this to you:
+
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cipher4000 at yahoo.com</A>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">content715 at yahoo.com</A>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">saveinfo89 at yahoo.com</A>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">decrypt482 at yahoo.com</A>
+
+Not much can be done at this point as the executable terminates  
+itself creating a script that deletes it and congratulates the user.  
+It's not very different from the 90's hard drive formatting viruses  
+except for the bold extortion that comes with it. A regular backup is  
+your best friend.
+
+The only thing that could probably be done by the most desperate  
+would be to find the largest files with known plaintext and for all  
+the encrypted files with the same first 16 bytes (roughly 1/256 of  
+them), the keystream will match. No cryptography to implement, only  
+XOR. Good luck!
+
+Best regards,
+Marcos el Ruptor
+<A HREF="http://www.enrupt.com/">http://www.enrupt.com/</A> - Raising the bar.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

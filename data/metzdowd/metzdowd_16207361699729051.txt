@@ -1,0 +1,19 @@
+<PRE>
+It appears that disk encryption techniques are spawning technical
+responses. This gadget lets law enforcement take a computer without
+ever turning off the power.
+
+<A HREF="http://www.wiebetech.com/products/HotPlug.php">http://www.wiebetech.com/products/HotPlug.php</A>
+
+Countermeasures are, of course, quite possible.
+
+[Hat tip: Bruce Schneier's blog.]
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

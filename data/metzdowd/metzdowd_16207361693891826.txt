@@ -1,0 +1,69 @@
+<PRE>The title on this post is not fair, I agree. The real question I
+want to ask is, &quot;Do we ever get it *right* the first time?&quot;
+
+Let's step outside cryptography to look at a possible answer and
+avoid the traps inherent in discussing current politics.
+
+ From 1908 to 1927 more than 15 million Model Ts were built.
+
+The Model T got a bunch of things right. Availability, mileage
+that we are only now exceeding in a mass way, simplicity. It only
+took oatmeal, chewing gum and bailing wire to keep it running.
+;-&gt; And it managed all this when roads were hardly more than
+muddy ruts.
+
+The use of vanadium steel was one of the key right things as well
+  and is part of the reason why many still are running.
+
+And it got a bunch of things wrong, not always on purpose, but
+rather that they had not had enough experience to understand
+*what* was wrong. My dad told me that learning to drive one was
+more than a bit of a challenge given the hodge podge of controls
+and they way they interacted. If I recall correctly second gear
+and the emergency brake were controlled by the same lever to the
+left of the driver.
+
+One of the other things to remember that it cost $850 in 1908 and
+about $300 by 1927. Figuring inflation into the price and it
+probably only cost $150 or less in 1908 dollars
+
+A lot of this is like early computer interconnects and their
+controls. Think back 19 years and what was it like? My memory is
+that it was a lot like the early days of cars before the Model T.
+
+All the discussion about the weaknesses and strengths of the
+various controls seems a lot like car manufacturing before the
+Model T.
+
+So, if history tends to repeat itself, I'd expect a Model T to be
+about where we are now, and we should start planning for its
+replacement. If we learn from the history of the evolution of the
+car we might be able to avoid some of the pitfalls of Edsels,
+tailfins and other geegaws. But don't bet on it or hold your breath.
+
+So, back to the core question, did we get the Internet and its
+controls right the first time? Nope. Will we get it right the
+second time? Nope. Will we ever get it right? Nope.
+
+My feeling is that all the discussions about the limitations or
+advantages of what we have right now in terms of controls takes
+our eyes off of change, for change *will* happen whether we like
+it or not. And not all of it will be for the better as we have
+seen with recent events around identity theft, phishing, XSS,
+etc. And, of course, the big fish swallowing the littler fish,
+making for a mono culture very prone to an unexpected disease.
+
+We might be able to reduce the missteps if we concentrate on
+keeping what works and only fiddling with that which is weak.
+
+Hope ever, hope on.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

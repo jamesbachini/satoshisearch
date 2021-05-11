@@ -1,0 +1,46 @@
+<PRE>Crossroads is an undergraduate journal.
+
+We'd do well to single out more worth targets for public ridicule  
+than CS undergrads.
+
+If you want to help the author, why not educate, rather than  
+mocking?  He's obviously been motivated to think about the subject  
+matter and to even take the bold step up publishing something.
+
+If you must scold, aim at the advisor, then. But I don't see much to  
+be gained by scolding in this case.  Pick someone who's asking for it  
+- the vendors of all the products that don't do what their buyers  
+hope and wish they would do...
+
+On Aug 31, 2007, at 11:35 PM, Ben Pfaff wrote:
+
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> writes:
+</I>&gt;<i>
+</I>&gt;&gt;<i> So, when you find a particularly obnoxious dilettante going on about
+</I>&gt;&gt;<i> his bone-headed unbreakable scheme, please forward it to me and I'll
+</I>&gt;&gt;<i> see about breaking it, and then publish the schemes and the  
+</I>&gt;&gt;<i> results on
+</I>&gt;&gt;<i> a web site for publicly &quot;educating&quot; them.  Honestly, there's probably
+</I>&gt;&gt;<i> no better way to educate people than to see schemes submitted and
+</I>&gt;&gt;<i> broken, and I'm not sure there's a good site for it, although there
+</I>&gt;&gt;<i> are plenty of books.  Unfortunately, these types won't be bothered to
+</I>&gt;&gt;<i> buy books since they already know everything.
+</I>&gt;<i>
+</I>&gt;<i> Here's a particularly moronic scheme:
+</I>&gt;<i>        <A HREF="http://www.acm.org/crossroads/xrds11-3/xorencrypt.html">http://www.acm.org/crossroads/xrds11-3/xorencrypt.html</A>
+</I>&gt;<i> -- 
+</I>&gt;<i> &quot;If a person keeps faithfully busy each hour of the working day, he
+</I>&gt;<i>  can count on waking up some morning to find himself one of the
+</I>&gt;<i>  competent ones of his generation.&quot;
+</I>&gt;<i> --William James
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to  
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

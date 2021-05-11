@@ -1,0 +1,36 @@
+<PRE>At Thu, 28 Aug 2008 17:32:10 +1200,
+Peter Gutmann wrote:
+&gt;<i> 
+</I>&gt;<i> Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;There are a set of techniques that allow you to encrypt elements of arbitrary
+</I>&gt;<i> &gt;sets back onto that set.
+</I>&gt;<i> 
+</I>&gt;<i> ... and most of them seem to be excessively complicated for what they end up
+</I>&gt;<i> achieving.  Just for reference the mechanism from the sci.crypt thread of more
+</I>&gt;<i> than a decade ago was:
+</I>
+[Description of reduced-range stream cipher elided]
+
+
+&gt;<i> Another advantage of the KSG use is that you can precalculate the key stream
+</I>&gt;<i> offline, the implementation I used at the time pre-generated 4K of keystream
+</I>&gt;<i> and then used it to encrypt bursty text messages with real-time constraints
+</I>&gt;<i> that didn't allow for pauses to run the cipher.
+</I>&gt;<i> 
+</I>&gt;<i> (The thread contains lots of tweaks and variations of this).
+</I>
+There's noting inherently wrong with this mechanism, but like all
+stream ciphers, it can't be used if you want to encrypt multiple
+independent values, e.g., credit cards in a database--without
+a randomizer (which implies expansion) you have the usual two-time
+pad problems. A B-R style block cipher can, albeit with lookup
+table issues.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

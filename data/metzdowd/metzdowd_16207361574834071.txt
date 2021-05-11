@@ -1,0 +1,34 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> on Monday, October 8, 2007 wrote:
+
+&gt;<i>1) marking memory unpageable (avoiding swap hazard)
+</I>
+Encrypted swap makes the swap hazard go away, and is certainly a sweet
+spot for cryptography because most of the difficult problems in key
+handling &quot;just go away&quot;.  Also, many operating systems support it.
+
+Since keys do not have to last longer than the boot of the OS, they can
+be kept in kernel memory. inaccessible to user processes, and safe from
+postmortem disk analysis.  If, as most, if not all implementations do,
+you have a different key for each address space, the key can go away
+when the address space goes away.  You don't need to generate a key
+until the first swap out for the address space, so there is time to
+gather &quot;entropy&quot; from the timing of events such as disk I/O, network I/O
+etc., making the issue of random number generation less of a problem.
+
+For the really paranoid, keep a bit with each key saying whether it is
+inverted or not, and invert it regularly to avoid memory &quot;burn in&quot;. 
+Also quickly overwrite any key-dependant data used by your symmetric
+encryption algorithm.
+
+Cheers - Bill
+
+-----------------------------------------------------------------------
+Bill Frantz        | I like the farmers' market   | Periwinkle
+(408)356-8506      | because I can get fruits and | 16345 Englewood Ave
+www.pwpconsult.com | vegetables without stickers. | Los Gatos, CA 95032
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

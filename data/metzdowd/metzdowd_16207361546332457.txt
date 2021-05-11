@@ -1,0 +1,17 @@
+<PRE>
+It appears that Apple may have altered the firmware of newer iPods so
+that they require a proper cryptographic hash in the iTunesDB loaded
+onto the units or they won't work. This effectively blocks people from
+using third party software with an iPod, including the various
+programs people use on Linux with iPods.
+
+<A HREF="http://ipodminusitunes.blogspot.com/2007/09/apple-cuts-us-off.html">http://ipodminusitunes.blogspot.com/2007/09/apple-cuts-us-off.html</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

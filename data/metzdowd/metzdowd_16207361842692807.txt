@@ -1,0 +1,13 @@
+<PRE>Is there an upper limit on the number of RSA Public/Private 1024 bit 
+key pairs possible? If so what is the relationship of the number of 
+1024 bit to the number of 2048 and 4096 bit key pairs?
+
+Thanks,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

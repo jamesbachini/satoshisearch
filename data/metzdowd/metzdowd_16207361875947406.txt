@@ -1,0 +1,33 @@
+<PRE>&gt;<i> IIRC, it used personal data already available to DEC -- so they
+</I>&gt;<i> didn't have to ask their employees for it
+</I>
+That works great so long as the personal data is accurate.
+
+Banks these days are supposed to verify your identity when you open an
+account.  Online banks pull your credit report anyway, so they make up
+some verification questions from historical info in the report.  I'm
+regularly asked which of four street addresses I've lived at.
+
+Unfortunately, in my case the correct answer is invariably &quot;none of
+them&quot;.  I'm part owner of a relative's house in New Jersey, and the
+credit bureaus all are sure that since my name is on the deed, that
+must be where I live.  So that's the address that shows up.  Adding to
+the excitement, they often ask what city, to which the answer would
+still be none of them even if I lived in that house.  It's in
+Lawrenceville, but I guess it gets mail delivered from the Trenton
+P.O. so the allegedly correct answer is Trenton.
+
+It's not too hard for me to figure these out, but given the amount of
+plain wrong info in credit reports, this approach must lead to some
+pretty frustrating failures.
+
+Regards,
+John Levine, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">johnl at iecc.com</A>, Primary Perpetrator of &quot;The Internet for Dummies&quot;,
+Information Superhighwayman wanna-be, <A HREF="http://www.johnlevine.com,">http://www.johnlevine.com,</A> ex-Mayor
+&quot;More Wiener schnitzel, please&quot;, said Tom, revealingly.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

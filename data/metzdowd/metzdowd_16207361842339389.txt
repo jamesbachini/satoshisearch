@@ -1,0 +1,18 @@
+<PRE>&gt;<i> This reads like snake oil.
+</I>&gt;&gt;<i> <A HREF="http://www.foxbusiness.com/story/hackers-hell-privacy-compromised/">http://www.foxbusiness.com/story/hackers-hell-privacy-compromised/</A>
+</I>&gt;<i> This reads like a pump'n'dump stock scam.
+</I>
+zdnet tries to expose the snake-oil crypto and the pump'n'dump stock scam:
+<A HREF="http://blogs.zdnet.com/security/?p=1448">http://blogs.zdnet.com/security/?p=1448</A>
+
+good start. but i think they could have done better......
+
+
+saqib
+<A HREF="http://doctrina.wordpress.com/">http://doctrina.wordpress.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

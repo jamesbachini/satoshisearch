@@ -1,0 +1,72 @@
+<PRE>Adam Back wrote:
+&gt;<i> On Fri, Nov 02, 2007 at 06:23:30PM +0100, Ian G wrote:
+</I>&gt;&gt;<i> I was involved in one case where super-secret stuff was shared
+</I>&gt;&gt;<i> through hushmail, and was also dual encrypted with non-hushmail-PGP
+</I>&gt;&gt;<i> for added security.  In the end, the lawyers came in and scarfed up
+</I>&gt;&gt;<i> the lot with subpoenas ... all the secrets were revealed to everyone
+</I>&gt;&gt;<i> they should never have been revealed to.  We don't have a crypto
+</I>&gt;&gt;<i> tool for embarrassing secrets to fade away.
+</I>&gt;<i> 
+</I>&gt;<i> What about deleting the private key periodically?
+</I>&gt;<i> 
+</I>&gt;<i> Like issue one pgp sub-key per month, make sure it has expiry date etc
+</I>&gt;<i> appropriately, and the sending client will be smart enough to not use
+</I>&gt;<i> expired keys.
+</I>&gt;<i> 
+</I>&gt;<i> Need support for that kind of thing in the PGP clients.
+</I>&gt;<i> 
+</I>&gt;<i> And hope your months key expires before the lawyers get to it.
+</I>&gt;<i> 
+</I>&gt;<i> Companies have document retention policies for stuff like
+</I>&gt;<i> this... dictating that data with no current use be deleted within some
+</I>&gt;<i> time-period to avoid subpoenas reaching back too far.
+</I>
+
+Hi Adam,
+
+many people have suggested that.  On paper, it looks like a 
+solution to the problem, at least to us.
+
+I think however it is going to require quite significant 
+support from the user tools to do this.  That is, the user 
+application is going to have to manage the sense of lifetime 
+over the message.
+
+One tool that does approach this issue at least 
+superficially is Skype.  It can be configured to save chat 
+messages for different periods of time, I have mine set to 
+around 2 weeks currently.
+
+But, then we run slap-bang into the problem that the *other* 
+client also keeps messages.  How long are they kept for? 
+I'm not told, and of course even if I was told, we can all 
+imagine the limitations of that.
+
+I hypothesise that it might be possible to use contracts to 
+address this issue, at least for a civil-not-criminal scope. 
+  That is, client software could arrange a contractual 
+exchange between Alice and Bob where they both agree to keep 
+messages for X weeks, and if not, then commitments and 
+penalties might apply.  Judges will look at contracts like 
+that and might rule the evidence out of court, in a civil 
+dispute.
+
+OK, so we need a lawyer to work that out, and I'm definately 
+whiteboarding here, I'm not sure if the solution is worth 
+the effort.
+
+Which is why I am skeptical of schemes like &quot;delete the 
+private key periodically.&quot;  Unless we solve or address the 
+counterparty problem, it just isn't worth the effort to be 
+totally secure on our own node.
+
+We know how to do invisible ink in cryptography.  How do we 
+do its converse, fading ink?
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,48 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> So was this a case of &quot;recover data from an active app's memory image&quot;
+</I>&gt;<i> (not surprising) or &quot;recover data after the app has exited&quot;
+</I>&gt;<i> (surprising, at least for the crypto apps)?
+</I>
+For this paper, I specifically examined the case where memory was dumped
+while the applications were still active. The snapshots were taken up to
+45 minutes after the passwords were entered. (See Appendix A for the
+full testing procedure.)  Given that users keep applications such as
+SSH, Truecrypt, email, etc open for a significant percentage of time
+that they use their systems, I do think it's important for applications
+to zero sensitive data immediately after it is used rather than waiting
+until the process is closed. Also, as you point out, there were
+passwords such as SSH and root which were retained outside of the
+application's memory.
+
+I also did some preliminary experiments to test whether passwords
+remained in memory after the applications were closed. However, I
+decided to wait until the Princeton/EFF/Wind River folks released their
+memory dumper code before analyzing this in detail. As described in the
+paper, there are now annoying limitations on access to /dev/mem in
+Linux, so I thought it would be best to approach this particular
+question by getting a full memory image using cold boot techniques.
+
+As a next step, it would be great to follow the same procedure, but
+image all of memory after the applications have been closed. Using Jake
+Appelbaum and co's newly released memory imaging tools would probably be
+an easy way to get full memory dumps from any OS:
+
+<A HREF="http://citp.princeton.edu/memory/code/">http://citp.princeton.edu/memory/code/</A>
+
+Based on your feedback, I've updated section 2 and the abstract to clarify:
+
+<A HREF="http://philosecurity.org/pubs/davidoff-clearmem-linux.pdf">http://philosecurity.org/pubs/davidoff-clearmem-linux.pdf</A>
+
+Thanks for your comments,
+
+Sherri
+
+
+-- 
+<A HREF="http://philosecurity.org">http://philosecurity.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

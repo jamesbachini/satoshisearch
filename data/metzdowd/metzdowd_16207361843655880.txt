@@ -1,0 +1,36 @@
+<PRE>Pierre-Evariste Dagand wrote:
+&gt;&gt;<i> I doubt you can get a large enough sample in any reasonable time.
+</I>&gt;<i> 
+</I>&gt;<i> Indeed.
+</I>&gt;<i> 
+</I>&gt;&gt;&gt;<i> I don't see the point of evaluating the quality of a random number
+</I>&gt;&gt;&gt;<i> generator by statistical tests.
+</I>&gt;&gt;<i>  Which is entirely my point.
+</I>&gt;<i> 
+</I>&gt;<i> I fear I was not clear: I don't see what is wrong in evaluating the
+</I>&gt;<i> quality of a random number generator with (an extensive set of)
+</I>&gt;<i> statistical tests.
+</I>
+SHA-1(1), SHA-1(2), SHA-1(3), ... SHA-1(N) will look random, but clearly 
+is not.
+
+&gt;<i> For sure, it would be better if we could check the source code and
+</I>&gt;<i> match the implemented RNG against an already known RNG.
+</I>&gt;<i> 
+</I>&gt;<i> But, then, there is a &quot;the chicken or the egg&quot; problem: how would you
+</I>&gt;<i> ensure that a *new* RNG is a good source of &quot;randomness&quot; ? (it's not a
+</I>&gt;<i> rhetorical questions, I'm curious about other approaches).
+</I>
+By reviewing the algorithm and thinking hard.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

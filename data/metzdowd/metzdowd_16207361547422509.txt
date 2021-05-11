@@ -1,0 +1,46 @@
+<PRE>Hi,
+
+On 13/09/07 15:14, Ian G wrote:
+&gt;<i> Hagai Bar-El wrote:
+</I>&gt;&gt;<i> Hi,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On 12/09/07 08:56, Aram Perez wrote:
+</I>&gt;&gt;&gt;<i> The IronKey appears to provide decent security while it is NOT plugged
+</I>&gt;&gt;&gt;<i> into a PC. But as soon as you plug it in and you have to enter a
+</I>&gt;&gt;&gt;<i> password to unlock it, the security level quickly drops. This would be
+</I>&gt;&gt;&gt;<i> the case even if they supported Mac OS or *nix.
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> As I stated in my response to Jerry Leichter, in my opinion, their
+</I>&gt;&gt;&gt;<i> marketing department is selling snake oil.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I think there is a difference between a product that is susceptible to
+</I>&gt;&gt;<i> an attack and the pure distilled 100% natural snake oil, as we usually
+</I>&gt;&gt;<i> define it.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> So, is snake oil:
+</I>&gt;<i> 
+</I>&gt;<i>    * a crap product?
+</I>&gt;<i>    * a fine product with weaknesses?
+</I>&gt;<i>    * a marketing campaign that goes OTT?
+</I>&gt;<i>    * a term used to slander the opposing security model?
+</I>&gt;<i>    * an adjective that applies to any of the above?
+</I>
+
+Just like any term, it can have many interpretations.
+However, the most useful definition is the one that you can find at
+<A HREF="http://en.wikipedia.org/wiki/Snake_oil_(cryptography">http://en.wikipedia.org/wiki/Snake_oil_(cryptography</A>) and which quite
+accurately reflects what the people who first brought this term into use
+used it for.
+
+Hagai.
+
+-- 
+Hagai Bar-El - Information Security Analyst
+T/F: 972-8-9354152 Web: www.hbarel.com
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

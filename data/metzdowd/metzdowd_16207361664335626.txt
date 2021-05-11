@@ -1,0 +1,40 @@
+<PRE>On Jan 30, 2008 9:04 PM, Philipp G&#252;hring &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pg at futureware.at</A>&gt; wrote:
+
+&gt;<i> Hi,
+</I>&gt;<i>
+</I>&gt;<i> &gt; Huh? What are you claiming the problem with sending client certificates
+</I>&gt;<i> &gt; in plaintext is
+</I>&gt;<i>
+</I>&gt;<i> * It&#180;s a privacy problem
+</I>&gt;<i> * It&#180;s a security problem for people with a security policy that requires
+</I>&gt;<i> the
+</I>&gt;<i> their identities to be kept secret, and only to be used to authenticate to
+</I>&gt;<i> the particular server they need
+</I>&gt;<i> * It&#180;s an availability problem for people that need high-security
+</I>&gt;<i> authentication mechanisms, combined with high-privacy demands
+</I>&gt;<i> * It&#180;s a identity theft problem in case the certificate contains personal
+</I>&gt;<i> data
+</I>&gt;<i> that can be used for identity theft
+</I>
+
+I totally disagree that this is a material problem that is in any meaningful
+way impeding the use of SSL client certificates (there are totally different
+reasons that client certs aren't being widely adopted, but that's beside the
+point).
+
+However, TLS supports what you want right now: just do the initial handshake
+without client auth, then renegotiate after the session encryption starts.
+The renegotiation will happen under the encrypted, identity-protected and
+server-authenticated session, and client authentication can be requested in
+the renegotiation; the client cert will then be confidential.
+
+The reason nobody actually bothers to do this is because there's no customer
+demand (see paragraph 1).
+
+ - Tim
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

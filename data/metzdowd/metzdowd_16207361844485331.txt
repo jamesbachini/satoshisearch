@@ -1,0 +1,43 @@
+<PRE>On Mon, Jul 21, 2008 at 12:03:50PM -0400, Victor Duchovni wrote:
+
+&gt;<i> On Sun, Jul 20, 2008 at 04:14:33PM -0600, Matt Ball wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; &gt;From a little bit of off-line discussion, I think I've got a restatement of
+</I>&gt;<i> &gt; the problem that is more suitable to those with a stronger programming
+</I>&gt;<i> &gt; background than mathematical background:
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt;     &quot;If someone uses the __random32 function as defined in the 2.6.26 Linux
+</I>&gt;<i> &gt; kernel, and leaks to you the result of taking successive outputs modulo
+</I>&gt;<i> &gt; 28233 (= 9 * 3137), can you determine the probable 96-bit internal state
+</I>&gt;<i> &gt; with fewer than 1000 outputs and with modest processing power (e.g., a
+</I>&gt;<i> &gt; laptop computer running less than a day)?&quot;
+</I>
+I skipped over this part when reading the original message. Expecting per
+Florian's original message the outputs to be a &quot;linear&quot; function of the
+inputs, but they are not.
+
+&gt;<i> After any consecutive 96 outputs, the 97th is a fixed linear function of
+</I>&gt;<i> those just observed. It is not necessary to determine the internal state.
+</I>
+This of course applies to the 32-bit output of the RNG. The operation
+of reducing the 32-bit output modulo 28333, is not &quot;linear&quot; (over the
+F_2 bit string vector-space). While:
+
+	x_96 = c_95 * x_95 + ... c_0 * x_0
+
+this is only true bitwise modulo 2. It is not obvious how one might
+recover the full 32-bit outputs from the truncated outputs.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,19 @@
+<PRE>On Wed, May 14, 2008 at 07:52:58PM -0400, Steven M. Bellovin wrote:
+&gt;<i> 
+</I>&gt;<i> Given the published list of bad ssh keys due to the Debian mistake (see
+</I>&gt;<i> <A HREF="http://metasploit.com/users/hdm/tools/debian-openssl/">http://metasploit.com/users/hdm/tools/debian-openssl/</A>), should sshd be
+</I>&gt;<i> updated to contain a blacklist of those keys?  I suspect that a Bloom
+</I>&gt;<i> filter would be quite compact and efficient.
+</I>
+As someone who is dealing with this operationally, we (SDSC) had already
+identified what Steve suggests as the desireable long-term solution.
+I would reword the requirement slightly to say that the capability of
+sshd should be to block use of any key specified by the adminstrator,
+not necessarily just the published blacklist.  I think that's what Steve
+may have actually meant, but clarity is helpful.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

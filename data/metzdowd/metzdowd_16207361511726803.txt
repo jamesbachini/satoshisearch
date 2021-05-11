@@ -1,0 +1,123 @@
+<PRE>Via Farber's list:
+
+From: Rod Van Meter &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rdv at sfc.wide.ad.jp</A>&gt;
+Date: August 18, 2007 11:39:47 AM EDT
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave at farber.net</A>
+Subject: Re: [IP] Light pulses crack security codes within seconds
+
+<A HREF="http://www.tgdaily.com/content/view/33425/118/">http://www.tgdaily.com/content/view/33425/118/</A>
+
+Wow, that's one of the most egregious quantum computing-related
+articles I've ever seen.  I'm not even sure where to start.
+
+First off, let's point at the real research paper:
+<A HREF="http://www.sciencemag.org/cgi/content/abstract/317/5840/929">http://www.sciencemag.org/cgi/content/abstract/317/5840/929</A>
+Coherent Optical Spectroscopy of a Strongly Driven Quantum Dot
+Xiaodong Xu, Bo Sun, Paul R. Berman, Duncan G. Steel, Allan
+S. Bracker, Dan Gammon, L. J. Sham
+
+I read it.  It's an advance, but does not yet mean anything at all is
+practical.  Their work is on the optical properties of self-assembled
+quantum dots.  There are two major categories of quantum dots in
+semiconductors, self-assembled and lithographically created (and
+within each of those, many types).  The self-assembled dots are a
+compound grown on top of a substrate of a different kind.  Differences
+in the crystalline structure mean that the deposited material &quot;beads
+up&quot;, like water on a freshly-waxed car.  The quantum dot itself then
+is a place where the motion of electrons can be confined to a small
+two-dimensional area at the interface between the materials, creating
+a place where quantum wave functions can behave like an &quot;artificial
+atom&quot;.
+
+The work presented in the paper is some of the first solid
+experimental work on the optical properties of self-assembled dots
+that I have seen, though I'm not an expert.  Various groups, including
+that of my adviser, Kohei M. Itoh (
+<A HREF="http://www.appi.keio.ac.jp/Itoh_group/">http://www.appi.keio.ac.jp/Itoh_group/</A> ), have been working for years
+on the growth and mechanical characteristics (stress/strain, size and
+shape, etc.) of self-assembled dots.  All of that has been very hard
+work, and as far as I know no one has a reliable way to grow the dots
+in a given place.  I wish they had a micrograph of the device, I'd
+like to see it.
+
+But the TG article talks only a little about the research itself; it's
+mostly breathless pie-in-the-sky reporting on the possibilities of
+quantum computers.
+
+&quot;Light pulses crack security codes within seconds,&quot; the title reads.
+Wow.  Well, first off, it can't be done yet, and won't be done for
+years, despite the present tense.  Second, saying it's done with light
+pulses is like saying we compute today with electrons.  It's true, but
+tells you nothing about transistors or computer architecture.  Third,
+&quot;crack security codes&quot; is as vague and non-technical as it gets, not
+to mention outright wrong (we'll come back to that).  Fourth, &quot;within
+seconds&quot; presumes many things about a quantum computer that are not
+yet defined to any level of precision.  This topic is the focus of my
+research: how do you build a large-scale quantum computer out of a
+given technology?  No one really knows yet.
+
+Which security codes does a paper on the spectroscopy of a quantum
+dot break?  Well, none, really.  But where they're headed with that is
+obviously Shor's algorithm for factoring large numbers on a quantum
+computer.  If the algorithm can be efficiently implemented, it is
+theoretically capable of breaking RSA public-key cryptography and
+elliptic curve crypto.
+
+HOWEVER, the advantage may well be with the defenders on this one.
+Shor turns a super-polynomial problem (factoring) into a polynomial
+one.  Not coincidentally, the complexity of running Shor is similar to
+the complexity of doing the encryption in the first place.  And
+running an algorithm of the same computational class on a quantum
+machine will probably always be harder than running an algorithm on a
+classical computer.  So, raise your key length and you might be okay.
+
+Shor does nothing to affect symmetric key cryptography, or any system
+not dependent on the factoring problem.
+
+I hesitate to mention this, for fear it will be misinterpreted, but in
+my opinion there is still some small doubt about whether Shor can in
+practice be scaled to large sizes, on theoretical grounds, let alone
+the practical difficulties of building using any given technology.
+The problem is the quantum Fourier transform (QFT) that is the key to
+Shor requires, in the abstract, exponentially precise gates as the
+problem size grows.  Most researchers believe that the QFT can be
+truncated at some reasonable level and will still have a high
+probability of success.  However, the several papers on the topic
+(including one by a collaborator of mine) in the last decade have
+taken different approaches to the calculation, and come up with
+substantially different answers, making different assumptions about
+the problem.  The theorists seem confident, but I will give only
+provisional assent until I see it implemented.  Perhaps I'm just not
+smart enough to fully grasp the arguments in the papers.
+
+Breaking a code in seconds really depends on both the problem and the
+machine.  A major factor is how many levels of quantum error
+correction (QEC) are necessary, which is directly dependent on the
+quality of the physical implementation.  QEC is a major topic of
+research; USC is even sponsoring a conference on the topic in December
+( <A HREF="http://qserver.usc.edu/qec07/">http://qserver.usc.edu/qec07/</A> ).
+
+Physical and logical clock speed, as well as the amount of parallelism
+in the system, determine how long it will take to run the algorithm on
+a particular problem, of course.  This fact has gotten too little
+attention from both the experimentalists and the theorists, in my
+opinion.  See <A HREF="http://arxiv.org/abs/quant-ph/0507023">http://arxiv.org/abs/quant-ph/0507023</A> .
+
+Enough for now.  I can talk about this topic all day, including what
+the boundaries of my knowledge are; take everything I say with a grain
+of salt.
+
+        	   --Rod
+
+
+-- 
+Rodney Van Meter
+Assistant Professor of Environment and Information Studies
+Keio University, Shonan Fujisawa Campus, Japan
+<A HREF="http://web.sfc.keio.ac.jp/~rdv/">http://web.sfc.keio.ac.jp/~rdv/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

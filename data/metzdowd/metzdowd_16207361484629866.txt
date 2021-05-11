@@ -1,0 +1,37 @@
+<PRE>On Sun, Jul 01, 2007 at 04:01:03PM -0400, Perry E. Metzger wrote:
+|<i> 
+</I>|<i> Adam Shostack &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">adam at homeport.org</A>&gt; writes:
+</I>|<i> &gt; On Mon, Jul 02, 2007 at 01:08:12AM +1200, Peter Gutmann wrote:
+</I>|<i> &gt; &gt; 
+</I>|<i> &gt; &gt; Given that all you need for this is a glorified pocket calculator,
+</I>|<i> &gt; &gt; you could (in large enough quantities) probably get it made for &lt;
+</I>|<i> &gt; &gt; $10, provided you shot anyone who tried to introduce
+</I>|<i> &gt; &gt; product-deployment DoS mechanisms like smart cards and EMV into
+</I>|<i> &gt; &gt; the picture.  Now all we need to do is figure out how to get there
+</I>|<i> &gt; &gt; from here.
+</I>|<i> &gt;
+</I>|<i> &gt; I'd suggest starting from the deployment, training, and help desk
+</I>|<i> &gt; costs.  The technology is free, getting users to use it is not.  I
+</I>|<i> &gt; helped several banks look at this stuff in the late 90s, when cost of
+</I>|<i> &gt; a smartcard reader was order ~25, and deployment costs were estimated
+</I>|<i> &gt; at $100, and help desk at $50/user/year.
+</I>|<i> 
+</I>|<i> Of course, given the magnitude of costs of fraud, and where it may be
+</I>|<i> heading in the near term, the $50 a year may be well spent, especially
+</I>|<i> if it could be cut to $25 with some UI investment. It is all a
+</I>|<i> question of whether you'd rather pay up front with the security
+</I>|<i> apparatus or after the fact in fraud costs...
+</I>
+It may be, indeed.  You're going (as Lynn pointed out in another post)
+to be fighting an uphill battle against the last attempts.  I don't
+think smartcards (per se) are the answer.  What you really need is
+something like a palm pilot, with screen and input and a reasonably
+trustworthy OS, along with (as you say) the appropriate UI investment.
+
+Adam
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

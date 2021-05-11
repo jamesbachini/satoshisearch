@@ -1,0 +1,14 @@
+<PRE>&gt;<i>From Slashdot: Psychologists gave university students phony
+</I>popups with various malware warning signs. Many just clicked.
+
+<A HREF="http://arstechnica.com/news.ars/post/20080923-study-confirms-users-are-idiots.html">http://arstechnica.com/news.ars/post/20080923-study-confirms-users-are-idiots.html</A>
+
+-- 
+Sandy Harris,
+Quanzhou, Fujian, China
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

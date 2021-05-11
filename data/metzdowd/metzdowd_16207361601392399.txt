@@ -1,0 +1,32 @@
+<PRE>There's an informative article in a Wired blog in which Hushmail CTO
+Brian Smith provides some information that hints at what happened in
+this case, although he would not speak specifically about the case.
+
+See <A HREF="http://blog.wired.com/27bstroke6/2007/11/encrypted-e-mai.html">http://blog.wired.com/27bstroke6/2007/11/encrypted-e-mai.html</A>
+
+His implication is that the target was using their simplified version of
+Hushmail that encrypts on the server, using an SSL connection to send
+passphrase from the client to the server then providing an interface
+similar to ordinary webmail. The court order may have required Hushmail
+to save and hand over the password and/or the decrypted mail. Since
+Brian Smith would not say exactly what happened in this case, we can't
+tell if they modified the system to save the target's password the next
+time they used it and handed that over along with historical stored
+encrypted mail, or if the modification was to save unencrypted mail sent
+after the court order was received, or something else I haven't thought
+of. In any case, Smith said that Hushmail only complies with court
+orders that target specific accounts and would not take any action that
+would affect users not specifically targeted by a court order.
+
+My reading of Smith's statements in interview is that Hushmail would be
+subject to a court order requiring them to supply a hacked Java applet
+to someone who is using their Java based client-side encryption. There
+is no doubt that would be technically feasible, it is mentioned  and
+would fall within the guidelines for court orders that Smith said that
+Hushmail would comply with.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

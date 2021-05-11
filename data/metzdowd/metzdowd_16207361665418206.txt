@@ -1,0 +1,90 @@
+<PRE>Eric Rescorla wrote:
+ &gt; Huh? What are you claiming the problem with sending
+ &gt; client certificates in plaintext is (as if anyone uses
+ &gt; client certificates anyway)?
+
+Well that is one problem - no one uses them, and no one
+should use them, while PKI was designed under the
+assumption that everyone would be using them.
+
+Another problem is that in practice the system merely
+ensures you are getting the purported domain name. Since
+we are overwhelmed by a multitude of irrelevant and
+confusing domain names, this is not much help. Further,
+I frequently get the warning that the certificate does
+not agree with the domain name when I know well that I
+am communicating with the intended entity - frequent
+misconfiguration results in false warnings, which I am
+thus trained to ignore, rendering the system entirely
+useless.
+
+Since we rely on passwords, social security numbers, and
+so forth, shared secrets, people are trained to give
+away secrets to purported authority, which creates the
+phishing hazard. We need to fix both problems.
+
+Of course, if the phishing hazard was fixed, we would
+still have the malware hazard, but we now know how to
+fix the malware hazard.
+
+We should fix both problems, rather than using one as an
+excuse for not fixing the other.  We need to fix the
+network assuming the node is going to be made safe, and
+fix the node assuming the network is going to be made
+safe.
+
+ &gt;&gt; Does anyone have an idea how we can fix this flaw
+ &gt;&gt; within SSL/TLS within a reasonable timeframe, so that
+ &gt;&gt; it can be implemented and shipped by the vendors in
+ &gt;&gt; this century?
+
+Eric Rescorla wrote:
+ &gt; This gets discussed on the TLS mailing list
+ &gt; occasionally, but the arguments for making this change
+ &gt; aren't very convincing. If you have an actual credible
+ &gt; security argument you should post it to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tls at ietf.org.</A>
+
+I don't think that is a useful discussion forum.  The
+IETF is moribund, paralyzed and increasingly irrelevant.
+If the internet is to be fixed, the fixes have to bypass
+the IETF.
+
+When one has a large group, group dynamics can make the
+large group a little bit smarter than its smartest
+members, but more commonly, make it a lot dumber than
+its dumbest members.  If the IETF was capable of
+handling, or even noticing, the crisis that we in then
+we would not be in this crisis.
+
+To fix the phishing problem, we need to
+cryptographically secure relationships, rather than
+attempting to cryptographically secure true names, and
+to greatly reduce reliance on revealing shared secrets.
+It should be unusual and disturbing to reveal shared
+secrets, rather than routine, and it should only be done
+with humans, not machines.
+
+1.  As with Skype to Skype IM, the fact that you can
+receive a message from what purports to be an entity
+with which you have a relationship, should be compelling
+evidence that it really is that entity, the entity to
+which you have given a petname on your contacts list.
+Thus phishing is hard to initiate.  As with Skype, what
+we seek to secure is petnames, not true names.  We want
+to secure the bookmark list, and the list that comes up
+in a Google search.  We want to secure that when you
+click on a the top entry of the Google list, you are
+contacting the intended entity.
+
+2.  As with Skype to Skype IM, this should be symmetric.
+If you respond to a message from your bank, or initiate
+a message to your bank, you should not have to reveal
+some shared secrets to prove an existing relationship
+before getting on with your task. Thus phishing should
+fail to catch any phish.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

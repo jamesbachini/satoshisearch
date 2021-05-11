@@ -1,0 +1,33 @@
+<PRE>
+It seems that US judges aren't as protective of speech rights as Dutch
+ones.
+
+    Las Vegas - Three students at the Massachusetts Institute of
+    Technology (MIT) were ordered this morning by a federal court
+    judge to cancel their scheduled presentation about vulnerabilities
+    in Boston's transit fare payment system, violating their First
+    Amendment right to discuss their important research.
+
+    The Electronic Frontier Foundation (EFF) represents Zack Anderson,
+    RJ Ryan and Alessandro Chiesa, who were set to present their
+    findings Sunday at DEFCON, a security conference held in Las
+    Vegas. However, the Massachusetts Bay Transit Authority (MBTA)
+    sued the students and MIT in United States District Court in
+    Massachusetts on Friday, claiming that the students violated the
+    Computer Fraud and Abuse Act (CFAA) by delivering information to
+    conference attendees that could be used to defraud the MBTA of
+    transit fares. This morning District Judge Douglas P. Woodlock,
+    meeting in a special Saturday session, ordered the trio not to
+    disclose for ten days any information that could be used by others
+    to get free subway rides.
+
+<A HREF="http://www.eff.org/press/archives/2008/08/09">http://www.eff.org/press/archives/2008/08/09</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

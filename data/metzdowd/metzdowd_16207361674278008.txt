@@ -1,0 +1,79 @@
+<PRE>Philipp G&#252;hring wrote:
+&gt;<i> Yes, sending client certificates in plaintext while claiming that SSL/TLS is
+</I>&gt;<i> secure doesn&#180;t work in a world of phishing and identity theft anymore.
+</I>&gt;<i>
+</I>&gt;<i> We have the paradox situation that I have to tell people that they should use
+</I>&gt;<i> HTTPS with server-certificates and username+password inside the HTTPS
+</I>&gt;<i> session, because that&#180;s more secure than client certificates ...
+</I>&gt;<i>
+</I>&gt;<i> Does anyone have an idea how we can fix this flaw within SSL/TLS within a
+</I>&gt;<i> reasonable timeframe, so that it can be implemented and shipped by the
+</I>&gt;<i> vendors in this century?
+</I>&gt;<i>
+</I>&gt;<i> (I don&#180;t think that starting from scratch and replacing SSL makes much sense,
+</I>&gt;<i> since it&#180;s just one huge flaw ...)
+</I>&gt;<i>
+</I>&gt;<i>    
+</I>re:
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#15">http://www.garlic.com/~lynn/aadsm28.htm#15</A> Dutch Transport Card Broken
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#16">http://www.garlic.com/~lynn/aadsm28.htm#16</A> Dutch Transport Card Broken
+
+aka ... that was part of the relying-party-only certificates from the 
+mid-90s;
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#rpo">http://www.garlic.com/~lynn/subpubkey.html#rpo</A>
+
+i.e. the x.509 identity digital certificates from the early 90s, were 
+becoming
+more and more overloaded with personal information ... and by the
+mid-90s, lots of institutions were starting to realize all that personal
+information represented significant privacy and liability issues ... and
+the RPO digital certificates were born.
+
+However, it was trivial to demonstrate that (for all those business 
+processes)
+that the digital certificates were redundant and superfluous (however, there
+was some amount of industry brain washing that digital certificates were
+mandatory ... especially if digital signatures was used ... even if they
+served no useful purpose).
+
+this also showed up in work on pk-init for kerberos supporting digital
+signature authentication ... and got into the confused mess with redundant
+and superfluous digital certificates
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#kerberos">http://www.garlic.com/~lynn/subpubkey.html#kerberos</A>
+
+and similarly digital signatures for radius
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#radius">http://www.garlic.com/~lynn/subpubkey.html#radius</A>
+
+(between kerberos and radius, they represent possibly the majority
+of authentication in the world today)
+
+part of the confusion regarding the necessity for digital certificates
+could be seen in the X9F financial standards work ... the appending
+of even a relying-party-only digital certificate (lacking any personal
+information) could represent a factor of 100 times payload bloat
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#bloat">http://www.garlic.com/~lynn/subpubkey.html#bloat</A>
+
+for a nominal electronic payment transactions (and also 100 times
+processing bloat). as a result, there was some standardization
+effort looking at &quot;compressed&quot; (relying party only) digital certificates
+(even tho they were serving no useful purpose), attempting to
+get the payload bloat down to possibly only 5-10 times (instead
+of 100 times). I took the opportunity to demonstrate that it
+would be logically possible to compress such digital certificates
+to zero bytes ... totally eliminating the payload bloat. then rather
+than advocating the elimination of totally useless, redundant
+and superfluous digital certificates
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#certless">http://www.garlic.com/~lynn/subpubkey.html#certless</A>
+
+there could be an infrastructure that mandated zero-byte
+digital certificates appended to every transaction.
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

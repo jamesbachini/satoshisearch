@@ -1,0 +1,45 @@
+<PRE>
+On Mar 19, 2008, at 6:56 PM, Steven M. Bellovin wrote:
+&gt;<i> I've been thinking about similar issues.  It seems to me that just
+</I>&gt;<i> destroying the key schedule is a big help -- enough bits will change  
+</I>&gt;<i> in
+</I>&gt;<i> the key that data recovery using just the damaged key is hard, per
+</I>&gt;<i> comments in the paper itself.
+</I>
+It is. That's something everyone should consider doing. However, I was  
+struck by the decay curves shown in the Cold Boot paper. The memory  
+decays in an S-curve. Interestingly, both the smoothest S-curve and  
+the sharpest were in the most recent equipment.
+
+However, this suggests that for a relatively small object (like a 256- 
+bit key) is apt to see little damage. If you followed the strategy of  
+checking for single-bit errors, then double-bit, then triple-bit, I  
+hypothesize that this simple strategy would be productive, because of  
+that curve.
+
+(I also have a few hypotheses on which bits will go first. I  
+hypothesize that a high-power bit surrounded by low-power ones will go  
+first, and a low-power bit amongst high-power ones will go last. I  
+also hypothesize that a large random area is reasonably likely to get  
+an early single-bit error. My rationale is that the area as a whole is  
+going to have relatively high power 'consumption' because it is  
+random, but the random area is going to have local artifacts that will  
+hasten a local failure. Assuming that 1 is high-power and 0 is low- 
+power, you expect to see a bitstring of 00100 or 0001000 relatively  
+often in a blob of 32kbits (4KB) or 64kbits (8KB), and those lonely  
+ones will have a lot of stress on them.)
+
+Despite that my hypotheses are only that, and I have no experimental  
+data, I think that using a large block cipher mode like EME to induce  
+a pseudo-random, maximally-fragile bit region is an excellent  
+mitigation strategy.
+
+Now all we need is someone to do the work and write the paper.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

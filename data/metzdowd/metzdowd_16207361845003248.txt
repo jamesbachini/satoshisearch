@@ -1,0 +1,51 @@
+<PRE>Steven M. Bellovin wrote:
+
+&gt;<i> I did see one possible red flag in
+</I>&gt;<i> the article: &quot;the key server verifies the client request, then
+</I>&gt;<i> encrypts, digitally signs, and escrows the key in a database&quot;.
+</I>&gt;<i> Escrowed keys are potentially *very* dangerous, but without knowing
+</I>&gt;<i> just what's being stored and how it's being protected, I can't say 
+</I>&gt;<i> more.
+</I>
+I appreciate the affirmation from Perry and Steven (so far) that
+I'm not off-base wrt designing security with simplicity in mind.
+I will confirm that security has taken precedence over simplicity
+where it was necessary to make a trade-off and where security was
+the primary goal.
+
+To respond to your concern, Steven, the escrowed symmetric keys
+are encrypted using a Public Key from an asymmetric key-pair (the
+recommended key-size is 2048-4096 bits RSA).
+
+The Private Key of the RSA key-pair capable of decrypting the
+escrowed keys is recommended to be generated and stored on a FIPS
+140-2 Level 3 (or greater) certified HSM.
+
+For activating the HSM to use the Private Key by the SKMS service,
+it is recommended to use M of N FIPS-certified smartcards for strong
+authentication, so that no single individual is capable of accessing
+the Private Key (and consequently, any of the escrowed symmetric
+keys) on their own.
+
+(For those interested, an ACM paper on an earlier DRAFT version of
+the protocol/architecture of the SKSML protocol is available at:
+<A HREF="http://middleware.internet2.edu/idtrust/2008/papers/07-noor-ekmi.pdf">http://middleware.internet2.edu/idtrust/2008/papers/07-noor-ekmi.pdf</A>
+I hope to inform this forum of the public availability of a more
+recent DRAFT of the protocol within the next two weeks, for review
+and comments.  We, on the OASIS committee will be grateful for any
+feedback we get from this forum).
+
+My understanding of cryptography, after spending 9 years deploying
+PKIs - large and small - is that it is necessary to use a combination
+of strong technology and procedures for effective security.  Relying
+on just one component alone can lead to a breakdown in security (as
+my experience has shown me).
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

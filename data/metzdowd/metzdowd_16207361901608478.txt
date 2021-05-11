@@ -1,0 +1,50 @@
+<PRE>Darren J Moffat &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Darren.Moffat at Sun.COM</A>&gt; writes:
+
+&gt;<i>I believe the only way both of these highly dubious deployment practices will
+</I>&gt;<i>be stamped out is when the browsers stop allowing users to see such web pages.
+</I>
+Unfortunately I think the only way it (and a pile of other things as well) may 
+get stamped out is through a multi-pronged approach that includes legislation, 
+and specifically properly thought-out requirements rather than big-business- 
+bought legislation like UCITA/UCC or easily-circumvented recommendations like 
+the FFIEC ones (the banks quickly discovered that by redefining &quot;two-factor 
+auth&quot; to mean &quot;twice as much one-factor auth&quot; they could meet the requirements 
+without having to do anything to improve security).
+
+I'm saying that under the influence of &quot;Zero Day Threat&quot; by Byron Acohido and
+Jon Swartz, which looks at some of the financial and credit-reporting industry
+practices that make identity fraud possible.  If you haven't read this
+already, go and get it now, apart from the annoyingly frequent context-
+switching between threads (one every few pages instead of the more usual one
+per chapter) it's a very scary read.  Given what it reveals about how the US
+financial/credit reporting industry works it should really be subtitled &quot;We're
+all going to die&quot;, since there's no obvious handbrake mechanism present in the
+system to slow down identity theft - the rate-limiting step is the fact that
+the crooks simply can't use all the stolen identities they have, not any
+security measures that may be present.  If you don't believe me, visit any of
+the hits from the following search:
+
+  <A HREF="http://www.google.com/search?q=fullz+dumps">http://www.google.com/search?q=fullz+dumps</A>
+
+(that's the easiest way to demo the problem to the masses without requiring
+people to learn to read cyrillic first :-).
+
+Yup, we're all going to die.
+
+&gt;<i>So that there becomes a directly attributable financial impact to the sites
+</I>&gt;<i>that deploy in that way.
+</I>
+The &quot;financial impact&quot; point is the key word, at the moment it's cheaper and
+easier for the banks/credit reporting companies to be non-compliant/insecure
+than it is for them to be secure.  I'm not sure that the browser is the most
+effective way to hit them over this though.
+
+Discuss :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

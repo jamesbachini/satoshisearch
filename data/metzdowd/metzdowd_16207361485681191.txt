@@ -1,0 +1,51 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> Smart cards are part of the problem set, not the solution set - they're just
+</I>&gt;<i> an expensive and awkward distraction from solving the real problem.  What I
+</I>&gt;<i> was suggesting (and have been for at least ten years :-) is a small external
+</I>&gt;<i> single-function device (no need for an OS) that can't be compromised by
+</I>&gt;<i> malware because there's no attack vector for the malware to get at it.
+</I>
+there is an interesting side story to this involving certification, common criteria,
+protection profiles, etc.
+
+possibly the majority of the smartcard protection profiles have to do with all the
+problems allowing software/application to be loaded. on the other hand, you can
+get a common criteria evaluation done on the basic chip ... w/o any application
+loading ... and being able to show a much higher security level ... than might be
+possible with any application actually loaded.
+
+one of the problems i ran into getting higher than eal4+ for aads chip strawman
+... was since everything was built into the silicon at manufacturing time, and 
+nothing could be subsequently loaded ... all the crypto had to also be resident
+in the silicon. 
+
+one of the original objectives given for the aads chip strawman was being able
+to do digital signature in contactless form factor within transit gate elapsed
+time requirements (very low power and very fast) ... which eventually fell to
+doing ec/dsa ... and i couldn't get an protection profile definition for ec/dsa
+higher than eal4+.  similar chips ... w/o anything loaded had been able to
+get eal5+ evaluation (or better) ... but since ec/dsa was built into the chip silicon,
+it was only possible to get eal4+.
+
+the other criteria for aads chip strawman was extremely aggressive cost reduction;
+i had joked i was taking a $500 milspec part, cost reducing by 2-3 orders of
+magnitude and at the same time increasing the integrity. part of the aggressive
+cost reduction was choosing a single function (&quot;something you have&quot; authentication
+via chip digital signature) that could be used in a broad range of applications ...
+and eliminate everything else.
+
+misc. aads
+<A HREF="http://www.garlic.com/~lynn/x959.html#aads">http://www.garlic.com/~lynn/x959.html#aads</A>
+
+other posts in this thread:
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#31">http://www.garlic.com/~lynn/aadsm27.htm#31</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#32">http://www.garlic.com/~lynn/aadsm27.htm#32</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#33">http://www.garlic.com/~lynn/aadsm27.htm#33</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#34">http://www.garlic.com/~lynn/aadsm27.htm#34</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#35">http://www.garlic.com/~lynn/aadsm27.htm#35</A> The bank fraud blame game
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

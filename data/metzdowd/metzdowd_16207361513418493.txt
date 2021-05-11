@@ -1,0 +1,47 @@
+<PRE>=?UTF-8?B?Sm9hY2hpbSBTdHLDtm1iZXJnc29u?= &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Joachim at Strombergson.com</A>&gt; writes:
+
+&gt;<i>I just saw om EE Times that AMD will start to extend their x86 CPUs with
+</I>&gt;<i>instructions to support/help developers take advantage of the increasing
+</I>&gt;<i>(potential) parallelism in their processors. First out are two instructions
+</I>&gt;<i>that allows the developer to get info about instruction completion as well as
+</I>&gt;<i>cache misses.
+</I>&gt;<i>
+</I>&gt;<i>Considering the article by . about analysis of protection mechanism against
+</I>&gt;<i>cache based timing attacks for AES [1] one could assume that these
+</I>&gt;<i>instructions should be useful for writing side-channel resistant
+</I>&gt;<i>implementations
+</I>
+I think it's exactly the opposite, we're already having enough problems with
+microarchitectural (MA) attacks without explicit diagnostic facilities built
+into the CPU.  If you look at the AMD specs these extra ring3-accessible
+facilities are only going to make it worse.  These attacks are essentially
+impossible to defend against merely by modifying the victim code, the only
+possible defences at the moment are:
+
+1. &quot;Don't do that then&quot; (i.e. don't allow arbitrary untrusted code to run in
+   parallel with your crypto ops).
+
+2. With future hardware support, some mechanism for partitioning the CPU so
+   that critical regions of code can run without leaving externally observable
+   traces, ending with some sort of super-INVD/INVLPG instruction to clear all
+   caches and buffers.  So the code would be something like:
+
+    enter_secure_region
+    [[[crypto code]]]
+    INV_everything
+    exit_secure_region
+
+   Of course something like this would have to be accessible from ring 3,
+   which makes it a built-in DoS mechanism.
+
+So &quot;don't do that then&quot; seems to be the only fix for this (not including the
+usual blue-sky response of everyone having &lt;insert-crypto-gadget-du-jour&gt;
+built into their system).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

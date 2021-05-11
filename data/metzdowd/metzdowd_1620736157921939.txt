@@ -1,0 +1,36 @@
+<PRE>Maybe this is off topic, but I think it does relate to the 
+implementation of cryptography.
+
+I stumbled across this filing:  
+<A HREF="http://static.bakersfield.com/smedia/2007/09/25/15/steroids.source.p">http://static.bakersfield.com/smedia/2007/09/25/15/steroids.source.p</A>
+rod_affiliate.25.pdf
+
+relating to a drug case where the defendant and others used 
+Hushmail.
+
+What I found interesting was:
+1.  The amount of data which Hushmail was required to turn over to 
+the US DEA relating to 3 email addresses.  3 + 9 = 12 CDs  What 
+kind of and for what length of time does Hushmail store logs?
+
+2.  That items #5 and #15 indicated that the _contents_ of emails 
+between several Hushmail accounts were &quot;reviewed&quot;.  
+
+3.  The request was submitted to the ISP for IP addresses related 
+to a specific hushmail address (#9).  How would the ISP be able to 
+link a specific email address to an IP when Hushmail uses SSL/TLS 
+for both web and POP3/IMAP interfaces?
+
+Since email between hushmail accounts is generally PGPed.  (That is 
+the point, right?)  And the MLAT was used to establish probable 
+cause, I assume that the passphrases were not squeezed out of the 
+plaintiff.  How did the contents get divulged?
+
+Rearden
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

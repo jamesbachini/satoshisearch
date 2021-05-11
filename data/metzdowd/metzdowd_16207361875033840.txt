@@ -1,0 +1,36 @@
+<PRE>&quot;David G. Koontz&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">david_koontz at xtra.co.nz</A>&gt; writes:
+
+&gt;<i><A HREF="http://www.stuff.co.nz/4659100a28.html?source=RSStech_20080817">http://www.stuff.co.nz/4659100a28.html?source=RSStech_20080817</A>
+</I>&gt;<i>
+</I>&gt;<i>Peter Gutmann has gotten himself in the news along with Adam Laurie and
+</I>&gt;<i>Jeroen van Beek for altering the passport microchip in a passport.
+</I>
+The original story was actually the coverage in the UK Times last week,
+<A HREF="http://www.timesonline.co.uk/tol/news/uk/crime/article4467098.ece.">http://www.timesonline.co.uk/tol/news/uk/crime/article4467098.ece.</A>  It was a
+three-person effort, Adam Laurie did the RFID part (via RFIDIOt), Jeroen van
+Beek did the passport software implementation and tying the whole thing
+together, all I did was the signing.  We never touched the passport chip, what
+we showed was that it's possible to create your own fictitious e-passport
+that's accepted as valid by the reference Golden Reader Tool.  In other words
+we showed that what security researchers had been warning about ever since e-
+passports were first proposed was actually possible, following the l0pht's
+motto &quot;Making the theoretical practical&quot;.  Jeroen presented the work at Black
+Hat'08,
+<A HREF="http://www.blackhat.com/html/bh-usa-08/bh-usa-08-speakers.html#vanBeek.">http://www.blackhat.com/html/bh-usa-08/bh-usa-08-speakers.html#vanBeek.</A>
+
+&gt;<i><A HREF="http://www.stuff.co.nz/images/748842.jpg">http://www.stuff.co.nz/images/748842.jpg</A>
+</I>
+Ugh, no, make it go away.
+
+(Alert readers may notice the anomaly with the carefully-placed monitor right
+behind my head, which is displaying something slightly different from the
+surrounding sea of Vista desktops :-).  It's actually a file photo from a news
+story from the start of last year about Vista).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

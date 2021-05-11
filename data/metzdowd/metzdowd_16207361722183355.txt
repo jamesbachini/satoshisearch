@@ -1,0 +1,41 @@
+<PRE>On Fri, Mar 21, 2008 at 08:52:07AM +1000, James A. Donald wrote:
+&gt;<i> From time to time I hear that DNSSEC is working fine, and on examining 
+</I>&gt;<i> the matter I find it is &quot;working fine&quot; except that ....
+</I>&gt;<i> 
+</I>&gt;<i> Seems to me that if DNSSEC is actually working fine, I should be able to 
+</I>&gt;<i> provide an authoritative public key for any domain name I control, and 
+</I>&gt;<i> should be able to obtain such keys for other domain names, and use such 
+</I>&gt;<i> keys for any purpose, not just those purposes envisaged in the DNSSEC 
+</I>&gt;<i> specification.  Can I?  It is not apparent to me that I can.
+</I>
+
+	actually, the DNSSEC specification -used- to support 
+	keys for &quot;any purpose&quot;, and in theory you could use
+	DNSSEC keys in that manner.  However a bit of careful
+	thought suggests that there is potential  disconnect btwn
+	the zone owner/admin who creates/distributes the keys as 
+	a token of the integrity and authenticity of the data in
+	the DNS, and the owner/admin of the node to which the DNS
+	data points.  Remember that while you may control your forward
+	name (and not many people actually run their own DNS servers)
+	it is less likely that you run your address maps - and for
+	the paranoid, you would want to ensure the forward and 
+	reverse zones are signed and at the intersection, there is
+	a common data element which you can use.
+
+	To do what you want, want, you might consider using the
+	CERT-rr, using the DNS to distribute host-specific keys/certs.
+	And to ensure that the data in the DNS was not tampered with,
+	using DNSSEC signed zones with CERT-rr's would not be a bad
+	thing.   In fact, thats what we are testing .
+
+&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

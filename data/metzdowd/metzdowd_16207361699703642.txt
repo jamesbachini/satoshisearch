@@ -1,0 +1,38 @@
+<PRE>On 11 February 2008 04:13, Ali, Saqib wrote:
+&gt;<i> I installed TrueCrypt on my laptop and ran some benchmark tests/
+</I>&gt;<i> 
+</I>&gt;<i> Benchmark Results:
+</I>&gt;<i> <A HREF="http://www.full-disk-encryption.net/wiki/index.php/TrueCrypt#Benchmarks">http://www.full-disk-encryption.net/wiki/index.php/TrueCrypt#Benchmarks</A>
+</I>
+  Thanks for doing this!
+
+&gt;<i> Cons:
+</I>&gt;<i> 1) Buffered Read and Buffered Transfer Rate was almost halved after
+</I>&gt;<i> TrueCrypt FDE was enabled :-(.
+</I>
+  Yes, to almost the exact same rate as sequential reads.  I'm guessing it
+simply doesn't implement look-ahead decryption.  It might even be a positively
+good idea to not decrypt anything until you're specifically asked.
+
+&gt;<i> 3) The initial encryption of the 120 GB HDD took 2 hours.
+</I>
+  You think a 1GB/min encryption rate is so slow as to count as a &quot;con&quot;?  I
+think that's fairly reasonable.  My lightly loaded AMD64x2 box just took 48s
+to copy a 584MB file from one place to another on a first trial, and between
+26s and 39s on 'hot' retests.
+
+  Or are you suggesting that it could encrypt each block OTF when it's first
+accessed, or run the encryption in the background while the system was still
+live, instead of converting the whole drive in one big bite?
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

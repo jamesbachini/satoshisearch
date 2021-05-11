@@ -1,0 +1,38 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+
+&gt;<i>An object lesson in this just fell in my lap -- I just got my first email
+</I>&gt;<i>from a spammer that links to a web site that uses such a cert, certified by a
+</I>&gt;<i>CA I've never heard of (&quot;Starfield Technologies, Inc.&quot;) Doubtless they sell
+</I>&gt;<i>discount &quot;Enhanced Security&quot; certs so you don't have to worry about paying
+</I>&gt;<i>more money either. I haven't checked the website for drive by malware, but I
+</I>&gt;<i>wouldn't be shocked if it was there.
+</I>
+There's another data source that's examined the effect of EV certs and browser
+blacklists on a much larger scale, namely the APWG statistics.  They show an
+essentially flat distribution for phishing from January 2007 to January 2008,
+the period of phase-in of EV certs and the browser anti-phishing filters.  In
+other words the attack stats show that the effect of EV certs was exactly as
+expected.
+
+(Hat tip to an APWG member who made this point during a conference talk
+recently).
+
+&gt;<i>I'm thinking of starting a CA that sells &quot;super duper enhanced security&quot;
+</I>&gt;<i>certs
+</I>
+So you could have EV certs, EEV certs, EEEV certs, EEEEV certs, a PKI
+equivalent of the 'aptitude -v[v[v[v[v[v...]]]]] moo' trick.  Every couple of
+years when people realise that the current level of (E^n)V certs work no
+better than the (E^n-1)V certs that preceded them did, you add another 'E' and
+everyone gets to pay again for a new set of certs.  The only potential problem
+is that all the CAs would have to agree to add more E's in lock-step,
+otherwise you'd get a tragedy-of-the-commons effect where the CA who adds the
+most E's the quickest wins.
+
+Peeeeeeeter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

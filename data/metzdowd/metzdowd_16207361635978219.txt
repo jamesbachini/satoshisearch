@@ -1,0 +1,96 @@
+<PRE>I've attached below Rick's reply to this thread. Rick Carback is a member of
+the PunchScan team.
+
+- Taral
+
+---------- Forwarded message ----------
+From: Rick Carback
+Date: Dec 16, 2007 12:01 PM
+Subject: Re: Fwd: Fwd: PunchScan voting protocol
+
+ I think there are some misconceptions/assumptions in play here about the
+privacy available in current systems. Punchscan was designed to provide an
+unconditional levels of integrity into the voting process, not to improve
+privacy over the status quo. Election officials, ultimately, are still
+responsible for protecting the privacy of voters. The cryptography is meant
+as a tool to be used by election officials that prevents anyone from
+arbitrarily changing vote totals without getting caught. I do not think that
+Punchscan is noticeably worse than current systems in terms of privacy
+protection and it is still unclear to me if there is any real difference at
+all.
+
+As for specific responses:
+
+ &quot;Well, that's the right question.  That's the sort of question
+the punchscan team should be asking themselves, and answering
+in more detail that I have heretofore seen.  What threats does
+punchscan claim to defend against?  What threats does it leave
+to be mitigated by other (non-punchscan) means?&quot;
+
+ We have talked about this stuff and published it -- we're still talking
+about it, see:
+
+<A HREF="http://punchscan.org/papers/ibs_carback.pdf">http://punchscan.org/papers/ibs_carback.pdf</A>
+<A HREF="http://punchscan.org/papers/receipts_clark.pdf">http://punchscan.org/papers/receipts_clark.pdf</A>
+<A HREF="http://punchscan.org/papers/patterns_popoveniuc">http://punchscan.org/papers/patterns_popoveniuc</A>
+<A HREF="http://punchscan.org/papers/pip_essex.pdf">http://punchscan.org/papers/pip_essex.pdf</A>
+
+There will be more publications in the future. Also, you might want to check
+out our VoComp submission:
+
+<A HREF="http://punchscan.org/vocomp.php">http://punchscan.org/vocomp.php</A>
+
+Unlike any other team at the competition, we were more careful with our
+claims and our analysis of our system. Part of that is the reason why we
+won.
+
+ &quot;As an example: Let's look at the plant where the ballots are
+printed.  Suppose somebody attaches a tiny &quot;spy camera&quot; to
+the frame of one of the printing presses, so as to obtain an
+image of both parts of the two-part ballot (for some subset
+of the ballots).&quot;
+
+ In a traditional system, you can put the spy cameras in the polling place
+so you can watch each voter vote. That will allow you to *directly* target
+and identify each voter in a location where election authorities exert *less
+* control over the surrounding environment. By contrast, attacking the
+printer provides you with a decryption of the ballots but not who used them
+-- you still have to go out and find each voter, and the only reliable way
+to do that is to catch them in the act of voting, because they could have
+got rid of the receipt or swapped it (Alternatively, receipts could be given
+to third parties, e.g. LWV, this is what EPIC suggests). In that sense, this
+example is unrealistic. This is especially true when you include machines in
+polling places that know how voters vote (in punchscan, they don't), and the
+myriad of ways a voter could expose their choices to a coercer. See:
+
+<A HREF="http://punchscan.org/blog/?p=6">http://punchscan.org/blog/?p=6</A>
+<A HREF="http://punchscan.org/blog/?p=7">http://punchscan.org/blog/?p=7</A>
+
+The comment about &quot;partial exposure risk&quot; looks like a misunderstanding, so
+I'll ignore it....
+
+ &quot;Ah yes, but what is being assumed about the /properties/ of
+this Election Authority?  Is the EA omnipresent and omnipotent,
+like the FSM, or does it have boundaries and limitations?
+For example, does it ever need to rely on employees or
+subcontractors?&quot;
+
+ This information is in the original papers, but the EA is responsible for
+generating the data, supervising the printing and packaging (which should
+include tamper-evident protections), and coordinating the shipment of
+ballots to polling places. Essentially, all the things a central authority
+would be responsible for in a current optical scan system. It would also be
+responsible for generating keys for the scanning equipment and controlling
+authentication to the bulletin board, but that is all part of the bulletin
+board component that could be generic to any E2E system.
+
+I might post this to the blog, but I am sort of busy. I will let you know
+when/if I do.
+
+-R
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

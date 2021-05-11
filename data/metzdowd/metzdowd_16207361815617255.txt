@@ -1,0 +1,32 @@
+<PRE>On Jun 30, 2008, at 7:22 PM, Perry E. Metzger wrote:
+&gt;<i> One of the most interesting things I find about most fields is the
+</I>&gt;<i> fact that people who are incompetent very often fancy themselves
+</I>&gt;<i> experts. There's a great study on this subject -- usually the least
+</I>&gt;<i> competent people are the ones that feel highly confident in their
+</I>&gt;<i> skills, while the people who aren't have more doubts. One sees this
+</I>&gt;<i> very phenomenon on this very list, and not infrequently.
+</I>
+
+Indeed:
+
+     &lt;<A HREF="http://en.wikipedia.org/wiki/Lake_Wobegon_effect">http://en.wikipedia.org/wiki/Lake_Wobegon_effect</A>&gt;
+     &lt;<A HREF="http://en.wikipedia.org/wiki/Dunning-Kruger_effect">http://en.wikipedia.org/wiki/Dunning-Kruger_effect</A>&gt;
+
+How security non-experts screwed up security in systems like WEP and  
+PPTP is no mystery to me. How, on the other hand, a real expert at  
+_anything_ feels comfortable entering another hard technical field  
+without screaming for assistance is something I don't get at all.
+
+That a roomful of network experts designing 802.11 didn't hold hands  
+and all together chant &quot;bring us a good cryptographer&quot; with such  
+maniacal monophony as to rival any Gregorian choir makes me highly  
+suspicious about their supposed expertise with _networks_.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

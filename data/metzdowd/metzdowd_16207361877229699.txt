@@ -1,0 +1,34 @@
+<PRE>Apropos the recent discussion of Fake UIs and the problem of people 
+most needing sensitivity to the dangers being most insensitive:
+
+ISS laptops found to be infected with Gammima.AG virus; apparently 
+not the first infection on the ISS.
+
+What's worth noting about this story is that the laptops carried by 
+astronauts into space *** DO NOT *** contain any anti-virus software.
+
+&quot;I was just following *NASA* 'best practices'...&quot;
+
+<A HREF="http://news.bbc.co.uk/2/hi/technology/7583805.stm">http://news.bbc.co.uk/2/hi/technology/7583805.stm</A>
+<A HREF="http://www.spaceref.com/news/viewnews.html?id=1305">http://www.spaceref.com/news/viewnews.html?id=1305</A>
+via
+<A HREF="http://science.slashdot.org/science/08/08/27/1231224.shtml">http://science.slashdot.org/science/08/08/27/1231224.shtml</A>
+
+-- 
+
+  | || ||| || ||| || ||| || ||| || ||| || ||| || |||
+
+Charles McElwain
+33 Vernon Street
+Somerville, MA 02145
+617-628-5542 (home)
+617-501-1591 (cell)
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">charlesmcelwain1 at verizon.net</A>
+
+  | || ||| || ||| || ||| || ||| || ||| || ||| || |||
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,74 @@
+<PRE>|<i> ...How bad is brute force here for AES? Say you have a chip that can do
+</I>|<i> ten billion test keys a second -- far beyond what we can do now. Say
+</I>|<i> you have a machine with 10,000 of them in it. That's 10^17 years worth
+</I>|<i> of machine time, or about 7 million times the lifetime of the universe
+</I>|<i> so far (about 13x10^9 years).
+</I>|<i> 
+</I>|<i> Don't believe me? Just get out calc or bc and try
+</I>|<i>   ((2^128/10^14)/(60*60*24*365))
+</I>|<i> 
+</I>|<i> I don't think anyone will be brute force cracking AES with 128 bit
+</I>|<i> keys any time soon, and I doubt they will ever be brute forcing AES
+</I>|<i> with 256 bit keys unless very new and unanticipated technologies
+</I>|<i> arise.
+</I>|<i> 
+</I>|<i> Now, it is entirely possible that someone will come up with a much
+</I>|<i> smarter attack against AES than brute force. I'm just speaking of how
+</I>|<i> bad brute force is. The fact that brute force is so bad is why people
+</I>|<i> go for better attacks, and even the A5/1 attackers do not use brute
+</I>|<i> force.
+</I>Interestingly, if you add physics to the picture, you can convert &quot;no
+practical brute force attack&quot; into &quot;no possible brute force attack given
+known physics&quot;.  Current physical theories all place a granularity on
+space and time:  There is a smallest unit of space beyond which you
+can't subdivide things, and a smallest unit of time.  One place this
+shows up, as an example:  It turns out give a volume of space, the
+configuration with the maximum entropy for that volume of is exactly a
+black hole with that volume, and its entropy turns out to be the area
+of the black hole, in units of square Planck lengths.  So, in effect,
+the smallest you can squeeze a bit is a Planck length by Planck length
+square.  (Yes, even in 3-d space, the constraint is on an area - you'd
+think the entropy would depend on the volume, but in fact it doesn't,
+bizarre as that sounds.)
+
+So suppose you wanted to build the ultimate computer to brute-force
+DES.  Suppose you want your answer within 200 years.  Since information
+can't propagate faster than light, anything further than 100 years
+from the point where you pose the question is irrelevant - it can't
+causally affect the result.  So you computer is (at most, we'll
+ignore the time it takes to get parts of that space into the
+computation) a 100-light-year diameter sphere that exists for 200
+years.  This is a bounded piece of space-time, and can hold a huge,
+but finite, number of bits which can flip at most a huge, but finite,
+number of times.  If a computation requires more bit flips than that,
+it cannot, even in *physical* principle, be carried out.
+
+I ran across a paper discussing this a couple of years back, in a
+different context.  The authors were the ones who made the argument
+that we need to be wary of &quot;in principle&quot; arguments:  What's
+possible &quot;in principle&quot; depends on what assumptions you make.  Given
+an appropriate oracle, the halting problem is &quot;in principle&quot; easy to
+solve.
+
+The paper discussed something else, but I made some rough estimates
+(details long forgotten) of the &quot;in principle&quot; limits on brute force
+attacks.  As I recall, for a 100-year computation, a 128-bit key
+is just barely attackable; a 256-bit key is way out of the realm of
+possibility.  Given all the hand-waving in my calculation, I didn't
+try to determine where in that range the cut-over occurs.  Someone
+better than me at the physics should be able to compute much tighter
+bounds.  Even if I'm off by quite a bit, it's certain that the key
+lengths we are using today are already near fundamental physical
+limits.  Brute force is simply not an interesting mode of attack
+against decently engineered modern systems.
+
+Of course, this says - and can say - absolutely nothing about the
+possibility of analytic or side-channel or any of a variety of other
+intelligent attacks....
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

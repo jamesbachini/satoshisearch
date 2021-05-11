@@ -1,0 +1,14 @@
+<PRE>One of the earlier messages (I lost it) said that Philipp said that 
+there was information that could be used as a nonce. In that case, I 
+would recommend a stream cipher used to generate 133 bits at a time; if 
+the lump of bits represents an integer in the correct range, add it 
+modulo 10^40... otherwise generate more bits. This is about as simple as 
+it gets.
+
+Greg.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

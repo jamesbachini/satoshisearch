@@ -1,0 +1,26 @@
+<PRE>Hi Gang,
+
+More from the land of CAs.
+
+I just got a warning that a certificate had expired and yet the 
+data in it says:
+
+&gt;<i> [From: Tue Aug 05 17:00:00 PDT 2003,
+</I>&gt;<i>  To: Mon Aug 05 16:59:59 PDT 2013]
+</I>
+The error message says: &quot;The digital signature was generated with 
+a trusted certificate but has expired.&quot;
+
+I'm running Firefox 3.01, and Java 6 Update 7.
+
+The error appears to be with Java as that is the window that pops up.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

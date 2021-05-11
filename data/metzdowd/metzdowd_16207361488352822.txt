@@ -1,0 +1,36 @@
+<PRE>
+From: Peter Tomlinson &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pwt at iosis.co.uk</A>&gt;
+Subject: National IA Strategy
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ukcrypto at chiark.greenend.org.uk</A>
+Date: Mon, 02 Jul 2007 16:00:16 +0100
+
+
+&gt;<i>From <A HREF="http://www.cabinetoffice.gov.uk/csia/">http://www.cabinetoffice.gov.uk/csia/</A> :
+</I>
+
+      &quot;News
+
+National Information Assurance Strategy launched 
+&lt;<A HREF="http://www.cabinetoffice.gov.uk/csia/national_ia_strategy/index.asp">http://www.cabinetoffice.gov.uk/csia/national_ia_strategy/index.asp</A>&gt;
+On 27th June, a National Information Assurance Strategy was launched at 
+the IA07 event in Brighton. The annual event is hosted by CESG and 
+brings together key players in industry and government to work in 
+partnership to address the UK&#146;s needs in safeguarding information and ICT.&quot;
+
+
+The document is available at: 
+<A HREF="http://www.cabinetoffice.gov.uk/csia/national_ia_strategy/index.asp">http://www.cabinetoffice.gov.uk/csia/national_ia_strategy/index.asp</A> . I 
+haven't read it yet, and so cannot comment, but in a related area I'm 
+puzzled: having heard that Cabinet Office will be supporting Cabinet, I 
+wonder what will happen to all the technical stuff such as Govt Gateway 
+and even CSIA.
+
+Peter
+
+----------
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

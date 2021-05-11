@@ -1,0 +1,30 @@
+<PRE>* Saqib Ali:
+
+&gt;<i> can anyone please shed more light on this patent. It seems like a
+</I>&gt;<i> patent on the simple process of cryptographic erase......
+</I>
+Exactly.  Niels Provos, &quot;Encrypting Virtual Memory&quot;, USENIX Security
+2000, looks like something pretty close to prior art:
+
+|<i> We investigate several alternative solutions to prevent confidential
+</I>|<i> data from remaining on backing store, e.g. erasing data physically
+</I>|<i> from the backing store after pages on it become unreferenced.
+</I>|<i> However, we find that encryption of data on the backing store with
+</I>|<i> volatile random keys has several advantages over other approaches:
+</I>|<i> 
+</I>|<i> * The content of a page disappears when its respective encryption key
+</I>|<i>   is deleted, a very fast operation. [...]
+</I>
+AFAICS, the patent does not reference the paper.
+
+-- 
+Florian Weimer                &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fweimer at bfk.de</A>&gt;
+BFK edv-consulting GmbH       <A HREF="http://www.bfk.de/">http://www.bfk.de/</A>
+Kriegsstra&#223;e 100              tel: +49-721-96201-1
+D-76133 Karlsruhe             fax: +49-721-96201-99
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

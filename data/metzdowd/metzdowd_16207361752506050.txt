@@ -1,0 +1,93 @@
+<PRE>In case you missed this, since it appeared in the quantum physics 
+section; but is relevant to quantum cryptography (or, cryptography on 
+quantum computers.)
+
+The argument here is that Shor's factoring algorithm is dependent on 
+the Quantum Fourier Transform, which is sensitive to errors in 
+quantum input states, and these errors are not capable of being 
+suppressed by (current) quantum error correcting codes.
+
+Most saliently, 1) these errors destroy the polynomial scaling of 
+Shor's algorithm, and 2) for those not familiar with the QM terms, 
+&quot;decoherence&quot; is roughly equivalent to &quot;reduces to classical (i.e., 
+non-quantum) state behavior&quot;.
+
+Follow-ups on this line of research will be interesting for the 
+evaluation of any impact of quantum computers on cryptography, and 
+even generally, since the decoherence behavior would tend to make 
+quantum computers approximate improving classical computers.
+
+
+ From the Physics pre-print server arXiv, quantum physics section:
+<A HREF="http://arxiv.org/abs/0804.3076">http://arxiv.org/abs/0804.3076</A>
+
+Abstract:
+&gt;<i>Operator Imprecision and Scaling of Shor's Algorithm
+</I>&gt;<i>Authors: C. Ray Hill, George F. Viamontes
+</I>&gt;<i>(Submitted on 18 Apr 2008)
+</I>&gt;<i>
+</I>&gt;<i>     Abstract: Shor's algorithm (SA) is a quantum algorithm for 
+</I>&gt;<i>factoring integers. Since SA has polynomial complexity while the 
+</I>&gt;<i>best classical factoring algorithms are sub-exponential, SA is cited 
+</I>&gt;<i>as evidence that quantum computers are more powerful than classical 
+</I>&gt;<i>computers. SA is critically dependent on the Quantum Fourier 
+</I>&gt;<i>Transform (QFT) and it is known that the QFT is sensitive to errors 
+</I>&gt;<i>in the quantum state input to it. In this paper, we show that the 
+</I>&gt;<i>polynomial scaling of SA is destroyed by input errors to the QFT 
+</I>&gt;<i>part of the algorithm. We also show that Quantum Error Correcting 
+</I>&gt;<i>Codes (QECC) are not capable of suppressing errors due to operator 
+</I>&gt;<i>imprecision and that propagation of operator precision errors is 
+</I>&gt;<i>sufficient to severely degrade the effectiveness of SA. Additionally 
+</I>&gt;<i>we show that operator imprecision in the error correction circuit 
+</I>&gt;<i>for the Calderbank-Shor-Steane QECC is mathematically equivalent to 
+</I>&gt;<i>decoherence on every physical qubit in a register. We conclude that, 
+</I>&gt;<i>because of the effect of operator precision errors, it is likely 
+</I>&gt;<i>that physically realizable quantum computers will be capable of 
+</I>&gt;<i>factoring integers no more efficiently than classical computers.
+</I>
+Concluding Remarks:
+&gt;<i>Quantum error correction is capable of reliably suppressing 
+</I>&gt;<i>single-qubit errors due to environmental disturbances or operator 
+</I>&gt;<i>precision errors.  However, operator imprecision errors propagate 
+</I>&gt;<i>and grow during the course of a quantum computation and have an 
+</I>&gt;<i>important impact on the efficiency of the computation.  In 
+</I>&gt;<i>particular, we have shown that operator precision errors break the 
+</I>&gt;<i>polynomial scaling of Shor's algorithm and conclude that, in the 
+</I>&gt;<i>presence of operator precision errors, Shor's algorithm is no more 
+</I>&gt;<i>efficient than classical algorithms for factoring integers.  To 
+</I>&gt;<i>demonstrate how operator precision errors propagate in practice, we 
+</I>&gt;<i>proved that the error correction circuit for the CSS QECC is 
+</I>&gt;<i>mathematically equivalent to applying decoherence on each physical 
+</I>&gt;<i>quibit in a logical qubit register.  We then used simulation to show 
+</I>&gt;<i>that this accumulated error on eqch qubit causes the probability of 
+</I>&gt;<i>error in a CSS QECC register to increase linearly with the number of 
+</I>&gt;<i>gates applied.
+</I>&gt;<i>
+</I>&gt;<i>It is natural to ask whether these results have wider implications 
+</I>&gt;<i>about the power of quantum computers relative to classical 
+</I>&gt;<i>computers.  While the results presented in this paper do not answer 
+</I>&gt;<i>this question definitively, it is important to note the singular 
+</I>&gt;<i>stature of Shor's algorithm as the only quantum algorithm that 
+</I>&gt;<i>appears to solve a classically intractable problem.  The fact that 
+</I>&gt;<i>Shor's algorithm is not more efficient than classical algorithms 
+</I>&gt;<i>removes the only strong evidence for the superior computational 
+</I>&gt;<i>power of quantum computers relative to classical computers. 
+</I>
+-- 
+
+  | || ||| || ||| || ||| || ||| || ||| || ||| || |||
+
+Charles McElwain
+33 Vernon Street
+Somerville, MA 02145
+617-628-5542 (home)
+617-501-1591 (cell)
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">charlesmcelwain1 at verizon.net</A>
+
+  | || ||| || ||| || ||| || ||| || ||| || ||| || |||
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

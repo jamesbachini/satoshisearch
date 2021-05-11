@@ -1,0 +1,44 @@
+<PRE>&gt;<i>EE Times: Toshiba tips random-number generator IC
+</I>&gt;<i>
+</I>&gt;<i>   SAN FRANCISCO -- Toshiba Corp. has claimed a major breakthrough in
+</I>&gt;<i>   the field of security technology: It has devised the world's
+</I>&gt;<i>   highest-performance physical random-number generator (RNG)
+</I>&gt;<i>   circuit.
+</I>&gt;<i>
+</I>&gt;<i>   The device generates random numbers at a data rate of 2.0 megabits
+</I>&gt;<i>   a second, according to Toshiba in a paper presented at the
+</I>&gt;<i>   International Solid-State Circuits Conference (ISSCC) here.
+</I>
+I'm wondering if they've considered the possibility of EMI skewing the
+operation of the device, or other means of causing the device to
+genearate &quot;less than completely random&quot; numbers.
+
+It is certainly an interesting device; I think this would find
+considerable use in communication infrastructure and high-bandwidth
+applications.  As someone else mentioned, generating a single, random,
+128 bit seed is not too difficult with current technology, but it
+doesn't address the issue that often times you want more than just a
+single key.  One of the problems with the Linux random number generator
+is that it happens to be quite slow, especially if you need a lot of
+data.
+
+Some potential uses:
+1.) Secure file erasure.
+2.) OTP keygen for those _really_ high security applications.
+3.) Faster symmetric keyset generation.  You know, when you need to
+build 32k keys...
+4.) Random seeding of communication packets.
+
+There used to be (maybe still) a TCP spoofing exploit that relied on the
+timing of packets; there are also various de-anonymization attacks based
+on clock skew.  With a chip like this, you could add a small, random
+number to the timestamp, or even packet delay, and effectively thwart
+such attacks.  Such systems need high-bandwidth, random number
+generators.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,47 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> On Sat, 24 May 2008 20:29:51 +0100
+</I>&gt;<i> Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> Of course, we have now persuaded even the most stubborn OS that 
+</I>&gt;&gt;<i> randomness matters, and most of them make it available, so perhaps
+</I>&gt;&gt;<i> this concern is moot.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Though I would be interested to know how well they do it! I did have 
+</I>&gt;&gt;<i> some input into the design for FreeBSD's, so I know it isn't
+</I>&gt;&gt;<i> completely awful, but how do other OSes stack up?
+</I>&gt;&gt;<i>
+</I>&gt;<i> I believe that all open source Unix-like systems have /dev/random
+</I>&gt;<i> and /dev/urandom; Solaris does as well.
+</I>
+
+Yes, but with different semantics:
+
+      /dev/urandom is a compatibility nod
+      to Linux. On Linux, /dev/urandom will
+      produce lower quality output if the
+      entropy pool drains, while
+      /dev/random will prefer to block and
+      wait for additional entropy to be
+      collected.  With Yarrow, this choice
+      and distinction is not necessary,
+      and the two devices behave
+      identically. You may use either.
+
+(random(4) from Mac OSX.)
+
+Depending on where you are in the security paranoia 
+equation, the differences matter little or a lot.  If doing 
+medium level security, it's fine to outsource the critical 
+components to the OS, and accept any failings.  If doing 
+paranoid-level stuff, then best to implement ones own mix 
+and just stir in the OS level offering.  That way we reduce 
+the surface area for lower-layer config attacks like the 
+Debian adventure.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

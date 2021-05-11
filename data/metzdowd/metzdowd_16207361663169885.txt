@@ -1,0 +1,19 @@
+<PRE>=?UTF-8?Q?Ivan_Krsti=C4=87?= &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; writes:
+
+&gt;<i>4) Essentially all open source projects use the TSU licensing exception.
+</I>&gt;<i>
+</I>&gt;<i>5) Essentially none of them publish the details of their experience of the
+</I>&gt;<i>process of satisfying the export control requirements.
+</I>
+That's because there's nothing much to publish:
+
+In the US, notify the BIS via email.
+Outside the US, just export away.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

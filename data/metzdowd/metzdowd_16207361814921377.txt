@@ -1,0 +1,30 @@
+<PRE>* Perry E. Metzger:
+
+&gt;<i> Excerpt:
+</I>&gt;<i>
+</I>&gt;<i>      Jennifer Caukin, Skype's director of corporate communications
+</I>&gt;<i>      replied to us: &quot;We have not received any subpoenas or court
+</I>&gt;<i>      orders asking us to perform a live interception or wiretap of
+</I>&gt;<i>      Skype-to-Skype communications. In any event, because of Skype's
+</I>&gt;<i>      peer-to-peer architecture and encryption techniques, Skype would
+</I>&gt;<i>      not be able to comply with such a request.&quot;
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://news.cnet.com/8301-13578_3-9963028-38.html?part=rss&amp;tag=feed&amp;subj=TheIconoclast">http://news.cnet.com/8301-13578_3-9963028-38.html?part=rss&amp;tag=feed&amp;subj=TheIconoclast</A>
+</I>
+It's sort-of industry practice to wiretap peer-to-peer voice-over-IP
+environments by asking the naming service not to signal the availability
+of a direct, end-to-end, but to fall back to some media gateway (which
+is there for interoperability with the phone network anyway).  I'm
+surprised that is compliant with regulatory requirements, but
+apparently, it is.
+
+So, at that point, it wouldn't be &quot;Skype-to-Skype&quot; anymore.  It also
+solves the problem of getting access to the media stream (which is the
+difficult part for traditional VoIP systems, which are encrypted only in
+the marketing brochures).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

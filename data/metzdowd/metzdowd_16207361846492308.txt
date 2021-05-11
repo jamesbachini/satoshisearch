@@ -1,0 +1,32 @@
+<PRE>On Wed, 2008-07-09 at 13:02 +1200, David G. Koontz wrote:
+&gt;<i> 
+</I>&gt;<i> I did a quick check to look for patent applications or patents by them and
+</I>&gt;<i> didn't find any.  This isn't definitive if a patent application isn't
+</I>&gt;<i> published.  The newest published patent application I found on encryption
+</I>&gt;<i> had an application date of 11 Dec 2007.  Some recently published patent
+</I>&gt;<i> applications are 6 or 7 years old, too.
+</I>
+This is the patent you're searching for:
+Secure encryption system, device and method - Patent 20060193472
+
+--
+Brecht Wyseur
+Katholieke Universiteit Leuven tel. +32 16 32 17 21
+Dept. Electrical Engineering-ESAT / COSIC fax. +32 16 32 19 69
+Kasteelpark Arenberg 10, B-3001 Leuven-Heverlee, BELGIUM office 01.53
+
+ <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">brecht.wyseur at esat.kuleuven.be</A>
+ <A HREF="http://homes.esat.kuleuven.be/~bwyseur">http://homes.esat.kuleuven.be/~bwyseur</A>
+
+ P=NP if (P=0 or N=1)
+GPG Pub key: <A HREF="https://homes.esat.kuleuven.be/~bwyseur/pubkey">https://homes.esat.kuleuven.be/~bwyseur/pubkey</A>
+GPG Fingerprint: 890C 7C0B F1D9 597E F205 87C8 B716 D7D3 20F8 353F
+
+
+Disclaimer: <A HREF="http://www.kuleuven.be/cwis/email_disclaimer.htm">http://www.kuleuven.be/cwis/email_disclaimer.htm</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,22 @@
+<PRE>On Mon, 8 Sep 2008, Adam Shostack wrote:
+&gt;<i> What makes now the perfect time to address an issue which has been
+</I>&gt;<i> present for quite soem time?
+</I>
+I'd turn that question around, and ask what makes now such a bad time to
+address an issue that's been present (and not addressed) for quite some
+time... ?
+
+Surely the recent DNS fiasco was enough of an illustration of the merits
+of not worrying about something that's been a well known issue for ages...
+
+cheers!
+==========================================================================
+&quot;A cat spends her life conflicted between a deep, passionate and profound
+desire for fish and an equally deep, passionate and profound desire to
+avoid getting wet.  This is the defining metaphor of my life right now.&quot;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,18 @@
+<PRE>
+There have been other earlier reports, but the neat thing about this
+one is that the attackers went for the DNS record for the ISP's own
+crappy &quot;that domain doesn't exist, here, have some ads instead&quot; web
+page.
+
+<A HREF="http://securitylabs.websense.com/content/Alerts/3163.aspx">http://securitylabs.websense.com/content/Alerts/3163.aspx</A>
+
+Hat tip: Bill Squier
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

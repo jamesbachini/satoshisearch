@@ -1,0 +1,27 @@
+<PRE>
+&quot;Matt Ball&quot; &lt;matt.ball ieee.org&gt; wrote
+
+&gt;<i> Here is a C implementation of __random32:
+</I>&gt;<i> 
+</I>&gt;<i> typedef unsigned long u32;
+</I>&gt;<i> struct rnd_state { u32 s1, s2, s3; };
+</I>&gt;<i> static u32 __random32(struct rnd_state *state)
+</I>&gt;<i> {
+</I>&gt;<i> #define TAUSWORTHE(s,a,b,c,d) ((s&amp;c)&lt;&lt;d) ^ (((s &lt;&lt;a) ^ s)&gt;&gt;b)
+</I>&gt;<i> 
+</I>&gt;<i>     state-&gt;s1 = TAUSWORTHE(state-&gt;s1, 13, 19, 4294967294UL, 12);
+</I>&gt;<i>     state-&gt;s2 = TAUSWORTHE(state-&gt;s2,  2, 25, 4294967288UL, 4);
+</I>&gt;<i>     state-&gt;s3 = TAUSWORTHE(state-&gt;s3,  3, 11, 4294967280UL, 17);
+</I>&gt;<i> 
+</I>&gt;<i>     return (state-&gt;s1 ^ state-&gt;s2 ^ state-&gt;s3);
+</I>&gt;<i> }
+</I>
+I see TAUSWORTHE (briefly tested with the above constants) isn't a
+permutation of the 32-bit input state and is going to get very dull
+when s is 0.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

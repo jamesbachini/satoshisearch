@@ -1,0 +1,55 @@
+<PRE>On 10/24/2008 01:12 PM, Jack Lloyd wrote:
+
+&gt;<i> .... is a very different statement from saying that
+</I>&gt;<i> lacking such an attacker, you can safely assume your 'pools of
+</I>&gt;<i> entropy' (to quote the original question) are independent in the
+</I>&gt;<i> information-theoretic sense.
+</I>
+The question, according to the original poster, is not 
+whether it is &quot;safe&quot; to assume that one of the entropy
+sources can be trusted.  Safe or not, the question explicitly 
+assumed that one of the sources was trusted ... and asked 
+what the consequences of that assumption would be.
+
+In particular, evidently the scenario was that we started
+with N high-entropy randomness generators, but N-1 of
+them have failed.  One of them is still working, but we
+don't know which one.
+
+In that scenario, XOR is a good-enough combining function,
+and nothing else would be any better.
+
+If somebody wants to discuss a different scenario, please
+clarify what the new scenario is.
+
+Suggesting that the &quot;trusted&quot; source is correlated with one
+of the other sources is quite contrary to the requirements
+expressed in the original question.
+
+That is to say, if the source is not independent, it was
+never eligible to be a trusted entropy source.
+
+If you want to quantify this, write down the _joint_ probability
+distribution for all the sources, and calculate the entropy
+of that distribution in the usual way.
+
+1) There is _one_ very precise meaning for &quot;entropy&quot; that is 
+well-established and conventional across a wide range of 
+fields ... everything from kitchen appliances to cosmology.
+  <A HREF="http://www.av8n.com/physics/thermo-laws.htm#sec-relevance">http://www.av8n.com/physics/thermo-laws.htm#sec-relevance</A>
+
+2) Authors are allowed to define and redefine terms however
+they please ... _provided_ they define any nonstandard terms
+that they use.  Anybody who takes a well-established standard
+term and uses it in a nonstandard way has a double-extra-special
+duty to explain what he's doing.
+
+I assume the original poster was using the term &quot;entropy&quot;
+in the conventional, precise sense ... and until I hear
+otherwise I will continue to do so.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

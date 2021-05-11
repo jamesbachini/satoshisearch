@@ -1,0 +1,26 @@
+<PRE>On 8/15/07, Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+&gt;<i> The first is simply a MSFT Vista requirement for BitLocker file
+</I>&gt;<i> encryption.
+</I>
+I think one of the problems with Bitlocker is that it is only
+available in Vista Business Edition purchased  under MS Software
+Assurance (SA). Not many shops have the MS SA. It is also available in
+Ultimate but that is way tooo expensive. Also what about non-MS
+operating systems?
+
+The other problem is that it lacks any centralized management. If you
+are letting TPM manage your Bitlocker keys you still need a TPM
+management suite with key backup/restore/transfer/migrate capabilities
+in case your computer goes bad.
+
+The third problem is that it is software based encryption, which uses
+the main CPU to perform the encryption.
+
+saqib
+<A HREF="http://www.linkedin.com/in/encryption">http://www.linkedin.com/in/encryption</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

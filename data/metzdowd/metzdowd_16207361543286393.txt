@@ -1,0 +1,35 @@
+<PRE>
+On Sep 12, 2007, at 1:56 AM, Aram Perez wrote:
+
+&gt;<i> The IronKey appears to provide decent security while it is NOT  
+</I>&gt;<i> plugged into a PC. But as soon as you plug it in and you have to  
+</I>&gt;<i> enter a password to unlock it, the security level quickly drops.  
+</I>&gt;<i> This would be the case even if they supported Mac OS or *nix.
+</I>&gt;<i>
+</I>
+Yes- the IronKey like just about EVERY security product right now  
+lacks a trusted path. However, they address this by suggesting that you:
+	a. Use a &quot;clean&quot; PC to install your passwords into Mozilla's  
+password manager, and
+	b. use the mozilla's password manager from the USB device.
+This mitigates the lack of a trusted path between the user and the  
+USB device.
+
+Granted the average user can't discern a &quot;clean&quot; machine from a &quot;non- 
+clean&quot; machine. But, I think they've addressed your issue as best  
+they can.
+
+The marketing is a bit over the top, but hardly snake oil.
+
+Bill
+
+p.s. I have no relationship with Ironkey.
+
+&gt;<i> As I stated in my response to Jerry Leichter, in my opinion, their  
+</I>&gt;<i> marketing department is selling snake oil.
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

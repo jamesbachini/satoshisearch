@@ -1,0 +1,57 @@
+<PRE>Thanks for your thoughts on this Hal. Quite educational. 
+
+&gt;<i> Jeff Hodges wrote:
+</I>&gt;<i> &gt; It turns out the supplied default for p is 1024 bit -- I'd previously goofed 
+</I>&gt;<i> &gt; when using wc on it..
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; DCF93A0B883972EC0E19989AC5A2CE310E1D37717E8D9571BB7623731866E61EF75A2E27898B057
+</I>&gt;<i> &gt; F9891C2E27A639C3F29B60814581CD3B2CA3986D2683705577D45C2E7E52DC81C7A171876E5CEA7
+</I>&gt;<i> &gt; 4B1448BFDFAF18828EFD2519F14E45E3826634AF1949E5B535CC829A483B8A76223E5D490A257F0
+</I>&gt;<i> &gt; 5BDFF16F2FB22C583AB
+</I>&gt;<i> 
+</I>&gt;<i> This p is a &quot;strong&quot; prime, one where (p-1)/2 is also a prime, a good
+</I>&gt;<i> property for a DH modulus.
+</I>
+Ok, so what tools did you use to ascertain that? I'm curious. 
+
+
+&gt;<i> The generator g=2 generates the entire group,
+</I>&gt;<i> which is an OK choice. 
+</I>
+Same here.
+
+
+&gt;<i> But that shouldn't matter,
+</I>&gt;<i> the shared secret should be hashed and/or used as the seed of a PRNG to
+</I>&gt;<i> generate further keys.
+</I>
+It is hashed, but isn't used to gen further keys. I'm crafting a review of the 
+full DH exchange in the target spec that I'll post to the list today.
+
+
+&gt;<i> The main problem as I said is that 1024 bit moduli are no longer
+</I>&gt;<i> considered sufficiently safe for more than casual purposes.
+</I>
+That's what I thought. 
+
+
+&gt;<i> Particularly
+</I>&gt;<i> with discrete logs that use a widely-shared modulus like the one above,
+</I>&gt;<i> it would not be surprising to see it publicly broken in the next 5-10
+</I>&gt;<i> years, or perhaps even sooner. And if a public effort can accomplish it
+</I>&gt;<i> in a few years, conservatively we should assume that well funded secret
+</I>&gt;<i> efforts could already succeed today.
+</I>
+Yep. 
+
+
+thanks again,
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

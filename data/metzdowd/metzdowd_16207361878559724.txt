@@ -1,0 +1,50 @@
+<PRE>On Tue, 2008-08-26 at 13:22 -0400, Ken Buchanan wrote:
+&gt;<i> On Tue, Aug 26, 2008 at 11:56 AM, Dustin D. Trammell
+</I>&gt;<i> &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dtrammell at bpointsys.com</A>&gt; wrote:
+</I>&gt;<i> &gt; This is the same for the state-wide Texas tag, TxTag[1].  If your tag
+</I>&gt;<i> &gt; doesn't register, or you disable or remove it, the toll system can still
+</I>&gt;<i> &gt; accurately bill you based on your license plate and vehicle
+</I>&gt;<i> &gt; registration.  If you're not in the TxTag system at all, they simply
+</I>&gt;<i> &gt; mail you a bill.
+</I>&gt;<i> 
+</I>&gt;<i> I think this is a bit different than what Michael Heyman said.  TxTag,
+</I>&gt;<i> IIRC, was implemented by the same company (Raytheon) that implemented
+</I>&gt;<i> the 407 ETR toll system in Toronto.  In the case of the 407, there is
+</I>&gt;<i> no image recognition done if the car has a valid transponder.  Only in
+</I>&gt;<i> the case of a missing or invalid transponder is the plate imagery
+</I>&gt;<i> used.  Supposedly the OCR has a high enough error rate that there is
+</I>&gt;<i> still manual verification of plates before sending a bill, and
+</I>&gt;<i> accordingly a $3.60 additional charge is applied per trip.
+</I>&gt;<i> 
+</I>&gt;<i> If the images are used even when the vehicle has a valid transponder
+</I>&gt;<i> -- as Michael Heyman suggests is happening with E-ZPass -- then it
+</I>&gt;<i> might be feasible to have back end defenses against cloning, though
+</I>&gt;<i> not without inconvenience to customers who borrow cars, buy new cars,
+</I>&gt;<i> or rent cars while their own is getting serviced.  Also as Matt Blaze
+</I>&gt;<i> pointed out this makes the transponder wholly redundant.
+</I>
+I can confirm that they definitely use imagery even when a valid
+transponder is detected.  A couple years or so ago I had to put my
+vehicle in the shop and use the wife's for a few days.  I assumed that I
+could use my TxTag in her vehicle, and it would simply bill my account,
+however a couple of weeks later I received a bill for the tolls, billed
+to the owner of her vehicle at our address.  When I called to inquire,
+they informed me that it did read the transponder, but mismatched with
+the plates.  There was a grace period during which I could update the
+transponder to the new vehicle and avoid the fines, but as I would be
+getting my vehicle back in a few days, I opted to just order a second
+transponder for her car.  They were kind enough to transfer the tolls to
+the new transponder and waive the fees.
+
+-- 
+Dustin D. Trammell
+Security Researcher
+BreakingPoint Systems, Inc.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080826/734e8f90/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080826/734e8f90/attachment.pgp</A>&gt;
+</PRE>

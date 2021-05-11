@@ -1,0 +1,105 @@
+<PRE>While there are many different ways to approach encryption
+and decryption of sensitive data, you may want to consider
+how you plan to manage the encryption keys before you go
+down this path.
+
+It sounds like you are establishing the foundation of a class
+library for a large financial organization.  Not having an
+enterprise-class key-management system can prove to be their
+downfall, no matter how efficiently you encrypt/decrypt data.
+
+I would encourage you to look at an effort at OASIS that is
+standardizing on a Symmetric Key Services Markup Language
+(SKSML) for acquiring key-management services from an
+Enterprise Key Management Infrastructure (EKMI):
+
+<A HREF="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ekmi">http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ekmi</A>
+
+Not only does this Technical Committee have the support of
+Visa, the US Dept. of Defense, Wells Fargo, Red Hat and 28
+other companies/individuals, this schema is also going to be
+supported by the IEEE 1619.3 Working Group that is creating
+a key-management protocol for storage devices (see the list
+of Announcements on the OASIS web-page for how they will
+integrate to an EKMI).
+
+An open-source implementation of SKSML is available at
+<A HREF="http://www.strongkey.org">http://www.strongkey.org</A> with an example application that
+shows column-level encryption of - interestingly - credit
+card numbers in an RDBMS.
+
+The open-source implementation is based on Java; if you need
+C/C++, you can either choose to create your own client library
+that implements SKSML (and use the open-source SKMS for the
+server) or contact me privately for an alternative solution.
+
+Arshad Noor
+StrongAuth, Inc.
+
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+&gt;<i> So... supposing I was going to design a crypto library for use within
+</I>&gt;<i> a financial organization, which mostly deals with credit card numbers
+</I>&gt;<i> and bank accounts, and wanted to create an API for use by developers,
+</I>&gt;<i> does anyone have any advice on it?
+</I>&gt;<i> 
+</I>&gt;<i> It doesn't have to be terribly complete, but it does have to be
+</I>&gt;<i> relatively easy to use correctly (i.e. securely).
+</I>&gt;<i> 
+</I>&gt;<i> I was thinking of something like this:
+</I>&gt;<i> 
+</I>&gt;<i> class crypto_api
+</I>&gt;<i> {
+</I>&gt;<i>     ...
+</I>&gt;<i>     // developers call these based on what they're trying to do
+</I>&gt;<i>     // these routines simply call crypto_logic layer
+</I>&gt;<i>     Buffer encrypt_credit_card(Buffer credit_card_number, key_t key);
+</I>&gt;<i>     Buffer encrypt_bank_account(Buffer bank_account, key_t key);
+</I>&gt;<i>     Buffer encrypt_other(Buffer buffer, key_t key);
+</I>&gt;<i>     ...
+</I>&gt;<i> };
+</I>&gt;<i> 
+</I>&gt;<i> class crypto_logic
+</I>&gt;<i> {
+</I>&gt;<i>     ...
+</I>&gt;<i>     algo_default = ALGO_AES256CBC;
+</I>&gt;<i>     // encrypt with a given algorithm
+</I>&gt;<i>     Buffer encrypt(Buffer buffer, key_t key, algo_t aid = algo_default);
+</I>&gt;<i>     // calls different routines in crypto_implementation layer depending on algorithm used
+</I>&gt;<i>     Buffer decrypt(Buffer buffer, key_t key);
+</I>&gt;<i>     ...
+</I>&gt;<i> };
+</I>&gt;<i> 
+</I>&gt;<i> class crypto_glue
+</I>&gt;<i> {
+</I>&gt;<i>     ...
+</I>&gt;<i>     // calls routines in libraries such as OpenSSL
+</I>&gt;<i>     // mostly wrappers that translate between our data types and theirs
+</I>&gt;<i>     Buffer aes256cbc-encrypt(...);
+</I>&gt;<i>     Buffer aes256cbc-decrypt(...);
+</I>&gt;<i>     ...
+</I>&gt;<i> };
+</I>&gt;<i> 
+</I>&gt;<i> The general idea is that crypto_api provides domain-specific APIs that
+</I>&gt;<i> are easy for anyone to understand, that the logic layer allows for the
+</I>&gt;<i> selection of different algorithms, and the glue layer is basically a
+</I>&gt;<i> translation layer to underlying libraries.
+</I>&gt;<i> 
+</I>&gt;<i> It is very important that the API remain stable, because the code
+</I>&gt;<i> base is large and owned by various groups.
+</I>&gt;<i> 
+</I>&gt;<i> One thing that I'm wondering is how to indicate (e.g.) the overhead in
+</I>&gt;<i> terms of padding, or whatever, for various algorithms... or if it
+</I>&gt;<i> matters.  The old code had some really disturbing practices like
+</I>&gt;<i> assuming that the output buffer was 16 octets bigger, and stuff like
+</I>&gt;<i> that... scary.
+</I>&gt;<i> 
+</I>&gt;<i> Intend to skim the OpenSSL design and Gutmann's &quot;Design of a
+</I>&gt;<i> Cryptographic Security Architecture&quot; for ideas.
+</I>&gt;<i> 
+</I>&gt;<i> Comments?
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,84 @@
+<PRE>IanG wrote:
+&gt;<i> Ed Gerck wrote:
+</I>&gt;&gt;<i> When you look at trust in various contexts, you will still find the 
+</I>&gt;&gt;<i> need to receive information from sources OTHER than the source you 
+</I>&gt;&gt;<i> want to trust. You may use these channels under different names, such 
+</I>&gt;&gt;<i> as memory which is a special type of output that serves as input at a 
+</I>&gt;&gt;<i> later point in time.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> It is useful and efficient to get trust from third parties, but not 
+</I>&gt;<i> essential, imho.  If you find yourself meeting someone for the first 
+</I>&gt;<i> time in random circumstances, you can get to know them over time, and 
+</I>&gt;<i> trust them, fully 2nd party-wise.
+</I>
+Yes, and the OTHER channels needed for trust are exactly those 
+time-defined channels that you set up as you &quot;get to know them over 
+time&quot;. Each interaction, each phrase, each email exchanged is another 
+channel.
+
+Still, you can be talking to &quot;Doris&quot; in a p2p interaction over months 
+and never realize it's actually Boris. This can happen in personal 
+meetings as well, not just online.
+
+The point being that (1) you need those other channels and can 
+recognize them even if you are just in a p2p interaction; and (2) be 
+careful because whatever channels you have, they will only span a 
+certain, limited extent in the interaction that you want to trust, so 
+your reliance space must be contained within that extent.
+
+&gt;<i> Attempting to cast trust as a aspect of channels is a technological 
+</I>&gt;<i> approach, and will lead one astray, just as PKI did;  trust is built on 
+</I>&gt;<i> acts, of humans, and involves parties and events, risks and rewards.  
+</I>&gt;<i> The channels are incidental.
+</I>
+Shannon's information theory is a general approach that, even though 
+it has  limitations as any other model, has allowed researchers to 
+deal with both social and technical aspects of trust.
+
+The important point, contrary to what PKI did, is to base the 
+technical definition of trust on the social mediation of trust that we 
+have learned over thousands of years.
+
+Thus, when we look at linguistics and other areas where we find 
+expressions of social experience and communication in a culture, we 
+see that the unique, defining aspect of trust is that trust on 
+something or someone needs /OTHER/ channels of information (where 
+memory is also a channel) than the information channel we want to trust.
+
+This social-linguistic observation transfers directly to the 
+definition we can use with information theory for the technical aspect 
+of trust, allowing the /same/ model of trust to be used in both 
+worlds, as:
+
+&quot;trust is that which is essential to a communication channel but 
+cannot be transferred from a source to a destination using that channel&quot;.
+
+ From this abstract definition, you can instantiate a definition that 
+applies to any desired context that you want -- social and/or 
+technical -- while assuring that they all have the same model of 
+trust. Examples are provided at the top of 
+<A HREF="http://mcwg.org/mcg-mirror/trustdef.htm">http://mcwg.org/mcg-mirror/trustdef.htm</A>
+
+As usual, information is defined as: &quot;information is that which is 
+transferred from a source to a destination&quot;. If the same information 
+is already present at the destination, there is no transfer. That's 
+why information is surprise; there's no surprise if the information 
+already exists at the destination.
+
+&gt;<i> You can see this better in the study of negotiation.  It is possible 
+</I>&gt;<i> using this theory&amp;practice to build trust, or to prove that no trust can 
+</I>&gt;<i> be achieved.  Negotiation is primarily a paradigm of two parties.
+</I>
+You can use different models. I believe that trust is a more 
+fundamental model than negotiation, as we can have trust without 
+negotiation.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,40 @@
+<PRE>David Molnar &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dmolnar at eecs.berkeley.edu</A>&gt; writes:
+
+&gt;<i>Dan Geer's comment about the street price of heroin as a metric for success
+</I>&gt;<i>has me thinking - are people tracking the street prices of digital underground
+</I>&gt;<i>goods over time?
+</I>
+I've been (very informally) tracking it for awhile, and for generic data (non-
+Platinum credit cards, PPal accounts, and so on) it's essentially too cheap to
+meter, you often have to buy the stuff in blocks (10, 20, 50 at a time) to
+make it worth the sellers while.  I haven't tracked the big-ticket items like
+PPal accounts with guaranteed minimum balances (rather than just any generic
+PPal account) because the offerings are too ephemeral, you might get &quot;PPal
+with minimum $5K balance&quot; advertised for a few weeks, then &quot;Platinum Visa&quot; for
+a few weeks, and then something else again.
+
+&gt;<i>I'm curious because it would be interesting to look at the &quot;street price&quot; for
+</I>&gt;<i>a specific online bank's logins before and after the bank makes a change to
+</I>&gt;<i>its security practices. (One not particularly great example of a change:
+</I>&gt;<i>adopting EV certs.) Alternatively, look at the price of some good before and
+</I>&gt;<i>after a prosecution. If this has already been done, my apologies, I'd
+</I>&gt;<i>appreciate the pointer.
+</I>
+I'm not aware of anyone having done this, mostly because the data doesn't seem
+to be available.  The phishers don't sell (e.g.) BofA accounts specifically,
+they sell whatever's available - you get a block of X accounts or cards from
+various banks, whatever's at hand when you buy.  The only way to see whether a
+measure was effective would be to keep buying blocks over time and see what
+the mix of banks was, and even then it'd be pretty unscientific because you'd
+be getting lots from random phishing sources or data thefts which might
+(coincidentally) be targetting one particular bank and not another.  Given the
+diverse sources for this stuff, it's likely that even the vendors only have a
+vague idea of what the statistics are.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

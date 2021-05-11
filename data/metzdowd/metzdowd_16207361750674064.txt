@@ -1,0 +1,24 @@
+<PRE>Allen wrote:
+
+&gt;<i> Add Moore's Law, a bigger budget and a more efficient machine, how long 
+</I>&gt;<i> before AES-128 can be decoded in less than a day?
+</I>&gt;<i> 
+</I>&gt;<i> It does make one ponder.
+</I>
+
+Wander over to <A HREF="http://keylength.com/">http://keylength.com/</A> and poke at their 
+models.  They have 6 or so to choose from, and they have it 
+coded up in the webapplication so you can get the 
+appropriate comparisons.
+
+Each model is reasonably well-founded (some work was put in 
+by somebody who knows something) and they've been doing it 
+for a few years now.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

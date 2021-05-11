@@ -1,0 +1,33 @@
+<PRE>On 12/12/07, John Denker &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jsd at av8n.com</A>&gt; wrote:
+&gt;<i> Several important steps in the process must be carried out in
+</I>&gt;<i> secret, and if there is any leakage, there is unbounded potential
+</I>&gt;<i> for vote-buying and voter coercion.
+</I>
+I've done quite a bit of work with this protocol. The protocol assumes
+the existence of an Election Authority. The Authority has the master
+keys required to generate certain data sets, and these keys give the
+Authority the ability to associate ballot numbers with votes. Note
+that this doesn't necessarily give the Authority the ability to
+associate people with votes.
+
+There are no per-ballot keys, so there is no partial exposure risk.
+It's all-or-nothing.
+
+&gt;<i> 1) It would be nice to see some serious cryptological protection
+</I>&gt;<i> of election processes and results.
+</I>
+&gt;<i> 2b) In particular I don't think PunchScan really solves &quot;the&quot;
+</I>&gt;<i> whole problem.
+</I>
+What is &quot;the&quot; whole problem? Please provide an attack model.
+
+-- 
+Taral &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">taralx at gmail.com</A>&gt;
+&quot;Please let me know if there's any further trouble I can give you.&quot;
+    -- Unknown
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

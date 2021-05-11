@@ -1,0 +1,86 @@
+<PRE>On Dec 11, 2007 5:06 AM, Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; wrote:
+&gt;<i> What puzzles me in all this long and rather arcane discussion is
+</I>&gt;<i> why isn't the solution of using a double hash - MD5 *and* SHA
+</I>&gt;<i> whatever. The odds of find a double collision go way up.
+</I>&gt;<i>
+</I>&gt;<i> Some open source software people are already doing this. I've
+</I>&gt;<i> played around with the sample files that are out there and find
+</I>&gt;<i> an easy way to do this but I don't have either the horsepower or
+</I>&gt;<i> skill to be at all definitive.
+</I>&gt;<i>
+</I>&gt;<i> My gut tells me that using two processes that use different
+</I>&gt;<i> algorithms, even though compromised, will raise the bar so high
+</I>&gt;<i> that it would be secure for a long time.
+</I>&gt;<i>
+</I>&gt;<i> At my skill level and horsepower I can't find even a single way
+</I>&gt;<i> to do this with CRC32 and MD5. Granted, that certainly doesn't
+</I>&gt;<i> mean a whole lot.
+</I>
+Work has actually been done on this exact topic.
+
+One link is here: <A HREF="http://cryptography.hyperlink.cz/2004/otherformats.html">http://cryptography.hyperlink.cz/2004/otherformats.html</A>
+
+I think there may be more; I'm not sure.
+
+
+&gt;<i> But to take a real world example, a safety deposit box, the two
+</I>&gt;<i> keys have to work together to open the box. It really does not
+</I>&gt;<i> matter is one is a Yale and the other a combination, either one
+</I>&gt;<i> of which are easily compromised by themselves, but together you
+</I>&gt;<i> would have to find both at the same time to open the box, a lot
+</I>&gt;<i> tougher problem.
+</I>&gt;<i>
+</I>&gt;<i> Best,
+</I>&gt;<i>
+</I>&gt;<i> Allen
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Francois Grieu wrote:
+</I>&gt;<i> &gt; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">william.allen.simpson at gmail.com</A> wrote:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;&gt;  Dp := any electronic document submitted by some person, converted to its
+</I>&gt;<i> &gt;&gt;        canonical form
+</I>&gt;<i> &gt;&gt;  Cp := a electronic certificate irrefutably identifying the other person
+</I>&gt;<i> &gt;&gt;        submitting the document
+</I>&gt;<i> &gt;&gt;  Cn := certificate of the notary
+</I>&gt;<i> &gt;&gt;  Tn := timestamp of the notary
+</I>&gt;<i> &gt;&gt;  S() := signature of the notary
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt;  S( MD5(Tn || Dp || Cp || Cn) ).
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; In this context, the only thing that guards agains an attack by
+</I>&gt;<i> &gt; &quot;some person&quot; is the faint hope that she can't predict the Tn
+</I>&gt;<i> &gt; that the notary will use for a Dp that she submits.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; That's because if Tn is known (including chosen) to &quot;some person&quot;,
+</I>&gt;<i> &gt; then (due to the weakness in MD5 we are talking about), she can
+</I>&gt;<i> &gt; generate Dp and Dp' such that
+</I>&gt;<i> &gt;   S( MD5(Tn || Dp || Cp || Cn) ) = S( MD5(Tn || Dp' || Cp || Cn) )
+</I>&gt;<i> &gt; whatever Cp, Cn and S() are.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; If Tn was hashed after Dp rather than before, poof goes security.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;   Francois Grieu
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; ---------------------------------------------------------------------
+</I>&gt;<i> &gt; The Cryptography Mailing List
+</I>&gt;<i> &gt; Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> &gt;
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+
+
+-- 
+mike
+<A HREF="http://lets.coozi.com.au/">http://lets.coozi.com.au/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

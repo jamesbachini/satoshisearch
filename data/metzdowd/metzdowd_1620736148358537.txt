@@ -1,0 +1,37 @@
+<PRE>List,
+
+SSH (OpenSSH) is routinely used in secure access for remote server
+maintenance. However, as I see it, SSH has a number of security issues
+that have not been addressed (as far I know), which create unnecessary
+vulnerabilities.
+
+Some issues could be minimized by turning off password authentication,
+which is not practical in many cases. Other issues can be addressed by
+additional means, for example:
+
+1. firewall port-knocking to block scanning and attacks
+2. firewall logging and IP disabling for repeated attacks (prevent DoS,
+block dictionary attacks)
+3. pre- and post-filtering to prevent SSH from advertising itself and
+server OS
+4. block empty authentication requests
+5. block sending host key fingerprint for invalid or no username
+6. drop SSH reply (send no response) for invalid or no username
+
+I believe it would be better to solve them in SSH itself, as one would
+not have to change the environment in order to further secure SSH.
+Changing firewall rules, for example, is not always portable and may
+have unintended consequences.
+
+So, I'd like to get list input (also by personal email if you think your
+comment might be out of scope here),  on issues #1-6 above and if you 
+have other SSH security issues that you would like to see solved /in SSH/.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

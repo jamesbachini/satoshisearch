@@ -1,0 +1,45 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+</I>&gt;&gt;<i> (Actually even that doesn't really explain something like IKE... :-).
+</I>&gt;<i>
+</I>&gt;<i>Having been peripherally involved in the causation change for IKE, let me
+</I>&gt;<i>confess that it was caused by human stupidity destroying the alternatives.
+</I>
+The reason why I was using IKE as an example is that it's a lot better-known 
+than PKI.  That is, most people on the list know in general terms that PKI is 
+a mess, but probably only a few who have had to read and implement some of the 
+RFCs (<A HREF="http://www.ietf.org/html.charters/pkix-charter.html">http://www.ietf.org/html.charters/pkix-charter.html</A>) know just how 
+incredibly *bad* it really is - it's a perpetual motion machine [0] of 
+incomprehensible, contradictory, unimplementable, and often entirely 
+nonsensical requirements [1] for which, once you get beyond the simplest 
+mechanisms, the behaviour of any one implementation is more or less arbitrary 
+as authors have to take guesses at what the authors of the spec (and the 15 
+other interfering specs in the same field) might have been thinking when they 
+wrote it.  And unlike the IKE bakeoffs there's no interop testing, so there's 
+no way to tell whether any two implementations will ever treat the same 
+(nontrivial) cert in the same manner.  Unless you've had to implement PKI 
+stuff it's difficult to convey the true horror of trying to make sense of 
+those specs, which is why I've been using IKE as a better-known example.  If 
+you're an IKE fan then mentally replace all occurrences with &quot;PKI&quot; :-).
+
+Peter.
+
+[0] Don't like some way of doing things?  Wait six months, three more RFCs
+    will be along to provide different (generally incompatible)
+    interpretations.
+[1] Show of hands, how many people here not directly involved with X.509 work
+    knew that the spec required that all extensions in CA root certificates
+    (&quot;trust anchors&quot; in recent X.509 jargon) be ignored by an implementation?
+    So if you put in name constraints, key usage constraints, a policy
+    identifier, etc, then a conforming implementation is supposed to look at
+    them, throw them away, and proceed as if they weren't there?  More 
+    amusingly, if you mark a non-CA cert as trusted then the requirement to
+    ignore the extensions means that it can act as a trusted CA root 
+    certificate (with the same rights as, say, Verisign's root certs)
+    since the &quot;not-a-CA&quot; flags has to be ignored.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

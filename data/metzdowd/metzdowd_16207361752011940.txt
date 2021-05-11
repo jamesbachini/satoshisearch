@@ -1,0 +1,47 @@
+<PRE>On Sat, 26 Apr 2008, Karsten Nohl wrote:
+|<i> Assuming that hardware backdoors can be build, the interesting
+</I>|<i> question becomes how to defeat against them. Even after a particular
+</I>|<i> triggering string is identified, it is not clear whether software can
+</I>|<i> be used to detect malicious programs. It almost appears as if the
+</I>|<i> processor would need a hardware-based virus-scanner or sorts. This
+</I>|<i> scanner could be simple as it only has to match known signatures, but
+</I>|<i> would need have access to a large number of internal data structures
+</I>|<i> while being developed by a completely separate team of designers.
+</I>I suspect the only heavy-weight defense is the same one we use against
+the &quot;Trusting Trust&quot; hook-in-the-compiler attack:  Cross-compile on
+as many compilers from as many sources as you can, on the assumption
+that not all compilers contain the same &quot;hook&quot;.  For hardware, this
+would mean running multiple chips in parallel checking each others
+states/outputs.  Architectures like that have been built for
+reliability (e.g., Stratus), but generally they assume identical
+processors.  Whether you can actually build such a thing with
+deliberately different processors is an open question.  While in
+theory someone could introduce the same &quot;spike&quot; into Intel, AMD,
+and VIA chips, an attacker with that kind of capability is probably
+already reading your mind directly anyway.
+
+Of course, you'd end up with a machine no faster than your slowest
+chip, and you'd have to worry about the correctness of the glue
+circuitry that compares the results.  *Maybe* the NSA would build
+such things for very special uses.  Whether it would be cheaper for
+them to just build their own chip fab isn't at all clear.  (One thing
+mentioned in the paper is that there are only 30 plants in the world
+that can build leading-edge chips today, and that it simply isn't
+practical any more to build your own.  I think the important issue
+here is &quot;leading edge&quot;.  Yes, if you need the best performance, you
+have few choices.  But a chip with 5-year-old technology is still
+very powerful - more than powerful enough for many uses.  When it
+comes to &quot;obsolete&quot; technology, you may have more choices - and
+of course next year's &quot;5 year old technology&quot; will be even more
+powerful.  Yes, 5 years from now, there will only be 30 or so
+plants with 2008 technology - but the stuff needed to build such a
+plant will be available used, or as cheap versions of newer stuff,
+so building your own will be much more practical.)
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,29 @@
+<PRE>On Mar 28, 2008, at 5:48 PM, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A>  
+wrote:
+&gt;<i> I've got two presentations I've given on encrypted storage  
+</I>&gt;<i> technologies
+</I>
+On a similar note, list readers might enjoy the detailed writeup of  
+Tahoe, the secure distributed erasure-coded filesystem built by Zooko  
+and the folks at allmydata.org:
+
+     &lt;<A HREF="http://allmydata.org/~warner/pycon-tahoe.html">http://allmydata.org/~warner/pycon-tahoe.html</A>&gt;
+
+Perry forwarded the Tahoe 0.9 announcement to the list, but it didn't  
+include a link to this writeup, which might not have existed at the  
+time. As an unrelated bonus and since it doesn't merit a separate  
+post, here's a (well-sung!) crypto take on Harry Belafonte's Banana  
+Boat Song:
+
+     &lt;<A HREF="http://www.catonmat.net/blog/musical-geek-friday-crypto/">http://www.catonmat.net/blog/musical-geek-friday-crypto/</A>&gt;
+
+Cheers,
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

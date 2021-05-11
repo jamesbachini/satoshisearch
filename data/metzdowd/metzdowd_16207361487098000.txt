@@ -1,0 +1,58 @@
+<PRE>&gt;<i> Date: Tue, 3 Jul 2007 10:01:19 +0200 (CEST)
+</I>&gt;<i> From: Stefan Lucks &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">lucks at th.informatik.uni-mannheim.de</A>&gt;
+</I>
+&gt;<i> BTW, Peter, are you aware that your device looks similar to the one 
+</I>&gt;<i> proposed in the context of the CAFE project? See
+</I>&gt;<i>    <A HREF="http://citeseer.ist.psu.edu/48859.html">http://citeseer.ist.psu.edu/48859.html</A>
+</I>&gt;<i> 
+</I>&gt;<i> This has been a more ambitious project, not just supporting secure banking 
+</I>&gt;<i> applications at an insecure host PC, but rather a digital wallet.
+</I>&gt;<i> 
+</I>&gt;<i> Nevertheless, it may be interesting to study why the project failed (or 
+</I>&gt;<i> ended without follow-on projects). I have no quick answer to this 
+</I>&gt;<i> question, but as much as I understand, the banks where just not interested 
+</I>&gt;<i> in deploying such a device. I guess, it was much too expensive at that 
+</I>&gt;<i> time. Instead, in Germany we got the &quot;Geldkarte&quot;, a simple and very cheap 
+</I>&gt;<i> smartcard for payment purposes with neither a display nor a keyboard. The 
+</I>&gt;<i> &quot;Geldkarte&quot; has been around us for about ten years, and, as far as I can 
+</I>&gt;<i> tell, hardly any customer is interested in using it.
+</I>
+There was a follow-up project called OPERA that implemented a user
+trial of the CAFE system on the premises of the European Commission in
+Brussels and two Greek banks in Athens (primarly with smart cards--the
+infrared wallets worked too but most users didn't have them).
+
+During the course of the CAFE project some commercial electronic purse
+systems emerged, notably Proton (from Banksys in Belgium, replicated
+in other counties under other names) and Mondex.  These were in many
+ways less sophisticated than CAFE's system (which was multi-issuer,
+multi-currency, privacy-respecting, etc.) but had serious commercial
+backing.  For the most part these seem to have stagnated or died.  I
+suspect that getting them to catch on would require drastic measures
+such as:
+
+- differential pricing: electronic purse payments are potentially
+  cheaper to process than those of debit cards because they are
+  offline, but consumers find it more convenient to keep money in
+  their bank account than on a smart card and will likely continue to
+  do so as long as it costs no more.  (This may become less of an
+  issue if/when all vending machines and parking meters are on the
+  internet anyway.)
+
+- coercion: if vending machines and parking meters accepted only
+  electronic purses and not cash, this would drive their adoption.
+  Something like this happened with phone cards--here in this part of
+  the world it is difficult to find a pay phone that still takes coins
+  (except a few at airports).  Of course phone cards too have been
+  somewhat obsoleted by ubiquitous cell phones (which might also make
+  good electronic wallets--I believe NTT DoCoMo is/was taking this
+  approach using FeliCa, but I haven't followed how it's doing.).
+
+Ray Hirschfeld
+former Technical Director, CAFE
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

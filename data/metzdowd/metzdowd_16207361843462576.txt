@@ -1,0 +1,35 @@
+<PRE>Ivan Krsti? wrote:
+&gt;<i> On Jul 1, 2008, at 12:46 PM, Perry E. Metzger wrote:
+</I>&gt;&gt;<i> My experience with European banks is quite limited -- my consulting
+</I>&gt;&gt;<i> practice is pretty much US centric. My general understanding, however,
+</I>&gt;&gt;<i> is that they are doing better, not worse, with login security.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> As a data point, the largest bank in Croatia used to mail customers 
+</I>&gt;<i> pre-printed TAN lists. Some number of years ago, they switched to 
+</I>&gt;<i> (non-SecurID) tokens which require a 4-digit PIN to turn on, and then 
+</I>&gt;<i> provide two functions: a login OTP and a challenge/response system for 
+</I>&gt;<i> authorizing individual transactions. Your username is simply the token's 
+</I>&gt;<i> serial number, though it's not clear if these are in fact serial.
+</I>
+Barclay's Bank in the UK uses little chip&amp;pin machines you put your
+debit card into and provide the same functions as Ivan describes above.
+
+I have a spare one I've been meaning to dissect to see what's inside
+them. I wonder where I put it?
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

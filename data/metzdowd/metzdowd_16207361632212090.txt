@@ -1,0 +1,35 @@
+<PRE>On Thu, 29 Nov 2007 16:05:00 -0500
+&quot;Tim Dierks&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tim at dierks.org</A>&gt; wrote:
+
+&gt;<i> A random thought that's been kicking around in my head: if someone
+</I>&gt;<i> were looking for a project, an open-source permissive action link (
+</I>&gt;<i> <A HREF="http://www.cs.columbia.edu/~smb/nsam-160/pal.html">http://www.cs.columbia.edu/~smb/nsam-160/pal.html</A> is a good link,
+</I>&gt;<i> thank you Mr. Bellovin) seems like it might be a great public
+</I>&gt;<i> resource: I suspect it's something that some nuclear states could use
+</I>&gt;<i> some education on, but even if the US is willing to share technology,
+</I>&gt;<i> the recipient may not really trust the source.
+</I>&gt;<i> 
+</I>&gt;<i> As such, an open-source PAL technology might substantially improve
+</I>&gt;<i> global safety.
+</I>&gt;<i> 
+</I>I don't think it would be fruitful.  Have a look at page 2 of
+<A HREF="http://www.nytimes.com/2007/11/18/washington/18nuke.html">http://www.nytimes.com/2007/11/18/washington/18nuke.html</A> -- it notdes
+that &quot;The system hinges on what is essentially a switch in the firing
+circuit that requires the would-be user to enter a numeric code that
+starts a timer for the weapon?s arming and detonation.&quot;  I don't think
+that that's quite correct -- it permits arming; PALs are not in the
+firing circuit, I believe -- but this section is more interesting:
+&quot;Delicate design details involve how to bury the link deep inside a
+weapon to keep terrorists or enemies from disabling the safeguard.&quot;
+In other words, it's easy to have a circuit that keeps the bomb from
+arming; the hard part is doing so with high assurance against attacks,
+and that's very design-dependent.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

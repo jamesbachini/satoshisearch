@@ -1,0 +1,13 @@
+<PRE>
+Moderator's note: Yes, I'm alive. I've just been insanely busy. I'm
+planning on adding a system so I can turn the list over to guest
+moderators before this happens again (in about a month, I'm
+anticipating.)
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

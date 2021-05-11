@@ -1,0 +1,45 @@
+<PRE>-----Original Message-----
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A> [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] 
+On Behalf Of Steven M. Bellovin
+Sent: 03 May 2008 00:51
+To: Arcane Jill
+Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+Subject: Re: SSL and Malicious Hardware/Software
+
+&gt;<i> &gt; &gt; I can't think of a great way of alerting the user,
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; I would be alerted immediately, because I'm using the Petname Tool
+</I>&gt;<i> &gt; Firefox plugin.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; For an unproxied site, I get a small green window with my own choice
+</I>&gt;<i> &gt; of text in it (e.g. &quot;Gmail&quot; if I'm visiting <A HREF="https://mail.google.com">https://mail.google.com</A>).
+</I>&gt;<i> &gt; If a proxy were to insert itself in the middle, that window would turn
+</I>&gt;<i> &gt; yellow, and the message would change to &quot;(untrusted)&quot;.
+</I>&gt;<i> &gt;
+</I>&gt;<i> Assorted user studies suggest that most users do not notice the color
+</I>&gt;<i> of random little windows in their browsers...
+</I>
+
+
+The point is that the plugin does not trust the browser's list of installed 
+CAs. The only thing it trusts is the fingerprint of the certificate. If the 
+fingerprint is one that you, personally, (not your browser), have approved in 
+the past, then the plugin is green. If not, the plugin is yellow.
+
+Without this plugin, identifying proxies is hard, because the proxy certificate 
+will likely be installed in your browser, so it will just automatically pass 
+the usual SSL checks, and will appear to you as an authenticated site. If you 
+have an expectation that your web traffic will not be eavesdropped en route, 
+then the sudden appearance of a proxy can flout that expectation.
+
+On the other hand, a system which checks /only/ that the certificate 
+fingerprint is what you expect it to be does not suffer from the same 
+disadvantage. This is a technical difference. There's more to it than just the 
+color of the warning sign! (...though I do concede, a Red Alert siren would 
+probably get more attention :-) ).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

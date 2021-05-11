@@ -1,0 +1,24 @@
+<PRE>Allen wrote:
+&gt;<i> William Allen Simpson wrote:
+</I>&gt;<i> [snip]
+</I>&gt;<i> 
+</I>&gt;&gt;<i> The whole point of a notary is to bind a document to a person.  That the
+</I>&gt;&gt;<i> person submitted two or more different documents at different times is
+</I>&gt;&gt;<i> readily observable.  After all, the notary has the document(s)!
+</I>&gt;<i> 
+</I>&gt;<i> No, the notary does not have the documents *after* they are notarized, 
+</I>&gt;<i> nor do they keep copies. Having been a notary I know this personally. 
+</I>
+Thanks, Allen. Interestingly, digital signatures do provide what
+notaries can't provide in this case. Even though a digital signature
+binds a document to a key, there are known legal frameworks that can
+be used to bind the key to a person.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

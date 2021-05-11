@@ -1,0 +1,18 @@
+<PRE>On 2/9/08, David Wagner &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">daw at cs.berkeley.edu</A>&gt; wrote:
+&gt;<i> By the way, it seems like one thing that might help with client certs
+</I>&gt;<i> is if they were treated a bit like cookies.
+</I>
+I don't see how this helps with phishing. Phishers will just go after
+the password or other secrets used to authenticate a new system or a
+system that has lost its cert.
+
+-- 
+Taral &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">taralx at gmail.com</A>&gt;
+&quot;Please let me know if there's any further trouble I can give you.&quot;
+    -- Unknown
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

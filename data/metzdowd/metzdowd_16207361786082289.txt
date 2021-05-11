@@ -1,0 +1,48 @@
+<PRE>On Thu, 15 May 2008, Paul Hoffman wrote:
+&gt;<i> The bigger picture is that distributions who are doing local mods
+</I>&gt;<i> should really have an ongoing conversation with the software's
+</I>&gt;<i> developers. Even if the developers don't want to talk to you, a
+</I>&gt;<i> one-way conversation of &quot;we're doing this, we're doing that&quot; could be
+</I>&gt;<i> useful.
+</I>
+Apparently, there was even a &quot;two-way&quot; communication about the
+issue in openssl-dev [1]
+
+  The code in question that has the problem are the following
+  2 pieces of code in crypto/rand/md_rand.c:
+
+  247:
+                MD_Update(&amp;m,buf,j);
+
+  467:
+  #ifndef PURIFY
+                MD_Update(&amp;m,buf,j); /* purify complains */
+  #endif
+
+  [...]
+
+  What I currently see as best option is to actually comment out
+  those 2 lines of code.  But I have no idea what effect this
+  really has on the RNG.  The only effect I see is that the pool
+  might receive less entropy.  But on the other hand, I'm not
+  even sure how much entropy some unitialised data has.
+
+  What do you people think about removing those 2 lines of code?
+
+but I guess nobody on the openssl side was bothered to check
+exactly what code Kurt was talking about and thus a potential
+ROTFL moment turns out to be a security disaster.
+
+
+[1] Random number generator, uninitialised data and valgrind
+    &lt;<A HREF="http://www.mail-archive.com/openssl-dev@openssl.org/msg21156.html">http://www.mail-archive.com/openssl-dev@openssl.org/msg21156.html</A>&gt;
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

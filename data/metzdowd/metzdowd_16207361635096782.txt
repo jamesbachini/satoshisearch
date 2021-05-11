@@ -1,0 +1,30 @@
+<PRE>
+Kevin Kretz writes:
+ | <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+ | &gt;  More people use just those three
+ | &gt; than will *ever* vote.
+ | More people under 40, certainly.  But in '04 there were 36 million 
+ | people over 65, most of whom are eligible to vote.  You know a lot of 
+ | 70-year old e-gamblers or FaceBook members?
+
+
+I don't but my many over-70 relatives all have
+some sort of e-mail now, many from AOL where
+we know from history the price of buying the
+AOL screenames in bulk from an insider was at
+the rate of $0.001/name.
+
+Quoting my friend Marcus Ranum, the Internet
+will remain as insecure as it can and still
+apparently function.  Why should voting be
+different?
+
+We are approaching a rat hole...
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

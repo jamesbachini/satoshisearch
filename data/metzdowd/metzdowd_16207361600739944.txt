@@ -1,0 +1,43 @@
+<PRE>A reminder of the Enterise Key Management Infrastructure (EKMI)
+Workshop on November 15th in San Francisco.  Thanks.
+
+Arshad Noor
+StrongAuth, Inc.
+
+-------- Original Message --------
+Subject: ISACA to Host an Enterprise Key Management Infrastructure Workshop
+Date: Sun, 21 Oct 2007 21:49:40 -0700
+From: Mike Nelson &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mnelson at securenet-technologies.com</A>&gt;
+To: ekmi &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekmi at lists.oasis-open.org</A>&gt;
+
+EKMI TC,
+
+The San Francisco ISACA chapter is pleased to announce the opening of
+registration for the &#179;Enterprise Key Management Infrastructure Workshop&quot;
+to be held at the Hotel Nikko (222 Mason St., SF) on Thursday, November
+15.  This will be a morning session, breakfast followed by the workshop
+until noon. We're exploring now the possibility of extending the session
+into the afternoon for an optional hands-on exercise.  [This is now
+confirmed.  It is optional, and those interested in staying for the lab
+session must bring their own laptop to perform the exercise.  The laptop
+must have either Windows XP or Linux with at least 512MB of memory and
+2GB of free disk space.]
+
+I hope you can attend and encourage your collogues to do the same. More
+information can be found at <A HREF="http://sfisaca.org.">http://sfisaca.org.</A>
+
+--
+Mike Nelson, CAP, CISA, CISM, CISSP, ITIL
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mnelson at securenet-technologies.com</A> or <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mrfisma at gmail.com</A>
+www.securenet-technologies.com or www.fisma.us
+blog: mrfisma.com
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

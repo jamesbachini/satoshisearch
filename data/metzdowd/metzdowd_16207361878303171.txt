@@ -1,0 +1,48 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> That said, kerberos tickets can persist even in the face of
+</I>&gt;<i> disconnects, so once you've connected tickets can survive as long as
+</I>&gt;<i> you wish.
+</I>
+But, can the tickets be used for anything useful when the
+network does not exist?
+
+I agree that when the network comes back, the ticket can pick
+up where it left off and continue providng its stated service
+until the ticket expires; but unless there are applications I'm
+unfamiliar with, Kerberos tickets are not very useful in the
+absence of a network.  Yes, they can be used to authenticate to
+local services on the disconnected client, but what benefit does
+that provide?
+
+SKMS clients can continue to provide the capability they were
+designed for, even when the network is unavailable - it was a
+critical design goal.  Yes, applications don't need a central
+key-management service to use cryptographic keys on a client;
+but the whole business purpose for SKMS is to have centralized
+policy-driven key-management, with the added benefit of secure,
+disconnected operations.
+
+If this comes back to Ben's original statement about it being
+just a key-escrow service, then so be it.  But lets not dismiss
+the value standardization and abstraction of this capability
+provides - after all people didn't really need DBMS's 30 years
+ago because they could do all the data-management operations
+inside each application quite well, thank you!
+
+But, the true value of DBMS was to free up application developers,
+operations and business managers to deliver new levels of information
+services because they no longer had to deal with the arcane mechanics
+of data-management in unique ways inside each application, on each
+platform.  What DBMS did for the abstraction and standardization of
+data-management, I anticipate SKMS doing for key-management.  Those
+precise three groups of people - and now, including security and
+compliance officers - are slowly starting to discover that for themselves.
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

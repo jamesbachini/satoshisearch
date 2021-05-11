@@ -1,0 +1,31 @@
+<PRE>On Aug 16, 2007, at 8:30 AM, Ali, Saqib wrote:
+&gt;<i> The other problem is that it lacks any centralized management. If you
+</I>&gt;<i> are letting TPM manage your Bitlocker keys you still need a TPM
+</I>&gt;<i> management suite with key backup/restore/transfer/migrate capabilities
+</I>&gt;<i> in case your computer goes bad.
+</I>
+How so? If your computer goes bad, you need a *backup*. That's  
+entirely orthogonal to the drive encryption problem. Bitlocker uses  
+the TPM to provide assurance that your drive -- really, volume -- is  
+locked to your computer, and that the early boot environment hasn't  
+been messed with. When either check fails, you use the BitLocker  
+recovery password (either on a USB stick or entered manually) to  
+recover your data. This holds in the event that you take your drive  
+out and stick it in a different machine. In other words, the TPM is  
+not a single point of failure, so I don't understand why you think  
+you care about TPM backup/restore/transfer.
+
+&gt;<i> The third problem is that it is software based encryption, which uses
+</I>&gt;<i> the main CPU to perform the encryption.
+</I>
+Security is never free, but in 2007, we can afford the cycles. What's  
+a better use for them? Drawing semi-transparent stained glass window  
+borders?
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

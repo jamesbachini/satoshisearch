@@ -1,0 +1,95 @@
+<PRE>So, an executive summary of your responses appears to be &quot;EKMI leaves 
+all the hard/impossible problems to be solved by components that are out 
+of scope&quot;.
+
+As such, I'm not seeing much value.
+
+Anyway...
+
+Arshad Noor wrote:
+&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;<i> OK, so you still have a PKI problem, in that you have to issue and 
+</I>&gt;&gt;<i> manage client certificates. How is this done?
+</I>&gt;&gt;<i>
+</I>&gt;<i> One man's meat .... :-).  (I don't necessarily view this as a problem
+</I>&gt;<i> Ben.  I've built up a career and a small business in the last 9 years
+</I>&gt;<i> doing just that.)
+</I>&gt;<i> 
+</I>&gt;<i> Nevertheless, to answer the question, the PKI deployment is not part
+</I>&gt;<i> of the SKSML prtocol (other than the WSS header that carries the XML
+</I>&gt;<i> Signature and/or XML Encryption of the SOAP Body), but it is part of
+</I>&gt;<i> an EKMI.  (EKMI = PKI + SKMS).  A company deploying an EKMI must have,
+</I>&gt;<i> or must build a PKI and deploy the client/server certificates separately
+</I>&gt;<i> from the SKMS.
+</I>&gt;<i> 
+</I>&gt;<i> While this might be viewed as a problem for some/many companies in the
+</I>&gt;<i> short-term, I fully anticipate that vendor implementations of SKMS will
+</I>&gt;<i> integrate with PKI software to manage this process seamlessly in the
+</I>&gt;<i> future.
+</I>
+PKI out of scope...
+
+&gt;&gt;<i> I do not believe this is the case. DRM fails because the attacker has 
+</I>&gt;&gt;<i> physical possession of the system he is attacking.
+</I>&gt;&gt;<i>
+</I>&gt;<i> 
+</I>&gt;<i> Which is why we are recommending that SKMS clients use hardware based
+</I>&gt;<i> modules (be it TPMs, smartcards, HSMs, etc.) to generate and store the
+</I>&gt;<i> Private Key used by SKMS client to decrypt the symmetric keys.  While
+</I>&gt;<i> even these can be attacked, the problem is now in a different domain
+</I>&gt;<i> than the SKSML protocol.
+</I>
+...impossibility of solving DRM problem out of scope...
+
+&gt;&gt;&gt;<i> EKMI's goals are not to provide bullet-proof security.  It has more
+</I>&gt;&gt;&gt;<i> modest ambitions - to provide a management framework for incremental
+</I>&gt;&gt;&gt;<i> security, targeted at the right resource: the data, rather than the 
+</I>&gt;&gt;&gt;<i> network.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Are there any even vaguely modern systems that target the network for 
+</I>&gt;&gt;<i> security, or is this a straw man?
+</I>&gt;<i> 
+</I>&gt;<i> What I meant to say is that EKMI's goal is to protect the data and not
+</I>&gt;<i> the network.
+</I>
+...goals the same as pretty much all cryptographic protocols...
+
+&gt;&gt;<i> If it is up to them, then why bother with this verification process? 
+</I>&gt;&gt;<i> This sounds like yet more security theatre to me.
+</I>&gt;&gt;<i>
+</I>&gt;<i> 
+</I>&gt;<i> I'm not sure which verification process you're referring to.
+</I>&gt;<i> 
+</I>&gt;<i> No, this is not security theater.  EKMI does not guarantee anything, nor
+</I>&gt;<i> does it promise unbreakable anything.  Everything in EKMI is a choice.
+</I>&gt;<i> You get to choose the strength of your keys, your PKI, your policies,
+</I>&gt;<i> your procedures and your implementation.  All we're offering is a tool
+</I>&gt;<i> that does something specific to the extent that the specifications and
+</I>&gt;<i> the technology allows.  Nothing more, nothing less.  If you - as a
+</I>&gt;<i> cryptographer - say that AES-156 will do X under these conditions, then
+</I>&gt;<i> EKMI will support X under those conditions.  EKMI only adds the ability
+</I>&gt;<i> to manage a large number of keys centrally, and to ease many of the
+</I>&gt;<i> administrative burdens we see that large-scale key-management can cause.
+</I>&gt;<i> Everything it does is constrained by the limitations of the underlying
+</I>&gt;<i> technology components, polices and practices.  But you still have to
+</I>&gt;<i> make the choice.
+</I>
+...security out of scope and scope out of scope.
+
+Is there anything other than key escrow that's actually in scope?
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

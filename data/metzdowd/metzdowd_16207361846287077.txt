@@ -1,0 +1,22 @@
+<PRE>This article: <A HREF="http://www.spiegel.de/wirtschaft/0,1518,563606,00.html">http://www.spiegel.de/wirtschaft/0,1518,563606,00.html</A>  
+(sorry, German only) describes a judgment made by a German district  
+court which says that banks are liable for damages due to phishing  
+attacks.  In the case in question, a customer was the victim of a  
+keylogger even though he had the latest anti-virus software installed,  
+and lost 4000 Euro. The court ruled that the bank was liable because  
+the remittance in question had demonstrably not been made by the  
+customer and therefore the bank had to take the risk.
+
+Even though phishing and keylogging are not really related, this  
+ruling is remarkable because courts had almost always ruled in favor  
+of the banks in the past.  So it could set an important precedence.
+
+Fun,
+
+Stephan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

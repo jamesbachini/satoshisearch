@@ -1,0 +1,41 @@
+<PRE>On Tue, Sep 2, 2008 at 1:32 AM, Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; wrote:
+&gt;<i> At Mon, 1 Sep 2008 21:56:52 +0100,
+</I>&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;<i> &gt; Session caches are often dialed this low, but it's not really necessary
+</I>&gt;&gt;<i> &gt; in most applications. First, a session cache entry isn't really that
+</I>&gt;&gt;<i> &gt; big. It easily fits into 100 bytes on the server, so you can serve
+</I>&gt;&gt;<i> &gt; a million concurrent user for a measly 100M.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> But if the clients drop them after five minutes, this gets you
+</I>&gt;&gt;<i> nowhere.
+</I>&gt;<i>
+</I>&gt;<i> Agreed. I thought we were contemplating protocol changes in
+</I>&gt;<i> any case, so I figured having clients just use a longer session
+</I>&gt;<i> cache (5 minutes is silly for a client anyway, since the amount
+</I>&gt;<i> of memory consumed on the client is miniscule) wasn't much
+</I>&gt;<i> of an obstacle.
+</I>
+Fair point.
+
+&gt;&gt;<i> BTW, sessions are only that small if there are no client
+</I>&gt;&gt;<i> certs.
+</I>&gt;<i>
+</I>&gt;<i> True enough, though that's the common case right now.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i> &gt; Second, you can use
+</I>&gt;&gt;<i> &gt; CSSC/Tickets [RFC5077] to offload all the information onto the client.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Likewise.
+</I>&gt;<i>
+</I>&gt;<i> Except that CSSC actually looks better when client certs are used, since
+</I>&gt;<i> you can offload the entire cert storage to the client, so you get
+</I>&gt;<i> more memory savings.
+</I>
+I meant &quot;five minutes&quot;.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

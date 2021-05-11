@@ -1,0 +1,32 @@
+<PRE>On Thu, 07 Feb 2008 17:37:02 +1300
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) wrote:
+
+&gt;<i> The real issues occur in two locations:
+</I>&gt;<i> 
+</I>&gt;<i> 1. In the browser UI.
+</I>&gt;<i> 2. In the server processing, which no longer gets the password via an
+</I>&gt;<i> HTTP POST but as a side-effect of the TLS connect.
+</I>&gt;<i> 
+</I>&gt;<i> (1) is a one-off cost for the browser developers, (2) is a bit more
+</I>&gt;<i> complex to estimate because it's on a per-site basis, but in general
+</I>&gt;<i> since the raw data (username+pw) is already present it's mostly a
+</I>&gt;<i> case of redoing the data flow a bit, and not necessarily rebuilding
+</I>&gt;<i> the whole system from scratch.  To give one example, a healthcare
+</I>&gt;<i> provider, they currently trigger an SQL query from an HTTP POST that
+</I>&gt;<i> looks up the password with the username as key, and the change would
+</I>&gt;<i> be to do the same thing at the TLS stage rather than the post-TLS
+</I>&gt;<i> HTTP stage.
+</I>
+There's another issue: initial account setup.  People will still need
+to rely on certificate-checking for that.  It's a real problem at some
+hotspots, where Evil Twin attacks are easy and lots of casual users are
+signing up for the first time.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

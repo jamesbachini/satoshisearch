@@ -1,0 +1,21 @@
+<PRE>Alas on 10/25/2008 01:40 PM, I wrote:
+
+
+&gt;<i> To summarize:  In the special sub-case where M=1, XOR
+</I>&gt;<i> is as good as it gets.  In all other cases I can think
+</I>&gt;<i> of, the hash approach is much better.
+</I>
+I should have said that in the special sub-case where 
+the member word has entropy density XX=100% _or_ in 
+the special sub-case where M=1, XOR is as good as it
+gets.  In all other cases I can think of, the hash 
+approach is much better.
+
+(I excluded the XX=100% case earlier in the note, but
+I should have included it in the summary.  Sorry.)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

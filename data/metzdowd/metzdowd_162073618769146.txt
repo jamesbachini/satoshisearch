@@ -1,0 +1,54 @@
+<PRE>At Fri, 8 Aug 2008 15:52:07 -0400 (EDT),
+Leichter, Jerry wrote:
+&gt;<i> 
+</I>&gt;<i> | &gt; &gt; Funnily enough I was just working on this -- and found that we'd
+</I>&gt;<i> | &gt; &gt; end up adding a couple megabytes to every browser.  #DEFINE
+</I>&gt;<i> | &gt; &gt; NONSTARTER.  I am curious about the feasibility of a large bloom
+</I>&gt;<i> | &gt; &gt; filter that fails back to online checking though.  This has side
+</I>&gt;<i> | &gt; &gt; effects but perhaps they can be made statistically very unlikely,
+</I>&gt;<i> | &gt; &gt; without blowing out the size of a browser.
+</I>&gt;<i> | &gt; Why do you say a couple of megabytes? 99% of the value would be
+</I>&gt;<i> | &gt; 1024-bit RSA keys. There are ~32,000 such keys. If you devote an
+</I>&gt;<i> | &gt; 80-bit hash to each one (which is easily large enough to give you a
+</I>&gt;<i> | &gt; vanishingly small false positive probability; you could probably get
+</I>&gt;<i> | &gt; away with 64 bits), that's 320KB.  Given that the smallest Firefox
+</I>&gt;<i> | &gt; [...]
+</I>&gt;<i> You can get by with a lot less than 64 bits.  People see problems like
+</I>&gt;<i> this and immediately think &quot;birthday paradox&quot;, but there is no &quot;birthday
+</I>&gt;<i> paradox&quot; here:  You aren't look for pairs in an ever-growing set,
+</I>&gt;<i> you're looking for matches against a fixed set.  If you use 30-bit
+</I>&gt;<i> hashes - giving you about a 120KB table - the chance that any given
+</I>&gt;<i> key happens to hash to something in the table is one in a billion,
+</I>&gt;<i> now and forever.  (Of course, if you use a given key repeatedly, and
+</I>&gt;<i> it happens to be that 1 in a billion, it will hit every time.  So an
+</I>&gt;<i> additional table of &quot;known good keys that happen to collide&quot; is worth
+</I>&gt;<i> maintaining.  Even if you somehow built and maintained that table for
+</I>&gt;<i> all the keys across all the systems in the world - how big would it
+</I>&gt;<i> get, if only 1 in a billion keys world-wide got entered?)
+</I>
+I don't believe your math is correct here. Or rather, it would
+be correct if there was only one bad key.
+
+Remember, there are N bad keys and you're using a b-bit hash,
+which has 2^b distinct values. If you put N' entries in the
+hash table, the probability that a new key will have the
+same digest as one of them is N'/(2^b). If b is sufficiently
+large to make collisions rare, then N'=~N and we get 
+N/(2^b).
+
+To be concrete, we have 2^15 distinct keys, so, the
+probability of a false positive becomes (2^15)/(2^b)=2^(b-15).
+To get that probability below 1 billion, b+15 &gt;= 30, so
+you need about 45 bits. I chose 64 because it seemed to me
+that a false positive probability of 2^{-48} or so was better.
+
+-Ekr
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,36 @@
+<PRE>Leichter, Jerry wrote:
+...
+
+&gt;<i> If you think about this in general terms, we're at the point where we
+</I>&gt;<i> can avoid having to trust the CPU, memory, disks, programs, OS, etc.,
+</I>&gt;<i> in the borrowed box, except to the degree that they give us access to
+</I>&gt;<i> the screen and keyboard.  (The problem of securing connections that
+</I>&gt;<i> go through a hostile intermediary we know how to solve.)  The keyboard
+</I>&gt;<i> problem is intractable, though it would certainly be a step forward
+</I>&gt;<i> if at least security information didn't go through there.  This could
+</I>&gt;<i> be done either by having a small data entry mechanism on the secure
+</I>&gt;<i> device itself, or by using some kind of challenge/response (an LCD
+</I>&gt;<i> on the device supplies a random value - not readable in any way by
+</I>&gt;<i> the connected machine - that you combine with your password before
+</I>&gt;<i> typing it in.)  Maybe HDMI will actually have some use in providing
+</I>&gt;<i> a secure path to the screen?  (Unlikely, unfortunately.)
+</I>
+Would it not be possible to solve the keyboard problem by allowing a
+keyboard (e.g. USB) to be plugged directly into the device?
+
+Nicholas
+-- 
+Salkyns, Great Canfield, Takeley,
+Bishop's Stortford CM22 6SX, UK
+
+Phone  01279 870285    (+44 1279 870285)
+Mobile  07715 419728    (+44 7715 419728)
+
+PGP public key ID: 0x899DD7FF.  Fingerprint:
+5248 1320 B42E 84FC 1E8B  A9E6 0912 AE66 899D D7FF
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

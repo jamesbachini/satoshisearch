@@ -1,0 +1,67 @@
+<PRE>
+Jim Youll &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jim at cr-labs.com</A>&gt; writes:
+&gt;&gt;<i> I was having a discussion over lunch about a week ago with a couple of
+</I>&gt;&gt;<i> pretty well known security people (one of them might pipe up on the
+</I>&gt;&gt;<i> list). We were considering what would happen in a particular seemingly
+</I>&gt;&gt;<i> foolproof system with a trusted channel if someone got a message via
+</I>&gt;&gt;<i> an untrusted channel saying...
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  &quot;Now, to complete your book purchase, the trusted system is going to
+</I>&gt;&gt;<i>   say &quot;If you press &quot;YES&quot;, you're going to send all the money you
+</I>&gt;&gt;<i>   have in the world to a con man in Nigeria&quot; -- this is
+</I>&gt;&gt;<i>   normal. Please press yes when it says that.&quot;
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> ...a large fraction of users would just press &quot;YES&quot;.
+</I>&gt;<i>
+</I>&gt;<i> Straw man.
+</I>
+Hardly. In fact, it is a very important thing to bear in mind, as is
+the output of that study.
+
+The whole point of the study (which you feel had an &quot;inappropriate
+tone&quot;) and of such gedankenexperiments is to understand the problem
+space better.
+
+At one time, we believed that with enough crypto, we would be safe,
+but we were disabused of that notion -- crypto is a great tool but not
+a panacea. Now the notion seems to be that with enough human factors,
+we will be safe. It appears this, too, is not a panacea.
+
+&gt;<i> Considering the magnitude and frequency of losses that apparently
+</I>&gt;<i> occur through these technologies, and the fact that the crypto and
+</I>&gt;<i> security technologies are pretty far evolved and seem to work well
+</I>&gt;<i> if used well, I would counter that human factors are just about all
+</I>&gt;<i> we should be worrying about right now, if we hope to ever make
+</I>&gt;<i> online activities as safe as they should be.
+</I>
+There are all sorts of things to worry about. Human factors are
+clearly an important component, but I think that the study (yes, the
+one which you feel had an &quot;inappropriate tone&quot;) is important -- some
+people are too stupid to trust.
+
+Clearly, by eliminating decisions people have to make (such as by
+removing non-secure modes of operation), eliminating means by which
+people can leak valuable information (such as by eliminating passwords
+that they can give to fake &quot;customer service representatives&quot; and the
+like), cleaning up the human factors, etc., we can make things much
+better.
+
+However, the lesson of this sort of study is that we may never be able
+to fix the problem. You contend the engineers are at fault, but
+clearly they are only partially at fault -- there are (as I said) some
+people who are too stupid to protect. We probably should not be
+surprised by this -- there are clearly people we do not allow to cross
+the street on their own (young children, some mentally ill people,
+etc), so there is perhaps a class of people who should not be allowed
+to do unsupervised banking on the basis that they cannot be trusted to
+protect themselves adequately.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

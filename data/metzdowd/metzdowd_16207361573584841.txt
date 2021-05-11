@@ -1,0 +1,21 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> <A HREF="http://www.lafdc.com/captcha/">http://www.lafdc.com/captcha/</A> is a site that sells commercial CAPTCHA-breaking
+</I>&gt;<i> software.  It also shows success rates for different types of CAPTCHAs.  While
+</I>&gt;<i> the ratings are merely representative of this particular site's software and
+</I>&gt;<i> not a universal measure, it's interesting to note that there's already a
+</I>&gt;<i> commercial market for anti-CAPTCHA tools.
+</I>
+
+The other approach that I've heard of against such 
+turing/human tests is that attackers have experimented with 
+mechanical turk style systems.
+
+iang
+
+<A HREF="http://www.mturk.com/mturk/welcome">http://www.mturk.com/mturk/welcome</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

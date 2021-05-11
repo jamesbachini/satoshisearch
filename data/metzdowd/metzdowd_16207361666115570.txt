@@ -1,0 +1,32 @@
+<PRE>John Ioannidis &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ji at tla.org</A>&gt; writes:
+&gt;<i>Alex Alten wrote:
+</I>&gt;&gt;<i> Great.  What next?  I guess air-gap transfer of flash memory might be
+</I>&gt;&gt;<i> the best solution.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Malware's new infection route: photo frames
+</I>&gt;&gt;<i> <A HREF="http://www.sfgate.com/cgi-bin/article.cgi?file=/c/a/2008/01/26/MNE7UHOOQ.DTL">http://www.sfgate.com/cgi-bin/article.cgi?file=/c/a/2008/01/26/MNE7UHOOQ.DTL</A>
+</I>&gt;<i>
+</I>&gt;<i>For starters, you can turn off the &quot;feature&quot; that auto-runs code from the
+</I>&gt;<i>inserted media.
+</I>
+&quot;And if thine eye offend thee, pluck it out&quot;.
+
+It's not that easy.  Windows relies on autoplay for software installs (that
+is, it's intended use is to automatically run the installer when you insert a
+software CD).  Turning this off is probably going to cause an avalanche of
+user support calls when their software &quot;stops working&quot;.
+
+It is possible to turn off autoplay just for USB devices through an obscure
+registry hack, but this may turn off automatic handling of your digital camera
+(and scanner, and ...) as well.  In other words when you plug in your digital
+camera to copy photos across, nothing happens, and the camera isn't recognised
+by Windows (I've seen this happen when you turn off the Still Image Service,
+there's no way to access your camera any more).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

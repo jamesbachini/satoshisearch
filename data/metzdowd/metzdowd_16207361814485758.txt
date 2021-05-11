@@ -1,0 +1,33 @@
+<PRE>
+As some of you know, one can now buy &quot;Enhanced Security&quot; certificates,
+and Firefox and other browsers will show the URL box at the top with a
+special distinctive color when such a cert is in use.
+
+Many of us have long contended that such things are worthless and
+prove only that you can pay more money, not that you're somehow more
+trustworthy.
+
+An object lesson in this just fell in my lap -- I just got my first
+email from a spammer that links to a web site that uses such a cert,
+certified by a CA I've never heard of (&quot;Starfield Technologies, Inc.&quot;)
+Doubtless they sell discount &quot;Enhanced Security&quot; certs so you don't
+have to worry about paying more money either. I haven't checked the
+website for drive by malware, but I wouldn't be shocked if it was
+there.
+
+I'm thinking of starting a CA that sells &quot;super duper enhanced
+security&quot; certs, where we make the company being certified sign a
+document in which they promise that they're absolutely trustworthy.
+To be really sure, we'll make them fax said document in on genuine
+company letterhead, since no one can forge letterhead.
+
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

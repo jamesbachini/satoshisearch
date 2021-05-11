@@ -1,0 +1,78 @@
+<PRE>Peter Gutmann wrote:
+
+&gt;<i> There's always the problem of politics.  You'd think that support for a free
+</I>&gt;<i> CA like CAcert would also provide fantastic marketing opportunities for free
+</I>&gt;<i> browser like Firefox, but this seems to be stalled pretty much idefinitely
+</I>&gt;<i> because since CAcert doesn't charge for certificates, including it in Firefox
+</I>&gt;<i> would upset the commercial CAs that do (there's actually a lot more to it than
+</I>&gt;<i> this, see the interminable flamewars on this topic on blogs and whatnot for
+</I>&gt;<i> more information).
+</I>
+
+The situation with CAcert and Mozo is fairly simple.
+
+Mozo ran a long and open design exercise for a CA policy, 
+which specifies that each CA requires an audit [1].  CAcert 
+hasn't got an audit [2].
+
+Mozo did indeed work quite hard to give CAcert and others 
+some more open access to the process.  One could debate the 
+wisdom of having an audit at all, or ascribe the motives to 
+politics, or whatever [3] ... in the end, Mozo moved a 
+considerable distance by opening up the process to 
+non-financial-audit firms and to criteria from 
+non-consortium authors [4].
+
+CAcert also now conducts an open process [5], so it is much 
+easier to talk about the audit.  It is well advanced on the 
+policy side, only lacking one or two critical policies which 
+are works-in-progress.  Audits generally deliver reports 
+that say things like &quot;management has put in place procedures 
+and policies...&quot; so CAcert is in good shape here.
+
+Where the audit has stalled is on the systems side (and the 
+missing policies are all on that side as well).  CAcert will 
+either solve their systems problems or die in the attempt. 
+My current estimate is that if CAcert moves seriously to 
+solve the systems problems, then it may have the audit by 
+early 2009.  If not, not.
+
+You can read more about it [6] or ask me or them or join 
+their many mail lists, etc etc.
+
+
+iang
+
+
+[1]  The process was led by Frank Hecker on the open mozo 
+security maillist.  I was part of that process, as was Duane 
+(founder of CAcert), because it was an open process.
+<A HREF="http://www.mozilla.org/projects/security/certs/policy/">http://www.mozilla.org/projects/security/certs/policy/</A>
+IMO, the Mozo CA policy project was a great case study in 
+open security, and should be copied by others, including 
+other Mozo security processes.
+
+[2] By way of disclosure, I am the auditor.  Minutes of most 
+recent published audit report:
+<A HREF="http://wiki.cacert.org/wiki/AuditPresentations">http://wiki.cacert.org/wiki/AuditPresentations</A>
+
+[3] FTR I argued against the requirements for audits.
+
+[4] The case for audits was significantly weakened when 
+rumours spread of audited CAs conducting MITMs on their own 
+customers, and the logical claim that this was permitted 
+under audit as long as it was disclosed, sort of, somewhere, 
+maybe.  This was crucial in shifting consensus to allow 
+competition in audit criteria and auditors.
+
+[5] Due to direction from Greg Rose (retiring President) and 
+a funding deal with NLnet that imposes frequent public reports.
+
+[6]
+<A HREF="http://wiki.cacert.org/wiki/Audit">http://wiki.cacert.org/wiki/Audit</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,26 @@
+<PRE>
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+&gt;<i> That point is of course true.  But the developers wanted
+</I>&gt;<i> to transport IP and UDP.  Peter should have known that
+</I>&gt;<i> SSL is incapable of transporting IP and UDP, because it
+</I>&gt;<i> will introduce large, unpredictable, and variable
+</I>&gt;<i> delays.
+</I>&gt;<i>
+</I>&gt;<i> If, for example, VOIP goes over SSL, the speakers would
+</I>&gt;<i> become entirely unintelligible.
+</I>
+That's just plain factually wrong. DTLS does fine for that purpose. At
+the point where you are sending datagrams with voice data, you're just
+doing conventional crypto over a fixed length packet each time, and
+those algorithms are quite deterministic.
+
+Indeed, DTLS was designed specifically for such applications.
+
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

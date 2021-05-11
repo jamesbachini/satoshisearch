@@ -1,0 +1,30 @@
+<PRE>&quot;Dave Korn&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave.korn at artimi.com</A>&gt; writes:
+
+&gt;<i><A HREF="http://www.theregister.co.uk/2008/09/17/cyber_crime_fighting/">http://www.theregister.co.uk/2008/09/17/cyber_crime_fighting/</A>
+</I>&gt;<i>&quot;  After getting a search warrant and confiscating his hard drive,
+</I>&gt;<i>investigators were forced to scour through its remains using an electron
+</I>&gt;<i>microscope, and the price of $100,000 per pass.  &quot;
+</I>&gt;<i>
+</I>&gt;<i>The claim comes from &quot;Robert Schperberg, forensics lead for Chevron, [ ... ]
+</I>&gt;<i>at the MIS Training Institute's IT Security World conference in San
+</I>&gt;<i>Francisco&quot;, and is otherwise unverified.  I haven't been able to get hold of
+</I>&gt;<i>any kind of transcript, so thus far it only has the status of &quot;Something
+</I>&gt;<i>someone said when giving a talk at a conference&quot;.
+</I>
+Whatever it is it seems to have been garbled beyond recognition, if they were
+just looking for straight evidence they'd be using Encase, if they were
+looking for data in erase bands (assuming the drive was old enough to still
+feature them, they'd be hard to find in any modern drive) they'd be using
+something like a magnetic force microscope which is a scanning probe
+microscope, or a magnetic force scanning tunneling microscope, and in either
+case I doubt you could read perpendicularly-recorded EPRML data just by
+staring at it.  So I don't think it's possible to draw any conclusions from
+this data.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

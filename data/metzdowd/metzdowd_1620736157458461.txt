@@ -1,0 +1,47 @@
+<PRE>On Mon, 29 Oct 2007 14:24:23 -0500
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+
+&gt;<i> So back in the bad old days when hashing was DES encryption of the
+</I>&gt;<i> zero vector with a fixed key, someone came up with salt as a password
+</I>&gt;<i> strengthening mechanism.
+</I>&gt;<i> 
+</I>&gt;<i> I'm not quite sure why it was called salt.
+</I>&gt;<i> 
+</I>&gt;<i> It perturbed the S-boxes in DES IIRC, but essentially it was a known
+</I>&gt;<i> bit of text that was an input to the algorithm that varied between
+</I>&gt;<i> entries, like an IV does with encryption.
+</I>&gt;<i> 
+</I>&gt;<i> If there isn't already a term for this, I'm going to call this
+</I>&gt;<i> general concept &quot;individuation&quot;, or possibly &quot;uniquification&quot;.
+</I>&gt;<i> 
+</I>&gt;<i> Nowadays with strong hash algorithms, but rainbow tables and
+</I>&gt;<i> low-entropy passwords as the threat, I'm wondering what the best
+</I>&gt;<i> practice is.
+</I>&gt;<i> 
+</I>&gt;<i> I was thinking of simply prepending a block of text to each passphrase
+</I>&gt;<i> prior to hashing, and storing it with the hash - similar to salts in
+</I>&gt;<i> passwd entries.
+</I>&gt;<i> 
+</I>&gt;<i> It should have at least as much entropy as the hash output, maybe a
+</I>&gt;<i> little more in case there's collisions.  If it were uniformly random,
+</I>&gt;<i> you could simply XOR it with the passphrase prior to hashing and save
+</I>&gt;<i> yourself some cycles, right?
+</I>&gt;<i> 
+</I>&gt;<i> Would it be appropriate to call this salt, an IV, or some new term?
+</I>
+That's an IV.  I strongly suggest your read the Ritchie and Thompson
+paper on the reasons for the salt.  While making sure that two
+identical passwords rarely hashed to the same value, it had another
+purpose: protecting against hardware attacks.  Ritchie and Thompson
+assumed that there would be generic DES chips; they didn't want those
+to be used in a password-cracking machine.  Accordingly, the salt was
+used to permute the E-box -- not the S-boxes -- to prevent that.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

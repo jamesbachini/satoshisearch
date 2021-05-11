@@ -1,0 +1,44 @@
+<PRE>&gt;<i>I'm sorry, but that's a slur. Hushmail is not a scam. They do a very  
+</I>&gt;<i>good job of explaining what they do, what they cannot do, and against  
+</I>&gt;<i>which threats they protect.
+</I>
+Have you looked at Hushmail lately?  Before I sent that note, I signed
+up for an account and sent myself a few messages to be sure I
+understood what happens.  They really did generate a PGP key for me
+when I signed up.  At least I think they did, the Java thingie that
+was supposed to let me download a copy of the key didn't work, but the
+mail arrived with a reasonable looking PGP signature.  It also let me
+upload my public key for my regular address so Hushmail users can send
+me PGP mail.
+
+If you want Web mail that does PGP inbound and outbound, they do a
+perfectly fine job, but I suspect that interception in transit isn't
+the threat that most users are worried about.
+
+As far as explaining what they do, here's a typical piece of blurbage
+snipped from Hushmail's web site.
+
+  By contrast, Hushmail keeps your online communications private and
+  secure. Not even a Hushmail employee with access to our servers can
+  read your encrypted email, since each message is uniquely encoded
+  before it leaves your computer.
+
+In fact they sent and received my mail through an https web site so
+although it is encoded in transit (https from me to them, PHP from
+them to the other end), it's in the clear at their end.
+
+&gt;<i>You also mischaracterize the Hushmail system. The &quot;classic&quot; Hushmail  
+</I>&gt;<i>does not generate the keys
+</I>
+That may well be true, but that's not what I got when I signed up last
+night.  Take a look, sign up for one of their free accounts, and see
+if you agree with my description of what it does.
+
+R's,
+John
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

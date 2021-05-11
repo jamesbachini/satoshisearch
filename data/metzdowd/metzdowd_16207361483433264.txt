@@ -1,0 +1,29 @@
+<PRE>Nicholas Bohm wrote:
+&gt;<i> That is why efforts by banks to shift the risk to the customer are
+</I>&gt;<i> pernicious - they distort the incentive the bank ought to have to get
+</I>&gt;<i> the security right.
+</I>
+
+Yes. Today, under current practice, there's actually a strong
+incentive to keep existing fraud levels than to try to &quot;scrub
+it out&quot; -- fraud has become a sale:
+
+   in 2001, the last year enough HARD data was available,
+   their revenue stream from fraud was USD $550 Million.
+   That all came from chargeback fees against the merchants.
+   And since it was fraud, the merchants lost the product
+   and the income from the product along with the shipping
+   costs and the chargeback fees. Merchants, of course, have
+   no choice but to pass those losses on to the honest customers.
+
+in <A HREF="http://woip.blogspot.com/2007/03/fraud-is-sale.html">http://woip.blogspot.com/2007/03/fraud-is-sale.html</A>
+See also <A HREF="https://financialcryptography.com/mt/archives/000520.html">https://financialcryptography.com/mt/archives/000520.html</A>
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

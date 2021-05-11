@@ -1,0 +1,20 @@
+<PRE>On Mon, 9 Jun 2008, Leichter, Jerry wrote:
+&gt;<i> Even worse, targeted malwared could attack your backups.  If it
+</I>&gt;<i> encrypted the data on the way to the backup device, it could survive
+</I>&gt;<i> silently for months, by which time encrypting the live data and
+</I>&gt;<i> demanding the ransom would be a very credible threat.
+</I>
+I suspect that home users are the main target of such viruses, and
+such users usually do not make backups at all (I guess the people who
+value their data enough to make backups, are also diligent enough to
+do backup validation).
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

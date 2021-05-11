@@ -1,0 +1,50 @@
+<PRE>On Jan 31, 2008, at 10:32 PM, Richard Salz wrote:
+&gt;<i> Developers working in almost any field should know the history and  
+</I>&gt;<i> best
+</I>&gt;<i> practices -- is PGP's original &quot;bass o matic&quot; any more important  
+</I>&gt;<i> than the
+</I>&gt;<i> code in a defibrillator? -- but this is not the way our field works  
+</I>&gt;<i> right
+</I>&gt;<i> now.  Compare it to something like civil engineering or architecture.
+</I>
+
+I think this misses the point. Security is different.
+
+In 2008, I can learn to build pretty good suspension bridges by  
+learning the state of the art of bridge-building. After that, as long  
+as I live, I run almost no risk of Newtonian mechanics being shown to  
+be wrong for any value of wrong that would make me go &quot;well, wow, I no  
+longer understand how to build bridges&quot;.
+
+In other words, people who build bridges these days can give you a  
+convincing presentation, based on solid physics and a highly-complete  
+threat model (soil erosion, material failure, etc) that their bridge  
+will do its job. They can say &quot;this bridge will work because it  
+satisfies well-understood and reasonably immutable laws of nature&quot;.
+
+People who attempt to build secure systems have no ultimately well- 
+understood (let alone immutable!) requirements to design against. A  
+good approximation is &quot;a secure system is one that survives all  
+relevant attacks that people in our field have come up with thus far&quot;,  
+but it's clear that a system successfully meeting that goal can simply  
+cease to meet it any given day. Thus unlike with bridges, you  
+fundamentally can't evaluate the quality of a security system you  
+built if you're unfamiliar with the state of the art of _attacks_  
+against security systems, and you can't become familiar with those  
+unless you realize that these attacks have each brought down a system  
+previously considered impregnable. And if by the time you've gone  
+through dozens of broken systems and their corresponding attacks you  
+still think you're smart enough to write a new system by yourself,  
+you're either very brave or very daft.
+
+Neither of those mean you're a bad person, but both mean you shouldn't  
+be designing security systems.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

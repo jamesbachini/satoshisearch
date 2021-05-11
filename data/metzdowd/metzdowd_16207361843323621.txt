@@ -1,0 +1,41 @@
+<PRE>Sherri Davidoff &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alien at MIT.EDU</A>&gt; writes:
+
+&gt;<i> Hello all. During the past few months, I've been poking around Linux
+</I>&gt;<i> memory and consistently finding cleartext login, SSH, email, IM,
+</I>&gt;<i> Truecrypt and root passwords. I've just finished a paper which includes
+</I>&gt;<i> detailed location and context information for each password. Given the
+</I>&gt;<i> recent buzz about cold boot memory dumping, it seems the risk associated
+</I>&gt;<i> with cleartext passwords in memory has increased.
+</I>
+What the abstract doesn't make at all clear is that the process used
+seems to have been (from section 2 of the paper):
+
+Start application;
+Enter password;
+Take snapshot of running application's memory;
+
+(although some passwords were apparently found in non-application-specific
+memory, see section 3.7 of the paper).
+
+In other words what's apparently being demonstrated for most of the apps
+isn't an ability to recover keys still hanging around in memory at some
+arbitrary later point but to recover keys from the active process memory
+image.  The reason why I keep using &quot;apparently&quot; is that paragraphs 2 and
+3 of section 2 don't make at all clear whether the application is still
+active or not, although &quot;after all programs had been launched process
+memory was captured live&quot; seems to imply it was a snapshot of a running
+process.  Since many crypto applications zeroise keys after they've
+been used, it seems a bit surprising that it'd be possibly to recover key
+data after the app has exited, as the paper implies.
+
+So was this a case of &quot;recover data from an active app's memory image&quot;
+(not surprising) or &quot;recover data after the app has exited&quot; (surprising,
+at least for the crypto apps)?
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

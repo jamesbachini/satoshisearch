@@ -1,0 +1,88 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+&gt;<i> If on the one hand, the correct procedure is sign-encrypt-sign,
+</I>&gt;<i> then why, on the other hand, is the parallel not sign-hash-sign ?
+</I>
+What is &quot;correct&quot; depends on requirements and semantics, and 
+neither is well addressed in that paper nor in standards, 
+w.r.t. email and signing.
+
+<A HREF="https://financialcryptography.com/mt/archives/000905.html">https://financialcryptography.com/mt/archives/000905.html</A>
+
+Ditto, in terms of your question.
+
+As an example (Ricardian Contract [1]), we might say that a 
+signed contract is done as
+
+    hash-digsig-hash
+
+[2] With this procedure, the first hash-digsig is a human 
+signing (classical cleartext openpgp signature) and the last 
+hash is a signature that causes sharing of the exact 
+document [3].
+
+
+iang
+
+
+
+[1] To complete the picture, even this evidence is 
+distributed by means of transactions over the document;  to 
+be extreme, the end result is this:
+
+     hash-digsig(hash-digsig(hash-digsig-hash))
+
+[2] a public key signature is normally done hash-digsig, 
+right?  So your sign-hash-sign might really be:
+
+     hash-digsig-hash-hash-digsig
+
+but that's a guess.
+
+[3] <A HREF="http://iang.org/papers/ricardian_contract.html">http://iang.org/papers/ricardian_contract.html</A>
+
+
+
+
+&gt;<i> --dan
+</I>&gt;<i> 
+</I>&gt;<i> =============
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://world.std.com/~dtd/sign_encrypt/sign_encrypt7.ps">http://world.std.com/~dtd/sign_encrypt/sign_encrypt7.ps</A>
+</I>&gt;<i> 
+</I>&gt;<i> Donald T. Davis, &quot;Defective Sign &amp; Encrypt in S/MIME, PKCS#7, MOSS, PEM,
+</I>&gt;<i> PGP, and XML.&quot;, Proc. Usenix Tech. Conf. 2001 (Boston, Mass., June
+</I>&gt;<i> 25-30, 2001), pp. 65-78.(180 Kbytes) (PDF, 200 Kbytes) (HTML, 80 Kbytes)
+</I>&gt;<i> 
+</I>&gt;<i> Summary of the paper.
+</I>&gt;<i> 
+</I>&gt;<i> Abstract: 
+</I>&gt;<i> Simple Sign &amp; Encrypt, by itself, is not very secure. Cryptographers
+</I>&gt;<i> know this well, but application programmers and standards authors still
+</I>&gt;<i> tend to put too much trust in simple Sign-and-Encrypt. In fact, every
+</I>&gt;<i> secure e-mail protocol, old and new, has codified na&#195;&#175;ve Sign &amp;
+</I>&gt;<i> Encrypt as acceptable security practice. S/MIME, PKCS#7, PGP, OpenPGP,
+</I>&gt;<i> PEM, and MOSS all suffer from this flaw. Similarly, the secure document
+</I>&gt;<i> protocols PKCS#7, XML- Signature, and XML-Encryption suffer from the
+</I>&gt;<i> same flaw. Na&#195;&#175;ve Sign &amp; Encrypt appears only in file-security and
+</I>&gt;<i> mail-security applications, but this narrow scope is becoming more
+</I>&gt;<i> important to the rapidly-growing class of commercial users. With file-
+</I>&gt;<i> and mail-encryption seeing widespread use, and with flawed encryption in
+</I>&gt;<i> play, we can expect widespread exposures.
+</I>&gt;<i> 
+</I>&gt;<i> In this paper, we analyze the na&#195;&#175;ve Sign &amp; Encrypt flaw, we
+</I>&gt;<i> review the defective sign/encrypt standards, and we describe a
+</I>&gt;<i> comprehensive set of simple repairs. The various repairs all have a
+</I>&gt;<i> common feature: when signing and encryption are combined, the inner
+</I>&gt;<i> crypto layer must somehow depend on the outer layer, so as to reveal any
+</I>&gt;<i> tampering with the outer layer.
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,23 @@
+<PRE>
+The 5th international Security in Storage Workshop (SISW)
+	<A HREF="http://ieeeia.org/sisw/2008/">http://ieeeia.org/sisw/2008/</A>
+will be held on Sept 25th, 2008 in conjunction with MSST 2008
+	<A HREF="http://storageconference.org/2008/">http://storageconference.org/2008/</A>
+  and the 	Key Management Summit 2008.
+	<A HREF="http://www.keymanagementsummit.com/2008/">http://www.keymanagementsummit.com/2008/</A>
+
+Prospective participants should submit either a full paper (not to  
+exceed 12 single-spaced pages) for a paper presentation to be  
+published in the proceedings or can submit a short abstract suggesting  
+alternative presentation forms, discussion items, or panel topics.  
+Please submit papers to James Hughes (<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">James.Hughes at Sun.Com</A>) by May 30th.
+
+Thanks
+
+Jim Hughes
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

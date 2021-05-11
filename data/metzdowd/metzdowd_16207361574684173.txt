@@ -1,0 +1,50 @@
+<PRE>|<i> A slightly off-topic question:  if we accept that current processes
+</I>|<i> (FIPS-140, CC, etc) are inadequate indicators of quality for OSS
+</I>|<i> products, is there something that can be done about it?  Is there a
+</I>|<i> reasonable criteria / process that can be built that is more suitable?
+</I>Well, if you believe a talk by Brian Snow at the NSA - see
+<A HREF="http://www.acsac.org/2005/papers/Snow.pdf">http://www.acsac.org/2005/papers/Snow.pdf</A> - our whole process has to
+change to get assurance, from the beginnings of the design all the
+way through the final product.
+
+I suspect he's right - but I'm also pretty sure that the processes
+involved will always be too expensive for most uses.  They'll even be
+too expensive for the cases where you'd think they best apply - e.g.,
+in protecting large financial transactions.  An analysis of the costs
+vs. the risks will usually end up with the decision to spend less and
+spread the risks around, whether through insurance or higher rates
+or other means.
+
+We keep being told that inspection after the fact will give us more
+secure systems.  It never seems to work.  You'd think that the
+experience of, say, the US auto industry - which was taught by the
+Japanese that you have to build quality into your entire process, not
+inspect *out* lack of quality at the end - would give us some hint
+that after-the-fact inspection is not the way to go.
+
+Given all that ... a FIPS 140-2 certification is actually a pretty
+reasonable evaluation.  It can be because it's trying to deal with
+a problem that can be constrained to a workable size.  You know what's
+supposed to go in; you know what's supposed to come out.  (This
+still works better for hardware than for software, though.)  Where
+FIPS 140-2 breaks down is that ultimately all it can tell you is
+that some constrained piece of the system works.  But it tells you
+nothing, and *can* tell you nothing, about whether that piece is
+being used in a proper, secure way.  (Again, this is somewhat easier
+with hardware, because the system boundaries are much more sharply
+defined - and because of the inflexibility of hardware, they are also
+much smaller.)  Beyond this is Common Criteria, which can easily be
+more about paperwork than anything real.
+
+Until someone comes up with a new way to approach the problem, my
+guess is that we'll see more stuff moved into hardware, with limited
+security definitions above the hardware that we can have some faith
+in - but as little of real value to be said above that as there is
+today.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

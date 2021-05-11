@@ -1,0 +1,82 @@
+<PRE>I recently implemented SSARES directly in python and also added
+parallelism to the searching. We can now search the a large inbox
+(1000+) messages in about 2-4 minutes. Technically, this could be done
+on a large scale and be practical, since my implementation is not
+fully optimized nor free of bugs.
+
+The implementation is available on my web site,
+<A HREF="http://fling.seas.upenn.edu/~aviv/wiki/index.php?n=SSARESApp.SSARESApp">http://fling.seas.upenn.edu/~aviv/wiki/index.php?n=SSARESApp.SSARESApp</A>
+as well as some current benchmarks.
+
+I am not a cryptographer (so implementation may not be perfect), nor
+do I guarantee that the code doesn't have bugs. This is grad-ware and
+for research purposes only. Yet, as a proof of concept, feel free to
+play around with it and let me know what you think. I can supply more
+python scripts for searching and what not if anyone wants.
+
+thanks,
+
+adam
+
+On Sun, Jun 1, 2008 at 8:09 PM, Angelos D. Keromytis
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">angelos at cs.columbia.edu</A>&gt; wrote:
+&gt;<i> A more recent version, which appeared at ACSAC in December 2007 can be found
+</I>&gt;<i> at:
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www1.cs.columbia.edu/~angelos/Papers/2007/SSARES_ACSAC.pdf">http://www1.cs.columbia.edu/~angelos/Papers/2007/SSARES_ACSAC.pdf</A>
+</I>&gt;<i>
+</I>&gt;<i> Since then, the student primarily working on this(*) has improved
+</I>&gt;<i> performance to the point of being able to search a couple of email messages
+</I>&gt;<i> per minute or so, with further scope for improvement. The very large storage
+</I>&gt;<i> overhead remains, but can probably be reduced by half or so.
+</I>&gt;<i>
+</I>&gt;<i> (*) Adam Aviv; he was an undergrad at Columbia, now pursuing his Phd with
+</I>&gt;<i> Matt Blaze at UPenn...
+</I>&gt;<i>
+</I>&gt;<i> -Angelos
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> On Jun 1, 2008, at 8:53 AM, Perry E. Metzger wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> &quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> Does anyone know of existing work in this area?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> &quot;SSARES: Secure Searchable Automated Remote Email Storage&quot;
+</I>&gt;&gt;<i> by Keromytis et al,
+</I>&gt;&gt;<i> <A HREF="http://www1.cs.columbia.edu/~angelos/Papers/2006/SSARES_short.pdf">http://www1.cs.columbia.edu/~angelos/Papers/2006/SSARES_short.pdf</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> There is probably other work out there. In some small part, this also
+</I>&gt;&gt;<i> looks like the problem that Matt Blaze's CFS addressed, though in that
+</I>&gt;&gt;<i> case it was to deal with untrusted remote file servers rather than
+</I>&gt;&gt;<i> email servers.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Perry
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+
+
+--
+Adam Aviv
+Ph. D. Candidate
+Computer and Information Science
+University of Pennsylvania
+
+
+
+-- 
+Adam Aviv
+Ph. D. Candidate
+Computer and Information Science
+University of Pennsylvania
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

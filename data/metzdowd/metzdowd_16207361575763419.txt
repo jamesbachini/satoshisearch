@@ -1,0 +1,33 @@
+<PRE>Ian G &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+&gt;<i>Peter Gutmann wrote:
+</I>&gt;&gt;<i> &quot;Alex Pankratov&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ap at poneyhot.org</A>&gt; writes:
+</I>&gt;&gt;&gt;<i> SecureIM handshake between two version 3.1 (latest) clients takes about .. 48
+</I>&gt;&gt;&gt;<i> bytes. That's altogether, 32 bytes in one direction, and 16 in another. And
+</I>&gt;&gt;&gt;<i> that's between the clients that have never talked to each other before, so
+</I>&gt;&gt;&gt;<i> there's no &quot;session resuming&quot; business happenning.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Or they could be using static/ephemeral DH with fixed shared DH key values,
+</I>&gt;&gt;<i> which isn't much better.  (This is just speculation, it's hard to tell without
+</I>&gt;&gt;<i> knowing what the exchanged quantities are).
+</I>&gt;<i>
+</I>&gt;<i>Speculation is fun.
+</I>&gt;<i>
+</I>&gt;<i>But, opportunistic cryptography is even more fun.  It is very encouraging to
+</I>&gt;<i>see projects implement cryptography in limited forms.  A system that uses a
+</I>&gt;<i>primitive form of encryption is many orders of magnitude more secure than a
+</I>&gt;<i>system that implements none.
+</I>
+Opportunistic cryptography designed as opportunistic cryptography (with key
+continuity measures and so on) is fun.
+
+Opportunistic cryptography that exists because the developers have screwed up
+something better (and are under the delusion that what they've implemented is
+something better) is less fun.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,42 @@
+<PRE>Steve Bellovin writes:
+&gt;<i>Greg, assorted folks noted, way back when, that Skipjack looked a lot
+</I>&gt;<i>like a stream cipher.  Might it be vulnerable?
+</I>
+I'm still absorbing Adi's new ideas, and I haven't looked at this in any
+detail, so anything I say should be taken with an enormous grain of salt.
+But, off-hand, I'd guess not.  I don't see anything that immediately
+makes me worried about Skipjack, or AES for that matter.
+
+In its most basic form, Adi Shamir's cube attack applies when some bit of
+the output of the stream cipher (or block cipher, etc.) can be written as
+a polynomial of the key and input such that the degree of the polynomial
+is not too large.  One major innovation is that the attack applies even
+if the number of terms in the polynomial is enormous -- say, way too
+many to explicitly write down the polynomial.  When the degree is not
+too large, Adi showed some powerful techniques for recovering the key.
+
+Adi pointed out that this might be especially relevant to many LFSR-based
+stream ciphers.  The reason is that many LFSR-based stream cipher use a
+non-linear filter function of low degree.  Often, the key loading process
+also has relatively low degree.  The LFSR itself is linear and hence does
+not increase the degree.  The attack only seems directly relevant to a
+subset of stream cipher architectures -- for instance, Adi mentioned that
+he does not know how to apply it to some clock-controlled LFSR-based
+stream ciphers, such as A5/1 -- but the class of stream ciphers it
+applies to is an important and common class of stream ciphers.
+
+In contrast, I don't expect this to threaten most modern block ciphers.
+Most block ciphers contain enough rounds, and enough non-algebraic
+structure in each round, to ensure that the degree of the resulting
+polynomial will be large, so in those cases the attack does not seem
+applicable.  But of course I could well be missing something, and it's
+always possible there could be further advances.
+
+It's a brilliant piece of research.  If you weren't at CRYPTO, you missed
+an outstanding talk (and this wasn't the only one!).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

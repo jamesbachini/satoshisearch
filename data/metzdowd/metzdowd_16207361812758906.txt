@@ -1,0 +1,39 @@
+<PRE>On Jun 11, 2008, at 10:04 PM, Steven M. Bellovin wrote:
+&gt;<i> Let's put it like this: suppose you wanted to use all of your
+</I>&gt;<i> cryptographic skills to do such a thing.  Do you think it could be
+</I>&gt;<i> cracked?  I don't...
+</I>
+
+Exactly right. After Storm, I don't think anyone reasonable still  
+believes that there's no talent in the black hat community. So even if  
+this particular piece of malware has implementation issues, the next  
+version won't. And then what?
+
+Focusing on the crypto is just missing the point entirely, although I  
+suppose it grabs headlines. But the problem at hand has nothing to do  
+with crypto, and  everything to do with the fact that our desktop  
+security systems are fundamentally broken[0]. There is _no_ _reason_  
+that a piece of malware executing silently in the background should  
+have access to the user's files without interaction or approval from  
+the user. And you can't maliciously encrypt files you can't access.
+
+We know how to build systems that are both drastically more secure and  
+more usable than the ones in use today[1]. I wonder if a proliferation  
+of headline-grabbing threats like cryptographic ransomware will help  
+overcome the OS vendor inertia.
+
+
+[0] See first half of &lt;<A HREF="http://radian.org/~krstic/talks/2007/auscert/slides.pdf">http://radian.org/~krstic/talks/2007/auscert/slides.pdf</A> 
+ &gt;. Note: I'm no longer affiliated with OLPC.
+
+[1] E.g. &lt;<A HREF="http://en.wikipedia.org/wiki/CapDesk">http://en.wikipedia.org/wiki/CapDesk</A>&gt;, &lt;<A HREF="http://en.wikipedia.org/wiki/Polaris_(computer_security">http://en.wikipedia.org/wiki/Polaris_(computer_security</A>) 
+ &gt;, &lt;<A HREF="http://en.wikipedia.org/wiki/Bitfrost">http://en.wikipedia.org/wiki/Bitfrost</A>&gt;
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

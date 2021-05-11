@@ -1,0 +1,25 @@
+<PRE> From an article about WAN optimization appliances in Computerworld:
+
+	In some markets, such as health and finance, [hiring] a managed
+	provider [who will do the encryption &quot;outside&quot; your routers] isn't 	a  
+good option for another reason: Because data is optimized in an 	 
+unencrypted state, privacy and security concerns arise. But vendors 	 
+such as Riverbed, Juniper Networks and Blue Coat Systems can serve 	as  
+a trusted &quot;man in the middle&quot; for optimizing data encrypted with 	SSL,  
+which is commonly used in applications with Web interfaces and 	other  
+Internet traffic. They terminate the encrypted session,
+	decrypt, optimize and then re-encrypt and forward the traffic.
+	[Gartner's Joe] Skorupa said most vendors are developing this
+	useful capability.
+
+It may indeed be a useful capability - but widespread use will destroy  
+what little is left of the SSL trust model.
+
+                                                         -- Jerry
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

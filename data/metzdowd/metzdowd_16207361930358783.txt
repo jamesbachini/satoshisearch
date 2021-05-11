@@ -1,0 +1,21 @@
+<PRE>Bill Stewart &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bill.stewart at pobox.com</A>&gt; writes:
+
+&gt;<i>A quick google-look at ASICs showed a number in the range of 300K-20M gates,
+</I>&gt;<i>so hash-trees could probably get speedups of up to 20-100x if you can keep
+</I>&gt;<i>from becoming input-speed-bound. The 300K chips were about $6, 5M at $50 and
+</I>&gt;<i>350MHz, which is somewhat faster than the Skein team estimate, and some of
+</I>&gt;<i>the denser chips didn't mention price but were starting to use 45nm
+</I>&gt;<i>technology.
+</I>
+I don't know about ASICs but for FPGAs you can pay in the thousands of dollars
+for a single high-end device (forget Xeons, that's the market to be in), so
+you don't want to set your sights too high.  My guess is they were designing
+down to a price rather than up to a performance figure.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

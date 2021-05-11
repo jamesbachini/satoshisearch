@@ -1,0 +1,62 @@
+<PRE>Hi Folks --
+
+I was wondering to what extent the folks on this list have taken
+a look the PunchScan voting scheme:
+
+  <A HREF="http://punchscan.org/">http://punchscan.org/</A>
+
+The site makes the following claims:
+
+&gt;&gt;<i> End-to-end cryptographic independent verification, or E2E, is a
+</I>&gt;&gt;<i>  mechanism built into an election that allows voters to take a 
+</I>&gt;&gt;<i> piece of the ballot home with them as a receipt. This receipt 
+</I>&gt;&gt;<i> does not allow voters to prove to others how they voted, but it
+</I>&gt;&gt;<i>  does permit them to:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> * Verify that they have properly indicated their votes to 
+</I>&gt;&gt;<i> election officials (cast-as-intended).
+</I>&gt;&gt;<i> * Verify with extremely high assurance that all votes were
+</I>&gt;&gt;<i> counted properly (counted-as-cast).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Voters can check that their vote actually made it to the tally,
+</I>&gt;&gt;<i> and that the election was conducted fairly.
+</I>
+
+Those seem at first glance to be a decent set of claims, from
+a public-policy point of view.  If somebody would prefer a
+different set of claims, please explain.
+
+
+PunchScan contains some nifty crypto, but IMHO this looks like
+a classic case of too much crypto and not enough real security.
+
+I am particularly skeptical of one of the FAQ-answers
+ <A HREF="http://punchscan.org/faq-protections.php#5">http://punchscan.org/faq-protections.php#5</A>
+
+Several important steps in the process must be carried out in
+secret, and if there is any leakage, there is unbounded potential
+for vote-buying and voter coercion.
+  The Boss can go to each voter and make the usual silver-or-lead
+  proposition:  Vote as I say, and then show me your voting receipt.
+  I'll give you ten dollars.  But if I find out you voted against
+  me, I'll kill you.
+
+The voter cannot afford to take the chance that even a small
+percentage of the ballot-keys leak out.
+
+1) It would be nice to see some serious cryptological protection
+of election processes and results.
+
+2a) I don't think we're there yet.
+
+2b) In particular I don't think PunchScan really solves &quot;the&quot;
+whole problem.
+
+3) I'd love to be wrong about item (2).  Does anybody see a way
+to close the gaps?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

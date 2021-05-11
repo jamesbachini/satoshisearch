@@ -1,0 +1,16 @@
+<PRE>
+It turns out that the counterfeit chips business is booming:
+
+<A HREF="http://www.eetimes.com/rss/showArticle.jhtml?articleID=207401126">http://www.eetimes.com/rss/showArticle.jhtml?articleID=207401126</A>
+
+In combination with the news about what as few as 1500 extra gates can
+do, this is especially worrisome.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

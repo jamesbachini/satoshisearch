@@ -1,0 +1,56 @@
+<PRE>On Tue, 13 May 2008 23:00:57 +0100
+Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+
+&gt;<i> Steven M. Bellovin wrote:
+</I>&gt;<i> &gt; On Tue, 13 May 2008 14:10:45 +0100
+</I>&gt;<i> &gt; Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt;&gt; Debian have a stunning example of how blindly fixing &quot;problems&quot;
+</I>&gt;<i> &gt;&gt; pointed out by security tools can be disastrous.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; I've blogged about it here: <A HREF="http://www.links.org/?p=327">http://www.links.org/?p=327</A>
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; Vendors Are Bad For Security
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; I?ve ranted about this at length before, I?m sure - even in print,
+</I>&gt;<i> &gt;&gt; in O?Reily?s Open Sources 2. But now Debian have proved me right
+</I>&gt;<i> &gt;&gt; (again) beyond my wildest expectations. Two years ago,
+</I>&gt;<i> &gt;&gt; they ?fixed? a ?problem? in OpenSSL reported by valgrind[1] by
+</I>&gt;<i> &gt;&gt; removing any possibility of adding any entropy to OpenSSL?s pool
+</I>&gt;<i> &gt;&gt; of randomness[2].
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; The result of this is that for the last two years (from Debian?s
+</I>&gt;<i> &gt;&gt; ?Edgy? release until now), anyone doing pretty much any crypto on
+</I>&gt;<i> &gt;&gt; Debian (and hence Ubuntu) has been using easily guessable keys.
+</I>&gt;<i> &gt;&gt; This includes SSH keys, SSL keys and OpenVPN keys.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt; ....
+</I>&gt;<i> &gt;&gt; [2] Valgrind tracks the use of uninitialised memory. Usually it is
+</I>&gt;<i> &gt;&gt; bad to have any kind of dependency on uninitialised memory, but
+</I>&gt;<i> &gt;&gt; OpenSSL happens to include a rare case when its OK, or even a good
+</I>&gt;<i> &gt;&gt; idea: its randomness pool. Adding uninitialised memory to it can do
+</I>&gt;<i> &gt;&gt; no harm and might do some good, which is why we do it. It does
+</I>&gt;<i> &gt;&gt; cause irritating errors from some kinds of debugging tools, though,
+</I>&gt;<i> &gt;&gt; including valgrind and Purify. For that reason, we do have a flag
+</I>&gt;<i> &gt;&gt; (PURIFY) that removes the offending code. However, the Debian
+</I>&gt;<i> &gt;&gt; maintainers, instead of tracking down the source of the
+</I>&gt;<i> &gt;&gt; uninitialised memory instead chose to remove any possibility of
+</I>&gt;<i> &gt;&gt; adding memory to the pool at all. Clearly they had not understood
+</I>&gt;<i> &gt;&gt; the bug before fixing it.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt; Ben: I haven't looked at the actual code in question -- are you
+</I>&gt;<i> &gt; saying that the *only* way to add more entropy is via this pool of
+</I>&gt;<i> &gt; uninitialized memory?
+</I>&gt;<i> 
+</I>&gt;<i> No. That would be fantastically stupid.
+</I>&gt;<i> 
+</I>So why are are the keys so guessable?  Or did they delete other code?
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

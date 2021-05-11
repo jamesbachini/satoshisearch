@@ -1,0 +1,32 @@
+<PRE>At Fri, 01 Feb 2008 18:42:03 +1000,
+James A. Donald wrote:
+&gt;<i> 
+</I>&gt;<i> Guus Sliepen wrote:
+</I>&gt;<i> &gt; Peter's write-up was the reason I subscribed to this cryptography
+</I>&gt;<i> &gt; mailing list. After a while the anger/hurt feelings I had disappeared.
+</I>&gt;<i> &gt; I knew then that Peter was right in his arguments. Nowadays I can look
+</I>&gt;<i> &gt; at Peter's write-up more objectively and I can see that it is not as
+</I>&gt;<i> &gt; ad-hominem as it felt back then, although the whole soundwave paragraph
+</I>&gt;<i> &gt; still sounds very childish ;)
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; When tinc 2.0 will ever come out (unfortunately I don't have a lot of
+</I>&gt;<i> &gt; time to work on it these days), it will probably use the GnuTLS library
+</I>&gt;<i> &gt; and authenticate and connect daemons with TLS. For performance reasons,
+</I>&gt;<i> &gt; you want to tunnel network packets via UDP instead of TCP, so hopefully
+</I>&gt;<i> &gt; there is a working DTLS implementation as well then.
+</I>&gt;<i> 
+</I>&gt;<i> I have been considering the problem of encrypted channels over UDP or 
+</I>&gt;<i> IP.  TLS will not work for this, since it assumes and provides a 
+</I>&gt;<i> reliable, and therefore non timely channel, whereas what one wishes to 
+</I>&gt;<i> provide is a channel where timeliness may be required at the expense of 
+</I>&gt;<i> reliability.
+</I>
+DTLS: RFC 4347.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

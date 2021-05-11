@@ -1,0 +1,27 @@
+<PRE>Good news on patents, particularly crypto patents.
+
+The CAFC, the US patent court, has recently ruled that the patent holder 
+cannot hit you with punitive damages unless, on the preponderance of the 
+evidence, you were objectively reckless - that you knew or strongly 
+suspected you were violating the patent.
+
+By and large, the remaining crypto patents are canned uncertainty and 
+doubt, intended to muddy the water, patenting everything, anything, and 
+nothing.  This previously worked in favor of the patent holder, but now 
+it works against the patent holder.
+
+The way it now works is that if you have an arguable case that you are 
+not in violation of the patent, you can barge right ahead and wait for 
+the patent holder to spend many millions of dollars and many years in 
+court to clarify the situation.  Don't hold your breath.
+
+This also negates the Microsoft tactic &quot;If you use linux, you are 
+violating our patents, but we will not tell you what patents you are 
+violating, or what aspect of linux violates them&quot;.  Now, genuine 
+uncertainty works *against* the patent holder.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

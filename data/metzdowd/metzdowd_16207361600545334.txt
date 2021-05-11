@@ -1,0 +1,20 @@
+<PRE>&gt;<i>In practice, the larger danger with email is that the high-profile
+</I>&gt;<i>threats to email security are on the client side.
+</I>
+Right.  I haven't used the end to end Java stuff, but I believe that
+it works.  Unfortunately, when you go to sign up, what you get by
+default is a version that is little more than plain old web mail, and
+their signup process does not say &quot;if you use the web mail we can read
+all your mail and will provide it in plain text if suboenaed.&quot;
+
+That's what I take issue with, promoting web mail as though it were
+secure end to end PGP.
+
+R's,
+John
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

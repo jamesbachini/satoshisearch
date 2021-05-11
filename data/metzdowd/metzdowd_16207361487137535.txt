@@ -1,0 +1,22 @@
+<PRE>Hello,
+
+I have a couple of questions related to FIPS 140-2:
+
+1) Can a product obtain FIPS 140-2 certification if it implements a PRNG
+from NIST SP 800-90 (and therefore is not listed in FIPS 140-2 Annex C)?  If
+not, will Annex C be updated to include the PRNGs from SP 800-90?
+
+2) Does FIPS 140-2 have any requirements regarding the quality of the
+entropy source that is used for seeding a PRNG?  I couldn't find any such
+requirement, which seems like a glaring oversight when evaluating the
+security of a product that may generate keys and other critical security
+parameters.
+
+Thanks for your help.
+
+Best regards,
+Darren Lasko
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070707/87c1e123/attachment.html">http://www.metzdowd.com/pipermail/cryptography/attachments/20070707/87c1e123/attachment.html</A>&gt;
+</PRE>

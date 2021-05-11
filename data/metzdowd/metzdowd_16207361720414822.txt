@@ -1,0 +1,22 @@
+<PRE>John Levine wrote:
+&gt;&gt;<i> | Presumably the value they add is that they keep browsers from popping
+</I>&gt;&gt;<i> | up scary warning messages....
+</I>&gt;&gt;<i> Apple's Mail.app checks certs on SSL-based mail server connections.
+</I>&gt;&gt;<i> It has the good - but also bad - feature that it *always* asks for
+</I>&gt;&gt;<i> user approval if it gets a cert it doesn't like.
+</I>&gt;<i> 
+</I>&gt;<i> Good point -- other mail programs such as Thunderbird also pop up
+</I>&gt;<i> the scary warnings.  I've paid the $15 protection money for the certs
+</I>&gt;<i> on my mail servers.
+</I>
+I have found that just adding the cert to the local keystore had pretty 
+much the same effect. There is a nice addon for Thunderbird/Firefox 
+(which will apparently be a native ability in v3 of the latter) called 
+&quot;remember mismatched domains&quot; that lets you suppress an error for a 
+specific cert/domain mismatch.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,29 @@
+<PRE>|<i> Hi Martin,
+</I>|<i> 
+</I>|<i> I did forget to say that it would be salted so that throws it off by
+</I>|<i> 2^12
+</I>|<i> 
+</I>|<i> A couple of questions. How did you come up with the ~2.5 bits per
+</I>|<i> word? Would a longer word have more bits?
+</I>He misapplied an incorrect estimate!  :-) The usual estimate - going
+back to Shannon's original papers on information theory, actually - is
+that natural English text has about 2.5 (I think it's usually given as
+2.4) bits of entropy per *character*.  There are several problems here:
+
+	- The major one is that the estimate should be for *characters*,
+		not *words*.  So the number of bits of entropy in
+		a 55-character phrase is about 137 (132, if you use
+		2.4 bits/character), not 30.
+
+	- The minor one is that the English entropy estimate looks just
+		at letters and spaces, not punctuation and capitalization.
+		So it's probably low anyway.  However, this is a much
+		smaller effect.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

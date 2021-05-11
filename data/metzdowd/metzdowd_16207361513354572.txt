@@ -1,0 +1,30 @@
+<PRE>Quoting Paul Hoffman &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">paul.hoffman at vpnc.org</A>&gt;:
+
+&gt;<i> At 11:00 PM -0700 8/13/07, Aram Perez wrote:
+</I>&gt;&gt;<i> Anyone know more about this?
+</I>&gt;<i>
+</I>&gt;<i> I have the same question. I could not find any description of *why*  
+</I>&gt;<i> they think that finding near-misses is going to help the research.  
+</I>&gt;<i> It's not clear if they are taking their own path, or trying to  
+</I>&gt;<i> improve Wang's path, or what.
+</I>
+The mentioned article is indeed confusing, the information in there  
+took apparently several hops.
+
+To address your questions: Indeed, we have our own &quot;path&quot;, but more  
+importantly we developed a new method to speed-up generation and  
+testing of candidate message pairs and apply it to SHA-1. The  
+resulting work factor is still quite high, hence we ask for  
+contributions via the BOINC framework.
+
+More information on cryptanalytic details, type of collision, and  
+resulting work factor will appear later this year.
+
+-Christian
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

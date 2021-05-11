@@ -1,0 +1,15 @@
+<PRE>Hello,
+
+On 30/10/2007 17:13, Ali, Saqib wrote:
+&gt;<i> Windows have had FDE (with pre-boot) solutions for a  long while. Here
+</I>&gt;<i> is a list: <A HREF="http://www.full-disk-encryption.net/Full_Disc_Encryption.html">http://www.full-disk-encryption.net/Full_Disc_Encryption.html</A>
+</I>
+IIRC, none of the products on this list is open source.
+
+Hagai.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

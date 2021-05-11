@@ -1,0 +1,43 @@
+<PRE>Hi Folks,
+
+NIST has completed the 90-day public review of the proposal from IEEE
+1619 to add XTS-AES as an Approved Mode of Operation under FIPS 140.
+
+XTS-AES provides a &quot;narrow-block&quot; tweakable block cipher based on the
+XEX construction proposed by Phillip Rogaway.
+
+See the following link for comments, under the section &quot;Comments On
+The Proposal To Approve XTS-AES&quot;:
+<A HREF="http://csrc.nist.gov/groups/ST/toolkit/BCM/comments.html">http://csrc.nist.gov/groups/ST/toolkit/BCM/comments.html</A>
+
+NIST received comments from the following individuals:
+* Moses Liskov, Kazuhiko Minematsu:
+<A HREF="http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/comments/XTS/XTS_comments-Liskov_Minematsu.pdf">http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/comments/XTS/XTS_comments-Liskov_Minematsu.pdf</A>
+* Seagate Technology:
+<A HREF="http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/comments/XTS/XTS_comments-Seagate.pdf">http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/comments/XTS/XTS_comments-Seagate.pdf</A>
+* Matt Ball: <A HREF="http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/comments/XTS/XTS_comments-Ball.pdf">http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/comments/XTS/XTS_comments-Ball.pdf</A>
+* Collected comments:
+<A HREF="http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/comments/XTS/collected_XTS_comments.pdf">http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/comments/XTS/collected_XTS_comments.pdf</A>
+ - Boaz Shahar
+ - David Clunie
+ - Rich Shroeppel
+ - Phillip Rogaway
+ - Vijay Bharadwaj, Neils Ferguson
+
+Based on these comments, NIST will decide whether or not to approve
+XTS for FIPS 140-2/140-3.
+
+--
+Thanks!
+-Matt
+
+Matt Ball, IEEE P1619.x SISWG Chair
+Cell: 303-717-2717
+<A HREF="http://www.linkedin.com/in/matthewvball">http://www.linkedin.com/in/matthewvball</A>
+<A HREF="http://www.mavaball.net/">http://www.mavaball.net/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

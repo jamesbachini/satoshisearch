@@ -1,0 +1,29 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i>  While it's possible to say &quot;There's something we noticed
+</I>&gt;<i> here in the source code that requires the software to be ejected from the
+</I>&gt;<i> train&quot;, it's a bit harder to say &quot;We spent three months reverse-engineering
+</I>&gt;<i> someone else's proprietary protected intellectual property and think we may
+</I>&gt;<i> have found something&quot;.
+</I>
+Peter cites an important difference. You may be able to see but you can't tell.
+
+However, one can still easily reverse-engineer to find the vulnerability
+and then present an exploit saying &quot;There's something we noticed here when
+the code is executed with this input...&quot;.
+
+The conclusion holds that closed-source is now less of a reasonable argument
+in terms of /protecting/ source code.
+
+Software-as-a-Service (SaaS), though, would still work in terms of
+protecting source code, though, as all you have is a &quot;service oracle&quot; that
+does not necessarily reveal code details or flaws. SaaS could be supplied
+remotely or locally, with a secure processor card or secure USB-processor.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

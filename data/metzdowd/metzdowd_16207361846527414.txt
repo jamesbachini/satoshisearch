@@ -1,0 +1,31 @@
+<PRE>* John Levine:
+
+&gt;&gt;<i>CERT/CC mentions this:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;|<i> It is important to note that without changes to the DNS protocol, such
+</I>&gt;&gt;|<i> as those that the DNS Security Extensions (DNSSEC) introduce, these
+</I>&gt;&gt;|<i> mitigations cannot completely prevent cache poisoning.
+</I>&gt;<i>
+</I>&gt;<i> Why wouldn't switching to TCP lookups solve the problem?
+</I>
+It requires code changes on both types of servers, in order to make them
+more scalable.
+
+&gt;<i> It's arguably more traffic than DNSSEC, but it has the large practical
+</I>&gt;<i> advantage that they actually work with deployed servers today.
+</I>
+Implementors say that in many cases, their software as it's currently
+implemented can't take the load.  It's not much worse than web traffic,
+that's why I think it can be made to work (perhaps easier with kernel
+support, who knows).  But code changes are apparently required.
+
+And once you need code changes, you can roll out DNSSEC--or some
+extended query ID with 64 additional bits of entropy.
+
+On top of that, some operators decided not to offer TCP service at all.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

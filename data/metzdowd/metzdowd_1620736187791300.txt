@@ -1,0 +1,28 @@
+<PRE>
+[From my daily New York Times news summary]
+
+11 Charged in Theft of 41 Million Card Numbers
+By BRAD STONE
+Authorities said the scheme was spearheaded by a Miami man
+who hacked into several retailers' computer systems.
+
+<A HREF="http://www.nytimes.com/2008/08/06/business/06theft.html">http://www.nytimes.com/2008/08/06/business/06theft.html</A>
+
+Russian Gang Hijacking PCs in Vast Scheme
+By JOHN MARKOFF
+The gang has infected thousands of PCs in corporate and
+government networks with programs that steal passwords and
+other information, a security researcher has found.
+
+<A HREF="http://www.nytimes.com/2008/08/06/technology/06hack.html">http://www.nytimes.com/2008/08/06/technology/06hack.html</A>
+
+[The depressing bit is how banal both stories have become. --Perry]
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

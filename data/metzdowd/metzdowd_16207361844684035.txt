@@ -1,0 +1,16 @@
+<PRE>Dutch chipmaker NXP Semiconductors has sued a university in The
+Netherlands to block publication of research that details security
+flaws in NXP's Mifare Classic wireless smart cards, which are used in
+transit and building entry systems around the world.
+
+More at:
+<A HREF="http://news.cnet.com/8301-10784_3-9985886-7.html?hhTest=1">http://news.cnet.com/8301-10784_3-9985886-7.html?hhTest=1</A>
+
+saqib
+<A HREF="http://doctrina.wordpress.com/">http://doctrina.wordpress.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,39 @@
+<PRE>archeological email about proposal for doing pgp-like public key
+(from 1981):
+<A HREF="http://www.garlic.com/~lynn/2006w.html#email810515">http://www.garlic.com/~lynn/2006w.html#email810515</A>
+
+the internal network was larger than the arpanet/internet from
+just about the beginning until sometime summer of '85. corporate
+guidelines had become that all links/transmission leaving corporate
+facilities were required to be encrypted. in the '80s this met
+lots of link encryptors (in the mid-80s, there was claim that
+internal network had over half of all the link encryptors in the world).
+
+a major crypto problem was with just about every link that crossed any
+national boundary created problems with both national gov. links
+within national boundaries would usually get away with argument
+that it was purely internal communication within the same
+corporate entity. then there was all sorts of resistance encountered
+attempting to apply that argument to links that cross national
+boundary (from just about every national entity).
+
+For other archeological lore ... old posting with new networking
+activity from 1983
+<A HREF="http://www.garlic.com/2006k.html#8">http://www.garlic.com/2006k.html#8</A>
+
+above posting includes listing of locations (around the world)
+that had one or more new network links (on the internal
+network) added sometime during 1983 (large precentage
+involved connections requiring link encryptors).
+
+more recent post
+<A HREF="http://www.garlic.com/~lynn/2008h.html#87">http://www.garlic.com/~lynn/2008h.html#87</A>
+
+mentioning coming to the realization (in the 80s) that there
+were three kinds of crypto.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

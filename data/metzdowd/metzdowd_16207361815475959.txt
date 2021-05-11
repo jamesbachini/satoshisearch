@@ -1,0 +1,68 @@
+<PRE>On Tue, Jun 3, 2008 at 1:05 PM, Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A> wrote:
+</I>&gt;<i>
+</I>&gt;<i> We see that the trust relationship represented by that SSL cert can be
+</I>&gt;<i> copied without any loss, as many times as you wish
+</I>&gt;<i>
+</I>My understanding is that an SSL certificate is only a method to carry
+the assertion that the holder of the private key is the the subject
+named in the certificate (with possible limitations on the allowed
+uses of the private key). By using the certificate, one does not trust
+the subject - one does trust the signer of the certificate as an
+entity that verified the subject named in the certificate represents
+the actual subject (this is true even for self signed certificates
+&lt;grin/&gt;).
+
+Copying the SSL certificate does not copy trust but sometimes copying
+some certificates do copy trust.
+
+Say Alice browses around the web looking to buy a widget and when her
+browser hits a particular HTTPS protected site, it pops up an
+&quot;untrusted certificate&quot; warning. Alice goes &quot;oooo&quot; and moves on to
+another site. Bob goes to the same site and his browser doesn't pop up
+the warning because Microsoft has automatically updated his computer's
+trusted CAs list. Bob's browser trusts the site and Bob trusts his
+browser so Bob buys the widget. Alice's browser didn't trust the site,
+and Alice, being a remarkable woman, actually paid attention to her
+browser and moved on. So we see, the &quot;trusted CA&quot; certificates do
+carry trust (heck, &quot;trusted&quot; is part of the name), and, when Microsoft
+copied the new trusted CA certificate into Bob's computer, Microsoft
+managed to copy trust.
+
+IT departments put corporate trusted CA certificates in employees
+computers. The US DoD puts their trusted root certificates in DoD
+computers. All these actions copy trust with high fidelity. But this
+method rings of an edict from on high, &quot;Thou shalt trust ...&quot;. These
+methods still don't have the:
+
+   // copy Alice's trust in Charlie to Bob
+   Copy(Alice[trust--&gt;Charlie], Bob)
+
+capability. The low fidelity ways of Epinions and eBay seem to be the
+only examples I can come up with that allow for that type of trust
+copying. For example:
+
+   // copy the trust in Charlie a large group of eBayers has to Bob
+   MaybeCopy(eBayClaim.LargeGroup[trust--&gt;Charlie], Bob)
+
+The copy may or may not happen depending on Bob's feelings about the
+size of the group or the extent of the trust. Of course, the eBayesque
+trust copying happen in wetware. To move it to hardware would require
+an online protocol and method to register trust. I can see shades of
+the old PGP web-of-trust with added subtleties for timeliness and
+dispute resolution.
+&gt;<i>
+</I>&gt;<i> As to another point of your comment, the problem most people have with PKI
+</I>&gt;<i> is not that SSL does not work. SSL does not even need PKI.
+</I>&gt;<i>
+</I>I meant SSL as we use it - I believe the vast majority of SSL use
+involves a hierarchical PKI. I have rarely seen the use of pre-shared
+keys or self-signed certificates (which is technically still a PKI).
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

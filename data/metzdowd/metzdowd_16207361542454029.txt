@@ -1,0 +1,29 @@
+<PRE>On 02 September 2007 01:13, Nash Foster wrote:
+
+&gt;<i> I don't think fingerprint scanners work in a way that's obviously
+</I>&gt;<i> amenable to hashing with &quot;well-known&quot; algorithms. Fingerprint scanners
+</I>&gt;<i> produce an image, from which some features can be identified. But, not
+</I>&gt;<i> all the same features can be extracted identically every time an image
+</I>&gt;<i> is obtained.  I know there's been research into fuzzy hashing schemes,
+</I>&gt;<i> but are they sufficiently secure, fast, and easy to code that they
+</I>&gt;<i> would be workable for this?
+</I>
+  Well, if fingerprint scanners aren't reliable enough to identify the same
+person accurately twice, it's even moreso snake oil to suggest they're
+suitable for crypto... or even biometric authentication, for that.
+
+  (I wonder if the level of variability is manageable enough that you could
+generate a set of the most-probable variations of the trace of a given
+fingerprint and then use a multiple key/N-out-of-M technique.)
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

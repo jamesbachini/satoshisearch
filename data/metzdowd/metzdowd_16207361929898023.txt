@@ -1,0 +1,103 @@
+<PRE>
+<A HREF="http://www.schneier.com/blog/archives/2008/10/the_skein_hash.html?1">http://www.schneier.com/blog/archives/2008/10/the_skein_hash.html?1</A>
+
+October 29, 2008
+
+The Skein Hash Function
+
+NIST is holding a competition to replace the SHA family of hash functions,
+which have been increasingly under attack. (I wrote about an early NIST hash
+workshop here.)
+
+Skein is our submission (myself and seven others: Niels Ferguson, Stefan
+Lucks, Doug Whiting, Mihir Bellare, Tadayoshi Kohno, Jon Callas, and Jesse
+Walker). Here's the paper:
+
+    Executive Summary
+
+    Skein is a new family of cryptographic hash functions. Its design
+combines speed, security, simplicity, and a great deal of flexibility in a
+modular package that is easy to analyze.
+
+    Skein is fast. Skein-512 -- our primary proposal -- hashes data at 6.1
+clock cycles per byte on a 64-bit CPU. This means that on a 3.1 GHz x64 Core
+2 Duo CPU, Skein hashes data at 500 MBytes/second per core -- almost twice as
+fast as SHA-512 and three times faster than SHA-256. An optional hash-tree
+mode speeds up parallelizable implementations even more. Skein is fast for
+short messages, too; Skein-512 hashes short messages in about 1000 clock
+cycles.
+
+    Skein is secure. Its conservative design is based on the Threefish block
+cipher. Our current best attack on Threefish-512 is on 25 of 72 rounds, for a
+safety factor of 2.9. For comparison, at a similar stage in the
+standardization process, the AES encryption algorithm had an attack on 6 of
+10 rounds, for a safety factor of only 1.7. Additionally, Skein has a number
+of provably secure properties, greatly increasing confidence in the
+algorithm.
+
+    Skein is simple. Using only three primitive operations, the Skein
+compression function can be easily understood and remembered. The rest of the
+algorithm is a straightforward iteration of this function.
+
+    Skein is flexible. Skein is defined for three different internal state
+sizes -- 256 bits, 512 bits, and 1024 bits -- and any output size. This
+allows Skein to be a drop-in replacement for the entire SHA family of hash
+functions. A completely optional and extendable argument system makes Skein
+an efficient tool to use for a very large number of functions: a PRNG, a
+stream cipher, a key derivation function, authentication without the overhead
+of HMAC, and a personalization capability. All these features can be
+implemented with very low overhead. Together with the Threefish large-block
+cipher at Skein core, this design provides a full set of symmetric
+cryptographic primitives suitable for most modern applications.
+
+    Skein is efficient on a variety of platforms, both hardware and software.
+Skein-512 can be implemented in about 200 bytes of state. Small devices, such
+as 8-bit smart cards, can implement Skein-256 using about 100 bytes of
+memory. Larger devices can implement the larger versions of Skein to achieve
+faster speeds.
+
+    Skein was designed by a team of highly experienced cryptographic experts
+from academia and industry, with expertise in cryptography, security
+analysis, software, chip design, and implementation of real-world
+cryptographic systems. This breadth of knowledge allowed them to create a
+balanced design that works well in all environments.
+
+Here's source code, text vectors, and the like for Skein. Watch the Skein
+website for any updates -- new code, new results, new implementations, the
+proofs.
+
+NIST's deadline is Friday. It seems as if everyone -- including many amateurs
+-- is working on a hash function, and I predict that NIST will receive at
+least 80 submissions. (Compare this to the 21 submissions NIST received --
+five were rejected as not being complete -- for the AES competition in 1998.)
+I expect people to start posting their submissions over the weekend. (Ron
+Rivest already presented MD6 at Crypto in August.) Probably the best place to
+watch for new hash functions is here; I'll try to keep a listing of the
+submissions myself.
+
+The selection process will take around four years. I've previously called
+this sort of thing a cryptographic demolition derby -- last one left standing
+wins -- but that's only half true. Certainly all the groups will spend the
+next couple of years trying to cryptanalyze each other, but in the end there
+will be a bunch of unbroken algorithms; NIST will select one based on
+performance and features.
+
+NIST has stated that the goal of this process is not to choose the best
+standard but to choose a good standard. I think that's smart of them; in this
+process, &quot;best&quot; is the enemy of &quot;good.&quot; My advice is this: immediately sort
+them based on performance and features. Ask the cryptographic community to
+focus its attention on the top dozen, rather than spread its attention across
+all 80 -- although I also expect that most of the amateur submissions will be
+rejected by NIST for not being &quot;complete and proper.&quot; Otherwise, people will
+break the easy ones and the better ones will go unanalyzed.
+
+Posted on October 29, 2008 at 4:35 AM ? 22 Comments ? View Blog Reactions
+
+To receive these entries once a month by e-mail, sign up for the Crypto-Gram
+Newsletter. 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

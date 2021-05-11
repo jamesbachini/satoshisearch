@@ -1,0 +1,40 @@
+<PRE>zooko wrote:
+&gt;<i> On Jun 12, 2008, at 4:35 PM, David G. Koontz wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> There's the aspect of competition.
+</I>&gt;<i> 
+</I>&gt;&gt;<i> I've also wondered if a reason they didn't release it is because they
+</I>&gt;&gt;<i> bought
+</I>&gt;&gt;<i> the 'IP' from someone.
+</I>&gt;<i> 
+</I>&gt;<i> Those are good guesses, David, and I guessed similar things myself and
+</I>&gt;<i> inquired of various Sun folks if this was the &quot;real&quot; reason.  Nobody
+</I>&gt;<i> could give me any definite answer, however, until Sridhar Vajapey wrote:
+</I>&gt;<i> 
+</I>&gt;<i>  &quot;US export control regulations prevent Sun from opensourcing the crypto
+</I>&gt;<i> portion of N2.&quot;.
+</I>
+
+You've got to admit, that the work load for implementation is quite a bit
+higher without the PCI-E, 10GE MACs, and crypto, for a piece of competitive
+silicon.  All the sudden you don't have that 'Server On a Chip' that Sun
+sells.
+
+The net result is still that you can't compete directly with Sun, but you
+can still expand the range of applications for Sun processors, and oh by the
+way, Sun's silicon works perfectly well in any new markets.  It still walks
+like a duck.
+
+For the record I don't begrudge Sun captive markets, it supports a fairly
+decent 64 bit architecture and isn't Intel.  What they have released isn't
+what they sell.  They're demonstrably Rice Christian open source advocates.
+
+<A HREF="http://en.wikipedia.org/wiki/Rice_Christian">http://en.wikipedia.org/wiki/Rice_Christian</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

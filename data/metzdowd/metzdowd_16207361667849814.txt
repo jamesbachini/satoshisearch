@@ -1,0 +1,27 @@
+<PRE>Ivan Krsti? wrote, On 6/1/08 1:33 PM:
+&gt;<i> On Jan 3, 2008, at 10:47 PM, Peter Gutmann wrote:
+</I>&gt;&gt;<i> That's because there's nothing much to publish:
+</I>&gt;&gt;<i> In the US, notify the BIS via email.
+</I>&gt;<i> 
+</I>&gt;<i> Our outside counsel -- specializing in this area -- thought this was  
+</I>&gt;<i> insufficient
+</I>
+That's the problem with using lawyers, they'll always give you a conservative cautious 
+answer. Unfortunately for people who don't use them, sometimes those really are the 
+correct, prudent answers. When I worked for a company that had to face this we acted 
+according to what looked like the plain language documentation from the BIS, concluding 
+that use of an existing open source package required just sending an email. We were never 
+as high profile as OLPC and in fact never ended up exporting anything, so our 
+interpretation of the laws was not only not made by qualified legal counsel, it also was 
+never tested.
+
+I do look forwrd to seeing what you discover were the considerations that your outide 
+counsel had.
+
+  -- sidney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

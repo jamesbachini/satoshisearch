@@ -1,0 +1,106 @@
+<PRE>At Sun, 03 Feb 2008 12:51:25 +1000,
+James A. Donald wrote:
+&gt;<i> 
+</I>&gt;<i>      --
+</I>&gt;<i> Ivan Krstic' wrote:
+</I>&gt;<i>  &gt; The wider point of Peter's writeup -- and of the
+</I>&gt;<i>  &gt; therapy -- is that developers working on security
+</I>&gt;<i>  &gt; tools should _know_ they're working in a notoriously,
+</I>&gt;<i>  &gt; infamously hard field where the odds are
+</I>&gt;<i>  &gt; _overwhelmingly_ against them if they choose to
+</I>&gt;<i>  &gt; engineer new solutions.
+</I>&gt;<i> 
+</I>&gt;<i> That point is of course true.  But the developers wanted
+</I>&gt;<i> to transport IP and UDP.  Peter should have known that
+</I>&gt;<i> SSL is incapable of transporting IP and UDP, because it
+</I>&gt;<i> will introduce large, unpredictable, and variable
+</I>&gt;<i> delays.
+</I>&gt;<i> 
+</I>&gt;<i> If, for example, VOIP goes over SSL, the speakers would
+</I>&gt;<i> become entirely unintelligible.
+</I>
+For those who haven't already made up their minds, the situation with
+VoIP and TCP (SSL doesn't really change the situation) is actually a
+bit more complicated than this.
+
+1. VoIP over TCP
+If you have a reasonably fast loss-free channel (this isn't that
+uncommon) then it doesn't actually make an enormous amount of
+difference whether you're running TCP or UDP, especially if you're
+running a high-bandwidth codec like G.711. It helps to turn off the
+Nagle algorithm, of course, since it reduces the amount of buffering
+in the sending TCP stack.
+
+That said, any significant amount of packet loss does tend to create
+some pretty significant artifacts, since you need to stall the
+receiving TCP while you wait for the retransmit.  So, as a practical
+matter nearly all interactive VoIP systems use UDP and some kind of
+packet loss concealment (interpolation, etc.).
+
+That's not to say that SSL/TLS is totally innocent here. The designers
+of SSL/TLS *could* have chosen to design a protocol which would work
+over datagram transport as well as stream transport, but they didn't.
+DTLS (RFC 4347) is such a protocol. That said, if you compare DTLS to
+TLS, there is a small amount of additional complexity in DTLS, so it's
+arguable that it was a good design choice to go for the sweet spot of
+stream transport, since that's what SSL was really intended for.
+
+
+2. VoIP over DTLS
+As Perry indicated in another message, you can certainly run VoIP
+over DTLS, which removes the buffering and retransmit issues 
+James is alluding to. Similarly, you could run VoIP over IPsec
+(AH/ESP). However, for performance reasons, this is not the favored
+approach inside IETF.
+
+The relevant issue here is packet size. Say you're running a 
+low bandwidth codec like G.729 at 8 kbps. If you're operating at
+the commonly used 50 pps, then each packet is 160 bits == 20 bytes.
+The total overhead of the IP, UDP, and RTP headers is 40 bytes,
+so you're sending 60 byte packets. 
+
+- If you use DTLS with AES in CBC mode, you have the 4 byte DTLS
+  header, plus a 16 byte IV, plus 10 bytes of MAC (in truncated MAC
+  mode), plus 2 bytes of padding to bring you up to the AES block
+  boundary: DTLS adds 32 bytes of overhead, increasing packet
+  size by over 50%. The IPsec situation is similar.
+
+- If you use CTR mode and use the RTP header to form the initial
+  CTR state, you can remove all the overhead but the MAC itself,
+  reducing the overhead down to 10 bytes with only 17% packet
+  expansion (this is how SRTP works)
+
+Note that some (but not all) of the gain from SRTP can be obtained
+by swapping CTR for CBC. But you're still getting an advantage
+from being willing to overload the RTP header and that's harder
+to optimize out (though Nagendra Modadugu and I spent some time
+thinking about this).
+
+I don't propose to get into an extended debate about whether it is
+better to use SRTP or to use generic DTLS. That debate has already
+happened in IETF and SRTP is what the VoIP vendors are doing. However,
+the good news here is that you can use DTLS to key SRTP
+(draft-ietf-avt-dtls-srtp), so there's no need to invent a new
+key management scheme.
+
+-Ekr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

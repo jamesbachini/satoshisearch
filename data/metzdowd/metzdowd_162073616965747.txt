@@ -1,0 +1,51 @@
+<PRE>|<i> &gt;I don't propose to get into an extended debate about whether it is
+</I>|<i> &gt;better to use SRTP or to use generic DTLS. That debate has already
+</I>|<i> &gt;happened in IETF and SRTP is what the VoIP vendors are
+</I>|<i> &gt;doing. However, the good news here is that you can use DTLS to key
+</I>|<i> &gt;SRTP (draft-ietf-avt-dtls-srtp), so there's no need to invent a new
+</I>|<i> &gt;key management scheme.
+</I>|<i> 
+</I>|<i> Hmm, given this X-to-key-Y pattern (your DTLS-for-SRTP example, as
+</I>|<i> well as OpenVPN using ESP with TLS keying), I wonder if it's worth
+</I>|<i> unbundling the key exchange from the transport?
+</I>A system I designed has this property:  You can choose the key exchange
+mechanism separately from the encryption mechanism.  In fact, the
+end user can select this (though generally he chooses one of a number
+of pre-defined options, which internally are just macros).  The
+encryption mechanism is able to enforce a quality constraint on which
+keying mechanisms it's willing to deal with - e.g., only the NULL
+encryption mechanism is willing to accept the &quot;NO_KEY&quot; key exchange.
+
+I did make a simplifying assumption that there is a linear ranking
+of quality for keying mechanisms, so that what an encryptor actually
+specifies is &quot;at least this strength&quot;.  There's a similar assumed
+ranking for encryption mechanisms.  Negotiation is done by having
+each end specify which keying and encryption mechanisms it is
+willing to use (those it implements, filtered by user-specified
+constraints), and then choosing the &quot;strongest&quot; in the intersection
+of the mechanisms common to both.  In principle, one could similarly
+choose an authentication mechanism.
+
+The linear ranking worked in the particular situation where I designed
+this but isn't generalizable.  Without that, things get much more
+complex - you lose the nice property of the current implementation
+that the two ends need merely exchange what the implement, and then
+proceed independently to choose the &quot;best&quot; among the available
+choices (and always come to the same conclusions).
+
+All of this ignores a significant issue:  Are keying and encryption
+(and authentication) mechanisms really independent of each other?
+I'm not aware of much work in this direction.  Most of what's out
+there is negative results that, on the one hand, tell you that
+general independence theorems are impossible; but on the other,
+they tend to be based on clearly pathological combinations, which
+hints that independence theorems *might* be possible, if we knew
+how to constrain the different components to avoid the pathologies.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,10 @@
+<PRE>On 9/11/07, Aram Perez &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">aramperez at mac.com</A>&gt; wrote:
+&gt;<i> The world's most secure USB Flash Drive: &lt;<A HREF="https://www.ironkey.com/demo">https://www.ironkey.com/demo</A>&gt;.
+</I>
+you didn't explain why it is a &quot;Snake Oil&quot; Candidate......
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,33 @@
+<PRE>On Sun, 3 Aug 2008, Arshad Noor wrote:
+&gt;<i> A more optimistic way of putting this, Ben, is to state that EKMI allows
+</I>&gt;<i> domain-experts of underlying components to address the complex issues of
+</I>&gt;<i> their domain in ways that they deem best, while providing value on top
+</I>&gt;<i> of those components.  I see no reason to reinvent any of the components
+</I>&gt;<i> - despite their imperfections - when they serve my purpose very well.
+</I>&gt;<i> The business goal here is not cryptographic elegance or perfection, but
+</I>&gt;<i> a solution to a problem without creating new vulnerabilities.
+</I>
+... or in other words, EKMI leaves all of the hard/impossible problems
+to be solved by somebody else.  I'd have to agree with Ben that I'm
+not seeing the value add of an additional layer of complexity.
+
+&gt;<i> That may be because you are a cryptographer.  If you were the CSO, an
+</I>&gt;<i> Operations Director, or an Application Developer in a company that had
+</I>&gt;<i> to manage encryption keys for 5,000 POS Terminals, 10,000 laptops,
+</I>&gt;<i> desktops and servers across multiple data-centers and 400 stores, you
+</I>&gt;<i> would see it very differently.
+</I>
+That's an interesting presumption that you're making -- are you familiar
+with your audience?
+
+cheers!
+==========================================================================
+&quot;A cat spends her life conflicted between a deep, passionate and profound
+desire for fish and an equally deep, passionate and profound desire to
+avoid getting wet.  This is the defining metaphor of my life right now.&quot;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

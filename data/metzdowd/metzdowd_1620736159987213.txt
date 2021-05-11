@@ -1,0 +1,46 @@
+<PRE>FYI:
+
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hash-forum at nist.gov</A> [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hash-forum at nist.gov</A>] On 
+</I>&gt;<i> Behalf Of Shu-jen Chang
+</I>&gt;<i> Sent: Friday, November 02, 2007 12:28 PM
+</I>&gt;<i> To: Multiple recipients of list
+</I>&gt;<i> Subject: NIST Issues Call for a New Hash Algorithm
+</I>&gt;<i> 
+</I>&gt;<i> NIST has opened a public competition to develop a new 
+</I>&gt;<i> cryptographic hash algorithm, which converts a variable 
+</I>&gt;<i> length message into a short &quot;message digest&quot; that can be used 
+</I>&gt;<i> for digital signatures, message authentication and other 
+</I>&gt;<i> applications. The competition is NIST's response to recent 
+</I>&gt;<i> advances in the cryptanalysis of hash functions. The new hash 
+</I>&gt;<i> algorithm will be called &quot;SHA-3&quot; and will augment the hash 
+</I>&gt;<i> algorithms currently specified in FIPS 180-2, Secure Hash Standard. 
+</I>&gt;<i> 
+</I>&gt;<i> The competition has been announced in the attached Federal 
+</I>&gt;<i> Register Notice (SHA-3_FR_Notice_Nov02_2007.pdf); a more 
+</I>&gt;<i> readably formatted version is provided in 
+</I>&gt;<i> SHA-3_FR_Notice_Nov02_2007 - more readable version.pdf.
+</I>&gt;<i> 
+</I>&gt;<i> Entries for the competition must be received by October 31, 2008. 
+</I>&gt;<i> 
+</I>&gt;<i> Further details of the competition are available at &lt; 
+</I>&gt;<i> <A HREF="http://www.nist.gov/hash-competition">http://www.nist.gov/hash-competition</A> &gt;.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Regards,
+</I>&gt;<i> Shu-jen Chang
+</I>-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: SHA-3_FR_Notice_Nov02_2007.pdf
+Type: application/octet-stream
+Size: 96362 bytes
+Desc: SHA-3_FR_Notice_Nov02_2007.pdf
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071102/9557c432/attachment.obj">http://www.metzdowd.com/pipermail/cryptography/attachments/20071102/9557c432/attachment.obj</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: SHA-3_FR_Notice_Nov02_2007 - more readable version.pdf
+Type: application/octet-stream
+Size: 121809 bytes
+Desc: SHA-3_FR_Notice_Nov02_2007 - more readable version.pdf
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071102/9557c432/attachment-0001.obj">http://www.metzdowd.com/pipermail/cryptography/attachments/20071102/9557c432/attachment-0001.obj</A>&gt;
+</PRE>

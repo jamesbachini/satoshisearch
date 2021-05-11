@@ -1,0 +1,20 @@
+<PRE>&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+
+&gt;<i>The claim that VMM's provide high level security is trading on the reputation
+</I>&gt;<i>of work done (and published) years ago which has little if anything to do with
+</I>&gt;<i>the software actually being run.
+</I>
+Actually VMMs do provide some security, but not in the way you think.  Since
+malware researchers typically run malware they're analysing inside a VM, quite
+a bit of malware will silently exit (or at least not exercise the &quot;mal&quot; part
+of its name) if it detects that it's running inside a VM.  So you can
+inoculate yourself against at least some malware by running your OS inside a
+VM.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

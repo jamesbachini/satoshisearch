@@ -1,0 +1,25 @@
+<PRE>On Tue, Apr 01, 2008 at 12:47:45AM +1300, Peter Gutmann wrote:
+&gt;<i> Actually there are already companies doing something like this, but they've
+</I>&gt;<i> run into a problem that no-one has ever considered so far: The GTCYM needs a
+</I>&gt;<i> (relatively) high-bandwidth connection to a remote server, and there's no easy
+</I>&gt;<i> way to do this.
+</I>
+You can get a fairly high-bandwidth channel with 2D barcodes. It's
+uni-directional, but that's enough for many useful scenarios. The data
+gets shown on the PC monitor and is captured by a ubiquitous
+camera-phone or a dedicated locked-down device. This approach avoids
+the problems you mentioned about USB/Firewire/Ethernet lockdown.
+
+Disclosure: I work for a company, Cronto, which makes a product based
+around this technology -- <A HREF="http://www.cronto.com/">http://www.cronto.com/</A>
+
+Steven.
+
+-- 
+w: <A HREF="http://www.cl.cam.ac.uk/users/sjm217/">http://www.cl.cam.ac.uk/users/sjm217/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

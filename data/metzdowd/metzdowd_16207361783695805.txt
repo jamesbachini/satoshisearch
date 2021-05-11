@@ -1,0 +1,22 @@
+<PRE>A group member asked me to elaborate on:
+
+&gt;<i> - No knowledge of which groups can be successfully authenticated is 
+</I>&gt;<i> known to the verifier
+</I>
+What this tries to say is that the verifier doesn't need to have a list of
+all authenticable groups nor can the verifier draw any conclusions about
+other authenticable groups based on authenticating one group.
+
+One useful application of the Katz/Sahai/Waters work is a counter to traffic
+analysis.  One can send the same message to everyone but ensure that only a
+defined subset can read the message by proper key management.  What is less
+clear is how to ensure that decrytion with the wrong key doesn't yield an
+understandable (and actionable) message.
+
+Cheers, Scott
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE>On Fri, 20 Jul 2007 14:10:40 -0700
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A> wrote:
+
+&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A> said:
+</I>&gt;<i> &gt; <A HREF="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=270146164488">http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=270146164488</A>
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> ebay now says (as of when this messge is sent):
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> &gt; 	This Listing Is Unavailable	
+</I>&gt;<i> &gt; This listing (270146164488) has been removed or is no longer
+</I>&gt;<i> &gt; available. Please make sure you entered the right item number. If
+</I>&gt;<i> &gt; the listing was removed by eBay, consider it canceled. Note:
+</I>&gt;<i> &gt; Listings that have ended more than 90 days ago will no longer
+</I>&gt;<i> &gt; appear on eBay.
+</I>&gt;<i> 
+</I>
+See Bruce Schneier's blog entry
+(<A HREF="http://www.schneier.com/blog/archives/2007/07/enigma_machine.html">http://www.schneier.com/blog/archives/2007/07/enigma_machine.html</A>) --
+it was relisted and sold for $30K.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

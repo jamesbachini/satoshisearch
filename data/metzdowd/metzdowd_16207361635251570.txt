@@ -1,0 +1,26 @@
+<PRE>I have yet to watch it.
+
+<A HREF="http://video.google.com/videoplay?docid=2899172465808407804">http://video.google.com/videoplay?docid=2899172465808407804</A>
+
+Description:
+
+Topics include: Introduction to Modern Cryptography, Using Cryptography in
+Practice and at Google, Proofs of Security and Security Definitions and A
+Special Topic in Cryptography
+
+This talk is one in a series hosted by Google University: Wednesdays,
+11/28/07 - 12/19/07 from 1-2pm
+
+Speaker: Steve Weis
+Steve Weis received his PhD from the Cryptography and Information Security
+group at MIT, where he was advised by Ron Rivest. He is a member of
+Google's Applied Security (AppSec) team and is the technical lead for
+Google's internal cryptographic library, KeyMaster
+
+-Ryan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

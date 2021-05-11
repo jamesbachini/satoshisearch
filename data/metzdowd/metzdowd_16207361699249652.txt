@@ -1,0 +1,96 @@
+<PRE>Ian G wrote:
+&gt;<i> The PII equation is particularly daunting, echoing Lynn's early '90s 
+</I>&gt;<i> experiences.  I am told (but haven't really verified) that the 
+</I>&gt;<i> certificate serial number is PII and therefore falls under the full 
+</I>&gt;<i> weight of privacy law &amp; regs ... this may sound ludicrous, but privacy 
+</I>&gt;<i> and security are different fields with different logics.  If that is 
+</I>&gt;<i> true, the liability is far too high for something that should be 
+</I>&gt;<i> private, but is already public by dint of its exposure in 
+</I>&gt;<i> certificates.  Privacy liabilities are sky-high in some places, and 
+</I>&gt;<i> not only that, they are incalculable, unknowable, and vary with the 
+</I>&gt;<i> person you are talking to.
+</I>&gt;<i>
+</I>&gt;<i> So a superficial conclusion would be &quot;don't use client certificates 
+</I>&gt;<i> because of the privacy issues&quot; although the issues are somewhat more 
+</I>&gt;<i> complex than &quot;PII revealed in SSL key exchange.&quot;
+</I>&gt;<i>
+</I>&gt;<i> As I say, they'll plug on, as they need to prove that the cert is 
+</I>&gt;<i> worth issuing.  It's a data point, no more, and it doesn't exactly 
+</I>&gt;<i> answer your spec above.  But I'm having fun observing them trying to 
+</I>&gt;<i> prove that client certs are worth any amount of effort.
+</I>the problem that digital certificates were suppose to address was first 
+time communication
+between strangers ... the electronic analogy of the letters of 
+credit/introduction from
+sailing ship days. this harks back to the &quot;offline&quot; email days of the 
+early 80s ... dial-up
+electronic post-office, exchange email, hangup, and now authenticate 
+first-time email
+from total stranger.
+
+the design point assumptions are invalidated if the relying party has 
+their own
+repository of information about the party being dealt with (and therefor 
+can
+included that party's public key) and/or has online, timely electronic 
+access to
+such information.
+
+one of my favorite exchanges from the mid-90s was somebody claiming that
+adding digital certificates to the electronic payment transaction 
+infrastructure
+would bring it into the modern age. my response was that it actually would
+regress the infrastructure at least a couple decades to the time when
+online, real-time transactions weren't being done. The online, real-time
+transaction provides much higher quality and useful information than
+a stale, static digital certificate (with an offline paradigm from before
+modern communication). Having an available repository about the party
+being dealt with ... including things like timely, aggregated information
+(recent transactions) is significantly mover valuable than the stale,
+static digital certificate environment (the only thing that it has going
+for it, is it is better than nothing in the oldtime offline environment).
+
+misc. past posts referencing &quot;certificate-less&quot; public key operation
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#certless">http://www.garlic.com/~lynn/subpubkey.html#certless</A>
+
+for some real topic drift ... i've mentioned x9.59 financial
+standard protocol that can use digital signatures for
+authentication w/o requiring digital certificates
+<A HREF="http://www.garlic.com/~lynn/x959.html#x959">http://www.garlic.com/~lynn/x959.html#x959</A>
+
+part of the issue included that digital certificates
+(even relying party only digital certificates) can
+add a factor of one hundred times payload bloat
+to a typical payment transaction
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#bloat">http://www.garlic.com/~lynn/subpubkey.html#bloat</A>
+
+however, we were also got involved in co-authoring
+the x9.99 privacy standard ... as part of that we had
+to look at a number of things, HIPAA, GLBA ... as
+well as EU-DPD. as part of that we had also done
+a privacy merged taxonomy and glossary ... some
+notes
+<A HREF="http://www.garlic.com/~lynn/index.html#glosnote">http://www.garlic.com/~lynn/index.html#glosnote</A>
+
+EU had also made a statement in the mid-90s that
+electronic retail payments should be as anonymous
+as cash. The dominant use of SSL in the world
+today is electronic commerce between a consumer
+and a merchant. Passing a client certificate (with
+PII information) within an encrypted SSL channel
+to a merchant ... still exposes the information to
+the merchant ... also violating making purchases
+as anonymous as cash.
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

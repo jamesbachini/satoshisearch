@@ -1,0 +1,32 @@
+<PRE>On Fri, 01 Feb 2008 13:29:52 +1300
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) wrote:
+
+
+&gt;<i> Actually it doesn't even require X.509 certs.  TLS-SRP and TLS-PSK
+</I>&gt;<i> provide mutual authentication of client and server without any use of
+</I>&gt;<i> X.509.  The only problem has been getting vendors to support it,
+</I>&gt;<i> several smaller implementations support it, it's in the (still
+</I>&gt;<i> unreleased) OpenSSL 0.99, and the browser vendors don't seem to be
+</I>&gt;<i> interested at all, which is a pity because the mutual auth (the
+</I>&gt;<i> server has to prove possession of the shared secret before the client
+</I>&gt;<i> can connect) would significantly raise the bar for phishing attacks.
+</I>&gt;<i> 
+</I>&gt;<i> (Anyone have any clout with Firefox or MS?  Without significant
+</I>&gt;<i> browser support it's hard to get any traction, but the browser
+</I>&gt;<i> vendors are too busy chasing phantoms like EV certs).
+</I>&gt;<i> 
+</I>The big issue is prompting the user for a password in a way that no one
+will confuse with a web site doing so.  Given all the effort that's
+been put into making Javascript more and more powerful, and given
+things like picture-in-picture attacks, I'm not optimistic.   It might
+have been the right thing, once upon a time, but the horse may be too
+far out of the barn by now to make it worthwhile closing the barn door.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

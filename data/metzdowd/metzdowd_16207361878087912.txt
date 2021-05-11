@@ -1,0 +1,49 @@
+<PRE>FYI.
+
+-------- Original Message --------
+Subject: 	[P1619-3] Early Registration Deadline for KMS 2008 Extended to
+August 31, 2008
+Date: 	Sat, 16 Aug 2008 18:18:54 -0600
+From: 	Matt Ball &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">matt.ball at IEEE.ORG</A>&gt;
+Reply-To: 	Matt Ball &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">matt.ball at IEEE.ORG</A>&gt;
+To: 	<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">P1619-3 at LISTSERV.IEEE.ORG</A>
+
+
+To give everyone a little more time, the early registration deadline for
+the 2008 IEEE Key Management Summit has been moved about a week back to
+August 31, 2008.  If you sign up on or before August 31, the rate is
+$300/person (which is below cost, thanks to sponsor subsidies).
+Afterwards, the rate increases to $500/person.  Don't wait, or the
+deadline will sneak up on you!
+
+This is also the same deadline for booking a room at the reduced rate of
+$219/night at the Sheraton Inner Harbor hotel.  After August 31,
+reservations will be exception on a &quot;space available&quot; basis.
+
+Links:
+
+     * IEEE Key Management Summit 2008 Homepage
+       &lt;<A HREF="http://keymanagementsummit.com/2008/">http://keymanagementsummit.com/2008/</A>&gt;
+     * Registration Homepage
+       &lt;<A HREF="http://storageconference.org/2008/registration.html">http://storageconference.org/2008/registration.html</A>&gt;
+     * Hotel Information &lt;<A HREF="http://storageconference.org/2008/hotel.html">http://storageconference.org/2008/hotel.html</A>&gt;
+
+
+The IEEE Key Management Summit (KMS) 2008 will be from Sept 23-24, 2008
+at the Sheraton Inner Harbor Hotel in Baltimore, Maryland.
+
+Hope to see you there!
+
+-- 
+Thanks!
+Matt Ball, IEEE P1619.x SISWG Chair
+M.V. Ball Technical Consulting, Inc.
+Phone: 303-469-2469, Cell: 303-717-2717
+<A HREF="http://www.mvballtech.com">http://www.mvballtech.com</A>
+<A HREF="http://www.linkedin.com/in/matthewvball">http://www.linkedin.com/in/matthewvball</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

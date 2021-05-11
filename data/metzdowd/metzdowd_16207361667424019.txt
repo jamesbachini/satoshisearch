@@ -1,0 +1,31 @@
+<PRE>
+On Wed, 2 Jan 2008, Anne &amp; Lynn Wheeler wrote:
+&gt;<i> however, another interpretation is that the defenders
+</I>&gt;<i> have chosen extremely poor position to defend ... and are
+</I>&gt;<i> therefor at enormous disadvantage. it may be necessary
+</I>&gt;<i> to change the paradigm (and/or find the high ground)
+</I>&gt;<i> in order to successfully defend.
+</I>
+Yes, I wish that were pointed out more often.  Detecting viruses is a 
+fundamentally losing battle: a sufficiently advanced virus can fully simulate 
+a clean computer for the scanner to run in.
+
+On the other hand, writing an OS that doesn't get infected in the first place 
+is a fundamentally winning battle: OSes are insecure because people make 
+mistakes, not because they're fundamentally insecurable.
+
+Detecting spam by analysis of the text is another losing battle: even humans 
+can't always agree on what's spam.
+
+The maddening part is that security as an industry is almost always forced to 
+fight on the losing battlefields, even though we've had beautiful, efficient, 
+impregnable fortresses available for many years.  Any crypto book from 20 
+years ago can show you how to send an unforgeable email or sign a binary, yet 
+these notions still haven't widely caught on (and when they have, as in the 
+Xbox, they get hijacked for things like DRM and privacy invasion).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

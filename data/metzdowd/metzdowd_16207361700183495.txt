@@ -1,0 +1,31 @@
+<PRE>
+On Feb 11, 2008, at 8:28 AM, Philipp G&#252;hring wrote:
+&gt;<i> I had the feeling that Microsoft wants to abandon the usage of client
+</I>&gt;<i> certificates completely, and move the people to CardSpace instead.
+</I>&gt;<i> But how do you sign your emails with CardSpace? CardSpace only does  
+</I>&gt;<i> the
+</I>&gt;<i> realtime authentication part of the market ...
+</I>
+We (Morgan Stanley) were able to pressure them into a rapid fix, and  
+they have committed to delivering it in SP1.  Keep your fingers crossed.
+
+&gt;<i> If anyone needs more information how to upgrade your Web-based CA  
+</I>&gt;<i> for IE7:
+</I>&gt;<i> <A HREF="http://wiki.cacert.org/wiki/IE7VistaSource">http://wiki.cacert.org/wiki/IE7VistaSource</A>
+</I>
+Step (2), &quot;On Vista you have to add this website to the list of  
+trusted sites in the internet-settings.&quot; can be quite unpalatable.   
+Depending on your customers' situations, an alternative might be more  
+palatable: Generate the key and deliver a PKCS#12.
+
+This depends on whether you believe in the non-repudiation fairy or  
+not -- or more accurately, whether you're already assuming the  
+repudiation risk.
+
+-wps
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

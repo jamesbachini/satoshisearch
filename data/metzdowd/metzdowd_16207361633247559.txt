@@ -1,0 +1,59 @@
+<PRE>William Allen Simpson wrote:
+ &gt; Weger, B.M.M. de wrote:
+ &gt;&gt; See <A HREF="http://www.win.tue.nl/hashclash/Nostradamus">http://www.win.tue.nl/hashclash/Nostradamus</A> if
+ &gt;&gt; you want to know the details of what this has to do
+ &gt;&gt; with cryptography.
+ &gt;&gt;
+ &gt; It always bothers me as these things are announced,
+ &gt; but are based on presumptions that have absolutely no
+ &gt; relevance in the real world....
+ &gt;
+ &gt; Therefore, nothing to do with cryptography (which is
+ &gt; not a parlor trick).
+ &gt;
+ &gt;&gt; This implies a vulnerability in software integrity
+ &gt;&gt; protection and code signing schemes that still use
+ &gt;&gt; MD5. See
+ &gt;&gt; <A HREF="http://www.win.tue.nl/hashclash/SoftIntCodeSign">http://www.win.tue.nl/hashclash/SoftIntCodeSign</A> for
+ &gt;&gt; details.
+ &gt;&gt;
+ &gt; There is no such MD5 vulnerability implied.  As the
+ &gt; paper itself states:
+ &gt;
+ &gt;   In cryptographic terms: our attack is an attack on
+ &gt;   collision resistance, not on preimage or second
+ &gt;   preimage resistance. This implies that both
+ &gt;   colliding files have to be specially prepared by the
+ &gt;   attacker, before they are published on a download
+ &gt;   site or presented for signing by a code signing
+ &gt;   scheme. Existing files with a known hash that have
+ &gt;   not been prepared in this way are not vulnerable.
+ &gt;
+ &gt; Since this &quot;attack&quot; requires the certifier be
+ &gt; compromised, the attacker could also modify the
+ &gt; program data itself undetectably.  That is, this
+ &gt; theoretical problem actually is more effort than the
+ &gt; obvious attack!
+
+This attack does not require the certifier to be
+compromised.
+
+  The attack was to generate a multitude of predictions
+for the US election, each of which has the same MD5
+hash.  If the certifier certifies any one of these
+predictions, the recipient can use the certificate for
+any one of these predictions.
+
+ &gt; In summary, there are exactly zero instances where
+ &gt; this use of MD5 would actually present a
+ &gt; vulnerability.
+
+This attack renders MD5 entirely worthless for any use
+other than as an error check like CRC - and CRC does it
+better and faster.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

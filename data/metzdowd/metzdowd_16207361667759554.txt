@@ -1,0 +1,51 @@
+<PRE>Virtualization has become the magic pixie dust of the decade.
+
+When IBM originally developed VMM technology, security was not a primary
+goal.  People expected the OS to provide security, and at the time it
+was believed that OS's would be able to solve the security problems.
+
+As far as I know, the first real tie of VMM's to security was in a DEC
+project to build a VMM for the VAX that would be secure at the Orange
+Book A2 level.  The primary argument for this was:  Existing OS's are
+way too complex to verify (and in any case A2 required verified design,
+which is impossible to apply to an already-existing design).  A VMM can
+be small and simple enough to have a verified design, and because it
+runs &quot;under&quot; the OS and can mediate all access to the hardware, it can
+serve as a Reference Monitor.  The thing was actually built and met its
+requirements (actually, it far exceeded some, especially on the
+performance end), but died when DEC killed the VAX in favor of the
+Alpha.
+
+Today's VMM's are hardly the same thing.  They are built for perfor-
+mance, power, and managability, not for security.  While certainly
+smaller than full-blown Windows, say, they are hardly tiny any more.
+Further, a major requirement of the VAX VMM was isolation:  The
+different VM's could communicate only through network protocols.  No
+shared devices, no shared file systems.  Not the kind of thing that
+would be practical for the typical uses of today's crop of VM's.
+
+The claim that VMM's provide high level security is trading on the
+reputation of work done (and published) years ago which has little if
+anything to do with the software actually being run.  Yes, even as they
+stand, today's VMM's probably do provide better security than some -
+many? - OS's.  Using a VM as resettable sandbox is a nice idea, where
+you can use it.  (Of course, that means when you close down the sandbox,
+you lose all your state.  Kind of hard to use when the whole point of
+running an application like, say, an editor is to produce long-lived
+state!  So you start making an exception here, an exception there
+... and pretty soon the sand is spilled all over the floor and is in
+your eyes.)
+
+The distinction between a VMM and an OS is fuzzy anyway.  A VMM gives
+you the illusion that you have a whole machine for yourself.  Go back
+a read a description of a 1960's multi-user OS and you'll see the
+very same language used.  If you want to argue that a small OS *can
+be* made more secure than a huge OS, I'll agree.  But that's a size
+distinction, not a VMM/OS distinction....
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,97 @@
+<PRE>On Mon, Feb 11, 2008 at 07:01:07PM +1300, Peter Gutmann wrote:
+&gt;<i> Daniel Carosone &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geek.com.au</A>&gt; writes:
+</I>&gt;<i> &gt;[...]
+</I>&gt;<i> &gt;Particularly for the first point, early validation for packet integrity in
+</I>&gt;<i> &gt;general can be a useful defensive tool against unknown potential
+</I>&gt;<i> &gt;implementation vulnerabilities.
+</I>&gt;<i> 
+</I>&gt;<i> This is an example of what psychologists call own-side bias (&quot;everyone thinks
+</I>&gt;<i> like us&quot;), in this case the assumption that after a peer has authenticated
+</I>&gt;<i> itself it'd never dream of sending a malformed packet and so we don't need to
+</I>&gt;<i> do any checking after the handshake has completed.  Why would you trust data
+</I>&gt;<i> coming from a remote system just because they've jumped through a few hoops
+</I>&gt;<i> before sending it?  I can steal the remote system's credentials or hijack the
+</I>&gt;<i> session and then send you anything I want, it's no safer to blindly accept the
+</I>&gt;<i> data if there's a MAC attached or not.
+</I>
+Point taken, but I respectfully disagree with the relevance in the
+present context, though of course I agree entirely in the wider
+philosophical sense.
+
+Remember that we're also talking about practical deployment decisions:
+ - if someone steals credentials, they can do all sorts of mischief
+   and damage; the incremental risk in the present discussion is that
+   doing 'lossy'/partial validation may allow additional injection and
+   MITM attacks beyond those.
+ - especially for the other cases I gave (SNMP and NTP), the
+   alternative mitigating controls are such strong things as IP
+   address based ACLs (on UDP packets). I'll take the stronger tool if
+   it's on offer.
+
+The fact this kind of authentication is applied before the packet gets
+to more complex and potentially vulnerable parsing and processing code
+gives me a valuable opportunity to be defensive, especially as an end
+customer deploying some random vendor's kit.
+
+In those cases, I don't have visibility of the implementation, but I
+do have some assurance about the order of operations and can put that
+structural knowledge to good use.  Much the same is true in this
+discussion about protocol design; we're making no specifications about
+processing of the data once the transport hands it off, but we're
+starting to make assumptions about the risks therein, and the reliance
+those layers may be placing on the transport, for better or worse.
+
+Your criticism would be fair if I was advocating blindly accepting the
+data or not doing any checking after the initial handshake.  It would
+be fair criticism of a codec vendor who took such a stance, relying
+overly on transport authentication (or forcing me to). I am most
+certainly not advocating that, merely recognising that sometimes such
+checking may be deficient or vulnerable, or just simply uncertain. 
+
+Good defensive protocol design lets me validate the blob before
+inspecting the fields; poor defensive programming conflates frame
+validation with more detailed syntactic and semantic validation later.
+
+If there are authentication-hijacking vulnerabilities in the endpoints
+(like your SIP gateway), sure, I'm screwed in a number of ways.
+That's sad, but a given regardless of whatever variant and detail of
+keying and MACing mechanism this discussion comes up with.
+
+&gt;<i> Hostile data inside a secure tunnel or wrapper is still hostile data. 
+</I>
+If cryptography can come up with some way to ensure robustness against
+hostile data all the way down an implementation stack, regardless of
+layering, we'll all be surprised.  Some of us might even be very rich.
+
+Otherwise, it's a risk mitigation tool, subject to constraints we need
+to understand.  If the constraints are ones of key management and
+endpoint security, I can use the mechanism in my toolkit.  If the
+constrains mean that every fourth SNMP request or routing update will
+be unauthenticated, it's much less use to me as a structural security
+layer; the bar isn't raised in any practical sense.
+
+&gt;<i> As the OP said, as long as you can deterministically detect attacks
+</I>&gt;<i> (which a 1-of-n packet MAC will do) you're not giving up much
+</I>&gt;<i> security by not MAC'ing all packets.
+</I>
+I attempted to illustrate, with some counterexamples, threat models
+where even one unauthenticated packet could lose you more than &quot;not
+much&quot; security.  Threats where detection of the attack wasn't enough,
+or was too late, or was itself the point.
+
+Robust implementation behind that MAC is essential, and helps realise
+and provide assurance around &quot;not much&quot;, as well as addressing broader
+threats that are more likely in the overall economic argument we
+acknowledged at the outset, but is outside what I saw as the OP's
+scope, and not part of the incremental risk I was highlighting.
+
+--
+Dan.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 194 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080212/874976fb/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080212/874976fb/attachment.pgp</A>&gt;
+</PRE>

@@ -1,0 +1,14 @@
+<PRE>
+Bruce Schneier has a good blog post on the latest A5/1 attack.
+
+<A HREF="http://www.schneier.com/blog/archives/2008/02/cryptanalysis_o_1.html">http://www.schneier.com/blog/archives/2008/02/cryptanalysis_o_1.html</A>
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

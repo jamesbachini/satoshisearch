@@ -1,0 +1,27 @@
+<PRE>I've been working on the &quot;randomness and unpredictability&quot; this morning
+instead of doing my taxes, and found these links:
+
+<A HREF="http://crd.lbl.gov/~dhbailey/pi/">http://crd.lbl.gov/~dhbailey/pi/</A>
+<A HREF="http://pisearch.lbl.gov/">http://pisearch.lbl.gov/</A>
+
+The section on randomness, entropy, etc. is here:
+
+<A HREF="http://www.subspacefield.org/security/security_concepts.html#tth_sEc20">http://www.subspacefield.org/security/security_concepts.html#tth_sEc20</A>
+
+The formatting on the PDF is better:
+
+<A HREF="http://www.subspacefield.org/security/security_concepts.pdf">http://www.subspacefield.org/security/security_concepts.pdf</A>
+
+Currently the section begins on page 72.
+
+Please tell me what you think.
+-- 
+Crypto ergo sum.  <A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>
+My password is easy to remember; it's the digits of Pi.  All of them.
+If you are a spammer, please email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org</A> to get blacklisted.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

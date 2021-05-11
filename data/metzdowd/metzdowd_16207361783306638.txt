@@ -1,0 +1,61 @@
+<PRE>On Tue, May 13, 2008 at 02:10:45PM +0100, Ben Laurie wrote:
+
+&gt;<i> [Moderator's note: A quick reminder: please use ASCII except if you
+</I>&gt;<i> need Unicode to spell your name right. Microsoft's proprietary quote
+</I>&gt;<i> marks are not a standard and don't look right on non-Microsoft
+</I>&gt;<i> displays. I edited them out of this by hand. --Perry]
+</I>&gt;<i> 
+</I>&gt;<i> Debian have a stunning example of how blindly fixing &quot;problems&quot; pointed 
+</I>&gt;<i> out by security tools can be disastrous.
+</I>
+Upstream authors can take defensive measures against ill-advised
+patches of this sort. For a while, distributions were in the habit
+of Patching the code that Postfix uses to learn the its own hostname.
+Invariably, they botched it. The code now reads:
+
+  /* get_hostname - look up my host name */
+
+  const char *get_hostname(void)
+  {
+    char    namebuf[MAXHOSTNAMELEN + 1];
+
+    /*
+     * The gethostname() call is not (or not yet) in ANSI or POSIX, but it is
+     * part of the socket interface library. We avoid the more politically-
+     * correct uname() routine because that has no portable way of dealing
+     * with long (FQDN) hostnames.
+     *
+     * DO NOT CALL GETHOSTBYNAME FROM THIS FUNCTION. IT BREAKS MAILDIR DELIVERY
+     * AND OTHER THINGS WHEN THE MACHINE NAME IS NOT FOUND IN /ETC/HOSTS OR
+     * CAUSES PROCESSES TO HANG WHEN THE NETWORK IS DISCONNECTED.
+     *
+     * POSTFIX NO LONGER NEEDS A FULLY QUALIFIED HOSTNAME. INSTEAD POSTFIX WILL
+     * USE A DEFAULT DOMAIN NAME &quot;LOCALDOMAIN&quot;.
+     */
+    if (my_host_name == 0) {
+      /* DO NOT CALL GETHOSTBYNAME FROM THIS FUNCTION */
+      if (gethostname(namebuf, sizeof(namebuf)) &lt; 0)
+	msg_fatal(&quot;gethostname: %m&quot;);
+      namebuf[MAXHOSTNAMELEN] = 0;
+      /* DO NOT CALL GETHOSTBYNAME FROM THIS FUNCTION */
+      if (valid_hostname(namebuf, DO_GRIPE) == 0)
+	msg_fatal(&quot;unable to use my own hostname&quot;);
+      /* DO NOT CALL GETHOSTBYNAME FROM THIS FUNCTION */
+      my_host_name = mystrdup(namebuf);
+    }
+    return (my_host_name);
+  }
+
+The addition of &quot;/* DO NOT CALL GETHOSTBYNAME FROM THIS FUNCTION */&quot;
+every couple of lines appears to have solved the problem: it deliberately
+breaks all prior patches (context diff overlaps), and strongly signals
+that the code must not be messed with.
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,38 @@
+<PRE>At 07:37 AM 7/12/2007, Eric Cronin wrote:
+ &gt; With current CPUs and audio codecs you can get
+ &gt; decent voice quality over 9600bps.
+
+Yes and no.  There are lots of 8kbps codecs, and some 6.5 and 5.3kbps codecs,
+all off which give acceptable voice quality if transmission's ok.
+(And you can reduce average transmission rates by 40-50% with silence 
+suppression.)
+
+However, that's the raw codec rate - if you're taking the VOIP packets,
+wrapping them in RTP, UDP, and IP headers, and then transmitting them on
+a layer 2 protocol with as little overhead as PPP or Frame,
+the 8kbps becomes more like 26 kbps (Ethernet and ATM are worse,
+and DSL is ATM underneath - I'm not sure what the cellular carriers do for 
+framing.)
+The problem is that the Voice-stream data packets are extremely small -
+the same headers don't add much overhead percentage when you're using 
+1500-byte data packets.
+
+In some environments you can do header compression to save about half the 
+bandwidth,
+but in general you can't.  The Asterisk IP PBX has a trunking protocol that 
+lets
+you use one set of RTP/UDP/IP headers to carry multiple streams of voice 
+packets,
+so you can connect two locations together for close to the raw protocol speeds,
+but that's not likely to apply to a mobile phone situation.
+
+The other way to avoid the VOIP overhead is to use one of the old
+voice-over-data designs that uses point-to-point async or sync connections
+without an IP layer (e.g. raw modems.)  That lets you send voice for
+much closer to the 9600 bps (depending on sync protocol, async stop-bits, etc.)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

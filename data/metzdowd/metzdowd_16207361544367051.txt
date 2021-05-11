@@ -1,0 +1,41 @@
+<PRE>Hi Jon,
+
+On Sep 11, 2007, at 5:35 PM, Jon Callas wrote:
+
+&gt;<i> I'm a beta-tester for it, and while I can understand a small twitch  
+</I>&gt;<i> when they talk about &quot;miltary&quot; and &quot;beyond military&quot; levels of  
+</I>&gt;<i> security, it is very cool.
+</I>&gt;<i>
+</I>&gt;<i> It has hardware encryption and will erase itself if there are too  
+</I>&gt;<i> many password failures. I consider that an issue, personally, but  
+</I>&gt;<i> it appeals to people. The reason I consider it an issue is that I  
+</I>&gt;<i> have had to use a brain-dead-simple password I'm not going to  
+</I>&gt;<i> forget because if I get cute and need to try a number of things,  
+</I>&gt;<i> poof, I'm dead.
+</I>&gt;<i>
+</I>&gt;<i> Yeah, it's using AES CBC mode, but that's a good deal better than a  
+</I>&gt;<i> lot of encrypted drives that are using ECB.
+</I>&gt;<i>
+</I>&gt;<i> It also has their own little suite of Mozilla plus Tor and Privoxy  
+</I>&gt;<i> for browsing and they've set it up so that you can run that on  
+</I>&gt;<i> another computer from the drive.
+</I>&gt;<i>
+</I>&gt;<i> It's not bad at all. My only real complaint is that it requires  
+</I>&gt;<i> Windows.
+</I>
+The IronKey appears to provide decent security while it is NOT  
+plugged into a PC. But as soon as you plug it in and you have to  
+enter a password to unlock it, the security level quickly drops. This  
+would be the case even if they supported Mac OS or *nix.
+
+As I stated in my response to Jerry Leichter, in my opinion, their  
+marketing department is selling snake oil.
+
+Regards,
+Aram
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

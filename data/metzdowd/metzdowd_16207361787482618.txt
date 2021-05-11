@@ -1,0 +1,70 @@
+<PRE>On Mon, May 26, 2008 at 11:22:18AM +0200, Simon Josefsson wrote:
+&gt;<i> 
+</I>&gt;<i> For example, reading a lot of data from linux's /dev/urandom will
+</I>&gt;<i> deplete the entropy pool in the kernel, which effectively makes reads
+</I>&gt;<i> from /dev/random stall.  The two devices uses the same entropy pool.
+</I>&gt;<i> 
+</I>&gt;<i> I believe a much better approach would be if /dev/urandom was a fast and
+</I>&gt;<i> secure PRNG, with perfect-forward-secrecy properties, and /dev/random
+</I>&gt;<i> was a slow device with &quot;real&quot; entropy (whatever that means..) gathered
+</I>&gt;<i> from the hardware.  The two devices would share little or no code.  The
+</I>&gt;<i> /dev/urandom PRNG seed could be fed data from /dev/random from time to
+</I>&gt;<i> time, or from other sources (like kernel task switching timings).  I
+</I>&gt;<i> believe designs like this have been proposed from time to time, but
+</I>&gt;<i> there hasn't been any uptake.
+</I>
+My understanding of the situation is that the way you get secure use of a
+PRNG is by feeding it &quot;real&quot; entropy, and the way you get fast use of a
+PRNG is by feeding it whatever seeds you have on-hand, regardless of
+&quot;real&quot; randomness -- or just don't feed it any seeds at all, if you don't
+have any on-hand.  Thus, the reason /dev/urandom is fast is that it
+doesn't actually *require* &quot;real&quot; entropy, and the reason /dev/random is
+cryptographically secure is that it *does* require &quot;real&quot; entropy, which
+of course means that it slows down a lot when you run out of &quot;real&quot;
+entropy in the pool.
+
+Assuming I am not mistaken in my understanding of the operation of the
+two randomness devices, you could probably get reasonable security and
+speed overall for /dev/urandom by limiting how quickly and often it
+accesses the entropy pool, hitting it once in a while at (pseudo)random
+intervals within a reasonable range to seed the PRNG.  This would make it
+fast unless you're taxing the entropy pool so badly with multiple
+processes using /dev/urandom or some /dev/random use that there literally
+is no entropy left in the pool for /dev/urandom to use at all when it
+tries to hit the pool.  It would not provide &quot;perfect&quot; forward secrecy,
+however, because there would be brief intervals (between hits to the
+entropy pool) during which knowing the PRNG algorithm and its current
+state would allow someone to predict further PRNG output until the end of
+the current entropy interval.  The length of the interval, however, could
+conceivably be (effectively) unknowable.
+
+Ultimately, I think the reason nobody has implemented a /dev/urandom that
+allows for fast, secure PRNG operation with perfect forward secrecy is
+that it's kind of a &quot;pick n-1&quot; situation, such as with the old saw, &quot;Fast
+good, cheap; pick two.&quot;  To get cryptographically strong randomness, you
+need entropy, which taxes the entropy pool.  An additional entropy pool
+would need more places to *get* entropy, of course.  Essentially, giving
+the characteristics of cryptographically useful randomness and perfect
+forward secrecy to /dev/urandom would ultimately mean you turned it into
+a duplicate of /dev/random.
+
+It looks like you're suggesting just changing the way /dev/urandom
+receives its entropy so that it happens periodically, similarly to how I
+described limiting it from exhausting the entropy pool above -- but that
+won't solve the problem of giving /dev/urandom strong security and
+perfect forward secrecy characteristics.
+
+. . . or is there something I missed?
+
+-- 
+Chad Perrin [ content licensed PDL: <A HREF="http://pdl.apotheon.org">http://pdl.apotheon.org</A> ]
+Baltasar Gracian: &quot;A wise man gets more from his enemies than a fool from
+his friends.&quot;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080527/c50298c9/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080527/c50298c9/attachment.pgp</A>&gt;
+</PRE>

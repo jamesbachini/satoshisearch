@@ -1,0 +1,38 @@
+<PRE>An earlier post, talking about vulnerabilities and the lack of an
+appropriate market response, said:
+____________
+We're talking about phone calls -- did all of the well-publicized
+cellular eavesdropping (Prince Charles, Newt Gingrich (then a major US
+politician), and more) prompt a change?  Well, there are now US laws
+against that sort of phone eavesdropping gear -- a big help....
+____________
+
+I think the most publicized cases of cellular interception, including the
+two mentioned above, were interceptions of analog calls.  Such interception
+was not too hard to do.  In some cases you could pick up one side of such
+calls on old American TV sets (sets that tuned above channel 69 on the UHF
+dial).  Much better interception equipment was still pretty simple.  I
+understand that there was sometimes enough talker echo that, if you listened
+on the base-to-mobile link you could understand both sides of the call-you
+didn't even need two receivers.
+
+However, interception of digital wireless signals requires more skill and
+expense.  Interception of CDMA is harder than interception of GSM.
+Interception and recovery of encrypted digital is still more difficult.  The
+3G wireless standards permit AES quality encryption of the voice-I don't
+know if carriers have this turned on.  I am pretty sure they have it or the
+equivalent turned on for functions that limit theft of service such as the
+initial activation of service on CDMA networks.  
+
+I do know of business executives who, when informed of the ease of
+interception of analog cellular, changed their behavior.  
+
+Chuck Jackson
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

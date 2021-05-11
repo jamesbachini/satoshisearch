@@ -1,0 +1,41 @@
+<PRE>
+No need to be a major power.  Linux patches x86 code, as does Windows.  I ran across a project several years ago that modified the microcode for some i/o x86 assembly instructions.  Here's a good link explaining it all.  
+
+<A HREF="http://en.wikipedia.org/wiki/Microcode">http://en.wikipedia.org/wiki/Microcode</A>
+
+All this hw/sw flexibility makes designing a good security system a real challenge.  You need a reference monitor somewhere in it that you can truly trust.
+
+- Alex
+
+
+&gt;<i> ----- Original Message -----
+</I>&gt;<i> From: &quot;John Ioannidis&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ji at tla.org</A>&gt;
+</I>&gt;<i> To: Cryptography &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+</I>&gt;<i> Subject: Just update the microcode (was: Re: defending against 
+</I>&gt;<i> evil in all layers of hardware and software)
+</I>&gt;<i> Date: Mon, 28 Apr 2008 18:16:12 -0400
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Intel and AMD processors can have new microcode loaded to them, and 
+</I>&gt;<i> this is usually done by the BIOS.  Presumably there is some 
+</I>&gt;<i> asymmetric crypto involved with the processor doing the signature 
+</I>&gt;<i> validation.
+</I>&gt;<i> 
+</I>&gt;<i> A major power that makes a good fraction of the world's laptops and 
+</I>&gt;<i> desktops (and hence controls the circuitry and the BIOS, even if 
+</I>&gt;<i> they do not control the chip manufacturing process) would be in a 
+</I>&gt;<i> good place to introduce problems that way, no?
+</I>&gt;<i> 
+</I>&gt;<i> /ji
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

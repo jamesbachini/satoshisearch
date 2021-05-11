@@ -1,0 +1,244 @@
+<PRE>
+
+From: David Farber &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave at farber.net</A>&gt;
+To: &quot;ip&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ip at v2.listbox.com</A>&gt;
+
+
+________________________________________
+From: Sashikumar N [sashikumar.n@ ]
+Sent: Thursday, February 07, 2008 1:46 PM
+To: David Farber
+Subject: U.S. Agents Seize Travelers' Devices
+
+Dear Prof Dave,
+Happen to read this link from slashdot, this is a disturbing news, a
+direct assault on privacy...shocking that this could be real.
+
+regards
+sashi
+
+<A HREF="http://www.washingtonpost.com/wp-dyn/content/article/2008/02/06/AR2008020604763.html">http://www.washingtonpost.com/wp-dyn/content/article/2008/02/06/AR2008020604763.html</A>
+Clarity Sought on Electronics Searches
+U.S. Agents Seize Travelers' Devices
+
+By Ellen Nakashima
+Washington Post Staff Writer
+Thursday, February 7, 2008; Page A01
+
+Nabila Mango, a therapist and a U.S. citizen who has lived in the
+country since 1965, had just flown in from Jordan last December when,
+she said, she was detained at customs and her cellphone was taken from
+her purse. Her daughter, waiting outside San Francisco International
+Airport, tried repeatedly to call her during the hour and a half she
+was questioned. But after her phone was returned, Mango saw that
+records of her daughter's calls had been erased.
+
+A few months earlier in the same airport, a tech engineer returning
+from a business trip to London objected when a federal agent asked him
+to type his password into his laptop computer. &quot;This laptop doesn't
+belong to me,&quot; he remembers protesting. &quot;It belongs to my company.&quot;
+Eventually, he agreed to log on and stood by as the officer copied the
+Web sites he had visited, said the engineer, a U.S. citizen who spoke
+on the condition of anonymity for fear of calling attention to
+himself.
+
+Maria Udy, a marketing executive with a global travel management firm
+in Bethesda, said her company laptop was seized by a federal agent as
+she was flying from Dulles International Airport to London in December
+2006. Udy, a British citizen, said the agent told her he had &quot;a
+security concern&quot; with her. &quot;I was basically given the option of
+handing over my laptop or not getting on that flight,&quot; she said.
+&lt;snip&gt;
+
+The seizure of electronics at U.S. borders has prompted protests from 
+travelers who say they now weigh the risk of traveling with sensitive 
+or personal information on their laptops, cameras or cellphones. In 
+some cases, companies have altered their policies to require 
+employees to safeguard corporate secrets by clearing laptop hard 
+drives before international travel.
+
+Today, the 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/Electronic+Frontier+Foundation?tid=informline">http://www.washingtonpost.com/ac2/related/topic/Electronic+Frontier+Foundation?tid=informline</A>&gt;Electronic 
+Frontier Foundation and Asian Law Caucus, two civil liberties groups 
+in 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/San+Francisco?tid=informline">http://www.washingtonpost.com/ac2/related/topic/San+Francisco?tid=informline</A>&gt;San 
+Francisco, plan to file a lawsuit to force the government to disclose 
+its policies on border searches, including which rules govern the 
+seizing and copying of the contents of electronic devices. They also 
+want to know the boundaries for asking travelers about their 
+political views, religious practices and other activities potentially 
+protected by the First Amendment. The question of whether border 
+agents have a right to search electronic devices at all without 
+suspicion of a crime is already under review in the federal courts.
+
+The lawsuit was inspired by two dozen cases, 15 of which involved 
+searches of cellphones, laptops, MP3 players and other electronics. 
+Almost all involved travelers of Muslim, Middle Eastern or South 
+Asian background, many of whom, including Mango and the tech 
+engineer, said they are concerned they were singled out because of 
+racial or religious profiling.
+
+A 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/U.S.+Customs+and+Border+Protection?tid=informline">http://www.washingtonpost.com/ac2/related/topic/U.S.+Customs+and+Border+Protection?tid=informline</A>&gt;U.S. 
+Customs and Border Protection spokeswoman, Lynn Hollinger, said 
+officers do not engage in racial profiling &quot;in any way, shape or 
+form.&quot; She said that &quot;it is not CBP's intent to subject travelers to 
+unwarranted scrutiny&quot; and that a laptop may be seized if it contains 
+information possibly tied to terrorism, narcotics smuggling, child 
+pornography or other criminal activity.
+
+The reason for a search is not always made clear. The Association of 
+Corporate Travel Executives, which represents 2,500 business 
+executives in the United States and abroad, said it has tracked 
+complaints from several members, including Udy, whose laptops have 
+been seized and their contents copied before usually being returned 
+days later, said Susan Gurley, executive director of ACTE. Gurley 
+said none of the travelers who have complained to the ACTE raised 
+concerns about racial or ethnic profiling. Gurley said none of the 
+travelers were charged with a crime.
+
+&quot;I was assured that my laptop would be given back to me in 10 or 15 
+days,&quot; said Udy, who continues to fly into and out of the United 
+States. She said the federal agent copied her log-on and password, 
+and asked her to show him a recent document and how she gains access 
+to 
+&lt;<A HREF="http://financial.washingtonpost.com/custom/wpost/html-qcn.asp?dispnav=business&amp;mwpage=qcn&amp;symb=MSFT&amp;nav=el">http://financial.washingtonpost.com/custom/wpost/html-qcn.asp?dispnav=business&amp;mwpage=qcn&amp;symb=MSFT&amp;nav=el</A>&gt;Microsoft 
+Word. She was asked to pull up her e-mail but could not because of 
+lack of Internet access. With ACTE's help, she pressed for relief. 
+More than a year later, Udy has received neither her laptop nor an explanation.
+
+ACTE last year filed a Freedom of Information Act request to press 
+the government for information on what happens to data seized from 
+laptops and other electronic devices. &quot;Is it destroyed right then and 
+there if the person is in fact just a regular business traveler?&quot; 
+Gurley asked. &quot;People are quite concerned. They don't want 
+proprietary business information floating, not knowing where it has 
+landed or where it is going. It increases the anxiety level.&quot;
+
+Udy has changed all her work passwords and no longer banks online. 
+Her company, Radius, has tightened its data policies so that 
+traveling employees must access company information remotely via an 
+encrypted channel, and their laptops must contain no company information.
+
+At least two major global corporations, one American and one Dutch, 
+have told their executives not to carry confidential business 
+material on laptops on overseas trips, Gurley said. In 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/Canada?tid=informline">http://www.washingtonpost.com/ac2/related/topic/Canada?tid=informline</A>&gt;Canada, 
+one law firm has instructed its lawyers to travel to the United 
+States with &quot;blank laptops&quot; whose hard drives contain no data. &quot;We 
+just access our information through the Internet,&quot; said Lou 
+Brzezinski, a partner at Blaney McMurtry, a major 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/Toronto?tid=informline">http://www.washingtonpost.com/ac2/related/topic/Toronto?tid=informline</A>&gt;Toronto 
+law firm. That approach also holds risks, but &quot;those are hacking 
+risks as opposed to search risks,&quot; he said.
+
+The U.S. government has argued in a pending court case that its 
+authority to protect the country's border extends to looking at 
+information stored in electronic devices such as laptops without any 
+suspicion of a crime. In border searches, it regards a laptop the 
+same as a suitcase.
+
+&quot;It should not matter . . . whether documents and pictures are kept 
+in 'hard copy' form in an executive's briefcase or stored digitally 
+in a computer. The authority of customs officials to search the 
+former should extend equally to searches of the latter,&quot; the 
+government argued in the child pornography case being heard by a 
+three-judge panel of the Court of Appeals for the 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/U.S.+Court+of+Appeals?tid=informline">http://www.washingtonpost.com/ac2/related/topic/U.S.+Court+of+Appeals?tid=informline</A>&gt;9th 
+Circuit in San Francisco.
+
+As more and more people travel with laptops, 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/BlackBerry+Mobile+Devices?tid=informline">http://www.washingtonpost.com/ac2/related/topic/BlackBerry+Mobile+Devices?tid=informline</A>&gt;BlackBerrys 
+and cellphones, the government's laptop-equals-suitcase position is 
+raising red flags.
+
+&quot;It's one thing to say it's reasonable for government agents to open 
+your luggage,&quot; said David D. Cole, a law professor at 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/Georgetown+University?tid=informline">http://www.washingtonpost.com/ac2/related/topic/Georgetown+University?tid=informline</A>&gt;Georgetown 
+University. &quot;It's another thing to say it's reasonable for them to 
+read your mind and everything you have thought over the last year. 
+What a laptop records is as personal as a diary but much more 
+extensive. It records every Web site you have searched. Every e-mail 
+you have sent. It's as if you're crossing the border with your home 
+in your suitcase.&quot;
+
+If the government's position on searches of electronic files is 
+upheld, new risks will confront anyone who crosses the border with a 
+laptop or other device, said Mark Rasch, a technology security expert 
+with 
+&lt;<A HREF="http://financial.washingtonpost.com/custom/wpost/html-qcn.asp?dispnav=business&amp;mwpage=qcn&amp;symb=FCN&amp;nav=el">http://financial.washingtonpost.com/custom/wpost/html-qcn.asp?dispnav=business&amp;mwpage=qcn&amp;symb=FCN&amp;nav=el</A>&gt;FTI 
+Consulting and a former federal prosecutor. &quot;Your kid can be arrested 
+because they can't prove the songs they downloaded to their 
+&lt;<A HREF="http://www.washingtonpost.com/ac2/related/topic/Apple+iPod?tid=informline">http://www.washingtonpost.com/ac2/related/topic/Apple+iPod?tid=informline</A>&gt;iPod 
+were legally downloaded,&quot; he said. &quot;Lawyers run the risk of exposing 
+sensitive information about their client. Trade secrets can be 
+exposed to customs agents with no limit on what they can do with it. 
+Journalists can expose sources, all because they have the audacity to 
+cross an invisible line.&quot;
+
+Hollinger said customs officers &quot;are trained to protect confidential 
+information.&quot;
+
+Shirin Sinnar, a staff attorney with the Asian Law Caucus, said that 
+by scrutinizing the Web sites people search and the phone numbers 
+they've stored on their cellphones, &quot;the government is going well 
+beyond its traditional role of looking for contraband and really is 
+looking into the content of people's thoughts and ideas and their 
+lawful political activities.&quot;
+
+If conducted inside the country, such searches would require a 
+warrant and probable cause, legal experts said.
+
+Customs sometimes singles out passengers for extensive questioning 
+and searches based on &quot;information from various systems and specific 
+techniques for selecting passengers,&quot; including the Interagency 
+Border Inspection System, according to a statement on the 
+&lt;<A HREF="http://www.cbp.gov/xp/cgov/travel/admissability/authority_to_search.xml">http://www.cbp.gov/xp/cgov/travel/admissability/authority_to_search.xml</A>&gt;CBP 
+Web site. &quot;CBP officers may, unfortunately, inconvenience law-abiding 
+citizens in order to detect those involved in illicit activities,&quot; 
+the statement said. But the factors agents use to single out 
+passengers are not transparent, and travelers generally have little 
+access to the data to see whether there are errors.
+
+Although Customs said it does not profile by race or ethnicity, an 
+officers' training guide states that &quot;it is permissible and indeed 
+advisable to consider an individual's connections to countries that 
+are associated with significant terrorist activity.&quot;
+
+&quot;What's the difference between that and targeting people because they 
+are Arab or Muslim?&quot; Cole said, noting that the countries the 
+government focuses on are generally predominantly Arab or Muslim.
+
+It is the lack of clarity about the rules that has confounded 
+travelers and raised concerns from groups such as the Asian Law 
+Caucus, which said that as a result, their lawyers cannot fully 
+advise people how they may exercise their rights during a border 
+search. The lawsuit says a Freedom of Information Act request was 
+filed with Customs last fall but that no information has been received.
+
+Kamran Habib, a software engineer with 
+&lt;<A HREF="http://financial.washingtonpost.com/custom/wpost/html-qcn.asp?dispnav=business&amp;mwpage=qcn&amp;symb=CSCO&amp;nav=el">http://financial.washingtonpost.com/custom/wpost/html-qcn.asp?dispnav=business&amp;mwpage=qcn&amp;symb=CSCO&amp;nav=el</A>&gt;Cisco 
+Systems, has had his laptop and cellphone searched three times in the 
+past year. Once, in San Francisco, an officer &quot;went through every 
+number and text message on my cellphone and took out my SIM card in 
+the back,&quot; said Habib, a permanent U.S. resident. &quot;So now, every time 
+I travel, I basically clean out my phone. It's better for me to keep 
+my colleagues and friends safe than to get them on the list as well.&quot;
+
+Udy's company, Radius, organizes business trips for 100,000 travelers 
+a day, from companies around the world. She says her firm supports 
+strong security measures. &quot;Where we get angry is when we don't know 
+what they're for.&quot;
+
+Staff researcher Richard Drezen contributed to this report.
+
+-------------------------------------------
+Archives: <A HREF="http://v2.listbox.com/member/archive/247/=now">http://v2.listbox.com/member/archive/247/=now</A>
+RSS Feed: <A HREF="http://v2.listbox.com/member/archive/rss/247/">http://v2.listbox.com/member/archive/rss/247/</A>
+Powered by Listbox: <A HREF="http://www.listbox.com">http://www.listbox.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

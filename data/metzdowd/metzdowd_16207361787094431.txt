@@ -1,0 +1,42 @@
+<PRE>Paul Hoffman wrote:
+&gt;<i> I'm confused about two statements here:
+</I>&gt;<i> 
+</I>&gt;<i> At 2:10 PM +0100 5/13/08, Ben Laurie wrote:
+</I>&gt;&gt;<i> The result of this is that for the last two years (from Debian's 
+</I>&gt;&gt;<i> &quot;Edgy&quot; release until now), anyone doing pretty much any crypto on 
+</I>&gt;&gt;<i> Debian (and hence Ubuntu) has been using easily guessable keys. This 
+</I>&gt;&gt;<i> includes SSH keys, SSL keys and OpenVPN keys.
+</I>&gt;<i> 
+</I>&gt;<i> . . .
+</I>&gt;<i> 
+</I>&gt;&gt;<i> [2] Valgrind tracks the use of uninitialised memory. Usually it is bad 
+</I>&gt;&gt;<i> to have any kind of dependency on uninitialised memory, but OpenSSL 
+</I>&gt;&gt;<i> happens to include a rare case when its OK, or even a good idea: its 
+</I>&gt;&gt;<i> randomness pool. Adding uninitialised memory to it can do no harm and 
+</I>&gt;&gt;<i> might do some good, which is why we do it. It does cause irritating 
+</I>&gt;&gt;<i> errors from some kinds of debugging tools, though, including valgrind 
+</I>&gt;&gt;<i> and Purify. For that reason, we do have a flag (PURIFY) that removes 
+</I>&gt;&gt;<i> the offending code. However, the Debian maintainers, instead of 
+</I>&gt;&gt;<i> tracking down the source of the uninitialised memory instead chose to 
+</I>&gt;&gt;<i> remove any possibility of adding memory to the pool at all. Clearly 
+</I>&gt;&gt;<i> they had not understood the bug before fixing it.
+</I>&gt;<i> 
+</I>&gt;<i> The second bit makes it sound like the stuff that the Debian folks 
+</I>&gt;<i> blindly removed was one, possibly-useful addition to the entropy pool. 
+</I>&gt;<i> The first bit makes it sound like the stuff was absolutely critical to 
+</I>&gt;<i> the entropy of produced keys. Which one is correct?
+</I>
+They removed _all_ entropy addition to the pool, with the exception of 
+the PID, which is mixed in at a lower level.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

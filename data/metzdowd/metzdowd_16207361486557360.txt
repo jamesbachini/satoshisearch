@@ -1,0 +1,22 @@
+<PRE>On Jul 14, 2007, at 2:43 PM, Ed Gerck wrote:
+&gt;<i> 1. firewall port-knocking to block scanning and attacks
+</I>&gt;<i> 2. firewall logging and IP disabling for repeated attacks (prevent  
+</I>&gt;<i> DoS,
+</I>&gt;<i> block dictionary attacks)
+</I>&gt;<i> 3. pre- and post-filtering to prevent SSH from advertising itself and
+</I>&gt;<i> server OS
+</I>&gt;<i> 4. block empty authentication requests
+</I>&gt;<i> 5. block sending host key fingerprint for invalid or no username
+</I>&gt;<i> 6. drop SSH reply (send no response) for invalid or no username
+</I>
+None of these are crypto issues. The OpenSSH dev list (<A HREF="http://">http://</A> 
+www.openssh.com/list.html) would almost certainly lend itself to a  
+more productive discussion of these concerns. Cheers,
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

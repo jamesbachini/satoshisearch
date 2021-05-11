@@ -1,0 +1,126 @@
+<PRE>
+&gt;<i> Why require contactless in the first place?
+</I>&gt;<i> 
+</I>&gt;<i> Is swiping one's card, credit-card style too difficult for the average
+</I>&gt;<i> user?  I'm thinking two parallel copper traces on the card could be
+</I>&gt;<i> used to power it for the duration of the swipe, with power provided
+</I>&gt;<i> by the reader.  Why, in a billion-dollar project, one must use COTS
+</I>&gt;<i> RFIDs - with their attendant privacy and security problems - is
+</I>&gt;<i> beyond me. 
+</I>&gt;<i> 
+</I>&gt;<i> A little ingenuity would have gone a long way.
+</I>&gt;<i> 
+</I>OPs deliberately elided.
+
+This posting (and several others in this thread) disturb me.  Folks on
+this list and its progenitors have long noted that cryptography is a
+matter of economics.  That is, cryptography and security aren't
+absolute goals; rather, they're tools for achieving something else.
+The obvious answers in this case are &quot;prevent fare fraud&quot; or &quot;make
+money&quot;, and even those would suffice.  However, there are other issues
+less easily monetized, such as &quot;make the trams and buses run
+efficiently&quot;.
+
+A security system doesn't have to be perfect.  Rather, it has to be
+good enough that you save more than you lose via the holes, including
+the holes you know about up front.  Spending more than you have to is
+simply bad engineering.  Speaking as an engineer, rather than as a
+scientist, the real failure mode is too high a net loss.  As a
+cryptographer and security guy, I'd rather there were no loss -- but
+that's not real.
+
+A transit system has to move people.  For all that the New York City
+Metrocard works, it's slower than a contactless wireless system.  How
+much longer will it take people to board trams with a stripe reader
+than with a contactless smart card?  What is your power budget (which
+affects range)?  Even leaving out the effect that delays have on
+ridership, a transit system that wants to move N people needs more
+units if the latency per rider is above a certain threshold.
+
+Let's take a closer look at the New York system, since it was touted as
+superior.  It's optimized for subways, not buses, which has several
+implications.  (Subway ridership in New York is twice bus
+ridership -- see
+<A HREF="http://www.crainsnewyork.com/apps/pbcs.dll/article?AID=/20070223/FREE/70223008/1066">http://www.crainsnewyork.com/apps/pbcs.dll/article?AID=/20070223/FREE/70223008/1066</A>)
+First, subway turnstiles are much more easily used as part of an online
+system than are bus fare card readers.  The deployment started in 1994,
+when cellular data simply wasn't an option, based on cost, bandwidth,
+availability, and much more.  Second, on a subway you use your fare
+card well in advance of boarding; there is thus little latency effect
+on the system.  Third, wireless is *still* faster -- according to some
+reports (<A HREF="http://www.dslreports.com/forum/r19222677-The-Next-MetroCard">http://www.dslreports.com/forum/r19222677-The-Next-MetroCard</A>),
+the MTA is considering replacing the current system with a wireless one.
+
+Online systems have another issue: they require constant communication
+to a high-availability server.  When that's not an option (i.e., New
+York buses, or subway turnstiles when the server is down), the system
+has to fall back to some other scheme.  This scheme is more restrictive,
+precisely because of the fraud issue.   Back when I was in high school,
+some students got bus passes.  I recall a frequent sight: those who had
+boarded early moving to the back of the bus and handing their passes to
+other students still waiting to board the bus.  Replay worked well
+against an overloaded driver...  Metrocards don't have that failure
+mode -- but the failure mode they do have is a limitation on how many
+times they can be used in a short time interval.  This affects, for
+example, a family of five or more trying to travel on a single card,
+even on subways.  
+
+How much of this applies to the Dutch farecards?  I have no idea.  But
+this group is trying to *engineer* a system without looking at costs
+and other constraints.  That leads to security by checklist, an
+all-too-common failing.
+
+Systems like this have two primary failure modes -- &quot;failure&quot; in the
+sense of losing more money (or time, or what have you) than
+anticipated.  First, the designers may not have understood the
+available technology and its limitations.  That was certainly the case
+with WEP; I suspect it's the case here, but I don't know.  Even so, it
+is far from clear that exploitation of the hole will have an economic
+impact; that's as much a sociological question as a technical one.
+(Maybe the incremental cost per card of better crypto is ?.01.  One
+web site I found put tram ridership in Amsterdam at &gt;1,000,000/year
+(<A HREF="http://blog.wired.com/cars/2007/10/trams-dominate-.html">http://blog.wired.com/cars/2007/10/trams-dominate-.html</A>), which means
+that the cost might be ?10,000/year.  How many riders will try to cheat
+the system?  Enough that to be an issue?  I don't know -- but that's
+precisely my point; I don't know and I doubt very much that most other
+posters here know.  That said, I do suspect that stronger crypto would
+be economical.)
+
+The second failure mode comes from misunderstanding the threat model.
+That's why the old American AMPS cellular phones were subject to
+cloning attacks.  It was *not* that the designers didn't anticipate the
+problem; they understood perfectly well that something sent in the
+clear over radio waves could be intercepted and replayed.  However,
+they made three mistakes.  They overestimated the expertise necessary
+to exploit the attack (it turned out that test gear was cheap enough
+that small businesses could get into the cloning market), they
+drastically underestimated how many cell phones would exist (they saw
+them as toys for high-level executives and the like, which was false
+even by 1990), and they didn't understand why people would want to buy
+cloned phones.  (If you think it was to save money, you're just as
+wrong as they were -- they assumed that that was the issue, and that
+declining costs would prevent the market from taking root.  That wasn't
+it at all.)  Given the petty crime rate in, say, Amsterdam, I suspect
+that the designers of this system do understand the threat model,
+though of course I (and/or they) could be as wrong as the AMPS
+designers.
+
+As a cryptographer, I'm amused and offended by the design error in the
+Dutch system.  As an engineer, though, I want to see some cost
+projections before I say how badly they're wrong.  And as an observer
+of the human condition and a practical security guy, I'm curious what
+the actual loss rate will be due to technical factors, as opposed to
+pickpockets, turnstile jumping, and the like.
+
+To replay the line I used a few days ago, &quot;Amateurs talk about
+algorithms; pros talk about economics.&quot;  (I was asked where that came
+from.  I'm told that it's a saying at NSA, but I don't know that
+first-hand.)
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

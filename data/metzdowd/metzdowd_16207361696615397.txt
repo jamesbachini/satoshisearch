@@ -1,0 +1,22 @@
+<PRE>It seems that disk containing records of the Irish Blood Transfusion
+service seems to have been stolen in New York:
+
+	<A HREF="http://www.rte.ie/news/2008/0219/blood.html">http://www.rte.ie/news/2008/0219/blood.html</A>
+
+Thankfully, the data was encrypted. The head of the IBTS said on
+the news that there was a remote possibility of access, roughly
+equivelent to winning the Euromillions Lottery 10 times in a row.
+Based on the jackpot odds from:
+
+	<A HREF="http://en.wikipedia.org/wiki/EuroMillions">http://en.wikipedia.org/wiki/EuroMillions</A>
+
+they are probably thinking around lg(76275360)*10 = 261.84, or 256
+bits of key.
+
+	David.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

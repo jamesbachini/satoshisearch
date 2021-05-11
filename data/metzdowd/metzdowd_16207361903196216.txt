@@ -1,0 +1,201 @@
+<PRE>
+
+Begin forwarded message:
+
+From: MacTech News Moderator &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">MacTech-News at mactech.com</A>&gt;
+Date: September 3, 2008 10:35:41 AM GMT-04:00
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rah at shipwright.com</A>
+Subject: [MTNews] Schlage Introduces Web- and Mobile Phone-controlled  
+Locks
+
+This message comes to you from MacTech News -- the Mac(tm) OS Technical
+News and Info server.  See below for more info on this list (including
+sub/unsub details).
+__________________________
+
+
+Schlage Introduces Innovative Web- and Mobile Phone-controlled Locks
+
+CARMEL, Ind., Sept. 3 -- Schlage, the most trusted brand of door locks,
+today unveiled the latest consumer electronic innovation that fuses home
+security and automation with mobile technology. The new Schlage LiNK
+deadbolts and locks provide homeowners the power to remotely control and
+monitor access to their home 24/7 with any web-enabled mobile phone or
+computer.
+
+The new Schlage LiNK deadbolts and locks provide keyless entry through
+4-digit access codes that can be entered, activated, deleted or  
+disabled on
+the lock's 11-digit push button keypad, or via the Schlage LiNK web  
+portal
+or mobile application.
+
+This solution gives homeowners the freedom of never having to carry or
+circulate multiple sets of keys, coupled with the ability to
+instantaneously grant access to family members, friends, unexpected  
+house
+guests, and service providers such as handymen and housekeepers.
+
+Via the Schlage LiNK online portal, homeowners also have the control  
+to set
+up user codes for specific days and times, receive text or e-mail
+notifications when certain codes are used and track codes that have been
+used over the past 90 days. These features deliver peace of mind to the
+parents of active families so they know exactly when their children,  
+family
+members, friends and even service providers are entering their home. It
+also does away with the need to regularly replace locks for rental
+properties and second homes.
+
+&quot;Schlage LiNK deadbolts and locks give homeowners the control and  
+peace of
+mind of always knowing that even if their home is not in sight, it's  
+never
+out of reach,&quot; says Dwight Gibson, general manager, Intelligent  
+Residential
+Security, for Ingersoll Rand, the parent company of Schlage. &quot;Schlage  
+has
+been the leading lock brand for the residential security market for more
+than 85 years and we are dedicated to continually developing product
+innovations that not only deliver first-rate security but also add
+convenience to our customers' busy lives.&quot;
+
+Additional product attributes include:
+
+-- Schlage LiNK locks are the first Z-Wave-enabled locks and work
+seamlessly with more than 300 other Z-Wave-enabled home automation  
+devices
+including products ranging from lighting and temperature to pool and spa
+controls.
+
+-- The Schlage LiNK web portal utilizes the same Secure Socket Layer  
+(SSL)
+protection used by the banking industry and the Z-Wave Bridge's RF  
+signals
+are fully encrypted using AEC 128 bit encryption protocols.
+
+-- Designed with plug and play simplicity, the wireless Z-Wave Bridge
+easily plugs into an Ethernet port on the home computer's Internet  
+router
+and the light module plugs into any standard 3 prong electrical outlet.
+
+-- Schlage LiNK locks are powered by regular batteries and typically
+install in less than 30 minutes with only a screwdriver.
+
+-- The Schlage LiNK Starter Kit retails for $299 and includes one  
+Schlage
+LiNK deadbolt or lock, a wireless Z-Wave Bridge and a compatible light
+module. Additional Schlage LiNK deadbolts or locks will retail for $199.
+
+-- There is also a $12.99 monthly subscription fee for use of the  
+Schlage
+LiNK online portal and mobile applications. With the monthly  
+subscription,
+homeowners also receive 100 MB of memory to store IP camera video, if
+installed with the system.
+
+-- Schlage LiNK deadbolts and locks can be used anywhere in the home a
+traditional lock is used and are available in bright brass, satin nickel
+and aged bronze, to complement any decor.
+
+Schlage LiNK deadbolts and locks will be available at Fry's Electronics
+Retail Stores, on Fry's web site (www.frys.com) and through select
+professional builders in late October.
+
+About Schlage &amp; Ingersoll Rand Security Technologies
+
+Schlage is the leader in security devices, trusted for more than 85  
+years,
+spanning both the commercial and residential markets. Commercial grade
+quality is built into every Schlage product. The brand is on the  
+forefront
+of developing cutting-edge technology and innovation such as wireless
+security products and biometrics, among others. www.schlage.com
+
+Ingersoll Rand Security Technologies is a leading global provider of
+products and services that make environments safe, secure and  
+productive.
+The sector's market-leading products include electronic and biometric
+access control systems; time and attendance and personal scheduling
+systems; mechanical locks and portable security, door closers and exit
+devices, steel doors and frames, architectural hardware and technologies
+and services for global security markets.
+
+Ingersoll Rand Security Technologies is a sector of Ingersoll-Rand  
+Company
+Limited, a global provider of products, services and solutions to
+industries as diverse as transportation, manufacturing, food retailing,
+construction and agriculture. www.ingersollrand.com
+
+About Z-Wave
+
+Z-Wave is the first technology to bring affordable, reliable and
+easy-to-use wireless control to every aspect of daily life -- the home,
+consumer electronics, healthcare, and energy use, to name a few. Z- 
+Wave is
+an award-winning, proven and interoperable wireless mesh networking
+technology that allows a wide array of devices in and around the home to
+communicate including lighting, appliances, HVAC, entertainment centers,
+and security systems. Z-Wave brings many benefits to everyday life
+including remote home monitoring, home healthcare, safety and  
+security, and
+energy conservation. Z-Wave certified products are currently available  
+from
+leading consumer brands in more than 170 products. Z-Wave is the  
+recipient
+of the 2006 Wall Street Journal Technology Innovation Award in the  
+wireless
+category, the CNET &quot;Best of CES Award&quot; in the enabling technologies
+category, along with PC World's 2006 World Class Award, which recognizes
+the 100 best technologies and products of the year. For more information
+about Z-Wave please visit www.z-wave.com
+
+About the Z-Wave Alliance
+
+Formed in January 2005, the Z-Wave Alliance is a consortium of leading
+companies in the home technology space dedicated to solidifying Z-Wave  
+as
+the standard for wireless home control products. The principal members
+include Cooper Wiring Devices, Danfoss, FAKRO, Ingersoll Rand Security
+Technologies, Intel, Intermatic, Leviton, Monster Cable, Wayne-Dalton,
+Universal Electronics Inc. (UEI) and Zensys. Its members lead the home
+controls market, providing leading edge products and systems that  
+deliver
+increased comfort, convenience, safety and security. Z-Wave technology  
+is
+the foundation of all products manufactured by the Alliance members. For
+more information about the Z-Wave Alliance, visit  
+www.zwavealliance.org .
+
+__________________________
+
+Please visit our sponsors:
+
+    BetterRAM.com(sm): Your Source for RAM.  Memory built to order.
+    <A HREF="http://www.betterram.com,">http://www.betterram.com,</A> mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">info at betterram.com</A>
+    Or call 800-895-3493
+
+    MacTech(r) Magazine: The journal of Macintosh technolog.
+    <A HREF="http://www.mactech.com,">http://www.mactech.com,</A> mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">info at mactech.com</A>, or 877-MACTECH
+
+To submit a posting to MacTech News, mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">press_releases at mactech.com.</A>
+To subscribe to MacTech News, send mail to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">listserv at listmail.xplain.com</A>
+with the SUBJECT line reading &quot;SUBSCRIBE MacTechNews&quot;.  To unsubscribe,
+the SUBJECT line should read &quot;UNSUBSCRIBE MacTechNews&quot;.
+
+MacTech, Xplain Corporation and its sponsors are not responsible for any
+errors, omissions, or other inaccuracies in this message.  MacTech is a
+registered trademark of Xplain Corporation.  MacDev-1, NetProLive, and
+NetProfessional are trademarks of Xplain Corporation.
+
+News may be propagated freely, but please attribute your source as  
+MacTech
+Magazine, &lt;<A HREF="http://www.mactech.com">http://www.mactech.com</A>&gt;.
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

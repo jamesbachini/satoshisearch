@@ -1,0 +1,25 @@
+<PRE>&gt;<i> &quot;There are, of course, obstacles that must still be overcome by EKMI 
+</I>&gt;<i> proponents. For example, the proposed components are somewhat simple 
+</I>&gt;<i> by design, which concerns some encryption purists who prefer more 
+</I>&gt;<i> complex protocols, on the logic that they're more difficult to break 
+</I>&gt;<i> into.&quot;
+</I>
+Let me first say that from the discussion here I now get the impression
+that this is how criticism of the EKMI spec is being characterized by its
+supporters. Their critics are &quot;encryption purists&quot;. I'm not sure what
+that means but it sounds kind of like &quot;people who believe in security
+over simplicity&quot;.
+
+An example where this concern might arise would be an overly simplistic
+protocol that used AES in ECB mode - &quot;simple by design&quot;, while the
+&quot;encryption purist&quot; advocated GCM, &quot;more difficult to break into&quot; but
+more complex.  Now, I'm sure EKMI is not doing things this way but it
+is an example where &quot;simple&quot; would not look good to &quot;encryption purists&quot;.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,94 @@
+<PRE>As promised a couple of weeks ago, the public review of SKSML has
+begun.  The OASIS EKMI Technical Committee would be grateful for any
+comments received from members of this forum about the key-management 
+protocol.
+
+If you are interested in reviewing a working implementation of an early
+version of this protocol, you can get the implementation here; some of 
+the features of the specification as described in the OASIS document
+are not yet implemented in this software, but there is enough to give
+interested people a clear understanding of its capabilities, strengths
+and potential weaknesses:
+
+<A HREF="http://www.strongkey.org.">http://www.strongkey.org.</A>  
+
+Looking forward to this groups' comments.  Thank you.
+
+Arshad Noor
+StrongAuth, Inc.
+
+----- Forwarded Message -----
+From: &quot;Mary McRae&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mary.mcrae at oasis-open.org</A>&gt;
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">members at lists.oasis-open.org</A>, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tc-announce at lists.oasis-open.org</A>
+Cc: &quot;ekmi&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekmi at lists.oasis-open.org</A>&gt;
+Sent: Thursday, July 24, 2008 7:04:49 PM (GMT-0800) America/Los_Angeles
+Subject: [ekmi] Public Review of SKSML v1.0
+
+To OASIS members, Public Announce Lists:
+
+The OASIS Enterprise Key Management Infrastructure (EKMI) TC has recently
+approved the following specification as a Committee Draft and approved the
+package for public review:
+
+Symmetric Key Services Markup Language (SKSML) Version 1.0
+
+The public review starts today, 24 July 2008, and ends 23 September 2008. This
+is an open invitation to comment. We strongly encourage feedback from potential
+users, developers and others, whether OASIS members or not, for the sake of
+improving the interoperability and quality of OASIS work. Please feel free to
+distribute this announcement within your organization and to other appropriate
+mail lists.
+
+More non-normative information about the specification and the technical
+committee may be found at the public home page of the TC at: 
+<A HREF="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ekmi.">http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ekmi.</A> Comments may be
+submitted to the TC by any person through the use of the OASIS TC Comment
+Facility which can be located via the button marked &quot;Send A Comment&quot; at the top
+of that page, or directly at: 
+<A HREF="http://www.oasis-open.org/committees/comments/index.php?wg_abbrev=ekmi.">http://www.oasis-open.org/committees/comments/index.php?wg_abbrev=ekmi.</A>
+
+Submitted comments (for this work as well as other works of that TC) are
+publicly archived and can be viewed at: 
+<A HREF="http://lists.oasis-open.org/archives/ekmi-comment/.">http://lists.oasis-open.org/archives/ekmi-comment/.</A> All comments submitted to
+OASIS are subject to the OASIS Feedback License, which ensures that the feedback
+you provide carries the same obligations at least as the obligations of the TC
+members.
+
+The specification document and related files are available here:
+
+Editable Source (Authoritative):
+<A HREF="http://docs.oasis-open.org/ekmi/sksml/v1.0/pr01/SKSML-1.0-Specification.odt">http://docs.oasis-open.org/ekmi/sksml/v1.0/pr01/SKSML-1.0-Specification.odt</A> 
+
+PDF:
+<A HREF="http://docs.oasis-open.org/ekmi/sksml/v1.0/pr01/SKSML-1.0-Specification.pdf">http://docs.oasis-open.org/ekmi/sksml/v1.0/pr01/SKSML-1.0-Specification.pdf</A> 
+
+HTML:
+<A HREF="http://docs.oasis-open.org/ekmi/sksml/v1.0/pr01/SKSML-1.0-Specification.html">http://docs.oasis-open.org/ekmi/sksml/v1.0/pr01/SKSML-1.0-Specification.html</A> 
+
+Schema:
+<A HREF="http://docs.oasis-open.org/ekmi/sksml/v1.0/pr01/schema/">http://docs.oasis-open.org/ekmi/sksml/v1.0/pr01/schema/</A> 
+
+Abstract:
+This normative specification defines the first (1.0) version of the Symmetric
+Key Services Markup Language (SKSML), an XML-based messaging protocol, by which
+applications executing on computing devices may request and receive symmetric
+key-management services from centralized key-management servers, securely, over
+networks. Applications using SKSML are expected to either implement the SKSML
+protocol, or use a software library - called the Symmetric Key Client Library
+(SKCL) - that implements this protocol. SKSML messages are transported within a
+SOAP layer, protected by a Web Services Security (WSS) header and can be used
+over standard HTTP securely.
+
+OASIS and the EKMI TC welcome your comments.
+
+---------------------------------------------------
+Mary P McRae
+Manager of TC Administration, OASIS
+email: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mary.mcrae at oasis-open.org</A>  
+web: www.oasis-open.org 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

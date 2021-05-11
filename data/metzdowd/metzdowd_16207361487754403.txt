@@ -1,0 +1,44 @@
+<PRE>* Anne &amp; Lynn Wheeler:
+
+&gt;<i> In the mid-90s, financial institutions looking at the internet for
+</I>&gt;<i> online, commercial banking and cash management (i.e. business
+</I>&gt;<i> equivalent to consumer online banking) were extremely conflicted
+</I>&gt;<i> ... they frequently were almost insisting on their own appliance at
+</I>&gt;<i> the business (and low-end of SOHO at least overlaps high-end
+</I>&gt;<i> of consumer online banking).
+</I>
+Well, in 1994, German Postbank already had 300,000 online banking
+customers.  (To put this into perspective, there are somewhere around
+3 million online customers today, and this was well before the
+Internet took off in Germany.)
+
+On top of that, there were other forms of digital banking that were
+mainly used by business customers, such as transactions submitted on
+floppy disks.
+
+&gt;<i> Various of the PC-based dedicated financial applications go to
+</I>&gt;<i> quite some lengths to compensate for kind of vulnerabilities
+</I>&gt;<i> typically associated with browser activity. For instance,
+</I>&gt;<i> instead of relying on a trusted third party to certify that
+</I>&gt;<i> some remote location really has a valid digital certificate,
+</I>&gt;<i> they have a trusted repository of valid financial institutions.
+</I>
+Oh really?
+
+In Germany, early digital banking had no cryptographic protection at
+all.  Integrity and confidentiality were inherited from the underlying
+phone system.  There were no end-to-end digital signatures.  Nothing.
+Just a one-time password for each transaction, but the password was
+not tied to the transaction in any way.
+
+&gt;<i> This has the added benefit of eliminating the horribly complex
+</I>&gt;<i> and vulnerable PKI-type of operation
+</I>
+Except that there aren't any attacks on the browser PKI.  That's part
+of the reason why the certificate prices plummeted. 8-/
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

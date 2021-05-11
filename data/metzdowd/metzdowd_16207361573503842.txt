@@ -1,0 +1,107 @@
+<PRE>     --
+Avoiding certicom patents.
+
+The two patents that are actually useful are point
+compression and ECMQV
+
+Bodo Moeller, quoted by Bernstein, points out that one
+can do point compression following the method of page
+171 of the Harper-Menezes-Vanstone paper &quot;Public-key
+cryptosystems with very small key lengths&quot; at Eurocrypt
+'92, published more than a year before the filing of the
+point compression patent.
+
+::<i>	The key length can be shortened to n+1 bits as
+</I>::<i>	follows. Observe first that the change of
+</I>::<i>	variables (x,y) -&gt; (x,xz) transforms equation
+</I>::<i>
+</I>::<i>	y^2 + x*y = x^3 + a*x^2 + b, (1)
+</I>::<i>
+</I>::<i>	to
+</I>::<i>
+</I>::<i>	z^2 + z = x + a + b*x^(-2),  (3)
+</I>::<i>
+</I>::<i>	Given the x-coordinate of a point P = (x,y),
+</I>::<i>	we can compute the right hand side of (3).
+</I>::<i>	Then (3) has precisely 2 solutions, namely z'
+</I>::<i>	and z'+1, and these solutions can be easily
+</I>::<i>	found. We can then select the correct solution
+</I>::<i>	z (and hence reconstruct y as y = xz) if we
+</I>::<i>	know the least significant bit of z. Thus to
+</I>::<i>	transmit P it is sufficient to transmit x and
+</I>::<i>	the least significant bit of y/x.
+</I>
+I am not a lawyer, but if one follows the method as
+given in the paper, and place direct quotes from the
+paper in the source code comments and product
+documentation, that should cover one's ass.
+
+What ECMQV does is get forward secrecy *and*
+authentication without additional cost.
+
+If, however, we don't need the point compression patent,
+neither do we need ECMQV.
+
+Let capital letters represent elliptic curve points,
+lower case letters represent integers modulo the order
+of the generator.  Multiplication of an elliptic curve
+point by an integer to give another elliptic curve point
+takes polynomial time, division by an integer takes
+exponential time, takes time 2^(n^2) where n is the bit
+size of the field.
+
+Simpe DH is as follows:
+
+Bob has a secret key b, the integer b, and a well known
+public key B = b*G, where G is the generator.
+
+Carol has a secret key c, the integer c, and a well
+known public key C = c*G, where G is the generator.
+
+Bob constructs the shared secret b*C, Carol constructs
+the shared secret c*B, b*C=c*B
+
+This, however, means they use the same secret each time,
+which can cause problems.  Best to use a secret that
+randomly changes from time to time.
+
+So to fix this:
+
+Bob generates a random and frequently changing secret
+number x, and transmits the point compressed value of X,
+X=x*G to Carol.
+
+Carol generates a random and frequently changing secret
+number y, and and transmits the point compressed value
+of Y, Y=y*G to Bob.
+
+Bob computes (x+b)*(Y+C), Carol computes (c+y)*(X+B).
+(x+b)*(Y+C) =(c+y)*(X+B)
+
+Now if we were transmitting uncompressed points, there
+would be some attacks which ECMQV prevents, but since we
+are transmitting compressed points, these attacks cease
+to work.
+
+I repeat, I am not a lawyer, but then neither are the
+judge or jury mathematicians.  If you simply don't have
+the additional steps listed in ECMQV, how are they going
+to justify the claim that it somehow really is ECMQV?
+
+Note that that point compression avoids the attacks that
+motivate ECMQV has not been examined in the literature,
+nor have patent lawyers looked at any of the information
+I present here.
+
+
+     --digsig
+          James A. Donald
+      6YeGpsZR+nOTh/cGwvITnSR3TdzclVpR0+pr3YYQdkG
+      Hby8ToP7gt/aBQ1wfI7BDP13fj4dqb/RwBUcQtKe
+      4kJnBa/Brr+PMEJFoEXvPbwbP2fcEYkPJo0Co59YI
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

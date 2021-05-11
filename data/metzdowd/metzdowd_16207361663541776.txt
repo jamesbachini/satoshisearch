@@ -1,0 +1,38 @@
+<PRE>
+On Jan 3, 2008, at 7:38 PM, Peter Gutmann wrote:
+
+&gt;<i> <A HREF="http://www.intersil.com/cda/deviceinfo/0,1477,ISL6296,0.html">http://www.intersil.com/cda/deviceinfo/0,1477,ISL6296,0.html</A>
+</I>&gt;<i>
+</I>&gt;<i> At $1.40 each (at least in sub-1K quantities) you wonder whether  
+</I>&gt;<i> it's costing
+</I>&gt;<i> them more to add the DRM (spread over all battery sales) than any  
+</I>&gt;<i> marginal
+</I>&gt;<i> gain in preventing use of third-party batteries by a small subset  
+</I>&gt;<i> of users.
+</I>
+Assuming that is your threat model, yes.
+
+If your threat is that you're worried about a cheap battery flaming  
+in your brand of phone, that's more of a threat.
+
+People who know how to make batteries have a so-so track record with  
+them. There have been many cases of off-brand batteries going into  
+overload.
+
+If I were the CSO of a mobile phone company, I think I could  
+convincingly argue that this is a public safety issue. Let's face it,  
+if a battery takes out someone's leg or downs an airliner, the  
+headline will say my company's name, not the people who made the  
+battery.
+
+If I really wanted openness, I could come up with an accreditation  
+process that allow responsible third parties who followed proper  
+quality standards to license the needed hashes.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

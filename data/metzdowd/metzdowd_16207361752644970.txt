@@ -1,0 +1,31 @@
+<PRE>On Fri, Apr 11, 2008 at 04:30:47PM +0200, COMINT wrote:
+&gt;<i> Quick system scenario:
+</I>&gt;<i> 
+</I>&gt;<i> You have packet [A].
+</I>&gt;<i> 
+</I>&gt;<i> It gets encrypted using an AES algo in a particular mode and we are
+</I>&gt;<i> left with [zA].
+</I>&gt;<i> 
+</I>&gt;<i> More data [B] is added to that encrypted packet.
+</I>&gt;<i> 
+</I>&gt;<i> Now I have [zA]+[B] in one packet and I re-encrypt it with the same
+</I>&gt;<i> algo/key/mode.
+</I>&gt;<i> 
+</I>&gt;<i> Have I just compromised the security somehow? I wasn't aware of
+</I>&gt;<i> anything but something about this double encryption made something
+</I>&gt;<i> ring in my mind so I wanted to double check...
+</I>
+This would certainly cause problems in if &quot;particular mode&quot; == OFB or
+counter, since (if you also reuse the IVs), you could have E(zA) == A.
+
+If you use a different (independent, unrelated) key/IV, then the
+existence of a weakness in this scheme would seem to provide evidence
+of an attack on AES, regardless of mode choice.
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

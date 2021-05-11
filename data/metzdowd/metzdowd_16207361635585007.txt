@@ -1,0 +1,46 @@
+<PRE>On Tue, Dec 11, 2007 at 04:00:42PM -0500, Leichter, Jerry wrote:
+&gt;<i> | &gt; It is, of course, the height of irony that the bug was introduced in
+</I>&gt;<i> | &gt; the very process, and for the very purpose, of attaining FIPS
+</I>&gt;<i> | &gt; compliance!
+</I>&gt;<i> | 
+</I>&gt;<i> | But also to be expected, because the feature in question is
+</I>&gt;<i> | &quot;unnatural&quot;: the software needs a testable PRNG to pass the compliance
+</I>&gt;<i> | tests, and this means adding code to the PRNG to make it more
+</I>&gt;<i> | predictable under test conditions.
+</I>&gt;<i>
+</I>&gt;<i> Agreed.  In fact, this fits with an observation I've made in many
+</I>&gt;<i> contexts in the past:  Any time you introduce a new mode of operation,
+</I>&gt;<i> you are potentially introducing a new failure mode corresponding to
+</I>&gt;<i> it as well.
+</I>
+In fact, I was in the middle of a FIPS-140 certification at level 2
+a number of years ago when the Known Answer Test for the X9.17 block
+cipher based PRNG was introduced.  One unanticipated side effect of
+this test was to make it impossible to actually use a clock or free
+running counter as the counter in the PRNG, since the KAT expected
+the simplistic &quot;increment counter by 1 every time a block is extracted&quot;
+behavior chosen by most implementers.
+
+Of course, that mode is _less_ secure (because the internal state is
+more predictable) than the other, but given the choice between &quot;validate
+PRNG using special mode, run it using normal mode&quot; or &quot;validate PRNG
+using special mode, run it using special mode&quot; I know I'd pretty much
+always take the latter.  In fact, the test lab we were using told us
+they were quite skeptical about the former as well.
+
+Fortunately, the requirement for the PRNG KAT was delayed long enough
+to let us get our code out the door without having to actually choose
+either of the unpalatble ways.  But it does highlight a certain tension
+in the process: they want to know that algorithms have predictable
+(correct) results, but RNGs are supposed to have unpredicatable (correct)
+results.  So any PRNG that is testable as part of the certification
+process pretty much _has to_ have two modes, and bugs like this may
+be more likely to occur in normal operation.
+
+Thor
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

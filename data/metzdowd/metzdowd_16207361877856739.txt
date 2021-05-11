@@ -1,0 +1,28 @@
+<PRE>On Aug 24, 2008, at 5:20 AM, Peter Gutmann wrote:
+
+&gt;<i> Speaking of CPU-specific optimisations, I've seen a few algorithm  
+</I>&gt;<i> proposals
+</I>&gt;<i> from the last few years that assume that an algorithm can be scaled  
+</I>&gt;<i> linearly
+</I>&gt;<i> in the number of CPU cores, treating a multicore CPU as some kind  
+</I>&gt;<i> of SIMD
+</I>&gt;<i> engine with all cores operating in lock-step, or at least engaging  
+</I>&gt;<i> in some
+</I>&gt;<i> kind of rendezvous every couple of cycles (for example the recently- 
+</I>&gt;<i> discussed
+</I>&gt;<i> MD6 uses a round of 16 steps, if I read the description correctly)
+</I>
+My impressions from Ron's talk were different.  For multicore  
+systems, the tree structure of the hash allows parallelism at a much  
+higher granularity.  For hardware implementation, the feedback- 
+register structure of the round function means that 16 steps can be  
+computed in parallel.  I didn't get the sense that Ron intends for  
+the second kind of parallelism to be used in software implementations.
+
+Hovav.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

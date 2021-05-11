@@ -1,0 +1,15 @@
+<PRE>Oh, yeah, sorry, your diagram (or whoever drew it) does in fact answer my 
+second question wrt what one needs to send over the wire wrt a simplistic DH 
+profile. Just g, p, and a public key (y).
+
+thanks again,
+
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

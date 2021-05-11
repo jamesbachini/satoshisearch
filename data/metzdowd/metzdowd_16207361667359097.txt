@@ -1,0 +1,24 @@
+<PRE>On Tue, 15 Jan 2008 08:19:11 -0500
+&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+&gt;<i> 
+</I>&gt;<i> The PDF link points to:
+</I>&gt;<i> 
+</I>&gt;<i>         <A HREF="http://online.wsj.com/public/resources/documents/WashWire.pdf">http://online.wsj.com/public/resources/documents/WashWire.pdf</A>
+</I>&gt;<i> 
+</I>&gt;<i> which I'm unable to access at the moment.
+</I>&gt;<i>
+</I>
+I believe the proper URL is
+<A HREF="http://blogs.wsj.com/washwire/2008/01/13/dancing-spychief-wants-to-tap-into-cyberspace/">http://blogs.wsj.com/washwire/2008/01/13/dancing-spychief-wants-to-tap-into-cyberspace/</A>
+(and as best I can tell, it doesn't require a WSJ subscription for
+access).
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

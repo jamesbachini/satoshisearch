@@ -1,0 +1,28 @@
+<PRE>Perry E. Metzger wrote, [on 8/28/2008 10:09 PM]:
+
+&gt;<i> Given this, I think the time for focusing on the privacy implications
+</I>&gt;<i> of payment transponders and fare cars is over. Not carrying a cell
+</I>&gt;<i> phone will not help you avoid tracking when your environment is
+</I>&gt;<i> saturated with cameras. Digital cash toll collection systems will not
+</I>&gt;<i> avoid records being kept of your car's movements when cameras are
+</I>&gt;<i> reading and recording license plates anyway.
+</I>&gt;<i> 
+</I>&gt;<i> Unfortunately, I don't see anything technological that people can
+</I>&gt;<i> reasonably do here to provide more privacy, at least short of everyone
+</I>&gt;<i> going everywhere on foot while wearing a burqa and periodically
+</I>&gt;<i> attempting to confuse the cameras. The solutions, if any exist at all,
+</I>&gt;<i> appear to be non-technical.
+</I>
+Isn't this essentially what David Brin has been saying for several years 
+  now? [1] [2]
+
+Udhay
+
+[1] <A HREF="http://en.wikipedia.org/wiki/The_Transparent_Society">http://en.wikipedia.org/wiki/The_Transparent_Society</A>
+[2] <A HREF="http://www.davidbrin.com/privacyarticles.html">http://www.davidbrin.com/privacyarticles.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

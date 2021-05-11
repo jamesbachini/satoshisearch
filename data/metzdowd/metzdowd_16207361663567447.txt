@@ -1,0 +1,37 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jason at lunkwill.org</A> (Jason) on Wednesday, January 2, 2008 wrote:
+
+&gt;<i>On the other hand, writing an OS that doesn't get infected in the first place 
+</I>&gt;<i>is a fundamentally winning battle: OSes are insecure because people make 
+</I>&gt;<i>mistakes, not because they're fundamentally insecurable.
+</I>
+I fully agree that a better OS would go a long way toward helping in
+the battle.  We even know some techniques for building a better OS. 
+Consider plash &lt;<A HREF="http://sourceforge.net/projects/plash/">http://sourceforge.net/projects/plash/</A>&gt;, and Polaris
+&lt;<A HREF="http://www.hpl.hp.com/techreports/2004/HPL-2004-221.html">http://www.hpl.hp.com/techreports/2004/HPL-2004-221.html</A>&gt;, both of
+which run programs for a user with less than that user's privilege. 
+This technique helps prevent viruses from infecting computers by
+denying them write privileges to system files and most of the user's
+files.
+
+The model that any program a user runs can do anything that user is
+permitted to do is fundamentally broken.  It is the model that all
+current popular OSes support, so in that sense these OSes are
+insecure.  The only mistake users make in many cases is running
+software with bugs such as buffer overruns, where the virus then
+uses the user's privileges to take over their system.  In these
+cases, IMHO, blaming the user is inappropriate.  And in all cases,
+OSes should give the user more support in making sound decisions. 
+See for example: &lt;<A HREF="http://www.skyhunter.com/marcs/granmaRulesPola.html">http://www.skyhunter.com/marcs/granmaRulesPola.html</A>&gt;
+
+Cheers - Bill
+
+-------------------------------------------------------------------------
+Bill Frantz        | The first thing you need when  | Periwinkle
+(408)356-8506      | using a perimeter defense is a | 16345 Englewood Ave
+www.pwpconsult.com | perimeter.                     | Los Gatos, CA 95032
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

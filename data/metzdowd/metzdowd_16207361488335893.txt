@@ -1,0 +1,37 @@
+<PRE>Am Freitag, den 06.07.2007, 02:52 -0400 schrieb silvio:
+&gt;<i> &gt; <A HREF="http://www.spectrum.ieee.org/print/5280">http://www.spectrum.ieee.org/print/5280</A>
+</I>&gt;<i> 
+</I>&gt;<i> So what are the options these days (the article even mentions
+</I>&gt;<i> end-to-end
+</I>&gt;<i> encryption to make such an attack far more difficult)?
+</I>&gt;<i> Every &quot;crypto-phone&quot; offering seems to go stale and disappear after a
+</I>&gt;<i> while...perhaps related to the fact of being ridiculously expensive.
+</I>&gt;<i> Aren't run-of-the-mill cellphones these days powerful enough to use
+</I>&gt;<i> available software like OpenSSL to encrypt voice/datastreams?
+</I>&gt;<i> Again...what are the options for end-to-end cell encryption right now?
+</I>
+For example, I owne an Nokia E70 smartphone running symbian. There is an
+application called fring, which is basically skype for symbian which
+runs on the E70. Fring offers VoIP calls over skype with your mobile
+phone. The data is send over the Cellular network (UMTS or so) or
+Wireless LAN, which is supported by some phones too.
+
+I don't know how much encryption Fring does (and I don't want to
+speculate how secure it is here), but it shows, that you can do VoIP on
+usual high end consumers hardware.
+
+So writing an application, which does basically the same as fring and
+uses extra cryptography should be possible. I have written some java
+code for the E70, and I know that it can do AES, RSA and DH in a
+reasonable time, even if all computations are done in Java.
+
+But this is all just about end-to-end encryption, you could still try to
+backdoor the phones firmware, or bug the phone itself (in hardware).
+Additionally, you need some kind of public key infrastructure, if you
+want to call arbitrary people securely.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

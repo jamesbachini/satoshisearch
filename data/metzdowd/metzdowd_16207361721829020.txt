@@ -1,0 +1,12 @@
+<PRE>Hi Folks,
+
+Does anyone have a review on the upcoming book &quot;Modern Cryptanalysis: Techniques for Advanced Code Breaking&quot; by Christopher Swenson?
+
+Thanks,
+Aram Perez
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

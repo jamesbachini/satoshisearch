@@ -1,0 +1,56 @@
+<PRE>At Wed, 27 Aug 2008 16:10:51 -0400 (EDT),
+Jonathan Katz wrote:
+&gt;<i> 
+</I>&gt;<i> On Wed, 27 Aug 2008, Eric Rescorla wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; At Wed, 27 Aug 2008 17:05:44 +0200,
+</I>&gt;<i> &gt; There are a set of techniques that allow you to encrypt elements of
+</I>&gt;<i> &gt; arbitrary sets back onto that set.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; The original paper on this is:
+</I>&gt;<i> &gt; John Black and Phillip Rogaway. Ciphers with arbitrary ?nite domains. In
+</I>&gt;<i> &gt; CT-RSA, pages 114?130, 2002.
+</I>&gt;<i> 
+</I>&gt;<i> But he probably wants an encryption scheme, not a cipher.
+</I>
+Hmm... I'm not sure I recognize the difference between encryption
+scheme and cipher. Can you elaborate?
+
+
+&gt;<i> Also, correct me if I am wrong, but Black and Rogaway's approach is not 
+</I>&gt;<i> efficient for large domains. But if you use their approach for small 
+</I>&gt;<i> domains then you open yourself up to dictionary attacks.
+</I>
+I suppose it depends what you mean by &quot;small&quot; and &quot;large&quot;.
+
+A lot of the relevant values are things like SSNs, CCNs, etc.
+which fall in the 10-20 digit category, where the Luby-Rackoff
+approach is efficient. As I understand the situation, the
+cycle following approach is efficient as long as the set
+is reasonably close to the L-R block size. 
+
+As far as dictionary attacks go, for any small domain permutation
+you have to worry about table construction attacks. The only 
+defense I know of is randomized encryption which defeats the
+non-expansion requirement.
+
+WRT to the security of the L-R construction, Spies claims that
+I believe that Patarin's 2004 result [0] is relevant here, but
+I'm not qualified to evaluate it. Anyway, the reference I provided
+earlier [1] provides a summary of the claimed security properties
+of L-R + Cycle Following.
+
+-Ekr
+
+[0] Jacques Patarin. Security of random feistel schemes with 5 or more rounds. 
+In Matthew K. Franklin, editor, CRYPTO, volume 3152 of Lecture Notes in 
+Computer Science, pages 106?122. Springer, 2004. 
+
+[1] <A HREF="http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/">http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/</A>
+ffsem/ffsem-spec.pdf
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,93 @@
+<PRE>Calling Hushmail a scam (which seems lower in the continuum than 
+Snake Oil) is pretty strong.  I have been (and am) a Hushmail user 
+for many years and have been impressed by how they go about their 
+business.  They are pretty explicit in explaining how things work, 
+opening the code up for review, using OpenPGP, non US servers and 
+incorporation, etc.
+
+Given the above, I was surprised at what was in the affidavit.  I 
+know there are several assumptions; the most glaring is that the 
+defendants actually used the PGP implementation in the Hushmail 
+system.  The assumed response to a legal request for emails would 
+be the data stored on the server, which should be just PGP and 
+headers. The affidavit does not state that crackers or keyloggers 
+were used or that the passphrase was obtained from the users.  
+Given the rest of the detail, it seems like these important actions 
+would have been listed if they were used.
+
+I wanted to know the collective opinion on how the contents of the 
+emails could then be made known to the DEA without a glaring hole 
+in the implementation or administration of Hushmail, either of 
+which would be important but disappointing to hear about.
+
+rearden
+
+
+On Thu, 01 Nov 2007 16:52:28 -0400 Jon Callas &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jon at callas.org</A>&gt; 
+wrote:
+&gt;<i>On Nov 1, 2007, at 10:49 AM, John Levine wrote:
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i> Since email between hushmail accounts is generally PGPed.  
+</I>&gt;<i>(That is
+</I>&gt;&gt;&gt;<i> the point, right?)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Hushmail is actually kind of a scam.  In its normal 
+</I>&gt;<i>configuration,
+</I>&gt;&gt;<i> it's in effect just webmail with an HTTPS connection and a long
+</I>&gt;&gt;<i> password.  It will generate and verify PGP signatures and 
+</I>&gt;<i>encryption
+</I>&gt;&gt;<i> for mail it sends and receives, but they generate and maintain 
+</I>&gt;<i>their
+</I>&gt;&gt;<i> users' PGP keys.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> There's a Java applet that's supposed to do end to end 
+</I>&gt;<i>encryption, but
+</I>&gt;&gt;<i> since it's with the same key that Hushmail knows, what's the 
+</I>&gt;<i>point?
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>I'm sorry, but that's a slur. Hushmail is not a scam. They do a 
+</I>&gt;<i>very  
+</I>&gt;<i>good job of explaining what they do, what they cannot do, and 
+</I>&gt;<i>against  
+</I>&gt;<i>which threats they protect. You may quibble all you want with its  
+</I>&gt;<i>
+</I>&gt;<i>*effectiveness* but they are not a scam. A scam is being 
+</I>&gt;<i>dishonest.
+</I>&gt;<i>
+</I>&gt;<i>You also mischaracterize the Hushmail system. The &quot;classic&quot; 
+</I>&gt;<i>Hushmail  
+</I>&gt;<i>does not generate the keys, and while it holds them, they're  
+</I>&gt;<i>encrypted. The secrets Hushmail holds are as secure as the end 
+</I>&gt;<i>user's  
+</I>&gt;<i>operational security.
+</I>&gt;<i>
+</I>&gt;<i>I know what you're going to say next. People pick bad passphrases, 
+</I>&gt;<i> 
+</I>&gt;<i>etc. Yes, you're right. That is not being a scam.
+</I>&gt;<i>
+</I>&gt;<i>They have another system that is more web-service oriented, and 
+</I>&gt;<i>they  
+</I>&gt;<i>explain it on their web site far better than I could. It has 
+</I>&gt;<i>further  
+</I>&gt;<i>limitations in security but with increased usability. It is also 
+</I>&gt;<i>not  
+</I>&gt;<i>a scam.
+</I>&gt;<i>
+</I>&gt;<i>	Jon
+</I>&gt;<i>
+</I>&gt;<i>-------------------------------------------------------------------
+</I>&gt;<i>--
+</I>&gt;<i>The Cryptography Mailing List
+</I>&gt;<i>Unsubscribe by sending &quot;unsubscribe cryptography&quot; to 
+</I>&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+--
+Save hundreds on Technical School - Click here.
+<A HREF="http://tagline.hushmail.com/fc/Ioyw6h4fRTdts2rXzvypA08i4x4ZY17uNW0IOfxYNnLUwGHrYCe6DW/">http://tagline.hushmail.com/fc/Ioyw6h4fRTdts2rXzvypA08i4x4ZY17uNW0IOfxYNnLUwGHrYCe6DW/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

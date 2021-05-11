@@ -1,0 +1,29 @@
+<PRE>
+On Wed, 2 Jan 2008, Steven M. Bellovin wrote:
+&gt;<i> Cryptography provides authentication and integrity.  It does not
+</I>&gt;<i> provide authorization, nor does it provide protection against bugs.
+</I>&gt;<i> Your suggested approach -- better OS and better crypto -- is exactly
+</I>&gt;<i> what's failed for the last 25 years.
+</I>
+You're painting with too broad a brush.  Creating artificial life failed; 
+security just fails to get adopted.
+
+Authentication is exactly what I need in the case of spam/phishing: did that 
+really come from my bank?  Did it come from someone I've interacted with 
+before?  Some people sign their messages automatically, some people's mail 
+readers automatically check.  It works great for those who put in the effort.
+
+And you gave examples of OS techniques which mitigate risks in buggy apps. 
+Privilege escalation makes bad malware into horrible malware.
+
+So good OS and crypto are important, and we've done good work in learning how 
+to build them correctly.  You're right that they've failed in the marketplace, 
+but economics and psychology were the motivating factors.  We just need to 
+send our grad students over to those departments to figure out how to overcome 
+those hurdles.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

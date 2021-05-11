@@ -1,0 +1,33 @@
+<PRE>
+On Oct 4, 2007, at 12:37 PM, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A>  
+wrote:
+
+&gt;<i> * PGP Signed by an unknown key
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://it.slashdot.org/article.pl?sid=07/10/04/1639224&amp;from=rss">http://it.slashdot.org/article.pl?sid=07/10/04/1639224&amp;from=rss</A>
+</I>&gt;<i>
+</I>&gt;<i> Interesting quote:
+</I>&gt;<i>
+</I>&gt;<i> Jon Callas, CTO and CSO of PGP Corp., responded that this [previously
+</I>&gt;<i> undocumented] feature was required by unnamed customers and that
+</I>&gt;<i> competing products have similar functionality.
+</I>
+Except that the guy who posted it was wrong on all of his complaints.  
+It's plenty documented. The &quot;What's New?&quot; section in the manual  
+documents it, the release notes document it and others.
+
+We're examining how we document things. If you put in the release  
+notes for a product and the &quot;What's New&quot; section a description of a  
+feature and someone who is a security researcher can't find it there,  
+it calls into question how one organizes one's documents, of course.
+
+If anyone has any questions, I'm happy to answer them.
+
+	Jon
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

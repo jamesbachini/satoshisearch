@@ -1,0 +1,58 @@
+<PRE>On Wed, 27 Aug 2008, Eric Rescorla wrote:
+
+&gt;<i> At Wed, 27 Aug 2008 17:05:44 +0200,
+</I>&gt;<i> Philipp G&#252;hring wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Hi,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I am searching for symmetric encryption algorithms for decimal strings.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Let's say we have various 40-digit decimal numbers:
+</I>&gt;&gt;<i> 2349823966232362361233845734628834823823
+</I>&gt;&gt;<i> 3250920019325023523623692235235728239462
+</I>&gt;&gt;<i> 0198230198519248209721383748374928601923
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> As far as I calculated, a decimal has the equivalent of about 3,3219
+</I>&gt;&gt;<i> bits, so with 40 digits, we have about 132,877 bits.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Now I would like to encrypt those numbers in a way that the result is a
+</I>&gt;&gt;<i> decimal number again (that's one of the basic rules of symmetric
+</I>&gt;&gt;<i> encryption algorithms as far as I remember).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Since the 132,877 bits is similar to 128 bit encryption (like eg. AES),
+</I>&gt;&gt;<i> I would like to use an algorithm with a somewhat comparable strength to AES.
+</I>&gt;&gt;<i> But the problem is that I have 132,877 bits, not 128 bits. And I can't
+</I>&gt;&gt;<i> cut it off or enhance it, since the result has to be a 40 digit decimal
+</I>&gt;&gt;<i> number again.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Does anyone know a an algorithm that has reasonable strength and is able
+</I>&gt;&gt;<i> to operate on non-binary data? Preferrably on any chosen number-base?
+</I>&gt;<i>
+</I>&gt;<i> There are a set of techniques that allow you to encrypt elements of
+</I>&gt;<i> arbitrary sets back onto that set.
+</I>&gt;<i>
+</I>&gt;<i> The original paper on this is:
+</I>&gt;<i> John Black and Phillip Rogaway. Ciphers with arbitrary ?nite domains. In
+</I>&gt;<i> CT-RSA, pages 114?130, 2002.
+</I>
+But he probably wants an encryption scheme, not a cipher.
+
+Also, correct me if I am wrong, but Black and Rogaway's approach is not 
+efficient for large domains. But if you use their approach for small 
+domains then you open yourself up to dictionary attacks.
+
+&gt;<i> For a modern proposal to make this a NIST mode, see:
+</I>&gt;<i> <A HREF="http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/ffsem/ffsem-spec.pdf">http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/ffsem/ffsem-spec.pdf</A>
+</I>&gt;<i>
+</I>&gt;<i> -Ekr
+</I>&gt;<i>
+</I>&gt;<i> Full Disclosure: Terence Spies, the author of the FFSEM proposal,
+</I>&gt;<i> works for Voltage, Voltage has a product based on this technology.
+</I>&gt;<i> and I'm on Voltage's TAB and have done some work for them.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I></PRE>

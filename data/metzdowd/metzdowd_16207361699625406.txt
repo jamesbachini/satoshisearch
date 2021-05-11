@@ -1,0 +1,40 @@
+<PRE>
+Ian G &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+&gt;<i> This is what Guus was getting at:
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> - We needed to tunnel data over UDP, with UDP semantics.
+</I>&gt;<i>   SSL requires a reliable stream. Therefore, we had to
+</I>&gt;<i>   use something other that SSL to tunnel data.
+</I>
+The version of SSL (which is officially called TLS) that does this is
+called &quot;DTLS&quot;. It has already existed for some time now.
+
+&gt;<i> To put it in more fundamental terms, TLS assumes that what you want is
+</I>&gt;<i> a stream.  If you want packets, then TLS is a millstone around your
+</I>&gt;<i> neck.
+</I>
+That's why you use &quot;Datagram TLS&quot;, aka &quot;TLS if your app needs UDP
+instead of TCP&quot;.
+
+If you want to learn more about DTLS, this Wikipedia page:
+<A HREF="http://en.wikipedia.org/wiki/DTLS">http://en.wikipedia.org/wiki/DTLS</A>
+points at the RFC, which is here:
+<A HREF="http://tools.ietf.org/html/rfc4347">http://tools.ietf.org/html/rfc4347</A>
+
+OpenSSL has had DTLS support for a while, so there is unencumbered
+code for you to roll into your app for the purpose any time you like.
+
+&gt;<i> Advising TLS for a packet delivery requirement is simply &quot;wrong.&quot;
+</I>
+DTLS is there for packet delivery.
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

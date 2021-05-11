@@ -1,0 +1,53 @@
+<PRE>I've been having this problem for years (my mother's maiden name is,
+indeed, four characters long).  It's often rejected as too short, yet
+I'm forced to enter it.  I do the workaround of entering it twice, but
+then have to remember which sites I applied this hack for.
+
+It's a typical dumb programmer mistake.  Data (password) vs. information
+(mother's maiden name).  Character length contributes entropy to one,
+but not to the other.  But on an even more fundamental level, it also
+indicates a lack of attention to the input data, which could highlight
+vulnerabilities in other areas too.
+
+&lt;rant&gt;
+
+I'm probably preaching to the choir here, and maybe it's a sign of
+&quot;grumpy old guy syndrome&quot;, but the average programmer seems to me to be
+getting dumber every year.  I personally blame University courses who've
+so divorced software development from any understanding of the
+underlying OS, hardware or information theory, that we've got a bunch of
+people who think everyone programs in Java or C#, Microsoft is the only
+OS vendor there is, and if your program runs slowly, you just needs more
+memory.
+
+&lt;/rant&gt;
+
+Ian.
+
+-----Original Message-----
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>
+[mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] On Behalf Of Leichter, Jerry
+Sent: Tuesday, 8 January 2008 4:14 AM
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+Subject: Foibles of user &quot;security&quot; questions
+
+Reported on Computerworld recently:  To &quot;improve security&quot;, a system was
+modified to ask one of a set of fixed-form questions after the password
+was entered.  Users had to provide the answers up front to enroll.  One
+question:  Mother's maiden name.  User provides the 4-character answer.
+System refuses to accept it:  Answer must have at least 6 characters.
+
+I can just see the day when someone's fingerprint is rejected as
+&quot;insufficiently complex&quot;.
+ 							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

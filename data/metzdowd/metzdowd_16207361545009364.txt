@@ -1,0 +1,20 @@
+<PRE>On 07 September 2007 21:28, Leichter, Jerry wrote:
+
+&gt;<i> Grow up.  *If* the drive vendor keeps the mechanism secret, you have
+</I>&gt;<i> cause for complaint.  But can you name a drive vendor who's done
+</I>&gt;<i> anything like that in years?  
+</I>
+  All DVD drive manufacturers.  That's why nobody could write a driver for
+Linux until CSS was cracked, remember?
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

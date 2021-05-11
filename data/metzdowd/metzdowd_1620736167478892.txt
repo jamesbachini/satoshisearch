@@ -1,0 +1,44 @@
+<PRE>
+Ian G &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+&gt;<i> There is a philosophical problem with suggesting an automated protocol
+</I>&gt;<i> method for reporting fraud, in that one might be better off ... fixing
+</I>&gt;<i> the underlying fraud.
+</I>
+Lets say you're a big company like Amazon or someone similar. You're
+pretty sure someone is trying to use a stolen credit card. How do you
+&quot;fix&quot; the underlying fraud? Last I checked, Amazon had no police
+force. Lets say that the miscreants are in any one of several Eastern
+European countries. Even reporting the fraud to the police in the
+originating country won't &quot;fix&quot; it because the foreign police will do
+absolutely nothing.
+
+Perhaps you argue that the credit card system itself is flawed. I
+agree, but as a company like Amazon you're not in a position to fix
+that, either.
+
+The point of providing a feedback channel is so the issuing bank can
+be alerted to an attempted fraud, call the customer, say &quot;hi, did you
+try to buy a container consumer electronics and have it shipped to
+Belarus&quot;, hear back &quot;no&quot;, and issue a new credit card. This is done
+right now when the issuing bank notices suspicious activity, but there
+is a hole in the system in which a merchant might refuse a suspicious
+charge and yet have no way of telling the issuing bank about it.
+
+The call-the-customer-and-reissue mechanism is a mediocre solution to
+the fraud problem, but it is the one we have these days. As it stands,
+a merchant can't easily tell the issuing bank that it should have a
+look to see if a card is being used fraudulently, so the merchant can
+know that something weird is happening but the issuing bank can remain
+ignorant. This is not a good situation. That is why a feedback path
+would be of use.
+
+I had long assumed such a feedback path already existed, and I was
+rather shocked to discover it did not.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

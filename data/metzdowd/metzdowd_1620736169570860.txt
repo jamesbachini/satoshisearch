@@ -1,0 +1,63 @@
+<PRE>
+Hi,
+
+I'm one of the coauthors of the paper and I'd love to chime in.
+
+Perry E. Metzger wrote:
+&gt;<i> &quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; writes:
+</I>&gt;&gt;<i> This methods requires the computer to be &quot;recently&quot; turned-on and unlocked.
+</I>&gt;<i> 
+</I>&gt;<i> No, it just requires that the computer was recently turned on. It need
+</I>&gt;<i> not have been &quot;unlocked&quot; -- it jut needed to have keying material in RAM.
+</I>&gt;<i> 
+</I>
+This is correct.
+
+&gt;&gt;<i> So the only way it would work is that the victim unlocks the disks
+</I>&gt;&gt;<i> i.e. enter their preboot password and turn off the computer and
+</I>&gt;&gt;<i> &quot;immediately&quot; handover (conveniently) the computer to the attacker so
+</I>&gt;&gt;<i> that the attacker remove the DRAM chip and store in nitrogen.
+</I>&gt;<i> 
+</I>&gt;<i> LN2 is pretty trivial to get your hands on, and will remain happy and
+</I>&gt;<i> liquid in an ordinary thermos for quite some hours or longer. However,
+</I>&gt;<i> the authors point out that canned air works fine, too.
+</I>&gt;<i> 
+</I>
+Yes, this is also correct. Canned air is often found in server rooms. An
+attacker might not even need to bring anything with them to leverage
+this attack.
+
+&gt;&gt;<i> And the attacker has to do all this in less then 2 seconds.... :)
+</I>&gt;<i> 
+</I>&gt;<i> No, they may even have minutes depending on the RAM you have.
+</I>&gt;<i> 
+</I>
+This is an important point. Without cooling, it's not merely a matter of
+a second or less. This is a common misconception that even in light of
+new evidence is difficult to believe. I think reading our paper and
+understanding our graphs should help with this.
+
+&gt;&gt;<i> Or am I missing something?
+</I>&gt;<i> 
+</I>&gt;<i> People readily assume that rebooting or turning off a computer wipes
+</I>&gt;<i> RAM. It doesn't. This is just more evidence that it is bad
+</I>&gt;<i> to assume that the contents of RAM are gone even if you turn off the
+</I>&gt;<i> machine.
+</I>
+Yes. General purpose memory isn't a safe place to store keying material
+and software countermeasures are a step behind. Even with obfuscated key
+schedules or strange byte ordering, the physical properties of the
+memory chips are going to be difficult to overcome.
+
+As our paper states: &quot;There is no easy solution to this problem.&quot;
+
+I'm happy to field questions if this is the proper forum.
+
+Best,
+Jacob Appelbaum
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

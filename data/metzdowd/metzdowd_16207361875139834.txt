@@ -1,0 +1,27 @@
+<PRE>The Codinghorror blog has a good writeup on the level of sophistication of UI
+spoofing being used in phishing attacks, specifically how a web search for
+lilies leads to a pretty convincing social-engineering attack designed to get
+users to install their malware:
+
+  <A HREF="http://www.codinghorror.com/blog/archives/001164.html">http://www.codinghorror.com/blog/archives/001164.html</A>
+
+  What I'm more concerned about here is how well the user interface was
+  spoofed. The browser FUI [fake UI] was convincing enough to even make me --
+  possibly the world's most jaded and cynical Windows user -- do a bit of a
+  double- take. How do you protect naive users from cleverly designed FUI
+  exploits like this one? Can you imagine your mother doing a web search on
+  flowers -- flowers, for God's sake -- clicking on the search results to a
+  totally legitimate website, and correctly navigating the resulting maze of
+  fake UI, spurious javascript alerts, and download dialogs?
+
+To pre-empt the inevitable discussions of Noscript and similar measures,
+they're all well and good but the very people who need them the most are the
+ones who're least likely to have them installed.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,57 @@
+<PRE>
+
+On Wed, 12 Dec 2007, Thierry Moreau wrote:
+
+|<i> Date: Wed, 12 Dec 2007 16:24:43 -0500
+</I>|<i> From: Thierry Moreau &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>&gt;
+</I>|<i> To: &quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt;
+</I>|<i> Cc: Peter Gutmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A>&gt;, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>|<i> Subject: Re: More on in-memory zeroisation
+</I>|<i> 
+</I>|<i> /************ testf.c ************/
+</I>|<i> #include &lt;stdio.h&gt;
+</I>|<i> #include &lt;string.h&gt;
+</I>|<i> 
+</I>|<i> typedef void *(*fpt_t)(void *, int, size_t);
+</I>|<i> 
+</I>|<i> void f(fpt_t arg)
+</I>|<i> {
+</I>|<i> 	if (memset==arg)
+</I>|<i> 		printf(&quot;Hello world!\n&quot;);
+</I>|<i> }
+</I>|<i> 
+</I>|<i> /************ test.c ************/
+</I>|<i> #include &lt;stdlib.h&gt;
+</I>|<i> #include &lt;string.h&gt;
+</I>|<i> 
+</I>|<i> typedef void *(*fpt_t)(void *, int, size_t);
+</I>|<i> 
+</I>|<i> extern void f(fpt_t arg);
+</I>|<i> 
+</I>|<i> int main(int argc, char *argv[])
+</I>|<i> {
+</I>|<i> 	f(memset);
+</I>|<i> 	return EXIT_SUCCESS;
+</I>|<i> }
+</I>|<i> 
+</I>|<i> /*   I don't want to argue too theoretically.
+</I>|<i> 
+</I>|<i>             - Thierry Moreau */
+</I>I'm not sure what you are trying to prove here.  Yes, I believe that
+in most implementations, this will print &quot;Hello world\n&quot;.  Is it,
+however, a strictly conforming program (I think that's the right
+standardese) - i.e., are the results guaranteed to be the same on
+all conforming implementations?  I think you'll find it difficult
+to prove that.
+
+BTW, it *might* not even be true in practice if you build your program
+as multiple shared libraries!
+							-- Jerry
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE>Leichter, Jerry wrote:
+&gt;<i> While analysis of the actual silicon will clearly have to be part of
+</I>&gt;<i> any solution, it's going to be much harder than that:
+</I>&gt;<i>
+</I>&gt;<i> 	1.  Critical circuitry will likely be &quot;tamper-resistant&quot;.
+</I>&gt;<i> 	    Tamper-resistance techniques make it hard to see what's
+</I>&gt;<i> 	    there, too.  So, paradoxically, the very mechanisms used
+</I>&gt;<i> 	    to protect circuitry against one attack make it more
+</I>&gt;<i> 	    vulnerable to another.  What this highlights, perhaps,
+</I>&gt;<i> 	    is the need for &quot;transparent&quot; tamper-resistance techniques,
+</I>&gt;<i> 	    which prevent tampering but don't interfere with inspec-
+</I>&gt;<i> 	    tion.
+</I>&gt;<i>    
+</I>
+traditional approach is to make the compromise more expensive that any
+reasonable expectation of benefit (security proportional to risk).
+
+helping bracket expected fraud ROI is an infrastructure that can (quickly)
+invalidate (identified) compromised units. there has been some issues
+with these kinds of infrastructures since they have also been identified
+with being able to support DRM (&amp; other kinds of anti-piracy) efforts.
+
+disclaimer: we actually have done some number of patents (that are 
+assigned)
+in this area
+<A HREF="http://www.garlic.com/~lynn/aadssummary.htm">http://www.garlic.com/~lynn/aadssummary.htm</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

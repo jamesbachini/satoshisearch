@@ -1,0 +1,43 @@
+<PRE>----- &quot;Jonathan Katz&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jkatz at cs.umd.edu</A>&gt; wrote:
+
+ &gt; But he probably wants an encryption scheme, not a cipher.
+
+Jon, I'm not sure I understand what you mean.
+
+If I am reading his message correctly, the original poster seems
+to be asking for a format-preserving encryption over a domain
+with 10^40 elements.  Format-preserving, it seems to me, implies
+[a family of keyed] functions that are one-to-one and
+deterministic.  In other words, the best security we can hope for
+is a PRP on that domain, and this is what B-R gives, starting
+from a PRP over a &quot;somewhat larger&quot; domain.
+
+In this setting, what is the difference between an encryption
+scheme and a cipher?
+
+ &gt; Also, correct me if I am wrong, but Black and Rogaway's
+ &gt; approach is not efficient for large domains. But if you use
+ &gt; their approach for small domains then you open yourself up to
+ &gt; dictionary attacks.
+
+I think the dependency depends on the amount by which the domain
+of the constructed PRP is smaller than the domain of the starting
+PRP.  A 133-bit B-R would indeed be inefficient to construct from
+a 256-bit block cipher like Rijndael, and one would need a
+different starting point; but these could be constructed using a
+Feistel of appropriate size.
+
+Is the dictionary attack problem any more severe than for any
+other PRP over a small domain?  The best one can hope for is a
+security guarantee for a number of queries approaching the size
+of the domain -- or to ensure that in practical deployment access
+to the encryption and decryption functionality is constrained.
+
+Yours --
+Hovav.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

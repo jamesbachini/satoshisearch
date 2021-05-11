@@ -1,0 +1,105 @@
+<PRE>I quote from
+  <A HREF="http://www.washingtonpost.com/wp-dyn/content/article/2008/02/06/AR2008020604763_pf.html">http://www.washingtonpost.com/wp-dyn/content/article/2008/02/06/AR2008020604763_pf.html</A>
+  By Ellen Nakashima
+  Washington Post Staff Writer  
+  Thursday, February 7, 2008; A01
+
+&gt;<i> The seizure of electronics at U.S. borders has prompted protests from
+</I>&gt;<i> travelers who say they now weigh the risk of traveling with sensitive
+</I>&gt;<i> or personal information on their laptops, cameras or cellphones. In
+</I>&gt;<i> some cases, companies have altered their policies to require
+</I>&gt;<i> employees to safeguard corporate secrets by clearing laptop hard
+</I>&gt;<i> drives before international travel.
+</I>&gt;<i> 
+</I>&gt;<i> Today, the Electronic Frontier Foundation and Asian Law Caucus, two
+</I>&gt;<i> civil liberties groups in San Francisco, plan to file a lawsuit to
+</I>&gt;<i> force the government to disclose its policies on border searches,
+</I>&gt;<i> including which rules govern the seizing and copying of the contents
+</I>&gt;<i> of electronic devices.
+</I>
+=============
+
+Most of the underlying issue is not new;  a Joe Sharkey article
+about customs seizures of laptops appeared in the NY Times back 
+on October 24, 2006.  And it has been discussed on this list.
+(The news &quot;hook&quot; here is the filing of the lawsuit.)
+
+One wrinkle that was not previously reported is the bit about
+customs officers demanding passwords.  That is something I
+have thought about, off and on, and the more I think about it 
+the more worrisome it seems.
+
+A) Here's one particularly nasty scenario:  Long ago, the traveler
+experimented with using an encrypting filesystem, perhaps the 
+dm-crypt feature of Linux.  However, he decided it wasn't worth 
+the trouble and forgot about it.  This includes forgetting the 
+passphrase.  Now he's at the border, and customs is demanding 
+the passphrase.   
+ -- Just tell us the password.
+ -- I forgot.
+ -- No you didn't.
+ -- Yes I did.
+ -- You're lying.
+ -- No I'm not.
+ -- Yes you are.
+ -- No I'm not.
+ -- Just tell us the password.
+ -- et cetera.
+
+B) Another scenario:  Your employer adopts a policy requiring
+you to use a &quot;blank&quot; laptop when traveling, as mentioned in 
+the news article.  They also require you to use an encrypting
+filesystem, even when not traveling.  They discover that the
+easiest way to &quot;blankify&quot; your laptop is to overwrite the IVs
+of the encrypting filesystem.  Now any and all passphrases
+will fail in the same way:  they all look like &quot;wrong&quot; pass-
+phrases.  Now are back to scenario (A), because customs might 
+assume you're just lying about the passphrase.
+
+C) Another scenario:  Customs confiscates the laptop.  They 
+say that you won't get it back unless/until you give up the 
+passphrase.
+
+D) Tangential observation:  If they were being reasonable, they 
+would confiscate at most the disk drive, and let you keep the 
+rest of the hardware.  But they're under no obligation to be 
+reasonable.
+
+E) Remark:  The fundamental problem underlying this whole 
+discussion is that the traveler is in a position where he has 
+to prove his innocence ... which may not be possible, even if 
+he is innocent.
+
+The doctrine of innocent-until-proven-guilty does *not* apply
+to customs searches.  Ditto for the doctrine of requiring
+probable cause, search warrants, et cetera.
+
+F) A good way (not the easiest way) to &quot;blankify&quot; a laptop
+is to remove the hard disk and replace it with a brand-new
+obviously-innocuous disk.  (Small, slow disks are very cheap.)
+When you get home from your travels, you can undo the switch.
+
+G) It is fun to think about a steganographic filesystem, with
+the property that if you mount it with one passphrase you see
+one set of files, while if you mount it with another passphrase
+you see another set of files.  
+
+The point here is that you give up one passphrase, they never
+know if there is a second;  if you give up two passphrases,
+they never know if there is a third, et cetera.
+
+Note that we are talking about cryptologically-strong stego
+here (as opposed to weak stego which falls into the category
+of security-by-obscurity).
+
+&gt;<i>From an information-theory point of view this is perfectly 
+</I>straightforward;  solutions have been worked out in connection 
+with code division multiplexing.  However, I reckon it would
+have serious performance problems when applied to a hard disk.  
+If anybody knows how to do this in practice, please speak up!
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

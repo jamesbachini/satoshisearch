@@ -1,0 +1,53 @@
+<PRE>
+<A HREF="http://www.theregister.co.uk/2008/10/24/spanish_enigmas/">http://www.theregister.co.uk/2008/10/24/spanish_enigmas/</A>
+
+Spanish discover cache of 26 Enigma machines
+
+Franco's 'secret weapon' tracked to army HQ
+
+By Lester Haines 
+
+Posted in Science, 24th October 2008 10:03 GMT
+
+Spanish newspaper El Pa&#237;s last week tracked down 26 examples of Franco's
+&quot;secret weapon&quot; against Republican forces in the country's civil war - a
+cache of perfectly-preserved Enigma machines hidden for years in a &quot;gloomy
+office&quot; in the army's main headquarters in Madrid.
+
+Nationalist forces led by Franco acquired their first ten Enigma machines
+from Germany in 1936. While Hitler &quot;had already decided to offer Franco his
+full support&quot; in the Spanish civil war, this didn't actually extend to the
+full-fat military versions of Enigma, and his Iberian ally had to make do
+with the &quot;vastly inferior&quot; commercial &quot;D&quot; model.
+
+The German High Command was apparently concerned that careless Spaniards
+might let the Republicans get their hands on an Enigma. Indeed, even
+Germany's Condor Legion - dispatched to Spain to aid the Nationalist cause -
+also reportedly used commercial Enigmas in the field.
+
+Nonetheless, the Republicans were never able to decipher Enigma
+communications between Franco and his top brass, and the machines' success
+led to further acquisitions. Commander Antonio Sarmiento, charged with
+training operators in Franco's Salamanca headquarters, enthusiastically
+reported in 1936: ?To give some idea of the level of security these machines
+offer, it's suffice to say that the number of possible combinations is an
+astounding 1,252,962,387,456.?
+
+The total number of machines eventually bought by Spain is unknown, although
+estimates vary from 30 to 50. They were not withdrawn from service until the
+early 1950s, which offers the rather agreeable possibility that the British
+were able to read the Spanish dictatorship's military communications while
+Franco remained blissfully unaware that his Nazi sponsors' device had been
+laid bare by Bletchley Park years before. 
+
+Bootnote
+
+El Reg is, of course, supporting Bletchley Park and the National Museum of
+Computing with our splendid Enigma t-shirt. Get it before Cash'n'Carrion's
+free shipping offer ends on 31 October.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

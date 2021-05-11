@@ -1,0 +1,97 @@
+<PRE>John Denker wrote:
+&gt;<i> We need to talk about threat models:
+</I>&gt;<i>   a) The purveyors of the system in question don't have any clue
+</I>&gt;<i>    as to what their threat model is.  I conjecture that they might
+</I>&gt;<i>    be motivated by the non-apt analogies itemized above.
+</I>&gt;<i>   b) In the system in question, there are myriad reasons why Joe
+</I>&gt;<i>    would need to log in.  If Joe wanted to do something nefarious,
+</I>&gt;<i>    it would take him less than a second to come up with a seemingly
+</I>&gt;<i>    non-nefarious pretext.  When the approver approves Joe's login,
+</I>&gt;<i>    the approver has no idea what the consequences of that approval
+</I>&gt;<i>    will be.  The two-person login requires the approver to be
+</I>&gt;<i>    present at login time, but does not require the approver to
+</I>&gt;<i>    remain present, let alone take responsibility what Joe does 
+</I>&gt;<i>    after login.
+</I>&gt;<i>   c) The only threat model I can come up with is the case where
+</I>&gt;<i>    Joe's password has been compromised, and nobody else's has.
+</I>&gt;<i>    Two-person login would provide an extra layer of security
+</I>&gt;<i>    in this case.  This threat is real, but there are other ways
+</I>&gt;<i>    of dealing with this threat (e.g. two-factor authentication)
+</I>&gt;<i>    ... so this seems like quite a lame justification for the
+</I>&gt;<i>    two-person login.
+</I>&gt;<i>   d) Or have I overlooked something?
+</I>
+
+OK, putting on the devil's advocate hat &amp; cape here...
+
+Consider the latest case with SocGen where a trader goes 
+rogue (so the news has it at least).  One might argue that 
+the system you are talking about provides a control over that.
+
+
+&gt;&gt;<i>From the foregoing, you might conclude that the two-person login
+</I>&gt;<i> system is worthless security theater ... but harmless security
+</I>&gt;<i> theater, and therefore not worth worrying about either way.
+</I>
+
+There is the possibility of compliance controls.  In audits 
+and sarbanes-oxley and other things there is frequent talk 
+of dual control and 4 eyes principle.  Now, it could be that 
+these points can be &quot;easily&quot; covered by employing a system 
+that &quot;enforces&quot; this.  Often, auditors will be convinced if 
+they can see something in place, and not feel the need to 
+audit the system itself.  The auditor's job is done when he 
+can safely say &quot;management has put in place procedures...&quot; 
+and the system you mention meets that protocol in words at 
+least.
+
+
+&gt;<i> But the plot thickens.  The purveyors have implemented two-person
+</I>&gt;<i> login in a way that manifestly /reduces/ security.  Details 
+</I>&gt;<i> available on request.
+</I>&gt;<i> 
+</I>&gt;<i> So now I throw it open for discussion.  Is there any significant
+</I>&gt;<i> value in two-person login?  That is, can you identify any threat 
+</I>&gt;<i> that is alleviated by two-person login, that is not more wisely 
+</I>&gt;<i> alleviated in some other way?
+</I>
+
+It might be useful for management to decree that all juniors 
+must work with a senior watching over.  Also e.g.,  critical 
+systems where two systems administrators work together.  In 
+linux there is a program called screen(1) that allows two 
+sysadms to share the same screen and type together.  This 
+has a lot of value when &quot;two minds are better than one.&quot; 
+But, yes, this is not quite what you are describing.
+
+Also, it might be a control to enforce other procedures.  If 
+the sysadm is given the controls to some departmental 
+system, then instead of just waltzing in and playing with 
+it, he has to ask the non-techie boss, who then asks what 
+the story is.  This way she can know that the appropriate 
+procedures are in place, such as notification to users.
+
+It's far easier to figure out what the sysadm is up to if he 
+is forced to have a conversation every time he wants to log 
+in...  this addresses your point b above, in that it now 
+clearly labels any disaster as something the sysadm should 
+have told the boss about before, instead of leaving it in 
+the murky area of &quot;of course I intended to scrub the disks, 
+that's my job!&quot;
+
+
+&gt;<i> If so, is there any advice you can give on how to do this right?  
+</I>&gt;<i> Any DOs and DON&quot;Ts?
+</I>
+
+I'd expect a proper physical token to be the manager's login 
+mechanism.  If it was a password he typed in there would be 
+too much incentive to share the password.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

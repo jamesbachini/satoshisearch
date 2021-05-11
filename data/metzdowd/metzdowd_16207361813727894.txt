@@ -1,0 +1,30 @@
+<PRE>Allen wrote:
+&gt;<i> Very. The (I hate to use this term for something so pathetic) password 
+</I>&gt;<i> for the file is 6 (yes, six) numeric characters!
+</I>&gt;<i> 
+</I>&gt;<i> My 6 year old K6-II can crack this in less than one minute as there are 
+</I>&gt;<i> only 1.11*10^6 possible.
+</I>
+Not so fast. Bank PINs are usually just 4 numeric characters long and 
+yet they are considered /safe/ even for web access to the account 
+(where a physical card is not required).
+
+Why? Because after 4 tries the access is blocked for your IP number 
+(in some cases after 3 tries).
+
+The question is not only how many combinations you have but also how 
+much time you need to try enough combinations so that you can succeed.
+
+I'm not defending the designers of that email system, as I do not know 
+any specifics -- I'm just pointing out that what you mention is not 
+necessarily a problem and may be even safer than secure online banking 
+today.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

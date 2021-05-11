@@ -1,0 +1,41 @@
+<PRE>[Moderator's note: &quot;Top posting considered uncool.&quot; --Perry]
+
+While programmers or business=people could be ill-informed, Allen,
+I think the greater danger is that IT auditors do not know enough
+about cryptography, and consequently pass unsafe business processes
+and/or software as being secure.
+
+This is the reason why we in the OASIS Enterprise Key Management
+Infrastructure Technical Committee have made educating IT Auditors
+and providing them guidelines on how to audit symmetric key-management
+infrastructures, one of the four (4) primary goals of the TC.  While
+the technology is well understood by most people on this forum, until
+we educate the gate-keepers, we have failed in our jobs to secure IT
+infrastructure.
+
+Arshad Noor
+StrongAuth, Inc.
+
+Allen wrote:
+&gt;<i> Hi gang,
+</I>&gt;<i> 
+</I>&gt;<i> All quiet on the cryptography front lately, I see. However, that does 
+</I>&gt;<i> not prevent practices that *appear* like protection but are not even as 
+</I>&gt;<i> strong as wet toilet paper.
+</I>&gt;<i> 
+</I>&gt;<i> I had to order a medical device today and they need a signed 
+</I>&gt;<i> authorization for payment by my insurance carrier. No biggie. So they 
+</I>&gt;<i> ask how I want it set to me and I said via e-mail. Okay. /Then/ they 
+</I>&gt;<i> said it was an encrypted file and I thought, cool. How wrong could I be?
+</I>&gt;<i> 
+</I>&gt;<i> Very. The (I hate to use this term for something so pathetic) password 
+</I>&gt;<i> for the file is 6 (yes, six) numeric characters!
+</I>&gt;<i> 
+</I>&gt;<i> My 6 year old K6-II can crack this in less than one minute as there are 
+</I>&gt;<i> only 1.11*10^6 possible.
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

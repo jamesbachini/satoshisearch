@@ -1,0 +1,47 @@
+<PRE>[Moderator's note: I think Allen's math is rather seriously off here,
+but I'll let other people address that --Perry]
+
+Hi gang,
+
+Back in the old days when there were public stacks in the San 
+Francisco Library I used to love to just wander and see what came 
+to hand. In the early days of the net there was Archie and Gopher 
+and they were great fun. The search engines took some of the 
+randomness out of that kind of stack searching so I found Peter's 
+reference to <A HREF="http://eprint.iacr.org/2008/166">http://eprint.iacr.org/2008/166</A> very nostalgic and 
+spent a bit of time wandering around to find, by chance, 
+<A HREF="http://eprint.iacr.org/2008/147">http://eprint.iacr.org/2008/147</A> where they are talking about 
+cracking A5/1 GSM in middling real time at about ~7 hours using 
+only 64 bits of the stream.
+
+They were doing it using hardware costing less than a few grand, 
+I'd guess, given that the core chips are 120 Xilinx 
+Spartan3-XC3S1000 FPGAs at a cost of about $10/each. It isn't 
+hard to imagine that a three letter agency is reading A5/1 in 
+near to real time after a burp to kick start the decryption.
+
+Granted A5/1 is known to be very weak, but how much weaker than 
+AES-128? Ten orders of magnitude? I haven't a clue and can't find 
+any estimate to compare AES-128 with A5/1 so I'll just use that 
+10 orders as a stake in the sand. Next, let's assume that the 
+machine, COPACOBANA, cost $10K. Assume non-linear speed 
+improvements with more chips so 10 times the size is only 6 times 
+as fast. Assuming these metrics then a machine costing ~$10M 
+would take ~2 minutes to start spitting out the decrypted stream.
+
+Add Moore's Law, a bigger budget and a more efficient machine, 
+how long before AES-128 can be decoded in less than a day?
+
+It does make one ponder.
+
+May your nightmares never survive sunrise,
+
+Allen
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

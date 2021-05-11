@@ -1,0 +1,53 @@
+<PRE>On Sat, 03 May 2008 17:00:48 -0400
+&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+</I>&gt;<i> &gt;&gt;I am left with the strong suspicion that SSL VPNs are &quot;easier to
+</I>&gt;<i> &gt;&gt;configure and use&quot; because a large percentage of their user
+</I>&gt;<i> &gt;&gt;population simply is not very sensitive to how much security is
+</I>&gt;<i> &gt;&gt;actually provided.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; They're &quot;easier to configure and use&quot; because most users don't want
+</I>&gt;<i> &gt; to have to rebuild their entire world around PKI just to set up a
+</I>&gt;<i> &gt; tunnel from A to B.
+</I>&gt;<i> 
+</I>&gt;<i> I'm one of those people who uses OpenVPN instead of IPSEC, and I'm one
+</I>&gt;<i> of the people who helped create IPSEC.
+</I>&gt;<i> 
+</I>&gt;<i> Right now, to use SSH to remotely connect to a machine using public
+</I>&gt;<i> keys, all I have to do is type &quot;ssh-keygen&quot; and copy the locally
+</I>&gt;<i> generated public key to a remote machine's authorized keys file.
+</I>&gt;<i> When there is an IPSEC system that is equally easy to use I'll switch
+</I>&gt;<i> to it.
+</I>&gt;<i> 
+</I>&gt;<i> Until then, OpenVPN let me get started in about five minutes, and the
+</I>&gt;<i> fact that it is less than completely secure doesn't matter much to me
+</I>&gt;<i> as I'm running SSH under it anyway.
+</I>&gt;<i> 
+</I>There's a technical/philosophical issue lurking here.  We tried to
+solve it in IPsec; not only do I think we didn't succeed, I'm not at
+all clear we could or should have succeeded.
+
+IPsec operates at layer 3, where there are (generally) no user
+contexts.  This makes it difficult to bind IPsec credentials to a user,
+which means that it inherently can't be as simple to configure as ssh.
+
+Put another way, when you tell an sshd whom you wish to log in as, it
+consults that user's home directory and finds an authorized_keys file.
+How can IPsec -- or rather, any key management daemon for IPsec -- do
+that?  Per-user SPDs?  Is this packet for port 80 for user pat or user
+chris?
+
+I can envision ways around this (especially if we have an IP address
+per user of a system -- I've been writing about fine-grained IP address
+assignment for years), but they're inherently a lot more complex than
+ssh.
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

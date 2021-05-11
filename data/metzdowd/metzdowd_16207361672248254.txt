@@ -1,0 +1,27 @@
+<PRE>* Ed Gerck:
+
+&gt;<i> The often expressed idea that SSL/TLS and port 587 are somehow able
+</I>&gt;<i> to prevent warrantless wiretapping and so on, or protect any private
+</I>&gt;<i> communications, is IMO simply not supported by facts.
+</I>
+Huh?  Have you got a source for that?  This is he first time I've
+heard of such claims.
+
+Message submission over 587/TCP gives the receiver more leeway
+regarding adjusting message contents to police (add a message ID,
+check the Date and From headers, and so on).  The abuse management
+contract is also different: once you accept a message over 587/TCP,
+it's your fault (and your fault alone) if this message turns out to be
+spam.  There's nothing related to confidentiality that I know of.
+
+-- 
+Florian Weimer                &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fweimer at bfk.de</A>&gt;
+BFK edv-consulting GmbH       <A HREF="http://www.bfk.de/">http://www.bfk.de/</A>
+Kriegsstra&#223;e 100              tel: +49-721-96201-1
+D-76133 Karlsruhe             fax: +49-721-96201-99
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

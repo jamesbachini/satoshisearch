@@ -1,0 +1,54 @@
+<PRE>Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; writes:
+
+&gt;<i>There are a set of techniques that allow you to encrypt elements of arbitrary
+</I>&gt;<i>sets back onto that set.
+</I>
+... and most of them seem to be excessively complicated for what they end up
+achieving.  Just for reference the mechanism from the sci.crypt thread of more
+than a decade ago was:
+
+    KSG_RANGE = ( 256 / RANGE ) * RANGE;
+
+    do
+        val = ksg();
+    while( val &gt;= KSG_RANGE );
+
+  The worst-case scenario is when RANGE = 129, when nearly 50% of the ksg()
+  output will be discarded.  A more typical case when RANGE = 96 (ASCII text)
+  loses 25% of the output, and RANGE = 10 (digits) loses 2% of the output. The
+  full process then becomes:
+
+  encrypt:
+
+    do
+        val = ksg();
+    while( val &gt;= KSG_RANGE );
+    cipher = ( ( ( plain - BASE ) + val ) % RANGE ) + BASE;
+
+  decrypt:
+
+    do
+        val = ksg();
+    while( val &gt;= KSG_RANGE );
+    plain = ( ( ( cipher - BASE ) - val ) % RANGE );
+    while( plain &lt; 0 )
+        plain += RANGE;
+    plain += BASE; 
+    
+This takes any cipher (block or stream) and, by using it as a KSG, allows
+encryption of arbitrary (including discontinuous) data ranges.
+
+Another advantage of the KSG use is that you can precalculate the key stream
+offline, the implementation I used at the time pre-generated 4K of keystream
+and then used it to encrypt bursty text messages with real-time constraints
+that didn't allow for pauses to run the cipher.
+
+(The thread contains lots of tweaks and variations of this).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

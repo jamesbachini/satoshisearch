@@ -1,0 +1,146 @@
+<PRE>Hi Jerry,
+
+I accidently sent this response in HTML last night which was bounced.  
+So here it is again.
+
+On Sep 11, 2007, at 2:18 PM, Leichter, Jerry wrote:
+
+&gt;<i> | The world's most secure USB Flash Drive: &lt;<A HREF="https://www.ironkey.com/">https://www.ironkey.com/</A> 
+</I>&gt;<i> demo&gt;.
+</I>&gt;<i> What makes you call it snake oil?  At least the URL you point to says
+</I>&gt;<i> very reasonable things:  It uses AES, not some home-brew  
+</I>&gt;<i> encryption; the
+</I>&gt;<i> keys are stored internally; the case is physically protected, and has
+</I>&gt;<i> some kind of tampering sensor that wipes the stored keys when  
+</I>&gt;<i> attacked.
+</I>
+I don't about you, but when I hear terms like (please pardon my  
+cynicism):
+
+	&quot;with today's most advanced security technology&quot;
+	&quot;advanced Internet protection for securing your passwords and browsing&quot;
+	&quot;with military grade AES encryption&quot; - Hum, I'll have to ask NIST  
+about that.
+	&quot;it initiates a self-destruct sequence&quot; - Begin auto-destruct  
+sequence, authorization Picard-four-seven-alpha-tango...
+	&quot;a harden version of Mozilla's Firefox browser&quot; - Where can I  
+download that version?
+	&quot;to circumvent keylogging spyware&quot; - More on this later...
+	&quot;you can enable high speed, stealth browsing technology&quot;
+	&quot;for the ultimate data protection&quot;
+	&quot;to prevent criminals from getting to the internal hardware  
+components&quot; - But not PhD graduate students...
+	&quot;this makes the IronKey not only tamper-proof but waterproof far  
+beyond military standards&quot; - Well I'm glad a Navy Seal can't break it.
+	&quot;this gives you online and off-line protection for today and tomorrow&quot;
+	&quot;While the underlying security technologies are complex&quot; - Joe  
+Customer is just too dumb to understand it.
+	&quot;The first time you plug it in, you initialize it with a password&quot; -  
+Oh, wait until I disable my keylogging spyware.
+	&quot;You enter that password to unlock your secure files&quot; - Did I  
+disable my keyloggin spyware?
+	&quot;The result of years of research and development by leading security  
+and industry experts&quot; - But not by marketing department...
+	&quot;With unparalleled security in the palm of your hand&quot; - Imagine all  
+that security in the palm of my hand!
+
+Yes, the term &quot;snake oil&quot; comes to mind. And it's only $79 with &quot;1  
+Year of Internet Protection&quot;!
+
+&gt;<i> In fact, they make some of the same points:
+</I>&gt;<i>
+</I>&gt;<i> 	Your IronKey is literally packed with the latest and most
+</I>&gt;<i> 	secure encryption technologies, all enabled by the powerful
+</I>&gt;<i> 	onboard Cryptochip. Rather than employing &quot;homegrown&quot;
+</I>&gt;<i> 	cryptographic algorithms that have not undergone rigorous
+</I>&gt;<i> 	cryptoanalysis, IronKey follows industry best practices and
+</I>&gt;<i> 	uses only well-established and thoroughly tested
+</I>&gt;<i> 	cryptographic algorithms.
+</I>&gt;<i> 	
+</I>&gt;<i> 	All of your data on the IronKey drive is encrypted in
+</I>&gt;<i> 	hardware using AES CBC-mode encryption.
+</I>&gt;<i> 		
+</I>&gt;<i> 	
+</I>&gt;<i> 	   1. Encryption Keys
+</I>&gt;<i> 	   2. Always-On Encryption
+</I>&gt;<i> 	   3. Two-Factor Authentication
+</I>&gt;<i> 	
+</I>&gt;<i> 	Encryption Keys
+</I>&gt;<i> 	
+</I>&gt;<i> 	The encryption keys used to protect your data are generated
+</I>&gt;<i> 	in hardware by a FIPS 140-2 compliant True Random Number
+</I>
+As opposed to a FIPS 140-2 compliant False Random Number Generator.
+
+&gt;<i> 	Generator on the IronKey Cryptochip.  This ensures maximum
+</I>&gt;<i> 	protection via the encryption ciphers. The keys are
+</I>&gt;<i> 	generated in the Cryptochip when you initialize your
+</I>&gt;<i> 	IronKey, and they never leave the secure hardware to be
+</I>&gt;<i> 	placed in flash memory or on your computer.
+</I>
+Protected by a password that is entered on whatever PC you plug the  
+IronKey into and that is somehow auto-magically protected against all  
+keylogging spyware that may exist on that PC.
+
+&gt;<i>
+</I>&gt;<i> 	Always-On Encryption
+</I>&gt;<i>
+</I>&gt;<i> 	Because your IronKey implements data encryption in the
+</I>&gt;<i> 	hardware Cryptochip, all data written to your drive is
+</I>&gt;<i> 	always encrypted. There is no way to accidentally turn it
+</I>&gt;<i> 	off or for malware or criminals to disable it. Also, it runs
+</I>&gt;<i> 	many times faster than software encryption, especially when
+</I>&gt;<i> 	storing large files or using the on-board portable Firefox
+</I>&gt;<i> 	browser.
+</I>
+&quot;Decrypting your files is then as easy as dragging and dropping them  
+onto the desktop&quot; and by any malware that detects that the IronKey is  
+present and has been unlocked and copies the files to a hidden folder.
+
+&gt;<i> 	Two-Factor Authentication
+</I>&gt;<i>
+</I>&gt;<i> 	Beyond simply protecting the privacy of your data on the
+</I>&gt;<i> 	IronKey flash drive, the IronKey Cryptochip incorporates
+</I>&gt;<i> 	advanced Public Key Cryptography ciphers that allow you to
+</I>&gt;<i> 	lock down your online IronKey account. That way you must
+</I>&gt;<i> 	have your IronKey device, in addition to your password, to
+</I>&gt;<i> 	access your online account. This highly complex process runs
+</I>&gt;<i> 	behind the scenes, giving you state-of-the-art protection
+</I>&gt;<i> 	from phishers, hackers and other online threats.
+</I>&gt;<i>
+</I>&gt;<i> The management team lists some people who should know what they are
+</I>&gt;<i> doing.  They have a FAQ which gives a fair amount of detail about
+</I>&gt;<i> what they do.
+</I>
+Well they are letting the marketing department sell snake oil.
+
+&gt;<i> I have nothing at all to do with this company - this is the first I've
+</I>&gt;<i> heard of them - but it's hardly advancing the state of security if
+</I>&gt;<i> even those who seem to be trying to do the right thing get tarred as
+</I>&gt;<i> delivering snake-oil.
+</I>
+I do not have anything to do with them nor with any of their  
+competitors. I'm sure many of the other organizations previously  
+mentioned as selling snake oil had many hard working engineers that  
+were trying to do the right thing also.
+
+&gt;<i> If you know something beyond the publicly-available information about
+</I>&gt;<i> the company, let's hear it.  Otherwise, you owe them an apology -
+</I>&gt;<i> whether they actually do live up to their own web site or not.
+</I>
+I ran across the company because they had an ad on a web page I had  
+visited. Their ad raise my curiosity and I looked at their web site.  
+I stand by my opinion that they are selling security snake oil. They  
+imply that you can use an IronKey with any PC and be completely safe.  
+That is false. You are free to disagree.
+
+Respectfully,
+Aram Perez
+
+P.S. I did give them feedback about keylogging spyware and passwords.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

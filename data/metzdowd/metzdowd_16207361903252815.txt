@@ -1,0 +1,46 @@
+<PRE>On Mon, Sep 22, 2008 at 08:59:25PM -1000, James A. Donald wrote:
+&gt;<i> The major obstacle is that the government would want a strong binding 
+</I>&gt;<i> between sim cards and true names, which is no more practical than a 
+</I>&gt;<i> strong binding between physical keys and true names.
+</I>
+I've a hard time believing that this is the major obstacle.  We all use
+credit cards all the time -- apparently that's as good a &quot;strong binding
+between [credit] cards and true names&quot; and as the government needs.  (If
+not then throw in cameras at many intersections and along freeways, add
+in license plate OCR, and you can tie things together easily enough.
+Wasn't that a worry in another recent thread here?)
+
+More likely there are other problems.
+
+First, there's a business model problem.  Every one wants in: the cell
+phone manufacturer, the software developer, the network operators, and
+the banks.  With everyone wanting a cut of every transaction done
+through cell phones the result would likely be too expensive to compete
+with credit cards, even after accounting for the cost of credit card
+fraud.  Credit card fraud and online security, in any case, are pretty
+low on the list of banking troubles these past few weeks, and not
+without reason!
+
+Second, there's going to be standard issues.
+
+Third the nfc technology has to be commoditized.
+
+Fourth there's cost of doing an initial rollout of the POS nfc
+terminals and building momentum for the product.  Once momentum is there
+you're done.  And there's risk too -- if you fail you lose your
+investment.
+
+...
+
+&gt;<i> Trouble is, what happens if the user's email account is stolen?
+</I>
+Touble is: what happens if the user's cell phone is stolen?
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

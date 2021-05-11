@@ -1,0 +1,30 @@
+<PRE>Aloha!
+
+Peter Gutmann skrev:
+&gt;<i> The worst case is a change in the environment or manufacturing process, which
+</I>&gt;<i> typically occurs without the end user even knowing about it.  You simply can't
+</I>&gt;<i> guarantee anything about RAM state as an RNG source, you'd have to prove a
+</I>&gt;<i> negative (no change in manufacturing technology or the environment will affect
+</I>&gt;<i> the quality of the source) in order to succeed.  It's like the thread-timing-
+</I>&gt;<i> based RNGs, you can never prove that some current variation of or future
+</I>&gt;<i> change to the scheduler won't result in totally predictable &quot;random&quot; numbers.
+</I>
+One could add test functionality that checks the randomness of the 
+initial SRAM state after power on. But somehow I don't think a good test 
+suite and extremely low cost devices (for example RFID chips) are very 
+compatible concepts.
+
+-- 
+Med v&#228;nlig h&#228;lsning, Yours
+
+Joachim Str&#246;mbergson - Alltid i harmonisk sv&#228;ngning.
+========================================================================
+Kryptoblog - IT-s&#228;kerhet p&#229; svenska
+<A HREF="http://www.strombergson.com/kryptoblog">http://www.strombergson.com/kryptoblog</A>
+========================================================================
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

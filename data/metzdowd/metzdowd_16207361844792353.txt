@@ -1,0 +1,19 @@
+<PRE>
+Although the paper seems to be gone from Wikileaks, it is on cryptome:
+
+<A HREF="http://cryptome.org/mifare-classic.pdf">http://cryptome.org/mifare-classic.pdf</A>
+
+Nothing shocking to regular readers of this list in the
+paper. However, it is yet more evidence that no manufacturer, no
+matter how large or reputable, should ever be trusted when they say
+&quot;our secret security system is really good, trust us.&quot;
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

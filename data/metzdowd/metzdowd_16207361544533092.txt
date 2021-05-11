@@ -1,0 +1,30 @@
+<PRE>On 18 September 2007 23:22, Leichter, Jerry wrote:
+
+&gt;<i> Anyone know anything about the Yoggie Pico (www.yoggie.com)?  It claims
+</I>&gt;<i> to do much more than the Ironkey, though the language is a bit less
+</I>&gt;<i> &quot;marketing-speak&quot;.  On the other hand, once I got through the
+</I>&gt;<i> marketing stuff to the technical discussions at Ironkey, I ended
+</I>&gt;<i> up with much more in the way of warm fuzzies than I do with Yoggie.
+</I>&gt;<i> 
+</I>&gt;<i>  							-- Jerry
+</I>
+  Effectively, it's just an offload processor in fancy dress.
+
+  It relies on diverting all your network traffic out to the USB and back just
+before/after the NIC, which it presumably has to do with some sort of filter
+driver, so it's subject to all the same problems vs. malware as any desktop
+pfw.
+
+  Unless your box is so overloaded that the pfw is starved of cpu cycles, I
+can't see the use of it myself.
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,25 @@
+<PRE>
+
+Peter Gutmann wrote:
+
+&gt;<i> There was a discussion on this list a year or two back about problems in using
+</I>&gt;<i> memset() to zeroise in-memory data, specifically the fact that optimising
+</I>&gt;<i> compilers would remove a memset() on (apparently) dead data in the belief that
+</I>&gt;<i> it wasn't serving any purpose.
+</I>&gt;<i> 
+</I>
+Then, s/memset(?,0,?)/(memset)(?,0,?)/ to get rid of compiler in-lining.
+
+Ref: ANSI X3.159-1989, section 4.1.6 (Use of C standard library functions)
+
+
+-- 
+
+- Thierry Moreau
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

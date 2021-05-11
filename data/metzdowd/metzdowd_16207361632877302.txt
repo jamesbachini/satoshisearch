@@ -1,0 +1,48 @@
+<PRE>On Dec 31, 2007, at 3:32 PM, Sidney Markowitz wrote:
+&gt;<i> I find that very strange considering this from a BIS FAQ
+</I>&gt;<i> What hoops did you have to jump through?
+</I>
+
+Here's one relevant excerpt from an internal e-mail exchange, as  
+written up by a colleague:
+
+&quot;1) Encryption is a dual-use technology under the Wassenaar Agreement.
+This means that it is illegal to export products containing
+cryptographic technology without first satisfying the requirements of
+the EAR (the export regulations).
+
+2) There are several ways to satisfy the requirements of the EAR. Of
+particular interest are the &quot;Technologies and Software - Unrestricted&quot;
+(TSU) licensing exception, the &quot;Encryption commodities and software&quot;
+(ENC) licensing exception, and the &quot;mass market encryption&quot; designation.
+
+3) Our software contains both &quot;Open Cryptographic Interfaces&quot; and is
+designed to be cryptographically extended by the end user. These two
+features prohibit us from qualifying for either the 'ENC' licensing
+exception or the mass-market encryption &quot;No License Required&quot; (NLR)
+designation.
+
+4) Essentially all open source projects use the TSU licensing exception.
+
+5) Essentially none of them publish the details of their experience of
+the process of satisfying the export control requirements.
+
+6) I have not been able to locate any example responses to the
+Encryption Questionnaire against which I can judge what level of detail
+is required and how the 'third party components' question (no. 8) was
+answered.&quot;
+
+We encountered other hassles. I intend to ask our legal intern, who  
+did a phenomenal job rounding this all up, to write up the process in  
+some detail.
+
+Cheers,
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,20 @@
+<PRE>
+I noted the following going back on Cryptome today:
+
+&quot;A History of the Cryptographic Branch of the People's Army of
+Vietnam, 1945-1975, with a supplement on Cryptography in the Border
+Guard (formerly the Armed Public Security Forces) 1959-1989&quot;
+
+Translated and Edited by David W. Gaddy,
+Center for Cryptologic History, National Security Agency, 1994
+
+<A HREF="http://www.ibiblio.org/pha/PAVN/">http://www.ibiblio.org/pha/PAVN/</A>
+<A HREF="http://www.ibiblio.org/pha/PAVN/PAVN-crypto.pdf">http://www.ibiblio.org/pha/PAVN/PAVN-crypto.pdf</A>
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

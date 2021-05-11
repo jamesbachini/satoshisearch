@@ -1,0 +1,45 @@
+<PRE>&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+
+&gt;<i>However, seems to me that logging into the website using SRP is a non trivial
+</I>&gt;<i>refactoring, and not just a matter of dropping in TLS-SRP as a simple
+</I>&gt;<i>replacement of TLS-DSA-X509
+</I>
+I've discussed this with (so far) a small sample of assorted corporate TLS
+users to get at least a general idea of what'd be involved.  At a very
+abstract level all they see is &quot;username + password + TLS&quot; -&gt;
+&quot;permitted/denied&quot;, the only change is that by moving the verification into
+TLS this process happens a bit earlier than when it's done in HTML (and
+obviously the failsafe nature means the other side never gets the password if
+the auth fails).
+
+At an implementation level it's also fairly simple, it's maybe 2-3 pages of
+code added to my SSL implementation, and I spoke to another SSL developer who
+gave similar figures.  All you're doing is mixing a little extra keying
+material into the premaster secret, it's not a major piece of programming.
+
+The real issues occur in two locations:
+
+1. In the browser UI.
+2. In the server processing, which no longer gets the password via an HTTP
+   POST but as a side-effect of the TLS connect.
+
+(1) is a one-off cost for the browser developers, (2) is a bit more complex to
+estimate because it's on a per-site basis, but in general since the raw data
+(username+pw) is already present it's mostly a case of redoing the data flow a
+bit, and not necessarily rebuilding the whole system from scratch.  To give
+one example, a healthcare provider, they currently trigger an SQL query from
+an HTTP POST that looks up the password with the username as key, and the
+change would be to do the same thing at the TLS stage rather than the post-TLS
+HTTP stage.
+
+With the folks I've discussed this with their concern has been far more &quot;We
+want this yesterday, why isn't it here yet&quot; rather than &quot;We can't integrate
+this with our existing back-ends&quot;.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

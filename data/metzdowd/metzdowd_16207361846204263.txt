@@ -1,0 +1,34 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> There are now a number of drives on the market advertising AES based
+</I>&gt;<i> FDE in hardware, and a number of laptops available on the market that
+</I>&gt;<i> claim to support them.
+</I>&gt;<i> 
+</I>&gt;<i> Has anyone had any real-world experience with these yet? Are there
+</I>&gt;<i> standards for how they get the keys from the BIOS or OS? (I'm
+</I>&gt;<i> interested in how they deal with zeroization on sleep and such.)
+</I>&gt;<i> Lastly, anyone have any idea of whether the manufacturers are doing
+</I>&gt;<i> the encryption correctly or not?
+</I>&gt;<i> 
+</I>
+Perry,
+
+I have copied the IEEE 1619.3 Working Group where disk-drive
+manufacturers are working on some of these KM issues.
+
+There is a debate going on on that list about the value of
+encrypting data at the disk-drive layer vs. encrypting at the
+application layer - I believe the latter is a more strategic
+solution - and the voices from the Crypto forum would be
+welcome on these issues.
+
+I will let the FDE vendors respond to you so you can forward
+as appropriate.  Thanks.
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

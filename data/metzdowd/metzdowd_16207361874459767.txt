@@ -1,0 +1,25 @@
+<PRE>On Sat, 09 Aug 2008 19:38:45 -0400
+Ivan Krsti__ &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; wrote:
+
+&gt;<i> On Sat, 09 Aug 2008 17:11:11 -0400, &quot;Perry E. Metzger&quot;
+</I>&gt;<i> &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+</I>&gt;<i> &gt;     Las Vegas - Three students at the Massachusetts Institute of
+</I>&gt;<i> &gt;     Technology (MIT) were ordered this morning by a federal court
+</I>&gt;<i> &gt;     judge to cancel their scheduled presentation about
+</I>&gt;<i> &gt; vulnerabilities in Boston's transit fare payment system, violating
+</I>&gt;<i> &gt; their First Amendment right to discuss their important research.
+</I>&gt;<i> 
+</I>&gt;<i> &lt;<A HREF="http://www-tech.mit.edu/V128/N30/subway/Defcon_Presentation.pdf">http://www-tech.mit.edu/V128/N30/subway/Defcon_Presentation.pdf</A>&gt;
+</I>&gt;<i> 
+</I>And the vulnerability assessment they prepared -- filed by the MBTA in
+court, and hence a matter of public record -- is at
+<A HREF="http://blog.wired.com/27bstroke6/files/vulnerability_assessment_of_the_mtba_system.pdf">http://blog.wired.com/27bstroke6/files/vulnerability_assessment_of_the_mtba_system.pdf</A>
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

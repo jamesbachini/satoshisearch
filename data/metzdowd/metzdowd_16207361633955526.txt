@@ -1,0 +1,29 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> It's moderately complex if you're trying to conserve bandwidth (which
+</I>&gt;<i> translates to power) and preserve a datagram model.  The latter
+</I>&gt;<i> constraint generally rules out stream ciphers; the former rules out
+</I>&gt;<i> things like encrypting the keystroke plus seven random bytes with a
+</I>&gt;<i> 64-bit block cipher.  Power is also an issue if your cipher uses very
+</I>&gt;<i> much CPU time or custom hardware.
+</I>&gt;<i> 
+</I>&gt;<i> I&quot;m sure most readers of this list can propose *some* solution.  It's
+</I>&gt;<i> instructive, though, to consider everything that needs to go into a
+</I>&gt;<i> full system solution, including the ability to resynchronize cipher
+</I>&gt;<i> states and the need to avoid confusing naive users if the cat happened
+</I>&gt;<i> to fall asleep on the space bar while the CPU was turned off.
+</I>
+Use CFB mode.  That takes care of all the above problems.  You can 
+transmit any small bunch of bits, don't need to transmit a complete 
+block, and if the keyboard and the receiver get out sync, the keyboard's 
+signal will be decrypted as garbage for the first 128 bits.  If one has 
+the keyboard regularly transmit &quot;no key's pressed&quot; from time to time, 
+and if valid key press representations have a couple of check bits 
+redundancy, with several keypresses being ignored after any invalid key 
+signal, keyboard and receiver will synchronize with no fuss.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

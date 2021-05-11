@@ -1,0 +1,21 @@
+<PRE>
+<A HREF="http://www.washingtonpost.com/wp-dyn/content/article/2007/08/08/AR2007080801961.html">http://www.washingtonpost.com/wp-dyn/content/article/2007/08/08/AR2007080801961.html</A>
+
+Selected quote:
+
+   To avoid wiretapping every communication, NSA will need to build
+   massive automatic surveillance capabilities into telephone
+   switches. Here things get tricky: Once such infrastructure is in
+   place, others could use it to intercept communications.
+
+   Grant the NSA what it wants, and within 10 years the United States
+   will be vulnerable to attacks from hackers across the globe, as
+   well as the militaries of China, Russia and other nations.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

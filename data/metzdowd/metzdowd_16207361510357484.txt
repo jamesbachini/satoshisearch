@@ -1,0 +1,24 @@
+<PRE>Ed Gerck wrote:
+
+&gt;<i> BTW, one may wonder what is really happening. Any other reports?
+</I>&gt;<i> 
+</I>The NYT today had this article:
+<A HREF="http://www.nytimes.com/2007/08/17/business/17ebay.html">http://www.nytimes.com/2007/08/17/business/17ebay.html</A>
+
+Wren
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: wren.vcf
+Type: text/x-vcard
+Size: 213 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070817/19df9e55/attachment.vcf">http://www.metzdowd.com/pipermail/cryptography/attachments/20070817/19df9e55/attachment.vcf</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/x-pkcs7-signature
+Size: 3255 bytes
+Desc: S/MIME Cryptographic Signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070817/19df9e55/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20070817/19df9e55/attachment.bin</A>&gt;
+</PRE>

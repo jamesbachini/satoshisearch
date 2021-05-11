@@ -1,0 +1,39 @@
+<PRE>At Fri, 08 Aug 2008 10:43:53 -0700,
+Dan Kaminsky wrote:
+&gt;<i> Eric Rescorla wrote:
+</I>&gt;<i> &gt; It's easy to compute all the public keys that will be generated
+</I>&gt;<i> &gt; by the broken PRNG. The clients could embed that list and refuse
+</I>&gt;<i> &gt; to accept any certificate containing one of them. So, this
+</I>&gt;<i> &gt; is distinct from CRLs in that it doesn't require knowing 
+</I>&gt;<i> &gt; which servers have which cert...
+</I>&gt;<i> Funnily enough I was just working on this -- and found that we'd end up 
+</I>&gt;<i> adding a couple megabytes to every browser.  #DEFINE NONSTARTER.  I am 
+</I>&gt;<i> curious about the feasibility of a large bloom filter that fails back to 
+</I>&gt;<i> online checking though.  This has side effects but perhaps they can be 
+</I>&gt;<i> made statistically very unlikely, without blowing out the size of a browser.
+</I>
+Why do you say a couple of megabytes? 99% of the value would be
+1024-bit RSA keys. There are ~32,000 such keys. If you devote an
+80-bit hash to each one (which is easily large enough to give you a
+vanishingly small false positive probability; you could probably get
+away with 64 bits), that's 320KB.  Given that the smallest Firefox
+build (Windows) is 7.1 MB, this doesn't sound like a nonstarter to me
+at all, especially since the browser could download it in the
+background.
+
+
+&gt;<i> Updating the filter could then be something we do on a 24 hour 
+</I>&gt;<i> autoupdate basis.  Doing either this, or doing revocation checking over 
+</I>&gt;<i> DNS (seriously), is not necessarily a bad idea.  We need to do better 
+</I>&gt;<i> than we've been.
+</I>
+Yes, there are a number of approaches to more efficient CRL
+checking, I think that's a separate issue.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

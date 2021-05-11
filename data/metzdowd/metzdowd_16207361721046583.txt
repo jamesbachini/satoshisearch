@@ -1,0 +1,70 @@
+<PRE>|<i> As if the latest research (which showed that RAM contents can be
+</I>|<i> recovered after power-down) was not enough, it seems as Firewire ports
+</I>|<i> can form yet an easier attack vector into FDE-locked laptops.
+</I>|<i> 
+</I>|<i> Windows hacked in seconds via Firewire
+</I>|<i> <A HREF="http://www.techworld.com/security/news/index.cfm?RSS&amp;NewsID=11615">http://www.techworld.com/security/news/index.cfm?RSS&amp;NewsID=11615</A>
+</I>|<i> 
+</I>|<i> 	The attack takes advantage of the fact that Firewire can
+</I>|<i> 	directly read and write to a system's memory, adding extra speed
+</I>|<i> 	to data transfer....
+</I>|<i> 
+</I>|<i> IIUC, the tool mentioned only bypasses the Win32 unlock screen, but
+</I>|<i> given the free access to RAM, exploit code that digs out FDE keys is a
+</I>|<i> matter of very little extra work.
+</I>|<i> 
+</I>|<i> This is nothing new. The concept was presented a couple of years ago,
+</I>|<i> but I haven't seen most FDE enthusiasts disable their Firewire ports
+</I>|<i> yet.
+</I>|<i> 
+</I>|<i> Unsurprisingly:
+</I>|<i> 
+</I>|<i> 	Microsoft downplayed the problem, noting that the Firewire
+</I>|<i> 	attack is just one of many that could be carried out if an
+</I>|<i> 	attacker already has physical access to the system.
+</I>|<i> 
+</I>|<i> 	&quot;The claims [...] are not software vulnerabilities,
+</I>|<i> 	but reflect a hardware design industry issue that affects
+</I>|<i> 	multiple operating systems,&quot; Bill Sisk, Microsoft's security
+</I>|<i> 	response communications	manager, told Techworld.
+</I>|<i> 
+</I>|<i> It is not *their* fault, but being a company that pretends to take
+</I>|<i> users' security seriously, and being at a position that allows them to
+</I>|<i> block this attack vector elegantly, I would have gone that extra
+</I>|<i> half-mile rather than come up with excuses why not to fix it. All they
+</I>|<i> need to do is make sure (through a user-controlled but default-on
+</I>|<i> feature) that when the workstation is locked, new Firewire or PCMCIA
+</I>|<i> devices cannot be introduced. That hard?
+</I>Just how would that help?  As I understand it, Firewire and PCMCIA
+provide a way for a device to access memory directly.  The OS doesn't
+have to do anything - in fact, it *can't* do anything.  Once your
+attacker is on the bus with the ability to do read/write cycles to
+memory, it's a bit late to start worrying about whether you allow
+that device to be visible through the OS.
+
+Note that disks have always had direct access to memory - DMA is the
+way to get acceptable performance.  SATA ports - uncommon on portables,
+very common on servers - would be just as much of a threat.  Same for
+SCSI on older machines.
+
+Normally, the CPU sets up DMA transfers - but it's up to the device to
+follow the rules and not speak until recognized.  But there's no real
+enforcement.  (Oh, if you start talking out of turn, you might hang
+the bus or crash the system if you collide with something - but that's
+like very rare, and hardly an effective protective measure.)
+
+The only possible protection here is at the hardware level:  The
+external interface controller must be able to run in a mode which
+blocks externally-initiated memory transactions.  Unfortunately,
+that may not be possible for some controllers.  Sure, the rules for
+(say) SCSI might say that a target is only supposed to begin sending
+after a request from an initiator - but it would take a rather
+sophisticated state machine to make sure to match things up properly,
+especially on a multi-point bus.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

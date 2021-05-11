@@ -1,0 +1,69 @@
+<PRE>'Melissa' disrobes in ploy that relies on people, not CPUs, to crack  
+squiggly codes
+
+October 30, 2007 (Computerworld) -- Spammers are using a virtual  
+stripper as bait to dupe people into helping criminals crack codes  
+they need to send more spam or boost the rankings of parasitic Web  
+sites, security researchers said today.
+
+A series of photographs shows &quot;Melissa,&quot; no relation to the 1999 worm  
+by the same name, with progressively fewer clothes and more skin each  
+time the user correctly enters the characters in an accompanying  
+CAPTCHA (Completely Automatic Public Turing Test to Tell Computers and  
+Humans Apart), the distorted, scrambled codes that most Web mail  
+services use to block bots from registering hundreds or thousands of  
+accounts. Spammers rely on Web e-mail accounts because they're  
+disposable; by the time filters have blocked the address, the spammers  
+throw it away and move on to another.
+
+The CAPTCHAs that Melissa feeds to users are, in fact, legitimate  
+codes snatched from Yahoo Mail's signup screens, said analysts at  
+Trend Micro Inc. The hackers, frustrated at their inability to come up  
+with a way to automate account registration, are getting users to do  
+their dirty work.
+
+&quot;They're using human beings in semi-real time to translate CAPTCHAs by  
+proxy,&quot; said Paul Ferguson, a network architect at Trend Micro. &quot;You  
+have to give them this, it's clever.&quot;
+
+Each time the user correctly decodes the CAPTCHA, a new Melissa photo  
+is revealed, pulled from a hacker-controlled server in Israel,  
+according to Symantec Corp. The plain-text decodes are sent to that  
+same server, where they are presumably banked for future use in  
+generating large numbers of Yahoo Mail accounts.
+
+Fumble-fingered typists are even encouraged by Melissa to try their  
+luck again: &quot;Hmmm, nope, the word you entered is incorrect honey! Lets  
+[sic] try again?&quot; the virtual stripper replies.
+
+Trend Micro said the striptease was part of a Trojan horse called  
+CAPTCHA.a; rival Symantec dubbed it Captchar.a instead. The Trojan  
+horse may be part of a multistage attack, downloaded to a PC that's  
+been compromised by other, more malicious code, or can be encountered  
+as a drive-by Web-based exploit.
+
+&quot;This isn't the first time that they've tried to bust CAPTCHAs,&quot; said  
+Ferguson, noting past attempts by bot-driven malware to apply optical  
+character-recognition technology to deciphering the squiggles and  
+obscured letters. Nor is it the first time human beings have been put  
+to work decoding CAPTCHAs. &quot;Work-at-home money mule schemes run by  
+criminals have hired people to do this same thing,&quot; Ferguson said.  
+&quot;They're told to log on to this Web page and type the CAPTCHA. They  
+have a quota.&quot;
+
+In some cases, those CAPTCHAs have been used to sidestep bot  
+protection for blog commenting rights; hackers will flood a blog  
+they've created with fraudulent comments to drive up its search-engine  
+ranking, expecting that the higher placement will translate into more  
+traffic and thus more clicks on the ads displayed on the blog page.  
+&quot;Sometimes they use [CAPTCHAs] just to bump up their page [ranking],&quot;  
+Ferguson said.
+
+The Trojan horse can strike PCs running Windows 98, Me, NT, 2000, XP  
+and Server 2003.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

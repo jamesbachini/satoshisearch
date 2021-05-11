@@ -1,0 +1,80 @@
+<PRE>
+On Feb 4, 2008, at 1:55 PM, Arshad Noor wrote:
+
+&gt;<i> Do business people get it?  Do security professionals get it?
+</I>&gt;<i> Apparently not.
+</I>&gt;<i>
+</I>&gt;<i> Arshad Noor
+</I>&gt;<i> StrongAuth, Inc.
+</I>&gt;<i>
+</I>&gt;<i> Huge losses reported by Soci&#233;t&#233; G&#233;n&#233;rale were apparently enabled
+</I>&gt;<i> by forgotten low-level IT chores such as password management.
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.infoworld.com/article/08/02/04/Poor-password-management-may-have-led-to-bank-meltdown_1.html">http://www.infoworld.com/article/08/02/04/Poor-password-management-may-have-led-to-bank-meltdown_1.html</A>
+</I>
+Yes, but get what? &quot;It&quot; is a vague noun.
+
+The reporter showed some wit by using the word &quot;may.&quot;
+
+This was an attack by an evil (or crazy) insider. Evil insider attacks  
+are the hardest to protect against. If the insider decided that he was  
+going to start making trades for whatever reason, then he'd find a  
+weak point that would allow him to make trades, and use it, no matter  
+what it is. (My personal hypothesis is a variant of a mad-scientist  
+attacker -- &quot;They laughed at me when I told them my trading theories!  
+Laughed! But I'll show them! I'll show them ALL!!!&quot;)
+
+If this person had worked for 1000 hours to get a hardware token, he  
+would have just done the work. The result may have been an order of  
+magnitude more. High-security procedures tend to be more brittle for  
+psychological reasons. If you have the magic dingus, then you are  
+authorized, and no one ever questions the dingus.
+
+Also, one must look at the economics and psychology of the situation.  
+Traders are prima-donna adrenaline junkies who trade vast sums of  
+money all the time and are not shy about expressing their  
+frustrations. Looking at the sheer economics first:
+
+* A trader trades C units of currency every hour, with an average  
+profit of P (for example 5% profit is P=1.05).
+
+* There are T traders in the organization.
+
+* The extra authentication produces a productivity drop of D. For  
+example, let us suppose a trader has to authenticate once per hour,  
+and it takes 10 seconds to authenticate. This gives us a D of .9972 or  
+3590/3600.
+
+So the operational cost of your authentication is (1-D)*T*C*P per  
+hour. Divide &#8364;4.9G by that, and you get the number of hours for the  
+raw break-even time on this.
+
+Add to this the probability that the hassle will convince a trader to  
+jump ship to another firm (J), times the number hours of trading lost  
+until you find a replacement (H). We'll assume the replacement needs  
+no spinup time to become as productive as the previous trader. That's  
+an additional cost of J*H*T*C*P. This is the psychological factor. As  
+I said, traders are prima donnas who are used to getting their own way.
+
+People have criticized post-9/11 airline security on similar grounds.  
+They observe that some number of people drive rather than fly, and  
+calculate out the difference in deaths-per-passenger-mile. I've seen  
+numbers that work out to a handful of 9/11s per year caused by traffic  
+displacement. They also observe that large numbers of people spend  
+extra time in lines, which works out to a &quot;lost life&quot; number. For  
+example, if you assume that passengers spend 10 extra minutes clearing  
+security and a life is 70 years, then roughly 6 million passengers  
+represents one lost life.
+
+There's always much to criticize in these models. I could write a  
+reply to this message with criticisms, and so can you. Nonetheless,  
+the models show that there's more than just the raw security to think  
+about.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

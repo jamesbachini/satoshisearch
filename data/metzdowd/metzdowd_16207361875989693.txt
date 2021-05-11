@@ -1,0 +1,20 @@
+<PRE>&gt;&gt;<i> The relationship to this list may then be thin
+</I>&gt;&gt;<i> excepting that the collection and handling of
+</I>&gt;&gt;<i> such data remains of substantial interest.
+</I>&gt;<i>
+</I>&gt;<i>Actually, it points to cash settlement of road tolls.
+</I>
+That's not unknown.  On the Niagara Falls toll bridges, they have an
+ETC system where you buy your transponder for cash at a toll booth and
+refill it with cash.  I suppose they could take your picture and link
+it to your license plate, but they can do that if you throw quarters
+into the bin, too.
+
+R's,
+John
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

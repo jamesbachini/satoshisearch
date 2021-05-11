@@ -1,0 +1,15 @@
+<PRE>It can be &quot;ordered to decrypt system passwords&quot;???  So, I wonder
+what attackers can do with this...
+
+Arshad Noor
+StrongAuth, Inc.
+
+&quot;Microsoft revealed its development of a digital forensic analysis toolkit at a security conference yesterday as part of a wider discussion of how technology can be used to fight crime. The Computer Online Forensic Evidence Extractor, or COFEE for short, is a USB thumb drive that contains software capable of executing approximately 150 separate commands. Once plugged in, COFEE can be ordered to decrypt system passwords, display a history of internet activity, and search the system for evidence....&quot;
+
+<A HREF="http://arstechnica.com/news.ars/post/20080429-new-microsoft-law-enforcement-tool-bypasses-pc-security.html">http://arstechnica.com/news.ars/post/20080429-new-microsoft-law-enforcement-tool-bypasses-pc-security.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

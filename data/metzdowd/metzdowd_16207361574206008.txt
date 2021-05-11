@@ -1,0 +1,28 @@
+<PRE>
+--- &quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+
+&gt;<i> Xerox Unveils Technology That Blocks Access to Sensitive Data in
+</I>&gt;<i> Documents to Prevent Security Leaks
+</I>&gt;<i> <A HREF="http://www.parc.com/about/pressroom/news/2007-10-15-redaction.html">http://www.parc.com/about/pressroom/news/2007-10-15-redaction.html</A>
+</I>&gt;<i> 
+</I>&gt;<i> The Innovation: The technology includes a detection software tool
+</I>&gt;<i> that
+</I>&gt;<i> uses content analysis and an intelligent user interface to easily
+</I>&gt;<i> protect sensitive information. It can encrypt only the sensitive
+</I>&gt;<i> sections or paragraphs of a document, a capability previously not
+</I>&gt;<i> available.
+</I>&gt;<i> 
+</I>&gt;<i> saqib
+</I>&gt;<i> <A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+</I>&gt;<i> 
+</I>Philosophy on the new technology:
+
+<A HREF="http://ars.userfriendly.org/cartoons/?id=20071019&amp;mode=classic">http://ars.userfriendly.org/cartoons/?id=20071019&amp;mode=classic</A>
+
+<A HREF="http://ars.userfriendly.org/cartoons/?id=20071020&amp;mode=classic">http://ars.userfriendly.org/cartoons/?id=20071020&amp;mode=classic</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

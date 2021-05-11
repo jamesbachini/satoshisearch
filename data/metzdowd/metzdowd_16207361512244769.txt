@@ -1,0 +1,25 @@
+<PRE>Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; writes:
+&gt;<i>* Peter Gutmann:
+</I>&gt;&gt;<i> This doesn't seem to have received much attention, but the world's
+</I>&gt;&gt;<i> most powerful supercomputer entered operation recently.  Comprising
+</I>&gt;&gt;<i> between 1 and 10 million CPUs (depending on whose estimates you
+</I>&gt;&gt;<i> believe), the Storm botnet easily outperforms the currently
+</I>&gt;&gt;<i> top-ranked system, BlueGene/L, with a mere 128K CPU cores.
+</I>&gt;<i>
+</I>&gt;<i>It's a bit unfair to compare those numbers with single-image systems or
+</I>&gt;<i>tightly-coupled clusters.  Grids are the more apt comparison.
+</I>
+Sure, absolutely, that's why I made the LINPACK comment at the end.  However
+for the sorts of usages that malware authors might put it to (e.g. A5 rainbow
+tables, as Daniel Schroeder suggested) it's probably going to be hard to beat.
+The message was intended to draw attention to the frightening amount of raw
+computing power that's now in the hands of people whose identities and motives
+we're not even certain of.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

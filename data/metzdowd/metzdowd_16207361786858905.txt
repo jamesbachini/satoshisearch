@@ -1,0 +1,51 @@
+<PRE>I've periodically posted that certain assumptions were made about &quot;safe&quot; 
+SSL deployment for electronic commerce that were almost immediately 
+invalidated.
+
+The original assumptions assumed that the enduser knew the binding 
+between the webserve that they thot they were talking to and the 
+corresponding URL ... which they would then type into the browser. Then 
+SSL would provide the assurance that the webserver that was actually 
+being talked to corresponding URL. The two pieces together than provided 
+that the enduser thot they were talking to was, in fact, the webserve 
+that they were talking to.
+
+Almost immediately merchants invalidated the assumptions when they found 
+that SSL represeted 4-5 times degradation in webserver thruput ... and 
+dropped back to just using SSL for payment/checkout portion of the 
+electronic commerce. Now a web &quot;button&quot; was clicked, providing an URL. 
+Now the only thing going on was that SSL would verify that whatever 
+webserver, the webserver claimed to be, was the webserver it claimed.
+
+This button clicking operation invalidated the original safety 
+assumptions regarding the use of SSL for electronic commerce. The URL 
+supplied by the button can be anything. Some amount of 3rd party payment 
+processing outsources appeared to have taken advantage of this feature. 
+A lot of phishing email also takes advantage of the paradigm also.
+
+I was recently invited to resister at a website with a non-US country 
+domain. My registration would not even closely work since it appeared to 
+require IE ... and since I don't have any windows machines ... I also 
+don't have any IE browser. However in the process I thot I would poke 
+around a little.
+
+I prefixed the URL with https (instead) of http. This got me a warning 
+that the certificate was not for the indicated domain. When i looked at 
+the certificate, it came from a certification authority that my browser 
+recognized but was for a &quot;.com&quot; domain associated with some NIGERIAN 
+payment processing operation.
+I then check the ip-address of the original (non-US country) domain and 
+found it mapped to some US-based webhosting company. I then check the 
+ip-address of the NIGERIAN payment processing operation and found it 
+mapped to some other US-based webhosting company.
+
+I can only speculate that the first webhosting operation has some sort 
+of default configuration for electronic commerce ... where SSL gets 
+mapped to payment processing operation of this NIGERIAN payment 
+processing operation.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,39 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> writes:
+
+&gt;<i>This is *not* a power play by banks, the Trilateral Commission, or the Gnomes
+</I>&gt;<i>of Zurich.  It is the first echo of a financial thunderclap.  As, oddly, I
+</I>&gt;<i>said only yesterday, I think that big ticket Internet transactions have
+</I>&gt;<i>become inadvisable and will become more so.  I honestly think that the party
+</I>&gt;<i>could be over for e-commerce, with eBay Motors as its apogee.
+</I>
+I've said roughly the same in a talk on the commercial malware industry that
+I'll be giving at Defcon next month (normally I'd have the slides online to
+point people to, but since I haven't given the talk yet you'll have to wait a
+bit, sorry).  The malware industry is several years (at least) ahead of
+anything that the defenders can produce at the moment.  So while US banks
+still haven't (after years of criticism) taken even the most basic step of
+using SSL on their login pages, the malware industry has things like the grams
+eGold siphoner, which defeats any currently known browser security mechanism,
+all ready to pull out and deploy.  While the defenders are struggling to keep
+up with the latest malware (including some which are effectively undetectable
+using current technology), the malware authors are getting their UI designers
+to design flashy-looking skins for their botnet controllers and providing
+video demos of their products in action.  The only countermeasure seems to be
+to relegate PCs to being untrusted network middleboxes and run the financial
+portions of all transactions on single-function external devices with built-in
+pin-pads and displays.
+
+(The usage model is that you do the UI portion on the PC, but perform the
+actual transaction on the external device, which has a two-line LCD display
+for source and destination of transaction, amount, and purpose of the
+transaction.  All communications enter and leave the device encrypted, with
+the PC acting only as a proxy.  Bill of materials shouldn't be more than about
+$20).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,43 @@
+<PRE>On Tue, 4 Sep 2007 16:46:58 -0400
+Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at MorganStanley.com</A>&gt; wrote:
+
+&gt;<i> The more specific scepticism of security
+</I>&gt;<i> proofs (I am reluctant to agree that these are actively harmful),
+</I>&gt;<i> seems to be a combination of the peer review issue above, and
+</I>&gt;<i> (often?) lack of tight bounds that make the proofs applicable to
+</I>&gt;<i> realistic parameter sizes.
+</I>&gt;<i> 
+</I>
+I interpreted it a bit differently.  In a nutshell, security is
+different, for two reasons.  One is, as you note, the parameter size
+issue.  There, the issue is twofold: first, that detailed analyses are
+necessary, and not just worst-case bounds; second, that detailed
+analyses -- though always of interest -- are a lot harder than simple
+worst-case bounds.  It's the job of referees to ensure that the right
+analysis appears in security papers, and not just the easy, wrong one.
+
+The other point, though, is more subtle.  Any proof depends on your
+axioms or system model.  In security, though, an attacker can often
+attack via a different model.  Thus, we may have ciphers that are fine
+at the 0s and 1s level but are vulnerable to things like differential
+power analysis, cache timing, etc.  Even at the 0s and 1s level, did
+the proof of security account for things like related-key attacks?  
+
+Mathematicians have known since Euclid that axioms are important.
+Security, though, is math embedded in the real world, and that
+matters.  Put another way, Euclidean geometry is completely valid as a
+pure mathematical system.  But that doesn't mean it applies in a
+relativistic universe.  Sure, we live far from any space-warping
+masses, so we can pretend that the angles in our triangles add up to
+180 degrees.  In the security world, though, the attacker will toss a
+black hole at us to warp the space around our provably-secure
+triangular encryptor.  Was that proof of security flawed?  Ask Riemann
+or Lobachevsky.
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

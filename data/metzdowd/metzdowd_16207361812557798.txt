@@ -1,0 +1,52 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+&gt;<i> Ed Gerck writes:
+</I>&gt;<i> -+--------------
+</I>&gt;<i>  | ...
+</I>&gt;<i>  | Not so fast. Bank PINs are usually just 4 numeric characters long and 
+</I>&gt;<i>  | yet they are considered /safe/ even for web access to the account 
+</I>&gt;<i>  | (where a physical card is not required).
+</I>&gt;<i>  | 
+</I>&gt;<i>  | Why? Because after 4 tries the access is blocked for your IP number 
+</I>&gt;<i>  | (in some cases after 3 tries).
+</I>&gt;<i>  | ...
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> So I hold the PIN constant and vary the bank account number.
+</I>
+Dan,
+
+This is, indeed, a possible attack considering that the same IP may be 
+legitimately used by different users behind NAT firewalls and/or with 
+dynamic IPs. However, there are a number of reasons, and evidence, why 
+this attack can be (and has been) prevented even for a short PIN:
+
+1. there is a much higher number of combinations in a 12-digit account 
+number;
+
+2. banks are able to selectively block IP numbers for the /same/ 
+browser and /same/ PIN after 4 or 3 wrong attempts, with a small false 
+detection probability for other users of the same IP (who are not 
+blocked). I know one online system that has been using such method for 
+protecting webmail accounts, with several attacks logged but no 
+compromise and no false detection complaints in 4 years.
+
+3. some banks reported that in order to satisfy FFIEC requirements for 
+two-factor authentication, but without requiring the customer to use 
+anything else (eg, a dongle or a &quot;battle ship map&quot;), they were 
+detecting the IP, browser information and use patterns as part of the 
+authentication procedure. This directly enables #2 above.
+
+I also note that the security problem with short PINs is not much 
+different than that with passwords, as users notoriously choose 
+passwords that are easy to guess. However, an online system that is 
+not controlled by the attacker is able to likewise prevent multiple 
+password tries, or multiple account tries for the same password.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

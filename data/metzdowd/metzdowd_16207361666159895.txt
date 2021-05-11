@@ -1,0 +1,37 @@
+<PRE><A HREF="http://www.stuff.co.nz/4365478a28.html">http://www.stuff.co.nz/4365478a28.html</A>
+
+An Islamist website often used by al Qaeda supporters is promoting
+encryption software which it says will help Islamic militants communicate
+with greater security on the internet.
+
+The Mujahideen Secrets 2 software was promoted as &quot;the first Islamic program
+for secure communications through networks with the highest technical level
+of encoding&quot;.
+
+The software, available free on the password-protected Ekhlaas.org site
+which often carries al Qaeda messages, is a newer version of Mujahideen
+Secrets issued in early 2007 by the Global Islamic Media Front, an al
+Qaeda-linked web-based group.
+
+&quot;This special edition of the software was developed and issued by ...
+Ekhlaas in order to support the mujahideen (holy war fighters) in general
+and the (al Qaeda-linked group) Islamic State in Iraq in particular,&quot; the
+site said.
+
+ --
+
+On the other hand, imagine if the software were compromised by a TLA in the
+spirit of the recent revival of interest of Crypto AG?  What a coup that
+would be.  Of course vulnerabilities can be simply a matter of using the
+wrong random number generator...
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

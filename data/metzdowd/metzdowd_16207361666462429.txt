@@ -1,0 +1,16 @@
+<PRE>At 10:38 AM -0800 1/22/08, Ed Gerck wrote:
+&gt;<i>The often expressed idea that SSL/TLS and port 587 are somehow able 
+</I>&gt;<i>to prevent warrantless wiretapping and so on, or protect any private 
+</I>&gt;<i>communications, is IMO simply not supported by facts.
+</I>
+Can you point to some sources of this &quot;often expressed idea&quot;? It 
+seems like a pretty flimsy straw man.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

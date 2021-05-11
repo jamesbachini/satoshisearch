@@ -1,0 +1,51 @@
+<PRE>On Tue, 29 Apr 2008, Jack Lloyd wrote:
+&gt;<i> &gt; Expectations of privacy at work vary by jurisdiction and industry. In
+</I>&gt;<i> &gt; the US, and say in the financial services industry, any such expectations
+</I>&gt;<i> &gt; are groundless (IANAL).
+</I>&gt;<i>
+</I>&gt;<i> Most places I have worked (all in the US) explicitly required consent
+</I>&gt;<i> to more or less arbitrary amounts of monitoring as a condition of
+</I>&gt;<i> employment.
+</I>
+Even if you sign a contract that you do not have any expectations
+of privacy, it does not mean that you do not have them: honestly,
+you do expect that your coworkers are not going to read you
+personal emails, right?
+
+&lt;<A HREF="http://www.securityfocus.com/columnists/421/2">http://www.securityfocus.com/columnists/421/2</A>&gt;:
+
+  Lance Corporal Jennifer Long was issued a government computer
+  to use on a government military network. When she was
+  suspected of violations of the military drug use policies (and
+  of criminal laws related to drug use), Marine Corps criminal
+  investigators reviewed the contents of email messages she sent
+  to another military employee who was likewise using
+  a government issued computer over the same government network.
+  The messages were retrieved from the government mail server
+  and later used against Long. On September 27, 2006, the United
+  States Court of Appeals for the Armed forces had to decide
+  whether Long had any expectation of privacy in these e-mails.
+
+  The starting point for any analysis is, of course, the DoD
+  policy expressed on its warning banner, which stated quite
+  explicitly:
+
+    [...] All information, including personal information,
+    placed on or sent over this system may be monitored. Use of
+    this DoD computer system, authorized or unauthorized,
+    constitutes consent to monitoring of this system. [...]
+
+  However, the military court, [...] found that Long did, in
+  fact have some privacy interests in the contents of her
+  communications. It noted that while the government said it
+  could monitor, it rarely did.
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

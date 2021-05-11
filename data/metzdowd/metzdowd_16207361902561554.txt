@@ -1,0 +1,78 @@
+<PRE>
+I am considering adding TLS Server Name Indication support in the Postfix
+SMTP server and client. I am puzzled by the exceedingly terse description
+of the semantics of the HostName sent in the SNI extension:
+
+    <A HREF="http://tools.ietf.org/html/rfc4366#section-3.1">http://tools.ietf.org/html/rfc4366#section-3.1</A>
+
+       If the hostname labels contain only US-ASCII characters, then the
+       client MUST ensure that labels are separated only by the byte 0x2E,
+       representing the dot character U+002E (requirement 1 in Section 3.1
+       of [IDNA] notwithstanding).  If the server needs to match the
+       HostName against names that contain non-US-ASCII characters, it MUST
+       perform the conversion operation described in Section 4 of [IDNA],
+       treating the HostName as a &quot;query string&quot; (i.e., the AllowUnassigned
+       flag MUST be set).  Note that IDNA allows labels to be separated by
+       any of the Unicode characters U+002E, U+3002, U+FF0E, and U+FF61;
+       therefore, servers MUST accept any of these characters as a label
+       separator.  If the server only needs to match the HostName against
+       names containing exclusively ASCII characters, it MUST compare ASCII
+       names case-insensitively.
+
+At least the Postfix SMTP client does not normally work with IDNA domains
+directly. In queued email messages the recipient domain is already ACE
+encoded, e.g. &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">postmaster at xn--exmple-cua.com</A>&gt;. Suppose Postfix is configured
+to establish a TLS secure-channel with a mail server for this domain, and
+now wants to signal the required certificate name to the receiving SMTP
+server.
+
+What should the SMTP client put in the RFC 4366 section 3.1 &quot;HostName&quot;:
+
+    - The ACE domain it is working with (xn--exmple-cua.com)?
+    - The underlying UTF8 domain name? (ex&#228;mple.com)?
+
+What should the server do when it receives the client's &quot;HostName&quot;?
+
+    - Convert ACE to UTF8?
+    - Convert UTF8 to ACE?
+
+When searching for certificates with matching domain names, the receiving
+server may need to look at:
+
+    &lt;<A HREF="http://tools.ietf.org/html/rfc5280#section-7.1">http://tools.ietf.org/html/rfc5280#section-7.1</A>&gt;:
+	subject CommonName rDNs, which may contain UTF8 strings
+
+    &lt;<A HREF="http://tools.ietf.org/html/rfc5280#section-7.2">http://tools.ietf.org/html/rfc5280#section-7.2</A>&gt;:
+	subject Alternative Name v3 extensions which contain IA5 (ASCII)
+	domain names.
+
+What type of comparison is the server expected to perform?
+
+    - Convert UTF8 CommanName to ACE (also leave IA5 alone) and then compare?
+    - Convert ACE names in either subjectAltName or CN to UTF8 and then
+      compare UTF8 strings (with NAMEPREP, STRINGPREP and all that jazz)?
+
+This can be (to say the least) rather unpleasant. If IDNA is only between
+the user and the UI, with everything on the wire in ACE form, then all
+the pain is avoided:
+
+	- 4366 client sends ACE
+	- 4366 server uses received string uninterpreted
+	- Certificates contain ACE names in subjectAltName AND also in
+          the CommonName where the name in question is a domain name.
+	- Server just does case insensitive search on ASCII strings.
+
+If instead, client and server have to jump through hoops doing (tersely
+specified, and unlikely IMHO to inter-operate) IDNA conversions, then I
+may just bag the whole idea and do something more useful.
+
+Anyone have any insight on what implementations are supposed to do?
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,57 @@
+<PRE>&gt;<i> &quot;Silicon has no secrets.&quot;
+</I>
+It would be very interesting to examine some of the DES Cracker gate
+array chips with these tools.  Though the chips worked great in
+simulation, and each search engine came from exactly the same VHDL
+source code, some number of the 24 search engines on each manufactured
+chip have subtle errors that corrupt some part of the DES calculation,
+causing &lt;1% of both false-negatives and false-positives when doing
+brute force key search.  Particular patterns would rapidly fail.  Each
+chip also failed its standard test vectors after manufacturing.  We
+accepted and used the chips anyway, working around the issues by
+writing fault-tolerant software, because we couldn't afford to do
+another 6- to 8-week chip fabrication turnaround (plus the time needed
+to characterize and fix the problem).
+
+Was this subtle error an introduced malicious change?  A bug in the
+chip compiler?  Or was it caused by a poorly characterized process
+variation in the factory?  We never found out.
+
+A flakey DES cracker that worked on some keys and not on others would
+have made less of a public policy impact.  We might never have
+announced it at all, if it was failing in ways we couldn't understand
+and couldn't compensate for.  Based on unattributable stories we heard
+from other cryptographers, we had been concerned from that if we did
+the work publicly, NSA would figure out a way to screw us (by leaning
+on the chip vendor through some executive-level contact: &quot;Do this for
+the good of your country&quot;, then they'd refuse to make our chips, or
+break the chips somehow).
+
+Luckily, since we had a mix of working and non-working engines, we
+could adjust the software to use all engines in the first pass, but
+then only use known-good search engines to re-search blocks of keys
+that had been searched by known-flakey search engines.  The result was
+a cracker that works at its designed speed for most keys and
+plain/ciphertext combinations, but which works about 40% slower on &lt;1%
+of such combinations.
+
+I suspect error rather than malice here, but this raises an
+interesting issue.  Even if you find a chip design bug that lets
+people break in, can it be designed to LOOK LIKE error rather than
+malice?  Clearly the data bus comparator and reserved cache line thing
+from LEET would show up as malice, if ever discovered.  But there are
+subtler and perhaps harder to exploit changes that would leave much
+lighter traces of deliberate sabotage.
+
+	John
+
+PS:  Lots of security bugs in software look like error, yet we know
+that some are malicious (like the one briefly introduced into the Linux
+kernel sources by breaking in to one of the machines holding the source
+tree):  <A HREF="http://kerneltrap.org/node/1584">http://kerneltrap.org/node/1584</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

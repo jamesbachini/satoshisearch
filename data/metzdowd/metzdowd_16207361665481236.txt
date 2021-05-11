@@ -1,0 +1,30 @@
+<PRE>Bill Stewart &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bill.stewart at pobox.com</A>&gt; writes:
+&gt;<i>At 12:23 AM 1/20/2008, Alexander Klimov wrote:
+</I>&gt;&gt;<i>Given what is required to get a license (for example, 4.b in the
+</I>&gt;&gt;<i>first document, says that one must have people trained in
+</I>&gt;&gt;<i>information security), I guess the new law is not supposed to
+</I>&gt;&gt;<i>limit use of cryptography by ordinary people, but to limit
+</I>&gt;&gt;<i>distribution of snake-oil by self-proclaimed &quot;professionals&quot;.
+</I>&gt;<i>
+</I>&gt;<i>I would have guessed the opposite - it's designed to prevent customized
+</I>&gt;<i>encryption solutions that actually work, but not to prevent mass-market
+</I>&gt;<i>products. Since you don't need a license for totally inadequate crypto, you
+</I>&gt;<i>can still sell snake-oil customized for your users.
+</I>
+Someone who works for a Russian bank told me that it was designed to ensure
+that FAPSI got paid [0].  In other words the government recognises that trying
+to regulate encryption use is pointless, but since corporates can't afford to
+flout the law this measure guarantees a steady cashflow.
+
+Never attribute to malice what can be adequately explained by baksheesh.
+
+Peter.
+
+[0] It's not FAPSI any more now, this was a few years ago.  I assume the FSB
+    now get the money.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

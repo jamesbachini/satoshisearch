@@ -1,0 +1,23 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+&gt;&gt;<i> Three messages is the proven minimum for mutual authentication.  Last
+</I>&gt;&gt;<i> two messages all depend on the previous message, so minimum handshake
+</I>&gt;&gt;<i> time is 1.5 RTTs.
+</I>
+Nicolas Williams wrote:
+&gt;<i> Kerberos V manages in one round-trip.  And it could do one round-trip
+</I>&gt;<i> without a replay cache if it used ephemeral-ephemeral DH to exchange
+</I>&gt;<i> sub-session keys.  (OTOH, high performance, secure replay caches are
+</I>&gt;<i> difficult to implement, ultimately being limited by the number of write
+</I>&gt;<i> to persistent storage ops that the system can manage.)
+</I>
+Authentication is establishing a shared secret.  The fact that a secret, 
+once established, may then be used frequently, does not make the cost of 
+authentication any the less.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

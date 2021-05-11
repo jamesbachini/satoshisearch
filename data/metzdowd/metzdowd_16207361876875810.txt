@@ -1,0 +1,16 @@
+<PRE>Does anyone know how this &quot;security questions&quot; disease started, and why 
+it is spreading the way it is?  If your company does this, can you find 
+the people responsible and ask them what they were thinking?
+
+My theory is that no actual security people have ever been involved, and 
+that it's just another one of those stupid design practices that are 
+perpetuated because &quot;nobody has ever complained&quot; or &quot;that's what 
+everybody is doing&quot;.
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

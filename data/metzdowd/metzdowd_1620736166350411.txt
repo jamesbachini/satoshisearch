@@ -1,0 +1,24 @@
+<PRE>&gt;<i>From the BBC:
+</I>
+  TV presenter Jeremy Clarkson has lost money after publishing his bank
+  details in his newspaper column.
+
+  The Top Gear host revealed his account numbers after rubbishing the furore
+  over the loss of 25 million people's personal details on two computer discs.
+
+  He wanted to prove the story was a fuss about nothing.
+
+  But Clarkson admitted he was &quot;wrong&quot; after he discovered a reader had used
+  the details to create a &#163;500 direct debit to the charity Diabetes UK.
+
+  [...]
+
+  <A HREF="http://news.bbc.co.uk/2/hi/entertainment/7174760.stm">http://news.bbc.co.uk/2/hi/entertainment/7174760.stm</A>
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

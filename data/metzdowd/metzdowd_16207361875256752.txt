@@ -1,0 +1,31 @@
+<PRE>On Wed, 27 Aug 2008, Hovav Shacham wrote:
+
+&gt;<i> ----- &quot;Jonathan Katz&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jkatz at cs.umd.edu</A>&gt; wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> But he probably wants an encryption scheme, not a cipher.
+</I>&gt;<i>
+</I>&gt;<i> Jon, I'm not sure I understand what you mean.
+</I>&gt;<i>
+</I>&gt;<i> If I am reading his message correctly, the original poster seems
+</I>&gt;<i> to be asking for a format-preserving encryption over a domain
+</I>&gt;<i> with 10^40 elements.  Format-preserving, it seems to me, implies
+</I>&gt;<i> [a family of keyed] functions that are one-to-one and
+</I>&gt;<i> deterministic.  In other words, the best security we can hope for
+</I>&gt;<i> is a PRP on that domain, and this is what B-R gives, starting
+</I>&gt;<i> from a PRP over a &quot;somewhat larger&quot; domain.
+</I>&gt;<i>
+</I>&gt;<i> In this setting, what is the difference between an encryption
+</I>&gt;<i> scheme and a cipher?
+</I>
+Yes, I can see this might cause confusion.
+
+Just to clarify: I had emailed the original poster off-line and he
+told me that he was willing to use other information already being
+sent in the clear as a non-repeating IV. Given this, secure (and, in
+particular, non-deterministic) encryption is possible.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,49 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> writes:
+&gt;<i>On Mon, May 21, 2007 at 01:44:23PM +1200, Peter Gutmann wrote:
+</I>&gt;&gt;<i> &gt;Ignoring special-purpose hardware, does anyone have thoughts on what the
+</I>&gt;&gt;<i> &gt;requirements for a kernel-level key management subsystem should be?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Yes, but first you'd have to tell me what you're trying to do.
+</I>&gt;<i>
+</I>&gt;<i>Protect keys in kernel land rather than userland.
+</I>&gt;<i>
+</I>&gt;<i>Allows for things like e.g.
+</I>&gt;<i>1) marking memory unpageable (avoiding swap hazard)
+</I>&gt;<i>2) relocating the data to different physical pages to prevent
+</I>&gt;<i>   burn-in
+</I>&gt;<i>3) secure wiping
+</I>
+OK, those are all pretty trivial in terms of having an identified problem to
+solve.
+
+&gt;<i>4) providing a common system for storing and protecting them
+</I>&gt;<i>   rather than doing it in each individual application
+</I>&gt;<i>5) allowing for them to be shared securely among processes (like
+</I>&gt;<i>   ssh-agent and gpg-agent)
+</I>&gt;<i>6) provide protection against userland snooping
+</I>&gt;<i>   programs (gdb anyone?)
+</I>&gt;<i>etc.
+</I>
+Right, and that's what I wanted a definition for.  95% of the what you're
+asking for is defining the problem, and that's what I was after.  For example
+how do you want access to the keys controlled?  ACLs?  Who sets the ACLs?  Who
+can manage them?  How are permissions managed?  What's the UI for this?  Under
+what conditions is sharing allowed?  If sharing is allowed, how do you handle
+the fact that different apps (with different levels of security) could have
+access to the same keys?  Do you derive keys from a master key?  Do you
+migrate portions of the app functionality into the kernel to mitigate the
+problems with untrusted apps?  How is key backup handled?  What about
+
+[Another 5 pages of questions]
+
+Once you've got a clear statement of exactly what you want to do (which in its
+most abstract form is &quot;solve an arbitrarily complex key management problem&quot;),
+implementation is almost trivial in comparison.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

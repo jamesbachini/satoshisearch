@@ -1,0 +1,15 @@
+<PRE>Another useful piece of research on the topic:
+
+V. Griffith and M. Jakobsson.
+&quot;Messin' with Texas, Deriving Mother's Maiden Names Using Public Records.&quot;
+ACNS '05, 2005 and CryptoBytes Winter '07
+
+<A HREF="http://www.informatics.indiana.edu/markus/papers.asp">http://www.informatics.indiana.edu/markus/papers.asp</A>
+
+Cheers, Scott
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

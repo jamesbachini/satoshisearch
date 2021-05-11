@@ -1,0 +1,37 @@
+<PRE>&gt;&gt;<i> <A HREF="http://en.wikipedia.org/wiki/Toll_Collect">http://en.wikipedia.org/wiki/Toll_Collect</A> is in operation in entire
+</I>&gt;&gt;<i> Germany. It does OCR on all license plates (also used for police
+</I>&gt;&gt;<i> purposes in realtime, despite initial vigorous denial) but currently 
+</I>&gt;&gt;<i> is only used for truck toll.
+</I>&gt;&gt;<i>
+</I>&gt;<i> How well does that actually work?  There were many articles in RISKS
+</I>&gt;<i> Digest about problems with the early deployment.
+</I>
+That's true wrt to early deployment. Given that the Toll Collect
+system has been up and running since January 2005 it (technically)
+runs surprisingly well. They have improved tremendously and are
+likely to sell their technology to other european countries.
+
+Cheers,
+
+	Stefan.
+
+--------------------------------------------------------
+Symposium Wirtschaftsspionage 03.09.2008 KA/Ettlingen
+<A HREF="http://www.symposium-wirtschaftsspionage.de/">http://www.symposium-wirtschaftsspionage.de/</A>
+---------------------------------------------------------
+Stefan Kelm
+Security Consulting
+
+Secorvo Security Consulting GmbH
+Ettlinger Strasse 12-14, D-76137 Karlsruhe
+Tel. +49 721 255171-304, Fax +49 721 255171-100
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stefan.kelm at secorvo.de</A>, <A HREF="http://www.secorvo.de/">http://www.secorvo.de/</A>
+PGP: 87AE E858 CCBC C3A2 E633 D139 B0D9 212B
+
+Mannheim HRB 108319, Geschaeftsfuehrer: Dirk Fox
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

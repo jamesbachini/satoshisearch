@@ -1,0 +1,24 @@
+<PRE>On Fri, 27 Jun 2008, Erik Ostermueller wrote:
+
+&gt;<i> Hello all,
+</I>&gt;<i>
+</I>&gt;<i> If I exchange messages with a system and the messages are encrypted with a symmetric key, what further benefit would we get by using a MAC (Message Authentication Code) along with the message encryption?
+</I>&gt;<i> Being new to all this, using the encrytpion and MAC together seem redundant.
+</I>&gt;<i>
+</I>&gt;<i> Thanks,
+</I>&gt;<i>
+</I>&gt;<i> --Erik Ostermueller
+</I>
+As the other posters have already commented, encryption alone does not
+(in general) provide integrity. Furthermore, care must be taken in how
+the encryption scheme and the MAC are combined, with
+encryption-followed-by-MACing-the-ciphertext being the best choice
+unless you know what you are doing. For further discussion, see the
+textbook by Katz-Lindell (Section 4.9), and/or the following paper:
+<A HREF="http://www-cse.ucsd.edu/users/mihir/papers/oem.html">http://www-cse.ucsd.edu/users/mihir/papers/oem.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

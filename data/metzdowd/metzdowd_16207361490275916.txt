@@ -1,0 +1,32 @@
+<PRE>On Mon, 9 Jul 2007, Florian Weimer wrote:
+
+&gt;<i> * Ian Farquhar:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Crypto has been an IP minefield for some years.  With the expiry of
+</I>&gt;&gt;<i> certain patents, and the availability of other unencumbered crypto
+</I>&gt;&gt;<i> primitives (eg. AES), we may see this change.  But John's other
+</I>&gt;&gt;<i> points are well made, and still valid.  Downloadable MP3 ring tones
+</I>&gt;&gt;<i> are a selling point.  E2E security isn't (although I've got to
+</I>&gt;&gt;<i> wonder about certain teenage demographics... :)
+</I>&gt;<i>
+</I>&gt;<i> It's also an open question whether network operators subject to
+</I>&gt;<i> interception requirements can legally offer built-in E2E encryption
+</I>&gt;<i> capabilities without backdoors.
+</I>
+Makes me wonder how this will effect the OpenMoko phone if someone builds 
+an encryption layer for it. (OpenMoko is a totally open sourced phone.)
+
+I am still trying to convince my wife to let me get a developers kit for 
+it.
+
+-- 
+&quot;ANSI C says access to the padding fields of a struct is undefined.
+ANSI C also says that struct assignment is a memcpy. Therefore struct
+assignment in ANSI C is a violation of ANSI C...&quot;
+                                   - Alan Cox
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

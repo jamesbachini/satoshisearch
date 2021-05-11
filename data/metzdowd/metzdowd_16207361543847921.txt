@@ -1,0 +1,78 @@
+<PRE>|<i> If a proof is a record of a mental journey in which one person has
+</I>|<i> discovered an important truth, and then made a record of that journey
+</I>|<i> adequate so that a second person can walk the same path and see the
+</I>|<i> same truth, then cryptography could do with more and better proofs.
+</I>Few results are discovered using the same journey as their accepted
+proofs - much less than the elegant, beautified proofs that will appear
+in the texts a number of years down the road.
+
+|<i> If, on the other hand, a proof is an argument impressively decorated
+</I>|<i> with mathematical sounding jargon, cryptography could do with a good
+</I>|<i> deal fewer of them.
+</I>Many, many years ago, a mathematician I knew asked a bunch of us
+then-youngsters:  What's a proof?  Having been brought up in the
+formalist tradition, we came back with definitions along the lines
+of &quot;a series of statements each of which is either an axiom or can
+be derived from earlier lines by such-and-such a process&quot;.
+
+His answer was:  No, a proof is something that convinces you of the
+truth of something.  Interpreting this a bit more broadly:  A
+*mathematical* proof is something that convinces *the relevant
+set of mathematicians* of the truth of something.  I don't want to
+sound like some post-modernist with statements about the relativity
+of truth, but the fact is that this really is what proofs are about.
+The standards for acceptable proofs are defined by the specialists
+in the field.  If your proof has been vetted by those specialists,
+it's accepted.  Until then, it's a *proposed* proof.
+
+The standards of what constitutes an accepted proof have changed
+over the years ago.  Consider the statement:  Any polytope has one
+side on which it will rest stably.  (You can formalize this as:  If,
+for each face, you draw a line from the centroid of the polytope
+perpendicular to that face, than for at least one face the line
+passes through the face.)  We can prove this by observing that if
+this were not true, then if we put the polytope on the ground, it
+will roll forever.
+
+In the 19th century, this was accepted as a proof.  More recently,
+early in the 20th century, a group of mathematicians in Italy created
+the field of algebraic geometry.  No one outside that group really
+understood what they were up to or accepted their techniques.  In the
+1960's, the area became very &quot;hot&quot;, and a number of PhD dissertations
+were produced by finding some of the old results, recasting them in
+modern terms, and producing proofs that were acceptable in modern terms.
+
+Back in the 70's, Lipton, DeMillo and Perlis argued that program
+proving was headed in a fundamentally untenable direction:  What
+made mathematical proofs convincing was exactly that they were
+reviewed by people who were legitimately convincing.  But it
+was highly unlikely that anyone would ever review a proof of a
+non-trivial program.  So we would have little reason to believe
+in it.
+
+There are a series of papers by Koblitz and Menezes, starting with
+&quot;Another Look at 'Provable Security'&quot;, that (I think convincingly)
+argue that formal proofs in cryptography have been oversold:  The
+availability of a formal proof should almost always add little to
+your belief in the soundness of a system, and the *absence* of
+such a proof should do little to decrease your belief.  They
+demonstrate a number of cases where systems have been modified in
+order to make formal proofs possible, but one can plausibly argue
+that the modifications actually weakened the system.  (The lack of
+adequate review of many of those proofs is one reason.  Bellare
+and Rogaway's proof of the security of OAEP-RSA was accepted for
+seven years - and OAEP-RSA got written into multiple standards -
+before Shoup showed the argument was incorrect.  Proofs by
+Bellare and Rogaway are well written and understandable.  Even
+so, no one apparently looked closely for all that time.  All too
+many proofs in the &quot;provable security&quot; match your description of
+impressively decorated jargon.  Those will likely never get
+reviewed by anyone, perhaps not even the authors!)
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

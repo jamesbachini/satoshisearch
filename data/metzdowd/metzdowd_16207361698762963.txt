@@ -1,0 +1,36 @@
+<PRE>On Fri, Feb 01, 2008 at 02:51:36PM +0800, Sandy Harris wrote:
+
+&gt;<i> What I don't understand is why you think tinc is necessary,
+</I>&gt;<i> or even worth the trouble.
+</I>&gt;<i> 
+</I>&gt;<i> IPsec is readily available -- built into Windows, Mac OS
+</I>&gt;<i> and various routers, and with implementations for Linux
+</I>&gt;<i> and all the *BSDs -- has had quite a bit of expert
+</I>&gt;<i> security analysis, and handles VPNs just fine.
+</I>&gt;<i> 
+</I>&gt;<i> Does tinc do something that IPsec cannot?
+</I>
+Yes, there are a few reasons why people use tinc instead of IPsec. Those
+people who tried both tell me tinc is much easier to set up. Tinc
+tunnels over UDP and/or TCP. This allows it to work in situations where
+IPsec would not, for example behind (masquerading) firewalls.  Tinc does
+not need fixed IP addresses at endpoints; endpoints can have more than
+one IP address, or hostnames, so it even works when one has dynamic DNS.
+With tinc, you can set up VPNs with more than 2 nodes, not by
+configuring more tunnels, but just by specifying endpoints. Tinc itself
+will handle the packet routing. It tries to set up a full mesh, but it
+has a built-in routing protocol, not unlike OSPF, that can route packets
+via intermediate nodes if that is necessary. As a side effect it
+provides some redundancy.
+
+-- 
+Met vriendelijke groet / with kind regards,
+      Guus Sliepen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">guus at sliepen.org</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: Digital signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080202/7552b2d7/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080202/7552b2d7/attachment.pgp</A>&gt;
+</PRE>

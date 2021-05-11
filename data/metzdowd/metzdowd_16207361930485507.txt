@@ -1,0 +1,14 @@
+<PRE>On Mon, Sep 29, 2008 at 1:13 PM, IanG &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; wrote:
+&gt;<i> If I have N pools of entropy (all same size X) and I pool them
+</I>&gt;<i> together with XOR, is that as good as it gets?
+</I>
+Surely not. Consider N pools each of size 1 bit. Clearly you can do
+better than the 1 bit your suggestion would yield.
+
+More concretely, concatenation would seem better than XOR.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

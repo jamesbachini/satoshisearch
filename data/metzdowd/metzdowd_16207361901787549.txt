@@ -1,0 +1,43 @@
+<PRE>Yet another web attack:
+
+<A HREF="http://www.theregister.co.uk/2008/09/11/cookiemonstor_rampage/">http://www.theregister.co.uk/2008/09/11/cookiemonstor_rampage/</A>
+
+Apparently, this one was found and described over a year ago by Mike  
+Perry, who decided to release all the details when there was no  
+significant followup.  (Sidejacking was announced at about the same  
+time, and people apparently think the two attacks are the same; but  
+they aren't, and mechanisms to prevent sidejacking generally don't  
+block Cookie Monster.)
+
+As I understand the attack, it's this:  Cookies can be marked Secure.   
+A Secure cookie can only be returned over an HTTPS session.  An cookie  
+not marked Secure can be returned over any session.  So:  If a site  
+puts security-sensitive data into a non-Secure cookie, an attacker who  
+can spoof DNS or otherwise grab sessions can send a HTTP page  
+allegedly from the site that set the cookie asking that it be returned  
+- and it will be.
+
+It turns out hardly anyone bothers to mark their cookies secure.  In  
+Firefox, if you list your cookies, you can sort on the Secure field.   
+I only found a couple of cookies marked - mainly from American  
+Express, one of the few sites that gets this right.  (Bank of America,  
+for example, doesn't; Gmail with the new HTTPS-only setting does, but  
+other Google services don't.)
+
+My own conclusion from this:  This is yet another indication that the  
+whole browser authentication model is irretrievably broken.  It's just  
+way too complex, with way too many moving parts which can interact in  
+dangerous ways.  The list of requirements for a &quot;safe&quot; Web application  
+- even just based on attacks known today - is so long that no one can  
+remember them all, much less check any substantial Web application to  
+see if it follows them.
+
+We need a better approach.
+                                                         -- Jerry
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

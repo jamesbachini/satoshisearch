@@ -1,0 +1,85 @@
+<PRE>Folks:
+
+This contest is inspired by Sameer Parekh's &quot;Hack Netscape!&quot; contest  
+in the fall of 1995.
+
+It is already eliciting some really good security insights from smart  
+people.
+
+Regards,
+
+Zooko
+
+
+  ANNOUNCING the &quot;Hack Tahoe!&quot; contest
+
+<A HREF="http://hacktahoe.org">http://hacktahoe.org</A>
+
+Tahoe, the Least-Authority Filesystem [1], is a secure, decentralized
+filesystem.  It is developed as a Free Software, Open Source project.
+
+The Least-Authority Filesystem offers security and fault-tolerance
+properties far greater than those of other distributed filesystems --
+in addition to being protected against external attackers, users of
+Tahoe are protected from the servers themselves, even if some of the
+servers are malicious, and they are protected from other users, even
+though they can choose to share specific files or directories with
+specific users.
+
+Security is nothing without usability, and to that end Tahoe
+integrates cleanly with the World Wide Web using the principles of
+REST [2], and it provides a simple and flexible method of sharing
+access to your files (by sharing the URL of that file, using the
+principles of Capability Security [3]).
+
+We have created and deployed an implementation of the Least-Authority
+Filesystem -- Tahoe v1.1 -- which we believe provides these strong
+security properties.  However, we know that there is no substitute for
+peer review, and so we are challenging the hackers of the world to
+prove us wrong.  If you find a major security flaw in the design of
+the Least-Authority Filesystem, or in the implementation of Tahoe,
+then you win a customized t-shirt with your exploit and a big &quot;Thank
+you&quot; from us printed on the front.  Also, you will be entered into the
+Hall of Fame on <A HREF="http://hacktahoe.org">http://hacktahoe.org</A> .
+
+Two people who discovered security flaws in earlier designs and helped
+us to fix them have been retroactively declared as the -2nd and -1st
+winners of the &quot;Hack Tahoe!&quot; contest.  Explanations of the security
+flaws that they discovered, how we fixed them, and pictures of them
+with their customized t-shirts are on the <A HREF="http://hacktahoe.org">http://hacktahoe.org</A> web
+site.
+
+If you want to be the 1st winner of the &quot;Hack Tahoe!&quot; contest, you'll
+have to find a security design flaw that we overlooked, or an
+implementation mistake that you can exploit. The metric of success is
+that if you discover anything which compels us to change Tahoe and to
+alert current users about the issue, then your discovery is worthy of
+a customized t-shirt.
+
+Other than that anything goes, because one of the first rules of
+security is that you can win by breaking the rules.  People are
+already relying on Tahoe to store their files safely and privately, so
+if there is any way in which Tahoe is endangering their data, we want
+to learn about it as soon as possible.
+
+To get started, see the description on <A HREF="http://hacktahoe.org">http://hacktahoe.org</A> of what
+security properties Tahoe is supposed to provide.  That web site has
+news, a live Tahoe storage grid which you can play with, example
+targets you can attack, the Hall of Fame, detailed design notes, and
+full source code.
+
+Thanks, and good luck!
+
+Regards,
+
+Zooko O'Whielacronx, on behalf of the allmydata.org team
+
+[1] <A HREF="http://allmydata.org">http://allmydata.org</A>
+[2] <A HREF="http://en.wikipedia.org/wiki/Representational_State_Transfer">http://en.wikipedia.org/wiki/Representational_State_Transfer</A>
+[3] <A HREF="http://erights.org/talks/index.html">http://erights.org/talks/index.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

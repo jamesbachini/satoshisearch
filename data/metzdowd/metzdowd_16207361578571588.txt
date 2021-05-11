@@ -1,0 +1,54 @@
+<PRE>Alex Pankratov wrote:
+&gt;<i> Say, we have a random value of 4 kilobits that someone wants 
+</I>&gt;<i> to keep secret by the means of protecting it with a password. 
+</I>
+It would assist understanding, I feel, if we thought about 4 kilobits of
+entropy, rather than a 4 kilobit value. I want to make this distinction
+because I'd like to talk about secret keys, which have to be rather
+larger than 4 kbits to have 4kbits of entropy for modular arithmetic stuff.
+
+&gt;<i> Empirical entropy estimate for an English text is 1.3 bits of 
+</I>&gt;<i> randomness per character, IIRC.
+</I>&gt;<i> 
+</I>&gt;<i> Assuming the password is an English word or a phrase, and the 
+</I>&gt;<i> secret is truly random, does it mean that the password needs 
+</I>&gt;<i> to be 3100+ characters in size in order to provide a &quot;proper&quot;
+</I>&gt;<i> degree of protection to the value ? 
+</I>&gt;<i> 
+</I>&gt;<i> Or, rephrasing, what should the entropy of the password be 
+</I>&gt;<i> compared to the entropy of the value being protected (under
+</I>&gt;<i> whatever keying/encryption scheme) ? 
+</I>&gt;<i> 
+</I>&gt;<i> I realize that this is rather .. err .. open-ended question, 
+</I>&gt;<i> and it depends on what one means by &quot;protected&quot;, but I'm sure 
+</I>&gt;<i> you can see the gist of the question. How would one deem a
+</I>&gt;<i> password random enough to be fit for protecting an equivalent
+</I>&gt;<i> of N bits of random data ? Is it a 1-to-1 ratio ?
+</I>
+Given the above, it seems there's an obvious formulation.
+
+Let's say the cost of a brute force attack on the secret itself is 2^xn
+for n bits of entropy in the secret (it seems that this is actually the
+interesting definition of entropy in this case, somewhat circularly).
+Similarly, the cost of a brute force attack on the encryption protecting
+the secret is 2^ym, where y is the entropy in the password.
+
+So, when 2^ym &lt; 2^xn, it is worth attacking the password.
+
+So, ym &lt; xn and hence m &lt; xn/y.
+
+In other words, your password needs to be x/y times the size of the
+secret (in bits), where x and y are the costs of attacking the secret
+and the password respectively.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

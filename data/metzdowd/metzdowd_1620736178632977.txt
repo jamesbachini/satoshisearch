@@ -1,0 +1,40 @@
+<PRE>&gt;<i> The impressively well-engineered
+</I>&gt;<i> resistance of DES to differential cryptanalysis (apparently called the
+</I>&gt;<i> &quot;tickle attack&quot; on the inside years before Biham and Shamir's result)
+</I>
+That was IBM's name for DC; it wasn't the NSA's name.
+
+In the late 90's I asked a DSD (Australian NSA) officer what the UKUSA
+nations called DC, and he thought about it, then declined to answer.
+However, a certain well known cryptographer who has done some work with
+the NSA told me that they called it &quot;Directional Derivative&quot;.
+
+I asked the abovementioned DSD officer when the UKUSA nations discovered
+DC.  Again he paused to think, and then said that he believed that Gus
+Simmons had publicly said that the NSA was aware of the technique in
+1965 or so.  Despite considerable research, I've been unable to locate
+any evidence of Simmons saying that.  It is, however, feasable within
+the timeline of what is known and implied about their cipher
+development.  Before the mid-60's, hardware implementations of block
+ciphers would have been largely impractical anyway.
+
+I do have to comment, however, that this particular DSD officer chose
+his words carefully in answering the question.  Specifically, he told me
+what Simmons said (at least in his memory), as opposed to &quot;we discovered
+it in 1965&quot;.  This particular officer was responsible for crypto export
+control in Oz, and was a hardline anti-export warrior.  He never
+directly lied, but in true &quot;Yes Minister&quot; fashion, he was regularly
+&quot;economical with the truth&quot; and quite linguistically tricky.  With him,
+one quickly learned to listen to what he exactly said, not what he was
+trying to imply.  :)
+
+If anyone else can confirm his claim about Simmons, I'd like to read the
+full text.
+
+Ian.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

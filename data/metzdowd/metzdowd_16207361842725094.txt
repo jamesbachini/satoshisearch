@@ -1,0 +1,30 @@
+<PRE>
+On Jul 4, 2008, at 9:46 PM, Allen wrote:
+
+&gt;<i> Is there an upper limit on the number of RSA Public/Private 1024 bit  
+</I>&gt;<i> key pairs possible? If so what is the relationship of the number of  
+</I>&gt;<i> 1024 bit to the number of 2048 and 4096 bit key pairs?
+</I>
+Using the prime number theorem you can get an estimate on the number  
+of such pairs.  Prime number theorem says that there are asyptotically  
+2^{512}/ln(2^{512}) primes less than 512 bits.  So there are roughly  
+2^{512}/ln(2^{512}) - 2^{511}/ln(2^{511}) ~ 2^{511}/ln(2^{512} 512-bit  
+primes.  Squaring this and dividing by two will give the approximate  
+number of pairs - 2^{1021}/(ln(2^{512}))^2.
+
+Generalizing this for a n-bit RSA modulus gives 2^{n-3}/(ln(2^{n/ 
+2}))^2 expected pairs.
+
+Of course, well-chosen RSA primes usually have some special properties  
+so that (p-1) and (q-1) don't have too many small factors and so that  
+(p-q) isn't smaller than 2^{n/4}, so the above figures might be off by  
+a bit if you consider the resulting distribution.  But they should  
+still be fairly close (maybe within a factor of ln(2^{n/2})?).
+
+Martin
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,41 @@
+<PRE>On Thu, 2008-08-21 at 10:26 -0700, &quot;Hal Finney&quot; wrote:
+&gt;<i> Ron Rivest presented his (along with a dozen other people's) new hash,
+</I>&gt;<i> MD6, yesterday at Crypto.
+</I>
+---8&lt;---(snip)---8&lt;---
+
+&gt;<i> He also presented a number of cryptanalytic results. There is provable
+</I>&gt;<i> security against differential cryptanalysis, by virtue of the large number
+</I>&gt;<i> of rounds; also security against side channels. A SAT solver and another
+</I>&gt;<i> technique could only do something with about 11 rounds, versus the 100+
+</I>&gt;<i> rounds in the function. The tree structure is also shown to preserve
+</I>&gt;<i> strong properties of the compression function.
+</I>&gt;<i> 
+</I>&gt;<i> Overall it seemed very impressive. The distinctive features are the tree
+</I>&gt;<i> structure, very wide input blocks, and the enormous number of rounds.
+</I>&gt;<i> The cryptanalysis results were favorable. However Adi Shamir stood up
+</I>&gt;<i> and expressed concern that his new Cube attack might apply. Rivest seemed
+</I>&gt;<i> confident that the degree of MD6 would be several thousand, which should
+</I>&gt;<i> be safe from Shamir's attack, but time will tell.
+</I>
+I came across this paper today while searching for more information:
+
+<A HREF="http://groups.csail.mit.edu/cis/theses/crutchfield-masters-thesis.pdf">http://groups.csail.mit.edu/cis/theses/crutchfield-masters-thesis.pdf</A>
+
+It's titled 'Security Proofs for the MD6 Hash Function Mode of
+Operation' by Christopher Yale Crutchfield (certified by Ronald L.
+Rivest).  I thought it might be of interest to the followers of this
+thread.
+
+-- 
+Dustin D. Trammell
+Security Researcher
+BreakingPoint Systems, Inc.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080822/14d4078b/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080822/14d4078b/attachment.pgp</A>&gt;
+</PRE>

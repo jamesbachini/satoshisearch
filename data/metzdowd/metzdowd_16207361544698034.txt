@@ -1,0 +1,42 @@
+<PRE>On Mon, Sep 03, 2007 at 04:27:22PM -0400, Vin McLellan wrote:
+&gt;<i> Thor Lancelot quoted that, and erupted with sanctimonious umbrage:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;&gt;I think it's important that we know, when flaws in commercial
+</I>&gt;<i> &gt;&gt;cryptographic products are being discussed, what the interests of the
+</I>&gt;<i> &gt;&gt;parties to the discussion are.  So, I'll ask again, as I did last time:
+</I>&gt;<i> &gt;&gt;when you post here, both in this instance and in past instances, is it
+</I>&gt;<i> &gt;&gt;at your own behest, or that of RSA?
+</I>&gt;<i> 
+</I>&gt;<i> This is puerile.  One moderator is not enough? Now you want to set 
+</I>&gt;<i> yourself up as the Inquisition to vet for ideological purity?  No one 
+</I>&gt;<i> at RSA (or EMC, now RSA's parent firm) even knows about this 
+</I>&gt;<i> discussion, you ninny. Who would care?
+</I>
+[And a couple of hundred more lines -- but no actual direct answer to
+ the question!]
+
+I'll try again: yes, you've identified yourself as a consultant to RSA.
+When you have posted here, both in this most recent thread and in other
+threads, in particular the SecurID 800 thread, has it been at your own
+behest, or that of RSA?
+
+In other words, when you post here defending RSA products against
+criticism, often with very emphatic language and in a way that belittles
+the person making the criticism rather than engaging with the actual
+technical critique, can we assume that it is not the case that RSA
+asked you to do so?  Or is it, in fact, sometimes the case that RSA
+asks you to post about their products here, and thus we should read your
+words as being RSA's words?
+
+I don't think it's an unreasonable question, and I ask it one more time
+because, despite all the vitriol you directed at me (including the rather
+odd choice to refer to me by my middle name rather than in a more normal
+way) you did not, in fact, answer it.
+
+Thor
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

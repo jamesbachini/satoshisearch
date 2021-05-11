@@ -1,0 +1,13 @@
+<PRE>On 20/09/2007, Nicholas Bohm &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">nbohm at ernest.net</A>&gt; wrote:
+&gt;<i> Would it not be possible to solve the keyboard problem by allowing a
+</I>&gt;<i> keyboard (e.g. USB) to be plugged directly into the device?
+</I>
+Evidian (former Bull Soft) built such a gizmo.
+I think this is this:
+<A HREF="http://www.wcm.bull.com/internet/pr/rend.jsp?DocId=122881&amp;lang=en">http://www.wcm.bull.com/internet/pr/rend.jsp?DocId=122881&amp;lang=en</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

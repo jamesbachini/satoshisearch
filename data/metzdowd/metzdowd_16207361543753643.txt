@@ -1,0 +1,22 @@
+<PRE>Sidney Markowitz wrote, On 21/9/07 8:24 AM:
+&gt;<i> Ben Laurie wrote, On 21/9/07 1:34 AM:
+</I>&gt;&gt;<i> &quot;Entity i cannot be coerced into sharing a key with entity j without i&#8217;s
+</I>&gt;&gt;<i> knowledge, ie, when i believes the key is shared with some entity l != j.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> The &quot;without i's knowledge&quot; part is critical to the argument, as the
+</I>&gt;<i> author is assuming that entity i is monitoring all of entity j's
+</I>&gt;<i> channels of communication
+</I>
+Curse this non-standard notation! I of course meant &quot;entity l&quot;
+everywhere I said &quot;entity j&quot; to keep with the original author's
+nomenclature. Whatever happened to Alice, Bob, and Eve?
+
+ -- Sidney Markowitz
+    <A HREF="http://www.sidney.com">http://www.sidney.com</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

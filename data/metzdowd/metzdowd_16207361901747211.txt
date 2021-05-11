@@ -1,0 +1,64 @@
+<PRE>Allen wrote:
+&gt;<i> So I'll ask a question. I saw the following on another list:
+</I>&gt;<i> 
+</I>&gt;&gt;&gt;<i> &gt;   I stopped using WinPT after is crashed too many times.
+</I>&gt;&gt;&gt;<i> &gt;   I am now using Thunderbird with the Enigmail plugin
+</I>&gt;&gt;&gt;<i> &gt;   for GPG interface. It works rather flawlessly and I've
+</I>&gt;&gt;&gt;<i> &gt;   never looked back.
+</I>&gt;&gt;&gt;<i> &gt; &gt;   <A HREF="http://pgp.mit.edu:11371/pks/lookup?search=0xBB678C30&amp;op=index">http://pgp.mit.edu:11371/pks/lookup?search=0xBB678C30&amp;op=index</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Yes, I regard the combination of Thunderbird + Enigmail + GPG as the
+</I>&gt;&gt;<i> best existing solution for secure email.
+</I>&gt;<i> 
+</I>&gt;<i> What does anyone think of of the combo?
+</I>
+
+There are approximately these combos to achieve private 
+email for the masses.
+
+1.  GPG command line.  Will never achieve adoption.
+
+2.  GPG + Engimail + Thunderbird.  Will never be totally 
+robust because there is too much dependency.  Same as any 
+similar combo.  So no widespread adoption.
+
+3.  S/MIME.  Is so badly architectured that it can only be 
+got going by neutering a lot of the assumptions, and that 
+will take years of work.  Assuming everyone agrees, which 
+they don't.  No widespread adoption possible.
+
+4.  Skype.  Doesn't do email, but aside from that minor 
+character flaw, it cracked everything else.  It's the best 
+example of what it should look like.
+
+5.  Browser solutions are cumbersome, but:  Hushmail versus 
+gmail.  If google were to adopt hushmail, then this might 
+work.  But, they won't.  They've passed the magic point 
+where nose-thumbing at the state is part of the b-plan, and 
+anyway, they *like* your data.  They are nothing without 
+your data.
+
+6.  Start from scratch.  Will take a long time, and only the 
+larger projects have the resources to do this.  But, the 
+larger projects are typically those that copy others 
+architectures without thought.  See above.
+
+
+
+All, strictly IMHO.  YMMV.  Private email for the masses 
+isn't really in the foreseeable future.  The future is 
+really moving towards newer architetures, email is old and 
+tired.  Think mobile, chat and p2p directions.  But those 
+guys are quite incremental in their improvements, so it will 
+take a while.
+
+(Yes, I know that's not the question you asked :)
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

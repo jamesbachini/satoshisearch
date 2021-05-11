@@ -1,0 +1,36 @@
+<PRE>|<i> ...Obviously patents could be improved by searching further across
+</I>|<i> disciplines for prior art and by having more USPTO expertise.  We're
+</I>|<i> also seeing a dumbing down of the 'Persons Having Ordinary Skill In
+</I>|<i> the Art' as the number of practitioners expand rapidly.
+</I>Patent law and its interpretation - like all law - changes over time.
+Through much of the early twentieth century, patent law was strongly
+biased in favor of large companies.  A small inventor couldn't get any
+effective quick relief against even obvious infringements - he had to
+fight a long, drawn-out battle, at the end of which he probably didn't
+end up with much anyway.  In reaction to such famous cases as the
+much-infringed patent on FM radio, the law was changed and reinterpreted
+in ways that gave the small inventor much more power.  Unfortunately,
+patent trolls eventually made use of those same changes....
+
+The last couple of decades have seen a series of cases that effectively
+gutted the entire notion of &quot;obvious to persons having ordinary skills
+in the art.&quot;  As often happens with trends like this, if you look back
+at the early cases that started the trend, the results may seem
+reasonable - but over time, the whole thing gets out of control.
+
+The Supreme Court, in a decision last year (the name and details of
+which escape me), pretty much said &quot;This has gone too far.&quot;  Specific-
+ally, they said that applying a technique that is well known in one area
+to another area may well be &quot;obvious&quot; and not eligible for patent
+protection.  The Supreme Court can only decide on cases brought before
+it, but the feeling seems to be that they are signaling a readiness to
+breath new life into the &quot;non-obviousness&quot; requirement for a patent.
+It'll be years before we see exactly how this all settles out.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

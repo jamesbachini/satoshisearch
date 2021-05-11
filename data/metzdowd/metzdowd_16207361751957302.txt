@@ -1,0 +1,58 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A> wrote:
+&gt;<i> No need to be a major power.  Linux patches x86 code, as does Windows.  I ran across a project several years ago that modified the microcode for some i/o x86 assembly instructions.  Here's a good link explaining it all.  
+</I>&gt;<i> 
+</I>
+What the OS or the BIOS loads is files that come from Intel.
+
+There is some verification involved, as the processor won't just accept 
+random bytes. You'll need a fair amount of money, as well as 
+intelligence expertise, to get hold of the signing keys, not to mention 
+the documentation for how to write microcode in the first place.  I 
+assume that's one of Intel's (and AMD's) closest-guarded secrets.
+
+
+&gt;<i> <A HREF="http://en.wikipedia.org/wiki/Microcode">http://en.wikipedia.org/wiki/Microcode</A>
+</I>
+&quot;It must be true, I read it on the Internet&quot; :)
+
+&gt;<i> 
+</I>&gt;<i> All this hw/sw flexibility makes designing a good security system a real challenge.  You need a reference monitor somewhere in it that you can truly trust.
+</I>&gt;<i> 
+</I>&gt;<i> - Alex
+</I>&gt;<i> 
+</I>
+That we agree on!
+
+/ji
+
+&gt;<i> 
+</I>&gt;&gt;<i> ----- Original Message -----
+</I>&gt;&gt;<i> From: &quot;John Ioannidis&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ji at tla.org</A>&gt;
+</I>&gt;&gt;<i> To: Cryptography &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+</I>&gt;&gt;<i> Subject: Just update the microcode (was: Re: defending against 
+</I>&gt;&gt;<i> evil in all layers of hardware and software)
+</I>&gt;&gt;<i> Date: Mon, 28 Apr 2008 18:16:12 -0400
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Intel and AMD processors can have new microcode loaded to them, and 
+</I>&gt;&gt;<i> this is usually done by the BIOS.  Presumably there is some 
+</I>&gt;&gt;<i> asymmetric crypto involved with the processor doing the signature 
+</I>&gt;&gt;<i> validation.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> A major power that makes a good fraction of the world's laptops and 
+</I>&gt;&gt;<i> desktops (and hence controls the circuitry and the BIOS, even if 
+</I>&gt;&gt;<i> they do not control the chip manufacturing process) would be in a 
+</I>&gt;&gt;<i> good place to introduce problems that way, no?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> /ji
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> ---------------------------------------------------------------------
+</I>&gt;&gt;<i> The Cryptography Mailing List
+</I>&gt;&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

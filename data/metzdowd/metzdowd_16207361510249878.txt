@@ -1,0 +1,29 @@
+<PRE>We've heard it so many times: &quot;There's nothing to worry about.&quot;
+Now, Skype adds a new IT protection measure -- &quot;love&quot;:
+
+  &quot;The Skype system has not crashed or been victim of a cyber
+  attack. We love our customers too much to let that happen.&quot;
+
+Of course, these two phrases are a non sequitur. No amount of
+a company's &quot;love&quot; for customers will prevent their IT system from
+crashing or hackers from attacking and being successful. At the
+very least, Skype is making users uneasy with such statements.
+
+What's happening, and that's why Skype wrote about &quot;love&quot;, is
+that Skype users worldwide cannot call or hear voicemail for
+many hours now.
+
+The visible error is that users cannot login -- hence can't call,
+etc. While this could understandable, what is not understandable
+is Skype's love declaration.
+
+BTW, one may wonder what is really happening. Any other reports?
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

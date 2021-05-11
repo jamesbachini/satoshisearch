@@ -1,0 +1,22 @@
+<PRE>
+Excerpt:
+
+   The Americans have joined the campaign to save Bletchley Park, the
+   home of code breaking during the Second World War, as well as of
+   Britain's computing heritage, with IBM and computer security
+   specialist PGP already pledging 57,000 pounds (about $100,000) to
+   secure the facility's future.
+
+   The donation will help restore exhibits at the National Museum of
+   Computing in Bletchley Park[...]
+
+<A HREF="http://www.eetimes.com/rss/showArticle.jhtml?articleID=210600420">http://www.eetimes.com/rss/showArticle.jhtml?articleID=210600420</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

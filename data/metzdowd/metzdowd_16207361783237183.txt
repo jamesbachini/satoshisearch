@@ -1,0 +1,77 @@
+<PRE>On Fri, 30 May 2008 15:04:34 -0400 (EDT)
+&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; wrote:
+
+&gt;<i> At one time, mail delivery was done to the end-user's system, and all
+</I>&gt;<i> mail was stored there.  These days, most people find it convenient to
+</I>&gt;<i> leave their mail on a IMAP server:  It can be accessed from anywhere,
+</I>&gt;<i> it can be on a system kept under controlled conditions (unlike a
+</I>&gt;<i> laptop), and so on.  In fact, most people these days - even the
+</I>&gt;<i> technically savvy - not only leave their mail on an IMAP server,
+</I>&gt;<i> but let some provider deal with the headaches of maintaining that
+</I>&gt;<i> server.
+</I>&gt;<i> 
+</I>&gt;<i> So, most people's mail spends most of its life sitting on a disk
+</I>&gt;<i> owned, managed, and controlled by some third party, whose
+</I>&gt;<i> responsibilities, not to mention abilities, for keeping that stuff
+</I>&gt;<i> secure are unclear to say the least.  On top of that, the legal
+</I>&gt;<i> protections for data held by a third party are limited.
+</I>&gt;<i> 
+</I>&gt;<i> We have mechanisms for providing end-to-end encryption of messages.
+</I>&gt;<i> Messages sent using, say, S/MIME are encrypted on the IMAP server
+</I>&gt;<i> just as they are out on the net.  But this only helps for mail
+</I>&gt;<i> exchanged between correspondents who both choose to use it.
+</I>&gt;<i> 
+</I>&gt;<i> Suppose I ask for a simpler thing:  That my mail, as stored in my
+</I>&gt;<i> IMAP server, spends &quot;most of its life&quot; encrypted, inaccessible even
+</I>&gt;<i> to whoever has access to the physical media on which the server
+</I>&gt;<i> stores its mail.
+</I>&gt;<i> 
+</I>&gt;<i> Now, this is a funny goal.  If mail arrives unencrypted, anyone with
+</I>&gt;<i> access to the data stream can copy it and do what they like.  It will
+</I>&gt;<i> inevitably be buffered, even likely stored on a disk, in the raw,
+</I>&gt;<i> unencrypted form.  We explicitly leave dealing with this out of the
+</I>&gt;<i> equation - only end-to-end encryption can deal with it.
+</I>&gt;<i> 
+</I>&gt;<i> Here are two ways of implementation something in this direction:
+</I>&gt;<i> 
+</I>&gt;<i>  	1.  Client only.  The client, whenever it sees a new message,
+</I>&gt;<i>  		(a) downloads it; (b) encrypts it using a secret key;
+</I>&gt;<i>  		(c) stores the encrypted version back on the server;
+</I>&gt;<i>  		(d) deletes the unencrypted version.  The client can
+</I>&gt;<i>  		put the encrypted messages in a different folder, or
+</I>&gt;<i>  		it can mark them with a header line.
+</I>&gt;<i> 
+</I>&gt;<i>  	2.  Server-assisted.  The client gives the server its public
+</I>&gt;<i>  		key.  When a message arrives at the server, the
+</I>&gt;<i>  		server (a) generates a &quot;session&quot; key; (b) encrypts
+</I>&gt;<i>  		the message using the session key; (c) encrypts
+</I>&gt;<i>  		the session key with the client's public key;
+</I>&gt;<i>  		(d) adds a header containing the encrypted session
+</I>&gt;<i>  		key to the encrypted message; (e) stores the
+</I>&gt;<i>  		encrypted message.  The necessary work for
+</I>&gt;<i>  		the client is obvious.
+</I>&gt;<i> 
+</I>&gt;<i> In each case, one would probably chose some headers to encrypt
+</I>&gt;<i> separately - e.g., the subject - so that one could more easily pull
+</I>&gt;<i> them out without decrypting the whole message.
+</I>&gt;<i> 
+</I>&gt;<i> Obviously, approach 2 greatly decreases the time that messages may
+</I>&gt;<i> hang around unencrypted; but approach 1 can be implemented without
+</I>&gt;<i> any cooperation from the IMAP provider, which allows it to be rolled
+</I>&gt;<i> out even for those who use the large providers without having Google
+</I>&gt;<i> and Hotmail and Yahoo! buy into it.
+</I>&gt;<i> 
+</I>There's an option 2b that might be even more practical: an S/MIME or
+PGP/MIME forwarder.  That is, have a trusted party receive your mail,
+but rather than forwarding it intact encrypt it and then forward it to
+your favorite IMAP provider.
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

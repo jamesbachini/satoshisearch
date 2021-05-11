@@ -1,0 +1,78 @@
+<PRE>On Mar 31, 2008, at 4:47 AM, Ivan Krsti&#263; wrote:
+&gt;<i>
+</I>&gt;<i> Tahoe doesn't run this service either. I can't use it to make guesses
+</I>&gt;<i> at any of the values you mentioned. I can use it to make guesses at
+</I>&gt;<i> whole documents incorporating such values, which is in most cases a
+</I>&gt;<i> highly non-trivial distinction.
+</I>
+The way that I would phrase this is that convergent encryption  
+exposes whatever data is put into it, in whatever batch-size is put  
+into it, to brute-force/dictionary attacks.
+
+If the data that you put in is unguessable, then you needn't worry  
+about these attacks.  (Likewise, as Ben Laurie reminds us, using  
+strong passwords is a sufficient defense against these attacks on  
+passwords.)
+
+You correctly emphasize that typical convergent encryption services  
+(which operate on &quot;files&quot;, or, in the case of GNUnet, on 32 KiB  
+blocks), and typical uses of those services (which typically store  
+&quot;files&quot; as produced by apps written for traditional filesystems),  
+batch together data in such a way that the aggregate is more likely  
+to be unguessable than if each field were stored separately.  I don't  
+disagree with this observation.
+
+I am often reminded of Niels Ferguson's and Bruce Schneier's dictum,  
+in the excellent _Practical_Cryptography_, that security needs to be  
+a *local* property.  They argue that one should be able to tell  
+whether a component is secure by inspecting that component itself,  
+rather than by reasoning about interactions between that component  
+and other components.
+
+Concretely, convergent encryption with a per-user added secret, as  
+currently implemented in Tahoe, can be shown to guarantee  
+confidentiality of the data, regardless of what the data is.
+
+Traditional convergent encryption can be shown to offer  
+confidentiality only with the proviso that the data put into it  
+conform to certain criteria -- criteria that cannot be verified by a  
+computer nor by a user who is not a skilled security expert.
+
+You may argue that the chance that a user would put non-comformant  
+data into it is small.  I don't necessarily disagree, although before  
+I became willing to bet on it I would require more quantitative  
+investigation.
+
+However, arguing that component A is secure as long as component B  
+behaves a certain way, and that component B is very likely to behave  
+that way, is a different sort of argument than arguing that component  
+A is secure regardless of the behavior of component B.
+
+For one thing, the behavior of component B may change in the future.   
+Concretely, people may write apps that store data in Tahoe in a way  
+that previous apps didn't.  Those people will almost certainly be  
+completely unaware of the nature of convergent encryption and brute- 
+force/dictionary attacks.
+
+Now obviously making the security properties of a system modular in  
+this way might impose a performance cost.  In the case of Tahoe, that  
+cost is the loss of universal convergence.  Allmydata.com analyzed  
+the space savings due to convergence among our current customers and  
+found that it was around 1% savings.  We (allmydata.com) intend to  
+monitor the potential savings of universal convergence in an on-going  
+way, and if it turns out that there are substantial benefits to be  
+gained then I will revisit this issue and perhaps I will be forced to  
+rely on an argument of the other form -- that users are unlikely to  
+use it in an unsafe way.
+
+Thank you again for your thoughtful comments on this issue.
+
+Regards,
+
+Zooko O'Whielacronx
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

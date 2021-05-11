@@ -1,0 +1,20 @@
+<PRE>I recently saw a news story about a new kind of fiber optic cable from
+Corning -- it has a much smaller bending radius.  (See
+<A HREF="http://money.cnn.com/magazines/fortune/fortune_archive/2007/08/06/100141306/index.htm?postversion=2007072303">http://money.cnn.com/magazines/fortune/fortune_archive/2007/08/06/100141306/index.htm?postversion=2007072303</A>
+and
+<A HREF="http://www.corning.com/media_center/press_releases/2007/2007072301.aspx">http://www.corning.com/media_center/press_releases/2007/2007072301.aspx</A>)
+The problem is that when fiber is bent too sharply, the light escapes.
+Of course, that's the rumored way that, umm, agencies tap fiber: they
+bend it enough that some light escapes, but not too much.  That trick
+won't work nearly as well with the new fiber, which is reportedly 100x
+more bendable.  Does that mean that the new fiber is less tappable?
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

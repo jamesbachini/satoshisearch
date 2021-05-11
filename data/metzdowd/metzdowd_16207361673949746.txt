@@ -1,0 +1,108 @@
+<PRE>Victor Du
+&gt;<i> Jumping in late, but the idea that *TCP* (and not TLS protocol design)
+</I>&gt;<i> adds round-trips to SSL warrants some evidence (it is very temping to
+</I>&gt;<i> express this skepticism more bluntly).
+</I>&gt;<i>
+</I>&gt;<i> With unextended SMTP for example, the minimum RTT count is:
+</I>&gt;<i>
+</I>&gt;<i> 	0. SYN	SYN-ACK
+</I>&gt;<i> 	1. ACK	220
+</I>&gt;<i> 	2. HELO 250
+</I>&gt;<i> 	3. MAIL 250
+</I>&gt;<i> 	4. RCPT 250
+</I>&gt;<i> 	... n recipients
+</I>&gt;<i> 	   RCPT 250
+</I>&gt;<i> 	4+n DATA 354
+</I>&gt;<i> 	5+n ... stream of message content segments&lt;CRLF.CRLF&gt;
+</I>&gt;<i> 		250
+</I>&gt;<i>
+</I>&gt;<i> so it takes at least 6 RTTs to perform a delivery (of a short
+</I>&gt;<i> single-recipient message), but only 1 of the 6 RTTs is TCP
+</I>&gt;<i> &quot;overhead&quot;. This is improved with PIPELINING:
+</I>&gt;<i>
+</I>&gt;<i> 	0. SYN				SYN-ACK
+</I>&gt;<i> 	1. ACK				220
+</I>&gt;<i> 	2. EHLO				250 ... PIPELINING ...
+</I>&gt;<i> 	3. MAIL RCPT(n times) DATA	250 250 (n times) 354
+</I>&gt;<i> 	4. ... stream of message content segments&lt;CRLF.CRLF&gt;
+</I>&gt;<i> 		 			250
+</I>&gt;<i>    
+</I>re:
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#15">http://www.garlic.com/~lynn/aadsm28.htm#15</A> Dutch Transport Card Broken
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#16">http://www.garlic.com/~lynn/aadsm28.htm#16</A> Dutch Transport Card Broken
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#20">http://www.garlic.com/~lynn/aadsm28.htm#20</A> Fixing SSL (was Re: Dutch 
+Transport Card Broken)
+
+TCP requires minimum of seven message exchange for reliable transport
+.... VMTP (rfc 1045) got that down to minimum of five messages, and XTP 
+then
+got it down to three messages minimum for reliable transport (disclaimer
+we were on the XTP technical advisory board).
+
+i've frequently pontificated that with reliable registration of public keys
+in the dns system and then piggy-backing any registered public key in
+standard DNS response .... then it would be possible to encode the
+randomly generated secret key (with that public key) and the encrypted
+message in the XTP packet for minimum 3 packet exchange.
+<A HREF="http://www.garlic.com/~lynn/subtopic.html#subpubkey.html#catch22">http://www.garlic.com/~lynn/subtopic.html#subpubkey.html#catch22</A>
+
+http already went thru its period of problems of implicit assumptions
+with tcp. tcp sessions were assumed to be long lived and session shutdown
+was assumed to be relatively infrequently. non-session activity like http
+was always assumed to use udp for efficiency. the http ignored all of
+that and used tcp for non-session activity. as a result, webserver systems
+went thru a period where the processors was spending 95+ percent of
+processor in the session shutdown processing. systems then were retrofited
+with new kind of tcp session shutdown implementation to handle the
+misuse by http.
+
+the original ssl deployment was to 1) encrypt data in transit and
+2) authenticate the server. the implicit assumption was that the
+user understood the binding between the business and the url.
+the browser then provided the second part, verifying the binding
+between the url and the server contacted (was the server that
+the user thot they were talking to, the server they were actually
+talking to).
+
+The dependency for valid ssl operation was violated almost
+immediately when merchants found that ssl overhead reduced thru
+thruput by 5-10 times. the regression was instead of initial contact
+of the webserver (presumably url supplied by user) being ssl,
+ssl was moved to checkout/pay phase where the user clicked
+on a button (and url) provided by the webserver (not a url
+provided by the user). It was no longer possible to provide
+any assurances as to the authentity of the webserver contacted
+(ssl purely being reduced to encrypting data in transmission).
+
+we had been called in to consult with the small client/server
+company on using this technology (they created) called SSL
+for payment transactions
+<A HREF="http://www.garlic.com/~lynn/subnetwork.html#gateway">http://www.garlic.com/~lynn/subnetwork.html#gateway</A>
+
+and had to go thru detailed walk thrus of the technology as
+it applied to actual business processes (and the associated
+implicit dependencies) ... as well as detailed walk thrus of the
+new business operations that were calling themselves
+certification authorities.
+
+the other issue that we came up in applying this SSL technology
+was communication between webservers and something called
+the payment gateway. for  this communication we mandated mutual
+authentication ... this was before mutual authentication had
+been implemented in SSL. It turns out that by the time
+we had it all implemented and deployed ... it also became
+very apparent that the things called digital certificates
+were redundant and superfluous.
+
+the basic design point for digital certificates is first time
+communication between total strangers. the payment gateway
+business processes required that all the merchants had
+to be pre-registered with the payment gateway and the payment
+gateway pre-registered with all the merchants .... violating the
+basic justification for having digital certificates.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

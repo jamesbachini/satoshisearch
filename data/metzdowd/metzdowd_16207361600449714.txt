@@ -1,0 +1,41 @@
+<PRE>
+On Nov 1, 2007, at 10:49 AM, John Levine wrote:
+
+&gt;&gt;<i> Since email between hushmail accounts is generally PGPed.  (That is
+</I>&gt;&gt;<i> the point, right?)
+</I>&gt;<i>
+</I>&gt;<i> Hushmail is actually kind of a scam.  In its normal configuration,
+</I>&gt;<i> it's in effect just webmail with an HTTPS connection and a long
+</I>&gt;<i> password.  It will generate and verify PGP signatures and encryption
+</I>&gt;<i> for mail it sends and receives, but they generate and maintain their
+</I>&gt;<i> users' PGP keys.
+</I>&gt;<i>
+</I>&gt;<i> There's a Java applet that's supposed to do end to end encryption, but
+</I>&gt;<i> since it's with the same key that Hushmail knows, what's the point?
+</I>&gt;<i>
+</I>
+I'm sorry, but that's a slur. Hushmail is not a scam. They do a very  
+good job of explaining what they do, what they cannot do, and against  
+which threats they protect. You may quibble all you want with its  
+*effectiveness* but they are not a scam. A scam is being dishonest.
+
+You also mischaracterize the Hushmail system. The &quot;classic&quot; Hushmail  
+does not generate the keys, and while it holds them, they're  
+encrypted. The secrets Hushmail holds are as secure as the end user's  
+operational security.
+
+I know what you're going to say next. People pick bad passphrases,  
+etc. Yes, you're right. That is not being a scam.
+
+They have another system that is more web-service oriented, and they  
+explain it on their web site far better than I could. It has further  
+limitations in security but with increased usability. It is also not  
+a scam.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

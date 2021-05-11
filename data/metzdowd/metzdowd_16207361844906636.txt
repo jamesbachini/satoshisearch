@@ -1,0 +1,21 @@
+<PRE>+ John Kemp &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at jkemp.net</A>&gt;:
+
+&gt;<i> It does seem he would like an air of some mystery to exist though
+</I>&gt;<i> until he makes his presentation about the issue at Defcon - did he,
+</I>&gt;<i> himself, discover something new? We'll just have to wait, unless we
+</I>&gt;<i> go play with the BIND code ourselves.
+</I>
+Unless he is merely blowing smoke, it would seem that he discovered
+some little twist that makes the known vulnerability much more easily
+exploitable than previously assumed. That would explain his statement:
+the patch fixes a well known vulnerability, and as a side effect stops
+the more serious attack, in effect making it hard to tell what is
+involved in that attack from reading the patch.
+
+- Harald
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

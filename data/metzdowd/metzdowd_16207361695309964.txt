@@ -1,0 +1,24 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ashwood at msn.com</A> said:
+&gt;<i> *nix /dev/urandom should work well, the entropy harvesting is reasonably
+</I>&gt;<i> good, and the mixing/generating are sufficient to keep it from being the
+</I>&gt;<i> weak link. 
+</I>
+yeah, that's the way it sounds from the man page (on linux). thx. 
+
+
+&gt;<i> Actually I'm saying that if p and g do not change, then there is no
+</I>&gt;<i> additional leakage of the private key beyond what Eve can compute anyway. 
+</I>
+ok, gotcha.
+
+thanks again,
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

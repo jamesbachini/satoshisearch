@@ -1,0 +1,25 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+ &gt; The obvious way - doing a specific step just to verify
+ &gt; the handshake - is the kind of code-centric thinking
+ &gt; that I'm trying to avoid.  I'm having trouble finding
+ &gt; the right words for it.  Basically an encrypted
+ &gt; network protocol is a language in which a transmission
+ &gt; is syntactically correct if and only if all the
+ &gt; security properties hold. In some ways current
+ &gt; protocols are like a poorly-written language whose
+ &gt; parser that needs a seperator character between
+ &gt; statements instead of being able to detect the syntax
+ &gt; error when it starts processing the following
+ &gt; statement.  Basically it lacks even a single symbol
+ &gt; look-ahead.
+
+SRP, as specified, validates that the shared secret on
+both sides is the same, requiring an extra 0.5 RTT.  If
+message validation depends on the entire shared secret,
+then validating that they are identical is unnecessary.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

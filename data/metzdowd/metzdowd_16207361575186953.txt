@@ -1,0 +1,39 @@
+<PRE>On Thu, 11 Oct 2007, james hughes wrote:
+
+&gt;<i> I forgot to add the links...
+</I>&gt;<i> 	<A HREF="http://people.redhat.com/drepper/sha-crypt.html">http://people.redhat.com/drepper/sha-crypt.html</A>
+</I>&gt;<i> 	<A HREF="http://people.redhat.com/drepper/SHA-crypt.txt">http://people.redhat.com/drepper/SHA-crypt.txt</A>
+</I>&gt;<i> 
+</I>&gt;<i> On Oct 11, 2007, at 10:19 PM, james hughes wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; A proposal for a new password hashing based on SHA-256 or SHA-512 has been
+</I>&gt;<i> &gt; proposed by RedHat but to my knowledge has not had any rigorous analysis.
+</I>&gt;<i> &gt; The motivation for this is to replace MD-5 based password hashing at banks
+</I>&gt;<i> &gt; where MD-5 is on the list of &quot;do not use&quot; algorithms. I would prefer not to
+</I>&gt;<i> &gt; have the discussion &quot;MD-5 is good enough for this algorithm&quot; since it is not
+</I>&gt;<i> &gt; an argument that the customers requesting these changes are going to accept.
+</I>
+Some comments:
+
+* Use of an off-the-shelf algorithm like SHA1 might be nice for &quot;tick here
+  for FIPS certification&quot;, but they render the hashing scheme more
+  vulnerable to dictionary attacks assisted by (near-)commodity hardware.
+  Contrast with OpenBSD's blowfish scheme, which is deliberately designed
+  to not be implementable using off-the-shelf crypto accelerator chips.
+
+* Hideously obfuscated and overcomplicated. Comments like those on step 11
+  of the algorithm (some mumbo jumbo about a completely deterministic step
+  &quot;adding randomness&quot;) and the absence of any rationale for the complexity
+  seem to indicate that they believe a complicated design will somehow
+  thwart attacks by itself.
+
+* Why specify the number of rounds directly? Most password and KDF schemes
+  use an exponential scheme to match Moore's law.
+
+-d
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

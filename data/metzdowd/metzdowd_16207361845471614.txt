@@ -1,0 +1,18 @@
+<PRE>* Peter Gutmann:
+
+&gt;<i> [1] Show of hands, how many people here not directly involved with X.509 work
+</I>&gt;<i>     knew that the spec required that all extensions in CA root certificates
+</I>&gt;<i>     (&quot;trust anchors&quot; in recent X.509 jargon) be ignored by an implementation?
+</I>&gt;<i>     So if you put in name constraints, key usage constraints, a policy
+</I>&gt;<i>     identifier, etc, then a conforming implementation is supposed to look at
+</I>&gt;<i>     them, throw them away, and proceed as if they weren't there?
+</I>
+Are you sure that the constraints are not supposed to be applied when
+the root certificate is actually processed, after its signature has been
+verified by the trust anchor?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

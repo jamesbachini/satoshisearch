@@ -1,0 +1,46 @@
+<PRE>It is hard to argue with Perry's point that privacy in public is an
+endangered species at best. Suggesting that one confine one's illegal
+actions to the virtual world is not a particularly appealing response.
+
+Robin Hanson considered the problem in this article from back in the
+1990s, a response to the heyday of the Cypherpunks:
+
+<A HREF="http://hanson.gmu.edu/privacy.html">http://hanson.gmu.edu/privacy.html</A>
+
+He argued that virtual privacy would not be an adequate substitute for
+the loss of physical privacy, that people would not be willing to make
+the sacrifices necessary for a fully anonymous (or pseudonymous) online
+existence.
+
+It's possible nevertheless that online substitutes for many questionable
+physical activities may arise. People don't need to shop at adult
+bookstores any more, porn being widely available online. Instructions on
+making or growing your own drugs can also be found. Not everything we do
+in the physical world can yet be virtualized but perhaps with increased
+recognition of the problem, more substitutes will become available.
+
+You don't have to buy into the Cypherpunk picture of a set of fully
+protected &quot;nyms&quot; using Chaumian credentials to transfer attributes,
+in order to benefit still from the relatively large degree of anonymity
+and privacy available online.
+
+It may also be helpful to focus more directly on specific harms and
+specific limitations rather than the rather vague and general issue of
+privacy and its intangible benefits. Scientific American has a number
+of articles on this topic in its most recent issue.
+
+<A HREF="http://www.sciam.com/sciammag">http://www.sciam.com/sciammag</A>
+
+(Also includes a nice article by Anna Lysyanskaya on cryptographic
+credentials BTW. Her work with Jan Camenisch on this topic remains state
+of the art for those who still retain hope for the technology. TPM DAA
+is based on CL signatures and ironically may become the first widely
+fielded use of anonymous credentials.)
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

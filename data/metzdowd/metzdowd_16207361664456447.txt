@@ -1,0 +1,35 @@
+<PRE>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> You were probably asking your counsel the wrong
+</I>&gt;<i> question.  Never ever ask the question &quot;is this legal&quot;,
+</I>&gt;<i> for you will always find that the answer to that is that
+</I>&gt;<i> NOTHING is legal, and hearing your counsel tell you that
+</I>&gt;<i> puts you in trouble.  The question should have been &quot;Has
+</I>&gt;<i> anyone got in trouble for doing this, and if so, how big
+</I>&gt;<i> a trouble, and what attracted the attention of the man?
+</I>&gt;<i>
+</I>
+I'm going to disagree.
+
+For Ivan, at OLPC, and for me, at PGP, we have to dot a few extra 'i's  
+and cross a few extra 't's. Think of what will happen in the press if  
+either of us have to deal with export messes.
+
+And for what it's worth, Phil Zimmermann's whole brouhaha was started  
+by a competitor that filed a complaint that he was violating export.  
+It wasn't anything active by the government, they were just responding  
+to a complaint.
+
+If, on the other hand, I were doing an open source thing, then sure, I  
+wouldn't be as anal about things. One of the ironies about crypto  
+export regulations today is that the  real risks come from trouble the  
+neighbors might make for you.
+
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

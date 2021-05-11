@@ -1,0 +1,28 @@
+<PRE>On Wed, Mar 19, 2008 at 02:25:36PM -0400, Leichter, Jerry wrote:
+
+[This has been thrashed out on other lists.]
+
+&gt;<i> Just how would that help?  As I understand it, Firewire and PCMCIA
+</I>&gt;<i> provide a way for a device to access memory directly.  The OS doesn't
+</I>&gt;<i> have to do anything - in fact, it *can't* do anything.
+</I>
+The OS can program the Firewire controller not to allow DMA.
+
+&gt;<i> The only possible protection here is at the hardware level:  The
+</I>&gt;<i> external interface controller must be able to run in a mode which
+</I>&gt;<i> blocks externally-initiated memory transactions.  Unfortunately,
+</I>&gt;<i> that may not be possible for some controllers.  Sure, the rules for
+</I>&gt;<i> (say) SCSI might say that a target is only supposed to begin sending
+</I>&gt;<i> after a request from an initiator - but it would take a rather
+</I>&gt;<i> sophisticated state machine to make sure to match things up properly,
+</I>&gt;<i> especially on a multi-point bus.
+</I>
+Isn't what you're describing here an IOMMU?
+
+	David.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

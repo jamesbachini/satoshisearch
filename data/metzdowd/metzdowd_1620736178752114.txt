@@ -1,0 +1,16 @@
+<PRE>On Tue, May 06, 2008 at 03:40:46PM +0000, Steven M. Bellovin wrote:
+
+&gt;<i> In particular, with TLS the session key can be negotiated between
+</I>&gt;<i> two user contexts; with IPsec/IKE, it's negotiated between a user
+</I>&gt;<i> and a system.  (Yes, I'm oversimplifying here.)
+</I>
+Is there any reason (in principle) that IPsec/IKE could not be done
+entirely in userspace / application space, though?
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,47 @@
+<PRE>re:
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#39">http://www.garlic.com/~lynn/aadsm27.htm#39</A> a fraud is a sale, Re: The bank fraud blame game
+
+for a little bit more background ....
+
+signature-debit fraud has been quoted at 15 times that of pin-debit fraud ... some refs:
+<A HREF="http://www.garlic.com/~lynn/aadsm22.htm#22">http://www.garlic.com/~lynn/aadsm22.htm#22</A> FraudWatch - Chip&amp;Pin, a new tenner (USD10)
+<A HREF="http://www.garlic.com/~lynn/2006e.html#21">http://www.garlic.com/~lynn/2006e.html#21</A> Debit Cards HACKED now
+<A HREF="http://www.garlic.com/~lynn/2006e.html#24">http://www.garlic.com/~lynn/2006e.html#24</A> Debit Cards HACKED now
+<A HREF="http://www.garlic.com/~lynn/2007i.html#59">http://www.garlic.com/~lynn/2007i.html#59</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007j.html#15">http://www.garlic.com/~lynn/2007j.html#15</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007j.html#60">http://www.garlic.com/~lynn/2007j.html#60</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007k.html#12">http://www.garlic.com/~lynn/2007k.html#12</A> IBM Unionization
+
+and so the merchant fees for signature-debit are like an order of magnitude more
+than pin-debit (i.e. more on par with credit fees)
+<A HREF="http://www.digitaltransactions.net/newsstory.cfm?newsid=738">http://www.digitaltransactions.net/newsstory.cfm?newsid=738</A>
+<A HREF="http://www.digitaltransactions.net/newsstory.cfm?newsid=1251">http://www.digitaltransactions.net/newsstory.cfm?newsid=1251</A>
+
+in the US, there has been some numbers that walmart accounts for 25-30 percent of
+all retail store transactions. several yrs ago they won a class action legal action
+against the payment transaction infrastructure.
+<A HREF="http://www.garlic.com/~lynn/2007i.html#17">http://www.garlic.com/~lynn/2007i.html#17</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007i.html#17">http://www.garlic.com/~lynn/2007i.html#17</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007i.html#42">http://www.garlic.com/~lynn/2007i.html#42</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007i.html#51">http://www.garlic.com/~lynn/2007i.html#51</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007i.html#59">http://www.garlic.com/~lynn/2007i.html#59</A> John W. Backus, 82, Fortran developer, dies
+
+various refs:
+<A HREF="http://www.classactionrefund.com/VisaInfo.html">http://www.classactionrefund.com/VisaInfo.html</A>
+<A HREF="http://www.inrevisacheckmastermoneyantitrustlitigation.com/history.php3">http://www.inrevisacheckmastermoneyantitrustlitigation.com/history.php3</A>
+<A HREF="http://www.digitaltransactions.net/newsstory.cfm?newsid=623">http://www.digitaltransactions.net/newsstory.cfm?newsid=623</A>
+
+other posts in the previous part of this thread:
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#31">http://www.garlic.com/~lynn/aadsm27.htm#31</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#32">http://www.garlic.com/~lynn/aadsm27.htm#32</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#33">http://www.garlic.com/~lynn/aadsm27.htm#33</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#34">http://www.garlic.com/~lynn/aadsm27.htm#34</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#35">http://www.garlic.com/~lynn/aadsm27.htm#35</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#37">http://www.garlic.com/~lynn/aadsm27.htm#37</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#38">http://www.garlic.com/~lynn/aadsm27.htm#38</A> The bank fraud blame game
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

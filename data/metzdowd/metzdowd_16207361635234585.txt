@@ -1,0 +1,36 @@
+<PRE>On Thu, 13 Dec 2007 21:11, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">apb at cequrux.com</A> said:
+
+&gt;<i> 	volatile char buf[SIZE];
+</I>&gt;<i> 	/* ... do stuff with buf ... */
+</I>&gt;<i> 	memset(buf, 0, sizeof(buf));
+</I>
+This has the little disadvantage that you need to check the attributes
+of BUF first and that you can't immediately see what the memset is used
+for.  For a long time we use the macros below to document the intention
+and to make sure that the compiler does not do any harm:
+
+  /* To avoid that a compiler optimizes certain memset calls away, these
+     macros may be used instead. */
+  #define wipememory2(_ptr,_set,_len) do { \
+                volatile char *_vptr=(volatile char *)(_ptr); \
+                size_t _vlen=(_len); \
+                while(_vlen) { *_vptr=(_set); _vptr++; _vlen--; } \
+                    } while(0)
+  #define wipememory(_ptr,_len) wipememory2(_ptr,0,_len)
+  
+
+
+
+Shalom-Salam,
+
+   Werner
+
+
+-- 
+Die Gedanken sind frei.  Auschnahme regelt ein Bundeschgesetz.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

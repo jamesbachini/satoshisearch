@@ -1,0 +1,21 @@
+<PRE>On Thu, Oct 25, 2007 at 09:16:21PM -0700, Alex Pankratov wrote:
+&gt;<i> Assuming the password is an English word or a phrase, and the 
+</I>&gt;<i> secret is truly random, does it mean that the password needs 
+</I>&gt;<i> to be 3100+ characters in size in order to provide a &quot;proper&quot;
+</I>&gt;<i> degree of protection to the value ? 
+</I>
+If E(key) &gt;= E(text), why not use a one time pad?
+
+&gt;<i> Or, rephrasing, what should the entropy of the password be 
+</I>&gt;<i> compared to the entropy of the value being protected (under
+</I>&gt;<i> whatever keying/encryption scheme) ? 
+</I>
+Entropy != economic value
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

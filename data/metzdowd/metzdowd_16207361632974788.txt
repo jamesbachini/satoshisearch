@@ -1,0 +1,29 @@
+<PRE>James A. Donald wrote:
+ &gt;&gt; A notary is a certifier.  Have you ever seen a notary
+ &gt;&gt; read the stuff he notarizes, let alone generate it?
+
+William Allen Simpson wrote:
+ &gt; Actually, I deal with notaries regularly.  I've always
+ &gt; had to physically sign while watched by the notary.
+ &gt; They always read the stuff notarized, and my
+ &gt; supporting identification, because they are notarizing
+ &gt; a signature (not a document).
+
+  Not true.  Because they are notarizing a signature, not
+a document, they  check my supporting identification,
+but never read the document being signed.
+
+ &gt; And yes, they always generate the stamp or imprint
+ &gt; they sign. To do otherwise would be irresponsible (and
+ &gt; illegal).
+
+If they were to generate an MD5 hash of documents
+prepared by someone else, then the attack described
+(eight different human readable documents with the same
+MD5 hash) works.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

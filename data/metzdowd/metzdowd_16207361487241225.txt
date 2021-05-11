@@ -1,0 +1,41 @@
+<PRE>On Sat, Jul 07, 2007 at 10:53:17PM -0600, Darren Lasko wrote:
+&gt;<i> 1) Can a product obtain FIPS 140-2 certification if it implements a PRNG
+</I>&gt;<i> from NIST SP 800-90 (and therefore is not listed in FIPS 140-2 Annex C)?  If
+</I>&gt;<i> not, will Annex C be updated to include the PRNGs from SP 800-90?
+</I>
+The PRNGs in SP800-90 are listed in the current Annex C (see
+item #6 on page 4; this occurred in January of this year).
+<A HREF="http://csrc.nist.gov/publications/fips/fips140-2/fips1402annexc.pdf">http://csrc.nist.gov/publications/fips/fips140-2/fips1402annexc.pdf</A>
+
+There is no algorithm testing for the SP800-90 RNGs yet, but they are
+allowed for use in the approved mode of operation because of IG 1.10
+(<A HREF="http://csrc.nist.gov/cryptval/140-1/FIPS1402IG.pdf">http://csrc.nist.gov/cryptval/140-1/FIPS1402IG.pdf</A>).  You'll also want
+to read IG 1.12, which directly pertains to the testing that is required
+to test the vendor's assertion that they have a compliant SP80-90 RNG.
+
+&gt;<i> 2) Does FIPS 140-2 have any requirements regarding the quality of the
+</I>&gt;<i> entropy source that is used for seeding a PRNG?
+</I>
+Yes.  The requirement imposed by FIPS 140-2
+(<A HREF="http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf">http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf</A>)
+are in section 4.7.2:
+ &quot;Compromising the security of the key generation method (e.g., guessing
+ the seed value to initialize the deterministic RNG) shall require as
+ least as many operations as determining the value of the generated key.&quot;
+(which would apply to any RNG output that became a key)
+
+and in section 4.7.3:
+ &quot;Compromising the security of the key establishment method (e.g.,
+ compromising the security of the algorithm used for key establishment)
+ shall require at least as many operations as determining the value of
+ the cryptographic key being transported or agreed upon.&quot;
+(which would apply to any RNG output that is used in a security relevant
+way in a key establishment scheme)
+
+			Josh
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

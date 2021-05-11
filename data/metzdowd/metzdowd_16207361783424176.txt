@@ -1,0 +1,82 @@
+<PRE>On Tue, May 06, 2008 at 11:40:53AM -0700, David Wagner wrote:
+
+&gt;<i> &gt;    - With the upcoming EECDH support, users don't choose curves
+</I>&gt;<i> &gt;    directly, they again choose a security grade, and the correspnding
+</I>&gt;<i> &gt;    curves are configurable via parameters they are not expected to
+</I>&gt;<i> &gt;    ever look at or modify.
+</I>&gt;<i> 
+</I>&gt;<i> This struck me as poor design, not good design.  Asking the user to
+</I>&gt;<i> make these kinds of choices seems like the kind of thing that only a
+</I>&gt;<i> cryptographer could consider sensible.
+</I>
+They are not *asked* to make any cipher choices. The are able to make:
+
+	- no explicit choice, and get sensible default behaviour
+
+	- a high level choice (&quot;secure verification&quot; + &quot;high grade cipher&quot;
+	without having to spell out the gory details of what these mean.
+
+	- an exteremely detailed specification of all the details.
+
+&gt;<i> In this day and age, software
+</I>&gt;<i> should not be asking users to choose ciphers.
+</I>
+The users in question are email administrators, not end users, and you
+missed my point. They are not asked to choose ciphers, these are chosen
+for them, and the default choice is even context dependent, so you get
+sensible combinations of security properties:
+
+	- Opportunistic TLS allows SSLv2 and export ciphers
+
+	- Mandatory TLS, enforces SSLv3/TLSv1 and medium or high
+	ciphers.
+
+
+&gt;<i> Rather, the software
+</I>&gt;<i> should just pick a sensible high-grade security level (e.g., AES-128,
+</I>&gt;<i> RSA-1024 or RSA-2048) and go with that
+</I>
+This is what is done (using OpenSSL's &quot;HIGH&quot;, &quot;MEDIUM&quot;, ... selectors).
+
+&gt;<i> and avoid bothering the user.
+</I>&gt;<i> Why even offer &quot;low&quot; as an option?  (And this &quot;export&quot; business sounds
+</I>&gt;<i> like a throwback to a decade ago; why is that still there?)
+</I>
+You don't know how TLS is used with SMTP. Most TLS is opportunistic and
+plain text is used if TLS is absent. In such an environment insisting
+on 128 bits is silly, even 40 bits is better than plain-text.
+
+&gt;<i> Good crypto is cheap.  Asking a user is expensive and risky.
+</I>
+Breaking interoperability by limiting cipher selection and causing mail
+to queue is not cheap.
+
+&gt;<i> &gt;So I think there should be a broad design bias towards *implicit* correct
+</I>&gt;<i> &gt;behaviour in all system features, with rope available for advanced users
+</I>&gt;<i> &gt;to *explicitly* craft more complex use-cases. Once you have that, practical
+</I>&gt;<i> &gt;security is not too difficult.
+</I>&gt;<i> 
+</I>&gt;<i> Amen.  I know of quite a few software packages that could use more of
+</I>&gt;<i> that philosophy.
+</I>&gt;<i> 
+</I>&gt;<i> &gt;The same is true in the source code, unsafe practices are avoided
+</I>&gt;<i> &gt;globally, (e.g. both strcpy() and strncpy() are absent together with fixed
+</I>&gt;<i> &gt;size automatic buffers) rather than used with care locally. I won't bore
+</I>&gt;<i> &gt;you with all the implementation safety &quot;habits&quot;, but there are many.
+</I>&gt;<i> 
+</I>&gt;<i> It's too bad that today such elementary practices are something to brag
+</I>&gt;<i> about.  Perhaps one day we'll be lucky enough that the answer to these
+</I>&gt;<i> questions becomes more like &quot;of course we use safe programming practices;
+</I>&gt;<i> what kind of incompetent amateurs do you take us for?&quot;.
+</I>
+Practices are &quot;culture&quot; not &quot;technology&quot;, and it is difficult to displace
+existing cultures with new ones :-(
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

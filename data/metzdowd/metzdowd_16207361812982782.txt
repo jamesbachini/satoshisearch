@@ -1,0 +1,72 @@
+<PRE>
+
+Arshad Noor wrote:
+&gt;<i> While programmers or business=people could be ill-informed, Allen,
+</I>&gt;<i> I think the greater danger is that IT auditors do not know enough
+</I>&gt;<i> about cryptography, and consequently pass unsafe business processes
+</I>&gt;<i> and/or software as being secure.
+</I>&gt;<i> 
+</I>&gt;<i> This is the reason why we in the OASIS Enterprise Key Management
+</I>&gt;<i> Infrastructure Technical Committee have made educating IT Auditors
+</I>&gt;<i> and providing them guidelines on how to audit symmetric key-management
+</I>&gt;<i> infrastructures, one of the four (4) primary goals of the TC.  While
+</I>&gt;<i> the technology is well understood by most people on this forum, until
+</I>&gt;<i> we educate the gate-keepers, we have failed in our jobs to secure IT
+</I>&gt;<i> infrastructure.
+</I>
+Yep. It seems like we've had a bit of this conversation recently, 
+haven't we? ;-&gt; And it is not just the gatekeepers, but also the 
+users who need education. We know that we will not have enough 
+&quot;gatekeepers&quot; to watch all users and uses.
+
+Given this, the real question is, /&quot;Quis custodiet ipsos custodes?&quot;/ 
+(Given as either &quot;Who will watch the watchers themselves?&quot; or &quot;Who 
+will guard the guardians?&quot; from Juvenal.) Here we have the perfect 
+examples of the conundrum in No Such Agency or the Company, who 
+evade oversight or it is so obfuscated that the watchers at the 
+political level either don't know what is really going on or they 
+are complicit. Funny how something as off the main track of society 
+as cryptography still reflects the identical problems of the greater 
+whole, isn't it?
+
+I also argue that badly structured protocol requirements that 
+potentially obfuscate what is going on is a serious issue as well. 
+Then too, there is documentation that does not get down to the bare 
+metal, so to speak, so that those who are not skilled at reading 
+code, and its implications, can understand what is going on. The 
+Romans knew that and mad it law: /Quod non est in actis, non est in 
+mundo./ (&quot;What is not in the documents does not exist&quot;)
+
+All of this requires team thinking so that everyone who is looking 
+at the issues involved, no matter from what direction, creator, 
+auditor or end user, gets &quot;it.&quot;
+
+Allen
+&gt;<i> 
+</I>&gt;<i> Arshad Noor
+</I>&gt;<i> StrongAuth, Inc.
+</I>&gt;<i> 
+</I>&gt;<i> Allen wrote:
+</I>&gt;&gt;<i> Hi gang,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> All quiet on the cryptography front lately, I see. However, that does 
+</I>&gt;&gt;<i> not prevent practices that *appear* like protection but are not even 
+</I>&gt;&gt;<i> as strong as wet toilet paper.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I had to order a medical device today and they need a signed 
+</I>&gt;&gt;<i> authorization for payment by my insurance carrier. No biggie. So they 
+</I>&gt;&gt;<i> ask how I want it set to me and I said via e-mail. Okay. /Then/ they 
+</I>&gt;&gt;<i> said it was an encrypted file and I thought, cool. How wrong could I be?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Very. The (I hate to use this term for something so pathetic) password 
+</I>&gt;&gt;<i> for the file is 6 (yes, six) numeric characters!
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> My 6 year old K6-II can crack this in less than one minute as there 
+</I>&gt;&gt;<i> are only 1.11*10^6 possible.
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

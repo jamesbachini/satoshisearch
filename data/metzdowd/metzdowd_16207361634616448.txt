@@ -1,0 +1,34 @@
+<PRE>On Mon, Dec 10, 2007 at 04:17:38PM -0500, Leichter, Jerry wrote:
+
+&gt;<i> It is, of course, the height of irony that the bug was introduced in the
+</I>&gt;<i> very process, and for the very purpose, of attaining FIPS compliance!
+</I>
+But also to be expected, because the feature in question is &quot;unnatural&quot;:
+the software needs a testable PRNG to pass the compliance tests, and
+this means adding code to the PRNG to make it more predictable under
+test conditions.
+
+As the tests only test the predictable PRNG, it is easy to not notice
+failure to properly re-seed the non-test PRNG. One can't easily test
+failure to operate correctly under non-test conditions. And the additional
+complexity of the test harness makes such failure more likely.
+
+The interaction of the test harness with the software under study needs
+close scrutiny (thorough and likely multiple independent code reviews).
+
+Similar bugs are just as likely in closed-source software and are less
+likely to be discovered.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

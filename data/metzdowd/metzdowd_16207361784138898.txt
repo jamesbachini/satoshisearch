@@ -1,0 +1,25 @@
+<PRE>Taral &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">taralx at gmail.com</A>&gt; writes:
+
+&gt;<i> On 5/26/08, Simon Josefsson &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">simon at josefsson.org</A>&gt; wrote:
+</I>&gt;&gt;<i>  For example, reading a lot of data from linux's /dev/urandom will
+</I>&gt;&gt;<i>  deplete the entropy pool in the kernel, which effectively makes reads
+</I>&gt;&gt;<i>  from /dev/random stall.  The two devices uses the same entropy pool.
+</I>&gt;<i>
+</I>&gt;<i> That's a bug in the way the kernel hands out entropy to multiple
+</I>&gt;<i> concurrent consumers. I don't think it's a semantic issue.
+</I>
+Do you have any references?  Several people have brought this up before
+and have been told that the design with depleting the entropy pool is
+intentional.
+
+Still, the semantics of /dev/*random is not standardized anywhere, and
+the current implementation is sub-optimal from a practical point of
+view, so I think we are far away from an even OK situation.
+
+/Simon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,21 @@
+<PRE>&gt;&gt;<i> For an unproxied site, I get a small green window with my own choice
+</I>&gt;&gt;<i> of text in it (e.g. &quot;Gmail&quot; if I'm visiting <A HREF="https://mail.google.com">https://mail.google.com</A>).
+</I>&gt;&gt;<i> If a proxy were to insert itself in the middle, that window would
+</I>&gt;&gt;<i> turn yellow, and the message would change to &quot;(untrusted)&quot;.
+</I>&gt;&gt;<i>
+</I>&gt;<i> Assorted user studies suggest that most users do not notice the color
+</I>&gt;<i> of random little windows in their browsers...
+</I>
+Ja I have always wondered why the entire browser color scheme doesn't 
+change ... granted users would just ignore it or complain it messes with 
+their skins / schemes but still would be appreciated ... I myself hardly 
+pay attention to the lock (its simply unobtrusive in a status bar full 
+of other applets and addons) and I know better :)
+
+/me wonders if their is a security UI list
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

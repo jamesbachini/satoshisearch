@@ -1,0 +1,47 @@
+<PRE>independent contactless card e-money scheme called sQuid (UK)
+squidcard.com
+
+From:    Peter Tomlinson &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pwt at iosis.co.uk</A>&gt;
+Subject: Re: Fwd: ID Stronghold
+To:      <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ukcrypto at chiark.greenend.org.uk</A>
+Date:    Mon, 28 Jan 2008 16:02:51 +0000
+
+
+Roland Perry wrote:
+&gt;<i> In article &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">479DF2A3.4020400 at iosis.co.uk</A>&gt;, Peter Tomlinson 
+</I>&gt;<i> &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pwt at iosis.co.uk</A>&gt; writes
+</I>&gt;&gt;&gt;&gt;&gt;<i> I have yet to find a Paywave enabled retailer.
+</I>
+&gt;&gt;&gt;&gt;<i> Saw one on Saturday in London - a small newsagent.
+</I>
+&gt;&gt;&gt;<i> Although I should perhaps mention that Barclays variously call it 
+</I>&gt;&gt;&gt;<i> &quot;OnePulse&quot; and &quot;OneTouch&quot;, and never mention &quot;Paywave&quot;; just to keep 
+</I>&gt;&gt;&gt;<i> the confusion marketing in top gear.
+</I>
+&gt;&gt;<i> I'm looking for a Mastercard Paypass
+</I>&gt;<i> Is this yet another brand name? (Four and counting...)
+</I>&gt;<i>
+</I>&gt;<i> Does it interoperate with Paywave/OnePulse/OneTouch ?
+</I>
+Here is another one: Barclays use the Visa method, which was initially 
+called Visa Wave, and early news of it came out of Singapore.
+
+Both methods (Mastercard and Visa) should work through the same 
+terminal, but I don't yet have proof.
+
+Then there is a independent contactless card e-money scheme called sQuid 
+just launching (squidcard.com), and they will want to use the same 
+terminals...
+
+Peter
+
+
+
+
+----------
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

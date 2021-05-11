@@ -1,0 +1,34 @@
+<PRE>I think I already know the answer to this question, but I just want to test my 
+understanding...
+
+How wise (in a real-world sense) is it, in a protocol specification, to 
+specify that one simply obtain an ostensibly random value, and then use that 
+value directly as the signature key in, say, an HMAC-based signature, without 
+any further stipulated checking and/or massaging of the value before such use?
+
+E.g., here's such a specfication excerpt and is absolutely everything said in 
+the spec wrt obtaining said signature keys:
+
+  When generating MAC keys, the recommendations in [RFC1750] SHOULD be 
+followed.
+  ...
+  The quality of the protection provided by the MAC depends on the randomness 
+of
+  the shared MAC key, so it is important that an unguessable value be used.
+
+How (un)wise is this, in a real-world sense? 
+
+
+[yes, I'm aware that using a only a SHOULD here leaves a huge door open 
+compliance-wise, but that's a different issue]
+
+thanks,
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

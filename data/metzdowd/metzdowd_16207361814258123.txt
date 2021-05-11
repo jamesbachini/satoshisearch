@@ -1,0 +1,87 @@
+<PRE>Dear people of the cryptography mailing list:
+
+I received a note from Sridhar Vajapey, head of the Sun &quot;OpenSPARC&quot;  
+programme, which releases a complete modern CPU under the GPL.   
+Except that it isn't complete -- the parts that do AES, SHA-1 and  
+SHA-2, and public key crypto acceleration are all mysteriously  
+omitted from the released source [1].  I have previously posted about  
+this issue on this list [2].
+
+I inquired about this with Sridhar Vajapey, and he wrote &quot;US export  
+control regulations prevent Sun from opensourcing the crypto portion  
+of N2.&quot;.  (&quot;N2&quot; is the development code-name for the most recent  
+OpenSPARC -- its product name is &quot;T2&quot;.)
+
+Appended is my reply.  If anyone on this list knows more about the  
+relevant export regulations, please share.
+
+Regards,
+
+Zooko
+
+[1] <A HREF="http://www.opensparc.net/opensparc-t2/downloads.html">http://www.opensparc.net/opensparc-t2/downloads.html</A>
+[2] <A HREF="http://www.mail-archive.com/cryptography@metzdowd.com/msg09090.html">http://www.mail-archive.com/cryptography@metzdowd.com/msg09090.html</A>
+
+
+	From: 	  <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">zooko at zooko.com</A>
+	Subject: 	Re: Please contact me about open source of the crypto  
+modules in T2
+	Date: 	June 8, 2008 3:07:02 PM PDT
+         To: Sridhar Vajapey
+         Cc: Shrenik Mehta, Roberta Pokigo, Simon Phipps
+
+Dear Sridhar Vajapey:
+
+Thank you for the prompt reply.  Having participated in the struggle  
+in the 1990's to make crypto freely available and to end the export  
+restrictions, and having thought that we won, I am saddened to find  
+out that this is why Sun hasn't open sourced that component.
+
+So far, I have failed to understand why the current US crypto export  
+regime (see survey here [1] -- be sure to follow the timeline as the  
+laws have been relaxed many times over the last decade) doesn't  
+permit Sun to post the source code of the crypto components of the  
+T2.  It would appear to me that that source code falls under the  
+rubric of &quot;publically available crypto source code&quot;, as described  
+here [2], which would mean that Sun need only send an e-mail to the  
+right address giving them the URL of the source code in order to  
+satisfy the law.  On the other hand if the source code for building  
+chips doesn't count as &quot;source code&quot;, then presumably it would count  
+as &quot;mass-market crypto&quot; which means that Sun need only do slightly  
+more paperwork in order to gain such approval.
+
+If Sun applied for approval of GPL'ed crypto under such a regulation  
+and was *denied* by BIS then I would really like to know why.
+
+Another guess, and please don't take this the wrong way, is that NSA  
+baloneyed you into *thinking* that you couldn't, or shouldn't,  
+release the crypto components when legally you can.  (I have personal  
+knowledge of two such extra-legal attempts by NSA to deter crypto  
+proliferation in the 1990's -- once with Netscape and once with Cisco.)
+
+Oh, in fact this leads me to another question:  Even in the (in my  
+humble opinion unlikely) case that Sun is disallowed from exporting  
+the source of the crypto modules to foreign countries, there is  
+certainly no law which would constrain Sun from sharing that source  
+with US persons within the US.  I originally became aware of this  
+issue as a potential customer who was interested in the T2, rather  
+than as an activist.  I am a US citizen residing in the US, and there  
+is certainly no law which would preclude Sun from giving me that  
+source under the GPL.  So, please do.  You can just attach it to your  
+reply.  ;-)
+
+Thanks again.  Adding cc: Simon Phipps (the &quot;Open Source Guy&quot; at  
+Sun), as I have previously corresponded with him on this topic.
+
+Regards,
+
+Zooko Wilcox-O'Hearn
+
+[1] <A HREF="http://rechten.uvt.nl/koops/cryptolaw/cls2.htm#us_1">http://rechten.uvt.nl/koops/cryptolaw/cls2.htm#us_1</A>
+[2] <A HREF="http://www.bis.doc.gov/encryption/default.htm">http://www.bis.doc.gov/encryption/default.htm</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

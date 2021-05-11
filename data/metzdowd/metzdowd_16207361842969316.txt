@@ -1,0 +1,24 @@
+<PRE><A HREF="http://www.youtube.com/watch?v=NW3RGbQTLhE">http://www.youtube.com/watch?v=NW3RGbQTLhE</A> shows the researchers
+breaking Mifare.
+
+And in the comments, we see posts (I presume from mifare people) 
+complaining that what is happening cannot possibly be happening.
+
+Everyone on this list knows the correct way to do what Mifare does wrong.
+
+So, since we all know how to do it right, why did Mifare come up with 
+their own super secret snake oil algorithm that no one ever reviewed?
+
+More generaly, why is encryption generally implemented in such a damned 
+stupid manner?
+
+Now everyone is going to say it should have been put out for review, and 
+of course it should have been, and had they done so they would have 
+avoided these particular mistakes, but DNSSEC and WPA was reviewed to 
+hell and back, and the result was still no damned good.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,27 @@
+<PRE>&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+
+&gt;<i>I seem to recall some (IBM?) research in which you wore a ring with an RFID-
+</I>&gt;<i>like chip in it.  Move away from your machine for more than some preset time
+</I>&gt;<i>and it locks.  I'm sure we'll see many similar ideas come into use.
+</I>
+There were commercial products that did this available some years ago, they
+hooked into the Windows auth using a custom GINA DLL (GINA = the Windows
+extensible login/authentication mechanism, think PAM for Windows) and locked
+the machine when you moved away from it.  They failed in the marketplace,
+there was no interest in them from users (or at least several of them failed,
+some may still be around).  I was given a bunch of the tags some years ago
+when one vendor discontinued them, but from memory the drivers were from the
+NT4 era and there was no chance they were going to be updated further so I
+never did anything with them.  I wasn't able to find out any more details
+about their failure in the marketplace beyond &quot;no-one bought them&quot;.
+
+There have even been DIY articles on this published, e.g.
+<A HREF="http://www.extremetech.com/article2/0,1697,1944631,00.asp">http://www.extremetech.com/article2/0,1697,1944631,00.asp</A> from ExtremeTech.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

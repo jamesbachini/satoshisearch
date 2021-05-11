@@ -1,0 +1,49 @@
+<PRE>
+  I forget where it was that I recall a thread about this recently; could have
+been here, could have been a security list, could even have been the comments
+page of an ElReg or Slashdot article or a Schneier blog post ... 
+
+... but anyway, there was a thread somewhere recently the gist of which was:
+
+   ''Disk erasing software is security theatre, because nobody has ever
+actually done AFM recovery and it wouldn't be practical and it probably
+wouldn't work on modern drives and nobody could ever afford it and it would
+take years and generate terabytes of image data that you'd need a bank of
+Crays to process and besides nobody has ever made a public claim of it having
+been done, and all these data recovery firms say it's not an option and
+nobody's ever actually done it.''
+
+  Which is why I was brought up short in my tracks by this offhand, almost
+throwaway couple of lines from a story a couple of days ago:
+
+<A HREF="http://www.theregister.co.uk/2008/09/17/cyber_crime_fighting/">http://www.theregister.co.uk/2008/09/17/cyber_crime_fighting/</A>
+&quot;  After getting a search warrant and confiscating his hard drive,
+investigators were forced to scour through its remains using an electron
+microscope, and the price of $100,000 per pass.  &quot;
+
+
+  The claim comes from &quot;Robert Schperberg, forensics lead for Chevron, [ ...
+]at the MIS Training Institute's IT Security World conference in San
+Francisco&quot;, and is otherwise unverified.  I haven't been able to get hold of
+any kind of transcript, so thus far it only has the status of &quot;Something
+someone said when giving a talk at a conference&quot;.
+
+  It could easily be deliberate propaganda or misinformation, or it could just
+be that the speaker was passing on something he'd heard but never checked up
+on.
+
+  Does anyone here know anything about this case?  Or have *anything* solid
+*at all* on firms or labs who do now or have ever in the past offered HD
+recovery using scanning microscopy techniques?
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

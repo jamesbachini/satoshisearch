@@ -1,0 +1,118 @@
+<PRE>On Thu, 24 Apr 2008, Jacob Appelbaum wrote:
+|<i> Perry E. Metzger wrote:
+</I>|<i> &gt; A pretty scary paper from the Usenix LEET conference:
+</I>|<i> &gt; 
+</I>|<i> &gt; <A HREF="http://www.usenix.org/event/leet08/tech/full_papers/king/king_html/">http://www.usenix.org/event/leet08/tech/full_papers/king/king_html/</A>
+</I>|<i> &gt; 
+</I>|<i> &gt; The paper describes how, by adding a very small number of gates to a
+</I>|<i> &gt; microprocessor design (small enough that it would be hard to notice
+</I>|<i> &gt; them), you can create a machine that is almost impossible to defend
+</I>|<i> &gt; against an attacker who possesses a bit of secret knowledge. I
+</I>|<i> &gt; suggest reading it -- I won't do it justice with a small summary.
+</I>|<i> &gt; 
+</I>|<i> &gt; It is about the most frightening thing I've seen in years -- I have
+</I>|<i> &gt; no idea how one might defend against it.
+</I>|<i> 
+</I>|<i> &quot;Silicon has no secrets.&quot;
+</I>|<i> 
+</I>|<i> I spent last weekend in Seattle and Bunnie (of XBox hacking
+</I>|<i> fame/Chumby) gave a workshop with Karsten Nohl (who recently cracked
+</I>|<i> MiFare).
+</I>|<i> 
+</I>|<i> In a matter of an hour, all of the students were able to take a
+</I>|<i> selection of a chip (from an OK photograph) and walk through the
+</I>|<i> transistor layout to describe the gate configuration. I was surprised
+</I>|<i> (not being an EE person by training) at how easy it can be to
+</I>|<i> understand production hardware. Debug pads, automated masking,
+</I>|<i> etc. Karsten has written a set of MatLab extensions that he used to
+</I>|<i> automatically describe the circuits of the mifare devices. Automation
+</I>|<i> is key though, I think doing it by hand is the path of madness.
+</I>While analysis of the actual silicon will clearly have to be part of
+any solution, it's going to be much harder than that:
+
+	1.  Critical circuitry will likely be &quot;tamper-resistant&quot;.
+	    Tamper-resistance techniques make it hard to see what's
+	    there, too.  So, paradoxically, the very mechanisms used
+	    to protect circuitry against one attack make it more
+	    vulnerable to another.  What this highlights, perhaps,
+	    is the need for &quot;transparent&quot; tamper-resistance techniques,
+	    which prevent tampering but don't interfere with inspec-
+	    tion.
+
+	2.  An experienced designer can readily understand circuitry
+	    that was designed &quot;normally&quot;.  This is analogous to the
+	    ability of an experience C programmer to understand what a
+	    &quot;normal&quot;, decently-designed C program is doing.  Under-
+	    standing what a poorly designed C program is doing is a
+	    whole other story - just look at the history of the
+	    Obfuscated C contests.  At least in that case, an
+	    experienced analyst can raise the alarm that something
+	    wierd is going on .  But what *deliberately deceptive*
+	    C code?  Look up &quot;Underhanded C Contest&quot; on Wikipedia.
+	    The 2007 contest was to write a program that implements
+	    a standard, reliable encryption algorithm, which some
+	    percentage of the time makes the data easy to decrypt
+	    (if you know how) - and which will look innocent to
+	    an analyst.  There have been two earlier contests.
+	    I remember seeing another, similar contest in which
+	    the goal was to produce a vote-counting program that
+	    looked completely correct, but biased the results.
+	    The winner was amazingly good - I consider myself
+	    pretty good at analyzing code, but even knowing that
+	    this code had a &quot;hook&quot; in it, I missed it completely.
+	    Worse, none of the code even set of my &quot;why is it
+	    doing *that*&quot; detector.
+
+	3.  This is another step in a long line of attacks that
+	    attack something by moving to a lower-level of abstraction
+	    and using that to invalidate the assumptions that
+	    implementations at higher levels of abstraction use.
+	    There's a level below logic gates, the actual circuitry.
+	    A paper dating back to 1999 - &quot;Analysis of Unconventional
+	    Evolved Electronics&quot;, CACM V42#4 (it doesn't seem to be
+	    available on-line) reported on experiments using genetic
+	    algorithms to evolve an FPGA design to solve a simple
+	    program (something like &quot;generate a -.5V output if you
+	    see a 200Hz input, and a +1V output if you see a 2KHz
+	    input).  The genetic algorithm ran at the design level,
+	    but fitness testing was done on actual, synthesized
+	    circuits.
+
+	    A human engineer given this problem would have used a
+	    counter chain of some sort.  The evolved circuit had
+	    nothing that looked remotely like a counter chain.  But
+	    it worked ... and the experimenters couldn't figure out
+	    exactly how.  Probing the FPGA generally caused it to
+	    stop working.  The design included unconnected gates -
+	    which, if removed, caused the circuit to stop working.
+	    Presumably, the circuit was relying on the analogue
+	    characteristics of the FPGA rather than its nominal
+	    digital characteristics.
+
+	    The paper at hand shows some very simple attacks, which
+	    today would be very difficult and expensive to counter.
+	    Attacks only get better over time - and even if we come
+	    up with counters to all the digital-domain attacks, the
+	    analogue layer underlying all this stuff is still out
+	    there.
+
+|<i> If we could convince (this is the hard part) companies to publish what
+</I>|<i> they think their chips should look like, we'd have a starting point.
+</I>Why would you believe that what they publish doesn't already contain the
+attack circuitry?  How far would you have them go?  Publish the VHDL
+specs as well?  That's exactly the level at which the writers of this
+paper added their code - around a hundred lines added to a total of
+11,000 or so that describe a very simple chip.  Going further, suppose
+someone has managed to &quot;spike&quot; the VHDL toolchain - recall Ken
+Thompson's classic &quot;On Trusting Trust&quot;.  Given the funding potentially
+available to the kinds of adversaries who might want to mount such
+attacks, the possible entry points are many.
+
+This is a very tough problem.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

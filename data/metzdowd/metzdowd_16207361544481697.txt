@@ -1,0 +1,41 @@
+<PRE>Try this:
+
+<A HREF="http://v3.espacenet.com/textdoc?DB=EPODOC&amp;IDX=DE10027974&amp;F=0">http://v3.espacenet.com/textdoc?DB=EPODOC&amp;IDX=DE10027974&amp;F=0</A>
+
+Then, click the tab &quot;Original Document&quot; and look at the top navigation bar for a link &quot;Save Full Document&quot;. Afterwards, you will need to pass some captcha test in order to be allowed to download a free PDF file with that Document but without any DRM clutter.
+
+Axel H. Horns
+
+
+-------- Original-Nachricht --------
+&gt;<i> Datum: Sun, 2 Sep 2007 21:10:14 -0700
+</I>&gt;<i> Von: james hughes &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hughejp at mac.com</A>&gt;
+</I>&gt;<i> An: Axel Horns &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">axel.h.horns at gmx.net</A>&gt;
+</I>&gt;<i> CC: james hughes &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hughejp at mac.com</A>&gt;, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> Betreff: Re: debunking snake oil
+</I>
+&gt;<i> I am all for humor... Can you give us a hand with how to find this  
+</I>&gt;<i> patent?
+</I>&gt;<i> 
+</I>&gt;<i> On Sep 2, 2007, at 2:27 PM, Axel Horns wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; On Fri, August 31, 2007 18:54, Stephan Neuhaus wrote:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;&gt; Fun,
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; See German patent document DE000010027974A1 (application was refused  
+</I>&gt;<i> &gt; in
+</I>&gt;<i> &gt; 2006).
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Axel H. Horns
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; ---------------------------------------------------------------------
+</I>&gt;<i> &gt; The Cryptography Mailing List
+</I>&gt;<i> &gt; Unsubscribe by sending &quot;unsubscribe cryptography&quot; to
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

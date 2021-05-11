@@ -1,0 +1,45 @@
+<PRE>&gt;&gt;<i> humans are not going to carry around large strong secrets every time
+</I>either end of the connection restarts
+
+Which is what makes good crypto challenging.  I think, though, that
+because people can understand the concept of physical locks and keys,
+that this should be carried forward...
+
+Good security is based on something you have, something you know, and
+something you are.  While the third case would be rather difficult to
+reliably implement on a mass-market scale, the former two are not
+difficult at all.  Especially now that USB drives and CDROMs are the
+defacto media standard.
+
+Passwords do have known weaknesses - people tend to pick easily
+remembered (and easily guessed) passwords.  However, when used in
+combination with an external key, the security damage is at least
+partially mitigated.  A system which relied on both would probably be
+more secure than one which simply relied on the user entering their
+password.
+
+I've been floating the idea of selling keys on removable media.  The
+core idea would be that if you get the user to use crypto keys in a
+manner similar to the way they use physical keys, that you could avoid a
+substantial amount of confusion, and would keep them from doing insecure
+things.  You know, the typical weak password kind of thing.  If the user
+has to physically plug in a USB stick for every secure session:
+
+1.) It mitigates to a small degree the danger of key leakage because the
+keys are only present on the system for small periods of time.
+2.) It makes it easier for the user to use crypto - a weak password to
+access the key database does not carry forward to a weak password for
+session purposes.  That is, the user can have a weak key database
+password without compromising the security of the underlying crypto used
+for the session.
+
+The problem is not that strong crypto is elusive, but rather, that using
+it is often non-intuitive for the average user.  An unusable, or
+error-prone crypto system is often worse than having none at all.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

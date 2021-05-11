@@ -1,0 +1,35 @@
+<PRE>Damien Miller wrote:
+
+&gt;<i> It protects against the common threat model of lost/stolen USB keys. Why is
+</I>&gt;<i> this snake oil? Your criticism seems akin to calling a physical lock insecure
+</I>&gt;<i> because it doesn't protect you from burglars once you have unlocked it.
+</I>
+Many many years ago an office that a startup I was working for was
+burglarized by picking the lock on the office door.  They took a number
+of computers.  The police recommended that we replace the locks with XYZ
+super lock that could not be picked and we did so at significant expense
+prior to replacing all of the computers.
+
+Three or four weeks later the office was burglarized again.  They could
+not pick the lock so they took a sledgehammer to the wall next to the
+door, reached in unlocked the door from the inside and proceeded to go
+about their business.
+
+This wasn't a failure of the lock.  The lock did its job.
+
+---
+
+The product you are describing is not snake oil.  You have a valid gripe
+that the product is not marketed along with a description of the attack
+vectors it protects against and those that it does not.
+
+Jeffrey Altman
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/x-pkcs7-signature
+Size: 3323 bytes
+Desc: S/MIME Cryptographic Signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070913/495eea1b/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20070913/495eea1b/attachment.bin</A>&gt;
+</PRE>

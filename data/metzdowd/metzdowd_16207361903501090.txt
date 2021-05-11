@@ -1,0 +1,108 @@
+<PRE>[Adding the cryptography list, since this seems of interest]
+
+On Wed, Aug 27, 2008 at 8:58 PM, Story Henry &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">henry.story at bblfish.net</A>&gt; wrote:
+&gt;<i> Apparently rfc2817 allows an http url tp be used for https security.
+</I>&gt;<i>
+</I>&gt;<i> Given that Apache seems to have that implemented [1] and that the
+</I>&gt;<i> openid url is mostly used for server to server communication, would
+</I>&gt;<i> this be a way out of the http/https problem?
+</I>&gt;<i>
+</I>&gt;<i> I know that none of the browsers support it, but I suppose that if the
+</I>&gt;<i> client does not support this protocol, the server can redirect to the
+</I>&gt;<i> https url? This seems like it could be easier to implement that XRI .
+</I>&gt;<i>
+</I>&gt;<i> Disclaimer: I don't know much about rfc2817
+</I>
+This inspired a blog post: <A HREF="http://www.links.org/?p=382.">http://www.links.org/?p=382.</A>
+
+Recent events, and a post to the OpenID list got me thinking.
+
+&lt;blockquote&gt;
+Apparently rfc2817 allows an http url tp be used for https security.
+
+Given that Apache seems to have that implemented [1] and that the
+openid url is mostly used for server to server communication, would
+this be a way out of the http/https problem?
+
+I know that none of the browsers support it, but I suppose that if the
+client does not support this protocol, the server can redirect to the
+https url? This seems like it could be easier to implement that XRI .
+
+Disclaimer: I don't know much about rfc2817
+
+Henry
+
+
+[1] <A HREF="http://www.mail-archive.com/dev-tech-crypto@lists.mozilla.org/msg00251.html">http://www.mail-archive.com/dev-tech-crypto@lists.mozilla.org/msg00251.html</A>
+&lt;/blockquote&gt;
+
+The core issue is that HTTPS is used to establish end-to-end security,
+meaning, in particular, authentication and secrecy. If the MitM can
+disable the upgrade to HTTPS then he defeats this aim. The fact that
+the server declines to serve an HTTP page is irrelevant: it is the
+phisher that will be serving the HTTP page, and he will have no such
+compunction.
+
+The traditional fix is to have the client require HTTPS, which the
+MitM is powerless to interfere with. Upgrades would work fine if the
+HTTPS protocol said &quot;connect on port 80, ask for an upgrade, and if
+you don't get it, fail&quot;, however as it is upgrades work at the behest
+of the server. And therefore don't work.
+
+Of course, the client &quot;requires&quot; HTTPS because there was a link that
+had a scheme of &quot;https&quot;. But why did was that link followed? Because
+there was an earlier page with a trusted link (we hope) that was
+followed. (Note that this argument applies to both users clicking
+links and OpenID servers following metadata).
+
+If that page was served over HTTP, then we are screwed, obviously
+(bearing in mind DNS cache attacks and weak PRNGs).
+
+This leads to the inescapable conclusion that we should serve
+everything over HTTPS (or other secure channels).
+
+Why don't we? Cost. It takes far more tin to serve HTTPS than HTTP.
+Even really serious modern processors can only handle a few thousand
+new SSL sessions per second. New plaintext sessions can be dealt with
+in their tens of thousands.
+
+Perhaps we should focus on this problem: we need cheap end-to-end
+encryption. HTTPS solves this problem partially through session
+caching, but it can't easily be shared across protocols, and sessions
+typically last on the order of five minutes, an insanely conservative
+figure.
+
+What we need is something like HTTPS, shareable across protocols, with
+caches that last at least hours, maybe days. And, for sites we have a
+particular affinity with, an SSH-like pairing protocol (with less
+public key crypto - i.e. more session sharing).
+
+Having rehearsed this discussion many times, I know the next objection
+will be DoS on the servers: a bad guy can require the server to spend
+its life doing PK operations by pretending he has never connected
+before. Fine, relegate PK operations to the slow queue. Regular users
+will not be inconvenienced: they already have a session key.
+Legitimate new users will have to wait a little longer for initial
+load. Oh well.
+
+&gt;<i>
+</I>&gt;<i> Henry
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> [1] <A HREF="http://www.mail-archive.com/dev-tech-crypto@lists.mozilla.org/msg00251.html">http://www.mail-archive.com/dev-tech-crypto@lists.mozilla.org/msg00251.html</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.ietf.org/rfc/rfc2817.txt">http://www.ietf.org/rfc/rfc2817.txt</A>
+</I>&gt;<i> Home page: <A HREF="http://bblfish.net/">http://bblfish.net/</A>
+</I>&gt;<i>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> general mailing list
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">general at openid.net</A>
+</I>&gt;<i> <A HREF="http://openid.net/mailman/listinfo/general">http://openid.net/mailman/listinfo/general</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

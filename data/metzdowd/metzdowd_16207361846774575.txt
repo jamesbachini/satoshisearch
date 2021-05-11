@@ -1,0 +1,24 @@
+<PRE>On Fri, Jul 11, 2008 at 05:08:39PM +0100, Dave Korn wrote:
+&gt;<i>   It does sound a lot like &quot;SSL/TLS without certs&quot;, ie. SSL/TLSweakened to
+</I>&gt;<i> make it vulnerable to MitM.  Then again, if no Joe Punter ever knows the
+</I>&gt;<i> difference between a real and spoofed cert, we're pretty much in the same
+</I>&gt;<i> situation anyway.
+</I>
+Note that this is not all that bad because many apps can do
+authentication at the application layer, and if you add channel binding
+then you can leave session crypto to IPsec while avoiding MITMs (they
+get flushed by channel binding).
+
+This is the premise of BTNS + connection latching.  W/o channel binding
+it's better than nothing, though not much.  W/ channel binding it should
+be much easier to deploy (beyond software updates) than plain IPsec with
+similar security guarantees.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

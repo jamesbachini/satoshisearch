@@ -1,0 +1,14 @@
+<PRE>According to
+<A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818&amp;intsrc=hm_list%3E%20&amp;articleId=9094818&amp;intsrc=hm_list">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818&amp;intsrc=hm_list%3E%20&amp;articleId=9094818&amp;intsrc=hm_list</A>
+some new malware is encrypting files with a 1024-bit RSA key.  Victims
+are &quot;asked&quot; to pay a random to get their files decrypted.  So -- can
+the key be factored?
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

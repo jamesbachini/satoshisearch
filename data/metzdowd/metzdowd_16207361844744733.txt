@@ -1,0 +1,32 @@
+<PRE>
+On Jul 1, 2008, at 17:39, Perry E. Metzger wrote:
+
+&gt;<i> Ed, there is a reason no one in the US, not even Wells Fargo which you
+</I>&gt;<i> falsely cited, does what you suggest. None of them use 4 digit PINs,
+</I>&gt;<i> none of them use customer account numbers as account names. (It is
+</I>&gt;<i> possible SOMEONE out there does this, but I'm not aware of it.)
+</I>
+Many German savings banks use account numbers as account names (see,  
+e.g., <A HREF="https://bankingportal.stadtsparkasse-kaiserslautern.de/banking/">https://bankingportal.stadtsparkasse-kaiserslautern.de/banking/</A>) <A HREF="http://www.stadtsparkasse-kaiserslautern.de">http://www.stadtsparkasse-kaiserslautern.de</A> 
+), as does, for example, the Saarl&#228;ndische Landesbank (<A HREF="https://banking.saarlb.de/cgi/anfang.cgi">https://banking.saarlb.de/cgi/anfang.cgi</A> 
+). Most will not use 4-digit PINs, though.
+
+&gt;<i> I understand
+</I>&gt;<i> some European banks even do stuff like mailing people cards with one
+</I>&gt;<i> time passwords.
+</I>
+Do you mean TANs (TransAction Numbers)? TANs are used to authorize  
+transactions that could affect your account balance.  So stealing the  
+PIN will let you look at the balance, but will not let you steal money  
+(through this channel).
+
+(Or maybe you knew all this already and I just missed the irony.)
+
+Fun,
+
+Stephan
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

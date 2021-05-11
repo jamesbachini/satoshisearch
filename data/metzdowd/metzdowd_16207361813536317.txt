@@ -1,0 +1,19 @@
+<PRE>On 2008-06-02, Adam Aviv wrote:
+
+&gt;<i> I recently implemented SSARES directly in python and also added
+</I>&gt;<i> parallelism to the searching. We can now search the a large inbox
+</I>&gt;<i> (1000+) messages in about 2-4 minutes.
+</I>
+Not to rain on your parade, but 1,000 messages is *not* a large inbox
+and 2 to 4 minutes is a very long time to wait.  You'd need to make this
+two orders of magnitude faster before it would have a hope of being
+interesting.  (And for me, it would have to be at least four orders of
+magnitude faster before I could consider it to be useful.)
+
+Greg
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

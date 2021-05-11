@@ -1,0 +1,20 @@
+<PRE>* Simon Josefsson:
+
+&gt;<i> One would assume that if you disable the password, the data would NOT be
+</I>&gt;<i> accessible.  Making it accessible should require a read+decrypt+write of
+</I>&gt;<i> the entire disk, which would be quite time consuming.  It may be that
+</I>&gt;<i> this is happening in the background, although it isn't clear.
+</I>
+Perhaps this section wasn't updated?  A password-based lock method is
+present in most laptop drives today.
+
+But this exhibits an issue with disk-based encryption: you can't
+really know what they are doing, and if they are doing it right.
+(Given countless examples of badly-deployed cryptography, this isn't
+just paranoia, but a real concern.)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

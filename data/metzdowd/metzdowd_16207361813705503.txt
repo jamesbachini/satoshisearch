@@ -1,0 +1,29 @@
+<PRE>&quot;David G. Koontz&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">david_koontz at xtra.co.nz</A>&gt; writes:
+&gt;<i>zooko wrote:
+</I>&gt;&gt;<i>  &quot;US export control regulations prevent Sun from opensourcing the crypto
+</I>&gt;&gt;<i> portion of N2.&quot;.
+</I>&gt;<i>
+</I>&gt;<i>You've got to admit, that the work load for implementation is quite a bit
+</I>&gt;<i>higher without the PCI-E, 10GE MACs, and crypto, for a piece of competitive
+</I>&gt;<i>silicon.  All the sudden you don't have that 'Server On a Chip' that Sun
+</I>&gt;<i>sells.
+</I>
+That's a thought I'd had as well, using the Dank Defence (&quot;these nasty people
+are holding a gun to our head and forcing us to do this even though we don't
+want to&quot;) is the easy way out when your real reason is &quot;we don't want to
+release this because it's giving too much away to potential competitors&quot;.
+
+&gt;<i>The net result is still that you can't compete directly with Sun, but you can
+</I>&gt;<i>still expand the range of applications for Sun processors, and oh by the way,
+</I>&gt;<i>Sun's silicon works perfectly well in any new markets.  It still walks like a
+</I>&gt;<i>duck.
+</I>
+Yup.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

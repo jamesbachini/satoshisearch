@@ -1,0 +1,23 @@
+<PRE>Paul Hoffman &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">paul.hoffman at vpnc.org</A>&gt; end:
+
+&gt;<i>Wrong. There is no requirement to &quot;ignore everything else in the 
+</I>&gt;<i>cert&quot;. There is simply no requirement to use that material.
+</I>
+I suspect we're in violent agreement over this, just from two different 
+persepectives.  From a security threat-modelling view I have to look at what 
+the worst is that can happen if I deploy a cert (or whatever else it is I'm 
+deplying).  Since the spec says that an implementation is free to ignore every 
+single extension in a trust anchor/root cert then I have to assume that no 
+extension I put in a root cert will ever be enforced (it *might* be, but it's 
+not safe to rely on it).  From an optimist's point of view the spec is 
+guaranteeing that extensions will be enforced.  From a paranoid security 
+person's point of view the spec is guaranteeing that no extensions will be 
+enforced.  I'm in the latter camp.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

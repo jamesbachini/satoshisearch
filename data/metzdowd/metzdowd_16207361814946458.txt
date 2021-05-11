@@ -1,0 +1,23 @@
+<PRE>
+Hi--
+
+I'm getting close to finishing up the third edition of _Disappearing  
+Cryptography_. If anyone is interested in getting paid to read  
+through the book and identify rough spots, I would love to hire you.  
+There's not much of a budget, but send me a short note with your  
+qualifications and rate. It's about 350 pages. It doesn't matter if  
+you're not an expert. I'm looking with people with an interest in  
+steganography. If you're just learning you can contribute too by  
+flagging sections that are too confusing. Anyone with expertise is  
+also welcome.
+
+Thanks,
+
+-Peter Wayner
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">p3 at wayner.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,38 @@
+<PRE>At 06:48 PM 12/18/2007 -0800, Arshad Noor wrote:
+&gt;<i>While there are many different ways to approach encryption
+</I>&gt;<i>and decryption of sensitive data, you may want to consider
+</I>&gt;<i>how you plan to manage the encryption keys before you go
+</I>&gt;<i>down this path.
+</I>
+This is prudent.  You should consider how to &quot;securely&quot; integrate
+key management with other important components of a security
+system, such as identity/authentication, policy adjudication
+(policy enforcement should be the encrypt/decrypt itself) and
+audit/logging.  Logging is usually very important in financial
+firms.  You should also carefully think about how to support
+revocation of users (i.e. preventing a revoked user from using
+a key to decrypt/encrypt data), and also to support key recovery
+of encrypted data under proper authority (say to comply with
+a legal warrant.)
+
+Finally, regardless of your design you must carefully weigh and
+assess it's performance, doing the tradeoff between cryptography
+and speed and reliability.  And you need to design it to be robust
+in the face of operational failure.
+
+Just my two cents worth (based on over a decade's worth of
+cryptographic based security system design).
+
+- Alex
+--
+
+Alex Alten
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

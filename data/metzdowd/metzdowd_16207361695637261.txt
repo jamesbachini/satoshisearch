@@ -1,0 +1,35 @@
+<PRE>At 09:34 PM 2/1/2008 +0100, Ian G wrote:
+
+&gt;<i>* Browser vendors don't employ security people as we know them on this 
+</I>&gt;<i>mailgroup, they employ cryptoplumbers. Completely different layer.  These 
+</I>&gt;<i>people are mostly good (and often very good) at fixing security bugs.  We 
+</I>&gt;<i>thank them for that!  But they are completely at sea when it comes to 
+</I>&gt;<i>systemic security failings or designing new systems.
+</I>
+An excellent observation Ian!!
+
+I too have run into this mindset at enterprises with inhouse security teams 
+(mostly in Silicon Valley).  They focus on the nuts and bolts like 
+producing/using cryptographic libaries, fixing security bugs in code or 
+configuring network appliances to stop intrusions.  But it is really hard 
+to find any of them with decent experience or knowledge at the overall 
+software/hardware/people system design level. They are often very smart and 
+educated engineers. I find that there's this &quot;mindless&quot; focus on using 
+groups of &quot;security&quot; standards, e.g PKI / LDAP / SSL type of combinations, 
+etc.  The DoD contractor firms seem to be a little bit better at 
+recognizing the system level aspects of security, although they too are 
+often blinded by the emphasis on &quot;COTS&quot; security products.
+
+- Alex
+--
+
+Alex Alten
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

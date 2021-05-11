@@ -1,0 +1,18 @@
+<PRE>|<i> Date: Thu, 24 Apr 2008 16:22:34 +0000
+</I>|<i> From: Steven M. Bellovin &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt;
+</I>|<i> To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>|<i> Subject: Declassified NSA publications
+</I>|<i> 
+</I>|<i> <A HREF="http://www.nsa.gov/public/crypt_spectrum.cfm">http://www.nsa.gov/public/crypt_spectrum.cfm</A>
+</I>Interesting stuff.  There's actually more there in some parallel
+directories - there's an overview page at
+
+	<A HREF="http://www.nsa.gov/public/publi00003.cfm">http://www.nsa.gov/public/publi00003.cfm</A>
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

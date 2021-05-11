@@ -1,0 +1,25 @@
+<PRE>On 9/6/07, Jacob Appelbaum &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jacob at appelbaum.net</A>&gt; wrote:
+&gt;<i> Seagate recently announced a 1TB drive for desktop systems and a 250GB
+</I>&gt;<i> laptop drive. What's of interest is that it appears to use a system
+</I>&gt;<i> called DriveTrust for Full Disk Encryption. It's apparently AES-128.
+</I>
+Yes, but will it work on my UltraSparc? How about my PPC powermac? Or
+maybe my OpenBSD laptop?
+
+What's that - I have to use some opaque mechanism to key my drive? Pass.
+
+And how do I know that the drive didn't just store a copy of my
+encryption key in NVRAM somewhere which can be retrieved by reading
+some magic sequence of negative sectors? And what about a zillion
+other paranoid but reasonable concerns?
+
+CK
+
+-- 
+GDB has a 'break' feature; why doesn't it have 'fix' too?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

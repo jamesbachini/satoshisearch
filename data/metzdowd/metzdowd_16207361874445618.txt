@@ -1,0 +1,34 @@
+<PRE>Michael Tschannen wrote:
+&gt;<i> Hi list
+</I>&gt;<i> 
+</I>&gt;<i> Has anybody already gained experience concerning the technical
+</I>&gt;<i> implementation of SRP (<A HREF="http://srp.stanford.edu">http://srp.stanford.edu</A>)? There is one point I
+</I>&gt;<i> couldn't find in any documentation: Should the modulus and the generator
+</I>&gt;<i> (N and g) be unique for each client or can they be chosen
+</I>&gt;<i> application-wide? What are the (security-related) implications in each
+</I>&gt;<i> case?
+</I>
+There is no readily apparent reason why N and g should not be 
+application wide.
+
+Of course, some clever persons might discover some unobvious flaw.
+
+Rather than using SRP, you might use J-PAKE.  J-PAKE has a proof that 
+there is nothing wrong with J-PAKE unless there is something wrong with 
+all similar protocols, so you can go right ahead and do what all the 
+other protocols do - which is one value of N and g for all.
+&gt;<i> 
+</I>&gt;<i> Thanks,
+</I>&gt;<i> 
+</I>&gt;<i> Michael
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

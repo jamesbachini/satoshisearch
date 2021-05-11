@@ -1,0 +1,62 @@
+<PRE>
+
+Alex Alten wrote:
+
+[snip]
+
+&gt;<i> These are trite responses.  Of course not.  My point is
+</I>&gt;<i> that if the criminals are lazy enough to use a standard
+</I>&gt;<i> security protocol then they can't expect us not to put
+</I>&gt;<i> something in place to decrypt that traffic at will if necessary.
+</I>
+[snip]
+
+&gt;<i> Look, the criminals have to design their security system with
+</I>&gt;<i> severe disadvantages; they don't own the machines they
+</I>&gt;<i> attack/take over so they can't control its software/hardware
+</I>&gt;<i> contents easily, they can't screw around too much with the IP
+</I>&gt;<i> protocol headers or they lose communications with them, and
+</I>&gt;<i> they don't have physical access to the slave/owned machines.
+</I>&gt;<i> 
+</I>&gt;<i> And, last I heard, they must obey Kerckhoff's law, despite
+</I>&gt;<i> using prayers to Allah for key exchanges.
+</I>&gt;<i> 
+</I>&gt;<i> Given all this, I'm not saying its easy to do, but it should be
+</I>&gt;<i> quite possible to crack open some or all of their encrypted
+</I>&gt;<i> comms and/or trace back to the original source attack
+</I>&gt;<i> machines.
+</I>
+However, we do know that &quot;criminals&quot; are not always lazy. The 
+trite comment often said is that if they used the same level of 
+effort in a legal enterprise they would have done quite well.
+
+The other proof that they are not lazy is looking at the 
+evolution of the sophistication of malware like Storm and 
+Nugache. It takes some serious effort to overcome the real 
+handicaps that you point out as well as the ratio of the power 
+and numbers that are hunting to put them out of business to their 
+own numbers.
+
+In many ways it is similar to a guerrilla war where many of the 
+advantages are actually held by the tiny band of insurgents, who, 
+greatly outnumbered and out-gunned, can in fact change history. 
+The Swiss know this and train their military based on this.
+
+Do not be surprised if the dissidents of all stripes use 
+improvisation based on malware and other tools like onion routing 
+to further their causes and evade suppression.
+
+BTW, while I do not think all dissidents are righteous or 
+fighting for righteous causes this does negate the general idea. 
+A hammer is a hammer. Good or evil is independent of the tools, 
+it depends on what one is pounding, nails or heads.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

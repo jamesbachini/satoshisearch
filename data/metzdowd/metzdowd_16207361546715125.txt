@@ -1,0 +1,52 @@
+<PRE>Udhay Shankar N &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">udhay at pobox.com</A>&gt; writes:
+
+&gt;<i>Sounds like an interesting idea - using SRAM state as a source of randomness.
+</I>&gt;<i>Any of the folks here willing to comment on this?
+</I>
+The paper actually covers two (related) things, fingerprint extraction and
+using SRAM power-up state as a random number source/seed, I assume your
+question is about the latter so I'll only address that.  In addition I'm not
+sure if you're looking only at RAM state in limited embedded devices or are
+wondering whether it's a good source in general, e.g. in desktop PCs, so I'll
+assume both.
+
+The problem with using device state in this manner is that it's *completely*
+dependent on the device technology and environment in which it's used.  Any
+change in the manufacturing process can change the results.  Any change in the
+environment (temperature, supply voltage, etc) can change the results.  A
+deliberate attack, for example irradiating the device to change the RAM cell
+threshold, can change the results.  Even without deliberate modification, SRAM
+cells that store a constant value tend to acquire a set over time in which
+they'll come up in that state when powered on (this has happened with crypto
+hardware storing keys over long periods of time in SRAM).  In a PC, the +5VSB
+may trickle enough power through the RAM to retain state for some time after
+the machine is powered off, or possibly more or less indefinitely unless the
+power is physically removed (I've measure 3-5W power consumption on several
+PCs in the suppsedly turned-off state, which indicates that the +5VSB is
+powering parts of the system).  ECC memory scrubbing may set the RAM into a
+predetermined state.  A slow memory test during POST (which writes all cells
+rather than doing a quick test with a large stride) would have the same
+effect.  The list goes on and on...
+
+The worst case is a change in the environment or manufacturing process, which
+typically occurs without the end user even knowing about it.  You simply can't
+guarantee anything about RAM state as an RNG source, you'd have to prove a
+negative (no change in manufacturing technology or the environment will affect
+the quality of the source) in order to succeed.  It's like the thread-timing-
+based RNGs, you can never prove that some current variation of or future
+change to the scheduler won't result in totally predictable &quot;random&quot; numbers.
+
+So RAM state is entropy chicken soup, you may as well use it because it can't
+make things any worse, but I wouldn't trust it as the sole source of entropy.
+What I'd use is a device fingerprint (which is never revealed) seeding a PRNG
+with a counter in nonvolatile memory to ensure the PRNG state never repeats.
+However the publication of the fingerprint for device ID purposes tends to
+negate this usage.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

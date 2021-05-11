@@ -1,0 +1,28 @@
+<PRE>[Moderator's note: lightly edited. Please stick to ASCII and lines
+under 80 columns if possible. --Perry]
+
+A gentleman on the FDE list posted the link:
+
+<A HREF="http://biz.yahoo.com/nytimes/080509/1194773259639.html?.v=1">http://biz.yahoo.com/nytimes/080509/1194773259639.html?.v=1</A>
+
+and in it is the following quote:
+
+&gt;<i> Last month, the Pentagon's Defense Advanced Research Projects Agency
+</I>&gt;<i> began distributing chips with hidden Trojan horse circuitry to
+</I>&gt;<i> military contractors who are participating in the agency's Trusted
+</I>&gt;<i> Integrated Circuits program. The goal is to test forensic techniques
+</I>&gt;<i> for finding hidden electronic trap doors, which can be maddeningly
+</I>&gt;<i> elusive. The agency is not yet ready to announce the results of the
+</I>&gt;<i> test, according to Jan Walker, a spokeswoman for the agency.
+</I>
+Hmmmm....
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

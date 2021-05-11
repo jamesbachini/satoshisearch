@@ -1,0 +1,46 @@
+<PRE>Nicolas Williams wrote:
+&gt;<i> I don't have one that exists today and is practical.  But we can
+</I>&gt;<i> certainly imagine possible ways to improve this situation: move parts of
+</I>&gt;<i> TLS into TCP and/or IPsec.  There are proposals that come close enough
+</I>&gt;<i> to this (see the last IETF SAAG meeting's proceedings, see the IETF BTNS
+</I>&gt;<i> WG) that it's not too farfetched, but for web stuff I just don't think
+</I>&gt;<i> they're remotely likely.
+</I>&gt;<i>
+</I>&gt;<i>    
+</I>
+my view of ipsec was that it faced a significant barrier to entry since
+it required upgrading lots of installed kernels all over the infrastructure
+(aka tcp/ip protocol stack have been integrated kernel implementations)
+
+both SSL and VPN offered implementations that require having to
+upgrade existing deployed kernels (something that has gotten
+somewhat easier in the last decade plus).
+
+about the same time as SSL, a friend that we had worked on &amp; off with
+over a couple decades introduced what was to become called VPN
+in gateway committee at fall '94 IETF meeting in san jose.
+
+my view was this resulted in some amount of consternation
+with the ipsec forces as well as some of the router vendors.
+the ipsec forces were somewhat mollified by being able
+to refer to vpn as &quot;lightweight&quot; ipsec (while others then
+would refer to ipsec as &quot;heavyweight&quot; ipsec).
+
+the initial proposal involved border routers providing
+authentication and (encryption) tunneling through the
+internet. some of the router vendors had processors
+that could handle the encryption load. however, there
+was opposition from the router vendors that didn't
+have products with processors that could handle
+the encryption load (or at least stalling until they
+had such a product).
+
+in any case, uptake of both SSL and VPN ... was
+the significantly easier and less complex deployment
+... vis-a-vis ipsec.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

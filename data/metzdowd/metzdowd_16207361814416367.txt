@@ -1,0 +1,34 @@
+<PRE>John Ioannidis wrote:
+&gt;<i> This is no different than suffering a disk crash.  That's what backups 
+</I>&gt;<i> are for.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>At Jim Gray's tribute on the 31st, Bruce Lindsay gave a talk about Jim's
+formalization of transaction processing enabled online transactions ... i.e.
+needed trust in the integrity of integrity of transaction as prerequisite
+to move from manual/paper processes.
+
+In the early 90s, when glasshouse and mainframes seeing significant
+downturn in their use ... with lots of stuff moving off to PCs, there
+was a study that half of the companies that had a disk failure involving
+(business) data that wasn't backed up ... filed for bankruptcy within
+30 days. The issue was that glasshouse tended to have all sorts
+of business processes to backup business critical data. Disk failures
+that lost stuff like billing data had significant impact
+on cash flow (there was case of large telco that had
+bug in its nightly backup and when the disk crashed with customer
+billing data ... they found that there didn't have valid backups).
+
+Something similar also showed up in the Key Escrow meetings in the
+mid-90s with regard to business data that was normally kept in encrypted
+form ... i.e. would require replicated key backup/storage in order to
+retrieve data (countermeasure to single point of failure). part of the
+downfall of key escrow was that it seem to want all keys ... not just
+infrastructure where business needed to have replicated its own
+keys.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

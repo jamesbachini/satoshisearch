@@ -1,0 +1,66 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> (The usage model is that you do the UI portion on the PC, but perform the
+</I>&gt;<i> actual transaction on the external device, which has a two-line LCD display
+</I>&gt;<i> for source and destination of transaction, amount, and purpose of the
+</I>&gt;<i> transaction.  All communications enter and leave the device encrypted, with
+</I>&gt;<i> the PC acting only as a proxy.  Bill of materials shouldn't be more than about
+</I>&gt;<i> $20).
+</I>
+The decade or so old EU FINREAD standard is along this line ... sort
+of modeled after point-of-sale terminal ... includes its own display and
+pinpad (countermeasure to keyloggers). lots of past posts mentioning
+EU FINREAD standard
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#finread">http://www.garlic.com/~lynn/subintegrity.html#finread</A>
+
+the actual communications that enter and leave aren't required to
+be encrypted ... the communication that enter are revalidated on
+the display ... and the communication that exits is on the order
+of an x9.59 transaction
+<A HREF="http://www.garlic.com/~lynn/x959.html#x959">http://www.garlic.com/~lynn/x959.html#x959</A>
+
+that are armored with digital signature (integrity and authentication)
+... misc. posts mentioning &quot;naked&quot; transaction metaphor
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#payments">http://www.garlic.com/~lynn/subintegrity.html#payments</A>
+
+old aads chip strawman from nearly decade ago postulated form factor
+agnostic ... that could even be added to existing pda/cellphone for
+a lot less and communicate wirelessly.
+<A HREF="http://www.garlic.com/~lynn/x959.html#aads">http://www.garlic.com/~lynn/x959.html#aads</A>
+
+in the mid-90s, the x9a10 financial standard working group had been given
+the requirement to preserve the integrity of the financial infrastructure
+for all retail payments. part of the detailed end-to-end threat and
+vulnerability analysis was not only the end-point vulnerabilities
+but also the large number of business processes that are giving rise
+to security breaches and data breaches that have frequently made
+the press. part of x9.59 transaction armoring was that all the
+transaction information could be readily exposed and still not
+be useful to attackers for performing fraudulent transactions.
+This was countermeasure to all the breaches ... regardless of whether 
+insiders or outsiders were involved ... it was recognized that
+the transaction information had to be exposed in a large number
+of business processes. Recognizing the impossibility of 
+eliminating all such information exposure ... the x9.59 approach
+was to eliminate the risk and fraud associated with such exposures
+(i.e. impossible to eliminate all the breaches ... so eliminate
+the risk and fraud associated with such breaches).
+
+We had previously been called in to consult with small client/server
+startup that wanted to do payment transactions on their server
+<A HREF="http://www.garlic.com/~lynn/subnetwork.html#gateway">http://www.garlic.com/~lynn/subnetwork.html#gateway</A>
+
+and had this technology called SSL that they wanted to use. The
+issue in SSL was that it hid the information was moving across
+the internet ... but left it totally exposed at all other
+points (and in fact the numerous business processes required
+such exposure). the x9.59 approach was then to try and eliminate
+all such exposures ... but to eliminate the risks associated with
+all exposure of the information (in effect, armoring the transaction
+w/o requiring the information to be hidden as countermeasure to
+fraudulent transactions).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

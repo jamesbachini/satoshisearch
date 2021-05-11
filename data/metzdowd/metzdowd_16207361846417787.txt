@@ -1,0 +1,39 @@
+<PRE>* Arshad Noor:
+
+&gt;<i> I may be a little naive, but can a protocol itself enforce proper
+</I>&gt;<i> key-management?  I can certainly see it facilitating the required
+</I>&gt;<i> discipline, but I can't see how a protocol alone can enforce it.
+</I>&gt;<i> Any examples you can cite where this has been done, would be very
+</I>&gt;<i> helpful.
+</I>
+As far as I understand it, you don't actually change protocols, which
+means that there's likely no way around this problem.
+
+&gt;<i> The design paradigm we chose for EKMI was to have:
+</I>&gt;<i>
+</I>&gt;<i> 1) the centralized server be the focal point for defining policy;
+</I>&gt;<i> 2) the protocol carry the payload with its corresponding policy;
+</I>&gt;<i> 3) and the client library enforce the policy on client devices;
+</I>&gt;<i>
+</I>&gt;<i> In some form or another, don't all cryptographic systems follow a
+</I>&gt;<i> similar paradigm?
+</I>
+No, there are things like digital cash and mental poker which do not
+work with a trusted third party.  I think it's even possible to compute
+RSA signatures from a split private key in a way that is secure against
+byzantine failure (IOW, a certain number of key holders needs to
+cooperate to forge a signature or recover the private key).  There's
+also quite a bit of research on operations on encrypted databases.
+
+Of course, you cannot actually run an ordinary web shop on top of such
+protocols because interfaces to the public and to the processors are
+essentially fixed.  Cryptographically securing the middle end seems
+rather pointless to me because the public-facing front end is the
+component that causes most of the trouble.  (And I'm not fully convinced
+that more encryption is the answer to that.)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

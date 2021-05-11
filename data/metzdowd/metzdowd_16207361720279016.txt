@@ -1,0 +1,38 @@
+<PRE>Ivan Krsti? wrote:
+&gt;<i> 1. take partially known plaintext
+</I>&gt;<i> 2. make a guess, randomly or more intelligently where possible,
+</I>&gt;<i>    about the unknown parts
+</I>&gt;<i> 3. take the current integrated partial+guessed plaintext, hash
+</I>&gt;<i>    to obtain convergence key
+</I>&gt;<i> 4. verify whether that key exists in the storage index
+</I>&gt;<i> 5. if yes, you've found the full plaintext. if not, repeat from '2'.
+</I>&gt;<i> 
+</I>&gt;<i> That's a brute force search. If your convergence key, instead of being a 
+</I>&gt;<i> simple file hash, is obtained through a deterministic but 
+</I>&gt;<i> computationally expensive function such as PBKDF2 (or the OpenBSD 
+</I>&gt;<i> bcrypt, etc), then step 3 makes an exhaustive search prohibitive in most 
+</I>&gt;<i> cases while not interfering with normal filesystem operation. What am I 
+</I>&gt;<i> missing?
+</I>
+Better still, have a limited supply of tickets that enable one to 
+construct the convergence key.  Enough tickets for all normal usage, but 
+  not enough to perform an exhaustive search.
+
+Assume a small set of ticket issuing computers hold a narrowly shared 
+secret integer k.  Assume a widely shared elliptic curve with the 
+generator G.
+
+If h is the hash of the file, the convergence key is h*k*G.
+
+If you give the ticket issuing computers an elliptic point P, they will 
+  give you the corresponding elliptic point k*P.  If, however, you ask 
+for too many such points, they will stop responding.
+
+Of course, this allows one to be attacked by anyone that holds the 
+narrowly held key.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

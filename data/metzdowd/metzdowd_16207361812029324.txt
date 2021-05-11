@@ -1,0 +1,59 @@
+<PRE>[Moderator's note: Please don't top post. --Perry]
+
+Depending on the level of protection you want, you could just add a
+script to your .forward to encrypt your email before delivery using
+PGP/GPG. However, this will leave the headers in the clear, so you
+will likely want to create an entirely new envelope for the message
+with the original message encrypted as the body or an attachment. But
+then you will need a thunderbird extension to unwrap the encrypted
+original email out of the body, and store the message locally
+unencrypted so that you can search.
+
+The problem comes when you start accessing your email from multiple
+locations. At one place you have built up a large cache of unencrypted
+messages and you can use them in the normal way, but when you access
+from another machine or a blackberry, the lack of cache will greatly
+hinder your performance. This is the reason we wanted to not only have
+the client cache capability to searching, but also a server side
+mechanism to compensate when accessing from multiple locations.
+
+adam
+
+
+
+On Tue, Jun 3, 2008 at 11:34 AM, Nate Lawson &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">nate at root.org</A>&gt; wrote:
+&gt;<i> Greg Black wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On 2008-06-02, Adam Aviv wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> I recently implemented SSARES directly in python and also added
+</I>&gt;&gt;&gt;<i> parallelism to the searching. We can now search the a large inbox
+</I>&gt;&gt;&gt;<i> (1000+) messages in about 2-4 minutes.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Not to rain on your parade, but 1,000 messages is *not* a large inbox
+</I>&gt;&gt;<i> and 2 to 4 minutes is a very long time to wait.  You'd need to make this
+</I>&gt;&gt;<i> two orders of magnitude faster before it would have a hope of being
+</I>&gt;&gt;<i> interesting.  (And for me, it would have to be at least four orders of
+</I>&gt;&gt;<i> magnitude faster before I could consider it to be useful.)
+</I>&gt;<i>
+</I>&gt;<i> Thunderbird, at least, downloads imap mail locally for searching.  So all I
+</I>&gt;<i> need is the automatic public key encryption on the server side (no
+</I>&gt;<i> searching).  Is there such an application already?
+</I>&gt;<i>
+</I>&gt;<i> --
+</I>&gt;<i> Nate
+</I>&gt;<i>
+</I>
+
+
+-- 
+Adam Aviv
+Ph. D. Candidate
+Computer and Information Science
+University of Pennsylvania
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

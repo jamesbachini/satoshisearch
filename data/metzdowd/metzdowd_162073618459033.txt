@@ -1,0 +1,32 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+
+&gt;<i>The problem, Peter, is that people who don't know you may mistake your
+</I>&gt;<i>sarcasm for agreement with misconception in the article Arshad quoted.
+</I>
+What, me, sarcastic?  Never!
+
+&gt;<i>The point is not that fools (often including us) haven't built monstrous
+</I>&gt;<i>ziggurats that failed. The point is that no one rational should *SEEK* to
+</I>&gt;<i>make a protocol into monstrous ziggurat on the basis that this will improve
+</I>&gt;<i>security
+</I>
+Sure, any rational designer, working by themselves, will (hopefully) create a
+simple, easy-to-analyse protocol.  The problem seems to occur once you get
+committees involved (although I've seen some one-person-designed protocols
+that can match the output of any standards committee :-).  So there's a
+difference between what should happen in an ideal world and what happens in
+practice.  People will quite easily build monstrous ziggurats one mud-brick at
+a time, as any number of security protocols aptly demonstrate.  They're not
+built because someone thinks they'll be more secure that way, but because the
+delegate from IBM suggested that we need this, and the delegate from MS
+insisted on having that, and the delegate from Verisign required the other.
+
+(Actually even that doesn't really explain something like IKE... :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

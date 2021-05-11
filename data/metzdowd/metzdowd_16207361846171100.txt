@@ -1,0 +1,18 @@
+<PRE>Hi,
+
+I've just stumbled upon this article which you might find
+interesting
+
+<A HREF="http://news.cnet.com/8301-10784_3-9985886-7.html?hhTest=1">http://news.cnet.com/8301-10784_3-9985886-7.html?hhTest=1</A>
+
+
+-- 
+left blank, right bald
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080710/2765984c/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080710/2765984c/attachment.pgp</A>&gt;
+</PRE>

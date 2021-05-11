@@ -1,0 +1,35 @@
+<PRE>On Wed, 19 Sep 2007 09:29:53 +0100
+&quot;Dave Korn&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave.korn at artimi.com</A>&gt; wrote:
+
+&gt;<i> On 18 September 2007 23:22, Leichter, Jerry wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; Anyone know anything about the Yoggie Pico (www.yoggie.com)?  It
+</I>&gt;<i> &gt; claims to do much more than the Ironkey, though the language is a
+</I>&gt;<i> &gt; bit less &quot;marketing-speak&quot;.  On the other hand, once I got through
+</I>&gt;<i> &gt; the marketing stuff to the technical discussions at Ironkey, I ended
+</I>&gt;<i> &gt; up with much more in the way of warm fuzzies than I do with Yoggie.
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt;  							-- Jerry
+</I>&gt;<i> 
+</I>&gt;<i>   Effectively, it's just an offload processor in fancy dress.
+</I>&gt;<i> 
+</I>&gt;<i>   It relies on diverting all your network traffic out to the USB and
+</I>&gt;<i> back just before/after the NIC, which it presumably has to do with
+</I>&gt;<i> some sort of filter driver, so it's subject to all the same problems
+</I>&gt;<i> vs. malware as any desktop pfw.
+</I>&gt;<i> 
+</I>&gt;<i>   Unless your box is so overloaded that the pfw is starved of cpu
+</I>&gt;<i> cycles, I can't see the use of it myself.
+</I>&gt;<i> 
+</I>If done properly -- i.e., with cryptographic protection against new
+firmware or policy uploads to it -- it's immune to host or user
+compromise as a way to disable the filter.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

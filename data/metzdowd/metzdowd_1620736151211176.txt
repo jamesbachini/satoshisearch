@@ -1,0 +1,29 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> Does that mean that the new fiber is less tappable?
+</I>
+No change, notwithstanding anecdotal references on fiber bending
+as used for tapping.
+
+Tapping a fiber can be done without much notice by matching the
+index of refraction outside the outer fiber layer, after abrasion
+and etching to reach that layer. There is no need for bending,
+which might not be physically possible (eg, in a thick cable bundle),
+would increase propagation losses beyond that caused by the tapped
+signal power itself, and might create detectable backward
+propagating waves (BPWs are monitored to detect fiber breach).
+
+Low-loss taps are essential. A tap must extract a portion of
+the through-signal. This, however, should not have the effect of
+significantly reducing the level of the remaining signal. For
+example, if one-quarter of the incident signal is extracted, then
+there is a 1.25 db loss in the remaining through-signal, which
+can easily be detected.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

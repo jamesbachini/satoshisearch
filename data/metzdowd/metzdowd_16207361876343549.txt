@@ -1,0 +1,147 @@
+<PRE>
+Forwarded:
+
+From: &quot;Peng Liu&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pliu at ist.psu.edu</A>&gt;
+To: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ias-opportunities at cerias.purdue.edu</A>&gt;
+Cc: &quot;Peng Liu&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pliu at ist.psu.edu</A>&gt;, &quot;D LIN&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">d_d_lin at yahoo.com.cn</A>&gt;
+Reply-To: &quot;Peng Liu&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pliu at ist.psu.edu</A>&gt;
+
+
+------------------------------------------------------------------------
+                We are sorry if you receive multiple copies! 
+------------------------------------------------------------------------
+                              CALL FOR PAPERS
+       4th International Conference on Information Security and
+Cryptology
+                               Inscrypt 2008
+                   December 14 - 17, 2008, Beijing, China
+                           <A HREF="http://www.inscrypt.cn/">http://www.inscrypt.cn/</A>
+
+The 4th International Conferences on Information Security and Cryptology
+will be held in Beijing from December 14 to 17, 2008. The conference is
+co-organized by Chinese Association for Cryptologic Research and The
+State Key Laboratory of Information  Security (SKLOIS) of China. It is
+an annual conference targeting the top research results in the related
+area. The formal conference proceedings will be published by Springer
+Verlag in LNCS series after conference.  
+
+PAPERS
+======
+Authors are invited to submit full papers presenting new research
+results related to cryptology, information security and their
+applications. All submissions must describe original research that is
+not published or currently under review by another conference 
+or journal. Areas of interest include, but are not limited to:
+
+Access Control                          Provable Security 
+Authentication and Authorization        Secure Multiparty Computation
+Biometric Security                      Foundations of Cryptography
+Distributed System Security             Secret Key and Public Key
+Cryptosystems
+Database Security                       Implementation of Cryptosystems
+Electronic Commerce Security            Hash Functions and MACs
+Intrusion Detection                     Block Cipher Modes of Operation
+Information Hiding and Watermarking     Intellectual Property Protection
+Key Management and Key Recovery         Mobile System Security
+Network Security                        Operating System Security
+Security Protocols and Their Analysis   Risk Evaluation and Security
+Certification
+Security Modeling and Architectures     Prevention and Detection of
+Malicious Codes
+
+INSTRUCTION FOR AUTHORS
+======================= 
+Conference language is English. All submissions must be anonymous, with
+no author names, affiliations, acknowledgments, or obvious references.
+It should begin with a title, a short abstract, and a list of key words,
+and its introduction should summarize the contributions of the paper at
+a level appropriate for a non-specialist reader. The paper should be
+intelligible and self-contained within 20 pages including references and
+appendices and must be submitted electronically. Submissions not meeting
+these guidelines risk rejection without consideration of their merits.
+It is highly advised to prepare the submissions in the Springer LNCS
+format (see
+<A HREF="http://www.springeronline.com/sgw/cda/frontpage/0,11855,5-164-2-72376-0,">http://www.springeronline.com/sgw/cda/frontpage/0,11855,5-164-2-72376-0,</A>
+00.html). A detailed description of the electronic submission procedure
+can be found from a link at <A HREF="http://www.inscrypt.cn/.">http://www.inscrypt.cn/.</A>
+
+IMPORTANT DATES
+===============
+Deadline for Submission:	                       August 27, 2008
+Notification of Acceptance:	                       October 25, 2008
+Pre-proceedings version deadline:	               November 10, 2008
+Proceedings version deadline:	                       January 15, 2009
+
+CONFERENCE GENERAL CHAIR
+========================
+Dengguo Feng           SKLOIS, Institute of Software, CAS, China
+
+
+TECHNICAL PROGRAME COMMITTEE
+============================
+Moti Yung              Columbia University, USA (co-Chair)
+Peng Liu               Pennsylvania State University, USA (co-Chair)
+Dongdai Lin            Institute of Software, CAS, China (co-chair)
+
+Vladimir S. Anashin    Moscow University, Russia
+Vijay Atluri           Rutgers University, USA
+Marina Blanton         University of Notre Dame, USA
+Zhenfu Cao             Shanghai Jiaotong University, China
+Claude Carlet          INRIA,Universite Paris 8, France
+Jean-Sebastien Coron   University of Luxembourg
+Marc Dacier            Symantec Research Labs Europe 
+Cunsheng Ding          Hong Kong University of Science and Technology,
+China
+Jintai Ding            University of Cincinnati, USA
+Stefan Dziembowski     University of Rome &quot;La Sapienza&quot;, Italy
+Jean-Charles Faugere   INRIA, France
+Guang Gong             University of Waterloo, Canada
+Qijun Gu               Texas State University, USA
+Martin Hell            University of Lund, Sweden
+Xuxian Jiang           NC State University, USA
+Jiwu Jing              Graduate University of CAS, China
+Brian King             Indiana University-Purdue University,
+Indianapolis, USA
+Miroslaw Kutylowski    Wroclaw University of Technology, Poland
+Chi-Sung Lai           National Cheng Kung University, Taiwan
+DongHoon Lee           Korea University
+Albert Levi            Sabanci University, Turkey
+Jianhua Li             Shanghai Jiaotong University, China
+Jie Li                 University of Tsukuba, Japan
+Ninghui Li             Purdue University, USA
+Yingjiu Li             Singapore Management University, Singapore
+Benoit Libert          Universite Catholique de Louvain, Belgium
+Javier Lopez           University of Malaga, Spain
+Xiapu Luo              The Hong Kong Polytechnic University, Hongkong
+Bodo Moeller           Google Inc., Zurich
+Mridul Nandi           NIST, USA
+Peng Ning              North Carolina State University, USA
+Eiji Okamoto           Tsukuba University, Japan
+Ludovic Perret         LIP6/INRIA Paris-Rocquencourt, France
+Giuseppe Persiano      University of Salerno, Italy
+Raphael C.-W. Phan     Loughborough University, UK
+Bimal K. Roy           Indian Statistical Institute, India
+Kouichi Sakurai        Kyushu University, Japan
+Bhavani Thuraisingham  University of Texas at Dallas, USA
+Carmela Troncoso       K.U. Leuven, Belgium
+Shabsi Walfish         Google Inc. USA
+Huaxiong Wang          Nanyang Technological University, Singapore
+Xiaoyun Wang           Shandong University, China
+Chuankun Wu            Institute of Software, CAS, China
+Shouhai Xu             University of Texas at San Antonio, USA
+Meng Yu                Western Illinois University, USA
+Erik Zenner            Technical University of Denmark
+Yuliang Zheng          University of North Carolina at Charlotte, USA
+Jianying Zhou          Institute for Infocomm Research, Singapore
+Sencun Zhu             The Pennsylvania State University, USA
+
+LOCAL ORGANIZING COMMITTEE CO-CHAIRS
+====================================
+Jiwu Jing              Graduated University, CAS, China
+Zhijun Qiang           Chinese Association for Cryptology Research
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

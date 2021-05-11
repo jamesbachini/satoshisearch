@@ -1,0 +1,32 @@
+<PRE>Ralf-Philipp Weinmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">weinmann at cdc.informatik.tu-darmstadt.de</A>&gt; writes:
+&gt;<i>On Dec 3, 2007, at 16:51 , Paul Hoffman wrote:
+</I>&gt;&gt;<i> Another interesting part is that open-source systems are much more
+</I>&gt;&gt;<i> susceptible to being attacked by competitors (that is, having their
+</I>&gt;&gt;<i> validation suspended) than are closed-source systems.
+</I>&gt;<i>
+</I>&gt;<i>this may have been true in the past. Enter tools like BinDiff [1] and BinNavi
+</I>&gt;<i>[2] and a skilled reverse engineer is able to shoot down you're closed-source
+</I>&gt;<i>implementation almost as quickly as one for which she has source (assuming
+</I>&gt;<i>she has binaries, of course).
+</I>
+You're misunderstanding the threat model.  The problem here is that commercial
+vendors are in a panic because the certification of free OSS security tools is
+allowing all sorts of riff-raff onto the previously exclusive US government
+purchasing gravy train.  In order to keep the gravy train free of said riff-
+raff, they've kept up a steady stream of objections to the certification based
+on various nitpicks.  While it's possible to say &quot;There's something we noticed
+here in the source code that requires the software to be ejected from the
+train&quot;, it's a bit harder to say &quot;We spent three months reverse-engineering
+someone else's proprietary protected intellectual property and think we may
+have found something&quot;.
+
+Peter.
+
+[1] Not my reference.
+[2] Not my reference.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

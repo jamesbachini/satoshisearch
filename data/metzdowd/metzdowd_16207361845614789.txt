@@ -1,0 +1,41 @@
+<PRE>* Stephan Neuhaus:
+
+&gt;<i> This article: <A HREF="http://www.spiegel.de/wirtschaft/0,1518,563606,00.html">http://www.spiegel.de/wirtschaft/0,1518,563606,00.html</A>
+</I>&gt;<i> (sorry, German only) describes a judgment made by a German district
+</I>&gt;<i> court which says that banks are liable for damages due to phishing
+</I>&gt;<i> attacks.
+</I>
+&quot;District court&quot; may be a bit misleading, it's the entry-level court for
+this particular type of dispute, at the lowest place in the hierarchy.
+
+&gt;<i> In the case in question, a customer was the victim of a
+</I>&gt;<i> keylogger even though he had the latest anti-virus software installed,
+</I>
+The &quot;latest&quot; part is not clear.  I'm also puzzled that forensics could
+not recover the actual malware.
+
+(A keylogger alone is not quite good enough--you need to disrupt
+transmission of the one-time password to the bank's server if you want
+to to use the password later on.  OTOH, the disruption component does
+not necessarily appear in AV descriptions.)
+
+&gt;<i> and lost 4000 Euro. The court ruled that the bank was liable because
+</I>&gt;<i> the remittance in question had demonstrably not been made by the
+</I>&gt;<i> customer and therefore the bank had to take the risk.
+</I>
+Well, the open question is not whether the bank has to take the risk
+(after all, the transaction has been successfully disputed, even before
+the case went to court), but if the customer was negligent and needs to
+share some of the damage.
+
+For instance, if a computer takes 15 minutes to boot, constantly
+displays pop-up ads, and sporadically shows error messages during
+browsing, I would hope that it's reasonable to assume that the machine
+is not safe for on-line banking--no matter what the anti-virus says
+about the state of the machine.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

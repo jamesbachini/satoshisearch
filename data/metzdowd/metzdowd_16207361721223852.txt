@@ -1,0 +1,26 @@
+<PRE>&gt;<i>Are there any options that don't involve adding a new root CA?
+</I>
+Assuming your sites all use subdomains of your company domain,
+a wildcard cert for *.whatever might do the trick.  It's relatively
+expensive, but you can use the same cert in all your servers.
+
+&gt;<i>I would think this would be rather common, and I may have heard about
+</I>&gt;<i>certs that had authority to sign other certs in some circumstances...
+</I>
+They do exist, Comodo has sold certs signed that way, but I wouldn't
+recommend it since the depth of chaining the browsers recognize varies
+considerably.  My copy of Firefox doesn't accept many of Microsoft's
+certs because the chaining is too deep.
+
+Another possibility is just to pay to have your certs signed by one of
+the public signers.  At the current going rate of $15, you can get a
+lot of signatures for the cost of doing anything else.
+
+R's,
+John
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

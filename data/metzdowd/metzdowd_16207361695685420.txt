@@ -1,0 +1,24 @@
+<PRE>&gt;&gt;&gt;&gt;&gt;<i> &quot;Werner&quot; == Werner Koch &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">wk at gnupg.org</A>&gt; writes:
+</I>
+Werner&gt; The last time I checked the Mozilla code they used their own crypto
+Werner&gt; stuff.  When did they switched to OpenSSL and how do they solve the
+Werner&gt; GPL/OpenSSL license incompatibility?
+
+Indeed they do.  It is called nss, is available as a package of its own
+on several dists, is written in C, is MPL|GPL|LGPL and has its own page at:
+
+<A HREF="http://www.mozilla.org/projects/security/pki/nss/">http://www.mozilla.org/projects/security/pki/nss/</A>
+
+The Gentoo ebuild even installs a pkgconfig file.
+
+I don't recall seeing anything !zilla using it, though.
+
+-JimC
+-- 
+James Cloos &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cloos at jhcloos.com</A>&gt;         OpenPGP: 1024D/ED7DAEA6
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

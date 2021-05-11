@@ -1,0 +1,65 @@
+<PRE>From: Elaine Barker &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">elaine.barker at nist.gov</A>&gt;
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Quynh.Dang at nist.gov</A>
+Subject: NIST documents for public review
+Date: Mon, 30 Jul 2007 09:52:46 -0400
+X-Mailer: QUALCOMM Windows Eudora Version 6.2.3.4
+
+NIST announces the release of draft Special Publication 800-106,
+Randomized Hashing Digital Signatures. This Recommendation provides a
+technique to randomize the input messages to hash functions prior to
+the generation of digital signatures to strengthen security of the
+digital signatures. Please submit comments to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">quynh.dang at nist.gov</A> with
+&quot;Comments on Draft 800-106&quot; in the subject line. The comment period
+closes on September 17, 2007.
+
+********
+
+NIST announces the release of draft Special Publication 800-107,
+Recommendation for Using Approved Hash Algorithms This Recommendation
+provides guidance on using the Approved hash algorithms in digital
+signatures applications, Keyed-hash Message Authentication Codes
+(HMACs), key derivation functions (KDFs) and random number generators.
+Please submit comments to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">quynh.dang at nist.gov</A> with &quot;Comments on Draft
+800-107&quot; in the subject line. The comment period closes on September
+17, 2007.
+
+******
+
+NIST announces the release of D raft Federal Information Processing
+Standard (FIPS) 198-1 Publication, The Keyed-Hash Message
+Authentication Code (HMAC). The draft FIPS 198-1 is the proposed
+revision of FIPS 198. The draft specifies a keyed-hash message
+authentication code, a mechanism for message authentication using
+cryptographic hash functions and shared secret keys. Comments will be
+accepted through September 10, 2007. Comments should be forwarded to
+the Computer Security Division, Information Technology Laboratory at
+NIST or submitted via email to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">proposed198-1 at nist.gov</A> with &quot;Comments on
+Draft 198-1&quot; in the subject line. Click here to review the Federal
+Register Notice for Draft FIPS PUB 198-1.
+
+*****
+
+NIST announces the release of Draft Federal Information Processing
+Standard (FIPS) 180-3 Publication, Secure Hash Standard (SHS). The
+draft FIPS 180-3 is the proposed revision of FIPS 180-2. The draft
+specifies five secure hash algorithms (SHAs) called SHA-1, SHA-224,
+SHA-256, SHA-384 and SHA-512 which are used to condense input messages
+to fixed-length messages, called message digests. These algorithms
+produce 160, 256, 384, and 512-bit message digests, respectively.
+Comments will be accepted through September 10, 2007. Comments should
+be forwarded to the Computer Security Division, Information Technology
+Laboratory at NIST or submitted via email to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Proposed180-3 at nist.gov</A>
+with &quot;Comments on Draft 180-3&quot; in the subject line. Click here to
+review the Federal Register Notice for Draft FIPS PUB 180-3.
+
+Elaine Barker
+National Institute of Standards and Technology
+100 Bureau Drive, Stop 8930
+Gaithersburg, MD 20899-8930
+301-975-2911
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

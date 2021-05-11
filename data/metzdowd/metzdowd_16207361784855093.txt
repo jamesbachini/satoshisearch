@@ -1,0 +1,31 @@
+<PRE>Thor Lancelot Simon wrote:
+&gt;<i> And, in fact, most VPN software of any type fails this test.  My concern
+</I>&gt;<i> is that an excessive focus on &quot;how hard is it to set this thing up?&quot; can
+</I>&gt;<i> seriously obscure the important second half of the question &quot;and if you
+</I>&gt;<i> set it up in the easiest possible way, is it safe?&quot;
+</I>
+If there is a wrong way to do it, the end user will do it wrong.  Expert 
+cryptographers frequently fail to act correctly on their understanding 
+of cryptography.  The end user has no chance - and the chances are still 
+not all that good even if your end user is highly qualified cryptographer.
+
+What users comprehend, and are used to, is you that set up an account 
+with username and password, and an admin blesses the account with 
+appropriate privileges as a result of some out of band communication - 
+which username and password has to be secured, invisibly to the user, 
+against offline and phishing attacks, without requiring any thought or 
+vigilance by the user - see my web page for 
+&lt;<A HREF="http://jim.com/security/how_to_do_VPNs.html">http://jim.com/security/how_to_do_VPNs.html</A>&gt; for attacks on the 
+password model, and defenses against those attacks.
+
+This comes naturally to humans, for humans have long relied on 
+shibboleths for security against treachery by outsiders.  Thus the 
+computer interface to our clever cryptographic algorithms must resemble 
+as closely as possible the ancient human reliance on shibboleths for 
+security.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

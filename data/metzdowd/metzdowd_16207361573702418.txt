@@ -1,0 +1,30 @@
+<PRE>Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at MorganStanley.com</A>&gt; writes:
+On Thu, Oct 04, 2007 at 02:37:21PM -0500, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+&gt;&gt;<i> <A HREF="http://it.slashdot.org/article.pl?sid=07/10/04/1639224&amp;from=rss">http://it.slashdot.org/article.pl?sid=07/10/04/1639224&amp;from=rss</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Interesting quote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Jon Callas, CTO and CSO of PGP Corp., responded that this [previously
+</I>&gt;&gt;<i> undocumented] feature was required by unnamed customers and that
+</I>&gt;&gt;<i> competing products have similar functionality.
+</I>&gt;<i>
+</I>&gt;<i>The article is sensational nonsense. The quote is right on the money,
+</I>&gt;<i>businesses require disk encryption companies to support one time unprotected
+</I>&gt;<i>reboot (enabled securely before reboot) to support automated rebuilds.
+</I>
+Specifically, the capability exists to allow a one-off unattended reboot of
+servers, i.e. you tell the program that at the next reboot, it should
+automount the drive without stopping to ask for the password so that the
+reboot can continue.  Without this, it would be impossible to run servers with
+encrypted drives.  The mysterious &quot;unnamed customers&quot; was a misrepresented
+reference to sysadmins who needed the capability to run their machines.
+
+Nothing to see here, move along, move along.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

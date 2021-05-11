@@ -1,0 +1,93 @@
+<PRE>StealthMonger wrote:
+&gt;<i>
+</I>&gt;<i> They can't be as &quot;anonymous as cash&quot; if the party being dealt with can
+</I>&gt;<i> be identified.  And the party can be identified if the transaction is
+</I>&gt;<i> &quot;online, real-time&quot;.  Even if other clues are erased, there's still
+</I>&gt;<i> traffic analysis in this case.
+</I>&gt;<i>
+</I>&gt;<i> What the offline paradigm has going for it is the possibility of true,
+</I>&gt;<i> untraceable anonymity through the use of anonymizing remailers and
+</I>&gt;<i> related technologies.
+</I>&gt;<i>
+</I>&gt;<i>    
+</I>
+most people who heard the statement, understood that.
+
+i think that possibly 2nd level detail was that they didn't want
+PII easily associated by casual merchant. Initial response was to remove
+name from payment cards &amp; magstripes. This also precluded
+merchants from requesting other forms of identification to
+see if the names matched the name on the payment card.
+The implication being that the payment infrastructure would
+have to come up with other mechanisms to improve
+the infrastructure integrity.
+
+The offline payment paradigms ... while touting &quot;true&quot;
+anonymity were actually primarily justified based on
+other factors.
+
+We had been asked to design and cost the dataprocessing
+supporting US deployments of some of the &quot;offline&quot; products
+(that were being used in Europe). Along the way, we did
+some business process and revenue analysis and realized
+that the primary motivation behind these system deployments
+was the float.
+
+About the same time that there was the EU about the
+privacy of electronic retail payments ... there was also
+a statement by the EU (and some of the country central
+banks) that the offline products would be allowed to
+keep the float for a short grace period .... to help in
+the funding of the infrastructure deployment ... but
+after the grace period ... the operators would have to
+start paying interest on the balance held in the &quot;offline&quot;
+instruments (eliminating float from the equation).
+After that, much of the interest in the offline
+deployments drifted away.
+
+In that time frame we had also done design, implementation
+and deployment of a payment transaction infrastructure
+supporting target marketing ... recent reference
+<A HREF="http://www.garlic.com/~lynn/2008c.html#27">http://www.garlic.com/~lynn/2008c.html#27</A> Diversity
+
+support was for a small pilot of 60mil accounts and
+1.5million transaction/day ... but capable of scaling
+up to 20-30 times that amount. There was significant
+attention paid to privacy issues and it was subject
+to quarterly auditing by some dozen or so privacy
+organizations. there had to be a large amount
+of sensitive treatment of the information along
+the lines of what HIPAA specifies for health information.
+
+aka:
+
+anonymized
+  Previously identifiable data that have been deidentified and for
+  which a code or other link no longer exists. An investigator would
+  not be able to link anonymized information back to a specific
+  individual. [HIPAA] (see also anonymous, coded, directly
+  identifiable, indirectly identifiable)
+
+as part of co-authoring x9.99 financial privacy standard, one
+of the things we created was a privacy merged glossory and
+taxonomy ... including GLBA, HIPAA, and EU-DPD references
+some notes:
+<A HREF="http://www.garlic.com/~lynn/index.html#glosnote">http://www.garlic.com/~lynn/index.html#glosnote</A>
+
+in our work on x9.59 financial transaction standard
+<A HREF="http://www.garlic.com/~lynn/x959.html#x959">http://www.garlic.com/~lynn/x959.html#x959</A>
+
+we made the statement that it was privacy agnostic ... since
+the transactions were tied to accounts ... but then whether or
+not the accounts were tied to individuals was outside the x9.59
+standard
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#x959">http://www.garlic.com/~lynn/subpubkey.html#x959</A>
+
+As a total aside ... as part of the Digicash liquidation,
+we were brought in to evaluate the patent portfolio.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

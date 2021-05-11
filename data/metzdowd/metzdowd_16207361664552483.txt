@@ -1,0 +1,47 @@
+<PRE>
+On Jan 6, 2008, at 9:09 AM, Steven M. Bellovin wrote:
+
+&gt;<i> On Sat, 5 Jan 2008 15:28:50 -0800
+</I>&gt;<i> Stephan Somogyi &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at lt.gross.net</A>&gt; wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> At 16:38 +1300 04.01.2008, Peter Gutmann wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> At $1.40 each (at least in sub-1K quantities) you wonder whether
+</I>&gt;&gt;&gt;<i> it's costing them more to add the DRM (spread over all battery
+</I>&gt;&gt;&gt;<i> sales) than any marginal gain in preventing use of third-party
+</I>&gt;&gt;&gt;<i> batteries by a small subset of users.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I don't think I agree with the &quot;DRM for batteries&quot; characterization.
+</I>&gt;&gt;<i> It's not my data in that battery that they're preventing me from
+</I>&gt;&gt;<i> getting at.
+</I>&gt;<i>
+</I>&gt;<i> Correct.  In a similar case, Lexmark sued a maker of print cartridges
+</I>&gt;<i> under the DMCA.  Lexmark lost in the Court of Appeals and the Supreme
+</I>&gt;<i> Court declined to hear the case.  See
+</I>&gt;<i> <A HREF="http://www.eff.org/cases/lexmark-v-static-control-case-archive">http://www.eff.org/cases/lexmark-v-static-control-case-archive</A> and
+</I>&gt;<i> <A HREF="http://www.scc-inc.com/SccVsLexmark/">http://www.scc-inc.com/SccVsLexmark/</A>
+</I>&gt;<i>
+</I>
+Also remember that there is a specific exemption in the DMCA for  
+reverse engineering for the purpose of making compatible equipment.  
+It is there precisely to protect people like the printer cartridge  
+folks. That's why they lost.
+
+Going back to the '60s, there was the Ampex case, where they made  
+compatible tape drives for IBM mainframes. IBM sued, and lost in the  
+Supreme Court. This is what gave us the plug-compatible peripheral  
+biz. My memories of this say that some judge or other said that  
+copyright is not intended to give a monopoly.
+
+That doesn't mean that other companies can't pull crap and try to sue  
+competition away. But they're wrong, and the effect may help the  
+little guy, because by now, the big guys ought to be able to pay for  
+lawyers smart enough to know the precedent.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

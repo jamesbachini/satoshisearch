@@ -1,0 +1,54 @@
+<PRE>Paul Hoffman wrote:
+&gt;<i> At 10:38 AM -0800 1/22/08, Ed Gerck wrote:
+</I>&gt;&gt;<i> The often expressed idea that SSL/TLS and port 587 are somehow able to 
+</I>&gt;&gt;<i> prevent warrantless wiretapping and so on, or protect any private 
+</I>&gt;&gt;<i> communications, is IMO simply not supported by facts.
+</I>&gt;<i> 
+</I>&gt;<i> Can you point to some sources of this &quot;often expressed idea&quot;? It seems 
+</I>&gt;<i> like a pretty flimsy straw man.
+</I>
+It is common with those who think that the threat model is
+&quot;traversing the public Internet&quot;. As I commented in the
+second paragraph, an attack at the ISP (where SSL/TLS is
+of no help) has been the dominant threat -- and that is
+why one of the main problems is called &quot;warrantless
+wiretapping&quot;. Further, because US law does /not/ protect
+data at rest, anyone claiming &quot;authorized process&quot; (which
+the ISP itself may) can eavesdrop without any required
+formality.
+
+For examples on claiming that SSL/TLS can protect email
+privacy, see the commercial email security product by
+www.postini.com (now with google):
+
+&quot;Postini&#8217;s Encryption Manager Policy-Enforced TLS has successfully
+met SEI&#8217;s email security needs, protecting communications where they
+are most vulnerable &#8212; traversing the public Internet. [sic]&quot;.
+in <A HREF="http://www.postini.com/customers/SEI_0929.pdf">http://www.postini.com/customers/SEI_0929.pdf</A>
+
+In another page at postini.com, we can read: &quot;With TLS,
+we will be able to securely send and receive confidential
+documents with our clients who support TLS.&quot; While this
+part is 100% correct, it is not relevant for the security
+of those documents, as they sit in plaintext at the ISPs.
+
+Also, in the current thread on Comcast blocking port 25 at Farber's
+IP list, and in previous threads here, using TLS/SSL has been promoted
+to help &quot;cease to become low hanging fruit for reading or public
+dissemination&quot;, and to prevent a &quot;private contractor's (ISP) misuse or
+loss/exposure of your data&quot;. However, having a port 587 TLS connection
+to my ISP (eg, gmail) is not going to make my email more or less
+protected at that ISP, and is not going to prevent wiretapping.
+
+Of course, SSL/TLS is very successful in e-commerce. But SSL/TLS is
+not an email authentication and encryption solution, and fails for
+email where the risk is higher.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,31 @@
+<PRE>Thierry Moreau &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>&gt; writes:
+
+&gt;<i>At first, it seems neat. But then, looking at how it works in practice: the
+</I>&gt;<i>client receives an e-mail notification soliciting him to click on a HTML link
+</I>&gt;<i>and then enroll for a security certificate, the client is solicited exactly
+</I>&gt;<i>like a phishing criminal would do,
+</I>
+Correction, &quot;exactly like phishing criminals are actively doing right now&quot;
+(hat tip to Don Jackson of SecureWorks who's investigated and documented this
+practice).  Given the almost complete failure of client certs in the
+marketplace, I found it most amusing that the current active users of &quot;client
+certs&quot; are phishers.  It reminded me of spammers and SPF.
+
+&gt;<i>       Title:   Sender driven certification enrollment system
+</I>&gt;<i>       Document Type and Number:  United States Patent 6651166
+</I>&gt;<i>       Link to this page:  <A HREF="http://www.freepatentsonline.com/6651166.html">http://www.freepatentsonline.com/6651166.html</A>
+</I>&gt;<i>
+</I>&gt;<i>       Filing Date: 04/09/1998
+</I>&gt;<i>       Publication Date: 11/18/2003
+</I>
+Thus postdating Microsoft's CertEnroll/Certenr3/Xenroll ActiveX control by
+several years.  The only difference here is that the user generates the cert
+directly rather than involving a CA.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

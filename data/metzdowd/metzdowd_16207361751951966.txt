@@ -1,0 +1,17 @@
+<PRE>[Moderator's note: Not our usual fare but I'll let it through anyway.
+ Bottom line is that it describes a new ugly exploit against Flash.
+   --Perry]
+
+White Paper: 
+  <A HREF="http://documents.iss.net/whitepapers/IBM_X-Force_WP_final.pdf">http://documents.iss.net/whitepapers/IBM_X-Force_WP_final.pdf</A>
+
+Decent Summary: 
+  <A HREF="http://www.matasano.com/log/1032/this-new-vulnerability-dowds-inhuman-flash-exploit/">http://www.matasano.com/log/1032/this-new-vulnerability-dowds-inhuman-flash-exploit/</A>
+
+-Ryan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

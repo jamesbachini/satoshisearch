@@ -1,0 +1,85 @@
+<PRE>|<i> ...One example was his comparison between the security business and the
+</I>|<i> used-car &quot;lemons&quot; market. The idea is that lemons dominate the used-car
+</I>|<i> market due to asymmetric information: only the sellers know which cars
+</I>|<i> are lemons, hence these are the ones that are mostly made available,
+</I>|<i> hence buyers assume all cars are likely to be lemons, hence good cars
+</I>|<i> can't be sold for a higher price and are largely kept off the market.
+</I>|<i> 
+</I>|<i> However security products are not really that much like used cars. Used
+</I>|<i> cars are individually unique and it is impossible to know in advance
+</I>|<i> how well they will work. That's where the asymmetric information
+</I>|<i> comes from. But security products are more like other retail products;
+</I>|<i> each one has its own characteristics, strengths and weaknesses, and
+</I>|<i> there are ways consumers can find out about them in advance....
+</I>Information about used cars is available, too:  You can take the car
+to an independent mechanic for evaluation - there are mechanics who,
+in fact, establish their independence by doing *nothing* but such
+inspections, so that there is no suspicion that they are creating
+work for themselves.  Histories of cars are available on line.
+General information about models of cars is also readily available.
+
+However, there's a non-trivial cost to the consumer to get hold of
+this information.  Enough people, enough of the time, are not willing
+to pay that cost, to drive the marketplace.
+
+I would argue that the situation is the same for security software.
+Only a tiny fraction of the computer-using population reads reviews
+of anti-virus software - or could understand anything beyond a table
+of raw detection numbers if they had such reviews in their hands.
+What drives anti-virus installation is normally (a) what can on
+the computer when you bought it; (b) word of mouth with no real
+basis in fact; (c) familiarity of the product name.
+
+In fact, the anti-virus field - if you look at the major vendors -
+delivers reasonable, and reasonably equivalent, products.  For the
+vast majority of people, the difference between having no anti-virus
+product and having any of the big ones far exceeds the practical
+differences among them.  Where information asymmetry would arise
+would be with a new, essentially ineffective, product which would
+be pushed out with a large burst of advertising claims, viral
+marketing, etc.  Because there are a number of competing incumbents,
+however, there isn't much room for someone to play this game:  They
+would have to sell so cheaply that the profit wouldn't be there.
+
+The above is for the *PC* antivirus market.  The Mac antivirus market
+provides an interesting counterpoint.  Not to get into arguments about
+whether a Mac *can* get a virus, in practice, there are none in the
+wild today.  So any Mac anti-virus based on scanning has an actual
+value of ... nothing, since there is nothing to scan for.  (A
+good behavioral monitor might make sense, though building up the
+needed models without actual attack examples is difficult.)  Still,
+people do sell Mac anti-virus scanners; they even advertise the
+size of the scanning databases they come with (vaguely).  In that
+submarket, asymmetry of information clearly plays a role.
+
+However, let's go back to the more general question.  Anti-virus
+programs can at least be tested - whether against huge (and thus
+meaningless) collections of viruses, or against viruses that are
+known to be threats.  But that's hardly the only security software
+out there.  Encryption software is a hell of a lot harder to test,
+and in fact I've yet to see a *meaningful* test outside of the
+specialist literature.  Oh, people will talk about the ease of
+use of the software, and they'll parrot the makers claims about
+how many bits of key they use; but whether the thing provides any
+actual security ... who knows?  Asymmetry of information is the
+rule here, which is why &quot;snake oil&quot; continues to be sold regularly.
+
+Other security products fall somewhere in between.  Firewalls
+don't seem to get much testing, though their funtions should be
+reasonably easy to test - and explain.  But firewalls seem to be
+seen as part of the plumbing that most people don't, and don't
+want to, know anything about.  Intrusion detection systems are,
+as far as I can tell, basically black boxes.  The algorithms and
+rules are proprietary, no one really knows how to test them, and
+you buy on the reputation of the vendor.  Highly asymmetrical.
+
+							-- Jerry
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

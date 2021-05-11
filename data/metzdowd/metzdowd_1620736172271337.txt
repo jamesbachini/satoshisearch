@@ -1,0 +1,25 @@
+<PRE>
+
+   WASHINGTON, D.C. -- Five years ago, Congress killed an experimental
+   Pentagon antiterrorism program meant to vacuum up electronic data
+   about people in the U.S. to search for suspicious patterns. Opponents
+   called it too broad an intrusion on Americans' privacy, even after the
+   Sept. 11 terrorist attacks.
+
+   But the data-sifting effort didn't disappear. The National Security
+   Agency, once confined to foreign surveillance, has been building
+   essentially the same system.
+
+<A HREF="http://online.wsj.com/article/SB120511973377523845.html?mod=todays_us_page_one">http://online.wsj.com/article/SB120511973377523845.html?mod=todays_us_page_one</A>
+
+Hat tip: Bruce Schneier's blog.
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

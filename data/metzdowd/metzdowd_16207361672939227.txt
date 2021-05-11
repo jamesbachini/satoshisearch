@@ -1,0 +1,23 @@
+<PRE>&gt;<i> SSL is layered on top of TCP, and then one layers one's
+</I>&gt;<i> actual protocol on top of SSL, with the result that a
+</I>&gt;<i> transaction involves a painfully large number of round
+</I>&gt;<i> trips.
+</I>
+Perhaps theoretically painful, but in practice this is not the case; 
+commerce on the web is the counter-example. The benefits of layering for 
+outweigh the perceived gains of just merging it all together into one 
+glob.  For example, the ability to replace layers, or replace them by just 
+dropping in a new library.
+
+        /r$
+
+--
+STSM, DataPower Chief Programmer
+WebSphere DataPower SOA Appliances
+<A HREF="http://www.ibm.com/software/integration/datapower/">http://www.ibm.com/software/integration/datapower/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

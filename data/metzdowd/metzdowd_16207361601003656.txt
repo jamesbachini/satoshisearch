@@ -1,0 +1,31 @@
+<PRE>&gt;<i> What about deleting the private key periodically?
+</I>&gt;<i>
+</I>&gt;<i> Like issue one pgp sub-key per month, make sure it has expiry date etc
+</I>&gt;<i> appropriately, and the sending client will be smart enough to not use
+</I>&gt;<i> expired keys.
+</I>&gt;<i>
+</I>&gt;<i> Need support for that kind of thing in the PGP clients.
+</I>
+Forgive the additional nag, but that is OpenPGP clients. PGP clients  
+are my software. Mind you, I'm in favor of it, but (e.g.) Hushmail is  
+not a PGP client. It has nothing to do with PGP Corporation.
+
+&gt;<i>
+</I>&gt;<i> And hope your months key expires before the lawyers get to it.
+</I>&gt;<i>
+</I>&gt;<i> Companies have document retention policies for stuff like
+</I>&gt;<i> this... dictating that data with no current use be deleted within some
+</I>&gt;<i> time-period to avoid subpoenas reaching back too far.
+</I>&gt;<i>
+</I>
+Well, we had some good news this weekend that RFC 4880, the updated  
+RFC 2440 is finally published. The OpenPGP working group has other  
+work it would like to do, including Perfect Forward Secrecy.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

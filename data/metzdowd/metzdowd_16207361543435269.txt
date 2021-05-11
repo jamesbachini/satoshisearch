@@ -1,0 +1,151 @@
+<PRE>Responding to Marcos el Ruptor's  allegation that the SecurID was 
+&quot;snake oil,&quot; Paul Walker queried him and the Listocracy:
+
+&gt;&gt;<i> &gt; &gt;I didn't realise the current SecurID tokens had been broken. A 
+</I>&gt;&gt;<i> quick Google
+</I>&gt;&gt;<i> &gt; &gt;doesn't show anything, but I'm probably using the wrong terms. 
+</I>&gt;&gt;<i> Do you have
+</I>&gt;&gt;<i> &gt; &gt;references for this that I could have a look at?
+</I>
+Vin McLellan (me) responded:
+
+&gt;&gt;<i> &gt; I'd also be interested in any evidence that the SecurID has been cracked.
+</I>&gt;&gt;<i> &gt;
+</I>&gt;&gt;<i> &gt; Any credible report would have the immediate attention of tens of
+</I>&gt;&gt;<i> &gt; thousands of RSA installations. Not to speak of EMC/RSA. itself, for
+</I>&gt;&gt;<i> &gt; which I have been a consultant for many years.
+</I>
+Thor Lancelot quoted that, and erupted with sanctimonious umbrage:
+
+&gt;&gt;<i>That's right, you have.  As I recall, the last time you posted here was
+</I>&gt;&gt;<i>when you tried to defend RSA's decision to sell no-human-interaction
+</I>&gt;&gt;<i>tokens.  At that time, I asked you whether you were posting for yourself
+</I>&gt;&gt;<i>or whether someone at RSA had asked you to post here, and you declined
+</I>&gt;&gt;<i>to respond.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>I think it's important that we know, when flaws in commercial
+</I>&gt;&gt;<i>cryptographic products are being discussed, what the interests of the
+</I>&gt;&gt;<i>parties to the discussion are.  So, I'll ask again, as I did last time:
+</I>&gt;&gt;<i>when you post here, both in this instance and in past instances, is it
+</I>&gt;&gt;<i>at your own behest, or that of RSA?
+</I>
+This is puerile.  One moderator is not enough? Now you want to set 
+yourself up as the Inquisition to vet for ideological purity?  No one 
+at RSA (or EMC, now RSA's parent firm) even knows about this 
+discussion, you ninny. Who would care?
+
+In three decades online, I have never posted a message in which I did 
+not clearly indicate if a company or organization -- the subject of 
+the discussion, or a firm with an interest in the topic -- was a 
+commercial client of mine. (Not everyone, even in this forum, has 
+been so fastidious.)
+
+I've been an independent consultant on public policy and market 
+development to RSA, off and on, for nearly 20 years. I'm really proud 
+of my minor role in the Crypto Wars.  Over that time, I've certainly 
+also made my bones as an informal evangelist for RSA products, 
+services, and policies as well.
+
+When I can, I try to offer explanations about RSA products when 
+questions about them pop up in the Net's public forums.  (I've done 
+the same for various other vendors, some clients, when I knew 
+enough.)  I know a bit about industry history -- I even did a stint 
+as IBM's historian -- so I occasionally offer my version when I feel 
+the revisionists have things tied up in absurdist knots. If I offer 
+an opinion, it's my own.  If I describe what RSA has done, it is an 
+accurate report, AFAIK.
+
+I know basically what any major RSA corporate customer knows. EMC 
+issues its own policy statements and press releases. I don't speak 
+for RSA or EMC, and no one there edits what I write.  Corporations, 
+however, don't communicate well on the Net. I have the freedom to 
+make casual comments, debate, where corporate committees do not. 
+Sometimes, due to NDA constraints, I can't speak up -- but I never 
+fly under false flags, nor do I lie.
+
+I expect that any message in which I acknowledge a consulting link 
+with a vendor will be taken with a proverbial grain of salt -- but 
+typically, professionals will also accept claims of fact as 
+provisionally valid, and will listen to arguments if they are 
+sensibly made. You reap what you sow. It usually works out, but not 
+always. Sometimes I screw up.  Sometimes I run into zealots who 
+believe only certain voices should be heard.
+
+I suspect that few objective readers will take my claims of fact 
+about the SecurID, compare them against Ruptor's allegations that the 
+SecurID is unsafe or cryptographically compromised, and not credit my 
+facts.  All the better if they choose to look further into what Mr. 
+Lancelot describes -- with his fabled objectivity -- as this 
+discussion of &quot;flaws in [a] commercial cryptographic product.&quot;
+
+Would the interests of this forum, or it's readers, be better served 
+if no one could present more complete, or more accurate, facts in 
+response to Marcos el Ruptor's allegations of SecurID insecurity?
+
+Was it unclear to anyone, other than Mr. Lancelot, that I have a 
+commercial association with RSA -- and, perhaps, a better than 
+average knowledge of the facts relevant to the issue raised?
+
+Despite Lancelot's insinuations to the contrary, I'm certain that 
+most readers, here as elsewhere, would rather make a judgements about 
+contentious issues with more facts --even facts supplied by people 
+who acknowledge they work with a vendor -- rather than less facts.
+
+(With regard to the SID800 furor that Mr. Lancelot refers to, I just 
+didn't have time to get into a prolonged flame-fest with Thor, last 
+fall, when I posted an explanation of what RSA was offering as new 
+option in it's hybrid SecurIDs: USB plugs with both local storage and 
+a microchip, and a displayed SecurID token-code LCD. The 
+controversial part was a site-selectable option which allowed a local 
+client to pull a SecurID token-code from the USB plug on demand, just 
+as it could access typical smartcard functions from the USB. [On 
+this, I did go back to RSA product managers to learn more about what 
+the product entailed.]
+
+(I argued that RSA's customers had asked for it, for sites in 
+transition from OTP to PKI, and that their risk analysis should be 
+respected. That risk, I also noted, seemed no greater than with a PKI 
+smartcard, where a client or the OS can also access the smartcard for 
+authentication and other PKI functions. There was no &quot;secret 
+vulnerability,&quot; and no &quot;locked-in&quot; choices: RSA itself offers a 
+multitude of alternative authentication schemes, some more robust, some less.
+
+(Unfortunately, this was one of those funny moments in IT history 
+where a vendor, making one in a chain of product development 
+decisions, finds that it has deeply offended a cadre of tech savants. 
+Some seemed to feel that RSA was pissing in the holy grail by 
+offering yet another SecurID product choice that traded relative 
+security for more flexibility. I could empathize, actually. I felt 
+something similar a decade back, when RSA first offer token-emulation 
+code, OTP generation in software, in addition to its SecurID hardware 
+tokens. I argued against it for years. Over the years, however, the 
+clearest message from the authentication market is that customers 
+demand an array of options. No one tech fits all environs.
+
+(For all that, the post that Mr. Lancelot recalls with such rancor 
+was not my best effort. It was originally written for other forums, 
+where there were lot of confused RSA customers online in a big mix of 
+technical and executive talent. I didn't take the time to craft a 
+more concise version for Cryptography, as I should have.  If I had, I 
+would have omitted a lot of the broader-context stuff that Mr. 
+Lancelot and others read as marketing fluff. We would have still 
+disagreed, but perhaps less so. As an explanation, it was very 
+helpful elsewhere -- but here the reaction quickly degenerated into 
+absolutist declarations about SecurID product purity and ad hominem 
+attacks. I was, frankly, too busy to deal with it.)
+
+It's a lazy Labor Day here in the States; not a bad day to defend a 
+career. Overall, for what its worth, I'm quite proud of my long 
+association with RSA. I've been a part of its history, and it's been 
+a lot of fun. I feel I've contributed something useful to the 
+industry and to the Net.  YMMV.
+
+Suerte,
+            _Vin  
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

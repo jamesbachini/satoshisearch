@@ -1,0 +1,27 @@
+<PRE>
+How difficult is it to compute discrete logarithms modulo a 512-bit
+prime p of the form 2*q+1, q prime? I have had no luck finding recent
+DL results, as it seems factoring is the preferred
+benchmark/target. The DL algorithms seem to be have roughly the same
+runtimes as factoring, but this is only getting me to order of
+magnitude estimates.
+
+These estimates suggest 512 bits is feasible, based on recent
+factoring results, but I'm not sure if that means it is feasible with
+a handful of modern processors, or if I need to go acquire a
+supercomputer and/or a few hundred thousand zombie PCs before trying
+this. I am really trying to solve a series of DH key exchanges,
+however I am not aware of any algorithms specifically for DH (though
+references would be welcomed).
+
+Can anyone point me to recent DL results, or have any experiences
+trying to break ~512 bit DH exchanges?
+
+Thanks,
+  Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

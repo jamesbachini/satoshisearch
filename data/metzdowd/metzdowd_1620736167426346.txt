@@ -1,0 +1,18 @@
+<PRE>&gt;<i> Is there some technology that they are so afraid of that they still
+</I>&gt;<i> won't let it ship or does it just matter who you are, not what it is?
+</I>
+I wouldn't know for sure, but I am sure that who is asking permission does 
+matter.
+
+        /r$, sounding like his idol dan :)
+
+--
+STSM, DataPower Chief Programmer
+WebSphere DataPower SOA Appliances
+<A HREF="http://www.ibm.com/software/integration/datapower/">http://www.ibm.com/software/integration/datapower/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

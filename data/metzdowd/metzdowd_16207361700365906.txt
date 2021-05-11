@@ -1,0 +1,22 @@
+<PRE>Philipp G&#252;hring wrote:
+&gt;<i> I had the feeling that Microsoft wants to abandon the usage of client 
+</I>&gt;<i> certificates completely, and move the people to CardSpace instead.
+</I>&gt;<i> But how do you sign your emails with CardSpace? CardSpace only does the 
+</I>&gt;<i> realtime authentication part of the market ...
+</I>
+It's not rocket science. You have a public/private keypair. You can sign 
+emails. For example, import your cardspace key into PGP.
+
+
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

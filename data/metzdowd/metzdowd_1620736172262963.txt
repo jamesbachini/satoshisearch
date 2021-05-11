@@ -1,0 +1,13 @@
+<PRE>
+A paper enigma machine:
+
+<A HREF="http://mckoss.com/Crypto/Enigma.htm">http://mckoss.com/Crypto/Enigma.htm</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

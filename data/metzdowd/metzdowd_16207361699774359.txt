@@ -1,0 +1,18 @@
+<PRE>
+&quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; writes:
+&gt;<i> How about TPM? Would this type of attack work on a tamper-resistant ver1.2 TPM?
+</I>
+The phrase is &quot;tamper resistant&quot;, not &quot;tamper proof&quot;. Depending on how
+determined your attackers are, pretty much anything depending on
+tamper resistant hardware will fall. As always, the question is
+whether what you are protecting is worth more than the attackers would
+have to spend on the attack.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

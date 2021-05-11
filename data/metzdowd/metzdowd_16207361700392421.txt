@@ -1,0 +1,22 @@
+<PRE>On Fri, Feb 01, 2008 at 07:58:16PM +0000, Steven M. Bellovin wrote:
+&gt;<i> On Fri, 01 Feb 2008 13:29:52 +1300
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) wrote:
+</I>&gt;<i> &gt; (Anyone have any clout with Firefox or MS?  Without significant
+</I>&gt;<i> &gt; browser support it's hard to get any traction, but the browser
+</I>&gt;<i> &gt; vendors are too busy chasing phantoms like EV certs).
+</I>&gt;<i> &gt; 
+</I>&gt;<i> The big issue is prompting the user for a password in a way that no one
+</I>&gt;<i> will confuse with a web site doing so.  Given all the effort that's
+</I>&gt;<i> been put into making Javascript more and more powerful, and given
+</I>&gt;<i> things like picture-in-picture attacks, I'm not optimistic.   It might
+</I>&gt;<i> have been the right thing, once upon a time, but the horse may be too
+</I>&gt;<i> far out of the barn by now to make it worthwhile closing the barn door.
+</I>
+And on top of that web site designers don't want browser dialogs for
+HTTP/TLS authentication.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

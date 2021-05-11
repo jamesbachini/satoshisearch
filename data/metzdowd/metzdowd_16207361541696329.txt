@@ -1,0 +1,35 @@
+<PRE>There does not seem to be much consideration about what is 
+computationally infeasible, even with rainbow tables.
+
+If I remember correctly an 8 character 94 key space table is 
+about 300 MB. How big would it be if it was covering 12 
+characters? How long would it take to compute assuming 1,000 3 
+GHz CPUs on a bot net?
+
+Now take the phrase &quot;Mary had a lamb, and its fleece was as white 
+as snow.&quot; Not counting the quotes it is 52 characters and has 
+both upper and lower case characters, spaces and two specials or 
+a total of 55 key space. How big would the rainbow table be to 
+contain that? How long would it take to compute with 1,000 3 GHz 
+CPUs?
+
+Of course one could not assume that the pass phrase would only 
+have the 55 above, so what about the 94 key space table for 52 
+characters? How big? How long to compute?
+
+ From the spreadsheet I have it runs out of space to calculate 
+and just renders errors.
+
+I'm guessing that even the botnets in current use couldn't do it 
+in any reasonable time frame nor is the storage space available 
+at an affordable price for any but three letter agencies.
+
+Am I correct?
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

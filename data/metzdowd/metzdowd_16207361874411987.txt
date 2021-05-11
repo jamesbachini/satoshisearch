@@ -1,0 +1,64 @@
+<PRE>The EFF yesterday filed a letter from a number of academic security  
+researchers
+urging the judge in the MIT &quot;Charlie Card&quot; case to reverse the  
+restraining
+order.  It can be found on the EFF's case page, at
+    <A HREF="http://www.eff.org/cases/mbta-v-anderson/">http://www.eff.org/cases/mbta-v-anderson/</A>
+
+As a security researcher (and one of the signers of the letter to the  
+judge), I was
+particularly struck by the ironic -- and very unfortunate -- message  
+that the court
+order sends to our community:  it's safer to irresponsibly blindside  
+users and vendors
+by publishing about vulnerabilities without warning them first (thus  
+denying them
+the opportunity to seek a pre-publication gag order).
+
+Surely that's not what that the court or the MBTA seek to encourage  
+here.
+
+I blog a bit more about this at
+   <A HREF="http://www.crypto.com/blog/security_through_restraining_orders/">http://www.crypto.com/blog/security_through_restraining_orders/</A>
+
+-matt
+
+
+
+
+
+On Aug 13, 2008, at 3:58, David Farber wrote:
+
+&gt;<i> clipped from Steve Bellovin blog --
+</I>&gt;<i> The MBTA versus (Student) Security Researchers
+</I>&gt;<i> 12 August 2008
+</I>&gt;<i>
+</I>&gt;<i> As I'm sure many of you have heard, the MBTA (Massachusetts Bay  
+</I>&gt;<i> Transportation Authority) has a very insecure fare payment system.  
+</I>&gt;<i> Some students at MIT, working under the supervision of Ron Rivest &#8212;  
+</I>&gt;<i> yes, that Ron Rivest, the &quot;R&quot; in RSA &#8212; found many flaws and planned  
+</I>&gt;<i> a presentation at DEFCON on it. The MBTA sought and received an  
+</I>&gt;<i> injunction barring the presentation, but not only were the slides  
+</I>&gt;<i> already distributed, the MBTA's court filing included a confidential  
+</I>&gt;<i> report prepared by the students with more details than were in the  
+</I>&gt;<i> talk...
+</I>&gt;<i>
+</I>&gt;<i> The Electronic Frontier Foundation is appealing the judge's order,  
+</I>&gt;<i> and rightly so. Not only is this sort of prior restraint blatantly  
+</I>&gt;<i> unconstitutional, it's bad public policy: we need this sort of  
+</I>&gt;<i> security research to help us build better systems. I and a number of  
+</I>&gt;<i> other computer scientists have signed a letter supporting the  
+</I>&gt;<i> appeal. You can find the complete EFF web page on the case here.
+</I>&gt;<i>
+</I>&gt;<i> djf --- Here's the letter:
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.eff.org/files/filenode/MBTA_v_Anderson/letter081208.pdf">http://www.eff.org/files/filenode/MBTA_v_Anderson/letter081208.pdf</A>
+</I>&gt;<i>
+</I>&gt;<i> The rest of the case files are here:
+</I>&gt;<i> <A HREF="http://www.eff.org/cases/mbta-v-anderson">http://www.eff.org/cases/mbta-v-anderson</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

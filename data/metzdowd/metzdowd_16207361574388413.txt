@@ -1,0 +1,130 @@
+<PRE>Retail group takes a swipe at PCI, puts card companies 'on notice'
+Jaikumar Vijayan
+
+October 04, 2007 (Computerworld) Simmering discontent within the retail
+industry over the payment card industry (PCI) data security standards
+erupted into the open this week with the National Retail Federation
+(NRF) asking credit card companies to stop forcing retailers to store
+payment card data.
+
+In a tersely worded letter to the PCI Security Standards Council, which
+oversees implementation of the standard, NRF CIO David Hogan asked
+credit card companies to stop making retailers &quot;jump through hoops to
+create an impenetrable fortress&quot; to protect card data. Instead,
+&quot;retailers want to eliminate the incentive for hackers to break into
+their systems in the first place.&quot;
+
+&quot;With this letter, we are officially putting the credit card industry on
+notice,&quot; Hogan said in a statement. The NRF, a trade association whose
+membership includes most of the major retailers in the U.S., is the
+national voice for about 1.4 million U.S retail establishments.
+
+In an interview with Computerworld this morning, Hogan said the letter
+was provoked by a &quot;lot of frustration&quot; in the industry about PCI
+guidelines and the deadlines associated with implementing them. If the
+goal of PCI is to protect credit card data, the easiest and most common
+sense approach is to stop requiring merchants to store the data in the
+first place, he said.
+
+PCI is a data security standard mandated by Visa International Inc.,
+MasterCard International Inc., American Express Co., Discover and the
+Japan Credit Bureau. It requires companies to implement a set of
+prescribed security controls for protecting cardholder data. Though the
+requirements went into affect more than two years ago, a large number of
+big retailers are still noncompliant because of a variety of issues that
+include legacy system challenges, rules interpretation issues and
+continuously evolving guidelines.
+
+According to Hogan, credit card companies require retailers and others
+accepting payment card transactions to store certain card data sometimes
+for up to 18 months so that it can be retrieved in the event of
+chargebacks and other disputes.
+
+But rather than have thousands of retailers store the data, credit card
+companies and their banks should do so, Hogan said. Retailers only need
+an authorization code provided at the time of a sale to validate a
+charge, and a receipt with truncated credit card information to handle
+returns and refunds. If that were done, he said, most retailers probably
+wouldn't store any cardholder data.
+
+According to Hogan, under the current process, credit card companies and
+their banks already have the information needed for retrieval purposes
+and it should be their responsibility to store and protect the data. &quot;It
+is a very fundamental shift. But if you think about it, it is a very
+common-sense approach.&quot;
+
+PCI mandates are challenging retailers to build fortresses around credit
+card data, he said. &quot;We build these higher walls and the hackers bring
+in taller ladders and this kind of keeps scaling up all the time.&quot;
+
+Gartner Inc. analyst Avivah Litan said that the NRF letter makes a
+&quot;sound argument.
+
+&quot;It's totally reasonable to tell the banking system and payment system
+that 'we don't want to store this data anymore,'&quot; she said. &quot;If they
+aren't storing this data, many of these [PCI] requirements go away and
+the scope of the compliance effort is much more restricted.
+
+In an e-mailed comment, Bob Russo, general manager of the PCI security
+standards council, said the body received the NRF letter yesterday and
+will respond after reviewing it further. &quot;However, it must be recognized
+that the payment brands -- and not the Council -- operate the systems
+underlying the payments process, as well as the compliance
+programs. Because of this, Mr. Hogan should be directing his concerns to
+those individual brands.&quot;
+
+Jon Hurst, president of the Retailers Association of Massachusetts,
+backed the NRF's position. With all of the attention paid to PCI, what's
+gone unnoticed is the fact that card companies themselves require
+certain amounts of data to be stored because of disputed transactions,
+he said. If not for that requirement, many retailers -- especially the
+large ones -- would probably not keep data and therefore wouldn't be
+pressed to secure it, he said.
+
+Prat Moghe, founder and CTO of Tizor Systems Inc., a Maynard,
+Mass.-based security firm, called the NRF's demand political posturing
+and said it would do little to improve retail security anytime soon.
+
+&quot;I think a lot of this is about moving culpability back to the credit
+card companies and saying don't make this my problem alone,&quot; Moghe
+said. &quot;They seem to have realized that going on the defense as an
+industry doesn't help. There is just more and more they have to do.&quot; By
+speaking out aggressively at a time when retail industry information
+security practices are under scrutiny by consumers and lawmakers, the
+NRF is hoping to spread the liability for card data protection, he said.
+
+Even if the NRF's demands were immediately met, it would take several
+years before retailers could purge their systems and applications of
+credit card data, he said. Over the years, retailers have collected and
+stored credit card data in myriad systems and places -- including
+relatively old legacy environments -- and they are just now realizing
+the data can be a challenge, he said. Purging it can be a bigger
+headache because the data is often inextricably linked to and used by a
+variety of customer and marketing applications; simply removing it could
+cause huge disruptions.
+
+&quot;We are not talking about one isolated system that stores all this
+data,&quot; he said.
+
+Until retailers can get rid of the data, they will need to continue to
+implement PCI controls, whether they like it or not, Moghe said.
+
+Under PCI, credit card companies have also already been pushing
+retailers to purge their systems of some customer data, including the
+card verification codes and PIN block data that is stored on magnetic
+stripes on the back of payment cards.
+
+According to Gartner Inc., Visa last year levied more than $4.5 million
+in PCI noncompliance-related fines. At least some of that was aimed at
+companies that were storing prohibited card data on their systems.
+
+The NRF letter comes just days after the passage of a major Sept. 30 PCI
+deadline after which merchants face fines ranging from $5,000 to $25,000
+for noncompliance. Up to now, most of the fines levied have been on
+breached entities or on companies that kept prohibited card data.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

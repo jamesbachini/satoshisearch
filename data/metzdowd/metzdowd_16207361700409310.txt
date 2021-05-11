@@ -1,0 +1,51 @@
+<PRE>
+&gt;<i> ----- Original Message -----
+</I>&gt;<i> From: &quot;Pat Farrell&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pfarrell at pfarrell.com</A>&gt;
+</I>&gt;<i> To: 
+</I>&gt;<i> Subject: Re: Toshiba shows 2Mbps hardware RNG
+</I>&gt;<i> Date: Sun, 10 Feb 2008 17:40:19 -0500
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Perry E. Metzger wrote:
+</I>&gt;<i> &gt; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+</I>&gt;<i> &gt;&gt; I've always wondered why RNG speed is such a big deal for anything but a few
+</I>&gt;<i> &gt;&gt; highly specialised applications.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Perhaps it isn't, but any hardware RNG is probably better than none
+</I>&gt;<i> &gt; for many apps, and they've managed to put the whole thing in a quite
+</I>&gt;<i> &gt; small bit of silicon. The speed is probably icing on the cake.
+</I>&gt;<i> 
+</I>&gt;<i> One of the benefits of speed is that you can use cleanup code to 
+</I>&gt;<i> control bias. Carl Ellison put some out on his website last century.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>
+It is a HUGE win for designing a crypto system to have a really 
+fast (and good) HW RNG. Being able to generate 10-20,000 AES keys
+per second means that you can engineer things that were impossible
+to do otherwise.  You can generate as many keys as you like, throw
+away keys after one time use, treat them as ephemeral authentication
+keys (say give a few million or so to a user), etc. Or you could 
+hand a sender 10 MBytes (less than a minute to generate), which then
+can be used to create billions of keys (say using Ueli Maurer's 
+Bounded Storage Model).  The sender could then use each key to 
+uniquely encrypt (AES CTR) each message of a series of messages or
+packets to a receiver (AES key setup is fast). No need for an IV or 
+worrying about message ordering (each one has a key id), or even the
+compromise of a key or two.
+
+Randomness is the most fundamental underpinning of a crypto system
+and having lots of it on demand is really fabulous to have in our 
+system security design tool box.
+
+- Alex
+
+
+ 
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

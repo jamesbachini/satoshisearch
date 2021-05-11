@@ -1,0 +1,39 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+
+&gt;<i>EE Times: Toshiba tips random-number generator IC
+</I>&gt;<i>
+</I>&gt;<i>   SAN FRANCISCO -- Toshiba Corp. has claimed a major breakthrough in
+</I>&gt;<i>   the field of security technology: It has devised the world's
+</I>&gt;<i>   highest-performance physical random-number generator (RNG)
+</I>&gt;<i>   circuit.
+</I>&gt;<i>
+</I>&gt;<i>   The device generates random numbers at a data rate of 2.0 megabits
+</I>&gt;<i>   a second, according to Toshiba in a paper presented at the
+</I>&gt;<i>   International Solid-State Circuits Conference (ISSCC) here.
+</I>
+I've always wondered why RNG speed is such a big deal for anything but a few
+highly specialised applications.  For security use you've got two options:
+
+1. Use it with standard security protocols, in which case you need all of 128
+   or so bits every now and then (and very rarely a few thousand bits for
+   asymmetric keygen).
+
+2. Use it at its full data rate, in which case you can only communicate with
+   someone else who has the same device, but more importantly you need to
+   design and build your own custom security infrastructure to take advantage
+   of the high-data-rate randomness, which is much harder than simply
+   designing an RNG device and declaring victory.
+
+   (In any case if you really need high-data-rate randomness, you just take
+   your initial 128 bits and use it to seed AES in CTR mode).
+
+So your potential market for this is people running Monte Carlo simulations
+who don't like PRNGs.  Seems a bit of a limited market...
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

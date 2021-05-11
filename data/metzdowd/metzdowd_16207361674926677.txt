@@ -1,0 +1,19 @@
+<PRE>* Marcos el Ruptor:
+
+&gt;&gt;<i> <A HREF="http://www.intersil.com/cda/deviceinfo/0,1477,ISL6296,0.html">http://www.intersil.com/cda/deviceinfo/0,1477,ISL6296,0.html</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> &quot;A 32-Bit CRC-based hash engine (FlexiHashTM)
+</I>&gt;<i> calculates the authentication result immediately after
+</I>&gt;<i> receiving a 32-Bit random challenge code.&quot;
+</I>&gt;<i>
+</I>&gt;<i> huh?
+</I>&gt;<i> heh!
+</I>
+If the law is on your side, you don't need strong cryptography.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

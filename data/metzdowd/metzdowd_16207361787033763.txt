@@ -1,0 +1,25 @@
+<PRE>
+Allen writes:
+-+-----------
+ | I don't know what the policy is in Ireland, but here in the USA 
+ | there is no stop loss on debit cards so the banks are not 
+ | obligated to make good on fraudulent withdrawals. &lt;snip&gt;
+
+There is also a legal distinction between a personal
+credit card and a corporate card in terms of the 
+regulated upper bound on the losses due to a stolen
+card and fraudulent charges on it, though the credit
+companies tend never to stand on their right to not
+rescind fraudulent charges on non-personal cards.
+
+Factoid: Had the $50 stop-loss limit been indexed for
+inflation, then it would today be $300.  (1968-present)
+
+--dan
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

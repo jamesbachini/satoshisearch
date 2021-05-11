@@ -1,0 +1,41 @@
+<PRE>Adam Shostack wrote:
+&gt;<i> It may be, indeed.  You're going (as Lynn pointed out in another post)
+</I>&gt;<i> to be fighting an uphill battle against the last attempts.  I don't
+</I>&gt;<i> think smartcards (per se) are the answer.  What you really need is
+</I>&gt;<i> something like a palm pilot, with screen and input and a reasonably
+</I>&gt;<i> trustworthy OS, along with (as you say) the appropriate UI investment.
+</I>
+given the recognition of the serial port issues from the earlier, dial-in
+online banking ... providing a strong motivation to transfer responsibility
+for all such problems to ISPs (under the guise of moving to the internet)
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#35">http://www.garlic.com/~lynn/aadsm27.htm#35</A> The bank fraud blame game
+
+that even the transfer of a little bit of institutional knowledge would
+have enabled the avoidance of later smartcard reader deployment disasters
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#34">http://www.garlic.com/~lynn/aadsm27.htm#34</A> The bank fraud blame game
+
+However, following some of the early &quot;yes card&quot; deployments
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#yescard">http://www.garlic.com/~lynn/subintegrity.html#yescard</A>
+
+it appeared to be more of a case where smartcard organizations were
+very narrowly focused on purely smartcard issues and ignoring 
+everything else.
+
+that aspect was highlighted in an early presentation about circumstances
+surrounding the &quot;yes card&quot; ... and there was a somewhat
+uncontrolled comment from somebody in the audience &quot;do you mean to say 
+that they managed to spend a  billion dollars to prove that chips are 
+less secure than magstripes&quot;.
+
+misc. old posts/threads mentioning the pc/sc serial port issue &amp; smartcard
+reader deployment disasters
+<A HREF="http://www.garlic.com/~lynn/aadsm23.htm#43">http://www.garlic.com/~lynn/aadsm23.htm#43</A> Spring is here - that means Pressed Flowers
+<A HREF="http://www.garlic.com/~lynn/aadsm23.htm#50">http://www.garlic.com/~lynn/aadsm23.htm#50</A> Status of SRP
+<A HREF="http://www.garlic.com/~lynn/2002m.html#37">http://www.garlic.com/~lynn/2002m.html#37</A> Convenient and secure eCommerce using POWF
+<A HREF="http://www.garlic.com/~lynn/2002m.html#39">http://www.garlic.com/~lynn/2002m.html#39</A> Convenient and secure eCommerce using POWF
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

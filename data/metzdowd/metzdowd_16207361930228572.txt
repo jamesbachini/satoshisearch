@@ -1,0 +1,39 @@
+<PRE>For the past several years I've been making a point of asking users of crypto 
+on embedded systems (which would be particularly good targets for side-channel 
+attacks, particularly ones that provide content-protection capabilities) 
+whether they'd consider enabling side-channel attack (SCA - no, not that SCA) 
+protection in their use of crypto.  So far I've never found anyone who's made 
+an informed decision to trade off performance for SCA protection.  By 
+&quot;informed decision&quot; I mean the following:
+
+- SCA protection isn't enabled by default, i.e. they don't just get it whether 
+  they want it or not.
+
+- The SCA protection is more than just a token throw-some-blinding-at-the-RSA, 
+  it extends to things like pubic/private key validation on load (for example 
+  via MACs) to detect key-manipulation attacks, checksumming of key data after 
+  each crypto op to detect memory-disturb attacks, and so on.
+
+- There is a tangible cost/tradeoff in enabling SCA protection, i.e. it's not 
+  just chicken-soup protection, &quot;turn it on, it's a 2GHz multicore CPU it 
+  can't hurt&quot;.
+
+In other words the user has to make a conscious decision that SCA protection 
+is important enough that performance/power consumption can be sacrificed for 
+it.  Can anyone provide any data on users making this tradeoff?  And since 
+negative results are also results, a response of &quot;I've never found anyone who 
+cares either&quot; is also useful.  Since the information may be commercially 
+sensitive, respond in private email if you'd rather not discuss it in public 
+and I'll summarise if there's any interest.
+
+(Pre-emptive response to the inevitable &quot;OpenSSL/NSS/xyz smart card/... have 
+had RSA blinding enabled by default since ...&quot;: Yes, I know, and now go back 
+and re-read points 1 and 2 above).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

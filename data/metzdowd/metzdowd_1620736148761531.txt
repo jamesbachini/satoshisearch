@@ -1,0 +1,38 @@
+<PRE>	i'm an OpenBSD developer, so i have some knowlege but could be biased.
+
+&gt;<i> SSH (OpenSSH) is routinely used in secure access for remote server
+</I>&gt;<i> maintenance. However, as I see it, SSH has a number of security issues
+</I>&gt;<i> that have not been addressed (as far I know), which create unnecessary
+</I>&gt;<i> vulnerabilities.
+</I>&gt;<i> 
+</I>&gt;<i> Some issues could be minimized by turning off password authentication,
+</I>&gt;<i> which is not practical in many cases. Other issues can be addressed by
+</I>&gt;<i> additional means, for example:
+</I>&gt;<i> 
+</I>&gt;<i> 1. firewall port-knocking to block scanning and attacks
+</I>&gt;<i> 2. firewall logging and IP disabling for repeated attacks (prevent DoS,
+</I>&gt;<i> block dictionary attacks)
+</I>
+	i guess it can be handled in lines of spamd (greylisting) on OpenBSD.
+
+&gt;<i> 3. pre- and post-filtering to prevent SSH from advertising itself and
+</I>&gt;<i> server OS
+</I>
+	is there any point in this as you can fingerprint OS both actively (nmap)
+	and passively (p0f)?
+
+&gt;<i> 4. block empty authentication requests
+</I>&gt;<i> 5. block sending host key fingerprint for invalid or no username
+</I>&gt;<i> 6. drop SSH reply (send no response) for invalid or no username
+</I>
+	i can understand your desire, but this is a feature used by some of the
+	anonymous services such as anonymous CVS.  i'd leave it to openssh
+	developers.
+
+itojun
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,26 @@
+<PRE>Computerworld reports:
+
+<A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818</A>
+
+on a call from Kaspersky Labs for help breaking encryption used by some
+ransomeware:  Code that infects a system, uses a public key embedded in
+the code to encrypt your files, then tells you you have to go to some
+web site and pay for the decryption key.
+
+Apparently earlier versions of this ransomware were broken because of a
+faulty implementation of the encryption.  This one seems to get it
+right.  It uses a 1024-bit RSA key.  Vesselin Bontchev, a long-time
+antivirus developer at another company, claims that Kaspersky is just
+looking for publicity:  The encryption in this case is done right and
+there's no real hope of breaking it.
+
+Speculation about this kind of attack has made the rounds for years.
+It appears the speculations have now become reality.
+
+ 							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

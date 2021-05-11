@@ -1,0 +1,47 @@
+<PRE>RFC 4366 is somewhat of a mess. I do not remember the authors asking 
+the authors of IDNA (of which I am one) about what they should do.
+
+FWIW, I'm not sure why this would be on the cryptography list, but 
+I'm not sure of that for most of the &quot;we can design a better UI&quot; 
+threads either.
+
+&gt;<i>What should the SMTP client put in the RFC 4366 section 3.1 &quot;HostName&quot;:
+</I>&gt;<i>
+</I>&gt;<i>     - The ACE domain it is working with (xn--exmple-cua.com)?
+</I>&gt;<i>     - The underlying UTF8 domain name? (ex&#228;mple.com)?
+</I>
+Hopefully, the former. But if that doesn't work, try the latter.
+
+&gt;<i>What should the server do when it receives the client's &quot;HostName&quot;?
+</I>&gt;<i>
+</I>&gt;<i>     - Convert ACE to UTF8?
+</I>&gt;<i>     - Convert UTF8 to ACE?
+</I>
+Hopefully, neither: leave it as an ACE.
+
+&gt;<i>What type of comparison is the server expected to perform?
+</I>&gt;<i>
+</I>&gt;<i>     - Convert UTF8 CommanName to ACE (also leave IA5 alone) and then compare?
+</I>&gt;<i>     - Convert ACE names in either subjectAltName or CN to UTF8 and then
+</I>&gt;<i>       compare UTF8 strings (with NAMEPREP, STRINGPREP and all that jazz)?
+</I>
+Hopefully, neither: leave it as an ACE.
+
+&gt;<i>This can be (to say the least) rather unpleasant. If IDNA is only between
+</I>&gt;<i>the user and the UI, with everything on the wire in ACE form,
+</I>
+Yes.
+
+&gt;<i>then all
+</I>&gt;<i>the pain is avoided:
+</I>
+Yes+. That's why we designed IDNA that way.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,66 @@
+<PRE>To add to the reference, a preprint is available online at
+
+  <A HREF="http://www.dtc.umn.edu/~odlyzko/doc/arch/prime.discrete.logs.pdf">http://www.dtc.umn.edu/~odlyzko/doc/arch/prime.discrete.logs.pdf</A>
+
+A companion paper that was used crucially in the solution, &quot;Solving
+large sparse linear systems over finite fields,&quot; pp. 109-133 in  
+&quot;Advances in Cryptology - CRYPTO '90,&quot; A. J. Menezes and S. A. Vanstone 
+(eds.), Springer Verlag, Lecture Notes in Computer Science #537 (1991)
+is available at
+
+  <A HREF="http://www.dtc.umn.edu/~odlyzko/doc/arch/sparse.linear.eqs.pdf">http://www.dtc.umn.edu/~odlyzko/doc/arch/sparse.linear.eqs.pdf</A>
+
+Andrew Odlyzko, <A HREF="http://www.dtc.umn.edu/~odlyzko">http://www.dtc.umn.edu/~odlyzko</A>
+
+   
+
+
+  &gt; On Fri Oct 12, Steve Bellovin wrote:
+
+  On Thu, 11 Oct 2007 21:50:06 -0700
+  Bill Stewart &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bill.stewart at pobox.com</A>&gt; wrote:
+
+  &gt; 
+  &gt; &gt; &gt; | Which is by the way exactly the case with SecureIM. How
+  &gt; &gt; &gt; | hard is it to brute-force 128-bit DH ? My &quot;guesstimate&quot;
+  &gt; &gt; &gt; | is it's an order of minutes or even seconds, depending
+  &gt; &gt; &gt; | on CPU resources.
+  &gt; 
+  &gt; Sun's &quot;Secure NFS&quot; product from the 1980s had 192-bit Diffie-Hellman,
+  &gt; and a comment in one of the O'Reilly NFS books says that
+  &gt;          &quot;However, by 1990, advances in RISC processors produced
+  &gt;          workstation machines that could, by brute force,
+  &gt;          derive the private key from any public key in under a day.&quot;
+  &gt; but that in 1987 there were still a lot of Motorola 68010 machines
+  &gt; that took several minutes to generate keys so they didn't want it
+  &gt; longer. I'm guessing that a 1990 RISC machine was around 50 MIPS,
+  &gt; so it's maybe 1/100 the speed of a modern single-core CPU.
+  &gt; 
+  &gt; 128-bit DH sounds like as good a decision as using 40-bit RC4 keys
+  &gt; would be today.
+  &gt; 
+  It wasn't just brute force, it was math.
+
+  @Article{         nfscrack, 
+    author        = {Brian A. LaMacchia and Andrew M. Odlyzko},
+    journal       = {Designs, Codes, and Cryptography},
+    pages         = {46--62},
+    title         = {Computation of Discrete Logarithms in Prime Fields},
+    volume        = {1},
+    year          = {1991},
+    annote        = {Describes how the authors cryptanalyzed Secure RPC.}
+  }
+
+
+
+  		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+  ---------------------------------------------------------------------
+  The Cryptography Mailing List
+  Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

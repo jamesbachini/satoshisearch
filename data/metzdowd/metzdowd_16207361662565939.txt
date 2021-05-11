@@ -1,0 +1,32 @@
+<PRE>On Fri, 11 Jan 2008 17:32:04 -0800
+Alex Alten &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A>&gt; wrote:
+
+
+&gt;<i> 
+</I>&gt;<i> Generally any standard encrypted protocols will probably eventually
+</I>&gt;<i> have to support some sort of CALEA capability. For example, using a
+</I>&gt;<i> Verisign ICA certificate to do MITM of SSL, or possibly requiring
+</I>&gt;<i> Ebay to provide some sort of legal access to Skype private keys.  
+</I>
+...
+&gt;<i> 
+</I>&gt;<i> &gt;This train left the station a *long* time ago.
+</I>&gt;<i> 
+</I>&gt;<i> So it's not so clear that the train has even left the station.
+</I>&gt;<i> 
+</I>You've given a wish list but you haven't explained why you think it
+will happen.  The US government walked away from the issue years ago,
+when the Clipper chip effort failed.  Even post-9/11, the Bush
+administration chose not to revisit the question.
+
+The real issue, though, is technical rather than political will.  CALEA
+is a mandate for service providers; key escrow is a requirement on the
+targets of the surveillance.  The bad guys won't co-operate...
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

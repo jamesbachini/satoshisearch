@@ -1,0 +1,29 @@
+<PRE>&gt;<i> Thus unlike with bridges, you fundamentally can't 
+</I>&gt;<i> evaluate the quality of a security system you built if you're unfamiliar 
+</I>
+&gt;<i> with the state of the art of _attacks_ against security systems, and you 
+</I>
+&gt;<i> can't become familiar with those unless you realize that these attacks 
+</I>&gt;<i> have each brought down a system previously considered impregnable.
+</I>
+I don't see how this invalidates my analogy.
+
+In 1940 they didn't know understand about wind-induced vibration and yet 
+it brought down the Tacoma Narrows bridge.  A few years ago we didn't know 
+much about hash collisions, yet since then the field has brought down MD5.
+
+If the field isn't codified, all the more reason to spread knowledge 
+rather than encourage a priesthood.
+
+        /r$
+
+--
+STSM, DataPower Chief Programmer
+WebSphere DataPower SOA Appliances
+<A HREF="http://www.ibm.com/software/integration/datapower/">http://www.ibm.com/software/integration/datapower/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

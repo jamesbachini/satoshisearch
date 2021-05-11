@@ -1,0 +1,74 @@
+<PRE>Ben Laurie alerts us to the recent bug in Debian distributions of
+OpenSSL which caused the RNG to have almost no entropy. The distribution
+mistakenly commented out the call that added seeding and most other
+sources of entropy to the RNG state. This is requiring many keys to
+be re-issued.
+
+One of the more unfortunate aspects of this bug is that it affects not
+only keys generated on systems with the weak RNG, but also even securely
+generated DSA keys, if the keys were used for signing on systems with
+the bug. DSA keys are vulnerable to weak RNGs not only at keygen time
+but at any later time that signatures are created. This causes those
+keys to be far more vulnerable to problems in RNGs.
+
+The reason is the DSA signature equation sk - xr = h, where h is the
+message hash, r and s are signature components, x is the private key,
+and k is a random value chosen uniquely per message. If k is guessable,
+as potentially was the case with this recent bug, then x can be deduced
+since the other values are typically sent in the clear.
+
+A simple trick can be used to help immunize DSA signatures against
+these kinds of failures. I first learned of this idea many years ago
+from Phil Zimmermann, and a varient has been used for a long time in
+PGP and probably other code, but aparently not OpenSSL. The idea is
+to base the random k not just on the output of your RNG, but also on
+the private key x. Something like:
+
+k = hash (x, rng()).
+
+Of course it is still necessary that k be uniformly distributed mod q
+(the DSA subgroup prime order), so this can't be just a straight hash.
+It might be a separate PRNG instance which gets seeded with the data
+values shown.  But the idea is to mix in the secret key value, x, in
+addition to data from the RNG.
+
+In this way, if the rng data is predictable but the secret key is unknown,
+k should still be unguessable. And if your mixing function is good then
+this should not leak any information about x, especially in the usual
+case where the rng is of good quality.
+
+A variant on this idea protects against a separate problem, where k
+is unguessable but somehow the same k value is used for two separate
+signatures. This again lets the attacker deduce x because he will observe
+two instances of the DSA signature equation above, with all values known
+except k and x, and since k is the same, this is two equations with two
+unknowns and allows recovering both values.
+
+To immunize against this failure, include the message hash h in the mixing
+function that generates k:
+
+k = hash (x, h, rng()).
+
+Now, if the RNG does produce identical output, h will typically differ
+among signatures, again producing unique and unguessable k values. And
+if h is the same for two messages in this form, k will be the same, but
+then r and s will be the same as well, and the second signature will be
+an exact match of the first and not leak new information.
+
+I think these techniques are widely known among implementors but I did
+not see them in HAC so I thought it was worth reminding the community
+here. OpenSSL is such a widely used crypto library that it would be
+especially valuable for it to consider incorporating these mechanisms. It
+would have saved some considerable pain as administrators who use OpenSSH
+(which depends on OpenSSL) DSA keys now are forced to consider whether
+they may be vulnerable to the bug even if their primary servers were not
+exposed to it, since any client out there may have generated insecure
+signatures and inadvertantly revealed secret keys.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

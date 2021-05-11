@@ -1,0 +1,50 @@
+<PRE>On Tue, Jan 29, 2008 at 03:37:26PM -0600, Nicolas Williams wrote:
+&gt;<i> I think you missed John's point, which is that two-person *login*
+</I>&gt;<i> says *nothing* about what happens once logged in -- logging in
+</I>&gt;<i> enables arbitrary subsequent transactions that may not require two
+</I>&gt;<i> people to acquiesce.
+</I>
+Certainly, but then neither does a one-person login (people can
+always log into a system and then walk away to get a cup of coffee,
+for that matter).
+
+&gt;<i> What if one of the persons leaves the other alone to do whatever they
+</I>&gt;<i> wish with the system?  Or are the two persons chained to each other?
+</I>&gt;<i> (And even then, there's no guarantee that they are both conscious at the
+</I>&gt;<i> same time, that no third person shows up and knocks them out *after*
+</I>&gt;<i> they've logged in, ...)
+</I>
+Of course, this is common sense. These are human problems which I do
+not think can *ever* be solved through application of cryptography.
+As I said, requiring two sets of credentials can act as a reminder
+to work together, nothing more. There's no way that I know of to
+force a person to pay attention, or for that matter do anything they
+do not wish to do.
+
+&gt;<i> When you force two people to participate on a *per-transaction* basis
+</I>&gt;<i> then you probably get both of them to pay attention, though such schemes
+</I>&gt;<i> might not scale to thousands, or even hundreds of transactions per-team,
+</I>&gt;<i> per-day.
+</I>
+Agreed--it would be nonsense to dream otherwise. My only point was
+to suggest that there are some circumstances in which a system like
+this can be helpful/useful, which was one of the questions John
+asked. It is simply necessary that when employing such a system, you
+be aware of what problems it actually *can* solve, and what problems
+it cannot. I have no doubt that some people attempt to employ these
+sorts of solutions in ways which they are indeed inapplicable (or
+put too much faith in the false sense of security it gives them),
+possibly at the urging of their snake oil vendors. This is why
+scrutiny of the *application* of a technology is at least as
+important as scrutiny of the technology itself.
+-- 
+{ IRL(Jeremy_Stanley); PGP(9E8DFF2E4F5995F8FEADDC5829ABF7441FB84657);
+SMTP(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>); IRC(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at irc.yuggoth.org</A>#ccl); ICQ(114362511);
+AIM(dreadazathoth); YAHOO(crawlingchaoslabs); FINGER(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>);
+MUD(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at katarsis.mudpy.org</A>:6669); WWW(<A HREF="http://fungi.yuggoth.org/">http://fungi.yuggoth.org/</A>); }
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

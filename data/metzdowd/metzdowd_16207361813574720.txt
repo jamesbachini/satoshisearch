@@ -1,0 +1,36 @@
+<PRE>
+Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; writes:
+&gt;&gt;<i> There are well-attended conferences, papers published online and in many
+</I>&gt;&gt;<i> journals, etcetera.  So it's not so difficult for people who don't know
+</I>&gt;&gt;<i> anything about security and crypto to eventually figure out who does, in
+</I>&gt;&gt;<i> the process also learning who else knows who the experts are.
+</I>&gt;<i>
+</I>&gt;<i> Actually I think it is just about as difficult to tell who is a
+</I>&gt;<i> trustworthy expert in the field of cryptography as it is in any field
+</I>&gt;<i> of science or medicine.
+</I>
+Indeed. In fact, one even finds many people who post to public mailing
+lists who know less than they should. However, it is reasonably
+straightforward to figure out who knows what in a given field. Things
+like citation indexes, journal impact factors and such make a number
+of these things reasonably easy even for the outsider, provided that
+outsider knows what they're doing. One can also go through the
+expedient of finding what a substantial number of practitioners
+think. If most have one opinion, and one or two who don't seem
+terribly sane have a very different one, you know who's who.
+
+One of the most interesting things I find about most fields is the
+fact that people who are incompetent very often fancy themselves
+experts. There's a great study on this subject -- usually the least
+competent people are the ones that feel highly confident in their
+skills, while the people who aren't have more doubts. One sees this
+very phenomenon on this very list, and not infrequently.
+
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

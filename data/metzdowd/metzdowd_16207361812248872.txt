@@ -1,0 +1,60 @@
+<PRE>On Fri, May 30, 2008 at 03:04:34PM -0400, Leichter, Jerry wrote:
+
+&gt;<i> 
+</I>&gt;<i> 	1.  Client only.  The client, whenever it sees a new message,
+</I>&gt;<i> 		(a) downloads it; (b) encrypts it using a secret key;
+</I>&gt;<i> 		(c) stores the encrypted version back on the server;
+</I>&gt;<i> 		(d) deletes the unencrypted version.  The client can
+</I>&gt;<i> 		put the encrypted messages in a different folder, or
+</I>&gt;<i> 		it can mark them with a header line.
+</I>&gt;<i> 
+</I>&gt;<i> 	2.  Server-assisted.  The client gives the server its public
+</I>&gt;<i> 		key.  When a message arrives at the server, the
+</I>&gt;<i> 		server (a) generates a &quot;session&quot; key; (b) encrypts
+</I>&gt;<i> 		the message using the session key; (c) encrypts
+</I>&gt;<i> 		the session key with the client's public key;
+</I>&gt;<i> 		(d) adds a header containing the encrypted session
+</I>&gt;<i> 		key to the encrypted message; (e) stores the
+</I>&gt;<i> 		encrypted message.  The necessary work for
+</I>&gt;<i> 		the client is obvious.
+</I>
+	3. The server that stores your mail is not the first one to
+	receive it. It is just the storage layer. A previous non-storing
+	server, encrypts the mail and *then* forwards it to the store.
+
+&gt;<i> In each case, one would probably chose some headers to encrypt
+</I>&gt;<i> separately - e.g., the subject - so that one could more easily pull
+</I>&gt;<i> them out without decrypting the whole message.
+</I>
+    S/MIME does not encrypt any headers. It only encrypts the
+    payload. Some S/MIME applications don't leave any useful
+    headers in the outer message, others leave the sender and
+    subject in the clear.
+
+&gt;<i> Does anyone know of existing work in this area?
+</I>
+Take PGP Universal gateway and turn-it inside-out. Clear mail on the
+Internal encrypted mail on the intranet between the gateway and the
+mail store.
+
+Take a vanity domain, run an encryption gateway, forward everything to to
+an ESP. The ESP's search engine will not do you much good with encrypted
+mail, so indexing is up to your IMAP client, if it can cache/index
+decrypted content.
+
+Not much demand for this yet, so I don't expect mature offerings any
+time soon. We'd have to build a boutique service for cipher-punks.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

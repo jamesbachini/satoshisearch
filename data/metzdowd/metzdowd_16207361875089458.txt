@@ -1,0 +1,40 @@
+<PRE>On Mon, Aug 18, 2008 at 10:16:02AM -0700, Paul Hoffman wrote:
+[...]
+&gt;<i> Essentially no one would argue that is is &quot;quite expensive&quot;. I 
+</I>&gt;<i> suspect that nearly everyone in the country would be happy to pay an 
+</I>&gt;<i> additional $1/election for more reliable results.
+</I>
+Without seeing all of the expense (and likely inability) of securing
+and ensuring the proper count from the machine, people look at the
+problem and go &quot;computers are good at counting things fast and people
+aren't, so it must therefore be massively cheaper to have a computer
+do the count&quot;.
+
+If you're &gt;just&lt; talking about summing a few lists, that's true. But
+of course, no one who doesn't work for a voting machine company is
+just talking about summing a few lists.
+
+The idea that after you factor in everything, it might actually be
+cheaper to have people do it after all, is a very difficult one for
+many people to even conceptualize. &quot;Progress&quot; demands that computers
+do all menial tasks.
+
+-- 
+				- Adam
+
+** Expert Technical Project and Business Management
+**** System Performance Analysis and Architecture
+****** [ <A HREF="http://www.adamfields.com">http://www.adamfields.com</A> ]
+
+[ <A HREF="http://www.morningside-analytics.com">http://www.morningside-analytics.com</A> ] .. Latest Venture
+[ <A HREF="http://www.confabb.com">http://www.confabb.com</A> ] ................ Founder
+[ <A HREF="http://www.aquick.org/blog">http://www.aquick.org/blog</A> ] ............ Blog
+[ <A HREF="http://www.adamfields.com/resume.html">http://www.adamfields.com/resume.html</A> ].. Experience
+[ <A HREF="http://www.flickr.com/photos/fields">http://www.flickr.com/photos/fields</A> ] ... Photos
+[ <A HREF="http://www.aquicki.com/wiki">http://www.aquicki.com/wiki</A> ].............Wiki
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

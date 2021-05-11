@@ -1,0 +1,28 @@
+<PRE>Paul Hoffman wrote:
+&gt;<i> First off, big props to Dan for getting this problem fixed in a 
+</I>&gt;<i> responsible manner. If there were widespread real attacks first, it 
+</I>&gt;<i> would take forever to get fixes out into the field.
+</I>&gt;<i> 
+</I>&gt;<i> However, we in the security circles don't need to spread the &quot;Kaminsky 
+</I>&gt;<i> finds&quot; meme. Take a look at 
+</I>&gt;<i> &lt;<A HREF="http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/">http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/</A>&gt;. 
+</I>&gt;<i> The first draft of this openly-published document was in January 2007. 
+</I>&gt;<i> It is now in WG last call.
+</I>&gt;<i> 
+</I>&gt;<i> The take-away here is not that &quot;Dan didn't discover the problem&quot;, but 
+</I>&gt;<i> &quot;Dan got it fixed&quot;. An alternate take-away is that IETF BCPs don't make 
+</I>&gt;<i> nearly as much difference as a diligent security expert with a good name.
+</I>
+Guess you need to tell Dan that - he seems to think he did discover it.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

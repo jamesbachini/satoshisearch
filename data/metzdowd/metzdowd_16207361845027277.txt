@@ -1,0 +1,35 @@
+<PRE>John Ioannidis wrote on 10 July 2008 18:03:
+
+&gt;<i> Eugen Leitl wrote:
+</I>&gt;&gt;<i> In case somebody missed it,
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> <A HREF="http://www.tfr.org/wiki/index.php?title=Technical_Proposal_(IPETEE">http://www.tfr.org/wiki/index.php?title=Technical_Proposal_(IPETEE</A>)
+</I>&gt;&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> If this is a joke, I'm not getting it.
+</I>&gt;<i> 
+</I>&gt;<i> /ji
+</I>
+  I thought the bit about &quot;Set $wgLogo to the URL path to your own logo
+image&quot; was quite funny.  But they did misspell 'teh' in &quot;Transparent
+end-to-end encryption for teh internets&quot;.
+
+  It does sound a lot like &quot;SSL/TLS without certs&quot;, ie. SSL/TLSweakened to
+make it vulnerable to MitM.  Then again, if no Joe Punter ever knows the
+difference between a real and spoofed cert, we're pretty much in the same
+situation anyway.
+
+  And of course those supposedly transparent fails-and-reconnects will turn
+out to be anything but, in practice...
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

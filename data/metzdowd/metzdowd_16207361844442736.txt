@@ -1,0 +1,21 @@
+<PRE>Udhay Shankar N wrote, On 9/7/08 5:52 PM:
+&gt;<i> I think Dan Kaminsky is on this list. Any other tidbits you can add 
+</I>&gt;<i> prior to Black Hat?
+</I>
+He's posted a quite long article on his blog
+
+  <A HREF="http://www.doxpara.com/?p=1162">http://www.doxpara.com/?p=1162</A>
+
+that looks like all the details he is likely to provide for the next 30 
+days. It does seem to address the speculation on this list about how the 
+patch relates to stuff that has been known for years, Dan Bernstein's 
+code, who knew what when, etc.
+
+
+   -- sidney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,27 @@
+<PRE>Dirk-Willem van Gulik wrote:
+ &gt;&gt; Keep in mind that the notary is still 'careful' --
+ &gt;&gt; effectively they sign the hash -- rather than the
+ &gt;&gt; document; and state either such (e.g. in the case of
+ &gt;&gt; some software/code where you do not hand over the
+ &gt;&gt; actual code) or state that _a_ document was presented
+ &gt;&gt; with said hash.
+
+William Allen Simpson wrote:
+ &gt; And that makes all the difference.  The digital notary
+ &gt; is not certifying the original document.  You
+ &gt; described the notary generating its own tuples
+ &gt; (credentials as presented, the hash, a timestamp, and
+ &gt; a notarized declaration that such was presented).
+ &gt; There is no problem, and the described attack does not
+ &gt; apply.
+
+The described attack does apply:  The notary has
+complied with normal procedures and with the rules, but
+the rules and procedure fail to have the desired effect,
+because an MD5 hash lacks the desired properties.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,154 @@
+<PRE>
+&quot;Alan&quot; writes:
+-+------------
+ | What are the rules these days on crypto exports.  Is a review
+ | still required?  If so, what gets rejected?
+ | 
+
+The following is a recent interaction with specialty
+export counsel, though somewhat modified as I detoxed
+it from base64 to ASCII plaintext and from infinite
+line length to fixed line length.
+
+When you file, you have immediate permission to export
+to, essentially, the anglophone democracies and western
+Europe.  If you have heard nothing in 30 days elapsed
+time, you are then free to export generally but you will
+never be permitted to export to the embargoed country
+list (Cuba, Iran, Sudan, Syria, North Korea, and Libya).
+
+YMMV.
+
+--dan
+
+
+
+-----------------8&lt;------------cut-here------------8&lt;-----------------
+
+A. BIS Checklist of Questions:
+
+1. Does your product perform &quot;cryptography&quot;, or otherwise
+contain any parts or components that are capable of performing
+any of the following &quot;information security&quot; functions?
+ 
+(Mark with an &quot;X&quot; all that apply)
+ 
+a.  _____  encryption
+b.  _____  decryption only (no encryption)
+c.  _____  key management / public key infrastructure (PKI)
+d.  _____  authentication (e.g., password protection, digital signatures)
+e.  _____  copy protection
+f.  _____  anti-virus protection
+g.  _____  other  (please explain) : ___________________________________
+h.  _____  NONE / NOT APPLICABLE
+ 
+2. For items with encryption, decryption and/or key management
+functions (1.a, 1.b, 1.c above):
+
+a. What symmetric algorithms and key lengths (e.g., 56-bit
+DES, 112 / 168-bit Triple-DES, 128 / 256-bit AES / Rijndael) are
+implemented or supported?
+
+b. What asymmetric algorithms and key lengths (e.g., 512-bit
+RSA / Diffie-Hellman, 1024 / 2048-bit RSA / Diffie-Hellman) are
+implemented or supported?
+
+c. What encryption protocols (e.g., SSL, SSH, IPSEC or PKCS
+standards) are implemented or supported?
+ 
+d. What type of data is encrypted?
+
+B. BIS Review Requirements for Form 748-P.  If any inquiry
+is not applicable, please state &quot;N/A.&quot;
+ 
+(a) State the name of the encryption item being submitted for review.
+ 
+ i. Enter the name of the manufacturer of the software.
+ ii. Provide a brief technical description of the basic purpose
+ to be served by the encryption;
+ iii. Provide a brief description of the type of encryption used
+ in the software; e.g., 168-bit Triple DES for xyz purpose, and
+ 1024-bit RSA for abc purpose.
+ 
+(b) You would also need to provide brochures or other
+documentation as well as specifications related to the software,
+relevant product descriptions, architecture specifications and,
+if required by BIS, source code.  You must also indicate whether
+there have been any prior reviews of the product, if such
+reviews are applicable to the current submission.  In addition,
+you must provide the following information in a cover letter
+accompanying your review request:
+
+ (1) Description of all the symmetric and asymmetric encryption
+ algorithms and key lengths and how the algorithms are used.
+ Specify which encryption modes are supported (e.g., cipher
+ feedback mode or cipher block chaining mode).
+
+ (2) State the key management algorithms, including modulus
+ sizes, that are supported.
+
+ (3) For products with proprietary algorithms, include a textual
+ description and the source code of the algorithm.
+
+ (4) Describe the pre-processing methods (e.g., data compression
+ or data interleaving) that are applied to the plaintext data
+ prior to encryption.
+
+ (5) Describe the post-processing methods (e.g., packetization,
+ encapsulation) that are applied to the cipher text data after
+ encryption.
+
+ (6) State the communication protocols (e.g., X.25, Telnet or
+ TCP) and encryption protocols (e.g., SSL, IPSEC or PKCS
+ standards) that are supported.
+
+ (7) Describe the encryption-related Application Programming
+ Interfaces (APIs) that are implemented and/or supported.
+ Explain which interfaces are for internal (private) and/or
+ external (public) use.
+  
+ (8) Describe the cryptographic functionality that is provided
+ by third-party hardware or software encryption components (if
+ any).  Identify the manufacturers of the hardware or software
+ components, including specific part numbers and version
+ information as needed to describe the product.  Describe whether
+ the encryption software components (if any) are statically or
+ dynamically linked.
+
+ (9) For commodities or software using Java byte code, describe
+ the techniques (including obfuscation, private access modifiers
+ or final classes) that are used to protect against decompilation
+ and misuse.
+
+ (10) State how the product is written to preclude user
+ modification of the encryption algorithms, key management and
+ key space.
+
+ (11) For products which incorporate an open cryptographic
+ interface as defined in part 772 of the EAR, describe the Open
+ Cryptographic Interface.
+  
+ (12) We must provide sufficient information for BIS to
+ determine whether the software qualifies for &quot;mass market&quot;
+ consideration.  The regulations offer examples of items that
+ qualify.  Please comment on the applicability of any of these
+ examples to your software product and how you plan to market it,
+ and approximately how many units will be sold per month:
+ &quot;general purpose&quot; operating systems and desktop applications
+ (e.g., e-mail, browsers, games, word processing, database,
+ financial applications or utilities) designed for, bundled with,
+ or pre-loaded on single CPU computers, laptops, or hand-held
+ devices; commodities and software for client Internet appliances
+ and client wireless LAN devices; home use networking commodities
+ and software (e.g., personal firewalls, cable modems for
+ personal computers, and consumer set top boxes); portable or
+ mobile civil telecommunications commodities and software (e.g.,
+ personal data assistants (PDAs), radios, or cellular products);
+ and commodities and software exported via free or anonymous
+ downloads.&quot;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

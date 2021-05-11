@@ -1,0 +1,32 @@
+<PRE>Jeff Hodges wrote:
+&gt;<i> It turns out the supplied default for p is 1024 bit -- I'd previously goofed 
+</I>&gt;<i> when using wc on it..
+</I>&gt;<i>
+</I>&gt;<i> DCF93A0B883972EC0E19989AC5A2CE310E1D37717E8D9571BB7623731866E61EF75A2E27898B057
+</I>&gt;<i> F9891C2E27A639C3F29B60814581CD3B2CA3986D2683705577D45C2E7E52DC81C7A171876E5CEA7
+</I>&gt;<i> 4B1448BFDFAF18828EFD2519F14E45E3826634AF1949E5B535CC829A483B8A76223E5D490A257F0
+</I>&gt;<i> 5BDFF16F2FB22C583AB
+</I>
+This p is a &quot;strong&quot; prime, one where (p-1)/2 is also a prime, a good
+property for a DH modulus. The generator g=2 generates the entire group,
+which is an OK choice. It means that one bit of the shared secret is
+leaked (whether or not it is a quadratic residue, i.e. whether the
+discrete log of the number is even or odd). But that shouldn't matter,
+the shared secret should be hashed and/or used as the seed of a PRNG to
+generate further keys.
+
+The main problem as I said is that 1024 bit moduli are no longer
+considered sufficiently safe for more than casual purposes. Particularly
+with discrete logs that use a widely-shared modulus like the one above,
+it would not be surprising to see it publicly broken in the next 5-10
+years, or perhaps even sooner. And if a public effort can accomplish it
+in a few years, conservatively we should assume that well funded secret
+efforts could already succeed today.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

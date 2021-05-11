@@ -1,0 +1,24 @@
+<PRE>On Jun 1, 2008, at 12:07 AM, Victor Duchovni wrote:
+&gt;<i> Not much demand for this yet, so I don't expect mature offerings any
+</I>&gt;<i> time soon. We'd have to build a boutique service for cipher-punks.
+</I>
+
+I doubt there'll ever be much demand. The tinfoil hat crowd will be  
+bothered by the n-1 hops (and however many Narus boxes in between)  
+being traversed unencrypted, while most everyone else seemingly  
+doesn't care and uses GMail/Hotmail/YahooMail, forfeiting any  
+expectation of privacy right from the start.
+
+The easiest thing for people who _do_ care is still running their own  
+mail server. The emergence of reasonably priced VM hosting providers  
+(e.g. slicehost.com) makes it fairly uncomplicated, modulo initial  
+setup.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

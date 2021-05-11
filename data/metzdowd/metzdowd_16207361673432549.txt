@@ -1,0 +1,28 @@
+<PRE>
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> The call-the-customer-and-reissue mechanism is a
+</I>&gt;&gt;<i> mediocre solution to the fraud problem, but it is the
+</I>&gt;&gt;<i> one we have these days.
+</I>&gt;<i>
+</I>&gt;<i> Why is it a mediocre solution?
+</I>&gt;<i>
+</I>&gt;<i> The credit card number is a widely shared secret.  It
+</I>&gt;<i> has been known for centuries that widely shared secrets
+</I>&gt;<i> have a short life expectancy and should be frequently
+</I>&gt;<i> re-issued.
+</I>&gt;<i>
+</I>&gt;<i> The only better solution is unshared secrets.  Is that
+</I>&gt;<i> what you had in mind?
+</I>
+Naturally. However, given what we have now, reissue is the only
+reasonable option.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

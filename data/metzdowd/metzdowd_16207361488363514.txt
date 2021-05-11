@@ -1,0 +1,54 @@
+<PRE>|<i> &gt; Crypto has been an IP minefield for some years.  With the expiry of
+</I>|<i> &gt; certain patents, and the availability of other unencumbered crypto
+</I>|<i> &gt; primitives (eg. AES), we may see this change.  But John's other
+</I>|<i> &gt; points are well made, and still valid.  Downloadable MP3 ring tones
+</I>|<i> &gt; are a selling point.  E2E security isn't (although I've got to
+</I>|<i> &gt; wonder about certain teenage demographics... :)
+</I>|<i> 
+</I>|<i> It's also an open question whether network operators subject to
+</I>|<i> interception requirements can legally offer built-in E2E encryption
+</I>|<i> capabilities without backdoors.
+</I>It's going to be interesting to see the effect of the iPhone in this
+area.  While nominally a closed system like all the handsets that
+preceded it, in practice it's clear that people will find ways to load
+their own code into the things.  (As of yesterday - less than two weeks
+after the units shipped - people have already teased out how to get to
+the debugging/code patching interface and have extracted the internal
+passwords.  The community doing this would make a fascinating study in
+and of itself - an international group coordinating through an open IM
+line, tossing around ideas.)  There's plenty of CPU power available, and
+a fairly standard environment.  (In fact, recent reports hint that the
+chip contains a hardware accelerator for Java.)
+
+Between encrypted VOIP over WIFI and eventually over broadband cell -
+keeping people from running voice over their broadband connections is a
+battle the telco's can't win in the long run - and just plain encrypted
+cell phone calls, I think in a couple of years anyone who wants secure
+phone connections will have them.  There will be tons of moaning about
+it from governments - not to mention the telco's, though for them that
+will be a triviality compared to all the other things they will lose
+control over - but no one is going to be able to put this genie back
+in the bottle.
+
+Also, right now, the technology to build a cell phone is still
+specialized and capital-intensive.  But today's leading-edge chip and
+manufacturing technology is tomorrow's commodity.  Ten, twenty years
+from now, anyone will be able to put together the equivalent of today's
+iPhone, just as anyone can go down to Fry's today and build themselves
+what was a high-end PC a couple of years ago.  You can't quite build
+your own laptop yet, but can that be far off?  A &quot;gray box&quot; cellphone
+might not compete with what you'll be able to buy from the leading-edge
+guys of the day, but it will be easily capable of what's needed to do
+secure calling.
+
+So - who's going to write the first RFC for secure voice over cell, thus
+circumventing the entire government/telco/PTT standards process?  We're
+not quite ready for it to take off, but we're getting close.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

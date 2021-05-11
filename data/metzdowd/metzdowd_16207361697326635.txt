@@ -1,0 +1,74 @@
+<PRE>----- Original Message ----- 
+From: &quot;&quot;Hal Finney&quot;&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hal at finney.org</A>&gt;
+To: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ashwood at msn.com</A>&gt;; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+Sent: Sunday, February 10, 2008 9:27 AM
+Subject: Re: questions on RFC2631 and DH key agreement
+
+
+&gt;<i> Joseph Ashwood writes:
+</I>&gt;&gt;<i> From: &quot;&quot;Hal Finney&quot;&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hal at finney.org</A>&gt;
+</I>&gt;&gt;<i> &gt; Joseph Ashwood writes, regarding unauthenticated DH:
+</I>&gt;&gt;<i> &gt;&gt; if b uses the same private key
+</I>&gt;&gt;<i> &gt;&gt; to generate multiple yb the value of b will slowly leak.
+</I>&gt;&gt;<i> &gt;
+</I>&gt;&gt;<i> &gt; I'm not familiar with this last claim, that the value of b's private 
+</I>&gt;&gt;<i> &gt; key
+</I>&gt;&gt;<i> &gt; (presuming that is what you mean) would slowly leak if it were reused 
+</I>&gt;&gt;<i> &gt; for
+</I>&gt;&gt;<i> &gt; many DH exchanges. Can you explain what you mean? Are you talking about
+</I>&gt;&gt;<i> &gt; Lim&amp;Lee style attacks where the recipient does not check the parameters
+</I>&gt;&gt;<i> &gt; for validity? In that case I would say the private exponent would leak
+</I>&gt;&gt;<i> &gt; quickly rather than slowly. But if the parameters are checked, I don't
+</I>&gt;&gt;<i> &gt; see how that would leak a reused exponent.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I am not immediately aware of any known attacks that have been published
+</I>&gt;&gt;<i> about it, but it is fairly obvious that Eve has more information about 
+</I>&gt;&gt;<i> the
+</I>&gt;&gt;<i> private key by having a second key set with the same unknown. With only a
+</I>&gt;&gt;<i> single pair Eve's information set is:
+</I>&gt;&gt;<i> g_1,p_1,q_1,y_1 where y_1 = g_1^x mod p_1
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> By adding the second key set Eve now has
+</I>&gt;&gt;<i> g_1,p_1,q_1,y_1 where y_1 = g_1^x mod p_1
+</I>&gt;&gt;<i> g_2,p_2,q_2,y_2 where y_2 = g_2^x mod p_2
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> This is obviously additional information, and with addition key set _i
+</I>&gt;&gt;<i> eventually Eve has the information to guess x with improves probability.
+</I>&gt;<i>
+</I>&gt;<i> That's hardly grounds for saying that the value of the secret &quot;will
+</I>&gt;<i> slowly leak&quot;. You have given no reason to believe that this information
+</I>&gt;<i> will be of any practical value to Eve.
+</I>
+We obviously disagree. Security is alway about information control, and 
+disclosing additional information for no gain is always a bad idea.
+
+Expressing the equations differently:
+Y_i = g_i^X - k_i*p_i
+is equivalent to
+Y_i = g_i^X mod p_i
+
+Since Y_i, g_i, and p_i are known, k_i is irrelevant, and g_i and p_i can 
+even be chosen, simple algebra shows that not all Xs can be discovered from 
+a given set, but it also says that sets of possible X can be determined from 
+each triple, and by choosing g,p the overlap of the sets can be reduced. 
+Creating an oracle for Y,g,p triples out of the client is begging for an 
+adaptive attack.
+
+&gt;<i> After all, exactly the same observation might be made about a digital
+</I>&gt;<i> signature, that each signature gives additional information about the
+</I>&gt;<i> private exponent.
+</I>
+Actually there is an additional random variable in the signature, and 3 
+additional k_i so the algebra says that the sets will overlap simply too 
+much for a similar set-based attack to work.
+
+This is a largely fuzzy-logic based attack. And while I obviously haven't 
+sorted it through that far should allow for a probability sorting of values 
+for X.
+                        Joe 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

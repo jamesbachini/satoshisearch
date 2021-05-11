@@ -1,0 +1,24 @@
+<PRE>
+&gt;<i> Is anyone aware of any third-party usability studies on CardSpace, 
+</I>&gt;<i> OpenID, ...?).
+</I>
+I'm not.  It would be a good opportunity for security usability 
+researchers to contribute though.
+
+&gt;<i> [0] I'm not sure whether putting &quot;CardSpace&quot; and &quot;Liberty&quot; in such close
+</I>&gt;<i>    proximity in the above line was a good idea.  If your monitor starts
+</I>&gt;<i>    smoking due to the friction generated, please cut&amp;paste one of the two
+</I>&gt;<i>    elsewhere.
+</I>
+Actually lots of Liberty and WS/Infocard/etc people are working on interop 
+scenarios, see:
+
+   <A HREF="http://projectconcordia.org/index.php/Main_Page">http://projectconcordia.org/index.php/Main_Page</A>
+
+  - RL &quot;Bob&quot;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

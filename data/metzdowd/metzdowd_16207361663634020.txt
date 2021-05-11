@@ -1,0 +1,43 @@
+<PRE>On Mon, Jan 28, 2008 at 03:56:11PM -0700, John Denker wrote:
+[...]
+&gt;<i> I don't think it is very common;  I get only five hits from
+</I>&gt;<i>   <A HREF="http://www.google.com/search?q=two-person-login">http://www.google.com/search?q=two-person-login</A>
+</I>[...]
+
+Try searching for &quot;secret splitting&quot; instead.
+
+&gt;<i> From the foregoing, you might conclude that the two-person login
+</I>&gt;<i> system is worthless security theater ... but harmless security
+</I>&gt;<i> theater, and therefore not worth worrying about either way.
+</I>[...]
+&gt;<i> So now I throw it open for discussion.  Is there any significant
+</I>&gt;<i> value in two-person login?  That is, can you identify any threat 
+</I>&gt;<i> that is alleviated by two-person login, that is not more wisely 
+</I>&gt;<i> alleviated in some other way?
+</I>[...]
+
+I don't think it's security theater at all, as long as established
+procedure backs up this implementation in a sane way. For example,
+in my professional life, we use this technique for commiting changes
+to high-priority systems. Procedure is that two security admins
+(each with half of a cryptographic key) collaborate on updates. Sure
+there's still the risk that one is nefarious and will socially
+engineer a back door in while his/her counterpart is watching, but
+that is not so much the risk we are attempting to thwart. The real
+goal is to reinforce policy which requires collaboration between
+administrators for major changes to these important systems.
+
+Technology can't effectively *force* procedure (ingenious people
+will always find a way around the better mousetrap), but it can help
+remind them how they are expected to interact with systems.
+-- 
+{ IRL(Jeremy_Stanley); PGP(9E8DFF2E4F5995F8FEADDC5829ABF7441FB84657);
+SMTP(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>); IRC(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at irc.yuggoth.org</A>#ccl); ICQ(114362511);
+AIM(dreadazathoth); YAHOO(crawlingchaoslabs); FINGER(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>);
+MUD(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at katarsis.mudpy.org</A>:6669); WWW(<A HREF="http://fungi.yuggoth.org/">http://fungi.yuggoth.org/</A>); }
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

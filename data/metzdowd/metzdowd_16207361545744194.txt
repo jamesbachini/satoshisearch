@@ -1,0 +1,35 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> Are there any open source digital cash packages available?  I need one
+</I>&gt;<i> as part of another research project.
+</I>
+
+I can think of a few ways to answer this question.
+
+1.  blinded money demo programs:  there is magic money, in C 
+and in Java.  Also I think Ben Laurie wrote another one 
+demo'd at EFCE.  These demos are generally around 1-4kloc.
+
+2.  hard money systems:  These allow you to actually issue 
+money and survive aggressive communities.  epointsystem is 
+GPL I think, Ricardo is something or other but I haven't the 
+energy to support the server side as an open source project. 
+  Ricardo is 100-150kloc, epointsystem is much smaller (and 
+lighter in features and scope).
+
+3.  soft community money systems:  cyclos and similar (one 
+from south africa, another from NZ from memory).  These 
+products are designed for small communities where trust is 
+implicit, they have no internal governance capabilities and 
+only limited external security exposures.  But you can use 
+them to issue money.
+
+4.  then there are other variants like barcode money.  A lot 
+of interest is being put into mobile phone money atm.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

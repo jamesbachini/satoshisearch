@@ -1,0 +1,50 @@
+<PRE> &gt; &gt; The same is true in the source code, unsafe
+ &gt; &gt; practices are avoided globally, (e.g. both strcpy()
+ &gt; &gt; and strncpy() are absent together with fixed size
+ &gt; &gt; automatic buffers) rather than used with care
+ &gt; &gt; locally. I won't bore you with all the
+ &gt; &gt; implementation safety &quot;habits&quot;, but there are many.
+
+David Wagner wrote:
+ &gt; It's too bad that today such elementary practices are
+ &gt; something to brag about.  Perhaps one day we'll be
+ &gt; lucky enough that the answer to these questions
+ &gt; becomes more like &quot;of course we use safe programming
+ &gt; practices; what kind of incompetent amateurs do you
+ &gt; take us for?&quot;.
+
+Dynamic strings tempt people to forget about enforcing
+length limits and forget about correctly handling the
+case when the length limits are exceeded.
+
+There is no such thing as a string with no maximum
+length, merely strings of UNKNOWN maximum length.  If
+one has dynamic buffers and fully dynamic strings, it is
+always possible for an attacker to discover the
+previously UNKNOWN maximum length, and exceed it,
+causing the program to fail in a manner likely to be
+useful to the attacker.
+
+In any program subject to attack, all strings should
+have known, documented, and enforced maximum length, a
+length large enough for all likely legitimate uses, and
+no larger.
+
+If enforcing length limits, it is frequently advisable,
+and often necessary, to use, not strcpy or strncpy, but
+routines such as _mbscpy_s, string manipulation routines
+which can, and frequently do, employ buffers of fixed
+and known length, sometimes pre-allocated fixed length.
+
+In C++, incomprehensibly obscure functions such as
+_mbscpy_s should never be called directly, but rather
+called through a template library that automatically
+does the sensible thing when the destination parameter
+is a fixed length buffer, and can be relied upon to
+object when commanded to do the stupid thing.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

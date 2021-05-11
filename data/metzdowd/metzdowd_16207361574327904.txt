@@ -1,0 +1,36 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> On Thu, 11 Oct 2007 22:19:18 -0700
+</I>&gt;<i> james hughes &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hughejp at mac.com</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> A proposal for a new password hashing based on SHA-256 or SHA-512 has
+</I>&gt;&gt;<i> been proposed by RedHat but to my knowledge has not had any rigorous
+</I>&gt;&gt;<i> analysis. The motivation for this is to replace MD-5 based password
+</I>&gt;&gt;<i> hashing at banks where MD-5 is on the list of &quot;do not use&quot;
+</I>&gt;&gt;<i> algorithms. I would prefer not to have the discussion &quot;MD-5 is good
+</I>&gt;&gt;<i> enough for this algorithm&quot; since it is not an argument that the
+</I>&gt;&gt;<i> customers requesting these changes are going to accept.
+</I>&gt;&gt;<i>
+</I>&gt;<i> NetBSD uses iterated HMAC-SHA1, where the password is the key and the
+</I>&gt;<i> salt is the initial plaintext.  (This is my design but not my
+</I>&gt;<i> implementation.)
+</I>
++1 to iterated HMAC-xxx, where xxx is a cryptographic hash of your choosing.
+
+Easy to implement, hard to get wrong, somewhat understood security
+properties.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

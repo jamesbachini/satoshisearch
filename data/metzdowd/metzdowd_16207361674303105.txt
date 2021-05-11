@@ -1,0 +1,18 @@
+<PRE>At 12:23 AM 1/20/2008, Alexander Klimov wrote:
+&gt;<i>Given what is required to get a license (for example, 4.b in the
+</I>&gt;<i>first document, says that one must have people trained in
+</I>&gt;<i>information security), I guess the new law is not supposed to
+</I>&gt;<i>limit use of cryptography by ordinary people, but to limit
+</I>&gt;<i>distribution of snake-oil by self-proclaimed &quot;professionals&quot;.
+</I>
+I would have guessed the opposite - it's designed to prevent
+customized encryption solutions that actually work,
+but not to prevent mass-market products.
+Since you don't need a license for totally inadequate crypto,
+you can still sell snake-oil customized for your users.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

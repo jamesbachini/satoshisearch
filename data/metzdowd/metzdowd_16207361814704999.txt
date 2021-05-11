@@ -1,0 +1,110 @@
+<PRE>Ed Gerck wrote:
+&gt;<i> Bill Frantz wrote:
+</I>&gt;&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A> (Ed Gerck) on Monday, June 2, 2008 wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> To trust something, you need to receive information from sources 
+</I>&gt;&gt;&gt;<i> OTHER than the source you want to trust, and from as many other 
+</I>&gt;&gt;&gt;<i> sources as necessary according to the extent of the trust you want. 
+</I>&gt;&gt;&gt;<i> With more trust extent, you are more likely to need more independent 
+</I>&gt;&gt;&gt;<i> sources of verification.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> In my real-world experience, this way of gaining trust is only
+</I>&gt;&gt;<i> really used for strangers. For people we know, recognition and
+</I>&gt;&gt;<i> memory are more compelling ways of trusting.
+</I>&gt;<i> 
+</I>&gt;<i> Recognition = a channel of information
+</I>&gt;<i> memory = a channel of information
+</I>&gt;<i> 
+</I>&gt;<i> When you look at trust in various contexts, you will still find the need 
+</I>&gt;<i> to receive information from sources OTHER than the source you want to 
+</I>&gt;<i> trust. You may use these channels under different names, such as memory 
+</I>&gt;<i> which is a special type of output that serves as input at a later point 
+</I>&gt;<i> in time.
+</I>
+
+It is useful and efficient to get trust from third parties, 
+but not essential, imho.  If you find yourself meeting 
+someone for the first time in random circumstances, you can 
+get to know them over time, and trust them, fully 2nd 
+party-wise.
+
+Trust comes from events of risk and reward, not from 
+channels.  It just so happens that the best expressions of 
+risk and reward are over independent therefore 3rd party 
+channels.
+
+
+&gt;<i> The distinguishing aspect between information and trust is this: &quot;trust 
+</I>&gt;<i> is that which is essential to a communication channel but cannot be 
+</I>&gt;<i> transferred from a source to a destination using that channel&quot;.
+</I>
+
+Trust is an expression of something you may rely on.  It has 
+risks, liabilities, obligations, etc.  Information does not 
+(yet).
+
+
+&gt;<i> In other 
+</I>&gt;<i> words, self-assertions cannot transfer trust. &quot;Trust me&quot; is, actually, a 
+</I>&gt;<i> good indication not to trust.
+</I>
+
+Well.  Actions speak louder than words.  The *act* of a 
+third party is to put their own reputation at risk if they 
+say &quot;trust this 2nd person.&quot;  This works if the two people 
+are independent, but not if the two people are dependent (or 
+the same).  If they are independent, the costs incur to one 
+party and the benefits incur to another party.
+
+So the independent cost of placing the reputation at risk is 
+a significant event.  You can rely on someone who will incur 
+cost on your behalf.  Saying &quot;trust me&quot; carries no risks 
+because the benefits cancel out the risks.
+
+
+&gt;&gt;<i> We can use this recognition and memory in the online world as well.
+</I>&gt;&gt;<i> SSH automatically recognizes previously used hosts. Programs such
+</I>&gt;&gt;<i> as the Pet Names Tool &lt;<A HREF="http://www.waterken.com/user/PetnameTool/">http://www.waterken.com/user/PetnameTool/</A>&gt;
+</I>&gt;&gt;<i> recognize public keys used by web sites, and provide us with a
+</I>&gt;&gt;<i> human-recognizable name so we can remember our previous
+</I>&gt;&gt;<i> interactions with that web site. Once we can securely recognize a
+</I>&gt;&gt;<i> site, we can form our own trust decisions, without the necessity of
+</I>&gt;&gt;<i> involving third parties.
+</I>&gt;<i> 
+</I>&gt;<i> Yes, where recognition is the OTHER channel that tells you that the 
+</I>&gt;<i> value (given in the original channel) is correct. Just the value by 
+</I>&gt;<i> itself is not useful for communicating trust -- you also need something 
+</I>&gt;<i> else (eg, a digital sig) to provide the OTHER channel of information.
+</I>
+
+Attempting to cast trust as a aspect of channels is a 
+technological approach, and will lead one astray, just as 
+PKI did;  trust is built on acts, of humans, and involves 
+parties and events, risks and rewards.  The channels are 
+incidental.
+
+You can see this better in the study of negotiation.  It is 
+possible using this theory&amp;practice to build trust, or to 
+prove that no trust can be achieved.  Negotiation is 
+primarily a paradigm of two parties.
+
+(Economists will recognise it as game theory, prisoner's 
+dilemma, perhaps agent-principal theory, etc.)
+
+Your comment that someone who says &quot;trust me&quot; is in fact 
+signalling that they cannot be trusted ... is more clearly 
+explained in negotiation.  Often, someone will state up 
+front that they want to find the win-win;  which is a signal 
+that they are in the win-lose, because real win-win is about 
+actions not words, and words in this case would lead to a 
+false sense of security.
+
+
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

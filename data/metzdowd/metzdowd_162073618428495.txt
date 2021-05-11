@@ -1,0 +1,29 @@
+<PRE>&gt;<i> I doubt you can get a large enough sample in any reasonable time.
+</I>
+Indeed.
+
+&gt;<i> &gt; I don't see the point of evaluating the quality of a random number
+</I>&gt;<i> &gt; generator by statistical tests.
+</I>&gt;<i>  Which is entirely my point.
+</I>
+I fear I was not clear: I don't see what is wrong in evaluating the
+quality of a random number generator with (an extensive set of)
+statistical tests.
+
+For sure, it would be better if we could check the source code and
+match the implemented RNG against an already known RNG.
+
+But, then, there is a &quot;the chicken or the egg&quot; problem: how would you
+ensure that a *new* RNG is a good source of &quot;randomness&quot; ? (it's not a
+rhetorical questions, I'm curious about other approaches).
+
+Regards,
+
+-- 
+Pierre-Evariste DAGAND
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

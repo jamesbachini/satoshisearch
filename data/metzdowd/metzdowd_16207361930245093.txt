@@ -1,0 +1,72 @@
+<PRE>John Denker &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jsd at av8n.com</A>&gt; wrote:
+
+&gt;<i> To say the same thing in more detail:  Suppose we start
+</I>&gt;<i> with N generators, each of which puts out a 160 bit word
+</I>&gt;<i> containing 80 bits of _trusted_ entropy.  That's a 50%
+</I>&gt;<i> entropy density.
+</I>
+So you need a 2:1 or heavier compression that won't lose
+entropy. If you just need one 160 word out per N in, then
+hashing them is the obvious way to do that.
+
+&gt;<i> We next consider the case where N-1 of the generators have
+</I>&gt;<i> failed, or can no longer be trusted, ...
+</I>
+&gt;<i> XOR is provably correct because it is _reversible_ in the
+</I>&gt;<i> thermodynamic sense.  That means it cannot increase or
+</I>&gt;<i> decrease the entropy.
+</I>
+Yes, but the proof holds for any reversible mapping. XOR
+makes each output bit depend on exactly two inputs bits.
+Sometimes you want a mapping that mixes them better.
+
+If one input is entirely random, XOR is fine; random ^ x is
+random for any x. It is also fine in the case above, where
+only one generator works.
+
+If  &gt; 1 inputs have some entropy but none have enough,
+which seems to me the commonest case, XOR is not
+the best choice; it does not mix well enough.
+
+Nyberg's perfect s-boxes are in some ways the ideal
+mixer. 2n bits in, n out, all columns and all linear
+combinations of columns are bent functions. Big
+S-boxes are expensive though, and building even
+small Nyberg S-boxes is going to take significant
+effort. Designing something that uses a bunch of say
+8 by 4 S-boxes to do good mixing on 160-bit chunks
+is not trivial either.
+
+You could use IDEA multiplication in mixing. Two 16-bit
+words in, one out, and every output bit depends on all
+input bits.
+
+If every 16-bit input word has 50% entropy density
+(not the same as every 160-bit word does, but perhaps
+close enough) then the output should have 100%.
+
+For N &gt; 1, you need to combine those and worry about
+overall mixing. If entropy density is known to be ~50%,
+you can combine pairs with IDEA to get ~100%, then
+use cheaper operations for any other mixing needed.
+I'd use addition, which costs about the same as XOR
+but gives slightly better mixing because of carries.
+
+For N &gt; 2 and density &lt; 50%, you could use a cascade
+of IDEA operations 8-&gt;4-&gt;2-&gt;1 or whatever. Or do
+something like: combine two 160-bit chunks with 10
+IDEA multiplications, circular shift the result 8 bits,
+combine with next 160-bit input, ...
+
+At some point, you may find yourself designing a hash.
+If that happens, just give up and use a standard hash.
+
+-- 
+Sandy Harris,
+Quanzhou, Fujian, China
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

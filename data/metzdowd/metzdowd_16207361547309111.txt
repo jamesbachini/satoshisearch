@@ -1,0 +1,33 @@
+<PRE>Victor Duchovni wrote:
+ &gt; This part is not too radical. The more specific
+ &gt; skepticism of security proofs (I am reluctant to agree
+ &gt; that these are actively harmful), seems to be a
+ &gt; combination of the peer review issue above, and
+ &gt; (often?) lack of tight bounds that make the proofs
+ &gt; applicable to realistic parameter sizes.
+
+&quot;Proof of security&quot; is actively harmful, for the best
+proofs of security are not worth much, and merely by
+existing, they give license for people to produce proofs
+that are amazingly worthless.   As &quot;proofs&quot; of ever
+diminishing value multiply, it becomes difficult to
+distinguish the multitude of utterly worthless &quot;proofs&quot;
+from those proofs that have some limited value.
+
+While it is possible to produce a proof that is actually
+worth something, lots of morons glibly churn out large
+numbers of proofs that are as stupid as they are
+worthless.
+
+Even the best &quot;proofs&quot; of security involve some
+misdirection and a lowering of our standards about
+proof, whereupon one thousand idiots gleefully point at
+that subtle lowering of standards as justification to
+lower standards a great deal further - snake oil wearing
+the decorations of mathematics.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,25 @@
+<PRE>&gt;&gt;<i> So at the company I work for, most of the internal systems have
+</I>&gt;&gt;<i> expired SSL certs, or self-signed certs.  Obviously this is bad.
+</I>&gt;<i>
+</I>&gt;<i>You only think this is bad because you believe CAs add some value.
+</I>
+Presumably the value they add is that they keep browsers from popping
+up scary warning messages.  There are all sorts of reasonable
+arguments to be made that the browsers are doing the wrong thing (and
+the way that Microsoft prevents you from ever deleting any of their
+preinstalled CA certs is among the wrongest.)
+
+Nonetheless, unless we can persuade all the users in question to
+adjust their browsers, which is always a losing battle, it's easier
+just to pay the $15 protection money and get a CA signature.
+
+Regards,
+John Levine, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">johnl at iecc.com</A>, Primary Perpetrator of &quot;The Internet for Dummies&quot;,
+Information Superhighwayman wanna-be, <A HREF="http://www.johnlevine.com,">http://www.johnlevine.com,</A> ex-Mayor
+&quot;More Wiener schnitzel, please&quot;, said Tom, revealingly.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

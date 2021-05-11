@@ -1,0 +1,30 @@
+<PRE>&gt;<i> At one time, we believed that with enough crypto, we would be safe,
+</I>&gt;<i> but we were disabused of that notion -- crypto is a great tool but not
+</I>&gt;<i> a panacea. Now the notion seems to be that with enough human factors,
+</I>&gt;<i> we will be safe. It appears this, too, is not a panacea.
+</I>
+What you mean, &quot;We?&quot;
+
+I said ages ago that you cannot produce trust with cryptography, no  
+matter how much cryptography you use. That's a bow towards Lao Tzu's  
+original, &quot;you cannot produce kindness with cruelty, no matter how  
+much cruelty you use.&quot;
+
+To quote Crispin Cowan on phishing, it (and other con jobs) are a  
+security failure on the device that sits between the keyboard and  
+chair. Until we can issue patches on that device, we're getting  
+nowhere. Even after, it's a long road ahead. I think you can prove  
+that it's impossible to stop cons.
+
+What we *can* do is lower the number of them. But we're not going to  
+get anywhere when we blame the victims. I'm with Jim Youll on this,  
+the people who think the users are idiots just don't get it.
+
+	Jon
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

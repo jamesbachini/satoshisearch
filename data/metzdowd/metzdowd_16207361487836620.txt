@@ -1,0 +1,24 @@
+<PRE>So, you want to be able to prove in the future that you have some piece of
+information today - without revealing that piece of information.  We all
+know how to do that:  Widely publish today the one-way hash of the
+information.
+
+Well ... it turns out this idea is old.  Very old.  In the 17th century,
+scientists were very concerned about establishing priority; but they
+also often wanted to delay publication so that they could continue to
+work on the implications of their ideas without giving anyone else the
+opportunity to do it.  Thus, in 1678, Robert Hooke published an idea he
+had first developed in 1660.  Even then, he only published the
+following:  ceiiinosssttuu.  Two years later, he revealed that this was
+an anagram of the Latin phrase &quot;Ut tensio sic uis&quot; - &quot;as the tension so
+the power&quot; - what we today call Hooke's Law of elastic deformation.
+
+(This story appears in Henry Petroski's &quot;The Evolution of Useful
+Things&quot;.)
+ 							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

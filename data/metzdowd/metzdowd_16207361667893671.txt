@@ -1,0 +1,61 @@
+<PRE>
+
+Philipp G&#252;hring wrote:
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;&gt;<i>SSL key distribution and management is horribly broken,
+</I>&gt;&gt;<i>with the result that everyone winds up using plaintext
+</I>&gt;&gt;<i>when they should not.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Yes, sending client certificates in plaintext while claiming that SSL/TLS is 
+</I>&gt;<i> secure doesn&#180;t work in a world of phishing and identity theft anymore.
+</I>&gt;<i> 
+</I>&gt;<i> We have the paradox situation that I have to tell people that they should use 
+</I>&gt;<i> HTTPS with server-certificates and username+password inside the HTTPS 
+</I>&gt;<i> session, because that&#180;s more secure than client certificates ...
+</I>&gt;<i> 
+</I>&gt;<i> Does anyone have an idea how we can fix this flaw within SSL/TLS within a 
+</I>&gt;<i> reasonable timeframe, so that it can be implemented and shipped by the 
+</I>&gt;<i> vendors in this century?
+</I>&gt;<i> 
+</I>&gt;<i> (I don&#180;t think that starting from scratch and replacing SSL makes much sense, 
+</I>&gt;<i> since it&#180;s just one huge flaw ...)
+</I>&gt;<i> 
+</I>
+If I recall correctly, SSL was designed chronologically after ISO OSI 
+Network-Layer Security Protocol (yes, the official WAN was actually X.25 
+at one point) or Transport Layer Security Protocol, both in their 
+connection-oriented flavor, which used ideas originating from DecNET 
+designs (researcher names Tardo, Alagappan; I once had a patent number 
+in this thread of protocol engineering, but I lost it). Anyway, the key 
+point in these visionary ideas is that the D-H exchange occurs *before* 
+the exchange of security certificates. This provided the traffic-flow 
+confidentiality that becomes desirable to protect privacy these days.
+
+So, you got your fix with OSI NLSP or TLSP, you just have to overcome 
+the *power of the installed base*!
+
+Regards,
+
+-- 
+
+- Thierry Moreau
+
+CONNOTECH Experts-conseils inc.
+9130 Place de Montgolfier
+Montreal, Qc
+Canada   H2M 2A1
+
+Tel.: (514)385-5691
+Fax:  (514)385-5900
+
+web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

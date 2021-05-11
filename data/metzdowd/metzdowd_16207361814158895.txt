@@ -1,0 +1,37 @@
+<PRE>A more recent version, which appeared at ACSAC in December 2007 can be  
+found at:
+
+<A HREF="http://www1.cs.columbia.edu/~angelos/Papers/2007/SSARES_ACSAC.pdf">http://www1.cs.columbia.edu/~angelos/Papers/2007/SSARES_ACSAC.pdf</A>
+
+Since then, the student primarily working on this(*) has improved  
+performance to the point of being able to search a couple of email  
+messages per minute or so, with further scope for improvement. The  
+very large storage overhead remains, but can probably be reduced by  
+half or so.
+
+(*) Adam Aviv; he was an undergrad at Columbia, now pursuing his Phd  
+with Matt Blaze at UPenn...
+
+-Angelos
+
+
+On Jun 1, 2008, at 8:53 AM, Perry E. Metzger wrote:
+&gt;<i> &quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+</I>&gt;&gt;<i> Does anyone know of existing work in this area?
+</I>&gt;<i>
+</I>&gt;<i> &quot;SSARES: Secure Searchable Automated Remote Email Storage&quot;
+</I>&gt;<i> by Keromytis et al,
+</I>&gt;<i> <A HREF="http://www1.cs.columbia.edu/~angelos/Papers/2006/SSARES_short.pdf">http://www1.cs.columbia.edu/~angelos/Papers/2006/SSARES_short.pdf</A>
+</I>&gt;<i>
+</I>&gt;<i> There is probably other work out there. In some small part, this also
+</I>&gt;<i> looks like the problem that Matt Blaze's CFS addressed, though in that
+</I>&gt;<i> case it was to deal with untrusted remote file servers rather than
+</I>&gt;<i> email servers.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Perry
+</I>---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

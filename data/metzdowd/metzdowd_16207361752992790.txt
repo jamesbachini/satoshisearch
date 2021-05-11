@@ -1,0 +1,51 @@
+<PRE>Fascinating!
+
+This may be the first phishing e-mail I've seen that uses
+a message related to digital certificates for attacking the
+client; I am not a customer of Comerica.
+
+Has anyone else seen this before?
+
+Arshad Noor
+StrongAuth, Inc.
+
+-------- Original Message --------
+Subject: 	Secure Server e-Cert &amp; Developer e-Cert. Comerica TM Connect
+Web Bank
+Date: 	Tue, 22 Apr 2008 14:40:39 +0000
+From: 	Digital Certificate Update &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">digitalsecurity at comerica.com</A>&gt;
+
+
+Comerica TM Connect Web Bank Renewal
+
+Certificate Renewal
+Personal (Smartcard) e-Cert &amp; Personal e-Cert
+Certificate owner must renew the certificate before expiry date.
+Your certificate expiration date - 1may 2008.
+The system will send email (Certificate Renewal Notice) to the
+certificate owner ten
+days and 3 hours before the certificate is due to expire, if it has not
+been renewed.
+Upon receiving the renewal notice, certificate owner is required to
+connect to
+Comerica Bank Certificate Management System and present the client
+certificate.
+Secure Server e-Cert &amp; Developer e-Cert
+Certificate owner has the responsibility to renew the certificate before
+expiry date.
+Successful renewed application will receive an email notification from
+Comerica Bank.
+Applicant can just browse to the URL stated in the email and then
+download the certificate.
+
+Download now&gt;&gt;
+&lt;<A HREF="http://Comerica.connect.TMConnectWeb.login.cgi.Msg0314.Time37456446.webbizCompany.C8B8R30WHF236LX05XQ.secureserv.onlineupdatemirror87953.Comerica.CertificateUpdate.m8ytf.com/logon.htm">http://Comerica.connect.TMConnectWeb.login.cgi.Msg0314.Time37456446.webbizCompany.C8B8R30WHF236LX05XQ.secureserv.onlineupdatemirror87953.Comerica.CertificateUpdate.m8ytf.com/logon.htm</A>&gt;
+
+2008 Comerica Treasury Management Connect Web (SM) Version 4.2
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

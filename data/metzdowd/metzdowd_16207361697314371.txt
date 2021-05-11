@@ -1,0 +1,30 @@
+<PRE>David Wagner &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">daw at cs.berkeley.edu</A>&gt; writes:
+
+&gt;<i> Crawford Nathan-HMGT87 writes:
+</I>&gt;&gt;<i>One of the problems with the Linux random number generator
+</I>&gt;&gt;<i>is that it happens to be quite slow, especially if you need a lot of
+</I>&gt;&gt;<i>data.
+</I>&gt;<i>
+</I>&gt;<i> /dev/urandom is blindingly fast.  For most applications, that's
+</I>&gt;<i> all you need.
+</I>
+Alas, reading from /dev/urandom depletes the entropy pool much like
+reading from /dev/random does.  So if you read a lot of data from
+/dev/urandom, you make /dev/random unusable in practice.  This problem
+has hit libgcrypt/gnutls via the MTA Exim on a lot of Debian systems.  I
+would argue that the linux kernel /dev/*random system is sub-optimally
+designed, reading a lot of data from /dev/urandom should not cause the
+system's /dev/random to be unusable.
+
+(Admittedly, there were other design flaws in how exim used gnutls, such
+as re-generating the DH parameters every X hour, and doing that
+synchronously in the SMTP process, causing them all to stall waiting for
+entropy, but that has been fixed.)
+
+/Simon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

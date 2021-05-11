@@ -1,0 +1,35 @@
+<PRE>* Dave Korn:
+
+&gt;&gt;<i>    In a major change of stance, Canada-based Research In Motion (RIM)
+</I>&gt;&gt;<i>    may allow the Indian government to intercept non-corporate emails
+</I>                                                   ********************
+&gt;&gt;<i>    sent over BlackBerrys.
+</I>
+
+&gt;<i>   Research In Motion (RIM), the Canadian company behind the BlackBerry
+</I>&gt;<i>   handheld, has refused to give the Indian government special access to
+</I>                                                        **************
+&gt;<i>   its encrypted email services.   [ ... ]
+</I>&gt;<i>   
+</I>&gt;<i>   According to the Times of India, the company said in a statement:
+</I>&gt;<i>
+</I>&gt;<i>     The BlackBerry security architecture for enterprise customers is
+</I>                                               ********************
+&gt;<i>   purposefully designed to exclude the capability for RIM or any third
+</I>&gt;<i>   party to read encrypted information under any circumstances. We regret
+</I>
+&gt;<i>   [  Hmm, two contradictory stories, whoever woulda thunk it?  There's
+</I>&gt;<i> probably some politicking going on, mixed up with marketeering and
+</I>&gt;<i> FUD-spinning.  ]
+</I>
+If you look closely, there's no contradiction.  Non-enterprise customers
+don't run their own gateway, so RIM just acts as a telco, which
+naturally has got access to all the data.  The Indian government doesn't
+need &quot;special access&quot;, either, because Lawful Intercept services etc.
+aren't that special anymore.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

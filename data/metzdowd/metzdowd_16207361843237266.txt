@@ -1,0 +1,38 @@
+<PRE>On Wed, Jul 09, 2008 at 08:20:33AM -0700, Paul Hoffman wrote:
+
+&gt;<i> First off, big props to Dan for getting this problem fixed in a 
+</I>&gt;<i> responsible manner. If there were widespread real attacks first, it 
+</I>&gt;<i> would take forever to get fixes out into the field.
+</I>&gt;<i> 
+</I>&gt;<i> However, we in the security circles don't need to spread the 
+</I>&gt;<i> &quot;Kaminsky finds&quot; meme. Take a look at 
+</I>&gt;<i> &lt;<A HREF="http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/">http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/</A>&gt;. 
+</I>&gt;<i> The first draft of this openly-published document was in January 
+</I>&gt;<i> 2007. It is now in WG last call.
+</I>&gt;<i> 
+</I>&gt;<i> The take-away here is not that &quot;Dan didn't discover the problem&quot;, but 
+</I>&gt;<i> &quot;Dan got it fixed&quot;. An alternate take-away is that IETF BCPs don't 
+</I>&gt;<i> make nearly as much difference as a diligent security expert with a 
+</I>&gt;<i> good name.
+</I>
+The &quot;discovery&quot; is almost certainly a generalization of:
+
+<A HREF="http://tools.ietf.org/html/draft-ietf-dnsext-forgery-resilience-05#section-4.3">http://tools.ietf.org/html/draft-ietf-dnsext-forgery-resilience-05#section-4.3</A>
+
+specifically the second paragraph the mentions the &quot;Birthday Attack&quot;. The
+assumptions of that paragraph can be relaxed in a natural way to broaden
+the scope of the attack.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

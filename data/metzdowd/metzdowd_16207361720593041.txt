@@ -1,0 +1,44 @@
+<PRE>James A. Donald wrote:
+&gt;<i>  From time to time I hear that DNSSEC is working fine, and on examining 
+</I>&gt;<i> the matter I find it is &quot;working fine&quot; except that ....
+</I>&gt;<i> 
+</I>&gt;<i> Seems to me that if DNSSEC is actually working fine, I should be able to 
+</I>&gt;<i> provide an authoritative public key for any domain name I control, and 
+</I>&gt;<i> should be able to obtain such keys for other domain names, and use such 
+</I>&gt;<i> keys for any purpose, not just those purposes envisaged in the DNSSEC 
+</I>&gt;<i> specification.  Can I?  It is not apparent to me that I can.
+</I>
+There are two major issues with DNSSEC right now. Neither of them is 
+that it isn't working.
+
+Firstly, the root is not signed. This means there's no easy way for the 
+relying party to establish the correctness of the key on your domain.
+
+Secondly, although we have DNS servers and resolvers, software that uses 
+DNS is largely unaware of DNSSEC and so has absolutely no idea what to 
+do when one of the many possible cryptographic/proof failures occurs. 
+Very little thought has gone into what should be done, even in software 
+that is aware.
+
+That said, if you want to distribute keys with DNSSEC, then RFC 4398 
+standardises ways to do a number of them, and can be extended to cover 
+more. RFC 4255 gives you SSH host keys, too.
+
+If you want to do something ad hoc, then there are always TXT records, 
+though I guarantee this will make the DNS people hate you forever.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

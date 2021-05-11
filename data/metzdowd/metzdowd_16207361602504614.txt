@@ -1,0 +1,21 @@
+<PRE>' =JeffH ' wrote:
+&gt;<i> From: John Young &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptome at earthlink.net</A>&gt;
+</I>&gt;<i> [...]
+</I>&gt;<i> Research Announcement: Microprocessor Bugs Can Be Security Disasters
+</I>&gt;<i> [...]
+</I>&gt;<i> A similar attack can be applied to any security scheme based on
+</I>&gt;<i> discrete logs modulo a prime, and to any security scheme based on
+</I>&gt;<i> elliptic curves (in which we can also exploit division bugs)
+</I>
+Does somebody know if, in case of a discrete log scheme, this would 
+result in an attack using one chosen message (like for RSA), or would 
+the attack be similar to the one described by Boneh, DeMillo and Lipton 
+for Schnorr's identification protocol and require O(n log n) executions?
+
+  - Christian
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

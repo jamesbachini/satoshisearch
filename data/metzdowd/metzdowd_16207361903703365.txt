@@ -1,0 +1,39 @@
+<PRE>Apparently credit card institutions don't want Mythbusters near their
+RFID technology.
+
+Transcribed from &lt;<A HREF="http://www.youtube.com/watch?v=-St_ltH90Oc">http://www.youtube.com/watch?v=-St_ltH90Oc</A>&gt;:
+
+  Were going to do RFID on several levels, you know how hackable, how
+reliable, how
+  trackable, etc. etc. And we one of our researchers called up Texas
+Instruments and
+  they arranged a conference call between I think Tory and the head
+producer for the
+  other team Linda Wolkovitch and one of the technicians for Texas
+Instruments. We
+  were supposed to have a conference call to talk about the technology
+on like Tuesday
+  at 10am. On Tuesday at 10am Linda and Tory get on the phone and Texas
+  Instruments comes on along with chief legal council for American
+Express Visa,
+  Discover, and everybody else. And I get chills just as I describe
+it. They were way way
+  outgunned. And they absolutely made it really clear to Discovery
+that they were not
+  going to air this episode talking about how hackable this stuff was.
+And Discovery
+  backed way down being a large cooperation being dependant on the
+revenue of the
+  advertisers. And its on Discovery's radar and they wont let us go
+near it. So, I'm sorry
+  its just one of those things but man that was..Tory still gets a
+little white when he
+  describes that phone conversation.
+
+-Michael
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

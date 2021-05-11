@@ -1,0 +1,31 @@
+<PRE>
+A quick note from your moderator:
+
+A few people have asked about this recently so I thought I'd explain.
+
+The list server blocks posts from people who are not list subscribers.
+This is done at the incoming SMTP server, during the SMTP dialog,
+based on envelope sender.
+
+I do things this way because the list gets about one spam attempt
+every two minutes (though on bad days it can be much more). Many of
+those would be blocked by other means, but a few hundred hundred a day
+would still get through. I could not possibly process this many
+postings by hand.
+
+Every once in a while, someone asks &quot;do you have a way to let me post
+from an email address that is not subscribed&quot;, and the answer is yes,
+I do. The code that checks who is allowed to send to the list checks
+both the normal subscribers and a special &quot;post only&quot; list. If it is
+important for you to be able to post from an address you are not
+subscribed on, contact me privately and appropriate arrangements will
+be made.
+
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,82 @@
+<PRE>|<i> &gt; The whole point of a notary is to bind a document to a person.  That
+</I>|<i> &gt; the person submitted two or more different documents at different
+</I>|<i> &gt; times is readily observable.  After all, the notary has the
+</I>|<i> &gt; document(s)!
+</I>|<i> 
+</I>|<i> No, the notary does not have the documents *after* they are notarized,
+</I>|<i> nor do they keep copies. Having been a notary I know this
+</I>|<i> personally. When I stopped being a notary all I had to submit to the
+</I>|<i> state was my seal and my record books.
+</I>|<i> 
+</I>|<i> If I had to testify about a document I would only be attesting that
+</I>|<i> the person who presented themselves adequately proved, under the
+</I>|<i> prudent businessman's standard, that they were the person that they
+</I>|<i> said they were and that I saw them sign the document in
+</I>|<i> question. That's it. No copies at all. What would anyone have to
+</I>|<i> testify about if a legal battle arose after the notary either died or
+</I>|<i> stopped being a notary?
+</I>|<i> 
+</I>|<i> Think for a minute about the burden on a notary if they had to have a
+</I>|<i> copy of every document they notarized. What a juicy target they would
+</I>|<i> make for thieves and industrial spies. No patent paperwork would be
+</I>|<i> safe, no sales contract, no will, or other document. Just think how
+</I>|<i> the safe and burglar alarm companies would thrive. Now ask yourself
+</I>|<i> how much it costs to notarize a document. Would that pay for the
+</I>|<i> copying and storage. I don't know what the current fees are in
+</I>|<i> California but 20 years ago they were limited to $6.00 per person per
+</I>|<i> document and an extra buck for each additional copy done at the same
+</I>|<i> time. My average was about $14.00 per session. My insurance was
+</I>|<i> $50/year.  Nowhere near enough to cover my liability if I was to
+</I>This whole discussion has an air of unreality about it.
+
+Historically, notary publics date from an era when most people couldn't
+read or write, and hardly anyone could afford a lawyer.  How does
+someone who can't read a document and can perhaps only scrawl an X
+enter into a contract?  In the old days, he took the written contract
+to a notary public, who would read it to him, explain it, make sure
+he understood it, then stamp his scrawled &quot;X&quot;.  The notary's stamp
+asserted exactly the kind of thing that we discuss on this list as
+missing from digital signatures:  That the particular person whose
+&quot;X&quot; was attached (and who would be fully identified by the notary)
+understood and assented to the contents of the contract.
+
+Today, we assume that everyone can read, and where a contract is at all
+complex, that everyone will have access to a lawyer.  (Of course, this
+assumption is often invalid, but that's another story.)  The requirement
+for a notary public's stamp is a faded vestige.  For certain important
+documents, we still require that a notary sign off, but what exactly
+that proves any more is rather vague.  Yes, in theory it binds a
+signature to a particular person, with that signature being on a
+particular document.  That latter is why the notary's stamp is a
+physical stamp through the paper - hard(er) to fake.  Of course, most of
+the time, the stamp is only applied to the last page of a multi-page
+contract, so proves only that that last page was in the notary's hands -
+replacing the early pages is no big deal.  I think I've seen notaries
+initial every page, but I've also seen notaries who don't.
+
+In practice, whenever I've needed to have a document notarized, a quick
+look at some basic ID is about all that was involved.  It's quite easy
+to get fake ID past a notary.  Given the trivial fee paid to a notary -
+I think the limit is $2 in Connecticut - asking the notary to actually
+add much of value is clearly a non-starter.
+
+The financial industry has actually created its own system - I forget
+the name, some like a Gold Bond Certification - that it requires for
+certain &quot;high-importance&quot; transactions (e.g., a document asserting you
+own some stock for which you've lost the certificates).  I've never
+actually needed to get this - it's appeared as a requirement for
+some alternative kinds of transactions on forms I've had to fill out
+over the years - so I don't know exactly how it works.  However, it's
+completely independent of the traditional notary public system, and
+is run through commercial banks.
+
+Trying to justify anything based on the current role of notary
+publics - at least as it exists in the US - is a waste of time.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

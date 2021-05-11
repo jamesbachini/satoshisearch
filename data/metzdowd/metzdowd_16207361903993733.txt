@@ -1,0 +1,31 @@
+<PRE>On Sun, Sep 21, 2008 at 01:20:22PM -0400, James Cloos wrote:
+&gt;<i> &gt;&gt;&gt;&gt;&gt; &quot;IanG&quot; == IanG  &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;<i> IanG&gt; Nope, sorry, didn't follow it.  What is BOM, SoC, A plug, gerber?
+</I>&gt;<i> 
+</I>&gt;<i> Bill Of Materials  -- cost of the raw hardware
+</I>&gt;<i> System on (a) Chip -- microchip with CPU, RAM, FLASH, etc
+</I>&gt;<i> USB A Plug         -- physical flat-four interface; think USB key drive
+</I>&gt;<i> gerber             -- file format for hardware designs
+</I>&gt;<i> 
+</I>&gt;<i> A system-on-a-chip which has rng and usb-client hardware on board (aka
+</I>&gt;<i> on chip) should fit in a package which looks just like a USB key drive.
+</I>
+I looked into this at moderate length about two years ago.  One very
+attractive choice was the cheapest Motorola Coldfire with their onboard
+crypto block, because you get the hashing for free and don't waste host
+resources transferring in data you'll then distill by hash -- or hashing
+it.
+
+As a source of random numbers, I was figuring to use one of the publically
+available thermal noise designs plus the cheapest HiFn PCI crypto chip
+(which features a multi-oscillator RNG I'm reasonably familiar with) since
+the Coldfire with crypto has both USB and PCI on it.
+
+Thor
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

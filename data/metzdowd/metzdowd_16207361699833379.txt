@@ -1,0 +1,30 @@
+<PRE><A HREF="http://www.nytimes.com/2008/02/05/science/space/05spotters.html">http://www.nytimes.com/2008/02/05/science/space/05spotters.html</A>
+
+When the government announced last month that a top-secret spy satellite 
+would, in the next few months, come falling out of the sky, American 
+officials said there was little risk to people because satellites fall 
+out of orbit fairly frequently and much of the planet is covered by oceans.
+
+But they said precious little about the satellite itself.
+
+Such information came instead from Ted Molczan, a hobbyist who tracks 
+satellites from his apartment balcony in Toronto, and fellow satellite 
+spotters around the world. They have grudgingly become accustomed to 
+being seen as &#8220;propeller-headed geeks&#8221; who &#8220;poke their finger in the 
+eye&#8221; of the government&#8217;s satellite spymasters, Mr. Molczan said, taking 
+no offense. &#8220;I have a sense of humor,&#8221; he said.
+
+Mr. Molczan, a private energy conservation consultant, is the best known 
+of the satellite spotters who, needing little more than a pair of 
+binoculars, a stop watch and star charts, uncover some of the deepest of 
+the government&#8217;s expensive secrets and share them on the Internet.
+
+&lt;snip&gt;
+-- 
+((Udhay Shankar N)) ((udhay @ pobox.com)) ((www.digeratus.com))
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

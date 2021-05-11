@@ -1,0 +1,123 @@
+<PRE>[News report below.]
+
+This highly classified little-publicized multi-billion dollar &quot;vague&quot;
+program to secure Federal computers seems doomed to failure.  People
+like you and I, in the unclassified private sector, design and build
+and program all those computers and networks.
+
+But of course we've never heard of this initiative.  And we probably
+don't share its goals.
+
+NSA's occasional public efforts to secure the civilian infrastructure
+have been somewhat interesting.  Not that they've succeeded: they
+crippled DES, wouldn't admit it was broken, and tried to force us all
+to use it; the IPSEC they designed was painfully complex, impossible
+to administer, easy to penetrate, and wouldn't scale; the export
+controls they championed torpedoed civilian efforts to secure
+ANYTHING; and Secure Linux seems to be no more secure than any other
+Linux.  Do we know of *any* honest and successful NSA effort to raise
+the integrity and security of the public infrastructure (even at the
+expense of their ability to illegally tap it)?
+
+Now that NSA, the President, and Congress have gone totally to the
+Dark Side, we'd better assume that any such initiative does not have
+the public's best interests at heart.  The theory is that the public's
+computers will be easy for the government to break into, while
+Wiretapper-General McConnell can shield every unconstitutional thing
+he does from the prying eyes of the public and the courts?  It'd be
+better for private-sector engineers to follow our own muses, rather
+than become the rats following government-contractor Pied Pipers into
+a totalitarian sewer.
+
+Let's guess why they would classify this effort at all.  For &quot;security
+through obscurity&quot;?  So that &quot;foreigners&quot; won't find out how to secure
+their own computers against NSA intrusions (ahem, foreigners build ALL
+our computers)?  Merely to hide their own incompetence?  Or because
+the effort would be quickly identified as malfeasance, like trying to
+impose a national ID system and routine suspicionless checkpoint
+searches on a free people?
+
+	John
+
+Forwarded-By: Melissa Ngo &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ngo at privacylives.com</A>&gt;
+
+<A HREF="http://www.washingtonpost.com/wp-dyn/content/article/2008/07/20/AR2008072001641_pf.html">http://www.washingtonpost.com/wp-dyn/content/article/2008/07/20/AR2008072001641_pf.html</A>
+
+Cybersecurity Will Take A Big Bite of the Budget
+By Walter Pincus
+Monday, July 21, 2008; A13
+
+President Bush's single largest request for funds and &quot;most important  
+initiative&quot; in the fiscal 2009 intelligence budget is for the  
+Comprehensive National Cybersecurity Initiative, a little publicized  
+but massive program whose details &quot;remain vague and thus open to  
+question,&quot; according to the House Permanent Select Committee on  
+Intelligence.
+
+A highly classified, multiyear, multibillion-dollar project, CNCI --  
+or &quot;Cyber Initiative&quot; -- is designed to develop a plan to secure  
+government computer systems against foreign and domestic intruders and  
+prepare for future threats. Any initial plan can later be expanded to  
+cover sensitive civilian systems to protect financial, commercial and  
+other vital infrastructure data.
+
+&quot;It is no longer sufficient for the U.S. Government to discover cyber  
+intrusions in its networks, clean up the damage, and take legal or  
+political steps to deter further intrusions,&quot; Director of National  
+Intelligence Mike McConnell noted in a February 2008 threat  
+assessment. &quot;We must take proactive measures to detect and prevent  
+intrusions from whatever source, as they happen, and before they can  
+do significant damage.&quot; His conclusions echoed those of a 2007  
+interagency review that led to CNCI's creation.
+
+During debate on the intelligence authorization bill last week, Rep.  
+Jim Langevin (D-R.I.), a member of the House intelligence committee  
+and chairman of the Homeland Security subcommittee on emerging  
+threats, described cybersecurity as &quot;a real and growing threat that  
+the federal government has been slow in addressing.&quot;
+
+Without specifying funding figures, which are classified, Langevin  
+said the panel approved 90 percent of the funds requested for CNCI but  
+warned that the committee &quot;does not intend to write the administration  
+a blank check.&quot;
+
+The committee's report recognized that as the initiative develops, &quot;it  
+will be imperative that the government also take into account the  
+interests and concerns of private citizens, the U.S. information  
+technology industry, and other elements of the private sector.&quot;
+
+Such a public-private partnership will be &quot;unlike any model that  
+currently exists,&quot; said the committee, which recommended a White House  
+study leading toward establishment of an oversight panel of lawmakers,  
+executive branch officials and private-sector representatives. The  
+panel would review the intelligence community's development of the  
+initiative.
+
+The committee said it expects the policy debates over the initiative  
+to extend into the next administration, and major presidential  
+candidates have addressed the issue.
+
+On the same day the intelligence bill passed the House, Sen. Barack  
+Obama (D-Ill.) told an audience that, &quot;as president, I'll make  
+cybersecurity the top priority that it should be in the 21st century.&quot;  
+He vowed to appoint a national cyber adviser to coordinate policy to  
+secure information -- &quot;from the networks that power the federal  
+government, to the networks that you use in your personal lives.&quot;
+
+In a July 1 speech, Sen. John McCain (R-Ariz.) addressed  
+cybersecurity, as well. &quot;To protect our energy supply, air and rail  
+transport, banking and financial services, we need to invest far more  
+in the federal task of cyber security,&quot; he said. Neither Obama nor  
+McCain mentioned the cybersecurity initiative underway.
+
+National security and intelligence reporter Walter Pincus pores over  
+the speeches, reports, transcripts and other documents that flood  
+Washington and every week uncovers the fine print that rarely makes  
+headlines -- but should. If you have any items that fit the bill,  
+please send them to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fineprint at washpost.com.</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

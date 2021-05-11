@@ -1,0 +1,32 @@
+<PRE>Check out <A HREF="http://www.numenta.com/">http://www.numenta.com/</A> . They have an SDK that you d/l and
+play with it.
+
+saqib
+<A HREF="http://doctrina.wordpress.com/">http://doctrina.wordpress.com/</A>
+
+On Fri, May 16, 2008 at 8:36 AM, Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; wrote:
+&gt;<i> Hi gang,
+</I>&gt;<i>
+</I>&gt;<i> In looking at captchas that have been broken via software it dawned on me
+</I>&gt;<i> that the amount of &quot;mental processing&quot; involved is actually very little. I'm
+</I>&gt;<i> interested in what the current state of image recognition via software of
+</I>&gt;<i> things like knowing the difference between a monkey and a cat or a child
+</I>&gt;<i> laughing or just happy and the degree of reliability of the differentiation.
+</I>&gt;<i> I've done a bit of looking around and don't find much. Does anyone have
+</I>&gt;<i> knowledge of or a  pointer to someone who might know where to look about
+</I>&gt;<i> this?
+</I>&gt;<i>
+</I>&gt;<i> Thanks,
+</I>&gt;<i>
+</I>&gt;<i> Allen
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

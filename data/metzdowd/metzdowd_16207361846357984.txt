@@ -1,0 +1,35 @@
+<PRE>At 06:58 PM 7/9/2008 -0400, Leichter, Jerry wrote:
+&gt;<i>Ah, where the web is going.  8e6 Technologies sells a hardware box
+</I>&gt;<i>that it claims does signature analysis to detect HTTP proxies and
+</I>&gt;<i>blocks them.  It can also block HTTPS proxies &quot;that do not have a
+</I>&gt;<i>valid certificate&quot; (whatever that means), as well as do such things
+</I>&gt;<i>as block IM, force Google and Yahoo searches to be done in Safe
+</I>&gt;<i>mode, and so on.
+</I>&gt;<i>
+</I>&gt;<i>They're marketing this to the education community (with the typical
+</I>&gt;<i>horror stories of the problems your school district can run into
+</I>&gt;<i>if students use proxies to get around your rules).
+</I>&gt;<i>
+</I>&gt;<i>What I find most interesting, though, is that the company, based
+</I>&gt;<i>in California, has an overseas presence in exactly two other
+</I>&gt;<i>countries:  Taiwan and China.  One doesn't need much imagination
+</I>&gt;<i>to see what market they are going after there....
+</I>
+
+Ah, the memories.  8e6 is the censorware company formerly known as 
+both X-Stop and Log-On Data, that scoured the interwebs with its 
+notorious Mudcrawler.  One of our reports: 
+<A HREF="http://censorware.net/reports/xstop/index.html">http://censorware.net/reports/xstop/index.html</A>
+
+--------------------------------------------------------------------
+James S. Tyre                                      <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jstyre at jstyre.com</A>
+Law Offices of James S. Tyre          310-839-4114/310-839-4602(fax)
+10736 Jefferson Blvd., #512               Culver City, CA 90230-4969
+Co-founder, The Censorware Project             <A HREF="http://censorware.net">http://censorware.net</A>
+Policy Fellow, Electronic Frontier Foundation     <A HREF="http://www.eff.org">http://www.eff.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

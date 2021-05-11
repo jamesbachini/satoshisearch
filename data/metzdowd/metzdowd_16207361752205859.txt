@@ -1,0 +1,23 @@
+<PRE>On Mon, Apr 28, 2008 at 03:12:31PM -0700, Ryan Phillips wrote:
+
+&gt;<i> What are people's opinions on corporations using this tactic?  I can't
+</I>&gt;<i> think of a great way of alerting the user, but I would expect a pretty
+</I>&gt;<i> reasonable level of privacy while using an SSL connection at work.  
+</I>
+Expectations of privacy at work vary by jurisdiction and industry. In
+the US, and say in the financial services industry, any such expectations
+are groundless (IANAL).
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

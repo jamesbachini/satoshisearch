@@ -1,0 +1,111 @@
+<PRE>In article &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">48C77368.1010504 at eecs.berkeley.edu</A>&gt;, David Molnar
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dmolnar at eecs.berkeley.edu</A>&gt; writes
+
+&gt;<i>Dan Geer's comment about the street price of heroin as a metric for 
+</I>&gt;<i>success has me thinking - are people tracking the street prices of 
+</I>&gt;<i>digital underground goods over time?
+</I>
+up to a point... see the other responses
+
+&gt;<i> The Symantec Threat Reports do seem 
+</I>&gt;<i>to report advertised prices for a basket of goods, starting in Volume XI 
+</I>&gt;<i>(March 2007) and running through the present. For example, Volume XI 
+</I>&gt;<i>Table 3 states a Skype account is worth $12, valid Hotmail cookie $3, 
+</I>&gt;<i>etc. These are interesting, 
+</I>
+yes :)
+
+I've been thinking about this for some time -- I have found that it
+makes for some interesting questions to corporate types presenting
+&quot;ain't it awful&quot; PowerPoint slides that they don't quite understand :)
+
+&gt;<i>but it's hard to see changes since they're 
+</I>&gt;<i>reported as a band of prices presumably aggregated from many different 
+</I>&gt;<i>sources.
+</I>
+Indeed, but deeper than this, you have to ask yourself what the price
+means...
+
+&gt;<i>I'm curious because it would be interesting to look at the &quot;street 
+</I>&gt;<i>price&quot; for a specific online bank's logins before and after the bank 
+</I>&gt;<i>makes a change to its security practices.
+</I>
+exactly so ...   if the price of BoA cards was $2 and is now $1 does
+this mean:
+
+(a) production surplus -- so the scammers are cutting each other's
+throats to offload their stashes
+
+        is this because the bank's security is rubbish?
+
+        is it because everyone has decided to attack this particular
+        bank under the assumption that it is _the_ Bank of America? or
+        because a new kit has come out for them to use
+
+(b) consumption scarcity -- no-one wants to buy
+
+        is this because the bank's back-room operations are excellent
+        and so it is hard to extract value?
+
+        is it because the people who can cash the cards out have all the
+        cards they can handle at the moment?
+
+(c) adulterated supply -- only one card in 800 is any good
+
+        it's sometimes claimed that the loss per card is around $800, so
+        if lots of the numbers don't work you need to reduce the price
+        per card
+
+(d) incompetent pricing by the sellers
+
+        the real price should be much higher, but the sellers have been
+        persuaded that $1 is fair reward for their effort and so they
+        don't attempt to get any more for their goods
+
+(e) incompetent pricing by the buyers
+
+        most cards are worthless because the bank's back room operations
+        are so good, but not all buyers have realised this so they
+        overpay
+
+and probably (f)... onwards as well
+
+viz: in the absence of evidence that an efficient market is operating
+and without clear evidence of what price elasticity there is, it is
+almost impossible to draw conclusions about bank (in)efficiency from
+merely observing average prices :(
+
+There's a similar issue relating to the relative cost of cards and
+&quot;whole life&quot; details. The latter are more expensive, but perhaps only by
+a factor of 10-20. Is this a reflection of restricted supply? or does it
+reflect a paucity of buyers (you might use these details to scam the
+cost of a medium-size dwelling) or that there are very few buyers who
+are prepared to handle a specialist product...
+
+There is undoubtedly an interesting econometrics paper to be written
+here, but it will rely upon not only extensive data from the Underground
+Economy but also on good data from a bank (or banks) -- and this is
+impossible to obtain at present :(  One then needs to tease out enough
+&quot;almost the same but not quite&quot; scenarios to be able to isolate the
+various factors and thereby put some numbers to the model...
+
+&gt;<i>finally, does anyone happen to know of a good review of how the focus on 
+</I>&gt;<i>street price has performed as a metric for drug interdiction?
+</I>
+it usually demonstrates that the police overpay :)
+
+and that leads on to a further problem with the Underground Economy
+monitoring. You are only seeing &quot;list prices&quot; and anyone in business
+knows that you don't need to pay list price!
+
+-- 
+richard                                              Richard Clayton
+
+They that can give up essential liberty to obtain a little temporary
+safety deserve neither liberty nor safety.         Benjamin Franklin
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

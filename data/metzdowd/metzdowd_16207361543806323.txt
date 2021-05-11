@@ -1,0 +1,30 @@
+<PRE>Another potential use for the Storm worm... I can't imagine this would be why
+it's being assembled since there's no money in it, but consider the prospect
+of x million machines cycling from idle to full load once a minute.  If the
+power swing in doing this is (for example) 100 watts per PC then even at 1M
+machines that's switching a 100 megawatt load in and out of circuit, which
+could cause some fun in power distribution systems.  You could easily double
+(or more) this load by putting the PC and monitor to sleep and then running it
+up to full load and back down again.
+
+Obviously it's highly unlikely that that's what the Storm botherders are
+planning to do with it, apart from the lack of financial motive you'd need to
+carefully synchronise the timing, and the PCs would be distributed all over
+the world rather than affecting one grid.  Probably the most you'd get is
+localised problems, overloading, maybe a few fires from wiring.
+
+OTOH the shock effect of someone being able to do this worldwide would be
+something to behold.  Talk about a &quot;light blue touch paper and stand clear&quot;.
+
+(If they *do* do this with Storm, remember that you read it here first :-).
+
+A much simpler attack if all you want to do is cause panic would be to just
+brick the machines and watch the fun when 1M+ RMAs hit the service channels.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

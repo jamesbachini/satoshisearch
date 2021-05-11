@@ -1,0 +1,31 @@
+<PRE>
+
+Arshad Noor wrote:
+&gt;<i> 
+</I>&gt;&gt;<i> Fascinating!
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> This may be the first phishing e-mail I've seen that uses
+</I>&gt;&gt;<i> a message related to digital certificates for attacking the
+</I>&gt;&gt;<i> client; I am not a customer of Comerica.
+</I>&gt;&gt;<i>
+</I>
+I did notice this reference to certificates in the phishing blabla message.
+
+I checked very quickly at comerica.com, they don't seem to use client PK 
+pairs (nor certificates), merely the usual name/password authentication.
+
+If the target financial institution was using client authentication, it 
+would be interesting to see phishing scenario details, but that's not 
+the case until shown otherwise.
+
+I'm not impressed by the phisher blabla message.
+
+-- 
+
+- Thierry Moreau
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

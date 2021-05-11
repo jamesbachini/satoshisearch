@@ -1,0 +1,33 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> wrote:
+&gt;<i>  From a security point of view, this is really bad.  From a usability 
+</I>&gt;<i> point of
+</I>&gt;<i> view, it's necessary.
+</I>
+
+I agree with all the above, including deleted.
+
+
+&gt;<i> The solution is to let the HCI people into the 
+</I>&gt;<i> design
+</I>&gt;<i> process, something that's very rarely, if ever, done in the security 
+</I>&gt;<i> field [0].
+</I>
+
+To jump up and down ... if that was the solution, it would 
+have been done by now :)
+
+I would instead state that the solution was whatever Skype 
+and SSH did.  And the opposite of whatever IPSec, SSL, 
+Clipper, S/MIME, DRM, and all the other failures did.
+
+HCI was one of the things, but others were as important: 
+lack of open critique, service-before-security, 
+crypto-for-free, total solution, narrow problem, etc.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

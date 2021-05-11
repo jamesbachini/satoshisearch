@@ -1,0 +1,85 @@
+<PRE>Hasn't this already been going on a while? I'm only surprised there 
+hasn't been a big public incident yet.
+
+Udhay
+
+&gt;<i>&lt;<A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=security&amp;articleId=9026048">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=security&amp;articleId=9026048</A>&gt;<A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=security&amp;articleId=9026048">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=security&amp;articleId=9026048</A>
+</I>&gt;<i>
+</I>&gt;<i>By Jeremy Kirk
+</I>&gt;<i>July 02, 2007
+</I>&gt;<i>IDG News Service
+</I>&gt;<i>
+</I>&gt;<i>Hackers appear to have stepped up their efforts over the past year to
+</I>&gt;<i>trick corporate executives into downloading malicious software that can
+</I>&gt;<i>steal company data, according to new data released today.
+</I>&gt;<i>
+</I>&gt;<i>MessageLabs Ltd., a security vendor that offers e-mail filtering
+</I>&gt;<i>services to catch spam and malicious attachments, caught an average of
+</I>&gt;<i>10 e-mails per day in May targeted at people in senior management
+</I>&gt;<i>positions, up from just one a day during the previous year, said Mark
+</I>&gt;<i>Sunner, chief security analyst.
+</I>&gt;<i>
+</I>&gt;<i>Those 10 e-mails are a tiny percentage of the 200 million e-mails that
+</I>&gt;<i>MessageLabs scans every day, but the composition of those messages is
+</I>&gt;<i>alarming, Sunner said.
+</I>&gt;<i>
+</I>&gt;<i>Many of the e-mails contained the name and title of the executive in the
+</I>&gt;<i>subject line, as well as a malicious Microsoft Word document containing
+</I>&gt;<i>executable code. The hackers are trying to trick the victims into
+</I>&gt;<i>thinking the messages come from someone they know, in the hope that the
+</I>&gt;<i>victim will willingly install, for example, a program that can record
+</I>&gt;<i>keystrokes.
+</I>&gt;<i>
+</I>&gt;<i>MessageLabs won't reveal what companies have been targeted, but it has
+</I>&gt;<i>contacted executives who have been names in the e-mails and discovered
+</I>&gt;<i>that the family members of the executives have also received messages on
+</I>&gt;<i>their own, noncorporate e-mail accounts, Sunner said.
+</I>&gt;<i>
+</I>&gt;<i>Those methods suggests that hackers may be researching victims and
+</I>&gt;<i>culling data from social networking sites such as Linked In, MySpace or
+</I>&gt;<i>Facebook, Sunner said.
+</I>&gt;<i>
+</I>&gt;<i>&quot;If you really want to work out somebody's background ... you can
+</I>&gt;<i>actually find out a lot,&quot; Sunner said.
+</I>&gt;<i>
+</I>&gt;<i>Tricking a relative into installing malicious code would offer the
+</I>&gt;<i>hacker another way to collect sensitive data if an executive decides to
+</I>&gt;<i>do some work on a home computer, Sunner said.
+</I>&gt;<i>
+</I>&gt;<i>In June, MessageLabs picked up more than 500 of these targeted messages,
+</I>&gt;<i>with some 30% aimed at chief investment officers, a position that can
+</I>&gt;<i>include handling mergers and acquisitions. Other positions targeted
+</I>&gt;<i>include directors of research and development, company presidents, CEOs,
+</I>&gt;<i>chief information officers and chief financial officers.
+</I>&gt;<i>
+</I>&gt;<i>Another danger is that the e-mails are often single messages sent to a
+</I>&gt;<i>single person, rather than a mass spam run. When hackers send out
+</I>&gt;<i>millions of messages, security companies often either update their
+</I>&gt;<i>software or change their spam filters to trap the bad messages.
+</I>&gt;<i>
+</I>&gt;<i>But single messages have a higher chance of slipping through, although
+</I>&gt;<i>Sunner said MessageLabs' filtering service catches the messages by
+</I>&gt;<i>analyzing the e-mail's attachment and determining whether it is
+</I>&gt;<i>potentially harmful. Other security companies catch malware by updating
+</I>&gt;<i>their software with indicators, or signatures, to detect harmful code or
+</I>&gt;<i>block code from running based on what it does on a computer, a
+</I>&gt;<i>technology called behavioral detection.
+</I>&gt;<i>
+</I>&gt;<i>Tracing where the messages come from is difficult because the sender's
+</I>&gt;<i>name is always fake, Sunner said. The IP addresses from which the
+</I>&gt;<i>messages were sent indicate that the computers are located around the
+</I>&gt;<i>world. Hackers often use networks of computers they already control,
+</I>&gt;<i>called botnets, to send e-mails.
+</I>&gt;<i>
+</I>&gt;<i>&quot;Certainly, people need to raise the level of vigilance,&quot; Sunner said.
+</I>
+
+
+-- 
+((Udhay Shankar N)) ((udhay @ pobox.com)) ((www.digeratus.com))
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,30 @@
+<PRE>Paul Hoffman wrote:
+&gt;<i> 
+</I>&gt;<i> A less extreme solution would be to make the warning the user sees on a 
+</I>&gt;<i> mixed-content page more insulting to the bank. &quot;This page contains both 
+</I>&gt;<i> encrypted and non-encrypted content and is inherently insecure. The 
+</I>&gt;<i> owner of this web site has clearly made a very poor security decision in 
+</I>&gt;<i> showing this page to you. It is likely that other pages on this site 
+</I>&gt;<i> also have similarly poor security. Knowing this, do you wish to continue 
+</I>&gt;<i> anyway?&quot;
+</I>&gt;<i> 
+</I>
+A more optimal solution is to have this vulnerability accepted by
+the OWASP community as a &quot;Top 10&quot; security vulnerability; it will
+have the appropriate intended effect since mitigation to the OWASP
+defined vulnerabilities is required in PCI-DSS:
+
+&quot;6.5 Develop all web applications based on secure coding guidelines
+such as the Open Web Application Security Project guidelines&quot;
+
+<A HREF="https://www.pcisecuritystandards.org/security_standards/pci_dss_download.html">https://www.pcisecuritystandards.org/security_standards/pci_dss_download.html</A>
+<A HREF="http://www.owasp.org/index.php/Top_10_2007">http://www.owasp.org/index.php/Top_10_2007</A>
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

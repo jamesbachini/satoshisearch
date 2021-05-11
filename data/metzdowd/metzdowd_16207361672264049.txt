@@ -1,0 +1,20 @@
+<PRE>* Peter Gutmann:
+
+&gt;&gt;<i>From the BBC:
+</I>&gt;<i>
+</I>&gt;<i>   TV presenter Jeremy Clarkson has lost money after publishing his bank
+</I>&gt;<i>   details in his newspaper column.
+</I>
+&gt;<i>   <A HREF="http://news.bbc.co.uk/2/hi/entertainment/7174760.stm">http://news.bbc.co.uk/2/hi/entertainment/7174760.stm</A>
+</I>
+Has anybody read the original column/editorial/whatever in the Sunday
+Times and can tell whether Mr Clarkson has, in fact, claimed that he
+actually lost money?
+
+The secondary reporting is very unclear on this point.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,61 @@
+<PRE>Others have made similar points and suggestions, not picking on this
+instance in particular:
+
+On Mon, Feb 04, 2008 at 02:48:08PM -0700, Martin James Cochran wrote:
+&gt;<i> Additionally, in order to conserve bandwidth you might want to make a 
+</I>&gt;<i> trade-off where some packets may be forged with small probability (in the 
+</I>&gt;<i> VOIP case, that means an attacker gets to select a fraction of a second of 
+</I>&gt;<i> sound, which is probably harmless)
+</I>
+This is ok, if you consider the only threat to be against the final
+endpoint: a human listening to a short-term, disposable conversation.
+I can think of some counter-examples where these assumptions don't
+hold:
+
+ - A data-driven exploit against an implementation vulnerability in
+   your codec of choice.  Always a possibility, but a risk you might
+   rate differently (or a patch you might deploy on a different
+   schedule) for conversations with known and trusted peers than you
+   would for arbitrary peers, let alone maliciously-inserted traffic.
+   How many image decoding vulnerabilities have we seen lately, again?
+
+ - People have invented and do use such horribly-wrong things as
+   fax-over-voip; while they seem to have some belief in their own
+   business case, I may not have as much faith in their implementation
+   robustness.
+   
+ - Where it's audio, but the audience is different such that the
+   impact of short bursts of malicious sound is different: larger
+   teleconferences, live interviews or reporting by journalists, and
+   other occasions, particularly where the credibility of the speaker
+   is important.  Fractions of seconds of sound is all I might need to
+   insert to .. er .. emulate tourette's syndrome. Fractions of
+   seconds of soundwave therapy could still be highly unpleasant or
+   embarassing.
+
+Particularly for the first point, early validation for packet
+integrity in general can be a useful defensive tool against unknown
+potential implementation vulnerabilities.  I've used similar arguments
+before around the use of keyed authentication of other protocols, such
+as SNMPv3 and NTP.
+
+It also reminds me of examples where cryptographic protections have
+only covered certain fields in a header or message.  Attackers may
+find novel ways to use the unprotected space, plus it just makes the
+whole job of risk analysis at deployment orders of magnitude more
+complex.
+
+Without dismissing the rest of the economic arguments, when it comes
+to these kinds of vulnerabilities, be very wary of giving an attacker
+this inch, they may take a mile.  
+
+--
+Dan.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 194 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080207/1563607e/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080207/1563607e/attachment.pgp</A>&gt;
+</PRE>

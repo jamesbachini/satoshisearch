@@ -1,0 +1,22 @@
+<PRE>At 2007-11-18 19:26 -0800, Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; wrote:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;<i> &gt;Need to invert an MD5 hash? Try googling for the hash value:
+</I>&gt;<i> &gt;<A HREF="http://www.lightbluetouchpaper.org/2007/11/16/google-as-a-password-cracker/">http://www.lightbluetouchpaper.org/2007/11/16/google-as-a-password-cracker/</A>
+</I>&gt;<i> And you can also find some SHA-1 hashes as well as base 64 
+</I>&gt;<i> encoded MD5 &amp; SHA-1 hashes googling for them and the results are 
+</I>&gt;<i> located at <A HREF="http://mina.naguib.ca/dist/digest/digest-54.txt">http://mina.naguib.ca/dist/digest/digest-54.txt</A> for 
+</I>&gt;<i> &quot;Anthony&quot;
+</I>
+As noted on the original blog post, see also <A HREF="http://md5.rednoize.com/.">http://md5.rednoize.com/.</A>
+
+-- 
+gabriel rosenkoetter
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">gr at eclipsed.net</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 187 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071126/8f5c38d4/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071126/8f5c38d4/attachment.pgp</A>&gt;
+</PRE>

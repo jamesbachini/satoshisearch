@@ -1,0 +1,47 @@
+<PRE>Leichter, Jerry wrote on 11 June 2008 20:04:
+
+&gt;&gt;<i>   Why are we wasting time even considering trying to break the public
+</I>&gt;&gt;<i> key? 
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i>   If this thing generates only a single &quot;session&quot; key (rather, a host
+</I>&gt;&gt;<i> key) per machine, then why is it not trivial to break?  The actual
+</I>&gt;&gt;<i> encryption algorithm used is RC4, so if they're using a constant key
+</I>&gt;&gt;<i> without a unique IV per file, it should be trivial to reconstruct the
+</I>&gt;&gt;<i> keystream by XORing any two large files that have been encrypted by the
+</I>&gt;&gt;<i> virus on the same machine. 
+</I>&gt;<i> This is the first time I've seen any mention of RC4.  *If* they are
+</I>&gt;<i> using RC4, 
+</I>
+  According to this entry at viruslist.com:
+<A HREF="http://www.viruslist.com/en/viruses/encyclopedia?virusid=313444">http://www.viruslist.com/en/viruses/encyclopedia?virusid=313444</A>
+which I found linked from the analyst's diary blog, 
+
+&quot;The virus uses Microsoft Enhanced Cryptographic Provider v1.0 (built into
+Windows) to encrypt files. Files are encrypted using the RC4 algorithm. The
+encryption key is then encrypted using an RSA public key 1024 bits in length
+which is in the body of the virus.&quot;
+
+  According to this thread on the gpcode forum:
+<A HREF="http://forum.kaspersky.com/index.php?s=49bd69fb414610c700170b115d0730fa&amp;show">http://forum.kaspersky.com/index.php?s=49bd69fb414610c700170b115d0730fa&amp;show</A>
+topic=72322
+the readme.txt files containing the ransom key are identical in every
+directory on the infected computer, suggesting that there is indeed a unique
+per-host RC4 key.
+
+  According to 
+<A HREF="http://forum.kaspersky.com/index.php?s=72050db4cb7d54c17e3b6b134d060269&amp;show">http://forum.kaspersky.com/index.php?s=72050db4cb7d54c17e3b6b134d060269&amp;show</A>
+topic=72409
+every file encrypted by the virus grows by 8 bytes, so it looks like it uses
+an IV.  But that didn't help with WEP...
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

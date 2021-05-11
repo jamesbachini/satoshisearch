@@ -1,0 +1,35 @@
+<PRE>Hagai Bar-El wrote:
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> On 12/09/07 08:56, Aram Perez wrote:
+</I>&gt;&gt;<i> The IronKey appears to provide decent security while it is NOT plugged
+</I>&gt;&gt;<i> into a PC. But as soon as you plug it in and you have to enter a
+</I>&gt;&gt;<i> password to unlock it, the security level quickly drops. This would be
+</I>&gt;&gt;<i> the case even if they supported Mac OS or *nix.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> As I stated in my response to Jerry Leichter, in my opinion, their
+</I>&gt;&gt;<i> marketing department is selling snake oil.
+</I>&gt;<i> 
+</I>&gt;<i> I think there is a difference between a product that is susceptible to
+</I>&gt;<i> an attack and the pure distilled 100% natural snake oil, as we usually
+</I>&gt;<i> define it.
+</I>
+
+So, is snake oil:
+
+    * a crap product?
+    * a fine product with weaknesses?
+    * a marketing campaign that goes OTT?
+    * a term used to slander the opposing security model?
+    * an adjective that applies to any of the above?
+
+iang
+
+OTT == over-the-top, excessive and dangerous.  Derives from 
+WW1 trench warfare.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

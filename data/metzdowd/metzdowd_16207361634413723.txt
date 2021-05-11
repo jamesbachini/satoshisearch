@@ -1,0 +1,48 @@
+<PRE>Weger, B.M.M. de wrote:
+&gt;&gt;<i> The parlor trick demonstrates a weakness of the pdf format, not MD5.
+</I>&gt;<i> 
+</I>&gt;<i> I disagree. We could just as easy have put the collision blocks
+</I>&gt;<i> in visible images.
+</I>
+Parlor trick.
+
+&gt;<i> ... We could just as easy have used MS Word
+</I>&gt;<i> documents, or any document format in which there is some way
+</I>&gt;<i> of putting a few random blocks somewhere nicely.
+</I>
+Parlor trick.
+
+&gt;<i> ... We say so on
+</I>&gt;<i> the website. We did show this hiding of collisions for other data
+</I>&gt;<i> formats, such as X.509 certificates
+</I>
+More interesting.  Where on your web site?  I've long abhorred the
+X.509 format, and was a supporter of a more clean alternative.
+
+&gt;<i> ... and for Win32 executables.
+</I>&gt;<i> 
+</I>Parlor trick.
+
+So far, all the things you mention require the certifier to be suborned.
+
+
+&gt;<i> Our real work is chosen-prefix collisions combined with
+</I>&gt;<i> multi-collisions. This is crypto, it has not been done before,
+</I>
+Certainly it was done before!  We talked about it more than a decade ago.
+We knew that what was &quot;computationally infeasible&quot; would become feasible.
+
+Every protocol I've designed or formally reviewed is protected against the
+chosen prefix attack.  (To qualify, where I had final say.  I've reviewed
+badly designed protocols, such as IKE/ISAKMP.  And I've been overruled by
+committee from time to time....)
+
+What *would* be crypto is the quantification of where MDx currently falls
+on the computational spectrum.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

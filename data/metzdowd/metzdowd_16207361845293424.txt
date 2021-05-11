@@ -1,0 +1,30 @@
+<PRE>The author of an article that appeared in InformationWeek this week
+(June 30, 2008) on Enterprise Key Management Infrastructure (EKMI):
+
+<A HREF="http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937">http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937</A>
+
+states the following:
+
+&quot;There are, of course, obstacles that must still be overcome by EKMI 
+proponents. For example, the proposed components are somewhat simple by 
+design, which concerns some encryption purists who prefer more complex 
+protocols, on the logic that they're more difficult to break into.&quot;
+
+In light of the recent discussions about experts in cryptography,
+I thought I'd ask this forum to comment on the above author's
+statement: is this true?
+
+Do cryptography experts deliberately choose complexity over simplicity
+when the latter might provide the same strength of protection?  Since I
+do not consider myself a cryptography expert, and have instinctively
+preferred simpler - but strong - technical solutions, have my instincts
+been wrong all along?  TIA.
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

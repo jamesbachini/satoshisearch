@@ -1,0 +1,19 @@
+<PRE>
+Excerpt:
+
+   In a major change of stance, Canada-based Research In Motion (RIM)
+   may allow the Indian government to intercept non-corporate emails
+   sent over BlackBerrys.
+
+<A HREF="http://economictimes.indiatimes.com/Telecom/Govt_may_get_keys_to_your_BlackBerry_mailbox_soon/articleshow/3041313.cms">http://economictimes.indiatimes.com/Telecom/Govt_may_get_keys_to_your_BlackBerry_mailbox_soon/articleshow/3041313.cms</A>
+
+Hat tip: Bruce Schneier's blog.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

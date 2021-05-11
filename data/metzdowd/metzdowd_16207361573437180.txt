@@ -1,0 +1,35 @@
+<PRE>On Mon, 15 Oct 2007 16:02:54 -0700 plus or minus some time ' =JeffH '
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt; wrote:
+&gt;<i> 
+</I>&gt;<i> I haven't come across any detailed Storm extent analysis, even with
+</I>&gt;<i> having Google search specific security company sites (e.g. using 
+</I>&gt;<i> &quot;site:sec-corp.com&quot;). So if anyone has pointers to pages (other than the
+</I>&gt;<i> MSFT blog article pointed to in an earlier post) that present a sane and 
+</I>&gt;<i> substantiated analysis of Storm extent, please post 'em. Maybe folks
+</I>&gt;<i> don't want to (post 'em or point to 'em)? Are there papers in
+</I>&gt;<i> submission? ;-)
+</I>&gt;<i> 
+</I>&gt;<i>   
+</I>
+Detailed analysis of the Storm network, how it works, its size, etc is
+being activly worked on by several research groups.  Storm is nowhere near
+50 million nodes and never was.
+
+I will be presenting /some/ of this work at Toorcon in San Diego this
+Saturday:
+
+<A HREF="http://www.toorcon.org/2007/event.php?id=38">http://www.toorcon.org/2007/event.php?id=38</A>
+
+The presentation is not academic paper quality and takes more of a
+code-monkey approach to the network.  Real (sane and substantiated)
+numbers, stats, and graphs will be presented.  To the best of my knowledge,
+it will be the first publicly released estimates of the size of the network
+with actual supporting data and evidence.
+
+Brandon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE>On Sat, Sep 01, 2007 at 12:35:33PM -0400, Perry E. Metzger wrote:
+
+&gt;<i> 
+</I>&gt;<i> A critique of modern cryptography by Neal Koblitz in &quot;Notices of the AMS&quot;:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.ams.org/notices/200708/tx070800972p.pdf">http://www.ams.org/notices/200708/tx070800972p.pdf</A>
+</I>
+The way I read it, it is a critique of the (somewhat inevitable) poor
+quality of peer-review for conference proceedings, and the author is
+indirectly complaining that more traditional journals are not always
+the norm for crypto research that sets best-practice standards.
+
+In a nutshell: important ideas deserve time, rather than Internet-time.
+
+This part is not too radical. The more specific scepticism of security
+proofs (I am reluctant to agree that these are actively harmful), seems
+to be a combination of the peer review issue above, and (often?) lack of
+tight bounds that make the proofs applicable to realistic parameter sizes.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

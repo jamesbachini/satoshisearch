@@ -1,0 +1,75 @@
+<PRE>
+(I saw this on another mailing list -- a follow-on to earlier
+discussions about Blackberry in India. No idea how believable any of
+it is because there is a great deal of difference between the way
+Blackberries work in a corporate and non-corporate context -- this
+could just be interception at the mail server provided by the
+cellphone company. --Perry)
+
+<A HREF="http://economictimes.indiatimes.com/At_last_govt_cracks_BlackBerry_code/articleshow/3510719.cms">http://economictimes.indiatimes.com/At_last_govt_cracks_BlackBerry_code/articleshow/3510719.cms</A>
+
+At last, govt cracks BlackBerry code
+22 Sep, 2008, 0121 hrs IST,Niranjan Bharati, ET Bureau
+
+NEW DELHI: The government has decrypted the data on Research In
+Motion's (RIM) BlackBerry networks. The department of
+telecommunication (DoT), Intelligence Bureau and security agency
+National Technical Research Organisation (NTRO) have done tests on
+service providers such as Bharti Airtel, BPL Mobile, Reliance
+Communications and Vodafone-Essar networks for interception of
+Internet messages from BlackBerry to non-BlackBerry devices.
+
+Initially, there were difficulties in cracking the same on
+Vodafone-Essar network but that has also been solved. This means that
+the e-mail messages sent on Internet through your BlackBerry sets
+would no longer be exclusive and government would be able to track
+them.
+
+&quot;Decompression is being tested in operator's network with three
+successful testing on Bharti Airtel, Reliance Communication and BPL
+Mobile,&quot; a source in DoT said. He, however, added that the solution
+reached upon would not be shared with anybody including the national
+telecom service providers like BSNL or MTNL. &quot;The test is being
+conducted wholly for non-enterprise solutions,&quot; he said. The Union
+cabinet has also been apprised of the recent developments by the DoT.
+
+Makers of BlackBerry set, RIM, could not be contacted for comment. An
+e-mail sent in this regard the company did not elicit any response
+till the time of going for press. An official in Vodafone-Essar,
+however, on conditions of anonymity said that there has been
+substantial progress in decoding the BlackBerry encryptions and DoT
+has got success on decompressing the data on the networks of all the
+major service providers.
+
+The test would be conducted on all the network of all the BlackBerry
+service providers and the service providers, on whose network the
+interception does not happen smoothly, would be asked to make
+technical changes in their services to make them compatible for
+decompression. Decompression is the process of decoding information
+with an aim to transfer the data to a different medium like data to
+voice, data to video or data to text.
+
+The DoT had earlier asked RIM to provide the master key to allow
+access to contents transferred over their handsets. RIM had, however,
+said that it could not handover the message encryption key to the
+government as its security structure does not allow any third party or
+even the company to read the information transferred over its network.
+
+The BlackBerry issue surfaced earlier this year when DoT asked Tata
+Tele-services to delay the launch of the service till appropriate
+security mechanisms were in place. Currently, there are over one lakh
+BlackBerry users in the country.
+
+Bharti Airtel, Reliance Communications, Vodafone Essar and BPL Mobile
+are offering this service in the country. Tata Teleservices has also
+been allowed to offer the BlackBerry services recently.
+
+Incidentally, Tata Teleservices launched the service after telecom
+secretary Siddhartha Behura said that the government has no role in
+stopping the company from offering the service.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

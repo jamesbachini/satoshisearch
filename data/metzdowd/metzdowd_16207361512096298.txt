@@ -1,0 +1,54 @@
+<PRE>     --
+Steven M. Bellovin wrote:
+ &gt; <A HREF="http://www.tgdaily.com/content/view/33425/118/">http://www.tgdaily.com/content/view/33425/118/</A>
+ &gt;
+ &gt; &quot;Ann Arbor (MI) - University of Michigan scientists
+ &gt; have discovered a breakthrough way to utilize light in
+ &gt; cryptography. The new technique can crack even complex
+ &gt; codes in a matter of seconds. Scientists believe this
+ &gt; technique offers much advancement over current
+ &gt; solutions and could serve to foil national and
+ &gt; personal security threats if employed.&quot;...
+ &gt;
+ &gt; I'll let those who know more physics comment in
+ &gt; detail; from reading the article, it appears to lead
+ &gt; to a way to construct quantum computers.
+
+It is another *in* *principle* design:  The computer is
+programmed and supplied with data at optical
+frequencies.  We cannot modulate light at that frequency
+with sufficient precision and detail.  Perhaps we will
+be able to soon.
+
+As Moore's law progresses, quantum effects get
+relatively larger.  Another way of stating this proposal
+is to say that when we can build classical computers
+with nanoscale line widths and hundred terahertz clocks,
+*then* we can build quantum computers - indeed, we will
+have to, as our classical computers will start acting
+weirdly due to quantum effects.
+
+Quantum computers are best done with the highest
+possible frequencies and the lowest possible energies,
+so become more feasible as conventional computers become
+faster and more energy efficient. If we had optical
+computing at optical frequencies with quantum dots
+acting as the nonlinear elements, yes, quantum effects
+would be quite large, making classical computers harder,
+and quantum computers easier.
+
+If we could build a quantum computer of this design, we
+could build a classical computer that operated at five
+hundred terahertz, and in order program and interface
+with the proposed quantum computer, we are going to
+*need* a classical computer that operates at five
+hundred terahertz, that is to say five hundred thousand
+gigahertz, that is to say five million megahertz.
+
+It will be a while before you can buy that one at Fry's.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

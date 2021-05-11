@@ -1,0 +1,26 @@
+<PRE>At Tue, 15 Jul 2008 18:33:10 -0400 (EDT),
+Leichter, Jerry wrote:
+&gt;<i> For an interesting discussion of IPETEE, see:
+</I>&gt;<i> 
+</I>&gt;<i> www.educatedguesswork.org/moveabletype/archives/2008/07/ipetee.html
+</I>&gt;<i> 
+</I>&gt;<i> Brief summary:  This is an initial discussion - the results of a
+</I>&gt;<i> drinking session - that got leaked as an actual proposal.  The
+</I>&gt;<i> guys behind it are involved with The Pirate Bay.  The goal is
+</I>&gt;<i> to use some form of opportunistic encryption to make as much
+</I>&gt;<i> Internet traffic as possible encrypted as quickly as possible -
+</I>&gt;<i> which puts all kinds of constraints on a solution, which in
+</I>&gt;<i> turn also necessarily weakens the solution (e.g., without some
+</I>&gt;<i> required configuration, there's no way you can avoid MITM
+</I>&gt;<i> attacks) and forces odd compromises.
+</I>
+I also have a followup post at:
+<A HREF="http://www.educatedguesswork.org/movabletype/archives/2008/07/more_on_ipetee.html">http://www.educatedguesswork.org/movabletype/archives/2008/07/more_on_ipetee.html</A>
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

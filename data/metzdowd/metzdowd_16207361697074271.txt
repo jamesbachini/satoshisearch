@@ -1,0 +1,73 @@
+<PRE>&quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+&gt;<i>On Fri, 01 Feb 2008 13:29:52 +1300
+</I>&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) wrote:
+</I>&gt;&gt;<i> Actually it doesn't even require X.509 certs.  TLS-SRP and TLS-PSK
+</I>&gt;&gt;<i> provide mutual authentication of client and server without any use of
+</I>&gt;&gt;<i> X.509.  The only problem has been getting vendors to support it,
+</I>&gt;&gt;<i> several smaller implementations support it, it's in the (still
+</I>&gt;&gt;<i> unreleased) OpenSSL 0.99, and the browser vendors don't seem to be
+</I>&gt;&gt;<i> interested at all, which is a pity because the mutual auth (the
+</I>&gt;&gt;<i> server has to prove possession of the shared secret before the client
+</I>&gt;&gt;<i> can connect) would significantly raise the bar for phishing attacks.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> (Anyone have any clout with Firefox or MS?  Without significant
+</I>&gt;&gt;<i> browser support it's hard to get any traction, but the browser
+</I>&gt;&gt;<i> vendors are too busy chasing phantoms like EV certs).
+</I>&gt;<i>
+</I>&gt;<i>The big issue is prompting the user for a password in a way that no one will
+</I>&gt;<i>confuse with a web site doing so.
+</I>
+HCI people have been studying this for quite some time, and there's been a lot
+of good work done in this area.  Because of the amount of information, I'll
+answer indirectly via a link (warning, it's a partial book draft and is
+currently ~140 pages long):
+
+<A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/usability.pdf">http://www.cs.auckland.ac.nz/~pgut001/pubs/usability.pdf</A>
+
+Even without this detailed analysis, one of the Mac browsers (Safari?) already
+has a quite distinctive password prompt that rolls down out of the menu bar at
+the top.  Sure, you can spoof that if you own the browser, but if malware owns
+your browser then you're toast anyway.
+
+&gt;<i>It might have been the right thing, once upon a time, but the horse may be
+</I>&gt;<i>too far out of the barn by now to make it worthwhile closing the barn door.
+</I>
+That's the response I got from a browser developer when I talked about this
+about a year ago, &quot;Sufficiently sophisticated malware can spoof any piece of
+browser UI, so let's just give up and admit that the phishers have won&quot;.  At
+the moment, after 15-odd years of work, the state of the art for both major
+secure-channel protocols is to connect to anything listening on port 22 or 443
+and then hand over the user's password in plaintext form (although inside a
+secure tunnel, as if that made any difference) [0].  This is only just barely
+better than the 1970s-era telnet in that the authenticator is still handed
+over in plaintext, but at least you can't capture it with a packet sniffer.
+Moving to a challenge-response mechanism (which PSK and SRP aren't really,
+it's more a bit-commitment since there's no real challenge or response process
+[1]) would at least move the security into the late 1980s.
+
+As a side-note, I was talking to a security person from a large (multi-
+national) bank recently and they mentioned that they were slowing down on the
+push to move to two-factor auth (real two-factor auth with SecurIDs and the
+like, not the gimmicks that US banks are using :-) because the problem isn't
+authenticating the user, it's authenticating the server and/or the
+transaction, and most two-factor auth tokens can't do that.  As a result
+they're not going to commit to sinking much more money into something that
+doesn't actually solve the problem.  So mutual client/server auth is something
+that's of concern to more than just some geeks on security mailing lists, it's
+coming onto the radar of large financial institutions as well.
+
+Peter.
+
+[0] By &quot;443&quot; I mean HTTP over SSL/TLS, obviously.
+
+[1] Actually this is neither challenge-response nor bit-commitment so in the
+    absence of anything better I'll propose &quot;failsafe authentication&quot; because
+    the other side doesn't get your authenticator unless they can prove they
+    already possess it.  In other words if the authentication process fails,
+    it fails safe.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

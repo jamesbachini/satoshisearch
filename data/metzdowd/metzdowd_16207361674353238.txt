@@ -1,0 +1,37 @@
+<PRE>* Ben Laurie:
+
+&gt;<i> On 10/01/2008, Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; wrote:
+</I>&gt;&gt;<i> Has anybody read the original column/editorial/whatever in the Sunday
+</I>&gt;&gt;<i> Times and can tell whether Mr Clarkson has, in fact, claimed that he
+</I>&gt;&gt;<i> actually lost money?
+</I>&gt;<i>
+</I>&gt;<i> Yes, a standing order for &#163;500 per month to a charity, IIRC.
+</I>
+The reports I've seen claimed that this was a direct debit transaction.
+This means that a (supposedly properly vetted) organization approaches
+the bank, claims it's been properly authorized by the account holder,
+and requests transfer of money from that account.
+
+A standing order is an instruction to the bank, issued by the account
+holder, that a fixed amount of money shall be transferred at fixed
+intervals until further notice (for instance, in Germany, it's typically
+used to pay your monthly rent).
+
+Direct debit sounds dangerous, but there's a money-back guarantee by the
+bank.  This is why I find it unlikely that Mr Clarkson has actually lost
+money.  And if you read them carefully, some of the reports do not claim
+that he did.
+
+Setting up a standing order typically requires that the attacker
+sucessfully impersonates the account holder to the bank.  The attacker
+should need more information to mount this kind of attack than what Mr
+Clarkson published.
+
+(To our U.S. readers: Your banking system is hopelessly antiquated, so
+don't worry if this doesn't make any sense to you.)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

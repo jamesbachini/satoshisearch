@@ -1,0 +1,38 @@
+<PRE>David G. Koontz wrote:
+&gt;<i> Sherri Davidoff wrote:
+</I>
+You know how memory is, little things get squishy with the passage of years.
+As soon as I saw the post up on cryptography I asked myself was that 1972 or
+1974?
+
+&gt;<i>Privacy Act of 1972
+</I>
+That should be 1974.
+<A HREF="http://www.law.cornell.edu/uscode/html/uscode05/usc_sec_05_00000552---a000-notes.html">http://www.law.cornell.edu/uscode/html/uscode05/usc_sec_05_00000552---a000-notes.html</A>
+
+Public law 93-579  &quot;The Privacy Act of 1974&quot;
+
+<A HREF="http://www.law.cornell.edu/uscode/html/uscode05/usc_sec_05_00000552---a000-.html">http://www.law.cornell.edu/uscode/html/uscode05/usc_sec_05_00000552---a000-.html</A>
+5 USC 552a  Records maintained on individuals.
+
+(10) establish appropriate administrative, technical, and physical
+safeguards to insure the security and confidentiality of records and to
+protect against any anticipated threats or hazards to their security or
+integrity which could result in substantial harm, embarrassment,
+inconvenience, or unfairness to any individual on whom information is
+maintained;
+
+
+The quoted section (10) being the basis for finding harm on disclosure.
+
+I remember seeing the Federal Register notice for the Digital Encryption
+Standard, in 1977, mind you.
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

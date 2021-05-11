@@ -1,0 +1,47 @@
+<PRE>Alex Pankratov wrote:
+&gt;<i> Or, rephrasing, what should the entropy of the password be 
+</I>&gt;<i> compared to the entropy of the value being protected (under
+</I>&gt;<i> whatever keying/encryption scheme) ? 
+</I>
+Eliminating all other variables, such as the hash algorithm used
+to derive a key from  the password (see previous thread) and
+the computational load of the decryption effort per trial, one
+might think that the entropy of the password alone would
+determine the attack effort needed to decrypt the value
+being protected (the payload).
+
+However, the real question to ask is not the password's
+(Shannon) entropy but the workload necessary to find the
+password.
+
+To give a few examples:
+
+- if the value being protected can be efficiently
+tested (eg, by using it as a key to decrypt a short English
+text), then the workload necessary to find the password will
+be reduced even if the password entropy is high.
+
+- the workload necessary to find the password may be actually
+trivial if the password is generated with a non-flat distribution
+(even though the entropy of the distribution may be quite high,
+such as 128 bit).
+
+- if salt is not used, or used poorly, a dictionary attack
+can be quite effective to reduce the workload.
+
+What matters here is the expected cost of password search,
+not the password or payload Shannon entropy. For some pointers
+on this discussion, and why high Shannon entropy does not
+mean high workload, see
+<A HREF="http://www.cs.berkeley.edu/~daw/my-posts/entropy-measures">http://www.cs.berkeley.edu/~daw/my-posts/entropy-measures</A>
+
+Cheers,
+Ed Gerck
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

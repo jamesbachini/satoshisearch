@@ -1,0 +1,50 @@
+<PRE>
+&quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+&gt;<i> There's a technical/philosophical issue lurking here.  We tried to
+</I>&gt;<i> solve it in IPsec; not only do I think we didn't succeed, I'm not at
+</I>&gt;<i> all clear we could or should have succeeded.
+</I>&gt;<i>
+</I>&gt;<i> IPsec operates at layer 3, where there are (generally) no user
+</I>&gt;<i> contexts.  This makes it difficult to bind IPsec credentials to a user,
+</I>&gt;<i> which means that it inherently can't be as simple to configure as ssh.
+</I>
+I disagree. Fundamentally, OpenVPN isn't doing anything IPSEC couldn't
+do, and yet is is fairly easy to configure. I believe that I could
+easily come up with a simpler configuration still, but we have a
+worked example, so I don't think we can claim it is impossible any
+longer.
+
+It is true that I can't make it easy to configure all possible
+uses of IPSec easily, but it should be easy to do the easy things and
+it isn't. If it was easy to do easy things and possible to do
+complicated things, that would be a reasonable place to get to -- I
+know of no IPSec configuration system that is like that.
+
+&gt;<i> Put another way, when you tell an sshd whom you wish to log in as, it
+</I>&gt;<i> consults that user's home directory and finds an authorized_keys file.
+</I>&gt;<i> How can IPsec -- or rather, any key management daemon for IPsec -- do
+</I>&gt;<i> that?  Per-user SPDs?  Is this packet for port 80 for user pat or user
+</I>&gt;<i> chris?
+</I>
+Almost exclusively the use for such things is nailing up a tunnel to
+bring someone inside a private network. For that, there is no need for
+per user auth -- the general assumption is that the remote box is a
+single user laptop or something similar anyway. You really just want
+to verify that the remote host has a particular private key, and if it
+does, you nail up a tunnel to it (possibly allocating it a local IP
+address in the process). That solves about 95% of the usage scenarios
+and it requires very little configuration. It also covers virtually
+all use of IPSec I see in the field.
+
+Again, there are more complex usage scenarios, and it may be more
+complicated to set one of *those* up, but it is a shame that it is
+difficult to do the simple stuff.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

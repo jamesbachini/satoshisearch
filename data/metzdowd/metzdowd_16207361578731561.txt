@@ -1,0 +1,15 @@
+<PRE>On 10/4/07, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A> &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A>&gt; wrote:
+&gt;<i> On 10/3/07, Saqib Ali &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+</I>&gt;<i> [SNIP]
+</I>&gt;<i> or both private keys but that never seems to get mentioned
+</I>&gt;<i>
+</I>I take it back, there is only one private key but math makes multiple
+temporary public keys out of it.
+
+-Michael
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

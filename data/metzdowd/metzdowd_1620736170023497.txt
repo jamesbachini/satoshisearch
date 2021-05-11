@@ -1,0 +1,49 @@
+<PRE>At Mon, 04 Feb 2008 14:29:50 +1000,
+James A. Donald wrote:
+&gt;<i> 
+</I>&gt;<i> James A. Donald wrote:
+</I>&gt;<i>  &gt;&gt; I have figured out a solution, which I may post here
+</I>&gt;<i>  &gt;&gt; if you are interested.
+</I>&gt;<i> 
+</I>&gt;<i> Ian G wrote:
+</I>&gt;<i>  &gt; I'm interested.  FTR, zooko and I worked on part of
+</I>&gt;<i>  &gt; the problem, documented briefly here:
+</I>&gt;<i>  &gt; <A HREF="http://www.webfunds.org/guide/sdp/index.html">http://www.webfunds.org/guide/sdp/index.html</A>
+</I>&gt;<i> 
+</I>&gt;<i> I have posted &quot;How to do VPNs right&quot; at
+</I>&gt;<i> <A HREF="http://jim.com/security/how_to_do_VPNs.html">http://jim.com/security/how_to_do_VPNs.html</A>
+</I>&gt;<i> 
+</I>&gt;<i> It covers somewhat different ground to that which your
+</I>&gt;<i> page covers, focusing primarily on the problem of
+</I>&gt;<i> establishing the connection.
+</I>&gt;<i> 
+</I>&gt;<i> 	&quot;humans are not going to carry around large
+</I>&gt;<i> 	strong secrets every time either end of the
+</I>&gt;<i> 	connection restarts.  In fact they are not going
+</I>&gt;<i> 	to transport large strong secrets any time ever,
+</I>&gt;<i> 	which is the flaw in SSL and its successors such
+</I>&gt;<i> 	as IPSec and DTLS
+</I>
+This paragraph sure is confused.
+
+1. IPsec most certainly is not a successor to SSL. On
+   the contrary, IPsec predates SSL.
+
+2. TLS doesn't require you to carry around strong secrets.
+   I refer you to TLS-SRP [RFC 5054]
+
+3. For that matter, even if you ignore SRP, TLS supports
+   usage models which never require you to carry around
+   strong secrets: you preconfigure the server's public
+   key and send a password over the TLS channel. Since
+   this is the interface SSH uses, the claim that humans
+   won't do it is manifestly untrue.
+
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

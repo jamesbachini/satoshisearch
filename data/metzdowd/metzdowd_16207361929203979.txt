@@ -1,0 +1,82 @@
+<PRE>&quot;Usability research&quot; about how to track web users?  How Google-like.
+Can't you just dump a 25-year cookie on them from twelve different 
+directions, and be done with it?
+
+&gt;<i> Federated Login has been a &quot;holy grail&quot; in the identity community
+</I>&gt;<i> for a long time.  We have known how to do the technical part for a
+</I>&gt;<i> long time.  However the industry has constantly tried, and failed,
+</I>&gt;<i> to find a model that was (1) simple for end users, and (2) had a
+</I>&gt;<i> reasonable trust model between the RP (the relying party, which is
+</I>&gt;<i> the site you want to log into) and the IDP (the identity provider,
+</I>&gt;<i> who will identify you to the RP).
+</I>
+Explicitly ignoring the trust model between the end users and the RP,
+and the trust between the end users and the IDP.  Why should end users
+trust your web site?  Why should they trust an IDP like Google?
+
+It's not that every website that requires a login is a privacy swamp.
+But the big ones pretty much all are, and those are the ones who want
+to impose this new model without bothering the end user's little head
+about whether he should trust them.
+
+And if every little wiki that just uses logins to slightly limit spam
+today, began using &quot;federated identity&quot;, then ALL of them would become
+privacy swamps.
+
+&gt;<i> For example, the site might require users to agree to a Terms of Service.
+</I>
+Let's see an example of how you're automating how the USER might
+require the SITE to agree to a Terms of Service.  Doesn't seem to be
+part of the model, which is that the SITE has something valuable it
+needs lawyers to protect, while the USER is just an
+eyeball-with-attached-wallet to be sold to the highest bidder.
+
+&gt;<i> When users are presented with a traditional signup page that asks
+</I>&gt;<i> for E-mail, password, &amp; password confirmation, it is quite common
+</I>&gt;<i> for 30-50% of users to not finish the process.
+</I>
+I wonder why not!  Perhaps they do not want to be tracked, numbered,
+wiretapped, monitored, herded, logged, datamined, folded, spindled,
+and mutilated.  Perhaps they just want to look at a web site without
+tying their reading habits to their social security number and
+their medical records.
+
+Similar percentages describe how many people lie through their teeth
+to get into random websites.  So half won't even login, half of those
+will lie like hell; a quarter of the people either think you're
+trustworthy, or are too stupid to care.  Which fraction is &quot;federated
+identity&quot; aimed at?  Catching the liars, i.e. fencing in the people
+who actually take care to protect their privacy?  Yeah, those are
+the guys this community wants you to screw as hard as you can. :-(
+
+&gt;<i> In this scenario, buy.com could detect that the domain name is for
+</I>&gt;<i> an IDP that it trusts.  It could then redirect the user to AOL to
+</I>&gt;<i> verify their identity.  Assuming the user approves sharing their
+</I>&gt;<i> identity, then the user will be redirected back to buy.com which can
+</I>&gt;<i> automatically create an account for them, and log them in.
+</I>
+That's an interesting assumption.  Why would you assume that AOL would
+give users the choice?  AOL is not famous for choice.  Wouldn't AOL
+just read the user's 25-year AOL cookie, and redirect the browser back
+to buy.com with full account information supplied, without any
+interaction with the user at all?  AOL could probably even charge the
+RP a few bucks for doing so.  How simple.  How evil.  Franchising your
+privacy violations.
+
+&gt;<i> The RP can control what IDPs it trusts, and even switch their users
+</I>&gt;<i> back to legacy logins if the IDP becomes untrustworthy
+</I>
+You can pretty well guarantee that RP websites will somehow decline to
+trust any IDP that provides privacy to the end user -- like
+mailinator.com, for example.  A few web sites that &quot;send you an email
+to verify you are who you say you are&quot; already blacklist mailinator,
+though it's usually easy to bypass the blacklist by using one of its
+alternative domain names.
+
+	John
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

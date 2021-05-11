@@ -1,0 +1,62 @@
+<PRE>James A. Donald wrote:
+&gt;<i> Peter Gutmann wrote:
+</I>&gt;&gt;<i> Unfortunately I think the only way it (and a pile of other things as 
+</I>&gt;&gt;<i> well) may get stamped out is through a multi-pronged approach that 
+</I>&gt;&gt;<i> includes legislation, and specifically properly thought-out 
+</I>&gt;&gt;<i> requirements ....
+</I>&gt;<i> 
+</I>I agree.   I'm sure this is a world-wide problem, and head-in-the-sand
+cyber-libertarianism has long prevented better solutions.  The &quot;market&quot;
+doesn't work for this, as there is a competitive *disadvantage* to
+providing improved security, and it's hard to quantify safety.
+
+Remember automotive seat-belts?  Air-bags?  Engineers developed them,
+but the industry wouldn't deploy because the &quot;market&quot; failed to demand
+safety.  That is, long-term safety would cut into short-term profits.
+
+The corporate world actually led the public to believe (through
+advertising) that they were sufficiently safe without them.  Only
+legislation and regulation resulted in measurably greater safety.
+
+M$ has long advertised (falsely) that safety was their concern, and their
+systems were already safe.  We all know how that worked out....
+
+
+&gt;<i> The average cryptographic expert finds it tricky to set up something 
+</I>&gt;<i> that is actually secure.  The average bureaucrat could not run a pie 
+</I>&gt;<i> stand.  Legislation and so forth requires wise and good legislators and 
+</I>&gt;<i> administrators, which is unlikely.
+</I>&gt;<i> 
+</I>So, what campaigns are you working on currently to improve this?
+
+I've educated dozens of U.S. legislators over the years....  Indeed, the
+original funding for my NSFnet work 20 years ago was funded by the Michigan
+House Fiscal Agency, and my early IETF work was funded by the Levin (Senate)
+and Carr (House) campaigns.
+
+
+&gt;<i> Visualize Obama, McCain, or Sarah Palin setting up your network 
+</I>&gt;<i> security.  Then realize that whoever they appoint as Czar in charge of 
+</I>&gt;<i> network security is likely to be less competent than they are.
+</I>&gt;<i> 
+</I>The problem, as always, is enough folks that are competent in both
+computer security *and* political action.
+
+Cannot say much about McCain/Palin, but the Obama folks have been fairly
+computer literate from the beginning.  Not always as security conscious as
+I'd like, but some seem to be receptive.  Unlike McCain (who needs help to
+get his email), Obama himself seems from reports to be tech-savvy.
+
+We either have to educate more political folks about computer security,
+or more security folks have to become active in politics.  The former is
+the never-ending long-term problem, while the latter is an effective
+sort-term solution.
+
+At the IETF, we used to have a t-shirt, with 9 layers instead of 7.  The
+top was &quot;Political&quot;, with &quot;you are here&quot; next to it.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,58 @@
+<PRE>We knew it was coming, right?
+
+-------- Original Message --------
+Subject: [announce] THC releases video and tool to backup/modify 
+ePassports
+Date: Mon, 29 Sep 2008 10:00:26 +0000
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rm at segfault.net</A>
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">announce at lists.segfault.net</A>
+
+
+<A HREF="http://freeworld.thc.org/thc-epassport/">http://freeworld.thc.org/thc-epassport/</A>
+
+29th September 2008
+
+THC/vonJeek proudly presents an ePassport emulator. This emulator 
+applet
+allows you to create a backup of your own passport chip(s).
+
+A video demonstrating the weakness is available at
+<A HREF="http://freeworld.thc.org/thc-epassport/">http://freeworld.thc.org/thc-epassport/</A>
+
+The government plans to use ePassports at Immigration and Border
+Control. The information is electronically read from the Passport
+and displayed to a Border Control Officer or used by an automated
+setup. THC has discovered weaknesses in the system to (by)pass the
+security checks. The detection of fake passport chips is no longer
+working. Test setups do not raise alerts when a modified chip
+is used. This enables an attacker to create a Passport with an
+altered Picture, Name, DoB, Nationality and other credentials.
+
+This manipulated information is displayed without any alarms 
+going off.
+The exploitation of this loophole is trivial and can be verified 
+using
+thc-epassport.
+
+Regardless how good the intention of the government might have 
+been, the
+facts are that tested implementations of the ePassports 
+Inspection System
+are not secure.
+
+ePassports give us a false sense of security: We are made to believe
+that they make use more secure. I'm afraid that's not true: current
+ePassport implementations don't add security at all.
+
+Yours sincerely,
+
+vonjeek [at] thc dot org
+The Hackers Choice
+<A HREF="http://www.thc.org">http://www.thc.org</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

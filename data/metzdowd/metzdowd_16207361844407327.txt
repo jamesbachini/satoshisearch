@@ -1,0 +1,41 @@
+<PRE>|<i> Hi gang,
+</I>|<i> 
+</I>|<i> All quiet on the cryptography front lately, I see. However, that does not
+</I>|<i> prevent practices that *appear* like protection but are not even as strong as
+</I>|<i> wet toilet paper.
+</I>|<i> 
+</I>|<i> I had to order a medical device today and they need a signed authorization for
+</I>|<i> payment by my insurance carrier. No biggie. So they ask how I want it set to
+</I>|<i> me and I said via e-mail. Okay. /Then/ they said it was an encrypted file and
+</I>|<i> I thought, cool. How wrong could I be?
+</I>|<i> 
+</I>|<i> Very. The (I hate to use this term for something so pathetic) password for the
+</I>|<i> file is 6 (yes, six) numeric characters!
+</I>|<i> 
+</I>|<i> My 6 year old K6-II can crack this in less than one minute as there are only
+</I>|<i> 1.11*10^6 possible.
+</I>|<i> 
+</I>|<i> You can lead a horse to water....
+</I>Let's think about the economics here.  What's the value of the information 
+they are sending you to someone else?  What could they do with it?  Apply for 
+your insurance payment?  You'll discover that rather rapidly when you try to 
+apply.  Discover what medical equipment you're ordering?  Is cracking the 
+cryptography here anything like the easiest way to to get that information?  
+It's a myth that medical information is private - too many different parties 
+have access to it in the normal course of things.
+
+On the flip side, how many people will have trouble remembering even a 
+six-digit password?  (Keep in mind that, by the nature of the business you're 
+talking about - medical supplies - many of the customers will be ill/old.)
+
+Frankly, I find it rather impressive that they provide *any* degree of 
+security.  Six digits may in fact be more than is justified, given the 
+value-of-information/usability tradeoffs.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

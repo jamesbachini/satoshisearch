@@ -1,0 +1,54 @@
+<PRE>
+
+silky wrote:
+&gt;<i> On Dec 11, 2007 5:06 AM, Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; wrote:
+</I>&gt;&gt;<i> What puzzles me in all this long and rather arcane discussion is
+</I>&gt;&gt;<i> why isn't the solution of using a double hash - MD5 *and* SHA
+</I>&gt;&gt;<i> whatever. The odds of find a double collision go way up.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Some open source software people are already doing this. I've
+</I>&gt;&gt;<i> played around with the sample files that are out there and find
+</I>&gt;&gt;<i> an easy way to do this but I don't have either the horsepower or
+</I>&gt;&gt;<i> skill to be at all definitive.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> My gut tells me that using two processes that use different
+</I>&gt;&gt;<i> algorithms, even though compromised, will raise the bar so high
+</I>&gt;&gt;<i> that it would be secure for a long time.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> At my skill level and horsepower I can't find even a single way
+</I>&gt;&gt;<i> to do this with CRC32 and MD5. Granted, that certainly doesn't
+</I>&gt;&gt;<i> mean a whole lot.
+</I>&gt;<i> 
+</I>&gt;<i> Work has actually been done on this exact topic.
+</I>&gt;<i> 
+</I>&gt;<i> One link is here: <A HREF="http://cryptography.hyperlink.cz/2004/otherformats.html">http://cryptography.hyperlink.cz/2004/otherformats.html</A>
+</I>&gt;<i> 
+</I>&gt;<i> I think there may be more; I'm not sure.
+</I>
+Thanks for the pointer. Very interesting and it proves that I 
+don't have the horsepower at this point. (Just wait until I build 
+that Microwulf! With the new quad core chips I should hit about 
+50 GigaFLOPS. And cheeep - less than 4K)
+
+But my real point is that CRC32 while has only 2^16 
+possibilities, even SHA 1 with its degraded state has (IIRC) 2^55 
+and if we go to SHA 256 it has 2^256 possibilities.
+
+Since MD5 and SHA 256 use two different algorithms the odds of 
+creating a double collision are tiny at this point.
+
+So take your enhanced Tripwire like program and have it compute 
+two different hashes. Yes, you can create a collision in the MD5, 
+but can you also create a simultaneous collision in the SHA 256?
+
+This is my point.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

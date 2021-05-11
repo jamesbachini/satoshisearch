@@ -1,0 +1,47 @@
+<PRE>On Tue, 29 Jan 2008, John Denker wrote:
+
+&gt;<i> The foregoing makes sense, and is in extreme contrast to the situation
+</I>&gt;<i> I am faced with, where Joe logs in with the help of Jane, and then
+</I>&gt;<i> Jane leaves.  Jane has not the slightest control over what Joe does
+</I>&gt;<i> while logged in.  I don't see a sane procedure here.  It seems Jane 
+</I>&gt;<i> is signing a blank check.
+</I>
+Ah.  Jane need not have a requirement to know what Joe is doing;
+in fact, Jane may not even be cleared for Joe's material.  (This
+is not uncommon.  Jane may be security officer, Joe may be payroll
+manager.  Jane is not authorized to see payroll data or even
+use the payroll &quot;joe&quot; account.)
+
+What has transpired is that Joe cannot deny that he was logged on.
+He can further deny that other logins that he did not perform were
+done by him, assuming Jane is honest.  Jane can attest that the
+login by user joe was done by human Joe.
+
+&gt;<i> It wouldn't be so bad if there were a development system separate
+</I>&gt;<i> from the production system, but there isn't, so Joe spends all day
+</I>&gt;<i> every day logged into the &quot;high security&quot; production system.  Joe
+</I>&gt;<i> can commit anything he wishes.  There is no two-party review of the
+</I>&gt;<i> commit, just two-party review of the login.
+</I>
+Correct.  Logins by Joe-impersonators, even those who have stolen
+Joe's password, say, are impossible without Jane's collusion.
+
+&gt;<i> Just to rub salt in the wound, they've got it set up so that everybody
+</I>&gt;<i> uses the &quot;Admin&quot; account.  There are N people who know the first half
+</I>&gt;<i> of the Admin password, and M people who know the second half.  Besides
+</I>&gt;<i> being an incredibly lame form of secret-splitting, this has the nasty
+</I>&gt;<i> property that when Admin logs in, you don't even know who was involved.  
+</I>&gt;<i> There are M*N/2 possibilities.  There is no accountability anywhere.
+</I>
+This is sounding something like the FBI's method for getting at
+certain sensitive info, that was recently subjected to criticism.
+There was only one account to access the data, all operatives had
+the password.  Adding &quot;Jane&quot; sounds like an inept fix.
+
+Dave
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,25 @@
+<PRE>Ed Gerck wrote:
+&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;<i> But doesn't that prove the point? The trust that you consequently 
+</I>&gt;&gt;<i> place in the web server because of the certificate _cannot_ be copied 
+</I>&gt;&gt;<i> to another webserver. That other webserver has to go out and buy its 
+</I>&gt;&gt;<i> own copy, with its own domain name it it.
+</I>&gt;<i> 
+</I>&gt;<i> A copy is something identical. So, in fact you can copy that server cert 
+</I>&gt;<i> to another server that has the same domain (load balancing), and it will 
+</I>&gt;<i> work. Web admins do it all the time. The user will not notice any 
+</I>&gt;<i> difference in how the SSL will work.
+</I>
+Obviously. Clearly I am talking about a server in a different domain.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

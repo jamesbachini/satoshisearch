@@ -1,0 +1,28 @@
+<PRE>On Mar 31, 2008, at 6:44 AM, James A. Donald wrote:
+&gt;<i> Better still, have a limited supply of tickets that enable one to  
+</I>&gt;<i> construct the convergence key.  Enough tickets for all normal usage,  
+</I>&gt;<i> but  not enough to perform an exhaustive search. [...]
+</I>&gt;<i>
+</I>&gt;<i> If you give the ticket issuing computers an elliptic point P, they  
+</I>&gt;<i> will  give you the corresponding elliptic point k*P.  If, however,  
+</I>&gt;<i> you ask for too many such points, they will stop responding.
+</I>
+This isn't a good design. It's incompatible with Tahoe's present  
+architecture, introduces a single point of failure, centralizes the  
+otherwise by-design decentralized filesystem, and presents a simple  
+way to mount denial of service attacks. Finally, since the  
+decentralization in Tahoe is part of its security design (storage  
+servers aren't trusted), you run into the usual quis custodiet ipsos  
+custodes problem with the ticket-issuing server that the present  
+system nicely avoids.
+
+Cheers,
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

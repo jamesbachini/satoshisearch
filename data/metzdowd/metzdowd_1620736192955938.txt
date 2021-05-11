@@ -1,0 +1,35 @@
+<PRE>&lt;<A HREF="http://ephermata.livejournal.com/190880.html?mode=reply">http://ephermata.livejournal.com/190880.html?mode=reply</A>&gt;
+
+
+David Molnar (ephermata) wrote,
+@ 2008-10-04 01:59:00
+
+
+
+Current music:
+Crystal Castles - Air War
+What does knot theory have to do with P^#P != NP ?
+I didn't know, but Michael H. Freedman has an answer - by assuming  
+that the complexity class P^#P is not equal to NP, you can prove a new  
+theorem in knot theory!
+
+Complexity Classes as Mathematical Axioms
+
+M. Freedman
+(Submitted on 30 Sep 2008)
+
+Abstract: Treating a conjecture, P^#P != NP, on the separation of  
+complexity classes as an axiom, an implication is found in three  
+manifold topology with little obvious connection to complexity theory.  
+This is reminiscent of Harvey Friedman's work on finitistic  
+interpretations of large cardinal axioms.
+
+<A HREF="http://arxiv.org/abs/0810.0033">http://arxiv.org/abs/0810.0033</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

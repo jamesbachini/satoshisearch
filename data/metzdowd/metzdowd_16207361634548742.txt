@@ -1,0 +1,50 @@
+<PRE>There was a discussion on this list a year or two back about problems in using
+memset() to zeroise in-memory data, specifically the fact that optimising
+compilers would remove a memset() on (apparently) dead data in the belief that
+it wasn't serving any purpose.
+
+Reading through &quot;Secure Programming with Static Analysis&quot;, I noticed an
+observation in the text that newer versions of gcc such as 3.4.4 and 4.1.2
+treat the pattern:
+
+  &quot;memset(?, 0, ?)&quot;
+
+differently from any other memset in that it's not optimised out.  I couldn't
+find any reference to this behaviour anywhere and asked the authors about
+this.  They replied:
+
+  We did experiments with a number of different compilers and optimization
+  levels in order to determine the conditions under which calls to memset
+  would be optimized out.  We stumbled on the fact that zero is treated
+  differently pretty much by accident, and we don't have any particular
+  insight into why it behaves the way it does.
+
+I've done a bit of poking around in gcc discussion threads and there's a lot
+of muttering about support for bcopy() and bzero(), and in particular its use
+in places where it can't be replaced by memcpy()/memset() (e.g. assorted OS
+kernels).  Speculating wildly, my guess is that the peculiar behaviour with
+(?, 0, ?) parameters is a compatibility hack for bzero() support, so it may be
+purely an implementation artefact.  For example if you look at
+<A HREF="http://kerneltrap.org/man/linux/man3p/bzero.3p">http://kerneltrap.org/man/linux/man3p/bzero.3p</A> it recommends:
+
+  #define bzero(b,len) (memset((b), '\0', (len)), (void) 0)
+
+so it's possible the gcc folks added the special memset() semantics because of
+this.
+
+So it seems that at least with recent versions of gcc you *can* zeroise memory
+provided you use the &quot;memset(?, 0, ?)&quot; pattern.  Unfortunately since it's
+undocumented behaviour it's not certain whether this will be persistent in
+future compiler versions.  Doing it this way does seem a nice compromise
+between &quot;I want maximum optimisation&quot; and &quot;I want maximum security&quot;.
+
+Can anyone who knows more about gcc development provide more insight on this?
+Could it be made an official, supported feature of the compiler?
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

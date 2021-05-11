@@ -1,0 +1,47 @@
+<PRE>On Apr 24, 2008, at 7:58 PM, Jacob Appelbaum wrote:
+
+&gt;<i> If we could convince (this is the hard part) companies to publish what
+</I>&gt;<i> they think their chips should look like, we'd have a starting point.
+</I>
+I would think that it also helps if a company publishes the source  
+code and complete verification tools for their chips, such as Sun has  
+done with the Ultrasparc T2 under the GPL.
+
+I was excited about this, and also about the fact that the T2 came  
+with extremely efficient crypto implementations, until I read this  
+bizarre comment in the news:
+
+&quot;When the UltraSPARC T2 specifications are released Tuesday, Mehta  
+said the company plans on releasing most of the source code,  
+including the designs for the logic gate circuitry and the test  
+suites. The one part of the source code that Sun can not release are  
+the algorithms approved by the National Security Agency as part of  
+the chip's cryptographic accelerations units.&quot;
+
+<A HREF="http://www.eweek.com/c/a/Linux-and-Open-Source/Sun-Brings-Niagara-2-">http://www.eweek.com/c/a/Linux-and-Open-Source/Sun-Brings-Niagara-2-</A> 
+Chip-to-Open-Source/
+
+I investigated and sure enough the crypto parts of the T2 have all  
+been stubbed out of the source (all of them, not just &quot;algorithms  
+approved by the NSA&quot;, whatever that means).
+
+I sent e-mails inquiring about this to two journalists (the author of  
+that article -- Scott Ferguson -- and noted cryptosecuritylibertarian  
+gadfly Declan McCullagh) and three Sun employees, including Shrenik  
+Mehta (quoted above), the &quot;open sparc community support&quot; e-mail  
+address, and the Sun &quot;open source ombudsman&quot;, Simon Phipps.  None of  
+them ever wrote back.
+
+This experience rather dampened my enthusiasm about relying on T2  
+hardware as a higher-assurance, but still pretty commodified, crypto  
+implementation.
+
+Regards,
+
+Zooko
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,69 @@
+<PRE>Victor Duchovni wrote:
+&gt;<i>
+</I>&gt;<i> SMTP does not need TCP to provide reliability for the tail of the session,
+</I>&gt;<i> the application-level &quot;.&quot; (end-of-data) and server &quot;250&quot; response complete
+</I>&gt;<i> a transaction, everything after that is optional, so for example Postfix
+</I>&gt;<i> will send (when PIPELINING).
+</I>&gt;<i>
+</I>&gt;<i> 	DATA&lt;CRLF&gt;		354 Go ahead
+</I>&gt;<i> 	Message-Content		Lots of acks
+</I>&gt;<i> 	.&lt;CRLF&gt;QUIT&lt;CRLF&gt;	250 Ok
+</I>&gt;<i>
+</I>&gt;<i> and will disconnect after reading the &quot;250 response&quot; without waiting
+</I>&gt;<i> for the 221 response. The TCP 3-way shutdown (FIN, FIN-ACK, ACK) happens
+</I>&gt;<i> in the kernel in the background, the SMTP server and client are by that
+</I>&gt;<i> point handling different connections. So the reliable shutdown latency
+</I>&gt;<i> is of no consequence for application throughput.
+</I>&gt;<i>
+</I>&gt;<i> A pipelined SMTP delivery can be completed over TCP in 5 RTTs not 7.
+</I>&gt;<i>
+</I>&gt;<i> 	0. SYN			SYN-ACK
+</I>&gt;<i> 	1. ACK			220
+</I>&gt;<i> 	2. EHLO			250
+</I>&gt;<i> 	3. MAIL RCPT DATA	250 250 354
+</I>&gt;<i> 	4. MSG . QUIT		250 221
+</I>&gt;<i> 	5. close socket
+</I>&gt;<i>
+</I>&gt;<i> TCP is fine, latency is primarily the result of application protocol
+</I>&gt;<i> details, not TCP overhead. The only TCP overhead above is 1 extra RTT
+</I>&gt;<i> for the connection setup. Everything else is SMTP not TCP, and running
+</I>&gt;<i> SMTP over UDP (with ideal conditions and no lost packets, ...) would
+</I>&gt;<i> save just 1 RTT.
+</I>&gt;<i>
+</I>&gt;<i>    
+</I>re:
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#21">http://www.garlic.com/~lynn/aadsm28.htm#21</A> Dutch Transport Card Broken
+
+sorry, I didn't say that TCP required seven round-trips for reliable 
+exchange;
+the statement was that minimum TCP operation was seven packet
+exchange (for reliable operation) .... sort of 3.5 round-trips. That
+VMTP (rfc 1045) reduced that to minimum of five packet exchange
+(sort of 2.5 round-tips) ... and that XTP got it to a minimum of three
+packet exchange (sort of 1.5 round-trips) for reliable operation.
+
+from my RFC index
+<A HREF="http://www.garlic.com/~lynn/rfcietff.htm">http://www.garlic.com/~lynn/rfcietff.htm</A>
+
+rfc 1045 summary
+<A HREF="http://www.garlic.com/~lynn/rfcidx3.htm#1045">http://www.garlic.com/~lynn/rfcidx3.htm#1045</A>
+
+1045 E
+  VMTP: Versatile Message Transaction Protocol: Protocol specification,
+  Cheriton D., 1988/02/01 (123pp) (.txt=264928) (Refs 955, 966, 969)
+  (Ref'ed By 1050, 1072, 1105, 1106, 1190, 1263, 1323, 1453, 1458,
+  1700, 2018, 2375, 2757) (VMTP)
+
+as always, clicking on the &quot;.txt=nnn&quot; field (in rfc summary) retrieves 
+the actual RFC.
+
+
+If there is more than minimum amount of data ... TCP might involve more
+than seven packet exchange ... but the minimum packet exchange is
+seven packets (not round-trips).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

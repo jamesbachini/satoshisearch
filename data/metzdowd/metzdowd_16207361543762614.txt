@@ -1,0 +1,12 @@
+<PRE><A HREF="http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/">http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/</A>
+
+Any actual cryptographers care to comment on this? I don't feel
+qualified to judge.
+
+--nash
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,72 @@
+<PRE>Hal Finney wrote:
+&gt;<i> 
+</I>&gt;<i> An example where this concern might arise would be an overly simplistic
+</I>&gt;<i> protocol that used AES in ECB mode - &quot;simple by design&quot;, while the
+</I>&gt;<i> &quot;encryption purist&quot; advocated GCM, &quot;more difficult to break into&quot; but
+</I>&gt;<i> more complex.  Now, I'm sure EKMI is not doing things this way but it
+</I>&gt;<i> is an example where &quot;simple&quot; would not look good to &quot;encryption purists&quot;.
+</I>&gt;<i> 
+</I>
+You are right, Hal.  EKMI does not support AES in ECB mode.
+
+While this may not be acceptable to everyone, in SKSML version 1.0
+we have chosen to currently support only the algorithms specified in
+XML Encryption (<A HREF="http://www.w3.org/TR/xmlenc-core/#sec-Algorithms">http://www.w3.org/TR/xmlenc-core/#sec-Algorithms</A>):
+
+Block Encryption
+
+        1. REQUIRED TRIPLEDES
+           <A HREF="http://www.w3.org/2001/04/xmlenc#tripledes-cbc">http://www.w3.org/2001/04/xmlenc#tripledes-cbc</A>
+        2. REQUIRED AES-128
+           <A HREF="http://www.w3.org/2001/04/xmlenc#aes128-cbc">http://www.w3.org/2001/04/xmlenc#aes128-cbc</A>
+        3. REQUIRED AES-256
+           <A HREF="http://www.w3.org/2001/04/xmlenc#aes256-cbc">http://www.w3.org/2001/04/xmlenc#aes256-cbc</A>
+        4. OPTIONAL AES-192
+           <A HREF="http://www.w3.org/2001/04/xmlenc#aes192-cbc">http://www.w3.org/2001/04/xmlenc#aes192-cbc</A>
+
+Key Transport
+
+        1. REQUIRED RSA-v1.5
+           <A HREF="http://www.w3.org/2001/04/xmlenc#rsa-1_5">http://www.w3.org/2001/04/xmlenc#rsa-1_5</A>
+        2. REQUIRED RSA-OAEP
+           <A HREF="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p">http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p</A>
+
+Message Authentication
+
+        1. RECOMMENDED XML Digital Signature
+           <A HREF="http://www.w3.org/2000/09/xmldsig#">http://www.w3.org/2000/09/xmldsig#</A>
+
+Message Digest
+
+        1. REQUIRED SHA1
+           <A HREF="http://www.w3.org/2000/09/xmldsig#sha1">http://www.w3.org/2000/09/xmldsig#sha1</A>
+        2. RECOMMENDED SHA256
+           <A HREF="http://www.w3.org/2001/04/xmlenc#sha256">http://www.w3.org/2001/04/xmlenc#sha256</A>
+        3. OPTIONAL SHA512
+           <A HREF="http://www.w3.org/2001/04/xmlenc#sha512">http://www.w3.org/2001/04/xmlenc#sha512</A>
+
+Encoding
+
+        1. REQUIRED base64
+           <A HREF="http://www.w3.org/2000/09/xmldsig#base64">http://www.w3.org/2000/09/xmldsig#base64</A>
+
+Even though SHA-384 does not appear on the XMLEnc digest list, we do
+support it too (the underlying crypto libraries support it, so it was
+no big deal to add it).  We will also recommend that SHA1 not be used,
+along the timelines suggested by NIST, despite its appearance on this
+list.
+
+I understand that the W3C has started-up the XML Security WG again,
+and as these standards are updated, we will follow their work and
+support them in EKMI as appropriate.  Should there be requests from
+the OASIS community that there be support for algorithms that are not
+in XMLEnc, the Technical Committee will discuss and vote on it.
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

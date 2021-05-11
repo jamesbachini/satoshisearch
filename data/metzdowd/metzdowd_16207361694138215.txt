@@ -1,0 +1,20 @@
+<PRE>List,
+
+Finally, an open source FDE (Full Disk Encryption) for Win32. It is the 
+first one I am aware of:
+
+www.truecrypt.org
+
+TC is not a new player, but starting February 5th (version 5) it also 
+provides FDE.
+
+Didn't get to try it yet.
+
+Hagai.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

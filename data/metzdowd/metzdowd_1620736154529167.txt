@@ -1,0 +1,16 @@
+<PRE>Am Donnerstag, den 30.08.2007, 20:43 -0500 schrieb travis
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">+ml-cryptography at subspacefield.org</A>:
+&gt;<i> If you have a break of some scheme you wish to contribute, please
+</I>&gt;<i> do forward me a URL and I'll link to it. 
+</I>
+Sorry, german, but definitely worth reading:
+
+<A HREF="http://www.kryptochef.de/">http://www.kryptochef.de/</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: Dies ist ein digital signierter Nachrichtenteil
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070903/33b1ee57/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20070903/33b1ee57/attachment.pgp</A>&gt;
+</PRE>

@@ -1,0 +1,38 @@
+<PRE>&gt;&gt;<i> A cheap USB camera would make a good source.
+</I>&gt;&gt;<i> The cheaper the better, too. Pull a frame off,
+</I>&gt;&gt;<i> hash it, and it's got entropy, even against a
+</I>&gt;&gt;<i> white background. No lava lamp needed.
+</I>&gt;<i>
+</I>&gt;<i> I sort of agree, but I feel cautious about recommending that people
+</I>&gt;<i> use their holiday snaps.  And then post them on line...  if you see
+</I>&gt;<i> where I am going :)
+</I>&gt;<i>
+</I>&gt;<i> But it is a good suggestion.
+</I>
+That's not at all what I suggested. There are so many ways that one  
+can creatively screw up reasonable cryptographic advice that I don't  
+think it's worth bothering with.
+
+The point is that if you take a cheap 640x480 (or 320x240) webcam and  
+point it against a photographic grey card, there's going to be a lot  
+of noise in it, and this noise is at its bottom quantum in nature.  
+Thus, there's a lot of entropy in that noise. Photographic engineers  
+work *hard* to remove that noise, and you pay for a lack of noise.
+
+I'm willing to bet that if I give you hashes of frames, knowing this  
+process, you can't get pre-images. I'll bet that you can't get pre- 
+images even if I let you put a similar camera next to the one I'm  
+using. In short, I'm willing to bet that a cheap camera is a decent  
+random number source, even if you try to control the image source, to  
+the tune of 128-256 bits of entropy per frame.
+
+No lava lamps are needed, no weird hardware. Just use the noise in a  
+CCD.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

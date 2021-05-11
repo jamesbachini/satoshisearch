@@ -1,0 +1,55 @@
+<PRE>interesting paper. but i fail to see how this could be &quot;deadly&quot; (as
+the author puts it) to the disk encryption products.
+
+This methods requires the computer to be &quot;recently&quot; turned-on and unlocked.
+
+So the only way it would work is that the victim unlocks the disks
+i.e. enter their preboot password and turn off the computer and
+&quot;immediately&quot; handover (conveniently) the computer to the attacker so
+that the attacker remove the DRAM chip and store in nitrogen. And the
+attacker has to do all this in less then 2 seconds.... :) If the
+attacker is standing right next to the victim, why even let the victim
+turn-off the unlocked computer????
+
+Or am I missing something?
+
+-- 
+Saqib Ali,
+<A HREF="http://www.full-disk-encryption.net">http://www.full-disk-encryption.net</A>
+
+
+On 2/21/08, Perry E. Metzger &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+&gt;<i>
+</I>&gt;<i>  Ed Felten blogs on his latest research:
+</I>&gt;<i>
+</I>&gt;<i>  <A HREF="http://www.freedom-to-tinker.com/?p=1257">http://www.freedom-to-tinker.com/?p=1257</A>
+</I>&gt;<i>
+</I>&gt;<i>  Excerpt:
+</I>&gt;<i>
+</I>&gt;<i>     Today eight colleagues and I are releasing a significant new
+</I>&gt;<i>     research result. We show that disk encryption, the standard
+</I>&gt;<i>     approach to protecting sensitive data on laptops, can be defeated
+</I>&gt;<i>     by relatively simple methods. We demonstrate our methods by using
+</I>&gt;<i>     them to defeat three popular disk encryption products: BitLocker,
+</I>&gt;<i>     which comes with Windows Vista; FileVault, which comes with MacOS
+</I>&gt;<i>     X; and dm-crypt, which is used with Linux.
+</I>&gt;<i>
+</I>&gt;<i>  More info: <A HREF="http://citp.princeton.edu/memory">http://citp.princeton.edu/memory</A>
+</I>&gt;<i>
+</I>&gt;<i>  Paper: <A HREF="http://citp.princeton.edu.nyud.net/pub/coldboot.pdf">http://citp.princeton.edu.nyud.net/pub/coldboot.pdf</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>  --
+</I>&gt;<i>  Perry E. Metzger                <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+</I>&gt;<i>
+</I>&gt;<i>  ---------------------------------------------------------------------
+</I>&gt;<i>  The Cryptography Mailing List
+</I>&gt;<i>  Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

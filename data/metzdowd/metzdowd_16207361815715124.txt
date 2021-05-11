@@ -1,0 +1,22 @@
+<PRE>
+Excerpt:
+
+   Bruce Haggard, an election commissioner in Faulkner County,
+   Arkansas, is baffled by a problem that occurred with two voting
+   machines in this month's state primary elections. The machines
+   allocated votes cast in one race to an entirely different race that
+   wasn't even on the electronic ballot. The problem resulted in the
+   wrong candidate being declared victor in a state House nomination
+   race.
+
+<A HREF="http://blog.wired.com/27bstroke6/2008/05/arkansas-voting.html">http://blog.wired.com/27bstroke6/2008/05/arkansas-voting.html</A>
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

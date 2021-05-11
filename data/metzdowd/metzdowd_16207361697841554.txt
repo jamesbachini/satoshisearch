@@ -1,0 +1,60 @@
+<PRE>Joseph Ashwood writes, regarding unauthenticated DH:
+&gt;<i> I would actually recommend sending all the public data. This does not take 
+</I>&gt;<i> significant additional space and allows more verification to be performed. I 
+</I>&gt;<i> would also suggest looking at what exactly the goal is. As written this 
+</I>&gt;<i> provides no authentication just privacy, and if b uses the same private key 
+</I>&gt;<i> to generate multiple yb the value of b will slowly leak.
+</I>
+I'm not familiar with this last claim, that the value of b's private key
+(presuming that is what you mean) would slowly leak if it were reused for
+many DH exchanges. Can you explain what you mean? Are you talking about
+Lim&amp;Lee style attacks where the recipient does not check the parameters
+for validity? In that case I would say the private exponent would leak
+quickly rather than slowly. But if the parameters are checked, I don't
+see how that would leak a reused exponent.
+
+&gt;<i> You can then use the gpb trio for DSA, leveraging the key set for more 
+</I>&gt;<i> capabilities.
+</I>
+Presuming here you mean (g,p,q) as suitable for reuse. This raises the
+question, is the same set of (g,p,q) parameters suitable for use in both
+DH exchange and DSA signatures?
+
+&gt;<i>From the security engineering perspective, I'd suggest that the goals and
+</I>threat models for encryption vs signatures are different enough that one
+would prefer different parameters for the two. For DSA signatures, we'd
+like small subgroups, since the subgroup size determines the signature
+size. This constraint is not present with DH encryption, where a large
+subgroup will work as well as a small one. Large subgroups can then
+support larger private exponents in the DH exchange.
+
+Now it may be argued that large subgroups do not actually increase
+security in the DH exchange, because index calculus methods are
+independent of subgroup size. In fact, parameters for DSA signatures
+are typically chosen so that subgroup based methods such as Shanks that
+take sqrt(q) cost are balanced against estimates of index calculus
+work to break p. However, this balancing is inherently uncertain and
+it's possible that p-based attacks will turn out to be harder than ones
+based on q. Hence one would prefer to use a larger q to provide a margin
+of safety if the costs are not too high. While there is a computational
+cost to using a larger subgroup for DH exchange, there is no data cost,
+while for DSA there are both computational and data costs. Therefore the
+tradeoffs for DH would tend to be different than for DSA, and a larger
+q would be preferred for DH, all else equal. In fact it is rather common
+in DH parameter sets to use Sophie-Germain primes for q.
+
+We may also consider that breaking encryption keys is a passive
+attack which can be mounted over a larger period of time (potentially
+providing useful information even years after the keys were retired)
+and is largely undetectable; while breaking signatures, to be useful,
+must be performed actively, carries risks of detection, and must be
+completed within a limited time frame. All these considerations motivate
+using larger parameter sets for DH encryption than for DSA signatures.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

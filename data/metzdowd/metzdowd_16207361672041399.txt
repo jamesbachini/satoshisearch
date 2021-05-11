@@ -1,0 +1,15 @@
+<PRE>&gt;<i> <A HREF="http://www.intersil.com/cda/deviceinfo/0,1477,ISL6296,0.html">http://www.intersil.com/cda/deviceinfo/0,1477,ISL6296,0.html</A>
+</I>
+
+&quot;A 32-Bit CRC-based hash engine (FlexiHashTM)
+calculates the authentication result immediately after
+receiving a 32-Bit random challenge code.&quot;
+
+huh?
+heh!
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

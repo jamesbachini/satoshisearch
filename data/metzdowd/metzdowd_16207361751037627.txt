@@ -1,0 +1,19 @@
+<PRE>On Apr 28, 2008, at 12:58 PM, John Denker wrote:
+&gt;<i> Of course we should insist on an open-source boot ROM code:
+</I>&gt;<i> The boot ROM should check the pgp signature of each PCI card's
+</I>&gt;<i> BIOS code before letting it get control.  And then it should
+</I>&gt;<i> check the pgp signature of the operating system before booting
+</I>&gt;<i> it.  I don't know of any machine that actually does this
+</I>
+
+The OLPC XO-1 laptop has an open-source bootloader (Open Firmware)  
+which checks the operating system signature before passing control to  
+it.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

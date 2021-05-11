@@ -1,0 +1,90 @@
+<PRE>On Mon, 28 Apr 2008, Ed Gerck wrote:
+|<i> Leichter, Jerry wrote:
+</I>|<i> &gt; I suspect the only heavy-weight defense is the same one we use against
+</I>|<i> &gt; the &quot;Trusting Trust&quot; hook-in-the-compiler attack:  Cross-compile on
+</I>|<i> &gt; as many compilers from as many sources as you can, on the assumption
+</I>|<i> &gt; that not all compilers contain the same &quot;hook&quot;. ...
+</I>|<i> &gt; Of course, you'd end up with a machine no faster than your slowest
+</I>|<i> &gt; chip, and you'd have to worry about the correctness of the glue
+</I>|<i> &gt; circuitry that compares the results. 
+</I>|<i> 
+</I>|<i> Each chip does not have to be 100% independent, and does not have to
+</I>|<i> be used 100% of the time.
+</I>|<i> 
+</I>|<i> Assuming a random selection of both outputs and chips for testing, and
+</I>|<i> a finite set of possible outputs, it is possible to calculate what
+</I>|<i> sampling ratio would provide an adequate confidence level -- a good
+</I>|<i> guess is 5% sampling.
+</I>I'm not sure how you would construct a probability distribution that's
+useful for this purpose.  Consider the form of one attack demonstrated
+in the paper:  If a particular 64-bit value appears in a network packet,
+the code will jump to the immediately succeeding byte in the packet.
+Let's for the sake of argument assume that you will never, by chance,
+see this 64-bit value across all chip instances across the life of the
+chip.  (If you don't think 64 bits is enough to ensure that, use 128
+or 256 or whatever.)  Absent an attack, you'll never see any deviation
+from the theoretical behavior.  Once, during the lifetime of the system,
+an attack is mounted which, say, grabs a single AES key from memory and
+inserts it into the next outgoing network packet.  That should take no
+more than a few tens of instructions.  What's the probability of your
+catching that with any kind of sampling?
+
+|<i> This should not create a significant impact on average speed, as 95%
+</I>|<i> of the time the untested samples would not have to wait for
+</I>|<i> verification (from the slower chips). 
+</I>I don't follow this.  Suppose the system has been running for 1 second,
+and you decide to compare states.  The slower system has only completed
+a tenth of the instructions completed by the faster.  You now have to
+wait .9 seconds for the slower one to catch up before you have anything
+to compare.
+
+If you could quickly load the entire state of the faster system just
+before the instruction whose results you want to compare into the
+slower one, you would only have to wait one of the slower systems's
+instruction times - but how would you do that?  Even assuming a
+simple mapping between the full states of disparate systems, the
+state is *huge* - all of memory, all the registers, hidden information
+(cache entries, branch prediction buffers).  Yes, only a small amount
+of it is &quot;relevant&quot; to the next instruction - but (a) how can you
+find it; (b) how can you find it *given that the actual execution of
+the next instruction may be arbitrarily different from what the
+system model claims*?
+
+|<i>					One could also trust-certify
+</I>|<i> each chip based on its positive, long term performance -- which could
+</I>|<i> allow that chip to run with much less sampling, or none at all.
+</I>Long term-performance against a targetted attack means nothing.
+
+|<i> In general, this approach is based on the properties of trust when
+</I>|<i> viewed in terms of Shannon's IT method, as explained in [*]. Trust is
+</I>|<i> seen not as a subjective property, but as something that can be
+</I>|<i> communicated and measured.  One of the resulting rules is that trust
+</I>|<i> cannot be communicated by self-assertions (ie, asking the same chip)
+</I>|<i> [**]. Trust can be positive (what we call trust), negative (distrust),
+</I>|<i> and zero (atrust -- there is no trust value associated with the
+</I>|<i> information, neither trust nor distrust). More in [*].
+</I>The papers look interesting and I'll have a look at them, but if you
+want to measure trust, you have to have something to start with.  What
+we are dealing with here is the difference between a random fault and
+a targetted attack.  It's quite true that long experience with a chip
+entitles you to trust that, given random data, it will most likely
+produce the right results.  But no amount of testing can possibly
+lead to proper trust that there isn't a special value that will induce
+different behavior.
+							-- Jerry
+
+|<i> Cheers,
+</I>|<i> Ed Gerck
+</I>|<i> 
+</I>|<i>  References:
+</I>|<i> [*] www.nma.com/papers/it-trust-part1.pdf
+</I>|<i> www.mcwg.org/mcg-mirror/trustdef.htm
+</I>|<i> 
+</I>|<i> [**] Ken's paper title (op. cit.) is, thus, identified to be part of
+</I>|<i> the very con game described in the paper.
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

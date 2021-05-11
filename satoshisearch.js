@@ -1,6 +1,7 @@
 const rp = require('request-promise');
 const fs = require('fs');
-const commonWords = require('./common-words.json');
+const commonWords = require('./data/common-words.json');
+const satoshiPhrases = require('./data/satoshi-phrases.json'); // Provided by anonymous researcher
 
 const foundWords = [];
 
@@ -34,14 +35,13 @@ const getData = async () => {
 };
 
 const writeOutAgain = async () => {
-  fs.writeFileSync('./satoshiWords.txt', foundWords.join("\n")+"\n", function (err) { });
+  fs.writeFileSync('./data/satoshiWordsLatest.txt', foundWords.join("\n")+"\n", function (err) { });
 }
 
-
 // Data found
-const statoshiWords = ['announcing','peertopeer','doublespending','decentralized','unpack','directory','connects','nodes','node','accepts','youll','firewall','theres','restarted','extensibility','versioning','proofofwork','ridiculously','generate','itll','adjustment','generated','recipient','transaction','theyll','disadvantage','circulation','distributed','transactions','mitigate','tokens','quantities','theyd','reversespamming','spammers','automated','mailboxes','ratio','botnet','harvesters','hasten','selfdefeating','exploiting','interestingly','egold','configure','theyre','inevitably','dumbed','niche','micropayments','paytosend','dialog','resizeable','doubleclicks','bitcoins','hotline','subscription','cannibalize','subscriptions','fulfilling','bootstrapped','effortlessly','vending','simplified','verification','headers','specialists','specialized','bandwidth','prohibitive','bytes','compact','centrally','networks','napster','gnutella','synchronisation','globally','propagate','versions','incorporating','viewpoint','propagated','invalid','selfevident','user','hashed','etched','whichever','receivers','respend','attacker','redo','rewriting','shenanigans','subfactions','cling','sufficiently','discarded','receives','spec','youre','assumptions','blanks','dillinger','compensate','varying','computing','proportionally','inflation','deflation','holders','propagating','cycles','requirement','collectively','overpower','generating','carding','diverting','tweak','output','input','payees','incentive','pendingtransaction','connectblock','removes','pendingtx','disconnectblock','sopping','reorgs','optimisation','broadcasts','transmissions','retry','obsolete','randomly','packets','libertarian','sourcecode','implementation','blinding','identities','reliance','recourse','prevention','satisfying','seller','circulate','relaying','containing','resolving','cheater','adjudicate','cheaters','simultaneously','doublespend','doublespends','wasnt','pools','refresh','hashcash','preimage','cpuintensive','memoryless','hashes','dominance','proportional','anyones','compensated','predetermined','combining','doublespent','timespan','doubles','calculation','instantant','nonrepudiability','existing','cheques','contested','irreversible','pseudonymous','nyms','identifying','youve','futile','trivially','puppets','credential','establishes','calculates','typically','networkscale','satisfactorily','spreads','exponentially','widely','competitor','overtaking','merchants','doublespender','scammer','downloads','nonfencible','websites','instantaccess','arent','optimize','wouldnt','peer','networking','timeout','coms','fumbled','inventoryrequestdata','introduces','latency','transmit','queues','conserving','coding','functional','byzantine','rephrase','wifi','theyve','stimulate','instantaneous','computation','proofsofwork','verifying','expended','allotted','exhibited'];
+const statoshiWords = ['announcing','peertopeer','doublespending','decentralized','unpack','directory','connects','nodes','node','accepts','youll','firewall','theres','restarted','extensibility','versioning','proofofwork','ridiculously','generate','itll','adjustment','generated','recipient','transaction','theyll','disadvantage','circulation','distributed','transactions','mitigate','tokens','quantities','theyd','reversespamming','spammers','automated','mailboxes','ratio','botnet','harvesters','hasten','selfdefeating','exploiting','interestingly','egold','configure','theyre','inevitably','dumbed','niche','micropayments','paytosend','dialog','resizeable','doubleclicks','bitcoins','hotline','subscription','cannibalize','subscriptions','fulfilling','bootstrapped','effortlessly','vending','simplified','verification','headers','specialists','specialized','bandwidth','prohibitive','bytes','compact','centrally','networks','napster','gnutella','synchronisation','globally','propagate','versions','incorporating','viewpoint','propagated','invalid','selfevident','user','hashed','etched','whichever','receivers','respend','attacker','redo','rewriting','shenanigans','subfactions','cling','sufficiently','discarded','receives','spec','youre','assumptions','blanks','dillinger','compensate','varying','computing','proportionally','inflation','deflation','holders','propagating','cycles','requirement','collectively','overpower','generating','carding','diverting','tweak','output','input','payees','incentive','pendingtransaction','connectblock','removes','pendingtx','disconnectblock','sopping','reorgs','optimisation','broadcasts','transmissions','retry','obsolete','randomly','packets','libertarian','sourcecode','implementation','blinding','identities','reliance','recourse','prevention','satisfying','seller','circulate','relaying','containing','resolving','cheater','adjudicate','cheaters','simultaneously','doublespend','doublespends','wasnt','pools','refresh','hashcash','preimage','intensive','memoryless','hashes','dominance','proportional','anyones','compensated','predetermined','combining','doublespent','timespan','doubles','calculation','instantant','nonrepudiability','existing','cheques','contested','irreversible','pseudonymous','nyms','identifying','youve','futile','trivially','puppets','credential','establishes','calculates','typically','networkscale','satisfactorily','spreads','exponentially','widely','competitor','overtaking','merchants','doublespender','scammer','downloads','nonfencible','websites','instantaccess','arent','optimize','wouldnt','peer','networking','timeout','coms','fumbled','inventoryrequestdata','introduces','latency','transmit','queues','conserving','coding','functional','byzantine','rephrase','wifi','theyve','stimulate','instantaneous','computation','proofsofwork','verifying','expended','allotted','exhibited'];
 
-const reallyUnique = ['conserving','fumbled','instantaccess','nonfencible','nonrepudiability','pseudonymous','futile','trivially','puppets','satisfactorily','collectively','etched','shenanigans','subfactions','extensibility','ridiculously','hasten','selfdefeating','cannibalize','effortlessly','selfevident'];
+const reallyUnique= ['conserving','fumbled','instantaccess','nonfencible','nonrepudiability','pseudonymous','futile','trivially','puppets','satisfactorily','collectively','etched','shenanigans','subfactions','extensibility','ridiculously','hasten','selfdefeating','cannibalize','effortlessly','selfevident'];
 
 const satoshiWordSearch = async () => {
   const authorCount = {};
@@ -57,6 +57,7 @@ const satoshiWordSearch = async () => {
             authorCount[author] = {};
             authorCount[author].wordCount = 0;
             authorCount[author].reallyUnique = 0;
+            authorCount[author].phraseCount = 0;
             authorCount[author].score = 0;
             authorCount[author].emails = 0;
             authorCount[author].words = [];
@@ -66,6 +67,15 @@ const satoshiWordSearch = async () => {
           const link = links[0].split('"').join('');
           const email = await rp(`https://www.metzdowd.com/pipermail/cryptography/${date}/${link}`);
           const mainEmail = email.match(/\<PRE\>([\s\S]*)\<\/PRE\>/g)[0];
+          const firebaseKey = new Date().getTime() + '' + (Math.round(Math.random() * 9999));
+          //fs.writeFileSync(`./data/metzdowd/metzdowd_${firebaseKey}.txt`, mainEmail, function (err) { }); // logging in case it goes offline
+          const cleanMail = mainEmail.toLowerCase().split(/[^a-z]/).join('');
+          satoshiPhrases.forEach((joinedPhrase) => {
+            if (cleanMail.indexOf(joinedPhrase) > -1) {
+              authorCount[author].phraseCount += 1;
+              console.log(author,joinedPhrase);
+            }
+          });
           mainEmail.split("\n").forEach((emailLine) => {
             if (emailLine.indexOf('&gt;') === -1) {
               const words = emailLine.split(/(\s|\.|\?|\!|\<|\>)/);
@@ -73,7 +83,7 @@ const satoshiWordSearch = async () => {
               words.forEach((word) => {
                 wordLC = word.toLowerCase().split(/[^a-z]/).join('');
                 if (statoshiWords.indexOf(wordLC) > -1) {
-                  console.log(author+' '+wordLC);
+                  //console.log(author+' '+wordLC);
                   authorCount[author].wordCount += 1;
                   authorCount[author].words.push(wordLC);
                   if (reallyUnique.indexOf(wordLC) > -1) {
@@ -88,7 +98,7 @@ const satoshiWordSearch = async () => {
     }, dateCount*3000);
   });
   setTimeout(() => {
-    fs.writeFileSync('./satoshiFound.json', JSON.stringify(authorCount), function (err) { });
+    fs.writeFileSync('./data/satoshiFound.json', JSON.stringify(authorCount), function (err) { });
     checkScores(authorCount);
   }, 60000);
 };
@@ -98,11 +108,12 @@ const checkScores = (authorData) => {
   let satoshi = 'Satoshi';
   Object.keys(authorData).forEach((authorKey) => {
     const author = authorData[authorKey];
-    if (author.wordCount < 10  || author.emails < 3) return false;
-    const wordDensity = Math.round(author.wordCount / author.emails);
-    if (wordDensity <= 3) return false;
-    const score = (author.reallyUnique * 3) + wordDensity;
-    console.log(`${score} - ${author.name}`);
+    //if (author.wordCount < 10  || author.emails < 3) return false;
+    //const wordDensity = Math.round(author.wordCount / author.emails);
+    const preScore = (author.phraseCount * 5) + (author.reallyUnique * 3) + (author.wordCount * 1);
+    const score = Math.round(preScore / author.emails);
+    if (score <= 5) return false;
+    console.log(`${score} - ${author.name} - [${author.phraseCount} / ${author.emails}]`);
     if (score > highestScore && author.name !== 'Satoshi Nakamoto') {
       highestScore = score;
       satoshi = author.name;
@@ -110,6 +121,5 @@ const checkScores = (authorData) => {
   });
   console.log(`\n\n${satoshi} is the closest match to Satoshi Nakamoto`);
 };
-
 
 satoshiWordSearch();

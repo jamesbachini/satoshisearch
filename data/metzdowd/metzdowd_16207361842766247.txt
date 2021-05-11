@@ -1,0 +1,23 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> For most crypto protocols, usability is job #8,107,
+</I>&gt;<i> right after &quot;did we get the punctuation right in the footnotes for the third
+</I>&gt;<i> appendix?&quot;.
+</I>
+Usability disasters such as DNSSEC are more common than strictly 
+cryptographic disasters such as wifi.  DNSSEC is near impossible to use 
+correctly end to end.
+
+Usually a cryptographic system is very difficult to use correctly, or to 
+use incorrectly - as for example various VPN products.
+
+Sometimes a cryptographic system is easy to use incorrectly, difficult 
+to use correctly, for example https and pretty much everything built on 
+top of tls-ssl (old flame, never resolved, as to whether this is an 
+inherent design flaw in the very concept of a cryptographic layer and 
+any product that uses layering to factorize out the cryptographic code)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,18 @@
+<PRE>Darren J Moffat wrote:
+&gt;<i> Warnings aren't enough in this context [ whey already exists ] the
+</I>&gt;<i> only thing that will work is stopping the page being seen - replacing
+</I>&gt;<i> it with a clearly worded explanation with *no* way to pass through
+</I>&gt;<i> and render the page (okay maybe with a debug build of the browser but
+</I>&gt;<i> not in the shipped product).
+</I>
+One thing that concerns me is that in the new release of firefox, there
+appears to be NO way to get to a site that has a bad certificate (or
+self signed certificate) other than overriding the warning permanently -
+no &quot;ok let me see it, I have seen the warning and want to look just this
+once&quot; that the &quot;remember mismatched domains&quot; plugin for 2.x gave you.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

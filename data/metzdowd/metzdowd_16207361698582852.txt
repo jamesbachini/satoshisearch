@@ -1,0 +1,56 @@
+<PRE>On Wed, 13 Feb 2008, Dave Korn wrote:
+&gt;<i> On 11 February 2008 17:37, Crawford Nathan-HMGT87 wrote:
+</I>&gt;<i> &gt; I'm wondering if they've considered the possibility of EMI skewing
+</I>&gt;<i> &gt; the operation of the device, or other means of causing the device
+</I>&gt;<i> &gt; to genearate &quot;less than completely random&quot; numbers.
+</I>&gt;<i>
+</I>&gt;<i>   Not necessarily a problem, although it does depend on their
+</I>&gt;<i> design.  Even if by saturating the chip in an intense EM field you
+</I>&gt;<i> can skew the result almost all the way to 1 or 0, won't the standard
+</I>&gt;<i> debiassing trick of examining successive pairs of bits handle that?
+</I>
+It depends on the attack: Consider John von Neumann's algorithm
+that, say, outputs the first bit in each pair if bits are
+different. If you apply EM attack and get 0s almost everywhere
+
+ 00 00 00 01 00 00 00 10 00 00 10 00 00
+
+but cannot control where 1s are exactly, then JvN corrector helps, but
+if your EM attack is such that it makes long runs of 0s and 1s
+
+ 00 00 00 11 11 11 10 00 00 00 01 11 11
+
+and you can detect when the bits are produced then you know exactly
+what bits are produced (if a bit produced on transition from 0s to 1s
+then it is 0).
+
+
+Considering speed of nondeterministic RNG, it seems pointless at least
+for those who go thru FIPS certification. FIPS 140-2 says
+
+  Commercially available nondeterministic RNGs may be used for
+  the purpose of generating seeds for Approved deterministic
+  RNGs. [...] An Approved RNG shall be used for the generation
+  of cryptographic keys used by an Approved security function.
+  The output from a non-Approved RNG may be used 1) as input
+  (e.g., seed, and seed key) to an Approved deterministic RNG or
+  2) to generate initialization vectors (IVs) for Approved
+  security function(s).
+
+and currently there is no Approved nondeterministic RNG, so the
+only option is to use nondeterministic RNG to generate seeds
+for the deterministic one and one does not need MBps speed to
+generate a seed.
+
+But again, comparing a useful feature and a check mark on
+marketing slides, the latter is doomed to be implemented.
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

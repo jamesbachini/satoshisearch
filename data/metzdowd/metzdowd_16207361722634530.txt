@@ -1,0 +1,25 @@
+<PRE>On Mon, 25 Feb 2008, Ken Buchanan wrote:
+
+&gt;<i> Adam Boileau demonstrated finding passwords, but of course we already
+</I>&gt;<i> know that it's easy to locate cryptographic keys in large volumes of
+</I>&gt;<i> data (Shamir, van Someren: <A HREF="http://citeseer.ist.psu.edu/265947.html">http://citeseer.ist.psu.edu/265947.html</A>).
+</I>
+This was implemented (in part by some of my colleagues at Leuven as joint
+work with Utimaco) as long ago as 2000:
+
+&quot;KeyGrab TOO The search for keys continues&quot;
+Dirk Janssens, Ronny Bjones, Joris Claessens
+
+Citeseer seems to be offline at the moment, but if anyone's interested in
+reading the paper, I believe I can give you a copy.
+
+
+--Len.
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

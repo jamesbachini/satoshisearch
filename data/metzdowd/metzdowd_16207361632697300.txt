@@ -1,0 +1,27 @@
+<PRE>On 09 December 2007 06:16, Peter Gutmann wrote:
+
+&gt;<i> Reading through &quot;Secure Programming with Static Analysis&quot;, I noticed an
+</I>&gt;<i> observation in the text that newer versions of gcc such as 3.4.4 and 4.1.2
+</I>&gt;<i> treat the pattern:
+</I>&gt;<i> 
+</I>&gt;<i>   &quot;memset(?, 0, ?)&quot;
+</I>&gt;<i> 
+</I>&gt;<i> differently from any other memset in that it's not optimised out.
+</I>
+&gt;<i> Can anyone who knows more about gcc development provide more insight on
+</I>&gt;<i> this? Could it be made an official, supported feature of the compiler?
+</I>
+  I'm sure it could; why not raise it on the GCC mailing list?  It sounds like
+all it would involve would be a patch to the documentation and maybe a comment
+in the source.
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

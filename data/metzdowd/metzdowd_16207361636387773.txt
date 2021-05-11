@@ -1,0 +1,31 @@
+<PRE> From <A HREF="http://cryptanalysis.eu/blog/2007/12/29/mifare-crypto1:">http://cryptanalysis.eu/blog/2007/12/29/mifare-crypto1:</A>
+
+&quot;MiFare&#8217;s CRYPTO1 stream cipher has captured my attention for a while.  
+However, hardware reverse-engineering is not a field I actively engage  
+in. So I was very happy when Karsten Nohl (University of Virginia),  
+Starbug and Henryk Pl&#246;tz gave a talk at the 24C3 [the 24th Congress of  
+the Chaos Computer Club taking place in Berlin at this very moment]  
+yesterday evening showing that they have reverse-engineered most parts  
+of this cipher. CRYPTO1 uses a 48-bit LFSR-based filter generator to  
+generate key stream.
+
+The filter function - if I understood correctly - uses 20 taps (this  
+was not mentioned in the talk, I asked Karsten privately about this)  
+however the degree of the boolean function implementing the filter,  
+thus it remains to be seen whether algebraic attacks can be applied.  
+Even if no algebraic attacks are applied, a BSW sampling TMTO will  
+break CRYPTO1 completely. This was pretty obvious before they gave  
+their talk, but now vendors actually have to worry about this being  
+out in the wild once the feedback and the filter function have been  
+revealed.
+
+My colleague Erik took photos of the slides which I put up on Zooomr  
+[0]. A video recording of the talk should be available shortly and  
+will be linked here.&quot;
+
+[0] <A HREF="http://www.zooomr.com/photos/ralf/sets/26758/">http://www.zooomr.com/photos/ralf/sets/26758/</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

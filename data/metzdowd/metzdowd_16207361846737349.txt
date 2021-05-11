@@ -1,0 +1,52 @@
+<PRE>Thierry Moreau wrote:
+&gt;<i> A)    The big picture refers to the &quot;PKC-only application security 
+</I>&gt;<i> scheme&quot;, in which client-server applications may be secured with 
+</I>&gt;<i> client-side public key pairs, but *no trusted certification authority* 
+</I>&gt;<i> is involved (server operators are expected to maintain a trusted 
+</I>&gt;<i> database of their clients' public keys).
+</I>original PK-init (public key) draft for Kerberos was (only) 
+certificateless public key operation ...
+i.e. kerberos server operators maintaining trusted database of their 
+clients' public keys (in
+lieu of passwords) ... PKI/certificate mode of operation was eventually 
+added to the specification.
+lots of past posts about  certificateless public key kerberos
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#kerberos">http://www.garlic.com/~lynn/subpubkey.html#kerberos</A>
+
+similar implementation was done for RADIUS
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#radius">http://www.garlic.com/~lynn/subpubkey.html#radius</A>
+
+general posts about certificateless (sometimes &quot;naked&quot;) public key
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#certless">http://www.garlic.com/~lynn/subpubkey.html#certless</A>
+
+X9.59 is financial transaction standard also using certificateless 
+public key operation
+<A HREF="http://www.garlic.com/~lynn/x959.html#x959">http://www.garlic.com/~lynn/x959.html#x959</A>
+
+part of the issue was that in the mid-90s, the x9a10 financial standard 
+working group
+had been given the requirement to preserve the integrity of the 
+financial infrastructure
+for all retail payments. One of the issues for x9.59 was that it had to 
+be lightweight enough
+to operate in existing infrastructures. Some of the certificate-oriented 
+payment transaction
+standards from the period resulted in factor of 100 times (two orders of 
+magnitude) payload
+(i.e. certificate payload overhead could be 100 times larger than basic 
+payment transaction)
+and processing (i.e. certificate processing overhead could be 100 times 
+larger than basic
+payment transaction) bloat
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#bloat">http://www.garlic.com/~lynn/subpubkey.html#bloat</A>
+
+general discussions of the &quot;account authority public key&quot; model (as 
+contrast to
+&quot;certification authority public key&quot; model)
+<A HREF="http://www.garlic.com/~lynn/x959.html#aads">http://www.garlic.com/~lynn/x959.html#aads</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

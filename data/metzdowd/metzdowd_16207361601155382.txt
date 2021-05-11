@@ -1,0 +1,232 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+ &gt; I wonder if we here could develop a handshake that was
+ &gt; cryptographically secure, resistant to CPU DoS now,
+ &gt; and would be possible to adjust as we get faster at
+ &gt; doing crypto operations to reduce latency even
+ &gt; further.  Basically an easy knob for balancing high
+ &gt; latency and DoS resistance vs. crypto overhead and low
+ &gt; latency. It should be adjustable on either end without
+ &gt; altering the other.
+
+A problem with the OSI Layer model is that as one piles
+one layer on top  of another, one is apt to get
+redundant round trips.
+
+Redundant round trips become an ever more serious
+problem as bandwidths and processor speeds increase, but
+round trip times reminds constant, indeed increase as we
+become increasingly global and increasingly rely on
+space based communications.
+
+Used to be that the biggest problem with encryption was
+the asymmetric encryption calculations - the PKI model
+has lots and lots of redundant and excessive asymmetric
+encryptions.   It also has lots and lots of redundant
+round trips.  Now that we can use the NVIDIA GPU with
+CUDA as a very high speed cheap massively parallel
+cryptographic coprocessor, excessive PKI calculations
+should become less of a problem, but excess round trips
+are an ever increasing problem.
+
+Any significant authentication and encryption overhead
+will result in people being too clever by half, and only
+using encryption and authentication where it is needed,
+with the result that they invariably screw up and fail
+to use it where it is needed - for example the login on
+the http page.  So we have to lower the cost of
+encrypted authenticated communications, so that people
+can simply encrypt and authenticate everything without
+needing to think about it.
+
+To get stuff right, we have to ditch the OSI layer model
+- but simply ditching it without replacement will result
+in problems.  It exists for a reason, and we have to
+replace it with something else.  I am working on an idea
+for a replacement, a protocol compiler, which provides
+compile time protocol layering, in place of OSI's run
+time protocol layering.  I hope to publish it in due
+course, but I am not going to report that idea in this
+posting.
+
+Instead, I simply describe the characteristics of a
+packet protocol that establishes an encrypted connection
+on top of unreliable packets with minimal round trips
+without increasing fragility to DoS.
+
+To establish a connection, we need to set a bunch of
+values specific to this particular channel, and also
+create a shared secret that eavesdroppers and active
+attackers cannot discover.
+
+The client is the part that initiates the communication,
+the server is the party that responds.
+
+I assume a mode that provides both authentication and
+encryption - if a packet decrypts into a valid message,
+this shows it originated from an entity possessing the
+shared secret.  This does not provide signing - the
+recipient cannot prove to a third party that he received
+it, rather than making it up.
+
+The client typically uses a transient public key.  If it
+has a permanent relationship with the server, it uses a
+durable public key representing that relationship, one
+key per relationship.  This public key is not in fact
+public, but is a shared secret between the server and
+the client.  The corresponding durable  secret key is
+not necessarily stored on the client for an unlimited
+time, but may be, at the cost of an extra round trip,
+generated from a durable salt stored on the server and a
+short password that is not a shared secret, but a truly
+private secret known only to the client, subject to
+dictionary attacks by the server, or by anyone that
+manages to steal the server login database, but not
+subject to dictionary attacks by eavesdroppers or by
+active adversaries who interfere with messages.  Hence
+the need for the client durable public key to remain
+secret.
+
+If the client wishes to prove rightful possession of a
+certain reputation to a third party, it uses transient
+cookies issued by a reputation server.  Servers,
+however, generally have distributed reputation attached
+to their long lived public keys - distributed reputation
+being held by clients, not by some reputation server.
+
+In this post I ignore the hard question of server key
+distribution, glibly invoking Zooko's triangle without
+proposing an implementation of the other two points and
+three sides of the triangle or a solution to the problem
+of managing distributed reputations in Zooko's triangle.
+
+If the client wishes to login, wishes the server to
+recall a durable relationship:
+
+Client generates random ephemeral private key x,
+generates ephemeral public key X=g^x, recollects
+relationship specific durable private and public keys c
+and C, recollects Server public key S
+
+Client -&gt; Server:
+	Client's network address and port on which
+	client will receive packets, protocol
+	identifier, protocol version and variant
+	numbers, X, a client identifier that enables the
+	server to recall the public key corresponding to
+	the durable relationship, and client time that
+	the message was sent.
+
+If the requested protocol is not OK, we go into protocol
+negotiation.  Assuming it is OK, which it probably will
+be, server assigns a port number that the client is to
+use in sending it packets.
+
+Server generates random ephemeral private key y,
+generates ephemeral public key Y=g^y + C, and random
+number v.
+
+Server does not generate a new ephemeral private key for
+every connection attempt.  It generates a new ephemeral
+private key at most every few seconds.  It does however
+generate a new random number v for every connection
+attempt.
+
+The port address has to contain enough bits that DoS
+cannot cause the server to rapidly rotate through all
+free ports.  Server encrypts the port number using a
+symmetric key known only to itself, together with the
+network address information and other connection setup
+material, v, and sufficient information to identify
+which value of y and Y, out of several recent values, it
+is using for this connection attempt.
+
+Let us call this block of encrypted information Q.  This
+value will be sent to client, and then back to server,
+unchanged.  Its function is to avoid the necessity for
+the server to allocate memory for a client that has not
+yet validated. Instead the state information is sent
+back and forth.  To save space, v could be a hash of Q.
+
+It does no harm to use the same value of y with several
+clients, provided that each client uses its own X - it
+is only a problem if y stays unchanged for days.  We
+limit the frequency at which y is changed to be such
+that the CPU cannot be overloaded.  It would do harm to
+use the same value of v with several clients, for if one
+client knows in advance what the value of v is going to
+be, it can cook X to fake being another client.
+
+Server --&gt; Client:
+	Q, Y, v, port number, the channel setup
+	information port on which server will receive
+	packets, server time that the previous message
+	from the client was received, server time that
+	this message was sent, and the various bits of
+	information such as the window shift etc needed
+	for flow control of the channel, and a request
+	for proof of work on Q.
+
+Client does the proof of work, and generates a random
+number u, which is generated after Server has committed
+itself to Y, because we don't want Server to know u
+until after it has committed to a particular value for
+y.   Similarly, we did not want client to know v until
+after it committed itself to a particular value for x.
+
+Client computes shared secret as hash of ((Y-C) .
+S^u)^(x+cv)
+
+Now Client encrypts and authenticates the first packet
+of actual information, the payload to be transmitted in
+this encrypted and authenticated conversation, preceding
+it with the random number u.
+
+Client --&gt; Server:
+	u, server encrypted setup information as
+	received, proof of work, payload encrypted by
+	shared secret. client time that the previous
+	message from the server was received and that
+	this message to the server was sent, encrypted
+	by the shared secret.
+
+Server checks the proof of work, decrypts server
+encrypted setup information to make sure it is validly
+formatted, and therefore that it originated from the
+itself, then creates an entry in its hash table for this
+connection. It computes the shared secret as hash of
+(X.C^v)^(y+su)
+
+This will agree with the client side shared secret, for
+they are both equal to g^((y+su)(x+cv))
+
+You will notice that the server only allocates memory
+and does heavy computation *after* the client has
+successfully performed proof of work and shown that it
+is indeed capable of receiving data sent to the
+advertised network address.
+
+Now we have a shared secret, protocol negotiated, client
+logged in, in one round trip plus the third one way trip
+carrying the actual data - the same number of round
+trips as when setting up an unencrypted unauthenticated
+TCP connection.
+
+You will notice there is no explicit step checking that
+both have the same shared secret - This is because we
+assume that each packet sent is also authenticated by
+the shared secret, so if they do not have the same
+secret, nothing will authenticate.
+
+Let us suppose instead that the client is *not* going to
+login - that the client is a random anonymous client
+logging in to a known server with a widely known public
+key.
+
+In that case, the protocol is the same except that c is
+always zero, and v is irrelevant.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

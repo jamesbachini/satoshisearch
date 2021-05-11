@@ -1,0 +1,43 @@
+<PRE>On Tue, Sep 09, 2008 at 01:52:30PM -0500, Thierry Moreau wrote:
+&gt;<i> Here is a simple exploit which alters the ietf.org main page. Insert the 
+</I>&gt;<i> following four lines
+</I>&gt;<i>
+</I>&gt;<i> [...]
+</I>&gt;<i>
+</I>&gt;<i> to the file /usr/lib/firefox/res/html.css
+</I>&gt;<i>
+</I>&gt;<i> [...]
+</I>&gt;<i>
+</I>&gt;<i> OK, this requires root access because the Linux community is generally 
+</I>&gt;<i> security-conscious. But you should see the general idea: paranoia leads me 
+</I>&gt;<i> to think of an adversary who would threatens application integrity (such as 
+</I>&gt;<i> the above) without leaving much trace of computer system penetration.
+</I>&gt;<i>
+</I>&gt;<i> [...]
+</I>&gt;<i>
+</I>&gt;<i> Does anybody have any tip about how to mitigate this vulnerability, with 
+</I>&gt;<i> minimal assumptions about the client web browser?
+</I>
+As the service provider you have little choice but to assume local
+security on the client side IF you want to allow clients that you don't
+control (and you don't really have a choice about _that_; most SPs don't
+anyways).
+
+I don't see how to mitigate all possible attacks you can imagine that
+involve a compromised client.
+
+&gt;<i> The habit of storing css style information in various style sheets files 
+</I>&gt;<i> separate from the HTML contents is worrysome as each stylesheet retrieval 
+</I>&gt;<i> operation is a potential attack vector.
+</I>
+You could say the same thing about AJAX, ...  This train left the
+station long ago, and I was on it then along with everyone else.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

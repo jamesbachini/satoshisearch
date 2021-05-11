@@ -1,0 +1,18 @@
+<PRE>Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; writes:
+
+&gt;<i>I must confess that I said that because I did not have the energy to figure
+</I>&gt;<i>out the other routes to adding entropy, such as adding an int (e.g. a PID,
+</I>&gt;<i>which I'm told still makes it in there).
+</I>
+So just to clarify, does the Debian patch only remove the ability to add
+uninitialised memory (which will be all-zeroes anyway on an OS with proper
+resource controls) or does it remove the ability to add any entropy at all?
+The advisory makes it sound like it's the latter.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

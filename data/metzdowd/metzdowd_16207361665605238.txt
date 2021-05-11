@@ -1,0 +1,24 @@
+<PRE>On Jan 31, 2008, at 4:07 PM, Guus Sliepen wrote:
+&gt;<i> I hope that in the future, if you see an application doing something
+</I>&gt;<i> wrong, you don't immediately give the developers the soundwave  
+</I>&gt;<i> therapy.
+</I>
+
+The wider point of Peter's writeup -- and of the therapy -- is that  
+developers working on security tools should _know_ they're working in  
+a notoriously, infamously hard field where the odds are  
+_overwhelmingly_ against them if they choose to engineer new solutions.
+
+With such understanding, no competent developer should ever set out to  
+build new cryptosystems unless he can explain, point by point, why his  
+needs cannot be met by existing, vetted systems. That explanation  
+should ideally be made public for dissection by the community.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

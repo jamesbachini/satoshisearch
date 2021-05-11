@@ -1,0 +1,44 @@
+<PRE>Anne &amp; Lynn Wheeler &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">lynn at garlic.com</A>&gt; write:
+
+&gt;<i> one of my favorite exchanges from the mid-90s was somebody claiming
+</I>&gt;<i> that adding digital certificates to the electronic payment
+</I>&gt;<i> transaction infrastructure would bring it into the modern age.  my
+</I>&gt;<i> response was that it actually would regress the infrastructure at
+</I>&gt;<i> least a couple decades to the time when online, real-time
+</I>&gt;<i> transactions weren't being done.  The online, real-time transaction
+</I>&gt;<i> provides much higher quality and useful information than a stale,
+</I>&gt;<i> static digital certificate (with an offline paradigm from before
+</I>&gt;<i> modern communication).  Having an available repository about the
+</I>&gt;<i> party being dealt with ... including things like timely, aggregated
+</I>&gt;<i> information (recent transactions) is significantly mover valuable
+</I>&gt;<i> than the stale, static digital certificate environment (the only
+</I>&gt;<i> thing that it has going for it, is it is better than nothing in the
+</I>&gt;<i> oldtime offline environment).
+</I>
+
+&gt;<i> [...]
+</I>
+&gt;<i> EU had also made a statement in the mid-90s that electronic retail
+</I>&gt;<i> payments should be as anonymous as cash.
+</I>
+They can't be as &quot;anonymous as cash&quot; if the party being dealt with can
+be identified.  And the party can be identified if the transaction is
+&quot;online, real-time&quot;.  Even if other clues are erased, there's still
+traffic analysis in this case.
+
+What the offline paradigm has going for it is the possibility of true,
+untraceable anonymity through the use of anonymizing remailers and
+related technologies.
+
+
+ -- StealthMonger &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">StealthMonger at nym.panta-rhei.eu.org</A>&gt;
+
+ --
+   stealthmail: Scripts to hide whether you're doing email, or when,
+   or with whom.  <A HREF="http://stealthsuite.afflictions.org">http://stealthsuite.afflictions.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

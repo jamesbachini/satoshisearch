@@ -1,0 +1,82 @@
+<PRE><A HREF="http://www.physorg.com/news109963481.html">http://www.physorg.com/news109963481.html</A>  25 Sep 2007
+
+ (AP) -- Hackers stole millions of credit card numbers from discount
+retailer TJX Cos. by intercepting wireless transfers of customer information
+at two Miami-area Marshalls stores, according to an eight-month
+investigation by the Canadian government.
+
+The probe led by Canadian Privacy Commissioner Jennifer Stoddart faulted TJX
+for failing to upgrade its data encryption system by the time the electronic
+eavesdropping began in July 2005. The break-in ultimately gave hackers
+undetected access to TJX's central databases for a year and a half, exposing
+at least 45 million credit and debit cards to potential fraud.
+
+ ...
+Retail wireless networks collect and transmit data via radio waves so
+information about purchases and returns can be shared between cash registers
+and store computers. Wireless transmissions can be intercepted by antennas,
+and high-power models can sometimes intercept wireless traffic from miles away.
+
+While such data is typically scrambled, Canadian officials said TJX used an
+encryption method that was outdated and vulnerable. The investigators said
+it took TJX two years to convert from Wireless Encryption Protocol to more
+sophisticated Wi-Fi Protected Access, although many retailers had done so.
+
+Lang said TJX's systems complied with industry standards when the breach
+started. She said TJX chose in 2005 to make the conversion and needed more
+time than some retailers because its systems weren't compatible with the WPA
+standard.
+
+ ---
+
+WLAN Security Service Aims to Boost PCI Compliance   August 31, 2007
+<A HREF="http://www.wi-fiplanet.com/news/article.php/3697436?">http://www.wi-fiplanet.com/news/article.php/3697436?</A>
+
+?Never rely exclusively on wired equivalent privacy (WEP) to protect
+confidentiality and access to a wireless LAN.  If WEP is used, do the following:
+
+
+    * Use with a minimum 104-bit encryption key and 24 bit-initialization value
+    * Use ONLY in conjunction with WPA, WPA2, VPN, or SSL/TLS
+    * Rotate shared WEP keys quarterly (or automatically) [and] whenever
+there are changes in personnel with access to keys
+    * Restrict access based on media access code (MAC) address.?
+
+ ---
+
+The emphasis on the 'in conjunction' part.  There's a cascade effect of
+course,  The security of the WLAN is dependent on the strength of the
+password of the satellite router, router configuration, register
+administrators password, and so on.
+
+There's another article or two on TJX, makes interesting reading, might even
+have been worth a book if they'd only been on to the theft.
+
+<A HREF="http://www.physorg.com/news94480989.html">http://www.physorg.com/news94480989.html</A>  March 30, 2007
+
+<A HREF="http://www.physorg.com/news94568787.html">http://www.physorg.com/news94568787.html</A>  March 31, 2007, wherein there's a
+feeble attempt to paint the problem as single DES as being weak in speculation.
+
+
+T.J. Maxx Data Theft Likely Due To Wireless 'Wardriving'
+<A HREF="http://www.informationweek.com/news/showArticle.jhtml?articleID=199500385&amp;subSection=All+Stories">http://www.informationweek.com/news/showArticle.jhtml?articleID=199500385&amp;subSection=All+Stories</A>
+
+
+TJX
+<A HREF="http://updates.zdnet.com/tags/TJX.html">http://updates.zdnet.com/tags/TJX.html</A>
+
+WEP Security + Pringles-Can = $1 Billion TJX Loss?
+<A HREF="http://msmvps.com/blogs/harrywaldron/archive/2007/05/09/wep-security-pringles-can-1-billion-tjx-loss.aspx">http://msmvps.com/blogs/harrywaldron/archive/2007/05/09/wep-security-pringles-can-1-billion-tjx-loss.aspx</A>
+
+May 10th, 2007
+Retailers haven?t learned from TJX - still running WEP
+<A HREF="http://blogs.zdnet.com/Ou/?p=487">http://blogs.zdnet.com/Ou/?p=487</A>
+
+
+There was a slashdot article on 15 May.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

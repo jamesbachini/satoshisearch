@@ -1,0 +1,20 @@
+<PRE>
+   Drivers using the automated FasTrak toll system on roads and
+   bridges in California's Bay Area could be vulnerable to fraud,
+   according to a computer security firm in Oakland, CA.
+
+   Despite previous reassurances about the security of the system,
+   Nate Lawson of Root Labs claims that the unique identity numbers
+   used to identify the FasTrak wireless transponders carried in cars
+   can be copied or overwritten with relative ease. 
+
+<A HREF="http://www.technologyreview.com/Infotech/21301/?a=f">http://www.technologyreview.com/Infotech/21301/?a=f</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

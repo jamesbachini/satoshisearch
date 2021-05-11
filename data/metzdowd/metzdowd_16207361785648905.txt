@@ -1,0 +1,23 @@
+<PRE>&quot;Jonathan S. Shapiro&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">shap at eros-os.com</A>&gt; writes:
+
+&gt;<i>That said, I agree that pushing the changes upstream is vital, and I further
+</I>&gt;<i>agree that fixing bugs you don't understand is a bad idea. Debian screwed up.
+</I>
+Debian seem to be particularly bad for not reporting changes to maintainers,
+although other distros do it as well.  I've got a few packages that are
+contained in a number of distros and I notice via occasional Google searches
+for semi-related items that I'm getting hits to CVS change logs for my code
+where someone is repeatedly re-applying some patch to every new version I
+release.  All they'd have to do is send me email to say they've made the
+change and I can apply it to the master copy, but instead they re-patch every
+new release.  In addition because I have no idea where it's ending up, I can't
+even send out a notification to say there's a new version out.  It's a very
+strange way to &quot;maintain&quot; code.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,34 @@
+<PRE>
+On Jul 6, 2007, at 6:20 PM, John Ioannidis wrote:
+
+&gt;<i>
+</I>&gt;<i> Unfortunately, it's not so easy to roll your own on top of a 3G- 
+</I>&gt;<i> enabled smartphone. The &quot;broadband&quot; channel does not have the tight  
+</I>&gt;<i> jitter and throughput guarantees that voice needs, and some  
+</I>&gt;<i> providers (Verizon in the USA for example) consider running voice  
+</I>&gt;<i> traffic over their &quot;broadband&quot; network a violation of the usage  
+</I>&gt;<i> agreement (no need to blame the government for that, their own  
+</I>&gt;<i> greed is adequate explanation). There are lots of other technical  
+</I>&gt;<i> and human-factors issues that have been covered to great extent in  
+</I>&gt;<i> this and other fora.
+</I>&gt;<i>
+</I>&gt;<i> /ji
+</I>
+The Cryptophone project in Europe &lt;<A HREF="http://www.cryptophone.de/">http://www.cryptophone.de/</A>&gt; has  
+been trying to tackle the QoS issues for four or five years now.  I  
+haven't looked at their implementation closely in several years, but  
+back in 2002 or so they were using CSD (modem-modem calls) instead of  
+the broadband channel, trading bandwidth for low jitter...  With  
+current CPUs and audio codecs you can get decent voice quality over  
+9600bps.
+
+Thanks,
+Eric
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: PGP.sig
+Type: application/pgp-signature
+Size: 478 bytes
+Desc: This is a digitally signed message part
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070712/00230d7d/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20070712/00230d7d/attachment.pgp</A>&gt;
+</PRE>

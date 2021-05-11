@@ -1,0 +1,15 @@
+<PRE>
+The NSA has been declassifying some interesting material of late:
+
+<A HREF="http://www.nsa.gov/public/cryptologic_histories.cfm">http://www.nsa.gov/public/cryptologic_histories.cfm</A>
+
+<A HREF="http://www.nsa.gov/public/cryptologicquarterly.cfm">http://www.nsa.gov/public/cryptologicquarterly.cfm</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

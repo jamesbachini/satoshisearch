@@ -1,0 +1,19 @@
+<PRE>At 2:45 AM +1200 7/20/07, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> wrote:
+&gt;<i>From a security point of view, this is really bad.  From a usability point of
+</I>&gt;<i>view, it's necessary.
+</I>
+As you can see from my list of proposed solutions, I disagree. I see 
+no reason not to to alert a user *who has removed a root* that you 
+are about to put it back in.
+
+Note that I did not criticize the practice of starting with a zillion 
+roots that Microsoft trusts.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

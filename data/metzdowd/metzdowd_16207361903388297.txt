@@ -1,0 +1,28 @@
+<PRE>Allen wrote:
+&gt;<i> So I'll ask a question. I saw the following on another list:
+</I>&gt;<i> 
+</I>&gt;&gt;&gt;<i> &gt;   I stopped using WinPT after is crashed too many times.
+</I>&gt;&gt;&gt;<i> &gt;   I am now using Thunderbird with the Enigmail plugin
+</I>&gt;&gt;&gt;<i> &gt;   for GPG interface. It works rather flawlessly and I've
+</I>&gt;&gt;&gt;<i> &gt;   never looked back.
+</I>&gt;&gt;&gt;<i> &gt; &gt;   <A HREF="http://pgp.mit.edu:11371/pks/lookup?search=0xBB678C30&amp;op=index">http://pgp.mit.edu:11371/pks/lookup?search=0xBB678C30&amp;op=index</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Yes, I regard the combination of Thunderbird + Enigmail + GPG as the
+</I>&gt;&gt;<i> best existing solution for secure email.
+</I>&gt;<i> 
+</I>&gt;<i> What does anyone think of of the combo?
+</I>
+I agree.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,37 @@
+<PRE>
+Eugen Leitl writes:
+-+-----------------
+ | I think that's a wise decision. Skype is a giant black
+ | box.  Fabrice Desclaux published a fair amount of
+ | cryptanalysis papers about Skype, each one more
+ | frightening than the previous ([1], [2] and [3]) 
+
+My read on Skype is that they are doing a world
+leading job when it comes to avoiding vulnerabilities,
+better, indeed than the operating systems on which
+they run.
+
+One could call it a design weakness that to interface 
+with the plain old telephone system there has to be
+a knowable, fixed in-the-clear peering to the POTS.
+If I am a state actor or equivalent, I do not need
+to bother myself with breaking VoIP crypto -- I just
+insert some tool into the peering point where the
+Skype caller reverts to the ordinary.
+
+Yes, a state may be interested in two parties each
+of whom has a Skype instance and thus the demodulation
+for POTS does not occur, but two such parties, if
+they really care, would do their own end-to-end
+protections even if it is a simple as speaking
+Navajo.
+
+All hail Saltzer, Reed, and Clark.
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

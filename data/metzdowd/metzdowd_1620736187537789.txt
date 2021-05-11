@@ -1,0 +1,23 @@
+<PRE>
+On Aug 27, 2008, at 7:10 AM, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+
+&gt;<i> The relationship to this list may then be thin
+</I>&gt;<i> excepting that the collection and handling of
+</I>&gt;<i> such data remains of substantial interest.
+</I>
+Actually, it points to cash settlement of road tolls.
+
+Most likely digital bearer transaction settlement, in the long run.
+
+But y'all knew I'd say that, right?
+
+:<i>-)
+</I>
+Cheers,
+RAH
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

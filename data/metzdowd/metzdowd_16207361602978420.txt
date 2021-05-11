@@ -1,0 +1,36 @@
+<PRE>---------- Forwarded message ----------
+From: Paul Vixie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">paul at vix.com</A>&gt;
+Date: Nov 13, 2007 10:06 AM
+Subject: [funsec] &quot;Loophole in Windows Random Number Generator&quot; (slashdot)
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">funsec at linuxbox.org</A>
+
+
+&quot;A security loophole in the pseudo-random number generator used by Windows was
+recently detailed in a paper presented by researchers at the University of
+Haifa. The team found a way to decipher how the number generator works, and
+thus compute previous and future encryption keys used by the computer, and
+eavesdrop on private communication. Their conclusion is that Microsoft needs
+to improve the way it encodes information. They recommend that Microsoft
+publish the code of their random number generators as well as of other
+elements of the Windows security system to enable computer security experts
+outside Microsoft to evaluate their effectiveness. Although they only checked
+Windows 2000, they assume that XP and Vista use similar random number
+generators and may also be vulnerable. The full text of the paper is available
+in PDF format.&quot;
+
+<A HREF="http://it.slashdot.org/article.pl?sid=07/11/12/1528211">http://it.slashdot.org/article.pl?sid=07/11/12/1528211</A>
+_______________________________________________
+Fun and Misc security discussion for OT posts.
+<A HREF="https://linuxbox.org/cgi-bin/mailman/listinfo/funsec">https://linuxbox.org/cgi-bin/mailman/listinfo/funsec</A>
+Note: funsec is a public and open mailing list.
+
+
+-- 
+mike
+<A HREF="http://lets.coozi.com.au/">http://lets.coozi.com.au/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

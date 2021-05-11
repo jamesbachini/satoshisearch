@@ -1,0 +1,25 @@
+<PRE>michael taylor wrote:
+&gt;<i> &lt;<A HREF="http://www.torontosun.com/News/TorontoAndGTA/2008/04/18/5320936-sun.html">http://www.torontosun.com/News/TorontoAndGTA/2008/04/18/5320936-sun.html</A>&gt;
+</I>&gt;<i> 
+</I>&gt;<i> The city is playing a $10M game of catchup to stymie thieves using
+</I>&gt;<i> bogus credit cards to get free parking
+</I>
+An assuming read. The article mentions the &quot;Europark Card&quot;; you buy it 
+online for $15 (the web site is still up) and it gets you free parking 
+in various cities in Australia, US, and Canada.  Here is a link to a 
+demo video on YouTube:
+
+<A HREF="http://www.youtube.com/watch?v=WfoWDQUR4sk">http://www.youtube.com/watch?v=WfoWDQUR4sk</A>
+
+Unlike the recent Oyster Card crack (London, UK), Toronto's &quot;free&quot; 
+parking problem does not seem to have been caused by bad cryptography -- 
+at least, there is no mention of cryptography in the article.  It goes 
+to show that there's more to systems security than just crypto.
+
+-James
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

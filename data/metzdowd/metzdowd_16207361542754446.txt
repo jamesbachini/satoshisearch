@@ -1,0 +1,74 @@
+<PRE>|<i> The world's most secure USB Flash Drive: &lt;<A HREF="https://www.ironkey.com/demo">https://www.ironkey.com/demo</A>&gt;.
+</I>What makes you call it snake oil?  At least the URL you point to says
+very reasonable things:  It uses AES, not some home-brew encryption; the
+keys are stored internally; the case is physically protected, and has
+some kind of tampering sensor that wipes the stored keys when attacked.
+In fact, they make some of the same points:
+
+	Your IronKey is literally packed with the latest and most
+	secure encryption technologies, all enabled by the powerful
+	onboard Cryptochip. Rather than employing &quot;homegrown&quot;
+	cryptographic algorithms that have not undergone rigorous
+	cryptoanalysis, IronKey follows industry best practices and
+	uses only well-established and thoroughly tested
+	cryptographic algorithms.
+	
+	All of your data on the IronKey drive is encrypted in
+	hardware using AES CBC-mode encryption.
+		
+	
+	   1. Encryption Keys
+	   2. Always-On Encryption
+	   3. Two-Factor Authentication
+	
+	Encryption Keys
+	
+	The encryption keys used to protect your data are generated
+	in hardware by a FIPS 140-2 compliant True Random Number
+	Generator on the IronKey Cryptochip.  This ensures maximum
+	protection via the encryption ciphers. The keys are
+	generated in the Cryptochip when you initialize your
+	IronKey, and they never leave the secure hardware to be
+	placed in flash memory or on your computer.
+
+	Always-On Encryption
+
+	Because your IronKey implements data encryption in the
+	hardware Cryptochip, all data written to your drive is
+	always encrypted. There is no way to accidentally turn it
+	off or for malware or criminals to disable it. Also, it runs
+	many times faster than software encryption, especially when
+	storing large files or using the on-board portable Firefox
+	browser.
+
+	Two-Factor Authentication
+
+	Beyond simply protecting the privacy of your data on the
+	IronKey flash drive, the IronKey Cryptochip incorporates
+	advanced Public Key Cryptography ciphers that allow you to
+	lock down your online IronKey account. That way you must
+	have your IronKey device, in addition to your password, to
+	access your online account. This highly complex process runs
+	behind the scenes, giving you state-of-the-art protection
+	from phishers, hackers and other online threats.
+
+The management team lists some people who should know what they are
+doing.  They have a FAQ which gives a fair amount of detail about
+what they do.
+
+I have nothing at all to do with this company - this is the first I've
+heard of them - but it's hardly advancing the state of security if
+even those who seem to be trying to do the right thing get tarred as
+delivering snake-oil.
+
+If you know something beyond the publicly-available information about
+the company, let's hear it.  Otherwise, you owe them an apology -
+whether they actually do live up to their own web site or not.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,13 @@
+<PRE>Disclaimer: Yes, I am referenced, but I've been blarting about this for nearly two years now, and nobody's paid the slighest notice before; the matter of making website security both a) easy and b) better can now only become *more* urgent.
+
+	<A HREF="http://www.theregister.co.uk/2008/07/24/apple_id_fraud/">http://www.theregister.co.uk/2008/07/24/apple_id_fraud/</A>
+
+	- alec
+
+ps: hello again everyone; long time no see.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

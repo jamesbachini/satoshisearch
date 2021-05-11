@@ -1,0 +1,38 @@
+<PRE>----- Original Message ----- 
+From: &quot;' =JeffH '&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt;
+To: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+Cc: &quot;' =JeffH '&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt;
+Sent: Friday, February 01, 2008 1:53 PM
+Subject: questions on RFC2631 and DH key agreement
+
+
+&gt;<i> (ya and yb) if { p, q, g, j } are known to both parties.
+</I>
+&gt;<i> So if p, q, g are not static, then a simplistic, nominally valid, DH 
+</I>&gt;<i> profile
+</I>&gt;<i> would be to..
+</I>&gt;<i>      a                                         b
+</I>&gt;<i>  ----------                               ----------
+</I>&gt;<i>  g, p, ya ------------------------------------&gt;
+</I>&gt;<i>      &lt;--------------------------------------- yb
+</I>&gt;<i> ..yes?
+</I>
+I would actually recommend sending all the public data. This does not take 
+significant additional space and allows more verification to be performed. I 
+would also suggest looking at what exactly the goal is. As written this 
+provides no authentication just privacy, and if b uses the same private key 
+to generate multiple yb the value of b will slowly leak.
+
+&gt;<i> Other than for b perhaps wanting to verify the correctness of { p, q, g, 
+</I>&gt;<i> j }
+</I>&gt;<i> (&quot;group parameter validation&quot;), is there any reason to send q ?
+</I>
+You can then use the gpb trio for DSA, leveraging the key set for more 
+capabilities.
+                Joe 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

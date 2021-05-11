@@ -1,0 +1,31 @@
+<PRE>On Fri, 2 May 2008 08:33:19 +0100
+&quot;Arcane Jill&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arcanejill at ramonsky.com</A>&gt; wrote:
+
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>
+</I>&gt;<i> [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] On Behalf Of Ryan Phillips
+</I>&gt;<i> Sent: 28 April 2008 23:13
+</I>&gt;<i> To: Cryptography
+</I>&gt;<i> Subject: SSL and Malicious Hardware/Software
+</I>&gt;<i> 
+</I>&gt;<i> &gt; I can't think of a great way of alerting the user,
+</I>&gt;<i> 
+</I>&gt;<i> I would be alerted immediately, because I'm using the Petname Tool
+</I>&gt;<i> Firefox plugin.
+</I>&gt;<i> 
+</I>&gt;<i> For an unproxied site, I get a small green window with my own choice
+</I>&gt;<i> of text in it (e.g. &quot;Gmail&quot; if I'm visiting <A HREF="https://mail.google.com">https://mail.google.com</A>).
+</I>&gt;<i> If a proxy were to insert itself in the middle, that window would
+</I>&gt;<i> turn yellow, and the message would change to &quot;(untrusted)&quot;.
+</I>&gt;<i> 
+</I>Assorted user studies suggest that most users do not notice the color
+of random little windows in their browsers...
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

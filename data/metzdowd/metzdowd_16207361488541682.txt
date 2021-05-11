@@ -1,0 +1,17 @@
+<PRE>
+The SSH discussion has (in messages I didn't forward) rapidly
+degenerated into an argument that isn't very high signal. I'd suggest
+that the non-crypto aspects are best discussed on other mailing lists
+like the IETF SSH working group lists and the OpenSSH developers
+mailing list. If there are specific cryptographic flaws in the
+protocol, I'd say they are fair game if the discussion is clear, brief
+and dispassionate.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

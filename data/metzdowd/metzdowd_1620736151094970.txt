@@ -1,0 +1,34 @@
+<PRE>On Aug 18, 2007, at 3:30 PM, Ali, Saqib wrote:
+
+&gt;<i> One of the functions provided by the TPM is to wrap/bind and store the
+</I>&gt;<i> bulk encryption keys. Now let's us say the mother board or the TPM
+</I>&gt;<i> goes bad on your notebook or you simply want to upgrade the computer.
+</I>&gt;<i> You need to be able to restore+transfer the information stored in the
+</I>&gt;<i> TPM to your new computer. This is where you need TPM management suite
+</I>&gt;<i> that support key backup/restore and transfer.
+</I>
+I still don't follow. BitLocker explicitly includes a (optionally  
+file-based) recovery password. If you want central management, why  
+not centrally manage _that_?
+
+
+Alex Alten wrote:
+&gt;<i> Agreed, for most requirements.  Sometimes one may need to keep keys
+</I>&gt;<i> in trusted hardware only.
+</I>
+The reason the TPM is used to wrap the BitLocker key is not because  
+people don't want the key to be available outside of hardware -- at  
+least I've never heard of that requirement going hand in hand with  
+central key backup/migrate. Instead, TPM key wrapping is used so the  
+early-boot checks can be enforced. I don't see how a hardware-only  
+key that you can migrate to another TPM centrally is any more secure  
+than keeping a key in hardware but falling back on a centrally- 
+managed spare for enabling data migration.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

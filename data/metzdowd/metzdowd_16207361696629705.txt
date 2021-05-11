@@ -1,0 +1,62 @@
+<PRE>James A. Donald wrote:
+ &gt;&gt; I have figured out a solution, which I may post here
+ &gt;&gt; if you are interested.
+
+Ian G wrote:
+ &gt; I'm interested.  FTR, zooko and I worked on part of
+ &gt; the problem, documented briefly here:
+ &gt; <A HREF="http://www.webfunds.org/guide/sdp/index.html">http://www.webfunds.org/guide/sdp/index.html</A>
+
+I have posted &quot;How to do VPNs right&quot; at
+<A HREF="http://jim.com/security/how_to_do_VPNs.html">http://jim.com/security/how_to_do_VPNs.html</A>
+
+It covers somewhat different ground to that which your
+page covers, focusing primarily on the problem of
+establishing the connection.
+
+	&quot;humans are not going to carry around large
+	strong secrets every time either end of the
+	connection restarts.  In fact they are not going
+	to transport large strong secrets any time ever,
+	which is the flaw in SSL and its successors such
+	as IPSec and DTLS
+
+	&quot;What humans are going to do, and what the user
+	interface must support, and the cryptography
+	somehow make secure, is set up a username and a
+	rather short password, and enter that password
+	on request - rather too easily enter it on
+	request without necessarily checking who they
+	are giving it to.  Our security has to work with
+	humans as they are, and make what humans are
+	naturally inclined to do secure, rather than try
+	to change what humans are naturally inclined to
+	do.&quot;
+
+It covers the cryptography of packets only to the depth
+needed to establish the required properties of sessions:
+	&quot;each packet within a session must have its own
+	unique IV (nonce), and each session must have
+	its own symmetric encryption secret and
+	authentication secret.  We have to have a new
+	session every client restart, every server
+	restart, and every 2^64 bytes.  At the beginning
+	of each new session, new strong secrets, large
+	truly random numbers, have to be negotiated for
+	symmetric encryption and authentication.&quot;
+
+My page completely ignores the routing issue, another
+hard problem which existing VPNs frequently do wrongly,
+or not at all.  It presupposes the existence of good
+random number sources.
+
+It does not address the question of denial of service
+attacks against the session establishment protocol,
+though I have written that up elsewhere, and will
+publish that shortly.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

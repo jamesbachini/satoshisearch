@@ -1,0 +1,37 @@
+<PRE>Peter Fairbrother wrote:
+&gt;<i> The UK Home Office have just announced that they intend to bring the 
+</I>&gt;<i> provisions of Pt 3 of the Regulation of Investigatory Powers Act 2000 
+</I>&gt;<i> into force on 1st October. This is the law that enables Policemen to 
+</I>&gt;<i> demand keys to encrypted material, on pain of imprisonment, and without 
+</I>&gt;<i> judicial approval of these demands.
+</I>&gt;<i> 
+</I>&gt;<i> There is one last Parliamentary process to go through, the approval of a 
+</I>&gt;<i> code of practice, but as far as I know there has never been a case of 
+</I>&gt;<i> one of these failing to pass - though a related one was withdrawn a few 
+</I>&gt;<i> years ago. We will try to prevent it happening, the chances of success 
+</I>&gt;<i> are against us but it is not impossible.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> You are not required to keep keys indefinitely, or give up a key you 
+</I>&gt;<i> don't have, but the rules regarding the assumption that you know a key 
+</I>&gt;<i> at least partially reverse the normal burden of proof.
+</I>
+
+I forgot to mention that Pt.3 also includes coercive demands for access 
+keys - so for instance if Mr Bill Gates came to the UK, and if there was 
+some existing question about Microsoft's behaviour in some perhaps 
+current EU legal matter, Mr Gates could be required to give up the keys 
+to the Microsoft internal US servers. Or go to jail.
+
+
+Though I'd quite like to see that :), I don't think it would be entirely 
+appropriate ...
+
+
+-- Peter Fairbrother
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

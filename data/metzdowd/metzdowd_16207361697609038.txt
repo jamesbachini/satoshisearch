@@ -1,0 +1,20 @@
+<PRE>Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at MorganStanley.com</A>&gt; writes:
+
+&gt;<i>While Firefox should ideally be developing and testing PSK now, without
+</I>&gt;<i>stable libraries to use in servers and browsers, we can't yet expect anything
+</I>&gt;<i>to be released.
+</I>
+Is that the FF devlopers' reason for holding back?  Just wondering... why not
+release it with TLS-PSK/SRP anyway (particularly with 3.0 being in the beta
+stage, it'd be the perfect time to test new features), tested against existing
+implementations, then at least it's ready for when server support appears.  At
+the moment we seem to be in a catch-22, servers don't support it because
+browsers don't, and browsers don't support it because servers don't.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

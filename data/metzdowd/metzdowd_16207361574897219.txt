@@ -1,0 +1,46 @@
+<PRE>     --
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+ &gt; AFAIK, the only advantage of ECC is that the keys are
+ &gt; shorter. The disadvantage is that it isn't as well
+ &gt; studied.
+
+On past performance, elliptic curves are safer than
+integers.  From time to time, integer based asymmetric
+encryption is abruptly and surprisingly weakened by
+advances in discrete log algorithms.  This is just not
+happening with elliptic curves.
+
+The cost of computing power is going down faster than
+the cost of communication.  The size of sufficiently
+safe asymmetric encryption based on integers is growing
+considerably faster than the size of sufficiently safe
+asymmetric encryption based on elliptic curves.
+
+Thus the advantage of elliptic curve encryption
+continually increases, will become overwhelming in the
+near future - and a large part of that continually
+increasing advantage comes from unpredictable
+improvements in factoring and discrete log over the
+integers.
+
+My intuition is that because elliptic curves are
+considerably less orderly than the integers, there is
+less scope for discovering fast discrete log methods. We
+are continually discovering improvements to finding
+discrete logs over the integers.  It has been a long
+time since any such has been discovered for elliptic
+curves, long enough to give a plausible hope that no
+further such will ever be discovered.
+
+
+     --digsig
+          James A. Donald
+      6YeGpsZR+nOTh/cGwvITnSR3TdzclVpR0+pr3YYQdkG
+      ibAQXQ+Yoy5neOvRwKJwdxVLDGSPwTxKobkv566h
+      4khPsLmyqlil/F6sx2n1q9mtb65W8RMcWyqxregOo
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

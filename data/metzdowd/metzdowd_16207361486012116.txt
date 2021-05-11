@@ -1,0 +1,83 @@
+<PRE>On 07/01/2007 05:55 AM, Peter Gutmann wrote:
+
+&gt;<i> One threat model (or at least failure mode) that's always concerned me deeply
+</I>&gt;<i> about QC is that you have absolutely no way of checking whether it's working
+</I>&gt;<i> as required.  With any other mechanism you can run test vectors through it,
+</I>&gt;<i> run ongoing/continuous self-checks, and (in the case of some Type I crypto)
+</I>&gt;<i> run dual units in parallel with one checking the other.  With QC you've just
+</I>&gt;<i> got to hope that everything's working as intended.  That alone would be enough
+</I>&gt;<i> to rule out its use as far as I'm concerned, I can't trust something that I
+</I>&gt;<i> can't verify.
+</I>
+That's partly true, but there's more to the story.
+
+Let's start by looking at the simple case, and then proceed to a more
+sophisticated analysis:
+
+By analogy:
+  -- baseball pitchers should be evaluated on things like ERA, while
+  -- football halfbacks should be evaluated on things like yard per carry,
+  ... and not vice versa.
+
+By that I mean:
+  -- the integrity of DH depends fundamentally on the algorithm, so you
+   should verify the algorithmic theory, and then verify that the box
+   implements the algorithm correctly; while
+  -- in the simple case, the integrity of quantum cryptography depends
+   fundamentally on the physics, so you should verify the physics
+   theoretically and then verify that the box implements the physics
+   correctly,
+  ... and not vice versa.
+
+Don't complain that you cannot verify the physics the same way you
+would verify the algorithm;  it's not a relevant complaint.
+
+There are some beautiful operational checks that *can* be made on
+a simple quantum crypto system.  For starters, you can insert a
+smallish amount of attenuation in the link, as a model of attempted
+eavesdropping.  The system should detect this, shut down, and raise
+the red flag;  if it doesn't, you know it's broken.
+
+==============
+
+A more sophisticated analysis takes into account the fact that in the
+real world (as opposed to the ultra-specialized laboratory bench),
+there is always some dissipation.  Therefore any attempt to do anything
+resembling quantum crypto (or even quantum computing) in the real world
+uses some sort of error correction.  (These error correction schemes are
+some of the niftiest results in the whole quantum computation literature,
+because they involve /analog/ error correction, whereas most previous
+modern error-correcting codes had been very, very digital.)  So there is
+some interesting genuine originality there, from a theory-of-computation
+standpoint.
+
+ From a security standpoint though, this raises all sorts of messy issues.
+We now have a box that is neither a pitcher nor a fullback, but some
+weird chimera.  To validate it you would need to verify the physics *and*
+verify the algorithms *and* verify the interaction between the two.
+
+Needless to say, an algorithm intended for crypto requires much stricter
+scrutiny than the same algorithm intended for ordinary computation.
+
+In particular, the oft-repeated claim that &quot;quantum cryptography detects
+eavesdropping&quot; may be true on the lab bench, but it does _not_ follow in
+any simple way that a usable long-haul system will have the same property.
+
+===================================
+
+I agree with Steve that there is a difference between bona-fide early-stage
+research and snake oil.
+
+I did research in &quot;neural networks&quot; at a time when 90% of the published
+papers in the field were absolute garbage, such as claims of solving
+NP-hard problems in P time.
+  -- When there are people who respect the difference between garbage and
+   non-garbage, and are doing serious research, we should support that.
+  -- When people try to publish garbage, and/or package garbage in shiny
+   boxes and sell it to the government, we should call it for what it is.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

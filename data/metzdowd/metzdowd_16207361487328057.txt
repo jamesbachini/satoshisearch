@@ -1,0 +1,57 @@
+<PRE>On Sun, Jul 01, 2007 at 11:09:16PM -0400, Leichter, Jerry wrote:
+|<i> | | &gt; &gt; Given that all you need for this is a glorified pocket
+</I>|<i> | | &gt; &gt; calculator, you could (in large enough quantities) probably get
+</I>|<i> | | &gt; &gt; it made for &lt; $10, provided you shot anyone who tried to
+</I>|<i> | | &gt; &gt; introduce product-deployment DoS mechanisms like smart cards and
+</I>|<i> | | &gt; &gt; EMV into the picture.  Now all we need to do is figure out how
+</I>|<i> | | &gt; &gt; to get there from here.
+</I>|<i> | | &gt;
+</I>|<i> | | &gt; I'd suggest starting from the deployment, training, and help desk
+</I>|<i> | | &gt; costs.  The technology is free, getting users to use it is not.  I
+</I>|<i> | | &gt; helped several banks look at this stuff in the late 90s, when cost
+</I>|<i> | | &gt; of a smartcard reader was order ~25, and deployment costs were
+</I>|<i> | | &gt; estimated at $100, and help desk at $50/user/year.
+</I>|<i> | | 
+</I>|<i> | | Of course, given the magnitude of costs of fraud, and where it may
+</I>|<i> | | be heading in the near term, the $50 a year may be well spent,
+</I>|<i> | | especially if it could be cut to $25 with some UI investment. It is
+</I>|<i> | | all a question of whether you'd rather pay up front with the
+</I>|<i> | | security apparatus or after the fact in fraud costs...
+</I>|<i> | 
+</I>|<i> | It may be, indeed.  You're going (as Lynn pointed out in another post)
+</I>|<i> | to be fighting an uphill battle against the last attempts.  I don't
+</I>|<i> | think smartcards (per se) are the answer.  What you really need is
+</I>|<i> | something like a palm pilot, with screen and input and a reasonably
+</I>|<i> | trustworthy OS, along with (as you say) the appropriate UI investment.
+</I>|<i>
+</I>|<i> You do realize that you've just come down to what the TPM guys want to
+</I>|<i> build?  (Of course, much of the driving force behind having TPM comes
+</I>|<i> from a rather different industry.  We're all happy when TPM can be
+</I>|<i> used to ensure that our banking transactions actually do what the bank
+</I>|<i> says it will do for a particular set of instructions issued by us and
+</I>|<i> no one else, not so happy when they ensure that our &quot;music transactions&quot;
+</I>|<i> act the same way....)
+</I>
+I don't believe that's so.  The TPM guys want to add a variety of
+controls to extant PC designs to make them secure.  I want to add a
+new device to the mix.
+
+|<i> Realistically, the only way these kinds of devices could catch on would
+</I>|<i> be for them to be standardized.  No one would be willing to carry one
+</I>|<i> for their bank, another for their stock broker, a third for their
+</I>|<i> mortgage holder, a fourth for their credit card company, and so on.
+</I>|<i> But once they *are* standardized, almost the same potential for
+</I>|<i> undesireable uses appears as for TPM's.  What's to prevent the movie
+</I>|<i> download service requiring that you present your Universal Safe Access
+</I>|<i> Fob before they authorize you to watch a movie?  If the only significant
+</I>|<i> differences between this USAF and TPM is that the latter is more
+</I>|<i> convenient because more tightly tied to the machine, we might as well
+</I>|<i> have the convenience.
+</I>
+Fair questions.  I'm sure I don't have answers.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,27 @@
+<PRE>On Tue, May 27, 2008 at 08:08:11PM +0100, Dave Korn wrote:
+
+&gt;<i>   Well spotted.  Yes, I guess that's what Jim Youll was asking.  And I
+</I>&gt;<i> should have said &quot;seemingly-contradictory&quot;.  This is, of course, what I
+</I>&gt;<i> meant by &quot;marketeering&quot;: when someone asks if your service is insecure and
+</I>&gt;<i> interceptable, you don't say &quot;Yes, our ordinary service will give you up to
+</I>&gt;<i> the filth at the drop of a hat&quot;, you spin it as &quot;No, our enterprise service
+</I>&gt;<i> is completely secure [...other details elided...]&quot;.
+</I>
+But this is not news. It is well known (at least among the Enterprise
+Remote Computing wonks) that only the Enterprise RIM service provides
+&quot;end-to-end&quot; security, while the consumer service does not. There is
+nothing new here. It is not even marketing spin, without your IT shop
+hosting your content, it is hosted by providers subject to CALEA, ...
+
+The good news about RIM is that it has been one of the few devices that
+actually provides end-to-end security for Enterprises. This has been a
+selling point that helped get them a large share of the Enterprise market.
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,44 @@
+<PRE>On Sat, May 03, 2008 at 07:50:01PM -0400, Perry E. Metzger wrote:
+&gt;<i> 
+</I>&gt;<i> &quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+</I>&gt;<i> &gt; There's a technical/philosophical issue lurking here.  We tried to
+</I>&gt;<i> &gt; solve it in IPsec; not only do I think we didn't succeed, I'm not at
+</I>&gt;<i> &gt; all clear we could or should have succeeded.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; IPsec operates at layer 3, where there are (generally) no user
+</I>&gt;<i> &gt; contexts.  This makes it difficult to bind IPsec credentials to a user,
+</I>&gt;<i> &gt; which means that it inherently can't be as simple to configure as ssh.
+</I>&gt;<i> 
+</I>&gt;<i> I disagree. Fundamentally, OpenVPN isn't doing anything IPSEC couldn't
+</I>&gt;<i> do, and yet is is fairly easy to configure.
+</I>
+And yet there's no underlying technical reason why it is any easier to
+configure than IPsec is; it is all a matter of the configuration interface
+provided by your chosen SSL VPN (in this case, OpenVPN) or IPsec
+implementation.
+
+I find it amusing (but somewhat sad) that in fact one can find basically
+the same set of flaws in each, but they're considered damning in IPsec
+while they're handwaved away or overlooked in SSL VPNs.  Of course you
+(Perry) or I can configure either IPsec or OpenVPN in a safe and sane way;
+and, of course, there are some VPN packages of either type (IPsec or SSL
+VPN) which have configuration interfaces so bad that we _couldn't_, in
+fact, set them up safely -- because they prevent safe, sane configuration.
+
+The problem is that whether you or I _can_ set software X up safely isn't
+the question that matters.  The question that matters is &quot;_will_ a naive
+user who does not understand the underlying security questions set software
+X up securely&quot;.
+
+And, in fact, most VPN software of any type fails this test.  My concern
+is that an excessive focus on &quot;how hard is it to set this thing up?&quot; can
+seriously obscure the important second half of the question &quot;and if you
+set it up in the easiest possible way, is it safe?&quot;
+
+Thor
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

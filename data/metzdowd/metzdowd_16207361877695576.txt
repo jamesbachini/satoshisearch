@@ -1,0 +1,34 @@
+<PRE>Sherri Davidoff &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alien at MIT.EDU</A>&gt; writes:
+
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+</I>&gt;&gt;<i> Look for general tracking to appear everywhere.
+</I>
+&gt;<i> Anonymous travel is dead.  Even for subway riders who still use tokens
+</I>&gt;<i> and citizens that bicycle around town, the proliferation of cameras,
+</I>&gt;<i> facial recognition technology, biometrics and RFID tagging will render
+</I>&gt;<i> anonymity obsolete within a generation.
+</I>
+Cryptography affords an alternative.  Cryptography enables untraceable
+persistent pseudonyms created and maintained via chains of anonymizing
+remailers and broadcast replies.
+
+In the nightmare scenario that you describe, untraceable nyms may be
+the only way that one can live as a responsible adult, rather than a
+subject of a nanny state.
+
+
+ -- StealthMonger
+	 &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">StealthMonger at nym.mixmin.net</A>&gt;
+	 &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">StealthMonger at nym.panta-rhei.eu.org</A>&gt;
+
+ --
+   stealthmail: Scripts to hide whether you're doing email, or when,
+   or with whom.  mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stealthsuite at nym.mixmin.net</A>
+
+Finger for key.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

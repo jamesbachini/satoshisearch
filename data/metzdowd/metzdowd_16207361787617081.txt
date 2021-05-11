@@ -1,0 +1,52 @@
+<PRE>&gt;<i> To be sure that implementation does not contain back-doors, one needs
+</I>&gt;<i> not only some source code but also a proof that the source code one
+</I>&gt;<i> has is the source of the implementation.
+</I>
+Nonsense. Total nonsense. A half-decent reverse engineer does not  
+need the source code and can easily determine the exact operation of  
+all the security-related components from the compiled executables,  
+extracted ROM/EPROM code or reversed FPGA/ASIC layout (see the recent  
+Karsten Nohl's extraction of Crypto-1 code for example).
+
+All this open-source promotion is a huge waste of time. Us crackers  
+know exactly how all the executables we care about (especially all  
+the crypto and security related programs) work. We do not always  
+publish our results, but look, somehow RC4, SecurID, DST40, KeeLoq,  
+Crypto1, Hitag2, etc. all got reverse engineered and published when  
+people actually cared to do it. A lot more other closed-code ciphers,  
+random number generators and other components have been reverse- 
+engineered and thoroughly analysed without publishing the results  
+just because those results were not interesting, could do more harm  
+than good if published or if keeping them secret could benefit the  
+cracker.
+
+As a reverse engineer with over 20 years of experience, I can  
+guarantee everyone on this list who is not familiar with this process  
+that from the security evaluation point of view there is ABSOLUTELY  
+NO BENEFIT in the open-source concept. It is actually much much  
+easier to hide a backdoor in the C or especially C++ code from anyone  
+reading it than it is in the compiled assembly code from a reverse  
+engineer, even if it is highly obfuscated like Skype. High-level  
+languages offer enough opportunities to hide and cover up some sneaky  
+behind-the-scenes magic that no one will notice for years or ever at  
+all unless they know exactly what to look for and where. I always  
+compile the open-source code, then reverse engineer it and see what  
+it is actually doing.
+
+If you want a guarantee or a proof, better ask all the reverse  
+engineers you know to take a closer look at the program and tell you  
+if there is a backdoor, anything malicious or anything sneaky or  
+suspicious. Don't trust your own eyes. I've seen too many open-source  
+applications with well-concealed backdoors or unnoticeable security  
+holes. Linux's endless exploitable vulnerabilities should be enough  
+of a proof of that.
+
+Best regards,
+Marcos el Ruptor
+<A HREF="http://www.enrupt.com/">http://www.enrupt.com/</A> - Raising the bar.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

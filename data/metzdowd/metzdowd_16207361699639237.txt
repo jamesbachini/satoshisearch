@@ -1,0 +1,46 @@
+<PRE>On Feb 21, 2008, at 6:40 PM, Ali, Saqib wrote:
+&gt;<i> i think in most cases tamper-resistant is sufficient
+</I>
+
+Er, what do TPMs have to do with this at all? TPMs are not tamper- 
+proof hardware FDE devices. They're somewhat tamper-proof (in  
+practice, I wouldn't depend on it) non-volatile storage for small  
+amounts of sensitive data, such as encryption keys. But as long as  
+it's software that's driving your FD encryption, you need to have your  
+keys in RAM.
+
+So, either:
+
+* The TPM is used in 'basic' mode, where its only purpose is to
+   provide a measure of tamper-resistance to the boot path, and as
+   long as no boot-time tampering is detected, the FDE key will be
+   loaded into RAM automatically,
+
+or,
+
+* The TPM requires explicit authentication (e.g. by password or
+   smart card) before releasing the key, in which case a successful
+   authentication will load the FDE key in RAM.
+
+If the machine is running and the FDE in use -- which is the entire  
+premise behind this attack -- both TPM use cases are just as  
+vulnerable. TPMs are a red herring in this discussion, unless the FDE  
+was actually offloading the crypto operations to it. This is not a  
+supported mode of operation for any widely-deployed FDE system that  
+I'm familiar with.
+
+So, is anyone else as amused as I am that Apple can release an EFI  
+firmware update to zeroize MacBook Air memory at boot-time, turning  
+the heretofore widely-decried inability to upgrade that laptop's RAM  
+-- due to the chips being soldered to the motherboard -- into an  
+advantage, and making the Air the laptop of choice for discriminating,  
+fashion-aware, security-conscious professionals the world over?
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

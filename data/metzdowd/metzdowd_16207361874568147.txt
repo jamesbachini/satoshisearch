@@ -1,0 +1,31 @@
+<PRE>On Tue, Aug 26, 2008 at 11:56 AM, Dustin D. Trammell
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dtrammell at bpointsys.com</A>&gt; wrote:
+&gt;<i> This is the same for the state-wide Texas tag, TxTag[1].  If your tag
+</I>&gt;<i> doesn't register, or you disable or remove it, the toll system can still
+</I>&gt;<i> accurately bill you based on your license plate and vehicle
+</I>&gt;<i> registration.  If you're not in the TxTag system at all, they simply
+</I>&gt;<i> mail you a bill.
+</I>
+I think this is a bit different than what Michael Heyman said.  TxTag,
+IIRC, was implemented by the same company (Raytheon) that implemented
+the 407 ETR toll system in Toronto.  In the case of the 407, there is
+no image recognition done if the car has a valid transponder.  Only in
+the case of a missing or invalid transponder is the plate imagery
+used.  Supposedly the OCR has a high enough error rate that there is
+still manual verification of plates before sending a bill, and
+accordingly a $3.60 additional charge is applied per trip.
+
+If the images are used even when the vehicle has a valid transponder
+-- as Michael Heyman suggests is happening with E-ZPass -- then it
+might be feasible to have back end defenses against cloning, though
+not without inconvenience to customers who borrow cars, buy new cars,
+or rent cars while their own is getting serviced.  Also as Matt Blaze
+pointed out this makes the transponder wholly redundant.
+
+Ken
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

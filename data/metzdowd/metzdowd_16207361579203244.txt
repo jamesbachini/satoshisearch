@@ -1,0 +1,20 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ji at tla.org</A> wrote:
+&gt;<i> 
+</I>&gt;<i> Why bother with all this? There is OTP for gaim, and it works just fine 
+</I>&gt;<i> (not to mention it comes from a definitely clueful source).
+</I>&gt;<i> 
+</I>&gt;<i> /ji
+</I>&gt;<i> 
+</I>
+I meant, of course, OTR (off-the-record).  And to think that I was using 
+it in another window as I was typing this!
+
+Thanks to Scott G. Kelly for pointing this out.
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

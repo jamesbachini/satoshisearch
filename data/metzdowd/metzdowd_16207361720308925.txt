@@ -1,0 +1,30 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+&gt;<i> So at the company I work for, most of the internal systems have
+</I>&gt;<i> expired SSL certs, or self-signed certs.  Obviously this is bad.
+</I>
+Sorta. TLS gets along with self signed just fine though, and obviously 
+you can choose to accept a root or unsigned cert on a per-client basis.
+
+&gt;<i> I know that if we had IT put our root cert in the browsers, that we
+</I>&gt;<i> could then generate our own SSL certs.
+</I>
+sure. for IE its just a registry key, trivial to push out using login 
+scripts etc.
+
+&gt;<i> Are there any options that don't involve adding a new root CA?
+</I>
+buying a intermediate cert from an existing CA? buying a &quot;wildcard&quot; cert 
+  for your domain, and using the same wildcard cert on all nodes?
+
+&gt;<i> I would think this would be rather common, and I may have heard about
+</I>&gt;<i> certs that had authority to sign other certs in some circumstances...
+</I>
+at one point, you could use *any* cert to sign another cert; IE didn't 
+bother checking. I believe they have fixed that now.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

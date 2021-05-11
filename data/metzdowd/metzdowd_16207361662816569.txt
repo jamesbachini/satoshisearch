@@ -1,0 +1,254 @@
+<PRE>*************************************************
+
+BSF/DIMACS/DyDAn Workshop on Data Privacy
+
+      February 4 - 7, 2008
+      DIMACS/DyDAn Center, CoRE Building, Rutgers University
+
+Organizers:
+      Kobbi Nissim, Ben Gurion University, kobbi at cs.bgu.ac.il 
+      Benny Pinkas, University of Haifa, benny at cs.haifa.ac.il 
+      Rebecca Wright, Rutgers University, rebecca.wright at rutgers.edu 
+
+Presented under the auspices of the DIMACS Special Focus on 
+Communication Security and Information Privacy and 
+the Center for Dynamic Data Analysis (DyDAn).
+
+    ************************************************
+
+An ever-increasing amount of data is available in digital form, often
+accessible via a network. Not surprisingly, this trend is accompanied
+by an increase in public awareness of privacy issues and by
+legislation of privacy laws. The interest in privacy, and the tension
+between privacy and utility of data, is amplified by our growing
+ability to collect and store large amounts of data, and our ability to
+mine meaningful information from it. This workshop will view privacy
+in a broad sense in order to facilitate interaction and discussion
+between privacy-oriented researchers in different communities.
+
+The study of &quot;privacy&quot; is inherently interdisciplinary, spanning a
+range of applications and scenarios, such as analysis of census data,
+detection and prevention of terrorist activity, and biomedical
+research. There is a fundamental interplay between privacy and law,
+security, economics, and the social sciences. This workshop will
+foster interactions between researchers in these fields with those in
+statistics and computer science, toward the goal of developing problem
+formulations that can be translated into a technical mathematical
+language that lends itself to a more rigorous study of privacy. The
+workshop will contrast these formal definitions with more intuitive
+notions of privacy from the social sciences, economics, philosophy and
+law to determine the extent to which they capture the perceived
+meaning of privacy in different settings.
+
+Privacy-preserving technologies may soon become an integral part of
+the basic infrastructure for the collection and dissemination of
+official statistics, as well as for research in business, economics,
+medical sciences, and social sciences. Functional solutions for
+preserving privacy would therefore serve as a central part of the
+infrastructure for those disciplines. This workshop will address a
+variety of questions on algorithms for privacy-preserving analysis
+such as:
+
+  * To what extent can such techniques be applied to 
+     statistical data?
+  * What are the consequences to privacy and confidentiality 
+     if such techniques are not used?
+  * Are changes in statistical tools needed to make them 
+     compatible with such techniques?
+  * Can the techniques be modified to allow use of standard 
+     statistical tools and practices? 
+
+**************************************************************
+Program:
+
+Monday, February 4, 2008
+
+ 8:00 -  8:50  Breakfast and Registration
+
+ 8:50 -  9:00  Welcome and Opening remarks
+               Rebecca Wright, DIMACS Deputy Director
+
+ 9:00 - 10:00  Tutorial: Differential Privacy
+               Adam Smith, Penn State University
+
+10:00 - 10:30  PINQ 
+               Frank McSherry
+
+10:30 - 11:00  Break
+
+11:00 - 12:00  Tutorial: Smooth Sensitivity and Sampling
+               Sofya Raskhodnikova, Penn State University
+
+12:00 - 12:30  Tutorial: Exponential Mechanism 
+               Kunal Talwar
+
+12:30 -  2:00  Lunch
+
+ 2:00 -  3:00  Tutorial: Statistical Methods 
+               Alexandra Slavkovic
+
+ 3:00 -  3:30  Break
+
+ 3:30 -  4:30  Tutorial: Synthetic Data 
+               John Abowd
+
+Tuesday, February 5, 2008
+
+ 8:30 -  9:00  Breakfast and Registration
+
+ 9:00 - 10:30  Tutorial: Secure Multiparty Computation and 
+               Privacy-Preserving Data Mining 
+               Yehuda Lindell, Bar Ilan University
+
+10:30 - 11:00  Break
+
+11:00 - 11:35  The Difficulty of Preventing Disclosure
+               Moni Naor
+
+11:35 - 12:05  E Gov, Online Citizen Scrutiny and Participation -
+               The Joint Challenges for Cryptologists and Policy Makers 
+               Tal Zarsky, University of Haifa
+
+12:05 - 12:30  Robust De-anonymization of Multi-dimensional Databases 
+               Vitaly Shmatikov, The University of Texas at Austin 
+
+12:30 -  2:00  Lunch
+
+Statistics:
+ 2:00 -  2:25  Privacy: Theory Meets Practice on the Map
+               John Abowd
+
+ 2:25 -  2:50  A Hybrid Perturbation/Swapping Approach for Masking Numerical Data
+               Rathindra Sarathy, Oklahoma State University 
+
+ 2:50 -  3:20  Break
+
+ 3:20 -  3:45  Deterministic History-Independent Strategies for Storing 
+               Information on Write-Once Memories
+               Gil Segev, Weizmann Institute of Science
+
+ 3:45 -  4:10  Cell Suppressions Leak Information
+               Shubha Nabar, Stanford University 
+
+ 4:10 -  4:35  A Learning Theory Perspective on Data Privacy: 
+               New Hope for Releasing Useful Databases Privately
+               Avrim Blum, Katrina Ligett, Aaron Roth, Carnegie Mellon University
+
+ 4:50 -  5:50  Distinguished Lecture: Dilemmas of Privacy
+               Problems of Marketers, Governments and Social Advocates
+               Joseph Turow, University of Pennsylvania
+               
+ 5:50          Dinner
+
+Wednesday, February 6, 2008
+
+ 8:30 -  9:00  Breakfast and Registration
+
+ 9:00 -  9:30  What Can We Learn Privately?
+               Shiva Kasiviswanathan
+
+ 9:30 - 10:00  Mechanism Design
+               Frank McSherry / Kunal Talwar
+
+10:00 - 10:30  Everlasting Privacy in Voting Protocols
+               Tal Moran, The Weizmann Institute of Science
+
+10:30 - 11:00  Break
+
+11:00 - 11:30  Efficient Protocols for Set Intersection and Pattern Matching 
+               with Security Against Malicious and Covert Adversaries
+               Carmit Hazay, Bar-Ilan University
+
+11:30 - 12:00  Mobile Data Collection and Processing
+               Aggelos Kiayias
+
+12:00 - 12:30  On the Cultural Inflections of Surveillance Discourse
+               Rivka Ribak, University of Haifa
+
+12:30 -  2:00  Lunch
+
+ 2:00 -  2:25  Verification of Integrity for Outsourced Content
+               Publishing and Database Queries
+               Danfeng Yao
+
+ 2:25 -  2:50  Secure Logistic Regression
+               Yuval Nardi, Carnegie Mellon University
+
+ 2:50 -  3:20  Break
+
+ 3:20 -  3:45  Constructions of Truly Practical Secure
+               Protocols using Standard Smartcards
+               Yehuda Lindell, Bar Ilan University
+
+ 3:45 -  4:10  Eran Omri
+
+ 4:10 -  4:35  Delegatable Anonymous Credentials
+               Melissa Chase
+
+Thursday, February 7, 2008
+ 
+ 8:30 -  9:00  Breakfast and Registration
+
+ 9:00 -  9:25  Protecting the Confidentiality of Tables by Adding Noise to 
+               the Underlying Microdata
+               Paul B. Massell, Statistical Research Division, U.S. Census Bureau
+
+ 9:25 -  9:50  How Should We Solve Search Problems Privately?
+               Amos Beimel, Ben-Gurion University
+
+ 9:50 - 10:15  Deniable Authentication
+               Yevgeniy Dodis, NYU and Harvard University 
+
+10:15 - 10:30  Alex Selkirk, The Common Datatrust Foundation
+
+10:30 - 10:45  Break
+
+10:45 - 11:30  Helen Nissenbaum
+
+11:30 - 12:30  PANEL
+               moderated by Stephen Fienberg
+
+12:30 -  2:00  Lunch
+
+ 2:00 -  2:25  Privacy Utility Tradeoff in Data Publishing
+               Vibhor Rastogi, University of Washington
+
+ 2:25 -  2:50  On Lower Bounds for Noise in Private Analysis of Statistical Databases
+               Sergey Yekhanin, Institute for Advanced Study
+
+ 2:50 -  3:20  Break
+
+ 3:20 -  3:45  k-Anonymous Data Mining
+               Arik Friedman, Technion, Israel
+
+ 3:45 -  4:10  Efficient Algorithms for Masking and Finding Quasi-identifiers
+               Ying Xu, Stanford University 
+
+ 4:10 -  4:35  Privacy-Preserving Sharing of Network Data with Anonymization Tools: - 
+               Characterizing Privacy/Utility Tradeoffs and Multi-Level Protection
+               William Yurcik, University of Texas at Dallas
+
+************************************************************************************
+Registration:
+
+Pre-registration deadline: January 28, 2008
+
+Please see website for registration information.
+
+*********************************************************************
+Information on participation, registration, accomodations, and travel 
+can be found at:
+
+  <A HREF="http://dimacs.rutgers.edu/Workshops/DataPrivacy/">http://dimacs.rutgers.edu/Workshops/DataPrivacy/</A>
+
+   **PLEASE BE SURE TO PRE-REGISTER EARLY**
+
+********************************************************************
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

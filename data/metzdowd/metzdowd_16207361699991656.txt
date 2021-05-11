@@ -1,0 +1,36 @@
+<PRE>At Thu, 7 Feb 2008 14:42:36 -0500 (EST),
+Leichter, Jerry wrote:
+&gt;<i> | &gt; Obviously, if you *really* use every k'th packet to define what is in
+</I>&gt;<i> | &gt; fact a substream, an attacker can arrange to knock out the substream he
+</I>&gt;<i> | &gt; has chosen to attack.  So you use your encryptor to permute the
+</I>&gt;<i> | &gt; substreams, so there's no way to tell from the outside which packet is
+</I>&gt;<i> | &gt; part of which substream.  Also, you want to make sure that a packet
+</I>&gt;<i> | &gt; containing checksums is externally indistinguishable from one containing
+</I>&gt;<i> | &gt; data.  Finally, the checksum packet inherently has higher - and much
+</I>&gt;<i> | &gt; longer-lived - semantic value, so you want to be able to request that
+</I>&gt;<i> | &gt; *it* be resent.  Presumably protocols that are willing to survive data
+</I>&gt;<i> | &gt; loss still have some mechanism for control information and such that
+</I>&gt;<i> | &gt; *must* be delivered, even if delayed.
+</I>&gt;<i> | 
+</I>&gt;<i> | This basically doesn't work for VoIP, where latency is a real issue.
+</I>&gt;<i> It lets the receiver to make a choice:  Deliver the data immediately,
+</I>&gt;<i> avoiding the latency at the cost of possibly releasing bogus data (which
+</I>&gt;<i> we'll find out about, and report, later); or hold off on releasing the
+</I>&gt;<i> data until you know it's good, at the cost of introducing audible
+</I>&gt;<i> artifacts.  In non-latency-sensitive designs, the prudent approach is to
+</I>&gt;<i> never allow data out of the cryptographic envelope until you've
+</I>&gt;<i> authenticated it.  Here, you should probably be willing to do that, on
+</I>&gt;<i> the assumption that the &quot;application layer&quot; - a human being - will know
+</I>&gt;<i> how to react if you tell him &quot;authentication has failed, please
+</I>&gt;<i> disregard what you heard in the last 10 seconds&quot;.
+</I>
+Well, since there's a much simpler procedure accept ~5-10% overhead, this 
+doesn't seem like a particularly attractive design.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

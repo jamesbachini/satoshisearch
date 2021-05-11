@@ -1,0 +1,26 @@
+<PRE>Hello
+
+On 08/10/07 13:27, Steven M. Bellovin wrote:
+&gt;<i> On Mon, 18 Jun 2007 22:57:36 -0700 &quot;Ali, Saqib&quot;
+</I>&gt;<i> &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> US Government has select 9 security vendors that will product drive
+</I>&gt;&gt;<i>  and file level encryption software.
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> See: 
+</I>&gt;&gt;<i> <A HREF="http://security-basics.blogspot.com/2007/06/fde-fde-solutions-selected-for-us.html">http://security-basics.blogspot.com/2007/06/fde-fde-solutions-selected-for-us.html</A>
+</I>&gt;&gt;<i>  OR <A HREF="http://tinyurl.com/2xffax">http://tinyurl.com/2xffax</A>
+</I>&gt;&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Out of curiousity, are any open source FDE products being evaluated?
+</I>
+
+Are there at all any open source FDE products for Win32?
+
+Hagai.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,35 @@
+<PRE>Hi William,
+
+&gt;<i> &gt; ... We say so on
+</I>&gt;<i> &gt; the website. We did show this hiding of collisions for other data 
+</I>&gt;<i> &gt; formats, such as X.509 certificates
+</I>&gt;<i> 
+</I>&gt;<i> More interesting.  Where on your web site?  I've long abhorred the
+</I>&gt;<i> X.509 format, and was a supporter of a more clean alternative.
+</I>
+See <A HREF="http://www.win.tue.nl/hashclash/TargetCollidingCertificates/">http://www.win.tue.nl/hashclash/TargetCollidingCertificates/</A>
+
+&gt;<i> &gt; Our real work is chosen-prefix collisions combined with 
+</I>&gt;<i> &gt; multi-collisions. This is crypto, it has not been done before,
+</I>&gt;<i> 
+</I>&gt;<i> Certainly it was done before! 
+</I>
+I was referring to MD5. Apart from that, I'd be interested in
+seeing references to older work on chosen-prefix multicollisions.
+
+&gt;<i> What *would* be crypto is the quantification of where MDx 
+</I>&gt;<i> currently falls on the computational spectrum.
+</I>
+Our first chosen-prefix collision attack has complexity of about
+2^50, as described in our EuroCrypt 2007 paper. This has been 
+considerably improved since then. In the full paper that is in
+preparation we'll give details of those improvements.
+
+Grtz,
+Benne
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

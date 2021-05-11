@@ -1,0 +1,15 @@
+<PRE>I would expect hardware designs to be treated more like hardware than 
+software.
+
+        /r$
+
+--
+STSM, DataPower Chief Programmer
+WebSphere DataPower SOA Appliances
+<A HREF="http://www.ibm.com/software/integration/datapower/">http://www.ibm.com/software/integration/datapower/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

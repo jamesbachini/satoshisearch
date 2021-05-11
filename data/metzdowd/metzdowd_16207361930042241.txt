@@ -1,0 +1,36 @@
+<PRE>
+On Oct 24, 2008, at 14:29, John Denker wrote:
+
+&gt;<i> On 09/29/2008 05:13 AM, IanG wrote:
+</I>&gt;&gt;<i> My assumptions are:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> * I trust no single source of Random Numbers.
+</I>&gt;&gt;<i> * I trust at least one source of all the sources.
+</I>&gt;&gt;<i> * no particular difficulty with lossy combination.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i> If I have N pools of entropy (all same size X) and I pool them
+</I>&gt;&gt;<i> together with XOR, is that as good as it gets?
+</I>&gt;<i>
+</I>&gt;<i> Yes.
+</I>&gt;<i>
+</I>&gt;<i> The second assumption suffices to prove the result,
+</I>&gt;<i> since (random bit) XOR (anything) is random.
+</I>
+Ah, but for this to hold, you will also have to assume that the N  
+pools are all independent.  If they are not, you cannot even guarantee  
+one single bit of &quot;entropy&quot; (whatever that is).  For example, if N =  
+2, your trusted source is pool 1, and I can read pool 1 and control  
+pool 2, I set pool 2 = pool 1, and all you get is zeros. And that  
+surely does not contain X bits of &quot;entropy&quot; for any reasonable  
+definition of &quot;entropy&quot;.
+
+Fun,
+
+Stephan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

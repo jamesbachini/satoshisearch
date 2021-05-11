@@ -1,0 +1,72 @@
+<PRE>
+Thanks for this long and thoughtful reply. Some feedback below
+
+
+Jon Callas wrote:
+
+&gt;<i> 
+</I>&gt;<i> [...]
+</I>&gt;<i> 
+</I>&gt;<i> If you look at the basic components we have, the ciphers, hash  
+</I>&gt;<i> functions, and so on, they're all secure enough that a major  government 
+</I>&gt;<i> can't crack them. [...]
+</I>&gt;<i> 
+</I>&gt;<i> If you look at the medium-level functions, like HMAC, salted hashing,  
+</I>&gt;<i> tweakable cipher modes, and so on, they are *more* secure. [...]
+</I>&gt;<i> 
+</I>&gt;<i> If you look at the protocols, like TLS, IPsec, OpenPGP, S/MIME, and  so 
+</I>&gt;<i> on, they're also secure, because they assemble the reasonably  secure 
+</I>&gt;<i> components together reasonably securely. [...]
+</I>&gt;<i> 
+</I>&gt;<i> All of these things are freely exportable. It's just a matter of  
+</I>&gt;<i> filling out paperwork.
+</I>&gt;<i>
+</I>
+Indeed, there is no doubt that good algorithms and good protocols are 
+implemented in exportable implementations.
+
+I was referring mainly to key management and implementation correctness 
+for &quot;hard things&quot; in applied cryptography, e.g.
+
+	how to hide a secret on a comupter system, e.g. from Trojan horse attacks,
+
+	how to distribute trust in a remote party public key given that 
+brwosers and OSs allow easy tampering with the list of &quot;trusted&quot; CAs,
+
+	how to make secret random generation reliable in the presence of 
+&quot;ennemy&quot; software on the local system
+
+	how to provide traffic flow confidentiality
+
+	strength of the API between the (non-crypto) application and the 
+crypto-services layer
+
+	all of the above with a fool-proof user interface, including at 
+crypto-application installation time
+
+
+&gt;<i> I don't have an example of a cryptosystem that I'd actually want to  use 
+</I>&gt;<i> that is non-exportable. And I'm sure that if someone made  something 
+</I>&gt;<i> that is custom, it's exportable. I have direct evidence of  this.
+</I>&gt;<i> 
+</I>
+Agreed, if you are satisfied with the current state of development for 
+IT security with respect to issues such as the above ones, and if the 
+extent of customization does not include innovations in these issues.
+
+Otherwise, the export control regime is still a nuisance.
+
+&gt;<i> Back in 1999, when we were at Counterpane together, John Kelsey and I  
+</I>&gt;<i> created a set of incompatible Blowfish variants.
+</I>
+By itsef, that's alggorithm tweaking. Remote from key management and 
+implementation pitfall avoidance.
+
+
+- Thierry Moreau
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

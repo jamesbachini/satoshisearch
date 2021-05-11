@@ -1,0 +1,61 @@
+<PRE>On Tue, 22 Jan 2008 10:38:24 -0800
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+
+&gt;<i> List,
+</I>&gt;<i> 
+</I>&gt;<i> I would like to address and request comments on the use of SSL/TLS
+</I>&gt;<i> and port 587 for email security.
+</I>&gt;<i> 
+</I>&gt;<i> The often expressed idea that SSL/TLS and port 587 are somehow able
+</I>&gt;<i> to prevent warrantless wiretapping and so on, or protect any private
+</I>&gt;<i> communications, is IMO simply not supported by facts.
+</I>&gt;<i> 
+</I>&gt;<i> Warrantless wiretapping and so on, and private communications
+</I>&gt;<i> eavesdropping are done more efficiently and covertly directly at the
+</I>&gt;<i> ISPs (hence the name &quot;warrantless wiretapping&quot;), where SSL/TLS
+</I>&gt;<i> protection does NOT apply. There is a security gap at every
+</I>&gt;<i> negotiated SSL/TLS session.
+</I>&gt;<i> 
+</I>&gt;<i> It is misleading to claim that port 587 solves the security problem
+</I>&gt;<i> of email eavesdropping, and gives people a false sense of security.
+</I>&gt;<i> It is worse than using a 56-bit DES key -- the email is in plaintext
+</I>&gt;<i> where it is most vulnerable.
+</I>&gt;<i> 
+</I>This is old news.  But what's your threat model?
+
+Clearly, hop-by-hop encryption, be it port 587 to your ISP's submission
+server or pop3s/imaps by the recipient to his/her mail server does
+nothing to protect against someone who has hacked the server.  I wrote
+about that years ago; see
+<A HREF="http://www.cs.columbia.edu/~smb/securemail.html">http://www.cs.columbia.edu/~smb/securemail.html</A> (which archive.org
+dates to April 1999, under my old AT&amp;T URL), and I don't claim the
+insight was novel even then.  Port 587 was defined in RFC 2476, from
+1998; it specifically talks about the need for encryption.  SMTP-AUTH is
+defined in RFC 2487 (Jan 1999 -- again, before my page), which
+specifically warns that TLS protection of the channel isn't sufficient
+against some threats.  (Aside: my page was prompted by someone on a
+sensitive internal project who asked if he should encrypt his email.
+After poking around a bit, I used xmessage to pop up a message on his
+screen saying that there wasn't much point to encryption unless he
+cleaned up a lot of other security issues...)  But note that the logic
+applies about as well to end-to-end encryption, if your attacker can
+hack the machine at either end.  By hack I specifically include &quot;black
+bag jobs&quot; to plant a keystroke logger or the like.
+
+So -- is encryption, whether hop-by-hop or end-to-end, useless?  No, of
+course not.  Encrypting email submission or retrieval is very useful if
+you use, say, wireless hotspots.  (Caveats and cautions here are left
+as an exercise for the reader.)  End-to-end encryption guards against
+rogue administrators of mail servers.  Neither protects against all
+threats -- but both have their uses.
+
+&quot;Amateurs talk about algorithms; pros talk about economics.&quot;
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

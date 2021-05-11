@@ -1,0 +1,70 @@
+<PRE>On 10/24/2008 03:40 PM, Jack Lloyd wrote:
+
+&gt;<i> Perhaps our seeming disagreement is due to a differing interpretation
+</I>&gt;<i> of 'trusted'. I took it to mean that at least one pool had a
+</I>&gt;<i> min-entropy above some security bound. You appear to have taken it to
+</I>&gt;<i> mean that it will be uniform random?
+</I>
+Thanks, that question advances the discussion.
+
+The answer, however, is no, I did not assume 100% entropy
+density.  Here is the critical assumption that I did make:
+
+We consider the scenario where we started with N randomness
+generators, but N-1 of them have failed.  One of them is
+still working, but we don't know which one.
+
+To say the same thing in more detail:  Suppose we start
+with N generators, each of which puts out a 160 bit word
+containing 80 bits of _trusted_ entropy.  That's a 50%
+entropy density.
+
+Here _trusted_ means we have a provable lower bound on the
+entropy.  I assume this is the same as the aforementioned
+&quot;min-entropy above some security bound&quot;.
+
+We next consider the case where N-1 of the generators have 
+failed, or can no longer be trusted, which is essentially the
+same thing for present purposes.  Now we have N-1 generators 
+putting out zero bits of trusted entropy, plus one generator 
+putting out 80 bits of trusted entropy.  I emphasize that
+these 80 bits of trusted entropy are necessarily uncorrelated
+with anything happening on the other N-1 machines, for the
+simple reason that they are uncorrelated with anything 
+happening anywhere else in the universe ... otherwise they
+would not qualify as trusted entropy.
+
+XORing together all N of the 160 bit output words produces
+a single 160 bit word containing 80 bits of trusted entropy.
+Therefore, unless there is some requirement or objective
+that I don't know about, the previously-stated conclusion
+holds:
+
+&gt;&gt;<i> XOR is a good-enough combining function,
+</I>&gt;&gt;<i> and nothing else would be any better.
+</I>
+XOR is provably correct because it is _reversible_ in the 
+thermodynamic sense.  That means it cannot increase or 
+decrease the entropy.
+
+=============
+
+Obviously this numerical example generalizes to any entropy
+density from zero to 100% inclusive.
+
+To summarize:  The key assumptions are that we have N-1
+broken generators and one working generator.  We don't
+know which one is working, but we know that it is working 
+correctly.
+
+
+
+For more about the theory and practice of high-entropy
+randomness generators, see
+  <A HREF="http://www.av8n.com/turbid/">http://www.av8n.com/turbid/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

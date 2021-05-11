@@ -1,0 +1,70 @@
+<PRE>Thierry Moreau wrote:
+&gt;<i> Anne &amp; Lynn Wheeler wrote about various flavors of certificateless 
+</I>&gt;<i> public key operation in various standards, notably in the financial 
+</I>&gt;<i> industry.
+</I>&gt;<i>
+</I>&gt;<i> Thanks for reporting those.
+</I>&gt;<i>
+</I>&gt;<i> No doubt that certificateless public key operation is neither new nor 
+</I>&gt;<i> absence from today's scene.
+</I>&gt;<i>
+</I>&gt;<i> The document I published on my web site today is focused on fielding 
+</I>&gt;<i> certificateless public operations with the TLS protocol which does not 
+</I>&gt;<i> support client public keys without certificates - hence the 
+</I>&gt;<i> meaningless security certificate. Nothing fancy in this technique, 
+</I>&gt;<i> just a small contribution with the hope to facilitate the use of 
+</I>&gt;<i> client-side PKC.
+</I>
+this post references scenario for replacing the SSL server domain name 
+certificates with a certificate-less public key infrastructure
+<A HREF="http://www.garlic.com/~lynn/2008k.html#49">http://www.garlic.com/~lynn/2008k.html#49</A> The PKC-only application 
+security model
+
+the first reply
+<A HREF="http://www.garlic.com/~lynn/2008k.html#48">http://www.garlic.com/~lynn/2008k.html#48</A> The PKC-only application 
+security model
+
+mentions certificate-less X9.59 (financial transaction), 
+certificate-less KERBEROS (large number of infrastructure and 
+application authentication operation) and certificate-less RADIUS 
+(possibly dominant client authentication infrastructure in the world 
+today used by lots of ISP, corporate intranets, webhosting operations, etc).
+
+RADIUS provides a generalized authentication, authorization, and 
+accounting infrastructure ... where AAA specifics can be specified on an 
+account or client basis (i.e. including being able to easily 
+accomodating both password and public key concurrently).
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#radius">http://www.garlic.com/~lynn/subpubkey.html#radius</A>
+
+There are even RADIUS &quot;plug-ins&quot; for webservers for doing webserver 
+client authentication.
+
+A combination of replacing SSL server domain name certificates with 
+certificate-less server operation and
+and using certifcate-less RADIUS (client) authentication ... covers 
+mutual (client &amp; server) operation.
+
+RADIUS references from our rfc index:
+<A HREF="http://www.garlic.com/~lynn/rfcietff.htm">http://www.garlic.com/~lynn/rfcietff.htm</A>
+
+click on &quot;Term (term-&gt;RFC#)&quot; field and then click on &quot;RADIUS&quot; (in the 
+&quot;Acronym fastpath&quot;):
+
+Remote authentication dial in user service (RADIUS)
+see also authentication , network access server , network services
+5176 5090 5080 5030 4849 4818 4679 4675 4673 4672 4671 4670 4669 4668
+4603 4590 4372 4014 3580 3579 3576 3575 3162 2882 2869 2868 2867 2866
+2865 2809 2621 2620 2619 2618 2548 2139 2138 2059 2058
+
+....
+
+clicking on any of the RFC numbers, retrieves the RFC summary in the 
+lower frame. Clicking on the &quot;.txt=nnn&quot; field (in a RFC summary) 
+retrieves the actual RFC.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

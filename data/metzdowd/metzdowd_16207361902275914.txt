@@ -1,0 +1,40 @@
+<PRE>
+IanG &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;<i> IanG wrote:
+</I>&gt;&gt;&gt;<i> 2.  GPG + Engimail + Thunderbird.  Will never be totally robust because
+</I>&gt;&gt;&gt;<i> there is too much dependency.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> What does this mean? GPG + Enigmail, whilst not the best architecture I
+</I>&gt;&gt;<i> ever heard of, is a tiny increment to the complexity of Thunderbird.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Are you saying anything other than &quot;big software has bugs&quot;?
+</I>&gt;<i>
+</I>&gt;<i> No, interaction between different software packages has costs.  When
+</I>&gt;<i> you spend time to load up Thunderbird, then load up enigmail, then
+</I>&gt;<i> load up gpg ... this is more work than just loading up Tbird and
+</I>&gt;<i> sticking with it.
+</I>&gt;<i>
+</I>&gt;<i> Then, when a new Thunderbird comes out, you load that up and the other
+</I>&gt;<i> packages cease to work.  What do you do?
+</I>
+This is a ridiculous set of objections.
+
+First, modern operating systems have tools so that users don't have to
+manually build or &quot;load up&quot; various packages, they just cleanly
+install.  My non-computer literate relatives manage to install the
+flash plugin for their browsers without assistance -- this is clearly
+not an issue any longer.
+
+Second, if your new version of thunderbird doesn't work with some old
+plugin, don't upgrade until it does! Rollback is pretty easy on
+Windows, OS X, Ubuntu, Red Hat, etc. Not that this will happen in
+practice if the plugin is popular.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

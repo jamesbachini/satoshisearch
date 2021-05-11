@@ -1,0 +1,73 @@
+<PRE>Such as Cold Boot, etc.
+
+There have been a number of conversations among my colleagues on how  
+to ameliorate this, particularly with an eye to making suspend mode  
+safer.
+
+In the Cold Boot paper, the authors suggested XORing a piece of random  
+memory onto the dangerous bits, so as to fuzz them. This is a clever  
+idea, but we didn't like it, particularly because XOR doesn't have the  
+best diffusion in the world.
+
+The solution we came up with is to use EME mode (or equivalent) with a  
+fixed key. The outline is that you encrypt all dangerous data, like  
+volume key, key expansion, etc, with a fixed key into a chunk that you  
+keep to the side.
+
+This relies upon the property of EME (and other large-block, tweakable  
+modes) that a single-bit error in the ciphertext propagates to an  
+error in the entire plaintext. Consequently, a very low rate of memory  
+decay turns into complete protection of that sensitive data.
+
+Upon suspend, you erase and deallocate the active store, and on wake  
+you decrypt the fuzzed copy to get your keys and state variables back.
+
+If you want to one-plus this, you could have a timeout on the drive so  
+that if it's idle for N seconds, you do same.
+
+When we came up with this, we wondered if it was patentable. We've  
+decided that it isn't, that this is something that is obvious to  
+someone skilled in the art. Our reasoning is something like:
+
+Cold Boot paper suggests XORing random memory
+	but -- XOR has cruddy diffusion
+What has better diffusion?
+(discard suggestions like lead, churches, and very small rocks)
+Block ciphers have great diffusion
+	but -- block ciphers operate on only a small chunk
+What operates like a block cipher on a large chunk?
+Tweakable modes like EME.
+QED
+
+The rest is just software engineering.
+
+The cool thing about using EME (or equivalent) is that the larger the  
+chunk you create, the better you survive a Cold Boot attack.
+
+Note, however, that an attacker who can grab memory with no errors in  
+it, such as someone who is playing DMA games, still gets the keys. To  
+protect against that, you have to have an authentication mechanism,  
+which is outside the scope of this -- we want something that is  
+transparent, but can make people worry less about suspending their  
+laptop.
+
+Also note that you don't really need a full cipher. All you need is  
+reversible diffusion that maximizes damage on a single-bit error.  
+However, the danger in coming up with another function is that you're  
+effectively designing special-purpose crypto. Yes, it's really special- 
+purpose coding, not crypto, but it's a lot safer to use crypto. We  
+understand it better.
+
+A number of people participated in our discussions and at least two  
+people independently thought of the core idea. The people include but  
+are not limited to (which means I apologize to everyone I forgot):  
+Colin Plumb, Phil Zimmermann, Hal Finney, Andrey Jivsov, Will Price,  
+David Finkelstein, and Bill Zhao.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

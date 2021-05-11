@@ -1,0 +1,92 @@
+<PRE>It's fashionable in some circles (including, it seems, this one) to bash
+IPsec (particularly IKE) and tout SSL VPNs (particularly OpenVPN) on what
+are basically user interface grounds.
+
+I cannot help repeatedly noting that -- I believe more so than with actual
+IPsec deployments, whether with or without IKE -- OpenVPN deployments are
+often configured in hideously insecure ways.  This is no more the fault of
+OpenVPN's designers, of course, than the ghastly configuration interfaces
+imposed by many IKE impledmentations are the fault of IPsec's designers.
+
+See, for example, <A HREF="http://doc.pfsense.org/index.php/VPN_Capability_OpenVPN">http://doc.pfsense.org/index.php/VPN_Capability_OpenVPN</A>
+which is the official documentation from the popular &quot;pfsense&quot;
+firewall/NAT/VPN package on configuring OpenVPN for use with clients.  Of
+particular note:
+
+	1) It is not possible to configure a list of expected identities
+	   of users; rather, just a CA which must sign for all users.
+
+	2) No CRL is configured, nor do the instructions say to do so,
+	   though it is possible.
+
+	3) The client and server certificates come from the same CA,
+	   and both client and server get configured with *only the CA
+	   certificate*, not the subject name of the expected peer.
+
+		This is, of course, a serious security hole all of its
+		own, since it allows any client to conduct an MITM 
+		attack and impersonate the server.
+
+	4) Instructions are given for using a package called &quot;EasyRSA&quot;
+	   to set up a CA and create and sign keys.  These instructions
+	   have several severe flaws of their own:
+
+		a) They generate client public and private keys *on the
+		   CA* rather than using client generation and proper
+		   certificate signing requests.  This poses a needless
+		   risk of private key compromise, which is, in fact,
+		   particularly likely, since
+
+		b) The instructions mention only in passing that oh, by
+		   the way, one might want to encrypt the client's new
+		   private key, and that one _could_ do so -- but the
+		   example does not, in fact, encrypt the key.
+		   Anecdotally I have heard of a few users of this
+		   combination of software packages (OpenVPN/pfsense/
+		   EasyRSA) who bother to encrypt the private keys
+		   they send to users -- but quite a few more who just
+		   ship them around plaintext, since the example does
+		   so.
+
+		c) No documentation at all is given of how to revoke a
+		   key, nor why one would want to do so.
+
+	5) No explanation whatsoever is given of the compromises made in
+	   the process of &quot;simplifying&quot; the configuration of this VPN
+	   software -- which are significant and have major security
+	   consequences.
+
+The upshot is that, indeed, at least as shown here, this particular
+configuration frontend to OpenVPN is very easy to configure -- if you
+are willing to settle for much less security than OpenVPN was designed
+to provide, and much less than, if you're naive about cryptography, you
+probably think you're getting.
+
+Gee, that's funny, that's one of the problems with IPsec implementations
+that people always cite when they tout SSL VPNs (the other is that some
+firewalls can't be configured to pass IP protocol 50 for ESP -- but, of
+course, ESP can be tunneled in UDP, in a standard way, and that's been
+true for years now).
+
+I am left with the strong suspicion that SSL VPNs are &quot;easier to configure
+and use&quot; because a large percentage of their user population simply is not
+very sensitive to how much security is actually provided.  Someone said
+&quot;have a firewall&quot;, they set up a firewall.  Someone says &quot;I can't get in
+through the firewall, set up a VPN&quot;, they set up a VPN.  For their purposes
+IP over DNS might serve just as well -- and if enough other people said it
+was secure, they'd probably get all defensive if you said it wasn't, at
+least not how they'd configured it.
+
+One could think of it, I suppose, as a combination of drinking the Kool
+Aid and buying the snake oil -- drinking the snake oil?  Whatever one calls
+it one should be very careful of its effects on the popular consciousness
+when trying to understand what user preferences for this security product
+over that one actually mean.
+
+Thor
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,40 @@
+<PRE>On Tue, 13 May 2008 12:10:16 -0400
+&quot;Jonathan S. Shapiro&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">shap at eros-os.com</A>&gt; wrote:
+
+&gt;<i> Ben's points are well taken, but there is one *small* piece of this
+</I>&gt;<i> where I have some sympathy for the Debian folks:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; What can we learn from this? Firstly, vendors should not be fixing 
+</I>&gt;<i> &gt; problems (or, really, anything) in open source packages by patching
+</I>&gt;<i> &gt; them locally - they should contribute their patches upstream to the
+</I>&gt;<i> &gt; package maintainers.
+</I>&gt;<i> 
+</I>&gt;<i> The response times from package maintainers -- even the good ones like
+</I>&gt;<i> the OpenSSL team -- are not always fast enough. Sometimes, vendors
+</I>&gt;<i> don't have a choice. There is a catch-22 on both sides of this coin.
+</I>&gt;<i> 
+</I>I was going to post something similar.  I maintain several pkgsrc
+packages (<A HREF="http://www.pkgsrc.org">http://www.pkgsrc.org</A>); while most upstream maintainers are
+happy to receive bug fixes, others range from indifferent to downright
+hostile.  For example, I once reported a portability bug to a
+developer: POSIX standards *require* that a certain system call reject
+out-of-range arguments, and NetBSD enforces that check.  The Linux
+kernel (or rather, the kernel of that time; I haven't rechecked lately)
+did not.  Fine -- a minor standards issue with Linux.  But the
+application I was adding to pkgsrc relied on the Linux behavior and the
+developer angrily rejected my fix -- the standard was &quot;stupid&quot;, and he
+saw no reason to change his code to conform.
+
+Usually, though, indifference is a bigger problem.  The NetBSD internal
+developers' mailing list has seen numerous complaints about *major*
+package developers ignoring portability and correctness fixes.  If it
+isn't Linux and it isn't Windows, it doesn't matter, it seems.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

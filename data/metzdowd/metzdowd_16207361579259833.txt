@@ -1,0 +1,64 @@
+<PRE>some number of other recent notes on the subject:
+
+Customer Service: Consumer Confidence at Stake in Retail, Credit Card
+Industry Clash
+<A HREF="http://www.ecommercetimes.com/story/59670.html">http://www.ecommercetimes.com/story/59670.html</A>
+Retailer PCI Rebellion: 'No More Storing Credit Card Numbers'
+<A HREF="http://www.darkreading.com/document.asp?doc_id=135602">http://www.darkreading.com/document.asp?doc_id=135602</A>
+Retailers Fighting To No Longer Store Credit Data
+<A HREF="http://it.slashdot.org/it/07/10/05/192250.shtml">http://it.slashdot.org/it/07/10/05/192250.shtml</A>
+Retail group takes a swipe at PCI
+<A HREF="http://www.infoworld.com/article/07/10/05/Retail-group-takes-a-swipe-at-PCI_1.html">http://www.infoworld.com/article/07/10/05/Retail-group-takes-a-swipe-at-PCI_1.html</A>
+Retailers Challenge the Networks&#8217; Card-Data Storage Requirements
+<A HREF="http://www.digitaltransactions.net/newsstory.cfm?newsid=1536">http://www.digitaltransactions.net/newsstory.cfm?newsid=1536</A>
+NRF to Credit Card Companies: Stop Forcing Retailers to Store Credit Card Data
+<A HREF="http://www.nrf.com/modules.php?name=News&amp;op=viewlive&amp;sp_id=380">http://www.nrf.com/modules.php?name=News&amp;op=viewlive&amp;sp_id=380</A>
+Retail group takes a swipe at PCI, puts card companies 'on notice'
+<A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=security&amp;articleId=9040958&amp;taxonomyId=17">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=security&amp;articleId=9040958&amp;taxonomyId=17</A>
+Rethinking the Assumptions Behind PCI-DSS
+<A HREF="http://www.paymentsnews.com/2007/10/rethinking-the-.html">http://www.paymentsnews.com/2007/10/rethinking-the-.html</A>
+PCI Is Here: Keeping the barbarians outside the cyber gates
+<A HREF="http://www.practicalecommerce.com/articles/580/Caveat-Vendor-PCI-Is-Here/">http://www.practicalecommerce.com/articles/580/Caveat-Vendor-PCI-Is-Here/</A>
+Retailers, Credit Card Industry Clash
+<A HREF="http://www.physorg.com/news110781861.html">http://www.physorg.com/news110781861.html</A>
+
+.... 
+
+we had been called in to consult with this small client/server startup that
+wanted to do payment transactions. this required some amount of translating
+technology into business critical data processing ... which has somewhat
+come to be referred to as &quot;electronic commerce&quot;. This including technology
+invention that they called SSL ... and among other things we had to do
+some detailed audits of these supporting infrastructures that were calling
+themselves certification authorities ... various past posts on the subject
+<A HREF="http://www.garlic.com/~lynn/subnetwork.html#gateway">http://www.garlic.com/~lynn/subnetwork.html#gateway</A>
+
+in the mid-90s we got involved in the x9a10 financial standard working group
+that had been given the requirement to preserve the integrity of the
+financial infrastructure for all retail payments. we drew on our experience
+having previously done &quot;electronic commerce&quot; as well as some detailed
+vulnerability studies and threat models. having been given the requirement
+for all retail payments ... we had to look at a standard that was lightweight
+enuf that could be easily deployed in both point-of-sale as well as internet
+environments ... and provide end-to-end security and integrity with countermeasures
+for both &quot;data-in-flight&quot; vulnerabilities (aka transaction transmission)
+as well as &quot;data-at-rest&quot; vulnerabilities (aka transaction logs and databases).
+part of the issue was some studies that claimed as much as 70 percent
+of (&quot;data-in-flight&quot; and &quot;data-at-rest&quot;) compromises involved &quot;insiders&quot;
+(aka countermeasures had to recognize that majority of compromises
+possibly involved individuals with legitimate access to the information).
+
+the resulting financial standard was x9.59
+<A HREF="http://www.garlic.com/~lynn/x959.html#x959">http://www.garlic.com/~lynn/x959.html#x959</A>
+
+the x9.59 approach was to eliminate fraudulent transactions resulting
+evesdropping and data breach compromises ... aka it didn't eliminate
+evesdropping and data breach compromises ... but it eliminated the
+ability of attackers (insiders or outsiders) to use the information 
+that they had obtained for purposes of doing fraudulent transactions.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

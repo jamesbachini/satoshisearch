@@ -1,0 +1,77 @@
+<PRE>food for consideration. yes, #s are from MSFT as he notes, but are the only 
+ones we have presently wrt actual Storm extent, yes? If not, pls post 
+pointers...
+
+=JeffH
+------
+Storm Worm botnet numbers, via Microsoft
+<A HREF="http://blogs.zdnet.com/security/?p=533">http://blogs.zdnet.com/security/?p=533</A>
+
+Posted by Ryan Naraine @ 7:40 am Categories: Patch Watch, Hackers, Microsoft, 
+Browsers, Rootkits, Vulnerability research, Spam and Phishing, Spyware and 
+Adware, Botnets, Exploit code, Viruses and Worms, Data theft, Pen testing, 
+Passwords Tags: Microsoft Corp., Worm, Machine, MSRT, Productivity, Microsoft 
+Windows, Cyberthreats, Spyware, Adware &amp; Malware, Viruses And Worms, Security, 
+Operating Systems, Software, Ryan Naraine
+icn_balloon_154x48
++14
+16 votes Worthwhile?
+
+If the statistics from Microsoft\u2019s MSRT (malicious software removal tool) 
+are anything to go by, the Storm Worm botnet is not quite the world\u2019s 
+most powerful supercomputer.
+
+The tool \u2014 which is updated and shipped once a month on Patch Tuesday 
+\u2014 removed malware associated with Storm Worm from 274,372 machines in the 
+first week after September 11. In all the tool scanned more about 2.6 million 
+Windows machines.
+
+These numbers, released by Microsoft anti-virus guru Jimmy Kuo, puts the size 
+of the botnet on the low end of speculation that Storm Worm has commandeered 
+between 1 million and 10 million Windows machines around the world.
+
+[ SEE: Storm Worm botnet could be world\u2019s most powerful supercomputer ]
+
+The MSRT numbers, though helpful, shouldn\u2019t be relied on as gospel. For 
+starters, the tool targets a very specific known malware (it only finds 
+exactly what it\u2019s looking for) and attackers constantly tweak malware 
+files to get around detection. In addition, it is only delivered to Windows 
+machines that have automatic updates turned on, which means there are liely 
+tons and tons of hijacked machines that never gets a copy of the MSRT.
+
+Still, Kuo claims that the September version of MSRT made a dent in the botnet.
+
+    Another antimalware researcher who has been tracking these recent attacks 
+has presented us with data that shows we knocked out approximately one-fifth 
+of Storm\u2019s Denial of Service (DoS) capability on September 11th. 
+Unfortunately, that data does not show a continued decrease since the first 
+day. We know that immediately following the release of MSRT, the criminals 
+behind the deployment of the Storm botnet immediately released a newer version 
+to update their software. To compare, one day from the release of MSRT, we 
+cleaned approximately 91,000 machines that had been infected with any of the 
+number of Nuwar components. Thus, the 180,000+ additional machines that have 
+been cleaned by MSRT since the first day are likely to be home user machines 
+that were not notably incorporated into the daily operation of the Storm 
+botnet. Machines that will be cleaned by MSRT in the subsequent days will be 
+of similar nature.
+
+    The September release of the MSRT probably cleaned up approximately one 
+hundred thousand machines from the active Storm botnet. Such numbers might 
+project that the strength of that botnet possibly stood at almost half a 
+million machines with an additional few hundred thousand infected machines 
+that the Storm botnet perhaps were not actively incorporating.
+
+Kuo also confirmed fears that the botnet will slowly regain its strength once 
+those cleaned machines become reinfected because those machines are likely 
+unpatched and not equipped with any security software.
+
+---
+end
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,39 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> &quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>&gt;&gt;<i> All your data belong to us.  From Computerworld.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Trusted Computing Group turns attention to storage
+</I>&gt;&gt;<i>     
+</I>&gt;<i>
+</I>&gt;<i> I think it's more like &quot;There must be some business case for these things
+</I>&gt;<i> somewhere, surely.  Let's try a breadth-first search...&quot;.
+</I>&gt;<i>
+</I>&gt;<i> &quot;David G. Koontz&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">david_koontz at xtra.co.nz</A>&gt; writes:
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>&gt;&gt;<i> Even conservatively there is in the tens of millions of these devices sold,
+</I>&gt;&gt;<i> although we have no indication how many were actually used for Trusted
+</I>&gt;&gt;<i> Computing purposes.
+</I>&gt;&gt;<i>     
+</I>&gt;<i>
+</I>&gt;<i> I have a friend who implemented a basic trusted-boot mechanism for a student
+</I>&gt;<i> project, so we have evidence of at least one use of a TPM for TC, and I know
+</I>&gt;<i> some folks at IBM Research were playing with one a few years ago, so that's at
+</I>&gt;<i> least two users so far.  Anyone else?
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>There is a project at the University of Applied Science in Hanover 
+working on &quot;Trusted Network Computing&quot;.
+
+<A HREF="http://tnc.inform.fh-hannover.de/wiki/index.php/Main_Page">http://tnc.inform.fh-hannover.de/wiki/index.php/Main_Page</A>
+
+
+Daniel
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

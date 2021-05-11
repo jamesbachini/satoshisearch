@@ -1,0 +1,33 @@
+<PRE>|<i> I've been through the code.  As far as I can see, there's nothing in
+</I>|<i> expand_builtin_memset_args that treats any value differently, so there
+</I>|<i> can't be anything special about memset(x, 0, y).  Also as far as I can
+</I>|<i> tell, gcc doesn't optimise out calls to memset, not even thoroughly
+</I>|<i> dead ones....
+</I>While good for existing crypto code, this is exactly the kind of thing
+that's a problem.  We now have a well-distributed bit of folk knowledge
+that memset(x,0,y) is treated specially by the compiler.  It isn't; this
+&quot;knowledge&quot; is just repeated inaccurate rumor.  Fortunately, &quot;not
+treated specially&quot; in this case defaults to a case that does what we
+want - but it also means that if someone makes the &quot;code has no effect&quot;
+analyzer smarter in some release of gcc, all of a sudden, these memset()
+calls that we're relying on may suddenly just disappear from the
+generated code.  How long before anyone notices?  It's not as if the
+change log will show &quot;optimize away dead calls to memset&quot; - it will
+likely contain some obscure comment like &quot;improve recognition that type
+B subtrees can be collapsed in phase 3&quot;.
+
+The only *safe* way to write code like this - absent explicit support
+in the standard - is with explicit support in each particular compiler.
+Even something like:
+
+#pragma always_call memset
+
+ugly as it is, would work.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

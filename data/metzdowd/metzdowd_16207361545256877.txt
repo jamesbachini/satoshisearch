@@ -1,0 +1,23 @@
+<PRE>* Dave Korn:
+
+&gt;<i>   The first review I read didn't make it clear, but browsing the
+</I>&gt;<i> manufacturer's website and glossy pdfs suggests that there is indeed only a
+</I>&gt;<i> single USB connector - but there's an ethernet connector too.  You use it as
+</I>&gt;<i> an inline device and leave your normal ethernet NIC unplugged.  
+</I>
+The models in the shape of a USB stick haven't got a USB connector, at
+least according to the spec sheet.
+
+&gt;<i> This is what they refer to as &quot;wired&quot; operating mode, and given
+</I>&gt;<i> Steven's proviso about controlling the firmware (and let's hope
+</I>&gt;<i> there's no holes or overflows in the web admin interface either...)
+</I>&gt;<i> I think that this mode could just about be made secure.
+</I>
+Some malware queues captured data and transmits it when a network
+connection is available again.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

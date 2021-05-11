@@ -1,0 +1,28 @@
+<PRE>
+Jerry/Hal,
+
+This lemon-car analogy is interesting.
+
+One sidebar that might be worked into the argument is the
+apparently widespread side-line business where a car is
+auctioned on eBay but before the sale is consumated the
+buyer engages a mechanic to check the car out pre-sale.
+The car and the mechanic are generally remote from the
+buyer but local to each other, and the mechanic is paid
+by the prospective buyer.  The prospective buyer does not
+know the mechanic and is instead relying on some (to me)
+unknown combination of eBay endorsement and personal
+reputation.  Note that all of what I just said is hearsay,
+though my office-mate says that he has bought three cars
+by this method.  It almost causes me to say &quot;relying party&quot;
+out loud...
+
+If this idea is a rathole, then my fault and my apology.
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

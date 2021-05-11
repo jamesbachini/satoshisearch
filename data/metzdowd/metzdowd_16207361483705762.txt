@@ -1,0 +1,36 @@
+<PRE>Adam Shostack &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">adam at homeport.org</A>&gt; writes:
+
+&gt;<i>I'd suggest starting from the deployment, training, and help desk costs.  The
+</I>&gt;<i>technology is free, getting users to use it is not.  I helped several banks
+</I>&gt;<i>look at this stuff in the late 90s, when cost of a smartcard reader was order
+</I>&gt;<i>~25, and deployment costs were estimated at $100, and help desk at
+</I>&gt;<i>$50/user/year.
+</I>
+Banks here have been using SMS-based transaction verification for a few years
+now (although not done very well, sigh) without, apparently, any real problems
+(I've been trying to get figures for per-transaction costs out of them for a
+while now, so far without any success).  Since the SMS-based system is just a
+labour-intensive way of doing what I was proposing but using a cellphone
+instead of a dedicated device, my guess is that the overhead won't be that
+bad.  If it was, the banks wouldn't be doing it now :-).
+
+(Using smart cards as a yardstick isn't terribly useful, as I mentioned in my
+previous message they're really a deployment DoS mechanism, not a solution).
+
+&gt;<i>I don't think smartcards (per se) are the answer.  What you really need is
+</I>&gt;<i>something like a palm pilot, with screen and input and a reasonably
+</I>&gt;<i>trustworthy OS, along with (as you say) the appropriate UI investment.
+</I>
+Smart cards are part of the problem set, not the solution set - they're just
+an expensive and awkward distraction from solving the real problem.  What I
+was suggesting (and have been for at least ten years :-) is a small external
+single-function device (no need for an OS) that can't be compromised by
+malware because there's no attack vector for the malware to get at it.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,46 @@
+<PRE>From: Kilian CAVALOTTI &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">kilian at stanford.edu</A>&gt;
+Subject: Re: [Beowulf] Re:  &quot;hobbyists&quot;
+To: Tim Cutts &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tjrc at sanger.ac.uk</A>&gt;
+Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">beowulf at beowulf.org</A>
+Date: Fri, 20 Jun 2008 10:55:38 -0700
+Organization: Bio-X / Clark Center - Stanford University
+
+On Friday 20 June 2008 06:51:51 am Tim Cutts wrote:
+&gt;<i> That'll be why we don't allow Skype, except on one network which,
+</I>&gt;<i> from a security perspective, is considered to be outside the
+</I>&gt;<i> Institute, and just as untrusted as the rest of the Internet.
+</I>
+I think that's a wise decision. Skype is a giant black box. Fabrice 
+Desclaux published a fair amount of cryptanalysis papers about Skype, 
+each one more frightening than the previous ([1], [2] and [3])
+
+[1]<A HREF="http://www.secdev.org/conf/skype_BHEU06.handout.pdf">http://www.secdev.org/conf/skype_BHEU06.handout.pdf</A>
+[2]<A HREF="http://recon.cx/en/f/vskype-part1.pdf">http://recon.cx/en/f/vskype-part1.pdf</A>
+[3]<A HREF="http://recon.cx/en/f/vskype-part2.pdf">http://recon.cx/en/f/vskype-part2.pdf</A>
+
+In 2005, an official recommendation has been issued by the French 
+authorities to prohibit usage of Skype in the National Center for 
+Scientific Research (CNRS)'s networks (see [4], and [5] for the 
+machine-translated version)
+
+[4]<A HREF="http://www.urec.cnrs.fr/rubrique216.html">http://www.urec.cnrs.fr/rubrique216.html</A>
+[5]<A HREF="http://translate.google.com/translate?u=http%3A%2F%2Fwww.urec.cnrs.fr%2Frubrique216.html&amp;hl=en&amp;ie=UTF8&amp;sl=fr&amp;tl=en">http://translate.google.com/translate?u=http%3A%2F%2Fwww.urec.cnrs.fr%2Frubrique216.html&amp;hl=en&amp;ie=UTF8&amp;sl=fr&amp;tl=en</A>
+-- 
+Kilian
+_______________________________________________
+Beowulf mailing list, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Beowulf at beowulf.org</A>
+To change your subscription (digest mode or unsubscribe) visit <A HREF="http://www.beowulf.org/mailman/listinfo/beowulf">http://www.beowulf.org/mailman/listinfo/beowulf</A>
+
+----------
+
+-- 
+Eugen* Leitl &lt;a href=&quot;<A HREF="http://leitl.org">http://leitl.org</A>&quot;&gt;leitl&lt;/a&gt; <A HREF="http://leitl.org">http://leitl.org</A>
+______________________________________________________________
+ICBM: 48.07100, 11.36820 <A HREF="http://www.ativel.com">http://www.ativel.com</A> <A HREF="http://postbiota.org">http://postbiota.org</A>
+8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,38 @@
+<PRE>At 11:04 AM 1/18/2008, Ray Dillinger wrote:
+&gt;<i>  More than half the servers on the Internet -
+</I>&gt;<i>the very most desirable machines for botnet operators,
+</I>&gt;<i>because they have huge storage and huge bandwidth - run
+</I>&gt;<i>some form of Unix, and yet, since 1981 and the Morris Worm,
+</I>&gt;<i>you've never heard of a botnet composed of Unix machines!
+</I>
+Of course there've been Unix botnets, though most of them
+were a few years ago and not as tightly integrated as the current ones
+(or as the Morris worm, which was in 1988.)
+Stacheldraht was a DDOS tool from ~1999 running in Linux and Solaris;
+it was related to Trinoo and Tribe Flood Network which had similar features,
+but I'm not sure what OS those ran on.
+<A HREF="http://staff.washington.edu/dittrich/misc/stacheldraht.analysis">http://staff.washington.edu/dittrich/misc/stacheldraht.analysis</A>
+says there were several thousand machines running it.
+
+I found it running on a RedHat 6 machine in my lab a few years back,
+chatting away with a university machine in Sweden.
+It had broken in through a wu-ftpd hole, so it was appropriate
+that the next time somebody broke into that machine the
+botnet controller was from Washington University.
+Another attack looked like it was from MIT, but Jeff Schiller said
+it was actually from somebody in Japan that had byte order problems
+in the target IP address, so it was probably a Sparc machine.
+
+In contrast, nobody ever bothered the Win95 machine on the same DSL circuit,
+but it wasn't running any servers.
+Both of them were running on 60-75 MHz Pentium hardware.
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

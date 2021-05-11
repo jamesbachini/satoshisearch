@@ -1,0 +1,26 @@
+<PRE>
+On Jul 15, 2008, at 5:06 PM, Perry E. Metzger wrote:
+
+&gt;<i> Although the paper seems to be gone from Wikileaks, it is on cryptome:
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://cryptome.org/mifare-classic.pdf">http://cryptome.org/mifare-classic.pdf</A>
+</I>
+This is a paper published on arXiv in March that does not contain the  
+type of information NXP is suing over, which is why it was removed  
+from Wikileaks.
+
+The law suit is about a full disclosure of the Crypto1 security system  
+that would allow anybody to build attack tools. However, as we all  
+know, It would also convince more users of Mifare to consider  
+upgrading to more secure technologies and potentially enable  
+researchers to find countermeasures. The benefits clearly outweigh the  
+risks since half a year after announcing the vulnerabilities, Mifare  
+Classic is hopefully not used in any high security application anymore.
+
+	-Karsten
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

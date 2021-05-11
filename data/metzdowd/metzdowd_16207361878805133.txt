@@ -1,0 +1,43 @@
+<PRE>
+Paul Hoffman writes:
+-+------------------
+ | At 9:24 AM -0700 8/18/08, Eric Rescorla wrote:
+ | &gt;(and because of the complexity of US elections,
+ | &gt;hand counting is quite expensive)
+ | 
+ | This is quite disputable. Further, hand vs. machine counting is core 
+ | to the way we think about the security of the voting system.
+ | 
+
+
+
+
+The keynote talk for the USENIX Security Symposium was 
+
+      Dr. Strangevote or: How I Learned to Stop Worrying
+      and Love the Paper Ballot
+
+      Debra Bowen, California Secretary of State 
+
+
+and her talk had one slide only.  I do not have the
+slide, but I can reproduce it.  It was a photo of
+the tail end of her car and on it a bumper sticker.
+That bumper sticker read
+
+  
+      PREVENT UNWANTED PRESIDENCIES
+      MAKE VOTE COUNTING A HAND JOB
+
+
+In no other state could a Constitutional Officer
+get away with such a bumper sticker, but...
+
+--dan
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

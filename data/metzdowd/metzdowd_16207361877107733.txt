@@ -1,0 +1,49 @@
+<PRE><A HREF="http://www.links.org/?p=374">http://www.links.org/?p=374</A>
+
+When I joined Google over two years ago I was asked to find a small 
+project to get used to the way development is done there. The project I 
+chose was one that some colleagues had been thinking about, a key 
+management library. I soon realised that unless the library also handled 
+the crypto it was punting on the hard problem, so I extended it to do 
+crypto and to handle key rotation and algorithm changes transparently to 
+the user of the library.
+
+About nine months later I handed over my &quot;starter project&quot; to Steve 
+Weis, who has worked on it ever since. For a long time we've talked 
+about releasing an open source version, and I'm pleased to say that 
+Steve and intern Arkajit Dey did just that, earlier this week: Keyczar[1].
+
+     &quot;Keyczar is an open source cryptographic toolkit designed to make 
+it easier and safer for developers to use cryptography in their 
+applications. Keyczar supports authentication and encryption with both 
+symmetric and asymmetric keys. Some features of Keyczar include:
+
+         * A simple API
+         * Key rotation and versioning
+         * Safe default algorithms, modes, and key lengths
+         * Automated generation of initialization vectors and ciphertext 
+signatures&quot;
+
+When we say simple, by the way, the code for loading a keyset and 
+encrypting some plaintext is just two lines. Likewise for decryption. 
+And the user doesn't need to know anything about algorithms or modes.
+
+Great work, guys! I look forward to the &quot;real&quot; version (C++, of course!).
+
+[1] <A HREF="http://www.keyczar.org/">http://www.keyczar.org/</A>
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

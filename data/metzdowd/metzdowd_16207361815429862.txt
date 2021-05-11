@@ -1,0 +1,40 @@
+<PRE>
+----- Original Message -----
+From: &quot;Jerry Leichter&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt;
+To: &quot;Dave Korn&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave.korn at artimi.com</A>&gt;
+Cc: &quot;Email List - Cryptography&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+Sent: Wednesday, June 11, 2008 12:04:21 PM (GMT-0800) America/Los_Angeles
+Subject: RE: Ransomware
+
+|<i>   Why are we wasting time even considering trying to break the public key?
+</I>|<i> 
+</I>|<i>   If this thing generates only a single &quot;session&quot; key (rather, a host key)
+</I>|<i> per machine, then why is it not trivial to break?  The actual encryption
+</I>|<i> algorithm used is RC4, so if they're using a constant key without a unique
+</I>|<i> IV per file, it should be trivial to reconstruct the keystream by XORing any
+</I>|<i> two large files that have been encrypted by the virus on the same machine.
+</I>
+This is the first time I've seen any mention of RC4.  *If* they are
+using RC4, and *if* they are using it incorrectly - then yes, this
+would certainly work.  
+
+	It is interesting that Kaspersky Labs has not published the
+        code to the disassembled virus.  They want the whole world to
+        stop what they're doing to factor a 1,024-bit key, but they
+        are unwilling to publish details of the virus' mechanics.  
+        This is out of character for someone who is truly interested
+        in solving the problem for the long-term.
+
+        While their forum has the detail of the RSA key, they've 
+        categorically indicated that they will not explain the 
+        cryptography publicly, except to experts over e-mail.  I 
+        presume this is how David learned of the RC4 algorithm?
+
+        Arshad Noor
+        StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,29 @@
+<PRE>From:
+
+   &lt;<A HREF="http://www.elcomsoft.com/EDPR/gpu_en.pdf">http://www.elcomsoft.com/EDPR/gpu_en.pdf</A>&gt;
+
+  Moscow, Russia - October 22, 2007 - ElcomSoft Co. Ltd. has
+  discovered and filed for a US patent...Using the &quot;brute force&quot;
+  technique of recovering passwords, it was possible, though
+  time-consuming, to recover passwords from popular
+  applications. For example...Windows Vista uses NTLM hashing
+  by default, so using a modern dual-core PC you could test up to
+  10,000,000 passwords per second, and perform a complete
+  analysis in about two months. With ElcomSoft's new technology,
+  the process would take only three to five days..Today's [GPU]
+  chips can process fixed-point calculations. And with as much as
+  1.5 Gb of onboard video memory and up to 128 processing
+  units, these powerful GPU chips are much more effective than
+  CPUs in performing many of these calculations...Preliminary
+  tests using Elcomsoft Distributed Password Recovery product
+  to recover Windows NTLM logon passwords show that the
+  recovery speed has increased by a factor of twenty, simply by
+  hooking up with a $150 video card's onboard GPU.
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

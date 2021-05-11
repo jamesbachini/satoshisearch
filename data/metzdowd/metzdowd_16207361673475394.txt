@@ -1,0 +1,23 @@
+<PRE>
+This evening, a friend of mine who shall remain nameless who works for
+a large company that regularly processes customer credit card payments
+informed me of an interesting fact.
+
+His firm routinely discovers attempted credit card fraud. However,
+since there is no way for them to report attempted fraud to the credit
+card network (the protocol literally does not allow for it), all they
+can do is refuse the transaction -- they literally have no mechanism
+to let the issuing bank know that the card number was likely stolen.
+
+This seems profoundly bad. I hope that someone on the list has the
+right contacts to get the right people to do something about this.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

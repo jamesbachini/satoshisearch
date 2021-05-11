@@ -1,0 +1,29 @@
+<PRE>
+I've now talked to a few people affiliated with drive companies at
+this point. One of them seems to really know what he's doing. The rest
+appear not to. One has even spoken to me of keying material being
+protected by &quot;what are effectively one time pads&quot; and &quot;trust us, this
+is our business&quot; in ways that make me not trust him, or his company,
+at all.
+
+Based on what I've heard, I suspect that a grad student who wants a
+*really* good paper could probably manage to humiliate a couple of
+drive companies with a little bit of effort. It is likely to get you
+plenty of publicity.
+
+Also, at this point, I'm not sure one should trust FDE drives with
+data that one really cares about. Software based solutions can be much
+more readily analyzed and verified. They require much less trust that
+a vendor has done their job right. I don't think one can trust the
+hard drive vendors.
+
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

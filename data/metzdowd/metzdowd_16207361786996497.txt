@@ -1,0 +1,32 @@
+<PRE>* Ben Laurie:
+
+&gt;<i> Jonathan S. Shapiro wrote:
+</I>&gt;&gt;<i> Ben: I'm idly curious. Was this exceptionally unusual case where use of
+</I>&gt;&gt;<i> uninitialized memory was valid properly commented in the code?
+</I>
+It's mentioned in the manpage for a function that eventually calls the
+function that was (correctly) patched--through a function pointer.  The
+incorrectly patched function looks somewhat parallel, but it's not.
+
+There is no local comment in the source code for this particular case of
+uninitialized memory access.
+
+&gt;<i> Well. Kinda. It didn't really explain why:
+</I>&gt;<i>
+</I>&gt;<i> 		i=fread(buf,1,n,in);
+</I>&gt;<i> 		if (i &lt;= 0) break;
+</I>&gt;<i> 		/* even if n != i, use the full array */
+</I>&gt;<i> 		RAND_add(buf,n,(double)i);
+</I>&gt;<i>
+</I>&gt;<i> There is in theory a second place where it might used an uninitialised
+</I>&gt;<i> buffer, but I think in practice that never happens.
+</I>
+AFAIK, this piece of code is not really related and rarely used outside
+OpenSSL itself.  And in the OpenSSL case, the fread call always
+overwrites the whole buffer, it seems.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

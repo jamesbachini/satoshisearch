@@ -1,0 +1,21 @@
+<PRE>
+Charles McElwain &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">charlesmcelwain1 at verizon.net</A>&gt; writes:
+&gt;<i> Follow-ups on this line of research will be interesting for the
+</I>&gt;<i> evaluation of any impact of quantum computers on cryptography, and
+</I>&gt;<i> even generally, since the decoherence behavior would tend to make
+</I>&gt;<i> quantum computers approximate improving classical computers.
+</I>
+Very interesting indeed. I'd be curious about the opinions of people
+who know the field well. My QM and quantum computing knowledge aren't
+quite up to the task of analyzing the paper.
+
+&gt;<i> From the Physics pre-print server arXiv, quantum physics section:
+</I>&gt;<i> <A HREF="http://arxiv.org/abs/0804.3076">http://arxiv.org/abs/0804.3076</A>
+</I>
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

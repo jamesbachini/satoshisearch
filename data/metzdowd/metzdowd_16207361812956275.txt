@@ -1,0 +1,41 @@
+<PRE>I agree with you, that this is not nearly fast enough.
+
+However, this is 10 times faster then our original results, where we
+were searching 100 emails in about the same amount of time. With
+production code, some more optimization, esp. client side
+optimizations (i.e. message caching when possible), and increased
+parallelism, it may just be possible to reach the 4x faster searches a
+heavy user like yourself would need. I am just not a good enough coder
+to write it myself, but I believe that it can be done.
+
+adam
+
+On Mon, Jun 2, 2008 at 10:42 PM, Greg Black &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at mail.gbch.net</A>&gt; wrote:
+&gt;<i> On 2008-06-02, Adam Aviv wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> I recently implemented SSARES directly in python and also added
+</I>&gt;&gt;<i> parallelism to the searching. We can now search the a large inbox
+</I>&gt;&gt;<i> (1000+) messages in about 2-4 minutes.
+</I>&gt;<i>
+</I>&gt;<i> Not to rain on your parade, but 1,000 messages is *not* a large inbox
+</I>&gt;<i> and 2 to 4 minutes is a very long time to wait.  You'd need to make this
+</I>&gt;<i> two orders of magnitude faster before it would have a hope of being
+</I>&gt;<i> interesting.  (And for me, it would have to be at least four orders of
+</I>&gt;<i> magnitude faster before I could consider it to be useful.)
+</I>&gt;<i>
+</I>&gt;<i> Greg
+</I>&gt;<i>
+</I>
+
+
+-- 
+Adam Aviv
+Ph. D. Candidate
+Computer and Information Science
+University of Pennsylvania
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

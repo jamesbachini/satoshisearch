@@ -1,0 +1,59 @@
+<PRE>Dear all:
+
+This is a two-fold announcement, big picture and specific document 
+announcement. The whole thing is &quot;for your information&quot; as security experts.
+
+A)	The big picture refers to the &quot;PKC-only application security scheme&quot;, 
+in which client-server applications may be secured with client-side 
+public key pairs, but *no trusted certification authority* is involved 
+(server operators are expected to maintain a trusted database of their 
+clients' public keys).
+
+B)	The specific document announcement refers to what is required to 
+field the PKC-only application security scheme: explicit meaningless 
+security certificates. The reference is &quot;Explicit Meaningless X.509 
+Security Certificates as a Specifications-Based Interoperability 
+Mechanism&quot;, <A HREF="http://www.connotech.com/pkc-only-meaningless-certs.pdf">http://www.connotech.com/pkc-only-meaningless-certs.pdf</A>
+
+This post leaves it to your imagination and creativity about how a 
+PKC-only security scheme may work in practical details, i.e. how the 
+third party trust management may be replaced by first party trust 
+management (first party = server operator as the relying party for 
+client public keys). I have been doing some work in this area, but I 
+have no results to report in a properly written document. Anyway, the 
+PKC-only security scheme does not imply significant standardization for 
+interoperability among independent service operators.
+
+The document is open for discussion. It covers the minimal provisions 
+for PKC-only deployment in the installed base of browsers supporting the 
+TLS protocol.
+
+Sometimes in the future, a very reduced version might be prepared as an 
+Internet draft intended to the RFC editor publication route (RFC3932) 
+with the experimental status (this is different from the individual RFC 
+submission route in which the IESG is involved in the document 
+publication process but no IETF working group is assigned an editorial 
+role).
+
+Good reading.
+
+-- 
+
+- Thierry Moreau
+
+CONNOTECH Experts-conseils inc.
+9130 Place de Montgolfier
+Montreal, Qc
+Canada   H2M 2A1
+
+Tel.: (514)385-5691
+Fax:  (514)385-5900
+
+web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

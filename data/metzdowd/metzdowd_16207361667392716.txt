@@ -1,0 +1,82 @@
+<PRE>Hi Folks --
+
+I have been asked to opine on a system that requires a 
+&quot;two-person login&quot;.  Some AIX documents refer to this as
+a &quot;common method of increasing login security&quot;
+  <A HREF="http://www.redbooks.ibm.com/redbooks/pdfs/sg245962.pdf">http://www.redbooks.ibm.com/redbooks/pdfs/sg245962.pdf</A>
+
+However, I don't think it is very common;  I get only five hits
+from
+  <A HREF="http://www.google.com/search?q=two-person-login">http://www.google.com/search?q=two-person-login</A>
+
+By way of not-very-apt analogy: 
+ -- I am aware of business checks that require two signatures;
+ -- I am aware that purchase orders are commonly signed by 
+   two persons (the initiator and the approver); 
+ -- I am aware of missile-launch procedures that require two
+  persons using two keys;
+ -- I am aware of software development procedures where a patch
+  is submitted (and signed) by one person, tested (and signed
+  off) by another, and committed to the official repository by 
+  a third person.
+ -- et cetera.
+
+However, it is important to note that the aforementioned examples
+all share an important property, as we see from the following:
+  *) The parties give their approval _after_ the semantics has
+   been fully determined.  It would defeat all security if two 
+   signatures were attached to a blank check or a blank PO.
+  *) As a related point, the approval is attached to a particular
+   transaction.  The approver is not merely certifying that Joe
+   is really Joe, and is generally allowed to write checks 
+   (mere identification);  the approver is certifying that this 
+   particular check is OK.
+  *) To say the same thing another way, there is no pretexting.
+   There is no pretext for turning the keys on the missile launcher
+   unless you intend to launch a missile.  The semantics of the
+   keys is clear.
+
+We need to talk about threat models:
+  a) The purveyors of the system in question don't have any clue
+   as to what their threat model is.  I conjecture that they might
+   be motivated by the non-apt analogies itemized above.
+  b) In the system in question, there are myriad reasons why Joe
+   would need to log in.  If Joe wanted to do something nefarious,
+   it would take him less than a second to come up with a seemingly
+   non-nefarious pretext.  When the approver approves Joe's login,
+   the approver has no idea what the consequences of that approval
+   will be.  The two-person login requires the approver to be
+   present at login time, but does not require the approver to
+   remain present, let alone take responsibility what Joe does 
+   after login.
+  c) The only threat model I can come up with is the case where
+   Joe's password has been compromised, and nobody else's has.
+   Two-person login would provide an extra layer of security
+   in this case.  This threat is real, but there are other ways
+   of dealing with this threat (e.g. two-factor authentication)
+   ... so this seems like quite a lame justification for the
+   two-person login.
+  d) Or have I overlooked something?
+
+
+&gt;<i>From the foregoing, you might conclude that the two-person login
+</I>system is worthless security theater ... but harmless security
+theater, and therefore not worth worrying about either way.
+
+But the plot thickens.  The purveyors have implemented two-person
+login in a way that manifestly /reduces/ security.  Details 
+available on request.
+
+So now I throw it open for discussion.  Is there any significant
+value in two-person login?  That is, can you identify any threat 
+that is alleviated by two-person login, that is not more wisely 
+alleviated in some other way?
+
+If so, is there any advice you can give on how to do this right?  
+Any DOs and DON&quot;Ts?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

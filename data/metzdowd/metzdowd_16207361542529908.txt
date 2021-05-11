@@ -1,0 +1,26 @@
+<PRE>On 12 September 2007 19:28, Steven M. Bellovin wrote:
+
+&gt;<i> On Wed, 12 Sep 2007 09:28:51 -0400
+</I>&gt;<i> &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> A rare 17th century crypto book is being auctioned.
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> <A HREF="http://www.liveauctioneers.com/item/4122383/">http://www.liveauctioneers.com/item/4122383/</A>
+</I>&gt;&gt;<i> 
+</I>&gt;<i> As I commented to Bruce, see what Kahn says about it:  &quot;But the work,
+</I>&gt;<i> while containing some cipher systems, mainly defends the occultism of
+</I>&gt;<i> Trithemius&quot;.
+</I>
+  Sure, that's what the *ciphertext* says....  &lt;g&gt;
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

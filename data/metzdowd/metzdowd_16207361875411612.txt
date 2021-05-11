@@ -1,0 +1,33 @@
+<PRE>Hi,
+
+I am searching for symmetric encryption algorithms for decimal strings.
+
+Let's say we have various 40-digit decimal numbers:
+2349823966232362361233845734628834823823
+3250920019325023523623692235235728239462
+0198230198519248209721383748374928601923
+
+As far as I calculated, a decimal has the equivalent of about 3,3219
+bits, so with 40 digits, we have about 132,877 bits.
+
+Now I would like to encrypt those numbers in a way that the result is a
+decimal number again (that's one of the basic rules of symmetric
+encryption algorithms as far as I remember).
+
+Since the 132,877 bits is similar to 128 bit encryption (like eg. AES),
+I would like to use an algorithm with a somewhat comparable strength to AES.
+But the problem is that I have 132,877 bits, not 128 bits. And I can't
+cut it off or enhance it, since the result has to be a 40 digit decimal
+number again.
+
+Does anyone know a an algorithm that has reasonable strength and is able
+to operate on non-binary data? Preferrably on any chosen number-base?
+
+Best regards,
+Philipp G&#252;hring
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

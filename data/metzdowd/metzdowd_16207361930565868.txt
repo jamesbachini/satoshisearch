@@ -1,0 +1,11 @@
+<PRE>The Skein team has announced its submission to the NIST hash competition:
+
+&lt;<A HREF="http://www.schneier.com/skein.html">http://www.schneier.com/skein.html</A>&gt;
+
+s.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,23 @@
+<PRE>
+Udhay Shankar N &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">udhay at pobox.com</A>&gt; writes:
+&gt;<i> Kaminsky Breaks DNS
+</I>[...]
+&gt;<i> Unlike other researchers who give up the gory details, Kaminsky took a
+</I>&gt;<i> wiser path by smiling and nodding. He&#8217;ll give up the goods at Black
+</I>&gt;<i> Hat in August. That should give folks enough time to patch their
+</I>&gt;<i> systems.
+</I>
+The details of the exploit (or at least an exploit just as bad) have
+now leaked. I'm not surprised -- any secret known by more than one
+person doesn't remain secret for long, and what one person can figure
+out can be figured out by others.
+
+Still, it was good that we had a couple extra weeks to patch.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

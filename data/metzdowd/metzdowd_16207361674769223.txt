@@ -1,0 +1,52 @@
+<PRE>At Wed, 30 Jan 2008 09:04:37 +1000,
+James A. Donald wrote:
+&gt;<i> 
+</I>&gt;<i> Ivan Krstic' wrote:
+</I>&gt;<i>  &gt; Some number of these muppets approached me over the
+</I>&gt;<i>  &gt; last couple of years offering to donate a free license
+</I>&gt;<i>  &gt; for their excellent products. I used to be more polite
+</I>&gt;<i>  &gt; about it, but nowadays I ask that they Google the
+</I>&gt;<i>  &gt; famous Gutmann Sound Wave Therapy[0] and mail me
+</I>&gt;<i>  &gt; afterwards.
+</I>&gt;<i> 
+</I>&gt;<i>   Gutmann Sound Wave Therapy: Gutmann recommends:
+</I>&gt;<i> : :	Whenever someone thinks that they can replace
+</I>&gt;<i> : :	SSL/SSH with something much better that they
+</I>&gt;<i> : :	designed this morning over coffee, their
+</I>&gt;<i> : :	computer speakers should generate some sort
+</I>&gt;<i> : :	of penis-shaped sound wave and plunge it
+</I>&gt;<i> : :	repeatedly into their skulls until they
+</I>&gt;<i> : :	achieve enlightenment.
+</I>&gt;<i> 
+</I>&gt;<i> On SSL, Gutmann is half wrong:
+</I>&gt;<i> 
+</I>&gt;<i> SSL key distribution and management is horribly broken,
+</I>&gt;<i> with the result that everyone winds up using plaintext
+</I>&gt;<i> when they should not.
+</I>&gt;<i> 
+</I>&gt;<i> SSL is layered on top of TCP, and then one layers one's
+</I>&gt;<i> actual protocol on top of SSL, with the result that a
+</I>&gt;<i> transaction involves a painfully large number of round
+</I>&gt;<i> trips.
+</I>&gt;<i>
+</I>&gt;<i> We really do need to reinvent and replace SSL/TCP,
+</I>&gt;<i> though doing it right is a hard problem that takes more
+</I>&gt;<i> than morning coffee.
+</I>
+I can't believe I'm getting into this with James.
+
+Ignoring the technical question of &quot;broken&quot;, I know of no evidence
+whatsoever that round trip latency is in any way a limiting factor for
+people to use SSL/TLS.  I've heard of people resisting using SSL for
+performance concerns, but they're almost always about the RSA
+operation on the server (and hence the cost of server hardware).
+
+If you have some evidence I'd be interested in hearing it.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,66 @@
+<PRE>So I recently re-read Lawrence Wright's controversial piece in the
+New Yorker profiling Director of National Intelligence Mike McConnell.
+(<A HREF="http://www.newyorker.com/reporting/2008/01/21/080121fa_fact_wright">http://www.newyorker.com/reporting/2008/01/21/080121fa_fact_wright</A>)
+While the piece's glimpse into the administration's attitudes toward  
+torture
+and warrantless wiretaps have gotten much attention, I was particularly
+struck by this paragraph:
+
+      In the nineties, new encryption software that could protect  
+telephone
+      conversations, faxes, and e-mails from unwarranted monitoring  
+was coming
+      on the market, but the programs could also block entirely legal  
+efforts
+      to eavesdrop on criminals or potential terrorists. Under  
+McConnell's
+      direction, the N.S.A. developed a sophisticated device, the  
+Clipper Chip,
+      with a superior ability to  encrypt any electronic  
+transmission; it also
+      allowed law-enforcement officials, given the proper authority,  
+to decipher
+      and eavesdrop on the encrypted communications of others.  
+Privacy advocates
+      criticized the device, though, and the Clipper was abandoned by  
+1996. &quot;They
+      convinced the folks on the Hill that they couldn't trust the  
+government to
+      do what it said it was going to do,&quot; Richard Wilhelm, who was  
+in charge of
+      information warfare under McConnell, says.
+
+This seems to me a significant re-writing of history, and the Wilhelm  
+quote a particularly
+disingenuous interpretation of recent events.  In fact, Clipper died  
+on the vine due to
+technical problems that rendered it ineffective for its intended  
+purpose (to say nothing
+of the extravagance of being implemented in an expensive tamper- 
+resistant ASIC).  And
+key escrow and crypto export controls died (in 2000) not from an act  
+of Congress (which
+never actually voted on any cryptography legislation), but from  
+unilateral action within
+the executive branch.  In 2004, the Bush administration further  
+liberalized the crypto
+export control policies of the previous administration, which I  
+believe had (and still
+have) strong bipartisan support.
+
+While Clipper certainly was a lightning rod for criticism on privacy  
+grounds, the changes
+in policy that eventually occurred can hardly be attributed to some  
+sort of frightened
+capitulation to an out-of-control privacy lobby, as the quote implies.
+
+I blog a bit more about this at <A HREF="http://www.crypto.com/blog/">http://www.crypto.com/blog/</A> 
+mcconnell_clipper/
+
+-matt
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

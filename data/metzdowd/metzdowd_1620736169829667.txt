@@ -1,0 +1,62 @@
+<PRE>Hal Finney wrote:
+&gt;<i> 
+</I>&gt;<i> Looking at the block diagram for the new Toshiba circuit, and comparing
+</I>&gt;<i> with the Intel design, one concern I have is with attacks on the device
+</I>&gt;<i> via external electromagnetic fields which could modulate current flows
+</I>&gt;<i> and potentially influence internal random numbers. Intel attempted
+</I>&gt;<i> to mitigate this attack by using a pair of resistors spaced close
+</I>&gt;<i> together, and taking differentials between them. I don't see any such
+</I>&gt;<i> countermeasures in the (admittedly crude) block diagram in the Toshiba
+</I>&gt;<i> press release.
+</I>&gt;<i> 
+</I>
+
+&gt;<i>From the EE Times article, the stochastic noise source for the Toshiba RNG
+</I>is from a trap layer of Silicon Nitride in a MOSFET transistor.  An Analog
+to Digital Converter is used as a gating amplifier and the random noise bit
+rate is dependent on the conversion speed instead of transformer etc.impulse
+response.  The difference in size between the 2 Mb/s  and 10 Mb/s RNG appear
+to be due to A/D converter area (from the ISSCC session 22 advanced program).
+
+
+<A HREF="http://www.toshiba.co.jp/rdc/rd/detail_e/e0704_03.html">http://www.toshiba.co.jp/rdc/rd/detail_e/e0704_03.html</A>
+
+It's a floating gate structure.
+
+&quot;  it is clear from the figure that the SiN MOSFET device generates greater
+current fluctuation. This is presumably because more frequent occurrence of
+electron capture and emission between the Si channels and dangling bonds
+owing to the remarkably large number of the traps that cause noise
+generation makes possible generation of a large amount of noise. Also, the
+SiN MOSFET?s ID fluctuation makes it possible to generate a larger amount of
+random noise due to the respective parameter designs of the devices (gate
+length, gate width, tunnel oxidized film thickness (Tox), the Si/N atomic
+ratio). &quot;
+
+The more &quot;signal&quot;, the higher the noise immunity, presumably.  The
+description reminds me of tube thermionic noise.   I'd suspect it would
+benefit from a drawing done on a rotated axis showing the Trap layer as a 2D
+array.
+
+You get a random noise source that doesn't require the cryptographic
+boundary be pushed into instruction/procedural space or across chip
+boundaries for RNG generation, avoiding those pesky predictable random
+numbers as attributed to a Microsoft software implementation recently.
+
+Military silicon already has RNG on chip (e.g. AIM, Advanced INFOSEC
+Machine, Motorola), you wonder if someone would consider an FPGA with a good
+RNG hard core cell on chip, now that someone has figured out how to do
+red/black separation in an FPGA compiler.  Wonder how cheap it is to spot
+dope SiN or will we have to switch to anti-fuse FPGAs to take advantage?
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,29 @@
+<PRE>On Fri, Feb 01, 2008 at 06:24:25PM +1000, James A. Donald wrote:
+&gt;<i> You are asking for a layered design that works better than the existing 
+</I>&gt;<i> layered design.  My claim is that you get an additional round trip for 
+</I>&gt;<i> each layer - which your examples have just demonstrated.
+</I>&gt;<i> 
+</I>&gt;<i> SSL has to be on top of a reliable transport layer, hence has to have an 
+</I>&gt;<i> extra round trip.  I was not proposing something better *for* SSL, I was 
+</I>&gt;<i> proposing something better *instead* *of* SSL.  If one takes SSL as a 
+</I>&gt;<i> given, then indeed, *three* round trips are needed before the client can 
+</I>&gt;<i> send any actual data - which is precisely my objection to SSL.
+</I>
+What, specifically, are you proposing?  Running the web over UDP?
+That's the only alternative that I can see short of modifying TCP or
+IPsec.  I doubt any of those three will take the web world by storm, but
+HTTP over DTLS over UDP would have to be least unlikely, and even then,
+I strongly doubt it.
+
+I think we'll just have to deal with those round-trips.  As long as
+there be plenty of other, cheaper or more practical ways to improve web
+app performance, that's all we're likely to see pursued.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

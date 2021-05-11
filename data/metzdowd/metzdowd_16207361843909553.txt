@@ -1,0 +1,42 @@
+<PRE>Pierre-Evariste Dagand wrote:
+&gt;&gt;<i>  But just how GREAT is that, really? Well, we don'
+</I>&gt;&gt;<i>  t know. Why? Because there isn't actually a way test for randomness. Your
+</I>&gt;&gt;<i> DNS resolver could be using some easily predicted random number generator
+</I>&gt;&gt;<i> like, say, a linear congruential one, as is common in the rand() library
+</I>&gt;&gt;<i> function, but DNS-OARC would still say it was GREAT. Believe them when they
+</I>&gt;&gt;<i> say it isn't GREAT, though!
+</I>&gt;<i> 
+</I>&gt;<i> Well, they are some tests to judge the &quot;quality&quot; of a random number
+</I>&gt;<i> generator. The best known being the Diehard tests:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://en.wikipedia.org/wiki/Diehard_tests">http://en.wikipedia.org/wiki/Diehard_tests</A>
+</I>&gt;<i> <A HREF="http://stat.fsu.edu/pub/diehard/">http://stat.fsu.edu/pub/diehard/</A>
+</I>&gt;<i> 
+</I>&gt;<i> For sure, these tests might be an overkill here. Also, there must be
+</I>&gt;<i> some tests in the Art of Computer Programming too but I don't have it
+</I>&gt;<i> at hand right now (shame on me).
+</I>
+I doubt you can get a large enough sample in any reasonable time.
+
+&gt;<i> I don't see the point of evaluating the quality of a random number
+</I>&gt;<i> generator by statistical tests.
+</I>
+Which is entirely my point.
+
+&gt;<i> But I might be wrong, though.
+</I>&gt;<i> 
+</I>&gt;<i> Regards,
+</I>&gt;<i> 
+</I>
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

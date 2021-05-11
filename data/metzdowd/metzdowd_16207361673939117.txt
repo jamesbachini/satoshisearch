@@ -1,0 +1,29 @@
+<PRE>
+There has been more hype about &quot;Jihadist&quot; crypto software lately. For
+example:
+
+<A HREF="http://www.eetimes.com/rss/showArticle.jhtml?articleID=205918680">http://www.eetimes.com/rss/showArticle.jhtml?articleID=205918680</A>
+
+I'll note that the presumed users would probably be better off
+with a well vetted program like GPG. I'll also note that there is
+literally no way to prevent people from writing such software, since
+they are non-US nationals living outside the US. (As much as we would
+like US law to apply to all foreigners living abroad, that's not how
+the world works.)
+
+None the less, I'll predict that this &quot;news&quot;, which has been hyped in
+several places of late, will be brought up by some as a reason why we
+must restrict crypto exports, never mind that this &quot;solution&quot; would in
+no way alter the availability of cryptographic software to terrorists,
+any more than New York City gun control regulations would prevent
+AK-47s from reaching fighters in Congo.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

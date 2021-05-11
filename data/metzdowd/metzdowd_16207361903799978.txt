@@ -1,0 +1,64 @@
+<PRE>
+Jim Youll &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jim at cr-labs.com</A>&gt; writes:
+&gt;<i> I think it's got to be said that it's not apparent that the end-users
+</I>&gt;<i> are the /idiots/ who should be called out for &quot;failing&quot; this study.
+</I>&gt;<i>
+</I>&gt;<i> &quot;We&quot; gave them these interfaces, protocols and technologies that
+</I>&gt;<i> allow for things to go so badly wrong. Nothing in the world required
+</I>&gt;<i> the technology ecosystem to become what it is, except design
+</I>&gt;<i> decisions that were (and are) made well out of the sphere of
+</I>&gt;<i> influence of mere &quot;idiot users.&quot;
+</I>&gt;<i>
+</I>&gt;<i> This stuff was designed and shepherded to market by the modern
+</I>&gt;<i> captains of industry, by rock star developers and w&#252;nderkinden.
+</I>&gt;<i>
+</I>&gt;<i> When a real engineer builds a bridge that falls down, we blame the
+</I>&gt;<i> engineer, not gravity.
+</I>
+419 scams are not caused by bad interfaces or bad engineering.
+Phishing is, but clearly not all con games are, and con games are
+remarkably profitable.
+
+Although it is true that there are better and worse interfaces, and
+that many of the interfaces we use right now are rather on the worse
+side, it is apparent that one of the issues we have is the astonishing
+depth of human stupidity.
+
+&gt;<i> I'll even argue from the other direction just to make it complete.
+</I>&gt;<i> Even if they are all idiots: when a population you serve outnumbers
+</I>&gt;<i> you by 1,000 to 1 and keeps blowing itself up when using your stuff,
+</I>&gt;<i> it's time to idiot- proof the product.
+</I>
+To quote a common observation: You can't make things perfectly idiot
+proof because idiots are too ingenious.
+
+I was having a discussion over lunch about a week ago with a couple of
+pretty well known security people (one of them might pipe up on the
+list). We were considering what would happen in a particular seemingly
+foolproof system with a trusted channel if someone got a message via
+an untrusted channel saying...
+
+  &quot;Now, to complete your book purchase, the trusted system is going to
+   say &quot;If you press &quot;YES&quot;, you're going to send all the money you
+   have in the world to a con man in Nigeria&quot; -- this is
+   normal. Please press yes when it says that.&quot;
+
+...a large fraction of users would just press &quot;YES&quot;.
+
+I don't want to claim that there is no place for better human factors
+work in security engineering. There clearly is. However, I will
+repeat, that is not the only story here, and it is not unreasonable to
+note that there are people who are clearly nearly impossible to
+protect with almost any level of human factors engineering and
+security technology.
+
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

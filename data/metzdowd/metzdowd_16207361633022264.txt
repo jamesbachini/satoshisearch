@@ -1,0 +1,93 @@
+<PRE>|<i> So... supposing I was going to design a crypto library for use within
+</I>|<i> a financial organization, which mostly deals with credit card numbers
+</I>|<i> and bank accounts, and wanted to create an API for use by developers,
+</I>|<i> does anyone have any advice on it?
+</I>|<i> 
+</I>|<i> It doesn't have to be terribly complete, but it does have to be
+</I>|<i> relatively easy to use correctly (i.e. securely).
+</I>|<i> 
+</I>|<i> I was thinking of something like this:
+</I>|<i> 
+</I>|<i> class crypto_api
+</I>|<i> {
+</I>|<i>     ...
+</I>|<i>     // developers call these based on what they're trying to do
+</I>|<i>     // these routines simply call crypto_logic layer
+</I>|<i>     Buffer encrypt_credit_card(Buffer credit_card_number, key_t key);
+</I>|<i>     Buffer encrypt_bank_account(Buffer bank_account, key_t key);
+</I>|<i>     Buffer encrypt_other(Buffer buffer, key_t key);
+</I>|<i>     ...
+</I>|<i> };
+</I>|<i> 
+</I>|<i> class crypto_logic
+</I>|<i> {
+</I>|<i>     ...
+</I>|<i>     algo_default = ALGO_AES256CBC;
+</I>|<i>     // encrypt with a given algorithm
+</I>|<i>     Buffer encrypt(Buffer buffer, key_t key, algo_t aid = algo_default);
+</I>|<i>     // calls different routines in crypto_implementation layer depending on algorithm used
+</I>|<i>     Buffer decrypt(Buffer buffer, key_t key);
+</I>|<i>     ...
+</I>|<i> };
+</I>|<i> 
+</I>|<i> class crypto_glue
+</I>|<i> {
+</I>|<i>     ...
+</I>|<i>     // calls routines in libraries such as OpenSSL
+</I>|<i>     // mostly wrappers that translate between our data types and theirs
+</I>|<i>     Buffer aes256cbc-encrypt(...);
+</I>|<i>     Buffer aes256cbc-decrypt(...);
+</I>|<i>     ...
+</I>|<i> };
+</I>|<i> 
+</I>|<i> The general idea is that crypto_api provides domain-specific APIs that
+</I>|<i> are easy for anyone to understand, that the logic layer allows for the
+</I>|<i> selection of different algorithms, and the glue layer is basically a
+</I>|<i> translation layer to underlying libraries.
+</I>|<i> 
+</I>|<i> It is very important that the API remain stable, because the code
+</I>|<i> base is large and owned by various groups.
+</I>|<i> 
+</I>|<i> One thing that I'm wondering is how to indicate (e.g.) the overhead in
+</I>|<i> terms of padding, or whatever, for various algorithms... or if it
+</I>|<i> matters.  The old code had some really disturbing practices like
+</I>|<i> assuming that the output buffer was 16 octets bigger, and stuff like
+</I>|<i> that... scary.
+</I>|<i> 
+</I>|<i> Intend to skim the OpenSSL design and Gutmann's &quot;Design of a
+</I>|<i> Cryptographic Security Architecture&quot; for ideas.
+</I>|<i> 
+</I>|<i> Comments?
+</I>Your Buffer class is a step up from using a void*!  You're not really
+using data typing effectively.  Define classes to encapsulate encrypted
+and cleartext data; carefully decide what transitions are allowed among
+them; and define your API around that.  Note that transitions include
+creation and, particularly, deletion - the destructor for cleartext
+should zero the memory.
+
+The above is a simplification.  There are probably more than two
+categories of data.  A better classification might be:  Encrypted,
+cleartext but sensitive, non-sensitive.  In a financial setting,
+&quot;sensitive&quot; may have subdivisions based, for example, on who is allowed
+access.  Should there be some special datatype for keys, which are about
+the most sensitive thing in the system?  (It should probably be the case
+that the common public API's provide no way to export a key, just a way
+to apply it.  Key management should be a separate API that most
+applications don't even use, so you can be sure they can't (without
+cheating, which is of course always possible in C++) leak them.)
+
+As much as possible, make the actual rules that apply to any piece of
+data in the program (a) transparent to someone reading the code; (b)
+enforceable by a compiler or, second best, the API implementation.  In
+the public API, concentrate on the data and the rules that govern it.
+Particular crypto algorithms and various related choices should be
+hidden within the implementation.  Not only should the API be easy to
+use correctly, it should be as hard as possible to use *in*correctly!
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

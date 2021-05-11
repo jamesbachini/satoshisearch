@@ -1,0 +1,42 @@
+<PRE>On Dec 30, 2007, at 12:06 AM, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+&gt;<i> never be permitted to export to the embargoed country
+</I>&gt;<i> list (Cuba, Iran, Sudan, Syria, North Korea, and Libya).
+</I>
+
+Not Libya. See 15 C.F.R &#167;740Spir[0], country group E: Cuba, Iran,  
+North Korea, Sudan, Syria.
+
+Interestingly, 15 C.F.R. &#167;746.8[1] also lists Rwanda: &quot;an embargo  
+applies to the sale or supply to Rwanda of arms and related mat&#233;riel  
+of all types and regardless of origin, including weapons and  
+ammunition.&quot; I am not a lawyer, and cannot tell whether this applies  
+to encryption.
+
+We've recently had to jump through the BIS crypto export hoops at  
+OLPC. Our systems both ship with crypto built-in and, due to their  
+Fedora underpinnings, allow end-user installation of various crypto  
+libraries -- all open-source -- through our servers. It was a  
+nightmare; the regulations and paperwork appear to be designed for the  
+use case of individual applications that utilize a handful of  
+primitives and attempt to keep the user from examining or modifying  
+the utilized crypto. Trying to fit a Linux distribution into this  
+model proved, er, challenging. (We also found that projects that we  
+expected would know the drill cold, such as Fedora and Mozilla, were  
+actually not very familiar with the processes involved.)
+
+Cheers,
+Ivan.
+
+
+
+[0] <A HREF="http://www.access.gpo.gov/bis/ear/pdf/740spir.pdf">http://www.access.gpo.gov/bis/ear/pdf/740spir.pdf</A>
+[1] <A HREF="http://www.access.gpo.gov/bis/ear/pdf/746.pdf">http://www.access.gpo.gov/bis/ear/pdf/746.pdf</A>
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

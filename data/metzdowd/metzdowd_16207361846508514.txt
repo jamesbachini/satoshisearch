@@ -1,0 +1,62 @@
+<PRE>Matt Ball writes:
+&gt;<i>Another attacking avenue is the 32-bit initial seed.  If the
+</I>&gt;<i>implementation re-seeds frequently, or leaks to you the first outputs
+</I>&gt;<i>after initialization, then you only have to brute-force the 32-bit
+</I>&gt;<i>seed space, times the number of samples since reseeding.
+</I>
+Well, that's good and broken then, isn't it?  No ifs about it.
+It doesn't matter whether the implementation re-seeds frequently or
+rarely.  It doesn't matter whether it leaks to you the first outputs
+after initialization or only later ones.  If it's using a 32-bit seed,
+this sucker is just plain broken, period.
+
+The attack is trivial -- it's just exhaustive keysearch.
+
+Attack: Given ~ 3 known outputs from the RNG, try all possible 32-bit
+seeds.  You'll be able to recognize when your guess at the seed is correct
+because the output from your guessed seed will match the observed output.
+This assumes you know the offsets of your outputs (how many times the
+RNG has been cranked before producing your known outputs), but even
+if you only have partial information about that you can still make a
+variant of this attack work.  The exhaustive search attack has to try
+only 2^32 possibilities, so I'm guessing this attack should only take
+minutes (at worst, hours) on a fast computer.
+
+My earlier email about fancy attacks on this scheme is irrelevant.
+There's no need to bother with fancy attacks, when the PRNG only uses
+a 32-bit seed -- that's just blatantly insecure.  This is a textbook
+error, one of the oldest mistakes in the book.  (For example, look
+here:  <A HREF="http://www.cs.berkeley.edu/~daw/papers/ddj-netscape.html">http://www.cs.berkeley.edu/~daw/papers/ddj-netscape.html</A>)
+
+Using this PRNG for security-critical purposes would not be wise.
+
+
+
+
+I'll include your code snippet for seeding the PRNG below.  Note: I'm
+assuming, per your comments, that &quot;unsigned long&quot; is a 32-bit type.
+
+&gt;<i>Here is the function that performs the initial seeding, based on a 32-bit seed:
+</I>&gt;<i>
+</I>&gt;<i>static void __set_random32(struct rnd_state *state, unsigned long s)
+</I>&gt;<i>{
+</I>&gt;<i>        if (s == 0)
+</I>&gt;<i>                s = 1;      /* default seed is 1 */
+</I>&gt;<i>#define LCG(n) (69069 * n)
+</I>&gt;<i>        state-&gt;s1 = LCG(s);
+</I>&gt;<i>        state-&gt;s2 = LCG(state-&gt;s1);
+</I>&gt;<i>        state-&gt;s3 = LCG(state-&gt;s2);
+</I>&gt;<i>        /* &quot;warm it up&quot; */
+</I>&gt;<i>        __random32(state);
+</I>&gt;<i>        __random32(state);
+</I>&gt;<i>        __random32(state);
+</I>&gt;<i>        __random32(state);
+</I>&gt;<i>        __random32(state);
+</I>&gt;<i>        __random32(state);
+</I>&gt;<i>}
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

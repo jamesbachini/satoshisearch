@@ -1,0 +1,21 @@
+<PRE> 
+&gt;&gt;<i>Adding a backdoor to chips is a different story, though, since that would
+</I>require cutting a second set of masks. 
+&gt;&gt;<i>I am assuming that there must be no backdoor in the legitimately produced
+</I>chips since the client would detect 
+&gt;&gt;<i>it as a slight violation of some of their timing simulations. The client
+</I>also often inspects the masks before 
+&gt;&gt;<i>the chips are produced and basically reverse-engineers the whole chip on
+</I>that level.
+
+A backdoor -- hardware or software -- in a smart card or TPM would be
+difficult to detect by either of these means.  In the case that nation A is
+buying these from nation F, don't you think that nation F would be motivated
+to slip in a couple extra lines of code or a couple extra 100 gates just in
+case?  If A got into a tangle with C, F would in a very strong position.  
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

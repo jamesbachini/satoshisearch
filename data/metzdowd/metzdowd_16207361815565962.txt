@@ -1,0 +1,37 @@
+<PRE>&gt;<i> Interesting.  Of course, with the possible exception of Skype, only  
+</I>&gt;<i> the over-the-network part of the communication is protected.  The  
+</I>&gt;<i> IM providers can still give the contents of your communications to  
+</I>&gt;<i> third parties.
+</I>
+As far as I can tell after having reverse engineered its protocol,  
+Skype is actually very well made with a few exceptions that would  
+still be next to impossible to exploit for a street hacker (and with  
+only one suspicious thing that looks like a backdoor exploitable only  
+by the server and only by whoever knows the preimages to some hard- 
+coded MD5 values - &quot;it looks like a backdoor, it smells like a  
+backdoor, it gotta be a duck&quot;). Other than that, peer-to-peer AES-256  
+with randomly generated RSA keys is good enough for me.
+
+&gt;<i> As OTR has shown, it's not hard to do end-to-end crypto even if you  
+</I>&gt;<i> don't have direct client connectivity.  Makes one wonder why the  
+</I>&gt;<i> default clients don't have the functionality :)
+</I>
+Way too much hassle for them having to deal with the government  
+agencies demanding access to intercepted communications. It goes for  
+all the products developed by large corporations. The general  
+attitude is &quot;honest people have nothing to hide&quot; aggravated by the  
+encryption export controls and the Wassenaar Arrangement. While Skype  
+was made by Estonians who simply didn't care about any such nonsense.  
+So the cheapest way for the NSA to obtain all the Skype's secret keys  
+giving them at least some access to the servers and traffic  
+obfuscation algorithms was to have a US company pay $4bln for it...  
+Well done!
+
+Marcos el Ruptor
+<A HREF="http://www.enrupt.com/">http://www.enrupt.com/</A> - Raising the bar.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

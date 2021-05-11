@@ -1,0 +1,50 @@
+<PRE>* Peter Gutmann:
+
+&gt;&gt;<i>Or is it unreasonable to expect that the specs match what is actually needed
+</I>&gt;&gt;<i>for interoperability with existing implementations (mostly in the TLS, S/MIME
+</I>&gt;&gt;<i>area)?
+</I>&gt;<i>
+</I>&gt;<i> There is very little correspondence between PKI specs and reality.
+</I>
+I should have written that my main goal was to extract the public key
+material, and perhaps the validity period.  I want to use the
+certificates as interoperable public key containers, mainly in order to
+be able to rely on proven TLS implementations for encryption and
+authentication.
+
+&gt;<i> The brokenness in X.509 implementations creates a self-sustaining cycle in
+</I>&gt;<i> which applications that accept certs are more or less oblivious to anything
+</I>&gt;<i> that's in the cert (beyond basic stuff like correct formatting and encoding,
+</I>&gt;<i> and so on), so you can get away with almost anything (and then in turn because
+</I>&gt;<i> apps will accept anything, cert creators can create arbitrarily broken certs
+</I>&gt;<i> without being caught out by it, so the cycle is self-sustaining).
+</I>
+I guess parsing X.509 certs to derive further semantic content is
+comparable to mail header parsing.  That is a futile exercise, too, but
+sometimes unavoidable (for finding spam injection points, for instance).
+
+But to be honest, I really don't see the point of extracting further
+data from the certificates.  I can't reach OCSP servers and CRL
+distribution points anyway because they are firewalled off.  I still
+need to map a DN to some application-specific entity, and I need to
+grant specific capabilities to it because I don't want to grant blanket
+permission to the CAs involved--but this means I can directly bind this
+metadata to the certificate, using the DN instead does not really
+simplify set-up.  The lack of indirection makes key rollover more
+difficult, granted, but you don't have to deal with broken random number
+generators every other day, so I'm not sure if this is such a bad
+trade-off.
+
+&gt;<i> If you want to be really lazy, use an X.509v1 cert where you don't even need
+</I>&gt;<i> to bother with extensions.  A downside (?) of this is that some applications
+</I>&gt;<i> will treat it as a CA root cert.
+</I>
+I've got a couple of X.509v1 certs with extensions in production use,
+which are a bit difficult to phase out. 8-( Turns out that this is not
+so interoperable after all.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

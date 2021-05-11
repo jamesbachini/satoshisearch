@@ -1,0 +1,21 @@
+<PRE>I think you would be doing the crypto community a huge public
+service by publishing the ~4 page section, Ian.  Personally,
+I prefer your 3-sentence disclaimer. :-)
+
+Arshad Noor
+StrongAuth, Inc.
+
+Ian Farquhar (ifarquha) wrote:
+
+  I personally have a boilerplate risk disclosure section
+&gt;<i> which basically says &quot;your in-house app developers know squat about
+</I>&gt;<i> crypto, and you're at risk if you're trusting their designs and
+</I>&gt;<i> implementation as a consequence.&quot;  It's a bit nicer phrased, but that's
+</I>&gt;<i> the gist of the ~4 page section.
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

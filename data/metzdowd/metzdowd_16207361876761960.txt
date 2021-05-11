@@ -1,0 +1,31 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> SKMS is vaporware that leaves all
+</I>&gt;<i> the hard parts of the specification out.
+</I>
+An open-source implementation has been available for 2 years.
+A new version will be available next year that will implement
+the current OASIS draft and whatever useful comments the
+Public Review of the specification brings.
+
+&gt;<i> 
+</I>&gt;<i> I think that comparing the advance SQL made with SKMS seems a bit
+</I>&gt;<i> unreasonable.
+</I>&gt;<i> 
+</I>
+I was comparing the concept of data-management to key-management,
+which is a more appropriate analogy; there is no end-user language
+within an SKMS.
+
+WRT comparing SKMS to Kerberos, for 20+ years I've always seen
+Kerberos as a network-authentication protocol and perhaps it is my
+failing that I couldn't see the possibility of using a flat-head
+screwdriver in a Philips-head screw.
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,36 @@
+<PRE>At 10:59 PM 7/9/2007, Florian Weimer wrote:
+&gt;<i>Uh-oh, no.  The protocol characteristics don't change depending on
+</I>&gt;<i>who is selling you the device.
+</I>
+Of course they do, at least in the US,
+where the mobile phones are generally carrier-specific,
+often locked, and generally don't have open designs.
+In particular, they're not usually designed to let the
+data applications get at the voice compression ASICs,
+but they usually don't have enough CPU to compress voice in Java
+if they can get at the voice stream at all.
+Some of the PDA phones are more flexible, and I'd expect
+OpenMoko to be much more flexible.
+
+&gt;<i>Many telcos have an aversion to end-to-end protocols.
+</I>
+They're getting better about it, but the transmission characteristics
+from most of the data protocols aren't designed for voice,
+unless you're willing to do push-to-talk or equivalent.
+So ironically, if you want to get good latency for 5.3kbps voice,
+you'll want the fastest data protocols.
+HSDPA's latency is 100-200ms, and upstream is 100+ kbps -
+you could probably run uncompressed voice which is about 80kbps,
+since latency's less of a problem.
+(EDGE has upstream of 40-60kbps, but latency is 350+
+so the more compressed protocols aren't going to behave.
+I don't have the 1xRTT numbers handy, but I think they're similar.)
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

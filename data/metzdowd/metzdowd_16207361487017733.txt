@@ -1,0 +1,39 @@
+<PRE>silvio wrote:
+
+&gt;<i> Aren't run-of-the-mill cellphones these days powerful enough to use
+</I>&gt;<i> available software like OpenSSL to encrypt voice/datastreams?
+</I>&gt;<i> Again...what are the options for end-to-end cell encryption right now?
+</I>
+Mobile phones have had spare cycles for doing strong crypto for a very 
+long time. There are two classes of reasons why this is not happening 
+and is (unfortunately) never going to happen:
+
+1. Practically no users ask for it, so the handset vendors prefer to 
+use development resources to build even more flashy features, rather 
+than allocate resources to developing E2E security. No user would ever 
+brag about how secure their phone is, but they would brag about how they 
+can play video games or take pictures or whatever, or how small it is.
+
+2. E2E crypto on mobiles would require cross-vendor support, which would 
+mean that it would have to go into the standard.  Unfortunately, 
+standards in the mobile world are heavily influenced by governmnets, and 
+the four horsemen of the apocalypse (drug dealers, paedophiles, spies, 
+and terrorists) are still being used by government types to nix any 
+attempts at crypto they can't break or intercept.
+
+Unfortunately, it's not so easy to roll your own on top of a 3G-enabled 
+smartphone. The &quot;broadband&quot; channel does not have the tight jitter and 
+throughput guarantees that voice needs, and some providers (Verizon in 
+the USA for example) consider running voice traffic over their 
+&quot;broadband&quot; network a violation of the usage agreement (no need to blame 
+the government for that, their own greed is adequate explanation). 
+There are lots of other technical and human-factors issues that have 
+been covered to great extent in this and other fora.
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

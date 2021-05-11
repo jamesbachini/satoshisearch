@@ -1,0 +1,42 @@
+<PRE>
+If on the one hand, the correct procedure is sign-encrypt-sign,
+then why, on the other hand, is the parallel not sign-hash-sign ?
+
+--dan
+
+=============
+
+<A HREF="http://world.std.com/~dtd/sign_encrypt/sign_encrypt7.ps">http://world.std.com/~dtd/sign_encrypt/sign_encrypt7.ps</A>
+
+Donald T. Davis, &quot;Defective Sign &amp; Encrypt in S/MIME, PKCS#7, MOSS, PEM,
+PGP, and XML.&quot;, Proc. Usenix Tech. Conf. 2001 (Boston, Mass., June
+25-30, 2001), pp. 65-78.(180 Kbytes) (PDF, 200 Kbytes) (HTML, 80 Kbytes)
+
+Summary of the paper.
+
+Abstract: 
+Simple Sign &amp; Encrypt, by itself, is not very secure. Cryptographers
+know this well, but application programmers and standards authors still
+tend to put too much trust in simple Sign-and-Encrypt. In fact, every
+secure e-mail protocol, old and new, has codified na&#195;&#175;ve Sign &amp;
+Encrypt as acceptable security practice. S/MIME, PKCS#7, PGP, OpenPGP,
+PEM, and MOSS all suffer from this flaw. Similarly, the secure document
+protocols PKCS#7, XML- Signature, and XML-Encryption suffer from the
+same flaw. Na&#195;&#175;ve Sign &amp; Encrypt appears only in file-security and
+mail-security applications, but this narrow scope is becoming more
+important to the rapidly-growing class of commercial users. With file-
+and mail-encryption seeing widespread use, and with flawed encryption in
+play, we can expect widespread exposures.
+
+In this paper, we analyze the na&#195;&#175;ve Sign &amp; Encrypt flaw, we
+review the defective sign/encrypt standards, and we describe a
+comprehensive set of simple repairs. The various repairs all have a
+common feature: when signing and encryption are combined, the inner
+crypto layer must somehow depend on the outer layer, so as to reveal any
+tampering with the outer layer.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

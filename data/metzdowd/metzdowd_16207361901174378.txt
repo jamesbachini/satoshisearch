@@ -1,0 +1,34 @@
+<PRE>----- Original Message ----- 
+From: &quot;Victor Duchovni&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at morganstanley.com</A>&gt;
+To: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+Sent: Tuesday, September 16, 2008 2:08 PM
+Subject: Re: RSA modulus record
+
+
+&gt;<i> On Tue, Sep 16, 2008 at 09:01:51PM +0200, Weger, B.M.M. de wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> There's a new biggest known RSA modulus.
+</I>&gt;&gt;<i> It is (in hexadecimal notation):
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> FF...(total of 9289166 F's)...FFDFF...(total of 1488985
+</I>&gt;&gt;<i> F's)...FF800...(total of 9289165 0's)...001
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> It is guaranteed to be the product of two different large primes,
+</I>&gt;<i>
+</I>&gt;<i> Are the primes actually known, or just &quot;guaranteed to exist&quot;?
+</I>&gt;<i>
+</I>&gt;&gt;<i> and it has more than 80 million bits. Impressive security...
+</I>&gt;<i>
+</I>&gt;<i> In what sense is this &quot;impressive security&quot;?
+</I>
+
+I have to agree that it is impressive, in the same way that having a 
+nickname &quot;Tripod&quot; is impressive. Doesn't actually mean much in terms of 
+reality neither is all that useful, or realistic for actual use.
+                            Joe 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

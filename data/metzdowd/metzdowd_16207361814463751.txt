@@ -1,0 +1,75 @@
+<PRE>[Moderator's note: Please do not top post. --Perry]
+
+I am thinking that trust is a relationship.  &quot;A trusts B&quot;.  So if you  
+start with &quot;A trusts B&quot; and you do some operation that results in &quot;C  
+trusts B&quot; then you have not copied anything because &quot;A trusts B&quot; is  
+not equal to &quot;C trusts B&quot;.  You can't call that operation a &quot;copy&quot;.   
+I can't think of any scenario where it even makes sense to talk about  
+copying trust.  The closest thing I can think of would be a document,  
+or record in a database, or a certificate, or similar thing that  
+reminds me that &quot;I trust X&quot;.  That is consistent with Bill Frantz's  
+comment on memory.  (hi Bill)  I can copy the reminder, but that  
+doesn't copy the trust.  The trust exists, it seems to me, with or  
+without the reminder (even if I have temporarily forgotten about it).
+
+Kind regards,
+
+-Bill
+
+
+On Jun 2, 2008, at 6:24 PM, Ed Gerck wrote:
+
+&gt;<i> Bill Frantz wrote:
+</I>&gt;&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A> (Ed Gerck) on Monday, June 2, 2008 wrote:
+</I>&gt;&gt;&gt;<i> To trust something, you need to receive information from sources  
+</I>&gt;&gt;&gt;<i> OTHER than the source you want to trust, and from as many other  
+</I>&gt;&gt;&gt;<i> sources as necessary according to the extent of the trust you  
+</I>&gt;&gt;&gt;<i> want. With more trust extent, you are more likely to need more  
+</I>&gt;&gt;&gt;<i> independent sources of verification.
+</I>&gt;&gt;<i> In my real-world experience, this way of gaining trust is only
+</I>&gt;&gt;<i> really used for strangers. For people we know, recognition and
+</I>&gt;&gt;<i> memory are more compelling ways of trusting.
+</I>&gt;<i>
+</I>&gt;<i> Recognition = a channel of information
+</I>&gt;<i> memory = a channel of information
+</I>&gt;<i>
+</I>&gt;<i> When you look at trust in various contexts, you will still find the  
+</I>&gt;<i> need to receive information from sources OTHER than the source you  
+</I>&gt;<i> want to trust. You may use these channels under different names,  
+</I>&gt;<i> such as memory which is a special type of output that serves as  
+</I>&gt;<i> input at a later point in time.
+</I>&gt;<i>
+</I>&gt;<i> The distinguishing aspect between information and trust is this:  
+</I>&gt;<i> &quot;trust is that which is essential to a communication channel but  
+</I>&gt;<i> cannot be transferred from a source to a destination using that  
+</I>&gt;<i> channel&quot;. In other words, self-assertions cannot transfer trust.  
+</I>&gt;<i> &quot;Trust me&quot; is, actually, a good indication not to trust.
+</I>&gt;<i>
+</I>&gt;&gt;<i> We can use this recognition and memory in the online world as well.
+</I>&gt;&gt;<i> SSH automatically recognizes previously used hosts. Programs such
+</I>&gt;&gt;<i> as the Pet Names Tool &lt;<A HREF="http://www.waterken.com/user/PetnameTool/">http://www.waterken.com/user/PetnameTool/</A>&gt;
+</I>&gt;&gt;<i> recognize public keys used by web sites, and provide us with a
+</I>&gt;&gt;<i> human-recognizable name so we can remember our previous
+</I>&gt;&gt;<i> interactions with that web site. Once we can securely recognize a
+</I>&gt;&gt;<i> site, we can form our own trust decisions, without the necessity of
+</I>&gt;&gt;<i> involving third parties.
+</I>&gt;<i>
+</I>&gt;<i> Yes, where recognition is the OTHER channel that tells you that the  
+</I>&gt;<i> value (given in the original channel) is correct. Just the value by  
+</I>&gt;<i> itself is not useful for communicating trust -- you also need  
+</I>&gt;<i> something else (eg, a digital sig) to provide the OTHER channel of  
+</I>&gt;<i> information.
+</I>&gt;<i>
+</I>&gt;<i> Cheers,
+</I>&gt;<i> Ed Gerck
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to  
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

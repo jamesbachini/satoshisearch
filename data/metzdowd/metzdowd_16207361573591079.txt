@@ -1,0 +1,24 @@
+<PRE>On Oct 12, 2007, at 6:47 PM, Sandy Harris wrote:
+
+&gt;<i> On 10/13/07, Martin James Cochran &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Martin.Cochran at colorado.edu</A>&gt; wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> ...  What's wrong with starting
+</I>&gt;&gt;<i> with input SALT || PASSWORD and iterating N times, ....
+</I>&gt;<i>
+</I>&gt;<i> Shouldn't it be USERID || SALT || PASSWORD to guarantee that if
+</I>&gt;<i> two users choose the same password they get different hashes?
+</I>&gt;<i> It looks to me like this wold make dictionary attacks harder too.
+</I>
+If the salt space is large enough ( &gt; 128 bits, say) and the salts  
+are generated with a good source of randomness, then it's  
+overwhelmingly likely that an attacker will have to do a dictionary  
+attack per user anyway, even across many different machines.  Also,  
+with such a large salt space it's extremely unlikely that users who  
+choose the same passwords will have the same salt.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

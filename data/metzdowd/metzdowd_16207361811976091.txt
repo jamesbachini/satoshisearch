@@ -1,0 +1,59 @@
+<PRE>
+
+Ed Gerck wrote:
+&gt;<i> Allen wrote:
+</I>&gt;&gt;<i> Very. The (I hate to use this term for something so pathetic) password 
+</I>&gt;&gt;<i> for the file is 6 (yes, six) numeric characters!
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> My 6 year old K6-II can crack this in less than one minute as there 
+</I>&gt;&gt;<i> are only 1.11*10^6 possible.
+</I>&gt;<i> 
+</I>&gt;<i> Not so fast. Bank PINs are usually just 4 numeric characters long and 
+</I>&gt;<i> yet they are considered /safe/ even for web access to the account (where 
+</I>&gt;<i> a physical card is not required).
+</I>&gt;<i> 
+</I>&gt;<i> Why? Because after 4 tries the access is blocked for your IP number (in 
+</I>&gt;<i> some cases after 3 tries).
+</I>&gt;<i> 
+</I>&gt;<i> The question is not only how many combinations you have but also how 
+</I>&gt;<i> much time you need to try enough combinations so that you can succeed.
+</I>&gt;<i> 
+</I>&gt;<i> I'm not defending the designers of that email system, as I do not know 
+</I>&gt;<i> any specifics -- I'm just pointing out that what you mention is not 
+</I>&gt;<i> necessarily a problem and may be even safer than secure online banking 
+</I>&gt;<i> today.
+</I>
+Indeed it might be more secure *if* the file was not downloaded as 
+opposed to accessed via a web site.
+
+That aside, I believe the ATM PINs have been compromised recently, 
+not by direct entry, but rather by harvesting them off the server 
+where they were stored, so I would not say that they are &quot;safe&quot; 
+anymore. I believe the same applies to web access to your account.
+
+My banks allow more than 4 numeric characters. They use a key space 
+of 64 characters and with a 12 character password it would take 
+about 1.5*10^5 years to generate the Rainbow table in 1 petabyte of 
+storage at 1*10^9 hashes per second. After you have the table it 
+would take about 1.9*10^5 to crack the password. (As the storage 
+space goes down the time to crack goes up because of the number of 
+possibilities between points but the initial time to generate the 
+table is the same.)
+
+During the transmission from an ATM machine 4 numeric characters are 
+probably safe because the machines use dedicated dry pair phone 
+lines for the most part, as I understand the system. This, combined 
+with triple DES, makes it very difficult to compromise or do a MIM 
+attack because one can not just tap into the lines remotely. One has 
+to get on the line from the machine to the CO to get the data and 
+then decrypt.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

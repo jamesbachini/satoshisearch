@@ -1,0 +1,55 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> On Wed, 09 Jul 2008 11:22:58 +0530
+</I>&gt;<i> Udhay Shankar N &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">udhay at pobox.com</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> I think Dan Kaminsky is on this list. Any other tidbits you can add 
+</I>&gt;&gt;<i> prior to Black Hat?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Udhay
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> <A HREF="http://www.liquidmatrix.org/blog/2008/07/08/kaminsky-breaks-dns/">http://www.liquidmatrix.org/blog/2008/07/08/kaminsky-breaks-dns/</A>
+</I>&gt;&gt;<i>
+</I>&gt;<i> I'm curious about the details of the attack.  Paul Vixie published the
+</I>&gt;<i> basic idea in 1995 at Usenix Security
+</I>&gt;<i> (<A HREF="http://www.usenix.org/publications/library/proceedings/security95/vixie.html">http://www.usenix.org/publications/library/proceedings/security95/vixie.html</A>)
+</I>&gt;<i> -- in a section titled &quot;What We Cannot Fix&quot;, he wrote:
+</I>&gt;<i> 
+</I>&gt;<i> 	With only 16 bits worth of query ID and 16 bits worth of UDP port
+</I>&gt;<i> 	number, it's hard not to be predictable.  A determined attacker
+</I>&gt;<i> 	can try all the numbers in a very short time and can use patterns
+</I>&gt;<i> 	derived from examination of the freely available BIND code.  Even
+</I>&gt;<i> 	if we had a white noise generator to help randomize our numbers,
+</I>&gt;<i> 	it's just too easy to try them all.
+</I>
+So this seems to me to only be really true in a theoretical sense. 
+Exploring the whole 32 bit space obviously requires well in excess of 4 
+GB of traffic, which is clearly a non-trivial amount to dump on your victim.
+
+According to other data, the fix in BIND is to:
+
+a) use random ports
+
+b) use a good PRNG
+
+so I'm beginning to suspect the issue is simply that the theory that it 
+was easy to attack led to no effort being made to make it as hard as 
+possible. And now it has.
+
+&gt;<i> Obligatory crypto: the ISC web page on the attack notes &quot;DNSSEC is the
+</I>&gt;<i> only definitive solution for this issue. Understanding that immediate
+</I>&gt;<i> DNSSEC deployment is not a realistic expectation...&quot;
+</I>
+The beauty of DNSSEC being, of course, that any answer that verifies can 
+be trusted - so its of no interest who provided that answer.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

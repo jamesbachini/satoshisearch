@@ -1,0 +1,72 @@
+<PRE>So... supposing I was going to design a crypto library for use within
+a financial organization, which mostly deals with credit card numbers
+and bank accounts, and wanted to create an API for use by developers,
+does anyone have any advice on it?
+
+It doesn't have to be terribly complete, but it does have to be
+relatively easy to use correctly (i.e. securely).
+
+I was thinking of something like this:
+
+class crypto_api
+{
+    ...
+    // developers call these based on what they're trying to do
+    // these routines simply call crypto_logic layer
+    Buffer encrypt_credit_card(Buffer credit_card_number, key_t key);
+    Buffer encrypt_bank_account(Buffer bank_account, key_t key);
+    Buffer encrypt_other(Buffer buffer, key_t key);
+    ...
+};
+
+class crypto_logic
+{
+    ...
+    algo_default = ALGO_AES256CBC;
+    // encrypt with a given algorithm
+    Buffer encrypt(Buffer buffer, key_t key, algo_t aid = algo_default);
+    // calls different routines in crypto_implementation layer depending on algorithm used
+    Buffer decrypt(Buffer buffer, key_t key);
+    ...
+};
+
+class crypto_glue
+{
+    ...
+    // calls routines in libraries such as OpenSSL
+    // mostly wrappers that translate between our data types and theirs
+    Buffer aes256cbc-encrypt(...);
+    Buffer aes256cbc-decrypt(...);
+    ...
+};
+
+The general idea is that crypto_api provides domain-specific APIs that
+are easy for anyone to understand, that the logic layer allows for the
+selection of different algorithms, and the glue layer is basically a
+translation layer to underlying libraries.
+
+It is very important that the API remain stable, because the code
+base is large and owned by various groups.
+
+One thing that I'm wondering is how to indicate (e.g.) the overhead in
+terms of padding, or whatever, for various algorithms... or if it
+matters.  The old code had some really disturbing practices like
+assuming that the output buffer was 16 octets bigger, and stuff like
+that... scary.
+
+Intend to skim the OpenSSL design and Gutmann's &quot;Design of a
+Cryptographic Security Architecture&quot; for ideas.
+
+Comments?
+-- 
+In God We Trust, All Others Must Provide Source Code
+&lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my email blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071217/1c7fda98/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071217/1c7fda98/attachment.pgp</A>&gt;
+</PRE>

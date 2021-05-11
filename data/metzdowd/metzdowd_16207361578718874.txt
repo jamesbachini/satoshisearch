@@ -1,0 +1,49 @@
+<PRE>We submitted a letter to the Program Manager, that while they RFP
+was asking for an FDE solution, they really needed to focus on Key
+Management across the agency, rather than the actual encryption
+solution itself, before they deployed any encryption product.  
+
+We proposed our open-source Symmetric Key Management System (SKMS) 
+software - StrongKey - as a solution since it includes utilities to 
+perform file, directory and column-level database encryption using 
+FIPS-certified tokens: smartcards, HSMs and software modules (NSS).
+
+Given that the solution we proposed was OSS, that it could leverage
+any FIPS-certified token through their published JCE/PKCS11 library,
+and that the StrongKey protocol is winding its way through OASIS 
+towards becoming the Symmetric Key Services Markup Language (SKSML) 
+with the support of 33 companies/individuals including the DoD, we 
+believed that this solution was optimal for the government from many 
+different points of view.
+
+However, because the RFP was narrowly written for FDE products only,
+our submission was not accepted.  That's life in the Federal
+procurement lane.... they think they're buying a state of the art
+security solution and they don't realize that the state of the art
+has already shifted under their feet.  
+
+Arshad Noor
+StrongAuth, Inc.
+
+----- Original Message -----
+From: &quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt;
+
+On Mon, 18 Jun 2007 22:57:36 -0700
+&quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+
+&gt;<i> US Government has select 9 security vendors that will product drive
+</I>&gt;<i> and file level encryption software.
+</I>&gt;<i> 
+</I>&gt;<i> See:
+</I>&gt;<i> <A HREF="http://security-basics.blogspot.com/2007/06/fde-fde-solutions-selected-for-us.html">http://security-basics.blogspot.com/2007/06/fde-fde-solutions-selected-for-us.html</A>
+</I>&gt;<i> OR
+</I>&gt;<i> <A HREF="http://tinyurl.com/2xffax">http://tinyurl.com/2xffax</A>
+</I>&gt;<i> 
+</I>
+Out of curiousity, are any open source FDE products being evaluated?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

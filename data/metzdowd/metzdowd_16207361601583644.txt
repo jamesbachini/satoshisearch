@@ -1,0 +1,56 @@
+<PRE>Jon Callas wrote:
+&gt;<i> 
+</I>&gt;<i> On Nov 1, 2007, at 10:49 AM, John Levine wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;&gt;<i> Since email between hushmail accounts is generally PGPed.  (That is
+</I>&gt;&gt;&gt;<i> the point, right?)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Hushmail is actually kind of a scam.  In its normal configuration,
+</I>&gt;&gt;<i> it's in effect just webmail with an HTTPS connection and a long
+</I>&gt;&gt;<i> password.  It will generate and verify PGP signatures and encryption
+</I>&gt;&gt;<i> for mail it sends and receives, but they generate and maintain their
+</I>&gt;&gt;<i> users' PGP keys.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> There's a Java applet that's supposed to do end to end encryption, but
+</I>&gt;&gt;<i> since it's with the same key that Hushmail knows, what's the point?
+</I>&gt;&gt;<i>
+</I>&gt;<i> 
+</I>&gt;<i> I'm sorry, but that's a slur. Hushmail is not a scam.
+</I>
+
+It certainly was not a scam when I was involved (cryptix 
+guys did some part of the original java crypto) many years 
+ago.  The private key is encrypted by your passphrase, so 
+the private key is not available to Hushmail.
+
+The basic concept is of course somewhat limited by what it 
+tries to do, but it is sound.  Hushmail published the applet 
+that did all this, and it was possible to read the code and 
+attack it.  At least one flaw was found, from deep dim memory.
+
+There is for example a danger that hushmail could simply 
+change the applet, and then acquire someone's key.  A victim 
+would not notice so easily because there isn't much in the 
+browser that stops the applet from changing code.  That's a 
+threat, and they were aware of it, but it's also a bit of a 
+high risk one, as, if it were spotted, their credibility 
+would be shot.
+
+In practice, the larger danger with email is that the 
+high-profile threats to email security are on the client 
+side.  Either you, your own machine, the other guy's 
+machine, or the other guy.  I was involved in one case where 
+super-secret stuff was shared through hushmail, and was also 
+dual encrypted with non-hushmail-PGP for added security.  In 
+the end, the lawyers came in and scarfed up the lot with 
+subpoenas ... all the secrets were revealed to everyone they 
+should never have been revealed to.  We don't have a crypto 
+tool for embarrassing secrets to fade away.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,59 @@
+<PRE>Ed Gerck wrote:
+&gt;<i> In the essay &quot;Better Than Free&quot;, Kevin Kelly debates which concepts hold 
+</I>&gt;<i> value online, and how to monetize those values. See 
+</I>&gt;<i> www.kk.org/thetechnium/archives/2008/01/better_than_fre.php
+</I>&gt;<i> 
+</I>&gt;<i> Kelly's point can be very useful: *When copies are free, you need to 
+</I>&gt;<i> sell things which can not be copied.*
+</I>&gt;<i> 
+</I>&gt;<i> The problem that I see and present to this list is when he discusses 
+</I>&gt;<i> qualities that can't be copied and considers &quot;trust&quot; as something that 
+</I>&gt;<i> cannot be copied.
+</I>&gt;<i> 
+</I>&gt;<i> Well, in the digital economy we had to learn how to copy trust and we 
+</I>&gt;<i> did. For example, SSL would not work if trust could not be copied.
+</I>&gt;<i> 
+</I>&gt;<i> How do we copy trust? By recognizing that because trust cannot be 
+</I>&gt;<i> communicated by self-assertions (*), trust cannot be copied by 
+</I>&gt;<i> self-assertions either.
+</I>&gt;<i> 
+</I>&gt;<i> To trust something, you need to receive information from sources OTHER 
+</I>&gt;<i> than the source you want to trust, and from as many other sources as 
+</I>&gt;<i> necessary according to the extent of the trust you want. With more trust 
+</I>&gt;<i> extent, you are more likely to need more independent sources of 
+</I>&gt;<i> verification.
+</I>&gt;<i> 
+</I>&gt;<i> To copy trust, all you do is copy the information from those channels in 
+</I>&gt;<i> a verifiable way and add that to the original channel information. We do 
+</I>&gt;<i> this all the time in scientific work: we provide our findings, we 
+</I>&gt;<i> provide the way to reproduce the findings, and we provide the published 
+</I>&gt;<i> references that anyone can verify.
+</I>&gt;<i> 
+</I>&gt;<i> To copy trust in the digital economy, we provide  digital signatures 
+</I>&gt;<i> from one or more third-parties that most people will trust.
+</I>&gt;<i> 
+</I>&gt;<i> This is how SSL works. The site provides a digital certificate signed by 
+</I>&gt;<i> a CA that most browsers trust, providing an independent channel to 
+</I>&gt;<i> verify that the web address is correct -- in addition to what the 
+</I>&gt;<i> browser's location line says.
+</I>
+But doesn't that prove the point? The trust that you consequently place 
+in the web server because of the certificate _cannot_ be copied to 
+another webserver. That other webserver has to go out and buy its own 
+copy, with its own domain name it it.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

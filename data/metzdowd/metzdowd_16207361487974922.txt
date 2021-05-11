@@ -1,0 +1,24 @@
+<PRE>&gt;<i>I do not believe the mentioned conflict exists.  The aim of these
+</I>&gt;<i>calculator-like devices is to make sure that no malware, virus etc can
+</I>&gt;<i>create unauthorized transactions.  The user should still be able to
+</I>&gt;<i>debug, and inspect the software in the calculator-like device, or
+</I>&gt;<i>virtual software compartment, just that installation of software or
+</I>&gt;<i>upgrades into that area should be under direct explicit user control.
+</I>&gt;<i>(eg with BIOS jumper required to even make any software change!)
+</I>
+In view of the number of people who look at an email message, click on
+an attached ZIP file, rekey a file password in the message, and then
+run the program in the file, thereby manually installing a virus, it's
+way too dangerous to let users install any code at all on a security
+device.
+
+R's,
+John
+
+PS: Yes, they really do.  I didn't believe it either.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

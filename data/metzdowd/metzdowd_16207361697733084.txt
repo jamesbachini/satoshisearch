@@ -1,0 +1,48 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at MorganStanley.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> While Firefox should ideally be developing and testing PSK now, without
+</I>&gt;&gt;<i> stable libraries to use in servers and browsers, we can't yet expect anything
+</I>&gt;&gt;<i> to be released.
+</I>&gt;<i> 
+</I>&gt;<i> Is that the FF devlopers' reason for holding back?  Just wondering... why not
+</I>&gt;<i> release it with TLS-PSK/SRP anyway (particularly with 3.0 being in the beta
+</I>&gt;<i> stage, it'd be the perfect time to test new features), tested against existing
+</I>&gt;<i> implementations, then at least it's ready for when server support appears.  At
+</I>&gt;<i> the moment we seem to be in a catch-22, servers don't support it because
+</I>&gt;<i> browsers don't, and browsers don't support it because servers don't.
+</I>
+
+I would say that this would not hold the FF developers back, 
+as they were definately capable of implementing TLS/SNI 
+extension a year or two back, without any support from 
+stable libraries in Apache httpd, Microsoft IIS, etc (still 
+waiting...).
+
+I'd also suggest that the TLS/SNI (which will apparently 
+turn up one day in Apache) will have a much more dramatic 
+effect on phishing than TLS-PSK/SRP ... because of the 
+economics of course.  Lowering the barriers on all TLS use 
+is far more important than making existing TLS use easier.
+
+Of course, this is not a competition, as the effect adds, 
+not competes.  The good thing is that we may actually get to 
+see the effects of both fixes to TLS rollout at similar 
+times.  In economics, it is a truism that we can't run the 
+experiment, we have to watch real life, Heisenberg style, 
+and this may give us a chance to do that.
+
+Also, we can observe another significant factor in the mix: 
+  the rollout of virtual machine platforms (xen and the 
+like) is dramatically changed the economics of IP#s, these 
+now becoming more the limiting factor than they were, which 
+might also put more pressure on Apache ... to release 
+earlier and more often.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

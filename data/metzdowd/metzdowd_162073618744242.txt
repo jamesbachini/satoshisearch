@@ -1,0 +1,18 @@
+<PRE>On Fri, Aug 29, 2008 at 09:01:26PM +0000, Muffys Wump wrote:
+&gt;<i> Master Password: hash(hash(login_password))
+</I>&gt;<i>  
+</I>&gt;<i> Would this be a good idea if we've used this generated hash as a key for AES?
+</I>&gt;<i> Would the hashing be secure enough against different kinds of attacks?
+</I>
+You want to look at something like PKCS#5 for generating keys from passphrases.
+
+--
+Dan.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 194 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080830/d86784b3/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080830/d86784b3/attachment.pgp</A>&gt;
+</PRE>

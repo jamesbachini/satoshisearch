@@ -1,0 +1,32 @@
+<PRE>Rui Paulo &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rpaulo at fnop.net</A>&gt; writes:
+
+&gt;<i>&quot;The specifications of the 2.5in. Easy Nova Data Box PRO-25UE RFID hard drive
+</I>&gt;<i>case by German vendor Drecom sound promising: hardware data encryption with
+</I>&gt;<i>128-bit AES, access control via an RFID chip compact enough to carry around
+</I>&gt;<i>on your key ring and optional 160GB or 250GB hard disk capacity. Swiping the
+</I>&gt;<i>RFID chip along the case causes the integrated Innmax IM7206 crypto
+</I>&gt;<i>controller to reveal the drive as a USB 2.0 mass storage compatible device to
+</I>&gt;<i>the attached computer. This works under Linux and Mac OS X as well as Windows.
+</I>
+The fault here isn't with Nova (or any of the other vendors that use the
+Innmax device), it's squarely with Innmax, whose advertising and data sheets
+imply that the disk is encrypted with AES without ever mentioning that it's
+only ever used in conjunction with the RFID portion.
+
+(By &quot;imply&quot; I mean the specs state &quot;Uses AES encryption&quot;, technically you
+could argue that since they never specifically say &quot;All disk data is encrypted
+using AES encryption&quot; they'd be justified in storing it in plaintext, but
+that's not what someone looking at the spec will interpret it as).
+
+To make it even more confusing, &quot;Easy Nova&quot; is a near-namespace collision with
+eNova, who do AES-encrypt the disk contents (well, as far as anyone knows...
+anyone here have a eNova X-Wall drive controller and feel like seeing what's
+on the disk?).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,53 @@
+<PRE>Ivan Krstic' wrote:
+ &gt; Some number of these muppets approached me over the
+ &gt; last couple of years offering to donate a free license
+ &gt; for their excellent products. I used to be more polite
+ &gt; about it, but nowadays I ask that they Google the
+ &gt; famous Gutmann Sound Wave Therapy[0] and mail me
+ &gt; afterwards.
+
+  Gutmann Sound Wave Therapy: Gutmann recommends:
+:<i> :	Whenever someone thinks that they can replace
+</I>:<i> :	SSL/SSH with something much better that they
+</I>:<i> :	designed this morning over coffee, their
+</I>:<i> :	computer speakers should generate some sort
+</I>:<i> :	of penis-shaped sound wave and plunge it
+</I>:<i> :	repeatedly into their skulls until they
+</I>:<i> :	achieve enlightenment.
+</I>
+On SSL, Gutmann is half wrong:
+
+SSL key distribution and management is horribly broken,
+with the result that everyone winds up using plaintext
+when they should not.
+
+SSL is layered on top of TCP, and then one layers one's
+actual protocol on top of SSL, with the result that a
+transaction involves a painfully large number of round
+trips.
+
+We really do need to reinvent and replace SSL/TCP,
+though doing it right is a hard problem that takes more
+than morning coffee.
+
+As discussed earlier on this list, layering induces
+excessive round trips.  Layering communications
+protocols is analogous to having a high level
+interpreter written in a low level language. What we
+need instead of layering is a protocol compiler,
+analogous to the Microsoft IDL compiler.  The Microsoft
+IDL compiler automatically generates a C++ interface
+that correctly handles run time version negotiation,
+which hand generated interfaces always screw up, with
+the result that hand generated interfaces result in
+forward and backward incompatibility, resulting in the
+infamous Microsoft DLL hell.  Similarly we want a
+compiler that automatically generates secure message
+exchange and reliable transactions from unreliable
+packets. (And of course, run time version negotiation)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

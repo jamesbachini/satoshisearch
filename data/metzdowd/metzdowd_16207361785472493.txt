@@ -1,0 +1,48 @@
+<PRE>
+Marcos el Ruptor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>&gt; writes:
+&gt;&gt;<i> To be sure that implementation does not contain back-doors, one needs
+</I>&gt;&gt;<i> not only some source code but also a proof that the source code one
+</I>&gt;&gt;<i> has is the source of the implementation.
+</I>&gt;<i>
+</I>&gt;<i> Nonsense. Total nonsense. A half-decent reverse engineer does not
+</I>&gt;<i> need the source code and can easily determine the exact operation of
+</I>&gt;<i> all the security-related components from the compiled executables,
+</I>&gt;<i> extracted ROM/EPROM code or reversed FPGA/ASIC layout
+</I>
+I'm glad to know that you have managed to disprove Rice's
+Theorem. Could you explain to us how you did it? I suspect there's an
+ACM Turing Award awaiting you.
+
+Being slightly less sarcastic for the moment, I'm sure that a good
+reverse engineer can figure out approximately what a program does by
+looking at the binaries and approximately what an ASIC does given
+good equipment to get the layout. What you can't do, full stop, is
+know that there are no unexpected security related behaviors in the
+hardware or software. That's just not possible.
+
+&gt;<i> All this open-source promotion is a huge waste of time. Us crackers
+</I>&gt;<i> know exactly how all the executables we care about (especially all
+</I>&gt;<i> the crypto and security related programs) work.
+</I>
+With respect, no, you don't. If you did, then all the flaws in Windows
+would have been found at once, instead of trickling out over the
+course of decades as people slowly figure out new unintended
+behaviors. Anything sufficiently complicated to be interesting simply
+cannot be fully understood by inspection, end of story.
+
+Now, the original poster was speaking about knowing that a piece of
+hardware does exactly what it was originally spec'ed to do. Some of
+that involves (among other things) knowing that the validation
+information (which a reverse engineer has no access to) applies to the
+resulting chip by virtue of knowing that what was compiled was
+precisely what was originally validated. There is a valid concern
+there.
+
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

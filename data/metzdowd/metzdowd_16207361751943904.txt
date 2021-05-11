@@ -1,0 +1,17 @@
+<PRE>On Wed, 16 Apr 2008 14:07:49 -0400
+&quot;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A>&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A>&gt; wrote:
+
+
+&gt;<i> Which seem to be aimed at a drop in replacement for SSL (with a
+</I>&gt;<i> working example using Firefox and Apache). They seem to rest on a key
+</I>&gt;<i> exchange or agreement based on  a shared secret. 
+</I>
+As opposed to, say, RFC 4279, which is TLS-based.
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

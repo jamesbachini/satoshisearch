@@ -1,0 +1,100 @@
+<PRE>----- Original Message ----- 
+From: &quot;' =JeffH '&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt;
+To: &quot;Joseph Ashwood&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ashwood at msn.com</A>&gt;
+Cc: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+Sent: Monday, February 04, 2008 5:18 PM
+Subject: Re: questions on RFC2631 and DH key agreement
+
+
+&gt;<i> I'd scrawled:
+</I>&gt;&gt;<i> &gt; If a purportedly &quot;secure&quot; protocol employing a nominal DH exchange in
+</I>&gt;&gt;<i> &gt; order to
+</I>&gt;&gt;<i> &gt; establish a shared secret key between a requester and responder, 
+</I>&gt;&gt;<i> &gt; employs
+</I>&gt;&gt;<i> &gt; widely known published (on the web) fixed values for g (&quot;2&quot;) and p (a
+</I>&gt;&gt;<i> &gt; purportedly prime 1040 bit number) for many of it's implementations and
+</I>&gt;&gt;<i> &gt; runtime invocations, what are the risks its designers are assuming with
+</I>&gt;&gt;<i> &gt; respect to the resultant properties of ZZ?
+</I>&gt;<i>
+</I>&gt;<i> Joseph Ashwood graciously replied:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> It is assuming that the total value of the data protected by those
+</I>&gt;&gt;<i> parameters never crosses the cost to break in the information value
+</I>&gt;&gt;<i> lifetime.
+</I>&gt;<i>
+</I>&gt;<i> yes.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i> &gt; I suspect that many implementations will simply use the equivalent of
+</I>&gt;&gt;<i> &gt; whatever
+</I>&gt;&gt;<i> &gt; rand() function is available to get the bits for their private keys
+</I>&gt;&gt;<i> &gt; directly,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Very bad idea, for two reasons, the rand() function does not have 
+</I>&gt;&gt;<i> sufficient
+</I>&gt;&gt;<i> internal state, and the rand() function is far from cryptographically
+</I>&gt;&gt;<i> strong.
+</I>&gt;<i>
+</I>&gt;<i> what about just using bytes from /dev/urandom on *nix?
+</I>
+*nix /dev/urandom should work well, the entropy harvesting is reasonably 
+good, and the mixing/generating are sufficient to keep it from being the 
+weak link.
+
+&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i> &gt; and will likely not reallocate private keys unless the implementation 
+</I>&gt;&gt;<i> &gt; or
+</I>&gt;&gt;<i> &gt; machine are restarted. So if the random number generator has known 
+</I>&gt;&gt;<i> &gt; flaws,
+</I>&gt;&gt;<i> &gt; then
+</I>&gt;&gt;<i> &gt; there may be some predictability in both the public keys and in ZZ, 
+</I>&gt;&gt;<i> &gt; yes?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> All flaws in the private key generator will show in the public key
+</I>&gt;&gt;<i> selection, do yes.
+</I>&gt;<i>             ^^
+</I>&gt;<i>             so?
+</I>
+Yep, my typos show I'm far from perfect. I meant &quot;so.&quot;
+
+&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> &gt; Additionally there's the previously noted issue with the values of 
+</I>&gt;&gt;<i> &gt; static
+</I>&gt;&gt;<i> &gt; private keys slowly leaking.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Only if the value of p changes, if the value of p remains static, then 
+</I>&gt;&gt;<i> the
+</I>&gt;&gt;<i> private key doesn't leak.
+</I>&gt;<i>
+</I>&gt;<i> Ok, I can see that from ya = g ^ xa mod p  ...  ya doesn't change if g, 
+</I>&gt;<i> xa,
+</I>&gt;<i> and p don't change.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i> A simple proof of this is simple, Eve can easily,
+</I>&gt;&gt;<i> and trivially generate any number of public/private key pairs and thereby
+</I>&gt;&gt;<i> generate any number of viewable sets to determine the unknown private 
+</I>&gt;&gt;<i> key.
+</I>&gt;<i>
+</I>&gt;<i> Are you saying here that if p (and g) are static, then one has some
+</I>&gt;<i> opportunity to brute-force guess the private key that some long-running
+</I>&gt;<i> instance is using, if it doesn't otherwise re-allocate said private key 
+</I>&gt;<i> from
+</I>&gt;<i> time to time?
+</I>
+Actually I'm saying that if p and g do not change, then there is no 
+additional leakage of the private key beyond what Eve can compute anyway.
+
+There are many, many factors involved in any deep security examination, 
+making it truly a business decision with all the complexities involved in 
+that, and very easy to get wrong.
+                Joe 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

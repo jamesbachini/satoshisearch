@@ -1,0 +1,41 @@
+<PRE>
+There has been a lot of talk on the list recently about the privacy
+issues associated with various toll and fare collecting systems, but
+others have been pointing out, correctly I think, that this matters
+less and less because of other technological developments.
+
+New York City recently announced plans to use license plate OCR to
+produce and keep records of every car entering and leaving the city
+and to keep those records for years. Very little attention was paid to
+this, but I think it is the mark of things to come.
+
+Although the huge infestations of video cameras in our cities have had
+almost no impact on crime, once they are combined with sufficiently
+potent image recognition software, it will become possible to track
+people's movements and keep records of those movements essentially
+forever. It also seems to me that almost anything that can be done
+will in fact happen in the current &quot;opposing the wish lists of the
+police is the same as being in favor of terrorism&quot; environment.
+
+Given this, I think the time for focusing on the privacy implications
+of payment transponders and fare cars is over. Not carrying a cell
+phone will not help you avoid tracking when your environment is
+saturated with cameras. Digital cash toll collection systems will not
+avoid records being kept of your car's movements when cameras are
+reading and recording license plates anyway.
+
+Unfortunately, I don't see anything technological that people can
+reasonably do here to provide more privacy, at least short of everyone
+going everywhere on foot while wearing a burqa and periodically
+attempting to confuse the cameras. The solutions, if any exist at all,
+appear to be non-technical.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

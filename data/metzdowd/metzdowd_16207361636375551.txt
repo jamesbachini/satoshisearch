@@ -1,0 +1,24 @@
+<PRE>On Sun, Dec 09, 2007 at 07:16:22PM +1300, Peter Gutmann wrote:
+
+&gt;<i> There was a discussion on this list a year or two back about problems in using
+</I>&gt;<i> memset() to zeroise in-memory data, specifically the fact that optimising
+</I>&gt;<i> compilers would remove a memset() on (apparently) dead data in the belief that
+</I>&gt;<i> it wasn't serving any purpose.
+</I>
+Actually this problem was discussed five years ago (October 2002) on
+the vuln-dev mailing list:
+
+    <A HREF="http://www.securityfocus.com/archive/82/297827/30/0/threaded">http://www.securityfocus.com/archive/82/297827/30/0/threaded</A>
+    <A HREF="http://msdn2.microsoft.com/en-us/library/ms972826.aspx">http://msdn2.microsoft.com/en-us/library/ms972826.aspx</A>
+
+If the problem also was discussed here on the cryptography list a year
+or two ago, I am afraid that my memory of this either has been zeroized,
+or has been detected not to serve any purpose.
+
+Bodo
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

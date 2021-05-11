@@ -1,0 +1,32 @@
+<PRE>On Wed, Apr 9, 2008 at 12:59 PM, Leichter, Jerry
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; wrote:
+&gt;<i> Anyone know anything about a company called 2factor (2factor.com)?
+</I>&gt;<i> They're pushing a system based on symmetric cryptography with, it
+</I>&gt;<i> appears, some kind of trusted authority.  &quot;Factor of 100 faster
+</I>&gt;<i> than SSL&quot;.  &quot;More secure, because it authenticates every message.&quot;
+</I>&gt;<i>
+</I>&gt;<i> No real technical data I can find on the site, and I've never seen
+</I>&gt;<i> a site with so little information about who's involved.  (Typically,
+</I>&gt;<i> you at least get a list of the top execs.)  Some ex-spooks?  Pure
+</I>&gt;<i> snake oil?  Somewhere in between?
+</I>&gt;<i>
+</I>Google says:
+
+2factor Inc.
+1540 South Holland-Sylvania Road
+Maumee, OH 43537
+
+Mark O. Wittenmyer, Chairman
+David M. Burns, Chief Executive Officer
+Raymond A. Romagnolo, Executive Vice President
+
+2factor, Inc. BOARD OF DIRECTORS
+Mark O. Wittenmyer
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

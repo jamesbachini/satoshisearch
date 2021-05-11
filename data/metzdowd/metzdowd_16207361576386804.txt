@@ -1,0 +1,51 @@
+<PRE>At 02:11 +1300 09.10.2007, Peter Gutmann wrote:
+
+&gt;<i>But if you build a FDE product with it you've got to get the entire product
+</I>&gt;<i>certified, not just the crypto component.
+</I>
+I don't believe this to be the case.
+
+FIPS 140(-2) is about validating cryptographic implementations. It is 
+not about certifying entire products that contain ample functionality 
+well outside the scope of cryptographic evaluation. That's more of a 
+Common Criteria thing.
+
+That said, one problem with selling FIPSed products to USG is that 
+some auditors are sticklers for version numbers. They can require 
+proof/rep&amp;warrant that the FIPSed version of the crypto is actually 
+in use.
+
+Audit appeasement requirements frequently cause considerable 
+annoyance to both vendors and the end user.
+
+At 14:04 +0100 08.10.2007, Ben Laurie wrote:
+
+&gt;<i>? OpenSSL has FIPS 140.
+</I>
+OpenSSL FIPS Object Module 1.1.1 has FIPS 140-2 when running on SUSE 
+9.0 and HPUX 11i, according to
+
+&lt;<A HREF="http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2007.htm#733">http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2007.htm#733</A>&gt;
+
+In the context of a conversation about whether something formally has 
+FIPS validation or not, the details are important.
+
+Back to the original question...
+
+At 11:27 +0000 08.10.2007, Steven M. Bellovin wrote:
+
+&gt;<i>Out of curiousity, are any open source FDE products being evaluated?
+</I>
+As far as I recall, none such were submitted for consideration. Bear 
+in mind that the process isn't just about software, but that a 
+commercial entity submits both a product that meets the list of 
+capability checkboxes, and that the entity itself is viable and can 
+provide support and the like.
+
+s.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

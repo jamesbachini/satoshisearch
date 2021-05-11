@@ -1,0 +1,29 @@
+<PRE>At 04:02 AM 2/10/2008, Peter Gutmann wrote:
+&gt;<i>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+</I>&gt;<i>
+</I>&gt;<i>&lt;\snip
+</I>&gt;<i>So your potential market for this is people running Monte Carlo simulations
+</I>&gt;<i>who don't like PRNGs.  Seems a bit of a limited market...
+</I>
+I think that the market is a little bit bigger than just applications 
+running Monte Carlo simulations.
+For example, Gambling industry - which is also multi-billion industry 
+world-wide.
+
+Since this news have been discussed in this cryptographic mailing 
+list, I would be interested when
+some of the cryptographers test this device too. The device produces 
+stream of random bits with a
+speed of 2Mbps, but in the article there is nothing about the 
+cryptographic strength of the produced
+stream. It can produce statistically qualitative uniform random bits, 
+but still to be cryptographically
+weak.
+
+Danilo! 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,21 @@
+<PRE>Alexander Klimov &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alserkli at inbox.ru</A>&gt; writes:
+
+&gt;<i>So what kind of threat models does it address, and what does that say about
+</I>&gt;<i>the kinds of customers who'd want it?
+</I>
+One threat model (or at least failure mode) that's always concerned me deeply
+about QC is that you have absolutely no way of checking whether it's working
+as required.  With any other mechanism you can run test vectors through it,
+run ongoing/continuous self-checks, and (in the case of some Type I crypto)
+run dual units in parallel with one checking the other.  With QC you've just
+got to hope that everything's working as intended.  That alone would be enough
+to rule out its use as far as I'm concerned, I can't trust something that I
+can't verify.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

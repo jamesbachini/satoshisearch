@@ -1,0 +1,24 @@
+<PRE>Eric Young wrote:
+&gt;<i> I've not looked at it enough yet, but currently I'm doing an AES round
+</I>&gt;<i> in about 140 cycles a block (call it 13 per round plus overhead) on a
+</I>&gt;<i> AMD64, (220e6 bytes/sec on a 2ghz cpu) using normal instructions. 
+</I>Urk, correction, I forgot I've recently upgraded from a 2ghz machine to
+2.5ghz.
+So that should read about 182 cycles per block, and 18 cycles per round.
+I though the number seems strange :-(.  I tent to always quote numbers
+from a 2-3 second run encrypting a 4k buffer, not a machine cycle
+counter over one or two blocks, so I leave myself open to this kind of
+error :-(
+
+Still, looking further at the various SSE5 instructions, I'm having
+difficultly seeing how
+to avoid instruction dependencies when using the SIMD instructions
+(specifically using PPERM to implement the sbox).
+
+eric
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

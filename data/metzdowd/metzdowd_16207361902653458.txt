@@ -1,0 +1,27 @@
+<PRE>Eric Rescorla wrote:
+&gt;<i> This is precisely the issue.
+</I>&gt;<i> 
+</I>&gt;<i> There are any number of cryptographic techniques that would allow
+</I>&gt;<i> clients and servers to authenticate to each other in a phishing
+</I>&gt;<i> resistant fashion, but they all depend on ensuring that the
+</I>&gt;<i> *client* has access to the password and that the attacker can't
+</I>&gt;<i> convince the user to type their password into some dialog
+</I>&gt;<i> that the attacker controls. That's the challenging technical
+</I>&gt;<i> issue, but it's UI, not cryptographic.
+</I>
+Browser UI needs changing.  Login, and account creation, should take 
+place on the trusted path, and in a special window, not easily faked - a 
+non rectangular window that partially overlaps the browser window, and 
+which contains information specific to this computer's past interactions 
+with this website.
+
+We could also mandate that you can only login by clicking on a smart 
+bookmark, which knows that it is a bookmark to a login, but this would 
+involve turning existing sites upside down, which would be a hard sell.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

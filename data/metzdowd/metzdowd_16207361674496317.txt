@@ -1,0 +1,44 @@
+<PRE>Leichter, Jerry wrote:
+&gt;<i> Virtualization has become the magic pixie dust of the decade.
+</I>&gt;<i>
+</I>&gt;<i> When IBM originally developed VMM technology, security was not a primary
+</I>&gt;<i> goal.  People expected the OS to provide security, and at the time it
+</I>&gt;<i> was believed that OS's would be able to solve the security problems.
+</I>&gt;<i>   
+</I>re:
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#4">http://www.garlic.com/~lynn/aadsm28.htm#4</A> Death of antivirus software 
+iminent
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#6">http://www.garlic.com/~lynn/aadsm28.htm#6</A> Death of antivirus software 
+iminent
+<A HREF="http://www.garlic.com/~lynn/aadsm28.htm#8">http://www.garlic.com/~lynn/aadsm28.htm#8</A> Death of antivirus software 
+iminent
+
+the other claim was that it was assumed that basic systems were built to 
+be secure,
+so it would have been quite foreign idea it would be necessary to build 
+a secure
+specific system.
+
+besides the referenced fairly wide use of gov and commercial 
+institutions requiring
+high integrity systems ... the early virtual machine systems (cp67 and 
+vm370)
+were also used by commercial time-sharing service bureaus. most of these
+created cms &quot;padded cell&quot; modifications, a lot of it was to prevent 
+users from
+damaging themselves (as opposed to the underlying security that prevented
+uses from damaging the system and/or each other).
+
+at least some of these services provided online, concurrent services to
+(competitive) wall street firms ... who would be using the online services
+for highly sensitive financial activities (as example of integrity 
+requirements).
+
+a little related x-over from posting in this thread
+<A HREF="http://www.garlic.com/~lynn/2008.html#14">http://www.garlic.com/~lynn/2008.html#14</A> hacked TOPS-10 monitors
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,56 @@
+<PRE>|<i> &gt; But, opportunistic cryptography is even more fun.  It is 
+</I>|<i> &gt; very encouraging to see projects implement cryptography in 
+</I>|<i> &gt; limited forms.  A system that uses a primitive form of 
+</I>|<i> &gt; encryption is many orders of magnitude more secure than a 
+</I>|<i> &gt; system that implements none.
+</I>|<i> 
+</I>|<i> Primitive form - maybe, weak form - absolutely not. It 
+</I>|<i> is actually worse than having no security at all, because 
+</I>|<i> it tends to create an _illusion_ of protection. 
+</I>This is an old argument.  I used to make it myself.  I even used to
+believe it.  Unfortunately, it misses the essential truth:  The choice
+is rarely between really strong cryptography and weak cryptography; it's
+between weak cryptography and no cryptography at all.  What this
+argument assumes is that people really *want* cryptography; that if you
+give them nothing, they'll keep on asking for it; but if you give them
+something weak, they'll stop asking and things will end there.  But in
+point of fact hardly anyone knows enough to actually want cryptography.
+Those who know enough will insist on the strong variety whether or not
+the weak is available; while the rest will just continue with whatever
+they have.
+
+|<i> Which is by the way exactly the case with SecureIM. How 
+</I>|<i> hard is it to brute-force 128-bit DH ? My &quot;guesstimate&quot;
+</I>|<i> is it's an order of minutes or even seconds, depending
+</I>|<i> on CPU resources.
+</I>It's much better to analyze this in terms of the cost to the attacker
+and the defender.  If the defender assigns relatively low value to his
+messages, an attack that costs the attacker more than that low value is
+of no interest.  Add in the fact that an attacker may have to break
+multiple message streams before he gets to one that's worth anything at
+all.
+
+Even something that takes a fraction of a second to decrypt raises the
+bar considerably for an attacker who just surfs all conversations,
+scanning for something of interest.  It's easy to search for a huge
+number of keywords - or even much more complex patterns - in parallel at
+multi-megabyte/second speeds with fgrep-like (Aho-Corasick) algorithms.
+A little bit of decryption tossed in there changes the calculations
+completely.
+
+I'm not going to defend the design choices here because I have no idea
+what the protocol constraints were, what the attack model was (or even
+if anyone actually produced one), what the hardware base was assumed to
+be at the time this was designed, etc.  Perhaps it's just dumb design;
+perhaps this was the best they could do.  Could it be better?  Of
+course.  Is it better to not put a front door on your house because
+the only ones permitted for appearance's sake are wood and can be
+broken easily?
+							-- Jerry
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

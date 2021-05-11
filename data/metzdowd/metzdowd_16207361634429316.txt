@@ -1,0 +1,27 @@
+<PRE>On Fri, 28 Dec 2007 09:06:44 -0800 or thereabouts &quot;' =JeffH '&quot;
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt; wrote:
+
+&gt;<i> Storm, Nugache lead dangerous new botnet barrage
+</I>&gt;<i> By Dennis Fisher, Executive Editor
+</I>&gt;<i> 19 Dec 2007 | SearchSecurity.com
+</I>&gt;<i> &lt;<A HREF="http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci1286808">http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci1286808</A>
+</I>&gt;<i> ,00.html?track=NL-358&amp;ad=614777&amp;asrc=EM_NLN_2785475&amp;uid=1408222&gt;
+</I>&gt;<i>   
+</I>...snip...
+
+Storm made a pretty significant comeback this week:
+
+<A HREF="http://noh.ucsd.edu/~bmenrigh/stormdrain/stormdrain.enctotal_encactive.html">http://noh.ucsd.edu/~bmenrigh/stormdrain/stormdrain.enctotal_encactive.html</A>
+
+Note that those graphs are *only* from the peers that speak encrypted
+Overnet.  If you include all the legacy Storm bots out there that still
+speak the unencrypted variant Storm is getting back up to its heyday
+size.
+
+Brandon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

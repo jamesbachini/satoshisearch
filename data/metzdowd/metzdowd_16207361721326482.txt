@@ -1,0 +1,38 @@
+<PRE>
+On Mar 16, 2008, at 7:52 PM, Ben Laurie wrote:
+
+&gt;<i> Dirk-Willem van Gulik wrote:
+</I>&gt;&gt;<i> So I'd argue that while x509, its CA's and its CRL's are a serious  
+</I>&gt;&gt;<i> pain to deal** with, and seem add little value if you assume avery  
+</I>&gt;&gt;<i> diligent and experienced operational team -- they do provide a  
+</I>&gt;&gt;<i> useful 'procedural' framework and workflow-guide which is in itself  
+</I>&gt;&gt;<i> very valuable, relatively robust and are a little bit  
+</I>&gt;&gt;<i> organisationally &quot;inherently fail-safe&quot;. The latter as you are  
+</I>&gt;&gt;<i> forced to think about expiry of the assertions, what to do when a  
+</I>&gt;&gt;<i> CRL is too old and so on.
+</I>&gt;<i>
+</I>&gt;<i> I think there's a large gulf between the use case where the relying  
+</I>&gt;<i> party and the CA are the same entity, and where they do not even  
+</I>&gt;<i> have a contractual arrangement.
+</I>
+I think you are hitting a key point here. In a way - a CA (or some sub- 
+CA) is less of an authority and more of a, ideally, somewhat  
+consistent organizational realm.
+
+&gt;<i> CAs within a corporate environment may well be a good idea in some  
+</I>&gt;<i> cases, indeed. As you know, we've been pushing on this idea at the  
+</I>&gt;<i> Apache Software Foundation for some time now, hindered only by our  
+</I>&gt;<i> laziness :-)
+</I>
+And at the same time we need to learn to, or be weaned away from, the  
+hardened shell perimeter ideas, that of a single super reliable root -  
+and start to see a CA as something like one of the Kerberos KDC's we  
+trust, just a NIS+ server we like, etc.
+
+Dw
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

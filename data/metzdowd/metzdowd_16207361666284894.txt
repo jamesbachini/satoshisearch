@@ -1,0 +1,22 @@
+<PRE>At 9:49 PM -0800 1/22/08, Ed Gerck wrote:
+&gt;&gt;<i>Can you point to some sources of this &quot;often expressed idea&quot;? It 
+</I>&gt;&gt;<i>seems like a pretty flimsy straw man.
+</I>&gt;<i>
+</I>&gt;<i>It is common with those who think that the threat model is
+</I>&gt;<i>&quot;traversing the public Internet&quot;.
+</I>
+I'll take that as a &quot;no&quot;.
+
+&gt;<i>For examples on claiming that SSL/TLS can protect email
+</I>&gt;<i>privacy,
+</I>
+That's not what I asked, of course.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

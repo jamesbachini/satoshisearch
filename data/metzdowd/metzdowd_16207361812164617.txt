@@ -1,0 +1,55 @@
+<PRE>On Tue, Jun 3, 2008 at 4:37 PM, Eric Cronin &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ecronin at gizmolabs.org</A>&gt; wrote:
+&gt;<i>
+</I>&gt;<i> On Jun 3, 2008, at 11:51 AM, Adam Aviv wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Depending on the level of protection you want, you could just add a
+</I>&gt;&gt;<i> script to your .forward to encrypt your email before delivery using
+</I>&gt;&gt;<i> PGP/GPG. However, this will leave the headers in the clear, so you
+</I>&gt;&gt;<i> will likely want to create an entirely new envelope for the message
+</I>&gt;&gt;<i> with the original message encrypted as the body or an attachment.
+</I>&gt;<i>
+</I>&gt;<i> Does anybody have a recipe for this first mode handy?  plain text e-mails
+</I>&gt;<i> seem simple enough, but there needs to be a bit of MIME unwrapping and
+</I>&gt;<i> rewrapping to correctly handle attachments so that the client sees/decrypts
+</I>&gt;<i> them correctly I think.  I've searched from time to time and never found a
+</I>&gt;<i> good HowTo...
+</I>&gt;<i>
+</I>&gt;<i> Thanks,
+</I>&gt;<i> Eric
+</I>&gt;<i>
+</I>
+
+I have written a script that does that in python, as part of the email
+handling for the project. It encrypts each message part separately and
+then construct a new email with each encrypted part as the payload of
+a new MIME multipart message. Contained within is also the encrypted
+session key, and necessary info to reconstruct. On the client side,
+the message can then be unwrap, decrypted, and the original email
+reconstructed. Or the client can request just the headers, the body,
+or any attachment (becomes iffy with a combination of 'text/plain' and
+'text/html' content type) instead of the entire message.
+
+Depending on how you want to do the wrapping (if you want to meet some
+optimization like headers can be requested before the rest of the
+message), then the simplest approach is, if a MIME multipart message,
+to work with each part individually and encrypt. I decided to encrypt
+the headers for each part separatly from the payload, so that the
+client can see what the message contains before actually decrypting
+it. But, different approaches can be taken depending on the end goal
+(i.e. just encrypt the whole thing into a glob, and download the glob
+and decrypt it on the client directly into a mbox or maildir that is
+locally served).
+
+adam
+
+-- 
+Adam Aviv
+Ph. D. Candidate
+Computer and Information Science
+University of Pennsylvania
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

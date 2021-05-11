@@ -1,0 +1,21 @@
+<PRE>On Sat, Oct 25, 2008 at 12:40 PM, IanG &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; wrote:
+&gt;<i> Jonathan Katz wrote:
+</I>&gt;&gt;<i> I think it depends on what you mean by &quot;N pools of entropy&quot;.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> I can see that my description was a bit weak, yes.  Here's a better
+</I>&gt;<i> view, incorporating the feedback:
+</I>&gt;<i>
+</I>&gt;<i>   If I have N people, each with a single pool of entropy,
+</I>&gt;<i>   and I pool each of their contributions together with XOR,
+</I>&gt;<i>   is that as good as it gets?
+</I>
+I think you need to define what you mean by &quot;as good as it gets&quot;.
+Clearly XOR loses entropy that might be there, so on the measure of
+&quot;good == most entropy&quot;, it is not.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

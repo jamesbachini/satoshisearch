@@ -1,0 +1,29 @@
+<PRE>* Erik Tews schrieb am 2007-09-03 um 15:09 Uhr:
+&gt;<i> Am Donnerstag, den 30.08.2007, 20:43 -0500 schrieb travis
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">+ml-cryptography at subspacefield.org</A>:
+</I>&gt;<i> &gt; If you have a break of some scheme you wish to contribute, please
+</I>&gt;<i> &gt; do forward me a URL and I'll link to it. 
+</I>&gt;<i> 
+</I>&gt;<i> Sorry, german, but definitely worth reading:
+</I>&gt;<i> <A HREF="http://www.kryptochef.de/">http://www.kryptochef.de/</A>
+</I>
+&lt;URL:<A HREF="http://www.manuel-hachenburger.de/">http://www.manuel-hachenburger.de/</A>&gt; offers also an &quot;unbreakable&quot;
+cipher. He states that he developed two different ciphers and no one
+(explicitly mentions NSA) broke his code yet. However he seems to be a
+crypto expert, because as a sports trainer he obviously works every day
+in this field. ;)
+
+Besten Gru&#223;
+
+-- 
+Jens Kubieziel                                   <A HREF="http://www.kubieziel.de">http://www.kubieziel.de</A>
+There are 10 types of people in the world. Those who understand binary and
+those who don't.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: Digital signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070903/e2cc68ae/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20070903/e2cc68ae/attachment.pgp</A>&gt;
+</PRE>

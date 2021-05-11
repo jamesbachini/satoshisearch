@@ -1,0 +1,58 @@
+<PRE>
+In article &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">20080506010850.GC15920 at hn305c2n2.ms.com</A>&gt; you write:
+&gt;<i>On Sun, May 04, 2008 at 10:24:13PM -0400, Thor Lancelot Simon wrote:
+</I>&gt;&gt;<i> I believe that those who supply security products have a responsibility
+</I>&gt;&gt;<i> to consider the knowledge, experience, and tendencies of their likely
+</I>&gt;&gt;<i> users to the greatest extent to which they're able, and supply products
+</I>&gt;&gt;<i> which will function properly _as users are likely to apply them_.
+</I>&gt;<i>
+</I>&gt;<i>The TLS support in Postfix tries to behave sensibly with &quot;easy&quot; setings.
+</I>&gt;<i>
+</I>&gt;<i>    - Cipher list selection is indirect, via grades: &quot;export&quot;, &quot;low&quot;,
+</I>&gt;<i>    &quot;medium&quot; and &quot;high&quot;. The actual ciphers for each grade are buried
+</I>&gt;<i>    in parameters users are advised to not mess with.
+</I>&gt;<i>
+</I>&gt;<i>    - The cipher grade for opportunistic TLS is &quot;export&quot;, but you single
+</I>&gt;<i>    out a destination for mandatory TLS, the grade rises to &quot;medium&quot;.
+</I>&gt;<i>
+</I>[..]
+&gt;<i>
+</I>&gt;<i>    - With the upcoming EECDH support, users don't choose curves
+</I>&gt;<i>    directly, they again choose a security grade, and the correspnding
+</I>&gt;<i>    curves are configurable via parameters they are not expected to
+</I>&gt;<i>    ever look at or modify.
+</I>
+This struck me as poor design, not good design.  Asking the user to
+make these kinds of choices seems like the kind of thing that only a
+cryptographer could consider sensible.  In this day and age, software
+should not be asking users to choose ciphers.  Rather, the software
+should just pick a sensible high-grade security level (e.g., AES-128,
+RSA-1024 or RSA-2048) and go with that, and avoid bothering the user.
+Why even offer &quot;low&quot; as an option?  (And this &quot;export&quot; business sounds
+like a throwback to a decade ago; why is that still there?)
+
+Good crypto is cheap.  Asking a user is expensive and risky.
+
+&gt;<i>So I think there should be a broad design bias towards *implicit* correct
+</I>&gt;<i>behaviour in all system features, with rope available for advanced users
+</I>&gt;<i>to *explicitly* craft more complex use-cases. Once you have that, practical
+</I>&gt;<i>security is not too difficult.
+</I>
+Amen.  I know of quite a few software packages that could use more of
+that philosophy.
+
+&gt;<i>The same is true in the source code, unsafe practices are avoided
+</I>&gt;<i>globally, (e.g. both strcpy() and strncpy() are absent together with fixed
+</I>&gt;<i>size automatic buffers) rather than used with care locally. I won't bore
+</I>&gt;<i>you with all the implementation safety &quot;habits&quot;, but there are many.
+</I>
+It's too bad that today such elementary practices are something to brag
+about.  Perhaps one day we'll be lucky enough that the answer to these
+questions becomes more like &quot;of course we use safe programming practices;
+what kind of incompetent amateurs do you take us for?&quot;.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

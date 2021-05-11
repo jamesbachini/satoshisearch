@@ -1,0 +1,32 @@
+<PRE>On Fri, Feb 01, 2008 at 01:15:09PM +1300, Peter Gutmann wrote:
+
+&gt;<i> Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at MorganStanley.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;Jumping in late, but the idea that *TCP* (and not TLS protocol design) adds
+</I>&gt;<i> &gt;round-trips to SSL warrants some evidence (it is very temping to express this
+</I>&gt;<i> &gt;skepticism more bluntly).
+</I>&gt;<i> 
+</I>&gt;<i> If anyone's interested, I did an analysis of this sort of thing in an
+</I>&gt;<i> unpublished draft &quot;Performance Characteristics of Application-level Security
+</I>&gt;<i> Protocols&quot;, <A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/app_sec.pdf.">http://www.cs.auckland.ac.nz/~pgut001/pubs/app_sec.pdf.</A>  It
+</I>&gt;<i> compares (among other things) the cost in RTT of several variations of SSL and
+</I>&gt;<i> SSH.  It's not the TCP RTTs that hurt, it's all the handshaking that takes
+</I>&gt;<i> place during the crypto connect.  SSH is particularly bad in this regard.
+</I>
+Thanks, an excellent reference! Section 6.2 is most enlightening, we were
+already considering adopting HPN fixes in the internal OpenSSH deployment,
+this provides solid material to motivate the work...
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

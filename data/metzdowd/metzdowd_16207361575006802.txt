@@ -1,0 +1,25 @@
+<PRE>On Thu, Oct 04, 2007 at 06:48:49PM -0400, Leichter, Jerry wrote:
+&gt;<i> Prat Moghe, founder and CTO of Tizor Systems Inc., a Maynard,
+</I>&gt;<i> Mass.-based security firm, called the NRF's demand political posturing
+</I>&gt;<i> and said it would do little to improve retail security anytime soon.
+</I>&gt;<i> 
+</I>&gt;<i> &quot;I think a lot of this is about moving culpability back to the credit
+</I>&gt;<i> card companies and saying don't make this my problem alone,&quot; Moghe
+</I>&gt;<i> said. &quot;They seem to have realized that going on the defense as an
+</I>&gt;<i> industry doesn't help. There is just more and more they have to do.&quot;
+</I>
+Amazingly, Tizor Systems does PCI reviews (actually they entirely seem
+to do C&amp;A work), and I'm sure Prat would prefer to see the PCI gravy
+train stay around. (I don't know the current state of the industry,
+but when I was working in a consulting group 2004-2005, PCI reviews
+were our most profitable engagement type by a large margin - and
+non-technical enough that you can put a person with a few months of
+security training on them and they'll do fine).
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

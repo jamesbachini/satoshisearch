@@ -1,0 +1,37 @@
+<PRE>On Thu, 31 Jul 2008, Pierre-Evariste Dagand wrote:
+&gt;<i> Just by curiosity, I ran the Diehard tests[...]
+</I>&gt;<i>
+</I>&gt;<i> Sum-up for /dev/random:
+</I>&gt;<i> &quot;Abnormally&quot; high value: 0.993189 [1]
+</I>&gt;<i> &quot;Abnormally&quot; low value: 0.010507 [1]
+</I>&gt;<i> Total: 2
+</I>&gt;<i>
+</I>&gt;<i> Sum up for Sha1(n):
+</I>&gt;<i> &quot;Abnormally&quot; high values: 0.938376, 0.927501 [2]
+</I>&gt;<i> &quot;Abnormally&quot; low values: 0.087107, 0.091750, 0.060212, 0.050921 [4]
+</I>&gt;<i> Total: 6
+</I>&gt;<i>
+</I>&gt;<i> So, I would say that Sha1(n) does not pass DieHard (while
+</I>&gt;<i> /dev/random does). But this would require further examination, in
+</I>&gt;<i> particular to understand why some tests failed. And, in fact, I have
+</I>&gt;<i> no clue why they failed...
+</I>
+See &lt;<A HREF="http://en.wikipedia.org/wiki/P-value">http://en.wikipedia.org/wiki/P-value</A>&gt;.
+
+Since p-value is supposed to be uniform on the interval [0,1]
+for a truly random source, it is no wonder that with so many
+p-values some of them are close to 0 and some are close to 1.
+
+If your p-value is smaller than the significance level (say, 1%)
+you should repeat the test with different data and see if the
+test persistently fails or it was just a fluke.
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

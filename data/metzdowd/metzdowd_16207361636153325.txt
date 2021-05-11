@@ -1,0 +1,69 @@
+<PRE>
+
+Leichter, Jerry wrote:
+
+&gt;<i> | &gt; There was a discussion on this list a year or two back about
+</I>&gt;<i> | &gt; problems in using memset() to zeroise in-memory data, specifically
+</I>&gt;<i> | &gt; the fact that optimising compilers would remove a memset() on
+</I>&gt;<i> | &gt; (apparently) dead data in the belief that it wasn't serving any
+</I>&gt;<i> | &gt; purpose.
+</I>&gt;<i> | 
+</I>&gt;<i> | Then, s/memset(?,0,?)/(memset)(?,0,?)/ to get rid of compiler
+</I>&gt;<i> | in-lining.
+</I>&gt;<i> | 
+</I>&gt;<i> | Ref: ANSI X3.159-1989, section 4.1.6 (Use of C standard library
+</I>&gt;<i> | functions)
+</I>&gt;<i> I don't have te C89 spec handy (just the C99 spec, which is laid
+</I>&gt;<i> out differently), but from what I recall, this construct guarantees
+</I>&gt;<i> nothing of the sort.
+</I>&gt;<i> 
+</I>&gt;<i> Most standard library functions can be implemented as macros.  Using the
+</I>&gt;<i> construct (f)(args) guarantees that you get the actual function f,
+</I>&gt;<i> rather than the macro f.
+</I>
+Indeed, the actual function, memcpy in the present instance.
+
+memcpy, the actual function, is aware of the execution environment, 
+because it is part of the run-time library. The compiler is not as 
+deeply aware of the execution environment.
+
+The source code construct (f)(args) is provided by the standard to allow 
+the program to explicitly rely on the actual library function.
+
+At least this is my understanding of compiler optimization techniques as 
+subordinate to standard definition of the C language. I too often turned 
+off optimization due to (suspected) optimized-in crash, I would like to 
+rely on the (f)(args) to locally turn off optimization.
+
+&gt;<i> However, that doesn't say anything about
+</I>&gt;<i> whether f is actually invoked at run time.  That comes under the &quot;acts
+</I>&gt;<i> as if&quot; rule:  If the compiler can prove that the state of the C
+</I>&gt;<i> (notional) virtual machine is the same whether f is actually invoked or
+</I>&gt;<i> not, it can elide the call.  Nothing says that memset() can't actually
+</I>&gt;<i> be defined in the appropriate header, as a static (or, in C99, inline)
+</I>&gt;<i> function.
+</I>
+The standard actually says &quot;... it is permitted to take the address of a 
+library function even if it is defined as a macro ...&quot;. The standard 
+works for me as a source code author who needs an execution-aware memcpy 
+function from time to time. Overworked GCC contributors should work to 
+comply to the standard, not to address Peter, Thierry, and whoever's 
+wildests dreams.
+
+&gt;<i> Then the compiler can look at the implementation and &quot;prove&quot;
+</I>&gt;<i> that a memset() to a dead variable can be elided....
+</I>
+It can't prove much in the case of (memset)()
+
+
+Regards,
+
+-- 
+
+- Thierry Moreau
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

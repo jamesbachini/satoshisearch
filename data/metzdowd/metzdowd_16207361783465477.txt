@@ -1,0 +1,26 @@
+<PRE>Ian G wrote: (on Kerckhoffs's rules)
+&gt;<i> =====================
+</I>&gt;<i> 6. Finally, it is necessary, given the circumstances that command its 
+</I>&gt;<i> application, that the system be easy to use, requiring neither mental 
+</I>&gt;<i> strain nor the knowledge of a long series of rules to observe.
+</I>&gt;<i> =====================
+</I>&gt;<i> ...
+</I>&gt;<i> PS:  Although his 6th is arguably the most important
+</I>
+Yes. Usability should be the #1 property of a secure system.
+
+Conventional security thinking says that usability and security are 
+like a seesaw; if usability goes up, security must go down, and 
+vice-versa. This apparent antinomy actually works as a synergy: with 
+more usability in a secure system, security increases. With less 
+usability in a secure system, security decreases. A secure system that 
+is not usable will be left aside by users.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

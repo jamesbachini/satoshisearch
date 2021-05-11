@@ -1,0 +1,43 @@
+<PRE>On Thu, 2008-10-30 at 16:32 +1300, Peter Gutmann wrote:
+&gt;<i> Look at the XBox
+</I>&gt;<i> attacks for example, there's everything from security 101 lack of
+</I>&gt;<i> checking/validation and 1980s MSDOS-era A20# issues through to Bunnie Huang's
+</I>&gt;<i> FPGA-based homebrew logic analyser and use of timing attacks to recover device
+</I>&gt;<i> keys (oh, and there's an example of a real-world side-channel attack for you),
+</I>&gt;<i> there's no rhyme or reason to them, it's just &quot;hammer away at everything with
+</I>&gt;<i> anything you've got and exploit the first bit that fails&quot;.
+</I>
+
+But isn't that the attacker's job?  We will never arrive at anything
+secure - or even *learn* anything about how to build real security - 
+if attackers leave any part of it untested or consistently fail to 
+try particular approaches.  As far as I can see the &quot;acid tests&quot; of 
+the real world, hammering away with anything they've got, are exactly
+the kind of environment that security pros have to design for in the 
+long run.  
+
+We should be trying to identify products and implementations that 
+hold up under this kind of assault, and then publishing books about 
+the design processes and best practices that produced them.  Knowing 
+full well that Kerchoff's Principle is alive and well, and that 
+the people doing the attacks will be first in line to buy the 
+books.  The point is that if the material in the books is any 
+good, then having the books shouldn't help them. 
+
+Cipher suites and protocols and proofs and advanced mathematics 
+are well and good, but we have to recognize that they are only a 
+small part of actually building a secure implementation.  Holding up 
+under diverse assault *is* the desired property that we are all 
+supposed to be working toward, and this kind of diverse assault 
+is exactly the sort of test we need to validate security design 
+processes. 
+
+				Bear
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

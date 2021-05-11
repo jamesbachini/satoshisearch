@@ -1,0 +1,26 @@
+<PRE>
+Hello,
+ 
+We're two Students and we're developing an online password manager
+like Clipperz or PassPack. In order to securely authenticate an user he
+has to submit his login password. But to encrypt his data
+(mainly credentials for other websites) with AES he would have to submit
+another password for added security. Let's call it the master password.
+ 
+We were wondering if it was possible to use a hash function instead.
+Using the password he provided at the login screen and hash it n times.
+ 
+Master Password: hash(hash(login_password))
+ 
+Would this be a good idea if we've used this generated hash as a key for AES?
+Would the hashing be secure enough against different kinds of attacks?
+ 
+Kevin
+_________________________________________________________________
+Explore the seven wonders of the world
+<A HREF="http://search.msn.com/results.aspx?q=7+wonders+world&amp;mkt=en-US&amp;form=QBRE">http://search.msn.com/results.aspx?q=7+wonders+world&amp;mkt=en-US&amp;form=QBRE</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,52 @@
+<PRE>Steven M. Bellovin forwards a pointer to:
+&gt;<i> <A HREF="http://www.cl.cam.ac.uk/~rja14/Papers/econ_crypto.pdf">http://www.cl.cam.ac.uk/~rja14/Papers/econ_crypto.pdf</A> 
+</I>
+Ross Anderson gave his invited talk at Crypto yesterday on this topic
+of the economics of crypto and security. It was an excellent talk,
+showcasing a new way to look at problems that sheds light on a number
+of otherwise odd behaviors.
+
+At the same time economics is inherently fuzzier than the kind of
+mathematical precision we aim for in crypto results. It often seems that
+every economic claim has an opposing one with arguments on each side.
+Along these lines, I felt that many of the points Ross made were open
+to debate and interpretation.
+
+One example was his comparison between the security business and the
+used-car &quot;lemons&quot; market. The idea is that lemons dominate the used-car
+market due to asymmetric information: only the sellers know which cars
+are lemons, hence these are the ones that are mostly made available,
+hence buyers assume all cars are likely to be lemons, hence good cars
+can't be sold for a higher price and are largely kept off the market.
+
+However security products are not really that much like used cars. Used
+cars are individually unique and it is impossible to know in advance
+how well they will work. That's where the asymmetric information
+comes from. But security products are more like other retail products;
+each one has its own characteristics, strengths and weaknesses, and
+there are ways consumers can find out about them in advance. There was
+considerable publicity a couple of weeks ago about a side-by-side test
+at the LinuxWorld conference which compared ten anti-virus products,
+with highly differentiated results:
+
+<A HREF="http://it.slashdot.org/article.pl?sid=07/08/09/2243229">http://it.slashdot.org/article.pl?sid=07/08/09/2243229</A>
+
+Information on the quality of AV and other security products is widely
+available on the net, in magazines and other places that consumers
+might look for reviews and comparisons. This is completely unlike
+the situation with individual used cars. I don't see this analogy as
+particularly accurate.
+
+I certainly do fully support the concept behind Ross's program of
+investigating the role economics plays in the crypto and security field.
+The mere fact that so many of the conclusions are provocative indicates
+that there is much fertile work yet to be done. Ross is a major pioneer
+of this effort and I am looking forward to further interesting results.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

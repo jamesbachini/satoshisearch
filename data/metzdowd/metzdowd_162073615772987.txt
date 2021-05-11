@@ -1,0 +1,31 @@
+<PRE>Joachim Str&#246;mbergson wrote:
+&gt;<i> Nate Lawson skrev:
+</I>&gt;&gt;&gt;<i> Some EC primitives in the latest OpenSSL.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Because various standard forms of EC were never covered by patents.
+</I>&gt;&gt;<i> This has been rehashed many times, for example:
+</I>&gt;&gt;<i> <A HREF="http://www.xml-dev.com/pipermail/fde/2007-July/000450.html">http://www.xml-dev.com/pipermail/fde/2007-July/000450.html</A>
+</I>&gt;<i> 
+</I>&gt;<i> IANAL but IMHO this is only partially true. Try doing an efficient
+</I>&gt;<i> implementation in HW of ECC and not stepping on Certicom patent toes. SW
+</I>&gt;<i> implementations are probably ok though.
+</I>
+I disagree.  I was referring to the *standard* case (no point
+compression, no special performance tweaks).  If you're building
+something high performance, choosing special curves, etc., you're in a
+different playing field.  Whether it's possible to do an efficient
+implementation in hw without resorting to those techniques is a very
+specific question that I won't answer here.
+
+I won't go into any more detail since it's not a good policy to publicly
+discuss patents.  I just wanted to respond to the FUD that the original
+poster was spreading re: EC being covered by patents that had expired.
+
+-- 
+Nate
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

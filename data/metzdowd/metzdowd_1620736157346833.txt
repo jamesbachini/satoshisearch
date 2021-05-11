@@ -1,0 +1,33 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; writes:
+</I>&gt;&gt;<i> Peter Gutmann wrote:
+</I>
+&gt;&gt;&gt;<i> Given that it's for USG use, I imagine the FIPS 140 entry barrier for the
+</I>&gt;&gt;&gt;<i> government gravy train would be fairly effective in keeping any OSS products
+</I>&gt;&gt;&gt;<i> out.
+</I>&gt;&gt;<i> ? OpenSSL has FIPS 140.
+</I>&gt;<i> 
+</I>&gt;<i> But if you build a FDE product with it you've got to get the entire product
+</I>&gt;<i> certified, not just the crypto component.
+</I>&gt;<i> 
+</I>&gt;<i> (Actually given the vagueness of what's being certified you might be able to
+</I>&gt;<i> get away with getting just one corner certified, but then if you have to use a
+</I>&gt;<i> SISWG mode you'd need to modify OpenSSL, which in turn means getting another
+</I>&gt;<i> certification.  Or the changes you'd need to make to get it to work as a
+</I>&gt;<i> kernel driver would require recertification, because you can't just link in
+</I>&gt;<i> libssl for that.  Or...).
+</I>
+
+A slightly off-topic question:  if we accept that current 
+processes (FIPS-140, CC, etc) are inadequate indicators of 
+quality for OSS products, is there something that can be 
+done about it?  Is there a reasonable criteria / process 
+that can be built that is more suitable?
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

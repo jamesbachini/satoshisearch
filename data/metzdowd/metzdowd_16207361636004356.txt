@@ -1,0 +1,45 @@
+<PRE>Dan wrote:
+ &gt; Let's not do this or we'll have to talk about JF Kennedy
+ &gt; who, at least, bought his votes with real money.
+
+That's because Democrats had become more professional,
+and the tradition of buying votes with whiskey
+only works for the retail level, not wholesale.
+
+Dan also wrote:
+&gt;<i>May I point out that if voting systems have a level
+</I>&gt;<i>of flaw that says only an idiot would use them, then
+</I>&gt;<i>how can you explain electronic commerce, FaceBook,
+</I>&gt;<i>or gambling sites?  More people use just those three
+</I>&gt;<i>than will *ever* vote.
+</I>
+The primary threats of electronic voting machines aren't
+to the individual voter,
+who can slightly increase the chances of getting
+his/her vote counted accurately by insisting on paper ballots,
+but to the aggregate vote count, which can be hacked
+if the precinct has _any_ electronic machines.
+
+The big problem in Ohio appears to have been Denial of Service -
+not that there weren't lots of other problems,
+but electronic voting systems have sufficient complexity that
+an elections department can arrange to have enough
+missing parts or supplies or passwords or powercords or whatever
+in demographically appropriate precincts so that the
+results get skewed even without Other Technical Means.
+Some of the black inner-city precincts had two-hour lines
+(on a rainy day), while white Republican-leaning precincts
+had all the equipment they needed.
+
+(Also, if you're saying &quot;only an idiot would use it&quot;
+and ask how gambling sites exist, the answer is that
+only idiots gamble...   As Ed Gerck pointed out,
+risk in e-commerce can be managed and amortized into the price,
+but that doesn't work for voting.)
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

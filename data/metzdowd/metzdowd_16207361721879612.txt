@@ -1,0 +1,29 @@
+<PRE>Microsoft recently published the specs for a pile of previously undocumented
+or semi-documented protocols and data formats.  One of them covers the
+atrociously-named Health Certificates, which have nothing to do with
+healthcare but are used to indicate compliance of systems with security
+policies.  A system obtains a health certificate from a server which
+encapsulates its compliance with the security policy, and other systems can
+then verify the compliance by checking the cert rather than having to perform
+the check of the system itself.  The object identifier associated with this
+usage is 1 3 6 1 4 1 311 47 1 1.
+
+This leads to a small problem: Since health certificates are now desirable,
+everyone wants one.  The problem is that non-compliant systems can't get one
+because the very purpose of a health cert is to prove compliance with a
+security policy and non-compliant systems are, well, non-compliant.
+
+To work around this, there's a second identifier 1 3 6 1 4 1 311 47 1 3 which
+is used to provide health certs for systems that don't qualify for health
+certs, so they can have their health certs too.
+
+(I've encountered many examples of business and politics messing up security,
+ but I think this one must qualify as some kind of poster boy).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

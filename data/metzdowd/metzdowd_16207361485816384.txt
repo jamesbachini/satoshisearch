@@ -1,0 +1,42 @@
+<PRE>Ed Gerck wrote:
+&gt;<i> Yes. Today, under current practice, there's actually a strong
+</I>&gt;<i> incentive to keep existing fraud levels than to try to &quot;scrub
+</I>&gt;<i> it out&quot; -- fraud has become a sale:
+</I>
+thread from earlier this year ... when over a period of a month or
+so there were several releases that essentially had fraud declining
+by 10-15 percent simultaneously with fraud increasing by 200-300 percent.
+<A HREF="http://www.garlic.com/~lynn/2007e.html#26">http://www.garlic.com/~lynn/2007e.html#26</A> Securing financial transactions a high priority for 2007
+<A HREF="http://www.garlic.com/~lynn/2007e.html#29">http://www.garlic.com/~lynn/2007e.html#29</A> Securing financial transactions a high priority for 2007
+<A HREF="http://www.garlic.com/~lynn/2007e.html#58">http://www.garlic.com/~lynn/2007e.html#58</A> Securing financial transactions a high priority for 2007
+<A HREF="http://www.garlic.com/~lynn/2007e.html#61">http://www.garlic.com/~lynn/2007e.html#61</A> Securing financial transactions a high priority for 2007
+<A HREF="http://www.garlic.com/~lynn/2007e.html#62">http://www.garlic.com/~lynn/2007e.html#62</A> Securing financial transactions a high priority for 2007
+<A HREF="http://www.garlic.com/~lynn/2007i.html#5">http://www.garlic.com/~lynn/2007i.html#5</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007i.html#17">http://www.garlic.com/~lynn/2007i.html#17</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007i.html#19">http://www.garlic.com/~lynn/2007i.html#19</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007i.html#59">http://www.garlic.com/~lynn/2007i.html#59</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007m.html#65">http://www.garlic.com/~lynn/2007m.html#65</A> nouns and adjectives
+
+this followed an article pointing out that EU financial institutions
+had something less than 10percent of their bottom line coming from
+payment transaction operation ... while it was closer to 40percent
+for US financial institutions.
+<A HREF="http://www.garlic.com/~lynn/2007k.html#12">http://www.garlic.com/~lynn/2007k.html#12</A> IBM Unionization
+<A HREF="http://www.garlic.com/~lynn/2007k.html#13">http://www.garlic.com/~lynn/2007k.html#13</A> IBM Unionization
+<A HREF="http://www.garlic.com/~lynn/2007l.html#35">http://www.garlic.com/~lynn/2007l.html#35</A> My Dream PC -- Chip-Based
+
+and articles about interchange fee represents the single large expense for some retail
+merchants
+<A HREF="http://www.garlic.com/~lynn/aadsm23.htm#37">http://www.garlic.com/~lynn/aadsm23.htm#37</A> 3 of the big 4 - all doing payment systems
+<A HREF="http://www.garlic.com/~lynn/2006e.html#26">http://www.garlic.com/~lynn/2006e.html#26</A> Debit Cards HACKED now
+<A HREF="http://www.garlic.com/~lynn/2006k.html#23">http://www.garlic.com/~lynn/2006k.html#23</A> Value of an old IBM PS/2 CL57 SX Laptop
+<A HREF="http://www.garlic.com/~lynn/2007.html#27">http://www.garlic.com/~lynn/2007.html#27</A> Securing financial transactions a high priority for 2007
+<A HREF="http://www.garlic.com/~lynn/2007c.html#38">http://www.garlic.com/~lynn/2007c.html#38</A> Securing financial transactions a high priority for 2007
+<A HREF="http://www.garlic.com/~lynn/2007i.html#47">http://www.garlic.com/~lynn/2007i.html#47</A> John W. Backus, 82, Fortran developer, dies
+<A HREF="http://www.garlic.com/~lynn/2007i.html#72">http://www.garlic.com/~lynn/2007i.html#72</A> Free Checking
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

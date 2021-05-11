@@ -1,0 +1,171 @@
+<PRE>[This conversation is spanning three mailing lists --  
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">p2p-hackers at lists.zooko.com</A>, and tahoe- 
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dev at allmydata.org</A> .  Some of the posts have not reached all three of  
+those lists.  I've manually added Jerry Leichter and Ivan Krsti&#263; to  
+the approved-senders set for p2p-hackers and tahoe-dev, so that  
+further posts by them will appear on those lists.]
+
+&gt;<i> On Mar 30, 2008, at 3:13 PM, Ivan Krsti&#263; wrote:
+</I>&gt;<i>
+</I>&gt;<i> Unless I'm misunderstanding Zooko's writeup, he's worried about an
+</I>&gt;<i> attacker going from a partially-known plaintext (e.g. a form bank
+</I>&gt;<i> letter) to a completely-known plaintext by repeating the following
+</I>&gt;<i> process:
+</I>&gt;<i>
+</I>&gt;<i> 1. take partially known plaintext
+</I>&gt;<i> 2. make a guess, randomly or more intelligently where possible,
+</I>&gt;<i>     about the unknown parts
+</I>&gt;<i> 3. take the current integrated partial+guessed plaintext, hash
+</I>&gt;<i>     to obtain convergence key
+</I>&gt;<i> 4. verify whether that key exists in the storage index
+</I>&gt;<i> 5. if yes, you've found the full plaintext. if not, repeat from '2'.
+</I>&gt;<i>
+</I>&gt;<i> That's a brute force search.
+</I>
+That's right.  Your comparison to normal old brute-force/dictionary  
+attack on passwords is a good one, and one that Jim McCoy and Jerry  
+Leichter have alluded to as well.
+
+Think of it like this:
+
+Passwords are susceptible to brute-force and/or dictionary attack.   
+We can't, in general, prevent attackers from trying guesses at our  
+passwords without also preventing users from using them, so instead  
+we employ various techniques:
+
+  * salts (to break up the space of targets into subspaces, of which  
+at most one can be targeted by a given brute-force attack)
+  * key strengthening (to increase by a constant factor the cost of  
+checking a password)
+  * rate-limits for on-line tries (i.e., you get only a small fixed  
+number of wrong guesses in a row before you are locked out for a time- 
+out period)
+
+However, secrets other than passwords are not usually susceptible to  
+such attacks.  You can store your True Name, credit card number, bank  
+account number, mother's maiden name, and so forth, on the same  
+server as your password, but you don't have to worry about using  
+salts or key strengthening on those latter secrets, because the  
+server doesn't run a service that allows unauthenticated remote  
+people to connect, submit a guess as to their value, and receive  
+confirmation, the way it does for your password.  (In other words,  
+for such data we generally use an extreme form of the third defense,  
+rate-limiting tries -- the number of guesses that an attacker gets is  
+limited to none!)
+
+Likewise, if you are going to store or transmit those kinds of  
+secrets in encrypted form using a traditional randomly-generated  
+encryption key, then you don't have to worry about brute-force/ 
+dictionary attacks because your strong randomly-selected symmetric  
+encryption key defies them.
+
+The Key Point:
+
+  *** Convergent encryption exposes whatever data is put into it to  
+the sorts of attacks that already apply to passwords.
+
+
+Convergent encryption had been invented, analyzed and used for many  
+years, but to the best of my knowledge the first time that anyone  
+noticed this issue was March 16 of this year (at 3 AM Chicago Time),  
+when Drew Perttula and Brian Warner made that observation.  (Although  
+to be fair some of the best-known uses of convergent encryption  
+during these years have been sharing publicly-known files with  
+strangers, in which case I suppose it is assumed that the cleartext  
+does not contain secrets.)
+
+Now PBKDF2 is a combination of the first two defenses -- salting and  
+key strengthening.  When you first suggested PBKDF2, I -- and  
+apparently Jerry Leichter -- thought that you were suggesting its  
+salting feature as a solution.  The solution that we've come up with  
+for Tahoe (described in my original note) is much like salting,  
+except that the added value that gets mixed in is secret and  
+unguessable, where I normally think of salt as non-secret.
+
+Now I see that you are also emphasizing the key strengthening feature  
+of PBKDF2.
+
+&quot;k&quot; denotes symmetric encryption key, &quot;p&quot; denotes plaintext, &quot;c&quot;  
+denotes ciphertext, &quot;s&quot; denotes salt, &quot;E(key, plaintext)&quot; is  
+encryption, &quot;H()&quot; is secure hashing, &quot;H^1000()&quot; is secure hashing a  
+thousand times over, i.e.&quot;H(H(H(H(...))))&quot; a thousand times.
+
+Traditional encryption:
+
+k = random()
+c = E(k, p)
+
+Traditional convergent encryption:
+
+k = H(p)
+c = E(k, p)
+
+Tahoe-style convergent encryption with added secret (&quot;s&quot;);  &quot;s&quot; can  
+be re-used for any number of files, but it is kept secret from  
+everyone except those with whom you wish to converge storage.
+
+s = random()
+k = H(s, p)
+c = E(k, p)
+
+PBKDF2 (simplified);  &quot;s&quot; can be re-used but is generally not, and it  
+is not secret.
+
+s = random()
+k = H^1000(s, password)
+c = E(k, p)
+
+Now, one could imagine a variant of traditional convergent encryption  
+which added key strengthening:
+
+k = H^1000(p)
+c = E(k, p)
+
+This would have a performance impact on normal everyday use of Tahoe  
+without, in my current estimation, making a brute-force/dictionary  
+attack infeasible.  Key strengthening allows you to choose an amount  
+of wasted CPU that you are willing to impose on your users during  
+normal use, and multiply the attacker's costs by exactly that  
+amount.  If the attacker has 2^64 computational capacity, and the  
+users are willing to waste 2^10 extra computrons on each file access,  
+then the attacker's effective capacity is reduced to 2^54.
+
+The trade-off is actually worse than it appears since the attacker is  
+attacking multiple users at once (in traditional convergent  
+encryption, he is attacking *all* users at once), so he gains an  
+economy of scale, and can profitably invest in specialized tools,  
+even specialized hardware such as a COPACOBANA [1].  At the very  
+least he can profitably devote many CPU cores to churning out new  
+guesses 24/7, while for normal users it is not profitable to allocate  
+a 24/7 CPU load to strengthening their keys.  The reason for this  
+disparity is that the attacker gets to attack everyone at once for  
+the same cost as attacking only one target, where the defenders have  
+to pay each for his own defense.
+
+
+Next, one could imagine a variant of Tahoe's convergent encryption  
+with added secret which adds key strengthening:
+
+s = random()
+k = H^1000(s, p)
+c = E(k, p)
+
+This would likewise be costly to normal users, but moreover it is not  
+needed because the &quot;s = random()&quot; part of the algorithm locks out all  
+attackers except those with whom s is shared from mounting such an  
+attack at all.
+
+Thank you for your comments on this issue.  If you have further  
+ideas, especially as would be relevant to the Tahoe Least-Authority  
+Filesystem, I would love to hear them.
+
+Regards,
+
+Zooko O'Whielacronx
+
+[1] <A HREF="http://copacobana.org/">http://copacobana.org/</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

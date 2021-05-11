@@ -1,0 +1,68 @@
+<PRE> &gt; Folks on this list and its progenitors have long noted that
+cryptography is a matter of economics.
+
+Agreed, but using an insecure technology doesn't make sense from even an
+economic perspective.  They spent enough money that they could have
+implemented a secure system, but instead, made two fundamental errors:
+
+1.) The cost of fraud is probably much less than the cost of the system
+- 2 billion.  So, even if the system were completely secure, they still
+might have been better off using paper tickets and the honor system.
+&gt;<i>From all indications, there were no cost controls on this project, so it
+</I>seems likely that the technology was not chosen because of technical
+reasons or economic reasons, but rather, because someone was familiar
+with it.  Perhaps it was suggested by a politician, and his cronies made
+it their mission to make it happen.  Perhaps someone thought that it
+would impress visitors; maybe it was a matter of national pride.
+
+2.) The implementation was insecure.  Yes, there were probably technical
+factors involved, but for the cost of the project, they could have
+implemented a secure system, using other means if necessary.  The
+problem, as I see it, was not an economic one, but rather, that the
+developers relied on the secrecy of the algorithm for security, rather
+than the size of the key.  Even unpaid, open-source developers have
+produced secure systems for far less than the Dutch spent simply because
+they followed good cryptographic design guidelines.
+
+The question about mag strip versus RFID versus physical-contact readers
+is a valid one.  For 2 billion, the cost/convenience difference between
+radio and contact cards would have to be rather large to justify
+implementing an insecure system.  Even a swipe time of 100 ms is enough
+to implement a secure solution.  I find it very unlikely that a
+competent engineering firm could not implement this in a reliable,
+secure, and fast manner given this project's budget.
+
+If the assertions are correct - that the subway is used 1,000,000 times
+(or by 1,000,000 people?) a year, spending 2 billion on the fare system
+means approximately 2,000 per user/time.  For those math types, that's
+~~5.50 per day just to pay for the fare system, not to mention the cost
+of electricity, trains, maintenance, etc...  How many people spend more
+than 5.50 per day on train/subway/bus fare?  This system, and its
+attendant costs - though obsolete even before its inception - will
+probably be amortized over a few decades.  Which is why fraud is a very
+important issue.  In that time frame, it is very likely that the
+criminal underground could produce, and profit from, counterfeit cards
+on a large scale.  Unlike turnstyle jumpers, fraud of this kind could
+easily become so widespread that the subway system operates at a
+significant loss.  A turnstyle jumper is easily caught; a rider with a
+cloned card is virtually undetectable (without expensive upgrades to the
+system).  If this system had been securely implemented, we might be able
+to know if the fraud prevention would ever have exceeded the 2 billion
+cost of the system; but because it isn't, the Dutch have essentially
+flushed the money into the sewer.
+
+And, bringing economics back into the picture, the purpose of the Mifare
+system is *to prevent fraud*.  I seriously doubt that such a system -
+especially now that it is broken - will eliminate 2 billion worth of
+fraud.  It seems the Dutch would have been better off simply issuing
+paper tickets and relying on the honor system.  Most people are honest;
+the purpose of the ticket system is to keep people that way.
+Unfortunately, it fails from both perspectives: it isn't economically
+viable, and neither is it secure.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

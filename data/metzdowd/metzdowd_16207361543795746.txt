@@ -1,0 +1,25 @@
+<PRE>Damien Miller wrote:
+&gt;<i> OTOH Racoon/ipsec-tools would benefit from the extra sanity checks
+</I>&gt;<i> that Ben Laurie added to OpenSSL for the 0.9.8a release[3], assuming
+</I>&gt;<i> it was compiled against that version or later.
+</I>
+I have to say that Nick Mathewson should get all the credit for this, I
+was merely a facilitator.
+
+Cheers,
+
+Ben.
+
+&gt;<i> [3] <A HREF="http://cvs.openssl.org/chngview?cn=14375">http://cvs.openssl.org/chngview?cn=14375</A>
+</I>
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

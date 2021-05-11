@@ -1,0 +1,22 @@
+<PRE>One attack on services, which use personal questions as a backup
+form of user verification, works well for high-profile users of
+these systems. The attack is very simple. Go into the password
+recovery page, and use Google to look up the answers to the
+personal questions asked. There is enough Googleable data around
+for high-profile people, and perhaps not so high profile people,
+that the attack can be successful often enough to be useful. My
+sources say Sarah Palin's email account was breached using this
+attack.
+
+Cheers - Bill
+
+---------------------------------------------------------------------------
+Bill Frantz        |&quot;We used to quip that &quot;password&quot; is the most common
+408-356-8506       | password. Now it's 'password1.' Who said users haven't
+www.periwinkle.com | learned anything about security?&quot; -- Bruce Schneier
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

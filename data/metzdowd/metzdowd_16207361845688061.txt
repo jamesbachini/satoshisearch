@@ -1,0 +1,31 @@
+<PRE>* Arshad Noor:
+
+&gt;<i> The author of an article that appeared in InformationWeek this week
+</I>&gt;<i> (June 30, 2008) on Enterprise Key Management Infrastructure (EKMI):
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937">http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937</A>
+</I>&gt;<i>
+</I>&gt;<i> states the following:
+</I>&gt;<i>
+</I>&gt;<i> &quot;There are, of course, obstacles that must still be overcome by EKMI
+</I>&gt;<i> proponents. For example, the proposed components are somewhat simple
+</I>&gt;<i> by design, which concerns some encryption purists who prefer more
+</I>&gt;<i> complex protocols, on the logic that they're more difficult to break
+</I>&gt;<i> into.&quot;
+</I>
+First of all, a simple SKSML request for a symmetric key is a whopping
+77 lines of SOAPWSS/whatever XML; the server response is 62 lines even
+without the container.  If this is not enough to make every complexity
+fanboy happy, I don't know what can do the trick.
+
+On a more serious note, I think the criticism probably refers to the
+fact that SKSML does not cryptopgrahically enforce proper key
+management.  If a participant turns bad (for instance, by storing key
+material longer than permitted by the protocol), there's nothing in the
+protocol that stops them.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

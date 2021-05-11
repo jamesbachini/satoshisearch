@@ -1,0 +1,12 @@
+<PRE>More interesting threadage about the issue here: 
+&lt;<A HREF="http://taint.org/2008/05/13/153959a.html">http://taint.org/2008/05/13/153959a.html</A>&gt;, particularly in the 
+comments.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

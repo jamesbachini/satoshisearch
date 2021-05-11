@@ -1,0 +1,23 @@
+<PRE>
+
+Perry E. Metzger wrote:
+&gt;<i> Need to invert an MD5 hash? Try googling for the hash value:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.lightbluetouchpaper.org/2007/11/16/google-as-a-password-cracker/">http://www.lightbluetouchpaper.org/2007/11/16/google-as-a-password-cracker/</A>
+</I>
+And you can also find some SHA-1 hashes as well as base 64 
+encoded MD5 &amp; SHA-1 hashes googling for them and the results are 
+located at <A HREF="http://mina.naguib.ca/dist/digest/digest-54.txt">http://mina.naguib.ca/dist/digest/digest-54.txt</A> for 
+&quot;Anthony&quot; The fun part of this is that it has alpha upper and 
+lower, up to twelve characters on 856 pages. Not exhaustive but a 
+starting point. The list is in first letter alpha ordered.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

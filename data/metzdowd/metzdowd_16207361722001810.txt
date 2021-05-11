@@ -1,0 +1,60 @@
+<PRE>|<i> Hi,
+</I>|<i> 
+</I>|<i> This may be out of the remit of the list, if so a pointer to a more
+</I>|<i> appropriate forum would be welcome.
+</I>|<i> 
+</I>|<i> In Applied Crypto, the use of padding for CBC encryption is suggested
+</I>|<i> to be met by ending the data block with a 1 and then all 0s to the end
+</I>|<i> of the block size.
+</I>|<i> 
+</I>|<i> Is this not introducing a risk as you are essentially introducing a
+</I>|<i> large amount of guessable plaintext into the ciphertext.
+</I>|<i> 
+</I>|<i> Is it not wiser to use RNG data as the padding, and using some kind of
+</I>|<i> embedded packet size header to tell the system what is padding?
+</I>It's a requirement of all modern cryptosystems that they be secure
+against known-plaintext attacks.  This is for two reasons:
+
+	1.  The state of the art being what it is, it's no
+		harder to create a system with decent security
+		guarantees (within the limits we have *any* such
+		guarantees, of course) with security against
+		known-plaintext attacks than without.
+
+	2.  More important:  History has shown that there's
+		*always* known plaintext available.  There are
+		tons of situations where you know what is being
+		sent because you actually have access to the same
+		information from other channels (once *everything*
+		is encrypted, much of what's encrypted isn't in
+		and of itself secret!); other situations where you
+		can force the plaintext to some value because, for
+		example, you provided it; yet others where you
+		don't know for sure, but can make good guesses.
+		So the additional security is minor.
+
+	   Note, BTW, the the &quot;1 and then all 0's&quot; padding lets
+		a legitimate receiver determine where the data
+		ends; random padding doesn't.  So you'd have to
+		send the length elsewhere with random padding.
+		That length would have a limited number of
+		possible values - becoming easily guessable
+		plaintext.
+
+							-- Jerry
+ 
+|<i> Thanks for your suggestions,
+</I>|<i> 
+</I>|<i> Mr Pink
+</I>|<i> 
+</I>|<i> ---------------------------------------------------------------------
+</I>|<i> The Cryptography Mailing List
+</I>|<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>|<i> 
+</I>|<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

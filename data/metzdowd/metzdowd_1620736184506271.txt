@@ -1,0 +1,119 @@
+<PRE>Sherri Davidoff wrote:
+&gt;<i> Matt Blaze wrote:
+</I>&gt;&gt;<i> Once sensitive or personal data is captured, it stays around forever,
+</I>&gt;&gt;<i> and the longer it does, the more likely it is that it will end up
+</I>&gt;&gt;<i> somewhere unexpected.
+</I>&gt;<i> 
+</I>&gt;<i> Great point, and a fundamental lesson-of-the-moment for the security
+</I>&gt;<i> industry. To take it one step further: The amount of sensitive
+</I>&gt;<i> information an organization stores is roughly proportional to the number
+</I>&gt;<i> of data leaks it initiates. We already know that information &quot;wants&quot; to
+</I>&gt;<i> be free, and if you keep information around, sooner or later, it's going
+</I>&gt;<i> to leak out. (There's probably some mathematical way to describe this
+</I>&gt;<i> relationship.)
+</I>&gt;<i> 
+</I>&gt;<i> Rather than expecting companies to keep data totally secure and then
+</I>&gt;<i> send apologetic letters when it gets lost, perhaps we should start
+</I>&gt;<i> taxing companies in proportion to the amount of sensitive information
+</I>&gt;<i> they store, and use that tax to assist victims of identity theft. This
+</I>&gt;<i> would have the double benefit of giving companies immediate incentive to
+</I>&gt;<i> reduce the amount of information they store, and would also provide
+</I>&gt;<i> appropriate public funding for incident recovery.
+</I>&gt;<i> 
+</I>&gt;<i> Sherri
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>
+Encryption with a resistance to cryptanalytic techniques requiring on the
+order of the useful lifetime of the 'secrets' being protected to overcome is
+a perfectly valid way to secure private data.  This resulted following the
+Privacy Act of 1972, in the release of the Digital Encryption Standard
+detailing the Digital Encryption Algorithm commonly known as DES in 1977 and
+published as FIPS PUB 46.
+
+Immediately the U.S. government started providing itself with waivers to the
+use of encryption for at rest storage of data, that are only being overcome
+today.  During the same era, the nation's security agencies exhibited a
+strong desire to prevent the disbursement of security technology for private
+and business use, as it foils the gathering of economic intelligence and
+provides strong encryption to foreign military and security concerns. I'm of
+the opinion that DES didn't provide much advantage to 'adversaries' of the
+U.S. government, but it's spread was effectively limited to the banking
+industry for a considerable length of time.
+
+During it's life time the cost of breaking DES has reduced steadily, to the
+point a recent low cost implementation could attack a DES system in between
+5 and 32 hours using $1000 dollars worth of commercial FPGA hardware[1], or
+a totally brute force attack yielding a key in 7.8 days at the cost of
+$10,000[2].  Note that this has resulted in changes  to approved algorithms,
+with resulting increase in resistance to brute force attacks by dramatically
+increasing the key space.  We now worry about the near mythical quantum
+computer's ability to break any current encryption scheme.
+
+While Matt was relating the inadvertent disbursement of information relating
+to a criminal investigation, you'd think that could be under the aegis of
+the court system, perhaps by tinkering with the rules of evidence.  After
+all encrypted storage is an effective means of preventing unauthorized
+access, duplication and altering of evidence.  Bar associations would appear
+a logical place to influence protecting client-data and client attorney
+privilege.
+
+We also see the Department of Defense requiring at rest encrypted storage of
+data, the requirement becoming universal over time.  You'd have to wonder if
+the requirement was extended to the rest of the U.S. government, just how
+long it would take to protect data.  Couldn't be more than a decade.
+
+State and local governments, you run into unfunded mandates.  It helps that
+they already have a duty under various privacy laws to protect data, as do
+private companies.  Perhaps the problem is not that we need more laws, but
+that the laws we have aren't be adhered to?
+
+Is the resistance to data protection today predicated on cost?  We see
+secure disk products that when the costs are amortized across volume for a
+couple of kilobytes of code, a slightly faster processor, or one with
+security co-processor, the cost of developing software interface controls
+and finally certification costs, should add a cost burden of a couple of
+dollars but are being sold at a premium, all the market can bear.
+
+What's not apparent is the cost of data loss, other than bad press.  We find
+interesting cases, such as in aviation security where we find from Professor
+Mueller that the cost in terms of lives saved with the Transportation
+Security Agency is 15 times higher than their value by protection by other
+means[3], indicating we have an enormous white elephant, there.  How do we
+prevent the inadvertent replication of waste in another large area of
+government mandated security?
+
+Balancing the apparent lack of adherence to current privacy laws and the
+potential cost of a bureaucracy dedicated to measuring quanta of privacy
+data, regulating the balance of taxes owed, offsets by encryption, tracking
+the acquisition of privacy data, it's proper and approved retirement or
+destruction, perhaps as a predicate act someone ought to see what the costs
+are to individuals burdened by lack of adherence to a duty of care, as well
+as to society as a whole.  Personally, one could wonder if the risk of being
+socially engineered into revealing information isn't higher, for example
+through phishing, and yet we only get lip service to stopping email spam.
+You could also note that it appears difficult to prevent ISPs through
+apparent violation of wiretapping laws, gathering private information for
+pecuniary profit in directing (or mis-directing) web advertising.  Perhaps
+the problems are bigger than those cured by the likes of a tax?
+
+
+[1]'Experience Using a Low-Cost FPGA Design to Crack DES Keys', Richard
+Clayton and Mike Bond
+<A HREF="http://www.cl.cam.ac.uk/~rnc1/descrack/DEScracker.pdf">http://www.cl.cam.ac.uk/~rnc1/descrack/DEScracker.pdf</A>
+
+[2] Breaking Ciphers with COPACOBANA - A Cost-Optimized Parallel Code
+Breaker',  Sandeep Kumar, Christof Paar, Jan Pelzl, Gerd Pfeiffer, and
+Manfred Schimmler
+<A HREF="http://www.crypto.rub.de/imperia/md/content/texte/publications/conferences/ches2006_copa.pdf">http://www.crypto.rub.de/imperia/md/content/texte/publications/conferences/ches2006_copa.pdf</A>
+<A HREF="http://www.hyperelliptic.org/tanja/SHARCS/talks06/copacobana.pdf">http://www.hyperelliptic.org/tanja/SHARCS/talks06/copacobana.pdf</A>
+
+[3]'A risk and cost-benefit assessment of United States aviation security
+measures,' Mark Stewart and John Mueller
+<A HREF="http://polisci.osu.edu/faculty/jmueller/stewarr2.pdf">http://polisci.osu.edu/faculty/jmueller/stewarr2.pdf</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

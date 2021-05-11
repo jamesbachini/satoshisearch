@@ -1,0 +1,25 @@
+<PRE>|<i> &gt;<A HREF="http://www.google.com/patents?vid=USPAT6993661">http://www.google.com/patents?vid=USPAT6993661</A>
+</I>|<i> 
+</I>|<i> Gee, the inventor is Simson Garfinkel, who's written a bunch of books
+</I>|<i> including Database Nation, published in 2000 by O'Reilly, about all
+</I>|<i> the way the public and private actors are spying on us.
+</I>|<i> 
+</I>|<i> I wonder whether this was research to see how hard it was to
+</I>|<i> get the PTO to grant an absurd patent.
+</I>Alternatively, it could be an attempt to preempt any other patents
+in this area.  We'll have to see what Garfinkle does with the
+patent.
+
+BTW, I don't see this as an example of an absurd patent.  There might
+well be prior art, but the idea of erasing information by deliberately
+discarding a key is certainly not completely obvious except in
+retrospect.  If you look at any traditional crypto text, you won't
+find anything of this sort - it wasn't the kind of thing people had
+worried about until fairly recently.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

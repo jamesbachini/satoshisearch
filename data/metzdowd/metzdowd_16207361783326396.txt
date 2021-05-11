@@ -1,0 +1,20 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> &gt; What you can't do, full stop, is
+</I>&gt;<i> &gt; know that there are no unexpected security related behaviors in the
+</I>&gt;<i> &gt; hardware or software. That's just not possible.
+</I>
+Ben Laurie wrote:
+&gt;<i> Rice's theorem says you can't _always_ solve this problem. It says 
+</I>&gt;<i> nothing about figuring out special cases.
+</I>
+True, but the propensity of large teams of experts to issue horribly 
+flawed protocols, and for the flaws in those protocols to go 
+undiscovered for many years, despite the fact that once discovered they 
+look glaringly obvious in retrospect, indicates that this problem, 
+though not provably always hard, is in practice quite hard.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

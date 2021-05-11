@@ -1,0 +1,40 @@
+<PRE>[Sorry for duplicates, but I got multiple requests for a non-HTML
+version, and I didn't want to fork the thread. Also sorry for
+initially sending HTML; I didn't realize it was so abhorrent these
+days. ]
+
+On Fri, Aug 8, 2008 at 1:43 PM, Dan Kaminsky &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at doxpara.com</A>&gt; wrote:
+&gt;&gt;<i>
+</I>&gt;&gt;<i> It's easy to compute all the public keys that will be generated
+</I>&gt;&gt;<i> by the broken PRNG. The clients could embed that list and refuse
+</I>&gt;&gt;<i> to accept any certificate containing one of them. So, this
+</I>&gt;&gt;<i> is distinct from CRLs in that it doesn't require knowing which servers have which cert...
+</I>&gt;<i>
+</I>&gt;<i> Funnily enough I was just working on this -- and found that we'd end up adding a couple megabytes to every browser.  #DEFINE NONSTARTER.  I am curious about the feasibility of a large bloom filter that fails back to online checking though.  This has side effects but perhaps they can be made statistically very unlikely, without blowing out the size of a browser.
+</I>
+Using this Bloom filter calculator:
+<A HREF="http://www.cc.gatech.edu/~manolios/bloom-filters/calculator.html">http://www.cc.gatech.edu/~manolios/bloom-filters/calculator.html</A> ,
+plus the fact that there are 32,768 weak keys for every key type &amp;
+size, I get various sizes of necessary Bloom filter, based on how many
+key type / sizes you want to check and various false positive rates:
+ * 3 key types/sizes with 1e-6 false positive rate: 2826759 bits = 353 KB
+ * 3 key types/sizes with 1e-9 false positive rate: 4240139 bits = 530 KB
+ * 7 key types/sizes with 1e-6 false positive rate: 6595771 bits = 824 KB
+ * 7 key types/sizes with 1e-9 false positive rate: 9893657 bits = 1237 KB
+
+I presume that the first 3 &amp; first 7 key type/sizes in this list
+<A HREF="http://metasploit.com/users/hdm/tools/debian-openssl/">http://metasploit.com/users/hdm/tools/debian-openssl/</A> are the best to
+incorporate into the filter.
+
+Is there any chance it would be feasible to get a list of all the weak
+keys that were actually certified by browser-installed CAs, or those
+weak certificates? Presumably, this list would be much smaller and
+would be more effectively distributed in Bloom filter form.
+
+ - Tim
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

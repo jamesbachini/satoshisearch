@@ -1,0 +1,33 @@
+<PRE>Hello Peter Gutmann.
+
+I'm working on a contribution to the SHA-3 process, and I've been  
+using exactly the sort of abstraction that you describe -- counting  
+one computation of a hash compression function as a unit of work  
+which could be computed concurrently by some sort of parallel computer.
+
+I vaguely think that once I get this level of analysis done, I should  
+add some terms to show how the velocity of data into the computer and  
+from core to core is not infinite.
+
+I certainly think that I should code up some actual implementations  
+and benchmark them.  However, I don't have a machine available with  
+lots of cores -- I'm considering requesting of Sun.com that they lend  
+me a T2.  (Despite my earlier declaration to Sun that I had lost  
+interest in their stupid architecture since they wouldn't release the  
+source to the crypto module.)
+
+Anyway, if you have a better way to think about parallelism of hash  
+functions, I'm all ears.
+
+Thanks,
+
+Zooko
+---
+<A HREF="http://allmydata.org">http://allmydata.org</A> -- Tahoe, the Least-Authority Filesystem
+<A HREF="http://allmydata.com">http://allmydata.com</A> -- back up all your files for $5/month
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

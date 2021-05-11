@@ -1,0 +1,19 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+
+&gt;<i>Unfortunately, I don't see anything technological that people can reasonably
+</I>&gt;<i>do here to provide more privacy, 
+</I>
+Painting the camera lenses with laser pointers is quite effective, at least as
+a short-term civil-disobedience measure.  Since there's no long-term damage
+caused (unless you use a really impressive laser pointer) it's a bit tricky to
+charge you with anything, at least under current law.
+
+Or you could follow the lead of Captain Gatso in the UK...
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

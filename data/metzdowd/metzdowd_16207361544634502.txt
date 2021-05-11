@@ -1,0 +1,65 @@
+<PRE>Jacob Appelbaum &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jacob at appelbaum.net</A>&gt; writes:
+
+&gt;<i> Seagate recently announced a 1TB drive for desktop systems and a 250GB
+</I>&gt;<i> laptop drive. What's of interest is that it appears to use a system
+</I>&gt;<i> called DriveTrust for Full Disk Encryption. It's apparently AES-128.
+</I>&gt;<i>
+</I>&gt;<i> The detail lacking press release is here:
+</I>&gt;<i> <A HREF="http://www.seagate.com/ww/v/index.jsp?locale=en-US&amp;name=seagate-unveils-new-giants&amp;vgnextoid=6bb0e0e1f0494110VgnVCM100000f5ee0a0aRCRD">http://www.seagate.com/ww/v/index.jsp?locale=en-US&amp;name=seagate-unveils-new-giants&amp;vgnextoid=6bb0e0e1f0494110VgnVCM100000f5ee0a0aRCRD</A>
+</I>&gt;<i>
+</I>&gt;<i> The relevant excerpt of it appears to be:
+</I>&gt;<i> &quot;The Barracuda FDE (full disc encryption) hard drive is the world?s
+</I>&gt;<i> first 3.5-inch desktop PC drive with native encryption to prevent
+</I>&gt;<i> unauthorized access to data on lost or stolen hard drives or systems.
+</I>&gt;<i> Using AES encryption, a government-grade security protocol and the
+</I>&gt;<i> strongest that is commercially available, The Barracuda FDE hard drive
+</I>&gt;<i> delivers endpoint security for powered-down systems. Logging back on
+</I>&gt;<i> requires a pre-boot user password that can be buttressed with other
+</I>&gt;<i> layers of authentication such as smart cards and biometrics.&quot;
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> I found this somewhat relevant paper (though it seriously lacks
+</I>&gt;<i> important details) on DriveTrust:
+</I>&gt;<i> <A HREF="http://www.seagate.com/docs/pdf/whitepaper/TP564_DriveTrust_Oct06.pdf">http://www.seagate.com/docs/pdf/whitepaper/TP564_DriveTrust_Oct06.pdf</A>
+</I>&gt;<i>
+</I>&gt;<i> Has anyone read relevant details for this system? It seems like
+</I>&gt;<i> something quite useful but I'm not sure that I trust something I can't
+</I>&gt;<i> review...
+</I>
+Hitachi's white paper is available from:
+
+<A HREF="http://www.hitachigst.com/tech/techlib.nsf/techdocs/74D8260832F2F75E862572D7004AE077/$file/bulk_encryption_white_paper.pdf">http://www.hitachigst.com/tech/techlib.nsf/techdocs/74D8260832F2F75E862572D7004AE077/$file/bulk_encryption_white_paper.pdf</A>
+
+(Btw, it contains something as rare as a reasonable threat analysis!  At
+least compared to other advertising materials...)
+
+After having acquired the 1TB device, and didn't find any support for
+this feature, I re-read some information: The interesting part is the
+final sentence of the white paper:
+
+   Hitachi will be offering the Bulk Data Encryption option on all new
+   2.5-inch hard disk drive models launched in 2007, including both the
+   7200 RPM and 5400 RPM product lines. At the request of the customer,
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   this option can be enabled or not, at the factory, without any impact
+   on the drive?s storage capacity, features or performance.
+
+I wonder how easily it would be to request this for a normal customer.
+I gave up when my supplier said they didn't offer this configuration.
+
+I would be interested to know which key-derivation function they are
+using, I'm assuming the key is derived from a password, and which AES
+mode and IV etc.  Knowing that may enable you to verify that data is
+really stored encrypted: buy two devices, set up one to use disk
+encryption, and swap the logic boards and then read data from the
+supposedly encrypted disk.  As for finding out if they accidentally also
+write down the AES key on some hidden part of the disk, that may be more
+difficult...
+
+/Simon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,60 @@
+<PRE>
+I don't disagree with your posting in general. I will note one thing:
+
+&quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+&gt;<i> A transit system has to move people.  For all that the New York City
+</I>&gt;<i> Metrocard works, it's slower than a contactless wireless system.
+</I>
+As a consultant, I happen to have a lot of ID badges. I've used
+contactless systems for entry at several firms on a regular basis.
+I've experienced the equivalent of &quot;re-swipe&quot; problems even with the
+contactless systems -- that is, I've been forced to wave the card past
+the reader more than once. I'm told that similar issues can be found
+in other RFID systems.
+
+Although I will not disagree that the only important criterion for a
+transit system is &quot;will we maximize overall economic efficiency with
+this design choice&quot;, I'm still far from certain that contactless is
+always going to be faster. It could in theory be faster -- whether
+that theory can be reduced to practice is a different question.
+
+(As an aside, I'll also point out that, in the NYC transit system, it
+is fairly rare that the &quot;rate limiting step&quot; is the speed of turnstile
+reads. Far more often, limited space on stairwells, limited numbers of
+turnstiles (which are used both for entry and exit), etc., seem to be
+the limiting factor on how fast people can flow onto and off of the
+platforms.)
+
+I want repeat that I don't disagree with you that all of this is about
+economics first, and the security level and costs have to take that
+into consideration. We are in violent agreement there. A $100 but
+&quot;perfect&quot; entry token is going to be worthless for most transit
+systems, and an attack that costs a system a few dollars a year at
+most is unlikely to be worth closing. (Indeed, the Metrocard system
+isn't perfect, in that you can clone cards -- you just can't steal
+more than a trivial sum before the card will be turned off, so no one
+bothers.)
+
+My main point here was, in fact, quite related to yours, and one that
+we make over and over again -- innovation in such systems for its own
+sake is also not economically efficient or engineering smart. If an
+existing system works reasonably well and you can use it off the shelf
+without paying development and other costs, why not use it? I find the
+fact that nearly every city in the world seems to have a custom
+designed electronic fare system somewhat peculiar -- I'm not surprised
+that several such systems might exist, but surely every city in the
+world does not need to sink the costs of custom development of an
+entire fare system. The Dutch apparently sunk vast sums into the
+development of a brand new fare card system -- one questions what
+requirements could not have been met with one of the several hundred
+existing systems.
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

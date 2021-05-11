@@ -1,0 +1,102 @@
+<PRE>This is an important discussion  
+
+The threats are real, and we need to defend against them.
+
+We need to consider the _whole_ problem, top to bottom.  The
+layers that could be subverted include, at a minimum:
+ -- The cpu chip itself (which set off the current flurry of
+  interest).
+ -- The boot rom.
+ -- The BIOS code that lives on practically every card plugged
+  into the PCI bus.
+ -- Board-level stuff like memory controllers and I/O bridges.
+ -- The operating system.
+ -- Compilers, as Uncle Ken pointed out.
+  <A HREF="http://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf">http://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf</A>
+ -- Your &quot;secure&quot; application.
+ -- Users.
+
+As a particular example where PCs that we might wish to be secure 
+are known to be under attack, consider electronic voting machines.  
+In most cases there's a PC in there, running Windows CE.  Some
+application software was provided by people with felony fraud
+convictions.  Means, motive, and opportunity are all present.
+There is ample evidence that &quot;problems&quot; have occurred.  These
+are not confined to the Florida fiasco in 2000.  An example from 
+2004 is the voting machine in Franklin County, Ohio that recorded 
+4,258 votes for Bush when only 638 voters showed up.
+  <A HREF="http://www.truthout.org/Conyersreport.pdf">http://www.truthout.org/Conyersreport.pdf</A>
+
+This should not be an occasion for idly wringing our hands, nor 
+sticking our head in the sand, nor looking under the lamp-post 
+where the looking is easy.  We need to look at all of this stuff.  
+And we can.  We are not defenseless.
+
+As in all security, we need not aim for absolute security.  An 
+often-useful approach is to do things that raise the cost to 
+the attacker out of proportion to the cost to the defender.
+
+For software, for firmware, and to some extent even for silicon
+masks, SCM (source code management) systems, if used wisely, can
+help a lot.  Consider for example a policy every delta to the 
+software to be submitted by one person and tested by another
+before being committed to the main branch of the project.  Both
+the submitter and the tester would digitally sign the delta.  
+This creates a long-tailed liability for anybody who tries to
+sneak in a trojan  This is AFAIK the simplest defense against
+high-grade attacks such as Ken's, which leave no long-term trace
+in the source code (because the trojan is self-replicating).  
+The point is that there is a long-term trace in the SCM logs.
+We can make the logs effectively permanent and immutable.
+
+Of course we should insist on an open-source boot ROM code:
+  <A HREF="http://www.coreboot.org/Welcome_to_coreboot">http://www.coreboot.org/Welcome_to_coreboot</A>
+The boot ROM should check the pgp signature of each PCI card's
+BIOS code before letting it get control.  And then it should
+check the pgp signature of the operating system before booting 
+it.  I don't know of any machine that actually does this, but
+it all seems perfectly doable.
+
+Another line of defense involves closing the loop.  For example,
+one could in principle find Ken's trojan by disassembling the
+compiler and looking for code that doesn't seem to &quot;belong&quot;.
+I have personally disassembled a couple of operating systems
+(although this was back when operating systems were smaller
+than they are now).
+
+We can similarly close the loop on chips.  As others have pointed
+out, silicon has no secrets.  A cost-effective way to check for 	
+trojans would be to buy more voting machines than necessary, and 
+choose /at random/ a few of them to be torn down for testing.
+(This has obvious analogies to sampling methods used in many
+crypto algorithms.)  For starters, we grind open the CPU chips
+and check that they are all the same.  That's much easier than
+checking the detailed functionality of each one.  And we check
+that the CPUs in the voting machines are the same as CPUs from 
+another source, perhaps WAL*MART, on the theory that the attacker
+finds it harder to subvert all of WAL*MART than to subvert just
+a truckload of voting machines.
+
+Checksumming the boot ROM in the torn-down machine is easy.  I
+emphasize that we should *not* rely on asking a running machine
+to checksum its own ROMs, because it is just too easy to subvert
+the program that calculates the checksum.  To defend against
+this, we tear down multiple machines, and give one randomly
+selected ROM to the Democratic pollwatchers, one to the Republican 
+pollwatchers, et cetera.  This way nobody needs to trusty anybody
+else;  each guy is responsible for making sure _his_ checksummer
+is OK.
+
+All of this works hand-in-glove with old-fashioned procedural
+security and physical security.  As the saying goes, if you
+don't have physical security, you don't have security.  But
+the converse is true, too:  Placing armed guards around a vault 
+full of voting machines doesn't make the machines any less buggy 
+than they were when they went into the vault. That's why we need 
+a balanced approach that gets all the layers to work together.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

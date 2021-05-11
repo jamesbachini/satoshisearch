@@ -1,0 +1,50 @@
+<PRE>&gt;<i> -----Original Message-----
+</I>&gt;<i> From: Eric Rescorla [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>]
+</I>&gt;<i> Sent: August 20, 2008 12:29 PM
+</I>&gt;<i> To: Alex Pankratov
+</I>&gt;<i> Cc: 'Eric Rescorla'; 'theory and practice of decentralized computer
+</I>&gt;<i> networks'; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> Subject: Re: [p2p-hackers] IETF rejects Obfuscated TCP
+</I>&gt;<i> 
+</I>&gt;<i> At Wed, 20 Aug 2008 11:59:48 -0700,
+</I>&gt;<i> Alex Pankratov wrote:
+</I>&gt;<i> &gt; &gt; May I ask what you're trying to accomplish? Recall that TLS doesn't
+</I>&gt;<i> &gt; &gt; start until a TCP connection has been established, so there's
+</I>&gt;<i> &gt; &gt; aready a proof of the round trip.
+</I>&gt;<i> &gt; &gt;
+</I>&gt;<i> &gt; &gt; That said, a mechanism of this type has already been described
+</I>&gt;<i> &gt; &gt; for DTLS (RFC 4347), so no new invention would be needed.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; My comment was in a context of a thread discussing Obfuscated TCP.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; One of the suggestions was to piggyback SSL handshake on TCP
+</I>&gt;<i> &gt; handshake, to which someone pointed at an issue with SYN-flood
+</I>&gt;<i> &gt; like DoS attacks. My response was to the latter comment.
+</I>&gt;<i> 
+</I>&gt;<i> Well, as I stated in the original discussion on obfuscated TCP (on
+</I>&gt;<i> TCPM), I'm not convinced that the latency problem is that severe, and
+</I>&gt;<i> if it is there are a number of potential performance improvements one
+</I>&gt;<i> could make to TLS before one started screwing around with TCP.
+</I>
+Based on this reply alone I'm not sure I follow. I also read quickly 
+through your exchange on TCPM and your comments appear to be specific 
+to Adam's draft.
+
+My comment was not related to either a latency or a potential performance 
+problems of TLS. It was in a response to another idea - that of bundling
+TLS handshake with TCP handshake. The goal of this (and I apologize for 
+stating the obvious, just want to make sure we are on the same page here) 
+is to provide transparent to application layer opportunistic encryption 
+of TCP streams. Whether this goal makes any sense and if it is worth 
+pursuing is a separate issue; it's the DoS aspect of the implementation 
+idea that I was commenting on.
+
+Alex
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

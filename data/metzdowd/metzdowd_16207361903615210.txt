@@ -1,0 +1,82 @@
+<PRE>On Sun, 21 Sep 2008, Eric Rescorla wrote:
+|<i> &gt; &gt; - Use TLS-PSK, which performs mutual auth of client and server
+</I>|<i> &gt; &gt; without ever communicating the password....
+</I>|<i> &gt; Once upon a time, this would have been possible, I think.  Today,
+</I>|<i> &gt; though, the problem is the user entering their key in a box that is
+</I>|<i> &gt; (a) not remotely forgeable by a web site that isn't using the
+</I>|<i> &gt; browser's TLS-PSK mechanism; and (b) will *always* be recognized by
+</I>|<i> &gt; users, even dumb ones.  Today, sites want *pretty* login screens,
+</I>|<i> &gt; with *friendly* ways to recover your (or Palin's) password, and not
+</I>|<i> &gt; just generic grey boxes.  Then imagine the phishing page that
+</I>|<i> &gt; displays an artistic but purely imaginary &quot;login&quot; screen, with a
+</I>|<i> &gt; message about &quot;NEW!  Better naviation on our login page!&quot;
+</I>|<i> 
+</I>|<i> This is precisely the issue.
+</I>|<i> 
+</I>|<i> There are any number of cryptographic techniques that would allow
+</I>|<i> clients and servers to authenticate to each other in a phishing
+</I>|<i> resistant fashion, but they all depend on ensuring that the
+</I>|<i> *client* has access to the password and that the attacker can't
+</I>|<i> convince the user to type their password into some dialog
+</I>|<i> that the attacker controls. That's the challenging technical
+</I>|<i> issue, but it's UI, not cryptographic.
+</I>The sitation today is (a) the decreasing usefulness of passwords -
+those anyone has a chance of remembering are just to guessable in the
+face of the kinds of massive intelligent brute force that's possible
+today and (b) the inherently insecure password entry mechanisms that
+we've trained people to use.  Perhaps the only solution is to attack
+both problems at the same time:  Replace passwords with something
+else, and use a different, more secure input mechanism at the same
+time.
+
+The problem is what that &quot;something else&quot; should be.  Keyfobs with
+one-time passwords are a good solution from the pure security point
+of view, but (a) people find them annoying; (b) when used with
+existing input mechanisms, as they pretty much universally are, are
+subject to MITM attacks.  The equivalent technology on a USB plugin
+is much easier on the user in some circumstances, but is subject to
+some bad semantic attacks, as discussed here previously.  Also, it's
+not a great solution for mobile devices.
+
+DoD/government uses smartcards, but that's probably not acceptable to
+the broad population.  There's been some playing around with cellphones
+playing the role of smartcard, but cellphones are not inherently secure
+either.  There's also the related problem of scalability to multiple
+providers:  I only need one DoD card, which might be acceptable, but if
+every secure web site wants to give me their own, I have a problem.  Of
+course, various federated identity standards are already battling it
+out, but uptake seems limited.  Besides, that can only be one element of
+the solution - if I use a traditional password to get to my federated
+identity token, I've made the old problem much worse, not better.
+
+Some laptops and keyboards and even encrypted USB memory sticks are
+getting fingerprint scanners as standard hardware.  *If* these
+actually work as advertised - not a good bet, based on history so
+far - these could be an interesting input mechanism.  Since there
+are no expectations today that the fingerprint data will be
+available to any web site that asks, one could perhaps establish
+a standard for controlling this in an appropriate way, with a
+built-in, unforgeable display.  With microphones and, increasingly,
+cameras as widely-available components, one might define a similar
+special input mode around them and look to voice or face recognition.
+
+Or maybe we could even leverage the increasing interest in special
+outside-the-main-OS basic displays one sees on laptops.  (I'm sure it
+just thrills Microsoft to see Dell putting a tiny Linux implementation
+in each laptop....)
+
+These are all just possibilities, and whether any of them (or some other
+approach) actually gains broad acceptance is, of course, totally up in
+the air.  Right now, while in the aggregate the problems with ID theft
+are bad and getting worse, relatively few individuals feel the pain,
+nor is there much in the way to offer them.  Until one or the other
+of these changes - and most likely, both - the old &quot;password in some
+window or another&quot; model will likely stick around.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

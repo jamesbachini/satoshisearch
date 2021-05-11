@@ -1,0 +1,113 @@
+<PRE>|<i> &gt; If the function is defined as I suggested - as a static or inline -
+</I>|<i> &gt; you can, indeed, takes its address.  (In the case of an inline, this
+</I>|<i> &gt; forces the compiler to materialize a copy somewhere that it might
+</I>|<i> &gt; not otherwise have produced, but not to actually *use* that copy,
+</I>|<i> &gt; except when you take the address.)  You are allowed to invoke the
+</I>|<i> &gt; function using the address you just took.  However, what in that
+</I>|<i> &gt; tells you that the compiler - knowing exactly what code will be
+</I>|<i> &gt; invoked - can't elide the call?
+</I>|<i> 
+</I>|<i> Case of static function definition: the standard says that standard
+</I>|<i> library headers *declare* functions, not *define* them.
+</I>Where does it say it *can't* define them?  How could a Standard-conforming
+program tell the difference?  If no Standard-conforming program can
+tell the difference between two implementations, it makes no difference
+what you, as an omniscient external observer, might know - they are either
+both compatible with the Standard, or neither is.
+
+|<i> Case of inline: I don't know if inline definition falls in the
+</I>|<i> standard definition of declaration.
+</I>It makes not difference.
+
+|<i> Also, the standard refers to these identifiers as external
+</I>|<i> linkage. This language *might* not creare a mandatory provision if
+</I>|<i> there was a compelling reason to have static or inline implementation,
+</I>|<i> but I doubt the very infrequent use of (memset)(?,0,?) instead of
+</I>|<i> memset(?,0,?) is a significant optimization opportunity. The compiler
+</I>|<i> writer risks a non-compliance assessment in making such strectched
+</I>|<i> reading of the standard in the present instance, for no gain in any
+</I>|<i> benchmark or production software speed measurement.
+</I>|<i> 
+</I>|<i> Obviously, a pointer to an external linkage scope function must adhere
+</I>|<i> to the definition of pointer equality (==) operator.
+</I>What do you think &quot;the definition of pointer equality&quot; actually is?  Keep
+in mind that you need to find the definition *in the Standard*.  The
+*mathematical* definition is irrelevant.
+
+|<i> Maybe a purposedly stretched reading of the standard might let you
+</I>|<i> make your point. I don't want to argue too theoretically. Peter and I
+</I>|<i> just want to clear memory!
+</I>Look, I write practical programs all the time - mainly in C++ recently,
+but the same principles apply.  My programs tend to be broadly portable
+across different compilers and OS's.  I've been doing this for close to
+30 years.  I stick to the published standards where possible, but there's
+no way to avoid making assumptions that go beyond the standards in a few
+cases:  Every standard I know of is incomplete, and no implementation I've
+ever worked with is *really* 100% compliant.
+
+It's one thing to point out a set of practical techniques for getting
+certain kinds of things done.  It's another to make unsupportable arguments
+that those practical techniques are guaranteed to work.  There's tons of
+threaded code out there, for example.  Given the lack of any discussion of
+threading in existing language standards, most of them skate on thin ice.
+Some things are broadly agreed upon, and &quot;quality of implementation&quot;
+requirements make it unlikely that a compiler will break them.  Other
+things are widely believed by developers to have been agreed upon, but
+have *not* really be agreed upon by providers.  Programs that rely on
+these things - e.g., that C++ function-scope static initializers will be
+run in a thread-safe way - will fail here and there, because in fact
+compiler developers don't even try to support them.  Because of the ever-
+growing importance of threaded programs, this situation is untenable, and
+in fact the language groups are starting to grapple with how to incorporate
+threads.
+
+Security issues are a similar issue.  The fact is, secure programming
+sometimes requires primitives that the standards simply don't provide.
+Classic example:  For a long time, there was *no* safe way to use
+sprintf(), since there was no a priori way of determining how long the
+output string might be.  People had various hacks, but all of them could
+be fooled, unless you pretty much re-implemented sprintf() yourself.
+snprintf() fixed that.
+
+There is, today, no way to guarantee that memset() will be run, within the
+confines of the standard.  This is a relatively minor oversight - C has
+seen such issues as important since volatile was introduced well before
+the language was standardized.  I expect we'll see some help on this in
+a future version.  In the meanwhile, it would be nice if compiler
+developers would agree on some extra-Standard mechanisms.  The gcc hack
+could be a first step - but it should be written down, not just something
+a few insiders know about.  Standards are supposed to grow by standardi-
+zing proven practice, not by innovation.
+
+The problem with unsupportable assumptions that some hack or another
+provides a solution is that they block *actual* solutions.  By all means
+use them where necessary - but push for better approaches.
+
+							-- Jerry
+
+|<i> Kind regards,
+</I>|<i> 
+</I>|<i> 
+</I>|<i> -- 
+</I>|<i> 
+</I>|<i> - Thierry Moreau
+</I>|<i> 
+</I>|<i> CONNOTECH Experts-conseils inc.
+</I>|<i> 9130 Place de Montgolfier
+</I>|<i> Montreal, Qc
+</I>|<i> Canada   H2M 2A1
+</I>|<i> 
+</I>|<i> Tel.: (514)385-5691
+</I>|<i> Fax:  (514)385-5900
+</I>|<i> 
+</I>|<i> web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+</I>|<i> e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+</I>|<i> 
+</I>|<i> 
+</I>|<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

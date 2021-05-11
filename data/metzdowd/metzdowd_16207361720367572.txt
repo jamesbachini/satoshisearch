@@ -1,0 +1,50 @@
+<PRE>Ken Buchanan wrote:
+&gt;<i> A lot of people seem to agree with what Declan McCullagh writes here:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> It's going to make us rethink how we handle laptops in sleep mode and servers that use
+</I>&gt;&gt;<i> encrypted filesystems (a mail server, for instance).
+</I>&gt;<i> 
+</I>&gt;<i> What I'd like to know is why people weren't already rethinking this
+</I>&gt;<i> when people like Maximillian Dornseif
+</I>&gt;<i> (<A HREF="http://md.hudora.de/presentations/firewire/2005-firewire-cansecwest.pdf">http://md.hudora.de/presentations/firewire/2005-firewire-cansecwest.pdf</A>)
+</I>&gt;<i> and later Adam Boileau
+</I>&gt;<i> (<A HREF="http://www.security-assessment.com/files/presentations/ab_firewire_rux2k6-final.pdf">http://www.security-assessment.com/files/presentations/ab_firewire_rux2k6-final.pdf</A>)
+</I>&gt;<i> showed you can read arbitrary RAM from a machine just by plugging into
+</I>&gt;<i> a FireWire port, due to lack of security considerations in the IEEE
+</I>&gt;<i> 1394 standard?
+</I>&gt;<i> 
+</I>
+I think that it's clear that people were shocked when Max released his
+work. Many people may discount the work if they (say like many
+Thinkpads) do not have at IEEE 1394 port. This is of course not going to
+stop someone from inserting a cardbus card. Furthermore, I think Max
+didn't manage to demonstrate a contradiction to a commonly held thought.
+
+I'm sure it was no surprise to FreeBSD kernel developers that you could
+use Firewire to read kernel memory structures using DMA.
+
+&gt;<i> Adam Boileau demonstrated finding passwords, but of course we already
+</I>&gt;<i> know that it's easy to locate cryptographic keys in large volumes of
+</I>&gt;<i> data (Shamir, van Someren: <A HREF="http://citeseer.ist.psu.edu/265947.html">http://citeseer.ist.psu.edu/265947.html</A>).
+</I>&gt;<i> 
+</I>&gt;<i> Reading cold DRAM may have some applications on its own -- if only
+</I>&gt;<i> because of the large number of devices that it effects -- but as far
+</I>&gt;<i> as walking up to a locked machine/hibernated laptop/whatever and
+</I>&gt;<i> stealing its RAM contents, the game may have been up some time ago.
+</I>&gt;<i> 
+</I>
+I think the most important aspect of this work is that by using
+redundant (all Hail Nadia Heninger) keying information in memory we can
+recover and make a pretty good confirmation. This means we don't have to
+do reverse engineering to find keys and we can correct for errors.
+
+Our keyfinder could be used with firewire and I think it stands on its own.
+
+Regards,
+Jacob Appelbaum
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

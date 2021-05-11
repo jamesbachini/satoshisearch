@@ -1,0 +1,27 @@
+<PRE>* Peter Fairbrother:
+
+&gt;<i> I forgot to mention that Pt.3 also includes coercive demands for
+</I>&gt;<i> access keys - so for instance if Mr Bill Gates came to the UK, and if
+</I>&gt;<i> there was some existing question about Microsoft's behaviour in some
+</I>&gt;<i> perhaps current EU legal matter, Mr Gates could be required to give up
+</I>&gt;<i> the keys to the Microsoft internal US servers. Or go to jail.
+</I>
+Well, if Mr Gates is a witness and not a suspect, such coercive
+measures are well within the legal framework of most countries.  As a
+witness, you must testify.  It simply does not matter if the
+information you are asked to provide is encrypted, or is stored in a
+database and needs significant preprocessing to obtain.  It would be
+quite surprising if this was any different in the UK.
+
+So it's purely the self-incrimination part that is questionable from a
+legal POV.  I think this bears repeating because we face a similar
+discussion in Germany regarding covert data seizure using
+technological measures, and the discussion focuses almost entirely on
+the technological measures.  But the legal obstacle is just the
+covertness.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

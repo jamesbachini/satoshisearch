@@ -1,0 +1,61 @@
+<PRE>On Sun, May 04, 2008 at 10:24:13PM -0400, Thor Lancelot Simon wrote:
+
+&gt;<i> I believe that those who supply security products have a responsibility
+</I>&gt;<i> to consider the knowledge, experience, and tendencies of their likely
+</I>&gt;<i> users to the greatest extent to which they're able, and supply products
+</I>&gt;<i> which will function properly _as users are likely to apply them_.
+</I>
+The TLS support in Postfix tries to behave sensibly with &quot;easy&quot; setings.
+
+    - Cipher list selection is indirect, via grades: &quot;export&quot;, &quot;low&quot;,
+    &quot;medium&quot; and &quot;high&quot;. The actual ciphers for each grade are buried
+    in parameters users are advised to not mess with.
+
+    - The cipher grade for opportunistic TLS is &quot;export&quot;, but you single
+    out a destination for mandatory TLS, the grade rises to &quot;medium&quot;.
+
+    - The &quot;secure&quot; peer cert validation level compares the peer's cert to
+    the nexthop domain (allowing a sub-domain match by default). Hostnames
+    derived from MX lookups are of course subject to DNS MITM and are not
+    trusted.  If you want to trust your DNS you can use &quot;verify&quot; instead.
+
+    <A HREF="http://www.postfix.org/TLS_README.html#client_tls_limits">http://www.postfix.org/TLS_README.html#client_tls_limits</A>
+    <A HREF="http://www.postfix.org/TLS_README.html#client_tls_may">http://www.postfix.org/TLS_README.html#client_tls_may</A>
+    <A HREF="http://www.postfix.org/TLS_README.html#client_tls_encrypt">http://www.postfix.org/TLS_README.html#client_tls_encrypt</A>
+    <A HREF="http://www.postfix.org/TLS_README.html#client_tls_verify">http://www.postfix.org/TLS_README.html#client_tls_verify</A>
+    <A HREF="http://www.postfix.org/TLS_README.html#client_tls_secure">http://www.postfix.org/TLS_README.html#client_tls_secure</A>
+
+    - With the upcoming EECDH support, users don't choose curves
+    directly, they again choose a security grade, and the correspnding
+    curves are configurable via parameters they are not expected to
+    ever look at or modify.
+
+If you don't botch your CAfile, it is rather easy to provision
+secure-channel connections to a select set of high-value peers.
+
+If you don't trust any CAs:
+
+    <A HREF="http://www.postfix.org/TLS_README.html#client_tls_fingerprint">http://www.postfix.org/TLS_README.html#client_tls_fingerprint</A>
+
+once you have a system designed in all its features to behave sensibly
+by default (e.g. with an empty main.cf file), making security behave
+sensibly by default is not that unnatural.
+
+So I think there should be a broad design bias towards *implicit* correct
+behaviour in all system features, with rope available for advanced users
+to *explicitly* craft more complex use-cases. Once you have that, practical
+security is not too difficult.
+
+The same is true in the source code, unsafe practices are avoided
+globally, (e.g. both strcpy() and strncpy() are absent together with fixed
+size automatic buffers) rather than used with care locally. I won't bore
+you with all the implementation safety &quot;habits&quot;, but there are many.
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,27 @@
+<PRE>On Jan 27, 2008 11:18 AM, zooko &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">zooko at zooko.com</A>&gt; wrote:
+&gt;<i> [adding Cc: p2p-hackers and cryptography mailing lists as explained
+</I>&gt;<i> below; Please trim your follow-ups as appropriate.]
+</I>&gt;<i>
+</I>&gt;<i> On Jan 26, 2008, at 9:44 PM, Gary Sumner wrote:
+</I>&gt;<i>
+</I>&gt;<i> &gt; Surely there must be prior art on this technique to refute this
+</I>&gt;<i> &gt; patent?
+</I>&gt;<i> &gt;
+</I>&gt;<i>
+</I>&gt;<i> That's an interesting question, and I'm carbon-copying the p2p-
+</I>&gt;<i> hackers and cryptography mailing lists to ask if anyone knows.
+</I>&gt;<i>
+</I>FYI: &lt;<A HREF="http://www.opencm.org/papers/cpcms2001.pdf">http://www.opencm.org/papers/cpcms2001.pdf</A>&gt;
+  &quot;CPCMS: A Configuration Management System Based
+  on Cryptographic Names&quot;. Jonathan S. Shapiro,  John
+  Vanderburgh, Systems Research Laboratory, Johns
+  Hopkins University. Appeared in the 2002 USENIX
+  Annual Technical Conference
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

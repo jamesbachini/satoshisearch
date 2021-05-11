@@ -1,0 +1,77 @@
+<PRE>I don't know anything about this case, so everything I say is pure  
+supposition.
+
+Let's suppose you have Alice and Bob who are working together on some  
+sort of business, and they are using some OpenPGP [1] software to  
+encrypt their emails that pertain to that business. Let's suppose  
+that the authorities then decide to raid Bob. Let us then suppose  
+that they go to Alice's ISP and get a lot of encrypted email, by  
+warrant, subpoena, etc. It doesn't matter for our purposes what ISPs  
+Alice and Bob are using, nor what OpenPGP software they are using.
+
+* Let us consider the case where Bob turns state's evidence. If those  
+emails were encrypted to both Alice's key and Bob's key, after Bob  
+turns state's evidence, the authorities can decrypt all the messages  
+they seized from Alice's ISP. It doesn't matter what Alice did with  
+her key or what Alice's ISP did with it. They can be decrypted  
+because Bob's key has been compromised.
+
+* Let us consider the same basic scenario where all the messages are  
+encrypted to the sender's, but not the recipient's key. In this case,  
+the authorities can decrypt all of Alice's messages to Bob, but not  
+Bob's messages to Alice. After they have compromised Bob, all of  
+Alice's messages to Bob can be decrypted. The fact that Alice's  
+security is untouched is mostly irrelevant. Alice is likely toast,  
+not because of the cryptography, but because Bob has been  
+compromised, and Bob's key decrypts mail Alice has sent.
+
+* Let us consider a slightly different scenario in which neither  
+Alice nor Bob are compromised, but Bob is detained. If the  
+authorities raid Alice's ISP, despite the fact that they cannot  
+decrypt the messages, they may be able to show a connection between  
+Alice and Bob. If they have been CCing themselves, then you'll find  
+the same undecryptable message in each mailbox. If they have been  
+using &quot;reply,&quot; there's probably metadata in the plaintext headers  
+that shows that M_n is a reply to M_{n-1} ... M_1, and thus you have  
+a chain of messages. If there is other evidence, such as Bob sending  
+checks to Alice every so often, the cryptography may be moot or worse  
+than moot. (If those messages are harmless, why don't you decrypt  
+them? Yes, this can get into many interesting discussions like the  
+applicability of Amendments 4 and 5, but these are also not  
+cryptographic. I really don't want to discuss them because I'll bet  
+we agree.)
+
+Cryptography is not magic pixie dust that you can sprinkle on a  
+security problem and make it go away. If your adversary is a major  
+national government, you have operational security issues, as well.  
+If your adversary is a major national government that has direct  
+authority over where you live, then you have a much larger problem.  
+The adversary is going to use forensic analysis, traffic analysis,  
+and anything else they can think of. They are also not dumb. You also  
+have to expect that third parties, including ISPs, are unlikely to  
+see why they should fail to comply with legal documents like  
+subpoenas and warrants because of what you did. Smart cryptographers  
+make sure there are no backdoors in the crypto, because if there  
+were, then every beat cop and two-bit mafioso will want you to break  
+just that one message -- or else. If the system is strong, it all  
+comes down to your operational security.
+
+	Jon
+
+
+
+[1] I have to give a now-usual rant. PGP is a trademark of PGP  
+Corporation and refers to software it makes. OpenPGP is an IETF  
+standard that covers encryption, certificates, and digital  
+signatures. There are many products that implement the OpenPGP  
+standard. PGP software is one of those. But other products, such as  
+GnuPG, Hushmail, Bouncy Castle, and so on also implement the OpenPGP  
+standard. Futhermore, PGP software implements other standards than  
+OpenPGP. For example, PGP software implements the S/MIME and X.509  
+standards as well as the OpenPGP standard.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

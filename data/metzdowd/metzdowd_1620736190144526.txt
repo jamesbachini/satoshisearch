@@ -1,0 +1,44 @@
+<PRE>&gt;&gt;&gt;&gt;&gt;<i> &quot;IanG&quot; == IanG  &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+</I>
+IanG&gt; Nope, sorry, didn't follow it.  What is BOM, SoC, A plug, gerber?
+
+Bill Of Materials  -- cost of the raw hardware
+System on (a) Chip -- microchip with CPU, RAM, FLASH, etc
+USB A Plug         -- physical flat-four interface; think USB key drive
+gerber             -- file format for hardware designs
+
+A system-on-a-chip which has rng and usb-client hardware on board (aka
+on chip) should fit in a package which looks just like a USB key drive.
+
+The software load could make it look like any USB device, including a
+USB storage device where every read produces blocks of entropy, as you
+suggested.
+
+A search for &quot;site:linuxdevices.com SoC RNG USB&quot; shows some useful
+SoCs, such as:
+
+  <A HREF="http://www.linuxdevices.com/news/NS9265554097.html">http://www.linuxdevices.com/news/NS9265554097.html</A>
+  <A HREF="http://www.linuxdevices.com/news/NS6958318931.html">http://www.linuxdevices.com/news/NS6958318931.html</A>
+  <A HREF="http://www.linuxdevices.com/news/NS6020408561.html">http://www.linuxdevices.com/news/NS6020408561.html</A>
+  <A HREF="http://www.linuxdevices.com/news/NS4943322251.html">http://www.linuxdevices.com/news/NS4943322251.html</A>
+  <A HREF="http://www.linuxdevices.com/news/NS4469294424.html">http://www.linuxdevices.com/news/NS4469294424.html</A>
+
+There seems to be significant interest in the industry for SoCs for Point
+of Sale smartcard readers which would also work for your proposed design.
+
+You did suggest an open hardware design....
+
+
+As for using a camera, shots with a lens cover on and with the gain
+turned up (ie, tell people to set the camera to its highest ISO setting)
+should maximize the recorded entropy w/o using their candids, eh?
+
+-JimC
+-- 
+James Cloos &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cloos at jhcloos.com</A>&gt;         OpenPGP: 1024D/ED7DAEA6
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

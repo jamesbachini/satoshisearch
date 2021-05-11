@@ -1,0 +1,18 @@
+<PRE>Xerox Unveils Technology That Blocks Access to Sensitive Data in
+Documents to Prevent Security Leaks
+<A HREF="http://www.parc.com/about/pressroom/news/2007-10-15-redaction.html">http://www.parc.com/about/pressroom/news/2007-10-15-redaction.html</A>
+
+The Innovation: The technology includes a detection software tool that
+uses content analysis and an intelligent user interface to easily
+protect sensitive information. It can encrypt only the sensitive
+sections or paragraphs of a document, a capability previously not
+available.
+
+saqib
+<A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

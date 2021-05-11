@@ -1,0 +1,23 @@
+<PRE>Izaac &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">izaac at setec.org</A>&gt; writes:
+
+&gt;<i>The calculus here has little to do with unit profit margins.  It has
+</I>&gt;<i>everything to do with mitigating product liability suits, recalls, and bad
+</I>&gt;<i>press.  (You won't read a report of &quot;Chiwonkistan Knock-off Battery Destroys
+</I>&gt;<i>WidgetCo Laptop&quot;.  You'll read the report &quot;WidgetCo Laptop Catches Fire.&quot;)
+</I>
+The device is also sold for use in other high-profit-margin items like laser
+printer toner cartridges and ink tanks.  While I can certainly see the point
+of your argument as applied to batteries, I haven't heard of too many toner
+cartridges exploding recently, and given the extensive bad press given to
+dubious tactics like &quot;starter cartridges&quot; I don't think the printer
+manufacturers are that worried about publicity issues (the printer ink/toner
+market is definitely a racket, and has been documented in some detail
+elsewhere).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

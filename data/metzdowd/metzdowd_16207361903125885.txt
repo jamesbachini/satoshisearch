@@ -1,0 +1,23 @@
+<PRE>Dave Howe wrote:
+&gt;<i> 
+</I>&gt;<i> One thing that concerns me is that in the new release of firefox, there
+</I>&gt;<i> appears to be NO way to get to a site that has a bad certificate (or
+</I>&gt;<i> self signed certificate) other than overriding the warning permanently -
+</I>&gt;<i> no &quot;ok let me see it, I have seen the warning and want to look just this
+</I>&gt;<i> once&quot; that the &quot;remember mismatched domains&quot; plugin for 2.x gave you.
+</I>&gt;<i> 
+</I>
+I'm running Firefox 3.0.1 on (Gentoo) Linux and had coincidentally just
+gone through this process.
+
+When adding an exception for a site with an invalid security certificate
+there is a checkbox at the bottom of the &quot;Add Security Exception&quot; window
+that gives you the option to permanently store the exception. It is
+checked by default, but the option not to do so is there (and works!)
+
+Joss
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,53 @@
+<PRE>On Thu, 11 Sep 2008, Peter Gutmann wrote:
+|<i> ...I've been (very informally) tracking it for awhile, and for generic
+</I>|<i> data (non-Platinum credit cards, PPal accounts, and so on) it's
+</I>|<i> essentially too cheap to meter, you often have to buy the stuff
+</I>|<i> in blocks (10, 20, 50 at a time) to make it worth the sellers while.
+</I>But this implies there is something very wrong with our current
+thinking about attacks.
+
+If, as is commonly assumed, hackers today are in this as a business,
+and are driven by then the value of a credit card number is determined
+exactly by the most money you can turn it into, by any approach.  If
+I have a credit card number, I can turn it into money by selling it,
+or alternatively I can buy stuff and sell that instead.
+
+Now, there are costs involved with buying goods, receiving them,
+and reselling them; and also there's some probability that the
+credit card providers will notice my activity and block my
+transactions.  (There's of course also the possibility that I
+get caught and sent to jail!)  If the costs of doing this business
+are fixed, I can drive them to zero by using enough credit cards,
+and there are clearly plenty around - but see below.  So the only
+significant issue is variable costs:  For every dollar I charge on
+a card, I only get back some fraction of a dollar, based on my per-
+transaction costs and the probability of my transaction getting
+rejected.  This probability grows with the size of the transaction,
+so the actual optimal strategy is complicated.
+
+Still ... if you can *buy* a credit card number for a couple
+of cents, its actually *value* can't be much higher.  Which
+implies that something in the overall system makes it difficult
+to monetize that card.  I'm not sure what all of them are, but
+we can guess at some.  The card providers *must* be rather good
+at blocking cards fairly quickly - at least when large amounts
+of money are involved.  That is:  The probability of being
+blocked must go up very rapidly with the size of the transaction,
+forcing the optimal transaction size to be small.  If it's
+small enough, then fixed costs per transaction become significant.
+And something blocks the approach of &quot;do many small transactions
+against many cards&quot; - presumably because these have to be done
+in the real world, which means you need many people going to many
+vendors picking up all kinds of physical objects.
+
+Whatever the causes ... if it's cheap to *buy* credit card
+numbers, they must not really be worth all that much!
+
+                                                        -- Jerry
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

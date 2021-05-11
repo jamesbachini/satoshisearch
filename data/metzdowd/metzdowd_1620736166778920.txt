@@ -1,0 +1,14 @@
+<PRE>Anyone know anything about these guys?  (www.vaultid.com).  They
+are trying to implement one-time credit card numbers on devices
+you take with you - initially cell phones and PDA's, eventually in
+a credit card form factor.  The general idea seems good, but their
+heavy reliance on fingerprint recogition is troubling (though it may
+be appropriate in their particular application).
+
+ 							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

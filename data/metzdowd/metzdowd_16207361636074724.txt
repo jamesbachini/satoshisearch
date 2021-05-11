@@ -1,0 +1,23 @@
+<PRE>
+Excerpt:
+
+     Imagine the government seizes a suspect's hard drive and finds
+     encrypted files inside. Can the government force the suspect to
+     enter in his encryption passphrase so the government can view the
+     decrypted files? Or does the Fifth Amendment privilege give the
+     suspect a legal right not to enter in the passphrase? On November
+     29, Magistrate Judge Jerome Niedermeier in Vermont handed down
+     the first opinion to squarely address the issue: In re Boucher.
+
+<A HREF="http://www.volokh.com/posts/1197670606.shtml">http://www.volokh.com/posts/1197670606.shtml</A>
+
+[Hat tip to Eric Rescorla's blog.]
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

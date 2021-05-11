@@ -1,0 +1,162 @@
+<PRE>[Moderator's note: I'll let Ed have the last word. I'm sure everyone
+knows what I'd say anyway. --Perry]
+
+Perry E. Metzger wrote:
+&gt;<i> Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+</I>&gt;&gt;&gt;<i> In any case, there are a large number of reasons US banks don't
+</I>&gt;&gt;&gt;<i> (generally) require or even allow anyone to enter PINs for
+</I>&gt;&gt;&gt;<i> authentication over the internet. 
+</I>&gt;&gt;<i> Wells Fargo allows PINs for user authentication.
+</I>&gt;<i> 
+</I>&gt;<i> No they don't. 
+</I>
+Since you are not fully aware how Wells Fargo operates, let me 
+clarify. What you say below is true for users entering the system /today/:
+
+&gt;<i> The new users of their online system get a temporary
+</I>&gt;<i> password by phone or in the mail, and Wells Fargo requires that they
+</I>&gt;<i> change it on first log in. The temporaries expire after 30 days,
+</I>&gt;<i> too. They don't their bank account numbers as account names,
+</I>&gt;<i> either.
+</I>&gt;<i> 
+</I>&gt;<i> Where did you get the idea that they'd use 4-digit PINS from? It is
+</I>&gt;<i> totally false.
+</I>
+No. Any Wells Fargo user today that has an /older/ account (eg, opened 
+in 2001), can login with their numeric PINs if that is how their 
+online access was done then and they did not change it.
+
+So, even though WF /today/ does not accept /new/ users to use only 
+numbers for their password, WF is happy to continue to accept /older/ 
+rules, including accepting the PIN for online account login.
+
+&gt;<i> (Anyone who doesn't believe me can just go through their web site --
+</I>&gt;<i> it explains all of this to their customers.)
+</I>
+Their website today is what they use today. Older account users that 
+have not changed their login can still use their PINs for login. I 
+know one company that used way back when their numeric PIN for login, 
+because that's what WF told them to do, and that just very recently 
+changed to a safer password.
+
+While it is good that WF has improved its rules, it would better if 
+they had made it compulsory for all users (not just newer) to renew 
+their passwords when the rules started prohibiting using only numbers 
+and /not/ requiring the PIN for first login.
+
+I imagine that there are lots of sites out there that have likewise 
+improved their front-end password acceptance rules but have not 
+bothered to ask all their users to renew their passwords, and thus 
+force compliance with newer, safer rules.
+
+&gt;<i> The system you propose as &quot;safe&quot; isn't used by anyone that I'm aware
+</I>&gt;<i> of, and for good reason, too -- people who've done things like that
+</I>&gt;<i> have been successfully attacked.
+</I>&gt;<i> 
+</I>&gt;<i> BTW, if anyone was this foolish, the fun you could have would be
+</I>&gt;<i> amazing. You could rent a botnet for a few bucks and lock out half the
+</I>&gt;<i> customer accounts on the site in a matter of hours. You could ruin
+</I>&gt;<i> banks at will. It would be great fun -- only it isn't possible. No one
+</I>&gt;<i> is stupid enough to set themselves up for that.
+</I>
+WF does that, still today, for their most valued customers -- their 
+older customers. May our words be a good warning for them!
+
+&gt;&gt;&gt;<i> I suspect that currently invalid accounts are probably even cheaper
+</I>&gt;&gt;&gt;<i> than valid ones
+</I>&gt;&gt;<i> we all know that invalid accounts are of no use to attack, so this
+</I>&gt;&gt;<i> issue is not relevant here.
+</I>&gt;<i> 
+</I>&gt;<i> You would use the invalid accounts to reverse engineer the account
+</I>&gt;<i> number format so you don't have to do exhaustive search. Any
+</I>&gt;<i> practitioner in this field can tell you how useful intelligence like
+</I>&gt;<i> that would be. I suggest you consult one.
+</I>
+When you do the math, you will see that knowing a few hundred invalid 
+accounts will not considerably reduce your search space for the 
+comparison we are talking about. Remember, we are talking about 
+4-digit PINs that have a search space of 9,000 choices (before you 
+complain about the count, note that all 0xxx combinations are usually 
+not accepted as a valid PIN for registration) versus an account number 
+that is a sparse space with 12-digits and that (by the sheer number of 
+valid users) must have at least /millions/ of valid accounts.
+
+&gt;<i> It is easy enough to blacklist all of the cable modems in the world
+</I>&gt;<i> for SMTP service. ISPs voluntarily list their cable modem and DSL
+</I>&gt;<i> blocks. It is a lot harder to explain to people that they can't do
+</I>&gt;<i> their at-home banking from home, though. With half the windows boxes
+</I>&gt;<i> in the world as part of botnets, and with dynamic address assignment,
+</I>&gt;<i> it is hard to know who's computer *wouldn't* be on the blacklists
+</I>&gt;<i> anyway...
+</I>
+Please check with actual banks. Bank users logging in from a static IP 
+account are treated differently by the servers than users from a 
+dynamic IP account. As they should.
+
+The dialogue disconnect here is classical in cryptography, as we all 
+have probably seen in practice. In the extreme, but not too uncommon 
+position, a crypto guy cries for a &quot;better&quot; solution (which, more 
+often than not, is either not usable or too expensive) while 
+dismissing a number of perfectly valid but incomplete solutions that, 
+when used together, could mount a good-enough (and affordable) 
+defense. Many people have frequently made this point here, including 
+yourself with EV certs.
+
+Yes, blocking by IP is not a panacea, and may fail to block, but when 
+it works it is mostly correct (and if it's not, it errs on the side of 
+caution). It should certainly be in everyone's toolbox.
+
+But blocking-by-IP is just one possible pattern, as I comment below:
+
+&gt;&gt;<i> Further, if the PIN is held constant (eg, a common PIN such as 1111)
+</I>&gt;&gt;<i> and the IP as well as the browser identification are changed while
+</I>&gt;&gt;<i> different account numbers are targeted, this pattern can trigger a
+</I>&gt;&gt;<i> block by that PIN that repeatedly (3 or more times) causes an access
+</I>&gt;&gt;<i> error, for any IP number and browser. Excessive errors/minute can
+</I>&gt;&gt;<i> also trigger inspection and blocks.
+</I>&gt;<i> 
+</I>&gt;<i> You have 10,000 PINs, and 10 million customers logging in a day. Every
+</I>&gt;<i> PIN that gets attacked means a thousand of those customers can't get
+</I>&gt;<i> to their account. They call up, which costs you $10 to $100 a pop in
+</I>&gt;<i> customer service. So for every PIN someone tries hacking, you take a
+</I>&gt;<i> $10,000 to $100,000 customer service cost. Since there are thousands
+</I>&gt;<i> of PINs that will be attacked a day, this adds up fast, and you find
+</I>&gt;<i> more or less none of your customers able to log in and almost all of
+</I>&gt;<i> them angry as all hell at you.
+</I>
+Not everyone has 4-digit PINs (9,000 choices, not 10,000) and, as 
+banks update their practices (but not Wells Fargo!) the search space 
+increases and the problem goes away.
+
+Nonetheless, if a system such as reported by Allan in this thread, 
+uses 6-digit passwords to protect an email message, this does NOT mean 
+that someone could break it in seconds. It all depends on the control 
+system (and its effectiveness) to prevent many multiple tries in a 
+short time.
+
+It's not just the search space that counts but how fast you can search 
+it. Why can EC use shorter keys than PKC, for the same level of 
+security against brute search?
+
+&gt;<i> Ed, there is a reason no one in the US, not even Wells Fargo which you
+</I>&gt;<i> falsely cited, does what you suggest. 
+</I>
+I understand you simply jumped to conclusions here and before. My 
+citation on Wells Fargo was and is (today) correct. My reply to Dan 
+was also a valid (even if not perfect!) method, that can be used in 
+combination with other methods as I suggested.
+
+As Father Gracian suggests in his book (recommend reading it) &quot;The Art 
+of Worldly Wisdom&quot;, never complain. So, I won't. Anyone who is using a 
+public dialogue to mine the gold of truth can very well understand 
+that a few stones that also come through will just make the gold even 
+more valuable.
+
+Best regards,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

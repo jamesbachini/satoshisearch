@@ -1,0 +1,38 @@
+<PRE>Dave Korn wrote:
+&gt;<i> Ian Farquhar wrote:
+</I>&gt;&gt;<i> Maybe I am showing my eternal optimist side here, but to me, this is 
+</I>&gt;&gt;<i> how TPM's should be used, as opposed to the way their backers 
+</I>&gt;&gt;<i> originally wanted them used.  A removable module whose connection to a 
+</I>&gt;&gt;<i> device I establish (and can de-establish, assuming the presence of a 
+</I>&gt;&gt;<i> tamper-respondent barrier such as a sensor-enabled computer case to 
+</I>&gt;&gt;<i> legitimize that activity) is a very useful thing to me, as it 
+</I>&gt;&gt;<i> facilitates all sorts of useful applications.  [...]
+</I>
+&gt;<i> If you can remove it, what's to stop you plugging it into another machine and copying all
+</I>&gt;<i> your DRM-encumbered material to that machine?
+</I>&gt;<i>
+</I>&gt;<i> It's supposed to identify the machine, not the user.  Sounds to me like what you want is a 
+</I>&gt;<i> personally identifying cert that you could carry around on a usb key...
+</I>
+Nothing, but you missed my point.  I'm not interested in the DRM functionality, or user-removability.  My point was to look
+beyond that original remit.
+
+Specifically, a module which supports authenticated physical removal (with a programmed tamper response) *is* useful, especially
+for server applications. (*)  Smartcards and &quot;secure&quot; USB devices might be useful for other applications, but not the one I was
+describing, because they lack a tamper response.
+
+Note I'm also saying &quot;programmable tamper response&quot;.  Although I like the idea of wiping keys on tamper response, it's not
+necessarily the ideal response.  A better possibility (in certain circumstances) is the device entering a &quot;lockdown&quot; mode with
+selected and modelled reduced functionality.  Examples of such circumstances are where the tamper might be triggerable
+maliciously, thus facilitating a DoS attack against the service. 
+
+Ian.
+
+(*) And isn't it interesting how so many &quot;desktop&quot; systems are now starting to run application mixes which really look like
+servers?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

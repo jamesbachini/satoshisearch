@@ -1,0 +1,54 @@
+<PRE>
+
+On Sat, 21 Jul 2007, Steven M. Bellovin wrote:
+
+&gt;<i>Not as I read the statute (and of course I'm not a lawyer).  Have a
+</I>&gt;<i>look at 18 USC 2512
+</I>&gt;<i>(<A HREF="http://www4.law.cornell.edu/uscode/html/uscode18/usc_sec_18_00002512----000-.html">http://www4.law.cornell.edu/uscode/html/uscode18/usc_sec_18_00002512----000-.html</A>)
+</I>
+&gt;<i>	any person who intentionally ...
+</I>&gt;<i>
+</I>&gt;<i>	manufactures, assembles, possesses, or sells any electronic,
+</I>&gt;<i>	mechanical, or other device, knowing or having reason to know
+</I>&gt;<i>that the design of such device renders it primarily useful for the
+</I>&gt;<i>	purpose of the surreptitious interception of wire, oral, or
+</I>&gt;<i>	electronic communications, and that such device or any component
+</I>&gt;<i>	thereof has been or will be sent through the mail or transported
+</I>&gt;<i>	in interstate or foreign commerce;
+</I>&gt;<i>
+</I>&gt;<i>	...
+</I>&gt;<i>
+</I>&gt;<i>So simple possession of a surreptitious interception device is illegal,
+</I>&gt;<i>with exceptions for things like sale to law enforcement or
+</I>&gt;<i>communications companies.
+</I>
+Hm.  Okay, we're looking at the same law, and I am not a lawyer
+either; but I read &quot;knowing or having reason to know ... that such
+device or any component thereof has been or will be sent through the
+mail or transported in interstate or foreign commerce&quot; as a limiting
+clause on what would otherwise be an unconstitutional law.
+
+In the case of someone who manufactures and posesses such a device,
+but never sends it or its components through the mail nor transports
+it in interstate or foreign commerce, I don't think this law gets
+broken.  Despite intimidation tactics that do their best to try to
+spread the opposite impression, this is explicitly *not* forbidden by
+this law.
+
+And the statute on using such a device, IIRC, also has a limitation,
+in that it bans using such devices *surreptitiously* - which I think
+permits non-surreptitious use such as demonstrations.
+
+Still, it's a case of two reasonably educated people being able to
+look at the same statute and draw different conclusions: Sooner or
+later it will have to be decided in a trial to see who can pay the
+best lawyers^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H see which
+interpretation of the statute best serves justice.
+
+				Bear
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

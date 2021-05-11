@@ -1,0 +1,26 @@
+<PRE>Those interested in predicate encryption might also enjoy 
+
+Group Authentication Using The Naccache-Stern Public-Key Cryptosystem 
+
+<A HREF="http://arxiv.org/abs/cs/0307059">http://arxiv.org/abs/cs/0307059</A>
+
+which takes a different approach and handles negation.
+
+A group authentication protocol authenticates pre-defined groups of
+individuals such that: 
+- No individual is identified 
+- No knowledge of which groups can be successfully authenticated is known to
+the verifier 
+- No sensitive data is exposed 
+The paper presents a group authentication protocol based on splitting the
+private keys of the Naccache-Stern public-key cryptosystem in such a way
+that the Boolean expression defining the authenticable groups is implicit in
+the split
+
+Shamelessly, Scott
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

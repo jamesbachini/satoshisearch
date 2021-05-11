@@ -1,0 +1,21 @@
+<PRE><A HREF="http://www.netbsd.org/gallery/schueth-interview.html">http://www.netbsd.org/gallery/schueth-interview.html</A>
+
+&quot;Beating Colossus: an interview with Joachim Schueth
+
+Joachim Schueth has beaten a reconstruction of the famous Colossus Mark 
+II code breaking machine in November 2007. The Colossus computers were 
+used in World War II to break the German encrypted messages. Equipped 
+with a NetBSD-powered laptop and profound knowledge of cryptography and 
+the Ada programming language, Schueth has won the code-cracking 
+challenge. We talked with him about the historical and technical 
+backgrounds of the Cipher Event and the tools he has used.&quot;
+
+-- 
+Sean McGrath
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sean at manybits.net</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

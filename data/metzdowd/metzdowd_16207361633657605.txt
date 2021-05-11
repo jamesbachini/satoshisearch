@@ -1,0 +1,44 @@
+<PRE>Steven M. Bellovin wrote:
+ &gt; Believe it or not, I thought of CFB...
+ &gt;
+ &gt; Sending keep-alives will do nasties to battery
+ &gt; lifetime, I suspect; most of the time, you're not
+ &gt; typing.  As for CFB -- with a 64-bit block cipher (you
+ &gt; want them to use DES? they're not going to think of
+ &gt; anything different), it will take 9 keypresses to
+ &gt; flush the buffer.  With AES (apparently your
+ &gt; assumption), it will take 17 keypresses.  This isn't
+ &gt; exactly muggle-friendly.  Just think of the text in
+ &gt; the instructions... Redundancy?  I wonder how much is
+ &gt; needed to avoid problems.  It has to be a divisor of
+ &gt; the cipher block size, which more or less means 8
+ &gt; extra bits.  How much will that cost in battery life?
+
+Keypress signals, or change of keyboard state signals,
+do not need to be a divisor of the cipher block size.
+
+At every block boundary, keyboard transmits a special
+signal in the clear that signifies block boundary.  Any
+time that no key has been pressed for a while, then when
+a key is finally pressed, keyboard transmits a bunch of
+no-ops sufficient to ensure that the recipient has
+recently received an entire block, followed by a
+complete description of current keyboard state, so that
+recipient knows what change of keyboard state signals
+are changes from.  Conversely, when the receiver has not
+received any signal for a while, it expects such a
+signal, and distrusts anything else. Muggle
+unfriendliness only occurs if user is typing through a
+boot up, which is unlikely to terribly surprise the
+user, who is probably banging away at the same keys over
+and over again waiting for a reaction, or if the user
+wanders out of range while typing, then wanders back in
+range again while still typing, in which case again the
+user is unlikely to be very surprised.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

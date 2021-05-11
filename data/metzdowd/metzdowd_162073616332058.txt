@@ -1,0 +1,20 @@
+<PRE>On Mon, 10 Dec 2007 11:27:10 -0500
+Vin McLellan &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">vin at theworld.com</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> What does it say about the integrity of the FIPS program, and its
+</I>&gt;<i> CMTL evaluation process, when it is left to competitors to point out
+</I>&gt;<i> non-compliance of evaluated products -- proprietary or open source --
+</I>&gt;<i> to basic architectural requirements of the standard?
+</I>&gt;<i> 
+</I>&quot;Integrity&quot; or &quot;ability&quot;?  We all know that finding problems in code or
+architecture is *very* hard.  
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

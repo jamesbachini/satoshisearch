@@ -1,0 +1,12 @@
+<PRE>On Sep 14, 2007, at 8:36 PM, Perry E. Metzger wrote:
+&gt;<i> &quot;Secrets From The Future&quot;, MC Frontalot's song about crypto
+</I>
+Lyrics: &lt;<A HREF="http://frontalot.com/index.php/?page=lyrics&amp;lyricid=41">http://frontalot.com/index.php/?page=lyrics&amp;lyricid=41</A>&gt;
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

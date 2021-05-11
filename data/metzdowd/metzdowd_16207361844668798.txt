@@ -1,0 +1,21 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+&gt;<i> (Actually even that doesn't really explain something like IKE... :-).
+</I>
+Having been peripherally involved in the causation change for IKE, let
+me confess that it was caused by human stupidity destroying the
+alternatives. The author of the much cleaner spec asserted copyright
+and control over it, and fearing lawsuits, people turned to the
+the remaining alternative. A number of us were all to blame for the
+situation.
+
+I will point out that the &quot;I Dislike IKE&quot; pins were not rare at
+meetings. Most people understood the situation as it happened.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

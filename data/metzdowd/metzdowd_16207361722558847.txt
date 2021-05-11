@@ -1,0 +1,21 @@
+<PRE>|<i>    ...Convergent encryption renders user files vulnerable to a
+</I>|<i>    confirmation-of-a-file attack. We already knew that. It also
+</I>|<i>    renders user files vulnerable to a learn-partial-information
+</I>|<i>    attack in subtle ways. We didn't think of this until now. My
+</I>|<i>    search of the literature suggests that nobody else did either.
+</I>The way &quot;obvious in retrospect&quot; applies here:  The vulnerability is
+closely related to the power of probable plaintext attacks against
+systems that are thought to be vulnerable only to known plaintext
+attacks.  The general principle that needs to be applied is:  In any
+cryptographic setting, if knowing the plaintext is sufficient to get
+some information out of the system, then it will also be possible to get
+information out of the system by guessing plaintext - and one must
+assume that there will be cases where such guessing is &quot;easy enough&quot;.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

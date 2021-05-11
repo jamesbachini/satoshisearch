@@ -1,0 +1,41 @@
+<PRE>Ed Gerck wrote:
+&gt;<i> List,
+</I>&gt;<i> 
+</I>&gt;<i> I would like to address and request comments on the use of SSL/TLS and 
+</I>&gt;<i> port 587 for email security.
+</I>&gt;<i> 
+</I>&gt;<i> The often expressed idea that SSL/TLS and port 587 are somehow able to 
+</I>&gt;<i> prevent warrantless wiretapping and so on, or protect any private 
+</I>&gt;<i> communications, is IMO simply not supported by facts.
+</I>&gt;<i> 
+</I>&gt;<i> Warrantless wiretapping and so on, and private communications 
+</I>&gt;<i> eavesdropping are done more efficiently and covertly directly at the 
+</I>&gt;<i> ISPs (hence the name &quot;warrantless wiretapping&quot;), where SSL/TLS 
+</I>&gt;<i> protection does NOT apply. There is a security gap at every negotiated 
+</I>&gt;<i> SSL/TLS session.
+</I>&gt;<i> 
+</I>&gt;<i> It is misleading to claim that port 587 solves the security problem of 
+</I>&gt;<i> email eavesdropping, and gives people a false sense of security. It is 
+</I>&gt;<i> worse than using a 56-bit DES key -- the email is in plaintext where it 
+</I>&gt;<i> is most vulnerable.
+</I>
+Perhaps you'd like to expand upon this a bit. I am a bit confused by 
+your assertion. tcp/587 is the standard authenticated submission port, 
+while tcp/465 is the normal smtp/ssl port - of course one could run any 
+mix of one or the other on either port. Are you suggesting that some 
+postmasters/admins are claiming that their Submission ports are encrypted?
+
+-- 
+
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sjk at cupacoffee.net</A>
+fingerprint: 1024D/89420B8E 2001-09-16
+
+No one can understand the truth until
+he drinks of coffee's frothy goodness.
+~~Sheik Abd-al-Kadir
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

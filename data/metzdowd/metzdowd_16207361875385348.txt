@@ -1,0 +1,33 @@
+<PRE>
+
+Begin forwarded message:
+
+Date: Mon, 18 Aug 2008 10:56:16 -0400
+From: Sara Caswell &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sara at nist.gov</A>&gt;
+To: undisclosed-recipients:;
+Subject: NIST Documents Available for Review
+
+
+NIST revised the first drafts of Special Publication(SP) 800-106,
+Randomized Hashing for Digital Signatures, and SP 800-107,
+Recommendation for Applications Using Approved Hash Algorithms after
+receiving great comments from many public and private individuals and
+organizations. The second drafts of these two SPs have been posted at
+<A HREF="http://csrc.nist.gov/publications/PubsDrafts.html.">http://csrc.nist.gov/publications/PubsDrafts.html.</A> The deadlines for
+public comments and the point-of-contact are listed with the documents. 
+
+NIST also would like to announce that FIPS 198-1 has already been
+approved and it is posted at
+<A HREF="http://csrc.nist.gov/publications/fips/fips198-1/FIPS-198-1_final.pdf.">http://csrc.nist.gov/publications/fips/fips198-1/FIPS-198-1_final.pdf.</A>
+
+
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

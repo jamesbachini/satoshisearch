@@ -1,0 +1,41 @@
+<PRE>Wells Fargo is requiring their online banking customers to provide 
+answers to security questions such as these:
+
+***
+
+What is name of the hospital in which your first child was born?
+What is your mother's birthday? (MMDD)
+What is the first name of your first roommate in college?
+What is the name of the first street you lived on as a child?
+What year did you start junior high/middle school? (YYYY)
+What is your oldest sibling's nickname?
+What is your dream occupation?
+What is your spouse's nickname?
+In what city was your father born?
+What is the name of the high school you attended?
+What is your best friend's first name?
+What is the name of the junior high/middle school you attended?
+What is the first name of your maternal grandfather (mother's father)?
+What is the name of your favorite childhood superhero?
+In what city did you meet your spouse?
+In what city did your parents meet?
+In what city did you attend high school?
+What is name of the hospital in which you were born?
+What is the last name of your favorite teacher?
+In what city was your maternal grandmother (mother's mother) born?
+What was your most memorable gift as a child?
+
+***
+
+It strikes me that the answers to many of these questions might be 
+public information or subject to social engineering attacks...
+
+Peter
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/x-pkcs7-signature
+Size: 7338 bytes
+Desc: S/MIME Cryptographic Signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080806/800d5a9f/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20080806/800d5a9f/attachment.bin</A>&gt;
+</PRE>

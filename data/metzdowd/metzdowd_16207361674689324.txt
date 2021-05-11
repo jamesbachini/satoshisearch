@@ -1,0 +1,18 @@
+<PRE>&gt;<i>From a fun article on the history of computing
+</I>&lt;<A HREF="http://www.neatorama.com/2008/01/25/the-wonderful-world-of-early-computing">http://www.neatorama.com/2008/01/25/the-wonderful-world-of-early-computing</A>&gt;
+
+    The 20,000-year-old bone revealed that early civilization had
+    mastered arithmetic series and even the concept of prime
+    numbers.
+
+This predates the Egyptian and Greek references to prime number
+knowledge I have heard about by a wide margin. Unfortunately, the
+article doesn't go into any more detail then the quote above.
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

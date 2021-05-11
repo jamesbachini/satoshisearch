@@ -1,0 +1,25 @@
+<PRE>
+Via Slashdot:
+
+<A HREF="http://www.ncl.ac.uk/press.office/press.release/content.phtml?ref=1193215475">http://www.ncl.ac.uk/press.office/press.release/content.phtml?ref=1193215475</A>
+
+An interesting variant on biometrics, can't easily be reproduced with
+pieces of one's body separated from the whole, and involves in part
+something remembered. No hard numbers were provided on FP/FN rates.  Also,
+no mention of how &quot;compexity rules&quot; might be handled. CISOs might not
+be too happy without a warm fuzzy that their users have decent passwords
+on their BlackBerry devices. Is my &quot;X&quot; more secure than your &quot;X&quot;?
+
+This may not work for everyone, some people are more verbal-sequential
+than visual-spatial. I for one don't really have a stable hand-written
+signature, but have no problem memorizing long passwords (and can store
+them in a password-safe).
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

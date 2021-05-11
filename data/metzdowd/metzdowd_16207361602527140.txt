@@ -1,0 +1,20 @@
+<PRE>On Nov 15, 2007 2:55 PM,  &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">lists at notatla.org.uk</A>&gt; wrote:
+&gt;<i> According to this BBC story until fairly recently the British
+</I>&gt;<i> military refused to have PALs on nuclear weapons.
+</I>&gt;<i> [SNIP]
+</I>&gt;<i>From the story:
+</I>
+    The Bomb is actually armed by inserting a bicycle lock
+    key into the arming switch and turning it through 90
+   degrees.
+
+I wonder if they knew how to defeat it with a Bic pen? (see
+&lt;<A HREF="http://www.wired.com/culture/lifestyle/news/2004/09/64987">http://www.wired.com/culture/lifestyle/news/2004/09/64987</A>&gt;)
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

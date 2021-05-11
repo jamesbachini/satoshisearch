@@ -1,0 +1,40 @@
+<PRE>The movie studios live in fear of people stealing their product as it
+all goes digital.  There's, of course, always the &quot;analogue hole&quot;, the
+point where the data goes to the display.  The industry defined an
+all-digital, all-licensed-hardware path through HDMI which blocks this
+path.  As we know, Vista goes out of its way to keep all that stuff
+&quot;safe from tampering&quot;.
+
+But in this business, there's always someone who's defining different
+hardware that cuts the other way.  At least one &quot;someone&quot; is the
+DisplayLink alliance.  This is a group of vendors who are supporting a
+protocol for connecting video displays to computers over various kinds
+of generic connections.  At the moment, USB, Ethernet, and wireless are
+on the list.  Products are beginning to appear - LG, for example,
+recently announced the LG L206WU, a 1680x1050 display that connects over
+USB.  A &quot;virtual graphics card&quot; drives the thing.  You can support up to
+6 USB displays, in addition to your existing displays.  The limiting
+factor seems to be the CPU.  Intel is involved with DisplayLink, and is
+demoing &quot;3D and HD Video on USB and Wireless USB displays&quot; based on some
+integrated support in the the Intel graphics hardware at an upcoming
+conference.  Vista's Aero is supported.  The press release talks about
+watching movies.  There's a reference in one article about the LG that
+says watching Blu-Ray disks probably won't work well because so much of
+the CPU is used up decoding the disk.  Obviously, if this is indeed the
+limitation, it's a temporary one.
+
+No mention anywhere of HDMI or any kind of deal with the movie
+industry.  If DisplayLink takes off - and with Intel on the producing
+side and at least LG, Toshiba, Kensington already announcing products
+it's got a good chance - HDMI is going to have a tough time gaining
+a place at the table; and the Blu-Ray/HD-DVD producers are quickly
+going to find themselves having to choose whether they are going to
+walk away from the vast majority of the market.
+
+ 							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

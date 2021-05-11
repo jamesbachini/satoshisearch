@@ -1,0 +1,98 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> The blogs of Matt Blaze, Steve Bellovin and Bruce Schneier all linked
+</I>&gt;<i> to this article today. It is rather disturbing.
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.wired.com/politics/security/news/2007/08/wiretap">http://www.wired.com/politics/security/news/2007/08/wiretap</A>
+</I>&gt;<i> 
+</I>I downloaded the docs this morning and poke through them.
+<A HREF="http://www.eff.org/flag/061708CKK/">http://www.eff.org/flag/061708CKK/</A>
+
+One thing to keep in mind, is that the DCS-3000 is the lowest security
+system in the family.  I looked for security vulnerabilities right away,
+and it looks like it could be exploited by an insider.  It does use the
+DCSNET which is purported to be encrypted.  The (Cisco) routers
+interconnecting the system components use static routes. Lots of security
+through obscurity, not letting the public  know what software is used for
+remote administration.<A HREF="http://www.eff.org/flag/061708CKK/070207_dcs01.pdf">http://www.eff.org/flag/061708CKK/070207_dcs01.pdf</A> ,
+page 43:
+
+7.2.4.4.3 Remote Diagnostics
+
+    The SBIT team utilizes| redacted    |o remotely control the DCS
+3000 systems deployed in the ERF and the other locations for
+maintenance and repair purposes. The usernames and passwords used on
+the system are strictly controlled and only provided on a need-to-know
+basis| redacted     | configured to utilize the security mechanism
+available with the software, including the|   redacted               |
+mechanism and other security mechanisms.
+
+ --
+
+I don't think you can extrapolate insecurity forward to the DCS-5000 used
+for national security intercepts.  That system handles classified
+information, where the DCS-3000 doesn't.  Some of the later documents
+available on the eff web site show the certification process and paperwork
+for the DCS-3000.  While it's mostly eyewash, it at least indicates someone
+in the FBI knows something on the subject.  I think you can even find the
+buzz phrase &quot;Information Assurance&quot; in their somewhere.  Handling classified
+information on computer systems is under the direct auspices of the NSA (and
+yes the Director of the FBI could 'waiver', they'd borrow the expertise,
+instead).
+
+<A HREF="http://goliath.ecnext.com/coms2/gi_0199-3379543/FBI-Will-Use-Unique-New.html">http://goliath.ecnext.com/coms2/gi_0199-3379543/FBI-Will-Use-Unique-New.html</A>
+
+Publication: PR Newswire
+Publication Date: 22-OCT-03
+Delivery: Immediate Online Access
+Author:
+
+Article Excerpt
+HERNDON, Va., Oct. 22 /PRNewswire/ -- Sprint announced today that it has
+been awarded a new 36-month contract to provide secure IP Virtual Private
+Network (VPN) services to Federal Bureau of Investigation (FBI) sites across
+the country to support the FBI's Digital Collection System Network (DCSNet).
+The VPN services will be delivered using the &quot;government- grade&quot; Sprint
+peerless IP network, a unique national network that has...
+
+Apparently as a result of some concerns by law enforcement that their
+surveillance targets were changing behavior as soon as they were being
+targeted by Carnivore, (this came out shortly after 9/11).  Seems running
+the system was contracted out to a company in Virginia, where at least some
+personnel apparently had other agendas:
+
+<A HREF="http://www.foxnews.com/story/0,2933,40747,00.html">http://www.foxnews.com/story/0,2933,40747,00.html</A> (no longer valid, from
+2001) see
+<A HREF="http://www.whatreallyhappened.com/Israeli-Spying-Part-3.htm">http://www.whatreallyhappened.com/Israeli-Spying-Part-3.htm</A>
+
+ ...
+
+The manufacturers have continuing access to the computers so they can
+service them and keep them free of glitches.  This process was authorized by
+the 1994 Communications Assistance for Law Enforcement Act, or CALEA.
+Senior government officials have now told Fox News that while CALEA made
+wiretapping easier, it has led to a system that is seriously vulnerable to
+compromise, and may have undermined the whole wiretapping system.
+
+Indeed, Fox News has learned that Attorney General John Ashcroft and  FBI
+Director Robert Mueller were both warned Oct. 18 in a hand-delivered letter
+from 15 local, state and federal law enforcement  officials, who complained
+that &quot;law enforcement's current  electronic surveillance capabilities are
+less effective today than they  were at the time CALEA was enacted.&quot;
+
+ --
+
+The flip side of the loss of privacy, the bunnies getting wise when you
+bring out the shotgun.
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

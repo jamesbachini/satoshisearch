@@ -1,0 +1,47 @@
+<PRE>Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; writes:
+
+&gt;<i> Steven M. Bellovin wrote:
+</I>&gt;&gt;<i> On Sat, 24 May 2008 20:29:51 +0100
+</I>&gt;&gt;<i> Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> Of course, we have now persuaded even the most stubborn OS that
+</I>&gt;&gt;&gt;<i> randomness matters, and most of them make it available, so perhaps
+</I>&gt;&gt;&gt;<i> this concern is moot.
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> Though I would be interested to know how well they do it! I did
+</I>&gt;&gt;&gt;<i> have some input into the design for FreeBSD's, so I know it isn't
+</I>&gt;&gt;&gt;<i> completely awful, but how do other OSes stack up?
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;<i> I believe that all open source Unix-like systems have /dev/random
+</I>&gt;&gt;<i> and /dev/urandom; Solaris does as well.
+</I>&gt;<i>
+</I>&gt;<i> I meant: how good are the PRNGs underneath them?
+</I>
+For the linux kernel, there is a paper:
+
+<A HREF="http://eprint.iacr.org/2006/086">http://eprint.iacr.org/2006/086</A>
+
+Another important aspect is the semantics of the devices: None of the
+/dev/*random devices are standardized anywhere (as far as I know).
+There semantics can and do differ.  This is a larger practical problem.
+
+For example, reading a lot of data from linux's /dev/urandom will
+deplete the entropy pool in the kernel, which effectively makes reads
+from /dev/random stall.  The two devices uses the same entropy pool.
+
+I believe a much better approach would be if /dev/urandom was a fast and
+secure PRNG, with perfect-forward-secrecy properties, and /dev/random
+was a slow device with &quot;real&quot; entropy (whatever that means..) gathered
+from the hardware.  The two devices would share little or no code.  The
+/dev/urandom PRNG seed could be fed data from /dev/random from time to
+time, or from other sources (like kernel task switching timings).  I
+believe designs like this have been proposed from time to time, but
+there hasn't been any uptake.
+
+/Simon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

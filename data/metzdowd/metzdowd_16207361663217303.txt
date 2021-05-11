@@ -1,0 +1,30 @@
+<PRE>On Tue, Jan 08, 2008 at 07:43:58AM +0800, Ian Farquhar (ifarquha) wrote:
+
+&gt;<i> I've been having this problem for years (my mother's maiden name is,
+</I>&gt;<i> indeed, four characters long).  It's often rejected as too short, yet
+</I>&gt;<i> I'm forced to enter it.  I do the workaround of entering it twice, but
+</I>&gt;<i> then have to remember which sites I applied this hack for.
+</I>&gt;<i> 
+</I>
+Why enter your mother's actual maiden name when prompted for it? A
+security savvy user will recognize this as a second password, that
+multiple sites seem to want to share, and enter something unique and
+unmemorable (stored on a &quot;keychain&quot; or just discarded if the primary
+password is similarly safely stored).
+
+When asked to provide answers for security questions, mine are always
+either the output of &quot;openssl rand -base64 N&quot; (with N = 6, 9 or 12),
+or more memorable non-sequiturs when that is more appropriate. Here's
+a new reasonably memorable variant.
+
+    Q: Mother's Maiden Name:
+    A: Winston-Delano-Stalin
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

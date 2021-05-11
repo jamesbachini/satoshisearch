@@ -1,0 +1,67 @@
+<PRE>For years, the Election Integrity Committee of the Pima County
+Democratic Party has been trying to improve the security of the 
+elections systems used in local elections. The results include:
+ -- a dozen or so suggestions that they made were actually accepted
+  and implemented by the county.
+ -- there was a criminal investigation by the Attorney General's 
+  office into the actions of Pima County Division of Elections 
+  personnel, but no charges were brought.
+ -- last but not least, they wanted access (after each election) to 
+  the record of votes cast, but the county refused, leading to a
+  lawsuit that has just now come to trial.
+
+Background info on the trial:
+  <A HREF="http://arizona.typepad.com/blog/2007/11/pima-county-ele.html">http://arizona.typepad.com/blog/2007/11/pima-county-ele.html</A>
+  <A HREF="http://arizona.typepad.com/blog/2007/12/pima-county-ele.html">http://arizona.typepad.com/blog/2007/12/pima-county-ele.html</A>
+
+Overview with links:
+ <A HREF="http://www.bradblog.com/?p=5384">http://www.bradblog.com/?p=5384</A>
+
+Report on day one, with links to statements and testimony:
+  <A HREF="http://www.bradblog.com/?p=5399">http://www.bradblog.com/?p=5399</A>
+  
+  I note that the plaintiffs' opening statement actually
+  used the term &quot;security through obscurity&quot;.
+
+Report on day two, with links to testimony:
+  <A HREF="http://www.bradblog.com/?p=5408">http://www.bradblog.com/?p=5408</A>
+
+
+&quot;Election Security Report&quot;
+  From the County Administrator to the Board of Supervisors 
+  <A HREF="http://www.pima.gov/GenInfo/Pdfs/Election%20Security%20101907.pdf">http://www.pima.gov/GenInfo/Pdfs/Election%20Security%20101907.pdf</A>
+
+  The last 20 pages reproduce an article from 
+    The Information Technology &amp; Innovation Foundation
+    &quot;Stop the Presses:  How Paper Trails Fail to Secure e-Voting&quot;
+
+  which quite one-sidedly favors cryptologic solutions to all
+  problems.  It suggests things like cut-and-choose and zero-
+  knowledge proofs ... which makes for a dramatic contrast with
+  the appalling unsophistication of the Diebold machines that
+  are actually being used.
+
+=========================
+
+  Disclaimer:  One of the attorneys in the case is T. A. Denker.
+  Yes, he is my brother.  No, I have not learned _anything_
+  about the case from him.  I am not involved in this case ...
+  except to the extent that as a voter I have a stake in the
+  outcome.
+
+=========================
+
+This is not an issue for the trial, but I can't help noting
+that for years the Australians have been using a Linux-based 
+e-voting system, with all code open to public review:
+  <A HREF="http://www.elections.act.gov.au/EVACS.html">http://www.elections.act.gov.au/EVACS.html</A>
+  <A HREF="http://www.wired.com/techbiz/media/news/2003/11/61045">http://www.wired.com/techbiz/media/news/2003/11/61045</A>
+
+which makes another dramatic contrast with Diebold's stated
+&quot;need&quot; for secrecy.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

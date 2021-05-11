@@ -1,0 +1,26 @@
+<PRE>
+Have a look at
+
+<A HREF="http://boinc.iaik.tugraz.at/sha1_coll_search">http://boinc.iaik.tugraz.at/sha1_coll_search</A>
+
+Aram Perez wrote:
+&gt;<i> Anyone know more about this?
+</I>
+-- 
+Mads Rasmussen
+LEA - Laborat&#243;rio de Ensaios e Auditoria
+ICP-Brasil   
+(Brazilian PKI Cryptographic Certification Laboratory)
+Office: +55 11 4208 3873
+Mobile: +55 11 9407 4493
+Mobile: +55 11 9655 8885
+Skype: mads_work
+<A HREF="http://www.lea.gov.br">http://www.lea.gov.br</A>
+
+    
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

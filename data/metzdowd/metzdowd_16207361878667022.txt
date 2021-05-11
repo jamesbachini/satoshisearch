@@ -1,0 +1,30 @@
+<PRE>On Fri, Aug 08, 2008 at 11:20:15AM -0700, Eric Rescorla wrote:
+&gt;<i> At Fri, 08 Aug 2008 10:43:53 -0700,
+</I>&gt;<i> Dan Kaminsky wrote:
+</I>&gt;<i> &gt; Funnily enough I was just working on this -- and found that we'd end up 
+</I>&gt;<i> &gt; adding a couple megabytes to every browser.  #DEFINE NONSTARTER.  I am 
+</I>&gt;<i> &gt; curious about the feasibility of a large bloom filter that fails back to 
+</I>&gt;<i> &gt; online checking though.  This has side effects but perhaps they can be 
+</I>&gt;<i> &gt; made statistically very unlikely, without blowing out the size of a browser.
+</I>&gt;<i> 
+</I>&gt;<i> Why do you say a couple of megabytes? 99% of the value would be
+</I>&gt;<i> 1024-bit RSA keys. There are ~32,000 such keys. If you devote an
+</I>&gt;<i> 80-bit hash to each one (which is easily large enough to give you a
+</I>&gt;<i> vanishingly small false positive probability; you could probably get
+</I>&gt;<i> away with 64 bits), that's 320KB.  Given that the smallest Firefox
+</I>&gt;<i> [...]
+</I>
+You could store {&lt;hash&gt;, &lt;seed&gt;} and check matches for false positives
+by generating a key with the corresponding seed and then checking for an
+exact match -- slow, but rare.  This way you could choose your false
+positive rate / table size comfort zone and vary the size of the hash
+accordingly.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

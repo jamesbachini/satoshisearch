@@ -1,0 +1,29 @@
+<PRE>On Sat, 25 Oct 2008, John Denker wrote:
+
+&gt;<i> On 10/25/2008 04:40 AM, IanG gave us some additional information.
+</I>&gt;<i>
+</I>&gt;<i> Even so, it appears there is still some uncertainty as to
+</I>&gt;<i> interpretation, i.e. some uncertainty as to the requirements
+</I>&gt;<i> and objectives.
+</I>&gt;<i>
+</I>&gt;<i> I hereby propose a new scenario.  It is detailed enough to
+</I>&gt;<i> be amenable to formal analysis.  The hope is that it will
+</I>&gt;<i> satisfy the requirements and objectives ... or at least
+</I>&gt;<i> promote a more precise discussion thereof.
+</I>&gt;<i>
+</I>&gt;<i> We start with a group comprising N members (machines or
+</I>&gt;<i> persons).  Each of them, on demand, puts out a 160 bit
+</I>&gt;<i> word, called a &quot;member&quot; word.  We wish to combine these
+</I>&gt;<i> to form a single word, the &quot;group&quot; word, also 160 bits
+</I>&gt;<i> in length.
+</I>
+&lt;snip&gt;
+
+If you are interested in something with a formal analysis, you should 
+check out work on (single-source or multiple-source) extractors.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

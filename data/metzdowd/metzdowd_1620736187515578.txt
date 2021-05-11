@@ -1,0 +1,18 @@
+<PRE>Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; writes:
+
+&gt;<i>Yet more that is implausible:
+</I>&gt;<i>
+</I>&gt;<i><A HREF="http://www.securstar.com/products_drivecrypt.php">http://www.securstar.com/products_drivecrypt.php</A>
+</I>
+It's a (formerly) good product badly sold.  DriveCrypt used to be the open- 
+source ScramDisk until it was taken over by a commercial operator whose 
+handling of the product since then has been a bit erratic (see endless threads 
+in alt.security.scramdisk from a couple of years ago for details).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

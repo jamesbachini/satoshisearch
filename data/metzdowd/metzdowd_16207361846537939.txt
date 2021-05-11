@@ -1,0 +1,49 @@
+<PRE>* Peter Gutmann:
+
+&gt;<i> Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; writes:
+</I>&gt;&gt;<i>* Peter Gutmann:
+</I>&gt;&gt;&gt;<i> [1] Show of hands, how many people here not directly involved with X.509 work
+</I>&gt;&gt;&gt;<i>     knew that the spec required that all extensions in CA root certificates
+</I>&gt;&gt;&gt;<i>     (&quot;trust anchors&quot; in recent X.509 jargon) be ignored by an implementation?
+</I>&gt;&gt;&gt;<i>     So if you put in name constraints, key usage constraints, a policy
+</I>&gt;&gt;&gt;<i>     identifier, etc, then a conforming implementation is supposed to look at
+</I>&gt;&gt;&gt;<i>     them, throw them away, and proceed as if they weren't there?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>Are you sure that the constraints are not supposed to be applied when
+</I>&gt;&gt;<i>the root certificate is actually processed, after its signature has been
+</I>&gt;&gt;<i>verified by the trust anchor?
+</I>&gt;<i>
+</I>&gt;<i> Yup.  The app is supposed to read the cert, parse and process the extensions,
+</I>&gt;<i> and then throw them away.  The text from the spec is:
+</I>&gt;<i>
+</I>&gt;<i>   3.3.60 trust anchor: A trust anchor is a set of the following information in
+</I>&gt;<i>   addition to the public key: algorithm identifier, public key parameters (if
+</I>&gt;<i>   applicable), distinguished name of the holder of the associated private key
+</I>&gt;<i>   (i.e., the subject CA) and optionally a validity period. The trust anchor
+</I>&gt;<i>   may be provided in the form of a self-signed certificate. A trust anchor is
+</I>&gt;<i>   trusted by a certificate using system and used for validating certificates
+</I>&gt;<i>   in certification paths.
+</I>&gt;<i>
+</I>&gt;<i> Rendered into English, that says &quot;take the pubic key, owner name, and 
+</I>&gt;<i> validity period, and ignore everything else in the cert&quot;.
+</I>
+Let me rephrase my remark: The trust anchor is conceptually separate
+from a root CA certificate.  It is only used to validate it the CA
+certificate.  Nothing in that section gives you permission to ignore
+extensions on the CA certificate (skipping the first entry in the
+certification path).  In addition, the trust anchor cannot be used
+directly to verify certificates issued by the CA because the subject DN
+does not match.  Ergo, the extensions on the CA certificate are still in
+force.
+
+&gt;<i> Luckily no sane implementation pays any attention to this nonsense :-).
+</I>
+I think your interpretation actually leads to a non-compliant
+implementation.  Obviously, wording of that section could be less
+confusing.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

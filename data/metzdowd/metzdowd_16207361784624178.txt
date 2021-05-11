@@ -1,0 +1,47 @@
+<PRE>
+On May 8, 2008, at 19:08, Leichter, Jerry wrote:
+&gt;<i> An interesting datapoint I've always had on this question:  Back in  
+</I>&gt;<i> 1975
+</I>&gt;<i> or so, a mathematician I knew (actually, he was a friend's PhD  
+</I>&gt;<i> advisor)
+</I>&gt;<i> left academia to go work for the NSA.  Obviously, he couldn't say
+</I>&gt;<i> anything at all about what he would be doing.
+</I>&gt;<i>
+</I>&gt;<i> The guy's specialty was algebraic geometry - a hot field at the time.
+</I>&gt;<i> This is the area of mathematics that studied eliptic curves many years
+</I>&gt;<i> before anyone realized they had any application to cryptography.  In
+</I>&gt;<i> fact, it would be years before anyone on the outside could make any
+</I>&gt;<i> kind of guess about what in the world the NSA would want a specialist
+</I>&gt;<i> in algebraic geometry to do.  At the time, it was one of the purest
+</I>&gt;<i> of the pure fields.
+</I>
+
+I've heard similar recollections of mathematicians from improbably
+abstract specialties being eagerly taken in by NSA, throughout the
+cold war.   I've also heard it said that at one time NSA was the
+US's single largest employer of math PhDs.  I don't know if that
+was actually true, but it certainly seems plausible.
+
+But it's also important to remember that crypto isn't the only
+area of the NSA mission that benefits from mathematical expertise.
+I suspect that while many of these NSA math PhDs were indeed doing
+cryptomathematics, a large fraction were (and are) working on
+other SIGINT problems such as signal processing, databases and
+searching, coding theory, machine learning, and so.  Some of the
+(non-crypto) problems here seem rather specific to the NSA's domain,
+and so don't likely have an advanced civilian research community
+competing with them they way academic crypto does today.
+
+A couple of the papers from the 1970's hint (in redacted form,
+frustratingly)  that the NSA then had large scale automatic systems
+for intercepting and processing morse code signals from large
+blocks of radio spectrum, which implies some pretty advanced
+(for that era) signal processing and computing, crypto aside.
+
+-matt
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

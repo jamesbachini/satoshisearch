@@ -1,0 +1,26 @@
+<PRE>Does anyone have information on:
+
+1) The ECAES weakness that led to ECIES
+2) Any known weaknesses of ECIES
+3) Relative performance figures between ECC routines like ECIES
+   and D/H (or possibly RSA, though IES is based on EC-DH)
+
+I can generate the last if these figures are not available.
+
+BTW, I noticed that the latest OpenSSL has some EC functions,
+including EC-DH IIRC.  It does not have ECAES or ECIES though.
+
+References:
+<A HREF="http://en.wikipedia.org/wiki/ECIES">http://en.wikipedia.org/wiki/ECIES</A>
+<A HREF="http://www.secg.org/download/aid-385/sec1_final.pdf">http://www.secg.org/download/aid-385/sec1_final.pdf</A>
+-- 
+&lt;URL:<A HREF="http://www.subspacefield.org/~travis/">http://www.subspacefield.org/~travis/</A>&gt; Tat Tvam Asi
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071004/c09c8d3d/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071004/c09c8d3d/attachment.pgp</A>&gt;
+</PRE>

@@ -1,0 +1,46 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> 
+</I>&gt;<i> There are existing deployed solutions like Kerberos that scale far
+</I>&gt;<i> beyond that and work just fine, and actually address all the things
+</I>&gt;<i> this protocol seems to leave as an exercise to the reader. And yes,
+</I>&gt;<i> they're in use in real companies at gigantic scales. (Indeed, Kerberos
+</I>&gt;<i> is central to Microsoft's technologies these days.)
+</I>
+The example I used was only illustrative.  SKSML allows for 2^64 keys
+per server, 2^64 servers per domain and 2^64 unique domains on the
+internet.  The GlobalKeyID (GKID) of a key within a Symmetric Key
+Management System (SKMS) is defined to be a triple consisting of the
+concatenation of the unique domain ID, the server ID and the key ID 
+(DID-SID-KID).  So GKID's can range from &quot;1-1-1&quot; all the way upto
+&quot;(2^64-1)-(2^64-1)-(2^64-1)&quot;; so it is fairly scalable.
+
+That said, Kerberos clearly has the benefit of 20+ years of research
+and use in the field.  However, there are two fundamental differences
+between SKSML and Kerberos, IMHO:
+
+1) The design goals for Kerberos were very different from SKSML.  The
+    former solves the problem of network-authentication in the face of
+    insecure hosts/networks, while the latter focuses on long-term key
+    management.  That they both use very similiar concepts &amp; components
+    to deliver quite different benefits to applications is testament to
+    the strength and flexibility of the underlying components rather
+    than to a weakness of SKSML.
+
+2) AFAIK, Kerberos clients cannot deliver their stated benefit (network
+    authentication) in the absence of the network or the Kerberos server.
+    SKSML is designed to allow disconnected EKMI clients to continue
+    providing cryptographic services to applications even in the absence
+    of the network or the key-management server.  However, it does
+    require that the Symmetric Key Client Library (SKCL) have connected
+    to the Symmetric Key Services (SKS) server at least once before it
+    can use this capability.
+
+Arshad Noor
+StrongAuth, Inc.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

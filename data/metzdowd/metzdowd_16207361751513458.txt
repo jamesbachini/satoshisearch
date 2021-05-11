@@ -1,0 +1,27 @@
+<PRE>On Mon, 07 Apr 2008 08:53:44 -0700
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+
+&gt;<i> &quot;Consider Shannon. He didn?t do just information theory. Several
+</I>&gt;<i> years before, he did some other good things and some which are still
+</I>&gt;<i> locked up in the security of cryptography.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> Shannon's crypto work that is &quot;still [1986] locked up&quot;? This was
+</I>&gt;<i> said (*) by Richard W. Hamming on March 7, 1986. Hamming,
+</I>&gt;<i> who died when he was almost 83 years old in 1998, was then a
+</I>&gt;<i> Professor at the Naval Postgraduate School in Monterey, California.
+</I>&gt;<i> He was also a retired Bell Labs scientist.
+</I>&gt;<i> 
+</I>&gt;<i> Does anyone about this or what it could be? Or if Hamming was
+</I>&gt;<i> incorrect?
+</I>&gt;<i> 
+</I>I've heard that there were some patent applications with secrecy
+orders. though I thought those were release by the late 1980s.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

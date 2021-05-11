@@ -1,0 +1,21 @@
+<PRE>Hi gang,
+
+In looking at captchas that have been broken via software it 
+dawned on me that the amount of &quot;mental processing&quot; involved is 
+actually very little. I'm interested in what the current state of 
+image recognition via software of things like knowing the 
+difference between a monkey and a cat or a child laughing or just 
+happy and the degree of reliability of the differentiation. I've 
+done a bit of looking around and don't find much. Does anyone 
+have knowledge of or a  pointer to someone who might know where 
+to look about this?
+
+Thanks,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

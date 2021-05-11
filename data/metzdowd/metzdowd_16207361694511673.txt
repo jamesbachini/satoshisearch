@@ -1,0 +1,65 @@
+<PRE>Ok thanks, I'm going to risk pedanticism in order to nail things down a bit 
+more rigorously..
+
+' =JeffH ' &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt; writes:
+&gt;&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A> said:
+</I>&gt;&gt;<i> <A HREF="http://www.xml-dev.com/blog/index.php?action=viewtopic&amp;id=196">http://www.xml-dev.com/blog/index.php?action=viewtopic&amp;id=196</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>thanks, but that doesn't actually answer my first question. It only documents
+</I>&gt;&gt;<i>that a and b (alice and bob) arrive at the ZZ value independently. My 
+</I>question
+&gt;&gt;<i>is actually concerning section 2.1.2 &quot;Generation of Keying Material&quot; in
+</I>&gt;&gt;<i>RFC2631.
+</I>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> said:
+&gt;<i>  I'm going to approach the answer somewhat differently: Why are you using
+</I>&gt;<i> this mechanism?
+</I>
+Are you referring to the above mentioned mechanism of arriving at the ZZ value 
+independently, which is implied in RFC2631?
+
+(btw, I am not myself designing anything at this time that uses DH, I'm 
+reviewing/analyzing. I am _not_ reviewing RFC2630/2631 themselves, rather it's 
+a (non-IETF) spec that references 2631)
+
+
+&gt;<i>  The only reason that it's present in the spec is politics,
+</I>&gt;<i> it being an attempt to avoid the RSA patent.
+</I>
+So by &quot;the spec&quot; you're referring to RFC2631 here?
+
+Or are you referring to X9.42?
+
+Or something else?
+
+
+&gt;<i>  Its adoption was severely
+</I>&gt;<i> hampered by the fact that US vendors already had RSA licenses, non-US vendors
+</I>&gt;<i> didn't care (and in any case the patent has now expired, so they care even
+</I>&gt;<i> less), no CA's of note will issue X9.42 certificates, and even if they did
+</I>&gt;<i> almost no S/MIME implementations support it.
+</I>
+&lt;snippage/&gt;
+
+So here, and in the snippage, are you referring to X9.42 itself, or CMS 
+(Cryptographic Message Syntax) ?
+
+
+&gt;<i>  A few years after the expiry of the RSA patent, the matter was corrected by
+</I>&gt;<i> changing the standard so that vendors were no longer required to even pretend
+</I>&gt;<i> to support X9.42.  My comments at the time were:
+</I>
+Exactly which &quot;standard&quot; ?  From grepping all RFCs, it seems you're referring 
+to CMS when you say &quot;the standard&quot;, which has indeed been revised a few times 
+since RFC2630.
+
+thanks,
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

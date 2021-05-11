@@ -1,0 +1,20 @@
+<PRE>On Jul 30, 2008, at 1:56 PM, Ben Laurie wrote:
+&gt;<i> Oh, and I should say that number of ports and standard deviation are  
+</I>&gt;<i> not a GREAT way to test for &quot;randomness&quot;. For example, the sequence  
+</I>&gt;<i> 1000, 2000, ..., 27000 has 27 ports and a standard deviation of over  
+</I>&gt;<i> 7500, which looks pretty GREAT to me. But not very &quot;random&quot;.
+</I>
+
+I boggled a bit at the abuse of simple descriptive statistics, too.  
+For those interested in actual statistical tests of randomness,  
+there's a good literature survey at &lt;<A HREF="http://www.ciphersbyritter.com/RES/RANDTEST.HTM">http://www.ciphersbyritter.com/RES/RANDTEST.HTM</A> 
+ &gt;.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

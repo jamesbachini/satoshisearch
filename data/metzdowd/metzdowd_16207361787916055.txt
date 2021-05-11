@@ -1,0 +1,33 @@
+<PRE>At Sun, 04 May 2008 20:14:42 -0400,
+Perry E. Metzger wrote:
+&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Marcos el Ruptor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>&gt; writes:
+</I>&gt;<i> &gt; All this open-source promotion is a huge waste of time. Us crackers
+</I>&gt;<i> &gt; know exactly how all the executables we care about (especially all
+</I>&gt;<i> &gt; the crypto and security related programs) work.
+</I>&gt;<i> 
+</I>&gt;<i> With respect, no, you don't. If you did, then all the flaws in Windows
+</I>&gt;<i> would have been found at once, instead of trickling out over the
+</I>&gt;<i> course of decades as people slowly figure out new unintended
+</I>&gt;<i> behaviors. Anything sufficiently complicated to be interesting simply
+</I>&gt;<i> cannot be fully understood by inspection, end of story.
+</I>
+Without taking a position on the security of open source vs. closed
+source (which strikes me as an open question), I agree with Perry
+that deciding whether a given piece of software has back doors is
+not really possible for a nontrivial piece of software. Note that
+this is a very different problem from finding a single vulnerability
+or answering specific (small) questions about the code [0].
+
+-Ekr
+
+[0] That said, I don't think that determining whether a nontrivial
+piece of software security vulnerabilities is difficult. The
+answer is &quot;yes&quot;.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,30 @@
+<PRE>On Thu, Jul 10, 2008 at 02:31:12PM -0400, James Cloos wrote:
+&gt;<i> &gt;&gt;&gt;&gt;&gt; &quot;Eugen&quot; == Eugen Leitl &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">eugen at leitl.org</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;<i> Eugen&gt; I'm not sure what the status of <A HREF="http://postel.org/anonsec/">http://postel.org/anonsec/</A>
+</I>&gt;<i> 
+</I>&gt;<i> The IETF just created a new list and subscribed all anonsec subscribers:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="https://www.ietf.org/mailman/listinfo/btns">https://www.ietf.org/mailman/listinfo/btns</A>
+</I>
+Indeed.  But it's as quiet as the old list :/
+
+Seriously, the work of the BTNS WG is, IMO, crucial to the use of IPsec
+as an end-to-end solution (as opposed to as a VPN solution, for which
+IPsec is already pretty darned good).  If you care, then please
+participate, or even better, implement.
+
+That anyone is working on IPETEE indicates that end-to-end IPsec
+solutions are desired.  The in-band nature of the IPETEE key exchange
+indicates, to me, a dislike of IKE, or perhaps unawareness of BTNS WG
+(man, the WG's name doesn't reflect very well what it does), or perhaps
+a misunderstanding of IPsec.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

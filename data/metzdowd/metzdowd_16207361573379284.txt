@@ -1,0 +1,70 @@
+<PRE>
+On Oct 29, 2007, at 12:24 PM, travis+ml- 
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at subspacefield.org</A> wrote:
+
+&gt;<i> * PGP Signed by an unknown key
+</I>&gt;<i>
+</I>&gt;<i> So back in the bad old days when hashing was DES encryption of the
+</I>&gt;<i> zero vector with a fixed key, someone came up with salt as a password
+</I>&gt;<i> strengthening mechanism.
+</I>&gt;<i>
+</I>&gt;<i> I'm not quite sure why it was called salt.
+</I>&gt;<i>
+</I>
+Before the bad old days of using DES, there was the old days of one- 
+way functions. These one-way functions were not hash functions, they  
+were one-way. They were in a sense related to hash functions, but  
+perhaps more directly related to redundancy checks and similar  
+polynomials.
+
+The belief was that storing passwords in plaintext was a bad idea. A  
+related notion was that storing a password encoded through a  
+symmetric function was essentially storing it in plaintext.
+
+The term salt comes from the metaphor of considering the process of  
+one-waying a password to be like making hamburger out of meat, or  
+stew out of ingredients, or some other cooking metaphor. The salt was  
+introduced to address the issue of dictionary attacks and carried the  
+observation that cooking is better if you add a little salt to it.  
+The salt was a sprinkling of an arbitrary constant into the function  
+to spice it up a bit.
+
+The people who worked on these password-grinding systems had a  
+tendency to sneer at those who would use a cipher such as DES for  
+that because DES is reversible. Using a reversible function is  
+essentially storing the password in plaintext. Munging DES was seen  
+by those people as inferior to designing one-way functions that were  
+properly one-way. Eventually, these became a subset of what one would  
+use a hash function for.
+
+The IV in a block cipher serves the same function as salt. It's  
+called an IV, though because of the different path of development.  
+The term &quot;salt&quot; gets used in other places, like with randomized  
+hashing, which is often also called salting a hash, too.
+
+The question you had is how much entropy there should be in salt. The  
+answer is none, but that's a very subtle answer. Salt is -arbitrary-  
+as opposed to -random-. As it turns out, the best way to get a 256- 
+bit arbitrary number is to pull it off your RNG.  Arbitrary numbers  
+like salt, don't have to worry about subtle issues that you'd want  
+key material to worry about. Arbitrary numbers are in general public  
+(or at least not secret), and key material is secret.
+
+With salt, you want the number to be unique-ish, as the whole point  
+is to stymie dictionary attacks. A counter is likely not such a great  
+idea, because of collisions, but there are all sorts of things you  
+could do that would be very very bad with key material but are mostly  
+okay with salt. Nonetheless, the easiest way to get salt with a  
+system that has an RNG is to just pull the number off the RNG. But  
+that doesn't mean it has entropy.
+
+Now as what to call it? I like &quot;salt.&quot;
+
+	Jon
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,114 @@
+<PRE>zooko wrote:
+&gt;<i> Suppose you did have a convenient way to display the SSL certificate for 
+</I>&gt;<i> every site whenever you loaded a page from the site. You probably 
+</I>&gt;<i> wouldn't want to memorize all the certificates for the secure sites that 
+</I>&gt;<i> you care about, so you might instead write some notes on a piece of 
+</I>&gt;<i> paper next to your computer, for example writing down an SSL certificate 
+</I>&gt;<i> and then next to it writing &quot;bank&quot;, and then writing down another one 
+</I>&gt;<i> and then next to it writing &quot;mail&quot;, and so on.
+</I>&gt;<i> 
+</I>&gt;<i> Then, whenever you load a page, you would look at the SSL certificate 
+</I>&gt;<i> that is linked to that page and glance at your notepad to see which 
+</I>&gt;<i> description it maps to. If you are looking at a random web site that 
+</I>&gt;<i> you've never seen before, and the certificate doesn't appear on your 
+</I>&gt;<i> notes, then no big deal. If you are looking at a page that appears to 
+</I>&gt;<i> belong to your bank, and the certificate that came with that page 
+</I>&gt;<i> doesn't appear on your notes, then this is a big red flag! Likewise, if 
+</I>&gt;<i> you are looking at a page that appears to belong to your bank, and the 
+</I>&gt;<i> certificate appears on your notes, but the note next to it doesn't say 
+</I>&gt;<i> &quot;bank&quot;, then this is a red flag, too! For example, it might be the 
+</I>&gt;<i> certificate of your mail service, which appears on your paper along with 
+</I>&gt;<i> the note &quot;mail&quot;. Or it might just be a certificate that appears on your 
+</I>&gt;<i> paper along with the note &quot;joke site from Harry&quot;.
+</I>&gt;<i> 
+</I>&gt;<i> Note that a system which classified certificates into &quot;trusted&quot; or 
+</I>&gt;<i> &quot;untrusted&quot; categories might give you the green flag even when a 
+</I>&gt;<i> certificate that you trust to serve up good jokes is serving up 
+</I>&gt;<i> something that appears to be your bank account.
+</I>&gt;<i> 
+</I>&gt;<i> So, the thing about writing down certificates and mapping them to short 
+</I>&gt;<i> hand-written notes is what the Pet Name Toolbar automates for you:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="https://addons.mozilla.org/en-US/firefox/addon/957">https://addons.mozilla.org/en-US/firefox/addon/957</A>
+</I>
+
+the design point for certificates was first time communication between total
+strangers (aka the letters of credit/introduction from sailing ship days).
+
+certificates have also somewhat tried moving into no-value market segment for relying
+parties that had no (and/or couldn't cost justify) mechanism for recording information
+about other parties they were dealing with. 
+
+by comparison pgp had assumed some mechanism for relying parties being able to 
+record information about the parties that they had dealings with. huge number of
+infrastructures have had well entrenched infrastructures for recording information
+about parties that they dealt with ... it just has been that the authentication
+related information (for these infrastructures) have tended to be shared secrets.
+many of these infrastructures could have been upgraded from shared secrets
+to public key ... w/o having any impact on the business and/or trust models
+... and furthermore by the very nature of the existing infrastructures,
+the paradigm behind digital certificates wasn't applicable (i.e. digital
+certificates being totally redundant and superfluous).
+
+recent thread/posting about it being much more natural for simple upgrade 
+of kerberos infrastructure from shared secrets to public key ... w/o the
+exorbitant additional overhead and processing introduced by digital
+certificates. 
+<A HREF="http://www.garlic.com/~lynn/2007q.html#2">http://www.garlic.com/~lynn/2007q.html#2</A> Windows Live vs Kerberos
+<A HREF="http://www.garlic.com/~lynn/2007q.html#5">http://www.garlic.com/~lynn/2007q.html#5</A> Windows Live vs Kerberos
+
+when we were called in to consult with this small client/server startup
+that wanted to do payment transactions on their server ... since then
+somewhat has come to be called electronic commerce
+<A HREF="http://www.garlic.com/~lynn/subnetwork.html#gateway">http://www.garlic.com/~lynn/subnetwork.html#gateway</A>
+
+one of the technologies they had invented was SSL ... and we had
+to do some work on applying SSL to real business processes and also
+do some end-to-end audits of the whole series of operations ... including
+these things that we calling themselves certification authorities
+
+one of the things that undermined original assumptions applying
+SSL to business processes was the whole &quot;click&quot; paradigm ... discussed
+in more detail in this recent post
+<A HREF="http://www.garlic.com/~lynn/2007q.html#30">http://www.garlic.com/~lynn/2007q.html#30</A> 
+
+and the assumptions about SSL as countermeasure and the related
+threat models.
+
+another aspect of SSL, certification authorities, digital certificates
+was the whole issue behind what is met by certification process ... and
+what certifications were represented by digital certificates. 
+
+during the initial decade or so of electronic commerce something over
+70 percent of the transactions were done by less than 100 websites
+(activity is highly skewed) These websites were both well known and 
+also carried a lot of repeat business ... invalidating one of the 
+original/primary justifications  for having digital certificates. 
+so a very few websites did majority of transactions and didn't 
+need certification. by comparison, the vast majority of websites
+were only doing a very, very few electronic transactions
+(especially those involving large percentage of first interaction
+between complete strangers) ... and couldn't cost justify 
+expensive certification process
+
+the other issue was that (all) merchants were already paying a fairly
+hefty &quot;interchange fee&quot; that acted as a form of warranty/insurance
+to cover their client/consumers (actually proportional to
+the value of the operations). by comparison, the certification
+authorities were providing almost no added value ... so except
+for pure hype ... there was no real reason for spending
+money for additional certification (at least from the standpoint
+of electronic commerce) ... which somewhat gave rise to the thread 
+about &quot;merchant comfort certificates&quot; in some of the older ssl 
+domain name certificate postings
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#sslcert">http://www.garlic.com/~lynn/subpubkey.html#sslcert</A>  
+
+a combination of these factors continued to push
+PKIs, certification authorities, and digital certificates
+more and more into the no-value market segment.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

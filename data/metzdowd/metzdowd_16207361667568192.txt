@@ -1,0 +1,27 @@
+<PRE>
+On Wed, 23 Jan 2008, Leichter, Jerry wrote:
+
+&gt;<i> well be prior art, but the idea of erasing information by deliberately
+</I>&gt;<i> discarding a key is certainly not completely obvious except in
+</I>&gt;<i> retrospect.  If you look at any traditional crypto text, you won't
+</I>
+Hmm - it is commonly mentioned that (early) hardware based trusted
+computer environments store a small key (or part thereof, the other part
+beeing some PIN, etc) in their tamperproof environment (wired as to be
+ereased when any tampering, xraying, temp shock, etc is detected) which is
+during normal operations used to decrypt some flash or disk based larger
+bit of key material inside the secure environment.
+
+The other senario is that of using a multitude of public keys (with some
+organisational semantic) which are used to encrypt a backup; destruction
+of a specific private key then selectively takes out a certain set of
+file(s) from the backup tape without having to drag that tape out of the
+vault and having to erase a small piece of it.
+
+Dw
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,28 @@
+<PRE>On Wed, May 07, 2008 at 10:27:48AM +1000, James A. Donald wrote:
+
+&gt;<i> Dynamic strings tempt people to forget about enforcing
+</I>&gt;<i> length limits and forget about correctly handling the
+</I>&gt;<i> case when the length limits are exceeded.
+</I>
+This too is dealt with. Message sizes are bounded, recipient counts
+are bounded, duplicate elimination cache sizes are bounded, command
+lengths are bounded, logical header lengths are bounded, body content
+is processed 2K bytes at a time...
+
+The requirement is stronger than just not running a single process out of
+memory, the entire multi-process Postfix is designed to run in (realistic)
+bounded memory (no &quot;fork: out of memory&quot;).
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

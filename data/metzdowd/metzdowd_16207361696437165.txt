@@ -1,0 +1,41 @@
+<PRE>|<i> So, this issue has been addressed in the broadcast signature context
+</I>|<i> where you do a two-stage hash-and-sign reduction (cf. [PG01]), but
+</I>|<i> when this only really works because hashes are a lot more efficient
+</I>|<i> than signatures. I don't see why it helps with MACs.
+</I>Thanks for the reference.
+
+|<i> &gt; Obviously, if you *really* use every k'th packet to define what is in
+</I>|<i> &gt; fact a substream, an attacker can arrange to knock out the substream he
+</I>|<i> &gt; has chosen to attack.  So you use your encryptor to permute the
+</I>|<i> &gt; substreams, so there's no way to tell from the outside which packet is
+</I>|<i> &gt; part of which substream.  Also, you want to make sure that a packet
+</I>|<i> &gt; containing checksums is externally indistinguishable from one containing
+</I>|<i> &gt; data.  Finally, the checksum packet inherently has higher - and much
+</I>|<i> &gt; longer-lived - semantic value, so you want to be able to request that
+</I>|<i> &gt; *it* be resent.  Presumably protocols that are willing to survive data
+</I>|<i> &gt; loss still have some mechanism for control information and such that
+</I>|<i> &gt; *must* be delivered, even if delayed.
+</I>|<i> 
+</I>|<i> This basically doesn't work for VoIP, where latency is a real issue.
+</I>It lets the receiver to make a choice:  Deliver the data immediately,
+avoiding the latency at the cost of possibly releasing bogus data (which
+we'll find out about, and report, later); or hold off on releasing the
+data until you know it's good, at the cost of introducing audible
+artifacts.  In non-latency-sensitive designs, the prudent approach is to
+never allow data out of the cryptographic envelope until you've
+authenticated it.  Here, you should probably be willing to do that, on
+the assumption that the &quot;application layer&quot; - a human being - will know
+how to react if you tell him &quot;authentication has failed, please
+disregard what you heard in the last 10 seconds&quot;.  (If you record the
+data, the human being doesn't have to rely on memory - you can tell him
+exactly where things went south.)  There are certainly situation where
+this isn't good enough - e.g., if you're telling a fighter pilot to fire
+a missile, a fake command may be impossible to countermand in time to
+avoid damage - but that's pretty rare.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

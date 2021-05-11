@@ -1,0 +1,21 @@
+<PRE>On Aug 9, 2008, at 8:46 PM, Jim Youll wrote:
+
+&gt;<i> these have been circulating for hours, but they are content-free  
+</I>&gt;<i> title slides...
+</I>&gt;<i>
+</I>&gt;<i> [Moderator's note: I've read them and they're far from content
+</I>&gt;<i> free. They give you a recipe for doing things like rewriting the mag
+</I>&gt;<i> stripes on stored value cards to give you arbitrary balances, and
+</I>&gt;<i> they even include actual examples.
+</I>
+Apologies to all. it's a UI issue with the PDF reader I was using and  
+the layout of the PDF file.
+Pages other than the title slides - are obscured and it's not clear  
+they're even present
+(the pages are readily visible in Acrobat Reader)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

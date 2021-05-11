@@ -1,0 +1,30 @@
+<PRE>Professor Christopher Andrew to present Schorreck Memorial Lecture, April 7,
+2008 at 2:00 PM, Laurel, MD
+
+The Center for Cryptologic History at the National Security Agency is
+pleased to announce a lecture by Professor Christopher Andrew of Cambridge
+University, author of numerous books on intelligence history.  Professor
+Andrew will present the Second Henry F. Schorreck Memorial Lecture on April
+7 at 2 PM.
+
+This annual series, named for the long-time NSA Historian, began in 2007
+when Dr. David Kahn, author of The Codebreakers, presented a talk on &quot;The
+Future of the Past.&quot;  Professor Andrew will speak on &quot;British Intelligence,
+the American Alliance, and the End of the British Empire.&quot;
+
+The lecture will be presented at the Kossiakoff Conference Center on the
+campus of the Johns Hopkins Applied Physics Laboratory (located just off
+U.S. Route 29 at Johns Hopkins Road -- information about the facility and
+directions can be found at: 
+<A HREF="https://mail.corp.nsa.gov/exchweb/bin/redir.asp?URL=http://www.jhuapl.edu/">https://mail.corp.nsa.gov/exchweb/bin/redir.asp?URL=http://www.jhuapl.edu/</A>
+
+Admission is free, but advance registration is required.  Those wishing to
+attend should send an e-mail to the Center for Cryptologic History at
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">history at nsa.gov.</A>  Please call the Center at 301-688-2336 if you have any
+questions or need additional information.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

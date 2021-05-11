@@ -1,0 +1,25 @@
+<PRE>Ed Gerck wrote, On 23/1/08 7:38 AM:
+&gt;<i> The often expressed idea that SSL/TLS and port 587 are somehow able to prevent
+</I>&gt;<i> warrantless wiretapping and so on, or protect any private communications, is IMO simply
+</I>&gt;<i> not supported by facts.
+</I>
+I would like to see some facts to support the assertion that the &quot;idea that SSL/TLS and 
+port 587 are somehow able to prevent warrantless wiretapping&quot; is &quot;often expressed&quot;.
+
+A Google search for
+  ssl &quot;port 587&quot; warrantless wiretapping
+got exactly one hit, which was your posting to the mailing list where it had been archived 
+on security-basic.blogspot.com and snarfed up by Google within the hour.
+
+(As an aside, see &quot;Google Taking Blog Comments Searching Real-Time?&quot; 
+<A HREF="http://www.groklaw.net/article.php?story=20080122132516514">http://www.groklaw.net/article.php?story=20080122132516514</A> for a discussion of this 
+remarkable update to their search engine).
+
+  Sidney Markowitz
+  <A HREF="http://www.sidney.com/">http://www.sidney.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

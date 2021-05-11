@@ -1,0 +1,81 @@
+<PRE>----- Original Message ----- 
+From: &quot;Tero Kivinen&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">kivinen at iki.fi</A>&gt;
+Sent: Monday, October 15, 2007 5:47 AM
+Subject: Re: Password hashing
+
+
+&gt;<i> Joseph Ashwood writes:
+</I>&gt;&gt;<i> On NetBSD HMAC-SHA1:
+</I>&gt;&gt;<i> There is a shortcut in the design as listed, using the non-changing 
+</I>&gt;&gt;<i> password
+</I>&gt;&gt;<i> as the key allows for the optimization that a single HMAC can be keyed, 
+</I>&gt;&gt;<i> then
+</I>&gt;&gt;<i> copied and reused with each seed. this shortcut actually speeds attack by 
+</I>&gt;&gt;<i> a
+</I>&gt;&gt;<i> factor of 3. The fix is to use the salt as the HMAC key, this assumes 
+</I>&gt;&gt;<i> much
+</I>&gt;&gt;<i> less of the hash function.
+</I>&gt;<i>
+</I>&gt;<i> When you are trying to crack password, you do know the SALT and
+</I>&gt;<i> iteration count. You do not know the password. You need to try all
+</I>&gt;<i> possible passwords with different salts. As we use the password we are
+</I>&gt;<i> trying as an input to our test function we need to initialize
+</I>&gt;<i> hmac_sha1 again for each pasword we are guessing. Or did I understand
+</I>&gt;<i> something wrong.
+</I>&gt;<i>
+</I>&gt;<i> With your fix I could take the SALT from the passwd string and
+</I>&gt;<i> initialize first level of hmac with it and then feed different
+</I>&gt;<i> password to it.
+</I>
+It is true that the first two iterations of the compression function in my 
+supplied solution are computationally irrelevant, while in the current 
+design the first two are computationally relevant, but the second time 
+through the HMAC the situation reverses, the password keyed HMAC has exactly 
+the same pre-salt state as the in the first HMAC iteration, and so in the 
+second and subsequent HMAC iteration the first two applications of the 
+compression function are computationally irrelevant, but in my solution 
+there is no prior knowledge of the key for the second and subsequent HMAC 
+iteration and so the first two applications of the compression function are 
+computationally relevant. So my given solution trades the computation in the 
+first two compression function computations for the millions of subsequent 
+compression function computations. Asymptotically this is a 3 fold 
+improvement, and so it is a very good change.
+
+It is also worth noting that most passwords, even so called &quot;good&quot; 
+passwords, have only a small amoutn of entropy, and a 50,000 word list will 
+contain a significant number of all passwords on a system, there are more 
+salts, and so storing the precomputations of the passwords versus the 
+precomputations of even a 32-bit salt is radically different.
+
+&gt;<i>
+</I>&gt;&gt;<i> On USERID || SALT || PASSWORD:
+</I>&gt;<i>
+</I>&gt;<i> Adding USERID to the calculations will firstly break API
+</I>&gt;<i> compatibility, as the crypt function do not know the userid.
+</I>
+There is a choice, do it right, or keep the API. I am firmly on the side of 
+doing it right. While the USERID is irrelevant if the SALT can be made to 
+never repeat, that is a very hard thing to truly accomplish, especially 
+across multiple disconnected systems.
+
+&gt;<i> It will
+</I>&gt;<i> also break the ability to copy the encrypted passwords from one
+</I>&gt;<i> machine to other,
+</I>
+So it prevents people from doing something that is poor security.
+
+&gt;<i> even when you would need to change user id in the
+</I>&gt;<i> progress (If I need to set up account for someone on my machines, I
+</I>&gt;<i> usually either ask them to send me already encrypted password I can
+</I>&gt;<i> put in to my /etc/password, or ask them to send me ssh public key...
+</I>
+While the design is being changed (as you noted making this change would 
+necessitate other changes) it is worthwhile to eliminate other security poor 
+decisions as well.
+                Joe 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

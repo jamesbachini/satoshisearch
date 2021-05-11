@@ -1,0 +1,57 @@
+<PRE>|<i> &gt; It is, of course, the height of irony that the bug was introduced in
+</I>|<i> &gt; the very process, and for the very purpose, of attaining FIPS
+</I>|<i> &gt; compliance!
+</I>|<i> 
+</I>|<i> But also to be expected, because the feature in question is
+</I>|<i> &quot;unnatural&quot;: the software needs a testable PRNG to pass the compliance
+</I>|<i> tests, and this means adding code to the PRNG to make it more
+</I>|<i> predictable under test conditions.
+</I>Agreed.  In fact, this fits with an observation I've made in many
+contexts in the past:  Any time you introduce a new mode of operation,
+you are potentially introducing a new failure mode corresponding to
+it as well.  Thus, bulkhead doors on sidewalks are unlikely to open
+under you because the only mode of operation they try to support has
+the doors opening upward.  I would be very leary of stepping on such
+a door if it could *ever* be opened downward.
+
+|<i> As the tests only test the predictable PRNG, it is easy to not notice
+</I>|<i> failure to properly re-seed the non-test PRNG. One can't easily test
+</I>|<i> failure to operate correctly under non-test conditions. And the
+</I>|<i> additional complexity of the test harness makes such failure more
+</I>|<i> likely.
+</I>|<i> 
+</I>|<i> The interaction of the test harness with the software under study
+</I>|<i> needs close scrutiny (thorough and likely multiple independent code
+</I>|<i> reviews).
+</I>There's a famous story - perhaps apocryphal - from the time IBM
+introduced some of the first disk packs.  They did great for a while,
+but then started experiencing head crashes at a rate much higher than
+had ever been seen in the development labs.  The labs, of course,
+suspected production problems - but packs they brought in worked just
+as well as the ones they'd worked with earlier.
+
+Finally, someone sitting there, staring at one of the test packs and
+at a crashed disk from a customer had a moment of insight.  There was
+one difference between the two packs:  The labs pulled samples
+directly off the production line.  Customers got packs that had gone
+through QA.  The last thing QA did was put a &quot;Passed&quot; sticker on the
+top disk of the pack.
+
+So ... take a pack with a sticker and spin it up.  This puts G forces
+on the sticker.  The glue under the sticker slowly begins to migrate.
+Eventually, some of it goes flying off into the enclosure.  If it
+gets under a head ... crash.
+
+|<i> Similar bugs are just as likely in closed-source software and are less
+</I>|<i> likely to be discovered.
+</I>Actually, now that this failure mode has been demonstrated, it would
+be a good idea to test for it.  It's harder to do with just binaries,
+but possible - look at the recent analyses of the randomization in
+Vista ASLR.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

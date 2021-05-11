@@ -1,0 +1,29 @@
+<PRE>* Jack Lloyd:
+
+&gt;<i> Perhaps there is something subtle here that is more dangerous than the
+</I>&gt;<i> well known problems, and all these source port randomization and
+</I>&gt;<i> transaction id randomization fixes are just a smokescreen of sorts for
+</I>&gt;<i> a fix for something Dan found.
+</I>
+It's not a smokescreen, it's a statistical workaround.
+
+CERT/CC mentions this:
+
+|<i> It is important to note that without changes to the DNS protocol, such
+</I>|<i> as those that the DNS Security Extensions (DNSSEC) introduce, these
+</I>|<i> mitigations cannot completely prevent cache poisoning.
+</I>
+&lt;<A HREF="http://www.kb.cert.org/vuls/id/800113">http://www.kb.cert.org/vuls/id/800113</A>&gt;
+
+&gt;<i> A statement from the MaraDNS author [3]:
+</I>&gt;<i>
+</I>&gt;<i> &quot;&quot;&quot;
+</I>&gt;<i> MaraDNS is immune to the new cache poisoning attack.
+</I>
+I think the CERT/CC statement is more approriate.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

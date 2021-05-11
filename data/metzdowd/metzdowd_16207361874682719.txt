@@ -1,0 +1,47 @@
+<PRE>I like Greg Rose's solution best:
+
+&gt;<i> There is a fairly standard technique for handling things like this.
+</I>&gt;<i>
+</I>&gt;<i> 1. encode your number N into a 133-bit string S
+</I>&gt;<i> 2. encrypt S with your favourite 133-bit block cipher (see below)
+</I>&gt;<i> 3. decode S to a number N'
+</I>&gt;<i> 4. if N' &gt;= 10^40, goto 2 (that is, re-encrypt until it is in range)
+</I>&gt;<i> 5. N' is your answer.
+</I>
+This is Rich Schroeppel's trick from his Hasty Pudding cipher, a somewhat
+under-rated AES submission IMO. HPC originated not only this trick,
+but also the idea of tweakable encryption, which has turned out to be
+important for disk encryption. The Black-Rogaway paper referenced earlier
+has a proof of security of this construction.
+
+&gt;<i> So, you don't have a 133-bit block cipher lying around? No worries, I'll 
+</I>&gt;<i> sell you one ;-). Actually that is easy too. Take a trustworthy 128-bit 
+</I>&gt;<i> block cipher like AES. To encrypt, do:
+</I>&gt;<i>
+</I>&gt;<i> 1. Encrypt the first 128 bits (ECB mode)
+</I>&gt;<i> 2. Encrypt the last 128 bits (also ECB mode).
+</I>
+I didn't understand this at first, but I finally saw that the point is to
+do the encryptions in-place; step 1 replaces the first 128 bits of the
+data with the encryption, and similarly for step 2. This is equivalent
+to doing CBC mode with a fixed IV of 0, and ciphertext stealing for the
+final partial block of 5 bits.
+
+&gt;<i> To decrypt, do decryptions in the reverse order, obviously. It's easy to 
+</I>&gt;<i> see that this is a secure permutation if AES itself is, depending on 
+</I>&gt;<i> your definition of secure; if you add a third step, to re-encrypt the 
+</I>&gt;<i> first 128 bits, it is truly secure. (Without the third step, tweaking a 
+</I>&gt;<i> bit in the first 5 bits will often leave the last 5 unchanged on 
+</I>&gt;<i> decryption, which is clearly a distinguishing attack; the third 
+</I>&gt;<i> encryption makes it an all-or-nothing transform.)
+</I>
+I am not familiar with the security proof here, do you have a reference?
+Or is it an exercise for the student?
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

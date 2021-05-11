@@ -1,0 +1,44 @@
+<PRE>On Fri, 19 Sep 2008, Barney Wolff wrote:
+
+|<i> Date: Fri, 19 Sep 2008 01:54:42 -0400
+</I>|<i> From: Barney Wolff &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">barney at databus.com</A>&gt;
+</I>|<i> To: EMC IMAP &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt;
+</I>|<i> Cc: Cryptography &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+</I>|<i> Subject: Re: Cookie Monster
+</I>|<i> 
+</I>|<i> On Wed, Sep 17, 2008 at 06:39:54PM -0400, EMC IMAP wrote:
+</I>|<i> &gt; Yet another web attack:
+</I>|<i> &gt; 
+</I>|<i> &gt; As I understand the attack, it's this:  Cookies can be marked Secure.   
+</I>|<i> &gt; A Secure cookie can only be returned over an HTTPS session.  An cookie  
+</I>|<i> &gt; not marked Secure can be returned over any session.  So:  If a site  
+</I>|<i> &gt; puts security-sensitive data into a non-Secure cookie, an attacker who  
+</I>|<i> &gt; can spoof DNS or otherwise grab sessions can send a HTTP page  
+</I>|<i> &gt; allegedly from the site that set the cookie asking that it be returned  
+</I>|<i> &gt; - and it will be.
+</I>|<i> 
+</I>|<i> Why on earth would anyone put security-sensitive data in a cookie,
+</I>|<i> unencrypted?  It's the server talking to itself or its siblings, after
+</I>|<i> all, and it's vulnerable to attack on the client's machine.
+</I>a)  It depends on who you think it has to be secure against.  Typical
+reasoning:  If it's effectively the *client's* information, why/from
+whom do I need to protect it while it's on the *client's* machine?
+After all, it can only be seen by the client and me.
+
+b)  The way this attack is actually likely to be used is to steal a
+&quot;logged-in session&quot;.  If I have the cookie, and can MITM the stream
+to the server, I can act &quot;within the logged-in session.&quot;  I don't
+need to be able to decrypt the cookied - the real client has no
+need to (but in fact there isn't much point in encrypting, while at
+rest, the nonce that identifies the &quot;logged-in session.&quot;)
+
+I put &quot;logged-in session&quot; in quotes in agreement with James Donald's
+message on this subject.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

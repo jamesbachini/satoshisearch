@@ -1,0 +1,30 @@
+<PRE>
+Greg Rose &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ggr at qualcomm.com</A>&gt; writes:
+&gt;<i> His example was an insanely complicated theoretical LFSR-based stream
+</I>&gt;<i> cipher; recovers keys with 2^28 (from memory, I might be a little
+</I>&gt;<i> out), with 2^40 precomputation, from only about a million output
+</I>&gt;<i> bits. They are working on applying the technique to real
+</I>&gt;<i> ciphers... Trivium, which is a well-respected E*Stream cipher, is in
+</I>&gt;<i> their sights.
+</I>&gt;<i>
+</I>&gt;<i> My team's last LFSR-based cipher, SOBER-128, is I think well respected
+</I>&gt;<i> and fairly conservative. I can say that we are extremely lucky in the
+</I>&gt;<i> way we load the key and IV, that the degree of the polynomials piles
+</I>&gt;<i> up and is quite high; once the cipher is actually running, there are
+</I>&gt;<i> output bits which would have been attackable (degree 16 is certainly
+</I>&gt;<i> tractable), except for lucky use of addition as well as s-boxes... the
+</I>&gt;<i> addition carries represent high degree terms.
+</I>
+There are a bunch of deployed mobile phone ciphers that are in the
+stream cipher class -- any thoughts on whether any of them look
+vulnerable?
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,41 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> This evening, a friend of mine who shall remain nameless who works for
+</I>&gt;<i> a large company that regularly processes customer credit card payments
+</I>&gt;<i> informed me of an interesting fact.
+</I>&gt;<i>
+</I>&gt;<i> His firm routinely discovers attempted credit card fraud. However,
+</I>&gt;<i> since there is no way for them to report attempted fraud to the credit
+</I>&gt;<i> card network (the protocol literally does not allow for it), all they
+</I>&gt;<i> can do is refuse the transaction -- they literally have no mechanism
+</I>&gt;<i> to let the issuing bank know that the card number was likely stolen.
+</I>&gt;<i>
+</I>&gt;<i> This seems profoundly bad. I hope that someone on the list has the
+</I>&gt;<i> right contacts to get the right people to do something about this.
+</I>&gt;<i>
+</I>&gt;<i>    
+</I>
+some chance they are doing this to save money on transactions that aren't
+likely to be approved ... i.e. rather than be charged for a transaction that
+they send thru to the issuer that they are sure to be rejected ... they
+reject it upfront.
+
+now the associations have standard procedure to perform &quot;stand-in&quot; when
+the network accepts a transaction from an acquirer but isn't able to forward
+it to the issuer. stand-in allows the network to decide whether to approve
+or reject the transaction using simplified rules. later, when contact is
+re-established with the issuer ... the issuer has to be informed of all
+the stand-in activity.
+
+a possible simplified mechanism is to be able to generate a simulated 
+stand-in
+report of rejected transactions. the issue then in such a simulated stand-in
+role ... for all the reasons that they chose to reject a transaction ... 
+do they map
+into the standard iso 8583 codes for reasons that the issuer would reject
+the transaction.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

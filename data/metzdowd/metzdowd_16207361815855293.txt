@@ -1,0 +1,49 @@
+<PRE>On Jun 12, 2008, at 4:35 PM, David G. Koontz wrote:
+
+&gt;<i> There's the aspect of competition.
+</I>
+&gt;<i> I've also wondered if a reason they didn't release it is because  
+</I>&gt;<i> they bought
+</I>&gt;<i> the 'IP' from someone.
+</I>
+Those are good guesses, David, and I guessed similar things myself  
+and inquired of various Sun folks if this was the &quot;real&quot; reason.   
+Nobody could give me any definite answer, however, until Sridhar  
+Vajapey wrote:
+
+  &quot;US export control regulations prevent Sun from opensourcing the  
+crypto portion of N2.&quot;.
+
+This is consistent with other public statements such as the comment  
+that originally set me wondering about this in this press piece:
+
+&quot;When the UltraSPARC T2 specifications are released Tuesday, Mehta  
+said the company plans on releasing most of the source code,  
+including the designs for the logic gate circuitry and the test  
+suites. The one part of the source code that Sun can not release are  
+the algorithms approved by the National Security Agency as part of  
+the chip's cryptographic accelerations units.&quot;
+
+<A HREF="http://www.eweek.com/c/a/Linux-and-Open-Source/Sun-Brings-Niagara-2-">http://www.eweek.com/c/a/Linux-and-Open-Source/Sun-Brings-Niagara-2-</A> 
+Chip-to-Open-Source/
+
+Also, I've been watching Sun carefully for a couple of years now, and  
+the top leadership is really fanatical about open source.  It would  
+be inconsistent with their current pattern of behavior to withhold a  
+component from GPL release for reason of competitive advantage.
+
+My best guess remains that NSA or some such shadowy agency bamboozled  
+them into thinking that it would be illegal to release it, or  
+threatened them with unfortunate coincidences if they went ahead, or  
+persuaded them that GPL'ing it would aid terrorists and cause the  
+needless deaths of innocents.
+
+Regards,
+
+Zooko
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

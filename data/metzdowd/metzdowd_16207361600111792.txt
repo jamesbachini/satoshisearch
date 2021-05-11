@@ -1,0 +1,36 @@
+<PRE>
+
+StealthMonger wrote:
+[snip]
+
+&gt;<i> The larger truth is that a consequence of using Hushmail is that
+</I>&gt;<i> record of when, with whom, and the size of each communication is
+</I>&gt;<i> available to Hush, even though the content is concealed.
+</I>
+So the obvious point is that Hushmail, and systems like it, 
+become &quot;concentrators&quot; and possible single points of failure.
+
+If, on the other hand, you handled your own PKI to send 
+symmetrical keys to your correspondents and managed the keys with 
+something like StrongKey, then one could use a vast number of 
+ISPs/SMTP points so that they may never get a clear path of send 
+and reply through a single ISP.
+
+As Jon Callas said, &quot;If the system is strong, it all comes down 
+to your operational security.&quot;
+
+Security is not a thing, it is a process that uses tools and 
+procedures to accomplish the goal. As I like to say, &quot;Security is 
+lot like democracy - everyone's for it but few understand that 
+you have to work at it constantly.&quot;
+
+Best,
+
+Allen
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

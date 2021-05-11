@@ -1,0 +1,29 @@
+<PRE> 
+&gt;&gt;&gt;<i> but also a proof that the source code one has is the source of the
+</I>implementation.
+
+This is an unsolved problem for code in tamper-resistant devices.  There are
+precious few procedures to, for example, determine that the CAC card that
+was issued to Pfc. Sally Green this morning bears any relationship
+whatsoever to the code that went through FIPS certification. (A hash of the
+code is meaningless since the card will simply burp up the right answer.)  I
+have seen one such procedure but I have never seen any such procedure
+implemented in real cards.
+
+And to Marcos' point, not only do certification labs not look for backdoors
+but I once had an employee of such a lab tell me that even if they found one
+the are not obliged to enter this in their report unless, of course, they
+had been explicitly requested to test for the absence of backdoors.  In that
+regard, I have never seen a security profile that contained a claim of no
+backdoors.  And I guess you know who is paying big bucks for the
+certification report. 
+
+Smart cards from F.  TPMs from C.  A 'sleep at the wheel.
+
+Cheers, Scott
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

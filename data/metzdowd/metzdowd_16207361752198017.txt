@@ -1,0 +1,35 @@
+<PRE>On Wed, Apr 23, 2008 at 08:20:27AM -0400, Perry E. Metzger wrote:
+
+&gt;<i> There are a variety of issues. Smart cards have limited capacity. Many
+</I>&gt;<i> key agreement protocols yield only limited amounts of key
+</I>&gt;<i> material. I'll leave it to others to describe why a rational engineer
+</I>&gt;<i> might use fewer key bits, but suffice it to say, there are quite
+</I>&gt;<i> rational reasons. I'll agree that if you have no tradeoffs, you might
+</I>&gt;<i> as well use longer keys, but if you really have no tradeoffs, you
+</I>&gt;<i> would prefer to use a one time pad, too. All real engineering is about
+</I>&gt;<i> tradeoffs.
+</I>
+I think one point worth making is that we probably don't really know
+how to make a cipher that is secure to, say, 2^512 operations (or
+2^1024 or 2^4096 or whatever). For instance if you took Serpent or AES
+or Twofish and modified it to support 512-bit keys, I don't believe
+the resulting cipher would actually be secure to 2^512
+operations... to guess completely at random, I'd say they would be
+more like 2^300 or so. (Have any block ciphers with 256-bit
+block/512-bit key been proposed/studied? I have not been following FSE
+and similar conferences of late)
+
+Making a cipher that uses an N bit key but is only secure to 2^M
+operations with M&lt;N is, firstly, considered broken in many circles, as
+well as being inefficient (why generate/transmit/store 512 bit keys
+when it only provides the security of a ~300 bit (or whatever) key
+used with a perfect algorithm aka ideal cipher - why not use the
+better cipher and save the bits).
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

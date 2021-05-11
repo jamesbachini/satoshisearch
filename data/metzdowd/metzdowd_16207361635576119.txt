@@ -1,0 +1,20 @@
+<PRE>Ivan Krsti? wrote, On 31/12/07 12:48 PM:
+&gt;<i> We've recently had to jump through the BIS crypto export hoops at  
+</I>&gt;<i> OLPC
+</I>
+I find that very strange considering this from a BIS FAQ
+<A HREF="http://www.bis.doc.gov/encryption/encfaqs6_17_02.html">http://www.bis.doc.gov/encryption/encfaqs6_17_02.html</A>
+
+&quot;all encryption source code that would be considered publicly available under Section
+734.3(b)(3) of the EAR (such as source code posted to the Internet) and the corresponding
+object code may be exported and reexported under License Exception TSU -- Technology and
+Software Unrestricted (specifically, Section 740.13(e) of the EAR), once notification (or
+a copy of the source code) is provided to BIS and the ENC Encryption Request Coordinator.&quot;
+
+What hoops did you have to jump through?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

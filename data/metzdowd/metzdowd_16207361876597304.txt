@@ -1,0 +1,13 @@
+<PRE>
+Hat tip: John Young's &quot;Cryptome&quot;...
+
+<A HREF="http://www.nsa.gov/public/tech_journals.cfm">http://www.nsa.gov/public/tech_journals.cfm</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

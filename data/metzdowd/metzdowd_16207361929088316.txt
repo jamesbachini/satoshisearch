@@ -1,0 +1,41 @@
+<PRE>
+On Sep 29, 2008, at 5:13 AM, IanG wrote:
+
+&gt;<i> If I have N pools of entropy (all same size X) and I pool them
+</I>&gt;<i> together with XOR, is that as good as it gets?
+</I>&gt;<i>
+</I>&gt;<i> My assumptions are:
+</I>&gt;<i>
+</I>&gt;<i> * I trust no single source of Random Numbers.
+</I>&gt;<i> * I trust at least one source of all the sources.
+</I>&gt;<i> * no particular difficulty with lossy combination.
+</I>
+It's within epsilon for a good many epsilon.
+
+I'm presuming you want the resultant size to be X, as well. Otherwise,  
+the suggestion that Ben has, concatenation is obviously better, and  
+you can solve obvious problems.
+
+Another solution is to hash the N pools together with a suitably  
+secure function. (Most the available algorithms are suitably secure  
+for this purpose.) The downside of this is that you are capping your  
+entropy at the size of the hash function. It's better than XOR because  
+it's not linear, blah, blah, blah.
+
+However, if you had three pools, each relatively large, it doesn't  
+hurt anything to XOR them together. It's pretty easy to prove that the  
+result does not decrease entropy, but I think it's impossible to prove  
+that it increases it. XORing is really taking the max of the N pools.
+
+You have to realize that XOR is bad if there's a chance to leak the  
+entropy pool, XOR is a bad function. If whoever produced pool X sees  
+X^Y, then they know Y. But you know that, too.
+
+	Jon
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

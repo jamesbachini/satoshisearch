@@ -1,0 +1,55 @@
+<PRE>
+Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at morganstanley.com</A>&gt; writes:
+&gt;<i> On Fri, Apr 18, 2008 at 08:02:28PM -0700, Allen wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Granted A5/1 is known to be very weak, but how much weaker than 
+</I>&gt;&gt;<i> AES-128? Ten orders of magnitude? I haven't a clue ...
+</I>&gt;<i>
+</I>&gt;<i> This is usually the point where I stop reading. Of course 10 orders of
+</I>&gt;<i> magnitude is ~33 bits, so unless the A5 attacks crack a cipher with ~95
+</I>&gt;<i> bits security, the estimate is grossly wrong.
+</I>&gt;<i>
+</I>&gt;<i> If (generously) A5 is 64 bits of work, AES is ~20 orders of magnitude
+</I>&gt;<i> stronger.
+</I>
+Oh, what the heck. Here's my expanded version of Victor's remark.
+
+The effective key length of A5/1 is actually 54 bits because 10 of the
+64 key bits are fixed at 0. However, the attacks that have been done
+recently are not, in fact, mere brute force but are far more
+sophisticated than that. Thus, the time difference between
+(intelligently) attacking A5/1 and brute forcing AES with 128 bit keys
+is far worse than 20 orders of magnitude.
+
+How bad is brute force here for AES? Say you have a chip that can do
+ten billion test keys a second -- far beyond what we can do now. Say
+you have a machine with 10,000 of them in it. That's 10^17 years worth
+of machine time, or about 7 million times the lifetime of the universe
+so far (about 13x10^9 years).
+
+Don't believe me? Just get out calc or bc and try
+  ((2^128/10^14)/(60*60*24*365))
+
+I don't think anyone will be brute force cracking AES with 128 bit
+keys any time soon, and I doubt they will ever be brute forcing AES
+with 256 bit keys unless very new and unanticipated technologies
+arise.
+
+Now, it is entirely possible that someone will come up with a much
+smarter attack against AES than brute force. I'm just speaking of how
+bad brute force is. The fact that brute force is so bad is why people
+go for better attacks, and even the A5/1 attackers do not use brute
+force.
+
+I'd suggest that Allen should be a bit more careful when doing back of
+the envelope calculations...
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

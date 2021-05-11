@@ -1,0 +1,50 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">piers.bowness at rsa.com</A> wrote:
+&gt;<i> John Ioannidis wrote:
+</I>&gt;<i> | Does anyone know how this &quot;security questions&quot; disease started, and
+</I>&gt;<i> why 
+</I>&gt;<i> | it is spreading the way it is?  If your company does this, can you
+</I>&gt;<i> find 
+</I>&gt;<i> | the people responsible and ask them what they were thinking?
+</I>&gt;<i> 
+</I>&gt;<i> The answer is &quot;Help Desk Call Avoidance&quot;; allow the end-user to fix
+</I>&gt;<i> their own account without having to get someone on the phone. This is
+</I>&gt;<i> simply an available mechanism in the spectrum between easy-to-use and
+</I>&gt;<i> rock-solid security.
+</I>
+As the discussion so far indicates, and as published papers show, the
+security of these &quot;security questions&quot; is lower than the security of
+the password.
+&gt;<i> 
+</I>&gt;<i> | My theory is that no actual security people have ever been involved,
+</I>&gt;<i> and 
+</I>&gt;<i> | that it's just another one of those stupid design practices that are 
+</I>&gt;<i> | perpetuated because &quot;nobody has ever complained&quot; or &quot;that's what 
+</I>&gt;<i> | everybody is doing&quot;.
+</I>&gt;<i> 
+</I>&gt;<i> Your theory is incorrect. There is considerable analysis on what
+</I>
+Can you reference it please?  There has been some analysis on the 
+entropy of passphrases as a password replacement, but it is not relevant.
+
+&gt;<i> constitute good security questions based on the anticipated entropy of
+</I>&gt;<i> the responses. This is why, for example, no good security question has a
+</I>&gt;<i> yes/no answer (i.e., 1-bit). Aren't security questions just an
+</I>&gt;<i> automation of what happens once you get a customer service
+</I>&gt;<i> representative on the phone? In some regards they may be more secure as
+</I>&gt;<i> they're less subject to social manipulation (i.e., if I mention a few
+</I>&gt;<i> possible answers to a customer support person, I can probably get them
+</I>&gt;<i> to confirm an answer for me).
+</I>
+The difference is that when you are interfacing with a human, you have 
+to go through a low-speed interface, namely, voice. In that respect,
+a security question, coupled with a challenge about recent transactions,
+makes for adequate security.  The on-line version of the security 
+question is vulnerable to automated dictionary attacks.
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

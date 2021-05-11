@@ -1,0 +1,103 @@
+<PRE>|<i> &gt; AFAIK, the only advantage of ECC is that the keys are
+</I>|<i> &gt; shorter. The disadvantage is that it isn't as well
+</I>|<i> &gt; studied.
+</I>|<i> 
+</I>|<i> On past performance, elliptic curves are safer than
+</I>|<i> integers.  From time to time, integer based asymmetric
+</I>|<i> encryption is abruptly and surprisingly weakened by
+</I>|<i> advances in discrete log algorithms.  This is just not
+</I>|<i> happening with elliptic curves.
+</I>&quot;Past performance does not predict future results.&quot;
+
+I don't think this is a particularly strong argument.  A
+reasonable counter-argument is that we've been doing
+number theory over the integers for hundreds of years,
+while intensive work on computations over elliptic curves
+goes back, what, 20 years at most?
+
+Ultimately, we have no scientific basis for judging the
+relative vulnerability of factoring, RSA, discrete
+logarithms over integers, discrete logarithms over
+elliptic curves, and so on to &quot;breakthrough attacks&quot;.
+(We can pretty well quantify their vulnerability to
+*known* attacks as technology changes, and we have some
+rough ideas about &quot;evolutionary&quot; attacks which don't
+change the fundamental constraints but give you an
+extra factor of 10, say.)
+
+|<i> The cost of computing power is going down faster than
+</I>|<i> the cost of communication.  
+</I>I don't see that at all.  There are multiple domains to
+consider.  In terms of local communication, Ethernet is
+continuing to deliver factors of 10 speedup every couple
+of years.  10Gb/second Ethernet cards are approaching
+the $100 mark.  That's an astoundingly fast interconnect.
+If you're talking about long-distance communication,
+about the only use case I know of where *speed*, as
+opposed to *latency*, is a big deal these days is in
+moving really big datasets.  It's hard to come up with
+useful *computations* for which even something like DSL
+isn't fast enough that latency completely dominates the
+cost to the algorithm of communication.
+
+In any case, how often do you send *keying material*?
+The difference between 100 bytes and even 10K bytes is
+lost in the noise for that rare operation on any
+modern network.
+
+Meanwhile, single-stream CPU speed has more or less
+stalled.  Everyone is going for parallelism.  Thats's
+fine for some problems, not helpful for others.  So in
+fact it's the lack of progress in CPU speed that makes
+for a stronger argument for the smaller operations of
+EC than slower communications speeds!
+
+|<i>			      The size of sufficiently
+</I>|<i> safe asymmetric encryption based on integers is growing
+</I>|<i> considerably faster than the size of sufficiently safe
+</I>|<i> asymmetric encryption based on elliptic curves.
+</I>|<i> 
+</I>|<i> Thus the advantage of elliptic curve encryption
+</I>|<i> continually increases, will become overwhelming in the
+</I>|<i> near future - and a large part of that continually
+</I>|<i> increasing advantage comes from unpredictable
+</I>|<i> improvements in factoring and discrete log over the
+</I>|<i> integers.
+</I>|<i> 
+</I>|<i> My intuition is that because elliptic curves are
+</I>|<i> considerably less orderly than the integers, there is
+</I>|<i> less scope for discovering fast discrete log methods. We
+</I>|<i> are continually discovering improvements to finding
+</I>|<i> discrete logs over the integers.  It has been a long
+</I>|<i> time since any such has been discovered for elliptic
+</I>|<i> curves, long enough to give a plausible hope that no
+</I>|<i> further such will ever be discovered.
+</I>I don't see that there's anything you can really back
+that statement up with.  Mathematics takes time.  It also
+tends to move in fits and starts, because it has all kinds
+of unanticipated interconnections.  An advance in one field
+may be found to have completely unexpected applicability to
+another.  The proof of Fermat's Last Theorem - based on a
+large number of deep results in many different fields, few
+if any what you would think of as &quot;number theory over the
+integers&quot; in any obvious sense - came together to enable
+progress after hundreds of years.  This is hardly an
+isolated example - it's just a very widely known one.
+
+I quite agree the elliptic curve techniques let you get
+by with much smaller parameters, which has any number of
+advantages.  We have no particular reason to believe that
+these techniques are *weaker* than techniques over the
+integers, but I don't see that we really have any evidence
+that they are *stronger* either.  As an engineering choice,
+sure, go with the cheaper computation - there's no known
+loss in doing so.  But don't try to convince yourself that
+you've bought extra inherent security that way, because you
+really don't know.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

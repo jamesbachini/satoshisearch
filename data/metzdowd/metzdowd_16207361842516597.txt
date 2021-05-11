@@ -1,0 +1,38 @@
+<PRE>
+
+Begin forwarded message:
+
+Date: Wed, 30 Jul 2008 12:36:36 -0400
+From: Sara Caswell &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sara at nist.gov</A>&gt;
+To: undisclosed-recipients:;
+Subject: FIPS 198-1 announcement
+
+
+The National Institute of Standards and Technology (NIST) is pleased to 
+announce approval of Federal Information Processing Standard(FIPS) 
+Publication 198-1, The Keyed-Hash Message Authentication Code (HMAC), a 
+revision of FIPS 198. The Federal Register Notice (FRN) of the approval 
+is available here. The FIPS specifies a mechanism for message 
+authentication using cryptographic hash functions in Federal
+information systems.
+ 
+
+URL to the Federal Register Notice:  
+<A HREF="http://csrc.nist.gov/publications/fips/fips198-1/FIPS198-1_FRN.pdf">http://csrc.nist.gov/publications/fips/fips198-1/FIPS198-1_FRN.pdf</A>
+
+URL to the FIPS Publication 198-1:   
+<A HREF="http://csrc.nist.gov/publications/PubsFIPS.html#FIPS%20198-1">http://csrc.nist.gov/publications/PubsFIPS.html#FIPS%20198-1</A>
+
+ 
+
+
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,18 @@
+<PRE>On Sep 19, 2007, at 5:01 PM, Nash Foster wrote:
+&gt;<i> Any actual cryptographers care to comment on this? I don't feel
+</I>&gt;<i> qualified to judge.
+</I>
+If the affected software is doing DH with a malicious/compromised  
+peer, the peer can make it arrive at a predictable secret -- which  
+would be known to some passive listener. But hey, if the peer is  
+malicious or compromised to begin with, it could just as well do DH  
+normally and explicitly send the secret to the listener when it's  
+done. Not much to see here.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

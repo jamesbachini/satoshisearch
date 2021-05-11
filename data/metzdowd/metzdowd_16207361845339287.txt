@@ -1,0 +1,29 @@
+<PRE>Dirk-Willem van Gulik wrote:
+&gt;<i> I fail to see how you could evaluate this without seeing the code (and 
+</I>&gt;<i> even then - I doubt that one can properly do this -- the ?old? NSA habit 
+</I>&gt;<i> of tweaking your random generated rather than your protocol/algorithm 
+</I>&gt;<i> when they wanted your produced upgraded to export quality - is terribly 
+</I>&gt;<i> effective and very hard to spot).
+</I>&gt;<i> 
+</I>&gt;<i> Or am I missing something ?
+</I>
+I think that, in general, you are correct. However, in the case of NAT 
+your adversary is not someone who is trying to guess your randomness, 
+but someone who is trying to sell you their NAT gateway. In this case, 
+code/silicon inspection probably suffices.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

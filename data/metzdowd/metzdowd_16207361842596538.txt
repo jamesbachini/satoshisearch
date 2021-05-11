@@ -1,0 +1,30 @@
+<PRE>&gt;<i>  But just how GREAT is that, really? Well, we don'
+</I>&gt;<i>  t know. Why? Because there isn't actually a way test for randomness. Your
+</I>&gt;<i> DNS resolver could be using some easily predicted random number generator
+</I>&gt;<i> like, say, a linear congruential one, as is common in the rand() library
+</I>&gt;<i> function, but DNS-OARC would still say it was GREAT. Believe them when they
+</I>&gt;<i> say it isn't GREAT, though!
+</I>
+Well, they are some tests to judge the &quot;quality&quot; of a random number
+generator. The best known being the Diehard tests:
+
+<A HREF="http://en.wikipedia.org/wiki/Diehard_tests">http://en.wikipedia.org/wiki/Diehard_tests</A>
+<A HREF="http://stat.fsu.edu/pub/diehard/">http://stat.fsu.edu/pub/diehard/</A>
+
+For sure, these tests might be an overkill here. Also, there must be
+some tests in the Art of Computer Programming too but I don't have it
+at hand right now (shame on me).
+
+I don't see the point of evaluating the quality of a random number
+generator by statistical tests. But I might be wrong, though.
+
+Regards,
+
+-- 
+Pierre-Evariste DAGAND
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

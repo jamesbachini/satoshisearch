@@ -1,0 +1,39 @@
+<PRE>|<i> One virtualization approach that I have not see mentioned on this
+</I>|<i> thread is to run the virtual machine on a more secure OS than is used
+</I>|<i> by the applications of interest.
+</I>|<i> 
+</I>|<i> For example, one could run VMware on SELinux and use VMware to host
+</I>|<i> Windows/Vista.  Thus, even if a virus subverts Windows it still has no
+</I>|<i> more capabilities than any errant program in SELinux.  And, the virus
+</I>|<i> author has to cope with the complications created by the dual
+</I>|<i> operating systems.
+</I>It's not clear to me what threats this protects you against.  A Windows
+virus would work within the Windows environment just as it always did.
+If that's *your* working environment, it's just as contaminated as if
+you were running Windows on bare metal.
+
+Of course, if you're using the sandbox idea, you can throw out your
+contaminated Windows environment periodically and start from fresh.
+As always, you need to be in a position to throw *everything* out,
+which can be rather painful.
+
+A virus that could break through Windows, then through VMWare (with
+or without SELinux), then actually do something in that environment
+to establish itself more strongly, probably doesn't exist today - and
+would be quite an interesting challenge.
+
+|<i> Me, I do just the opposite.  I browse the web with firefox running on
+</I>|<i> SELinux (targeted policy) on VMware hosted on Windows XP.
+</I>That's a more reasonable approach.
+
+|<i> That would be secure if I didn't run as root half the time.
+</I>:<i>-(
+</I>							-- Jerry
+
+|<i> Chuck Jackson 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

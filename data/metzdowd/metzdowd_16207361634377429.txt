@@ -1,0 +1,76 @@
+<PRE>On Fri, Dec 14, 2007 at 01:27:57PM -0500, Thor Lancelot Simon wrote:
+&gt;<i> The PRNG test which requires DT to be run as a monotonic counter is, in
+</I>&gt;<i> fact, a known-answer test.  
+</I>
+The variable seed test portion of CAVS testing specifies a DT of 0 in
+all cases and only one round is run for each seed, so for this portion
+of CAVS testing it doesn't really matter how your counter updates as
+long as your first round's DT value can be set to 0.
+
+The portion of CAVS testing where it does matter how your counter
+is incremented is the Monte Carlo tests (MCT), where multiple rounds
+are tested.  For this test you need to increment DT by one each round.
+
+Though some algorithm validation testing does have a sub-test called a
+&quot;known answer test&quot;, the RNG validation testing does not.
+
+There is a FIPS 140 requirement for a Known Answer Test (KAT) to be
+performed on the PRNG at power-up, but it seems likely that isn't what
+you mean.
+
+Of course, in the broadest sense, most of the algorithmic validation
+tests are &quot;known answer tests&quot;, because the testing laboratory knows
+the answer, even if this information is not passed on to the vendor.
+
+&gt;<i> &gt; So, did they require that you use your AES implementation using the test
+</I>&gt;<i> &gt; fixture as well?
+</I>&gt;<i> 
+</I>&gt;<i> I'm not sure what you're suggesting, but I think you misunderstand the
+</I>&gt;<i> difference between the validation tests for AES and those for the PRNG.
+</I>
+No, I don't think that I did.  Allow me to expand:
+
+In order to conduct the Monte Carlo Test portion of AES testing, you
+need to implement a rather specific test fixture, and this test fixture
+needs to interact with the AES in a particular way.
+
+Similarly, in order to conduct the Monte Carlo Test portion of the
+RNG testing, you need to implement a rather specific test fixture, and
+this test fixture needs to interact with your RNG implementation in a
+particular way.
+
+In neither case is there any requirement saying that you need to include
+the test fixture in your final module or within the algorithm boundary.
+
+The point that we're talking past each other on is this: 
+NIST thinks of DT as an externally passed in parameter to the PRNG (to
+be clear that is, external to the algorithmic boundary, not external to
+the cryptographic boundary), and the algorithm is tested as such.
+
+If one does not interpret ANSI X9.31 A.2.4 this way, and the logic
+used to select / increment the DT value performed within PRNG design,
+you can't generally proceed through algorithmic validation testing.
+
+The discussion we're having is a bit odd in this light.  As it happens,
+if you _do_ manage DT within the algorithmic boundary, but you happen
+to allow the first DT value to be set (or it is automatically set to
+0) and then you increment by 1 each round, it ends up that you can
+pass algorithmic testing.  Why?  Because that happens to be what the
+test fixture for the MCT tells you to do.  That doesn't mean that the
+&quot;One true way&quot; for NIST is &quot;set DT to 0 and increment by 1 each round&quot;,
+it just means that this happens to work with the MCT test right now.
+If tomorrow, the CAVS MCT testing was modified to instead increment by
+two you'd no longer be able to pass algorithmic validation testing using
+this same design...
+
+The logic that one uses to select / increment DT does have particular
+requirements associated with it (see FIPS 140 IG7.6), but this is not
+tested within the algorithmic validation testing process.
+
+			Josh
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

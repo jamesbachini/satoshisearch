@@ -1,0 +1,58 @@
+<PRE>EMC IMAP wrote:
+ &gt; Yet another web attack:
+ &gt;
+ &gt; &lt;<A HREF="http://www.theregister.co.uk/2008/09/11/cookiemonstor_rampage/">http://www.theregister.co.uk/2008/09/11/cookiemonstor_rampage/</A>&gt;
+
+ &gt; My own conclusion from this:  This is yet another indication that
+ &gt; the whole browser authentication model is irretrievably broken. It's
+ &gt; just way too complex, with way too many moving parts which can
+ &gt; interact in dangerous ways.  The list of requirements for a &quot;safe&quot;
+ &gt; Web application - even just based on attacks known today - is so
+ &gt; long that no one can remember them all, much less check any
+ &gt; substantial Web application to see if it follows them.
+ &gt;
+ &gt; We need a better approach.
+
+As I posted earlier:
+
+SSL/TLS does not supply secure logon and sessions, because it does not
+know what a session or a login is.   Instead http+tls provides a pile
+of matchsticks and glue with which the website server can implement
+something that kind of sort of mostly behaves rather like logins and
+sessions.
+
+It should have been obvious that everything really important relates
+to logins and sessions and that the rest can be treated as a login by
+&quot;anon 37283&quot; with the null password, and that therefore the
+cryptography *and* *the* *browser* *user* *interface* needs to
+implement logins and sessions.
+
+It should have been obvious that logging in on the web page was going
+to lead to the phishing disaster - that people should login on a
+trusted path from the browser chrome.
+
+The user login status should be displayed in the chrome on every
+logged in web page, and the server has to know that the user knows his
+login status, has to know the login status not only of the user, but
+of the web page that the user has clicked on that generated this
+request to this server.
+
+The state of being logged in should guarantee privacy and authenticity
+- that only the client and the server can know what they are
+communicating, and that no one else should be able to pass himself off
+as client or server, or modify their communications
+
+Everything should have been written around the user concepts of
+&quot;logging in&quot;  &quot;a logged in page&quot;, and &quot;logging out&quot;, and should have
+made those user concepts real, made them into pages with appropriate
+built in cryptographic behaviors, rather than providing capabilities
+that could potentially be used to make pages behave like that.
+
+The user concept of &quot;logged in&quot; has to be real rather than
+superficially simulated by server side code
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

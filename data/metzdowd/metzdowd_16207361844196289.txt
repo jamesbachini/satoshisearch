@@ -1,0 +1,28 @@
+<PRE>Hello all. During the past few months, I've been poking around Linux
+memory and consistently finding cleartext login, SSH, email, IM,
+Truecrypt and root passwords. I've just finished a paper which includes
+detailed location and context information for each password. Given the
+recent buzz about cold boot memory dumping, it seems the risk associated
+with cleartext passwords in memory has increased.
+
+You can find the paper here:
+
+<A HREF="http://philosecurity.org/research/cleartext-passwords-linux/">http://philosecurity.org/research/cleartext-passwords-linux/</A>
+
+There are also a couple snippets of process memory up there for folks to
+play with. Thought this might be of interest to folks on this list.
+
+Sherri
+
+
+-- 
+<A HREF="http://philosecurity.org">http://philosecurity.org</A>
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

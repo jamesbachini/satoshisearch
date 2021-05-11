@@ -1,0 +1,54 @@
+<PRE>Ali, Saqib wrote:
+&gt;<i> Quoting the Foxbusiness article:
+</I>&gt;<i> 
+</I>&gt;<i> Permanent Privacy (patent pending) has been verified by Peter
+</I>&gt;<i> Schweitzer, one of Harvard's top cryptanalysts, and for the inevitable
+</I>&gt;<i> cynics Permanent Privacy is offering $1,000,000 to anyone who can
+</I>&gt;<i> decipher a sample of ciphertext.&quot;
+</I>
+I did a quick check to look for patent applications or patents by them and
+didn't find any.  This isn't definitive if a patent application isn't
+published.  The newest published patent application I found on encryption
+had an application date of 11 Dec 2007.  Some recently published patent
+applications are 6 or 7 years old, too.
+
+While there I updated my periodic search for recent patents and applications
+on cryptography.  It's surprising the number of questionable patent
+applications and patents you can find.  Aside from propping up marketing
+claims with patents as has been done throughout history, the primary threat
+poor quality patents present is the ability of patent trolls to tax
+'innovation'.  The volume of crypto related patents and applications is
+increasing lately and there is no clear sign the quality is rising.  Crypto
+patents used to be primarily a competition method between defense
+contractors, now its just about everyone as use expands.
+
+There was one recent application from a chip company on an architecture and
+instruction set for implementing the Advanced Encryption Standard , where
+the architecture is that of a modern processor and the instruction set isn't
+covered in the claims, rather a description of the algorithm for executing
+AES is given.  While it would be well suited for a defensive patent
+portfolio, imagine the havoc if granted and this patent were to fall into
+the hands of a patent troll claiming it covered all implementations on a
+processor.
+
+Being a bit of a hardware wonk, a lot of these patents appear obvious.  For
+instance Rainbow inherited a patent on the use of dual rank shift registers
+to allow overlapping data I/O and cryptographic operations.  It does perform
+the useful function of bringing down the clock rate needed to sustain some
+throughput, but it was hardly a non-obvious innovation at the time it was
+filed.  Rate buffers had been used as long before the patent was filed to
+balance communications throughput.  I also recall one on MIMD execution of
+DES to increase throughput, hardly non-obvious though granted.
+
+Obviously patents could be improved by searching further across disciplines
+for prior art and by having more USPTO expertise.  We're also seeing a
+dumbing down of the 'Persons Having Ordinary Skill In the Art' as the number
+of practitioners expand rapidly.
+
+Has anyone been feeling the heat or see a future threat?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

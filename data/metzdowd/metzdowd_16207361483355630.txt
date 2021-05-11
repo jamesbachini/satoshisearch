@@ -1,0 +1,28 @@
+<PRE>Philipp &#65533; wrote:
+&gt;<i> * An external device that lets the user verify the transaction independently 
+</I>&gt;<i> from the PC.
+</I>&gt;<i> 
+</I>&gt;<i> The second possiblity has been realized by some european banks now, based on 
+</I>&gt;<i> SMS and mobile phones, which sends the important transaction details together 
+</I>&gt;<i> with a random authorisation code, that is bound to the transaction in the 
+</I>&gt;<i> bank&#65533;s database. The user can then verify the transaciton, and then has to 
+</I>&gt;<i> enter the authorisation code on the webinterface.
+</I>&gt;<i> (And the good thing is that they succeeded to get the usability so good that 
+</I>&gt;<i> it&#65533;s more convenient than the previous TAN solution, and the cost increase of 
+</I>&gt;<i> SMS compared to paper TANs is irrelevant)
+</I>&gt;<i> 
+</I>&gt;<i> So I personally woul declare the online-banking problem solved (with SMS as 
+</I>&gt;<i> second channel), but I am still searching for solutions for all others, 
+</I>&gt;<i> especially non-transactional applications.
+</I>
+How large is this code?
+
+The security of this system would seem to rest on the security of mobile 
+phones against cloning.  How were mobile phones protected against cloning?
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

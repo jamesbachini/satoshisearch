@@ -1,0 +1,37 @@
+<PRE>At 5:11 PM -0400 7/2/07, John Denker wrote:
+&gt;<i>By that I mean:
+</I>&gt;<i>  -- the integrity of DH depends fundamentally on the algorithm, so you
+</I>&gt;<i>   should verify the algorithmic theory, and then verify that the box
+</I>&gt;<i>   implements the algorithm correctly; while
+</I>&gt;<i>  -- in the simple case, the integrity of quantum cryptography depends
+</I>&gt;<i>   fundamentally on the physics, so you should verify the physics
+</I>&gt;<i>   theoretically and then verify that the box implements the physics
+</I>&gt;<i>   correctly,
+</I>&gt;<i>  ... and not vice versa.
+</I>
+This is a nice, calm analogy, and I think it is useful. But it misses 
+the point of the snake oil entirely.
+
+The fact that there is some good quantum crypto theory doesn't mean 
+that there is any application in the real world. For the real world, 
+you need key distribution. For the cost of a quantum crypto box (even 
+after cost reductions after years of successful deployment), you 
+could put a hardware crypto accelerator that could do 10,000-bit DH.
+
+Going back to the theory, the only way that quantum crypto will be 
+more valuable than DH (much less ECDH!) is if DH is broken *at all 
+key lengths*. If it is not, then the balance point for cost will be 
+when the end boxes for quantum crypto equals the cost of the end 
+boxes for still-useful DH.
+
+Oh, and all the above is ignoring that DH works over multiple hops of 
+different media, and quantum crypto doesn't (yet, maybe ever).
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

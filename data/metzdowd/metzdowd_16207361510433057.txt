@@ -1,0 +1,36 @@
+<PRE>At 11:31 PM +0200 8/14/07, Christian Rechberger wrote:
+&gt;<i>The mentioned article is indeed confusing, the information in there 
+</I>&gt;<i>took apparently several hops.
+</I>
+Welcome to the world of public cryptography! :-) At least I haven't 
+seen anyone so far suggest that you will find pre-images.
+
+&gt;<i>To address your questions: Indeed, we have our own &quot;path&quot;, but more 
+</I>&gt;<i>importantly we developed a new method to speed-up generation and 
+</I>&gt;<i>testing of candidate message pairs and apply it to SHA-1. The 
+</I>&gt;<i>resulting work factor is still quite high, hence we ask for 
+</I>&gt;<i>contributions via the BOINC framework.
+</I>
+Is there any estimation of how high? Specifically, do you believe 
+there is a good chance of having less work effort than the current 
+Wang strategy? For example, if you are sure that your result will be 
+around 2^70, well that is interesting in theory but probably not 
+worth any publicity you have gotten so far. If you are sure it will 
+be around 2^55, I'll certainly give you some of my spare CPU cycles.
+
+&gt;<i>More information on cryptanalytic details, type of collision, and 
+</I>&gt;<i>resulting work factor will appear later this year.
+</I>
+That's good to hear. It would also be interesting if you could keep a 
+running meter of approximately how much work you are getting from the 
+participants. This isn't nearly as &quot;sexy&quot; as finding ETs or even 
+protein folding...
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

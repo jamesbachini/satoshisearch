@@ -1,0 +1,20 @@
+<PRE>Scott G. Kelly wrote:
+&gt;<i> Here's another approach to password authenticated key exchange with
+</I>&gt;<i> similar security claims. The underlying mechanism is under
+</I>&gt;<i> consideration for inclusion in by the 802.11s group in IEEE:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.ietf.org/internet-drafts/draft-harkins-emu-eap-pwd-01.txt">http://www.ietf.org/internet-drafts/draft-harkins-emu-eap-pwd-01.txt</A>
+</I>
+Hmmm. I don't see any IPR statements for that draft.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

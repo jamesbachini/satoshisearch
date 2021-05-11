@@ -1,0 +1,44 @@
+<PRE>&gt;<i> In any event, because of Skype's peer-to-peer architecture and  
+</I>&gt;<i> encryption techniques, Skype would not be able to comply with such  
+</I>&gt;<i> a request.&quot;
+</I>
+Well... Total BS and we all know it.
+
+1. Skype servers transparently report the last few known IP addresses  
+to any client requesting them. Just try running two or three Skype  
+clients on different computers - they will all be receiving copies of  
+your messages. While it may not work as an interception tool as it  
+is, because every client will send back acknowledgements, but those  
+can be switched off and such &quot;ghost&quot; clients can simply monitor all  
+your conversations. It is especially easy to do if you control the  
+server. It can make any client forward several copies of all its  
+packets to other IP addresses.
+
+If I have scared anyone, don't worry. Just type /debugchain in your  
+chat window and you will see who is listening [no it won't cure your  
+paranoia, I lied].
+
+2. Skype can download and install updates automatically without the  
+user's knowledge. Those can be tailor-made for the user with all  
+kinds of additional &quot;features&quot; like sending all the logs back to the  
+server.
+
+3. Have I mentioned a few things in it that look and smell like  
+server-controlled backdoors? They emit the same foul odour as the  
+100000..00001 prime numbers provided by NIST for our elliptic curves,  
+but presented in the standards in random-looking decimal form for  
+extra subtlety...
+
+Of course they *are* able to comply with such requests. They just  
+either won't or just won't tell us.
+
+Best regards,
+Marcos el Ruptor
+<A HREF="http://www.enrupt.com/">http://www.enrupt.com/</A> - Raising the bar [and disabling Skype  
+SuperNode].
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,124 @@
+<PRE>Yes, of course Adi is correct, but I blame you for reading what I wrote 
+and not what I meant... :-)
+
+Adi mentioned that the slides and paper will go online around the 
+deadline for Eurocrypt submission; it will all become much clearer than 
+my wounded explanations then.
+
+thanks and regards,
+Greg.
+(cc:ed back to the crypto list)
+
+Matt Ball wrote:
+&gt;<i> Hi Greg,
+</I>&gt;<i> 
+</I>&gt;<i> I don't think we've met, but I'm also at the crypto conference, and 
+</I>&gt;<i> happened to be sitting next to Adi and showed him this e-mail thread.  
+</I>&gt;<i> He mentioned that the following text was a little misleading:
+</I>&gt;<i> 
+</I>&gt;<i> On Wed, Aug 20, 2008 at 2:40 PM, Greg Rose &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ggr at qualcomm.com</A> 
+</I>&gt;<i> &lt;mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ggr at qualcomm.com</A>&gt;&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;<i>     Basically the method focuses on terms of the polynomial in which
+</I>&gt;<i>     only one secret bit of the key appears, and many of the non-secret
+</I>&gt;<i>     bits. Using chosen (or lucky) plaintexts, vary all but one of the
+</I>&gt;<i>     non-secret bits, and sum the output bits (mod 2, that is, XOR). Fix
+</I>&gt;<i>     the other non-secret bit to 1. 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> The attack does not vary only one of the non-secret bits, but rather 
+</I>&gt;<i> some subset of the non-secret bits.  The other non-secret bits need to 
+</I>&gt;<i> stay constant.  This could happen in counter mode, for example, when the 
+</I>&gt;<i> nonce is fixed and only the counter field varies.
+</I>&gt;<i> 
+</I>&gt;<i> I'll let Adi double-check this statement for correctness... :)
+</I>&gt;<i> 
+</I>&gt;<i> Cheers,
+</I>&gt;<i> -Matt
+</I>&gt;<i> 
+</I>&gt;<i> Previous message:
+</I>&gt;<i> 
+</I>&gt;<i>         James Muir wrote:
+</I>&gt;<i> 
+</I>&gt;<i>             Greg Rose wrote:
+</I>&gt;<i> 
+</I>&gt;<i>                 Basically, any calculation with inputs and outputs can
+</I>&gt;<i>                 be represented as
+</I>&gt;<i>                  an (insanely complicated and probably intractable) set
+</I>&gt;<i>                 of binary
+</I>&gt;<i>                 multivariate polynomials. So long as the degree of the
+</I>&gt;<i>                 polynomials is
+</I>&gt;<i>                 not too large, the method allows most of the nonlinear
+</I>&gt;<i>                 terms to be
+</I>&gt;<i>                 cancelled out, even though the attacker can't possibly
+</I>&gt;<i>                 handle them. Then
+</I>&gt;<i>                 you solve a tractable system of linear equations to
+</I>&gt;<i>                 recover key (or
+</I>&gt;<i>                 state) bits.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i>             I would like to know how Dinur and Shamir's work differs
+</I>&gt;<i>             from Courtois'
+</I>&gt;<i>             previous work on Algebraic cryptanalysis of block ciphers.
+</I>&gt;<i>              It is a
+</I>&gt;<i>             refinement of Courtois' technique?  Greg, do you, or someone
+</I>&gt;<i>             else have
+</I>&gt;<i>             some insight on this?
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i>         I spent about an hour trying to come up with a short but legible
+</I>&gt;<i>         explanation of the technique, and failed. Sorry about that. I
+</I>&gt;<i>         can visualize it, and could probably reproduce Adi's drawings on
+</I>&gt;<i>         a whiteboard, but not with typing. The following is as close as
+</I>&gt;<i>         I could come.
+</I>&gt;<i> 
+</I>&gt;<i>         Basically the method focuses on terms of the polynomial in which
+</I>&gt;<i>         only one secret bit of the key appears, and many of the
+</I>&gt;<i>         non-secret bits. Using chosen (or lucky) plaintexts, vary all
+</I>&gt;<i>         but one of the non-secret bits, and sum the output bits (mod 2,
+</I>&gt;<i>         that is, XOR). Fix the other non-secret bit to 1. 
+</I>&gt;<i> 
+</I>&gt;<i>     Now all the terms that involve less than the full complement of
+</I>&gt;<i>     non-secret bits will appear an even number of times in the sum, and
+</I>&gt;<i>     because it is mod 2, they will all cancel out! The only terms that
+</I>&gt;<i>     will be left are the ones with one secret bit, and all ones for the
+</I>&gt;<i>     non-secret bits... but that is linear in the secret bit! So what you
+</I>&gt;<i>     are left with is a simple, linear, polynomial relating unknown (key)
+</I>&gt;<i>     bits. Gather enough such equations, just a few more than the number
+</I>&gt;<i>     of key bits will do, and solve the linear system in trivial time.
+</I>&gt;<i>     Note that you had to have 2^(d-2) chosen plaintexts to sum over for
+</I>&gt;<i>     each of the equations... that's where the complexity comes from. The
+</I>&gt;<i>     attack is called Cube because in the case where d=4, each time you
+</I>&gt;<i>     sum over all of the varying known bits, it can be visualized as the
+</I>&gt;<i>     face of a cube, the corners of which are the possibilities for the 3
+</I>&gt;<i>     known inputs.
+</I>&gt;<i> 
+</I>&gt;<i>     Hope that helps. Note that the formula I typed from memory for the
+</I>&gt;<i>     complexity was wrong... it's O(n * 2^(d-2)), if the above is correct.
+</I>&gt;<i> 
+</I>&gt;<i>     For anything more than this, you'll have to wait for the paper.
+</I>&gt;<i> 
+</I>&gt;<i>     Greg.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i>     ---------------------------------------------------------------------
+</I>&gt;<i>     The Cryptography Mailing List
+</I>&gt;<i>     Unsubscribe by sending &quot;unsubscribe cryptography&quot; to
+</I>&gt;<i>     <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A> &lt;mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>&gt;
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> -- 
+</I>&gt;<i> Thanks!
+</I>&gt;<i> Matt Ball, IEEE P1619.x SISWG Chair
+</I>&gt;<i> M.V. Ball Technical Consulting, Inc.
+</I>&gt;<i> Phone: 303-469-2469, Cell: 303-717-2717
+</I>&gt;<i> <A HREF="http://www.mvballtech.com">http://www.mvballtech.com</A>
+</I>&gt;<i> <A HREF="http://www.linkedin.com/in/matthewvball">http://www.linkedin.com/in/matthewvball</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

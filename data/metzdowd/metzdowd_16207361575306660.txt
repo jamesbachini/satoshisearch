@@ -1,0 +1,46 @@
+<PRE>Hi,
+
+I've been poking around Oscar (ICQ/AIM) protocol parsing 
+and had a look at Trillian's SecureIM handshake protocol.
+
+For those who don't know, Trillian is a very popular multi-
+protocol instant messanging application for Windows. One of
+its notable features, for which is got some rave/positive
+reviews, is an ability to encrypt ICQ/AIM IMs exchanged by 
+two Trillian instances. AOL made repeated attempts to block 
+SecureIM, but eventually stopped them [1].
+
+The protocol is closed, but it was reversed engineered by
+some guys over at GAIM project. It appeared to be a Blowfish
+encryption of bulk IMs using a key derived from an anonymous 
+DH exchange [2]. This was also indirectly confirmed by another
+project [3].
+
+Leaving aside the lack of authentication and replay protection,
+here's what is even more striking -
+
+SecureIM handshake between two version 3.1 (latest) clients 
+takes about .. 48 bytes. That's altogether, 32 bytes in one 
+direction, and 16 in another. And that's between the clients 
+that have never talked to each other before, so there's no 
+&quot;session resuming&quot; business happenning.
+
+If that's DH exchange, then it's 128 bit one. Fertile ground
+for some interesting speculation, don't you think ?
+
+Alex
+
+[1]
+<A HREF="http://en.wikipedia.org/wiki/Trillian_%28instant_messenger%29#Entry_into_mai">http://en.wikipedia.org/wiki/Trillian_%28instant_messenger%29#Entry_into_mai</A>
+nstream_and_the_.22IM_Wars.22
+[2]
+<A HREF="http://sourceforge.net/tracker/download.php?group_id=235&amp;atid=300235&amp;file_id">http://sourceforge.net/tracker/download.php?group_id=235&amp;atid=300235&amp;file_id</A>
+=56799&amp;aid=777300
+[3] <A HREF="http://code.google.com/p/joscar/wiki/TrillianSecureIm">http://code.google.com/p/joscar/wiki/TrillianSecureIm</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

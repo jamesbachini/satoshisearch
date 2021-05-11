@@ -1,0 +1,34 @@
+<PRE>
+&quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; writes:
+&gt;<i> This methods requires the computer to be &quot;recently&quot; turned-on and unlocked.
+</I>
+No, it just requires that the computer was recently turned on. It need
+not have been &quot;unlocked&quot; -- it jut needed to have keying material in RAM.
+
+&gt;<i> So the only way it would work is that the victim unlocks the disks
+</I>&gt;<i> i.e. enter their preboot password and turn off the computer and
+</I>&gt;<i> &quot;immediately&quot; handover (conveniently) the computer to the attacker so
+</I>&gt;<i> that the attacker remove the DRAM chip and store in nitrogen.
+</I>
+LN2 is pretty trivial to get your hands on, and will remain happy and
+liquid in an ordinary thermos for quite some hours or longer. However,
+the authors point out that canned air works fine, too.
+
+&gt;<i> And the attacker has to do all this in less then 2 seconds.... :)
+</I>
+No, they may even have minutes depending on the RAM you have.
+
+&gt;<i> Or am I missing something?
+</I>
+People readily assume that rebooting or turning off a computer wipes
+RAM. It doesn't. This is just more evidence that it is bad
+to assume that the contents of RAM are gone even if you turn off the
+machine.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

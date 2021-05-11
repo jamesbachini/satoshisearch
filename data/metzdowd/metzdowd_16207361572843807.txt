@@ -1,0 +1,22 @@
+<PRE>On Mon, 18 Jun 2007 22:57:36 -0700
+&quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+
+&gt;<i> US Government has select 9 security vendors that will product drive
+</I>&gt;<i> and file level encryption software.
+</I>&gt;<i> 
+</I>&gt;<i> See:
+</I>&gt;<i> <A HREF="http://security-basics.blogspot.com/2007/06/fde-fde-solutions-selected-for-us.html">http://security-basics.blogspot.com/2007/06/fde-fde-solutions-selected-for-us.html</A>
+</I>&gt;<i> OR
+</I>&gt;<i> <A HREF="http://tinyurl.com/2xffax">http://tinyurl.com/2xffax</A>
+</I>&gt;<i> 
+</I>
+Out of curiousity, are any open source FDE products being evaluated?
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

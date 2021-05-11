@@ -1,0 +1,56 @@
+<PRE>Hi,
+
+Sorry for arriving late into this thread...
+
+zooko &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">zooko at zooko.com</A>&gt; writes:
+
+&gt;<i>    The Learn-Partial-Information Attack
+</I>&gt;<i>
+</I>&gt;<i>     They extended the confirmation-of-a-file attack into the
+</I>&gt;<i>     learn-partial-information attack. In this new attack, the
+</I>&gt;<i>     attacker learns some information from the file. This is done by
+</I>&gt;<i>     trying possible values for unknown parts of a file and then
+</I>&gt;<i>     checking whether the result matches the observed ciphertext.
+</I>&gt;<i>     For example, if you store a document such as a form letter from
+</I>&gt;<i>     your bank, which contains a few pages of boilerplate legal text
+</I>&gt;<i>     plus a few important parts, such as your bank account number
+</I>&gt;<i>     and password, then an attacker who knows the boilerplate might
+</I>&gt;<i>     be able to learn your account number and password.
+</I>
+I don't see how this would work.  It's different from a dictionary
+attack because it looks for partial matches, as opposed to exact
+matches.
+
+Suppose you have one (sensitive) file that contains
+&quot;&lt;boilerplate&gt;&lt;secret&gt;&quot; and another than contains
+&quot;&lt;boilerplate&gt;&lt;placeholder&gt;&quot;.  They have different hashes, hence
+different ciphertexts through convergent encryption.  How would one get
+access to the plaintext of the former when knowing only the latter?
+
+Now, let's assume that said files were split into two &quot;blocks&quot; before
+being convergent-encrypted, namely &quot;&lt;boilerplate&gt;&quot; and &quot;&lt;secret&gt;&quot; for
+the former, and &quot;&lt;boilerplate&gt;&quot; and &quot;&lt;placeholder&gt;&quot; for the latter.  The
+&quot;confirmation-of-a-file&quot; (or rather &quot;confirmation-of-a-block&quot;) attack
+does work, but it does not reveal anything about the secret.
+
+
+I'm not sure about Tahoe, but the scheme I had in mind in my thesis was
+to allow anyone to choose whatever encoding is used [0].  This means
+that one could choose the algorithm used to split input files into
+blocks, whether to compress the input file or individual blocks, what
+compression algorithm to use, what hash and cipher algorithm to use,
+etc.  With that level of freedom, these two attacks are a lesser threat
+(one might argue that, in practice, many people would use the default
+settings, which would make them potential victims and attackers of each
+other...).
+
+Thanks,
+Ludovic.
+
+[0] <A HREF="http://www.fdn.fr/~lcourtes/phd/phd-thesis.pdf,">http://www.fdn.fr/~lcourtes/phd/phd-thesis.pdf,</A> e.g., Section 4.3.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

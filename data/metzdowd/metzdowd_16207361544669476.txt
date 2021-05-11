@@ -1,0 +1,62 @@
+<PRE><A HREF="http://www.news.com.au/story/0,23599,22345160-2,00.html">http://www.news.com.au/story/0,23599,22345160-2,00.html</A>
+
+APEC security arrangements have been thrown into disarray with the theft of
+  digitally encrypted police radios and a bullet-proof vest.
+
+The Sunday Telegraph reports that statewide memos have been issued to police
+working during the APEC weekend to advise against using special frequencies
+that can be picked up by the missing radios.
+
+The loss of the vital pieces of equipment poses a major headache for NSW
+Police, who are under extreme pressure from both the State and Federal
+governments to ensure there are no security breaches over the APEC weekend.
+
+ ---
+
+What no Over The Air Re-keying for net exclusion, or perhaps the radios
+aren't unique?  It's my  understanding that the Project 25 stuff used in the
+U.S. wouldn't be similarly vulnerable on two counts:  OTAR with remote key
+management and role based security.
+
+more in the Australian news article:
+
+Worth around $5000 each, the digital encryption system radios cannot be
+picked up by regular scanners.
+
+The NSW Government has spent an estimated $18 million in the past three
+years to convert the old police radio network to a digital system.
+
+The source said it was understood several digital radios had also been
+stolen from NSW Fire Brigade stations in the inner west in recent weeks.
+
+ ---
+
+I'd imagine if they are actually vulnerable as a result of the radio
+thefts, they've bought the wrong equipment, or at least certainly paid too much.
+
+Note the contrast with the Olympics:
+
+<A HREF="http://www.abc.net.au/news/stories/2004/08/11/1174423.htm">http://www.abc.net.au/news/stories/2004/08/11/1174423.htm</A>
+Radio theft 'doesn't compromise' Games security
+
+Posted Wed Aug 11, 2004 9:54pm AEST
+
+Thieves have stolen six communication radios used by Olympic Games
+organisers but police say the state-of-the-art devices pose no security risk.
+
+  ...
+
+&quot;They were taken on the night of August 4 from cardboard boxes that
+contained other equipment, but they cannot be used by anyone now,&quot; Mr
+Economou said.
+
+ ---
+
+What appears to have rendered them harmless is that they weren't keyed.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,35 @@
+<PRE>David G. Koontz wrote:
+&gt;<i> <A HREF="http://www.physorg.com/news123951684.html">http://www.physorg.com/news123951684.html</A>
+</I>&gt;<i> 
+</I>
+Two more articles:
+
+<A HREF="http://arstechnica.com/news.ars/post/20080309-fighting-the-black-market-crypto-locks-for-cpus-other-ics.html">http://arstechnica.com/news.ars/post/20080309-fighting-the-black-market-crypto-locks-for-cpus-other-ics.html</A>
+This one has a bit of the technical description
+
+<A HREF="http://itnews.com.au/News/71553,chip-lock-aims-to-end-hardware-piracy.aspx">http://itnews.com.au/News/71553,chip-lock-aims-to-end-hardware-piracy.aspx</A>
+
+This has some comments including:
+
+&quot;Ok, so ow the hardware has to 'phone home'; before it will work. does this
+mean that worldwide legitimate chip production has to halt every time the
+patent holder has a server failure?
+secondly, if someone has the capability of turning design documents into
+working silicon, they also have the capability to make changes to the
+design. what's to stop them from simply removing the lock circuitry from the
+design before making the chips?
+It seems to me that this DRM is like all other DRM. It causes problems for
+the legal users, and won't do anything to stop the illegal users.&quot;
+
+Posted by Kelly Gray, 8/03/2008 1:26:23 AM
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

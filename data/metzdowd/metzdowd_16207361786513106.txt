@@ -1,0 +1,42 @@
+<PRE>
+&gt;<i>   #ifndef PURIFY
+</I>&gt;<i>                 MD_Update(&amp;m,buf,j); /* purify complains */
+</I>&gt;<i>   #endif
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>
+I just re-checked, this code was from SSLeay, so it pre-dates OpenSSL
+taking over from me
+(about 10 years ago, after I was assimilated by RSA Security).
+
+So in some ways I'm the one at fault for not being clear enough about
+why 'purify complains' and why it was not relevant.
+Purify also incorrectly companied about a construct used in the digest
+gathering code which functioned correctly, but purify was
+also correct (a byte in a read word was uninitialised, but it was later
+overwritten by a shifted byte).
+
+One of the more insidious things about Purify is that once its
+complaints are investigated, and deemed irrelevant (but left in the
+library),
+anyone who subsequently runs purify on an application linking in the
+library will get the same purify warning.
+This leads to rather distressed application developers.  Especially if
+their company has a policy of 'no purify warnings'.
+
+One needs to really ship the 'warning ignore' file for purify (does
+valgrind have one?).
+
+I personally do wonder why, if the original author had purify related
+comments, which means he was aware of the issues,
+but had still left the code in place, the reviewer would not consider
+that the code did some-thing important enough to
+ignore purify's complaints.
+
+eric
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

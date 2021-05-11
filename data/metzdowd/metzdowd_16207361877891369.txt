@@ -1,0 +1,23 @@
+<PRE>On Wed, Aug 27, 2008 at 12:16:23PM -0400, Steven M. Bellovin wrote:
+
+&gt;<i> Finally, the transponders may not matter much longer; OCR on license
+</I>&gt;<i> plates is getting that good.  As has already been mentioned, the 407
+</I>&gt;<i> ETR road in Toronto already relies on this to some extent; it won't be
+</I>&gt;<i> too much longer before the human assist is all but unneeded.
+</I>
+<A HREF="http://en.wikipedia.org/wiki/Toll_Collect">http://en.wikipedia.org/wiki/Toll_Collect</A> is in operation in entire
+Germany. It does OCR on all license plates (also used for police
+purposes in realtime, despite initial vigorous denial) but currently 
+is only used for truck toll.
+
+-- 
+Eugen* Leitl &lt;a href=&quot;<A HREF="http://leitl.org">http://leitl.org</A>&quot;&gt;leitl&lt;/a&gt; <A HREF="http://leitl.org">http://leitl.org</A>
+______________________________________________________________
+ICBM: 48.07100, 11.36820 <A HREF="http://www.ativel.com">http://www.ativel.com</A> <A HREF="http://postbiota.org">http://postbiota.org</A>
+8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

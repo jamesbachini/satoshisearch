@@ -1,0 +1,22 @@
+<PRE>* Peter Gutmann:
+
+&gt;<i> Debian seem to be particularly bad for not reporting changes to
+</I>&gt;<i> maintainers,
+</I>
+This shouldn't be the case.  There's a clear policy that non-packaging
+changes (basically, anything beyond trivial build fixes and pathname
+changes for FHS compliance) should be submitted upstream.
+
+&gt;<i> I've got a few packages that are contained in a number of distros and
+</I>&gt;<i> I notice via occasional Google searches for semi-related items that
+</I>&gt;<i> I'm getting hits to CVS change logs for my code where someone is
+</I>&gt;<i> repeatedly re-applying some patch to every new version I release.
+</I>
+If you name names, we can certainly fix that.  I couldn't figure out
+what packages are affected on Debian's side.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

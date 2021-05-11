@@ -1,0 +1,23 @@
+<PRE>&gt;<i> I didn't realise the current SecurID tokens had been broken. A  
+</I>&gt;<i> quick Google
+</I>&gt;<i> doesn't show anything, but I'm probably using the wrong terms. Do  
+</I>&gt;<i> you have
+</I>&gt;<i> references for this that I could have a look at?
+</I>
+<A HREF="http://eprint.iacr.org/2003/162.pdf">http://eprint.iacr.org/2003/162.pdf</A>
+
+This attack may not be as practical as an algebraic attack would be,  
+but it shows that SecurID keyed hash function is in fact weaker than  
+what its claimed 64-bit security level demands. AFAIK, algebraic  
+cryptanalysis of the RSA SecurID keyed hash function by the academic  
+sector hasn't even been performed yet. Their new tokens use AES-128.  
+Maybe they do learn after all...
+
+Ruptor
+<A HREF="http://defectoscopy.com/">http://defectoscopy.com/</A> - There is no need to design weak ciphers.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

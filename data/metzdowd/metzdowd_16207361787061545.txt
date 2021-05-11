@@ -1,0 +1,26 @@
+<PRE>Florian Weimer wrote:
+&gt;<i> * Ben Laurie:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> I must confess that I said that because I did not have the energy to
+</I>&gt;&gt;<i> figure out the other routes to adding entropy, such as adding an int
+</I>&gt;&gt;<i> (e.g. a PID, which I'm told still makes it in there).
+</I>&gt;<i> 
+</I>&gt;<i> The PID dependency is there because of the need for fork
+</I>&gt;<i> support--obviously, the PRNG must return a different key stream in the
+</I>&gt;<i> parent and child process, but the two cannot communicate with each
+</I>&gt;<i> other.
+</I>
+I'm fully aware why its there! I just wasn't sure (at the time) that 
+this change didn't also remove it.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

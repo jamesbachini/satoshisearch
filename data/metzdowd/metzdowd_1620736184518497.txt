@@ -1,0 +1,36 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> Pat Farrell &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pfarrell at pfarrell.com</A>&gt; writes:
+</I>&gt;&gt;<i> At CyberCash, where we had real RSA/DES in the system, we found that &quot;users
+</I>&gt;&gt;<i> want convenience, not security&quot;
+</I>&gt;<i> 
+</I>&gt;<i> I think that's phrasing it a bit badly, it'd be better put as &quot;without
+</I>&gt;<i> usability, you won't have users&quot; (see the Tor paper &quot;Challenges in deploying
+</I>&gt;<i> low-latency anonymity&quot; for more thoughts on this). 
+</I>
+
+I don't think we are disagreeing much, but the essence of the CyberCash
+law is that user's only focus is on convenience. If you give them a
+choice, any and all bumps in the road to ease of use cause rejection.
+
+I'm not trying to argue that 12+ years ago we had great usability. The
+world's expectations have evolved a lot since then. But we put a lot of
+engineering into usability. And it was not enough.
+
+I believe that its not &quot;users will accept some glitches to get security&quot;
+Rather, users only care about usability/convenience. It has to be
+trivial to use first. Cite Twitter, blogs, etc.
+
+The key message to take away is that when we pros design systems, at
+least for mass markets, the users will tolerate nothing except convenience.
+
+Pat
+
+-- 
+Pat Farrell
+<A HREF="http://www.pfarrell.com/">http://www.pfarrell.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

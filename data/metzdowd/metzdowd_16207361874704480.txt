@@ -1,0 +1,36 @@
+<PRE>On Tue, Aug 26, 2008 at 9:24 AM, Perry E. Metzger &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+&gt;<i>   Despite previous reassurances about the security of the system,
+</I>&gt;<i>   Nate Lawson of Root Labs claims that the unique identity numbers
+</I>&gt;<i>   used to identify the FasTrak wireless transponders carried in cars
+</I>&gt;<i>   can be copied or overwritten with relative ease.
+</I>&gt;<i>
+</I>
+Nate hasn't disclosed details of the code that wirelessly overwrites a
+transponder's ID.  The temptation would be too great for many to copy
+an annoying neighbour's transponder ID, and then drive through a busy
+mall parking lot cloning it onto every transponder in proximity.
+
+As mentioned in the article, the vendors have claimed it was
+read-only, even though it uses flash memory (I guess technically they
+could cut the write line in manufacturing, but realistically that was
+highly unlikely even before Nate did this work).  I would speculate
+that they just looked at the high level design, which didn't contain
+any specifications for features to write to memory, and decided that
+meant 'read-only'.  In the meantime, the implementers don't see any
+harm in adding a few extra features *beyond* what is in the design
+(viz.: the overwrite code) especially where that might be useful for
+testing and diagnostics.
+
+As an aside: Isn't it noteworthy how much less press this has gotten
+than the Boston subway hacks, even though it is (IMO) of much greater
+severity?  There might be a lesson there for the Massachussetts Bay
+Transit Authority.
+
+
+Ken
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

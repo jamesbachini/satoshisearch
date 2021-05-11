@@ -1,0 +1,27 @@
+<PRE>On Tue, 13 May 2008, Ben Laurie wrote:
+&gt;<i> Had Debian done this in this case, we (the OpenSSL Team) would have
+</I>&gt;<i> fallen about laughing
+</I>
+I think we all should not miss this ROTFL experience:
+
+Original code (see ssleay_rand_add)
+
+ &lt;<A HREF="http://svn.debian.org/viewsvn/pkg-openssl/openssl/trunk/rand/md_rand.c?rev=140&amp;view=markup">http://svn.debian.org/viewsvn/pkg-openssl/openssl/trunk/rand/md_rand.c?rev=140&amp;view=markup</A>&gt;,
+
+the patch
+
+ &lt;<A HREF="http://svn.debian.org/viewsvn/pkg-openssl/openssl/trunk/rand/md_rand.c?rev=141&amp;view=diff&amp;r1=141&amp;r2=140&amp;p1=openssl/trunk/rand/md_rand.c&amp;p2=/openssl/trunk/rand/md_rand.c">http://svn.debian.org/viewsvn/pkg-openssl/openssl/trunk/rand/md_rand.c?rev=141&amp;view=diff&amp;r1=141&amp;r2=140&amp;p1=openssl/trunk/rand/md_rand.c&amp;p2=/openssl/trunk/rand/md_rand.c</A>&gt;
+
+and the end result
+
+ &lt;<A HREF="http://svn.debian.org/viewsvn/pkg-openssl/openssl/trunk/rand/md_rand.c?rev=141&amp;view=markup">http://svn.debian.org/viewsvn/pkg-openssl/openssl/trunk/rand/md_rand.c?rev=141&amp;view=markup</A>&gt;
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

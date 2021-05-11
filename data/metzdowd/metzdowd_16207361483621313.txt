@@ -1,0 +1,186 @@
+<PRE>[Moderator's note: the Secure Routing focus may be of interest to some
+readers. --Perry]
+
+***********************************************************************
+
+            Announcing DIMACS 2007-2010 Special Focus on 
+               Algorithmic Foundations of the Internet
+
+            <A HREF="http://dimacs.rutgers.edu/SpecialYears/2007_AFI/">http://dimacs.rutgers.edu/SpecialYears/2007_AFI/</A>
+
+***********************************************************************
+ 
+The Internet has an ever-expanding role in our daily lives; yet, it is
+arguably one of the most fragile components of our nation's critical
+infrastructure. The Internet was designed as a research network
+without the expectation that it would eventually be used for
+everything from banking, commerce, and telecommunications to the
+remote management of power networks. The scale and heterogeneity of
+the Internet have far surpassed all expectations, and the Internet is
+responding by showing signs of strain. Moreover, new applications
+heighten the need for security and network management capabilities,
+neither of which were major goals in the original design of Internet
+protocols.
+
+DIMACS is hosting a 3-year special focus devoted to the study of
+algorithms and protocols for large-scale networks. The focus is
+scheduled to start in August 2007 and continue through July 2010. The
+special focus aims to enhance our understanding of the limitations of
+today's protocols, as well as the gains that new designs could
+achieve. This is an emerging cross-disciplinary area that requires
+expertise from several fields including networking, theory of
+computing, computer and communications security, and game
+theory. Research collaborations spanning these communities are crucial
+to making progress on the most challenging problems, and enabling
+these collaborations is a major goal of this special focus.
+
+As the Internet continues to grow, more and more business-critical
+functions rely on its availability. One can easily envision a future
+in which the vast majority of communications traffic, including
+telephone, television, radio, business data, and government data, will
+rely on an Internet infrastructure that is available and secure. For
+the Internet to meet these challenges, we need a much deeper
+understanding of the properties of our existing protocols and the
+fundamental tradeoffs that should guide the design of the future
+Internet. Providing a strong algorithmic foundation for the Internet
+is especially timely, as the research community embarks on an
+ambitious rethinking of the Internet architecture.
+
+There are many algorithms and protocols used in the Internet and its
+applications. Some adequately serve their desired purposes, while
+others need improvement. However, there is a disconnect between the
+methodology and results of algorithms research and the methodology and
+results used to guide the adoption of Internet protocol standards. On
+the one hand, traditional distributed-algorithms research does not
+adequately model the Internet's design goals, including autonomy,
+scalability, and privacy. On the other hand, protocol-adoption
+standards far too often rely on experimentation and testing by vendors
+and select customers, not on formal analysis. Protocols are often
+tweaked to add customer functionality without scrutinizing the
+resulting behavior in worst-case situations or proving any kind of
+correctness or security properties. Furthermore, these worst-case
+situations occur more often than expected, due to both the sheer size
+of the network and the fact that malicious agents can use security
+flaws to take control of significant parts of the Internet.
+
+This special focus seeks to bridge the gap between networking research
+focused on the existing artifacts - the protocols and mechanisms
+underlying today's Internet - and the new work that needs to be done
+to lay a solid foundation for the design of a future
+Internet. Research focusing on today's network emphasizes
+characterization, primarily through measurement and prototyping, of
+existing protocols and mechanisms, in order to improve our
+understanding of the Internet and guide incremental changes to the
+system. Although algorithmic models have played a role in this work,
+the details of today's protocols and mechanisms often defy attempts to
+impose rigorous models &quot;after the fact.&quot; The future Internet needs to
+be more secure, be easier to manage, and take greater advantage of new
+underlying technologies, such as sensor networks, wireless networks,
+and optical switching. This argues for the design of new protocols and
+mechanisms with their key properties in mind from the outset. An
+algorithmic mindset is an extremely important ingredient in this line
+of research.
+
+This special focus is guided by a deep understanding of the current
+Internet but allows for the possibility of radical change where it is
+warranted. The focus seeks to analyze and design protocols,
+algorithms, and architectures for a future Internet that is based on
+sound mathematical and computational foundations, ensuring
+scalability, security, and manageability.
+
+This special focus is particularly timely given NSF's and the
+computing research community's interest in developing the protocols
+and associated experimental infrastructure for the Internet's next
+generation. A special focus on algorithmic foundations of the Internet
+is especially timely in light of NSF's FIND (Future INternet Design)
+and GENI (Global Environment for Network Innovations) initiatives. The
+FIND program encourages the research community to take a clean
+slate approach to the design of a future Internet, without the
+constraints of backwards compatibility with the current
+protocols. FIND provides a unique opportunity to create a new network
+architecture built on a solid conceptual foundation. In addition,
+deeper understanding of the limitations of the existing protocols and
+of the fundamental trade-offs between different design goals can focus
+researchers' attention on the most promising directions for a new
+Internet architecture.
+
+This special focus aims to facilitate research in this area through
+the broad participation from both the networking and theoretical
+computer science communities. In addition to encouraging
+collaborations between the two communities, focus activities can
+educate the participants and the larger community about the current
+research challenges and known results in the two areas. The special
+focus workshops and working groups target the &quot;sweet spots&quot; where the
+crucial challenges for designing the future Internet (e.g., security,
+network management, layer-2 technologies, and economic incentives)
+have rich connections to algorithms research (e.g., cryptography,
+formal analysis, game theory and mechanism design, and streaming
+algorithms).
+
+The research ideas enabled by this DIMACS activity can lead to new
+protocols and architectures that can be evaluated on GENI. Focus
+workshops are encouraged to include presentations on the GENI facility
+in order to encourage experimentation on GENI and explore how to put
+the key design principles of GENI such as virtualization on a strong
+theoretical footing.
+
+Opportunities to Participate
+
+The Special Focus includes: 
+
+ Workshops: A variety of workshops and mini-workshops are being planned, including: 
+
+   Internet Tomography 
+   Pervasive Networks, Systems and Applications 
+   Internet Privacy 
+   Wireless and Delay-Tolerant Networks 
+   Data Structures and Algorithms for Large-Scale Networked Systems 
+   Internet Economics and Game Theory 
+   Adversarial and Non-Adversarial Online Algorithms and Mechanism Design for the Internet 
+   
+ Working Groups: Three interdisciplinary research working groups,
+ one initiated during each year of the special focus, form the &quot;spine&quot; of the special focus: 
+
+   Year 1: Secure Internet Routing 
+   Year 2: Designing Networks for Manageability 
+   Year 3: Data Structures and Algorithms for Network Data 
+
+ Tutorial: The special focus begins with a tutorial on &quot;Next Generation Networks&quot; that 
+ provides background knowledge to those who wish to participate in the special focus or 
+ just get an introduction to some of the fundamental issues in the field. 
+
+ Seminar Series: There will be a mix of research talks and practitioner presentations. 
+
+ Visitor Programs: Applications for research and graduate student
+ visits to the center are invited. Some funds are available for travel and local support. 
+
+ Postdoctoral Positions: There is a possibility postdoctoral positions
+ will be offered in this area. 
+
+ Graduate Student Support: Funds are set aside for graduate students
+ interested in attending workshops. Students interested in visiting
+ DIMACS during the special focus are encouraged to apply to the special focus organizers. 
+
+ Publication: We anticipate that a variety of publications, including AMS-DIMACS volumes,
+ technical reports, abstracts and notes on the WWW, and DIMACS modules
+ will result from the special focus. 
+
+For more information :
+
+                       <A HREF="http://dimacs.rutgers.edu/SpecialYears/2007_AFI/">http://dimacs.rutgers.edu/SpecialYears/2007_AFI/</A>
+
+   DIMACS Center/CoRE Building/4th Floor
+   Rutgers University
+   96 Frelinghuysen Road
+   Piscataway, NJ 08854-8018
+   (732) 445-5930 
+
+        
+
+ 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

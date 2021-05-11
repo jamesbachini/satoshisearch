@@ -1,0 +1,24 @@
+<PRE>* markus reichelt &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ml at mareichelt.de</A>&gt; wrote:
+
+&gt;<i> * Ralf-Philipp Weinmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">weinmann at cdc.informatik.tu-darmstadt.de</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; My colleague Erik took photos of the slides which I put up on
+</I>&gt;<i> &gt; Zooomr [0]. A video recording of the talk should be available
+</I>&gt;<i> &gt; shortly and will be linked here.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> preliminary link for the video:
+</I>
+it's now on google video:
+
+<A HREF="http://video.google.com/videoplay?docid=4252367680974396650&amp;hl=en">http://video.google.com/videoplay?docid=4252367680974396650&amp;hl=en</A>
+
+-- 
+left blank, right bald
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080101/5c4199c5/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080101/5c4199c5/attachment.pgp</A>&gt;
+</PRE>

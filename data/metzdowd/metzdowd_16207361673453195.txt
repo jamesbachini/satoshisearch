@@ -1,0 +1,35 @@
+<PRE>
+ &gt; 
+ &gt; I wonder whether this was research to see how hard it
+ &gt; was to get the PTO to grant an absurd patent.
+ &gt; 
+
+
+Get Simson's opinion, please.  It is not insane to
+patent something so that you can control its use
+and to do so for reasons other than wanting to
+lay about in the Caribbean/Vegas.
+
+As to prior art, consider &quot;A Revocable Backup System,&quot;
+by Boneh and Lipton, 6th USENIX Security Symposium,
+presented 25 July 1996.  (see [1] below)
+
+BTW, I can personally attest that the USPTO makes
+both Type I (false positive) errors (in granting
+patents that should not be classified as useful
+and unobvious) *and* Type II (false negative)
+errors (when confronted with something sufficiently
+unobvious that they find it impossible to understand
+that it is either unobvious or useful much less
+both).
+
+--dan
+
+[1]
+<A HREF="http://www.usenix.org/publications/library/proceedings/sec96/boneh.html">http://www.usenix.org/publications/library/proceedings/sec96/boneh.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

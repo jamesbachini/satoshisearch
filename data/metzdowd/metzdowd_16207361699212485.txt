@@ -1,0 +1,16 @@
+<PRE>a recent reference
+
+Research unmasks anonymity networks
+<A HREF="http://www.techworld.com/security/news/index.cfm?newsID=11295">http://www.techworld.com/security/news/index.cfm?newsID=11295</A>
+Research unmasks anonymity networks
+<A HREF="http://www.networkworld.com/news/2008/020108-research-unmasks-anonymity.html">http://www.networkworld.com/news/2008/020108-research-unmasks-anonymity.html</A>
+Research unmasks anonymity networks
+<A HREF="http://www.arnnet.com.au/index.php/id;1270745171;fp;4194304;fpid;1">http://www.arnnet.com.au/index.php/id;1270745171;fp;4194304;fpid;1</A>
+Paper Outlines Methods for Beating Anonymity Technology
+<A HREF="http://www.darkreading.com/document.asp?doc_id=144606">http://www.darkreading.com/document.asp?doc_id=144606</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

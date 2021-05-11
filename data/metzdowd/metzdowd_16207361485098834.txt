@@ -1,0 +1,25 @@
+<PRE>On 7/14/07, Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+&gt;<i> 1. firewall port-knocking to block scanning and attacks
+</I>
+I would love to see a mode like freenet's silent bob, where connectors
+must prove probable knowledge of the host key before the node will
+talk.
+
+&gt;<i> 5. block sending host key fingerprint for invalid or no username
+</I>
+This makes some sense...
+
+1. Client may request proof of host private key.
+2. Client must authenticate.
+3. Client may request a copy of the host public key.
+
+-- 
+Taral &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">taralx at gmail.com</A>&gt;
+&quot;Please let me know if there's any further trouble I can give you.&quot;
+    -- Unknown
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

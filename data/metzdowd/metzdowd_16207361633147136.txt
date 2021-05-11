@@ -1,0 +1,53 @@
+<PRE>|<i> &gt; Then the compiler can look at the implementation and &quot;prove&quot; that a
+</I>|<i> &gt; memset() to a dead variable can be elided....
+</I>|<i> 
+</I>|<i> One alternative is to create zero-ing functions that wrap memset()
+</I>|<i> calls with extra instructions that examine some of the memory, log a
+</I>|<i> message and exit the application if the memory is not zero. This has
+</I>|<i> two benefits: 1) It guarantees the compiler will leave the memset() in
+</I>|<i> place and 2) guarantees the memset() worked. It does incur a few extra
+</I>|<i> instructions though.
+</I>|<i> 
+</I>|<i> I guess it is possible that the compiler would somehow optimize the
+</I>|<i> memset to only zero the elements subsequent code compares... Hmmm....
+</I>|<i> [Of course your application could be swapped out and just before the
+</I>|<i> memset call writing your valuable secrets to the system swap file on
+</I>|<i> disk... :-( ]
+</I>In practice, with an existing compiler you are not in a position to
+change, these kinds of games are necessary.  If you're careful, you look
+at the generated code to make sure it does what you expect.
+
+But this is a very bad - and potentially very dangerous - approach.
+You're relying on the stupidity of the compiler - and on the compiler
+not become more intelligent over time.  Are you really prepared to
+re-check the generated code every time the compiler is rev'ed?
+
+There sometimes needs to be an explicit way to tell the compiler that
+some operation *must* be done in some way, no matter what the compiler
+thinks it knows.  There's ample precedent for this.  For example,
+floating point arithmetic doesn't exactly follow the usual laws of
+arithmetic (e.g., it's not associative, if you consider overflows), some
+if you know what you are doing in construction an FP algorithm, you have
+to have a way to tell the compiler &quot;Yes, I know you think you can
+improve my code here, but just leave it alone, thank you very much.&quot;
+And all programming languages that see numerical programming as within
+their rubric provide standardized, documented ways to do just that.  C
+have &quot;volatile&quot; so that you can tell the compiler that it may not elide
+or move operations on a variable, even when those operations have no
+effects visible in the C virtual machine.  (The qualifier was added
+to support memory-mapped I/O, where there can be locations that look
+like memory but have arbitrarily different semantics from normal
+memory.)  And so on.
+
+You can almost, but not quite, get the desired effect for memory zero-
+ization with &quot;volatile&quot;.  Something more is needed, and software that
+will be used to write cryptographic algorithms needs access to that
+&quot;something more&quot; (to be pinned down explicitly).
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

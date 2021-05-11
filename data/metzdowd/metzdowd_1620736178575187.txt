@@ -1,0 +1,21 @@
+<PRE>On Thu, 1 May 2008, zooko wrote:
+&gt;<i> I would think that it also helps if a company publishes the source
+</I>&gt;<i> code and complete verification tools for their chips, such as Sun has
+</I>&gt;<i> done with the Ultrasparc T2 under the GPL.
+</I>
+To be sure that implementation does not contain back-doors, one needs
+not only some source code but also a proof that the source code one
+has is the source of the implementation. With open-source software one
+can get such a proof by compiling the source themself (as far as they
+trust their compiler toolchain), but I don't see any way to get such a
+proof for non-FPGA hardware.
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

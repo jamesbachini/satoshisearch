@@ -1,0 +1,44 @@
+<PRE>On  12 Sep 2007 20:18:22 -0700, Aram Perez wrote:
+&gt;<i> I don't about you, but when I hear terms like (please pardon my
+</I>&gt;<i> cynicism):
+</I>
+&gt;<i> 	&quot;with military grade AES encryption&quot; - Hum, I'll have
+</I>&gt;<i> to ask NIST
+</I>&gt;<i> about that.
+</I>
+AES can be permitted for use in classified environments. See
+<A HREF="http://csrc.nist.gov/CryptoToolkit/aes/CNSS15FS.pdf.">http://csrc.nist.gov/CryptoToolkit/aes/CNSS15FS.pdf.</A> And, yes, the DoD
+does use AES in certain circumstances.
+
+&gt;<i> &gt; 	The encryption keys used to protect your data are generated
+</I>&gt;<i> &gt; 	in hardware by a FIPS 140-2 compliant True Random Number
+</I>&gt;<i> 
+</I>&gt;<i> As opposed to a FIPS 140-2 compliant False Random Number Generator.
+</I>
+While I don't understand this quibble about standard terminology, I do
+note that the IronKey language is somewhat misleading. There are no
+FIPS-approved non-deterministic RNGs at this point, as all of the
+FIPS-approved RNGs are deterministic (pseudo) RNGs. (See
+<A HREF="http://csrc.nist.gov/publications/fips/fips140-2/fips1402annexc.pdf">http://csrc.nist.gov/publications/fips/fips140-2/fips1402annexc.pdf</A>) It
+is possible to use a non-deterministic RNG to seed a FIPS-approved PRNG,
+but I don't know of anyone in the FIPS 140-2 world that claims doing so
+makes the non-deterministic RNG &quot;FIPS 140-2 compliant.&quot; 
+
+(Also, if random data is utilized during key generation within a FIPS
+140-2 module, then a FIPS-approved RNG must be utilized to generate that
+data in order to meet FIPS 140-2 requirements. Since all the
+FIPS-approved RNGs are PRNGs, a true RNG is not going to meet the FIPS
+140-2 requirement here.)
+
+Overall, colorful language and FIPS 140 hand-waving seem like the
+marketing norm in the &quot;security products that utilize crypto&quot; world. I
+think the language used by IronKey falls right in line with that, but I
+don't get a sense of snake oil. Then again, I don't really care either.
+
+-Andrew
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,21 @@
+<PRE>
+Ivan Krstic
+
+&gt;<i> ... But hey, if the peer is malicious or compromised to begin with,
+</I>&gt;<i> it could just as well do DH normally and explicitly send the secret
+</I>&gt;<i> to the listener when it's done. Not much to see here.
+</I>
+But it gets more interesting if the endpoints are not completely and
+solely controlled by Alice and Bob.  Suppose the computers and communication
+link are protected from tampering but that interfering with the power supply
+sometimes produces a DH private key of 0.
+
+What about a (covert and deniable) contribution to a project?
+Underhanded prime selection appears in the ElGamal-RSA discussion
+by Piper and Stephens in ISBN 0-19-853691-7.  
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

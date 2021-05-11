@@ -1,0 +1,30 @@
+<PRE>Crawford Nathan-HMGT87 wrote:
+&gt;<i> Why require contactless in the first place?
+</I>&gt;<i>
+</I>&gt;<i> Is swiping one's card, credit-card style too difficult for the average
+</I>&gt;<i> user?
+</I>
+As compared to slapping your wallet on the reader? yes.
+
+I swipe my Visa / debit / Tim Horton's cards regularly. With the 
+plethora of bad reader technology out there, no matter how practiced I 
+am it sometimes takes 2-3 tries to get a good read. Heck, sales clerks 
+who swipe hundreds of times per day sometimes have trouble. And that's 
+with a relatively easy to read magnetic stripe...
+
+GO Transit here in Toronto ran a pilot program with contactless 
+stored-value fare cards several years ago, which worked quite well; I'm 
+sure technology details are available via Google. Alas, the project got 
+squashed by a political movement for a Greater Toronto Area fare card 
+project (which still hasn't gone anywhere 5-6 years later...).
+
+-- 
+Harald
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

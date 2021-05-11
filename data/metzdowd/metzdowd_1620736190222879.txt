@@ -1,0 +1,63 @@
+<PRE>Leichter, Jerry wrote:
+&gt;<i> The problem is what that &quot;something else&quot; should be.  Keyfobs with
+</I>&gt;<i> one-time passwords are a good solution from the pure security point
+</I>&gt;<i> of view, but (a) people find them annoying; (b) when used with
+</I>&gt;<i> existing input mechanisms, as they pretty much universally are, are
+</I>&gt;<i> subject to MITM attacks.  The equivalent technology on a USB plugin
+</I>&gt;<i> is much easier on the user in some circumstances, but is subject to
+</I>&gt;<i> some bad semantic attacks, as discussed here previously.  Also, it's
+</I>&gt;<i> not a great solution for mobile devices.
+</I>&gt;<i> 
+</I>&gt;<i> DoD/government uses smartcards, but that's probably not acceptable to
+</I>&gt;<i> the broad population.  There's been some playing around with cellphones
+</I>&gt;<i> playing the role of smartcard, but cellphones are not inherently secure
+</I>&gt;<i> either. 
+</I>
+
+Cellphones are not inherently secure, but *could* be inherently secure. 
+  Each cellphone sim card has a unique identity.  It is possible to 
+guarantee that a message goes to or from a cellphone containing a 
+particular sim card - but present phone software provides no means to do 
+this.
+
+If a cellphones has nfc communications capable of talking to a pc, then 
+the whole interaction could be made painlessly automatic - touch your 
+cellphone to the pc nfc sensor to login to the website, touch it to the 
+security door to unlock the security door, touch it to the cash 
+register, observe the indicated payment on the cellphone screen, and 
+press OK, touch it to the screenless, keyboardless atm, and the 
+interaction comes up on your phone screen instead of the ATM screen, 
+touch cellphones to pay money from one individual to another.
+
+The major obstacle is that the government would want a strong binding 
+between sim cards and true names, which is no more practical than a 
+strong binding between physical keys and true names.
+
+Absent useful cellphone software, passwords must suffice.  With a limit 
+on the number of guesses before people get locked out, passwords *do* 
+suffice - but then we need a means to unlock the account, and a means of 
+password recovery.
+
+Although cellphones and email are insecure, a use once short lived 
+password emailed or instant messaged to the user is secure enough. 
+Trouble is, what happens if the user's email account is stolen?
+
+I had this problem.  I was using my hotmail account as the password 
+recovery account for various high value domain names.  Someone called up 
+hotmail's password recovery, and human engineered a password reset out 
+of the hotmail staff, and then used email based password recovery to 
+seize my domain names.  I eventually got them back, using reset 
+passwords snail mailed to my physical post office box, and now  the 
+email account associated with my domain names is at a service that 
+provides no password recovery mechanism - and therefore provides an 
+attacker with a very large number of opportunities to guess, requiring 
+an insanely strong password.
+
+Snail mail to a post office box is a secure password reset mechanism, 
+short of a well timed physical attack on the post office.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

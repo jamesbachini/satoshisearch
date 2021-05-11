@@ -1,0 +1,14 @@
+<PRE>On Fri, August 31, 2007 18:54, Stephan Neuhaus wrote:
+
+&gt;<i> Fun,
+</I>
+See German patent document DE000010027974A1 (application was refused in
+2006).
+
+Axel H. Horns
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

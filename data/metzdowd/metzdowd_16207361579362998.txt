@@ -1,0 +1,49 @@
+<PRE>On 8 Oct 2007 10:12:58 -0700, Stephan Somogyi wrote:
+&gt;<i> At 02:11 +1300 09.10.2007, Peter Gutmann wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> But if you build a FDE product with it you've got to get the entire product
+</I>&gt;&gt;<i> certified, not just the crypto component.
+</I>&gt;<i> 
+</I>&gt;<i> I don't believe this to be the case.
+</I>&gt;<i> 
+</I>&gt;<i> FIPS 140(-2) is about validating cryptographic implementations. It is 
+</I>&gt;<i> not about certifying entire products that contain ample functionality 
+</I>&gt;<i> well outside the scope of cryptographic evaluation. That's more of a 
+</I>&gt;<i> Common Criteria thing.
+</I>
+Yes, but an FDE product built on the OSSL FIPS module would not likely
+meet the FIPS 140-2 check box, as there is potentially more FIPS 140-2
+relevant functionality in the FDE product beyond what was validated in
+the OSSL module, such as, say, the whole key life cycle for the FDE
+product. That does not necessarily mean all of the FDE product is FIPS
+relevant, so perhaps the FIPS relevant functionality in the FDE product
+could be self-contained and validated by itself, or perhaps the whole
+FDE product could be validated and the irrelevant functionality just
+excluded from the FIPS requirements, etc. (As Gutmann says though,
+vendors sometimes successfully employ a bit of hand-waving here, so you
+never quite know what will satisfy the FIPS check box.)
+
+&gt;<i> At 14:04 +0100 08.10.2007, Ben Laurie wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> ? OpenSSL has FIPS 140.
+</I>&gt;<i> 
+</I>&gt;<i> OpenSSL FIPS Object Module 1.1.1 has FIPS 140-2 when running on SUSE 
+</I>&gt;<i> 9.0 and HPUX 11i, according to
+</I>&gt;<i> 
+</I>&gt;<i> &lt;<A HREF="http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2007.htm#733">http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2007.htm#733</A>&gt;
+</I>&gt;<i> 
+</I>&gt;<i> In the context of a conversation about whether something formally has 
+</I>&gt;<i> FIPS validation or not, the details are important.
+</I>
+Yes, the details are important. The OSSL FIPS module was tested on those
+platforms, but is vendor affirmed on other platforms, assuming the
+module meets the vendor affirmation requirements described in the FIPS
+140-2 implementation guidance on a given &quot;other&quot; platform.
+
+-Andrew
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

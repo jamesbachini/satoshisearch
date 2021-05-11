@@ -1,0 +1,33 @@
+<PRE>Steven M. Bellovin wrote:
+ &gt; IPsec operates at layer 3, where there are (generally)
+ &gt; no user contexts.  This makes it difficult to bind
+ &gt; IPsec credentials to a user, which means that it
+ &gt; inherently can't be as simple to configure as ssh.
+ &gt;
+ &gt; Put another way, when you tell an sshd whom you wish
+ &gt; to log in as, it consults that user's home directory
+ &gt; and finds an authorized_keys file. How can IPsec -- or
+ &gt; rather, any key management daemon for IPsec -- do
+ &gt; that?  Per-user SPDs?  Is this packet for port 80 for
+ &gt; user pat or user chris?
+ &gt;
+ &gt; I can envision ways around this (especially if we have
+ &gt; an IP address per user of a system -- I've been
+ &gt; writing about fine-grained IP address assignment for
+ &gt; years), but they're inherently a lot more complex than
+ &gt; ssh.
+
+This is a particular case of the layer problem I have
+been ranting about for years:  Private and authenticated
+sessions at layer X do not in themselves correspond to
+private and authenticated sessions at layer Y, and for
+users to arrange their affairs so that layer X does
+indeed secure layer Y generally requires users to stand
+on their heads and stick their right big toe in their
+left ear.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

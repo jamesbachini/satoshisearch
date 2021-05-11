@@ -1,0 +1,35 @@
+<PRE>
+
+Steven M. Bellovin wrote:
+&gt;<i> <A HREF="http://www.tgdaily.com/content/view/33425/118/">http://www.tgdaily.com/content/view/33425/118/</A>
+</I>&gt;<i> 
+</I>&gt;<i> &quot;Ann Arbor (MI) - University of Michigan scientists have discovered a
+</I>&gt;<i> breakthrough way to utilize light in cryptography. The new technique
+</I>&gt;<i> can crack even complex codes in a matter of seconds. Scientists believe
+</I>&gt;<i> this technique offers much advancement over current solutions and could
+</I>&gt;<i> serve to foil national and personal security threats if employed.&quot;...
+</I>&gt;<i> 
+</I>&gt;<i> I'll let those who know more physics comment in detail; from reading
+</I>&gt;<i> the article, it appears to lead to a way to construct quantum computers.
+</I>
+Which means, if Moore's Law still applies, that in a few years no 
+current code created by one of the three letter agencies will be 
+safe from prying.
+
+So what is the statute of limitations on invasion of privacy 
+suits? Or, if it has expired, then me may have proof available 
+that people weren't crying wolf.
+
+I've always loved the old saw, &quot;Be careful what you wish for, you 
+just might get it.&quot; My addendum is that you will probably not 
+like the unintended consequences.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

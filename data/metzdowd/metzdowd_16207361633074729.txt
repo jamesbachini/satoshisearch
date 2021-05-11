@@ -1,0 +1,74 @@
+<PRE>|<i> &gt; However, that doesn't say anything about whether f is actually
+</I>|<i> &gt; invoked at run time.  That comes under the &quot;acts as if&quot; rule:  If
+</I>|<i> &gt; the compiler can prove that the state of the C (notional) virtual
+</I>|<i> &gt; machine is the same whether f is actually invoked or not, it can
+</I>|<i> &gt; elide the call.  Nothing says that memset() can't actually be
+</I>|<i> &gt; defined in the appropriate header, as a static (or, in C99, inline)
+</I>|<i> &gt; function.
+</I>|<i> 
+</I>|<i> The standard actually says &quot;... it is permitted to take the address of
+</I>|<i> a library function even if it is defined as a macro ...&quot;. The standard
+</I>|<i> works for me as a source code author who needs an execution-aware
+</I>|<i> memcpy function from time to time. Overworked GCC contributors should
+</I>|<i> work to comply to the standard, not to address Peter, Thierry, and
+</I>|<i> whoever's wildests dreams.
+</I>If the function is defined as I suggested - as a static or inline - you
+can, indeed, takes its address.  (In the case of an inline, this forces
+the compiler to materialize a copy somewhere that it might not otherwise
+have produced, but not to actually *use* that copy, except when you take
+the address.)  You are allowed to invoke the function using the address
+you just took.  However, what in that tells you that the compiler -
+knowing exactly what code will be invoked - can't elide the call?
+
+By the way, you might wonder what happens if two different CU's take
+the address of memset and we then compare them.  In this kind of
+implementation, they will be unequal - but in fact nothing in the
+Standard says they can't be!  A clever compiler could have all kinds
+of reasons to produce multiple copies of the same function.  All you
+can say is that if two function pointers are equal, they point to the
+same function.  No converse form is provable within the Standard.
+
+You might try something like:
+
+	typedef (void *(*memset_ptr)(const void*,int,size_t));
+
+	volatile memset_ptr p_memset = &amp;(memset);
+
+(I *think* I got that syntax right!)
+
+Then you can invoke (*p_memset).  But if you do this in the same
+compilation unit, a smart compiler that does value propagation could
+determine that it knows where p_memset points, and that it knows what
+the code there is, so it can go ahead and do its deeper analysis.
+
+Using:
+
+	volatile memset_ptr p_memset = &amp;(memset);
+
+in one compilation unit and then:
+
+	extern volatile memset_ptr p_memset = &amp;(memset);
+
+will keep you safe from single-CU optimizations, but nothing in the
+Standard says that's all there are.  Linker-based optimizations
+could have the additional information that nowhere in the program
+can p_memset be changed, and further that p_memset is allocated to
+regular memory, and in principle the calls could be elided at that
+point.  Mind you, I would be astounded if any compiler/linker system
+actually attempted such an optimization ... but that doesn't make
+it illegal within the language of the Standard.
+
+|<i> &gt; Then the compiler can look at the implementation and &quot;prove&quot;
+</I>|<i> &gt; that a memset() to a dead variable can be elided....
+</I>|<i> 
+</I>|<i> It can't prove much in the case of (memset)()
+</I>In principle (I'll grant you, probably not in practice), it can
+provie quite a bit - and certainly enough to justify eliding the
+call.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

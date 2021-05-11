@@ -1,0 +1,38 @@
+<PRE> &gt; Detecting viruses is a fundamentally losing battle: a
+ &gt; sufficiently advanced virus can fully simulate a clean
+ &gt; computer for the scanner to run in.
+ &gt;
+ &gt; On the other hand, writing an OS that doesn't get
+ &gt; infected in the first place is a fundamentally winning
+ &gt; battle: OSes are insecure because people make
+ &gt; mistakes, not because they're fundamentally
+ &gt; insecurable.
+ &gt;
+ &gt; Detecting spam by analysis of the text is another
+ &gt; losing battle: even humans can't always agree on
+ &gt; what's spam.
+ &gt;
+ &gt; The maddening part is that security as an industry is
+ &gt; almost always forced to fight on the losing
+ &gt; battlefields, even though we've had beautiful,
+ &gt; efficient, impregnable fortresses available for many
+ &gt; years. Any crypto book from 20 years ago can show you
+ &gt; how to send an unforgeable email or sign a binary, yet
+ &gt; these notions still haven't widely caught on
+
+Books from twenty years ago will not tell you how to
+make your impregnable fortress useful, usable, and
+convenient.  Impregnable fortresses tend to be located
+at the North Pole, and customers fail to show up.
+
+Further, often what is built is an impregnable wall,
+rather than an impregnable fortress.  The other three
+walls are overlooked, or if overlooked, there is no way
+in, or if a way in is provided, anyone can go through
+it.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

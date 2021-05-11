@@ -1,0 +1,20 @@
+<PRE>On Fri, Aug 17, 2007 at 05:21:16PM -0700, Alex Alten wrote:
+
+&gt;<i> Agreed, for most requirements.  Sometimes one may need to keep keys
+</I>&gt;<i> in trusted hardware only.  The only real fly-in-the-ointment is that current
+</I>&gt;<i> hash algorithms (SHA-1, SHA-2, etc.) don't scale across multiple CPU
+</I>&gt;<i> cores (assuming you need integrity along with your privacy).
+</I>
+The basic algorithms don't but you can easily enough use multiple CPUs
+with a hash tree or hash list. I'd also guess that in many cases you'd
+want to hash many files, which offers easy parallelism by spawning a
+pool of threads that work off a series of files. If you can afford a
+patent license for PMAC, that would work as well.
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

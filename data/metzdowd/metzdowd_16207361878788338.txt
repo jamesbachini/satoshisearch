@@ -1,0 +1,39 @@
+<PRE>John Ioannidis wrote:
+|<i> Does anyone know how this &quot;security questions&quot; disease started, and
+</I>why 
+|<i> it is spreading the way it is?  If your company does this, can you
+</I>find 
+|<i> the people responsible and ask them what they were thinking?
+</I>
+The answer is &quot;Help Desk Call Avoidance&quot;; allow the end-user to fix
+their own account without having to get someone on the phone. This is
+simply an available mechanism in the spectrum between easy-to-use and
+rock-solid security.
+
+|<i> My theory is that no actual security people have ever been involved,
+</I>and 
+|<i> that it's just another one of those stupid design practices that are 
+</I>|<i> perpetuated because &quot;nobody has ever complained&quot; or &quot;that's what 
+</I>|<i> everybody is doing&quot;.
+</I>
+Your theory is incorrect. There is considerable analysis on what
+constitute good security questions based on the anticipated entropy of
+the responses. This is why, for example, no good security question has a
+yes/no answer (i.e., 1-bit). Aren't security questions just an
+automation of what happens once you get a customer service
+representative on the phone? In some regards they may be more secure as
+they're less subject to social manipulation (i.e., if I mention a few
+possible answers to a customer support person, I can probably get them
+to confirm an answer for me).
+
+-Piers
+--
+Piers Bowness
+RSA - The Security Division of EMC
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,23 @@
+<PRE>
+Jack Lloyd &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">lloyd at randombit.net</A>&gt; writes:
+&gt;&gt;<i> Having been peripherally involved in the causation change for IKE, let
+</I>&gt;&gt;<i> me confess that it was caused by human stupidity destroying the
+</I>&gt;&gt;<i> alternatives. The author of the much cleaner spec asserted copyright
+</I>&gt;&gt;<i> and control over it, and fearing lawsuits, people turned to the
+</I>&gt;&gt;<i> the remaining alternative. A number of us were all to blame for the
+</I>&gt;&gt;<i> situation.
+</I>&gt;<i>
+</I>&gt;<i> Out of curiosity, was this other spec Photuris?
+</I>
+Sadly. That situation was long and complicated and I'd prefer not to
+go into it -- and I'd prefer actually if others didn't either, as it
+is much more about humans and non-security politics than it is about
+security or cryptography.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,24 @@
+<PRE>
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; writes:
+&gt;<i> On Jul 1, 2008, at 12:46 PM, Perry E. Metzger wrote:
+</I>&gt;&gt;<i> My experience with European banks is quite limited -- my consulting
+</I>&gt;&gt;<i> practice is pretty much US centric. My general understanding, however,
+</I>&gt;&gt;<i> is that they are doing better, not worse, with login security.
+</I>&gt;<i>
+</I>&gt;<i> As a data point, the largest bank in Croatia used to mail customers
+</I>&gt;<i> pre-printed TAN lists. Some number of years ago, they switched to
+</I>&gt;<i> (non- SecurID) tokens which require a 4-digit PIN to turn on, and
+</I>&gt;<i> then provide two functions: a login OTP and a challenge/response
+</I>&gt;<i> system for authorizing individual transactions. Your username is
+</I>&gt;<i> simply the token's serial number, though it's not clear if these are
+</I>&gt;<i> in fact serial.
+</I>
+That is far, far better than the average US bank.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

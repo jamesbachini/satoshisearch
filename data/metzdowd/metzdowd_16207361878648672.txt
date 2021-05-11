@@ -1,0 +1,27 @@
+<PRE>At 03:33 PM 8/19/2008 -0400, Perry E. Metzger wrote:
+
+&gt;<i><A HREF="http://blog.wired.com/27bstroke6/2008/08/federal-judge-t.html">http://blog.wired.com/27bstroke6/2008/08/federal-judge-t.html</A>
+</I>
+
+MBTA's claim was based on CFAA, the Computer Fraud and Abuse 
+Act.  Properly, the judge decided (in effect) that CFAA only applies 
+to messing with computers (a legal term of fanciful art), not to 
+speaking about software that might mess with computers.
+
+The more interesting question, which has not been addressed, is 
+whether the CFAA definition of &quot;computer&quot; is so broad that it would 
+include the CharlieCard and/or CharlieTicket.  The Complaint alleges 
+specifically that both are computers.
+
+--------------------------------------------------------------------
+James S. Tyre                                      <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jstyre at jstyre.com</A>
+Law Offices of James S. Tyre          310-839-4114/310-839-4602(fax)
+10736 Jefferson Blvd., #512               Culver City, CA 90230-4969
+Co-founder, The Censorware Project             <A HREF="http://censorware.net">http://censorware.net</A>
+Policy Fellow, Electronic Frontier Foundation     <A HREF="http://www.eff.org">http://www.eff.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

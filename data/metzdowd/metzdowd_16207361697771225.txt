@@ -1,0 +1,160 @@
+<PRE>ANNOUNCING: Allmydata.org &quot;Tahoe&quot; version 0.8
+
+We are pleased to announce the release of version 0.8 of allmydata.org
+&quot;Tahoe&quot;.
+
+Allmydata.org &quot;Tahoe&quot; is a secure, decentralized, fault-tolerant
+filesystem.  All of the source code is available under a Free
+Software, Open Source licence (or two).
+
+This filesystem is encrypted and distributed over multiple peers in
+such a way that it continues to work correctlly even when some of the
+peers are unavailable, malfunctioning, or malicious.
+
+This is the successor to Allmydata-Tahoe v0.7, which was released
+January 8, 2008 [1].
+
+This release improves performance, diagnostics, and packaging.  This
+release of allmydata.org &quot;Tahoe&quot; will form the basis of the next
+consumer backup product from Allmydata, Inc. -- <A HREF="http://allmydata.com">http://allmydata.com</A> .
+
+
+Since v0.7 we've made the following changes:
+
+  * Add a preliminary Microsoft Windows package (ticket #195).
+
+  * Add a preliminary Macintosh package (ticket #182).
+
+  * Display information about peers (ticket #32).
+
+  * Display information about uploads and downloads (ticket #39).
+
+  * Add unit tests and docs for contrib/fuse (ticket #255).
+
+  * Add a preliminary FUSE interface for Macintosh.
+
+  * Update docs, starting with docs/about.html --
+    <A HREF="http://allmydata.org/source/tahoe/trunk/docs/about.html">http://allmydata.org/source/tahoe/trunk/docs/about.html</A> .
+
+  * Improve logging, diagnostic tools, statistics, timing measurements
+    during upload, etc..
+
+  * Add more measurements of performance:
+    <A HREF="http://allmydata.org/trac/tahoe/wiki/Performance">http://allmydata.org/trac/tahoe/wiki/Performance</A> .
+
+  * Add an upload helper, with resumption of incomplete uploads and
+    short-circuiting of uploads if the file is already present (tickets
+    #116, #258, #218).
+
+  * Make upload continue even if some servers disappear during the
+    upload process.
+
+  * Add mtime and ctime timestamps to files (ticket #183).
+
+  * Make introduction more efficient by allowing nodes to act as
+    clients-only and not publish themselves as servers (ticket #271).
+
+  * Extend the web API to allow programmatic control of mutable files.
+
+  * Fix potential problem that could cause corruption of downloaded
+    mutable files if a long series of unlikely coincidences and hacked
+    clients occurred (ticket #312).
+
+  * Make file and directory names use unicode.
+
+  * Use SHA-256d instead of SHA-256 for secure hashes.
+
+
+WHAT IS IT GOOD FOR?
+
+With Tahoe, you can distribute your filesystem across a set of
+computers, such that if some of the computers fail or turn out to be
+malicious, the filesystem continues to work from the remaining
+computers.  You can also share your files with other users, using a
+strongly encrypted, capability-based access control scheme.
+
+This release is targeted at hackers and smart users who are willing to
+use a web user interface, a command-line user interface, or a FUSE
+interface.  (Or a RESTful API.  Just telnet to localhost and type HTTP
+requests to get started.)
+
+Because this software is new, it is not yet recommended for storage of
+highly confidential data nor for valuable data which is not otherwise
+backed up. However, it works well in practice, it comes with extensive
+unit tests [2], and there are no known security flaws which would
+compromise confidentiality or data integrity.  (For a current
+description of all known security issues and an overview of Tahoe's
+security properties, please see the Security web page: [3].)
+
+This release of Tahoe is suitable for the &quot;friendnet&quot; use case [4] --
+it is easy to create a filesystem spread over the computers of you and
+your friends so that you can share files and disk space with one
+another.
+
+
+LICENCE
+
+You may use this package under the GNU General Public License, version
+2 or, at your option, any later version.  See the file &quot;COPYING.GPL&quot;
+for the terms of the GNU General Public License, version 2.
+
+You may use this package under the Transitive Grace Period Public
+Licence, version 1.0.  The Transitive Grace Period Public Licence says
+that you may distribute proprietary derived works of Tahoe without
+releasing the source code of that derived work for up to twelve
+months, after which time you are obligated to release the source code
+of the derived work under the Transitive Grace Period Public Licence.
+See the file &quot;COPYING.TGPPL.html&quot; for the terms of the Transitive
+Grace Period Public Licence, version 1.0.
+
+(You may choose to use this package under the terms of either licence,
+at your option.)
+
+
+INSTALLATION
+
+Tahoe works on Linux, Mac OS X, Windows, Cygwin, and Solaris.  For
+installation instructions please see &quot;doc/install.html&quot; [5].
+
+
+HACKING AND COMMUNITY
+
+Please join us on the mailing list [6] to discuss uses of Tahoe.
+Patches that extend and improve Tahoe are gratefully accepted -- the
+RoadMap page [7] shows the next improvements that we plan to make and
+CREDITS [8] lists the names of people who've contributed to the
+project.  The wiki Dev page [9] contains resources for hackers.
+
+
+SPONSORSHIP
+
+Tahoe is sponsored by Allmydata, Inc. [10], a provider of consumer
+backup services.  Allmydata, Inc. contributes hardware, software,
+ideas, bug reports, suggestions, demands, and money (employing several
+allmydata.org Tahoe hackers and allowing them to spend part of their
+work time on the next-generation, free-software project).  We are
+eternally grateful!
+
+
+Zooko O'Whielacronx
+on behalf of the allmydata.org team
+February 15, 2008
+Boulder, Colorado, USA
+
+
+[1] <A HREF="http://allmydata.org/trac/tahoe/browser/relnotes.txt?rev=1805">http://allmydata.org/trac/tahoe/browser/relnotes.txt?rev=1805</A>
+[2] <A HREF="http://allmydata.org/tahoe-figleaf/current/">http://allmydata.org/tahoe-figleaf/current/</A>
+[3] <A HREF="http://allmydata.org/trac/tahoe/wiki/Security">http://allmydata.org/trac/tahoe/wiki/Security</A>
+[4] <A HREF="http://allmydata.org/trac/tahoe/wiki/UseCases">http://allmydata.org/trac/tahoe/wiki/UseCases</A>
+[5] <A HREF="http://allmydata.org/source/tahoe/trunk/docs/install.html">http://allmydata.org/source/tahoe/trunk/docs/install.html</A>
+[6] <A HREF="http://allmydata.org/cgi-bin/mailman/listinfo/tahoe-dev">http://allmydata.org/cgi-bin/mailman/listinfo/tahoe-dev</A>
+[7] <A HREF="http://allmydata.org/trac/tahoe/roadmap">http://allmydata.org/trac/tahoe/roadmap</A>
+[8] <A HREF="http://allmydata.org/trac/tahoe/browser/CREDITS?rev=1804">http://allmydata.org/trac/tahoe/browser/CREDITS?rev=1804</A>
+[9] <A HREF="http://allmydata.org/trac/tahoe/wiki/Dev">http://allmydata.org/trac/tahoe/wiki/Dev</A>
+[10] <A HREF="http://allmydata.com">http://allmydata.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

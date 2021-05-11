@@ -1,0 +1,17 @@
+<PRE><A HREF="http://www.dailyprogress.com/servlet/Satellite?pagename=CDP/MGArticle/CDP_BasicArticle&amp;c=MGArticle&amp;cid=1173354778618&amp;path=">http://www.dailyprogress.com/servlet/Satellite?pagename=CDP/MGArticle/CDP_BasicArticle&amp;c=MGArticle&amp;cid=1173354778618&amp;path=</A>
+
+The article is not real clear about the level of physical 
+dissection actually used, but it does appear that progress is 
+being made on that front as well.
+
+Allen
+
+[Moderator's note: the article discusses the cryptanalysis of the
+algorithm used in the ill-fated Dutch transit card, which is also in
+use in the London Underground's &quot;Oystercard&quot; -- actually
+cryptanalysis, not mere brute force attack which was possible before. --Perry]
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

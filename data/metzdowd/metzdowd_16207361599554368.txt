@@ -1,0 +1,17 @@
+<PRE>James Muir wrote:
+ &gt; Can anyone think of a deployed implementation of RSA
+ &gt; signatures that would be vulnerable to the attack
+ &gt; Shamir mentions?  Hashing and message blinding would
+ &gt; seem to thwart it.
+
+As I said, public key encryption has long been known to
+be weak against chosen plaintext and chosen cryptotext -
+so protocols have long been designed to prevent this
+sort of attack.  If they are not so designed, they were
+known to be weak before this attack was discovered.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

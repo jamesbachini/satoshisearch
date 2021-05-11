@@ -1,0 +1,22 @@
+<PRE>&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+&gt;<i>Anyone know anything about these guys?  (www.vaultid.com).  They are trying
+</I>&gt;<i>to implement one-time credit card numbers on devices you take with you -
+</I>&gt;<i>initially cell phones and PDA's, eventually in a credit card form factor.
+</I>&gt;<i>The general idea seems good, but their heavy reliance on fingerprint
+</I>&gt;<i>recogition is troubling (though it may be appropriate in their particular
+</I>&gt;<i>application).
+</I>
+&gt;<i>From what I can gather from their black text on a dark-grey background, all
+</I>they're implementing is one-time CC numbers on various devices.  Banks have
+been using one-time CC numbers for awhile now, all this is doing is garnishing
+them with an extra layer of biometric magic.  The important thing isn't the
+biometrics, it's the one-use-only CC number that provides the security, and
+that's not really new.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

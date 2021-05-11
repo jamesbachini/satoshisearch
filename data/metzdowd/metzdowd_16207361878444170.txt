@@ -1,0 +1,35 @@
+<PRE>At Fri, 15 Aug 2008 11:57:38 -0400,
+John Ioannidis wrote:
+&gt;<i> 
+</I>&gt;<i> This just about sums it up: <A HREF="http://xkcd.com/463/">http://xkcd.com/463/</A>
+</I>
+Without directly addressing the question of the quality of Diebold's
+offerings, I actually don't think the criticism implied here is
+entirely fair. If you're going to have voting machines, even precinct
+count optical scanners (and because of the complexity of US elections,
+hand counting is quite expensive), you likely want to machine
+tabulate, and that means an EMS. Though you certainly should make
+serious attempts to keep the EMS from coming in contact with outside
+data (see [HRS+08] for some discussion of how difficult this actually
+is), there is always some chance that there will be some
+contact. Generic AV probably isn't that great at detecting or stopping
+this, but it may well be better than nothing, and it's certainly an
+arguable point.
+
+More discussion at:
+<A HREF="http://www.educatedguesswork.org/2008/08/should_voting_systems_have_av.html">http://www.educatedguesswork.org/2008/08/should_voting_systems_have_av.html</A>
+
+-Ekr
+
+
+[HRS+08] J.A. Halderman, E. Rescorla, H. Shacham, and D. Wagner. ?You
+Go to Elections with the Voting System You Have: Stop-Gap Mitigations
+for Deployed Voting Systems.? In D. Dill and T. Kohno, eds.,
+Proceedings of EVT 2008. USENIX/ACCURATE, July 2008. 
+<A HREF="http://www.cse.ucsd.edu/~hovav/papers/hrsw08.html">http://www.cse.ucsd.edu/~hovav/papers/hrsw08.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

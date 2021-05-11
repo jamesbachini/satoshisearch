@@ -1,0 +1,30 @@
+<PRE>&gt;<i> The wider point of Peter's writeup -- and of the therapy -- is that 
+</I>&gt;<i> developers working on security tools should _know_ they're working in 
+</I>&gt;<i> a notoriously, infamously hard field where the odds are 
+</I>&gt;<i> _overwhelmingly_ against them if they choose to engineer new solutions.
+</I>
+Developers working in almost any field should know the history and best 
+practices -- is PGP's original &quot;bass o matic&quot; any more important than the 
+code in a defibrillator? -- but this is not the way our field works right 
+now.  Compare it to something like civil engineering or architecture.
+
+Until we get to that point -- and we may never got there, nor want to -- 
+it is probably better to act as mentors than, say, pricks. :)  I thought 
+Peter's soundwave idea was kinda funny, and hopefully lessened the sting. 
+Guus's note should recommended reading on a regular basis.
+
+If we want to spread the use of crypto, perhaps we should be nicer to 
+those who are also trying to do the same thing albeit poorly.
+
+        /r$
+
+--
+STSM, DataPower Chief Programmer
+WebSphere DataPower SOA Appliances
+<A HREF="http://www.ibm.com/software/integration/datapower/">http://www.ibm.com/software/integration/datapower/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

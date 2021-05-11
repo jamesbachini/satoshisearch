@@ -1,0 +1,98 @@
+<PRE>
+The &quot;extra messages&quot; might be irrelevant for cryptography,
+but they're not irrelevant for security or functionality.
+
+E.g. in SSL, you have capability/feature negotiation
+(cipher suites, trusted CAs, in TLS 1.2 also signature
+algorithms, etc.) which IMHO *is* important for 
+security (if you consider the security implications of 
+deploying this over tens of years and hundreds of 
+millions of hosts).
+
+(But yes, there are variations of SSL where a smaller 
+number of RTTs might have been sufficient..)
+
+Best regards,
+Pasi
+
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: travis+ml-cryptography
+</I>&gt;<i> Sent: 08 November, 2007 21:50
+</I>&gt;<i> To: Cryptography
+</I>&gt;<i> Subject: refactoring crypto handshakes (SSL in 3 easy steps)
+</I>&gt;<i> 
+</I>&gt;<i> ASSUMPTIONS:
+</I>&gt;<i> 
+</I>&gt;<i> Network latency is important, and will only become more so, since
+</I>&gt;<i> light won't go faster in a given medium, and we can't do better than
+</I>&gt;<i> c, ever.
+</I>&gt;<i> 
+</I>&gt;<i> PROPOSED SOLUTION:
+</I>&gt;<i> 
+</I>&gt;<i> Refactor protocol to minimize number of interlocked steps.
+</I>&gt;<i> Specifically, reduce the number of messages.
+</I>&gt;<i> 
+</I>&gt;<i> METHODOLOGY:
+</I>&gt;<i> 
+</I>&gt;<i> Identify data which must be transmitted, and identify their
+</I>&gt;<i> dependencies.  Send data on first outbound message to peer after all
+</I>&gt;<i> its dependencies are available (i.e. on the step after it is
+</I>&gt;<i> received).  Each transmission is a sweep of one level of the
+</I>&gt;<i> dependency tree, starting at the root and working downward.
+</I>&gt;<i> 
+</I>&gt;<i> PREVIOUS WORK:
+</I>&gt;<i> 
+</I>&gt;<i> Three messages is the proven minimum for mutual authentication.  Last
+</I>&gt;<i> two messages all depend on the previous message, so minimum handshake
+</I>&gt;<i> time is 1.5 RTTs.
+</I>&gt;<i> 
+</I>&gt;<i> EXAMPLE:
+</I>&gt;<i> 
+</I>&gt;<i> First examine SSL with Mutual Auth, which is detailed here:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://en.wikipedia.org/wiki/Image:Ssl_handshake_with_two_way">http://en.wikipedia.org/wiki/Image:Ssl_handshake_with_two_way</A>_
+</I>&gt;<i> authentication_with_certificates.png
+</I>&gt;<i> 
+</I>&gt;<i> Here is a refactored version of the important messages:
+</I>&gt;<i> 
+</I>&gt;<i> C-&gt;S: hello, RNc, client cert, enc_S(client_cert)
+</I>&gt;<i> S-&gt;C: server cert
+</I>&gt;<i> C-&gt;S: enc_S(PMS)
+</I>&gt;<i> 
+</I>&gt;<i> DISCUSSION:
+</I>&gt;<i> 
+</I>&gt;<i> Providing the datum as soon as its dependencies are satisfied is
+</I>&gt;<i> well-studied in processor design.
+</I>&gt;<i> 
+</I>&gt;<i> One may have extra messages, but they are implementation artifacts,
+</I>&gt;<i> completely irrelevant to the cryptography.
+</I>&gt;<i> 
+</I>&gt;<i> Network protocol libraries advance through time monotonically and thus
+</I>&gt;<i> are analogous to LR(1) language parsers which parse from left to right
+</I>&gt;<i> and are only able to look at the next token (message); perhaps we can
+</I>&gt;<i> apply what we already know about them to create unambiguous crypto
+</I>&gt;<i> handshakes with respectable error handling.
+</I>&gt;<i> 
+</I>&gt;<i> Sending one layer of the dependency tree at once is like a synchronous
+</I>&gt;<i> circuit; one could also fire off messages as soon the data becomes
+</I>&gt;<i> available, like an asynchronous circuit, which may reduce overall time
+</I>&gt;<i> of the handshake due to computation by the endpoints.  However, it is
+</I>&gt;<i> an implementation detail, not important to this analysis.
+</I>&gt;<i> 
+</I>&gt;<i> OPEN QUESTIONS:
+</I>&gt;<i> 
+</I>&gt;<i> When would a handshake require more?  Is there such a thing, in any
+</I>&gt;<i> extant ZKS or PFS systems?
+</I>&gt;<i> 
+</I>&gt;<i> COMMENTS?
+</I>&gt;<i> -- 
+</I>&gt;<i> Life would be so much easier if it was open-source.
+</I>&gt;<i> &lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+</I>&gt;<i> For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

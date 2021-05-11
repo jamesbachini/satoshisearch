@@ -1,0 +1,101 @@
+<PRE>On Sat, Mar 22, 2008 at 10:59:18AM +0000, Ben Laurie wrote:
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bmanning at vacation.karoshi.com</A> wrote:
+</I>&gt;<i> &gt;On Fri, Mar 21, 2008 at 08:52:07AM +1000, James A. Donald wrote:
+</I>&gt;<i> &gt;&gt;From time to time I hear that DNSSEC is working fine, and on examining 
+</I>&gt;<i> &gt;&gt;the matter I find it is &quot;working fine&quot; except that ....
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt;Seems to me that if DNSSEC is actually working fine, I should be able to 
+</I>&gt;<i> &gt;&gt;provide an authoritative public key for any domain name I control, and 
+</I>&gt;<i> &gt;&gt;should be able to obtain such keys for other domain names, and use such 
+</I>&gt;<i> &gt;&gt;keys for any purpose, not just those purposes envisaged in the DNSSEC 
+</I>&gt;<i> &gt;&gt;specification.  Can I?  It is not apparent to me that I can.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;	actually, the DNSSEC specification -used- to support 
+</I>&gt;<i> &gt;	keys for &quot;any purpose&quot;, and in theory you could use
+</I>&gt;<i> &gt;	DNSSEC keys in that manner.  However a bit of careful
+</I>&gt;<i> &gt;	thought suggests that there is potential  disconnect btwn
+</I>&gt;<i> &gt;	the zone owner/admin who creates/distributes the keys as 
+</I>&gt;<i> &gt;	a token of the integrity and authenticity of the data in
+</I>&gt;<i> &gt;	the DNS, and the owner/admin of the node to which the DNS
+</I>&gt;<i> &gt;	data points.
+</I>&gt;<i> 
+</I>&gt;<i> So far, so good. This disconnect doesn't seem to have done the CA 
+</I>&gt;<i> industry any harm, though.
+</I>
+	The CA business -is- to serve as a &quot;notary&quot; They attest to
+	the binding o fthe key to holder.  To date, thats NOT what
+	a zone admin does, he is attesting that its HIS key, that it
+	is HIS record in HIS database.  Just because he has sold the
+	right to use to someone else, is still his database and his data.
+
+	Unless of course Nominet (for example) is now going to allow 
+	client driven dynamic updates - where the clients are in complete 
+	control of their data.  (thats closer to James, assertion that he 
+	owns/controls his domain name)
+	
+&gt;<i> 
+</I>&gt;<i> &gt;      Remember that while you may control your forward
+</I>&gt;<i> &gt;	name (and not many people actually run their own DNS servers)
+</I>&gt;<i> &gt;	it is less likely that you run your address maps - and for
+</I>&gt;<i> &gt;	the paranoid, you would want to ensure the forward and 
+</I>&gt;<i> &gt;	reverse zones are signed and at the intersection, there is
+</I>&gt;<i> &gt;	a common data element which you can use.
+</I>&gt;<i> 
+</I>&gt;<i> Non sequiteur, plus I can't see why paranoia would prompt me to want to 
+</I>&gt;<i> do this? What does it prove?
+</I>
+	The argument is, again, to James asserton that he owns his domain 
+	name.  In point of fact, every node has at least two &quot;names&quot;
+	in the DNS, the forward (which gets most of the attention) and the
+	reverse - which is nearly always controled by your ISP.
+
+	DNSSEC validation along one path in the DNS graph is reassuring
+	(or so it is claimed).  I posit that validation over two, generally
+	non-overlapping administrative spheres of influence, in the DNS
+	graph would give a higher level of assurance. Couple this with
+	finding the identical x509 cert at the origin of the validation
+	chain for both paths - and I think I have a much higher confidence
+	that I am actually going to be sending packets to the &quot;right&quot;
+	node.
+
+
+&gt;<i> Also, PTR records are only supposed to point to &quot;primary domain names&quot;. 
+</I>&gt;<i> Since it is common for hosts to have many names resolving to the same IP 
+</I>&gt;<i> address, by definition most of these will not correspond to the reverse 
+</I>&gt;<i> lookup.
+</I>
+	Er... Allow me the option o fdisbeleiving your assertion.
+	PTR records can and do point to mutiple names.  Some narrow
+	implementations have assumed that there will only be a single
+	data element and this myth - that PTRs only point to a single
+	name - is and has been spread widely.
+
+&gt;<i> &gt;	To do what you want, want, you might consider using the
+</I>&gt;<i> &gt;	CERT-rr, using the DNS to distribute host-specific keys/certs.
+</I>&gt;<i> &gt;	And to ensure that the data in the DNS was not tampered with,
+</I>&gt;<i> &gt;	using DNSSEC signed zones with CERT-rr's would not be a bad
+</I>&gt;<i> &gt;	thing.   In fact, thats what we are testing .
+</I>&gt;<i> 
+</I>&gt;<i> Who is &quot;we&quot; and what exactly are you testing?
+</I>
+	We is USMIR, the registry for .UM  -  www.nic.um
+
+--bill
+
+&gt;<i> 
+</I>&gt;<i> Cheers,
+</I>&gt;<i> 
+</I>&gt;<i> Ben.
+</I>&gt;<i> 
+</I>&gt;<i> -- 
+</I>&gt;<i> <A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+</I>&gt;<i> 
+</I>&gt;<i> &quot;There is no limit to what a man can do or how far he can go if he
+</I>&gt;<i> doesn't mind who gets the credit.&quot; - Robert Woodruff
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

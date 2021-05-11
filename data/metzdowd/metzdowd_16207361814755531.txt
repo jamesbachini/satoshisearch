@@ -1,0 +1,30 @@
+<PRE>
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+&gt;<i> Arshad Noor wrote:
+</I>&gt;&gt;<i> While programmers or business=people could be ill-informed, Allen,
+</I>&gt;&gt;<i> I think the greater danger is that IT auditors do not know enough
+</I>&gt;&gt;<i> about cryptography, and consequently pass unsafe business processes
+</I>&gt;&gt;<i> and/or software as being secure.
+</I>&gt;<i>
+</I>&gt;<i> Committees of experts regularly get cryptography wrong - consider, for
+</I>&gt;<i> example the Wifi debacle.  Each wifi release contains classic and
+</I>&gt;<i> infamous errors - for example WPA-Personal is subject to offline
+</I>&gt;<i> dictionary attack.
+</I>
+The initial WEP design was done without cryptography experts. The
+design of subsequent generations of WiFi security was designed in the
+face of backward compatibility constraints that severely limited the
+space of possible designs.
+
+I would claim that this is not an example of crypto experts getting it
+wrong at all -- it is, in fact, an example of what can go wrong when
+people who don't know what they're doing design cryptography into
+something that's very widely deployed.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

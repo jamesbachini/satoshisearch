@@ -1,0 +1,62 @@
+<PRE>Thierry Moreau wrote:
+&gt;<i> In draft-ietf-sip-dtls-srtp-framework, the detailed scheme uses 
+</I>&gt;<i> self-signed certificates created by client end-entities themselves. 
+</I>&gt;<i> The basic idea is identical. At the detailed level in my document, the 
+</I>&gt;<i> client end-entity &quot;auto-issues&quot; a security certificate with a 
+</I>&gt;<i> &quot;breached&quot; CA private key.
+</I>&gt;<i>
+</I>&gt;<i> In the TLS Certificate request message, a list of CA distinguished 
+</I>&gt;<i> names is provided to the end entity. Referring to a &quot;breached&quot; CA 
+</I>&gt;<i> public key is an invitation to submit a meaningless end-entity 
+</I>&gt;<i> certificate, making the detailed scheme &quot;more plain&quot; with respect to 
+</I>&gt;<i> TLS options (i.e. an empty list in a certificate request message could 
+</I>&gt;<i> be a not so well supported mode in TLS software implementations).
+</I>&gt;<i>
+</I>&gt;<i> So, maybe the reference to the notion of self-signed EE certificates 
+</I>&gt;<i> in draft-ietf-sip-dtls-srtp-framework could be replaced by 
+</I>&gt;<i> &quot;meaningless EE certificates&quot; (or something else), which would include 
+</I>&gt;<i> both self-signed or auto-issued. In such a case, the RFC publication 
+</I>&gt;<i> for my document would become more pressing.
+</I>&gt;<i>
+</I>&gt;<i> A related discussion occurred on the IETK PKIX mailing list in June 
+</I>&gt;<i> 2008 under the subject &quot;RFC 5280 Question&quot;.
+</I>&gt;<i>
+</I>re:
+<A HREF="http://www.garlic.com/~lynn/2008k.html#48">http://www.garlic.com/~lynn/2008k.html#48</A> The PKC-only application 
+security model
+<A HREF="http://www.garlic.com/~lynn/2008k.html#49">http://www.garlic.com/~lynn/2008k.html#49</A> The PKC-only application 
+security model
+<A HREF="http://www.garlic.com/~lynn/2008k.html#51">http://www.garlic.com/~lynn/2008k.html#51</A> The PKC-only application 
+security model
+
+another approach that X9 financial standard organization took to attempt 
+the enormous
+digital certificate bloat was standards effort for &quot;compressed&quot; digital 
+signature ...
+possibly reducing  100-times bloat to possibly only 5 to 10 times bloat. 
+There
+was some conjecture that such &quot;lightweight&quot; digital certificates might 
+also find
+place in wireless applications.
+
+part of compression effort was to recognize that the server already had much
+of the information was exactly the same in every certificate and/or the 
+server
+already possessed.
+
+I raised the issue (rather than harping on the theme that digital 
+certificates
+being redundant and superfluous ... besides 100 times bloat) .... that 
+(for all the
+situations they were looking at) the server already had all the 
+information in a digital
+certificate. Therefor, it would be possible to define a new class of 
+zero byte
+digital certificates that would be appended to every digitally signed 
+transaction.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

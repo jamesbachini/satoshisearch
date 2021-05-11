@@ -1,0 +1,75 @@
+<PRE>Ian G wrote:
+&gt;<i> Unfortunately for the banks, there is a vast body of evidence that we 
+</I>&gt;<i> knew and they knew or should have known that the PC was insecure [1].  
+</I>&gt;<i> So, by fielding a system -- online commerce -- with a known weakness, 
+</I>&gt;<i> they took responsibility for the fraud (from all places).
+</I>
+re:
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#31">http://www.garlic.com/~lynn/aadsm27.htm#31</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#32">http://www.garlic.com/~lynn/aadsm27.htm#32</A> The bank fraud blame game
+
+i.e. to large extent, the existence of the EU finread standard is proof
+of attempt at countermeasures to the (known) PC integrity weaknesses.
+
+the original electronic-commerce adopted the MOTO model 
+(mail-order/telephone-order) which placed significant responsibility
+on the merchant ... AND there was some presumption that physical
+goods were involved, shipping to a known address. SSL was used as
+compensating process, in theory, placing internet-order on level playing 
+field with MOTO.
+
+as electronic-commerce deviated more &amp; more from the
+MOTO-model and related assumptions ... there were increasing
+risks and vulnerabilities.
+
+one of the early problems ... in the electronic-commerce genre ...
+was what to do with purely internet merchants. in the standard
+MOTO model ... there is consumer financial institution, financially
+responsible for the consumer and merchant financial institution,
+financially responsible for merchants (with merchant interchange
+fees largely underwriting the whole environment). 
+
+merchant financial institutions tended to sponsor merchants where 
+there were physical assets available for seizure ... equivalent to 
+a month or two of credit card transactions. With every transaction
+passing thru the sponsoring organization (or its agent), the merchant
+financial institution had real-time knowledge of the outstanding exposure 
+and risk (and was capable of cutting things off at a moments notice).
+However, a lot of internet merchants were setting up as purely order 
+fulfillment organizations with little in the way of physical assets.
+In the early electronic commerce days there were some intense lobbying
+that went on with the risk management departments in merchant 
+financial institutions.
+
+But as mentioned in previous post ... the move to online banking ...
+removes the merchant completely from the picture (it is no longer
+the electronic commerce MOTO-model) ... leaving just the end-user
+and their financial institution as the responsible party.
+
+In the mid-90s, financial institutions looking at the internet for
+online, commercial banking and cash management (i.e. business 
+equivalent to consumer online banking) were extremely conflicted 
+... they frequently were almost insisting on their own appliance 
+at the business (and low-end of SOHO at least overlaps high-end
+of consumer online banking).
+
+Various of the PC-based dedicated financial applications go to
+quite some lengths to compensate for kind of vulnerabilities
+typically associated with browser activity. For instance,
+instead of relying on a trusted third party to certify that
+some remote location really has a valid digital certificate,
+they have a trusted repository of valid financial institutions.
+This is somewhat the equivalent of the table of certification
+authority trusted third parties built into browsers ... but
+instead of table of certifying parties that can certify other
+parties ... it is table of the actual financial institutions.
+This has the added benefit of eliminating the horribly complex
+and vulnerable PKI-type of operation (an don't rely on certification
+of something totally unrelated to financial transaction operation,
+but instead rely directly on known financial transaction operation).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

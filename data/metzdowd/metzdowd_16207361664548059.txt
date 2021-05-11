@@ -1,0 +1,18 @@
+<PRE>
+On Fri, 4 Jan 2008, Leichter, Jerry wrote:
+&gt;<i> Over all, I find it hard to see how such a product can really make
+</I>&gt;<i> sense, however.  If there's enough money to make it worth trying to keep
+</I>&gt;<i> the clone makers out, there's enough money in it for the clone makers to
+</I>&gt;<i> be willing to invest in determining the secret information.  Given the
+</I>
+Thanks to the DMCA anti-circumvention clause, your access control mechanism 
+need not actually work.  This is fortunate (for them) given that in many 
+contexts there doesn't actually exist something that could be expected to 
+work.  So we let them, in effect, put a sticker on the side that magically 
+increases the legal penalties for doing things they don't like.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

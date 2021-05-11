@@ -1,0 +1,89 @@
+<PRE>[Moderator's note: Again, top posting is discouraged, and not editing
+quoted material is also discouraged. --Perry]
+
+Hi list,
+
+Interesting. Great work! I had been looking *generic* predicate
+encryption for some time. Encryption over specific predicates is much
+older. Malware (e.g., virus) and software protection schemes have been
+using some sort of &quot;predicate encryption&quot; or &quot;trigger&quot; for over two
+decades in order to obfuscate code. For example, an old virus used to
+scan hard drives looking for a BBS configuration files in a similar
+manner and some software protection schemes have encrypted pieces of
+code that are decrypted only if some integrity checks (predicates) over
+other pieces of the program are passed.
+
+Triggers/predicates are very promising. Yet, they are only useful in
+certain applications, since eavesdropping one decryption is enough to
+recover the keys and plaintext.
+
+I co-authored a paper were we used this same concept in a software
+protection application ([1]) and later we formalized this concept, that
+we called secure triggers, in a paper eventually publised at TISSEC
+([2]). We were only able to construct triggers for very specific
+predicate families, e.g.,
+  - p(x)=1 iff x=I for some I in {0,1}^k
+  - q(x,y,z,...)=1 iff x=I_1, y=I_2, z=I_3,...; and finally
+  - r(x)=1 iff x_{j_1}=b_1,...,x_{j_k}=b_k for some b_1,...,b_k in {0,1}
+    and indexes i_1,...,i_k (|x|&gt;=k).
+While these predicates do not cover arbitrary large possibilities, they
+are implemented by efficient algorithms and require assuming only the
+existence of IND-CPA secure symmetric ciphers. In [2] we came up with
+more applications other than sofprot;)
+
+[1] Diego Bendersky, Ariel Futoransky, Luciano Notarfrancesco, Carlos
+Sarraute and Ariel Waissbein. &quot;Advanced Software Protection Now&quot;. Core
+Security Technologies Tech report.
+<A HREF="http://www.coresecurity.com/index.php5?module=ContentMod&amp;action=item&amp;id=491">http://www.coresecurity.com/index.php5?module=ContentMod&amp;action=item&amp;id=491</A>
+
+[2] Ariel Futoransky, Emiliano Kargieman, Carlos Sarraute, Ariel
+Waissbein. Foundations and applications for secure triggers. ACM TISSEC,
+Vol 9(1) (February 2006).
+
+Cheers,
+Ariel
+
+Ivan Krsti? wrote:
+&gt;<i> This is fairly interesting: AFAIK the first generalization of predicate
+</I>&gt;<i> encryption to support disjunctions. I find the result mostly interesting
+</I>&gt;<i> mathematically, since I expect we won't be seeing predicate encryption
+</I>&gt;<i> in widespread use anytime soon due to complexity and regulatory
+</I>&gt;<i> concerns. --IK
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> &quot;Predicate Encryption Supporting Disjunctions, Polynomial Equations, and
+</I>&gt;<i> Inner Products&quot;
+</I>&gt;<i> Jonathan Katz and Amit Sahai and Brent Waters
+</I>&gt;<i> 
+</I>&gt;<i> Preprint: &lt;<A HREF="http://eprint.iacr.org/2007/404">http://eprint.iacr.org/2007/404</A>&gt;
+</I>&gt;<i> 
+</I>&gt;<i> Abstract: Predicate encryption is a new paradigm generalizing, among
+</I>&gt;<i> other things, identity-based encryption. In a predicate encryption
+</I>&gt;<i> scheme, secret keys correspond to predicates and ciphertexts are
+</I>&gt;<i> associated with attributes; the secret key SK_f corresponding to the
+</I>&gt;<i> predicate f can be used to decrypt a ciphertext associated with
+</I>&gt;<i> attribute I if and only if f(I)=1. Constructions of such schemes are
+</I>&gt;<i> currently known for relatively few classes of predicates.
+</I>&gt;<i> We construct such a scheme for predicates corresponding to the
+</I>&gt;<i> evaluation of inner products over N (for some large integer N). This, in
+</I>&gt;<i> turn, enables constructions in which predicates correspond to the
+</I>&gt;<i> evaluation of disjunctions, polynomials, CNF/DNF formulae, or threshold
+</I>&gt;<i> predicates (among others). Besides serving as what we feel is a
+</I>&gt;<i> significant step forward in the theory of predicate encryption, our
+</I>&gt;<i> results lead to a number of applications that are interesting in their
+</I>&gt;<i> own right.
+</I>&gt;<i> 
+</I>&gt;<i> -- 
+</I>&gt;<i> Ivan Krsti? &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

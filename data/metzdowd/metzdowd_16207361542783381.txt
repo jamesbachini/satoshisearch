@@ -1,0 +1,28 @@
+<PRE>On Wed, 19 Sep 2007, Nash Foster wrote:
+&gt;<i> Any actual cryptographers care to comment on this? I don't feel
+</I>&gt;<i> qualified to judge.
+</I>
+&gt;&gt;<i> Not a single IKE implementation [...] were validating the
+</I>&gt;&gt;<i> Diffie-Hellman public keys that I sent.
+</I>
+There are many ways to use DH key-agreement. The one described
+on the page is as follows: both A and B generate random values,
+exponentiate, exchange results, and derive the same value. In
+this case there is no point validating the `public key'
+A receives from B: if B colludes with an attacker (and generates
+the key belonging to a small subgroup), then B can as well tell
+the final secret to the attacker.
+
+The attack would make sense if it allows B to learn a long-term
+secret of A, but if the `private keys' are randomly generated on
+each exchange, then this problem does not exist.
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

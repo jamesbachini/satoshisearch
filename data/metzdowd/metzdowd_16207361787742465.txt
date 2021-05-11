@@ -1,0 +1,28 @@
+<PRE>On Saturday 03 May 2008 14:00, Perry E. Metzger wrote:
+&gt;<i> Right now, to use SSH to remotely connect to a machine using public
+</I>&gt;<i> keys, all I have to do is type &quot;ssh-keygen&quot; and copy the locally
+</I>&gt;<i> generated public key to a remote machine's authorized keys file.
+</I>&gt;<i> When there is an IPSEC system that is equally easy to use I'll switch
+</I>&gt;<i> to it.
+</I>
+OpenBSD has recently added the ipsecctl command, which greatly simplifies 
+setting up IPSEC VPNs, especially between OpenBSD machines. A config file can 
+be as simple as (from the man page):
+
+ike esp from 192.168.3.1 to 192.168.3.2
+ike esp from 10.1.1.0/24 to 10.1.2.0/24 peer 192.168.3.2
+
+And the file structure for storing certs, public/private keys, and shared 
+secrets (which ipsecctl searches automatically) is equally simple.
+
+-- 
+Jeff Simmons                                   <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jsimmons at goblin.punk.net</A>
+Simmons Consulting - Network Engineering, Administration, Security
+&quot;You guys, I don't hear any noise.  Are you sure you're doing it right?&quot;
+        --  My Life With The Thrill Kill Kult
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

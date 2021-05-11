@@ -1,0 +1,45 @@
+<PRE>I don't think fingerprint scanners work in a way that's obviously
+amenable to hashing with &quot;well-known&quot; algorithms. Fingerprint scanners
+produce an image, from which some features can be identified. But, not
+all the same features can be extracted identically every time an image
+is obtained.  I know there's been research into fuzzy hashing schemes,
+but are they sufficiently secure, fast, and easy to code that they
+would be workable for this?
+
+--nash
+
+On 8/31/07, Dave Korn &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave.korn at artimi.com</A>&gt; wrote:
+&gt;<i> On 31 August 2007 02:44, travis+ml-cryptography wrote:
+</I>&gt;<i>
+</I>&gt;<i> &gt; I think it might be fun to start up a collection of snake oil
+</I>&gt;<i> &gt; cryptographic methods and cryptanalytic attacks against them.
+</I>&gt;<i>
+</I>&gt;<i>   I was going to post about &quot;crypto done wrong&quot; after reading this item[*]:
+</I>&gt;<i> <A HREF="http://www.f-secure.com/weblog/archives/archive-082007.html#00001263">http://www.f-secure.com/weblog/archives/archive-082007.html#00001263</A>
+</I>&gt;<i>
+</I>&gt;<i>   I can't tell exactly what, but they have to be doing *something* wrong if
+</I>&gt;<i> they think it's necessary to use file-hiding hooks to conceal... well,
+</I>&gt;<i> anything really.  The hash of the fingerprint should be the symmetric key used
+</I>&gt;<i> to encrypt either files and folders directly on the thumbdrive, or perhaps a
+</I>&gt;<i> keyring file containing ADKs of some description, but if you do crypto right,
+</I>&gt;<i> you shouldn't have to conceal or obfuscate anything at all.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>     cheers,
+</I>&gt;<i>       DaveK
+</I>&gt;<i> [*] - See also
+</I>&gt;<i> <A HREF="http://www.f-secure.com/weblog/archives/archive-082007.html#00001264">http://www.f-secure.com/weblog/archives/archive-082007.html#00001264</A>
+</I>&gt;<i> <A HREF="http://www.f-secure.com/weblog/archives/archive-082007.html#00001266">http://www.f-secure.com/weblog/archives/archive-082007.html#00001266</A>
+</I>&gt;<i> --
+</I>&gt;<i> Can't think of a witty .sigline today....
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

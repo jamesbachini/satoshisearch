@@ -1,0 +1,55 @@
+<PRE>On Sat, 03 May 2008 19:50:01 -0400
+&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+ 
+&gt;<i> Almost exclusively the use for such things is nailing up a tunnel to
+</I>&gt;<i> bring someone inside a private network. For that, there is no need for
+</I>&gt;<i> per user auth -- the general assumption is that the remote box is a
+</I>&gt;<i> single user laptop or something similar anyway. You really just want
+</I>&gt;<i> to verify that the remote host has a particular private key, and if it
+</I>&gt;<i> does, you nail up a tunnel to it (possibly allocating it a local IP
+</I>&gt;<i> address in the process). That solves about 95% of the usage scenarios
+</I>&gt;<i> and it requires very little configuration. It also covers virtually
+</I>&gt;<i> all use of IPSec I see in the field.
+</I>&gt;<i> 
+</I>&gt;<i> Again, there are more complex usage scenarios, and it may be more
+</I>&gt;<i> complicated to set one of *those* up, but it is a shame that it is
+</I>&gt;<i> difficult to do the simple stuff.
+</I>&gt;<i> 
+</I>So here's an interesting experiment.  Part one: Take a common IPsec
+implementation -- Linux, *BSD, Windows, what have you.  Assume this
+common scenario: laptop connecting to a corporate server.  Assume a
+user authentication credential.  (I'd prefer that that be a public/
+private key pair, for many reasons, not the least of which is the bug
+in IKEv1 with main mode and shared secrets.)  Do not assume a 1:1 ratio
+between laptops and internal IP address, because such servers are
+frequently underprovisioned.  Challenge: design -- and implement -- a
+*simple* mechanism by which the client user can set up the VPN
+connection, both on the client and on the server.  This part can
+happen while the client is physically on the corporate net.  Variant A:
+the VPN server is a similar box to which the client has login-grade
+access. Variant B: the VPN server is something like a restricted-access
+Cisco box, in which case a trusted proxy is probably needed.  User
+setup should be something like 'configvpn cs.columbia.edu', where I
+supply my username and authenticator.  User connection should be
+'startvpn cs.columbia.edu' (or, of course, the GUI equivalent); all I
+supply is some sort of authenticator.  Administrator setup should be a
+list of authorized users, and probably an IP address range to use
+(though having the VPN server look like a DHCP relay would be cool).
+
+Experiment part two: implement remote login (or remote IMAP, or remote
+Web with per-user privileges, etc.) under similar conditions.  Recall
+that being able to do this was a goal of the IPsec working group.
+
+I think that part one is doable, though possibly the existing APIs are
+incomplete.  I don't think that part two is doable, and certainly not
+with high assurance.  In particular, with TLS the session key can be
+negotiated between two user contexts; with IPsec/IKE, it's negotiated
+between a user and a system.  (Yes, I'm oversimplifying here.)
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

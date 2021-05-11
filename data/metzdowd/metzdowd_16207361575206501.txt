@@ -1,0 +1,86 @@
+<PRE>On Fri, Oct 12, 2007 at 11:04:15AM -0400, Leichter, Jerry wrote:
+
+&gt;<i> No comment from me on the appropriateness.  From Computerworld.
+</I>&gt;<i> 
+</I>
+Why so shy? What threat model could have justified this approach?
+
+&gt;<i> &quot;We would like to provide optimal security conditions for the work of
+</I>&gt;<i> counting the ballots,&quot; said Robert Hensler, the Geneva State Chancellor,
+</I>&gt;<i> in a statement issued today. &quot;In this context, the value added by
+</I>&gt;<i> quantum cryptography concerns not so much protection from outside
+</I>&gt;<i> attempts to interfere as the ability to verify that the data have not
+</I>&gt;<i> been corrupted in transit between entry and storage.&quot;
+</I>
+So they are assuring the integrity of stored data by doing ephemeral
+communications (not stored data) integrity! Neither the integrity of
+the data entry, nor the integrity of the data leaving the QC network
+and stored on the disk are actually assured. I am really impressed.
+Looks like a finely staged circus act.
+
+&gt;<i> The use of quantum cryptography in the voting process will showcase
+</I>&gt;<i> technology developed in Switzerland. The firm id Quantique, based in
+</I>&gt;<i> Carouge, grew out of research done at the University of Geneva by
+</I>&gt;<i> Professor Nicolas Gisin and his team back in the mid-1990s.
+</I>
+Now we find out what problem this really solves.
+
+&gt;<i> Ribordy said the Swiss canton of Geneva -- there are 26 cantons
+</I>&gt;<i> throughout all Switzerland -- has about 200,000 registered voters who
+</I>&gt;<i> will either go to the polls on Oct. 21 and cast their vote, or vote by
+</I>&gt;<i> mail. &quot;The votes cast by mail are all collected in the days before the
+</I>&gt;<i> election and all brought to the central counting station on Oct. 21,&quot;
+</I>&gt;<i> Ribordy said.
+</I>
+&gt;<i> &quot;Once the election is closed -- at noon on Sunday, Oct. 21 -- the sealed
+</I>&gt;<i> ballot boxes of all the polling stations are brought to the central
+</I>&gt;<i> counting station, where they are opened and where the votes are mixed
+</I>&gt;<i> with the mail votes. Counting them is then manually done at the central
+</I>&gt;<i> counting station. People counting the votes at this central station use
+</I>&gt;<i> computers to transfer the counts to the data center of the canton of
+</I>&gt;<i> Geneva,&quot; Ribordy explained.
+</I>
+But instead of signing the actual counts entered into the computer, they
+mysteriously choose secure the communication line...
+
+&gt;<i> He said the quantum cryptography system is ready to be put into
+</I>&gt;<i> action. Ribordy doesn't think the high-speed link has been encrypted by
+</I>&gt;<i> any means in the past, but he added that the IT department of the Swiss
+</I>&gt;<i> government is not sharing a lot of information on certain details for
+</I>&gt;<i> security reasons.
+</I>
+Common sense is a rapidly disappearing commodity.
+
+&gt;<i> &quot;Protection of the federal elections is of historical importance in the
+</I>&gt;<i> sense that, after several years of development and experimentation, this
+</I>&gt;<i> will be the first use of the 1GHz quantum encrypter, which is
+</I>&gt;<i> transparent for the user, and an ordinary fiber-optic line to send data
+</I>&gt;<i> endowed with relevance and purpose,&quot; said Professor Gisin in a prepared
+</I>&gt;<i> statement. &quot;So this occasion marks quantum technology's real debut.&quot;
+</I>
+There is real charm in the phrase &quot;endowed with relevance and purpose&quot;.
+
+One might, by analogy with the 2nd law of thermodynamics, speculate that
+prior to some of the relevance and purpose of the election data rubbing
+off on the QC system, the QC system was the one more lacking in these
+desirable attributes. If wants to really go out on a limb, one might
+try to apply the fist law also, and conclude that the election data has
+as a result less relevance and purpose.
+
+In our physical analogy, heat is replaced with &quot;trust/relevance/purpose&quot;.
+One can transfer this &quot;heat&quot; from the election to a technology or from a
+technology an election, always in the expected direction.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

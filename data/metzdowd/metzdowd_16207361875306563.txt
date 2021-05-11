@@ -1,0 +1,35 @@
+<PRE>At 9:24 AM -0700 8/18/08, Eric Rescorla wrote:
+&gt;<i>(and because of the complexity of US elections,
+</I>&gt;<i>hand counting is quite expensive)
+</I>
+This is quite disputable. Further, hand vs. machine counting is core 
+to the way we think about the security of the voting system.
+
+On a &quot;complex&quot; ballot, there are maybe 20 races or propositions, some 
+of which may allow multiple votes per race. The pre-electronic method 
+for hand-counting these was to start with race #1, have one person 
+reading each vote out load from a large stack of ballots, and another 
+person tabulating. In most districts, this is done twice with 
+different people doing the counting and, often, those people coming 
+from the &quot;opposite party&quot; in our wonderful two-party system.
+
+The numbers I saw in the late 1970's said that each vote took 2.5 
+seconds per ballot per race when done slowly; so that's 5 seconds 
+when run twice. Per &quot;complex&quot; ballot, that's about 100 seconds, or 
+roughly 2 minutes, or roughly 1/30 of an hour. At current labor rates 
+of $12/hour for this type of work (that's high, but we want qualified 
+people to count), that means it costs about US$0.40 per ballot for a 
+complex ballot.
+
+Essentially no one would argue that is is &quot;quite expensive&quot;. I 
+suspect that nearly everyone in the country would be happy to pay an 
+additional $1/election for more reliable results.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

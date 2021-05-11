@@ -1,0 +1,17 @@
+<PRE>At 9:58 AM -0500 12/3/07, Perry E. Metzger wrote:
+&gt;<i>I don't know if people have been following this, but it is interesting
+</I>&gt;<i>from the point of view of studying how the FIPS process does (or does
+</I>&gt;<i>not) interact with the underlying goal of producing assured systems.
+</I>
+Another interesting part is that open-source systems are much more 
+susceptible to being attacked by competitors (that is, having their 
+validation suspended) than are closed-source systems.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

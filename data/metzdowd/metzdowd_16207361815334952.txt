@@ -1,0 +1,25 @@
+<PRE>Erik Ostermueller wrote:
+&gt;<i> If I exchange messages with a system and the messages are encrypted with a symmetric key, what further benefit would we get by using a MAC (Message Authentication Code) along with the message encryption?
+</I>&gt;<i> Being new to all this, using the encrytpion and MAC together seem redundant.
+</I>
+One of my favourite papers, by Steve Bellovin, is at 
+<A HREF="http://www.usenix.org/publications/library/proceedings/sec96/bellovin.html">http://www.usenix.org/publications/library/proceedings/sec96/bellovin.html</A>
+
+It shows a number of ways in which IPsec with encryption but no 
+integrity can fail.
+
+Abstract:
+The Internet Engineering Task Force (IETF) is in the process of adopting 
+standards for IP-layer encryption and authentication (IPSEC). We 
+describe a number of attacks against various versions of these 
+protocols, including confidentiality failures and authentication 
+failures. The implications of these attacks are troubling for the 
+utility of this entire effort.
+
+Greg.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

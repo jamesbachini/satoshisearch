@@ -1,0 +1,67 @@
+<PRE> 
+
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A> 
+</I>&gt;<i> [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] On Behalf Of Leichter, Jerry
+</I>&gt;<i> Sent: Monday, October 08, 2007 11:48 AM
+</I>&gt;<i> To: Alex Pankratov
+</I>&gt;<i> Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> Subject: RE: Trillian Secure IM
+</I>&gt;<i> 
+</I>&gt;<i> | &gt; But, opportunistic cryptography is even more fun.  It is 
+</I>&gt;<i> | &gt; very encouraging to see projects implement cryptography in 
+</I>&gt;<i> | &gt; limited forms.  A system that uses a primitive form of 
+</I>&gt;<i> | &gt; encryption is many orders of magnitude more secure than a 
+</I>&gt;<i> | &gt; system that implements none.
+</I>&gt;<i> | 
+</I>&gt;<i> | Primitive form - maybe, weak form - absolutely not. It 
+</I>&gt;<i> | is actually worse than having no security at all, because 
+</I>&gt;<i> | it tends to create an _illusion_ of protection. 
+</I>&gt;<i>
+</I>&gt;<i> This is an old argument.  I used to make it myself.  I even used
+</I>&gt;<i> to believe it.  Unfortunately, it misses the essential truth:  
+</I>&gt;<i> The choice is rarely between really strong cryptography and weak 
+</I>&gt;<i> cryptography; it's between weak cryptography and no cryptography 
+</I>&gt;<i> at all. What this argument assumes is that people really *want* 
+</I>&gt;<i> cryptography; that if you give them nothing, they'll keep on asking 
+</I>&gt;<i> for it; but if you give them something weak, they'll stop asking 
+</I>&gt;<i> and things will end there.  But in point of fact hardly anyone 
+</I>&gt;<i> knows enough to actually want cryptography. Those who know enough 
+</I>&gt;<i> will insist on the strong variety whether or not the weak is 
+</I>&gt;<i> available; while the rest will just continue with whatever they 
+</I>&gt;<i> have.
+</I>
+Well, I view it from a slightly different perspective. 
+
+Even the most ignorant person knows a difference between 
+the privacy and the lack of thereof. Cryptography or not. 
+Therefore, if he is being told that A offers a privacy, 
+it may lead this person to assume the level of this 
+privacy protection is adequate ... simply because if it 
+weren't, it wouldn't be offered. Needless to say that
+this sort of an assumption in case of a weak crypto is
+dangerous.
+
+When there's a choice between no and weak protection, I am 
+of course in favour of latter *if* it is clearly labeled as 
+weak.
+
+&gt;<i> | Which is by the way exactly the case with SecureIM. How 
+</I>&gt;<i> | hard is it to brute-force 128-bit DH ? My &quot;guesstimate&quot;
+</I>&gt;<i> | is it's an order of minutes or even seconds, depending
+</I>&gt;<i> | on CPU resources.
+</I>&gt;<i>
+</I>&gt;<i> It's much better to analyze this in terms of the cost to 
+</I>&gt;<i> the attacker and the defender.
+</I>
+Yup, I am familiar with the methodology. My point was that
+128bit DH is &quot;breakable&quot; in terms of the people from those
+forum's threads.
+
+Alex
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

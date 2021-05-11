@@ -1,0 +1,38 @@
+<PRE>Jon Callas &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jon at callas.org</A>&gt; writes:
+
+&gt;<i> Hushmail is not a scam.  They do a very good job of explaining what
+</I>&gt;<i> they do, what they cannot do, and against which threats they
+</I>&gt;<i> protect.  You may quibble all you want with its *effectiveness* but
+</I>&gt;<i> they are not a scam.  A scam is being dishonest.
+</I>
+Failure to tell the whole truth is a form of dishonesty, just as is
+telling a lie.
+
+By silently, implicitly adopting a narrow definition of &quot;security&quot;,
+Hush are able to claim &quot;Only Hush's solution provides such a high
+level of security combined with total ease of use.&quot; [1]
+
+The larger truth is that a consequence of using Hushmail is that
+record of when, with whom, and the size of each communication is
+available to Hush, even though the content is concealed.
+
+According to the original poster, it's these kinds of data that
+Hushmail was required to turn over to the US DEA.
+
+
+ -- StealthMonger
+	 &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">StealthMonger at hod.aarg.net</A>&gt;
+	 &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">StealthMonger at nym.panta-rhei.eu.org</A>&gt;
+	 &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">StealthMonger at nym.alias.net</A>&gt;
+
+ --
+   stealthmail: Scripts to hide whether you're doing email, or when,
+   or with whom.  <A HREF="http://stealthsuite.afflictions.org">http://stealthsuite.afflictions.org</A>
+
+[1] <A HREF="http://www.hushmail.com/about-how">http://www.hushmail.com/about-how</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

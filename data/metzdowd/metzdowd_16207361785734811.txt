@@ -1,0 +1,49 @@
+<PRE>At 10:25 AM +0100 5/15/08, Ben Laurie wrote:
+&gt;<i>Paul Hoffman wrote:
+</I>&gt;&gt;<i>I'm confused about two statements here:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>At 2:10 PM +0100 5/13/08, Ben Laurie wrote:
+</I>&gt;&gt;&gt;<i>The result of this is that for the last two years (from Debian's 
+</I>&gt;&gt;&gt;<i>&quot;Edgy&quot; release until now), anyone doing pretty much any crypto on 
+</I>&gt;&gt;&gt;<i>Debian (and hence Ubuntu) has been using easily guessable keys. 
+</I>&gt;&gt;&gt;<i>This includes SSH keys, SSL keys and OpenVPN keys.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>. . .
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i>[2] Valgrind tracks the use of uninitialised memory. Usually it is 
+</I>&gt;&gt;&gt;<i>bad to have any kind of dependency on uninitialised memory, but 
+</I>&gt;&gt;&gt;<i>OpenSSL happens to include a rare case when its OK, or even a good 
+</I>&gt;&gt;&gt;<i>idea: its randomness pool. Adding uninitialised memory to it can 
+</I>&gt;&gt;&gt;<i>do no harm and might do some good, which is why we do it. It does 
+</I>&gt;&gt;&gt;<i>cause irritating errors from some kinds of debugging tools, 
+</I>&gt;&gt;&gt;<i>though, including valgrind and Purify. For that reason, we do have 
+</I>&gt;&gt;&gt;<i>a flag (PURIFY) that removes the offending code. However, the 
+</I>&gt;&gt;&gt;<i>Debian maintainers, instead of tracking down the source of the 
+</I>&gt;&gt;&gt;<i>uninitialised memory instead chose to remove any possibility of 
+</I>&gt;&gt;&gt;<i>adding memory to the pool at all. Clearly they had not understood 
+</I>&gt;&gt;&gt;<i>the bug before fixing it.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>The second bit makes it sound like the stuff that the Debian folks 
+</I>&gt;&gt;<i>blindly removed was one, possibly-useful addition to the entropy 
+</I>&gt;&gt;<i>pool. The first bit makes it sound like the stuff was absolutely 
+</I>&gt;&gt;<i>critical to the entropy of produced keys. Which one is correct?
+</I>&gt;<i>
+</I>&gt;<i>They removed _all_ entropy addition to the pool, with the exception 
+</I>&gt;<i>of the PID, which is mixed in at a lower level.
+</I>
+I take it that these are not 128-bit, non-monotonic PIDs. :-)
+
+The bigger picture is that distributions who are doing local mods 
+should really have an ongoing conversation with the software's 
+developers. Even if the developers don't want to talk to you, a 
+one-way conversation of &quot;we're doing this, we're doing that&quot; could be 
+useful.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

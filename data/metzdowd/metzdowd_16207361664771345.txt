@@ -1,0 +1,61 @@
+<PRE>At 07:35 PM 1/18/2008 +1000, James A. Donald wrote:
+&gt;<i>Alex Alten wrote:
+</I>&gt;<i> &gt; Generally any standard encrypted protocols will
+</I>&gt;<i> &gt; probably eventually have to support some sort of CALEA
+</I>&gt;<i> &gt; capability. For example, using a Verisign ICA
+</I>&gt;<i> &gt; certificate to do MITM of SSL, or possibly requiring
+</I>&gt;<i> &gt; Ebay to provide some sort of legal access to Skype
+</I>&gt;<i> &gt; private keys.
+</I>&gt;<i>
+</I>&gt;<i>And all the criminals will of course obey the law.
+</I>&gt;<i>
+</I>&gt;<i>Why not just require them to set an evil flag on all
+</I>&gt;<i>their packets?
+</I>
+These are trite responses.  Of course not.  My point is
+that if the criminals are lazy enough to use a standard
+security protocol then they can't expect us not to put
+something in place to decrypt that traffic at will if necessary.
+
+&gt;<i> &gt; If there is a 2nd layer of encryption then this would
+</I>&gt;<i> &gt; require initial key exchanges that may be vulnerable
+</I>&gt;<i> &gt; to interception or after-the-fact analysis of the
+</I>&gt;<i> &gt; decrypted SSL payloads.
+</I>&gt;<i>
+</I>&gt;<i>I guarantee I can make any payload look like any other
+</I>&gt;<i>payload.  If the only permitted communications are
+</I>&gt;<i>prayers to Allah, I can encode key exchange in prayers
+</I>&gt;<i>to Allah.
+</I>
+Yeah and you can only communicate with Allah with
+that type of design.
+
+Look, the criminals have to design their security system with
+severe disadvantages; they don't own the machines they
+attack/take over so they can't control its software/hardware
+contents easily, they can't screw around too much with the IP
+protocol headers or they lose communications with them, and
+they don't have physical access to the slave/owned machines.
+
+And, last I heard, they must obey Kerckhoff's law, despite
+using prayers to Allah for key exchanges.
+
+Given all this, I'm not saying its easy to do, but it should be
+quite possible to crack open some or all of their encrypted
+comms and/or trace back to the original source attack
+machines.
+
+- Alex
+
+--
+
+Alex Alten
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

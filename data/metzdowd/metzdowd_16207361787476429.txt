@@ -1,0 +1,31 @@
+<PRE>Even if RIM does not have the device keys, in order to share encrypted
+data with applications on the RIM server, the device must share a session 
+key with the server; must it not?.  Isn't RIM (their software, actually) 
+now in a position to decrypt content sent between Blackberry users?  Or, 
+does the Blackberry encryption protocol work like S/MIME?
+
+Arshad Noor
+StrongAuth, Inc.
+
+----- Original Message -----
+From: &quot;Derek Atkins&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">warlord at MIT.EDU</A>&gt;
+To: &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt;
+Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+Sent: Tuesday, May 27, 2008 8:54:12 AM (GMT-0800) America/Los_Angeles
+Subject: Re: RIM to give in to GAK in India
+
+Quoting &quot;Derek Atkins&quot; 
+
+Wow, and April 1st was almost two months ago.  This is just a bunch
+of FUD.  If someone actually talked to RIM they would find out that
+it's technically impossible for them to do this because THEY DONT HAVE
+THE DEVICE KEYS.
+
+<A HREF="http://news.yahoo.com/s/afp/20080527/tc_afp/indiacanadacompanyrimblackberrytelecomsecurity">http://news.yahoo.com/s/afp/20080527/tc_afp/indiacanadacompanyrimblackberrytelecomsecurity</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

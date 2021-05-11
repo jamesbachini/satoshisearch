@@ -1,0 +1,62 @@
+<PRE>&gt;&gt;<i> Nonsense. Total nonsense. A half-decent reverse engineer does not
+</I>&gt;&gt;<i> need the source code and can easily determine the exact operation of
+</I>&gt;&gt;<i> all the security-related components from the compiled executables,
+</I>&gt;&gt;<i> extracted ROM/EPROM code or reversed FPGA/ASIC layout
+</I>&gt;<i>
+</I>&gt;<i> I'm glad to know that you have managed to disprove Rice's
+</I>&gt;<i> Theorem. Could you explain to us how you did it? I suspect there's an
+</I>&gt;<i> ACM Turing Award awaiting you.
+</I>&gt;<i>
+</I>&gt;<i> Being slightly less sarcastic for the moment, I'm sure that a good
+</I>&gt;<i> reverse engineer can figure out approximately what a program does by
+</I>&gt;<i> looking at the binaries and approximately what an ASIC does given
+</I>&gt;<i> good equipment to get the layout. What you can't do, full stop, is
+</I>&gt;<i> know that there are no unexpected security related behaviors in the
+</I>&gt;<i> hardware or software. That's just not possible.
+</I>&gt;<i>
+</I>
+
+In particular, while it's certainly true than an expert can often  
+discover
+unexpected security-related behavior by careful examination of source
+(or object) code, the absence of such a discovery, no matter how
+expert the examination, is no guarantee of anything, for general  
+software
+and hardware designs.
+
+And on a slight tangent, this is why it was only with great  
+reluctance that
+I agreed to participate in the &quot;top-to-bottom&quot; voting system reviews
+conducted last year by California and Ohio.  If flaws were found (as  
+they
+were), that would tell us that there were flaws.  But if no flaws had
+been found, that would tell us nothing about whether any such flaws were
+present.  It might just have been that we were bad at our job, that the
+flaws were subtle, or that something prevented us from noticing  
+them.  Or
+maybe there really are no flaws. There'd be no way to no for sure.
+
+I ultimately decided to participate because I suspected that it was  
+likely,
+based on the immaturity of the software and the apparent lack of  
+security
+engineering in the design process for these systems, that we would find
+vulnerabilities.  But what happens when those are fixed?  Should we then
+conclude that the system is now secure?  Or should we ask another set
+of experts to take another look?
+
+After some number of iterations of this cycle, the experts might stop  
+finding
+vulnerabilities.  What can we conclude at that point?
+
+It's a difficult question, but the word &quot;guarantee&quot; almost certainly
+does not belong in the answer (unless preceded by the word &quot;no&quot;).
+
+-matt
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

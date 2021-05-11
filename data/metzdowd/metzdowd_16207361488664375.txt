@@ -1,0 +1,50 @@
+<PRE>I do not believe the mentioned conflict exists.  The aim of these
+calculator-like devices is to make sure that no malware, virus etc can
+create unauthorized transactions.  The user should still be able to
+debug, and inspect the software in the calculator-like device, or
+virtual software compartment, just that installation of software or
+upgrades into that area should be under direct explicit user control.
+(eg with BIOS jumper required to even make any software change!)
+
+The ring -1 and loss-of-control aspects of TPM are different, they are
+saying that you are not really root on your own machine anymore!  In
+the sense that if you do load under a debugger the remote party can
+tell this and refuse to talk with you.
+
+This remote attestation feature is simply not required for
+user-centric, user-controlled security.
+
+Adam
+
+On Sun, Jul 01, 2007 at 11:09:16PM -0400, Leichter, Jerry wrote:
+&gt;<i> | something like a palm pilot, with screen and input and a reasonably
+</I>&gt;<i> | trustworthy OS, along with (as you say) the appropriate UI investment.
+</I>&gt;<i> You do realize that you've just come down to what the TPM guys want to
+</I>&gt;<i> build?  (Of course, much of the driving force behind having TPM comes
+</I>&gt;<i> from a rather different industry.  We're all happy when TPM can be
+</I>&gt;<i> used to ensure that our banking transactions actually do what the bank
+</I>&gt;<i> says it will do for a particular set of instructions issued by us and
+</I>&gt;<i> no one else, not so happy when they ensure that our &quot;music transactions&quot;
+</I>&gt;<i> act the same way....)
+</I>&gt;<i> 
+</I>&gt;<i> Realistically, the only way these kinds of devices could catch on would
+</I>&gt;<i> be for them to be standardized.  No one would be willing to carry one
+</I>&gt;<i> for their bank, another for their stock broker, a third for their
+</I>&gt;<i> mortgage holder, a fourth for their credit card company, and so on.
+</I>&gt;<i> But once they *are* standardized, almost the same potential for
+</I>&gt;<i> undesireable uses appears as for TPM's.  What's to prevent the movie
+</I>&gt;<i> download service requiring that you present your Universal Safe Access
+</I>&gt;<i> Fob before they authorize you to watch a movie?  If the only significant
+</I>&gt;<i> differences between this USAF and TPM is that the latter is more
+</I>&gt;<i> convenient because more tightly tied to the machine, we might as well
+</I>&gt;<i> have the convenience.
+</I>&gt;<i> 
+</I>&gt;<i> (This is why I find much of the discussion about TPM so surreal.  The
+</I>&gt;<i> issue isn't the basic technology, which one way or another, in some form,
+</I>&gt;<i> is going to get used.  It's how we limit the potential misuses....)
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

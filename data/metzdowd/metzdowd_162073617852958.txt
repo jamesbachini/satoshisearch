@@ -1,0 +1,42 @@
+<PRE>
+Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fweimer at bfk.de</A>&gt; writes:
+&gt;<i> * Perry E. Metzger:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Marcos el Ruptor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>&gt; writes:
+</I>&gt;<i>
+</I>&gt;&gt;&gt;<i> Nonsense. Total nonsense. A half-decent reverse engineer does not
+</I>&gt;&gt;&gt;<i> need the source code and can easily determine the exact operation of
+</I>&gt;&gt;&gt;<i> all the security-related components from the compiled executables,
+</I>&gt;&gt;&gt;<i> extracted ROM/EPROM code or reversed FPGA/ASIC layout
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I'm glad to know that you have managed to disprove Rice's
+</I>&gt;&gt;<i> Theorem.
+</I>&gt;<i>
+</I>&gt;<i> Call me a speciest, but it's not clear if Rice's Theorem applies to
+</I>&gt;<i> humans.
+</I>
+If it doesn't apply to humans, that implies that humans are somehow
+able to do computations that Turing Machines can't. I am sufficiently
+skeptical of that to say, flat out, I don't believe it. If anything,
+Turing Machines are more capable -- humans are only equivalent to
+(large) finite state machines.
+
+&gt;<i> While Marcos' approach is somewhat off the mark (&quot;source-code
+</I>&gt;<i> equivalent that works for me&quot; vs. &quot;conformance of potentially
+</I>&gt;<i> malicious code to a harmless spec&quot;), keep in mind that object code
+</I>&gt;<i> validation has been performed for safety-critical code for quite a
+</I>&gt;<i> while.
+</I>
+Certainly. You can use formal methods to prove the properties of
+certain specially created systems -- the systems have to be produced
+specially so that the proofs are possible. What you can't do in
+general is take an existing system and prove security properties after
+the fact.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

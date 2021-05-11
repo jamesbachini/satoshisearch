@@ -1,0 +1,35 @@
+<PRE>Peter Thermos wrote:
+&gt;<i> Interesting comment from Skype:
+</I>&gt;<i> 
+</I>&gt;<i> &quot;The disruption was triggered by a massive restart of our users' computers
+</I>&gt;<i> across the globe within a very short timeframe as they re-booted after
+</I>&gt;<i> receiving a routine set of patches through Windows Update.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> and
+</I>&gt;<i> 
+</I>&gt;<i> &quot;We can confirm categorically that no malicious activities were attributed
+</I>&gt;<i> or that our users' security was not, at any point, at risk.&quot;
+</I>&gt;<i> <A HREF="http://heartbeat.skype.com/2007/08/what_happened_on_august_16.html">http://heartbeat.skype.com/2007/08/what_happened_on_august_16.html</A> 
+</I>&gt;<i> 
+</I>
+Or as the New Zealand Herald put it:
+
+Windows blamed for Skype crash - 21 Aug 2007 - NZ Herald: Technology News
+from New Zealand and around the World
+
+<A HREF="http://www.nzherald.co.nz/section/story.cfm?c_id=5&amp;objectid=10458978">http://www.nzherald.co.nz/section/story.cfm?c_id=5&amp;objectid=10458978</A>
+
+&quot;Skype has now identified and already introduced a number of improvements to
+its software to ensure that our users will not be similarly affected in the
+unlikely possibility of this combination of events recurring,&quot; said the blog.
+
+ --
+
+If the unlike event is referring to Windows users automatic updates, I
+wouldn't bet on it.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

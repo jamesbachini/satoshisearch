@@ -1,0 +1,72 @@
+<PRE>At 12:48 AM +1200 7/6/08, Peter Gutmann wrote:
+&gt;<i>Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; writes:
+</I>&gt;&gt;<i>* Peter Gutmann:
+</I>&gt;&gt;&gt;<i>  [1] Show of hands, how many people here not directly involved 
+</I>&gt;&gt;&gt;<i>with X.509 work
+</I>&gt;&gt;&gt;<i>      knew that the spec required that all extensions in CA root certificates
+</I>&gt;&gt;&gt;<i>      (&quot;trust anchors&quot; in recent X.509 jargon) be ignored by an 
+</I>&gt;&gt;&gt;<i>implementation?
+</I>&gt;&gt;&gt;<i>      So if you put in name constraints, key usage constraints, a policy
+</I>&gt;&gt;&gt;<i>      identifier, etc, then a conforming implementation is supposed 
+</I>&gt;&gt;&gt;<i>to look at
+</I>&gt;&gt;&gt;<i>      them, throw them away, and proceed as if they weren't there?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>Are you sure that the constraints are not supposed to be applied when
+</I>&gt;&gt;<i>the root certificate is actually processed, after its signature has been
+</I>&gt;&gt;<i>verified by the trust anchor?
+</I>&gt;<i>
+</I>&gt;<i>Yup.  The app is supposed to read the cert, parse and process the extensions,
+</I>&gt;<i>and then throw them away.
+</I>
+Peter: please turn down the hyperbole a bit. You forgot the word 
+&quot;may&quot; between &quot;and&quot; and &quot;then&quot;.
+
+&gt;<i>The text from the spec is:
+</I>&gt;<i>
+</I>&gt;<i>   3.3.60 trust anchor: A trust anchor is a set of the following information in
+</I>&gt;<i>   addition to the public key: algorithm identifier, public key parameters (if
+</I>&gt;<i>   applicable), distinguished name of the holder of the associated private key
+</I>&gt;<i>   (i.e., the subject CA) and optionally a validity period. The trust anchor
+</I>&gt;<i>   may be provided in the form of a self-signed certificate. A trust anchor is
+</I>&gt;<i>   trusted by a certificate using system and used for validating certificates
+</I>&gt;<i>   in certification paths.
+</I>&gt;<i>
+</I>&gt;<i>Rendered into English, that says &quot;take the pubic key, owner name, and
+</I>&gt;<i>validity period, and ignore everything else in the cert&quot;.
+</I>
+Wrong. There is no requirement to &quot;ignore everything else in the 
+cert&quot;. There is simply no requirement to use that material.
+
+&gt;<i>To pre-empt the inevitable &quot;yes, but it doesn't explicitly say you can't
+</I>&gt;<i>process the extensions if you want to&quot;: It also doesn't say you can't reformat
+</I>&gt;<i>the user's hard drive when you see a cert, but the intent is that you don't do
+</I>&gt;<i>anything not explicitly listed in the text above.
+</I>
+No offense, but if I wanted to know the intent of a group of people 
+who make hard-to-read-and-harder-to-impelemnt crypto standards, I 
+would not ask you. You don't know their intent, Peter: you only know 
+the output of the sausage-making process.
+
+If I haven't made it clear: I agree with Peter that the spec should 
+have clearly stated what one was supposed to do with the extensions. 
+Where I think we disagree is that I would rather that the spec said 
+explicitly to throw them away. I would rather have the semantics of 
+&quot;this is what I say my name is and this is what I say my public key 
+is&quot; quite separate from &quot;this is what I think you should trust me to 
+authenticate&quot;. This adds complexity (it takes two certs), but it also 
+reduces complexity (it doesn't mandate binding policy to 
+identification).
+
+&gt;<i>Luckily no sane implementation pays any attention to this nonsense :-).
+</I>
+We might agree here because I don't think there are many sane 
+implementations of X.509.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

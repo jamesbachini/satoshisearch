@@ -1,0 +1,33 @@
+<PRE>On Mar 30, 2008, at 3:12 PM, Leichter, Jerry wrote:
+&gt;<i> How would that help?
+</I>
+Unless I'm misunderstanding Zooko's writeup, he's worried about an  
+attacker going from a partially-known plaintext (e.g. a form bank  
+letter) to a completely-known plaintext by repeating the following  
+process:
+
+1. take partially known plaintext
+2. make a guess, randomly or more intelligently where possible,
+    about the unknown parts
+3. take the current integrated partial+guessed plaintext, hash
+    to obtain convergence key
+4. verify whether that key exists in the storage index
+5. if yes, you've found the full plaintext. if not, repeat from '2'.
+
+That's a brute force search. If your convergence key, instead of being  
+a simple file hash, is obtained through a deterministic but  
+computationally expensive function such as PBKDF2 (or the OpenBSD  
+bcrypt, etc), then step 3 makes an exhaustive search prohibitive in  
+most cases while not interfering with normal filesystem operation.  
+What am I missing?
+
+Cheers,
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

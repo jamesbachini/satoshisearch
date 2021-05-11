@@ -1,0 +1,55 @@
+<PRE>
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+</I>&gt;&gt;<i> So I hold the PIN constant and vary the bank account number.
+</I>&gt;<i>
+</I>&gt;<i> This is, indeed, a possible attack considering that the same IP may be
+</I>&gt;<i> legitimately used by different users behind NAT firewalls and/or with
+</I>&gt;<i> dynamic IPs. However, there are a number of reasons, and evidence, why
+</I>&gt;<i> this attack can be (and has been) prevented even for a short PIN:
+</I>
+You're completely wrong here. Lets go through just two of the ways.
+
+&gt;<i> 1. there is a much higher number of combinations in a 12-digit account
+</I>&gt;<i> number;
+</I>
+There is a lot of structure in most bank account numbers. The space is
+pretty easy to narrow down if you do a nickel's worth of homework. For
+example, a typical bank bank might have the first three digits code
+for the branch (and a list of branches is easy to find), and several
+of the additional numbers code for account type, plus the space of
+remaining numbers is not exactly randomly assigned. If you need
+typical account numbers to examine to learn such secrets, you can buy
+them in bulk online these days. I suspect that currently invalid
+accounts are probably even cheaper than valid ones, though they're not
+a stock item -- you would have to ask to get them.
+
+&gt;<i> 2. banks are able to selectively block IP numbers for the /same/
+</I>&gt;<i> browser and /same/ PIN after 4 or 3 wrong attempts,
+</I>
+Not really. These days, there are people hijacking huge IP blocks for
+brief periods for spamming. People also hijack vast numbers of zombie
+machines. Either technology is easily used to prevent block-by-IP
+from doing squat for you.
+
+I'm sure you will now go on about some other way to evade Dan's
+crucial point, but it should be obvious to almost anyone that you're
+not thinking like the bad guys. If you really want to go on about
+this, though, I'll let you have as much rope as you like, though only
+for a post or two as I don't want to bore people.
+
+In any case, there are a large number of reasons US banks don't
+(generally) require or even allow anyone to enter PINs for
+authentication over the internet. I don't know much about the
+practices of foreign banks, as for the most part I consult in the US.
+
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

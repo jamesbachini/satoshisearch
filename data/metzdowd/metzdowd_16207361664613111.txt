@@ -1,0 +1,88 @@
+<PRE>Eric Rescorla wrote:
+
+&gt;&gt;&gt;<i> (as if anyone uses client certificates anyway)? 
+</I>&gt;&gt;<i> Guess why so few people are using it ...
+</I>&gt;&gt;<i> If it were secure, more people would be able to use it.
+</I>&gt;<i> 
+</I>&gt;<i> No, if it were *convenient* people would use it. I know of absolutely
+</I>&gt;<i> zero evidence (nor have you presented any) that people choose not
+</I>&gt;<i> to use certs because of this kind of privacy issue--but I know
+</I>&gt;<i> of plenty that they find getting certs way too inconvenient.
+</I>
+
+In a CA I have something to do with, I'm observing a site 
+that just started experimenting with client certs (100 
+users, will reach 1000, maybe more).
+
+When we discovered that the certificate includes PII 
+(personally identifying information) and the website stores 
+additional PII, the service was directed to drop all 
+additional PII, and some thought was put into the in-cert PII.
+
+Current view is that the service must engage the user in a 
+contract to accept the storing of that in-cert PII, 
+otherwise it must not store the info in the cert (which 
+means no identity, no persistence, and no point to the 
+client certs).
+
+Writing contracts and securing agreement of course is a 
+barrier, a burden.  If this were a general requirement, then 
+this would be enough (imho) to not recommend client certs, 
+because contracts need lawyers, they cost real money, they 
+don't solve the problem, and not recommending them is 
+likewise unacceptable.
+
+(Then, as you say, there are convenience issues.)
+
+This is an experiment to force client certs to be used, so 
+they are plugging on.  It's a CA so it is trying to prove 
+that there is value in these things.
+
+So... there are two slight variations that could be 
+employed.  Firstly, all data placed in the cert could be 
+declared public in advance, and then no contract is required 
+to use it in a context that is compatible with public data. 
+  That is, the question of the contract is pushed to the CA/CPS.
+
+(You mentioned that the premise is that it is all public 
+data...)
+
+Another variation is to switch to username + password, of 
+course, in which case the username is freely given and 
+expected to be stored (certs being more or less invisible to 
+users, so we can presume no such).
+
+(definately open to other ideas...)
+
+The PII equation is particularly daunting, echoing Lynn's 
+early '90s experiences.  I am told (but haven't really 
+verified) that the certificate serial number is PII and 
+therefore falls under the full weight of privacy law &amp; regs 
+... this may sound ludicrous, but privacy and security are 
+different fields with different logics.  If that is true, 
+the liability is far too high for something that should be 
+private, but is already public by dint of its exposure in 
+certificates.  Privacy liabilities are sky-high in some 
+places, and not only that, they are incalculable, 
+unknowable, and vary with the person you are talking to.
+
+So a superficial conclusion would be &quot;don't use client 
+certificates because of the privacy issues&quot; although the 
+issues are somewhat more complex than &quot;PII revealed in SSL 
+key exchange.&quot;
+
+As I say, they'll plug on, as they need to prove that the 
+cert is worth issuing.  It's a data point, no more, and it 
+doesn't exactly answer your spec above.  But I'm having fun 
+observing them trying to prove that client certs are worth 
+any amount of effort.
+
+iang
+
+PS: normal disclosures of interest + conflicts, included.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

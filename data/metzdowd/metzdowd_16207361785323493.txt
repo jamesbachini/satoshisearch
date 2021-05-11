@@ -1,0 +1,51 @@
+<PRE>
+Thor Lancelot Simon &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tls at rek.tjls.com</A>&gt; writes:
+&gt;<i> On Sat, May 03, 2008 at 07:50:01PM -0400, Perry E. Metzger wrote:
+</I>&gt;&gt;<i> I disagree. Fundamentally, OpenVPN isn't doing anything IPSEC couldn't
+</I>&gt;&gt;<i> do, and yet is is fairly easy to configure.
+</I>&gt;<i>
+</I>&gt;<i> And yet there's no underlying technical reason why it is any easier to
+</I>&gt;<i> configure than IPsec is;
+</I>
+Absolutely. There is no reason one couldn't build an easy to configure
+IPSec. Indeed, OpenVPN could simply use IPSec if its authors wanted
+to.
+
+No one has created the easy to configure IPSec, however, so I don't
+use IPSec for my own needs.
+
+&gt;<i> I find it amusing (but somewhat sad) that in fact one can find basically
+</I>&gt;<i> the same set of flaws in each, but they're considered damning in IPsec
+</I>&gt;<i> while they're handwaved away or overlooked in SSL VPNs.
+</I>
+Myself, I don't handwave away said flaws. I don't recommend that
+clients use OpenVPN, for example. On the other hand, most of my
+clients can afford to pay admins to spend lots of time on this, and I
+couldn't afford to spend the time myself.
+
+&gt;<i> And, in fact, most VPN software of any type fails this test.  My concern
+</I>&gt;<i> is that an excessive focus on &quot;how hard is it to set this thing up?&quot; can
+</I>&gt;<i> seriously obscure the important second half of the question &quot;and if you
+</I>&gt;<i> set it up in the easiest possible way, is it safe?&quot;
+</I>
+Well, it is pretty easy to configure SSH safely. Set it to only use
+public keys, copy your private key to the remote host in the
+authorized_keys file, and you're more or less done. There is no reason
+all the defaults can't be set up for a nice easy to use IPSec based
+package in such a way that it requires a deliberate effort to make the
+thing unsafe and it is more or less that easy to use.
+
+Unfortunately, people just don't spend nearly the amount of time on
+the UI for their IPSec systems that they do on the crypto, so they
+spoil all the hard work they've done making the implementation sound
+by making it impossible for ordinary people to understand.
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

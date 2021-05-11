@@ -1,0 +1,47 @@
+<PRE>On Wed, Dec 12, 2007 at 05:27:38PM -0500, Thierry Moreau wrote:
+&gt;<i> As a consequence of alleged consensus above, my understanding of the C 
+</I>&gt;<i> standard would prevail and (memset)(?,0,?) would refer to an external 
+</I>&gt;<i> linkage function, which would guarantee (to the sterngth of the above 
+</I>&gt;<i> consensus) resetting an arbitrary memory area for secret intermediate 
+</I>&gt;<i> result protection.
+</I>
+GCC on x86-64 (-O2) compiles this function to the same machine code
+regardless of the value of ZEROIZE:
+
+#include &lt;string.h&gt;
+
+int sensitive(int key)
+   {
+   char buf[16];
+   int result = 0;
+   size_t j;
+
+   for(j = 0; j != sizeof(buf); j++)
+      buf[j] = key + j;
+
+   for(j = 0; j != sizeof(buf); j++)
+      result += buf[j];
+
+#if ZEROIZE
+   (memset)(buf, 0, sizeof(buf));
+#endif
+
+   return result;
+   }
+
+Even if (memset) must refer to a function with external linkage (an
+analysis I find dubious), there is nothing stopping the compiler from
+doing IPA/whole program optimization - especially with a very basic
+function like memset (in the code above, if buf is declared volatile,
+GCC does do the memset: but it does it by moving immediate zero values
+directly to the memory locations, not by actually jumping to any
+external function).
+
+Regards,
+  Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

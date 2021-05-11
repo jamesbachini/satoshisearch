@@ -1,0 +1,51 @@
+<PRE>On Tue, Oct 09, 2007 at 06:08:44PM +1300, Peter Gutmann wrote:
+&gt;<i> how do you want access to the keys controlled?  ACLs?  Who sets the ACLs?  Who
+</I>&gt;<i> can manage them?  How are permissions managed?  What's the UI for this?  Under
+</I>&gt;<i> what conditions is sharing allowed?  If sharing is allowed, how do you handle
+</I>&gt;<i> the fact that different apps (with different levels of security) could have
+</I>&gt;<i> access to the same keys?  Do you derive keys from a master key?  Do you
+</I>&gt;<i> migrate portions of the app functionality into the kernel to mitigate the
+</I>&gt;<i> problems with untrusted apps?  How is key backup handled?  What about
+</I>&gt;<i> 
+</I>&gt;<i> [Another 5 pages of questions]
+</I>
+Good stuff.
+
+I was hoping perhaps to stimulate a discussion on just these sorts of issues.
+
+There's a bit of interrelated stuff here; you can start with requirements,
+postulate some mechanisms, think about implications of their implementation,
+which leads to refining requirements.  It's sure to be a learning experience.
+
+Maybe this isn't the best place to do that, but it seems to me that this group
+would be one of the best for ironing out the details, and would have a vested
+interest in any such management interface not suck.
+
+Ideally I'd like to be able to develop something for, say, Linux, and possibly
+integrate it with your open-source co-processor stuff.
+
+&gt;<i> Once you've got a clear statement of exactly what you want to do (which in its
+</I>&gt;<i> most abstract form is &quot;solve an arbitrarily complex key management problem&quot;),
+</I>&gt;<i> implementation is almost trivial in comparison.
+</I>
+Sure.
+
+Maybe that's a good question: what are the idioms in key management?
+
+Is there any similar work already that I could read up on?
+
+Where can I read up on current HSM functionality, offerings, features, etc.?
+
+  &quot;Computers are useless; they can only give answers.&quot;
+   -- Pablo Picasso
+-- 
+&lt;URL:<A HREF="http://www.subspacefield.org/~travis/">http://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071009/bb8fae94/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071009/bb8fae94/attachment.pgp</A>&gt;
+</PRE>

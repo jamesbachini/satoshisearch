@@ -1,0 +1,36 @@
+<PRE>In previous cases of the government somehow magically gaining access to
+&quot;securely encrypted&quot; data, it eventually turned out that the government
+had compromised the target's machine and installed a key logger, or some
+other piece of software to record the relevant secret information.  So
+far, I've seen no information ruling this kind of thing out.  It's in
+the government's interest to keep its methodology as secret and
+mysterious as it can.
+
+A common mistake is looking at PGP or Hushmail or some other kind of
+secure mail system and saying &quot;only I can read my my mail.  Not even
+close to true:  Unless you're doing all your decryption with a pencil
+and a piece of paper, it's your *computer* that can read your mail.
+And today's computers simply cannot be treated as trusted.
+
+None of which argues against alternative possible scenarios, such as
+the &quot;turned&quot; correspondent at the other end of the mail interchange.
+The fact is, we just don't know how this information was obtained.
+
+We *may* learn more as the result of discovery leading up to trial.
+It's generally difficult for the government to keep out of the record
+the methods they use to obtain evidence, as doing so will tend to
+taint the evidence and make it inadmissible.  I'm sure there are
+plenty of lawyers looking closely at how to struture things to keep
+as many details hidden as possible, however.  The fact that information
+came from a &quot;confidential informant&quot; has to be revealed, but the
+identify of that informant can generally be kept concealed.  Someone
+will argue that the decrypted data plays the role of the &quot;confidential
+informant&quot;....
+							-- Jerry
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

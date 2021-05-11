@@ -1,0 +1,23 @@
+<PRE>Hello Dave,
+
+On 13/2/2008 21:26, Dave Korn wrote:
+&gt;<i>   Or are you suggesting that it could encrypt each block OTF when it's first
+</I>&gt;<i> accessed, or run the encryption in the background while the system was still
+</I>&gt;<i> live, instead of converting the whole drive in one big bite?
+</I>
+
+Encrypting blocks only when they are used can be risky in terms of false 
+sense of security. There is basically no way for you to tell what is 
+left out there.
+
+Encrypting the drive while the system is live is what TC currently does. 
+Encryption runs in the background while you can do other things (though 
+much slower).
+
+Hagai.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

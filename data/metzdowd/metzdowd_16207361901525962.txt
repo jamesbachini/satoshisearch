@@ -1,0 +1,38 @@
+<PRE>&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+
+&gt;<i>The sitation today is (a) the decreasing usefulness of passwords - those
+</I>&gt;<i>anyone has a chance of remembering are just to guessable in the face of the
+</I>&gt;<i>kinds of massive intelligent brute force that's possible today and (b) the
+</I>&gt;<i>inherently insecure password entry mechanisms that we've trained people to
+</I>&gt;<i>use.
+</I>
+It's actually not that bad, we have some really good password managers that
+can take care of this for us, alongside quite a bit of research from HCI
+people that examine their effectiveness.  By &quot;password manager&quot; I mean one
+that generates a strong password for you and supplies it as required, not the
+noddy &quot;managers&quot; built into things like web browsers, look at something like
+Roboform for an example of what I mean.  The problem is that I don't know of
+any application that natively uses them, there are between half a dozen and a
+dozen Firefox plugins and third-party apps (it varies over time) that all
+provide enhanced password-handling capabilities but the browser itself still
+has the incredibly clunky 1.0 &quot;manager&quot; that it's always had (not specifically
+picking on FF here, all the others are just as bad, the difference is that FF
+has a pile of functioning plugins and usability research that demonstrate how
+to get it right).
+
+The problem isn't with passwords, it's with developers: Passwords are insecure
+because developers have chosen to make them insecure.  We have mechanisms to
+address a lot of the problems with passwords but no-one ever uses them.  Even
+suggesting some of these things is hard ehough, the response to &quot;What about
+using security measure X which addresses problem Y&quot; isn't to use measure X but
+to find some obscure corner case where X won't work, declare the problem
+unsolveable, and keep on doing the same thing that already didn't work the
+last 100 times we tried it.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

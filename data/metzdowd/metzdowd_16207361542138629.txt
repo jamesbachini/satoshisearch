@@ -1,0 +1,38 @@
+<PRE>+ &quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt;:
+
+&gt;<i> If a proof is a record of a mental journey in which one person has
+</I>&gt;<i> discovered an important truth, and then made a record of that
+</I>&gt;<i> journey adequate so that a second person can walk the same path and
+</I>&gt;<i> see the same truth, then cryptography could do with more and better
+</I>&gt;<i> proofs.
+</I>
+As a mathematician with a somewhat limited knowledge of cryptography
+(and hence mostly a lurker on this list), I feel strangely compelled
+to respond.
+
+First, I like your metaphor.  If I might build further on it, it would
+be to point out that the first person to explore unknown terrain often
+finds the journey ardous and difficult: He ends up scaling vertical
+cliffs and crossing raging rivers, only later to discover that there
+was an easier path.  Should he not then record the easier path, rather
+than the difficult one that he himself followed initially?
+
+&gt;<i> If, on the other hand, a proof is an argument impressively decorated
+</I>&gt;<i> with mathematical sounding jargon, cryptography could do with a good
+</I>&gt;<i> deal fewer of them.
+</I>
+Agreed.  But sometimes what may seem like jargon made to impress is
+more analogous to a road, or maybe an all-terrain vehicle, that makes
+the wilderness available with less effort (and incidentally makes it
+less wild, but maybe this is where we should leave the metaphor
+behind).  There is nothing wrong with jargon and big theories if they
+fill a real need other than inflating the ego of their originators or
+scaring away outsiders.
+
+- Harald
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

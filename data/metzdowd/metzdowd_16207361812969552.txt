@@ -1,0 +1,45 @@
+<PRE>From:    &quot;Adam Barth&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">abarth at cs.stanford.edu</A>&gt;
+Subject: TOMORROW 3 Jun - Hongxia Jin - Traitor Tracing for Anonymous Attack in
+	   AACS Content Protection
+To:      <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">security-seminar at lists.stanford.edu</A>
+Date:    Mon, 02 Jun 2008 18:48:48 -0700
+
+
+Title: Traitor Tracing for Anonymous Attack in AACS Content Protection
+
+Speaker: Hongxia Jin, IBM Almaden
+
+Abstract:
+
+Broadcast encryption and traitor tracing are two active problems in
+cryptography community.  In this talk I will give an overview on how
+broadcast encryption and traitor tracing can be used for content
+protection.  My focus of the talk is on tracing traitors for anonymous
+attack. It is a way to trace the source of unauthorized copies of the
+content or content encrypting keys when the system is broadcasted.  I
+will give the talk in the context of AACS, the new industry content
+protection standards for next generation high definition DVDs, It is
+the first large-scale commercial deployment of  a traitor tracing
+technology.  Along the way we have had to solve both practical and
+theoretical problems that had not been apparent in the literature to
+date.  In this talk I will focus on addressing some of those problems
+in our process of bringing a theoretical solution to practice.
+
+3 Jun (Tuesday) at 1630 hrs
+Gates 4B (opposite 490)
+
+Stanford Security Seminar on Google Calendar:
+<A HREF="http://www.google.com/calendar/embed?src=98e49qo62mapd82qi9468tahls%40group.cal">http://www.google.com/calendar/embed?src=98e49qo62mapd82qi9468tahls%40group.cal</A>
+endar.google.com
+- --++**==--++**==--++**==--++**==--++**==--++**==--++**==
+security-seminar mailing list
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">security-seminar at lists.stanford.edu</A>
+<A HREF="https://mailman.stanford.edu/mailman/listinfo/security-seminar">https://mailman.stanford.edu/mailman/listinfo/security-seminar</A>
+
+----------
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,43 @@
+<PRE>
+On 30 Jan 2008, at 04:26, Perry E. Metzger wrote:
+
+&gt;<i>
+</I>&gt;<i> Clearly, more people need to know about &quot;Gutmann Soundwave Therapy&quot;.
+</I>&gt;<i>
+</I>
+To this end, I would like to introduce the Gutmann Sound Wave Therapy  
+Mobile Enlightenment Unit.
+<A HREF="http://occasionallyhuman.net/gutmann/">http://occasionallyhuman.net/gutmann/</A>
+(NSFW if depictions of phallic audio waves are an issue)
+
+
+Do you know a programmer who believes they can write a replacement for  
+SSL in the time it takes to finish their coffee?
+
+Tell tale signs are phrases such as 'proprietary crypto' and 'secret  
+algorithm'.
+
+Simply apply the Gutmann Sound Wave Therapy Mobile Enlightenment Unit,  
+stand back, wait and breath a sigh of relief - you've just made the  
+world a better place.
+
+
+I'll begin taking pre-orders shortly.
+
+--
+Hayden
+
+PS: I don't care that the audio wave can't be produced. It's 'artistic'.
+
+
+#!/usr/bin/perl
+chop($_=&lt;&gt;);@s=split/ /;foreach$m(@s){if($m=='*'){$z=<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pop at t</A>;$x=
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pop at t</A>;$a=eval&quot;$x$m$z&quot;;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">push at t</A>,$a;}else{<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">push at t</A>,$m;}}print&quot;$a\n&quot;;
+# <A HREF="http://occasionallyhuman.net/">http://occasionallyhuman.net/</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

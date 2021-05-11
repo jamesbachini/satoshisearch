@@ -1,0 +1,34 @@
+<PRE>James A. Donald wrote:
+&gt;<i> James Muir wrote:
+</I>&gt;<i>  &gt; Can anyone think of a deployed implementation of RSA
+</I>&gt;<i>  &gt; signatures that would be vulnerable to the attack
+</I>&gt;<i>  &gt; Shamir mentions?  Hashing and message blinding would
+</I>&gt;<i>  &gt; seem to thwart it.
+</I>&gt;<i> 
+</I>&gt;<i> As I said, public key encryption has long been known to
+</I>&gt;<i> be weak against chosen plaintext and chosen cryptotext -
+</I>&gt;<i> so protocols have long been designed to prevent this
+</I>&gt;<i> sort of attack.  If they are not so designed, they were
+</I>&gt;<i> known to be weak before this attack was discovered.
+</I>
+I completely agree with you.  Good public key cryptography should be
+designed to resist chosen message attacks.  This has been a standard
+part of cryptographic theory since the 80s.  But this is an
+implementation attack, and real world implementations don't necessarily
+follow all the rules of cryptographic theory.
+
+If you or anyone else happened to know of a single real-world
+implementation of RSA signatures that is vulnerable to this fault
+attack, then that might give some justification for the incredible media
+coverage it has received.  I can't think of any, and my feeling is that
+this announcement has been over-hyped (and presented without proper
+perspective).
+
+-James
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,92 @@
+<PRE><A HREF="http://computerworld.co.nz/news.nsf/scrt/3FF9713E23292846CC25740A0069243E">http://computerworld.co.nz/news.nsf/scrt/3FF9713E23292846CC25740A0069243E</A>
+
+The Dutch government has issued a warning about the security of access keys
+that are based on the widely used Mifare Classic RFID chip.
+
+
+The warning comes in a week when two research teams independently
+demonstrated hacks of the chip's security algorithm.
+
+
+Criminals can use the hack to clone cards that use the Mifare Classic chip,
+allowing them to create copies of building access keys or commit identity theft.
+
+
+The chip is used in payment systems worldwide, such as the Oyster Card in
+the UK and the CharlieCard that is used in Boston. Both offer payment
+systems that allow for wireless transactions.
+
+
+The chip is the basis of a national proof-of-payment system for public
+transport. A recently published government-issued study by the Netherlands
+Organisation for Applied Scientific Research dismissed the potential
+security threat, claiming that hackers would take at least two years to
+crack the security codes.
+
+
+(The article is short enough it is hard to do fair-use justice.)
+
+The cryptanalysis:
+<A HREF="http://www.cs.virginia.edu/~kn5f/pdf/Mifare.Cryptanalysis.pdf">http://www.cs.virginia.edu/~kn5f/pdf/Mifare.Cryptanalysis.pdf</A>
+
+A March 12th Press Release from Radboud University Nijmegen:
+<A HREF="http://www2.ru.nl/media/pressrelease.pdf">http://www2.ru.nl/media/pressrelease.pdf</A>
+In HTML:
+<A HREF="http://www.ru.nl/ds/group/ds_group/press_release/">http://www.ru.nl/ds/group/ds_group/press_release/</A>
+
+A link to a demo video on Youtube:
+<A HREF="http://www.ru.nl/ds/group/ds_group/press_release/film/">http://www.ru.nl/ds/group/ds_group/press_release/film/</A>
+
+Run time is 1:55, 4.9 MB and a Flash Video
+The demo is an attack on a door security system.
+
+A recent report stating that it would take at least two years for the
+cryptographic algorithm to be broken and used casually (From the video I'd
+say this is optomistic by almost two years):
+<A HREF="http://www.translink.nl/media/bijlagen/nieuws/TNO_ICT_-_Security_Analysis_OV-Chipkaart_-_public_report.pdf">http://www.translink.nl/media/bijlagen/nieuws/TNO_ICT_-_Security_Analysis_OV-Chipkaart_-_public_report.pdf</A>
+
+A Mifare+ fix for the security weaknesses is announced (Mar 12th):
+<A HREF="http://www.thetechherald.com/article.php/200811/394">http://www.thetechherald.com/article.php/200811/394</A>
+
+On Monday NXP Semiconductors said they plan to release a new version of the
+Mifare chip; the chip that has gained fame lately after its security was
+broken by researchers at U. VA. Dubbed the Mifare Plus, the new chip
+addresses the exact security problems that its predecessor the Mifare
+Classic faced. The new NXP offering is boasting 128-bit encryption over the
+original 48-bit.
+
+
+The NXP press release:
+<A HREF="http://www.nxp.com/news/content/file_1418.html">http://www.nxp.com/news/content/file_1418.html</A>
+
+There are a couple of things of note.  They are seeking EAL-4+ evaluation
+rating (which Windows 2000 has), it uses AES 128 bit encryption, and it has
+backward compatibility with the 48 bit encryption,  Also the new cards won't
+be available until Q4.
+
+The cost of infrastructure upgrade (equipment cost versus card processing
+delay) might cause an adoption lag.
+
+NXP Semiconductors also claims to lead the car access and immobilzation markets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

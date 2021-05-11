@@ -1,0 +1,41 @@
+<PRE>James A. Donald wrote:
+&gt;<i> Committees of experts regularly get cryptography wrong - consider, for 
+</I>&gt;<i> example the Wifi debacle.  Each wifi release contains classic and 
+</I>&gt;<i> infamous errors - for example WPA-Personal is subject to offline 
+</I>&gt;<i> dictionary attack.
+</I>&gt;<i>
+</I>&gt;<i> One would have thought that after the first disaster they would have 
+</I>&gt;<i> hired someone who could do it right, but as Ian long ago pointed out, 
+</I>&gt;<i> in &quot;the market for silver bullets&quot;, they are unable to tell who can do 
+</I>&gt;<i> it right.  The only people who know who the real experts are, are the 
+</I>&gt;<i> real experts.   If you knew who to hire, you could do it yourself, and 
+</I>&gt;<i> probably should do it yourself.  So they hire expert salesmen, not 
+</I>&gt;<i> cryptography experts.
+</I>the other scenario was that the cryptography part was done from such a 
+myopic standpoint ... that they failed to consider the end-to-end 
+infrastructure.
+
+I've repeatedly heard excuses that the cryptographers in the wifi 
+debacle believed that they could only design a solution based on 
+significant hardware restrictions/constraints. part of what i observed 
+... by the time any of them shipped ... the hardware 
+restrictions/constraints no longer existed . the other thing that i 
+observed was that with relatively trivial knowledge about chips ... it 
+was possible to come up with an integrated solution that incorporated 
+both the necessary hardware and the necessary cryptography  ...  there 
+has got to be some analogy here someplace about the blind trying to 
+describe an elephant; in addition to the &quot;point solution&quot; analogy, 
+failing to take in the overall infrastructure.
+
+i've repeatedly claimed that we did that in the AADS chip strawman solution
+<A HREF="http://www.garlic.com/~lynn/x959.html#aads">http://www.garlic.com/~lynn/x959.html#aads</A>
+
+that including addressing all the issues that showed up in scenarios 
+like with the &quot;yes cards&quot;
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#yescards">http://www.garlic.com/~lynn/subintegrity.html#yescards</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

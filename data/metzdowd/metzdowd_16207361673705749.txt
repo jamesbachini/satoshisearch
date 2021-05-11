@@ -1,0 +1,13 @@
+<PRE>The per-card cost need not be such a big problem.  Singapore has a 
+proximity-card-based system.  They use the same card both for the 
+long-term cards and for the single-use cards.  There is a S$ 2 (IIRC) 
+deposit on the card, which is refunded after the card is used.  Waste 
+not want not!
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

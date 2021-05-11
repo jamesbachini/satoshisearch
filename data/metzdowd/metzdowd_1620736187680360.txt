@@ -1,0 +1,27 @@
+<PRE>On Fri, Aug 8, 2008 at 7:54 PM, Tim Dierks &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tim at dierks.org</A>&gt; wrote:
+&gt;<i> Using this Bloom filter calculator:
+</I>&gt;<i> <A HREF="http://www.cc.gatech.edu/~manolios/bloom-filters/calculator.html">http://www.cc.gatech.edu/~manolios/bloom-filters/calculator.html</A> , plus the
+</I>&gt;<i> fact that there are 32,768 weak keys for every key type &amp; size, I get
+</I>&gt;<i> various sizes of necessary Bloom filter, based on how many key type / sizes
+</I>&gt;<i> you want to check and various false positive rates:
+</I>&gt;<i>  * 3 key types/sizes with 1e-6 false positive rate: 2826759 bits = 353 KB
+</I>&gt;<i>  * 3 key types/sizes with 1e-9 false positive rate: 4240139 bits = 530 KB
+</I>&gt;<i>  * 7 key types/sizes with 1e-6 false positive rate: 6595771 bits = 824 KB
+</I>&gt;<i>  * 7 key types/sizes with 1e-9 false positive rate: 9893657 bits = 1237 KB
+</I>&gt;<i>
+</I>&gt;<i> I presume that the first 3 &amp; first 7 key type/sizes in this list
+</I>&gt;<i> <A HREF="http://metasploit.com/users/hdm/tools/debian-openssl/">http://metasploit.com/users/hdm/tools/debian-openssl/</A> are the best to
+</I>&gt;<i> incorporate into the filter.
+</I>&gt;<i>
+</I>&gt;<i> Is there any chance it would be feasible to get a list of all the weak keys
+</I>&gt;<i> that were actually certified by browser-installed CAs, or those weak
+</I>&gt;<i> certificates? Presumably, this list would be much smaller and would be more
+</I>&gt;<i> effectively distributed in Bloom filter form.
+</I>
+Or as a CRL :-)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,20 @@
+<PRE>Daniel Carosone &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geek.com.au</A>&gt; writes:
+&gt;<i>On Fri, Aug 29, 2008 at 09:01:26PM +0000, Muffys Wump wrote:
+</I>&gt;&gt;<i> Master Password: hash(hash(login_password))
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> Would this be a good idea if we've used this generated hash as a key for AES?
+</I>&gt;&gt;<i> Would the hashing be secure enough against different kinds of attacks?
+</I>&gt;<i>
+</I>&gt;<i>You want to look at something like PKCS#5 for generating keys from
+</I>&gt;<i>passphrases.
+</I>
+... and specifically PBKDF2, not the original PKCS #5.  See also the
+discussion at <A HREF="http://en.wikipedia.org/wiki/Dictionary_attack.">http://en.wikipedia.org/wiki/Dictionary_attack.</A>
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

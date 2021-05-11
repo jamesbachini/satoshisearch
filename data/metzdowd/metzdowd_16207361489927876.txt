@@ -1,0 +1,46 @@
+<PRE>Paul Hoffman &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">paul.hoffman at vpnc.org</A>&gt; writes:
+&gt;<i> I posted a new security research article at
+</I>&gt;<i> &lt;<A HREF="http://www.proper.com/root-cert-problem/">http://www.proper.com/root-cert-problem/</A>&gt;. It is not directly related to
+</I>&gt;<i> crypto (although not so much of the traffic on this list is...), it does
+</I>&gt;<i> relate to some PKI topics that are favorites of this list.
+</I>
+The executive summary, so I've got something to reply to:
+
+   In the default configuration for Windows XP with Service Pack 2 (SP2), if a
+   user removes one of the trusted root certificates, and the certifier who
+   issued that root certificate is trusted by Microsoft, Windows will silently
+   add the root certificate back into the user's store and use the original
+   trust settings.
+
+While I don't agree with this behaviour, I can see why Microsoft would do
+this, and I can't see them changing it at any time in the future.  It's the
+same reason why they ignore key usage restrictions and allow (for example) an
+encryption-only key to be used for signatures, and a thousand other breaches
+of PKI etiquette: There'd be too many user complaints if they didn't.
+
+The people designing this stuff aren't the ones who have to man the tech
+helpdesk when users find that things break because of some action that they
+don't even understand (see e.g. the Xerox PARC study where a bunch of people
+with PhDs in computer science, after following paint-by-numbers instructions
+to install certs on their machines, had absolutely no idea what they'd just
+done to their computers).
+
+ From a security point of view, this is really bad.  From a usability point of
+view, it's necessary.  The solution is to let the HCI people into the design
+process, something that's very rarely, if ever, done in the security 
+field [0].
+
+Peter.
+
+[0] Before people jump up and down about this: Yes, HCISec has become a very
+     active and productive field in the last few years.  Unfortunately far too
+     little of the work that's being done is making it into products though.
+     We have lots of data saying &quot;X is unusable in practice&quot; and &quot;The best way
+     to handle this is Y&quot;, but developers keep on pushing X and avoiding (or
+     don't even know about) Y.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

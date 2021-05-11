@@ -1,0 +1,50 @@
+<PRE>
+Jason &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jason at lunkwill.org</A>&gt; writes:
+&gt;<i> On Wed, 2 Jan 2008, Steven M. Bellovin wrote:
+</I>&gt;&gt;<i> Cryptography provides authentication and integrity.  It does not
+</I>&gt;&gt;<i> provide authorization, nor does it provide protection against bugs.
+</I>&gt;&gt;<i> Your suggested approach -- better OS and better crypto -- is exactly
+</I>&gt;&gt;<i> what's failed for the last 25 years.
+</I>&gt;<i>
+</I>&gt;<i> You're painting with too broad a brush.  Creating artificial life
+</I>&gt;<i> failed; security just fails to get adopted.
+</I>
+I think Steve is completely correct in the case of cryptography. We
+have a lot of experience of real world security failures these days,
+and they're not generally the sort that crypto would fix.
+
+&gt;<i> Authentication is exactly what I need in the case of spam/phishing:
+</I>
+People have said that for quite some time. However, I doubt it would
+actually help. In the case of spam, all that would end up happening is
+vast amounts of CPU time being spent demonstrating that the made up
+addresses on spam were associated with actual RSA keys. (There is no
+practical limit to the number of RSA keys that may be generated.)
+
+&gt;<i> did that really come from my bank? 
+</I>
+In the very different case of phishing, I think it would still all
+fail. Most people are unable to understand (or outright ignore)
+SSL authentication failures to web sites, so I don't see why they
+would be disturbed by authentication failures in email from their
+bank. We'd also have the problem that lots of email would remain
+unauthenticated for years or decades, and that if you got a security
+pop-up every time you read such an email, you'd probably learn to
+ignore them inside of an hour.
+
+&gt;<i> And you gave examples of OS techniques which mitigate risks in buggy
+</I>&gt;<i> apps. Privilege escalation makes bad malware into horrible malware.
+</I>
+I would actually agree that we can implement operating system
+strategies that make malware harder to write. I don't know if it is
+likely that any current techniques, even including the nearly unheard
+of use of formal verification, would actually eliminate malware.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,31 @@
+<PRE>At 10:55 PM +0200 10/8/07, Ian G wrote:
+&gt;<i>A slightly off-topic question:  if we accept that current processes 
+</I>&gt;<i>(FIPS-140, CC, etc) are inadequate indicators of quality for OSS 
+</I>&gt;<i>products, is there something that can be done about it?
+</I>
+Highly doubtful. The institutional inertia at DoD/NIST is too great. 
+It has been suggested numerous times by numerous concerned parties 
+for at least a decade.
+
+&gt;<i>Is there a reasonable criteria / process that can be built that is 
+</I>&gt;<i>more suitable?
+</I>
+Yes. That part is easy, and some people in the system admit designing 
+a much better system is quite tractable, as long as it is done in a 
+vacuum. However, bureaucracy abhors a vacuum.
+
+My feeling is that the only way that we can overturn the silliness of 
+FIPS-140 / CC is for a major defense ally to implement a sane system. 
+Five years later, and with a lot of vendor push, it could become a 
+third process and the other two could wither over the ensuing 
+decades. If we're lucky.
+
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,30 @@
+<PRE>Jeff Hodges wrote:
+&gt;<i> Thanks for your thoughts on this Hal. Quite educational. 
+</I>&gt;<i>
+</I>&gt;<i> &gt; Jeff Hodges wrote:
+</I>&gt;<i> &gt; &gt; It turns out the supplied default for p is 1024 bit -- I'd previously goofed 
+</I>&gt;<i> &gt; &gt; when using wc on it..
+</I>&gt;<i> &gt; &gt;
+</I>&gt;<i> &gt; &gt; DCF93A0B883972EC0E19989AC5A2CE310E1D37717E8D9571BB7623731866E61EF75A2E27898B057
+</I>&gt;<i> &gt; &gt; F9891C2E27A639C3F29B60814581CD3B2CA3986D2683705577D45C2E7E52DC81C7A171876E5CEA7
+</I>&gt;<i> &gt; &gt; 4B1448BFDFAF18828EFD2519F14E45E3826634AF1949E5B535CC829A483B8A76223E5D490A257F0
+</I>&gt;<i> &gt; &gt; 5BDFF16F2FB22C583AB
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; This p is a &quot;strong&quot; prime, one where (p-1)/2 is also a prime, a good
+</I>&gt;<i> &gt; property for a DH modulus.
+</I>&gt;<i>
+</I>&gt;<i> Ok, so what tools did you use to ascertain that? I'm curious. 
+</I>
+I copied and pasted it into Python as p, set p1 = (p-1)/2, and did
+pow(2L,p1-1,p1), pow(3L,p1-1,p1) and a few such Fermat tests, always
+getting 1 as the result, to confirm that p1 is prime. I then did
+pow(2L,p1,p) and got p-1 rather than 1, which tells me that 2 generates
+the whole group rather than the subgroup of order p1.
+
+Hal
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

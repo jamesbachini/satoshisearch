@@ -1,0 +1,42 @@
+<PRE>On Thu, Jan 31, 2008 at 11:12:45PM -0500, Victor Duchovni wrote:
+&gt;<i> On Fri, Feb 01, 2008 at 01:15:09PM +1300, Peter Gutmann wrote:
+</I>&gt;<i> &gt; If anyone's interested, I did an analysis of this sort of thing in an
+</I>&gt;<i> &gt; unpublished draft &quot;Performance Characteristics of Application-level Security
+</I>&gt;<i> &gt; Protocols&quot;, <A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/app_sec.pdf.">http://www.cs.auckland.ac.nz/~pgut001/pubs/app_sec.pdf.</A>  It
+</I>&gt;<i> &gt; compares (among other things) the cost in RTT of several variations of SSL and
+</I>&gt;<i> &gt; SSH.  It's not the TCP RTTs that hurt, it's all the handshaking that takes
+</I>&gt;<i> &gt; place during the crypto connect.  SSH is particularly bad in this regard.
+</I>&gt;<i> 
+</I>&gt;<i> Thanks, an excellent reference! Section 6.2 is most enlightening, we were
+</I>&gt;<i> already considering adopting HPN fixes in the internal OpenSSH deployment,
+</I>&gt;<i> this provides solid material to motivate the work...
+</I>
+To be fair, the &quot;handbrake&quot; in SFTP isn't -- the clients and servers
+should be using async I/O and support interleaving the transfers of many
+files concurrently, which should allow the peers to exchange data as
+fast as it can be read from disk.
+
+The same is true of NFS, and keep in mind that SFTP is more of a remote
+filesystem protocol than a file transfer protocol.
+
+But nobody writes archivers that work asynchronously (or which are
+threaded, since, e.g., close(2) has no async equivalent, and is required
+to be synchronous in the NFS case).  And nobody writes SFTP clients and
+server that work asynchronously.  But, we could, and we should.
+
+And the handbrake in the SSHv2 connection protocol has its rationale as
+well (namely to allow interactive sessions to be responsive).  As
+described in Peter's paper, it can be turned off, effectively.  It's
+most useful when mixing interactive sessions and X11 display forwarding
+(and port forwarding which don't involve bulk data transfers).  It's
+most useless when doing bulk transfers.  So use separate connections for
+bulk transfers.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

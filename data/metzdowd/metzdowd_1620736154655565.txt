@@ -1,0 +1,20 @@
+<PRE>NewScientist's write-up (subscription required for full article):
+
+<A HREF="http://technology.newscientist.com/article.ns?id=mg19526216.700">http://technology.newscientist.com/article.ns?id=mg19526216.700</A>
+
+You can find the full paper here:
+
+<A HREF="http://arxiv.org/pdf/0705.1684">http://arxiv.org/pdf/0705.1684</A>
+
+-- 
+Dustin D. Trammell
+Product Security Analyst
+TippingPoint, a division of 3Com
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: This is a digitally signed message part
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070913/547c2984/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20070913/547c2984/attachment.pgp</A>&gt;
+</PRE>

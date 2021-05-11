@@ -1,0 +1,83 @@
+<PRE>There was a paper in IEEE Security &amp; Privacy 2006 by Sam King on how  
+to do this kind of attack (his system was called SubVirt):
+	<A HREF="http://www.eecs.umich.edu/virtual/papers/king06.pdf">http://www.eecs.umich.edu/virtual/papers/king06.pdf</A>
+
+However, in practice it turns out this is a much harder than people  
+think. See Tal Garfinkel's paper on precisely this topic at HotOS 2007:
+	<A HREF="http://www.stanford.edu/~talg/papers/HOTOS07/abstract.html">http://www.stanford.edu/~talg/papers/HOTOS07/abstract.html</A>
+
+-Angelos
+
+
+On Jan 2, 2008, at 1:09 PM, Anne &amp; Lynn Wheeler wrote:
+
+&gt;<i> Bill Frantz wrote:
+</I>&gt;<i> &gt; My favorite virtual machine use is for the virus to install itself
+</I>&gt;<i> &gt; as a virtual machine, and run the OS in the virtual machine.  This
+</I>&gt;<i> &gt; technique should be really good for hiding from virus scanners.
+</I>&gt;<i>
+</I>&gt;<i> re:
+</I>&gt;<i> <A HREF="http://www.garlic.com/~lynn/aadsm28.htm#2">http://www.garlic.com/~lynn/aadsm28.htm#2</A> Death of antivirus  
+</I>&gt;<i> software imminent
+</I>&gt;<i> <A HREF="http://www.garlic.com/~lynn/aadsm28.htm#4">http://www.garlic.com/~lynn/aadsm28.htm#4</A> Death of antivirus  
+</I>&gt;<i> software imminent
+</I>&gt;<i>
+</I>&gt;<i> i commented on that in reference posts mentioning that there have been
+</I>&gt;<i> uses of virtual machines to study virus/trojans ... but that
+</I>&gt;<i> some of the new generation virus/trojans are now looking to see if  
+</I>&gt;<i> they
+</I>&gt;<i> are running in virtual machine (studied?).
+</I>&gt;<i>
+</I>&gt;<i> some of the current trade-off is whether that virtual machine  
+</I>&gt;<i> technology
+</I>&gt;<i> can be used to partition off basically insecure operations (which  
+</I>&gt;<i> are widely
+</I>&gt;<i> recognized as being easy to compromise) and then completely discard
+</I>&gt;<i> the environment and rebuild from scratch after every session (sort of
+</I>&gt;<i> the automated equivalent of having to manually wipe an infected  
+</I>&gt;<i> machine
+</I>&gt;<i> and re-install from scratch).
+</I>&gt;<i>
+</I>&gt;<i> the counter argument is that crooks can possibly also use similar
+</I>&gt;<i> technology to hide ... once they have infected the machine. the  
+</I>&gt;<i> current
+</I>&gt;<i> issue is that a lot of the antivirus/scanning techniques are  
+</I>&gt;<i> becoming obsolete
+</I>&gt;<i> w/o the attackers even leveraging virtual machine technology.
+</I>&gt;<i>
+</I>&gt;<i> The attackers can leverage the technology in an otherwise poorly
+</I>&gt;<i> defended machine. Some years ago there was a product claiming
+</I>&gt;<i> that it could operate even at a public access machine because
+</I>&gt;<i> of their completeness of their antivirus countermeasures ... even
+</I>&gt;<i> on an infected machine. I raised the issue that it would be trivial
+</I>&gt;<i> to defeat all such countermeasures using virtual machine technology.
+</I>&gt;<i> Somewhat of a skirmish resulted since they had never considered
+</I>&gt;<i> (or heard of) virtual machine technology ... for all i know there
+</I>&gt;<i> is still ongoing head-in-the-sand situation.
+</I>&gt;<i>
+</I>&gt;<i> for little topic drift ... this blog entry:
+</I>&gt;<i> <A HREF="https://financialcryptography.com/mt/archives/000991.html">https://financialcryptography.com/mt/archives/000991.html</A>
+</I>&gt;<i>
+</I>&gt;<i> and
+</I>&gt;<i> <A HREF="http://www.garlic.com/~lynn/aadsm28.htm#3">http://www.garlic.com/~lynn/aadsm28.htm#3</A>
+</I>&gt;<i> <A HREF="http://www.garlic.com/~lynn/aadsm28.htm#5">http://www.garlic.com/~lynn/aadsm28.htm#5</A>
+</I>&gt;<i>
+</I>&gt;<i> there is some assertion that the crooks overwhelming the
+</I>&gt;<i> defenders countermeasures because they are operating
+</I>&gt;<i> significantly faster and more efficiently.
+</I>&gt;<i>
+</I>&gt;<i> however, another interpretation is that the defenders
+</I>&gt;<i> have chosen extremely poor position to defend ... and are
+</I>&gt;<i> therefor at enormous disadvantage. it may be necessary
+</I>&gt;<i> to change the paradigm (and/or find the high ground)
+</I>&gt;<i> in order to successfully defend.
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,44 @@
+<PRE>At Thu, 10 Jul 2008 18:10:27 +0200,
+Eugen Leitl wrote:
+&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> In case somebody missed it, 
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.tfr.org/wiki/index.php?title=Technical_Proposal_(IPETEE">http://www.tfr.org/wiki/index.php?title=Technical_Proposal_(IPETEE</A>)
+</I>&gt;<i>
+</I>&gt;<i> I'm not sure what the status of <A HREF="http://postel.org/anonsec/">http://postel.org/anonsec/</A>
+</I>&gt;<i> is, the mailing list traffic dried up a while back.
+</I>
+This is the first I have heard of this.
+
+That said, some initial observations:
+
+- It's worth asking why, if you're doing per-connection keying,
+  it makes sense to do this at the IP layer rather than the
+  TCP/UDP layer. 
+
+- Why not simply use TLS or DTLS?
+
+- The uh, novel nature of the cryptographic mechanisms is
+  pretty scary. Salsa-20? AES-CBC with implicit IV?
+  A completely new cryptographic handshake? Why not use
+  IPsec?
+
+- A related idea was proposed a while back (by Lars Eggert,
+  I believe). See S 6.2.3.1 of:
+
+  <A HREF="https://svn.resiprocate.org/rep/ietf-drafts/ekr/draft-rescorla-tcp-auth-arch.txt">https://svn.resiprocate.org/rep/ietf-drafts/ekr/draft-rescorla-tcp-auth-arch.txt</A>
+
+-Ekr
+
+
+
+  
+
+  
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

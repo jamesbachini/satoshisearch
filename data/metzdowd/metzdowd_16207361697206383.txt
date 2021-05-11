@@ -1,0 +1,67 @@
+<PRE>
+
+Leichter, Jerry wrote:
+
+&gt;<i> While trying to find something else, I came across the following
+</I>&gt;<i> reference:
+</I>&gt;<i> 
+</I>&gt;<i> 	Title:   Sender driven certification enrollment system
+</I>&gt;<i> 	Document Type and Number:  United States Patent 6651166
+</I>&gt;<i> 	Link to this page:  <A HREF="http://www.freepatentsonline.com/6651166.html">http://www.freepatentsonline.com/6651166.html</A>
+</I>&gt;<i> 	Abstract:
+</I>&gt;<i> 	A sender driven certificate enrollment system and methods of its
+</I>&gt;<i> 	use are provided, in which a sender controls the generation of a
+</I>&gt;<i> 	digital certificate that is used to encrypt and send a document
+</I>&gt;<i> 	to a recipient in a secure manner. The sender compares
+</I>&gt;<i> 	previously stored recipient information to gathered information
+</I>&gt;<i> 	from the recipient. If the information matches, the sender
+</I>&gt;<i> 	transfers key generation software to the recipient, which
+</I>&gt;<i> 	produces the digital certificate, comprising a public and
+</I>&gt;<i> 	private key pair. The sender can then use the public key to
+</I>&gt;<i> 	encrypt and send the document to the recipient, wherein the
+</I>&gt;<i> 	recipient can use the matching private key to decrypt the
+</I>&gt;<i> 	document.
+</I>&gt;<i> 
+</I>
+Some feedback on the above security certificate issuance process.
+
+At first, it seems neat. But then, looking at how it works in practice:
+
+the client receives an e-mail notification soliciting him to click on a
+HTML link and then enroll for a security certificate,
+
+the client is solicited exactly like a phishing criminal would do, and
+
+a java software utility downloaded from the web should not be allowed to
+modify security-critical parameters on the local machine.
+
+
+According to my records, this issuance process is nonetheless
+representative of research directions for user enrollment, i.e. there
+aren't too many other documented processes in this area.
+
+Regards,
+
+
+-- 
+
+- Thierry Moreau
+
+CONNOTECH Experts-conseils inc.
+9130 Place de Montgolfier
+Montreal, Qc
+Canada   H2M 2A1
+
+Tel.: (514)385-5691
+Fax:  (514)385-5900
+
+web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

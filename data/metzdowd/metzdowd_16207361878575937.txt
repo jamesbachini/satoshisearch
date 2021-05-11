@@ -1,0 +1,32 @@
+<PRE>Chris Kuethe wrote:
+&gt;<i> On Wed, Aug 6, 2008 at 8:23 AM, Peter Saint-Andre &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stpeter at stpeter.im</A>&gt; wrote:
+</I>&gt;&gt;<i> Wells Fargo is requiring their online banking customers to provide answers
+</I>&gt;&gt;<i> to security questions such as these:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> ***
+</I>&gt;&gt;<i> ...
+</I>&gt;&gt;<i> ***
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> It strikes me that the answers to many of these questions might be public
+</I>&gt;&gt;<i> information or subject to social engineering attacks...
+</I>&gt;<i> 
+</I>&gt;<i> Lie.
+</I>&gt;<i> 
+</I>&gt;<i> I don't actually give the real answers to those questions for just
+</I>&gt;<i> that reason. Make up some plausible and memorable words (maybe using a
+</I>&gt;<i> tool like &quot;yould&quot;), and pick your mother a new random name from the
+</I>&gt;<i> phone book.
+</I>
+Oh, I know we're smart enough to do that, but I doubt that your typical 
+Facebook user will realize that their high school and best friend's 
+first name (etc.) are public information.
+
+Peter
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/x-pkcs7-signature
+Size: 7338 bytes
+Desc: S/MIME Cryptographic Signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080806/353e8f0c/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20080806/353e8f0c/attachment.bin</A>&gt;
+</PRE>

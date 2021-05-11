@@ -1,0 +1,73 @@
+<PRE>A paper was presented at the NIST/OASIS-sponsored IDtrust
+conference in Gaithersburg, MD last month, that attempts
+to start quantifying how authentication technology can be
+graded based on their ability to resist attacks.  The
+paper - Identity Protection Factor (IPF) - and all others
+from the conference are available at:
+
+<A HREF="http://middleware.internet2.edu/idtrust/2008/program.html">http://middleware.internet2.edu/idtrust/2008/program.html</A>
+
+Arshad Noor
+StrongAuth, Inc.
+
+Philipp G&#252;hring wrote:
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;&gt;<i> QUESTION: Does anybody knows about the existence of a
+</I>&gt;&gt;<i> security research in area of grading the easiness to
+</I>&gt;&gt;<i> steel biometric data.
+</I>&gt;<i> 
+</I>&gt;<i> There are several relevant threats:
+</I>&gt;<i> * Accidental leaking the biometric data (colour-photos for face, fingerprints 
+</I>&gt;<i> on glasses for fingers, public documents for human signature)
+</I>&gt;<i> * Intentional stealing of biometric data (cellphone cameras, hidden 
+</I>&gt;<i> cameras, ...)
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;&gt;<i> For example, I guess that stealing information of
+</I>&gt;&gt;<i> someone's &quot;face&quot; is easier than stealing information
+</I>&gt;&gt;<i> about someone's &quot;fingerprints&quot;,
+</I>&gt;<i> 
+</I>&gt;<i> Depends.
+</I>&gt;<i> Stealing fingerprints is easy if you hand the target person a glass of water.
+</I>&gt;<i> With &quot;face&quot; you have to differentiate between the different kinds of faces.
+</I>&gt;<i> Taking colour photos of faces is easy. Taking infrared photos of faces, or 
+</I>&gt;<i> taking 3D scans of faces, ... is much harder.
+</I>&gt;<i> 
+</I>&gt;&gt;<i> but stealing information about someone's &quot;retina&quot;
+</I>&gt;&gt;<i> would be much harder.
+</I>&gt;<i> 
+</I>&gt;<i> Yes, stealing retina is harder. (It's even harder in the normal usage ...)
+</I>&gt;<i> 
+</I>&gt;&gt;<i> Such a scale can be useful in the design of secure
+</I>&gt;&gt;<i> protocols and secured information systems.
+</I>&gt;<i> 
+</I>&gt;<i> Yes. Choosing the right biometrics for the right application, implementing it 
+</I>&gt;<i> correctly and educating/training the users properly can be challenging.
+</I>&gt;<i> 
+</I>&gt;<i> But in the end, you can steal any biometric data if you really want to.
+</I>&gt;<i> (Take a look at the film Gattaca to see how this can be done in practice. 
+</I>&gt;<i> I didn't noticed any technically really unrealistic things in the film 
+</I>&gt;<i> Gattaca.)
+</I>&gt;<i> 
+</I>&gt;<i> Another important question is whether you can apply a faked/copied biometric 
+</I>&gt;<i> at a certain place. It could be difficult to mount an attack with a full face 
+</I>&gt;<i> mask at a guarded entrypoint. But applying fake fingerprints is far less 
+</I>&gt;<i> noticable for guards.
+</I>&gt;<i> (It might be easy to steal the face, but you can't apply it due to all entries 
+</I>&gt;<i> being guarded)
+</I>&gt;<i> 
+</I>&gt;<i> Tamper evidence, Tamper protection, Tamper proof, Tamper resistance ...
+</I>&gt;<i> 
+</I>&gt;<i> As usual, it depends on your threat-models, on your environment, on your 
+</I>&gt;<i> resources, on your enemies, ...
+</I>&gt;<i> 
+</I>&gt;<i> Best regards,
+</I>&gt;<i> Philipp G&#252;hring
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

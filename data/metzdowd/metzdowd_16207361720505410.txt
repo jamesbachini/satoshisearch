@@ -1,0 +1,19 @@
+<PRE>On Mar 20, 2008, at 3:42 PM, zooko wrote:
+&gt;<i>    They extended the confirmation-of-a-file attack into the
+</I>&gt;<i>    learn-partial-information attack. In this new attack, the
+</I>&gt;<i>    attacker learns some information from the file. This is done by
+</I>&gt;<i>    trying possible values for unknown parts of a file and then
+</I>&gt;<i>    checking whether the result matches the observed ciphertext.
+</I>
+How is this conceptually different from classic dictionary attacks,  
+and why does e.g. running the file through PBKDF2 and using the result  
+for convergence not address your concern(s)?
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

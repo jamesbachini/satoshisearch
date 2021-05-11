@@ -1,0 +1,20 @@
+<PRE>At 4:49 PM -0300 8/14/07, Mads Rasmussen wrote:
+&gt;<i>Have a look at
+</I>&gt;<i>
+</I>&gt;<i><A HREF="http://boinc.iaik.tugraz.at/sha1_coll_search">http://boinc.iaik.tugraz.at/sha1_coll_search</A>
+</I>
+Did that, in specific 
+&lt;<A HREF="http://www.iaik.tugraz.at/research/krypto/collision/SHA1Collision_Description.php">http://www.iaik.tugraz.at/research/krypto/collision/SHA1Collision_Description.php</A>&gt;
+
+Note the lack of information about what they are actually doing. &quot;We 
+developed new cryptanalytic methods...&quot; sounds great, but is 
+meaningless without specifics.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

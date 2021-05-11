@@ -1,0 +1,72 @@
+<PRE>I'd scrawled:
+&gt;<i> &gt; If a purportedly &quot;secure&quot; protocol employing a nominal DH exchange in 
+</I>&gt;<i> &gt; order to
+</I>&gt;<i> &gt; establish a shared secret key between a requester and responder, employs
+</I>&gt;<i> &gt; widely known published (on the web) fixed values for g (&quot;2&quot;) and p (a
+</I>&gt;<i> &gt; purportedly prime 1040 bit number) for many of it's implementations and
+</I>&gt;<i> &gt; runtime invocations, what are the risks its designers are assuming with
+</I>&gt;<i> &gt; respect to the resultant properties of ZZ?
+</I>
+Joseph Ashwood graciously replied:
+&gt;<i> 
+</I>&gt;<i> It is assuming that the total value of the data protected by those 
+</I>&gt;<i> parameters never crosses the cost to break in the information value 
+</I>&gt;<i> lifetime. 
+</I>
+yes.
+
+
+&gt;<i> &gt; I suspect that many implementations will simply use the equivalent of 
+</I>&gt;<i> &gt; whatever
+</I>&gt;<i> &gt; rand() function is available to get the bits for their private keys 
+</I>&gt;<i> &gt; directly,
+</I>&gt;<i> 
+</I>&gt;<i> Very bad idea, for two reasons, the rand() function does not have sufficient 
+</I>&gt;<i> internal state, and the rand() function is far from cryptographically 
+</I>&gt;<i> strong.
+</I>
+what about just using bytes from /dev/urandom on *nix?
+
+
+&gt;<i> &gt; and will likely not reallocate private keys unless the implementation or
+</I>&gt;<i> &gt; machine are restarted. So if the random number generator has known flaws, 
+</I>&gt;<i> &gt; then
+</I>&gt;<i> &gt; there may be some predictability in both the public keys and in ZZ, yes?
+</I>&gt;<i> 
+</I>&gt;<i> All flaws in the private key generator will show in the public key 
+</I>&gt;<i> selection, do yes.
+</I>             ^^
+             so?
+
+
+&gt;<i> 
+</I>&gt;<i> &gt; Additionally there's the previously noted issue with the values of static
+</I>&gt;<i> &gt; private keys slowly leaking.
+</I>&gt;<i> 
+</I>&gt;<i> Only if the value of p changes, if the value of p remains static, then the 
+</I>&gt;<i> private key doesn't leak.
+</I>
+Ok, I can see that from ya = g ^ xa mod p  ...  ya doesn't change if g, xa, 
+and p don't change.
+
+
+&gt;<i> A simple proof of this is simple, Eve can easily, 
+</I>&gt;<i> and trivially generate any number of public/private key pairs and thereby 
+</I>&gt;<i> generate any number of viewable sets to determine the unknown private key.
+</I>
+Are you saying here that if p (and g) are static, then one has some 
+opportunity to brute-force guess the private key that some long-running 
+instance is using, if it doesn't otherwise re-allocate said private key from 
+time to time?
+
+
+thanks again,
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

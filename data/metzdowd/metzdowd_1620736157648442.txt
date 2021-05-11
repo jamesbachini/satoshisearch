@@ -1,0 +1,17 @@
+<PRE>I found those threads:
+
+<A HREF="http://forums.ceruleanstudios.com/showthread.php?t=53433">http://forums.ceruleanstudios.com/showthread.php?t=53433</A>
+
+<A HREF="http://forums.ceruleanstudios.com/showthread.php?t=56207">http://forums.ceruleanstudios.com/showthread.php?t=56207</A>
+
+As you can see from the last post in the second thread, ultimately  
+they agreed that 128-bit DH is secure and that I am just some crazy  
+guy trying to scare them.
+
+Ruptor
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

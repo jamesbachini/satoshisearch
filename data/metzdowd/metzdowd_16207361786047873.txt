@@ -1,0 +1,48 @@
+<PRE>i think the issue may simply devolve to  lower areal density in the  
+old drives.
+i.e. the bits are bigger.
+
+does anyone know if they used encodings that were more tolerant of  
+certain kinds of errors
+in the past which are less common (and so, not worth doing) than now?
+
+
+On May 9, 2008, at 1:44 PM, Ali, Saqib wrote:
+
+&gt;&gt;<i>       Edwards said the Seagate hard drive -- which was
+</I>&gt;&gt;<i>       about eight years old in 2003 -- featured much
+</I>&gt;&gt;<i>       greater fault tolerance and durability than current
+</I>&gt;&gt;<i>       hard drives of similar capacity.
+</I>&gt;<i>
+</I>&gt;<i> I am not so sure about this statement. The newer drives are far more
+</I>&gt;<i> ruggedized and superior in constuction. For e.g. the newer EE25 are
+</I>&gt;<i> designed to &quot;operate&quot; @
+</I>&gt;<i> 1) Operating temperatures of &#8211;30&#176;C to 85&#176;C
+</I>&gt;<i> 2) Operating altitudes from &#8211;1000 feet to 16,400 feet
+</I>&gt;<i> 3) Operating vibration up to 2.0 Gs
+</I>&gt;<i> 4) Long-duration (11 ms) shock capability of 150 Gs
+</I>&gt;<i>
+</I>&gt;<i> where as the older ST9385AG:
+</I>&gt;<i> 1) Operating temperatures of 5&#176; to 55&#176;C (41&#176; to 131&#176;F)
+</I>&gt;<i> 2) Operating altitudes from &#8211;1,000 ft to 10,000 ft (&#8211;300 m to 3,000 m)
+</I>&gt;<i> 3) Operating vibration up to 0.5 Gs
+</I>&gt;<i> 4) shock capability of 100 Gs
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Source:
+</I>&gt;<i> <A HREF="http://www.seagate.com/docs/pdf/datasheet/disc/ds_ee25_2.pdf">http://www.seagate.com/docs/pdf/datasheet/disc/ds_ee25_2.pdf</A>
+</I>&gt;<i> <A HREF="http://www.seagate.com/support/disc/manuals/ata/9655pma.pdf">http://www.seagate.com/support/disc/manuals/ata/9655pma.pdf</A>
+</I>&gt;<i>
+</I>&gt;<i> saqib
+</I>&gt;<i> <A HREF="http://doctrina.wordpress.com/">http://doctrina.wordpress.com/</A>
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

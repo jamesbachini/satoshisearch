@@ -1,0 +1,139 @@
+<PRE>My apologies if this is considered spam; however, it may be of interest
+to a number of list subscribers. 
+
+We are soliciting proposals for presentations in the Industry track at
+the ACM Conference on Computer and Communications Security, which will
+be held October 29th to November 2nd in Alexandria, VA. For more
+information, see below, or visit the ACM CCS website,
+<A HREF="http://www.acm.org/sigs/sigsac/ccs/CCS2007/cfp-industry.html">http://www.acm.org/sigs/sigsac/ccs/CCS2007/cfp-industry.html</A>
+
+Thanks,
+
+-Will
+
+-----------------------------------------------------------------------------
+
+                             Call for Proposals
+      (<A HREF="http://www.acm.org/sigs/sigsac/ccs/CCS2007/cfp-industry.html">http://www.acm.org/sigs/sigsac/ccs/CCS2007/cfp-industry.html</A>)
+
+            Industry Track Submission Deadline: August 3, 2007
+
+
+The Industry and Government Track of the 14th ACM Computer and
+Communications Conference seeks novel and innovative reports of
+experiences in security product development and deployment of products
+to meet system security goals.  In addition, reports on the scope and
+content of current sponsored research programs in information security
+are of interest.
+
+The track will foster active discussion of practical experiences in the
+imaginative or large scale deployment of security solutions in
+organizational contexts and the relationship of these experiences to
+current research initiatives. Particularly of interest are lessons
+learned and deficiencies in existing products or systems that might
+identify areas in which research is needed. Government or commercial
+requirements for future systems are also relevant. Technical
+characteristics of novel products may be of interest, but marketing
+pitches are verboten! As one of the most influential conferences in the
+area, CCS affords industry and government the opportunity to gain the
+attention of a capable and energetic set of researchers.
+
+
+Topics of interest include (but are not limited to):
+
+Access control
+Accounting and auditing
+Applied cryptography
+Authentication
+Case studies of computer and systems security design
+Commercial and industry security
+Cryptographic protocols
+Data/system integrity
+Database and system security
+Digital rights management
+DoS detection and mitigation
+e-business/e-commerce
+Embedded systems security
+Enterprise security policies
+Experimental studies of impact of tools and processes
+Information warfare
+Intellectual-property protection
+Intrusion detection
+Key management
+Mobile code security
+Physical security
+Privacy and anonymity
+Secure networking
+Security issues in administration of large computer systems
+Security management
+Security measurement and modeling
+Security verification
+Smart cards and secure PDAs
+
+For this track, we are soliciting panel and presentation proposals.
+Proposals accepted for the program will be made accessible prior to the
+conference. The track may include invited speakers as space and interest
+permit. Submission format and other instructions are available soon.
+
+Presentation Proposals
+
+A position paper or full presentation is appropriate. The paper should
+include sufficient motivation and detail to focus and depth of
+presentation. Detailed proposals or presentations are highly recommended
+and will receive preferential treatment. Expected speakers should be
+identified. All submissions should be received by August 3rd, 2007 and
+sent to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ccsit-chair at cse.psu.edu.</A> Word, .pdf, and powerpoint submissions
+will be accepted.
+
+Panel Proposals
+
+A panel proposal should be no longer than three (3) pages in length. It
+should include possible panelists and an indication of which panelists
+have confirmed their participation.
+
+Submissions:
+
+Information will be posted soon.
+
+Organizers:
+
+Program Co-chairs (Research Track): 
+ - Sabrina De Capitani di Vimercati, University of Milan, Italy
+ - Paul Syverson, Naval Research Laboratory, USA
+Program Chair (Industry and Government Track): 
+ - Patrick McDaniel, Penn State University, USA
+General Chair: Peng Ning, NC State University, USA
+Publicity Chairs: Radha Poovendran, University of Washington, USA
+Publication Chair: David Evans, University of Virginia, USA
+Tutorials Chair: Wenliang (Kevin) Du, Syracuse University, USA
+Treasurer: Sencun Zhu, Penn State University, USA
+Workshops Chair: Vijay Atluri, Rutgers University, USA
+
+
+Steering Committee:
+
+Sushil Jajodia (Chairman), George Mason University, USA                         
+Carl A. Gunter, University of Illinois, USA
+Pierangela Samarati, University of Milan, Italy                            
+Ravi Sandhu, George Mason University, USA
+
+Program Committee:
+
+Dave Dorenbos, Motorola, USA            
+David Du, National Science Foundation, USA
+Yong Guan, Iowa State University, USA   
+Trevor Jim, AT&amp;T Research, USA          
+Hugh Harney, SPARTA, USA
+Brian LaMachia, Microsoft, USA
+Gary McGraw, Cigital, USA
+Shubho Sen, AT&amp;T Research, USA
+Patrick Traynor, Pennsylvania State University, USA 
+Brian Wies, CISCO, USA
+
+-----------------------------------------------------------------------------
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

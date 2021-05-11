@@ -1,0 +1,17 @@
+<PRE>Nicolas Williams &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Nicolas.Williams at sun.com</A>&gt; writes:
+&gt;<i> Advice on how to generate self-signed certs for this purpose would be
+</I>&gt;<i> good for an FYI, or even a BCP.  I don't think we need extensions to any
+</I>&gt;<i> protocols that support PKI to support bare PK (though some protocols
+</I>&gt;<i> have both, e.g., IKE).
+</I>
+It's been around for nearly a decade, see
+<A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/autonomous.txt.">http://www.cs.auckland.ac.nz/~pgut001/pubs/autonomous.txt.</A>
+
+Peter.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

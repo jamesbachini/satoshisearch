@@ -1,0 +1,62 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bmanning at vacation.karoshi.com</A> wrote:
+&gt;<i> On Fri, Mar 21, 2008 at 08:52:07AM +1000, James A. Donald wrote:
+</I>&gt;&gt;<i> From time to time I hear that DNSSEC is working fine, and on examining 
+</I>&gt;&gt;<i> the matter I find it is &quot;working fine&quot; except that ....
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Seems to me that if DNSSEC is actually working fine, I should be able to 
+</I>&gt;&gt;<i> provide an authoritative public key for any domain name I control, and 
+</I>&gt;&gt;<i> should be able to obtain such keys for other domain names, and use such 
+</I>&gt;&gt;<i> keys for any purpose, not just those purposes envisaged in the DNSSEC 
+</I>&gt;&gt;<i> specification.  Can I?  It is not apparent to me that I can.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 	actually, the DNSSEC specification -used- to support 
+</I>&gt;<i> 	keys for &quot;any purpose&quot;, and in theory you could use
+</I>&gt;<i> 	DNSSEC keys in that manner.  However a bit of careful
+</I>&gt;<i> 	thought suggests that there is potential  disconnect btwn
+</I>&gt;<i> 	the zone owner/admin who creates/distributes the keys as 
+</I>&gt;<i> 	a token of the integrity and authenticity of the data in
+</I>&gt;<i> 	the DNS, and the owner/admin of the node to which the DNS
+</I>&gt;<i> 	data points.
+</I>
+So far, so good. This disconnect doesn't seem to have done the CA 
+industry any harm, though.
+
+&gt;<i>       Remember that while you may control your forward
+</I>&gt;<i> 	name (and not many people actually run their own DNS servers)
+</I>&gt;<i> 	it is less likely that you run your address maps - and for
+</I>&gt;<i> 	the paranoid, you would want to ensure the forward and 
+</I>&gt;<i> 	reverse zones are signed and at the intersection, there is
+</I>&gt;<i> 	a common data element which you can use.
+</I>
+Non sequiteur, plus I can't see why paranoia would prompt me to want to 
+do this? What does it prove?
+
+Also, PTR records are only supposed to point to &quot;primary domain names&quot;. 
+Since it is common for hosts to have many names resolving to the same IP 
+address, by definition most of these will not correspond to the reverse 
+lookup.
+
+&gt;<i> 	To do what you want, want, you might consider using the
+</I>&gt;<i> 	CERT-rr, using the DNS to distribute host-specific keys/certs.
+</I>&gt;<i> 	And to ensure that the data in the DNS was not tampered with,
+</I>&gt;<i> 	using DNSSEC signed zones with CERT-rr's would not be a bad
+</I>&gt;<i> 	thing.   In fact, thats what we are testing .
+</I>
+Who is &quot;we&quot; and what exactly are you testing?
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

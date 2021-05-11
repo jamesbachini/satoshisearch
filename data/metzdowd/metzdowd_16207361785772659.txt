@@ -1,0 +1,18 @@
+<PRE>On Sun, 4 May 2008, Scott Guthery wrote:
+
+&gt;<i> One useful application of the Katz/Sahai/Waters work is a counter to traffic
+</I>&gt;<i> analysis.  One can send the same message to everyone but ensure that only a
+</I>&gt;<i> defined subset can read the message by proper key management.  What is less
+</I>&gt;<i> clear is how to ensure that decrytion with the wrong key doesn't yield an
+</I>&gt;<i> understandable (and actionable) message.
+</I>
+This is actually pretty easy to do by, e.g., padding all valid messages 
+with sufficiently-many 0s. Decryption with an incorrect key will result in 
+something &quot;random&quot; that is unlikely to end with the requisite number of 0s 
+(and so will be discarded).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

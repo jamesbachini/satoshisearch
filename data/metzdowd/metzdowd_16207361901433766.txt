@@ -1,0 +1,26 @@
+<PRE>On Wed, 24 Sep 2008 20:43:53 -0400
+&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> &quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+</I>&gt;<i> &gt;&gt; Human factors haven't received nearly enough attention, and as
+</I>&gt;<i> &gt;&gt; long as human factors failings are dismissed as the fault of
+</I>&gt;<i> &gt;&gt; &quot;idiot users&quot;, they never will.
+</I>&gt;<i> &gt;&gt; 
+</I>&gt;<i> &gt; Strong agreement.
+</I>&gt;<i> 
+</I>&gt;<i> I don't disagree that much more needs to be done on human factors. I
+</I>&gt;<i> just don't see it as a panacea. 
+</I>
+There are no panaceas in this business.  As I told my class yesterday,
+if they learn nothing else they should remember that security is a
+systems property, and everything interacts.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

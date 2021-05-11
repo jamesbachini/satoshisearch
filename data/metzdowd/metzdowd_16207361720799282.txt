@@ -1,0 +1,10 @@
+<PRE>I've been thinking about similar issues.  It seems to me that just
+destroying the key schedule is a big help -- enough bits will change in
+the key that data recovery using just the damaged key is hard, per
+comments in the paper itself.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

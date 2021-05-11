@@ -1,0 +1,76 @@
+<PRE>Francois Grieu wrote:
+ &gt;&gt; That's because if Tn is known (including chosen) to
+ &gt;&gt; &quot;some person&quot;, then (due to the weakness in MD5 we
+ &gt;&gt; are talking about), she can generate Dp and Dp' such
+ &gt;&gt; that
+ &gt;&gt;   S( MD5(Tn || Dp || Cp || Cn) ) = S( MD5(Tn || Dp'
+ &gt;&gt;   || Cp || Cn) )
+ &gt;&gt; whatever Cp, Cn and S() are.
+
+William Allen Simpson wrote:
+ &gt; First of all, the weakness in MD5 (computational
+ &gt; feasibility over time) that &quot;we are talking about&quot; is
+ &gt; not (yet) a preimage or second preimage attack.
+ &gt; Please don't extrapolate your argument.
+
+I don't think you know what a preimage or second
+preimage attack is.
+
+A preimage attack is a method of finding a document that
+hashes to an arbitrary given hash.  A second preimage
+attack is a method of finding a document that hashes to
+the same hash as arbitrary given document. Your proposed
+workaround protocol fails because the adversary can
+construct multiple documents containing some arbitrary
+text and some chosen text that hash to the same hash -
+the fact that some of the arbitrary text comes from the
+good guys is irrelevant.  The fact that the bad guys get
+to choose some of the text in all of the documents makes
+it fail.
+
+ &gt; Second of all, you need to read my messages more
+ &gt; carefully.  No good canonical format allows random
+ &gt; hidden fields or images.
+
+There is no canonical format that suppresses human
+ignorable data, other than plain ascii or suchlike which
+is unlikely to be acceptable.  Any format capable of
+displaying arbitrary well formatted documents is capable
+of containing data that humans are likely to ignore.
+What is ignorable is necessarily a human judgment.
+
+A canonical format is in practice going to be PDF or
+RTF, which does allow hidden fields and images.
+Further, even a visible image can be made to work.
+Further, it is quite subtle to decide what constitutes
+&quot;hidden&quot; - for example a gently irregular low intensity
+background on HTML pages is quite pleasing to the eye,
+so surely our format should allow such backgrounds.
+
+Further, what you propose is strengthening the protocol
+to work around known weaknesses in MD5.  Whenever we
+strengthen a protocol to get around known weaknesses in
+an algorithm, we rarely do it right - consider the long
+succession of debacles surrounding RC4.  SSH uses RC4
+correctly, but consider all the protocols that used it
+incorrectly, and then issued incompatible updates to fix
+the flaws, updates that were even more flawed than the
+protocol they supposedly fixed.
+
+Further, if you want your protocol to work around the
+known weaknesses of MD5, &quot;canonicalizing&quot; the document
+is not the way to go.
+
+Instead, allow arbitrary documents, but precede them by
+salt which is randomly determined after the document is
+submitted.
+
+That will work a lot better than canonicalization, but
+it is still a workaround for a known weakness.  Far
+better to avoid the weakness.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

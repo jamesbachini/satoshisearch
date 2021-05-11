@@ -1,0 +1,35 @@
+<PRE>There was a terrific interdisciplinary workshop this week at MIT on
+&quot;security and human behavior&quot;.  Organized by Ross Anderson and
+Bruce Schneier, the idea was to bring together security researchers
+from diverse fields who don't normally talk with each other: computing,
+psychology, economics, criminology, sociology, etc.
+
+There weren't any new earth shattering research results presented;  
+rather
+the idea was to inspire security thinkers who should be learning from  
+each
+other (but often don't) to reach outside their own disciplines.   
+There's a
+lot to learn.
+
+Bruce's comments, with links to an agenda and position papers, are on  
+his
+blog at:
+    <A HREF="http://www.schneier.com/blog/archives/2008/06/security_and_hu.html">http://www.schneier.com/blog/archives/2008/06/security_and_hu.html</A>
+
+Ross liveblogged the sessions at:
+    <A HREF="http://www.lightbluetouchpaper.org/2008/06/30/security-psychology/">http://www.lightbluetouchpaper.org/2008/06/30/security-psychology/</A>
+
+I recorded most of the sessions, for those who enjoy listening to hours
+of noisy, out-of-context audio of events they didn't attend.  MP3s can
+be found at:
+    <A HREF="http://www.crypto.com/blog/shb08">http://www.crypto.com/blog/shb08</A>
+
+-matt
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

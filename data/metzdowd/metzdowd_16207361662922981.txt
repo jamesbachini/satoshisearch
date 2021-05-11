@@ -1,0 +1,40 @@
+<PRE>On Tue, Jan 22, 2008 at 10:38:24AM -0800, Ed Gerck wrote:
+
+&gt;<i> List,
+</I>&gt;<i> 
+</I>&gt;<i> I would like to address and request comments on the use of SSL/TLS and port 
+</I>&gt;<i> 587 for email security.
+</I>&gt;<i> 
+</I>&gt;<i> The often expressed idea that SSL/TLS and port 587 are somehow able to 
+</I>&gt;<i> prevent warrantless wiretapping and so on, or protect any private 
+</I>&gt;<i> communications, is IMO simply not supported by facts.
+</I>
+Nothing of the sort, TLS on port 587 protects replayable *authentication*
+mechanisms, suchs as &quot;PLAIN&quot; and &quot;LOGIN&quot;. It can also allow the client to
+authenticate the server (X.509v3 cert) and preclude MITM attacks on
+mail submission. I've not seen any reputable parties claiming that TLS
+submission is protection against intercepts.
+
+I maintain the TLS code for Postfix, the documentation does not anywhere
+make such claims. However we do support TLS sensitive SASL mechanism
+selection:
+
+    <A HREF="http://www.postfix.org/postconf.5.html#smtpd_tls_auth_only">http://www.postfix.org/postconf.5.html#smtpd_tls_auth_only</A>
+    <A HREF="http://www.postfix.org/postconf.5.html#smtp_sasl_tls_security_options">http://www.postfix.org/postconf.5.html#smtp_sasl_tls_security_options</A>
+
+which is highly suggestive of using TLS to protect plain-text passwords
+in flight.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

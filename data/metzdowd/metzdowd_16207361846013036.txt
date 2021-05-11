@@ -1,0 +1,32 @@
+<PRE>
+Dries Schellekens &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dries.schellekens at esat.kuleuven.be</A>&gt; writes:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Has anyone had any real-world experience with these yet? Are there
+</I>&gt;&gt;<i> standards for how they get the keys from the BIOS or OS? (I'm
+</I>&gt;&gt;<i> interested in how they deal with zeroization on sleep and such.)
+</I>&gt;<i>
+</I>&gt;<i> Most manufacturer (will) implement the TCG Storage Specification:
+</I>&gt;<i> <A HREF="https://www.trustedcomputinggroup.org/groups/storage/">https://www.trustedcomputinggroup.org/groups/storage/</A>
+</I>&gt;<i>
+</I>&gt;&gt;<i> Lastly, anyone have any idea of whether the manufacturers are doing
+</I>&gt;&gt;<i> the encryption correctly or not?
+</I>&gt;<i>
+</I>&gt;<i> I know that Seagate Secure does not use XTS mode, but something CBC based.
+</I>
+Where do they get their IVs from?
+
+In general, I feel like the only way to really verify that these
+things are being done correctly is to be able (in software) to read
+the ciphertext and verify that it is encrypted with the right key in
+the right mode. The small amount I've heard about the design leads me
+to worry that this is not actually possible.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

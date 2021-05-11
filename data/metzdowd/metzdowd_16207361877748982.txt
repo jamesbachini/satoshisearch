@@ -1,0 +1,57 @@
+<PRE>It seems like enough time has passed to post publicly, as some of these
+are now common knowledge:
+
+Ben Laurie wrote:
+&gt;<i> William Allen Simpson wrote:
+</I>&gt;&gt;<i> Keep in mind that the likely unpredictability is about 2**24.  In many
+</I>&gt;&gt;<i> or most cases, that will be implementation limited to 2**18 or less.
+</I>&gt;<i> 
+</I>&gt;<i> Why?
+</I>&gt;<i> 
+</I>Remember, this is the sum of the range of the 16-bit DNS header identifier
+and the 16-bit UDP port number.
+
+The theoretical maximum is less than 2**(16+16), as the ports less than
+4096 are reserved.
+
+Many or most implementations use only a pool of ports: 2**[9, 10, 12]
+have been reported.
+
+Some implementations (incorrectly) use positive signed integers for the
+DNS identifier: 2**15.
+
+And in this week's Hall of Shame, MacOSX Leopard patch for servers seems
+to randomize the BIND request port in a small pool.  The next UDP packet
+ports are sequential, so the range to guess is very small, simply by
+looking at the following UDP packets.  Very strange reports coming out!
+MacOSX total: about 2**18.
+
+Worse, Apple didn't fix Leopard clients, didn't patch the stub resolver
+library (neither did BIND), didn't patch earlier versions such as Panther.
+Many, many MacOS systems are still vulnerable.
+
+And in case you don't think this matters, once upon a time I helped build
+an ISP entirely with Macs, resistant to most compromises.  There are far
+more Macs used as resolvers than any other flavor of *nix.
+
+
+&gt;<i> I don't see why. A perfectly reasonable threat is that the attacker 
+</I>&gt;<i> reverse engineers the PRNG (or just checks out the source). It doesn't 
+</I>&gt;<i> need to be common to be predictable.
+</I>&gt;<i> 
+</I>I don't understand this comment.
+
+When MD5 is used as a PRNG, in this case the upper 32-bits of its 128-bit
+output cycle, what amount of samples will reveal the seed, or the current
+internal state of the sequence?
+
+When ARC4 is used as PRNG, what amount of samples will reveal the seed or
+the current state?
+
+Are you only referring to reverse engineering trivially poor PRNG?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

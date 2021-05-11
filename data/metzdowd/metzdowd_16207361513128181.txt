@@ -1,0 +1,35 @@
+<PRE>Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; writes:
+
+&gt;<i>The tests I've seen are mostly worthless because they do not weigh their
+</I>&gt;<i>results based on the actual threats a typical user faces.
+</I>
+A topic very similar to this came up recently on the hcisec list.  My comments
+there were:
+
+We already have really, really good metrics for this.  It's called the
+commercial malware industry (blatant ad: see my Defcon talk from last week for
+examples of exploit sales and pricing models).  To find out how secure
+something is, look at how much exploits for it are selling for on the black
+market.  I've been thinking of doing a maverick paper for next years MetriCon
+about this [0], for example although OS X is veritable smorgasbord of 0days
+the market value of these is close to zero because everyone's targetting
+Windows instead.  A prime example of this is Safari, it was 0dayed within two
+hours of the Windows version appearing, yet the same flaws had lain dormant in
+the OS X version (presumably) for years because there's little to no
+commercial interest in exploiting Macs.  So it could be argued that the best
+real-world metric that we have for security comes from the attackers, not the
+defenders.
+
+(Incidentally, this powerful real-world metric is telling us that the
+existing browser security model is indistinguishable from placebo :-).
+
+Peter.
+
+[0] This should not be construed as a promise of a paper appearing.  I'm not
+    sure whether I could get enough material to make an interesting paper.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE>|<i> &gt;The claim that VMM's provide high level security is trading on the
+</I>|<i> &gt;reputation of work done (and published) years ago which has little if
+</I>|<i> &gt;anything to do with the software actually being run.
+</I>|<i> 
+</I>|<i> Actually VMMs do provide some security, but not in the way you think.
+</I>|<i> Since malware researchers typically run malware they're analysing
+</I>|<i> inside a VM, quite a bit of malware will silently exit (or at least
+</I>|<i> not exercise the &quot;mal&quot; part of its name) if it detects that it's
+</I>|<i> running inside a VM.  So you can inoculate yourself against at least
+</I>|<i> some malware by running your OS inside a VM.
+</I>Ah, yes - the unexpected side-effect which happens to be positive.
+
+If you read Garfinkle et al's paper on the detectability of VMM's -
+and the low likelyhood of ever producing an undetectable VMM's - you
+can see some similar things happening.  Some of the techniques are
+fairly universal - e.g., those based on measuring TLB sizes, which
+is likely to be usable on any machine that uses virtual memory.  But
+many others are based on ugly botches in the x86 architecture (e.g.,
+the user-mode instructions like SIDT which reveal privileged state)
+or the absurd complexity and rough edges of many I/O devices.
+
+For security in general, unexpected side-effects are almost always paths
+to break into the system - think power and timing analysis for two great
+examples.  I suppose we have to catch a break sometimes....
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

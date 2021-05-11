@@ -1,0 +1,16 @@
+<PRE>See:
+<A HREF="http://babelsecure.com/challenge.aspx">http://babelsecure.com/challenge.aspx</A>
+
+Snake-oil sales pitch:
+&quot;The creators of BabelSecure are so confident in the ability and
+security of Samurai, they have created the Turing Challenge. The first
+individual or team to break the following code will earn $5000&quot;
+
+saqib
+<A HREF="http://doctrina.wordpress.com/">http://doctrina.wordpress.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

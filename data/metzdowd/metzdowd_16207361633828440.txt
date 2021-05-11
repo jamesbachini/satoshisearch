@@ -1,0 +1,32 @@
+<PRE>Dirk-Willem van Gulik wrote:
+&gt;<i> Keep in mind that the notary is still 'careful' -- effectively they sign 
+</I>&gt;<i> the hash -- rather than the document; and state either such (e.g. in the 
+</I>&gt;<i> case of some software/code where you do not hand over the actual code) 
+</I>&gt;<i> or state that _a_ document was presented with said hash.
+</I>&gt;<i> 
+</I>And that makes all the difference.  The digital notary is not certifying the
+original document.  You described the notary generating its own tuples
+(credentials as presented, the hash, a timestamp, and a notarized declaration
+that such was presented).  There is no problem, and the described attack does
+not apply.
+
+Note that the notary bears no responsibility for presentation of false
+credentials.  Here, in a case with which I'm personally familiar, somebody
+with the SAME NAME as his father got a new driver's license, signed it in
+the same fashion as his father, then went to banks and presented the
+driver's license and signature, causing all his father's deposits to be
+transferred to his wife's name, and adding his son to the house deed (and
+then mortgaging the house).  It was certainly not the several notaries'
+fault that identical names were used.  The &quot;certificate&quot; (same name driver's
+license and signature) appeared valid.
+
+All the cryptography in the world will not prevent false certification,
+where the underlying information is already compromised.
+
+To reiterate the topic at hand: trust is not transitive!
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

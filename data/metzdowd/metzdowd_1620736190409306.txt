@@ -1,0 +1,18 @@
+<PRE>RFC 5349
+
+September 2008
+
+This document describes the use of Elliptic Curve certificates,
+Elliptic Curve signature schemes and Elliptic Curve Diffie-Hellman
+(ECDH) key agreement within the framework of PKINIT -- the Kerberos
+Version 5 extension that provides for the use of public key
+cryptography
+
+-- 
+40+yrs virtualization experience (since Jan68), online at home since Mar70
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

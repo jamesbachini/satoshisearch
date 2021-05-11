@@ -1,0 +1,37 @@
+<PRE>Perry E. Metzger wrote:
+ &gt; (No, I'm not a fan of X.509 certs, but those are not
+ &gt; core to the protocol, and you can think of them as
+ &gt; nothing more than a fancy key container format if you
+ &gt; like. Key management is not addressed by SSL, so there
+ &gt; is no reason that fixing key management has anything
+ &gt; to do with SSL per se.)
+
+The two actually working, widely used, secure systems
+are SSH and Skype, neither of which uses SSL/TLS/PKI
+The proof of the pudding is in the eating.  When large
+numbers of people use cryptography that really does make
+them secure, they are not using SSL/TLS/PKI.
+
+SSL involves digital certificates.  The particular
+digital certificate format necessarily imply a PKI
+structure with the same sort of defects as the existing
+PKI structure, which secures what does not matter much,
+and fails to secure that which does matter.  In this
+sense, X.509 certificates are core to the protocol, and
+that is the big problem with the protocol, though
+neither am I happy about the fact that when the client
+initiates a communication, the data it actually wants to
+send only gets sent after the the *third* round trip.
+
+ &gt; My opinion (and just about everyone else's) is well
+ &gt; known.
+
+There is a serious security problem in the network.  It
+needs fixing. SSL/TLS/PKI exists, yet is entirely
+ineffectual in fixing it.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

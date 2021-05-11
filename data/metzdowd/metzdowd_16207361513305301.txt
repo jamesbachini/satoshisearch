@@ -1,0 +1,37 @@
+<PRE>* Hal Finney:
+
+&gt;<i> Information on the quality of AV and other security products is widely
+</I>&gt;<i> available on the net, in magazines and other places that consumers
+</I>&gt;<i> might look for reviews and comparisons. This is completely unlike
+</I>&gt;<i> the situation with individual used cars. I don't see this analogy as
+</I>&gt;<i> particularly accurate.
+</I>
+I don't, either, but for a different reason.
+
+The tests I've seen are mostly worthless because they do not weigh
+their results based on the actual threats a typical user faces.  After
+all, these days, the goal is not to avoid the embarrassments caused by
+a virus infection or a spam bot operating from your network, but to
+avoid actual loss due to fraud (or perceived fraud).  Mere detection
+rates do not reflect that.[1] So there is certainly a lack of
+information.
+
+But in contrast to the used care market, the seller doesn't really
+know how useful their products are to the buyer, either.  Some vendors
+(those offering spam filtering as a service, for instance) might have
+a better idea than their customer what's happening, but for the
+broader market, return on security investment is a completely
+imaginary figure for both buyers and sellers.  Only if you look at
+things like pro-forma regulatory compliance, it's possible to obtain
+hard facts.
+
+[1] This might sound like marketing gibberish from some of the
+big-name vendors, but I think it's true.  It does not mean that a
+product which looks bad in a synthetic test gives adequate results in
+the real world, though.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

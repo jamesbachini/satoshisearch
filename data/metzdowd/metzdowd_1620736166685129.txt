@@ -1,0 +1,19 @@
+<PRE>Alex Alten wrote:
+&gt;<i> Great.  What next?  I guess air-gap transfer of flash memory might be 
+</I>&gt;<i> the best solution.
+</I>&gt;<i> 
+</I>&gt;<i> Malware's new infection route: photo frames
+</I>&gt;<i> <A HREF="http://www.sfgate.com/cgi-bin/article.cgi?file=/c/a/2008/01/26/MNE7UHOOQ.DTL">http://www.sfgate.com/cgi-bin/article.cgi?file=/c/a/2008/01/26/MNE7UHOOQ.DTL</A> 
+</I>&gt;<i> 
+</I>
+For starters, you can turn off the &quot;feature&quot; that auto-runs code from 
+the inserted media.
+
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

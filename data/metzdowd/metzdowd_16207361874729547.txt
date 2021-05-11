@@ -1,0 +1,20 @@
+<PRE><A HREF="http://www.ddj.com/hpc-high-performance-computing/201803067">http://www.ddj.com/hpc-high-performance-computing/201803067</A>
+
+In the above Dr Dobb's article from a little over a year ago, AMD Senior 
+Fellow Leendert vanDoorn states &quot;the Advanced Encryption Standard (AES) 
+algorithm gets a factor of 5 performance improvement by using the new 
+SSE5 extension&quot;.  However, glancing through the SSE5 specification, I 
+can't see at all how such a dramatic speedup might be achieved.  Does 
+anyone know any more, or can anyone see more than I can in the spec?
+
+<A HREF="http://developer.amd.com/cpu/SSE5/Pages/default.aspx">http://developer.amd.com/cpu/SSE5/Pages/default.aspx</A>
+-- 
+   __
+\/ o\ Paul Crowley
+/\__/ www.ciphergoth.org
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

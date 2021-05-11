@@ -1,0 +1,18 @@
+<PRE>On 10/13/07, Martin James Cochran &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Martin.Cochran at colorado.edu</A>&gt; wrote:
+
+&gt;<i> ...  What's wrong with starting
+</I>&gt;<i> with input SALT || PASSWORD and iterating N times, ....
+</I>
+Shouldn't it be USERID || SALT || PASSWORD to guarantee that if
+two users choose the same password they get different hashes?
+It looks to me like this wold make dictionary attacks harder too.
+
+-- 
+Sandy Harris,
+Nanjing, China
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

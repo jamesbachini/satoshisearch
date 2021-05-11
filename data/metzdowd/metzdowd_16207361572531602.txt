@@ -1,0 +1,108 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> said:
+&gt;<i> I have two problems with this report. 
+</I>
+thanks for commenting on it. I pointed to it in order to see what denizens of 
+this list might have to say about it. I'm simply curious.
+
+Also, as I'd noted, I haven't really seen any estimates of Storm's extent -- 
+other than that article [0] -- that actually go into any details about how the 
+number is arrived at (however bogus or not the approach might be).
+
+Also, I'm personally mostly just curious and have done only modest searches 
+for info. And based on that, I've only come across the (typically) 
+unsubstantiated &quot;one or two million zombies&quot; [1] to &quot;(breathless) maybe /50 
+million/ out there&quot; [2] articles/posts.
+
+
+&gt;<i> Firstly, I don't think this is a very
+</I>&gt;<i> representative sampling technique compared to the estimates from security
+</I>&gt;<i> companies. 
+</I>
+I haven't come across any detailed Storm extent analysis, even with having 
+Google search specific security company sites (e.g. using 
+&quot;site:sec-corp.com&quot;). So if anyone has pointers to pages (other than the MSFT 
+blog article pointed to in an earlier post) that present a sane and 
+substantiated analysis of Storm extent, please post 'em. Maybe folks don't 
+want to (post 'em or point to 'em)? Are there papers in submission? ;-)
+
+
+&gt;<i> If you look at the sample that's being used, &quot;Windows machines
+</I>&gt;<i> that have automatic updates turned on&quot;, then the typical machine is going to
+</I>&gt;<i> be configured with something like Windows XP SP2 with all available hotfixes
+</I>&gt;<i> and updates applied, in other words the very systems that are (one would hope
+</I>&gt;<i> :-) the *least* likely to be affected by malware.
+</I>
+agreed.
+
+
+&gt;<i>  If you take the rule-of-
+</I>&gt;<i> thumb estimate that's sometimes used on MSDN blogs of 1B Windows machines out
+</I>&gt;<i> there then 2.6M machines is &lt; 0.3% of that total.  Now this in itself
+</I>&gt;<i> wouldn't be so bad if it was an unbiased sample, but in fact it's probably a
+</I>&gt;<i> rather non-representative 0.3%. 
+</I>
+..as compared to the overall population of windows machines, on the Internet, 
+globally.
+
+agreed.
+
+
+&gt;<i> Although some of the numbers from security
+</I>&gt;<i> companies for infections may be just guesswork, they also use broad sampling
+</I>&gt;<i> across all Windows machines (not just ones with Windows Defender), honeypots,
+</I>&gt;<i> monitoring of botnet traffic patterns, and other methods as well.
+</I>
+pointers?
+
+
+&gt;<i>  So while it's valid to say that this [the Anti-Malware Engineering 
+</I>&gt;<i> Team blog post [0]] provides data for Storm on fully patched,
+</I>&gt;<i> up-to-date machines running Windows Defender, I don't think this generalises
+</I>&gt;<i> for all Windows machines.
+</I>
+agreed.
+
+
+&gt;<i> Secondly, the text completely contradicts the figures given.  If the figures
+</I>&gt;<i> really are accurate and not a typo, then 274K machines infected out of 2.6M
+</I>&gt;<i> puts Storm on 10% of Windows PCs, which would make the worldwide infection
+</I>&gt;<i> rate 100M systems, or ten times larger than the previous worst-possible case
+</I>&gt;<i> estimate.  
+</I>
+a resonably-substantiated worst-case estimate? Because it's only twice as many 
+as the 50M number thrown around in the likes of [2].
+
+But yes, it'd be alarming if there's really 1B windows machines on the 
+Internet (one way or another) and there's a reasonable probability of 10% 
+being Storm zombies.
+
+
+&gt;<i> Storm may be big, but it's not *that* big.  I think there's
+</I>&gt;<i> something wrong with the figures.
+</I>
+Yeah, one hopes so.
+
+So, it'd seem to me (tho I'm not a statistician) that if one could get a set 
+of articles wrt Storm extent that say at least something to substantiate how 
+they arrived at the numbers, and then do some back-of-the-envelope calcs, we'd 
+have  a better idea of what's going on, at least here in the public domain. I 
+have to believe that there's folks working hard on this given the 
+down-the-road risks, and are just keeping the info close to their collective 
+chest.
+
+
+=JeffH
+
+[0] <A HREF="http://blogs.technet.com/antimalware/archive/2007/09/20/storm-drain.aspx">http://blogs.technet.com/antimalware/archive/2007/09/20/storm-drain.aspx</A>
+
+[1] <A HREF="http://www.secureworks.com/media/press_releases/20070802-botstorm">http://www.secureworks.com/media/press_releases/20070802-botstorm</A>
+
+[2] <A HREF="http://www.neoseeker.com/news/story/7103/">http://www.neoseeker.com/news/story/7103/</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

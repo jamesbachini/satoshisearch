@@ -1,0 +1,61 @@
+<PRE>At Wed, 30 Jan 2008 11:25:04 +0100,
+Philipp G&#252;hring wrote:
+&gt;<i> 
+</I>&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> &gt; SSL key distribution and management is horribly broken,
+</I>&gt;<i> &gt; with the result that everyone winds up using plaintext
+</I>&gt;<i> &gt; when they should not.
+</I>&gt;<i> 
+</I>&gt;<i> Yes, sending client certificates in plaintext while claiming that SSL/TLS is 
+</I>&gt;<i> secure doesn&#180;t work in a world of phishing and identity theft anymore.
+</I>
+Huh? What are you claiming the problem with sending client certificates
+in plaintext is (as if anyone uses client certificates anyway)? 
+That the phisher gets to see the client's identity? So what?
+It doesn't let them impersonate the client to anyone. Certificates
+shouldn't contain sensitive information anyway.
+
+
+&gt;<i> We have the paradox situation that I have to tell people that they should use 
+</I>&gt;<i> HTTPS with server-certificates and username+password inside the HTTPS 
+</I>&gt;<i> session, because that&#180;s more secure than client certificates ...
+</I>
+No it isn't more secure. 
+
+
+&gt;<i> Does anyone have an idea how we can fix this flaw within SSL/TLS within a 
+</I>&gt;<i> reasonable timeframe, so that it can be implemented and shipped by the 
+</I>&gt;<i> vendors in this century?
+</I>
+This gets discussed on the TLS mailing list occasionally, but the
+arguments for making this change aren't very convincing. If you have
+an actual credible security argument you should post it to
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tls at ietf.org.</A>
+
+
+&gt;<i> &gt; We really do need to reinvent and replace SSL/TCP,
+</I>&gt;<i> &gt; though doing it right is a hard problem that takes more
+</I>&gt;<i> &gt; than morning coffee.
+</I>&gt;<i> 
+</I>&gt;<i> TCP could need some stronger integrity protection. 8 Bits of checksum isn&#180;t 
+</I>&gt;<i> enough in reality. (1 out of 256 broken packets gets injected into your TCP 
+</I>&gt;<i> stream)  Does IPv6 have a stronger TCP?
+</I>
+Whether this is true or not depends critically on the base rate
+of errors in packets delivered to TCP by the IP layer, since
+the rate of errors delivered to SSL is 1/256th of those delivered
+to the TCP layer. Since link layer checksums are very common,
+as a practical matter errored packets getting delivered to protocols
+above TCP is quite rare.
+
+-Ekr
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

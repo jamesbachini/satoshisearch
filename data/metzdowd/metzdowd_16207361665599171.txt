@@ -1,0 +1,30 @@
+<PRE>James A. Donald:
+ &gt;&gt; SSL is layered on top of TCP, and then one layers
+ &gt;&gt; one's actual protocol on top of SSL, with the result
+ &gt;&gt; that a transaction involves a painfully large number
+ &gt;&gt; of round trips.
+
+Richard Salz wrote:
+ &gt; Perhaps theoretically painful, but in practice this is
+ &gt; not the case; commerce on the web is the
+ &gt; counter-example.
+
+The delay is often humanly perceptible.  If humanly
+perceptible, too much.
+
+ &gt; The benefits of layering for outweigh the perceived
+ &gt; gains of just merging it all together into one glob.
+ &gt; For example, the ability to replace layers, or replace
+ &gt; them by just dropping in a new library.
+
+Compilation would provide the same benefits, and a fair
+bit more - such as built in protocol negotiation, rather
+than protocol negotiation being reinvented ad hoc in a
+different and incompatible way each, and bolted on after
+the fact in a different way each time.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

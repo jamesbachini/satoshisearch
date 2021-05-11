@@ -1,0 +1,23 @@
+<PRE>-----Original Message-----
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A> [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] 
+On Behalf Of Ryan Phillips
+Sent: 28 April 2008 23:13
+To: Cryptography
+Subject: SSL and Malicious Hardware/Software
+
+&gt;<i> I can't think of a great way of alerting the user,
+</I>
+I would be alerted immediately, because I'm using the Petname Tool Firefox 
+plugin.
+
+For an unproxied site, I get a small green window with my own choice of text in 
+it (e.g. &quot;Gmail&quot; if I'm visiting <A HREF="https://mail.google.com">https://mail.google.com</A>). If a proxy were to 
+insert itself in the middle, that window would turn yellow, and the message 
+would change to &quot;(untrusted)&quot;.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

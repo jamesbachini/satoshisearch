@@ -1,0 +1,22 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> Arshad Noor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt; writes:
+</I>&gt;&gt;<i> - after all people didn't really need DBMS's 30 years
+</I>&gt;&gt;<i> ago because they could do all the data-management operations
+</I>&gt;&gt;<i> inside each application quite well, thank you!
+</I>&gt;<i> 
+</I>&gt;<i> I think that comparing the advance SQL made with SKMS seems a bit
+</I>&gt;<i> unreasonable.
+</I>
+I think that Arshad's point here is an argument that externalising key
+management handling from normal application logic is a valid one but that it is
+also equally applicable to existing Kerberos environments.
+
+I don't think a point beyond &quot;externalisation is good&quot; was trying to be made here.
+
+Tim
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

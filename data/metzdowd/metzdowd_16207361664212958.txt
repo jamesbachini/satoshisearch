@@ -1,0 +1,24 @@
+<PRE>Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; writes:
+&gt;<i>* Jerry Leichter:
+</I>&gt;&gt;<i> I can just see the day when someone's fingerprint is rejected as
+</I>&gt;&gt;<i> &quot;insufficiently complex&quot;.
+</I>&gt;<i>It's been claimed that once you reach the retirement age, one person in ten
+</I>&gt;<i>hasn't got any fingerprints which can be used for biometric purposes.
+</I>
+It's not just older people, it's manual workers, children, and (as a
+generalisation for all biometrics) &quot;goats&quot;, the percentage of the overall
+population who don't produce useful results for whatever biometric is being
+employed.  The population of goats (for a reasonable FAR/FRR) is usually in
+the low single digits.  The standard response to goats is to wind down the FRR
+until the problem is no longer noticeable.  More on this in
+<A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/biometrics.pdf.">http://www.cs.auckland.ac.nz/~pgut001/pubs/biometrics.pdf.</A>
+
+(FAR = false acceptance rate, FRR = false rejection rate).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

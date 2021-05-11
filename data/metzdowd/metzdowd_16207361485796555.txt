@@ -1,0 +1,33 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> I have a friend who implemented a basic trusted-boot mechanism for a student
+</I>&gt;<i> project, so we have evidence of at least one use of a TPM for TC, and I know
+</I>&gt;<i> some folks at IBM Research were playing with one a few years ago, so that's at
+</I>&gt;<i> least two users so far.  Anyone else?
+</I>
+as i've mentioned before ... we looked at somewhat similar hardware solution
+(but much simpler) for the original acorn (ibm/pc code name), primarily as software piracy 
+countermeasure  ... but the tamper resistant technology state of the art at the time was 
+way too expensive ... and investigation was dropped. what was seen during
+the 80s were things like those specially encoded floppy disks ... that had 
+to be inserted when you started the application ... a couple past posts/references:
+<A HREF="http://www.garlic.com/~lynn/2006p.html#41">http://www.garlic.com/~lynn/2006p.html#41</A> Device Authentication - The answer to attacks lauched using stolen passwords?
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#9">http://www.garlic.com/~lynn/aadsm27.htm#9</A> Enterprise Right Management vs. Traditional Encryption Tools
+<A HREF="http://www.garlic.com/~lynn/2007m.html#20">http://www.garlic.com/~lynn/2007m.html#20</A> Patents, Copyrights, Profits, Flex and Hercules
+
+in the late 90s i would periodically chide the TPM folks about what
+they were doing ... and at an assurance talk i gave in the trusted computing
+track at intel developers forum (spring 2001), i chided the guy running
+the effort (was sitting in the front row) that it was nice to see that 
+over the previous couple yrs that TPM had started to look more &amp; more
+like the AADS chip strawman. his retort was something about it being
+because I didn't have a committee of couple hundred people helping
+me with (my) chip design. 
+
+misc. past posts mentioning aads chip strawman
+<A HREF="http://www.garlic.com/~lynn/x959.html#aads">http://www.garlic.com/~lynn/x959.html#aads</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

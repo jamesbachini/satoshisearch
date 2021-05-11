@@ -1,0 +1,21 @@
+<PRE>* Ralf-Philipp Weinmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">weinmann at cdc.informatik.tu-darmstadt.de</A>&gt; wrote:
+
+&gt;<i> My colleague Erik took photos of the slides which I put up on
+</I>&gt;<i> Zooomr [0]. A video recording of the talk should be available
+</I>&gt;<i> shortly and will be linked here.&quot;
+</I>
+preliminary link for the video:
+
+<A HREF="http://stan.freitagsrunde.org/mirror/24c3/matroska/24c3-2378-en-mifare_security.mkv">http://stan.freitagsrunde.org/mirror/24c3/matroska/24c3-2378-en-mifare_security.mkv</A>
+
+
+-- 
+left blank, right bald
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071230/f0f6da30/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071230/f0f6da30/attachment.pgp</A>&gt;
+</PRE>

@@ -1,0 +1,310 @@
+<PRE>Having served on 1, 2, 3... many security conference program committees, there
+are some common mistakes that I've seen come up again and again in submitted
+papers.  Every time this happens I feel I should write a HOWTO discussing
+these, but somehow I never get around to finishing it.  Anyway, I've finally
+been motivated to (mostly) finish it.  Feedback welcome, once it's done I'll
+put it online at the URL given in the text.
+
+Peter.
+
+-- Snip --
+
+             Common Problems with Conference/Journal Papers
+             ==============================================
+(Eventual home: <A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/paper_howto.html">http://www.cs.auckland.ac.nz/~pgut001/pubs/paper_howto.html</A>)
+
+Every year I serve on the program committees of a number of computer
+conferences, which means that I get given a pile of papers to review for
+publication.  Every year I see the same problems with submitted papers.  And
+every year I decide I should write down some guidelines on things to look out
+for when writing a computer conference/journal paper.  This year I've finally
+got around to it...
+
+The following is a list of the problems that most commonly crop up in
+submitted papers.  Treat this as a checklist to apply to the paper you're
+planning to write, or have already written.
+
+Existing Material
+-----------------
+
+Providing a summary of existing work in the area covered by your paper is
+extremely important.  This serves two purposes, firstly it lets the reader
+know that you're familiar with the field, and more importantly it lets you
+know whether what you're doing is useful and/or original or not.  I don't know
+how many papers I've received that I've had to reject with a comment like
+&quot;This is a poorly-done reinvention of a technique from the 1980s&quot; (and no
+matter what topic your paper is on, at least one referee is going to tell you
+that it's a reinvention of something that Multics was doing 40 years ago).
+Many authors simply plough ahead with a topic without (apparently) performing
+any checking to see whether anyone has done this before.  Others do a quick
+check with Google and leave it at that, however online archives typically only
+reach back a decade or so and are unlikely to tell you that you're reinvented
+something that first appeared four decades ago.
+
+I can't over-emphasise how important this first step is - I've seen fifteen-
+to twenty-page papers killed in an instant because the authors never checked
+to see whether someone else had had this idea before them.
+
+Approaching the Problem
+-----------------------
+
+Experimental design can be a bit of an art form.  As the saying goes, a
+problem well stated is a problem half solved.  Although it's relatively rare
+to find the kind of biased metrics that are traditional in competitive
+benchmarking (when the goal is to prove that your system is better than the
+competition's), it's unfortunately too common to find problems like an
+inappropriate level of detail (either too much or too little), or poor or even
+no analysis.
+
+The level-of-detail issue is an important one to get right.  You want to
+present enough information that others can repeat the experiment, but not
+enough detail to overwhelm the reader.  At the too-little-detail end of the
+scale, I've seen papers with results that would be impossible for anyone else
+to reproduce, either because the raw data isn't available (a relatively common
+problem that others have complained about), or because data acquisition
+details are insufficiently specified, or because the data-to-information
+transformation step(s) are insufficiently explained.  The goal of a scientific
+process is repeatability and verifiability.  This can be particularly
+important if the results are unusual or controversial.  In a psychology paper
+published in the late 1990s with rather astonishing results the authors took
+the unusual step of having the work repeated by independent teams in the US
+and Europe, as well as making the raw data available for others to use (many
+did, and got the same results as the original authors).  Without this level of
+detail, the very next research result could invalidate yours, and without
+repeatability no-one can demonstrate that you were correct.
+
+At the other end of the scale are the papers that are decorated with various
+distractions like snippets of source code that caught the authors' attention
+and long-winded discussions of possibly interesting but not terribly relevant
+minutiae.  Yes, it's interesting stuff, but it detracts greatly from the main
+flow of the work.  If you're going to do this, put it in a separate section so
+that it doesn't distract from the main body of the work.
+
+One other thing that you need to do is state your assumptions in advance.
+This is particularly important for papers in areas like networking and
+security, where the lack of a proper network performance model or threat model
+can make a paper almost meaningless (&quot;assume a perfectly spherical elephant of
+negligible mass and volume&quot;).  In theory this could help kill a paper - I've
+seen security papers where the threat model is taken straight from la-la land
+- but in practice this doesn't seem to be much of a problem.  Unrealistic
+models are a sure sign that your workflow was { design a cool algorithm,
+invent an artificial problem for it to solve }.  A friend once told me about a
+paper he'd co-authored on a neat algorithm for which they had to invent an
+artificial problem for the algorithm to solve.  The next year the same
+conference where they'd published it received three more papers on solutions
+to this non-problem (it probably has its own research field by now).  So you
+can usually get these things published if you're careful about which
+conference you submit to.  On the other hand if I'm refereeing something I'd
+prefer to see an honest assessment of the algorithm's value (&quot;it's a cool
+algorithm and we wanted to share the design with others&quot;) rather than some
+totally bogus attempt at a justification for publishing.
+
+While an artificial network or threat model isn't a killer, lack of any model
+at all is, because people are going to come up with situations that your
+design doesn't handle and tell you to resubmit once you've addressed them.
+Providing a model frames your solution and lets the reader know what it is
+that you're trying to achieve.  It also means that reviewers will try and pick
+holes in your model rather than your design.  (An unfortunate side-effect of
+this is that you can then design completely unrealistic models, see the
+previous paragraph).
+
+Analysis of Results
+-------------------
+
+One thing that can completely kill a paper is lack of analysis of the results.
+I've seen otherwise fine papers die in review because the &quot;analysis&quot; consists
+of the authors stating what's obvious from the graphs they present (&quot;foo
+increases linearly&quot;) but never explain why foo increases linearly, or whether
+foo increasing linearly is a good or bad thing.  More scary are papers where
+highly suspicious results (for example an O(n) and O(n^3) algorithm having
+identical runtimes) pass unnoticed.  This is an indication that either the
+authors have been careless or that they don't understand the data that they're
+looking at, neither of which provide much confidence in a scientific paper.
+
+When you present your results, you need to provide an analysis of why you
+obtained those results, not just a voiceover for the graphs and diagrams.  If
+you have an O(n) algorithm but are seeing identical runtimes for n=100, n=
+1000, and n=10000, you'd better have a good explanation for this.  More
+generally, any significant anomaly in your results will need either further
+investigation or an explanation.  One of the purposes of a paper is to
+demonstrate (and convey to readers) an understanding of what you're doing.
+Multiple unexplained anomalies can lead to the impression that this
+understanding is absent in the paper.
+
+Even worse than an unexplained anomaly is a totally unnoticed anomaly.  I once
+read a paper on crypto performance measurement that compared (among other
+things) the performance of DES with triple DES, where triple DES is DES
+iterated three times.  The execution times for DES and triple DES were
+identical (!!), but the author's hadn't appeared to notice this.
+
+A feature of many network protocols (and underneath the protocols, network
+hardware) is the extensive cacheing and buffering performed whenever possible
+to reduce latency and speed throughput.  One conference received a paper whose
+results showed that the SSL/TLS handshake was about a thousand times faster
+than the IPsec IKE handshake.  Now despite the best efforts of the IPsec
+design committee, the probably didn't manage to make IKE more than a few times
+slower than SSL/TLS.  What had happened was that SSL has the capability to
+perform a re-handshake using cached data, and what the paper was actually
+measuring was the overhead of n IPsec handshakes vs. 1 SSL handshake and n-1
+cached reconnects.
+
+Another thing that's important when presenting results of measurements is to
+explain (and demonstrate understanding of) exactly what it is that you're
+measuring.  The two protocols mentioned above, IPsec and SSL, both have
+numerous variations in their crypto mechanisms that can lead to vastly
+different performance results.  For example the IKE handshake was originally
+designed by mathematical cryptographers who assumed that all crypto operations
+had an O( 1 ) cost.  As a result, the original IKE public-key handshake design
+required no less than four (!!) very expensive private-key operations,
+compared to zero for the SSL client and one for an SSL server.
+
+It's important in areas like this to both describe explicitly which types of
+operations your results are presenting and to either measure the standard,
+default operating mode or if you're using variant modes to make it clear to
+the reader that the results are atypical and not necessarily representative of
+normal performance.
+
+(There's a lot more to say about this area such as techniques for analytical
+modeling, how to handle outliers, sensitivity analysis, and so on.  This is
+covered in a number of standard texts, of which the most extensive is probably
+Raj Jain's &quot;The Art of Computer Systems Performance Analysis&quot;.  You also need
+to adjust for things like clock granularity, the overhead of clock sampling,
+influence from external factors like other network traffic or CPU load, and so
+on.  For example relying on the operating system's ability to generate
+distinct timing data on a per-process level isn't going to help if another
+process is thrashing the CPU cache, which no amount of process-granularity
+timing is going to fix).
+
+In terms of statistical analysis of results, papers tend to fall into two
+categories: Either very little, or way too much.  Very little can work (it's
+an O(n) algorithm, end of story).  The other end of the scale is rather more
+problematic.  The result is a paper that's only comprehensible to another
+statistician, a variation of the &quot;much data, little analysis&quot; problem
+mentioned earlier.  Applying Noodleheinz's strategy for quantum normalisation
+to yield a correlation factor of 0.167 with a variance of 7.31 to a pile of
+data may be a fine demonstration of your grasp of statistics (or perhaps a
+demonstration of your lack of grasp of statistics), but it may as well be
+written in Klingon for most of the audience (unless your audience consists of
+the attendees of a conference on network performance analysis).  If you're
+going to apply statistical techniques, explain what you're doing and explain
+the significance of the results so the reader can understand it as well.
+
+Diagrams and Tables
+-------------------
+
+Some papers are severely let down by the quality of the graphs and tables that
+they contain.  There have been plenty of books written on the graphical
+representation of data, so I'll just go through the main problem areas here.
+The three biggest offenders that I've seen are inappropriate use of graphs,
+inappropriate scales, bad labeling, and bad choice of units.
+
+In a number of cases graphs are used where none are necessary.  Graphing white
+noise is an extreme example of this.  Graphs are intended to show a trend in
+data.  If there is none, use a bar graph or a table, not a line graph.
+Similarly, if your graph has less than (say) five data points, use a table, or
+just put the data inline in the text.
+
+When you're presenting information on a graph, don't try and overload it.  In
+almost all cases a graph should present one set of y-variables (and by
+extension one set of x-variables).  In some very special cases you can use two
+sets of y-variables, but you'd better have a very good reason for this.  Any
+more than this and you're making your graph incomprehensible.  In addition,
+don't try and cram more than five or six curves onto a graph, or you run into
+the same problem.
+
+Use of appropriate scales results in data being crammed into one corner on one
+side of a graph, or all detail for 99% of the data being lost through an
+attempt to fit a single anomalous spike into the result.  Look at your graph.
+If 90% of it is taken up by empty real estate, you need to consider an
+alternative way of representing it.  Conversely, if 90% of it is taken up by
+ink, you've got a similar problem.  A good rule of thumb is to try to maximise
+the information-to-ink ratio in your graph.  There's something called the
+three-quarter-high rule which says that the highest point on the graph should
+be at least three quarters of the horizontal offset of the rightmost point,
+which is meant to avoid biased representations when using techniques like
+nonzero origins of the axes, but can lead to odd-looking graphs (I'll leave it
+up to you whether you want to use this or not).
+
+Another thing to be aware of is that when plotting data resulting from random
+quantification of performance (so that if you were to repeat the experiment
+the results wouldn't be exactly identical), you should really show confidence
+intervals in your graph.  People often don't do this and it doesn't seem to
+cause any problems, but you should at least mention the fact in the
+accompanying text if what you're measuring requires it.  Obviously if it's
+some completely deterministic process there's no need to do this, and doing so
+will just clutter the graph or text.
+
+Bad labeling is another problem, and can take many forms.  I've seen text
+crammed in at odd angles, complex graphs with data represented in near-
+indistinguishable shades of grey, graphs where it wasn't obvious whether large
+values were better or worse, graphs where the axes were barely labeled (10
+minutes?  10 K/s?  10 MB?), graphs where the units aren't obvious (&quot;Time&quot; and
+a scale of 1...10, which could be nanoseconds, minutes, days, or years), and
+everything in between.  Remember, graphs are intended to visually represent
+trends in data.  If this isn't immediately obvious from your graph, redesign
+it or replace it with a table.
+
+Finally, something that besets both graphs and tables is the inappropriate
+choice of scaling units, so that everything ends up with strings of leading or
+trailing zeroes.  Go with the most common scaling unit.  Even if &quot;seconds&quot; is
+a nice basic time unit, if all of your graph labels or table entries are
+coming out as &quot;0.00000x s&quot; then it's time to consider using microseconds and
+not seconds.
+
+Where's the Rest of it?
+-----------------------
+
+A problem that crops up in some papers is that the authors construct an (often
+elaborate) demonstration and analysis of a problem without really providing a
+solution.  If the problem is of the grand-challenge type (for example breaking
+AES encryption) then this is fine.  Showing how to do this is enough to get
+you worldwide attention, and fixing it becomes someone else's problem.  On the
+other hand if the problem is a TCP/IP congestion issue under certain network
+conditions then simply demonstrating that there's a problem isn't sufficient.
+Even providing a general solution (&quot;congestion control is Good&quot;) isn't
+sufficient.  If your paper has pointed out that there's a problem, you also
+need to provide the fix for the problem.  The contribution in an AES- breaking
+paper is to demonstrate that AES is broken, but the contribution in a general
+paper is the solution to the problem, not the problem itself.
+
+Referee Feedback
+----------------
+
+There's a reason why conferences and journals provide detailed feedback from
+referees rather just a credit-card style &quot;accepted/declined&quot;.  Someone once
+submitted a paper to a conference that duplicated (somewhat poorly) work that
+others had done a few years earlier (see &quot;Existing Material&quot; above).  I sent
+it back with a reference to the earlier work and a longish explanation of how
+they needed to provide significant new material in order to make it suitable
+for publication.  A few months later they submitted the same paper, unchanged,
+to another conference.  Since they hadn't bothered to update the paper, I
+didn't bother to update my comments, and sent it back with exactly the same
+feedback.  A few months later they tried again at a third conference, and the
+same thing happened.  I guess eventually they found a conference obscure
+enough that there was no referee present who recognised that it was a poor
+duplication of existing work and got it published there.
+
+The point here is that the referees aren't just providing comments because
+they want to exercise their typing skills.  If you get a paper back with
+comments that there's a serious problem with it then there (usually) really is
+a serious problem with it that needs to be addressed.  Even if it's quite
+obvious that the referees are idiots and don't understand your work, they are
+(hopefully) representative of your audience as a whole and if the referees
+don't understand it then it's likely that the audience won't either (although
+obviously there are exceptions - a paper on the wonders of X.509 PKI submitted
+to an OSS conference full of SSH and PGP users, or a paper on SSH's key-
+continuity key management submitted to an X.509 PKI conference, is going to be
+a tough sell no matter how well it's written).
+
+In general though trying a different set of referees isn't going to change
+anything because they'll find the problem as well.  Sure, you can eventually
+get around it by finding a venue so obscure that no-one will notice, but if
+you're doing it for the publication credits are you really going to get much
+value from being listed in the appendix to the apocrypha of the Proceedings of
+the Bratislava Philological Society?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

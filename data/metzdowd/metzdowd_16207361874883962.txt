@@ -1,0 +1,77 @@
+<PRE>Philipp G&#252;hring writes:
+&gt;<i> I am searching for symmetric encryption algorithms for decimal strings.
+</I>&gt;<i>
+</I>&gt;<i> Let's say we have various 40-digit decimal numbers:
+</I>&gt;<i> 2349823966232362361233845734628834823823
+</I>&gt;<i> 3250920019325023523623692235235728239462
+</I>&gt;<i> 0198230198519248209721383748374928601923
+</I>&gt;<i>
+</I>&gt;<i> As far as I calculated, a decimal has the equivalent of about 3,3219
+</I>&gt;<i> bits, so with 40 digits, we have about 132,877 bits.
+</I>
+Right, although as an American I was confused for a moment until I
+remembered the European convention of using comma for the decimal point,
+while we use period. But you are right and it was my mistake.
+
+&gt;<i> Now I would like to encrypt those numbers in a way that the result is a
+</I>&gt;<i> decimal number again (that's one of the basic rules of symmetric
+</I>&gt;<i> encryption algorithms as far as I remember).
+</I>&gt;<i>
+</I>&gt;<i> Since the 132,877 bits is similar to 128 bit encryption (like eg. AES),
+</I>&gt;<i> I would like to use an algorithm with a somewhat comparable strength to AES.
+</I>&gt;<i> But the problem is that I have 132,877 bits, not 128 bits. And I can't
+</I>&gt;<i> cut it off or enhance it, since the result has to be a 40 digit decimal
+</I>&gt;<i> number again.
+</I>
+This is a very common question. Unfortunately the state of the art in
+cryptography does not as far as I know have a good answer. The most recent
+analysis I found is <A HREF="http://www.cs.ucdavis.edu/~rogaway/papers/subset.pdf">http://www.cs.ucdavis.edu/~rogaway/papers/subset.pdf</A>
+from CT-RSA 2002 by Black and Rogaway.
+
+Basically they propose what is called a Luby-Rackoff construction,
+related to another construction called a Feistel network. Unfortunately
+their analysis does not show that this is secure, but I believe that by
+adding more steps it can be made so.
+
+The idea is to start with your 40 digit number and split it into two parts
+of 20 digits. Call the left part L and the right part R. Then repeatedly
+execute the following steps:
+
+L = (L xor AES(R)) mod 10^20
+(L,R) = (R,L) (i.e. interchange L and R)
+
+After doing this a certain number of steps, interchange L and R one
+last time, and concatenate L and R to get your output. (Equivalently,
+skip the interchange of L and R on the last step.)
+
+Now, it is important in doing this that AES have a different key for
+each &quot;round&quot; or step. You can start with a single key K, and generate
+the round keys as K0 = AES(K,0), K1 = AES(K,1), K2 = AES(K,2), and so on.
+
+To decrypt, the same basic process is used. But this time, use the round
+keys in the reverse order. Instead of K0, K1, K2, use K2, K1, K0.
+
+Black and Rogaway analyzed for just 3 rounds, and they found basically
+that for your case, this construction would only have about 32 bits of
+strength; that is, after encrypting about 4 billion numbers, you would
+be losing security.  If you are only ever encrypting many fewer numbers
+than this (with a given key), it should probably be OK.
+
+The other possibility is to increase the number of rounds. The paper
+hints that this will help but does not offer any specific analysis. I saw
+a speculative comment online that 8 rounds would be strong. I believe
+that going back to the Luby-Rackoff paper may offer some guidance,
+but I don't have time to do that now.
+
+Note that this unfortunately does not get the benefit you were hoping for
+from being so close to the AES block size. While there are some known
+tricks for dealing with being a little shorter than the cipher block,
+I couldn't find any good ones for being a few bits longer.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,63 @@
+<PRE>With this discussion of virtualization and security, it might be a  
+good time to note:
+
+
+&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> IEEE Security &amp; Privacy
+</I>&gt;<i> Special issue on virtualization
+</I>&gt;<i> September/October 2008
+</I>&gt;<i>
+</I>&gt;<i> Deadline for submissions: 6 February 2008
+</I>&gt;<i>
+</I>&gt;<i> Visit www.computer.org/portal/pages/security/author.xml to submit a  
+</I>&gt;<i> manuscript
+</I>&gt;<i> Guest editors: Samuel T. King (UIUC), Sean W. Smith (Dartmouth)
+</I>&gt;<i>
+</I>&gt;<i> Virtualization has several properties that make it useful for  
+</I>&gt;<i> security applications. Traditional virtual machine monitors aspire  
+</I>&gt;<i> to enforce strong isolation among multiple operating systems (OSes)  
+</I>&gt;<i> running on the same physical hardware, enable software services to  
+</I>&gt;<i> be implemented below the OS at a layer usually only accessible by  
+</I>&gt;<i> hardware, and provide low-level software with convenient  
+</I>&gt;<i> abstractions of the virtual machine&#237;s hardware resources. Other  
+</I>&gt;<i> approaches aspire to provide multiple virtual but isolated images  
+</I>&gt;<i> of the same OS installation. These properties helped foster a new  
+</I>&gt;<i> class of virtual-machine- based security services and made  
+</I>&gt;<i> virtualization a staple of many enterprise computing environments.
+</I>&gt;<i>
+</I>&gt;<i> A common topic in the early days of computing, virtualization has  
+</I>&gt;<i> recently seen a resurgence of commercial and research interest.  
+</I>&gt;<i> Consequently, the security implications of virtualization  
+</I>&gt;<i> technology are the topic of the Sept./Oct. 2008 special issue of  
+</I>&gt;<i> IEEE Security &amp; Privacy magazine. We are looking for feature  
+</I>&gt;<i> articles with an in-depth coverage of topics related to  
+</I>&gt;<i> virtualization technology and how it applies to security. Among the  
+</I>&gt;<i> potential topics are:
+</I>&gt;<i>
+</I>&gt;<i> --Virtualization for intrusion detection
+</I>&gt;<i> --Virtualization for forensic analysis of compromised computer systems
+</I>&gt;<i> --Virtualization for analyzing malicious software
+</I>&gt;<i> --Hardware support for secure virtualization
+</I>&gt;<i> --Security interfaces between VMMs and operating systems
+</I>&gt;<i> --Securing applications using virtualization
+</I>&gt;<i> --Securing attacks using virtualization
+</I>&gt;<i> --Security analysis of virtualization
+</I>&gt;<i>
+</I>&gt;<i> The above list is neither complete nor closed. Authors are  
+</I>&gt;<i> encouraged to submit articles that explore other aspects of  
+</I>&gt;<i> virtualization and its application to security. Submissions will be  
+</I>&gt;<i> subject to the peer-review methodology for refereed papers.  
+</I>&gt;<i> Articles should be understandable to a broad audience of people  
+</I>&gt;<i> interested in security and privacy. The writing should be down to  
+</I>&gt;<i> earth, practical, and original. Authors should not assume that the  
+</I>&gt;<i> audience will have specialized experience in a particular subfield.  
+</I>&gt;<i> All accepted articles will be edited according to the IEEE Computer  
+</I>&gt;<i> Society style guide.
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

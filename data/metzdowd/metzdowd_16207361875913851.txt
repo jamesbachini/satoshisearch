@@ -1,0 +1,48 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> There has been a lot of talk on the list recently about the privacy
+</I>&gt;<i> issues associated with various toll and fare collecting systems, but
+</I>
+For folks that haven't seen it, next month's Scientific American is
+about &quot;The Future of Privacy&quot;:
+
+<A HREF="http://www.sciam.com/article.cfm?id=privacy-in-an-age">http://www.sciam.com/article.cfm?id=privacy-in-an-age</A>
+
+The issue contains a nice discussion of &quot;Privacy 2.0&quot; by Esther Dyson.
+She writes:
+
+&quot;What is the best way to limit government power? Not so much by the
+rules that protect the privacy of individuals, which the government may
+decline to observe or enforce, but by rules that limit the privacy of
+government and government officials. The public must retain the right to
+know and to bear witness.&quot;
+
+I thought this was an interesting contrast to Dan's comment from the
+other day:
+
+&gt;<i> the people who make privacy law, legislature and executive
+</I>&gt;<i> alike, are afforded precisely zero privacy by
+</I>&gt;<i> both the courts and the press.  As such, one has
+</I>&gt;<i> to be a truly addled optimist to imagine that
+</I>&gt;<i> those who have no privacy are nevertheless willing
+</I>&gt;<i> to grant you more privacy than they have, unless
+</I>&gt;<i> they are somehow nostalgic for what they themselves
+</I>&gt;<i> lost in becoming a member of government.
+</I>
+... Also, the article &quot;Brave New World of Wiretapping&quot; by Whitfield
+Diffie and Susan Landau was also a terrific overview of the history of
+wiretapping laws and how changing communications technology has impacted
+intelligence operations (and vice versa).
+
+<A HREF="http://www.sciam.com/article.cfm?id=internet-eavesdropping">http://www.sciam.com/article.cfm?id=internet-eavesdropping</A>
+
+Sherri
+
+
+-- 
+<A HREF="http://philosecurity.org">http://philosecurity.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

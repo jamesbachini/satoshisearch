@@ -1,0 +1,68 @@
+<PRE>At one time, mail delivery was done to the end-user's system, and all
+mail was stored there.  These days, most people find it convenient to
+leave their mail on a IMAP server:  It can be accessed from anywhere,
+it can be on a system kept under controlled conditions (unlike a
+laptop), and so on.  In fact, most people these days - even the
+technically savvy - not only leave their mail on an IMAP server,
+but let some provider deal with the headaches of maintaining that
+server.
+
+So, most people's mail spends most of its life sitting on a disk owned,
+managed, and controlled by some third party, whose responsibilities, not
+to mention abilities, for keeping that stuff secure are unclear to say
+the least.  On top of that, the legal protections for data held by a
+third party are limited.
+
+We have mechanisms for providing end-to-end encryption of messages.
+Messages sent using, say, S/MIME are encrypted on the IMAP server
+just as they are out on the net.  But this only helps for mail
+exchanged between correspondents who both choose to use it.
+
+Suppose I ask for a simpler thing:  That my mail, as stored in my
+IMAP server, spends &quot;most of its life&quot; encrypted, inaccessible even
+to whoever has access to the physical media on which the server
+stores its mail.
+
+Now, this is a funny goal.  If mail arrives unencrypted, anyone with
+access to the data stream can copy it and do what they like.  It will
+inevitably be buffered, even likely stored on a disk, in the raw,
+unencrypted form.  We explicitly leave dealing with this out of the
+equation - only end-to-end encryption can deal with it.
+
+Here are two ways of implementation something in this direction:
+
+ 	1.  Client only.  The client, whenever it sees a new message,
+ 		(a) downloads it; (b) encrypts it using a secret key;
+ 		(c) stores the encrypted version back on the server;
+ 		(d) deletes the unencrypted version.  The client can
+ 		put the encrypted messages in a different folder, or
+ 		it can mark them with a header line.
+
+ 	2.  Server-assisted.  The client gives the server its public
+ 		key.  When a message arrives at the server, the
+ 		server (a) generates a &quot;session&quot; key; (b) encrypts
+ 		the message using the session key; (c) encrypts
+ 		the session key with the client's public key;
+ 		(d) adds a header containing the encrypted session
+ 		key to the encrypted message; (e) stores the
+ 		encrypted message.  The necessary work for
+ 		the client is obvious.
+
+In each case, one would probably chose some headers to encrypt
+separately - e.g., the subject - so that one could more easily pull
+them out without decrypting the whole message.
+
+Obviously, approach 2 greatly decreases the time that messages may
+hang around unencrypted; but approach 1 can be implemented without
+any cooperation from the IMAP provider, which allows it to be rolled
+out even for those who use the large providers without having Google
+and Hotmail and Yahoo! buy into it.
+
+Does anyone know of existing work in this area?
+ 							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,50 @@
+<PRE>James Muir wrote:
+&gt;<i> Greg Rose wrote:
+</I>&gt;&gt;<i> Basically, any calculation with inputs and outputs can be represented as
+</I>&gt;&gt;<i>  an (insanely complicated and probably intractable) set of binary
+</I>&gt;&gt;<i> multivariate polynomials. So long as the degree of the polynomials is
+</I>&gt;&gt;<i> not too large, the method allows most of the nonlinear terms to be
+</I>&gt;&gt;<i> cancelled out, even though the attacker can't possibly handle them. Then
+</I>&gt;&gt;<i> you solve a tractable system of linear equations to recover key (or
+</I>&gt;&gt;<i> state) bits.
+</I>&gt;<i> 
+</I>&gt;<i> I would like to know how Dinur and Shamir's work differs from Courtois'
+</I>&gt;<i> previous work on Algebraic cryptanalysis of block ciphers.  It is a
+</I>&gt;<i> refinement of Courtois' technique?  Greg, do you, or someone else have
+</I>&gt;<i> some insight on this?
+</I>
+I spent about an hour trying to come up with a short but legible 
+explanation of the technique, and failed. Sorry about that. I can 
+visualize it, and could probably reproduce Adi's drawings on a 
+whiteboard, but not with typing. The following is as close as I could come.
+
+Basically the method focuses on terms of the polynomial in which only 
+one secret bit of the key appears, and many of the non-secret bits. 
+Using chosen (or lucky) plaintexts, vary all but one of the non-secret 
+bits, and sum the output bits (mod 2, that is, XOR). Fix the other 
+non-secret bit to 1. Now all the terms that involve less than the full 
+complement of non-secret bits will appear an even number of times in the 
+sum, and because it is mod 2, they will all cancel out! The only terms 
+that will be left are the ones with one secret bit, and all ones for the 
+non-secret bits... but that is linear in the secret bit! So what you are 
+left with is a simple, linear, polynomial relating unknown (key) bits. 
+Gather enough such equations, just a few more than the number of key 
+bits will do, and solve the linear system in trivial time. Note that you 
+had to have 2^(d-2) chosen plaintexts to sum over for each of the 
+equations... that's where the complexity comes from. The attack is 
+called Cube because in the case where d=4, each time you sum over all of 
+the varying known bits, it can be visualized as the face of a cube, the 
+corners of which are the possibilities for the 3 known inputs.
+
+Hope that helps. Note that the formula I typed from memory for the 
+complexity was wrong... it's O(n * 2^(d-2)), if the above is correct.
+
+For anything more than this, you'll have to wait for the paper.
+
+Greg.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

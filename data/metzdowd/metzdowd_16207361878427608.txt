@@ -1,0 +1,58 @@
+<PRE>At Wed, 20 Aug 2008 13:27:50 -0700,
+Adam Langley wrote:
+&gt;<i> 
+</I>&gt;<i> On Wed, Aug 20, 2008 at 1:15 PM, Alex Pankratov &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ap at poneyhot.org</A>&gt; wrote:
+</I>&gt;<i> &gt; Based on this reply alone I'm not sure I follow. I also read quickly
+</I>&gt;<i> &gt; through your exchange on TCPM and your comments appear to be specific
+</I>&gt;<i> &gt; to Adam's draft.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; My comment was not related to either a latency or a potential performance
+</I>&gt;<i> &gt; problems of TLS. It was in a response to another idea - that of bundling
+</I>&gt;<i> &gt; TLS handshake with TCP handshake. The goal of this (and I apologize for
+</I>&gt;<i> &gt; stating the obvious, just want to make sure we are on the same page here)
+</I>&gt;<i> &gt; is to provide transparent to application layer opportunistic encryption
+</I>&gt;<i> &gt; of TCP streams. Whether this goal makes any sense and if it is worth
+</I>&gt;<i> &gt; pursuing is a separate issue; it's the DoS aspect of the implementation
+</I>&gt;<i> &gt; idea that I was commenting on.
+</I>&gt;<i> 
+</I>&gt;<i> Sorry, I'm loosing this conversation a little, I think half of it's
+</I>&gt;<i> occuring on mailing lists that I'm not on.
+</I>
+Indeed. I'm not on p2p-hackers, so I'm reading this on <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at .</A>
+
+
+&gt;<i> If I might speak for another: ekr doesn't believe that an extra RTT of
+</I>&gt;<i> latency is important. This is perfectly reasonable since I can't
+</I>&gt;<i> release any numbers. Thus, Eric is taking the perfectly respectable
+</I>&gt;<i> view that we shouldn't complicate things for dubious benefit.
+</I>
+That's probably a reasonably accurate summary of my position.
+
+
+&gt;<i> TLS is only one RTT if the session is cached (either server side
+</I>&gt;<i> caching or client side). Without modifying TCP, one could push the
+</I>&gt;<i> server's exchange into the SYNACK and get this down to 0 extra round
+</I>&gt;<i> trips. (needs kernel changes) This would really involve cramming TLS
+</I>&gt;<i> into a very small space and the result would look little like TLS.
+</I>
+I actually am not sure I agree with this assessment of &quot;look little
+like TLS&quot;. I haven't spent that much time on this particular
+issue, but most of the schemes I've seen for optimizing out TLS round trips 
+(e.g., FastTrack) are actually quite minor modifications to TLS.
+
+
+&gt;<i> However, the issue is that, if clients started doing this, they
+</I>&gt;<i> couldn't know if the other end supports it. Thus it wouldn't be very
+</I>&gt;<i> opportunistic.
+</I>
+Well, maybe, maybe not. Remember that if you're doing session
+caching, the client and a server have an opportunity do do
+discovery in the first handshake.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

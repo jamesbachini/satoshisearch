@@ -1,0 +1,21 @@
+<PRE>Sebastian Krahmer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krahmer at suse.de</A>&gt; writes:
+
+&gt;<i>This reminds me the most weird SSL related error message I have ever seen and
+</I>&gt;<i>which is there since ages:
+</I>&gt;<i>
+</I>&gt;<i><A HREF="https://www.fbi.gov">https://www.fbi.gov</A>
+</I>&gt;<i>
+</I>&gt;<i>Beside that the certificate is wrong :-)
+</I>
+That's an artefact of the SSL MITM that Akamai performs for sites that are
+hosted via their service (and up until Kevin Fu pointed out that this was a
+problem, any random site you want as well).  You usually don't see this
+though, so it's indicative of a configuration error somewhere...
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

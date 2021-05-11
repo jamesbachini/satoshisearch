@@ -1,0 +1,24 @@
+<PRE>This is interesting:
+<A HREF="http://www.cerias.purdue.edu/news_and_events/events/calendar/cerias_event.php?uid=53urboui31bnnv0l97g4rh7bq0@google.com">http://www.cerias.purdue.edu/news_and_events/events/calendar/cerias_event.php?uid=53urboui31bnnv0l97g4rh7bq0@google.com</A>
+
+OR
+
+<A HREF="http://tinyurl.com/2zko7n">http://tinyurl.com/2zko7n</A>
+
+Abstract
+The problem of a mice traveling through a maze is well known. The maze can be represented using a planar graph. We present a variant of the maze. We consider a grid vertex colored planar graph in which an adversary can choose up to t colors and remove all vertices that have these colors and their adjacent edges. We call the grid in which these vertices and adjacent edges are removed a reduced grid. The problem is that a mice must be able to move in the reduced grid from the first row to the last row, and from the first column to the last column, and this for all possible reductions. We present three types of solutions to construct such grids. The efficiency of these solutions is discussed.
+
+The problem finds its origin in the problem of secure multiparty computation. Imagine going to a medical doctor in Iraq who needs to prescribe some medication, which might be counterindicated. The typical solution is to disclose all medical records to the doctor. If secure multiparty computation would be used, the medical doctor in Iraq only learns from the distributed medical databases whether the medication is, or is not, counterindicated. We consider the problem of parties each having a secret belonging to a non-abelian group. The parties want to compute the product of these secrets without leaking anything that does not follow trivially from the product. Our solution is black box, i.e., independent of the non-abelian group. This has applications to threshold block ciphers and post-quantum cryptography. 
+
+About the Speaker
+Yvo Desmedt received his Ph.D. (Summa cum Laude) from the University of Leuven, Belgium (1984). He is presently the BT Chair of Information Security at University College London, UK. He is also a courtesy professor at Florida State University. His interests include cryptography, network security and computer security. He was program chair of ICITS 2007, co-program chair of CANS 2005, program chair of PKC 2003, the 2002 ACM Workshop on Scientific Aspects of Cyber Terrorism and Crypto '94. He is editor-in-chief of the IEE Proceedings of Information Security, editor of the Journal of Computer Security, of Information Processing Letters and of Advances in Mathematics of Communications. He has given invited lectures at several conferences and workshop in 5 different continents. He has authored over 150 refereed papers, of which 114 listed on DBLP. 
+
+
+Saqib
+<A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,44 @@
+<PRE>Stefan Kelm &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stefan.kelm at secorvo.de</A>&gt; writes:
+
+&gt;&gt;<i> The original story was actually the coverage in the UK Times last week,
+</I>&gt;<i>
+</I>&gt;<i>Which card reader(s) did you use?
+</I>
+Adam and I used the Omnikey Cardman 5321 (I'm not sure what Jeroen used,
+probably the same), which is cheap, well-supported with drivers, and cheap.
+Oh, and it's cheap too.  The card was a standard NXP JCOP 41, one country's
+passport implementation didn't change the ATR so when you ping the passport it
+returns the product ID in the response :-).  Having said that, going with the
+JCOP 41 was more a case of &quot;OK, we'll use that too then&quot; rather than &quot;now we
+know the secret&quot; so having the product ID returned in the ATR isn't really a
+security problem.  In practice anything programmable with a 13.56MHz RFID
+interface should do it, you don't have to specifically use a JCOP 41 card.  As
+with the reader, the card just happened to be available and cheap.  Given that
+people have built their own prox card emulators it wouldn't surprise me if
+someone did the same for a 13.56MHz card (e.g. using the freely-available
+OpenPICC design) so you can return &quot;foo'; DROP TABLE passports; --&quot; as your
+passport MRZ when the &quot;card&quot; is read :-).
+
+One thing that wasn't mentioned in the news coverage is that, as with any
+SCADA-type software, there are bound to be all manner of bugs and holes in the
+various reader implementations just waiting to be exploited.  For example when
+I was initially playing with creating signatures I just memcpy()d some fixed
+data together to create something to sign and was surprised when the Golden
+Reader software accepted invalid signed data that should have been rejected as
+valid.  I also managed to crash it at one point, quickly fixed the problem,
+and then spent the next day kicking myself for not recording what data I'd fed
+in to cause this (all your readers are belong to buffer overflows).  I'm sure
+there's going to be many more Black Hat/Defcon talks on this in the future.
+
+Has there ever been any third-party analysis of passport reader software as
+there has for voting-machine software?  By &quot;analysis&quot; I don't mean the usual
+Common Criteria rubber-stamping, I mean actual independent scrutiny of the
+code.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

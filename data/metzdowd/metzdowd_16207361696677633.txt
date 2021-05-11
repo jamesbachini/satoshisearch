@@ -1,0 +1,33 @@
+<PRE>On Feb 10, 2008, at 4:02 AM, Peter Gutmann wrote:
+
+&gt;&gt;<i>  The device generates random numbers at a data rate of 2.0 megabits
+</I>&gt;&gt;<i>  a second, according to Toshiba in a paper presented at the
+</I>&gt;&gt;<i>  International Solid-State Circuits Conference (ISSCC) here.
+</I>&gt;<i>
+</I>&gt;<i> I've always wondered why RNG speed is such a big deal for anything  
+</I>&gt;<i> but a few
+</I>&gt;<i> highly specialised applications.  For security use you've got two  
+</I>&gt;<i> options:
+</I>
+
+Assuming that it is impossible to introduce a bias externally and the  
+randomness can be specifically cryptographically qualified - and such  
+can be cheaply explained to an auditor - I can see a fair bit of use  
+to reduce the 'cost' you spend on convincing that same auditor that  
+your poker, roulette, etc site is fair, that you are keying all your  
+RSA/DH/whatever exchanges off the right randomness, etc.
+
+I've had cases where a simple nonce (which was just required to be  
+different each time, so a i++ would do, not even unpredictable) ended  
+up being changed into some sha1() of some i++ ^ RNG -- as that was the  
+quicker way to get something argued live. So beeing able to wave a  
+magic wand over a large part of your infrastructure may be just the  
+ticked.
+
+Dw
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,62 @@
+<PRE>On Sun, Jul 20, 2008 at 4:50 AM, Florian Weimer wrote:
+
+&gt;<i> I've got a function f : S -&gt; X x S where S = (Z/2Z)**96 and
+</I>&gt;<i> X = (Z/2Z)**32.  Suppose that s_0 is fixed and (x_i, s_i) = f(s_{i-1}).
+</I>&gt;<i> (f implements a PRNG.  The s_i are subsequent internal states and the
+</I>&gt;<i> x_i are results.)
+</I>&gt;<i>
+</I>&gt;<i> Now f happens to be linear.  I know the values of x_i, x_{i+1}, ...,
+</I>&gt;<i> x_{i+k} module N, for a fixed, known N.  N is odd (but divisible by 9).
+</I>&gt;<i> Is it possible to recover s_i with reasonable effort (better than brute
+</I>&gt;<i> force, and k should be in the hundreds, not thousands)?  And if yes, how?
+</I>&gt;<i> Prediction of candidates for x_{i+k+1} with high probability would be
+</I>&gt;<i> helpful, too.
+</I>&gt;<i>
+</I>&gt;<i> (Obviously, using f as an unpredictable PRNG is not a good idea.  But if
+</I>&gt;<i> there's a real attack I can present, convincing the authors to replace
+</I>&gt;<i> it would be so much easier.)
+</I>&gt;<i>
+</I>
+&gt;<i>From a little bit of off-line discussion, I think I've got a restatement of
+</I>the problem that is more suitable to those with a stronger programming
+background than mathematical background:
+
+    &quot;If someone uses the __random32 function as defined in the 2.6.26 Linux
+kernel, and leaks to you the result of taking successive outputs modulo
+28233 (= 9 * 3137), can you determine the probable 96-bit internal state
+with fewer than 1000 outputs and with modest processing power (e.g., a
+laptop computer running less than a day)?&quot;
+
+Here is a C implementation of __random32:
+
+typedef unsigned long u32;
+struct rnd_state { u32 s1, s2, s3; };
+static u32 __random32(struct rnd_state *state)
+{
+#define TAUSWORTHE(s,a,b,c,d) ((s&amp;c)&lt;&lt;d) ^ (((s &lt;&lt;a) ^ s)&gt;&gt;b)
+
+    state-&gt;s1 = TAUSWORTHE(state-&gt;s1, 13, 19, 4294967294UL, 12);
+    state-&gt;s2 = TAUSWORTHE(state-&gt;s2,  2, 25, 4294967288UL, 4);
+    state-&gt;s3 = TAUSWORTHE(state-&gt;s3,  3, 11, 4294967280UL, 17);
+
+    return (state-&gt;s1 ^ state-&gt;s2 ^ state-&gt;s3);
+}
+
+__random32: See
+<A HREF="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=blob;f=lib/random32.c;h=ca87d86992bdb7bfd6bb30d4dbe6dcefe2bab7b9;hb=bce7f793daec3e65ec5c5705d2457b81fe7b5725">http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=blob;f=lib/random32.c;h=ca87d86992bdb7bfd6bb30d4dbe6dcefe2bab7b9;hb=bce7f793daec3e65ec5c5705d2457b81fe7b5725</A>
+
+Cheers,
+-Matt
+
+-- 
+Thanks!
+Matt Ball, IEEE P1619.x SISWG Chair
+M.V. Ball Technical Consulting, Inc.
+Phone: 303-469-2469, Cell: 303-717-2717
+<A HREF="http://www.mvballtech.com">http://www.mvballtech.com</A>
+<A HREF="http://www.linkedin.com/in/matthewvball">http://www.linkedin.com/in/matthewvball</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

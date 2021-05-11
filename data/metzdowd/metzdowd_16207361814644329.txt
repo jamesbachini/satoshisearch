@@ -1,0 +1,39 @@
+<PRE>Perry E. Metzger wrote:
+
+[snip]
+
+&gt;<i> I'm thinking of starting a CA that sells &quot;super duper enhanced
+</I>&gt;<i> security&quot; certs, where we make the company being certified sign a
+</I>&gt;<i> document in which they promise that they're absolutely trustworthy.
+</I>&gt;<i> To be really sure, we'll make them fax said document in on genuine
+</I>&gt;<i> company letterhead, since no one can forge letterhead.
+</I>
+ROTFLMGO!
+
+But I've got one better for you. The domain name registrar that I 
+have been using went out of business and the domain names were 
+handed over to another registrar. In order to gain control of 
+them again I have to:
+
+&gt;<i> 1. Create a free login ID at www.eNomCentral.com (your domain will not be there just yet)
+</I>&gt;<i> 
+</I>&gt;<i> 2. In order to verify domain ownership, please do one of the following:
+</I>&gt;<i> a) send a copy of your photo ID matching the WHOIS record for the domain or
+</I>&gt;<i> b) send a receipt reflecting past payment for the domain
+</I>&gt;<i> 
+</I>&gt;<i> 3. Please send an email with your login ID, domain name and domain ownership verification to: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">CustomerCare at eNom.com</A>
+</I>
+When I asked how they wanted the ID they said a scan of a picture 
+of me attached to the e-mail!
+
+Photoshop anyone?
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

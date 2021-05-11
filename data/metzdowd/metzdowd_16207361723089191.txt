@@ -1,0 +1,147 @@
+<PRE>Jim:
+
+Thanks for your detailed response on the convergent encryption issue.
+
+In this post, I'll just focus on one very interesting question that  
+you raise: &quot;When do either of these attacks on convergent encryption  
+apply?&quot;.
+
+In my original note I was thinking about the allmydata.org &quot;Tahoe&quot;  
+Least Authority Filesystem.  In this post I will attempt to follow  
+your lead in widening the scope.  In particular GNUnet and Freenet  
+are currently active projects that use convergent encryption.  The  
+learn-partial-information attack would apply to either system if a  
+user were using it with files that she intended not to divulge, but  
+that were susceptible to being brute-forced in this way by an attacker.
+
+
+On Mar 20, 2008, at 10:56 PM, Jim McCoy wrote:
+&gt;<i>
+</I>&gt;<i> On Mar 20, 2008, at 12:42 PM, zooko wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i>   Security engineers have always appreciated that convergent
+</I>&gt;&gt;<i>   encryption allows an attacker to perform a
+</I>&gt;&gt;<i>   confirmation-of-a-file attack -- if the attacker already knows
+</I>&gt;&gt;<i>   the full plaintext of a file, then they can check whether a
+</I>&gt;&gt;<i>   given user has a copy of that file.
+</I>&gt;<i>
+</I>&gt;<i> The truth of this depends on implementation details, and is an
+</I>&gt;<i> assertion that cannot be said to cover all or even most of the
+</I>&gt;<i> potential use-cases for this technique.
+</I>
+You're right.  I was writing the above in the context of Tahoe,  
+where, as Brian Warner explained, we do not attempt to hide the  
+linkage between users and ciphertexts.  What I wrote above doesn't  
+apply in the general case.
+
+However, there is a very general argument about the applicability of  
+these attacks, which is: &quot;Why encrypt?&quot;.
+
+If your system has strong anonymity properties, preventing people  
+from learning which files are associated with which users, then you  
+can just store the files in plaintext.
+
+Ah, but of course you don't want to do that, because even without  
+being linked to users, files may contain sensitive information that  
+the users didn't intend to disclose.  But if the files contain such  
+information, then it might be acquired by the learn-partial- 
+information attack.
+
+When designing such a system, you should ask yourself &quot;Why  
+encrypt?&quot;.  You encrypt in order to conceal the plaintext from  
+someone, but if you use convergent encryption, and they can use the  
+learn-partial-information attack, then you fail to conceal the  
+plaintext from them.
+
+You should use traditional convergent encryption (without an added  
+secret) if:
+
+1.  You want to encrypt the plaintext, and
+2.  You want convergence, and
+3.  You don't mind exposing the existence of that file (ignoring the  
+confirmation-of-a-file attack), and
+4.  You are willing to bet that the file has entropy from the  
+attacker's perspective which is greater than his computational  
+capacity (defeating the learn-partial-information attack).
+
+You should use convergent encryption with an added secret (as  
+recently implemented for the Tahoe Least Authority Filesystem) if:
+
+1.  You want to encrypt the plaintext, and
+2.  You want convergence within the set of people who know the added  
+secret, and
+3.  You don't mind exposing the existence of that file to people in  
+that set, and
+4.  You are willing to disclose the file to everyone in that set, or  
+else you think that people in that set to whom you do not wish to  
+disclose the file will not try the learn-partial-information attack,  
+or if they do that the file has entropy from their perspective which  
+is greater than their computational capacity.
+
+I guess the property of unlinkability between user and file addresses  
+issue 3 in the above list -- the existence of a file is a much less  
+sensitive bit of information than the existence of a file in a  
+particular user's collection.
+
+It could also effect issue 4 by increasing the entropy the file has  
+from an attacker's perspective.  If he knows that the ciphertext  
+belongs to you then he can try filling in the fields with information  
+that he knows about you.  Without that linkage, he has to try filling  
+in the fields with information selected from what he knows about all  
+users.  But hiding this linkage doesn't actually help in the case the  
+attacker is already using everything he knows about all users to  
+attack all files in parallel.
+
+Note that using an added secret does help in the parallel attack  
+case, because (just like salting passwords) it breaks the space of  
+targets up into separate spaces which can't all be attacked with the  
+same computation.
+
+
+&gt;<i> The first problem is isolating the original
+</I>&gt;<i> ciphertext in the pool of storage.  If a file is encrypted using
+</I>&gt;<i> convergent encryption and then run through an error-correction
+</I>&gt;<i> mechanism to generate a number of shares that make up the file an
+</I>&gt;<i> attacker first needs to be able to isolate these shares to generate
+</I>&gt;<i> the orginal ciphertext.  FEC decoding speeds may be reasonably fast,
+</I>&gt;<i> but they are not without some cost.  If the storage pool is
+</I>&gt;<i> sufficiently large and you are doing your job to limit the ability of
+</I>&gt;<i> an attacker to see which blocks are linked to the same FEC operation
+</I>&gt;<i> then the computational complexity of this attack is significantly
+</I>&gt;<i> higher than you suggest.
+</I>
+The attacker can do this job more easily, in two ways:
+
+1.  He doesn't need to erasure-decode in order to check whether a  
+given erasure-coded share was generated from a given plaintext.  He  
+can work forward from guessed-plaintext to encryption key to partial  
+ciphertext to partial erasure coded share, and check that.  (Brian  
+Warner already explained that this is actually even easier for an  
+attacker in Tahoe, because he can then go from encryption key to  
+storage index and check that, but in this post I'm trying to address  
+the more general case.)
+
+2.  In the &quot;parallel attack&quot;, he doesn't need to figure out which  
+erasure-coded shares correspond to which files.  For example, suppose  
+he collects the first 32 bytes of many &quot;blocks&quot;, where a block is the  
+output of erasure coding after encryption.  Then he tries plausible  
+plaintexts, generates the encryption key, generates the first few  
+bytes of ciphertext, and then generates the first 32 bytes of erasure  
+coded share.  (The details vary here depending on the encryption and  
+erasure coding, but you see that for typical encryption and typical  
+erasure coding, this is much less work than you might think.)  Now he  
+checks if the 32 bytes that he generated appear in the set of 32-byte  
+block headers that he collected.  If he gets a match, then he has  
+learned the full contents of a file in the system, although he  
+doesn't know which file or which user.
+
+
+Regards,
+
+Zooko
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

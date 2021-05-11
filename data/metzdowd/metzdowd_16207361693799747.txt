@@ -1,0 +1,46 @@
+<PRE>Ali, Saqib wrote:
+&gt;<i> After thinking about this a bit, i have changed my views on this
+</I>&gt;<i> attack. i think it is quite easy to perform this attack. i myself have
+</I>&gt;<i> been in similar situations, where my personal computer could have been
+</I>&gt;<i> easily compromised by this attack
+</I>
+Usually when doing a demo of this attack, people change their minds
+quickly. I'm pleased to hear that in actual use cases you acknowledge an
+actual problem.
+
+&gt;<i> 
+</I>&gt;<i> However, the hardware based encryption solutions like (Seagate FDE)
+</I>&gt;<i> would easily deter this type of attacks, because in a Seagate FDE
+</I>&gt;<i> drive the decryption key never gets to the DRAM. The keys always
+</I>&gt;<i> remain in the Trusted ASIC on the drive.
+</I>&gt;<i> 
+</I>
+While riding the BART this morning, I ran into Nate Lawson (from
+Cryptography Research). He mentioned that he felt people would reply
+with such endorsements. I'd like to take the time to disagree with
+endorsing hardware products as a solution. Hardware solutions are going
+to be hard to attack in some circumstances. But they may in fact be
+worse without fully viewable (or Free) source software (for the
+firmware, the FPGA or the layout of the ASIC, etc.
+
+A great example of some so called &quot;unbreakable&quot; hardware disk crypto is
+this snakeoil:
+<A HREF="http://it.slashdot.org/article.pl?sid=08/02/19/0213237">http://it.slashdot.org/article.pl?sid=08/02/19/0213237</A>
+<A HREF="http://www.heise-online.co.uk/security/Enclosed-but-not-encrypted--/features/110136">http://www.heise-online.co.uk/security/Enclosed-but-not-encrypted--/features/110136</A>
+
+&quot;A new generation of inexpensive disk drive enclosures using hardware
+encryption and RFID keys do not fulfil the promises of their publicity.
+The adverts claim 128-bit AES hardware encryption, but they don't tell
+us how it is used.&quot;
+
+Without transparency, I'd rather stick with software. It has issues, we
+now know about another one.
+
+Regards,
+Jacob Appelbaum
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,34 @@
+<PRE>At 4:16 PM +0100 9/8/08, Darren J Moffat wrote:
+&gt;<i>Hopefully this is interesting enough to get forwarded on...
+</I>
+Ditto. :-)
+
+&gt;<i>Warnings aren't enough in this context [ whey already exists ] the 
+</I>&gt;<i>only thing that will work is stopping the page being seen - 
+</I>&gt;<i>replacing it with a clearly worded explanation with *no* way to pass 
+</I>&gt;<i>through and render the page (okay maybe with a debug build of the 
+</I>&gt;<i>browser but not in the shipped product).
+</I>
+It depends on how we think change can be achieved. Until now, people 
+designing pages using bad security practices balanced their laziness 
+with the fact that their content would be displayed anyway so 
+whatever. You are proposing moving to the other extreme. Given how 
+easy your solution would be for browser vendors to implement, we have 
+to assume that they have considered it and rejected it.
+
+A less extreme solution would be to make the warning the user sees on 
+a mixed-content page more insulting to the bank. &quot;This page contains 
+both encrypted and non-encrypted content and is inherently insecure. 
+The owner of this web site has clearly made a very poor security 
+decision in showing this page to you. It is likely that other pages 
+on this site also have similarly poor security. Knowing this, do you 
+wish to continue anyway?&quot;
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

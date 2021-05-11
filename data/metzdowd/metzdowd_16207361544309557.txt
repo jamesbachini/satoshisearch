@@ -1,0 +1,76 @@
+<PRE>
+I apologize for misstating your name, Mr. Simon.
+
+I thought I had answered your question. No one asked me to reply to 
+Ruptor, or to you -- and you chose the tone of this exchange.  As I 
+said, I would be shocked if anyone at RSA or EMC even knows about 
+this discussion.
+
+No one tells me what to post, or when to post. I've been doing this 
+for a long time, and while I have to honor common-sense guidelines 
+about secrets and upcoming products, I operate pretty independently 
+when it comes to what I publish on the Net.
+
+My words are my own -- but when it is on-topic, I try to offer RSA's 
+perspective, if I know it, along with the facts, as I know them. 
+Personally, I think discussions here, and elsewhere online, would be 
+a lot more constructive if vendors did not shun the Net's open 
+forums. I'm grateful that RSA gives me leave to talk publicly about 
+their products and technologies. If I sound prideful in discussing 
+those products, as Mr. Simon says, in some cases I've been working on 
+them for decades.
+
+I rarely initiate a discussion about RSA's products or 
+technology.  As in this case, I almost always respond to questions, 
+claims, or comments from others --- and the tone of these discussions 
+is almost always set by others. I generally just try to be helpful 
+and informative; relatively low-key.
+
+Given my history, of course, it is also true that the product 
+managers and others at RSA now expect me to contribute to any major 
+online discussion about the RSA products. (I sometimes I decide it is 
+counterproductive to do so.)  No one at RSA told me to get into the 
+SID800 debate, but they were certainly not surprised when I showed up 
+to ask about it.  As an internal consultant to RSA, I had some say in 
+defining the SID800's evolving product specs. Some of what I 
+suggested was adopted, some not.  Online, I tried to talk about the 
+goals of the SID800 product that was the result of the process, the 
+balance it struck between security and accessibility, and offered my 
+interpretation of how it fit within the market.
+
+Generally speaking, I don't expect to convert someone like Ruptor or 
+Thor  -- who start with a strong bias about a particular product -- 
+so I try to address myself to the much larger community that just 
+reads a forum like this. I don't think anyone gains points with 
+objective observers by being nasty or arrogant; I think you gain 
+credibility by being honestly informative and helpful. I try.
+
+Suerte,
+            _Vin
+
+   ---------------------- in  response to ----------------
+
+Thor Lancelot Simon &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tls at rek.tjls.com</A>&gt; wrote:
+&lt;snip&gt;
+
+&gt;<i>I'll try again: yes, you've identified yourself as a consultant to RSA.
+</I>&gt;<i>When you have posted here, both in this most recent thread and in other
+</I>&gt;<i>threads, in particular the SecurID 800 thread, has it been at your own
+</I>&gt;<i>behest, or that of RSA?
+</I>&gt;<i>
+</I>&gt;<i>In other words, when you post here defending RSA products against
+</I>&gt;<i>criticism, often with very emphatic language and in a way that belittles
+</I>&gt;<i>the person making the criticism rather than engaging with the actual
+</I>&gt;<i>technical critique, can we assume that it is not the case that RSA
+</I>&gt;<i>asked you to do so?  Or is it, in fact, sometimes the case that RSA
+</I>&gt;<i>asks you to post about their products here, and thus we should read your
+</I>&gt;<i>words as being RSA's words?
+</I>
+&lt;snip&gt;  
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

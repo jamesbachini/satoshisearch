@@ -1,0 +1,19 @@
+<PRE>&gt;<i> I think the really interesting question is what happens when you lose
+</I>&gt;<i> a FDE-ed hard drive.  Do you still need to publish the incident and
+</I>&gt;<i> contact potentially affected individuals?  If the answer is &quot;no&quot;, I'm
+</I>&gt;<i> sure this technology will be quickly adopted, independently of its
+</I>&gt;<i> actual implementation.
+</I>
+California Senate Bill CA1386 provides a &quot;Get Out of Jail Free&quot; Card
+if you are using &quot;reasonable&quot; means to protect the confidentiality of
+data. However you still have to proof it
+
+
+saqib
+<A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

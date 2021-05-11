@@ -1,0 +1,88 @@
+<PRE> &gt; ... discussion on CA/cert acceptance hurdles in the UI ....
+
+I am just wondering if we need a dose of PGP-style reality here.
+
+We're really seeing 3 or 4 levels of SSL/TLS happening here - and whilst
+they all appear use the same technology - the assurances, UI,  
+operational
+regimen, 'investment' and user expectations are way different:
+
+A)	Symbolic Locks (think bicycle locks in Amsterdam, or the little
+	plastic luggage locks people use) - just a bit of reassurance
+	that snooping is not trivial.
+
+	=&gt; so you'd just want your browser to indicate something about
+	SSL, just like you causally mention mime-type or port-number.
+
+B)	Some sort of assurance that you are talking to whom you think you
+	are talking to - and that such is the case next time round. And
+	in a grown up sort of way - but no need to go the investment
+	to have some paid minder reassuring you that there is no
+	monster under the bed. E.g. some privacy, say on an online forum.
+
+	=&gt; so in this case you'd probably want a near friction less
+	or perhaps even invisible initial persistent accept and
+	some sort of low-key warning if the cert or chain changed
+	over time beyond some range.
+
+C)	Fair assurance that you are talking with whom you think
+	you are talking to - is really that entity - and some
+	trust. E.g. the canonical credit card payment case.
+
+	=&gt; behaviour as we have today.
+
+D)	Proper TLS; where both each end of the connection has a well
+	defined idea of the reliability. E.g. the authenticate
+	properly with an x509 to a server with a cert against
+	an explicit list of CA's which are carefully selected
+	by the 'powers that be' and with full CRLs.
+
+Unfortunately there is currently no way for the server to indicate any
+of this; or the user to indicate what his or her expectations are.
+
+So my take is that it is pretty much impossible to get the UI to do
+the right thing - until it has this information* - and even then
+you have a fair chunk of education left to do :).
+
+But without it - the entire discussion is moot.
+
+As to technical options to accomplish this - it would not be hard
+to *_socialise_* a few small technical hints: i.e if it is a
+straight  self-signed server, certificate, with minimal data - assume
+A; case C is easy; and in case 'D' one would care enough to have
+a proper set-up.
+
+That just leaves case B - and distinguishing it from a failed C.  And
+that is hard. Especially as a messy B should not compromise a C.
+
+So I guess that needs some very clear marker from the site owner. Which
+could be as simple as insisting on things like an funky DN, a CN with
+the FQDN set to something like 'ad-hoc', a concept that a certificate
+with just a CN, but no other O, OU, L or C fields.
+
+And obviously one could try to boil the ocean; write a small RFC
+detailing some OID to put in the certificate for case A &amp; B :) - and
+include the fewlines of openssl in the document to make your own
+'B' certificate.
+
+Key would not be the technical aspect - but socialising it with enough
+webmaster folks** that there is enough of a mass to tempt them
+browser boys. And that is the going to be the very hard part :)
+
+
+Dw
+
+*)  I strongly think that the current plug-ins which check if a
+     certificates fingerprint is the same from multiple vantage
+     points around the internet is really quite orthogonal to this
+     issue. So no solace there.
+
+**) And capitalise on the fact that they need to recreate their  
+certificates
+     as most folks seem to stick to the default 365 days.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

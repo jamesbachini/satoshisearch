@@ -1,0 +1,51 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt;
+
+&gt;<i>It turns out that the counterfeit chips business is booming:
+</I>&gt;<i>
+</I>&gt;<i><A HREF="http://www.eetimes.com/rss/showArticle.jhtml?articleID=207401126">http://www.eetimes.com/rss/showArticle.jhtml?articleID=207401126</A>
+</I>
+If you look at the linked article you'll see the example they give of
+counterfeit chips is:
+
+&gt;<i>The fake chips are often rebranded parts claiming greater performance than
+</I>&gt;<i>they actually have to earn the sellers a fast profit.
+</I>
+which has been going on for about 15 years or so [0], back then they'd grind
+the tops off the ceramic heat spreader on P5s and print on a new speed rating,
+later when distributors got wise to this they went to laser-etched labels that
+were indistinguishable from the originals.
+
+The other example given in the article was chips for avionics/milspec use,
+which just means that they rebranded standard non-milspec parts as being for
+milspec use, and that scam predates CPU speed re-gradings by some time (in my
+device zoo I have some interesting not-really-milspec 7400s dating back to the
+early 80s, as well as other oddities like Apple-branded TTL and who knows what
+else).  Neither of these are really counterfeits, they're genuine chips
+remarked for use outside their intended use parameters.  In fact given the
+overclockability of many CPU binnings and the fact that manufacturers have in
+the past sold CPUs at lower speed grades than they tested for at manufacture
+in order to meet price points (in other words a CPU was tested for x MHz,
+branded for x - y MHz to meet a price point, and then had the branding ground
+off and was re-branded for its original binned speed by dodgy re-
+distributors), the result may be no loss at all [1].
+
+It'd be interesting to see some figures for genuine faked-from-whole-cloth
+devices vs. basic re-brandings/re-binnings/whatever of original products, I
+would imagine there's vastly more re-branding and re-binning going on than
+someone actually cloning (say) a CMI8788 and selling it as the real thing.
+
+Peter.
+
+[0] And probably for a long time before that, AFAIK it first became a major
+    issue when the high price differential between different speed binnings 
+    of P5s made it a lucrative business.  Making a non-milspec 7404 into a 
+    milspec part was a lot less profitable.
+[1] That one should keep the lawyers busy: If I sell a device de-rated purely
+    to meet a price point and someone else on-sells it at its original 
+    designed rating, with what would you prosecute them?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

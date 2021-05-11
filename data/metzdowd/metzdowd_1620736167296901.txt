@@ -1,0 +1,30 @@
+<PRE>
+From: Alex Alten &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A>&gt;
+
+Writing in support of CALEA capability to assist prosecuting botnet
+operators etc ...
+
+&gt;<i> Generally any standard encrypted protocols will probably eventually have
+</I>&gt;<i> to support some sort of CALEA capability.
+</I>
+So you havn't heard that the UK has closed down the &quot;National High-Tech Crime Unit&quot;
+and the current way to report computer crime is at your police station (good luck
+with that).  And there's not much sign of anyone else doing much better.
+Here's some recent news:
+    <A HREF="http://www.news.com/8301-10784_3-9848743-7.html">http://www.news.com/8301-10784_3-9848743-7.html</A>
+
+Leaving aside the points others have made about how you can't expect the
+cooperation of the crooks you are supposedly aiming for what staggers me
+is that after 9 years on this list you still think the government -
+any government - is looking out for your interests.
+
+
+Also why is this thread called &quot;Death of antivirus&quot;?  What examples can
+anyone give me in corporate or mass-market IT of people stopping doing
+something merely because it didn't work?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

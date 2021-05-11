@@ -1,0 +1,19 @@
+<PRE>At Wed, 14 May 2008 19:52:58 -0400,
+Steven M. Bellovin wrote:
+&gt;<i> 
+</I>&gt;<i> Given the published list of bad ssh keys due to the Debian mistake (see
+</I>&gt;<i> <A HREF="http://metasploit.com/users/hdm/tools/debian-openssl/">http://metasploit.com/users/hdm/tools/debian-openssl/</A>), should sshd be
+</I>&gt;<i> updated to contain a blacklist of those keys?  I suspect that a Bloom
+</I>&gt;<i> filter would be quite compact and efficient.
+</I>
+I've been having a similar thought. This also probably applies to SSL
+keys, given the rather lack attitude that most clients have about
+checking CRLS.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

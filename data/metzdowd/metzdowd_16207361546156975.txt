@@ -1,0 +1,82 @@
+<PRE>At 12:40 PM 9/2/2007, Paul Walker wrote:
+
+&gt;<i>I didn't realise the current SecurID tokens had been broken. A quick Google
+</I>&gt;<i>doesn't show anything, but I'm probably using the wrong terms. Do you have
+</I>&gt;<i>references for this that I could have a look at?
+</I>
+I'd also be interested in any evidence that the SecurID has been cracked.
+
+Any credible report would have the immediate attention of tens of 
+thousands of RSA installations. Not to speak of EMC/RSA. itself, for 
+which I have been a consultant for many years.
+
+AFAIK, there has never been a viable direct attack on a SecurID 
+hardware token -- except perhaps for DPA attacks against the old 
+64-bit SecurID tokens. DPA and similar side-channel attacks are a 
+generic threat to OTP tokens (as well as to any other ciphering 
+microchip), but the 128-bit AES SecurID that RSA introduced five 
+years ago to replace the classic 64-bit SecurID was also specially 
+designed to be DPA-resistant.
+
+(There were also some fascinating, if wholly theoretical, statistical 
+attacks developed against to old SecurID by Biryukov, Lano, and 
+Preneel 
+&lt;&lt;<A HREF="https://www.cosic.esat.kuleuven.ac.be/pressReleases/ashf.pdf">https://www.cosic.esat.kuleuven.ac.be/pressReleases/ashf.pdf</A>&gt;<A HREF="https://www.cosic.esat.kuleuven.ac.be/pressReleases/ashf.pdf">https://www.cosic.esat.kuleuven.ac.be/pressReleases/ashf.pdf</A>&gt; 
+in 2003, and  extended by Contini and Yin in '04 
+&lt;&lt;<A HREF="http://eprint.iacr.org/2003/205/">http://eprint.iacr.org/2003/205/</A>&gt;<A HREF="http://eprint.iacr.org/2003/205/">http://eprint.iacr.org/2003/205/</A>&gt; 
+-- but neither team was aware, when they wrote their papers, that RSA 
+was already filtering the random seeds used in the 64-bit tokens to 
+reduce the probability of the collisions their attacks planned to exploit.)
+
+Today, the AES SecurID is pretty much the standard SecurID token, 
+although market demand has resulted in an increasingly broad array of 
+SecurID &quot;soft tokens:&quot; token-emulation applications for PDAs, 
+beepers, mobile phones, memory sticks, and PCs -- all of which have 
+the relative strengths and weaknesses of software crypto apps running 
+on potentially-accessible platforms.
+
+In real-world implementations, SecurID installations have gotten more 
+vastly secure as VPNs and other end-to-end encryption has been used 
+to secure network links, but potential new threats have arisen 
+(particularly in the nascent mass market) with MitM attacks and new 
+malware like targeted trojans, which could possibly take over a 
+user's PC (and snatch the user PIN and an OTP for immediate 
+exploitation.) Such attacks have been reported, but -- like, say, 
+wiretapping -- they seem to be rare, cumbersome, and tend to draw 
+quick responses from LEAs.
+
+If and when the market feels the threat deserves buttressing OTP 
+tokens with local client software for additional security, the IETF 
+has published an RFC on one option: RSA's EAP-POTP, the EAP protected 
+one time password protocol: &lt;<A HREF="http://tinyurl.com/3a3uo8">http://tinyurl.com/3a3uo8</A>&gt;. EAP-POTP is 
+one of the One-Time Password Specifications (OTPS), a series of 
+protocols, templates, and guidelines by which RSA and its many 
+partners have sought to standardize, for developers and integrators, 
+the use of OTPs in a wide variety of application environments to make 
+their use more trustworthy, predictable, and secure.
+
+No security system is perfectly secure, of course, and AES may have 
+been cracked in some breakthrough, but I doubt it. Unsupported claims 
+that the SecurID is &quot;snake old&quot; seem rash, not to say unprofessional. 
+In its small but useful market niche, the simple SecurID, 
+complementing other security measures, has significantly enhanced the 
+security of thousands of IT and network environments for 20 years -- 
+and will probably continue to do so, until (and perhaps only if) PKI 
+preempts its function with an alternative personal authentication token.
+
+Suerte,
+             _Vin
+
+----- in reference to --------------------
+
+&gt;<i>On Sat, Sep 01, 2007 at 02:39:49PM +0200, Marcos el Ruptor wrote:
+</I>&gt;<i>
+</I>&gt;<i> &gt; You can start with RSA SecurID, Texas Instruments DST40, Microchip
+</I>&gt;<i> &gt; Technologies KeeLoq, Philips/NXP Hitag2, WEP RC4, Bluetooth E0, GSM A5...
+</I>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

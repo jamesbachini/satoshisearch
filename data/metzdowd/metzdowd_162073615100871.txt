@@ -1,0 +1,10 @@
+<PRE><A HREF="http://www.radaronline.com/from-the-magazine/2007/08/cryptome_john_young_radar_anthony_haden_guest_1.php">http://www.radaronline.com/from-the-magazine/2007/08/cryptome_john_young_radar_anthony_haden_guest_1.php</A>
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

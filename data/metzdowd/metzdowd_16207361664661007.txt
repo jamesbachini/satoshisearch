@@ -1,0 +1,25 @@
+<PRE>On Thu, 31 Jan 2008 03:04, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pg at futureware.at</A> said:
+
+&gt;<i> If you want a &quot;public&quot; example of client certificate usage:
+</I>&gt;<i> <A HREF="https://secure.cacert.org/">https://secure.cacert.org/</A>
+</I>&gt;<i> (You need a (free) client certificate from www.CAcert.org to be able to access 
+</I>
+Which has the problem that you may use any certifcate you ever created
+wit cacert.org to log in.  Even certificates created for demo purposes
+with published private keys.  That was the case up until a year ago; I
+don't know whether this has been changed.  I was a bit surprised about
+such a security flaw.
+
+
+Salam-Shalom,
+
+   Werner
+
+-- 
+Die Gedanken sind frei.  Auschnahme regelt ein Bundeschgesetz.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

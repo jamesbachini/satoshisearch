@@ -1,0 +1,40 @@
+<PRE>We had many discussions about this 15 years ago....
+
+You usually have predictable plaintext.  A cipher that isn't strong enough
+against a chosen/known plaintext attack has too many other protocol
+problems to worry about mere padding!
+
+For IPsec, we originally specified random padding with 1 trailing byte of
+predictable trailing plaintext (the amount of padding). Together with the
+(encapsulated) protocol number, that actually made 2 bytes of predictable
+trailing plaintext.
+
+Due to my work in other groups, everything that I've specified afterward
+uses &quot;self-describing-padding&quot;.  That is, the last byte indicates how much
+padding (just as before), but each byte of the padding indicates its
+position in the padding sequence.
+
+0 ::= never used.
+1 ::= 1 byte of padding (itself)
+1 2 ::= 2 bytes of padding
+...
+
+The original impetus was hardware manufacturers of in-line cipher devices,
+that don't usually have a good source of randomness.
+
+Also, this provides a modest amount of integrity protection.  After
+decryption, the trailing padding must be the correct sequence.  Of course,
+this should be in addition to integrity protection over the whole packet!
+
+Additionally, this avoids a possible &quot;covert channel&quot; for compromised data,
+whether by accident (revealing a poor RNG or the current state of the RNG),
+or trojan process communication.  Note that I've said &quot;avoids&quot;, as varying
+the amount of padding would give a lower bandwidth channel for the latter.
+
+When designing, it's always best to defend in depth.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,14 @@
+<PRE>&gt;<i>
+</I>&gt;<i> May I ask what you're trying to accomplish?
+</I>&gt;<i>
+</I>I assume &lt;<A HREF="http://code.google.com/p/obstcp/">http://code.google.com/p/obstcp/</A>&gt; which uses the TCP
+connection setup to do a key agreement. Slick but apparently
+susceptible to DoS.
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

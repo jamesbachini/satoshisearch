@@ -1,0 +1,59 @@
+<PRE>Hi,
+
+&gt;<i> QUESTION: Does anybody knows about the existence of a
+</I>&gt;<i> security research in area of grading the easiness to
+</I>&gt;<i> steel biometric data.
+</I>
+There are several relevant threats:
+* Accidental leaking the biometric data (colour-photos for face, fingerprints 
+on glasses for fingers, public documents for human signature)
+* Intentional stealing of biometric data (cellphone cameras, hidden 
+cameras, ...)
+
+
+&gt;<i> For example, I guess that stealing information of
+</I>&gt;<i> someone's &quot;face&quot; is easier than stealing information
+</I>&gt;<i> about someone's &quot;fingerprints&quot;,
+</I>
+Depends.
+Stealing fingerprints is easy if you hand the target person a glass of water.
+With &quot;face&quot; you have to differentiate between the different kinds of faces.
+Taking colour photos of faces is easy. Taking infrared photos of faces, or 
+taking 3D scans of faces, ... is much harder.
+
+&gt;<i> but stealing information about someone's &quot;retina&quot;
+</I>&gt;<i> would be much harder.
+</I>
+Yes, stealing retina is harder. (It's even harder in the normal usage ...)
+
+&gt;<i> Such a scale can be useful in the design of secure
+</I>&gt;<i> protocols and secured information systems.
+</I>
+Yes. Choosing the right biometrics for the right application, implementing it 
+correctly and educating/training the users properly can be challenging.
+
+But in the end, you can steal any biometric data if you really want to.
+(Take a look at the film Gattaca to see how this can be done in practice. 
+I didn't noticed any technically really unrealistic things in the film 
+Gattaca.)
+
+Another important question is whether you can apply a faked/copied biometric 
+at a certain place. It could be difficult to mount an attack with a full face 
+mask at a guarded entrypoint. But applying fake fingerprints is far less 
+noticable for guards.
+(It might be easy to steal the face, but you can't apply it due to all entries 
+being guarded)
+
+Tamper evidence, Tamper protection, Tamper proof, Tamper resistance ...
+
+As usual, it depends on your threat-models, on your environment, on your 
+resources, on your enemies, ...
+
+Best regards,
+Philipp G&#252;hring
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

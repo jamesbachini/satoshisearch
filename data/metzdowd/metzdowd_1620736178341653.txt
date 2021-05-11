@@ -1,0 +1,30 @@
+<PRE>On Wed, May 28, 2008 at 10:34:53AM +0200, Philipp G&#252;hring wrote:
+&gt;<i> &gt; it is imperative that wasteful reads of this pseudo-device be
+</I>&gt;<i> &gt; avoided at all costs. 
+</I>&gt;<i> 
+</I>&gt;<i> Yes. Still, some people are using fopen/fread to access
+</I>&gt;<i> /dev/random, which does pre-fetching on most implementations I
+</I>&gt;<i> saw, so using open/read is preferred for using /dev/random.
+</I>&gt;<i> 
+</I>&gt;<i> Implementations can be rather easily checked with strace.
+</I>
+Oh, agreed wholeheartedly. I simply meant that *wasteful*
+(gratuitous) reads of /dev/random should be avoided. Justifiable,
+conservative reads of /dev/random are, of course, why it exists in
+the first place!
+
+And fopen/fread is definitely a bad idea in this case for the
+reasons you point out. In general, anything which prefetches
+potentially excess data in a read from /dev/random is destructive to
+the entropy pool.
+-- 
+{ IRL(Jeremy_Stanley); PGP(9E8DFF2E4F5995F8FEADDC5829ABF7441FB84657);
+SMTP(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>); IRC(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at irc.yuggoth.org</A>#ccl); ICQ(114362511);
+AIM(dreadazathoth); YAHOO(crawlingchaoslabs); FINGER(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>);
+MUD(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at katarsis.mudpy.org</A>:6669); WWW(<A HREF="http://fungi.yuggoth.org/">http://fungi.yuggoth.org/</A>); }
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

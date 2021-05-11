@@ -1,0 +1,39 @@
+<PRE>On 30 January 2008 17:01, Jim Cheesman wrote:
+
+&gt;<i> James A. Donald:
+</I>&gt;&gt;&gt;&gt;<i> SSL is layered on top of TCP, and then one layers
+</I>&gt;&gt;&gt;&gt;<i> one's actual protocol on top of SSL, with the result
+</I>&gt;&gt;&gt;&gt;<i> that a transaction involves a painfully large number
+</I>&gt;&gt;&gt;&gt;<i> of round trips.
+</I>&gt;<i> 
+</I>&gt;<i> Richard Salz wrote:
+</I>&gt;<i>  &gt; Perhaps theoretically painful, but in practice this is
+</I>&gt;<i>  &gt; not the case; commerce on the web is the
+</I>&gt;<i>  &gt; counter-example.
+</I>&gt;<i> 
+</I>&gt;<i> James A. Donald:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> The delay is often humanly perceptible.  If humanly
+</I>&gt;&gt;<i> perceptible, too much.
+</I>&gt;<i> 
+</I>&gt;<i> I respectfully disagree - I'd argue that a short wait is actually more
+</I>&gt;<i> reassuring to the average user (Hey! The System's checking me out!) than an
+</I>&gt;<i> instantaneous connection would be.
+</I>
+
+  I also disagree.  It's not like anyone says to themselves &quot;Hey, this website
+is taking me several seconds to access - I'll spend a couple of hours
+physically going to the shop instead&quot;.  It's economics again: what amount of
+time or money constitutes &quot;too much&quot; depends what the alternative choices are.
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

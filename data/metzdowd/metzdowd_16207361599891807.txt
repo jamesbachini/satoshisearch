@@ -1,0 +1,72 @@
+<PRE>Sometimes the side-effects are as significant as the direct effects....
+
+ 							-- Jerry
+
+Story from BBC NEWS: 
+<A HREF="http://news.bbc.co.uk/go/pr/fr/-/2/hi/technology/7091206.stm">http://news.bbc.co.uk/go/pr/fr/-/2/hi/technology/7091206.stm</A>
+
+Fears over online banking checks 
+By Mark Ward 
+Technology Correspondent, BBC News website
+
+Complicated security checks could be undermining confidence in online
+banking, warn experts.  Security extras such as number fobs, card
+readers and password checks might make consumers more wary of net bank
+websites, they fear.  The warning comes as research shows how phishing
+gangs are targeting attempts to grab customer login details.  But the UK
+body overseeing net banking says figures show criminals are getting away
+with less from online accounts.  Security check
+
+In a bid to beat the bad guys many banks have added extra security
+checks to the login name and password typically used to get access to an
+account.
+
+Some, such as Lloyds, have trialled number generating key fobs and
+Barclays is trialling chip and pin card readers. Others have tried
+systems that check a customers PC and then ask that person to select
+which image they chose from a set they were shown previously.
+
+But, said Garry Sidaway from ID and authentication firm Tricipher, all
+these checks could be making consumer more nervous about using online
+banking.
+
+&quot;The banks have to make this channel secure,&quot; he said, &quot;but there is
+crumbling confidence in it.&quot;
+
+Andrew Moloney, financial services market director for RSA Security,
+said banks were well aware that their efforts to shore up security
+around online banking could have a downside.  &quot;It registers as a
+concern,&quot; he said, &quot;there could be too much security and there's a
+danger of over-selling a new technology.&quot;  &quot;This is not just about
+combating fraud,&quot; he added. &quot;It's about customer retention rates, user
+experience and customer satisfaction.&quot;
+
+The misgivings about beefed up security around online banking come as
+the UK government's Get Safe Online campaign issues a survey which shows
+the risks people are taking with login details.  These lax practices
+could prove costly as cyber fraudsters gradually shift their attention
+to Europe following moves in the US to combat phishing.  In late 2005
+the US Federal Financial Institutions Examination Council (FFIEC) issued
+guidelines which forced banks to do more to protect online accounts.
+Phishing statistics show a rapid move by the fraudsters to European
+banks and, said Mr Moloney, to smaller European banks using less
+protection.  Lists of phishing targets gathered by security companies
+show a huge shift away from big bank brands such as Citibank and Bank of
+America to Sparkasse, VolksBank and many others.  A spokeswoman for the
+Association for Payment and Clearing Services (Apacs) which oversees
+online banking said its figures showed that the message about safe
+banking was getting through.  Statistics released in October indicated
+that online banking fraud (including phishing) for the first six months
+of 2007 was down 67% over the previous year.  During the same time
+period the number of phishing attacks rose by 42%.  &quot;The reason we are
+seeing that fall, despite the increase in phishing attacks, is because
+consumers are becoming more aware of how to protect themselves,&quot; said
+the spokeswoman.  &quot;But,&quot; she added, &quot;what we are still seeing happening
+is people falling foul of phishing attacks.&quot;  The spokeswoman urged
+people to be careful with login details to bank accounts and exercise
+caution when using e-mail and the web.
+
+Published: 2007/11/13 09:33:59 GMT
+
+&#169; BBC MMVII
+</PRE>

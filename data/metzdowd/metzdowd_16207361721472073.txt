@@ -1,0 +1,33 @@
+<PRE>On Sat, Feb 23, 2008 at 05:09:29AM +1300, Peter Gutmann wrote:
+&gt;<i> There were commercial products that did this available some years
+</I>&gt;<i> ago, they hooked into the Windows auth using a custom GINA DLL
+</I>&gt;<i> (GINA = the Windows extensible login/authentication mechanism,
+</I>&gt;<i> think PAM for Windows) and locked the machine when you moved away
+</I>&gt;<i> from it.  They failed in the marketplace, there was no interest in
+</I>&gt;<i> them from users (or at least several of them failed, some may
+</I>&gt;<i> still be around).
+</I>[...]
+
+Saw an interesting free software example of this the other day (not
+for Windows, of course) using loss of signal from a particular
+bluetooth device (mobile phone, et cetera) to lock your machine or
+run other designated commands:
+
+   <A HREF="http://sourceforge.net/projects/blueproximity/">http://sourceforge.net/projects/blueproximity/</A>
+
+It also supports *unlocking* on approach, but that's a bad idea
+unless they can start providing a client to run on the &quot;token&quot;
+device (maybe using asymmetric key crypto to sign and verify a
+challenge string instead of just looking for the device's BT
+address).
+-- 
+{ IRL(Jeremy_Stanley); PGP(9E8DFF2E4F5995F8FEADDC5829ABF7441FB84657);
+SMTP(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>); IRC(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at irc.yuggoth.org</A>#ccl); ICQ(114362511);
+AIM(dreadazathoth); YAHOO(crawlingchaoslabs); FINGER(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at yuggoth.org</A>);
+MUD(<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fungi at katarsis.mudpy.org</A>:6669); WWW(<A HREF="http://fungi.yuggoth.org/">http://fungi.yuggoth.org/</A>); }
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

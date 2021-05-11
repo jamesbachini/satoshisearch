@@ -1,0 +1,19 @@
+<PRE>
+Quoting:
+
+    Cryptography Research Inc. (CRI), a San Francisco company, is
+    developing chip technology aimed at helping printer manufacturers
+    protect this primary source of profit. The company's chips use
+    cryptography designed to make it harder for printers to use
+    off-brand and counterfeit cartridges.
+
+<A HREF="http://news.com.com/Can+cryptography+prevent+printer-ink+piracy/2100-1041_3-6193424.html?tag=news.1">http://news.com.com/Can+cryptography+prevent+printer-ink+piracy/2100-1041_3-6193424.html?tag=news.1</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

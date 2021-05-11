@@ -1,0 +1,31 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+&gt;&gt;<i> AFAIK, the only advantage of ECC is that the keys are shorter.
+</I>&gt;&gt;<i> The disadvantage is that it isn't as well studied.
+</I>
+Nate Lawson wrote:
+&gt;<i> Again, this is well covered.  The reason is the fundamental difference
+</I>&gt;<i> in the performance of the best-known attacks (GNFS vs. Pollard's rho).
+</I>&gt;<i> <A HREF="http://www.vaf.sk/download/keysize.pdf">http://www.vaf.sk/download/keysize.pdf</A>
+</I>
+At the timpe that <A HREF="http://www.vaf.sk/download/keysize.pdf">http://www.vaf.sk/download/keysize.pdf</A> was published, 
+1024 bit asymmetric encryption over integers was comparable in strength 
+to 80 bit symmetric encryption, and elliptic curve encryption over a 160 
+bit fields.
+
+At that time integers based asymmetric encryption took about four times 
+as long to compute as the comparable strength elliptic curve asymmetric 
+encryption.
+
+Since then, integer encryption has weakened further relative to elliptic 
+curve encryption, due to advances in factorization and the discrete log 
+problem, increasing the advantage of elliptic curves.
+
+With widespread failure to use encryption due to the computational costs 
+a factor of more than four is not to be sneezed at.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

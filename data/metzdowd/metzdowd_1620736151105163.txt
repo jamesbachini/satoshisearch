@@ -1,0 +1,49 @@
+<PRE>At 04:02 AM 8/17/2007 -0700, =?UTF-8?Q?Ivan_Krsti=C4=87?= wrote:
+&gt;<i>On Aug 16, 2007, at 8:30 AM, Ali, Saqib wrote:
+</I>&gt;&gt;<i>The other problem is that it lacks any centralized management. If you
+</I>&gt;&gt;<i>are letting TPM manage your Bitlocker keys you still need a TPM
+</I>&gt;&gt;<i>management suite with key backup/restore/transfer/migrate capabilities
+</I>&gt;&gt;<i>in case your computer goes bad.
+</I>&gt;<i>
+</I>&gt;<i>How so? If your computer goes bad, you need a *backup*. That's
+</I>&gt;<i>entirely orthogonal to the drive encryption problem. Bitlocker uses
+</I>&gt;<i>the TPM to provide assurance that your drive -- really, volume -- is
+</I>&gt;<i>locked to your computer, and that the early boot environment hasn't
+</I>&gt;<i>been messed with. When either check fails, you use the BitLocker
+</I>&gt;<i>recovery password (either on a USB stick or entered manually) to
+</I>&gt;<i>recover your data. This holds in the event that you take your drive
+</I>&gt;<i>out and stick it in a different machine. In other words, the TPM is
+</I>&gt;<i>not a single point of failure, so I don't understand why you think
+</I>&gt;<i>you care about TPM backup/restore/transfer.
+</I>
+It depends on your requirements.  For a large numbers of computers
+owned by a corporation/organization centralized key management
+makes a lot of sense.  For a single user with a privately purchased
+computer then the recovery password makes more sense.
+
+&gt;&gt;<i>The third problem is that it is software based encryption, which uses
+</I>&gt;&gt;<i>the main CPU to perform the encryption.
+</I>&gt;<i>
+</I>&gt;<i>Security is never free, but in 2007, we can afford the cycles. What's
+</I>&gt;<i>a better use for them? Drawing semi-transparent stained glass window
+</I>&gt;<i>borders?
+</I>
+Agreed, for most requirements.  Sometimes one may need to keep keys
+in trusted hardware only.  The only real fly-in-the-ointment is that current
+hash algorithms (SHA-1, SHA-2, etc.) don't scale across multiple CPU
+cores (assuming you need integrity along with your privacy).
+
+- Alex
+
+--
+
+Alex Alten
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A>
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

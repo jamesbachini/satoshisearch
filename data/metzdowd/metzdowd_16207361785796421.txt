@@ -1,0 +1,130 @@
+<PRE>Dear all,
+
+	The submission server for ACM DRM 2008 is open (submission
+deadline: May 23).  Details follow.
+
+	Best regards,
+	  -Greg and Marc.
+
+----------------------------------------------------------------------
+Call for Papers
+
+		       EIGHTH ACM DRM WORKSHOP
+      (Co-located with ACM-CCS 2008, Alexandria, Virginia, USA)
+
+
+		   <A HREF="http://www.ece.unm.edu/DRM2008/">http://www.ece.unm.edu/DRM2008/</A>
+
+
+Submission deadline: May 23, 2008
+Workshop: October 27, 2008 - Alexandria, Virginia, USA
+----------------------------------------------------------------------
+
+The ACM Workshop on Digital Rights Management is an international forum
+that serves as an interdisplinary bridge between areas that can be
+applied to solving the problem of Intellectual Property protection of
+digital content.  These include: cryptography, software and computer
+systems design, trusted computing, information and signal processing,
+intellectual property law, policy-making, as well as business analysis
+and economics. Its purpose is to bring together researchers from the
+above fields for a full day of formal talks and informal discussions,
+covering new results that will spur new investigations regarding the
+foundations and practices of DRM.
+
+This year's workshop, the eighth in the series, continues this
+tradition. As in the previous editions, it is sponsored by ACM SIGSAC
+and is held in conjunction with the ACM Conference in Computer and
+Communications Security (CCS).
+
+Topics of interest include but are not limited to:
+* anonymous publishing, privacy and DRM
+* architectures for DRM systems
+* business models for online content distribution, risk management
+* copyright-law issues, including but not limited to fair use
+* digital goods and online multiplayer games
+* digital policy management
+* DRM and consumer rights, labeling and competition law
+* implementations and case studies
+* information theory and  combinatorics, including marking assumptions
+  and related codes
+* robust identification of digital content
+* security  issues,  including   but  not  limited  to  authorization,
+  encryption, tamper resistance, and watermarking
+* regulatory authority for DRM, interoperability
+* supporting  cryptographic technology  including but  not  limited to
+  traitor tracing, broadcast encryption, obfuscation
+* threat and vulnerability assessment
+* trusted   computing,   attestation,   hardware  support   for   DRM,
+  side-channels
+* usability aspects of DRM systems
+* web services related to DRM systems
+
+
+IMPORTANT DATES
+
+Submission deadline: May 23, 2008
+Notification of acceptance: July 10, 2008 Camera-ready version: August
+8, 2008
+Workshop: October 27, 2008
+
+
+INSTRUCTIONS FOR AUTHORS
+
+Submissions must not overlap with papers that have been published or
+that are simultaneously submitted to a journal or a conference with
+proceedings.  Submissions should be at most 15 pages excluding the
+bibliography and well- marked appendices, using at least 11-point font
+and reasonable margins.  Committee members are not required to read the
+appendices, and thus submissions should be intelligible without them.
+Each submission should start with the title, abstract, and names and
+contact information of authors.  All submissions will be handled
+electronically.  For submission instructions and further information
+please point your web-browser to:
+
+		   <A HREF="http://www.ece.unm.edu/DRM2008/">http://www.ece.unm.edu/DRM2008/</A>
+
+
+PROCEEDINGS
+
+Accepted papers will be published in an archival proceedings volume by
+ACM Press and will be distributed at the time of the workshop.
+
+
+ORGANIZATION
+
+Program Chairs
+- Gregory Heileman (U. New Mexico, USA)
+- Marc Joye (Thomson, France)
+
+Program Committee
+- Olivier Billet (Orange Labs, France)
+- Xavier Boyen (Voltage, USA)
+- Alain Durand (Thomson, France)
+- Rudiger Grimm (U. Koblenz, Germany)
+- Bill Horne (Hewlett-Packard, USA)
+- Hongxia Jin (IBM, USA)
+- Aggelos Kiayias (U. Connecticut, USA)
+- David Kravitz (Motorola Labs, USA)
+- Brian LaMacchia (Microsoft, USA)
+- William Lehr (MIT, USA)
+- Nasir Memon (Polytechnic U., USA)
+- Fernando Perez-Gonzalez (U. Vigo, Spain)
+- Rei Safavi-Naini (U. Calgary, Canada)
+- Bin Zhu (Microsoft, China)
+
+General Chair
+- Peng Ning (NCSU, USA)
+  (also General chair for ACM-CCS 2008)
+
+Steering Committee
+- Joan Feigenbaum (Yale U., USA)
+- Aggelos Kiayias (U. Connecticut, USA)
+- Rei Safavi-Naini (U. Calgary, Canada)
+- Tomas Sander (Hewlett-Packard, USA)
+- Moti Yung (Google &amp; Columbia U., USA)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

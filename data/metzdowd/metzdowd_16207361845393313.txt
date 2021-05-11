@@ -1,0 +1,104 @@
+<PRE>Florian Weimer writes:
+&gt;<i> I've got a function f : S -&gt; X x S where S = (Z/2Z)**96 and
+</I>&gt;<i> X = (Z/2Z)**32.  Suppose that s_0 is fixed and (x_i, s_i) = f(s_{i-1}).
+</I>&gt;<i> (f implements a PRNG.  The s_i are subsequent internal states and the
+</I>&gt;<i> x_i are results.)
+</I>&gt;<i>
+</I>&gt;<i> Now f happens to be linear.  I know the values of x_i, x_{i+1}, ...,
+</I>&gt;<i> x_{i+k} modulo N, [where N = 28233].
+</I>&gt;<i> Is it possible to recover s_i with reasonable effort (better than brute
+</I>&gt;<i> force, and k should be in the hundreds, not thousands)?
+</I>
+Yes.  I will show two attacks.  The results: Attack #1 is a
+straightforward improvement to exhaustive search, and takes 2^52 work (~
+10-20 CPU-years?).  Attack #2 is a more sophisticated meet-in-the-middle
+attack, and takes 2^37 work and 2^35 space; the best instantiation I've
+found looks like it would involve 16GB of RAM and a few days or weeks
+of computation.  Both attacks recover the entire state of the PRNG,
+given only a handful of known outputs.  It's possible there may be
+other, better attacks.
+
+My conclusion is that this PRNG is not cryptographically strong and
+should not be used anywhere that you may face an adversary who is
+motivated to break the PRNG.  In short, this PRNG is broken.
+
+
+Attack #1: Given x mod N, there are only about 2^32/28233 = 2^17.2
+possibilities for x, and it's easy to enumerate them all.  Suppose we
+know x_1 mod N, x_2 mod N, ..., x_7 mod N.  Enumerate all
+(2^17.2)^3 = 2^51.6 possibilities for x_1, x_2, and x_3.  For each
+such possibility, you know 96 bits of output from a linear system,
+and there are 96 unknowns, so you can solve for s_0.  Given s_0,
+you can compute the predicted value of x_4, .., x_7 and compare them
+to the observed values of x_4 mod N, etc.  If everything matches,
+you've found the original seed s_0 and broken the PRNG.
+
+This requires trying 2^51.6 possibilities, so it's a bit less than
+2^51.6 work.  That's already a small enough number that the system
+is not cryptographically secure.
+
+This can be sped up slightly by noting that x_4 is a linear function
+of x_1,x_2,x_3.  We can precompute the form of that linear function
+and express it as a 32x96 matrix.  The best approach I can see will take
+something like 500 CPU cycles to compute x_4 from x_1,..,x_3, so I'd
+expect the total number of CPU cycles needed at something like 2^60.6
+or so.  On a 4GHz machine, that's like 13 CPU-years.  Of course it is
+trivially parallelizable.
+
+
+Attack #2: If we were given inferred values of x_1, x_2, x_3, and x_4,
+we could check them for consistency, since they represent 128
+equations in 96 unknowns.  In particular, we can find a linear function
+g from 128 bits to 32 bits such that g(x_1,x_2,x_3,x_4) = 0 if
+x_1,..,x_4 are consistent with having been produced by this PRNG.
+In fact, this can be broken down further, so that if x_1,..,x_4
+are consistent, they will satisfy this equation:
+  h(x_1,x_2) = h'(x_3,x_4).
+Call this the check equation.  Here h,h' are linear functions from 64
+bits to 32 bits, so if x_1,..,x_4 are not consistent, they have only a
+2^-32 chance of satisfying this check equation.
+
+Suppose we are given x_1 mod N, .., x_8 mod N.  We'll enumerate all
+2^34.4 possibilities for x_1,x_2, compute h(x_1,x_2) for each, and
+store them in a hash table or sorted list keyed on the 32-bit value
+of h(x_1,x_2).  Once that table is built, we'll enumerate all 2^34.4
+possibilities for x_3,x_4, compute h'(x_3,x_4) for each, and find
+all occurrences in the table where
+  h(x_1,x_2) = h'(x_3,x_4).
+On average, we expect to find about 2^34.4/2^32 = 2^2.4 matches.
+For each such match, compute the predicted value of x_5 as a function
+of x_1,..,x_4 and see whether it agrees with the observed value of
+x_5 mod N, etc., to weed out false matches.  In total, you'll need
+to explore 2^34.4 + 2^34.4*2^2.4 ~= 2^37 possibilities, and you'll
+need space for 2^34.4 entries in the table.
+
+We can store the table as a sorted list.  This list will take up about
+1600 GB, and you could buy enough hard disks for that at ~ $2000, say.
+You can add an index in memory that tells you, for each value of
+h(x_1,x_2), which block or sector on disk those entries of the list is
+found at.  You'll need to make 2^34.4 random seeks into this hard disk
+array.  With good disk head scheduling algorithms you might be able to
+get the seek time down a bit, but even optimistically we're probably
+still talking about a year of computation.
+
+Fortunately, we can trade time for space.  With 16GB of RAM, we can
+store 1/128th of the list: namely, all values where the low 7 bits
+of h(x_1,x_2) are some fixed value V.  We cycle through all choices
+of V, repeating the attack once for each V.  With this choice, I expect
+the amount of time spent waiting for RAM to be comparable to the CPU
+cost of the attack.  For each V, we have to evaluate a linear function
+2^35.4 times.  It looks to me like this will take a few CPU-days.
+
+
+Disclaimers: I have not checked any of the above analysis.  I have
+not implemented it to test whether these attacks actually work.  Even
+if the attacks do work, my estimates of the resources needed for the
+attacks are a very rough estimate and should be taken with a large
+grain of salt.  I didn't have time to do anything more than a cursory
+analysis, so if there are errors in the above, please forgive me.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

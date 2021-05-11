@@ -1,0 +1,44 @@
+<PRE>Joseph Ashwood writes:
+&gt;<i> From: &quot;&quot;Hal Finney&quot;&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hal at finney.org</A>&gt;
+</I>&gt;<i> &gt; Joseph Ashwood writes, regarding unauthenticated DH:
+</I>&gt;<i> &gt;&gt; if b uses the same private key
+</I>&gt;<i> &gt;&gt; to generate multiple yb the value of b will slowly leak.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; I'm not familiar with this last claim, that the value of b's private key
+</I>&gt;<i> &gt; (presuming that is what you mean) would slowly leak if it were reused for
+</I>&gt;<i> &gt; many DH exchanges. Can you explain what you mean? Are you talking about
+</I>&gt;<i> &gt; Lim&amp;Lee style attacks where the recipient does not check the parameters
+</I>&gt;<i> &gt; for validity? In that case I would say the private exponent would leak
+</I>&gt;<i> &gt; quickly rather than slowly. But if the parameters are checked, I don't
+</I>&gt;<i> &gt; see how that would leak a reused exponent.
+</I>&gt;<i>
+</I>&gt;<i> I am not immediately aware of any known attacks that have been published 
+</I>&gt;<i> about it, but it is fairly obvious that Eve has more information about the 
+</I>&gt;<i> private key by having a second key set with the same unknown. With only a 
+</I>&gt;<i> single pair Eve's information set is:
+</I>&gt;<i> g_1,p_1,q_1,y_1 where y_1 = g_1^x mod p_1
+</I>&gt;<i>
+</I>&gt;<i> By adding the second key set Eve now has
+</I>&gt;<i> g_1,p_1,q_1,y_1 where y_1 = g_1^x mod p_1
+</I>&gt;<i> g_2,p_2,q_2,y_2 where y_2 = g_2^x mod p_2
+</I>&gt;<i>
+</I>&gt;<i> This is obviously additional information, and with addition key set _i 
+</I>&gt;<i> eventually Eve has the information to guess x with improves probability.
+</I>
+That's hardly grounds for saying that the value of the secret &quot;will
+slowly leak&quot;. You have given no reason to believe that this information
+will be of any practical value to Eve.
+
+After all, exactly the same observation might be made about a digital
+signature, that each signature gives additional information about the
+private exponent.  Yet no one would say that issuing signatures causes
+your private key to slowly leak, or caution against issuing signatures
+because of this consideration!
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

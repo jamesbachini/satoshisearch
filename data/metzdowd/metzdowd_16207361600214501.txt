@@ -1,0 +1,26 @@
+<PRE>
+
+Begin forwarded message:
+
+Date: Tue, 27 Nov 2007 16:22:51 -0500
+From: Morris Dworkin &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dworkin at nist.gov</A>&gt;
+To: undisclosed-recipients:;
+Subject: NIST announces approval of SP 800-38D specifying GCM
+
+
+FYI, yesterday NIST announced the approval of Special Publication
+800-38D, which specifies Galois/Counter Mode (GCM), an AES mode of
+operation for authenticated encryption with associated data.  GCM was
+submitted to NIST by David McGrew and John Viega.  The announcement
+appears on the NIST website, at <A HREF="http://csrc.nist.gov/">http://csrc.nist.gov/</A> , and the URL for
+the document is <A HREF="http://csrc.nist.gov/publications/PubsSPs.html#800-38D">http://csrc.nist.gov/publications/PubsSPs.html#800-38D</A> .
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

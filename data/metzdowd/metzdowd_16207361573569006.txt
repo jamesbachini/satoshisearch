@@ -1,0 +1,46 @@
+<PRE>On Tue, Oct 02, 2007 at 03:50:27PM +0200, Simon Josefsson wrote:
+&gt;<i> Without access to the device (I've contacted Hitachi EMEA to find out if
+</I>&gt;<i> it is possible to purchase the special disks) it is difficult to infer
+</I>&gt;<i> how it works, but the final page of the howto seems strange:
+</I>&gt;<i> 
+</I>&gt;<i> ...
+</I>&gt;<i> 
+</I>&gt;<i>    NOTE: All data on the hard drive will be accessible. A secure erase
+</I>&gt;<i>    should be performed before disposing or redeploying the drive to
+</I>&gt;<i>    avoid inadvertent disclosure of data.
+</I>&gt;<i> 
+</I>&gt;<i> One would assume that if you disable the password, the data would NOT be
+</I>&gt;<i> accessible.  Making it accessible should require a read+decrypt+write of
+</I>&gt;<i> the entire disk, which would be quite time consuming.  It may be that
+</I>&gt;<i> this is happening in the background, although it isn't clear.
+</I>
+&gt;<i> It sounds to me as if they are storing the AES key used for bulk
+</I>&gt;<i> encryption somewhere on the disk, and that it can be unlocked via the
+</I>&gt;<i> password.
+</I>
+Assumption: clearing the password stores the key encrypted with
+password &quot;&quot; or an all-zeros key, or some other similar construct,
+effectively in plain text.
+
+&gt;<i> So it may be that the bulk data encryption AES key is
+</I>&gt;<i> randomized by the device (using what entropy?) or possibly generated in
+</I>&gt;<i> the factory, rather than derived from the password.
+</I>
+Speculation: the drive always encrypts the platters with a (fixed) AES
+key, obviating the need to track which sectors are encrypted or
+not. Setting the drive password simply changes the key-handling.
+
+Implication: fixed keys may be known and data recoverable from factory
+records, e.g. for law enforcement, even if this is not provided as an
+end-user service.
+
+--
+Dan.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 186 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071003/410f50f8/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071003/410f50f8/attachment.pgp</A>&gt;
+</PRE>

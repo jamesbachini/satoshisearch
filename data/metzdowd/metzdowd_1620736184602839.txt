@@ -1,0 +1,66 @@
+<PRE>
+
+Eric Rescorla wrote:
+
+&gt;<i> At Wed, 23 Jul 2008 17:32:02 -0500,
+</I>&gt;<i> Thierry Moreau wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>Anne &amp; Lynn Wheeler wrote about various flavors of certificateless 
+</I>&gt;&gt;<i>public key operation in various standards, notably in the financial 
+</I>&gt;&gt;<i>industry.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>Thanks for reporting those.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>No doubt that certificateless public key operation is neither new nor 
+</I>&gt;&gt;<i>absence from today's scene.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>The document I published on my web site today is focused on fielding 
+</I>&gt;&gt;<i>certificateless public operations with the TLS protocol which does not 
+</I>&gt;&gt;<i>support client public keys without certificates - hence the meaningless 
+</I>&gt;&gt;<i>security certificate. Nothing fancy in this technique, just a small 
+</I>&gt;&gt;<i>contribution with the hope to facilitate the use of client-side PKC.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> DTLS-SRTP 
+</I>&gt;<i> (<A HREF="http://tools.ietf.org/html/draft-ietf-sip-dtls-srtp-framework-02,">http://tools.ietf.org/html/draft-ietf-sip-dtls-srtp-framework-02,</A>
+</I>&gt;<i> <A HREF="http://tools.ietf.org/html/draft-ietf-avt-dtls-srtp">http://tools.ietf.org/html/draft-ietf-avt-dtls-srtp</A>)
+</I>&gt;<i> uses a similar technique: certificates solely as a key 
+</I>&gt;<i> carrier authenticated by an out-of-band exchange.
+</I>&gt;<i> 
+</I>
+In draft-ietf-sip-dtls-srtp-framework, the detailed scheme uses 
+self-signed certificates created by client end-entities themselves. The 
+basic idea is identical. At the detailed level in my document, the 
+client end-entity &quot;auto-issues&quot; a security certificate with a &quot;breached&quot; 
+CA private key.
+
+In the TLS Certificate request message, a list of CA distinguished names 
+is provided to the end entity. Referring to a &quot;breached&quot; CA public key 
+is an invitation to submit a meaningless end-entity certificate, making 
+the detailed scheme &quot;more plain&quot; with respect to TLS options (i.e. an 
+empty list in a certificate request message could be a not so well 
+supported mode in TLS software implementations).
+
+So, maybe the reference to the notion of self-signed EE certificates in 
+draft-ietf-sip-dtls-srtp-framework could be replaced by &quot;meaningless EE 
+certificates&quot; (or something else), which would include both self-signed 
+or auto-issued. In such a case, the RFC publication for my document 
+would become more pressing.
+
+A related discussion occurred on the IETK PKIX mailing list in June 2008 
+under the subject &quot;RFC 5280 Question&quot;.
+
+Regards,
+
+
+-- 
+
+- Thierry Moreau
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

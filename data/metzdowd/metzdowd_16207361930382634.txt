@@ -1,0 +1,121 @@
+<PRE>On Tue, 28 Oct 2008, John Denker wrote:
+
+|<i> Date: Tue, 28 Oct 2008 12:09:04 -0700
+</I>|<i> From: John Denker &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jsd at av8n.com</A>&gt;
+</I>|<i> To: &quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt;,
+</I>|<i>     Cryptography &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+</I>|<i> Cc: IanG &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt;
+</I>|<i> Subject: Re: combining entropy
+</I>|<i> 
+</I>|<i> On 10/28/2008 09:43 AM, Leichter, Jerry wrote:
+</I>|<i> 
+</I>|<i> &gt; | We start with a group comprising N members (machines or 
+</I>|<i> &gt; | persons).  Each of them, on demand, puts out a 160 bit 
+</I>|<i> &gt; | word, called a &quot;member&quot; word.  We wish to combine these 
+</I>|<i> &gt; | to form a single word, the &quot;group&quot; word, also 160 bits 
+</I>|<i> &gt; | in length.
+</I>|<i> &gt; This isn't enough.  Somehow, you have to state that the values emitted
+</I>|<i> &gt; on demand in any given round i (where a round consists of exactly one
+</I>|<i> &gt; demand on all N member and produces a single output result) cannot
+</I>|<i> &gt; receive any input from any other members.  Otherwise, if N=2 and member
+</I>|<i> &gt; 0 produces true random values that member 1 can see before it responds
+</I>|<i> &gt; to the demand it received, then member 1 can cause the final result to
+</I>|<i> &gt; be anything it likes.
+</I>|<i> 
+</I>|<i> 
+</I>|<i> Perhaps an example will make it clear where I am coming
+</I>|<i> from.  Suppose I start with a deck of cards that has been 
+</I>|<i> randomly shuffled.  It can provide log2(52!) bits of 
+</I>|<i> entropy.  That's a little more than 225 bits.  Now suppose 
+</I>|<i> I have ten decks of cards all arranged alike.  You could 
+</I>|<i> set this up by shuffling one of them and then stacking 
+</I>|<i> the others to match ... or by some more symmetric process. 
+</I>|<i> In any case the result is symmetric w.r.t interchange of 
+</I>|<i> decks.  In this situation, I can choose any one of the 
+</I>|<i> decks and obtain 225 bits of entropy.  The funny thing 
+</I>|<i> is that if I choose N of the decks, I still get only 225 
+</I>|<i> bits of entropy, not N*225....
+</I>|<i> The original question spoke of &quot;trusted&quot; sources of
+</I>|<i> entropy, and I answered accordingly.  To the extent
+</I>|<i> that the sources are correlated, they were never eligible 
+</I>|<i> to be considered trusted sources of entropy.  To say 
+</I>|<i> the same thing the other way around, to the extent
+</I>|<i> that each source can be trusted to provide a certain
+</I>|<i> amount of entropy, it must be to that extent independent 
+</I>|<i> of the others.
+</I>Rest of example omitted.  I'm not sure of the point.  Yes, there are
+plenty of ways for correlation to sneak in.
+
+As far as I can see, only the second piece I quoted is relevant, and it
+essentially gets to the point:  The original problem isn't well posed.
+It makes no sense *both* to say the sources and trusted *and* to say
+that they may not deliver the expected entropy.  If I know the entropy of
+all the sources, that inherently includes some notion of trust - call
+it source trust:  I can trust them to have at least that much entropy.
+I have to have that trust, because there is no way to measure the
+(cryptographic) entropy.  (And don't say I can analyze how the source
+is constructed, because then I'm left with the need to trust that what
+I analyzed is actually still physically there - maybe an attacker has
+replaced it!)
+
+Given such sources it's easy to *state* what it would mean for them to
+be independent:  Just that if I consider the source produced by
+concatenating all the individual sources, its entropy is the sum of the
+entropies of the constituents.  Of course, that's an entropy I can again
+measure - at least in the limit - in the information theoretical sense,
+but not in the cryptographic sense; another aspect of trust - call it
+independence trust - has to enter here.
+
+All that's fine, but how then are we supposed to construe a question
+about what happens if some of the sources fail to deliver their rated
+entropy?  That means that source trust must be discarded.  (Worse, as
+the original problem is posed, I must discard source trust for *some
+unknown subset of the sources*.)  But given that, why should I assume
+that independence trust remains?
+
+Sure, I can make additional assumptions.  If I'm concerned only about,
+say, physical failures of sources implemented as well-isolated modules,
+it might well be a reasonable thing to do.  In fact, this is essentially
+the independent- failure model we use all the time in building reliable
+physical systems.  Of course, as we know well, that model is completely
+untenable when the concern is hostile attack, not random failure.  What
+do you replace it with?
+
+Consider the analogy with reliable distributed systems.  People have
+basically only dealt with two models:
+
+	1.  The fail-stop model.  A failed module stops interacting.
+	2.  The Byzantine model.  Failed modules can do anything
+		including cooperating by exchanging arbitrary
+		information and doing infinite computation.
+
+The Byzantine model is bizarre sounding, but it's just a way of expressing
+a worst-case situation:  Maybe the failed modules act randomly but just by
+bad luck they do the worst possible thing.
+
+We're trying to define something different here.  Twenty-odd years ago,
+Mike Fischer at Yale proposed some ideas in this direction (where
+modules have access to true random numbers and the only thing a failed
+module *cannot* do is determine what random values another module drew
+unless that module chooses to make them available), but I don't recall
+much that came out of this work (not that I specifically tried to keep
+track).  That seems related to the underlying problem here.  (If we want
+to ignore intelligent attacks, we get something close to the fail-stop
+model, where a failed module can deliver anything that depends only on
+its internal state and its private random number source.)
+
+|<i> &gt; If the issue is how to make sure you get out at least all the randomness
+</I>|<i> &gt; that was there,
+</I>|<i> 
+</I>|<i> I'm going to ignore the &quot;At least&quot;.  It is very hard to 
+</I>|<i> get out more than you put in.
+</I>Yes.  I'm not sure what the sentence was originally supposed to mean,
+but what I ended up saying didn't make a whole load of sense....
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

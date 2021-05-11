@@ -1,0 +1,74 @@
+<PRE>|<i> &gt; 	- Truncate the MAC to, say, 4 bytes.  Yes, a simple brute
+</I>|<i> &gt; 		force attack lets one forge so short a MAC - but
+</I>|<i> &gt; 		is such an attack practically mountable in real
+</I>|<i> &gt; 		time by attackers who concern you?
+</I>|<i> 
+</I>|<i> In fact, 32-bit authentication tags are a feature of
+</I>|<i> SRTP (RFC 3711). 
+</I>Great minds run in the same ruts.  :-)
+
+|<i> &gt; 	- Even simpler, send only one MAC every second - i.e.,
+</I>|<i> &gt; 		every 50 packets, for the assumed parameters.
+</I>|<i> &gt; 		Yes, an attacker can insert a second's worth
+</I>|<i> &gt; 		of false audio - after which he's caught.  I
+</I>|<i> &gt; 		suppose one could come up with scenarios in
+</I>|<i> &gt; 		which that matters - but they are very specialized.
+</I>|<i> &gt; 		VOIP is for talking to human beings, and for
+</I>|<i> &gt; 		human beings in all but extraordinary circumstances
+</I>|<i> &gt; 		a second is a very short time.
+</I>|<i> 
+</I>|<i> Not sending a MAC on every packet has difficult interactions with
+</I>|<i> packet loss. If you do the naive thing and every N packets send a MAC
+</I>|<i> covering the previous N packets, then if you lose even one of those
+</I>|<i> packets you can't verify the MAC. But since some packet loss is
+</I>|<i> normal, an attacker can cover their tracks simply by removing one out
+</I>|<i> of every N packets.
+</I>*Blush*.  Talk about running in the same ruts.  I was specifically
+talking about dealing with lossy datagram connections, but when I came
+to making a suggestion, suggested one I'd previously considered for
+non-lossy stream connections.  Streams are so much easier to reason
+about - it's easy to get caught.  (It's also all too easy to forget
+that no stream implementation really implements the abstract semantics
+of a reliable stream - which is irrelevant in some cases, but very
+significant in others.)
+
+|<i> Since (by definition) you don't have a copy of the packet you've lost,
+</I>|<i> you need a MAC that survives that--and is still compact. This makes
+</I>|<i> life rather more complicated. I'm not up on the most recent lossy
+</I>|<i> MACing literature, but I'm unaware of any computationally efficient
+</I>|<i> technique which has a MAC of the same size with a similar security
+</I>|<i> level. (There's an inefficient technique of having the MAC cover all
+</I>|<i> 2^50 combinations of packet loss, but that's both prohibitively
+</I>|<i> expensive and loses you significant security.)
+</I>My suggestion for a quick fix:  There's some bound on the packet loss
+rate beyond which your protocol will fail for other reasons.  If you
+maintain separate MAC's for each k'th packet sent, and then deliver k
+checksums periodically - with the collection of checksums itself MAC'ed,
+a receiver should be able to check most of the checksums, and can reset
+itself for the others (assuming you use a checksum with some kind of
+prefix-extension property; you may have to send redundant information
+to allow that, or allow the receiver to ask for more info to recover).
+
+Obviously, if you *really* use every k'th packet to define what is in
+fact a substream, an attacker can arrange to knock out the substream he
+has chosen to attack.  So you use your encryptor to permute the
+substreams, so there's no way to tell from the outside which packet is
+part of which substream.  Also, you want to make sure that a packet
+containing checksums is externally indistinguishable from one containing
+data.  Finally, the checksum packet inherently has higher - and much
+longer-lived - semantic value, so you want to be able to request that
+*it* be resent.  Presumably protocols that are willing to survive data
+loss still have some mechanism for control information and such that
+*must* be delivered, even if delayed.
+
+Tons of hand-waving there; at the least, you have to adjust k and
+perhaps other parameters to trade off security and overhead.  I'm
+pretty sure something along these lines could be done, but it's
+certainly not off-the-shelf.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

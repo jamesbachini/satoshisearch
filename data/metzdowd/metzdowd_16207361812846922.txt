@@ -1,0 +1,36 @@
+<PRE>&gt;<i> I would expect hardware designs to be treated more like hardware than 
+</I>&gt;<i> software.
+</I>
+A hardware &quot;design&quot; is not hardware.  Only a naive parsing of the
+words would treat it so.  A software design is not treated like
+software; you are free to write about how ATM machine crypto is
+designed, even if you can't export ATM machine crypto software without
+a license (because it's proprietary and not mass-market).
+
+A hardware design is a lot like software.  It's human written and
+human readable, it's trivial to reproduce, it's compiled automatically
+into something that can execute, and if you write it into hardware,
+then it does something.
+
+The court case that EFF won against the export controls was won on
+those grounds: the government can't suppress the publication of
+human-written and human-readable text, on the grounds that somebody
+somewhere might put it into a machine that does things the government
+doesn't like.
+
+Sun may be chicken on the point, and the government did a sneaky trick
+to technically avoid having a Ninth Circuit precedent set on the
+topic, but a similar precedent was set by Peter Junger's case in
+another circuit.  I think Sun would be well within its rights to ship
+VHDL or Verilog source code that implements crypto under an open
+source license.  And I'd be happy to point them at good lawyers who'd
+be happy to be paid to render a more definitive opinion.
+
+	John Gilmore
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

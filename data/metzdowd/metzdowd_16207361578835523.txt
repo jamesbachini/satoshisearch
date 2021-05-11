@@ -1,0 +1,43 @@
+<PRE>|<i> Date: Sat, 13 Oct 2007 03:20:48 -0400
+</I>|<i> From: Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at MorganStanley.com</A>&gt;
+</I>|<i> To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>|<i> Subject: Re: Quantum Crytography to be used for Swiss elections
+</I>|<i> 
+</I>|<i> On Fri, Oct 12, 2007 at 11:04:15AM -0400, Leichter, Jerry wrote:
+</I>|<i> 
+</I>|<i> &gt; No comment from me on the appropriateness.  From Computerworld.
+</I>|<i> &gt; 
+</I>|<i> 
+</I>|<i> Why so shy? ...
+</I>Only that we've been over this ground so many times before.
+
+|<i> There is real charm in the phrase &quot;endowed with relevance and
+</I>|<i> purpose&quot;.
+</I>|<i>
+</I>|<i> One might, by analogy with the 2nd law of thermodynamics, speculate
+</I>|<i> that prior to some of the relevance and purpose of the election data
+</I>|<i> rubbing off on the QC system, the QC system was the one more lacking
+</I>|<i> in these desirable attributes. If wants to really go out on a limb,
+</I>|<i> one might try to apply the fist law also, and conclude that the
+</I>|<i> election data has as a result less relevance and purpose.
+</I>|<i> 
+</I>|<i> In our physical analogy, heat is replaced with
+</I>|<i> &quot;trust/relevance/purpose&quot;.  One can transfer this &quot;heat&quot; from the
+</I>|<i> election to a technology or from a technology an election, always in
+</I>|<i> the expected direction.
+</I>Ah, but this is a quantum system.  I think it's more a matter of
+inducing correlations than a physical transfer.
+
+Are trust, relevance, and purpose orthogonal variables?  That seems
+unlikely.  So you need to trade of your ability to measure them.
+
+Ah, there are some trustworthy photons.  Oops, we can trust them, but
+we don't know if they are relevant.  Ah, there's a relevant photon....
+
+							-- Jerry :-)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

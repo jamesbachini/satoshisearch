@@ -1,0 +1,29 @@
+<PRE>True, the contestants are given extra information, though.  They know
+ahead of time that the words make up the name of a place, or a common
+saying, for example.  That helps decrease the entropy considerably.  They
+also know the exact number of characters in the final answer and are able
+to probe multiple characters in the phrase simultaneously.
+
+If a system is setup correctly, you should never be able to get a hint as
+to whether you have guessed any portion of a password correctly, and you
+probably don't know what sort of phrase the target has chosen, so it would
+seem like most of the entropy-reducing information the Wheel of Fortune
+contestant is able to take advantage of are not available to a password
+cracking algorithm.
+
+--dan
+
+&gt;<i> While 2.5 bits/word seems low, the TV game show Wheel Of Fortune is
+</I>&gt;<i> evidence that
+</I>&gt;<i> people can correctly guess phrases even when a large proportion of the
+</I>&gt;<i> letters
+</I>&gt;<i> are missing.
+</I>&gt;<i>
+</I>&gt;<i> Peter Trei
+</I>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

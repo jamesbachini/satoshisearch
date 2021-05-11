@@ -1,0 +1,49 @@
+<PRE>Victor Duchovni &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at morganstanley.com</A>&gt; writes:
+
+&gt;<i> On Tue, Jun 03, 2008 at 04:37:20PM -0400, Eric Cronin wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> On Jun 3, 2008, at 11:51 AM, Adam Aviv wrote:
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> &gt;Depending on the level of protection you want, you could just add a
+</I>&gt;&gt;<i> &gt;script to your .forward to encrypt your email before delivery using
+</I>&gt;&gt;<i> &gt;PGP/GPG. However, this will leave the headers in the clear, so you
+</I>&gt;&gt;<i> &gt;will likely want to create an entirely new envelope for the message
+</I>&gt;&gt;<i> &gt;with the original message encrypted as the body or an attachment.
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> Does anybody have a recipe for this first mode handy?  plain text e- 
+</I>&gt;&gt;<i> mails seem simple enough, but there needs to be a bit of MIME  
+</I>&gt;&gt;<i> unwrapping and rewrapping to correctly handle attachments so that the  
+</I>&gt;&gt;<i> client sees/decrypts them correctly I think.  I've searched from time  
+</I>&gt;&gt;<i> to time and never found a good HowTo...
+</I>&gt;<i>
+</I>&gt;<i> S/MIME supports enveloped MIME objects, if PGP does not work out for MIME
+</I>&gt;<i> entities, you could try that. S/MIME is natively supported in Thunderbird,
+</I>&gt;<i> Apple Mail, and similar MUAs.
+</I>
+Actually, PGP/MIME uses the same high-level mechanism to wrap MIME
+objects as S/MIME does: <A HREF="http://www.ietf.org/rfc/rfc1847.txt">http://www.ietf.org/rfc/rfc1847.txt</A>
+
+The PGP/MIME description is in: <A HREF="http://www.ietf.org/rfc/rfc3156.txt">http://www.ietf.org/rfc/rfc3156.txt</A>
+
+Specification wise both should work equally well, but implementation
+quality may differ.
+
+What is often overlooked is that the e-mail envelope (including the
+Subject: header field) is not protected or even encrypted under RFC 3156
+unless you forward the entire e-mail as a message/rfc822 MIME part
+within the PGP/MIME (or S/MIME) message.  Interoperability of that has
+historically been poor, but the more modern MUAs should handle it today.
+
+Writing a .forward proxy that wraps incoming e-mails into PGP/MIME
+encrypted message/rfc822 attachments should be simple, probably simpler
+than PGP/MIME wrapping all the individual MIME parts in the incoming
+e-mail.
+
+/Simon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

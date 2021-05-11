@@ -1,0 +1,59 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> On Tue, 22 Jan 2008 21:49:32 -0800
+</I>&gt;<i> Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> As I commented in the
+</I>&gt;&gt;<i> second paragraph, an attack at the ISP (where SSL/TLS is
+</I>&gt;&gt;<i> of no help) has been the dominant threat -- and that is
+</I>&gt;&gt;<i> why one of the main problems is called &quot;warrantless
+</I>&gt;&gt;<i> wiretapping&quot;. Further, because US law does /not/ protect
+</I>&gt;&gt;<i> data at rest, anyone claiming &quot;authorized process&quot; (which
+</I>&gt;&gt;<i> the ISP itself may) can eavesdrop without any required
+</I>&gt;&gt;<i> formality.
+</I>&gt;&gt;<i>
+</I>&gt;<i> Please justify this.  Email stored at the ISP is protected in the U.S.
+</I>&gt;<i> by the Stored Communications Act, 18 USC 2701
+</I>&gt;<i> (<A HREF="http://www4.law.cornell.edu/uscode/18/2701.html">http://www4.law.cornell.edu/uscode/18/2701.html</A>).  While it's not a
+</I>&gt;<i> well-drafted piece of legislation and has been the subject of much
+</I>&gt;<i> litigation, from the Steve Jackson Games case
+</I>&gt;<i> (<A HREF="http://w2.eff.org/legal/cases/SJG/">http://w2.eff.org/legal/cases/SJG/</A>) to Warshak v. United States
+</I>&gt;<i> (<A HREF="http://www.cs.columbia.edu/~smb/blog/2007-06/2007-06-19.html">http://www.cs.columbia.edu/~smb/blog/2007-06/2007-06-19.html</A>), I don't
+</I>&gt;<i> see how you can say stored email isn't protected at all.
+</I>
+As you wrote in your blog, &quot;users really need to read those boring
+[ISP] licenses carefully.&quot;
+
+ISP service terms grant the disclosure right on the basis of
+something broadly called &quot;valid legal process&quot; or any such
+term as defined /by the ISP/. Management access to the account
+(including email data) is a valid legal process (authorized by the
+service terms as a private contract) that can be used without
+any required formality, for example to verify compliance to the
+service terms or something else [1].
+
+Frequently, &quot;common sense&quot; and &quot;standard use&quot; are used to
+justify such access but, technically, no justification is
+actually needed.
+
+Further, when an ISP such as google says &quot;Google does not share
+or reveal email content or personal information with third
+parties.&quot; one usually forgets that (1) third parties may actually
+mean everyone on the planet but you; (2) third parties also
+have third parties; and (3) #2 is recursive.
+
+Mr. Councilman's case and his lawyer's declaration that &quot;Congress
+recognized that any time you store communication, there is an
+inherent loss of privacy&quot; was not in your blog, though. Did I
+miss something?
+
+Cheers,
+Ed Gerck
+
+[1] in <A HREF="http://mail.google.com/mail/help/about_privacy.html">http://mail.google.com/mail/help/about_privacy.html</A> :
+Of course, the law and common sense dictate some exceptions. These exceptions include requests by users that Google's support staff access their email messages in order to diagnose problems; when Google is required by law to do so; and when we are compelled to disclose personal information because we reasonably believe it's necessary in order to protect the rights, property or safety of Google, its users and the public. For full details, please refer to the &quot;When we may disclose your personal information&quot; section of our privacy policy. These exceptions are standard across the industry and are necessary for email providers to assist their users and to meet legal requirements.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

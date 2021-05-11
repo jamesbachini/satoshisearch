@@ -1,0 +1,31 @@
+<PRE>A lot of people seem to agree with what Declan McCullagh writes here:
+
+&gt;<i> It's going to make us rethink how we handle laptops in sleep mode and servers that use
+</I>&gt;<i> encrypted filesystems (a mail server, for instance).
+</I>
+What I'd like to know is why people weren't already rethinking this
+when people like Maximillian Dornseif
+(<A HREF="http://md.hudora.de/presentations/firewire/2005-firewire-cansecwest.pdf">http://md.hudora.de/presentations/firewire/2005-firewire-cansecwest.pdf</A>)
+and later Adam Boileau
+(<A HREF="http://www.security-assessment.com/files/presentations/ab_firewire_rux2k6-final.pdf">http://www.security-assessment.com/files/presentations/ab_firewire_rux2k6-final.pdf</A>)
+showed you can read arbitrary RAM from a machine just by plugging into
+a FireWire port, due to lack of security considerations in the IEEE
+1394 standard?
+
+Adam Boileau demonstrated finding passwords, but of course we already
+know that it's easy to locate cryptographic keys in large volumes of
+data (Shamir, van Someren: <A HREF="http://citeseer.ist.psu.edu/265947.html">http://citeseer.ist.psu.edu/265947.html</A>).
+
+Reading cold DRAM may have some applications on its own -- if only
+because of the large number of devices that it effects -- but as far
+as walking up to a locked machine/hibernated laptop/whatever and
+stealing its RAM contents, the game may have been up some time ago.
+
+
+- Ken -
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,24 @@
+<PRE>Perry E. Metzger wrote:
+
+&gt;<i> A fascinating IEEE Spectrum article on the incident in which lawful
+</I>&gt;<i> intercept facilities were hacked to permit the secret tapping of
+</I>&gt;<i> the mobile phones of a large number of Greek government officials,
+</I>&gt;<i> including the Prime Minister:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.spectrum.ieee.org/print/5280">http://www.spectrum.ieee.org/print/5280</A>
+</I>
+So what are the options these days (the article even mentions end-to-end
+encryption to make such an attack far more difficult)?
+Every &quot;crypto-phone&quot; offering seems to go stale and disappear after a
+while...perhaps related to the fact of being ridiculously expensive.
+Aren't run-of-the-mill cellphones these days powerful enough to use
+available software like OpenSSL to encrypt voice/datastreams?
+Again...what are the options for end-to-end cell encryption right now?
+
+Silvio
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

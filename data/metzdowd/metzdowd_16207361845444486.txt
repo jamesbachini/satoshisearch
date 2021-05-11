@@ -1,0 +1,19 @@
+<PRE>
+In case somebody missed it, 
+
+<A HREF="http://www.tfr.org/wiki/index.php?title=Technical_Proposal_(IPETEE">http://www.tfr.org/wiki/index.php?title=Technical_Proposal_(IPETEE</A>)
+
+I'm not sure what the status of <A HREF="http://postel.org/anonsec/">http://postel.org/anonsec/</A>
+is, the mailing list traffic dried up a while back.
+
+-- 
+Eugen* Leitl &lt;a href=&quot;<A HREF="http://leitl.org">http://leitl.org</A>&quot;&gt;leitl&lt;/a&gt; <A HREF="http://leitl.org">http://leitl.org</A>
+______________________________________________________________
+ICBM: 48.07100, 11.36820 <A HREF="http://www.ativel.com">http://www.ativel.com</A> <A HREF="http://postbiota.org">http://postbiota.org</A>
+8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

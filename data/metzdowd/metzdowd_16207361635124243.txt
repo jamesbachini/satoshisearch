@@ -1,0 +1,67 @@
+<PRE>Weger, B.M.M. de wrote:
+&gt;<i> See <A HREF="http://www.win.tue.nl/hashclash/Nostradamus">http://www.win.tue.nl/hashclash/Nostradamus</A> if you want to know
+</I>&gt;<i> the details of what this has to do with cryptography.
+</I>&gt;<i> 
+</I>It always bothers me as these things are announced, but are based on
+presumptions that have absolutely no relevance in the real world....
+
+Therefore, nothing to do with cryptography (which is not a parlor trick).
+
+
+&gt;<i> This implies a vulnerability in software integrity protection and 
+</I>&gt;<i> code signing schemes that still use MD5.
+</I>&gt;<i> See <A HREF="http://www.win.tue.nl/hashclash/SoftIntCodeSign">http://www.win.tue.nl/hashclash/SoftIntCodeSign</A> for details.
+</I>&gt;<i> 
+</I>There is no such MD5 vulnerability implied.  As the paper itself states:
+
+   In cryptographic terms: our attack is an attack on collision resistance,
+   not on preimage or second preimage resistance. This implies that both
+   colliding files have to be specially prepared by the attacker, before
+   they are published on a download site or presented for signing by a code
+   signing scheme. Existing files with a known hash that have not been
+   prepared in this way are not vulnerable.
+
+Since this &quot;attack&quot; requires the certifier be compromised, the attacker
+could also modify the program data itself undetectably.  That is, this
+theoretical problem actually is more effort than the obvious attack!
+
+In summary, there are exactly zero instances where this use of MD5 would
+actually present a vulnerability.
+
+As many discussions in this community have amply demonstrated, trust is
+not transitive.  At some point, you have to &quot;know&quot; (usually by reputation)
+the chip-vendor, compiler-writer, et alia, are not compromised.  Therefore,
+many of us compile our own systems and packages (as much as practical).
+
+Over the many years we have designed protocols using MDx, we were always
+aware that a mere hashing function could never perfectly protect against
+prefix or suffix data extension.  Therefore, (I for one) always design
+with a prefix chosen by the certifier, and a suffix nonce or counter
+publicly shared with (preferably chosen by) the verifier.
+
+For example, see PPP CHAP (originally written circa 1991).
+
+The only cryptographic question is how to quantify the strength of the
+collision resistance.  CRC, FCS, MD2, MD4, MD5, SHA1, SHA256 -- they all
+have some level, and that is useful to determine the practical application
+for the function.
+
+The base complexity assumptions are (have always been) 2 to the:
+
+  8 CRC
+16 FCS
+64 MDx
+80 SHA1
+
+None of these have ever been out of the realm of possibility.  Yet we all
+have long known that SHA1 is stronger than MD2, which is stronger than MD5,
+which is stronger than MD4.  We also have long known that FCS and CRC are
+perfectly acceptable for many integrity applications.
+
+How much stronger is an interesting result.  The rest is merely academic.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

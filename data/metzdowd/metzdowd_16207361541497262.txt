@@ -1,0 +1,49 @@
+<PRE>Chris Kuethe wrote:
+&gt;<i> On 9/6/07, Jacob Appelbaum &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jacob at appelbaum.net</A>&gt; wrote:
+</I>&gt;&gt;<i> Seagate recently announced a 1TB drive for desktop systems and a 250GB
+</I>&gt;&gt;<i> laptop drive. What's of interest is that it appears to use a system
+</I>&gt;&gt;<i> called DriveTrust for Full Disk Encryption. It's apparently AES-128.
+</I>&gt;<i> 
+</I>&gt;<i> Yes, but will it work on my UltraSparc? How about my PPC powermac? Or
+</I>&gt;<i> maybe my OpenBSD laptop?
+</I>&gt;<i> 
+</I>
+It seems the the answer would be yes for the laptop at the very least.
+
+&gt;<i> What's that - I have to use some opaque mechanism to key my drive? Pass.
+</I>&gt;<i> 
+</I>
+It appears to use a firmware implementation. To quote their pdf I linked
+to before [0]:
+&quot;DriveTrust technology implements on the drive a cryptographic service
+provider that provides encryption, hashing, secure storage, decryption,
+digital signature and random-number generating functions&quot;
+
+Though I think that unless they're providing their full firmware code,
+it's not to be trusted. Though it should be possible to examine the on
+disk bits with other known good implementations of AES128 (CBC? I'm not
+sure...).
+
+&gt;<i> And how do I know that the drive didn't just store a copy of my
+</I>&gt;<i> encryption key in NVRAM somewhere which can be retrieved by reading
+</I>&gt;<i> some magic sequence of negative sectors? And what about a zillion
+</I>&gt;<i> other paranoid but reasonable concerns?
+</I>&gt;<i> 
+</I>
+All the more reason to investigate it. I wonder if they'll provide their
+firmware if a big enough client were to request it. They also claim to
+be about open standards:
+&quot;An open standard is being developed within the Trusted Computing Group.&quot;
+
+Perhaps one of the Seagate developers is on this list? If not, I think
+they probably should be...
+
+-jacob
+
+[0] <A HREF="http://www.seagate.com/docs/pdf/whitepaper/TP564_DriveTrust_Oct06.pdf">http://www.seagate.com/docs/pdf/whitepaper/TP564_DriveTrust_Oct06.pdf</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

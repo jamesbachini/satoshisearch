@@ -1,0 +1,28 @@
+<PRE>&gt;<i>
+</I>&gt;<i> We were wondering if it was possible to use a hash function instead.
+</I>&gt;<i> Using the password he provided at the login screen and hash it n  
+</I>&gt;<i> times.
+</I>&gt;<i>
+</I>&gt;<i> Master Password: hash(hash(login_password))
+</I>&gt;<i>
+</I>&gt;<i> Would this be a good idea if we've used this generated hash as a key  
+</I>&gt;<i> for AES?
+</I>&gt;<i> Would the hashing be secure enough against different kinds of attacks?
+</I>
+The short answer is yes. A better answer is that you want to salt the  
+password before you hash it many times, to keep from having rainbow  
+tables created. Another better answer is that you want to hash many  
+times to slow down password crackers.
+
+As others have mentioned, there are standards that can show you the  
+way. PKCS#5 has a mechanism for this. OpenPGP does, too. They're  
+subtly different, and understanding the differences can help you roll  
+your own.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

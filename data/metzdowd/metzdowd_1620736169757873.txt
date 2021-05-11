@@ -1,0 +1,25 @@
+<PRE>Ian G &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+&gt;<i>James A. Donald wrote:
+</I>&gt;&gt;<i> I have been considering the problem of encrypted channels over UDP or
+</I>&gt;&gt;<i> IP.  TLS will not work for this, since it assumes and provides a
+</I>&gt;&gt;<i> reliable, and therefore non timely channel, whereas what one wishes to
+</I>&gt;&gt;<i> provide is a channel where timeliness may be required at the expense of
+</I>&gt;&gt;<i> reliability.
+</I>&gt;<i>
+</I>&gt;<i>This is what Guus was getting at:
+</I>&gt;<i>
+</I>&gt;<i>- We needed to tunnel data over UDP, with UDP semantics. SSL requires a
+</I>&gt;<i>  reliable stream. Therefore, we had to use something other that SSL to
+</I>&gt;<i>  tunnel data.
+</I>
+This is where the OpenVPN developers got it right: Use TLS for the handshake
+and IPsec's ESP for the transport.  It's been a solved problem for some years
+now.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,19 @@
+<PRE>In my personal experience, if you are developing a mass-market item with 
+conventional crypto (e.g., SSL, S/MIME, etc ) then it is fairly routine to 
+get a commodity export license which lets you sell globally.
+
+Disclaimers abound, including that I'm not a lawyer and certainly don't 
+speak for IBM.
+
+        /r$
+
+--
+STSM, DataPower Chief Programmer
+WebSphere DataPower SOA Appliances
+<A HREF="http://www.ibm.com/software/integration/datapower/">http://www.ibm.com/software/integration/datapower/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

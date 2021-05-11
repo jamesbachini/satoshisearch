@@ -1,0 +1,20 @@
+<PRE>On 12 Jun 2008, at 03:05, James Muir wrote:
+
+&gt;<i> Just curious -- where were you able to download the virus from?
+</I>
+
+www.offensivecomputing.net
+
+Just be careful. Do not run it. It does not spread itself, but it  
+will encrypt all the sensitive files on all the drives and then self- 
+destruct. If you want a disarmed harmless one to play with, I can e- 
+mail you my decrypted and patched up variant.
+
+Marcos el Ruptor
+<A HREF="http://www.enrupt.com/">http://www.enrupt.com/</A> - Raising the bar.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

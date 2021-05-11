@@ -1,0 +1,31 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+&gt;<i> I think you're looking at this a bit wrong.  I rememeber the same opinion as
+</I>&gt;<i> the above being expressed on the brew-a-stu list about fifteen years ago, and
+</I>&gt;<i> no doubt some other list will carry it in another fifteen years time, with
+</I>&gt;<i> nothing else having changed.  Anyone who wants secure voice connections
+</I>&gt;<i> (governments/military and a vanishingly small number of hardcore geeks)
+</I>&gt;<i> already have them, and have had them for years.  Everyone else just doesn't
+</I>&gt;<i> care, and probably never will.
+</I>
+I think this is a slight overstatement.
+
+If security on login connections was expensive, difficult, or not part
+of the common infrastructure, everyone would still be using plaintext
+passwords over telnet. However, ssh is just as easy or in fact easier
+to use then telnet/ftp/etc., so that it has become
+ubiquitous.
+
+If using secure phones was as cheap and easy as using insecure ones,
+everyone would do it. They just won't go out of their way to do
+it. The market will happily accept a new feature that is free and
+zero complexity in use. It is well within technical possibility to
+create such a thing -- the issue is purely political.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

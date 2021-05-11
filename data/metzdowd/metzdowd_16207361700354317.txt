@@ -1,0 +1,31 @@
+<PRE>On Thu, Feb 21, 2008 at 12:10:33PM -0500, Perry E. Metzger wrote:
+&gt;<i> 
+</I>&gt;<i> Ed Felten blogs on his latest research:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.freedom-to-tinker.com/?p=1257">http://www.freedom-to-tinker.com/?p=1257</A>
+</I>&gt;<i> 
+</I>&gt;<i> Excerpt:
+</I>&gt;<i> 
+</I>&gt;<i>     Today eight colleagues and I are releasing a significant new
+</I>&gt;<i>     research result. We show that disk encryption, the standard
+</I>&gt;<i>     approach to protecting sensitive data on laptops, can be defeated
+</I>&gt;<i>     by relatively simple methods. We demonstrate our methods by using
+</I>&gt;<i>     them to defeat three popular disk encryption products: BitLocker,
+</I>&gt;<i>     which comes with Windows Vista; FileVault, which comes with MacOS
+</I>&gt;<i>     X; and dm-crypt, which is used with Linux.
+</I>
+While they did have some success with recovering an entire AES key
+schedule uncorrupted, it seems important to note that the simplistic
+nature of the AES and DES key schedules allowed them to recover the
+entire original key even after the state had been somewhat degraded
+with only moderate amounts of work. A cipher with a better key
+schedule (Blowfish or Serpent, for instance) would seem to offer some
+defense here.
+
+Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

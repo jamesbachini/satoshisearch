@@ -1,0 +1,17 @@
+<PRE>&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+
+&gt;<i>Speculation about this kind of attack has made the rounds for years. It
+</I>&gt;<i>appears the speculations have now become reality.
+</I>
+It's not speculation, encryption virii have been around for at least ten
+years, although the encryption used was pretty crude and easily broken.  Even
+this particular variant (public-key encryption) is hardly new, if it's a
+PGPCoder derivative then it'd be at least two years old.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

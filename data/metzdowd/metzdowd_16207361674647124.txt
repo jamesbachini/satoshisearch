@@ -1,0 +1,34 @@
+<PRE>On Wed, Jan 30, 2008 at 02:47:46PM -0500, Victor Duchovni wrote:
+&gt;<i> If someone has a faster than 3-way handshake connection establishment
+</I>&gt;<i> protocol that SSL could leverage instead of TCP, please explain the
+</I>&gt;<i> design.
+</I>
+I don't have one that exists today and is practical.  But we can
+certainly imagine possible ways to improve this situation: move parts of
+TLS into TCP and/or IPsec.  There are proposals that come close enough
+to this (see the last IETF SAAG meeting's proceedings, see the IETF BTNS
+WG) that it's not too farfetched, but for web stuff I just don't think
+they're remotely likely.
+
+Prior to the advent of AJAX-like web design patterns the most noticeable
+latency in web apps was in the server (for dynamic content) and the
+client (re-rendering the whole page on every click).  Applying GUI
+lessons to the web (asynchrony!  callbacks/closures!) fixed that.
+
+TLS was not to blame.
+
+TLS probably still isn't to blame for whatever latency users might be
+annoyed by in web apps.
+
+It's *much* easier to look for improvements in the app layer first given
+that web app updates are much easier to deploy than TLS (which in turn
+is much easier to deploy than changes to TCP or IPsec).
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

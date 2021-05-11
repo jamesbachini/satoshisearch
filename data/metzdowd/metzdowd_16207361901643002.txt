@@ -1,0 +1,24 @@
+<PRE>So I'll ask a question. I saw the following on another list:
+
+&gt;&gt;<i> &gt;   I stopped using WinPT after is crashed too many times.
+</I>&gt;&gt;<i> &gt;   I am now using Thunderbird with the Enigmail plugin
+</I>&gt;&gt;<i> &gt;   for GPG interface. It works rather flawlessly and I've
+</I>&gt;&gt;<i> &gt;   never looked back.
+</I>&gt;&gt;<i> &gt; 
+</I>&gt;&gt;<i> &gt;   <A HREF="http://pgp.mit.edu:11371/pks/lookup?search=0xBB678C30&amp;op=index">http://pgp.mit.edu:11371/pks/lookup?search=0xBB678C30&amp;op=index</A>
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Yes, I regard the combination of Thunderbird + Enigmail + GPG as the
+</I>&gt;<i> best existing solution for secure email.
+</I>
+What does anyone think of of the combo?
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,24 @@
+<PRE>
+
+On Wed, 4 Jun 2008, Perry E. Metzger wrote:
+
+&gt;<i> I'm thinking of starting a CA that sells &quot;super duper enhanced
+</I>&gt;<i> security&quot; certs, where we make the company being certified sign a
+</I>&gt;<i> document in which they promise that they're absolutely trustworthy.
+</I>&gt;<i> To be really sure, we'll make them fax said document in on genuine
+</I>&gt;<i> company letterhead, since no one can forge letterhead.
+</I>
+Sorry - not quite good enough. You lack that key thing to make this 
+secure and win the war on them internet terrorists.
+
+You totally missed the fundamental crucial and the totally aspect of your 
+Unique Selling Proposition: it _has_ to be very very very expensive. And 
+people have to know that it was, indeed, very very expensive.
+
+Dw
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

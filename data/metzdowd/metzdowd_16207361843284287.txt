@@ -1,0 +1,27 @@
+<PRE>
+
+Ali, Saqib wrote:
+&gt;<i> Dutch chipmaker NXP Semiconductors has sued a university in The
+</I>&gt;<i> Netherlands to block publication of research that details security
+</I>&gt;<i> flaws in NXP's Mifare Classic wireless smart cards, which are used in
+</I>&gt;<i> transit and building entry systems around the world.
+</I>
+Ah, more 3 monkeys syndrome? If a flaw exists but nobody knows about 
+the details, it no longer exists? If we don't publish the evidence 
+about the Earth being round, then it will stay flat, right? Perhaps 
+NXP merely wants to secure the job continuity of sys admins, 
+compliance, and security people, do you think?
+
+Given that those in charge rarely listen in any case, perhaps they 
+are trying to promote stress related health problems in a secret 
+conspiracy with doctors. ;-&gt;
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

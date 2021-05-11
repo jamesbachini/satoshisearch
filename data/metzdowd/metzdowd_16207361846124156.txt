@@ -1,0 +1,65 @@
+<PRE>On Wed, Jul 09, 2008 at 05:36:02PM +0100, Ben Laurie wrote:
+&gt;<i> Paul Hoffman wrote:
+</I>&gt;&gt;<i> First off, big props to Dan for getting this problem fixed in a 
+</I>&gt;&gt;<i> responsible manner. If there were widespread real attacks first, it would 
+</I>&gt;&gt;<i> take forever to get fixes out into the field.
+</I>&gt;&gt;<i> However, we in the security circles don't need to spread the &quot;Kaminsky 
+</I>&gt;&gt;<i> finds&quot; meme. Take a look at 
+</I>&gt;&gt;<i> &lt;<A HREF="http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/">http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/</A>&gt;. 
+</I>&gt;&gt;<i> The first draft of this openly-published document was in January 2007. It 
+</I>&gt;&gt;<i> is now in WG last call.
+</I>&gt;&gt;<i> The take-away here is not that &quot;Dan didn't discover the problem&quot;, but &quot;Dan 
+</I>&gt;&gt;<i> got it fixed&quot;. An alternate take-away is that IETF BCPs don't make nearly 
+</I>&gt;&gt;<i> as much difference as a diligent security expert with a good name.
+</I>&gt;<i>
+</I>&gt;<i> Guess you need to tell Dan that - he seems to think he did discover it.
+</I>
+Taking a brief look at what changed in bind, it seems primarily to
+involve randomizing the query port, matching both the port and
+transaction id instead of just the id, and using RC4 to generate the
+transactions ids instead of a pair of very sketchy-looking
+(cryptographically speaking) RNGs based on an LCRNG design via Knuth.
+
+Perhaps there is something subtle here that is more dangerous than the
+well known problems, and all these source port randomization and
+transaction id randomization fixes are just a smokescreen of sorts for
+a fix for something Dan found.
+
+Securosis claims [1] &quot;The good news is that due to the nature of this
+problem, it is extremely difficult to determine the vulnerability
+merely by analyzing the patches&quot;, and Dan claims something similar,
+offering to share the stage at Defcon with anyone who finds the
+bug [2]
+
+A statement from the MaraDNS author [3]:
+
+&quot;&quot;&quot;
+MaraDNS is immune to the new cache poisoning attack.  MaraDNS has
+always been immune to this attack.  Ditto with Deadwood (indeed,
+people can use MaraDNS or Deadwood on the loopback interface to
+protect their machines from this attack).
+
+OK, basically, this is an old problem DJB wrote about well over seven
+years ago.  The solution is to randomize both the query ID and the
+source port; MaraDNS/Deadwood do this (and have been doing this since
+around the time of their first public releases that could resolve DNS
+queries) using a cryptographically strong random number generator
+(MaraDNS uses an AES variant; Deadwood uses the 32-bit version of
+Radio Gatun).
+&quot;&quot;&quot;
+
+(But CERT has no reply in their advisory from MaraDNS, so I'm not sure
+if this statement was made on the basis of just what is publically
+known, or if he was in fact in on the vendor notify list).
+
+-Jack
+
+[1] <A HREF="http://securosis.com/2008/07/08/dan-kaminsky-discovers-fundamental-issue-in-dns-massive-multivendor-patch-released/">http://securosis.com/2008/07/08/dan-kaminsky-discovers-fundamental-issue-in-dns-massive-multivendor-patch-released/</A>
+[2] <A HREF="http://www.doxpara.com/?p=1162">http://www.doxpara.com/?p=1162</A>
+[3] <A HREF="http://marc.info/?l=maradns-list&amp;m=121560639013865&amp;w=2">http://marc.info/?l=maradns-list&amp;m=121560639013865&amp;w=2</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

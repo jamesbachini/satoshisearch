@@ -1,0 +1,50 @@
+<PRE>yes, the reputation of/quality of reporters needs to be measured, and  
+the reported information needs to be enough to
+accomplish an auth or a card purchase.
+
+the card issuer can then use a credible report as a hint to increase  
+the level of attention to the reported cards.
+
+it's in a merchant's interest to have high quality fraud detection  
+because this report is
+in association with an attempted purchase transaction and their report  
+implies they
+decline or refund the transaction they are turning down the revenue  
+from that card,
+
+if a bad guy wants to break into a merchant's site, i would welcome  
+them to immediately report all the merchant's cards as stolen
+rather than than stealing them and using them or waiting for the  
+merchant to do so in a breach notice.
+
+
+
+On Jan 25, 2008, at 3:11 PM, John Ioannidis wrote:
+
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> That's not practical. If you're a large online merchant, and your
+</I>&gt;&gt;<i> automated systems are picking up lots of fraud, you want an automated
+</I>&gt;&gt;<i> system for reporting it. Having a team of people on the phone 24x7
+</I>&gt;&gt;<i> talking to your acquirer and reading them credit card numbers over  
+</I>&gt;&gt;<i> the
+</I>&gt;&gt;<i> phone, and then expecting the acquirer to do something with them when
+</I>&gt;&gt;<i> they don't have an automated system either, is just not reasonable.
+</I>&gt;<i>
+</I>&gt;<i> But how can the issuer know that the merchant's fraud detection  
+</I>&gt;<i> systems work, for any value of &quot;work&quot;? This could just become one  
+</I>&gt;<i> more avenue for denial of service, where a hacked online merchant  
+</I>&gt;<i> suddenly reports millions of cards as compromised.  I'm sure there  
+</I>&gt;<i> is some interesting work to be done here.
+</I>&gt;<i>
+</I>&gt;<i> /ji
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

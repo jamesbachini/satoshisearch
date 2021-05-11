@@ -1,0 +1,22 @@
+<PRE>On Wed, 14 Nov 2007 13:45:37 -0600
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+
+ 
+&gt;<i> I wonder if we here could develop a handshake that was
+</I>&gt;<i> cryptographically secure, resistant to CPU DoS now, and would be
+</I>&gt;<i> possible to adjust as we get faster at doing crypto operations to
+</I>&gt;<i> reduce latency even further.  Basically an easy knob for balancing
+</I>&gt;<i> high latency and DoS resistance vs. crypto overhead and low latency.
+</I>&gt;<i> It should be adjustable on either end without altering the other.
+</I>&gt;<i> 
+</I>Depending on your goals, JFK has some of those properties; see
+<A HREF="http://www1.cs.columbia.edu/~angelos/Papers/jfk-tissec.pdf">http://www1.cs.columbia.edu/~angelos/Papers/jfk-tissec.pdf</A>
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

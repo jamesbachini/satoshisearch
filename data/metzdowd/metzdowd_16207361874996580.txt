@@ -1,0 +1,22 @@
+<PRE>Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; writes:
+
+&gt;<i>I just got a warning that a certificate had expired and yet the data in it
+</I>&gt;<i>says:
+</I>&gt;<i>
+</I>&gt;&gt;<i> [From: Tue Aug 05 17:00:00 PDT 2003,
+</I>&gt;&gt;<i>  To: Mon Aug 05 16:59:59 PDT 2013]
+</I>&gt;<i>
+</I>&gt;<i>The error message says: &quot;The digital signature was generated with a trusted
+</I>&gt;<i>certificate but has expired.&quot;
+</I>
+What's the expiry date for the CA certificate that signed it, and its CA
+certificate?  What's the clock on your PC set to?  And why aren't you just
+clicking &quot;Continue anyway&quot; like everyone else does? :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

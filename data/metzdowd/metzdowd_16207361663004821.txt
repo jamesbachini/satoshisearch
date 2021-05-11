@@ -1,0 +1,34 @@
+<PRE>Bodo Moeller wrote:
+&gt;<i> You don't take into account the many users these days who use wireless
+</I>&gt;<i> Internet access from their laptop computers, typically essentially
+</I>&gt;<i> broadcasting all network data to whoever is sufficiently close and
+</I>&gt;<i> sufficiently nosy. 
+</I>
+Yes. Caveats apply but SSL/TLS is useful and simple for this purpose.
+
+&gt;<i> Of course using SSL/TLS for e-mail security does
+</I>&gt;<i> not *solve* the problem of e-mail eavesdropping (unless special care
+</I>&gt;<i> is taken within a closed group of users), but it certainly plays an
+</I>&gt;<i> important role in countering eavesdropping in some relevant scenarios.
+</I>
+The problem is when it is generalized from the particular case where
+it helps (above) to general use, and as a solution to prevent wireless
+wiretapping. For example, as in this comment from a data center/network
+provider:
+
+-------------
+Now, personally, with all the publicly available info regarding
+warrantless wiretapping and so on, why any private communications should
+be &quot;in the clear&quot; I just don't know. Even my MTA offers up SSL or TLS to
+other MTA's when advertising its capabilities. The RFC is there, use it
+as they say.
+-------------
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

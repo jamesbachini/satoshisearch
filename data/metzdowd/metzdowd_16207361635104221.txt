@@ -1,0 +1,37 @@
+<PRE>On Thu, Dec 13, 2007 at 08:29:47PM -0500, Thor Lancelot Simon wrote:
+&gt;<i> In fact, I was in the middle of a FIPS-140 certification at level 2
+</I>&gt;<i> a number of years ago when the Known Answer Test for the X9.17 block
+</I>&gt;<i> cipher based PRNG was introduced.  One unanticipated side effect of
+</I>&gt;<i> this test was to make it impossible to actually use a clock or free
+</I>&gt;<i> running counter as the counter in the PRNG, since the KAT expected
+</I>&gt;<i> the simplistic &quot;increment counter by 1 every time a block is extracted&quot;
+</I>&gt;<i> behavior chosen by most implementers.
+</I>
+You may be confusing the requirements for a KAT which is a power-up health
+check on all of the deterministic components of the PRNG (which is run on
+power-up and requires that you fix all the inputs to some specific known
+value and verify that a known result is produced) and the requirements
+for algorithm testing of your PRNG (which for X9.17/X9.31, does require
+treating DT as a monotonic counter for one portion of the test).
+
+&gt;<i> Of course, that mode is _less_ secure (because the internal state is
+</I>&gt;<i> more predictable) than the other, but given the choice between &quot;validate
+</I>&gt;<i> PRNG using special mode, run it using normal mode&quot; or &quot;validate PRNG
+</I>&gt;<i> using special mode, run it using special mode&quot; I know I'd pretty much
+</I>&gt;<i> always take the latter.  
+</I>
+That's your choice, of course.
+
+&gt;<i> In fact, the test lab we were using told us they were quite skeptical
+</I>&gt;<i> about the former as well.
+</I>
+So, did they require that you use your AES implementation using the test
+fixture as well?
+
+			Josh
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

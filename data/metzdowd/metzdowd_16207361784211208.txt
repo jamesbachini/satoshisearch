@@ -1,0 +1,97 @@
+<PRE>During the 1980's and 1990's &quot;crypto wars&quot;, an occasional topic of  
+speculation was
+just how much the NSA was ahead of the open/public/academic  
+cryptography research
+community in cryptanalysis and cipher design.  We wondered (and still  
+wonder)
+whether the NSA was merely a strong center of expertise, a bit ahead  
+of the rest
+of us by virtue of their focused mission and culture, or were they  
+more of a
+crypto-mathematical superpower, possessing amazing techniques that  
+effectively
+demolish every cipher in the public domain?
+
+For those of us in the unclassified world, there has relatively  
+little evidence
+to go on beyond the occasional tantalizing technical nugget, and even  
+those
+have been hardly uniform in their message.  The impressively well- 
+engineered
+resistance of DES to differential cryptanalysis (apparently called the
+&quot;tickle attack&quot; on the inside years before Biham and Shamir's result)  
+and the
+narrow -- but apparently solid -- resistance of Skipjack to various  
+new attacks
+suggests a remarkably sophisticated set of decades-old cipher design  
+and analysis
+tools that the civilian world is only beginning to catch up with.  On  
+the other
+hand, there have been blunders, like the early problems with SHA and  
+the protocol
+weaknesses in Clipper, that suggest that the NSA's crypto toolkit  
+might not be
+all that much sharper than ours after all.
+
+Anyway, there's now a bit more fuel for speculation.  The latest  
+batch of (still
+partly redacted) publicly-released NSA technical and historical  
+publications
+includes several policy papers from the 1990's that touch on NSA's  
+dominance
+over crypto in the face of an increasingly sophisticated public research
+community (among other factors).  I found one of the most interesting  
+(if
+frustratingly censored) new documents to address this point was  
+&quot;Third Party
+Nations: Partners and Targets&quot; from Winter 1989:
+     <A HREF="http://www.nsa.gov/public/third_part_nations.pdf">http://www.nsa.gov/public/third_part_nations.pdf</A>
+
+This paper discusses the pros and cons (from the NSA's perspective)  
+of sharing
+cryptologic technology with other countries.  The specifics  
+(presumably naming
+names of the countries concerned) are all redacted, but what remains  
+is a
+hypothetical dialog between &quot;liberal&quot; (pro-sharing) and  
+&quot;conservative&quot; (anti-
+sharing) internal viewpoints.  Page 8 of the PDF (marked as page 17)  
+addresses
+the general spread of cryptographic expertise.    Interestingly, both  
+the
+liberal and the conservative sides acknowledge the rapid development  
+of public
+cryptographic expertise, and this was back in 1989.  The conservative  
+argument
+relied here not on the NSA's better crypto-mathematics (an advantage  
+that
+they seemed to believe was shrinking), but rather on the large gap  
+between
+the theory and actual deployment in the non-NSA world (a problem that we
+here have long recognized).
+
+Anyway, this isn't big news, since it's essentially what most of us have
+suspected all along, but this is the earliest document I'm aware of from
+inside the NSA to explicitly address the question.
+
+Personally, I suspect the NSA does have a large advantage in SIGINT
+technologies, but in those areas, like demodulation of unknown signals,
+for which there's less of a civilian research interest.  The vibrant
+crypto research community, on the other hand, has probably evolved to
+the point of being a serious competitor to NSA.
+
+On a side note, I've also been enjoying filling in some of the redacted
+gaps in the various technical papers.  I was particularly delighted
+to discover a fun little paper on safecracking (an analysis of the
+keyspaces of safe locks), which was very similar to part of a survey I
+published a few years ago.   I discuss what's likely in some of the
+redacted material from that paper in a recent blog post at
+    <A HREF="http://www.crypto.com/blog/nsa_safecracking/">http://www.crypto.com/blog/nsa_safecracking/</A>
+
+-matt
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

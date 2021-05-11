@@ -1,0 +1,128 @@
+<PRE>This is an interesting analysis, and the right way to proceed, I think,
+when dealing with passphrases that contain sequences of natural language
+words. I I think the 2.5 bits per word estimate, however, is a massive
+leap.
+
+The problem is that, when it comes to word sequences, the perplexity of
+each contiguous word is much higher than for each contiguous letter in the
+same text.  That is, there are many more possible symbols that can follow
+the current one.  You identified several alternatives that have the &quot;had
+a&quot; prefix, and they are are fairly likely.  Given the &quot;had a&quot; bigram, it
+might be the case the the conditional entropy of the following token is
+fairly small, compared to the general entropy of English unigrams.  If
+&quot;had a little&quot; isn't right, though, the number of possible words that
+might come next is massive.
+
+I think the proper way to continue with this analysis would be to look
+into  the research that has been done on n-gram language models.  I think
+you'll find that even the best models will never get the conditional
+entropy of an arbitrary word down to 2.5 bits.  That would mean that
+basically had the next word narrowed down to less than 8 choices!  This
+may occur in some very  common combinations, but in general the
+conditional entropy will be much higher.  In addition, the phrase-initial
+word will always have a fairly high perplexity, because the only thing to
+condition the distribution over possible words for this case on is the
+fact that it is phrase-initial.
+
+That being said, it seems like the idea that the passprases are much less
+secure than traditional character-lever analysis would suggest is spot on.
+ Google recently published DVDs with their counts of the frequencies of
+all n-grams up to 5-grams in their web corpus
+(<A HREF="http://googleresearch.blogspot.com/2006/08/all-our-n-gram-are-belong-to-you.html">http://googleresearch.blogspot.com/2006/08/all-our-n-gram-are-belong-to-you.html</A>)
+Armed with that data and enough resources, one could build a language
+model that would make passphrase guessing much more principled and could
+reduce the amount of conditional entropy in a passphrase significantly. 
+In fact, for passphrases up to 5 words in length, the entire phrase is
+probably already in the Google data, it's just a matter of having the
+resources to be able to get through them all.
+
+--dan
+
+&gt;<i> Leichter, Jerry wrote:
+</I>&gt;&gt;<i> &gt; | A couple of questions. How did you come up with the ~2.5 bits per
+</I>&gt;&gt;<i> &gt; | word? Would a longer word have more bits?
+</I>&gt;&gt;<i> &gt; He misapplied an incorrect estimate!   :-)  The usual estimate - going
+</I>&gt;&gt;<i> &gt; back to Shannon's original papers on information theory, actually - is
+</I>&gt;&gt;<i> &gt; that natural English text has about 2.5 (I think it's usually given as
+</I>&gt;&gt;<i> &gt; 2.4) bits of entropy per *character*.  There are several problems
+</I>&gt;&gt;<i> here:
+</I>&gt;&gt;<i> &gt;
+</I>&gt;&gt;<i> &gt; 	- The major one is that the estimate should be for *characters*,
+</I>&gt;&gt;<i> &gt; 		not *words*.  So the number of bits of entropy in
+</I>&gt;&gt;<i> &gt; 		a 55-character phrase is about 137 (132, if you use
+</I>&gt;&gt;<i> &gt; 		2.4 bits/character), not 30.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> I think in weird ways.  :-)  The rationale behind it follows:
+</I>&gt;<i>
+</I>&gt;<i> I assume that the passphrase is in syntactically correct English. So,
+</I>&gt;<i> number of possible combinations is reduced by the great amount. Also, I
+</I>&gt;<i>  want to reduce the number of combinations, so I focus on the most
+</I>&gt;<i> probable sentences.
+</I>&gt;<i>
+</I>&gt;<i> It seems ideal to use some stochastic grammar to describe this problem.
+</I>&gt;<i> This type of grammar can be used to produce:
+</I>&gt;<i>
+</I>&gt;<i> 1) probabilities for the sentences so:
+</I>&gt;<i> 	a) total count (state space) can be reduced by threshold
+</I>&gt;<i> 	b) sentences could be sorted by probability
+</I>&gt;<i> 2) estimate of shannon entropy (which allows me to estimate bits per
+</I>&gt;<i> sentence or per word and possibly to craft more effective algorithm to
+</I>&gt;<i> walk through the space)
+</I>&gt;<i>
+</I>&gt;<i> At this point I did a little test for one phrase and played with it a
+</I>&gt;<i> little. I wanted to know, how likely is that using stochastic grammar
+</I>&gt;<i> description, someone can infer that passphrase. I asked google for
+</I>&gt;<i> aproximate count on phrases (results sorted by count):
+</I>&gt;<i>
+</I>&gt;<i> &quot;had a look&quot; 2100000
+</I>&gt;<i> &quot;had a car&quot;   591000
+</I>&gt;<i> &quot;had a little lamb&quot; 590000
+</I>&gt;<i> &quot;had a drink&quot; 562000
+</I>&gt;<i> &quot;mary had a little lamb&quot; 522000
+</I>&gt;<i> &quot;had a fight&quot; 466000
+</I>&gt;<i> mary had a little fleece white snow 322000 //not a phrase
+</I>&gt;<i> &quot;had a president&quot; 80200
+</I>&gt;<i> &quot;had a snow&quot;   42400
+</I>&gt;<i> &quot;had a lamb&quot;   27300
+</I>&gt;<i>
+</I>&gt;<i> and also:
+</I>&gt;<i>
+</I>&gt;<i> &quot;I have been there&quot;  947000
+</I>&gt;<i> &quot;to rescue&quot;         2190000
+</I>&gt;<i>
+</I>&gt;<i> &quot;had&quot; 1.2E9
+</I>&gt;<i> &quot;is&quot;  3.68E9
+</I>&gt;<i> &quot;the&quot; 5E9
+</I>&gt;<i> &quot;a&quot;  7.2E9
+</I>&gt;<i>
+</I>&gt;&gt;<i>From this I assumed that google indexes about 5*109 pages. It can bee
+</I>&gt;<i> seen clearly, that &quot;had a little lamb&quot; is common phrase (relatively,
+</I>&gt;<i> between similar phrases). It can be also seen, that the whole rhyme has
+</I>&gt;<i> about an half count of phrase &quot;had a little lamb&quot;.
+</I>&gt;<i>
+</I>&gt;<i> At this point I decided not to continue further and assumed, that this
+</I>&gt;<i> passphrase has very low information content, so I used value of about
+</I>&gt;<i> 2.5bits/word (which don't seem unreasonable when looking at the numbers
+</I>&gt;<i> above). I didn't calculated the actual value, it can be higher or lower.
+</I>&gt;<i> If the passphrase is &quot;The car looked at me with a telescope.&quot;, I would
+</I>&gt;<i> estimate it higher (unusual combination of words).
+</I>&gt;<i>
+</I>&gt;<i> Thinking about that original passphrase at character level shannon way
+</I>&gt;<i> is incorrect. It overestimates information in that sentence. Word level
+</I>&gt;<i> is better, but still not good enough. Information content is
+</I>&gt;<i> overestimated by many, especially for political speeches.  ;-)
+</I>&gt;<i>
+</I>&gt;<i> -- Martin Tomasek
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

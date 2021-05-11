@@ -1,0 +1,40 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> A pretty scary paper from the Usenix LEET conference:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.usenix.org/event/leet08/tech/full_papers/king/king_html/">http://www.usenix.org/event/leet08/tech/full_papers/king/king_html/</A>
+</I>&gt;<i> 
+</I>&gt;<i> The paper describes how, by adding a very small number of gates to a
+</I>&gt;<i> microprocessor design (small enough that it would be hard to notice
+</I>&gt;<i> them), you can create a machine that is almost impossible to defend
+</I>&gt;<i> against an attacker who possesses a bit of secret knowledge. I suggest
+</I>&gt;<i> reading it -- I won't do it justice with a small summary.
+</I>&gt;<i> 
+</I>&gt;<i> It is about the most frightening thing I've seen in years -- I have no
+</I>&gt;<i> idea how one might defend against it.
+</I>&gt;<i> 
+</I>
+&quot;Silicon has no secrets.&quot;
+
+I spent last weekend in Seattle and Bunnie (of XBox hacking fame/Chumby)
+gave a workshop with Karsten Nohl (who recently cracked MiFare).
+
+In a matter of an hour, all of the students were able to take a
+selection of a chip (from an OK photograph) and walk through the
+transistor layout to describe the gate configuration. I was surprised
+(not being an EE person by training) at how easy it can be to understand
+production hardware. Debug pads, automated masking, etc. Karsten has
+written a set of MatLab extensions that he used to automatically
+describe the circuits of the mifare devices. Automation is key though, I
+think doing it by hand is the path of madness.
+
+If we could convince (this is the hard part) companies to publish what
+they think their chips should look like, we'd have a starting point.
+
+Perhaps,
+Jacob
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

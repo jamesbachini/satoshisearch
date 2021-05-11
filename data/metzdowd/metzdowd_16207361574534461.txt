@@ -1,0 +1,23 @@
+<PRE>On Thu, 11 Oct 2007 22:19:18 -0700
+james hughes &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hughejp at mac.com</A>&gt; wrote:
+
+&gt;<i> A proposal for a new password hashing based on SHA-256 or SHA-512 has
+</I>&gt;<i> been proposed by RedHat but to my knowledge has not had any rigorous
+</I>&gt;<i> analysis. The motivation for this is to replace MD-5 based password
+</I>&gt;<i> hashing at banks where MD-5 is on the list of &quot;do not use&quot;
+</I>&gt;<i> algorithms. I would prefer not to have the discussion &quot;MD-5 is good
+</I>&gt;<i> enough for this algorithm&quot; since it is not an argument that the
+</I>&gt;<i> customers requesting these changes are going to accept.
+</I>&gt;<i> 
+</I>NetBSD uses iterated HMAC-SHA1, where the password is the key and the
+salt is the initial plaintext.  (This is my design but not my
+implementation.)
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

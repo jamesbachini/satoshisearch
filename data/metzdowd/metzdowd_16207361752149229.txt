@@ -1,0 +1,25 @@
+<PRE>&quot;Consider Shannon. He didn&#8217;t do just information theory. Several
+years before, he did some other good things and some which are still
+locked up in the security of cryptography.&quot;
+
+Shannon's crypto work that is &quot;still [1986] locked up&quot;? This was
+said (*) by Richard W. Hamming on March 7, 1986. Hamming,
+who died when he was almost 83 years old in 1998, was then a
+Professor at the Naval Postgraduate School in Monterey, California.
+He was also a retired Bell Labs scientist.
+
+Does anyone about this or what it could be? Or if Hamming was
+incorrect?
+
+(*) <A HREF="http://magic.aladdin.cs.cmu.edu/wp-uploads/hamming.pdf">http://magic.aladdin.cs.cmu.edu/wp-uploads/hamming.pdf</A>
+
+(BTW, this was a great talk!)
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

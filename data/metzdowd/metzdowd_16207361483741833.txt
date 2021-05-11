@@ -1,0 +1,48 @@
+<PRE>Stefan Lucks &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">lucks at th.informatik.uni-mannheim.de</A>&gt; writes:
+
+&gt;<i>There is a big difference between a TPM providing this kind of service, and
+</I>&gt;<i>Peter's device. The TPM is supposed to be hard-wired into a PC -- so if you
+</I>&gt;<i>are using it to safe your banking applications, you can do banking at one
+</I>&gt;<i>single PC. On the other hand, Peter's device is portable, you can use it to
+</I>&gt;<i>do safe banking from your PC at home, or in the office (only during lunch-
+</I>&gt;<i>breaks with the employer's permission of course), or even at a public
+</I>&gt;<i>internet cafe. To this end, Peter's device would be much more useful for the
+</I>&gt;<i>customer than a TPM ever could be.
+</I>
+The portability aspect was one contributing factor, but the other one was more
+philosophical.  As Dan Geer put it recently, &quot;If you're losing at a game that
+you can't afford to lose, change the rules&quot;.  We've been trying since at least
+the mid-1960s to move the insecurity away from the computer using an entire
+industry's worth of gadgets and tricks, and yet we're falling further and
+further behind the attackers.  The external-authorisation-box approach changes
+the rules and instead moves the computer away from the insecurity.  Since the
+only interface to the computer is &quot;feed in blob&quot; and &quot;retrieve blob&quot;, it
+doesn't matter how insecure the surrounding environment is, there's not much
+that it can do to the auth-box.
+
+&gt;<i>BTW, Peter, are you aware that your device looks similar to the one proposed
+</I>&gt;<i>in the context of the CAFE project? See
+</I>&gt;<i><A HREF="http://citeseer.ist.psu.edu/48859.html">http://citeseer.ist.psu.edu/48859.html</A>
+</I>
+I had the feeling it sort of collapsed under its own complexity, the smart
+card/EMV/etc problem that I referred to earlier.
+
+Philipp =?iso-8859-1?q?G=FChring?= &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pg at futureware.at</A>&gt; writes:
+
+&gt;<i>About 50% of the online-banking users are doing personal online banking on
+</I>&gt;<i>company PCs, while they are at work. Company PCs have a special property:
+</I>&gt;<i>They are secured against their users. A user can't attach any device to a
+</I>&gt;<i>company PC that would need a driver installed.
+</I>
+The external device emulates a standard USB memory key, to send data to it you
+write a file, to get data back you read a file (think &quot;/dev&quot;).  There's no
+device driver to install, and no particularly tricky programming on the PC
+either.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

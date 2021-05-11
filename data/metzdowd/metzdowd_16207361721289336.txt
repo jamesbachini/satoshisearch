@@ -1,0 +1,25 @@
+<PRE>Mr Pink writes:
+&gt;<i> In Applied Crypto, the use of padding for CBC encryption is suggested
+</I>&gt;<i> to be met by ending the data block with a 1 and then all 0s to the end
+</I>&gt;<i> of the block size.
+</I>&gt;<i>
+</I>&gt;<i> Is this not introducing a risk as you are essentially introducing a
+</I>&gt;<i> large amount of guessable plaintext into the ciphertext.
+</I>&gt;<i>
+</I>&gt;<i> Is it not wiser to use RNG data as the padding, and using some kind of
+</I>&gt;<i> embedded packet size header to tell the system what is padding?
+</I>
+Back in 2001, there was a discussion of the general issue of altering data
+structures to avoid known plaintext on sci.crypt, under the subject of
+&quot;Known Plaintext Considered Harmless&quot;. A surprising diversity of opinions
+were expressed.
+
+<A HREF="http://groups.google.com/group/sci.crypt/browse_thread/thread/f1aae3a2d10dbcd4?tvc=2&amp;q=known+plaintext+considered+harmless">http://groups.google.com/group/sci.crypt/browse_thread/thread/f1aae3a2d10dbcd4?tvc=2&amp;q=known+plaintext+considered+harmless</A>
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

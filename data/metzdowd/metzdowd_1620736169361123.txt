@@ -1,0 +1,48 @@
+<PRE>
+So AFAICT from perusal of RFC2631 &quot;Diffie-Hellman Key Agreement Method&quot; and 
+RFC2630 CMS, when one executes a simple DH static profile between two parties, 
+the only things that really need to go over the wire are each party's public 
+keys (ya and yb) if { p, q, g, j } are known to both parties. And thus, 
+&quot;Generation of Keying Material&quot; is done by each party separately, using the 
+value of ZZ that each independently calculates, yes?  Thus keying material 
+doesn't cross the wire and risk exposure (among various things).
+
+So if p, q, g are not static, then a simplistic, nominally valid, DH profile 
+would be to..
+
+
+      a                                         b
+  ----------                               ----------
+
+  g, p, ya ------------------------------------&gt;
+
+
+      &lt;--------------------------------------- yb
+
+
+ [calculates ZZ]                         [calculates ZZ] 
+ [calculates keying material]            [calculates keying material]
+      .                                         .
+      .                                         .
+      .                                         .
+
+
+
+..yes? 
+
+
+Other than for b perhaps wanting to verify the correctness of { p, q, g, j } 
+(&quot;group parameter validation&quot;), is there any reason to send q ?
+
+
+
+thanks,
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

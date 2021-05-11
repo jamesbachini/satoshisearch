@@ -1,0 +1,15 @@
+<PRE>Inkjet cartidges and laserprinter cartridges already have this kind of 
+functionality.  Rumor has had it for a long time that Dell has been 
+doing this with their batteries.
+
+In any case, the strength of the crypto is irrelevant.  What's relevant 
+is the strength of the lawyers arguing that clone makers are violating 
+the DMCA.
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

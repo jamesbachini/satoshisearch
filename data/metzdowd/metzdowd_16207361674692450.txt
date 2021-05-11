@@ -1,0 +1,28 @@
+<PRE>At 16:38 +1300 04.01.2008, Peter Gutmann wrote:
+
+&gt;<i>At $1.40 each (at least in sub-1K quantities) you wonder whether it's costing
+</I>&gt;<i>them more to add the DRM (spread over all battery sales) than any marginal
+</I>&gt;<i>gain in preventing use of third-party batteries by a small subset of users.
+</I>
+I don't think I agree with the &quot;DRM for batteries&quot; characterization. 
+It's not my data in that battery that they're preventing me from 
+getting at.
+
+Given that illicit replica batteries can have particularly mediagenic 
+failure modes, I posit that manufacturers are increasingly motivated 
+to make sure that if the battery says NameBrand on it, it actually is 
+a NameBrand battery. Counterfeit failures lead to brand damage and 
+other unpleasant economic side-effects.
+
+Not that real NameBrand batteries don't ever behave badly, but this 
+type of countermeasure should also provide legitimate manufacturers 
+with additional incentive not to screw up. Which is actually to the 
+end users' benefit.
+
+s.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

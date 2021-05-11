@@ -1,0 +1,24 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> &quot;Steven M. Bellovin&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">smb at cs.columbia.edu</A>&gt; writes:
+</I>&gt;&gt;<i> On Mon, 18 Jun 2007 22:57:36 -0700 &quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+</I>&gt;&gt;&gt;<i> US Government has select 9 security vendors that will product drive
+</I>&gt;&gt;&gt;<i> and file level encryption software.
+</I>&gt;&gt;<i> Out of curiousity, are any open source FDE products being evaluated?
+</I>&gt;<i> 
+</I>&gt;<i> Given that it's for USG use, I imagine the FIPS 140 entry barrier for the
+</I>&gt;<i> government gravy train would be fairly effective in keeping any OSS products
+</I>&gt;<i> out.
+</I>
+? OpenSSL has FIPS 140.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,20 @@
+<PRE>
+ &gt; Amateurs talk about algorithms.  Professionals talk about economics.
+
+
+That would be
+
+
+  Amateurs study cryptography; professionals study economics.
+  -- Allan Schiffman, 2 July 04
+
+
+Quotationally yours,
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,82 @@
+<PRE>*************************************************
+
+BSF/DIMACS/DyDAn Workshop on Data Privacy
+
+      February 4 - 7, 2008
+      DIMACS/DyDAn Center, CoRE Building, Rutgers University
+
+Organizers:
+      Kobbi Nissim, Ben Gurion University, kobbi at cs.bgu.ac.il 
+      Benny Pinkas, University of Haifa, benny at cs.haifa.ac.il 
+      Rebecca Wright, Rutgers University, rebecca.wright at rutgers.edu 
+
+Presented under the auspices of the DIMACS Special Focus on 
+Communication Security and Information Privacy and 
+the Center for Dynamic Data Analysis (DyDAn).
+
+    ************************************************
+
+An ever-increasing amount of data is available in digital form, often
+accessible via a network. Not surprisingly, this trend is accompanied
+by an increase in public awareness of privacy issues and by
+legislation of privacy laws. The interest in privacy, and the tension
+between privacy and utility of data, is amplified by our growing
+ability to collect and store large amounts of data, and our ability to
+mine meaningful information from it. This workshop will view privacy
+in a broad sense in order to facilitate interaction and discussion
+between privacy-oriented researchers in different communities.
+
+The study of &quot;privacy&quot; is inherently interdisciplinary, spanning a
+range of applications and scenarios, such as analysis of census data,
+detection and prevention of terrorist activity, and biomedical
+research. There is a fundamental interplay between privacy and law,
+security, economics, and the social sciences. This workshop will
+foster interactions between researchers in these fields with those in
+statistics and computer science, toward the goal of developing problem
+formulations that can be translated into a technical mathematical
+language that lends itself to a more rigorous study of privacy. The
+workshop will contrast these formal definitions with more intuitive
+notions of privacy from the social sciences, economics, philosophy and
+law to determine the extent to which they capture the perceived
+meaning of privacy in different settings.
+
+Privacy-preserving technologies may soon become an integral part of
+the basic infrastructure for the collection and dissemination of
+official statistics, as well as for research in business, economics,
+medical sciences, and social sciences. Functional solutions for
+preserving privacy would therefore serve as a central part of the
+infrastructure for those disciplines. This workshop will address a
+variety of questions on algorithms for privacy-preserving analysis
+such as:
+
+  * To what extent can such techniques be applied to 
+     statistical data?
+  * What are the consequences to privacy and confidentiality 
+     if such techniques are not used?
+  * Are changes in statistical tools needed to make them 
+     compatible with such techniques?
+  * Can the techniques be modified to allow use of standard 
+     statistical tools and practices? 
+
+**************************************************************
+Registration:
+
+Pre-registration deadline: January 28, 2008
+
+Please see website for registration information.
+
+*********************************************************************
+Information on participation, registration, accomodations, and travel 
+can be found at:
+
+  <A HREF="http://dimacs.rutgers.edu/Workshops/DataPrivacy/">http://dimacs.rutgers.edu/Workshops/DataPrivacy/</A>
+
+   **PLEASE BE SURE TO PRE-REGISTER EARLY**
+
+********************************************************************
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

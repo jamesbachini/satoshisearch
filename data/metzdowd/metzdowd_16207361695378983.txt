@@ -1,0 +1,62 @@
+<PRE>' =JeffH ' &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt; writes:
+&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A> said:
+</I>&gt;&gt;<i> <A HREF="http://www.xml-dev.com/blog/index.php?action=viewtopic&amp;id=196">http://www.xml-dev.com/blog/index.php?action=viewtopic&amp;id=196</A>
+</I>&gt;<i>
+</I>&gt;<i>thanks, but that doesn't actually answer my first question. It only documents
+</I>&gt;<i>that a and b (alice and bob) arrive at the ZZ value independently. My question
+</I>&gt;<i>is actually concerning section 2.1.2 &quot;Generation of Keying Material&quot; in
+</I>&gt;<i>RFC2631.
+</I>
+I'm going to approach the answer somewhat differently: Why are you using this
+mechanism?  The only reason that it's present in the spec is politics, it
+being an attempt to avoid the RSA patent.  Its adoption was severely hampered
+by the fact that US vendors already had RSA licenses, non-US vendors didn't
+care (and in any case the patent has now expired, so they care even less), no
+CA's of note will issue X9.42 certificates, and even if they did almost no
+S/MIME implementations support it.  Although X9.42 was at one point listed as
+mandatory to implement for S/MIME v3, the approach that was taken by most
+vendors was to vaguely pretend to support X9.42 while actually concentrating
+on RSA, knowing that noone else supported it either (AFAIK only two vendors
+ever really supported it, Microsoft had a receive-only implementation so that
+no-one could accuse them of not being compliant with the spec, and the S/MIME
+Freeware Library (which was the reference implementation and therefore had no
+choice in supporting it) supported it because it had to).  A few years after
+the expiry of the RSA patent, the matter was corrected by changing the
+standard so that vendors were no longer required to even pretend to support
+X9.42.  My comments at the time were:
+
+-- Snip --
+
+How about trying to make the spec at least vaguely approximate reality in the
+choice of algorithms?  It doesn't really matter if you include requirements
+like &quot;MUST DSA OR WE WILL KILL YOU[0], SHOULD NOT RSA&quot;, in practice the world
+will interpret it as &quot;MUST RSA, MAY DSA, SHOULD NOT X9.42 DH, BWAHAHAHAHAHA
+X9.31 RSA&quot; no matter what it says in the RFC.
+
+I've been sitting here watching this debate go on and on, but since no matter
+what you put in the RFC the market will interpret it as MUST RSA and various
+levels of deprecation for anything else maybe we could get Markov Chaney to
+continue the debate for a while just for forms sake and then after enough
+messages have been exchanged to satisfy everyone either put text in the RFC
+which accepts what everyone's going to do anyway or which specifies all sorts
+of options and alternatives secure in the knowledge that implementors will
+ignore it and do what the market wants/expects, which ain't DSA or X9.42 or
+X9.31 RSA.
+
+Peter.
+
+[0] RFC 2026bis, &quot;When MUST just isn't enough&quot;.
+
+-- Snip --
+
+So by implementing this you're getting an unwanted orphan crypto mechanism
+that was only added for political reasons.  Are you sure you don't want to use
+RSA instead?
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

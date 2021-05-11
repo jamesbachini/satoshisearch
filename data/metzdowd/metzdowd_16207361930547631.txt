@@ -1,0 +1,26 @@
+<PRE>
+&gt;<i>This isn't enough.  Somehow, you have to state that the values emitted
+</I>&gt;<i>on demand in any given round i (where a round consists of exactly one
+</I>&gt;<i>demand on all N member and produces a single output result) cannot
+</I>&gt;<i>receive any input from any other members.  Otherwise, if N=2 and member
+</I>&gt;<i>0 produces true random values that member 1 can see before it responds
+</I>&gt;<i>to the demand it received, then member 1 can cause the final result to
+</I>&gt;<i>be anything it likes.
+</I>
+In the case of malicious members who can snoop the inputs,
+Mal can get any result he wants if the combining function is XOR
+(or, with slightly more work, if it's a non-cryptographic checksum.)
+But if your combining function is a cryptographic hash,
+it's computationally difficult to do.
+
+However, even a hash isn't always enough - consider the case
+where the application of the random numbers only uses k of the N bits,
+and the attacker has enough time to try out 2**k (waving hands roughly here)
+different cases.  So you may still need to design your protocols carefully.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,104 @@
+<PRE>[adding Cc: p2p-hackers and cryptography mailing lists as explained  
+below; Please trim your follow-ups as appropriate.]
+
+Dear Gary Sumner:
+
+
+On Jan 26, 2008, at 9:44 PM, Gary Sumner wrote:
+&gt;<i> I was researching on the weekend and came across Tahoe&#8230;very  
+</I>&gt;<i> exciting and can&#8217;t wait to delve in and understand more in detail.
+</I>&gt;<i>
+</I>&gt;<i> I was reading over Plank&#8217;s work around erasure encoding and that  
+</I>&gt;<i> lead me to Tahoe. One thing that I was really looking for was to be  
+</I>&gt;<i> able to encrypt the data before storing it  and so was very excited  
+</I>&gt;<i> when I read your architecture doc and it says &#8220;When a file is to be  
+</I>&gt;<i> added to the grid, it is first encrypted using a key that is  
+</I>&gt;<i> derived from the hash of the file itself.&#8221; This seems perfectly  
+</I>&gt;<i> logical and natural way to apply this technique. However,  
+</I>&gt;<i> researching also lead me to a patent M$ has been granted on this  
+</I>&gt;<i> exact process:
+</I>&gt;<i>
+</I>&gt;<i> Encryption Systems and Methods for Identifying and Coalescing  
+</I>&gt;<i> Identical Objects Encrypted with Different Keys - <A HREF="http://">http://</A> 
+</I>&gt;<i> patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&amp;Sect2=HITOFF&amp;p=1&amp;u=% 
+</I>&gt;<i> 2Fnetahtml%2FPTO%2Fsearch- 
+</I>&gt;<i> bool.html&amp;r=1&amp;f=G&amp;l=50&amp;co1=AND&amp;d=PTXT&amp;s1=6983365.PN.&amp;OS=PN/ 
+</I>&gt;<i> 6983365&amp;RS=PN/6983365
+</I>&gt;<i>
+</I>
+I haven't read that patent, so I can't say whether it applies to what  
+allmydata.org Tahoe does or not.  By default, for immutable files  
+(but not for mutable files or directories), Tahoe sets the encryption  
+key equal to the tagged hash of the file contents.  (A tagged hash is  
+simply a hash of the data prefixed by a tag to distinguish it from  
+other uses of hash functions).  You don't have to use Tahoe this way,  
+however:
+
+&gt;<i> The encryption before storing is critical for my application.
+</I>&gt;<i>
+</I>If, for any reason, you don't want to let your encryption key be  
+produced from the secure hash of the file contents, then Tahoe can  
+instead use a randomly-generated encryption key.  The drawback of  
+doing it this way -- with a random encryption key -- is that you lose  
+the &quot;deduplication&quot; feature: two people who independently store the  
+same file contents will use twice as much space, instead of each of  
+them having a pointer to a single stored copy.  The advantages of  
+doing it with a random encryption key are that you get a stronger  
+guarantee about the confidentiality of the contents of your files,  
+and it is faster as you don't need to process the whole file (in  
+order to generate the encryption key) before beginning to upload the  
+file.
+
+&gt;<i> Surely there must be prior art on this technique to refute this  
+</I>&gt;<i> patent?
+</I>&gt;<i>
+</I>
+That's an interesting question, and I'm carbon-copying the p2p- 
+hackers and cryptography mailing lists to ask if anyone knows.  I  
+learned about this technique from Jim McCoy and Doug Barnes in their  
+design of Mojo Nation.  I don't remember whether this technique was  
+mentioned in Jim McCoy's personal communication of Mojo Nation to me  
+in the summer of 1998, but it was definitely present in the design  
+when I started working for Jim and Doug on Mojo Nation in 1999, and  
+when Mojo Nation was first announced to the world at DefCon in July  
+2000 [1, 2].  I don't know if Jim came up with the idea ex nihilo or  
+was exposed to it in the swirling soup of ideas that we lived in at  
+the time: cypherpunks / Electric Communities (which had many ideas  
+gleaned from Xanadu) / Financial Cryptography / etc..
+
+I remember reading about the newly announced Freenet project in 2000  
+and being surprised at how many similarities its design had to our  
+unannounced Mojo Nation project.  The influential Freenet paper [3]  
+was published in July, 2000 -- one month too late to count as prior  
+art for that patent, which was filed May 2000.  However, that paper  
+was based on Ian Clarke's master's thesis, which was published in  
+1999.  Let's see...  A there it is: [4].  Hm, no it does not seem to  
+contain the notion that the 2000 Freenet paper would popularize as  
+&quot;Content Hash Keys&quot;.
+
+I've also just now re-read The Eternity Service (Anderson, 1996) [5],  
+and it, like Clarke 1999, omits details of encryption.
+
+It's an interesting puzzle of intellectual history.  The idea  
+certainly seems to have been &quot;in the air&quot;, as both Mojo Nation and  
+Freenet were working on it before the May 2000 patent submission by  
+Doceur et al., but Mojo Nation and Freenet each published the idea  
+shortly after May 2000.  According to my limited understanding of  
+patent law, this means that they don't count as prior art on that  
+patent.
+
+Regards,
+
+Zooko
+
+[1] <A HREF="http://www.mccullagh.org/image/950-12/jim-mccoy-mojonation.html">http://www.mccullagh.org/image/950-12/jim-mccoy-mojonation.html</A>
+[2] <A HREF="http://web.archive.org/web/20001118214000/http://">http://web.archive.org/web/20001118214000/http://</A> 
+www.mojonation.net/docs/technical_overview.shtml
+[3] <A HREF="http://citeseer.ist.psu.edu/420356.html">http://citeseer.ist.psu.edu/420356.html</A>
+[4] <A HREF="http://citeseer.ist.psu.edu/380453.html">http://citeseer.ist.psu.edu/380453.html</A>
+[5] <A HREF="http://citeseer.ist.psu.edu/anderson96eternity.html">http://citeseer.ist.psu.edu/anderson96eternity.html</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

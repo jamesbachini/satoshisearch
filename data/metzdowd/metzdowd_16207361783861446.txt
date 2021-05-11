@@ -1,0 +1,35 @@
+<PRE>Perry E. Metzger wrote:
+
+&gt;<i> It is obvious to anyone using modern IPSec implementations that their
+</I>&gt;<i> configuration files are a major source of pain. In spite of this, the
+</I>&gt;<i> designers don't seem to see any problem. The result has been that
+</I>&gt;<i> people see IPSec as unpleasant and write things like OpenVPN when the
+</I>&gt;<i> underlying IPSec protocol is just fine and it is the implementations
+</I>&gt;<i> that are unpleasant.
+</I>
+
+Kerckhoffs' 6th, providing great entertainment for the 
+security world, since 1883.
+
+=====================
+6. Finally, it is necessary, given the circumstances that 
+command its application, that the system be easy to use, 
+requiring neither mental strain nor the knowledge of a long 
+series of rules to observe.
+=====================
+
+
+
+iang
+
+
+PS:  Although his 6th is arguably the most important, his 
+others are well worth considering:
+
+<A HREF="https://www.financialcryptography.com/mt/archives/000195.html">https://www.financialcryptography.com/mt/archives/000195.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

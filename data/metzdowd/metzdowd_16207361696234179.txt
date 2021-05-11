@@ -1,0 +1,31 @@
+<PRE>Jon Callas wrote:
+&gt;<i> 
+</I>&gt;<i> On Feb 21, 2008, at 12:14 PM, Ali, Saqib wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> However, the hardware based encryption solutions like (Seagate FDE)
+</I>&gt;&gt;<i> would easily deter this type of attacks, because in a Seagate FDE
+</I>&gt;&gt;<i> drive the decryption key never gets to the DRAM. The keys always
+</I>&gt;&gt;<i> remain in the Trusted ASIC on the drive.
+</I>&gt;<i> 
+</I>&gt;<i> Umm, pardon my bluntness, but what do you think the FDE stores the key
+</I>&gt;<i> in, if not DRAM? The encrypting device controller is a computer system
+</I>&gt;<i> with a CPU and memory. I can easily imagine what you'd need to build to
+</I>&gt;<i> do this to a disk drive. This attack works on anything that has RAM.
+</I>&gt;<i> 
+</I>
+Actually, I hear that some companies store the keys on the platters of
+the disk. Again this is if they're actually using crypto and not just
+selling XOR'ed blocks of data.
+
+To project the keys, they limit standard read commands to not enter
+those areas of the disk. Of course the vendor provides a method to read
+those areas of disk, it's just a matter of finding them.
+
+Regards,
+Jacob Appelbaum
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

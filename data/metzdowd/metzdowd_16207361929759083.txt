@@ -1,0 +1,48 @@
+<PRE>On Fri, Oct 24, 2008 at 10:23:07AM -0500, Thierry Moreau wrote:
+
+&gt;<i> Do you really trust that no single source of entropy can have knowledge of 
+</I>&gt;<i> the other source's output, so it can surreptitiously correlate its own?
+</I>&gt;<i>
+</I>&gt;<i> I.e, you are are also assuming that these sources are *independent*.
+</I>
+I do not think one means the other here.
+
+An omniscient malicious RNG source seems quite unlikely in most threat
+models. However that is a very different statement from saying that
+lacking such an attacker, you can safely assume your 'pools of
+entropy' (to quote the original question) are independent in the
+information-theoretic sense.
+
+Say you execute (on a Linux machine) two commands, like ifconfig -a
+and netstat -s (which print ASCII text with statistics about network
+interfaces and network protocols, resp), capturing the output as two
+of your entropy sources.
+
+Both have some amount of entropy (perhaps zero if an attacker is on
+the machine and runs his commands at the same time as yours - and
+perhaps quite a bit more if the local machine happens to be safe). But
+they are certainly not statistically independent!  Information in one
+will be somewhat reflected in the other (packet counters), and of
+course at the macro level all your inputs have high bit unset, so if
+you combined via XOR your output will have at best .875 bits of
+entropy per bit.
+
+To address IanG's question more directly, my first thought would be to
+use something like the design Hugo Krawczyk describes in &quot;On
+Extract-then-Expand Key Derivation Functions and an HMAC-based KDF&quot;
+(<A HREF="http://www.ee.technion.ac.il/~hugo/kdf/kdf.pdf">http://www.ee.technion.ac.il/~hugo/kdf/kdf.pdf</A>) or one of the related
+PRNG designs he references. Then use the output of the HMAC PRF to
+feed the DT vector of an X9.31 PRNG (using block cipher du jour), a
+trick AFAIK invented by Peter Gutmann which has always seemed like a
+good worst-case-scenario trick to me (for instance, if the code for
+the hash's compression function is miscompiled), though at the cost of
+extra code/design complexity (and thus points of failure) - as always
+there are tradeoffs to make.
+
+-Jack (IANAC)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

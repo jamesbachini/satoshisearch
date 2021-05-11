@@ -1,0 +1,104 @@
+<PRE>
+[Moderator's note: with my other hat on, let me say that although I'm
+a libertarian, I do not want to have this mailing list fill with
+libertarianism vs. statism arguments. I'm going to cut this off pretty
+quickly. --Perry-as-moderator]
+
+William Allen Simpson &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">william.allen.simpson at gmail.com</A>&gt; writes:
+&gt;<i> I agree.   I'm sure this is a world-wide problem, and head-in-the-sand
+</I>&gt;<i> cyber-libertarianism has long prevented better solutions.  The &quot;market&quot;
+</I>&gt;<i> doesn't work for this, as there is a competitive *disadvantage* to
+</I>&gt;<i> providing improved security, and it's hard to quantify safety.
+</I>
+I have to disagree, for a wide number of reasons. I'll avoid getting
+too deeply into them them here.
+
+&gt;&gt;<i> The average cryptographic expert finds it tricky to set up something
+</I>&gt;&gt;<i> that is actually secure.  The average bureaucrat could not run a pie
+</I>&gt;&gt;<i> stand.  Legislation and so forth requires wise and good legislators
+</I>&gt;&gt;<i> and administrators, which is unlikely.
+</I>&gt;<i>
+</I>&gt;<i> So, what campaigns are you working on currently to improve this?
+</I>&gt;<i>
+</I>&gt;<i> I've educated dozens of U.S. legislators over the years....  Indeed,
+</I>&gt;<i> the original funding for my NSFnet work 20 years ago was funded by
+</I>&gt;<i> the Michigan House Fiscal Agency, and my early IETF work was funded
+</I>&gt;<i> by the Levin (Senate) and Carr (House) campaigns.
+</I>
+And yet, in spite of the efforts people make, we still have
+significant problems, don't we? It doesn't take great genius to
+understand why current spam legislation is flawed, but I haven't seen
+it fixed even though you will be hard pressed to find many people who
+claim to love spam. We have lots of legislation against various forms
+of computer crime and yet we have virtually no prosecutions even
+though something like half of the computers in the country have been
+broken in to. We also used to have quite reasonable wiretap laws in
+this country which were blown out of the water when political
+expediency demanded it.
+
+I contend that none of this is an accident, or particularly easy to
+change.
+
+&gt;&gt;<i> Visualize Obama, McCain, or Sarah Palin setting up your network
+</I>&gt;&gt;<i> security.  Then realize that whoever they appoint as Czar in charge
+</I>&gt;&gt;<i> of network security is likely to be less competent than they are.
+</I>&gt;&gt;<i>
+</I>&gt;<i> The problem, as always, is enough folks that are competent in both
+</I>&gt;<i> computer security *and* political action.
+</I>
+I don't see how that is going to change.
+
+One can hope for an ideal, substantially superior world, but generally
+speaking human beings have to live with the world that we have, and
+most importantly with the behavior patterns of real people.
+
+The core of the libertarian view on this and many other topics is not
+that it wouldn't be wonderful if we had perfect legislation enforced
+by perfect policemen, but that we must acknowledge that in the real
+world we will get the result of a very flawed and problematic
+political process which will be enforced humans rather than angels.
+
+On the political process side, large companies with powerful interests
+will be immediately involved once the topic of mandatory security
+standards comes to the fore. Many of those companies will see
+lobbyists as cheaper than IT infrastructure. There will also be those
+who see legislation as an opportunity to cash in -- they will try to
+twist the laws in such a way as to make a buck, by mandating solutions
+they think will profit them. Some people in our profession may even
+decide to do what cosmetologists, private investigators and even
+doctors have done in the past, and reduce competition by requiring
+licensing as a way of preventing others from entering in to their
+field. We will also find that the people writing the regulatory
+standards may very well be the sort who are not entirely right
+minded -- not everyone in this field can even understand why http: is
+a bad transport for bank login pages, so we can't expect that everyone
+in the field can recognize good regulations.
+
+I suspect the difference between one's aspirations and the output of
+this process will be much like the difference between a dog before and
+after it falls into a meat grinder. Much of the underlying material
+remains, but the parts are no longer arranged into something you would
+consider a faithful pet.
+
+On the enforcement side, we will suddenly find ourselves in a
+situation where people who are far from the best technically will be
+asked to examine extremely complicated computer systems and to decide
+whether to penalize firms for failing to properly comply with very
+complicated regulations. I will not belabor the point -- having seen
+the results of this in much less technical areas, like finance, I must
+say that I do not have very high hopes for the outcome of the process.
+
+Again, it is easy to say &quot;there ought to be a law!&quot;, and it is much
+harder to get the right law into place, and even then almost
+impossible to get it properly enforced. I have very few hopes for this
+path.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,16 @@
+<PRE>can anyone please shed more light on this patent. It seems like a
+patent on the simple process of cryptographic erase......
+
+saqib
+<A HREF="http://www.full-disk-encryption.net/wiki">http://www.full-disk-encryption.net/wiki</A>
+
+
+On Jan 22, 2008 7:29 PM, Perry E. Metzger &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+&gt;<i>
+</I>&gt;<i> <A HREF="http://www.google.com/patents?vid=USPAT6993661">http://www.google.com/patents?vid=USPAT6993661</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,283 @@
+<PRE>(This is an ASCII rendering of <A HREF="https://zooko.com/">https://zooko.com/</A> 
+convergent_encryption_reconsidered.html .)
+
+                  Convergent Encryption Reconsidered
+
+    Written by Zooko Wilcox-O'Hearn, documenting ideas due to Drew
+    Perttula, Brian Warner, and Zooko Wilcox-O'Hearn, 2008-03-20.
+
+   Abstract
+
+    Convergent encryption is already known to suffer from a
+    confirmation-of-a-file attack. We show that it suffers also
+    from a learn-partial-information attack. The conditions under
+    which this attack works cannot be predicted by a computer
+    program nor by an unsophisticated user. We propose a solution
+    which trades away part of the space savings benefits of
+    convergent encryption in order to prevent this new attack. Our
+    defense also prevents the old attack. The issues are presented
+    in the context of the Tahoe Least-AUthority Grid File System, a
+    secure decentralized filesystem.
+
+   Background -- The Confirmation-Of-A-File Attack
+
+    Convergent encryption, also known as content hash keying, was
+    first mentioned by John Pettitt on the cypherpunks list in 1996
+    [1], was used by Freenet [2] and Mojo Nation [3] in 2000, and
+    was analyzed in a technical report by John Doceur et al. in
+    2002 [4]. Today it is used by at least Freenet, GNUnet [5],
+    flud [6], and the Tahoe Least-AUthority Grid File System [7].
+    The remainder of this note will focus on the Tahoe LAUGFS
+    filesystem. The use of convergent encryption in other systems
+    may have different consequences than described here, because of
+    the different use cases or added defenses that those systems
+    may have.
+
+    Convergent encryption is simply encrypting a file using a
+    symmetric encryption key which is the secure hash of the
+    plaintext of the file.
+
+    Security engineers have always appreciated that convergent
+    encryption allows an attacker to perform a
+    confirmation-of-a-file attack -- if the attacker already knows
+    the full plaintext of a file, then they can check whether a
+    given user has a copy of that file.
+
+    Whether this confirmation-of-a-file attack is a security or
+    privacy problem depends on the situation. If you want to store
+    banned books or political pamphlets without attracting the
+    attention of an oppressive government, or store pirated copies
+    of music or movies without attracting the attention of
+    copyright holders, then the confirmation-of-a-file attack is
+    potentially a critical problem. On the other hand, if the
+    sensitive parts of your data are secret personal things like
+    your bank account number, passwords, and so forth, then it
+    isn't a problem. Or so I -- and as far as I know everyone else
+    -- thought until March 16, 2008.
+
+    I had planned to inform users of the current version of Tahoe
+    -- version 0.9.0 -- about the confirmation-of-a-file attack by
+    adding a FAQ entry:
+
+      Q: Can anyone else see the contents of files that I have not
+      shared?
+
+      A: The files that you store are encrypted so that nobody can
+      see a file's contents (unless of course you intentionally
+      share the file with them). However, if the file that you
+      store is something that someone has already seen, such as if
+      it is a file that you downloaded from the Internet in the
+      first place, then they can recognize it as being the same
+      file when you store it, even though it is encrypted. So
+      basically people can tell which files you are storing if they
+      are &quot;publically known&quot; files, but they can't learn anything
+      about your own personal files.
+
+    However, four days ago (on March 16, 2008) Drew Perttula and
+    Brian Warner came up with an attack that shows that the above
+    FAQ is wrong.
+
+   The Learn-Partial-Information Attack
+
+    They extended the confirmation-of-a-file attack into the
+    learn-partial-information attack. In this new attack, the
+    attacker learns some information from the file. This is done by
+    trying possible values for unknown parts of a file and then
+    checking whether the result matches the observed ciphertext.
+    For example, if you store a document such as a form letter from
+    your bank, which contains a few pages of boilerplate legal text
+    plus a few important parts, such as your bank account number
+    and password, then an attacker who knows the boilerplate might
+    be able to learn your account number and password.
+
+    For another example, if you use Tahoe to backup your entire
+    home directory, or your entire filesystem, then the attacker
+    gains the opportunity to try to learn partial information about
+    various files which are of predictable format but have
+    sensitive fields in them, such as .my.cnf (MySQL configuration
+    files), .htpasswd, .cvspass, .netrc, web browser cookie files,
+    etc.. In some cases, files such as these will contain too much
+    entropy from the perspective of the attacker to allow this
+    attack, but in other cases the attacker will know, or be able
+    to guess, most of the fields, and brute force the remainder.
+
+    Designers of these systems -- MySQL, Apache, etc. -- know that
+    user secrets are often guessable (increasingly often,
+    nowadays), which is why such applications limit the rate at
+    which clients can attempt to login and try passwords. From a
+    cryptographer's perspective, using Tahoe with convergent
+    encryption on all files allows an attacker to use off-line
+    attacks instead of on-line attacks, which renders vulnerable
+    some secrets which were formerly safe.
+
+    The amount of information that the attacker can learn using
+    this attack is upper-bounded by two things: first, by the
+    attacker's computational capacity. If the attacker can perform
+    no more than 2^64 computations, then he can learn no more than
+    64 bits worth of information from any file. Note that he does
+    not have to spend all of this computation attacking a single
+    file owned by a single user -- instead he can attack many users
+    and many files in parallel with the same computation. (He can
+    also burn his resulting values into a rainbow table on DVD and
+    sell it on the Web so that the buyer can attack other users
+    using the result of the attacker's computation. This is
+    currently done for hashed or encrypted passwords.)
+
+    The second upper bound is the amount of entropy in the file
+    from the attacker's perspective. If the file contains more
+    entropy, from the attacker's perspective, than his
+    computational capacity, then he learns nothing about the file
+    (except that the file was not any of the things that he guessed
+    that it might be). Note that the amount of entropy is relative
+    to the attacker, not intrinsic to the file. You may think that
+    a PDF file with millions of bytes in it would have a lot of
+    entropy, but if it happens to be a form letter from your bank,
+    and if the attacker happened to receive the same letter with
+    only a few fields different, then it contains little entropy to
+    him. This subtlety may underlie the failure of many, including
+    myself, to understand this issue sooner. Observe also that it
+    is not possible for a computer program to determine whether a
+    given file has sufficient entropy -- the answer to that
+    question depends on what the attacker knows and on how
+    sophisticated and accurate is his model of the victim.
+
+    (Note: ideas like this are often Obvious in Retrospect. If this
+    one was Obvious in Forespect to anyone, I would appreciate
+    references. I've scoured the citations mentioned in this note
+    and found no hint of it.)
+
+   Defense Against Both Attacks
+
+    What can we do about this? Well, in Tahoe the application which
+    uses the secure filesystem, or even the human user which uses
+    the application, can choose to use convergent encryption or not
+    on a per-file basis, and there is no backwards-compatibility
+    problem (Tahoe v0.9.0 will be able read files which are written
+    with or without convergent encryption).
+
+    However, we can do better than that by creating a secret value
+    and mixing that value into the per-file encryption key (so
+    instead of symmetric_key = H(plaintext), you have symmetric_key
+    = H(added_secret, plaintext), where &quot;,&quot; denotes an unambiguous
+    encoding of both operands). This idea is due to Brian Warner
+    and Drew Perttula.
+
+    The set of people who know this added secret is the set of
+    people whose files can converge, and it is also the set of
+    people who are able to perform either of the two attacks
+    described above. This means that attackers with whom you do not
+    share this added secret are prevented from performing either
+    attack on your files.
+
+    One policy which is easy to implement is for each user to keep
+    the added secret to themselves. This would make successive
+    uploads of the same file by the same user converge, but would
+    not achieve convergence with any other user's files, and would
+    fully protect the users against these two attacks.
+
+    There are various possibilities for how to automatically decide
+    whether or not to use convergent encryption on a given file or
+    set of files -- heuristics based on file size, name or
+    location, white lists or black lists of files, and perhaps ways
+    that the user interface could make the alternatives apparent to
+    the user. These ideas are out of the scope of this note (and,
+    for now, of the Tahoe decentralized filesystem itself -- the
+    application written atop Tahoe can decide).
+
+    It should be noted that if the exact size of a file is divulged
+    then this information can be used for a confirmation-of-a-file
+    attack, if there are few likely files of that exact size.
+    Adding padding to files before encryption can substantially
+    reduce the effectiveness of that attack vector, as is already
+    well known.
+
+   A Comment About Space Savings
+
+    One of the original motivations for convergent encryption, as
+    expressed in Doceur's technical report, is to conserve storage
+    space by coalescing identical files. That technical report
+    cited an experiment by Doceur et al. at Microsoft in 2002 which
+    showed that coalescing all files on a set of 585 Windows
+    workstations resulted in a 50% space savings. My suspicion is
+    that the gains available for modern uses are nowhere near that
+    good -- I wouldn't be surprised if it were less than 5% for
+    typical uses of the Tahoe Least-AUthority Grid File System.
+
+    My reasoning is:
+     1. The Doceur et al. test set was probably the ideal test set
+        to highlight the advantages of coalescing: it was hundreds
+        of workstations, which probably all followed the same
+        Information Technology Department policies, which were
+        probably homogeneous, and which were probably packed with
+        many of the same software products (especially Microsoft
+        products).
+     2. Movies and music. In 2002, on Windows workstations in an
+        office at Microsoft, there probably weren't any movies. For
+        some of the probable use cases for Tahoe, movies and
+        collections of music are the largest component. The
+        presence of movie files, which are large, could increase or
+        decrease the proportion of savings from coalescing files,
+        depending on the degree to which those files are shared
+        among multiple users, which brings us to the next point:
+     3. The Long Tail; Today there seems to be a more diverse set
+        of things taking up a bigger portion of the total.
+     4. Personally-produced photos and movies. It seems like some
+        of the files that people are most eager to back up and to
+        share are the product of their own cameras. Such files will
+        typically be shared by only one or a few users.
+
+    The question of how much space is saved by convergence in a
+    typical use of Tahoe remains open. Hopefully someone will
+    perform empirical measurements to answer this question in the
+    near future.
+
+   Conclusions
+
+    Convergent encryption renders user files vulnerable to a
+    confirmation-of-a-file attack. We already knew that. It also
+    renders user files vulnerable to a learn-partial-information
+    attack in subtle ways. We didn't think of this until now. My
+    search of the literature suggests that nobody else did either.
+
+    The addition of an added secret to be mixed into the symmetric
+    encryption key allows you to limit the scope of users with whom
+    your files will converge. Attackers who are outside of this set
+    of users cannot use the new learn-partial-information, nor can
+    they use the old confirmation-of-a-file attack.
+
+    The Tahoe Least-AUthority Grid File System will probably
+    release v0.9.1, to succeed the current v0.9.0 release, which
+    will add the feature of mixing in an added secret to the
+    symmetric encryption key when doing convergent encryption,
+    which will turn that feature on by default, and which will
+    perhaps offer a way through the API and or UI to control that
+    feature on a per-user and per-file basis.
+
+     Citations
+
+    [1] <A HREF="http://cypherpunks.venona.com/date/1996/02/msg02013.html">http://cypherpunks.venona.com/date/1996/02/msg02013.html</A>
+
+    [2]
+    <A HREF="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.10.4919">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.10.4919</A>
+
+    [3]
+    <A HREF="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.59.9607">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.59.9607</A>
+
+    [4]
+    <A HREF="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.8.7586">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.8.7586</A>
+
+    [5] <A HREF="http://gnunet.org">http://gnunet.org</A>
+
+    [6] <A HREF="http://flud.org">http://flud.org</A>
+
+    [7] <A HREF="http://allmydata.org">http://allmydata.org</A>
+
+     Zooko
+
+    Last modified: Sat May 5 15:13:38 MDT 2007
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

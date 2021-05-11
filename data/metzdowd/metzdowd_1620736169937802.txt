@@ -1,0 +1,23 @@
+<PRE>On Thu,  7 Feb 2008 16:37, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at MorganStanley.com</A> said:
+
+&gt;<i> I don't have any idea why or why not, but all they can release now is
+</I>&gt;<i> source code with #ifdef openssl &gt;= 0.9.9  ... do PSK stuff ... #endif,
+</I>
+The last time I checked the Mozilla code they used their own crypto
+stuff.  When did they switched to OpenSSL and how do they solve the
+GPL/OpenSSL license incompatibility?
+
+
+Salam-Shalom,
+
+   Werner
+
+
+-- 
+Die Gedanken sind frei.  Auschnahme regelt ein Bundeschgesetz.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

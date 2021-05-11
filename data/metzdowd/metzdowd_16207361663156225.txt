@@ -1,0 +1,24 @@
+<PRE>
+
+mark seiden-via mac wrote:
+&gt;<i> another term you might look for (used in physical security and
+</I>&gt;<i> financial controls)  is  &quot;dual custody&quot; or sometimes &quot;double custody&quot;.
+</I>
+You might also try &quot;Shamir's split key knowledge&quot; which has been 
+around for many years and there is even a demo of how it works as 
+part of a great tool for introducing security, encryption and 
+similar bits at: <A HREF="http://www.cryptool.org/">http://www.cryptool.org/</A>
+
+I use the tool when teaching classes to executives and even they 
+can get it so you know it is pretty easy to follow. Very well 
+written explanations.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

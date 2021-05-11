@@ -1,0 +1,48 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) on Sunday, March 16, 2008 wrote:
+
+&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> writes:
+</I>&gt;<i>
+</I>&gt;&gt;<i>I would think this would be rather common, and I may have heard about certs
+</I>&gt;&gt;<i>that had authority to sign other certs in some circumstances...
+</I>&gt;<i>
+</I>&gt;<i>The desire to do it isn't uncommon, but it runs into problems with PKI
+</I>&gt;<i>religious dogma that only a CA can ever issue a certificate.
+</I>
+Is that a religious dogma, or a business model masquerading as a
+religious dogma?
+
+Whichever it is, it is an impediment to improving protection
+against fishing attacks. Consider a large organization like Amazon
+and users using tools like the Petname toolbar
+&lt;<A HREF="http://www.waterken.com/dev/YURL/Name/">http://www.waterken.com/dev/YURL/Name/</A>&gt;. Amazon has many servers,
+each of which needs a TLS signing key. In a more ideal world,
+Amazon would have a CA signed public certification key, which it
+would use to certify each server's TLS signing key. The Petname
+toolbar would use Amazon's public certification key as the identity
+matching the user's petname for Amazon. Once that petname has been
+established, AKA the introduction problem, the identity would be
+safe, regardless of what happens higher in the PKI hierarchy. The
+higher levels of the PKI hierarchy would only be used during the
+introductory contact.
+
+Given the current situation, with the CAs having a monopoly on
+issuing certificates, there are many different public keys
+associated with Amazon. In addition, Amazon may chose to change the
+CA it uses. To handle this situation, the Petname toolbar the DN
+instead of a public key, which opens the Petname tool bar to
+spoofing by any of the 100 or so CAs configured in the standard
+browsers. Does anyone know what happened to Baltimore's signing key
+when they went out of business?
+
+Cheers - Bill
+
+-------------------------------------------------------------------------
+Bill Frantz        | The first thing you need when  | Periwinkle
+(408)356-8506      | using a perimeter defense is a | 16345 Englewood Ave
+www.pwpconsult.com | perimeter.                     | Los Gatos, CA 95032
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

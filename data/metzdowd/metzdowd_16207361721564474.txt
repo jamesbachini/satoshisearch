@@ -1,0 +1,10 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> <A HREF="http://www.gcn.com/online/vol1_no1/45946-1.html">http://www.gcn.com/online/vol1_no1/45946-1.html</A>
+</I>
+&gt;<i><A HREF="http://www.gdc4s.com/documents/D-SMEPED-6-1007_p21.pdf">http://www.gdc4s.com/documents/D-SMEPED-6-1007_p21.pdf</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

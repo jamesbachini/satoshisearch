@@ -1,0 +1,19 @@
+<PRE>Suppose one has a system that automatically signs you on to anything if 
+your cell phone is within bluetooth range of your computer, and 
+automatically signs you off out of everything, and puts up a screen 
+saver that will not go away, when your cell phone is out of range of 
+your computer.
+
+What is the basis for cloning resistance of a cell phone with blue tooth?
+
+NFC provides physical authenticity - privacy on the model of whispering 
+one's ear, and authentication by touching.  Is there any mechanism 
+intended for mapping that to keys, so that when two NFC devices meet, 
+they can give each other petnames, and subsequently recognize public 
+keys by petname?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

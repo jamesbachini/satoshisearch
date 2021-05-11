@@ -1,0 +1,50 @@
+<PRE>I looked at the Ironkey website and, although there is obviously a little
+marketing-speak, my snake-oil and BS detectors do not go off.  Some of the
+criticisms by Aram Perez appear to be somewhat unjustified.
+
+
+Perez states:
+
+&quot;Protected by a password that is entered on whatever PC you plug the  
+IronKey into and that is somehow auto-magically protected against all  
+keylogging spyware that may exist on that PC.&quot;
+
+Relevant Ironkey assertion in their FAQs:
+A word of caution: if your computer is infected with a keystroke logger
+before you purchase your IronKey, and if you initially enter your passwords
+into your IronKey on the computer that is already infected with a keystroke
+logger, then your passwords of course will be tracked by that keystroke
+logger. For this reason, we recommend that you setup your IronKey and
+initially enter your passwords into the Password Manager from a computer
+that you control and that has anti-spyware and anti-virus software
+installed. We recommend that you update your anti-spyware and anti-virus
+definitions and run a sweep of your PC before setting up your IronKey.
+
+
+Perez  also states: 
+&quot;They imply that you can use an IronKey with any PC and be completely safe.&quot;
+
+Relevant Ironkey assertion in their FAQs:
+If I get an IronKey, will I be 100% protected from malware?
+
+No. The IronKey does not replace the need good security practices, such as
+regular anti-virus and anti-spyware scans, not sharing passwords, and
+avoiding websites that you do not trust. The IronKey does equip you to
+further protect your data, identity, and privacy-an increasingly necessary
+tool for today's security-minded consumer.
+
+Additionally, new threats are constantly surfacing, so even today's best
+solutions cannot guarantee &quot;future-proof&quot; protection. But since you have the
+ability to securely update your IronKey, you can make sure you have the
+latest and most secure software and firmware for maximum protection today
+and tomorrow.
+
+
+Chuck Jackson 
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

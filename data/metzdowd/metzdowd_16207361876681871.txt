@@ -1,0 +1,21 @@
+<PRE>Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; writes:
+
+&gt;<i>It's easy to compute all the public keys that will be generated
+</I>&gt;<i>by the broken PRNG. The clients could embed that list and refuse
+</I>&gt;<i>to accept any certificate containing one of them. So, this
+</I>&gt;<i>is distinct from CRLs in that it doesn't require knowing 
+</I>&gt;<i>which servers have which cert...
+</I>
+You'd also end up with a rather large list for the client to carry around, 
+which would be especially problematic for lightweight clients.  You'd need to 
+represent it as something like a Bloom filter to avoid this (given that most 
+users will just click OK on invalid certs, the small false positive rate 
+shouldn't have much effect either :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

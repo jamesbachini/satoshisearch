@@ -1,0 +1,86 @@
+<PRE>Jonathan Katz wrote:
+&gt;<i> I think it depends on what you mean by &quot;N pools of entropy&quot;.
+</I>
+
+I can see that my description was a bit weak, yes.  Here's a better
+view, incorporating the feedback:
+
+   If I have N people, each with a single pool of entropy,
+   and I pool each of their contributions together with XOR,
+   is that as good as it gets?
+
+My assumptions are:
+
+ * I trust no single person and their source of entropy.
+
+ * I trust at least one person + pool.
+
+ * Entropy by its definition is independent and is private
+   (but it is worth stating these, as any leaks will kill us!)
+
+ * Efficiency is not a concern, we just expand the pool size
+   (each pool is size X, and the result is size X).
+
+ * The people have ordinary skill.
+
+
+
+now to respond to the questions:
+
+
+1.  I am assuming that at least one pool is good entropy.  This is
+partly an assumption of desperation or simplicity.
+
+In practice, no individual (source or person) is trusted at an
+isolated level.  But this leads to a sort of circular argument that
+says, nobody is trusted.  We can solve this two ways:
+
+    I join the circle.  I trust myself, *but* I don't trust
+    my source of entropy.  So this is still hopeful.
+
+    We ensure that there are at least two cartels in the
+    circle that don't trust each other!  Then, add a dash
+    of game theory, and the two cartel pools should at
+    least be independent of each other, and therefore the
+    result should be good entropy.
+
+I suspect others could more logically arrive at a better assumption,
+but for now, the assumption of one trusted person/pool seems to
+cover it.
+
+2.  Having thought about Stephan's comment a bit more (because it
+arrived first), and a bit more about John D's entropy comments
+(because they were precise), it is clear that I need to stress the
+privacy / independence criteria, even if strictly covered by the
+definition of entropy.  Too much of the practical aspects will
+depend on ensuring independence of the pools to just lean blithely
+on the definitions.  I had missed that dependency.
+
+3.  The proposals on concatenation and cleanup are tempting.  In
+Jon's words, it can solve obvious problems.  However, they introduce
+a complexity of understanding the cleanup function, and potential
+for failures.  Jack's tradeoffs.  This has made me realise the last
+assumption, now added:
+
+   The people have ordinary skill.
+
+Which means they are unable to determine whether a cryptographically
+complex cleanup function is indeed cleaning, or not.
+
+Here, then, we reach an obvious limit, in that the people have to be
+able to determine that the XOR is doing its job, and they need to be
+able to do a bit of research to decide what is their best guess at
+their private entropy source.
+
+
+
+Thanks to all.
+
+iang
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

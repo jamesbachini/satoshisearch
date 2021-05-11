@@ -1,0 +1,90 @@
+<PRE>On Mar 30, 2008, at 9:37 PM, zooko wrote:
+&gt;<i> You can store your True Name, credit card number, bank
+</I>&gt;<i> account number, mother's maiden name, and so forth, on the same
+</I>&gt;<i> server as your password, but you don't have to worry about using
+</I>&gt;<i> salts or key strengthening on those latter secrets, because the
+</I>&gt;<i> server doesn't run a service that allows unauthenticated remote
+</I>&gt;<i> people to connect, submit a guess as to their value, and receive
+</I>&gt;<i> confirmation, the way it does for your password.
+</I>
+Tahoe doesn't run this service either. I can't use it to make guesses  
+at any of the values you mentioned. I can use it to make guesses at  
+whole documents incorporating such values, which is in most cases a  
+highly non-trivial distinction.
+
+To make such guesses, I need to account for at least:
+
+- file formats, since an e-mail message has a different on-disk
+   representation depending on the recipient's e-mail client,
+
+- temporal and transport variance, as PDF documents generally
+   incorporate a generation timestamp, and e-mail messages include
+   routing headers (with timestamps!),
+
+- document modifications due to variables other than the one(s) being
+   guessed, e.g. names, e-mail addresses, customized unsubscribe links.
+
+I would be interested to see an actual real-world example of how a  
+document would fall to this attack. It strikes me as a cute threat in  
+theory, but uninteresting in practice.
+
+&gt;<i>  *** Convergent encryption exposes whatever data is put into it to
+</I>&gt;<i> the sorts of attacks that already apply to passwords.
+</I>
+Sometimes, under highly peculiar circumstances, etc.
+
+&gt;<i> Convergent encryption had been invented, analyzed and used for many
+</I>&gt;<i> years, but to the best of my knowledge the first time that anyone
+</I>&gt;<i> noticed this issue was March 16 of this year
+</I>
+FWIW, I have discussed this threat verbally with colleagues when I was  
+asked for possible designs for OLPC's server-based automatic backup  
+system. I dismissed it at the time as 'not a real-world concern'. I  
+might even have it in my notes, but those weren't published, so it's  
+moot.
+
+&gt;<i> Now PBKDF2 is a combination of the first two defenses -- salting and
+</I>&gt;<i> key strengthening.  When you first suggested PBKDF2, I -- and
+</I>&gt;<i> apparently Jerry Leichter -- thought that you were suggesting its
+</I>&gt;<i> salting feature as a solution.
+</I>
+Yeah, sorry, I wasn't being clear. I should've just said &quot;a key  
+strengthening function&quot; rather than naming anything in particular.
+
+&gt;<i> This would have a performance impact on normal everyday use of Tahoe
+</I>&gt;<i> without, in my current estimation, making a brute-force/dictionary
+</I>&gt;<i> attack infeasible.
+</I>
+Adding, say, 5 seconds of computation to the time it takes to store a  
+file is likely to be lost as noise in comparison with the actual  
+network upload time, while still making an attacker's life  
+_dramatically_ harder than now.
+
+&gt;<i> The trade-off is actually worse than it appears since the attacker is
+</I>&gt;<i> attacking multiple users at once (in traditional convergent
+</I>&gt;<i> encryption, he is attacking *all* users at once)
+</I>
+Again, is there a real-world example of the kind of data or documents  
+that would show this to be a serious problem? While it's technically  
+true that you're targeting all the users in parallel when brute  
+forcing, note that if you're not actually hyper-targeting your attack,  
+you need to brute force _all_ the variables I mention above in  
+parallel, except in pathological cases -- and those, if you know of  
+some, would be interesting for the discussion.
+
+&gt;<i> economy of scale, and can profitably invest in specialized tools,
+</I>&gt;<i> even specialized hardware such as a COPACOBANA [1].
+</I>
+The OpenBSD eksblowfish/bcrypt design can't be bitsliced and generally  
+doesn't lend itself well to large speedups in hardware, by design.
+
+Cheers,
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

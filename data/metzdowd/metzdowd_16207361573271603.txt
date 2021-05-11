@@ -1,0 +1,34 @@
+<PRE>
+On Oct 22, 2007, at 12:07 PM, Steven M. Bellovin wrote:
+
+&gt;<i> On Thu, 18 Oct 2007 12:49:40 -0700
+</I>&gt;<i> Jon Callas &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jon at callas.org</A>&gt; wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> Ah, there are some trustworthy photons.  Oops, we can trust them,
+</I>&gt;&gt;&gt;<i> but we don't know if they are relevant.  Ah, there's a relevant
+</I>&gt;&gt;&gt;<i> photon....
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> And we know they are trustworthy photons because they have
+</I>&gt;&gt;<i> certificates signed by an accredited third-party boson.
+</I>&gt;&gt;<i>
+</I>&gt;<i> Boson or bogon?
+</I>
+Boson. Bosons are force-carrier particles, as opposed to fermions.  
+Photons are themselves bosons, but there are other bosons that carry  
+other forces. There's the Higgs boson, W and Z bosons, and so on.  
+Gluons, the particles that hold atomic nuclei together are also bosons.
+
+Bogons are, technically, bosons as they are the particle that carries  
+a quantum unit of bogosity. However, you yourself have criticized  
+people who discuss the role of bogosity in quantum cryptography [sic]  
+(I prefer the term &quot;quantum secrecy&quot;), and therefore I will say no  
+more about bogons and QC.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,61 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+&gt;<i> &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+</I>&gt;<i>
+</I>&gt;&gt;<i>Unfortunately, I don't see anything technological that people can reasonably
+</I>&gt;&gt;<i>do here to provide more privacy, 
+</I>&gt;<i>
+</I>&gt;<i> Painting the camera lenses with laser pointers is quite effective, at least as
+</I>&gt;<i> a short-term civil-disobedience measure.  Since there's no long-term damage
+</I>&gt;<i> caused (unless you use a really impressive laser pointer) it's a bit tricky to
+</I>&gt;<i> charge you with anything, at least under current law.
+</I>&gt;<i>
+</I>&gt;<i> Or you could follow the lead of Captain Gatso in the UK...
+</I>
+There are now quite reasonable cameras about half a cm on a side. The
+market is largely driven by cellphones. They were available in quantity
+for under $10 a few years ago -- they are probably much cheaper by
+now, and the prices are only going to come down further. There are of
+course limits imposed by optics, but they aren't nearly so bad as is
+often depicted, so with time we can expect the cameras to get better
+and cheaper.
+
+One can only laser or cut down a camera if one can find it. I could
+probably saturate the average location with practically if not
+literally undetectable cameras right now. It will continue to get
+cheaper to do so with time.
+
+Software already allows good 3D reconstruction of scenes based on
+multiple images from different angles, and improvement of resolution
+based on multiple images as well. The software will only get better
+with time. Storage is, of course, only getting cheaper.
+
+Autonomous vehicles, especially very small flying vehicles, already
+exist and will improve with time. We already know from nature that it
+is possible to construct quite small flying devices with high
+resolution imaging and other sensors -- it will only be a matter of
+time (perhaps a decade, a few decades at most) before artificial
+&quot;flies&quot; can be built, and once they are built, it will only be a
+matter of time before they cost very little. The images they produce
+will be limited by optics, but again, they will not need to be as bad
+as one naively expects, and we are getting better and better at
+techniques for combining images to produce surprising results.
+
+This arms race heavily favors the attacker over the defender.
+
+I don't want to saturate this mailing list with a discussion of the
+problem (I'm not going to pass many messages on it), but I think it is
+a reasonable issue for people to contemplate. Perhaps I should allow a
+more significant discussion in a month or two after people have
+digested it for longer.
+
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

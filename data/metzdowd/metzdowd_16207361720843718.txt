@@ -1,0 +1,35 @@
+<PRE>Various browsers (e.g. Firefox and IE) recently implemented the latest fashion
+in &quot;security&quot;, EV certs (already discussed on this list in the past) and
+blacklists, neither of which have much effect on phishing but both of which
+make great security fashion statements.
+
+Unfortunately, it looks like Safari, which doesn't follow the trend, has
+fallen victim to the fashionistas:
+
+   <A HREF="http://news.yahoo.com/s/infoworld/20080228/tc_infoworld/95634">http://news.yahoo.com/s/infoworld/20080228/tc_infoworld/95634</A>
+
+   PayPal warns: Steer clear of Apple's Safari browser
+
+   If you're using Apple's Safari browser, PayPal has some advice for you:
+   Drop it, at least if you want to avoid online fraud.
+
+   [...]
+
+   Unlike its competitors, Safari has no built-in phishing filter to warn
+   users when they are visiting suspicious Web sites, Barrett said. Another
+   problem is Safari's lack of support for another anti-phishing technology,
+   called Extended Validation (EV) certificates. This is a secure Web browsing
+   technology that turns the address bar green when the browser is visiting a
+   legitimate Web site.
+
+Looks like Safari just isn't the look to be sporting this year... maybe Apple
+could invent their own security fashion and then criticise Paypal for being so
+five minutes ago in its look.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

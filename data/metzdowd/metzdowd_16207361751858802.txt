@@ -1,0 +1,79 @@
+<PRE>
+John Denker &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jsd at av8n.com</A>&gt; writes:
+&gt;<i> This is an important discussion  
+</I>&gt;<i>
+</I>&gt;<i> The threats are real, and we need to defend against them.
+</I>
+I'm not sure how to feasibly defend against such things. It would seem
+to require complete control over the entire design and supply chain,
+which involves so many thousands of people who could be bribed that I
+have serious doubts that it can be done perfectly.
+
+&gt;<i> This should not be an occasion for idly wringing our hands, nor 
+</I>&gt;<i> sticking our head in the sand, nor looking under the lamp-post 
+</I>&gt;<i> where the looking is easy.  We need to look at all of this stuff.  
+</I>&gt;<i> And we can.  We are not defenseless.
+</I>
+I'll believe that when I see feasible defenses. So far as I can tell,
+if you can't trust the hardware supplier, you're meat. I don't think
+it is possible even in principle to validate the hardware after the
+fact. Even if you could apply formal methods successfully, it isn't
+even obvious how you would specify the property of the system that
+you're trying to prove. &quot;Never does anything bad&quot; is kind of nebulous
+if you're doing proofs.
+
+&gt;<i> As in all security, we need not aim for absolute security.  An 
+</I>&gt;<i> often-useful approach is to do things that raise the cost to 
+</I>&gt;<i> the attacker out of proportion to the cost to the defender.
+</I>
+Well, this sort of thing is already not that interesting to an
+ordinary spammer or phisher -- they have no trouble making loads of
+money without engaging in such stuff.
+
+If you're talking about what a national government might pay to get
+such a back door in hardware, though, I think that it is probably
+worth billions to such an entity. After all, a decent bomber these
+days costs a billion dollars, and clearly this is a lot more potent.
+
+Given that, I don't see what would work in practice. If a major power
+wanted to turn a couple of engineers at the right place in the design
+or supply chain, the amount of money needed is far below the amount in
+play.
+
+&gt;<i> For software, for firmware, and to some extent even for silicon
+</I>&gt;<i> masks, SCM (source code management) systems, if used wisely, can
+</I>&gt;<i> help a lot.
+</I>
+If you have a rotten apple engineer, he will be able to hide what he's
+trying to do and make it look completely legit. If he's really good,
+it may not be possible to catch what he's done EVEN IN PRINCIPLE. All
+an SCM can do is tell you who put the bad stuff in much after the fact
+if you ever catch it at all. That's not exactly &quot;defense&quot;. It is at
+best &quot;post mortem&quot;.
+
+&gt;<i> Of course we should insist on an open-source boot ROM code:
+</I>&gt;<i>   <A HREF="http://www.coreboot.org/Welcome_to_coreboot">http://www.coreboot.org/Welcome_to_coreboot</A>
+</I>
+Won't help. A bad apple can probably manage a sufficiently subtle flaw
+that it won't be noticed by widespread code inspection. See Jerry's
+earlier posting on the subject.
+
+&gt;<i> Another line of defense involves closing the loop.  For example,
+</I>&gt;<i> one could in principle find Ken's trojan by disassembling the
+</I>&gt;<i> compiler and looking for code that doesn't seem to &quot;belong&quot;.
+</I>
+Only if the bad guy doesn't anticipate that you might do that.
+
+I'm pretty sure we can defend against this sort of thing a lot of the
+time (by no means all) if it is done by quite ordinary criminals. If
+it is done by really good people, I have very serious doubts.
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

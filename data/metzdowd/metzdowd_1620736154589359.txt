@@ -1,0 +1,22 @@
+<PRE>I always understood snake oil crypto to refer to products that were of
+no value to anyone, e.g., products that claim to have secret
+unbreakable encryption, million bit keys, or &quot;one time pads&quot; produced
+by PRNGs.
+
+What we have here is something else, a product that is reasonable for
+one kind of threat, physically losing it, oversold for a threat where
+it's not, end to end security.
+
+Seems to me that we need a different term for this category.  Of
+course, given the nature of marketing departments, it may well
+apply to all crypto products.
+
+R's,
+John
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

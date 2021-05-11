@@ -1,0 +1,24 @@
+<PRE>On Jul 15, 2008, at 16:33 PM, Leichter, Jerry wrote:
+
+&gt;<i> The goal is
+</I>&gt;<i> to use some form of opportunistic encryption to make as much
+</I>&gt;<i> Internet traffic as possible encrypted as quickly as possible -
+</I>&gt;<i> which puts all kinds of constraints on a solution,
+</I>
+Oh, then they should learn about Adam Langley's Obfuscated TCP:
+
+<A HREF="http://code.google.com/p/obstcp/">http://code.google.com/p/obstcp/</A>
+
+One of the design constraints for Obfuscated TCP was that an  
+Obfuscated TCP connection is required to take zero more round trips  
+to set up and use than a normal TCP connection.  Way to go, Adam!
+
+Regards,
+
+Zooko
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,82 @@
+<PRE>On 9 Jul 2007 16:08:33 -0600, Darren Lasko wrote:
+&gt;&gt;&gt;<i> 2) Does FIPS 140-2 have any requirements regarding the quality of the
+</I>&gt;&gt;&gt;<i> entropy source that is used for seeding a PRNG?
+</I>&gt;&gt;<i> Yes.  The requirement imposed by FIPS 140-2
+</I>&gt;&gt;<i> (<A HREF="http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf">http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf</A>)
+</I>&gt;&gt;<i> are in section 4.7.2:
+</I>&gt;&gt;<i>  &quot;Compromising the security of the key generation method (e.g., guessing
+</I>&gt;&gt;<i>  the seed value to initialize the deterministic RNG) shall require as
+</I>&gt;&gt;<i>  least as many operations as determining the value of the generated key.&quot;
+</I>&gt;&gt;<i> (which would apply to any RNG output that became a key)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> and in section 4.7.3:
+</I>&gt;&gt;<i>  &quot;Compromising the security of the key establishment method (e.g.,
+</I>&gt;&gt;<i>  compromising the security of the algorithm used for key establishment)
+</I>&gt;&gt;<i>  shall require at least as many operations as determining the value of
+</I>&gt;&gt;<i>  the cryptographic key being transported or agreed upon.&quot;
+</I>&gt;&gt;<i> (which would apply to any RNG output that is used in a security relevant
+</I>&gt;&gt;<i> way in a key establishment scheme)
+</I>&gt;&gt;<i>
+</I>
+  For whatever reason, I get asked FIPS 140 questions and this one about
+FIPS 140-2 comes up on occasion. It is good someone finally asked in
+public and received a public reply. A bit convoluted, and this says
+nothing about seeding requirements for a PRNG not used for key
+generation/agreement, but it is the logic of FIPS 140-2 with regards to
+PRNG seeding.
+
+&gt;<i> Again, good information.  However, it seems pretty nebulous about how
+</I>&gt;<i> they expect you to measure the number of operations required to
+</I>&gt;<i> compromise the security of the key generation method.  Do you know
+</I>&gt;<i> what kind of documentation the labs require?
+</I>&gt;<i> 
+</I>&gt;<i> SP 800-90, Appendix C.3, states that the &quot;min-entropy&quot; method shall be
+</I>&gt;<i> used for estimating entropy, but this method only uses the
+</I>&gt;<i> probabilities assigned to each possible sample value.  I'm guessing
+</I>&gt;<i> that measuring ONLY the probabilities associated with each sample is
+</I>&gt;<i> insufficient for assessing your entropy source.  For example, if I
+</I>&gt;<i> obtain 1 bit per sample and I measure 50% 0's and 50% 1's, I have
+</I>&gt;<i> &quot;full entropy&quot; by that measure, even if my entropy source always
+</I>&gt;<i> produces &quot;1010101010101010....&quot;.
+</I>&gt;<i> 
+</I>&gt;<i> Is the &quot;NIST Statistical Test Suite&quot; sufficient for evaluating your
+</I>&gt;<i> entropy source, and will the certification labs accept results from
+</I>&gt;<i> the STS as an assessment of the entropy source?
+</I>
+ From what I have seen, the labs understand what will pass muster with
+NIST/CSE for FIPS 140-2 based on their experience with the many FIPS
+140-2 validation efforts performed to this point, so they are a good
+gauge of what NIST/CSE will smile upon here, even though there has been
+little formal guidance. Most labs are fine with standard techniques for
+gathering entropy from a system, such as polling various timings for
+things like disk access, plus whitening, such as running the results of
+the polling through a FIPS-approved hashing algorithm. Hardware RNGs,
+such as a noise source, which can be used either as just another source
+in the polling, or as the only source. When using a hardware RNG, most
+vendors focus on this as the primary source of entropy, and labs will
+often require many details about the hardware RNG as a result.
+
+As far as what to provide, well, you need to describe how the PRNG is
+seeded, give code pointers to the seeding and any entropy gathering
+routines, include details on any hardware RNGs, and construct a general
+rationale for why all this adds up to meeting the requirements. The labs
+can take it from there and ask for more information as needed, such as
+sample output from the entropy gathering routines to examine. If you are
+concerned about not meeting the requirements, chatting with a lab or
+consultant about what is required is not out of the question - it might
+even provide some metric as to how friendly and responsive the team you
+are considering working with for your validation will be.
+
+FWIW, up to this point in time, I have rarely seen formal calculations
+of entropy by vendors in the rationale for meeting these requirements
+(those few times were mostly with vendors that built their own hardware
+RNGs), and I have seen statistical tests used by vendors a little bit as
+a part of the rationale behind meeting these requirements.
+
+-Andrew
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

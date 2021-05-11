@@ -1,0 +1,56 @@
+<PRE>On Mon, Sep 1, 2008 at 9:49 PM, Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; wrote:
+&gt;<i> At Mon, 1 Sep 2008 21:00:55 +0100,
+</I>&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;<i> The core issue is that HTTPS is used to establish end-to-end security,
+</I>&gt;&gt;<i> meaning, in particular, authentication and secrecy. If the MitM can
+</I>&gt;&gt;<i> disable the upgrade to HTTPS then he defeats this aim. The fact that
+</I>&gt;&gt;<i> the server declines to serve an HTTP page is irrelevant: it is the
+</I>&gt;&gt;<i> phisher that will be serving the HTTP page, and he will have no such
+</I>&gt;&gt;<i> compunction.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> The traditional fix is to have the client require HTTPS, which the
+</I>&gt;&gt;<i> MitM is powerless to interfere with. Upgrades would work fine if the
+</I>&gt;&gt;<i> HTTPS protocol said &quot;connect on port 80, ask for an upgrade, and if
+</I>&gt;&gt;<i> you don't get it, fail&quot;, however as it is upgrades work at the behest
+</I>&gt;&gt;<i> of the server. And therefore don't work.
+</I>&gt;<i>
+</I>&gt;<i> Even without an active attacker, this is a problem if there is
+</I>&gt;<i> sensitive information in the request, since that will generally
+</I>&gt;<i> be transmitted prior to discovering the server can upgrade.
+</I>
+Obviously we can fix this at the protocol level.
+
+&gt;&gt;<i> Why don't we? Cost. It takes far more tin to serve HTTPS than HTTP.
+</I>&gt;&gt;<i> Even really serious modern processors can only handle a few thousand
+</I>&gt;&gt;<i> new SSL sessions per second. New plaintext sessions can be dealt with
+</I>&gt;&gt;<i> in their tens of thousands.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Perhaps we should focus on this problem: we need cheap end-to-end
+</I>&gt;&gt;<i> encryption. HTTPS solves this problem partially through session
+</I>&gt;&gt;<i> caching, but it can't easily be shared across protocols, and sessions
+</I>&gt;&gt;<i> typically last on the order of five minutes, an insanely conservative
+</I>&gt;&gt;<i> figure.
+</I>&gt;<i>
+</I>&gt;<i> Session caches are often dialed this low, but it's not really necessary
+</I>&gt;<i> in most applications. First, a session cache entry isn't really that
+</I>&gt;<i> big. It easily fits into 100 bytes on the server, so you can serve
+</I>&gt;<i> a million concurrent user for a measly 100M.
+</I>
+But if the clients drop them after five minutes, this gets you
+nowhere. BTW, sessions are only that small if there are no client
+certs.
+
+&gt;<i> Second, you can use
+</I>&gt;<i> CSSC/Tickets [RFC5077] to offload all the information onto the client.
+</I>
+Likewise.
+
+&gt;<i>
+</I>&gt;<i> -Ekr
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

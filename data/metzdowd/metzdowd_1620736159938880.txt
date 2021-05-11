@@ -1,0 +1,106 @@
+<PRE>&gt;&gt;<i> Before the bad old days of using DES, there was the old days of one-
+</I>&gt;&gt;<i> way functions. These one-way functions were not hash functions, they
+</I>&gt;&gt;<i> were one-way. They were in a sense related to hash functions, but
+</I>&gt;&gt;<i> perhaps more directly related to redundancy checks and similar
+</I>&gt;&gt;<i> polynomials.
+</I>&gt;<i>
+</I>&gt;<i> Except that those aren't one-way at all, just many-to-one, right?
+</I>&gt;<i> It seems to me that if the CRC poly is known than it's easy to come
+</I>&gt;<i> up with something with a particular CRC.
+</I>
+Well, real hash functions are many-to-one. Consider the set of all 33- 
+byte strings. Consider s', which is the set of all the 256-bit hashes  
+of all of those strings. It doesn't matter what hash function you  
+use, there will be duplicates. There must be duplicates.
+
+The functions we used in those pre-bad-old-days included the AUTODIN- 
+II polynomial and the Purdy Polynomial (I had to go look it up,  
+because those parts of my memory were put on the free list). AUTODIN- 
+II had undesirable qualities, which is why things migrated to Purdy.  
+But based upon my quick research, Purdy seems to still be good for  
+its purpose, namely grinding up passwords.
+
+The way we used Purdy had to be improved, as time went on. There was  
+a time in which you could bypass a password length limit by small  
+bits of cleverness. If you had your favorite three-character  
+password, and that mean old system manager set the minimum length to  
+6, you could bypass that by appending the string  
+&quot;UUUUUUUUVVVVVVVVVVVVVVVV&quot; (that's 8x 'U' and 16x 'V') to your three- 
+character password and poof it worked again. Why this worked and the  
+fix are left as an exercise to the reader, but I'll note that the  
+underlying issue is something that hash function designers still have  
+to make sure they solve to this day. Joux and Kelsey have written a  
+lot about this very same problem, the length extension attack.
+
+&gt;&gt;<i> With salt, you want the number to be unique-ish, as the whole point
+</I>&gt;&gt;<i> is to stymie dictionary attacks. A counter is likely not such a great
+</I>&gt;&gt;<i> idea, because of collisions,
+</I>&gt;<i>
+</I>&gt;<i> Do you mean if everyone starts at zero, the adversary could generate
+</I>&gt;<i> dictionaries for 0..9 etc., or something else?
+</I>
+I mean precisely that. If you use a counter, the dictionary low  
+numbers is valuable. This is one of the many problems that came up in  
+WEP.
+
+&gt;<i>
+</I>&gt;<i> It seems to me that a single counter is ideal for preventing  
+</I>&gt;<i> collisions.
+</I>&gt;<i>
+</I>&gt;<i> Randomly-generated numbers have collisions because of birthday  
+</I>&gt;<i> paradox.
+</I>
+Let's suppose you selected a &quot;full-width&quot; prime number, and your  
+counter incremented (or multiplied) by that prime. That's better than  
+0, 1, 2, ... but only if everyone doesn't select the same prime. Thus  
+you get back to using the RNG. If the width of your salt is wide  
+enough, you don't have to worry about birthday attacks. If you have 8  
+bytes of salt, the chance of a single collision is .5 when you have  
+about 4 billion numbers selected. 4 billion is a large number if it  
+is the number of accounts on your mail server. If you are fortunate  
+enough that it is not a large number, you can either go to 16 bytes  
+of salt, or weasel out of the issue by observing that even with 100  
+billion accounts, the number of collisions is not so large that there  
+is a clear advantage to the attacker who precomputes a single  
+dictionary. (And how do they know which dictionary to compute, a  
+priori?) When we're talking about precomputed rainbow tables, 2^64 is  
+a large number.
+
+&gt;<i>
+</I>&gt;<i> How does this design sound:
+</I>&gt;<i>
+</I>&gt;<i> Each system has a randomly-generated seed which should be unique to  
+</I>&gt;<i> the
+</I>&gt;<i> computer.  They may then either derive a system-specific seed from  
+</I>&gt;<i> that,
+</I>&gt;<i> or use it directly.  They then use CTR mode with that seed as a key to
+</I>&gt;<i> create a computationally-unpredictable sequence which is guaranteed to
+</I>&gt;<i> not repeat until it has exhaused the entire period.
+</I>&gt;<i>
+</I>&gt;<i> Aside: I have recently taken a job doing crypto for a financial
+</I>&gt;<i> institution.  If anyone has any suggestions with respect to reading
+</I>&gt;<i> about this industry, or conferences to go to (I seem to recall a
+</I>&gt;<i> financial crypto conference of some kind), I'd greatly appreciate it.
+</I>&gt;<i>
+</I>
+Simple is good. Why not just pull enough salt off of /dev/urandom and  
+make a small handwave about how big &quot;enough&quot; needs to be? If you tell  
+me that, I listen, nod, and we're done. With your scheme, I have to  
+think before I understand. Having to think before understanding is  
+not a feature. I think I can see a minor flaw, but I don't want to  
+spend the brain power on it. The RNG is your friend.
+
+Eight bytes of salt is almost certainly fine. If you have to worry  
+about single collisions, use 16 or 32 bytes of salt. In general, I  
+recommend using a width of salt that is the size of an underlying  
+block size. If you're using AES somewhere, just go with 16, because  
+that's the natural amount.
+
+	Jon
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

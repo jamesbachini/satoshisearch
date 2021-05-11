@@ -1,0 +1,55 @@
+<PRE>&gt;<i> &gt; E.g., here's such a specfication excerpt and is absolutely everything said in 
+</I>&gt;<i> &gt; the spec wrt obtaining said signature keys:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;   When generating MAC keys, the recommendations in [RFC1750] SHOULD be 
+</I>&gt;<i> &gt; followed.
+</I>&gt;<i> 
+</I>&gt;<i> One point, RFC1750 has been superceded by RFC4086.
+</I>
+I'll point that out, thanks.
+
+
+&gt;<i> &gt;   ...
+</I>&gt;<i> &gt;   The quality of the protection provided by the MAC depends on the randomness of
+</I>&gt;<i> &gt;   the shared MAC key, so it is important that an unguessable value be used.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; How (un)wise is this, in a real-world sense? 
+</I>&gt;<i> 
+</I>&gt;<i> It seems pretty reasonable to me. They are referring to an RFC with
+</I>&gt;<i> lots of good advice about random number generators, and they emphasize
+</I>&gt;<i> that the key value should be unguessable. It's probably out of scope to
+</I>&gt;<i> go into a lot more detail than that. Referring to other standards like
+</I>&gt;<i> RFC1750/4086 is the right way to handle this kind of issue.
+</I>
+agreed (thx for the ptr to RFC4880) after doing some further reading and such. 
+RFC4086 covers the notion of &quot;mixing functions&quot; etc, so the above-quoted 
+SHOULD statement covers those bases.
+
+
+
+&gt;<i> I am the co-author of the OpenPGP Standard, RFC4880. All we say is:
+</I>&gt;<i> 
+</I>&gt;<i>        The sending OpenPGP generates a random number to be used as a
+</I>&gt;<i>        session key for this message only.
+</I>&gt;<i> 
+</I>&gt;<i> and
+</I>&gt;<i> 
+</I>&gt;<i>    * Certain operations in this specification involve the use of random
+</I>&gt;<i>      numbers.  An appropriate entropy source should be used to generate
+</I>&gt;<i>      these numbers (see [RFC4086]).
+</I>&gt;<i> 
+</I>&gt;<i> Not all that different in thrust than the spec you are looking at.
+</I>
+
+agreed, thanks again.
+
+
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

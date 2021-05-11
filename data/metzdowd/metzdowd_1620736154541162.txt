@@ -1,0 +1,64 @@
+<PRE>Netsecurity wrote:
+ &gt; Back in the late 60's I was playing with audio and a
+ &gt; magazine I subscribed to had a circuit for creating
+ &gt; warble tones for standing wave and room resonance
+ &gt; testing.
+ &gt;
+ &gt; The relevance of this is that they were using a
+ &gt; &quot;random&quot; noise generating chip that they acknowledged
+ &gt; was not random enough for good measurements. The fix
+ &gt; suggested was to parallel a number, six as I recall,
+ &gt; to improve the randomness by mixing the signals to
+ &gt; achieve better randomness. I don't recall the math but
+ &gt; the approach improved the randomness by more than an
+ &gt; order of magnitude.
+
+If one such chip was so non random that the ear could
+hear the difference from white noise or pink noise, it
+is most unlikely that six together would be random
+enough for cryptographic purposes.
+
+As has often been stated on this list, the noise source
+must be understood, so that we have physical theory as
+to where the noise is coming from, and also tested to
+make sure it is functioning in accord with theory.  No
+one really understands where zener diode noise is coming
+from.
+
+True entropy in equals true entropy out.   You need to
+be able to determine the true entropy in from physical
+theory, and be able to test the hardware to check it is
+working in accordance with theory.
+
+To know that a true random number generator is
+cryptographically secure, you need knowledge of the
+underlying hardware, knowledge that shows it derives its
+randomness from the fundamental randomness of the
+universe, either thermal entropy, (Johnson noise) or
+quantum indeterminacy (shot noise), knowledge that
+enables us to determine the good functioning of the
+underlying noise amplification circuits from the
+character of the output.
+
+A good circuit would simply directly amplify the
+underlying noise source, so that the entropy of the
+output would be somewhat less than one entropy bit per
+signal bit, thus ensuring that any malfunction of the
+underlying circuit would be obvious, and then pass that
+output into a hash generator, which emits hash that
+outputs less bits than the true entropy.
+
+Using SRAM as a source of either randomness or unique
+device ID is fragile.  It might well work, but one
+cannot know with any great confidence that it is going
+to work.  It might work fine for every device for a
+year, and then next batch arrives, and it completely
+fails.  Worse still, it might work fine on the test
+batch, and then on the production run fail in ways that
+are subtle and not immediately obvious.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

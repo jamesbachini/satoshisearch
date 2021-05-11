@@ -1,0 +1,49 @@
+<PRE> 
+
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: Ian G [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>] 
+</I>&gt;<i> Sent: Monday, October 08, 2007 6:05 AM
+</I>&gt;<i> To: Peter Gutmann
+</I>&gt;<i> Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ap at poneyhot.org</A>; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> Subject: Re: Trillian Secure IM
+</I>&gt;<i> 
+</I>&gt;<i> Peter Gutmann wrote:
+</I>&gt;<i> &gt; &quot;Alex Pankratov&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ap at poneyhot.org</A>&gt; writes:
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt;&gt; SecureIM handshake between two version 3.1 (latest) 
+</I>&gt;<i> clients takes about .. 48
+</I>&gt;<i> &gt;&gt; bytes. That's altogether, 32 bytes in one direction, and 
+</I>&gt;<i> 16 in another. And
+</I>&gt;<i> &gt;&gt; that's between the clients that have never talked to each 
+</I>&gt;<i> other before, so
+</I>&gt;<i> &gt;&gt; there's no &quot;session resuming&quot; business happenning.
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; Or they could be using static/ephemeral DH with fixed 
+</I>&gt;<i> shared DH key values,
+</I>&gt;<i> &gt; which isn't much better.  (This is just speculation, it's 
+</I>&gt;<i> hard to tell without
+</I>&gt;<i> &gt; knowing what the exchanged quantities are).
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Speculation is fun.
+</I>&gt;<i> 
+</I>&gt;<i> But, opportunistic cryptography is even more fun.  It is 
+</I>&gt;<i> very encouraging to see projects implement cryptography in 
+</I>&gt;<i> limited forms.  A system that uses a primitive form of 
+</I>&gt;<i> encryption is many orders of magnitude more secure than a 
+</I>&gt;<i> system that implements none.
+</I>
+Primitive form - maybe, weak form - absolutely not. It 
+is actually worse than having no security at all, because 
+it tends to create an _illusion_ of protection. 
+
+Which is by the way exactly the case with SecureIM. How 
+hard is it to brute-force 128-bit DH ? My &quot;guesstimate&quot;
+is it's an order of minutes or even seconds, depending
+on CPU resources.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

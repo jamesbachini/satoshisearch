@@ -1,0 +1,43 @@
+<PRE>James A. Donald wrote:
+&gt;<i> A notary is a certifier.  Have you ever seen a notary
+</I>&gt;<i> read the stuff he notarizes, let alone generate it?
+</I>&gt;<i> 
+</I>Actually, I deal with notaries regularly.  I've always had to
+physically sign while watched by the notary.  They always
+read the stuff notarized, and my supporting identification,
+because they are notarizing a signature (not a document).
+
+And yes, they always generate the stamp or imprint they sign.
+To do otherwise would be irresponsible (and illegal).
+
+
+&gt;<i> Suppose you sign a contract - by signing the MD5 hash of
+</I>&gt;<i> the contract.  Unfortunately the guy who prepared the
+</I>&gt;<i> contract prepared two slightly different contracts, one
+</I>&gt;<i> of which is more favorable to him and less favorable to
+</I>&gt;<i> you than the one you actually signed.  Both contracts
+</I>&gt;<i> have the same MD5 hash.
+</I>&gt;<i> 
+</I>I've digitally signed contracts, that I prepared and verified,
+on plaintext documents using PGP.  So far, I've seen no such
+exploit described nor quantified.
+
+There's this silly idea that's been floating around that a
+digital signature is somehow equivalent to a human signature.
+Or worse, somehow better?!?!  Heck, current U.S. law counts a
+digitized sound as a signature!?!?
+
+(Folks have lost money on this snake oil.  They deserved it.)
+
+Anyway, this is irrelevant to the original topic.  That is:
+
+   This implies a vulnerability in software integrity protection
+   and code signing schemes that still use MD5.
+
+Please quantify your spurious allegations (and stay on topic).
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

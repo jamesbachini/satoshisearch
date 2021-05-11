@@ -1,0 +1,19 @@
+<PRE>What I don't understand is why you think tinc is necessary,
+or even worth the trouble.
+
+IPsec is readily available -- built into Windows, Mac OS
+and various routers, and with implementations for Linux
+and all the *BSDs -- has had quite a bit of expert
+security analysis, and handles VPNs just fine.
+
+Does tinc do something that IPsec cannot?
+
+-- 
+Sandy Harris,
+Nanjing, China
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

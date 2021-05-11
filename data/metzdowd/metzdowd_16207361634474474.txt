@@ -1,0 +1,139 @@
+<PRE>Jack Lloyd wrote:
+ &gt; The only reason this 'must' be true is because an anonymous and secure
+ &gt; payment system is a terror which thankfully our federal governments
+ &gt; and central banks protect us from. While Amazon and others obviously
+ &gt; like being able to build customer profiles of everyone, I don't doubt
+ &gt; that they would be perfectly willing to accept an anonymous payment as
+ &gt; long as the money is good (and, of course, that the transaction costs
+ &gt; are no more than a credit card and/or the order flow is sufficient
+ &gt; that it is worth building support for it).
+
+in the mid-90s, the x9a10 financial standard working group had
+been given the requirement to preserve the integrity of the
+financial infrastructure for all retail payments ... which resulted
+in the x9.59 standard
+<A HREF="http://www.garlic.com/~lynn/x959.html#x959">http://www.garlic.com/~lynn/x959.html#x959</A>
+
+in the same timeframe, the EU (in conjunction with eu-dpd)
+made statements that electronic payments at point-of-sale
+should be as anonymous as cash.
+
+this was interpreted as meaning that names should be
+removed from payment cards (plastic and magstripe).
+the contention was that (because of poor authentication)
+retail outlets could cross-check names on the cards against
+some other form of &quot;ID&quot;. the implication that removing
+names might help promote other integrity measures.
+
+in the x9.59 standard, we claimed that the improved
+integrity allowed meeting the EU-DPD objectives.
+We also claimed that x9.59 was privacy agnostic
+i.e. it allowed for privacy. The &quot;ALL&quot; requirement
+given to the x9a10 financial standard working
+group met internet, face-to-face, point-of-sale,
+electronic commerce. It also met debit, credit,
+ACH, as well as stored-value cards ... aka the
+same X9.59 was applicable to *ALL*. In the debit/credit
+scenario some countries have &quot;know your customer&quot;
+mandates associating account numbers with individuals
+... which we claimed was outside the x9.59 standard.
+Supposedly with appropriate regulated access to
+information, govs can obtain information associating
+account activity with individuals.
+
+However, the very same x9.59 standard also works
+with stored-value/gift cards ... which doesn't have
+similar &quot;know your customer&quot; mandates.
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#privacy">http://www.garlic.com/~lynn/subpubkey.html#privacy</A>
+
+And in fact, most stored-value/gift cards share a lot
+of the same exact processing with the debit/credit
+processing ... the addition of x9.59 could provide for
+the exactly same level of integrity thruout debit,
+credit, and stored-value/gift processing.
+
+for other drift, in the mid-90s ... there were some
+of the other payment efforts specifically for the
+internet which had so much payload and processing bloat
+that it made it impractical past the toy demo stage
+<A HREF="http://www.garlic.com/~lynn/subpubkey.html#bloat">http://www.garlic.com/~lynn/subpubkey.html#bloat</A>
+
+related recent post on infrastructure provisioning and bloat of
+toy demos:
+<A HREF="http://www.garlic.com/~lynn/2007v.html#64">http://www.garlic.com/~lynn/2007v.html#64</A> folklore indeed
+
+about the same time, there were completely different
+chip card oriented efforts for point-of-sale. one of the
+scenarios of some of the chipcard pilot projects in
+the late 90s and early part of this century was that
+they managed to increase the vulnerabilities
+(magstripe vis-a-vis chipcards)
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#yescard">http://www.garlic.com/~lynn/subintegrity.html#yescard</A>
+
+the common excuse from the period, was that chips
+cost so much that it wasn't possible to afford integrity
+that actually improved over magstripe. The other
+possible observation was that some of the chipcard
+efforts were so chip myopic ... that they couldn't
+realize that they were actually making it worse
+for the overall infrastructure.
+
+A big issue for merchants isn't anonymous payments
+... it is cost of doing business. This has been in
+the news quite a bit recently in the form of
+interchange fees ... recent posts
+<A HREF="http://www.garlic.com/~lynn/2007v.html#62">http://www.garlic.com/~lynn/2007v.html#62</A> folklore indeed
+
+the other area is in the liability related to breaches
+(and/or the costs of countermeasures to breaches).
+
+i've mentioned before that we had been called in
+to consult with small client/server startup that wanted
+to do payments on their server. They had this technology
+they called SSL and it is frequently now referred to
+as electronic commerce
+<A HREF="http://www.garlic.com/~lynn/subnetwork.html#gateway">http://www.garlic.com/~lynn/subnetwork.html#gateway</A>
+
+and then we got dragged into involved with the x9a10
+financial standard. as part of attempting to meet the
+requirement to preserve the integrity of the financial
+infrastructure for all retail payments ... we did some detailed
+threat and vulnerability analysis. A big item that came out
+were infrastructure vulnerabilities ... breaches, skimming,
+harvesting, evesdropping, ... a whole slew of things.
+
+we identified that much of the vulnerability could be
+attributed to the account number and transaction
+information has diametrically opposing requirements
+... 1) it has to be readily available for large number of
+different business processes and 2) since the crooks
+can use the same information for various kinds of
+essentially replay attacks ... the information has to
+be kept confidential and never divulged.
+
+we've also talked about this as the dual-use nature
+of the information ... and that even if the planet
+was buried under miles of (information hiding) encryption,
+it still wouldn't be able to prevent information leakage.
+
+So another part of the x9.59 financial standard
+was to eliminate the dual-use nature of the information,
+making it useless for crooks ... aka x9.59 didn't do
+anything to prevent information leakage ... it just eliminated
+the information leakage as a vulnerability. a related
+recent post
+<A HREF="http://www.garlic.com/~lynn/2007v.html#74">http://www.garlic.com/~lynn/2007v.html#74</A> folklore indeed
+
+from this stand-point ... the x9.59 financial standard addresses
+both drastically reducing fraud in the infrastructure as well
+as drastically reducing the infrastructure costs for fraud
+countermeasures.
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

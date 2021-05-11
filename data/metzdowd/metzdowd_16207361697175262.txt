@@ -1,0 +1,22 @@
+<PRE>
+&quot;Ali, Saqib&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; writes:
+&gt;<i> i think in most cases tamper-resistant is sufficient - provided the
+</I>&gt;<i> device that can detect an attempt of tampering, and erase itself.
+</I>
+Clearly, if the anti-tamper mechanisms work, the device will not be
+compromised. The problem is, such mechanisms don't always work. There
+is lots of stuff in the literature about various kinds of attacks on
+such devices.
+
+Again, I will point out the following from my original comment:
+
+&gt;&gt;<i>  As always, the question is whether what you are protecting is
+</I>&gt;&gt;<i>  worth more than the attackers would have to spend on the attack.
+</I>
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

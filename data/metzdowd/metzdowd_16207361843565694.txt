@@ -1,0 +1,33 @@
+<PRE>On Wed, 09 Jul 2008 11:22:58 +0530
+Udhay Shankar N &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">udhay at pobox.com</A>&gt; wrote:
+
+&gt;<i> I think Dan Kaminsky is on this list. Any other tidbits you can add 
+</I>&gt;<i> prior to Black Hat?
+</I>&gt;<i> 
+</I>&gt;<i> Udhay
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.liquidmatrix.org/blog/2008/07/08/kaminsky-breaks-dns/">http://www.liquidmatrix.org/blog/2008/07/08/kaminsky-breaks-dns/</A>
+</I>&gt;<i> 
+</I>I'm curious about the details of the attack.  Paul Vixie published the
+basic idea in 1995 at Usenix Security
+(<A HREF="http://www.usenix.org/publications/library/proceedings/security95/vixie.html">http://www.usenix.org/publications/library/proceedings/security95/vixie.html</A>)
+-- in a section titled &quot;What We Cannot Fix&quot;, he wrote:
+
+	With only 16 bits worth of query ID and 16 bits worth of UDP port
+	number, it's hard not to be predictable.  A determined attacker
+	can try all the numbers in a very short time and can use patterns
+	derived from examination of the freely available BIND code.  Even
+	if we had a white noise generator to help randomize our numbers,
+	it's just too easy to try them all.
+
+Obligatory crypto: the ISC web page on the attack notes &quot;DNSSEC is the
+only definitive solution for this issue. Understanding that immediate
+DNSSEC deployment is not a realistic expectation...&quot;
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

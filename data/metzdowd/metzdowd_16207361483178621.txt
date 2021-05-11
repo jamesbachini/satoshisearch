@@ -1,0 +1,35 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> wrote:
+&gt;<i> The executive summary, so I've got something to reply to:
+</I>&gt;<i> 
+</I>&gt;<i>   In the default configuration for Windows XP with Service Pack 2 (SP2),
+</I>&gt;<i> if a
+</I>&gt;<i>   user removes one of the trusted root certificates, and the certifier who
+</I>&gt;<i>   issued that root certificate is trusted by Microsoft, Windows will
+</I>&gt;<i> silently
+</I>&gt;<i>   add the root certificate back into the user's store and use the original
+</I>&gt;<i>   trust settings.
+</I>&gt;<i> 
+</I>&gt;<i> While I don't agree with this behaviour, I can see why Microsoft would do
+</I>&gt;<i> this, and I can't see them changing it at any time in the future.  It's the
+</I>&gt;<i> same reason why they ignore key usage restrictions and allow (for
+</I>&gt;<i> example) an
+</I>&gt;<i> encryption-only key to be used for signatures, and a thousand other
+</I>&gt;<i> breaches
+</I>&gt;<i> of PKI etiquette: There'd be too many user complaints if they didn't.
+</I>
+The real flaw that I see in their design is that they permit
+certificates that they installed to be removed.  Instead they should
+have provided a &quot;disabled&quot; feature so that those who wish to disable
+installed certs can do so and thereby ensure that in the future they
+won't be restored.
+
+Jeffrey Altman
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/x-pkcs7-signature
+Size: 3323 bytes
+Desc: S/MIME Cryptographic Signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070719/91e4d676/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20070719/91e4d676/attachment.bin</A>&gt;
+</PRE>

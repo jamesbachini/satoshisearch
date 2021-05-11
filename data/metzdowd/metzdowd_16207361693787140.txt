@@ -1,0 +1,45 @@
+<PRE>I installed TrueCrypt on my laptop and ran some benchmark tests/
+
+Benchmark Results:
+<A HREF="http://www.full-disk-encryption.net/wiki/index.php/TrueCrypt#Benchmarks">http://www.full-disk-encryption.net/wiki/index.php/TrueCrypt#Benchmarks</A>
+
+Pros:
+1) Easy to use product. Simple clean interface. Very user-friendly!
+2) Free and Open Source
+3) Multiple Encryption and Hashing algorithm available.
+
+Cons:
+1) Buffered Read and Buffered Transfer Rate was almost halved after
+TrueCrypt FDE was enabled :-(.
+2) Access Time for large file (250+MB) increased by 11%.
+3) The initial encryption of the 120 GB HDD took 2 hours.
+
+	
+
+
+On Feb 7, 2008 11:46 PM, Hagai Bar-El &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">info at hbarel.com</A>&gt; wrote:
+&gt;<i> List,
+</I>&gt;<i>
+</I>&gt;<i> Finally, an open source FDE (Full Disk Encryption) for Win32. It is the
+</I>&gt;<i> first one I am aware of:
+</I>&gt;<i>
+</I>&gt;<i> www.truecrypt.org
+</I>&gt;<i>
+</I>&gt;<i> TC is not a new player, but starting February 5th (version 5) it also
+</I>&gt;<i> provides FDE.
+</I>&gt;<i>
+</I>&gt;<i> Didn't get to try it yet.
+</I>&gt;<i>
+</I>&gt;<i> Hagai.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

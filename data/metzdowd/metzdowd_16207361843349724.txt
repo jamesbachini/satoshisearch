@@ -1,0 +1,19 @@
+<PRE>Interesting tidbit:
+
+<A HREF="http://www.epaynews.com/index.cgi?survey=&amp;ref=browse&amp;f=view&amp;id=121516308313743148197&amp;block=">http://www.epaynews.com/index.cgi?survey=&amp;ref=browse&amp;f=view&amp;id=121516308313743148197&amp;block=</A>
+
+&quot;Nick Ogden, a Briton who launched one of the world's first 
+e-commerce processors in 1994, has developed a system for 
+voice-signed financial transactions. The Voice Transact platform was 
+developed by Ogden's Voice Commerce Group in partnership with U.S. 
+speech software firm Nuance Communications.&quot;
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

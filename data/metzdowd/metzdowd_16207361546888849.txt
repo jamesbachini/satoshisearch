@@ -1,0 +1,158 @@
+<PRE>
+From: &quot;Angelos D. Keromytis&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">angelos at cs.columbia.edu</A>&gt;
+Subject: [ias-opportunities] Call For Papers: Applied Cryptography and Network Security (ACNS)
+ Conference, 2008
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ias-opportunities at cerias.purdue.edu</A>
+Date: Thu, 27 Sep 2007 14:41:39 -0400
+Organization: Department of Computer Science, Columbia University
+Reply-To: &quot;Angelos D. Keromytis&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">angelos at cs.columbia.edu</A>&gt;
+
+--------------------------
+ACNS 2008: CALL FOR PAPERS
+--------------------------
+
+6th International Conference on
+Applied Cryptography and Network Security
+
+<A HREF="http://acns2008.cs.columbia.edu/">http://acns2008.cs.columbia.edu/</A>
+
+Location:            Columbia University, New York City, USA
+Date:                June 3-6, 2008
+Submission Deadline: 14 January 2008 23:59:59 EST
+Author Notification: 14 March 2008
+
+General Chairs:      Angelos Keromytis &amp; Moti Yung
+Program Chairs:      Steven Bellovin &amp; Rosario Gennaro
+Publicity Chair:     Jianying Zhou
+
+
+[TOPICS]
+
+Original papers on all aspects of applied cryptography and network
+security are solicited for submission to ACNS'08. Topics of relevance
+include but are not limited to:
+
+* Applied cryptography and provably-secure cryptographic protocols
+* Design and analysis of efficient cryptographic primitives: public-key
+  and symmetric-key cryptosystems, block ciphers, and hash functions
+* Network security protocols
+* Techniques for anonymity; trade-offs between anonymity and utility
+* Integrating security into the next-generation Internet: DNS security,
+  routing, naming, denial-of-service attacks, TCP/IP, secure multicast
+* Economic fraud on the Internet: phishing, pharming, spam, and click
+  fraud
+* Email and web security
+* Public key infrastructure, key management, certification, and
+  revocation
+* Security and privacy for emerging technologies: sensor networks,
+  mobile (ad hoc) networks, peer-to-peer networks, bluetooth, 802.11,
+  RFID
+* Trust metrics and robust trust inference in distributed systems
+* Security and usability
+* Intellectual property protection: metering, watermarking, and
+  digital rights management
+* Modeling and protocol design for rational and malicious adversaries
+* Automated analysis of protocols
+
+Papers suggesting novel paradigms, original directions, or
+non-traditional perspectives are especially welcome.
+
+As in previous years, there will be an academic track and an industrial
+track. Submissions to the academic track should emphasize research
+contributions, while submissions to the industrial track may focus on
+implementation and deployment of real-world systems. Submissions for the
+industrial track must clearly indicate this in the title. Proceedings
+for the academic track will be published in Springer-Verlag's Lecture
+Notes in Computer Science and will be available at the conference.
+Papers accepted to the industrial track will be published in a different
+venue.
+
+
+[IMPORTANT DATES]
+
+   Submission Deadline:           14 January,2008 23:59:59 EST
+   Author Notification Date:      14 March, 2008
+   Final Version Deadline:        4 April, 2008
+   Conference:                    June 3-6, 2008
+
+
+[PROGRAM COMMITTEE]
+
+   Masayuki Abe (NTT, Japan)
+   Ben Adida (Harvard University, USA)
+   Feng Bao (Institute for Infocomm Research, Singapore)
+   Lujo Bauer (CMU, USA)
+   Giampaolo Bella (University of Catania, Italy)
+   Steven Bellovin, co-chair (Columbia University, USA)
+   John Black (University of Colorado, USA)
+   Nikita Borisov (University of Illinois Urbana-Champaign, USA)
+   Colin Boyd (Queensland University of Technology, Australia)
+   Dario Catalano (University of Catania, Italy)
+   Debra Cook (Alcatel-Lucent Bell Labs, USA)
+   Alexander W. Dent (Royal Holloway, University of London, UK)
+   Nelly Fazio (IBM Research, USA)
+   Marc Fischlin (Darmstadt University of Technology, Germany)
+   Debin Gao (Singapore Management University, Singapore)
+   Rosario Gennaro, co-chair (IBM Research, USA)
+   Peter Gutmann (University of Auckland, New Zealand)
+   Danny Harnik (IBM Research, Israel)
+   John Ioannidis (Packet General Networks, USA)
+   Markus Jakobsson (Indiana University, USA)
+   Stanislaw Jarecki (University of California Irvine, USA)
+   Ari Juels (RSA Laboratories, USA)
+   Kaoru Kurosawa (Ibaraki University, Japan)
+   Yehuda Lindell (Bar-Ilan University, Israel)
+   Javier Lopez (University of Malaga, Spain)
+   Jelena Mirkovic (USC/ISI, USA)
+   David Naccache (Ecole Normale Superieure, France)
+   Alina Oprea (RSA Laboratories, USA)
+   Tom Shrimpton (Portland State University, USA)
+   Jonathan Smith (University of Pennsylvania, USA)
+   Angelos Stavrou (George Mason University, USA)
+   Xiaoyun Wang (Shandong University, China)
+   Nicholas Weaver (ICSI Berkeley, USA)
+   Steve Weis (Google, USA)
+   Tara Whalen (Dalhousie University, Canada)
+   Michael Wiener (Cryptographic Clarity, Canada)
+   Avishai Wool (Tel-Aviv University, Israel)
+   Diego Zamboni (IBM Research, Switzerland)
+   Jianying Zhou (Institute for Infocomm Research, Singapore)
+
+
+[AUTHOR INSTRUCTIONS]
+
+Submissions must be anonymous, with no author names, affiliations,
+acknowledgments, or obvious references. Submissions should be in
+English, in PDF format with all fonts embedded, typeset with 11pt font
+or larger, and using reasonable spacing and margins. They should not
+exceed 12 letter-sized pages, not counting the bibliography and
+appendices. Papers should begin with a title, abstract, and an
+introduction that clearly summarizes the contributions of the paper at a
+level appropriate for a non-specialist reader. Papers should contain a
+scholarly exposition of ideas, techniques, and results, including
+motivation, relevance to practical applications, and a clear comparison
+with related work. Committee members are not required to read
+appendices, and papers should be intelligible without them. Submitted
+papers risk being rejected without consideration of their merits if they
+do not follow all the above guidelines.
+
+Submissions must not substantially duplicate work that was published
+elsewhere, or work that any of the authors has submitted in parallel to
+any other conference or workshop that has proceedings. Plagiarism and
+double submissions will be dealt with harshly.
+
+Authors will be asked to indicate whether their submissions should be
+considered for the best student paper award; any paper co-authored by a
+full-time student is eligible for this award.
+
+Authors of accepted papers must guarantee that their paper will be
+presented at the conference.
+
+
+[ACNS Home: <A HREF="http://www.geocities.com/acns_home/">http://www.geocities.com/acns_home/</A>]
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

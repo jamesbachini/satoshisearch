@@ -1,0 +1,75 @@
+<PRE>On Sun, 04 May 2008 11:22:51 +0100
+Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+
+&gt;<i> Steven M. Bellovin wrote:
+</I>&gt;<i> &gt; On Sat, 03 May 2008 17:00:48 -0400
+</I>&gt;<i> &gt; &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt;&gt; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+</I>&gt;<i> &gt;&gt;&gt;&gt; I am left with the strong suspicion that SSL VPNs are &quot;easier to
+</I>&gt;<i> &gt;&gt;&gt;&gt; configure and use&quot; because a large percentage of their user
+</I>&gt;<i> &gt;&gt;&gt;&gt; population simply is not very sensitive to how much security is
+</I>&gt;<i> &gt;&gt;&gt;&gt; actually provided.
+</I>&gt;<i> &gt;&gt;&gt; They're &quot;easier to configure and use&quot; because most users don't
+</I>&gt;<i> &gt;&gt;&gt; want to have to rebuild their entire world around PKI just to set
+</I>&gt;<i> &gt;&gt;&gt; up a tunnel from A to B.
+</I>&gt;<i> &gt;&gt; I'm one of those people who uses OpenVPN instead of IPSEC, and I'm
+</I>&gt;<i> &gt;&gt; one of the people who helped create IPSEC.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; Right now, to use SSH to remotely connect to a machine using public
+</I>&gt;<i> &gt;&gt; keys, all I have to do is type &quot;ssh-keygen&quot; and copy the locally
+</I>&gt;<i> &gt;&gt; generated public key to a remote machine's authorized keys file.
+</I>&gt;<i> &gt;&gt; When there is an IPSEC system that is equally easy to use I'll
+</I>&gt;<i> &gt;&gt; switch to it.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; Until then, OpenVPN let me get started in about five minutes, and
+</I>&gt;<i> &gt;&gt; the fact that it is less than completely secure doesn't matter
+</I>&gt;<i> &gt;&gt; much to me as I'm running SSH under it anyway.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt; There's a technical/philosophical issue lurking here.  We tried to
+</I>&gt;<i> &gt; solve it in IPsec; not only do I think we didn't succeed, I'm not at
+</I>&gt;<i> &gt; all clear we could or should have succeeded.
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; IPsec operates at layer 3, where there are (generally) no user
+</I>&gt;<i> &gt; contexts.  This makes it difficult to bind IPsec credentials to a
+</I>&gt;<i> &gt; user, which means that it inherently can't be as simple to
+</I>&gt;<i> &gt; configure as ssh.
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; Put another way, when you tell an sshd whom you wish to log in as,
+</I>&gt;<i> &gt; it consults that user's home directory and finds an authorized_keys
+</I>&gt;<i> &gt; file. How can IPsec -- or rather, any key management daemon for
+</I>&gt;<i> &gt; IPsec -- do that?  Per-user SPDs?  Is this packet for port 80 for
+</I>&gt;<i> &gt; user pat or user chris?
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; I can envision ways around this (especially if we have an IP address
+</I>&gt;<i> &gt; per user of a system -- I've been writing about fine-grained IP
+</I>&gt;<i> &gt; address assignment for years), but they're inherently a lot more
+</I>&gt;<i> &gt; complex than ssh.
+</I>&gt;<i> 
+</I>&gt;<i> I don't see why.
+</I>&gt;<i> 
+</I>&gt;<i> The ssh server determines who the packets are for from information
+</I>&gt;<i> sent to it by the ssh client.
+</I>&gt;<i> 
+</I>&gt;<i> The ssh client knows on whose behalf it is acting by virtue of being 
+</I>&gt;<i> invoked by that user (I'll admit this is a simplification of the most 
+</I>&gt;<i> general case, but I assert my argument is unaffected), and thus is
+</I>&gt;<i> able to include the information when it talks to the server.
+</I>&gt;<i> 
+</I>&gt;<i> Similarly, the client end of an IPSEC connection knows who opened the 
+</I>&gt;<i> connection and could, similarly, convey that information. That data
+</I>&gt;<i> may not be available in some OSes by the time it gets to the IPSEC
+</I>&gt;<i> stack, but that's a deficiency of the OS, not a fundamental problem.
+</I>&gt;<i> 
+</I>The problem is more on the server end.
+
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

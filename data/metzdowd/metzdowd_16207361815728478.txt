@@ -1,0 +1,25 @@
+<PRE>[Moderator's note: Please don't send giant run on paragraphs to the
+list. They're hard to read. --Perry]
+
+&gt;<i> From: &quot;Marcos el Ruptor&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>&gt;
+</I>&gt;<i> &gt; Interesting.  Of course, with the possible exception of Skype, 
+</I>&gt;<i> &gt; only  the over-the-network part of the communication is 
+</I>&gt;<i> &gt; protected.  The  IM providers can still give the contents of your 
+</I>&gt;<i> &gt; communications to  third parties.
+</I>&gt;<i> 
+</I>&gt;<i> As far as I can tell after having reverse engineered its protocol,  
+</I>&gt;<i> Skype is actually very well made with a few exceptions that would  
+</I>&gt;<i> still be next to impossible to exploit for a street hacker (and 
+</I>
+A year ago when I took a hard look at the Skype login protocol (via public reverse engineering publications, etc.), I determined that the user id to public key binding was fundamentally weak.  If I remember correctly they were vulnerable to at least one attack, a dictionary attack against a password of a user account is possible using the Skype login client-server messages (they can't tell you are attacking since the account name and password are hashed together in the public key/AES encrypted request and you are using one of the well-known 14+ valid Skype public keys).  Their multiple layering of crypto obscures things but with software one can automate the building of the login request encrypted layers fairly easily.  Once you get a valid user cert from the login attack it looks like that account is permanently compromised (I didn't see any user cert validity period).  Because of Kerckhoff's principles there is really no way Skype can prevent this attack (basically they are using the data channel itself to distribute the user certs (with public &amp; private auth keys) to then establish an enciphered phone session over it).   They also have at least one back door mechanism in place, which could be used to quickly compromise a user password.  They allow a user that forgot their password to have it reset and sent to their enrollment email address so that a Tier 1 IDS like Narus could easily scoop it up (this requires careful social engineering).  Also, any SSL traffic to a Skype server can be MITM intercepted (say via a Bluecoat ProxySG appliance) using a ICA cert from a major CA vendor (or internal corporate CA) and any user passwords could be scooped up that way as well.
+
+Thus a retail level wiretap attack against a particular user is quite possible.  Having said that because the 14+ private Skype keys are (only?) stored on their servers, it does not look like a wholesale attack against the Skype system is easy to do (although they did use MD5 in their login algorithm).  However, given this centralization of Skype keys, they certainly could cooperate with any CALEA warrants, etc., by giving police the user certs to be wiretapped (which still requires an active MITM during the setup handshake of the encrypted channel between the two user end-points).  Of course, if physical theft occurs of the 14+ Skype PKI private keys then the whole security ediface will collapse.
+
+- Alex
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

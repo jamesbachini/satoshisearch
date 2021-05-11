@@ -1,0 +1,50 @@
+<PRE>Thor Lancelot Simon wrote:
+&gt;<i> It's fashionable in some circles (including, it seems, this one) to bash
+</I>&gt;<i> IPsec (particularly IKE) and tout SSL VPNs (particularly OpenVPN) on what
+</I>&gt;<i> are basically user interface grounds.
+</I>&gt;<i> 
+</I>&gt;<i> I cannot help repeatedly noting that -- I believe more so than with actual
+</I>&gt;<i> IPsec deployments, whether with or without IKE -- OpenVPN deployments are
+</I>&gt;<i> often configured in hideously insecure ways.  This is no more the fault of
+</I>&gt;<i> OpenVPN's designers, of course, than the ghastly configuration interfaces
+</I>&gt;<i> imposed by many IKE impledmentations are the fault of IPsec's designers.
+</I>
+We are dropping on end users, sysadmins and nno crypto programmers 
+decisions that seasoned cryptographers tend to screw up, and that end 
+users and sysadmins are never going to comprehend.
+
+The way programmers approach modularity and code locality tends to leave 
+the end user outside the cryptographic boundary.  The cryptography 
+module is very carefully made entirely independent of the user 
+interface, merely sending up arcane errors from time to time.
+
+Consider, for example, the recent cookie stealing security failure in 
+Wordpress, fixed just a few days ago.  It seems that for a very long 
+time, there was very straightforward, indeed in retrospect glaringly 
+obvious, security hole that allowed anyone on the internet to take 
+control of any host running Wordpress - which most hosts do run.  You 
+can take control from Nigeria, you don't need to tap any lines.  Anyone 
+anywhere in the world could have exercised any power over one's server 
+that one's Wordpress application can exercise, which is usually near 
+total power.
+
+The defenders of SSL will quite correctly point out that the security 
+hole had absolutely nothing to do with SSL.  The hole exists whether one 
+uses SSL or not, and almost no one uses SSL with Wordpress.  And that 
+was exactly the problem.  The writers of Wordpress, like the writers of 
+every other application, had to handroll their own authentication, and 
+of course fucked up.  SSL sessions are not user sessions, thus SSL 
+authentication does not authenticate that user &quot;admin&quot; is the same 
+entity (or even has the same  IP address) as the entity that correctly 
+logged in as user admin, does not, cannot, attempt to provide such 
+authentication, that being a higher layer issue - indeed, SSL 
+authentication is pretty much irrelevant to authenticating anything that 
+the attackers or defenders are likely to care about, which is why user 
+admin on a Wordpress application does not use SSL.  SSL is so 
+wonderfully localized that attackers just stroll around it.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

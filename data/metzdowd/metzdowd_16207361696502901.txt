@@ -1,0 +1,29 @@
+<PRE>|<i> &gt;All of this ignores a significant issue:  Are keying and encryption
+</I>|<i> &gt;(and authentication) mechanisms really independent of each other? I'm
+</I>|<i> &gt;not aware of much work in this direction.
+</I>|<i> 
+</I>|<i> Is there much work to be done here?  If you view the keyex mechanism
+</I>|<i> as a producer of an authenticated blob of shared secrecy and the
+</I>|<i> post-keyex portions (data transfer or whatever you're doing) as a
+</I>|<i> consumer of said blob, with a PRF as impedance-matcher (as is done by
+</I>|<i> SSL/TLS, SSH, IPsec, ..., with varying degrees of aplomb, and in a
+</I>|<i> more limited store-and-forward context PGP, S/MIME, ...), is there
+</I>|<i> much more to consider?
+</I>I don't know.  Can you prove that your way of looking at it is valid?
+After all, I can look at encryption as applying a PRF to a data
+stream, and authentication as computing a keyed one-way function (or
+something) - so is there anything to prove about whether I can choose
+and combine them independently?  About whether Encrypt-then-MAC and
+MAC-then-Encrypt are equivalent?
+
+I should think by now that we've learned how delicate our cryptographic
+primitives can be - and how difficult it can be to compose them in a
+way that retains all their individual guarantees.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

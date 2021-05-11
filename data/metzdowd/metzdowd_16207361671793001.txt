@@ -1,0 +1,75 @@
+<PRE>On Thu, Jan 31, 2008 at 03:46:47PM -0500, Thor Lancelot Simon wrote:
+
+&gt;<i> On Thu, Jan 31, 2008 at 04:07:03PM +0100, Guus Sliepen wrote:
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; Peter sent us his write-up up via private email a few days before he
+</I>&gt;<i> &gt; posted it to this list (which got it on Slashdot). I had little time to
+</I>&gt;<i> &gt; think about the issues he mentioned before his write-up became public.
+</I>&gt;<i> &gt; When it did, I (and others too) felt attacked in a cruel way. Peter
+</I>&gt;<i> &gt; ignored all the reasons *why* we used the kind of crypto we did at
+</I>&gt;<i> &gt; that moment, compared it to a very high standard, and made it feel like
+</I>&gt;<i> &gt; every thing we didn't do or didn't do as well as SSL made our crypto
+</I>&gt;<i> &gt; worthless. 
+</I>&gt;<i> 
+</I>&gt;<i> There is no valid reason to ship snake oil cryptography (at any moment).
+</I>&gt;<i> 
+</I>&gt;<i> There is no standard but a high standard which is appropriate for
+</I>&gt;<i> comparison.
+</I>&gt;<i> 
+</I>&gt;<i> Since SSL was already available, there was no excuse to do anything
+</I>&gt;<i> worse.
+</I>
+Please understand the following:
+
+I am not defending the use of our less-than-SSL crypto in tinc. But
+there are reasons why we implemented it the way we did at that time. It
+doesn't matter whether these reasons were bad or good. The result of
+ignoring the why, and &quot;attacking&quot; others by pointing out everything they
+do wrong in your perspective (even though your perspective is perfectly
+right), and then finishing off the way Peter did, which is easily
+perceived as an insult if you are on the receiving end of it, does not
+encourage others to fix the problems, but rather puts others in
+defensive mode.
+
+Are you out to help others, or just to look down on them? If it's the
+first, then please make others accept your help by just formulating
+things in a more friendly way (although a patch with a fix would soften
+up things as well). If it's the latter, please continue just as you are
+doing now.
+
+Now some (good and/or bad) reasons why we ended up with our
+lesser-than-SSL crypto, in no particular order:
+
+- SSL was not perceived at that time as a solution for our problem.
+- We were application writers, not security specialists. We had to
+  encrypt traffic, we did the best to our knowledge at that time.
+- I had read Schneier's Applied Cryptography from front to end a few
+  times. It made me feel I knew everything about crypto. Even Bruce
+  admits he thought at that time he had put everything a programmer
+  needed to know about crypto in that book. It doesn't mention SSL.
+- We needed to tunnel data over UDP, with UDP semantics. SSL requires a
+  reliable stream. Therefore, we had to use something other that SSL to
+  tunnel data.
+- It was fun to come up with a full duplex authentication scheme using
+  RSA. More fun than using someone elses stuff.
+- Because we could.
+- We were Free Software developers who did it in our spare time for fun,
+  we were not a company that sells it as one of its products.
+
+&gt;<i> It seems that you still don't understand those things, or you would not
+</I>&gt;<i> complain about them even at this far removed date.  How unfortunate.
+</I>
+It seems that you haven't read the rest of my email, or you would not
+have written that sentence. I am enlightened now :)
+
+-- 
+Met vriendelijke groet / with kind regards,
+      Guus Sliepen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">guus at sliepen.org</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: Digital signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080131/1c83e586/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080131/1c83e586/attachment.pgp</A>&gt;
+</PRE>

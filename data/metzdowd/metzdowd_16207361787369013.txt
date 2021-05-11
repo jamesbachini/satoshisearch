@@ -1,0 +1,56 @@
+<PRE>Hi,
+
+As a standard, this is specification is a disaster. Just from a quick
+read, I see the following:
+
+&quot;However, alternative orders for the input data fields may be used for
+a KDF.&quot;
+
+&quot;with a length specified by the function, an algorithm, or a protocol
+which uses T as an input.&quot;
+
+&quot;In feedback mode, the output of the PRF is computed using the result
+of the previous iteration and, optionally, using a counter as the
+iteration variable(s).&quot;
+
+With sufficient options, all implementations are non-interoperable. I
+think you've managed to reach that point here. As an implementor, my
+instinct is to stay well away from this entire mess and just use IEEE
+1363's KDF2, which is:
+
+  - simple enough that anyone can implement it easily and without
+     interop difficulties, or requiring protocol negotiations (and
+     then the implementor has to do the negotiation properly - which
+     opens up new avenues for security holes)
+
+  - secure enough that it &quot;doesn't matter&quot; (ie, that the likelyhood
+     that a security flaw in the KDF is the critical problem is far
+     lower than a security flaw elsewhere in the system)
+
+My recommendation: choose something that will work for nearly
+everyone, and mandate it directly. For instance, why make the counter
+length configurable? In 99% of implementations, the thing that will
+make sense is a 32-bit counter (to paraphrase the famous if apocryphal
+Bill Gates quote, 4 gigabytes of keying material should be enough for
+anybody), but by refusing to mandate this behavior, you force every
+implementor and application designer to choose something and then
+negotiate on the off chance that some other length was chosen, or that
+the other side is using variable length encodings - something which is
+allowed by the spec, as best as I can tell, and which opens up some
+pretty big (at least theoretical) holes.
+
+I have no comments about the actual security aspects of it; it looks
+fine to my eye, but given the interoperability issues listed above I
+don't plan on implementing any of these KDFs anyway, so I can't say I
+much care whether they are actually secure or not. I would advise you
+to remember that crypto does not exist in a vacuum, and should help,
+not hinder, the overall security of a system.
+
+Regards,
+  Jack Lloyd
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

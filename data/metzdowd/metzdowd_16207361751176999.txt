@@ -1,0 +1,28 @@
+<PRE>On Apr 25, 2008, at 11:09 AM, Leichter, Jerry wrote:
+&gt;<i> 	    I remember seeing another, similar contest in which
+</I>&gt;<i> 	    the goal was to produce a vote-counting program that
+</I>&gt;<i> 	    looked completely correct, but biased the results.
+</I>&gt;<i> 	    The winner was amazingly good - I consider myself
+</I>&gt;<i> 	    pretty good at analyzing code, but even knowing that
+</I>&gt;<i> 	    this code had a &quot;hook&quot; in it, I missed it completely.
+</I>&gt;<i> 	    Worse, none of the code even set of my &quot;why is it
+</I>&gt;<i> 	    doing *that*&quot; detector.
+</I>
+I was reminded of the same contest[0]. The winning date-agnostic  
+entry[1] was by Micha&#322; Zalewski[2], and is nothing short of evil. I  
+spotted the problem after staring at the code intensely for about a  
+half hour, knowing in advance it was there. Had I not known, I don't  
+think I'd have found it.
+
+[0] &lt;<A HREF="http://graphics.stanford.edu/~danielrh/vote/vote.html">http://graphics.stanford.edu/~danielrh/vote/vote.html</A>&gt;
+[1] &lt;<A HREF="http://graphics.stanford.edu/~danielrh/vote/mzalewski.c">http://graphics.stanford.edu/~danielrh/vote/mzalewski.c</A>&gt;
+[2] &lt;<A HREF="http://en.wikipedia.org/wiki/Micha%C5%82_Zalewski">http://en.wikipedia.org/wiki/Micha%C5%82_Zalewski</A>&gt;
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

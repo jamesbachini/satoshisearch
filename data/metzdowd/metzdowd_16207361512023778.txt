@@ -1,0 +1,46 @@
+<PRE>
+Ed Gerck writes:
+ | We've heard it so many times: &quot;There's nothing to worry about.&quot;
+ | Now, Skype adds a new IT protection measure -- &quot;love&quot;:
+ | 
+ |   &quot;The Skype system has not crashed or been victim of a cyber
+ |   attack. We love our customers too much to let that happen.&quot;
+ | 
+
+
+---------- Forwarded message ----------
+
+From: Valery Marchuk &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tecklord at argocom.cv.ua</A>&gt;
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">full-disclosure at lists.grok.org.uk</A>
+Date: Fri, 17 Aug 2007 10:30:50 +0300
+Subject: [Full-disclosure] Skype Network Remote DoS Exploit
+
+Hi all!
+
+On SecurityLab.ru forum an exploit code was published by an anonymous
+user.  Reportedly it must have caused Skype massive disconnections
+today.
+
+The PoC uses standard Skype client to call to a specific number.
+This call causes denial of service of current Skype server and
+forces Skype to reconnect to another server. The new server also
+&quot;freezes&quot; and so on ... the entire network.
+
+Liks: <A HREF="http://www.securitylab.ru/news/301422.php">http://www.securitylab.ru/news/301422.php</A>
+PoC: <A HREF="http://en.securitylab.ru/poc/301420.php">http://en.securitylab.ru/poc/301420.php</A>
+
+Best regards,
+
+Valery Marchuk
+www.SecurityLab.ru
+
+_______________________________________________
+Full-Disclosure - We believe in it.
+Charter: <A HREF="http://lists.grok.org.uk/full-disclosure-charter.html">http://lists.grok.org.uk/full-disclosure-charter.html</A>
+Hosted and sponsored by Secunia - <A HREF="http://secunia.com/">http://secunia.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

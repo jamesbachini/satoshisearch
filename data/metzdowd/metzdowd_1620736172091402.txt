@@ -1,0 +1,28 @@
+<PRE>|<i> &gt;    They extended the confirmation-of-a-file attack into the
+</I>|<i> &gt;    learn-partial-information attack. In this new attack, the
+</I>|<i> &gt;    attacker learns some information from the file. This is done by
+</I>|<i> &gt;    trying possible values for unknown parts of a file and then
+</I>|<i> &gt;    checking whether the result matches the observed ciphertext.
+</I>|<i> 
+</I>|<i> How is this conceptually different from classic dictionary attacks,
+</I>|<i> and why does e.g. running the file through PBKDF2 and using the result
+</I>|<i> for convergence not address your concern(s)?
+</I>How would that help?
+
+Both the ability of convergent encryption to eliminate duplicates,
+and this attack, depend on there being a deterministic algorithm
+that computes a key from the file contents.  Sure, if you use a
+different salt for each file, the attack goes away - but so does
+the de-duplication.  If you don't care about de-duplication, there
+are simpler, cheaper ways to choose a key.
+							-- Jerry
+
+|<i> --
+</I>|<i> Ivan Krsti? &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+</I>|<i> 
+</I>|<i> ---------------------------------------------------------------------
+</I>|<i> The Cryptography Mailing List
+</I>|<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>|<i> 
+</I>|<i> 
+</I></PRE>

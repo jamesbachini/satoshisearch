@@ -1,0 +1,37 @@
+<PRE>On Jan 12, 2008 9:32 AM, Alex Alten &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alex at alten.org</A>&gt; wrote:
+
+&gt;<i> Generally any standard encrypted protocols will probably eventually have
+</I>&gt;<i> to support some sort of CALEA capability. ...
+</I>
+That's a rather large and distinctly dangerous assumption. Here's the
+IETF's official line on the question, the &quot;abstract&quot; section of RFC 2084:
+
+   The Internet Engineering Task Force (IETF) has been asked to take a
+   position on the inclusion into IETF standards-track documents of
+   functionality designed to facilitate wiretapping.
+
+   This memo explains what the IETF thinks the question means, why its
+   answer is &quot;no&quot;, and what that answer means.
+
+<A HREF="http://www.faqs.org/rfcs/rfc2804.html">http://www.faqs.org/rfcs/rfc2804.html</A>
+
+The whole question was extensively discussed on an IETF mailing
+list set up for the purpose before that RFC was written:
+<A HREF="http://www1.ietf.org/mail-archive/web/raven/current/index.html">http://www1.ietf.org/mail-archive/web/raven/current/index.html</A>
+
+The aptly named RFC 1984 is also relevant.
+
+Among the more obvious problems are the fact that complexity
+is bad for security, that the US government has some history
+of abusing wiretaps, and that other governments who would
+have access to any such technology are even less trustworthy.
+
+-- 
+Sandy Harris,
+Nanjing, China
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

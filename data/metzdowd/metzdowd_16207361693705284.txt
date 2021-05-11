@@ -1,0 +1,65 @@
+<PRE>
+From:    David Farber &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave at farber.net</A>&gt;
+Subject: [IP] Cold Boot Attacks on Disk Encryption -- report on 
+To:      &quot;ip&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ip at v2.listbox.com</A>&gt;
+Date:    Thu, 21 Feb 2008 16:25:43 -0500
+
+
+
+
+Begin forwarded message:
+
+From: Declan McCullagh &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">declan at well.com</A>&gt;
+Date: February 21, 2008 3:57:43 PM EST
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave at farber.net</A>
+Cc: Jacob Appelbaum &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jacob at appelbaum.net</A>&gt;
+Subject: Re: [IP] Cold Boot Attacks on Disk Encryption
+
+Dave,
+
+The paper published today makes some pretty strong claims about the  
+vulnerabilities of Microsoft's BitLocker, Apple's FileVault,  
+TrueCrypt, Linux's dm-crypt subsystem, and similar products.
+
+So I put the folks behind it to a test. I gave them my MacBook laptop  
+with FileVault turned on, powered up, encrypted swap enabled, and the  
+screen saver locked.
+
+They were in fact able to extract the 128-bit AES key; I've put screen  
+snapshots of their FileVault bypass process here:
+<A HREF="http://www.news.com/2300-1029_3-6230933-1.html">http://www.news.com/2300-1029_3-6230933-1.html</A>
+
+And my article with responses from Microsoft, Apple, and PGP is here:
+<A HREF="http://www.news.com/8301-13578_3-9876060-38.html">http://www.news.com/8301-13578_3-9876060-38.html</A>
+
+Bottom line? This is a very nicely done attack. It's going to make us  
+rethink how we handle laptops in sleep mode and servers that use  
+encrypted filesystems (a mail server, for instance).
+
+- -Declan
+
+Jacob Appelbaum wrote:
+&gt;<i> With all of the discussions that take place daily about laptop  
+</I>&gt;<i> seizures,
+</I>&gt;<i> data breech laws and how crypto can often come to the rescue, I  
+</I>&gt;<i> thought
+</I>&gt;<i> the readers of IP might be interested in a research project that was
+</I>&gt;<i> released today. We've been working on this for quite some time and are
+</I>&gt;<i> quite proud of the results.
+</I>&gt;<i> Ed Felten wrote about it on Freedom To Tinker this morning:
+</I>&gt;<i> <A HREF="http://www.freedom-to-tinker.com/?p=1257">http://www.freedom-to-tinker.com/?p=1257</A>
+</I>
+
+
+- -------------------------------------------
+Archives: <A HREF="http://www.listbox.com/member/archive/247/=now">http://www.listbox.com/member/archive/247/=now</A>
+RSS Feed: <A HREF="http://www.listbox.com/member/archive/rss/247/">http://www.listbox.com/member/archive/rss/247/</A>
+Powered by Listbox: <A HREF="http://www.listbox.com">http://www.listbox.com</A>
+
+----------
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

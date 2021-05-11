@@ -1,0 +1,19 @@
+<PRE>Hi Jerry,
+ 
+On Tuesday, September 18, 2007, at 07:24PM, &quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; wrote:
+&gt;<i>Anyone know anything about the Yoggie Pico (www.yoggie.com)?  It claims
+</I>&gt;<i>to do much more than the Ironkey, though the language is a bit less
+</I>&gt;<i>&quot;marketing-speak&quot;.  On the other hand, once I got through the
+</I>&gt;<i>marketing stuff to the technical discussions at Ironkey, I ended
+</I>&gt;<i>up with much more in the way of warm fuzzies than I do with Yoggie.
+</I>
+Here's another secure USB flash drive: &lt;<A HREF="http://www.kingston.com/flash/DTSPdemo/eval.asp">http://www.kingston.com/flash/DTSPdemo/eval.asp</A>&gt; with minimal marketing-speak.
+
+Regards,
+Aram
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

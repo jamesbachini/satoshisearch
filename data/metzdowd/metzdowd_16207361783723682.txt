@@ -1,0 +1,21 @@
+<PRE>&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+
+&gt;<i>In any program subject to attack, all strings should have known, documented,
+</I>&gt;<i>and enforced maximum length, a length large enough for all likely legitimate
+</I>&gt;<i>uses, and no larger.
+</I>
+Precisely.  An example of where dynamic strings can lead you is what happens
+to old (very old) versions of Netscape when you feed them a cert with, say, an
+MPEG of a cat in the X.500 DN.  Netscape happily accepts the cert but you then
+have to reinstall the browser because while it'll quite readily accept
+ridiculously long values it doesn't actually cope with them very well.  A
+security component that's trivially taken out by a DoS isn't a security
+component, it's a vulnerability.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

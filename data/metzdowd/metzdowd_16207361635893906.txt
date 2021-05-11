@@ -1,0 +1,33 @@
+<PRE>|<i> &gt; There was a discussion on this list a year or two back about
+</I>|<i> &gt; problems in using memset() to zeroise in-memory data, specifically
+</I>|<i> &gt; the fact that optimising compilers would remove a memset() on
+</I>|<i> &gt; (apparently) dead data in the belief that it wasn't serving any
+</I>|<i> &gt; purpose.
+</I>|<i> 
+</I>|<i> Then, s/memset(?,0,?)/(memset)(?,0,?)/ to get rid of compiler
+</I>|<i> in-lining.
+</I>|<i> 
+</I>|<i> Ref: ANSI X3.159-1989, section 4.1.6 (Use of C standard library
+</I>|<i> functions)
+</I>I don't have te C89 spec handy (just the C99 spec, which is laid
+out differently), but from what I recall, this construct guarantees
+nothing of the sort.
+
+Most standard library functions can be implemented as macros.  Using the
+construct (f)(args) guarantees that you get the actual function f,
+rather than the macro f.  However, that doesn't say anything about
+whether f is actually invoked at run time.  That comes under the &quot;acts
+as if&quot; rule:  If the compiler can prove that the state of the C
+(notional) virtual machine is the same whether f is actually invoked or
+not, it can elide the call.  Nothing says that memset() can't actually
+be defined in the appropriate header, as a static (or, in C99, inline)
+function.  Then the compiler can look at the implementation and &quot;prove&quot;
+that a memset() to a dead variable can be elided....
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

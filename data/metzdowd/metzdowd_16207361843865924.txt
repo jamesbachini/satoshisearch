@@ -1,0 +1,49 @@
+<PRE>On Tue, 01 Jul 2008 12:12:26 -0700
+Arshad Noor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt; wrote:
+
+&gt;<i> The author of an article that appeared in InformationWeek this week
+</I>&gt;<i> (June 30, 2008) on Enterprise Key Management Infrastructure (EKMI):
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937">http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937</A>
+</I>&gt;<i> 
+</I>&gt;<i> states the following:
+</I>&gt;<i> 
+</I>&gt;<i> &quot;There are, of course, obstacles that must still be overcome by EKMI 
+</I>&gt;<i> proponents. For example, the proposed components are somewhat simple
+</I>&gt;<i> by design, which concerns some encryption purists who prefer more
+</I>&gt;<i> complex protocols, on the logic that they're more difficult to break
+</I>&gt;<i> into.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> In light of the recent discussions about experts in cryptography,
+</I>&gt;<i> I thought I'd ask this forum to comment on the above author's
+</I>&gt;<i> statement: is this true?
+</I>&gt;<i> 
+</I>&gt;<i> Do cryptography experts deliberately choose complexity over simplicity
+</I>&gt;<i> when the latter might provide the same strength of protection?  Since
+</I>&gt;<i> I do not consider myself a cryptography expert, and have instinctively
+</I>&gt;<i> preferred simpler - but strong - technical solutions, have my
+</I>&gt;<i> instincts been wrong all along?  TIA.
+</I>&gt;<i> 
+</I>No, no one competent would deliberately opt for complexity.  However,
+there's a quote I've seen attributed to Einstein to remember:
+&quot;Everything should be as simple as possible, but no simpler.&quot;
+Sometimes, extra complexity is due to the need to deflect certain
+attacks, such as replays and cut-and-paste.  It's quite possible that
+the original, simpler design isn't resistant to some threats, either
+because the designers weren't aware of them or because they felt that
+they weren't credible in their environment.  Without more details than
+are in the article (and I don't have the time or energy to read through
+those documents), it's hard to say.  I did see one possible red flag in
+the article: &quot;the key server verifies the client request, then
+encrypts, digitally signs, and escrows the key in a database&quot;.
+Escrowed keys are potentially *very* dangerous, but without knowing
+just what's being stored and how it's being protected, I can't say more.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

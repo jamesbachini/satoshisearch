@@ -1,0 +1,44 @@
+<PRE>Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; writes:
+
+&gt;<i>I'm looking for a halfway self-contained set of ITU-T recommendations which
+</I>&gt;<i>are relevant for implementing X.509v3 certificates.  The references in RFC
+</I>&gt;<i>3280 appear to be incomplete; for instance, a reference for ASN.1 itself is
+</I>&gt;<i>missing.
+</I>&gt;<i>
+</I>&gt;<i>Or is it unreasonable to expect that the specs match what is actually needed
+</I>&gt;<i>for interoperability with existing implementations (mostly in the TLS, S/MIME
+</I>&gt;<i>area)?
+</I>
+There is very little correspondence between PKI specs and reality.  As I put
+it in one analysis on X.509 implementation flaws, &quot;You cannot build an
+implementation so broken that it can't claim to be X.509&quot; (I know of at least
+one instance in which deeply-buried PGP was sold as X.509).  See part 2a of
+the Godzilla crypto tutorial,
+<A HREF="http://www.cypherpunks.to/~peter/T2a_X509_Certs.pdf,">http://www.cypherpunks.to/~peter/T2a_X509_Certs.pdf,</A> for a few examples.
+
+Having said that, if all you want is interoperability then you should be fine.
+The brokenness in X.509 implementations creates a self-sustaining cycle in
+which applications that accept certs are more or less oblivious to anything
+that's in the cert (beyond basic stuff like correct formatting and encoding,
+and so on), so you can get away with almost anything (and then in turn because
+apps will accept anything, cert creators can create arbitrarily broken certs
+without being caught out by it, so the cycle is self-sustaining).
+
+So if you want to do the minimum amount of work, all you need is some
+approximation to a DN, maybe a basicConstraints, and if you're feeling really
+enthusiastic, keyUsage (although this is often ignored by implementations, see
+the part 2a slides for examples.  Even basicConstraints, the single most
+fundamental extension in a certificate, and in most cases just a single
+boolean value, was widely ignored until not too long ago).
+
+If you want to be really lazy, use an X.509v1 cert where you don't even need
+to bother with extensions.  A downside (?) of this is that some applications
+will treat it as a CA root cert.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

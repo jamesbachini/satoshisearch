@@ -1,0 +1,15 @@
+<PRE>
+Matt Blaze blogs about a paper he, Steve Bellovin, Whit Diffie, Susan
+Landau, Peter Neumann and Jennifer Rexford have written on the hazards
+of surveillance technologies:
+
+<A HREF="http://www.crypto.com/blog/wiretap_risks/">http://www.crypto.com/blog/wiretap_risks/</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

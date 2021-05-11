@@ -1,0 +1,42 @@
+<PRE>Anne &amp; Lynn Wheeler wrote:
+&gt;<i> 
+</I>&gt;<i> *Irish Bank Debit Card Skimmers Net &#8364;1m*
+</I>&gt;<i> <A HREF="http://www.epaynews.com/index.cgi?survey=&amp;ref=browse&amp;f=view&amp;id=121179135013743148197&amp;block=">http://www.epaynews.com/index.cgi?survey=&amp;ref=browse&amp;f=view&amp;id=121179135013743148197&amp;block=</A> 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> from above:
+</I>&gt;<i> 
+</I>&gt;<i> Most of the withdrawals took place at the end of April and early May 
+</I>&gt;<i> 2008. Many of the victims contacted their banks to notify them of the 
+</I>&gt;<i> withdrawals, as the banks&#8217; fraud detection systems had failed to spot 
+</I>&gt;<i> the suspicious activity.
+</I>
+I don't know what the policy is in Ireland, but here in the USA 
+there is no stop loss on debit cards so the banks are not 
+obligated to make good on fraudulent withdrawals. I believe that 
+most have out of fear of bad PR, but you have to fight for it if 
+it is just a few that it happens to. If this happens too much 
+then people might stop using debit cards. I have advised my 
+mother, 87, to not use them as she is getting a little slow on 
+the uptake and might miss something like this if it happened to her.
+
+Now to show how screwy the system is, I was shopping the other 
+day and the power went off in the grocery store I was at. They 
+had backup power so they were able to check out people; however, 
+they couldn't use debit cards, except.... Well, the screwy thing 
+was if you entered the charge at terminal as a credit card, even 
+when it was only a debit card, it would accept it. I checked my 
+bank, and sure enough the charge showed as a POS charge!
+
+I think the logic is a little screwy and might be able to be 
+exploited though I'm not sure how at the moment.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

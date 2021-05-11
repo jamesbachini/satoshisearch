@@ -1,0 +1,17 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> Ed Felten has an interesting post on his blog about a Dutch smartcard
+</I>&gt;<i> based transportation payment system that has been broken. Among other
+</I>&gt;<i> foolishness, the designers used a custom cryptosystem and 48 bit keys.
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.freedom-to-tinker.com/?p=1250">http://www.freedom-to-tinker.com/?p=1250</A>
+</I>
+The Dutch government paid two billion dollars for stupidity, for 
+foolishness that almost anyone on this list could have told them was 
+foolish.  Secret algorithm!
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

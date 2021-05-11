@@ -1,0 +1,85 @@
+<PRE>On Mon, Jun 30, 2008 at 11:47:54AM -0700, Allen wrote:
+&gt;<i> Nicolas Williams wrote:
+</I>&gt;<i> &gt;On Mon, Jun 30, 2008 at 07:16:17AM -0700, Allen wrote:
+</I>&gt;<i> &gt;&gt;Given this, the real question is, /&quot;Quis custodiet ipsos custodes?&quot;/ 
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;Putting aside the fact that cryptographers aren't custodians of
+</I>&gt;<i> &gt;anything, it's all about social institutions.
+</I>&gt;<i> 
+</I>&gt;<i> Well, I wouldn't say they aren't custodians. Perhaps not in the 
+</I>&gt;<i> sense that the word is commonly used, but most certainly in the 
+</I>&gt;<i> sense custodians of the wisdom used to make the choices. This is 
+</I>&gt;<i> exemplified by Bruce Schneier, an &quot;acknowledged expert,&quot;  changing 
+</I>&gt;<i> his mind about the way to do security from &quot;encrypt everything&quot; to 
+</I>&gt;<i> &quot;monitor everything.&quot; Yes, I have simplified his stance, but just to 
+</I>&gt;<i> make the point that even experts learn and change over time.
+</I>
+What does that have to do with anything?  Expert != knowledge cast in
+stone.
+
+&gt;<i> &gt;There are well-attended conferences, papers published online and in many
+</I>&gt;<i> &gt;journals, etcetera.  So it's not so difficult for people who don't know
+</I>&gt;<i> &gt;anything about security and crypto to eventually figure out who does, in
+</I>&gt;<i> &gt;the process also learning who else knows who the experts are.
+</I>&gt;<i> 
+</I>&gt;<i> Actually I think it is just about as difficult to tell who is a 
+</I>&gt;<i> trustworthy expert in the field of cryptography as it is in any 
+</I>&gt;<i> field of science or medicine. Just look at the junk science and 
+</I>&gt;<i> medical studies. One retrospective study of 90+ clinical trials 
+</I>&gt;<i> found that over 600 potentially important reaction to the drugs 
+</I>&gt;<i> occurred but only 39 were reported in the papers. I suspect if we 
+</I>&gt;<i> did the same sort of retrospective study for cryptography we would 
+</I>&gt;<i> find some similar issues, just, perhaps, not as large because there 
+</I>&gt;<i> is not as much money to be made with junk cryptography as junk 
+</I>&gt;<i> pharmaceuticals.
+</I>
+The above does not really refute what I wrote.  It takes effort to
+figure out who's an expert.  But I believe that the situation w.r.t.
+crypto is similar to that in science (cold fusion frauds were identified
+rather quickly, were they not?) and better than in medicine (precisely
+because there is not much commercial incentive to fraud here; there is
+incentive for intelligence organizations to interfere, I suppose, but
+here the risk of getting caught is high and the potential cost of
+getting caught high as well).
+
+&gt;<i> I'm curious, how does software get sold for so long that is clearly 
+</I>&gt;<i> weak or broken? Detected, yes, but still sold like Windows LANMAN 
+</I>&gt;<i> backward compatibility.
+</I>
+I thought we were talking about cryptographers, not marketing
+departments, market dynamics, ...  If you want to include the latter in
+&quot;custodes&quot; then there is a clear custody hierarchy: the community of
+experts in the field is above individual implementors.  Thus we have
+reports of snake oil on this list, on various blogs, etc...
+
+So we're back to &quot;quis custodiet ipsos custodes?&quot;  Excluding marketing
+here is the right thing to do (see above).  Which brings us back to my
+answer.
+
+&gt;<i> &gt;When it comes to expertise in crypto, Quis custodiet ipsos custodes
+</I>&gt;<i> &gt;seems like a relatively simple problem.  I'm sure it's much, much more
+</I>&gt;<i> &gt;difficult a problem for, say, police departments, financial
+</I>&gt;<i> &gt;organizations, intelligence organizations, etc...
+</I>&gt;<i> 
+</I>&gt;<i> Well, Nico, this is where I diverge from your view. It is the 
+</I>&gt;<i> &quot;police departments, financial organizations, intelligence 
+</I>&gt;<i> organizations, etc...&quot; who deploy the cryptography. Why should they 
+</I>
+In my experience market realities have much more to do with what gets
+deployed than the current state of the art does; never mind who the
+experts are.  &quot;We'd love to deploy technology X, but in our
+heterogeneous network only one quarter of the vendors support X, and
+only if we upgrade &lt;large number&gt; systems, which requires QA testing,
+which...&quot; -- surely you've run into that sort of situation, amongst
+others.  Legacy, broken code dwarfs snake oil in terms of deployment;
+legacy != snake oil -- we're allowed to learn, as you yourself point
+out.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

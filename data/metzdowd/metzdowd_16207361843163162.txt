@@ -1,0 +1,22 @@
+<PRE>
+On 30 Jul 2008, at 21:33, Ben Laurie wrote:
+
+&gt;&gt;<i> For sure, it would be better if we could check the source code and
+</I>&gt;&gt;<i> match the implemented RNG against an already known RNG.
+</I>&gt;&gt;<i> But, then, there is a &quot;the chicken or the egg&quot; problem: how would you
+</I>&gt;&gt;<i> ensure that a *new* RNG is a good source of &quot;randomness&quot; ? (it's  
+</I>&gt;&gt;<i> not a
+</I>&gt;&gt;<i> rhetorical questions, I'm curious about other approaches).
+</I>&gt;<i>
+</I>&gt;<i> By reviewing the algorithm and thinking hard.
+</I>
+But even then - is that really 'possible' - or is this fundamentally a  
+black art ?
+
+Dw
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

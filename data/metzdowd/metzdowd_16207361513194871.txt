@@ -1,0 +1,96 @@
+<PRE>Anyone know more about this?
+
+Begin forwarded message:
+
+&gt;<i> From: &quot;Steven W. Teppler&quot;
+</I>&gt;<i> Date: August 13, 2007 4:41:56 PM PDT
+</I>&gt;<i> To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ST-ISC at MAIL.ABANET.ORG</A>
+</I>&gt;<i> Subject: Potential SHA 1 Hack Using Distributed Computing - Near  
+</I>&gt;<i> Miss(es) May be Good Enough
+</I>&gt;<i>
+</I>&gt;<i> From DarkReading, via Heise Security:
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Cracking SHA-1 using distributed computing
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Researchers at the Technical University of Graz
+</I>&gt;<i> &lt;<A HREF="http://portal.tugraz.at/pls/portal/url/page/TU_Graz">http://portal.tugraz.at/pls/portal/url/page/TU_Graz</A>&gt;  have launched a
+</I>&gt;<i> distributed computing project to find a new kind of vulnerability  
+</I>&gt;<i> in the
+</I>&gt;<i> SHA-1 hash algorithm, which is used in numerous Internet  
+</I>&gt;<i> applications such
+</I>&gt;<i> as encrypted connections and e-mails. Hash algorithms like SHA-1  
+</I>&gt;<i> perform a
+</I>&gt;<i> sequence of mathematical operations on a block of data, for example a
+</I>&gt;<i> message, which generates a unique fixed length value or &quot;digest&quot;  
+</I>&gt;<i> from the
+</I>&gt;<i> arbitrary length message. Even minor changes to the original  
+</I>&gt;<i> message have a
+</I>&gt;<i> great effect on the digest, making changes easy to detect.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> &lt;<A HREF="http://oas.wwwheise.de/RealMedia/ads/adstream_lx.ads/www.heise.de/">http://oas.wwwheise.de/RealMedia/ads/adstream_lx.ads/www.heise.de/</A> 
+</I>&gt;<i> security_
+</I>&gt;<i> uk/news/343347123/Middle1/he-test-contentads/zaehler.html/ 
+</I>&gt;<i> 343433386136643834
+</I>&gt;<i> 36633065623730?_RM_EMPTY_&gt; 	
+</I>&gt;<i>
+</I>&gt;<i> However, collisions do occur: the algorithm produces the same  
+</I>&gt;<i> digest for two
+</I>&gt;<i> or more different messages. In the presence of a collision, the  
+</I>&gt;<i> variant
+</I>&gt;<i> messages involved cannot be distinguished from each other using the  
+</I>&gt;<i> digest,
+</I>&gt;<i> although indeed most of the variant messages would often not be  
+</I>&gt;<i> very useful,
+</I>&gt;<i> as they would consist of human-meaningless data. But finding  
+</I>&gt;<i> collisions is
+</I>&gt;<i> excessively arduous using simplistic methods. However, in 2005,  
+</I>&gt;<i> Chinese
+</I>&gt;<i> researchers demonstrated that the search for collisions can in  
+</I>&gt;<i> principle be
+</I>&gt;<i> optimized so that the number of attempts falls below the  
+</I>&gt;<i> theoretical minimum
+</I>&gt;<i> of 280. Then around  &lt;<A HREF="http://www.heise-security.co.uk/news/77244">http://www.heise-security.co.uk/news/77244</A>&gt; a  
+</I>&gt;<i> year ago
+</I>&gt;<i> a way to control the content of a possibly quite substantial  
+</I>&gt;<i> proportion of
+</I>&gt;<i> the manipulated message was made public.
+</I>&gt;<i>
+</I>&gt;<i> The cryptologists at the Technical University of Graz are taking a  
+</I>&gt;<i> slightly
+</I>&gt;<i> different approach: they are not looking directly for collisions,  
+</I>&gt;<i> but for
+</I>&gt;<i> &quot;near misses&quot;, where SHA-1 produces very similar digests from two  
+</I>&gt;<i> different
+</I>&gt;<i> messages. They believe that two near misses with the same minimal
+</I>&gt;<i> differences might actually compensate for each other, producing the  
+</I>&gt;<i> same
+</I>&gt;<i> outcome as a true collision.
+</I>&gt;<i>
+</I>&gt;<i> To test this theory, the researchers have launched
+</I>&gt;<i> &lt;<A HREF="http://boinc.iaik.tugraz.at/sha1_coll_search/">http://boinc.iaik.tugraz.at/sha1_coll_search/</A>&gt;  a distributed  
+</I>&gt;<i> computing
+</I>&gt;<i> project. The trusty old Boinc &lt;<A HREF="http://boinc.berkeley.edu/">http://boinc.berkeley.edu/</A>&gt;  client  
+</I>&gt;<i> known
+</I>&gt;<i> from other such projects such as <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Seti at Home</A> is also being used in  
+</I>&gt;<i> Graz. Those
+</I>&gt;<i> who wish to help find collisions are advised to read the manual on the
+</I>&gt;<i> project's website.
+</I>&gt;<i>
+</I>&gt;<i> The successor of SHA-1 is currently being redeveloped from scratch
+</I>&gt;<i> &lt;<A HREF="http://www.heise-security.co.uk/news/84229">http://www.heise-security.co.uk/news/84229</A>&gt;  because the algorithms
+</I>&gt;<i> originally intended to be used in the SHA-2 family all are similar  
+</I>&gt;<i> to SHA-1
+</I>&gt;<i> and therefore vulnerable to the same kind of attacks.
+</I>&gt;<i>
+</I>&gt;<i> Steven
+</I>&gt;<i>
+</I>&gt;<i>
+</I>---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

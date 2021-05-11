@@ -1,0 +1,28 @@
+<PRE>Fairly interesting podcast with the guy who interviewed DNI McConnell 
+for the New Yorker:
+<A HREF="http://www.newyorker.com/online/2008/01/21/080121on_audio_wright">http://www.newyorker.com/online/2008/01/21/080121on_audio_wright</A>
+
+At 03:37 PM 1/15/2008 +0000, Steven M. Bellovin wrote:
+
+&gt;<i>I believe the proper URL is
+</I>&gt;<i><A HREF="http://blogs.wsj.com/washwire/2008/01/13/dancing-spychief-wants-to-tap-into-cyberspace/">http://blogs.wsj.com/washwire/2008/01/13/dancing-spychief-wants-to-tap-into-cyberspace/</A>
+</I>&gt;<i>(and as best I can tell, it doesn't require a WSJ subscription for
+</I>&gt;<i>access).
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>                 --Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+</I>
+
+--------------------------------------------------------------------
+James S. Tyre                                      <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jstyre at jstyre.com</A>
+Law Offices of James S. Tyre          310-839-4114/310-839-4602(fax)
+10736 Jefferson Blvd., #512               Culver City, CA 90230-4969
+Co-founder, The Censorware Project             <A HREF="http://censorware.net">http://censorware.net</A>
+Policy Fellow, Electronic Frontier Foundation     <A HREF="http://www.eff.org">http://www.eff.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

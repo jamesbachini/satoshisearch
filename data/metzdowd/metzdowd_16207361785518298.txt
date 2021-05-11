@@ -1,0 +1,36 @@
+<PRE>I'm confused about two statements here:
+
+At 2:10 PM +0100 5/13/08, Ben Laurie wrote:
+&gt;<i>The result of this is that for the last two years (from Debian's 
+</I>&gt;<i>&quot;Edgy&quot; release until now), anyone doing pretty much any crypto on 
+</I>&gt;<i>Debian (and hence Ubuntu) has been using easily guessable keys. This 
+</I>&gt;<i>includes SSH keys, SSL keys and OpenVPN keys.
+</I>
+. . .
+
+&gt;<i>[2] Valgrind tracks the use of uninitialised memory. Usually it is 
+</I>&gt;<i>bad to have any kind of dependency on uninitialised memory, but 
+</I>&gt;<i>OpenSSL happens to include a rare case when its OK, or even a good 
+</I>&gt;<i>idea: its randomness pool. Adding uninitialised memory to it can do 
+</I>&gt;<i>no harm and might do some good, which is why we do it. It does cause 
+</I>&gt;<i>irritating errors from some kinds of debugging tools, though, 
+</I>&gt;<i>including valgrind and Purify. For that reason, we do have a flag 
+</I>&gt;<i>(PURIFY) that removes the offending code. However, the Debian 
+</I>&gt;<i>maintainers, instead of tracking down the source of the 
+</I>&gt;<i>uninitialised memory instead chose to remove any possibility of 
+</I>&gt;<i>adding memory to the pool at all. Clearly they had not understood 
+</I>&gt;<i>the bug before fixing it.
+</I>
+The second bit makes it sound like the stuff that the Debian folks 
+blindly removed was one, possibly-useful addition to the entropy 
+pool. The first bit makes it sound like the stuff was absolutely 
+critical to the entropy of produced keys. Which one is correct?
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE>Eugen Leitl and Stephan Somogyi &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at lt.gross.net</A>&gt; wrote
+about the Skein hash function announcement.
+&gt;<i><A HREF="http://www.schneier.com/blog/archives/2008/10/the_skein_hash.html?1">http://www.schneier.com/blog/archives/2008/10/the_skein_hash.html?1</A>
+</I> &gt; <A HREF="http://www.schneier.com/skein.html">http://www.schneier.com/skein.html</A>
+
+One thing I noticed on a first read-through was
+a discussion of speed for ASICs vs. general CPUs.
+Their implementation on CPUs was about 4 Gbps/core,
+and their estimate of ASIC speed was about 5 Gbps
+using about 80K gates worth of ASIC,
+and their hash-tree mode makes parallelization efficient.
+Their conclusion was that ASICs don't give you
+much of a speedup, but may save power or cost.
+
+A quick google-look at ASICs showed a number
+in the range of 300K-20M gates,
+so hash-trees could probably get speedups of up to 20-100x
+if you can keep from becoming input-speed-bound.
+The 300K chips were about $6, 5M at $50 and 350MHz,
+which is somewhat faster than the Skein team estimate,
+and some of the denser chips didn't mention price
+but were starting to use 45nm technology.
+So if Skein becomes popular, ASIC accelerator hardware
+may be practical for higher-speed applications.
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

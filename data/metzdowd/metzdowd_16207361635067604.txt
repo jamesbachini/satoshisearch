@@ -1,0 +1,49 @@
+<PRE>
+What does it say about the integrity of the FIPS program, and its 
+CMTL evaluation process, when it is left to competitors to point out 
+non-compliance of evaluated products -- proprietary or open source -- 
+to basic architectural requirements of the standard?
+
+_Vin
+
+
+==============================
+
+At 01:15 PM 12/7/2007, Ed Gerck wrote
+
+Peter Gutmann wrote:
+&gt;&gt;<i>While it's possible to say &quot;There's something we noticed here in 
+</I>&gt;&gt;<i>the source code that requires the software to be ejected from the 
+</I>&gt;&gt;<i>train&quot;, it's a bit harder to say &quot;We spent three months 
+</I>&gt;&gt;<i>reverse-engineering someone else's proprietary protected 
+</I>&gt;&gt;<i>intellectual property and think we may have found something&quot;.
+</I>&gt;<i>
+</I>&gt;<i>Peter cites an important difference. You may be able to see but you 
+</I>&gt;<i>can't tell.
+</I>&gt;<i>
+</I>&gt;<i>However, one can still easily reverse-engineer to find the 
+</I>&gt;<i>vulnerability and then present an exploit saying &quot;There's something 
+</I>&gt;<i>we noticed here when the code is executed with this input...&quot;.
+</I>&gt;<i>
+</I>&gt;<i>The conclusion holds that closed-source is now less of a reasonable 
+</I>&gt;<i>argument in terms of /protecting/ source code.
+</I>&gt;<i>
+</I>&gt;<i>Software-as-a-Service (SaaS), though, would still work in terms of 
+</I>&gt;<i>protecting source code, though, as all you have is a &quot;service 
+</I>&gt;<i>oracle&quot; that does not necessarily reveal code details or flaws. SaaS 
+</I>&gt;<i>could be supplied remotely or locally, with a secure processor card 
+</I>&gt;<i>or secure USB-processor.
+</I>&gt;<i>
+</I>&gt;<i>Cheers,
+</I>&gt;<i>Ed Gerck
+</I>&gt;<i>
+</I>&gt;<i>---------------------------------------------------------------------
+</I>&gt;<i>The Cryptography Mailing List
+</I>&gt;<i>Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

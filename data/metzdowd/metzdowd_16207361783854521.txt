@@ -1,0 +1,26 @@
+<PRE>Jack Lloyd &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">lloyd at randombit.net</A>&gt; writes:
+
+&gt;<i>As a standard, this is specification is a disaster.
+</I>
+Somewhat more strongly worded than my comments :-), but I had the same
+feeling: Why yet another bunch of arbitrary PRF/KDFs to implement?  We now
+have ones for SSL, for TLS, for SSH, for IKE, for PGP, for S/MIME, for... well
+I don't know every crypto protocol in existence but I'm sure there's plenty
+more.  What's wrong with PBKDF2, which seems to do the job quite nicely?
+Whoever dies with the most KDFs wins?
+
+There just doesn't seem to be any reason for this document to exist except
+NIH.  PBKDF2 is a well-specified KDF, is relatively easy to implement (and
+implement in an interoperable manner), has been around for years, and has
+numerous interoperable implementations, including OSS ones if you don't want
+to implement it yourself.  What's the point of SP800-108?  What
+requirement/demand is this meeting?
+
+Peter.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,67 @@
+<PRE>Hovav Shacham wrote:
+&gt;<i> On Aug 24, 2008, at 5:20 AM, Peter Gutmann wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Speaking of CPU-specific optimisations, I've seen a few algorithm
+</I>&gt;&gt;<i> proposals
+</I>&gt;&gt;<i> from the last few years that assume that an algorithm can be scaled
+</I>&gt;&gt;<i> linearly
+</I>&gt;&gt;<i> in the number of CPU cores, treating a multicore CPU as some kind of
+</I>&gt;&gt;<i> SIMD
+</I>&gt;&gt;<i> engine with all cores operating in lock-step, or at least engaging in
+</I>&gt;&gt;<i> some
+</I>&gt;&gt;<i> kind of rendezvous every couple of cycles (for example the
+</I>&gt;&gt;<i> recently-discussed
+</I>&gt;&gt;<i> MD6 uses a round of 16 steps, if I read the description correctly)
+</I>&gt;<i>
+</I>&gt;<i> My impressions from Ron's talk were different.  For multicore systems,
+</I>&gt;<i> the tree structure of the hash allows parallelism at a much higher
+</I>&gt;<i> granularity.  For hardware implementation, the feedback-register
+</I>&gt;<i> structure of the round function means that 16 steps can be computed in
+</I>&gt;<i> parallel.  I didn't get the sense that Ron intends for the second kind
+</I>&gt;<i> of parallelism to be used in software implementations.
+</I>&gt;<i>
+</I>&gt;<i> Hovav.
+</I>
+&gt;<i>From the MD6 powerpoint, it does look good for parallelism.  When using
+</I>SSE5 (to get back on topic :-), you should be able to do 2 blocks in the
+one instruction stream.  I can't remember enough of the other SSE
+instructions to know if the relevant 64bit shifts are present before SSE5.
+
+The only place where I've used multiple CPUs in crypto so far has been
+in RSA's CRT, where, due to the magic of
+OpenMP support, and a little bit of state splitting, I get the following
+throughput numbers for dual core 2.5ghz, athlon64
+doing 1024-2 RSA private key operations (number per second)
+
+For normal single threaded, 4650 per cpu second and wall clock second.
+OpenMP, 4330 per CPU second, 7360 wall clock second.
+
+So in this case, the OpenMP overhead is about 8% CPU.  MD6 has smaller
+chunks, and lots of them, so it will probably scale quite well.
+
+OpenMP, it makes it very easy to put in parallelism.  In this CRT
+implementation, it was a simple
+#pragma omp parallel for
+        for (i=0; i&lt;2; i++)
+             /* CRT code */
+A few changes were made to make sure the structures were not shared, but
+nothing that affects performance.
+OpenMP is now in gcc 4.2 which is nice.
+
+MD6, should be just as stupidly easy,
+
+#pragma omp parallel for
+    for (block_num=0; block_num&lt;(data_len/512); block_num++) {
+       MD6_block(&amp;(ret_st[block_num]), input + block_num*512, block_num,
+level, not_root, ....)
+    }
+
+Repeat up the levels (depending of memory availability).
+
+eric
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

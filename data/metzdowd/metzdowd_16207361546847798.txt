@@ -1,0 +1,26 @@
+<PRE>
+&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+&gt;<i> It appears that Apple may have altered the firmware of newer iPods so
+</I>&gt;<i> that they require a proper cryptographic hash in the iTunesDB loaded
+</I>&gt;<i> onto the units or they won't work. This effectively blocks people from
+</I>&gt;<i> using third party software with an iPod, including the various
+</I>&gt;<i> programs people use on Linux with iPods.
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://ipodminusitunes.blogspot.com/2007/09/apple-cuts-us-off.html">http://ipodminusitunes.blogspot.com/2007/09/apple-cuts-us-off.html</A>
+</I>
+And, within a few days, the open source folks have reverse engineered
+it. The presence of &quot;magic numbers&quot; in the algorithm makes one assume
+that this was intended as more than a simple hash integrity check, but
+the brief time required to find them leads one to believe the
+mechanism was not a very effective protection (though it isn't even
+clear what it was intended to protect against.)
+
+<A HREF="http://ipodminusitunes.blogspot.com/2007/09/weve-won.html">http://ipodminusitunes.blogspot.com/2007/09/weve-won.html</A>
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

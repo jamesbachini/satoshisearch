@@ -1,0 +1,20 @@
+<PRE>* Karsten Nohl:
+
+&gt;<i> The benefits clearly outweigh the risks since half a year after
+</I>&gt;<i> announcing the vulnerabilities, Mifare Classic is hopefully not used
+</I>&gt;<i> in any high security application anymore.
+</I>
+Isn't this a bit of wishful thinking?
+
+The dynamics are probably very involved because you usually don't buy
+from NXP, but an integrated product from a reseller.  An upgrade isn't a
+free patch, either, so it needs some sort of budgeting and planning.
+
+That being said, the chip should have been phased out years ago.  But
+within half a year?  No way.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

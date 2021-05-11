@@ -1,0 +1,20 @@
+<PRE>IanG wrote:
+&gt;<i> 2.  GPG + Engimail + Thunderbird.  Will never be totally robust because
+</I>&gt;<i> there is too much dependency.
+</I>
+What does this mean? GPG + Enigmail, whilst not the best architecture I
+ever heard of, is a tiny increment to the complexity of Thunderbird.
+
+Are you saying anything other than &quot;big software has bugs&quot;?
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,39 @@
+<PRE>David Wagner wrote:
+
+...
+&gt;<i> This struck me as poor design, not good design.  Asking the user to
+</I>&gt;<i> make these kinds of choices seems like the kind of thing that only a
+</I>&gt;<i> cryptographer could consider sensible.  In this day and age, software
+</I>&gt;<i> should not be asking users to choose ciphers.  Rather, the software
+</I>&gt;<i> should just pick a sensible high-grade security level (e.g., AES-128,
+</I>&gt;<i> RSA-1024 or RSA-2048) and go with that, and avoid bothering the user.
+</I>&gt;<i> Why even offer &quot;low&quot; as an option?  (And this &quot;export&quot; business sounds
+</I>&gt;<i> like a throwback to a decade ago; why is that still there?)
+</I>&gt;<i> 
+</I>&gt;<i> Good crypto is cheap.  Asking a user is expensive and risky.
+</I>&gt;<i> 
+</I>&gt;&gt;<i> So I think there should be a broad design bias towards *implicit* correct
+</I>&gt;&gt;<i> behaviour in all system features, with rope available for advanced users
+</I>&gt;&gt;<i> to *explicitly* craft more complex use-cases. Once you have that, practical
+</I>&gt;&gt;<i> security is not too difficult.
+</I>&gt;<i> 
+</I>&gt;<i> Amen.  I know of quite a few software packages that could use more of
+</I>&gt;<i> that philosophy.
+</I>
+
+I think we are all coming around to the view that any 
+choices are practically messy and dangerous, no matter how 
+nice they look on paper.
+
+The way I put it, there is only one mode, and it is secure. 
+  From there on, it only gets better.  Obligatory rant:
+
+<A HREF="http://iang.org/ssl/h3_there_is_only_one_mode_and_it_is_secure.html">http://iang.org/ssl/h3_there_is_only_one_mode_and_it_is_secure.html</A>
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

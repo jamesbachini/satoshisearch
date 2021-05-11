@@ -1,0 +1,20 @@
+<PRE>Ninth Circuit Allows Individuals to Use Devices to Decrypt Satellite
+Television Signals:
+<A HREF="http://jolt.law.harvard.edu/digest/?p=19">http://jolt.law.harvard.edu/digest/?p=19</A>
+
+
+Jennifer Granick expects that the ruling will &quot;prevent[] satellite and
+cable TV companies from piling on excessive damages that would punish
+and chill legitimate encryption research.&quot;
+Declan McCullagh discusses the various legal and illegal uses of the
+smart card devices purchased by defendants.
+
+
+saqib
+<A HREF="http://www.quantumcrypto.de/dante/">http://www.quantumcrypto.de/dante/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

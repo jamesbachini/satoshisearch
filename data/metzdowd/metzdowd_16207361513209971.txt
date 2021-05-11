@@ -1,0 +1,24 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> writes:
+
+&gt;<i> So, when you find a particularly obnoxious dilettante going on about
+</I>&gt;<i> his bone-headed unbreakable scheme, please forward it to me and I'll
+</I>&gt;<i> see about breaking it, and then publish the schemes and the results on
+</I>&gt;<i> a web site for publicly &quot;educating&quot; them.  Honestly, there's probably
+</I>&gt;<i> no better way to educate people than to see schemes submitted and
+</I>&gt;<i> broken, and I'm not sure there's a good site for it, although there
+</I>&gt;<i> are plenty of books.  Unfortunately, these types won't be bothered to
+</I>&gt;<i> buy books since they already know everything.
+</I>
+Here's a particularly moronic scheme:
+       <A HREF="http://www.acm.org/crossroads/xrds11-3/xorencrypt.html">http://www.acm.org/crossroads/xrds11-3/xorencrypt.html</A>
+-- 
+&quot;If a person keeps faithfully busy each hour of the working day, he
+ can count on waking up some morning to find himself one of the
+ competent ones of his generation.&quot;
+--William James
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

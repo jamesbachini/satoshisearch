@@ -1,0 +1,38 @@
+<PRE>
+On Jan 3, 2008, at 9:52 AM, Alan wrote:
+
+&gt;<i>
+</I>&gt;<i> On Sun, 2007-12-30 at 08:30 -0500, Richard Salz wrote:
+</I>&gt;&gt;<i> In my personal experience, if you are developing a mass-market  
+</I>&gt;&gt;<i> item with
+</I>&gt;&gt;<i> conventional crypto (e.g., SSL, S/MIME, etc ) then it is fairly  
+</I>&gt;&gt;<i> routine to
+</I>&gt;&gt;<i> get a commodity export license which lets you sell globally.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Disclaimers abound, including that I'm not a lawyer and certainly  
+</I>&gt;&gt;<i> don't
+</I>&gt;&gt;<i> speak for IBM.
+</I>&gt;<i>
+</I>&gt;<i> My question was more on the lines of &quot;what gets rejected&quot;, not &quot;what
+</I>&gt;<i> does it take to do it&quot;.
+</I>&gt;<i>
+</I>&gt;<i> Is there some technology that they are so afraid of that they still
+</I>&gt;<i> won't let it ship or does it just matter who you are, not what it is?
+</I>&gt;<i>
+</I>
+They let strong crypto through all the time. I can't imagine what  
+*technology* you couldn't get through. Definitely, however, there are  
+*people* who couldn't get an export license because they've been bad  
+in the past.
+
+So the answer to your questions is that they're vetting who you are  
+far more than what you're exporting.
+
+	Jon
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

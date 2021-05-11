@@ -1,0 +1,96 @@
+<PRE>|<i> I often say, &quot;Rub a pair of cryptographers together, and you'll
+</I>|<i> get three opinions.  Ask three, you'll get six opinions.&quot;  :-)
+</I>|<i> 
+</I>|<i> However, he's talking about security, which often isn't quantifiable!
+</I>&gt;<i>From what I see in the arguments, it's more complicated than that.
+</I>
+On one side, we have SeLinux, produced with at least the aid of the NSA.
+SeLinux embodies the accepted knowledge about how to do security
+&quot;right&quot;.  This is a matter of engineering experience, not science.  The
+fact is, very few things in this world are a matter of &quot;science&quot;.
+Science can provide answers, but it can't choose the questions for you.
+In the case of security, you first have to choose your model of what
+needs to be secured, and against what kind of attacks.  There's no
+possible science here - science can help you by telling you where the
+limits are, what impact some choices have on others, but ultimately what
+you consider important to protect, and what kinds of attacks you
+consider plausible enough to be worth the costs of preventing, are
+judgements that science cannot make.  The NSA has tons of experience
+here, along all the relevant dimensions.  But the judgements they make,
+while appropriate to their circumstances, may make little sense in other
+circumstances.  I'm quite willing to grant that, in the sphere in which
+NSA works, SeLinux is a great solution.  But few of us live there.
+
+So ... on the other side, we have those who focus on the difficulty with
+actually configuring and using an SeLinux system.  This is a dimension
+that doesn't particularly concern NSA:  They have legal and operational
+requirements that *must* be met, and the way to deal with the complexity
+is to throw trained people and money at the problem.  But hardly anyone
+else is in a position to take that approach.  So the net result is that
+people end up not using SeLinux.  Seeing this, others come along with
+simpler-to-use approaches.  They don't solve the problems SeLinux
+solves, but they do solve *some* real problems - and they are claimed to
+be much more likely to be adopted.  (Adoption rates, at least, *can* be
+measured.  You can complain all you like about what people *should* be
+doing, but ultimately what they *are* doing is something you have to
+measure in the real world - scientifically! - not just think about.)
+
+Now, the security absolutists say &quot;But you're getting people to adopt
+something that doesn't *really* protect them.&quot;  Perhaps, though in the
+words of George Orwell, &quot;The best is the enemy of the good.&quot;
+
+We see the same kinds of arguments in cryptography.  There are the
+absolutists, who brand as snake oil anything that doesn't pass every
+known test anyone has ever published, that hasn't had every individual
+component fully vetted by people they trust (and ultimately, they trust
+no one, so it ends up the only things they trust are things they created
+themselves).  There are the true snake oil salesmen.  And there are
+those who try to get something &quot;good enough&quot; out there:  Something that
+will actually get used by more than a tiny fraction of the population
+and will protect them against reasonable threats.  For myself, I long
+ago decided that no data I have is so valuable that it needs to survive
+an attack that costs more than, say, a few thousand dollars to pull off.
+In fact, if we're talking about data that can't be identified up front -
+e.g., if someone had to go through my encrypted files one at a time, not
+knowing what was in them until they had decrypted them - the threshold
+is dramatically lower.  I'd probably be happy if it cost more than $100
+per file.  Even at those rates, there would be cheaper ways to get at
+my stuff than attacking the cryptography.
+
+Obviously, others will have different thresholds.  But thinking about
+this kind of thing in monetary terms does help you get away from the
+kind of nebulous &quot;I want my stuff secure from any possible attack by
+anyone&quot; thinking.  So I don't trust WEP for anything, but I do trust WPA
+- but I use SSH even over WPA links for many things.  It's cheap, it's
+as easy to use as the alternatives - why not?  I have files encrypted
+with what by today's standards are very weak algorithms.  If they get
+broken, I've judged that my loss is trivial.  The old programs are quick
+and easy to use and I just haven't gotten 'round to re-encrypting with
+newer algorithms that, on today's machines, are fast enough and easy
+enough to use.  I tend to zero out files before deleting them, just
+because it's easy to do and it can't hurt.  On the other hand, I don't
+go out of my way to use some 7-pass or - Lord save us from those who
+can't even be bothered to read Peter Guttman's paper on this and
+understand what he actually said - 35-pass erasure algorithm:  If I have
+to worry about an attacker who are willing to use fancy data recovery
+hardware to look for remnant magnetization, I've got other problems.
+(BTW, it always amazes me that no modern system has picked up an old,
+old idea from VMS:  You can set a marker on a file that causes the
+system to over-write it when it's deleted.  Since the file system 
+implementation does this, it makes no difference how the file came
+to be deleted - it *will* get zeroed, or, actually, passed to a
+loadable module that can perform some other kind of secure erasure.
+Compare to Unix, where if I accidentally re-direct output over a file I
+meant to erase before deletion, I'm screwed.)
+
+|<i> And don't get me ranting about &quot;provable&quot; security....  Had a small
+</I>|<i> disagreement with somebody at Google the other week, as he complained
+</I>|<i> that variable moduli ruined the security proof (attempts) for SSH.
+</I>
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

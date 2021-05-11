@@ -1,0 +1,20 @@
+<PRE>On Wed, 12 Sep 2007 09:28:51 -0400
+&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> A rare 17th century crypto book is being auctioned.
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.liveauctioneers.com/item/4122383/">http://www.liveauctioneers.com/item/4122383/</A>
+</I>&gt;<i> 
+</I>As I commented to Bruce, see what Kahn says about it:  &quot;But the work,
+while containing some cipher systems, mainly defends the occultism of
+Trithemius&quot;.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,30 @@
+<PRE>Arshad Noor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt; writes:
+&gt;<i>Perry E. Metzger wrote:
+</I>&gt;&gt;<i> There are now a number of drives on the market advertising AES based
+</I>&gt;&gt;<i> FDE in hardware, and a number of laptops available on the market that
+</I>&gt;&gt;<i> claim to support them.
+</I>&gt;&gt;<i> [...]
+</I>&gt;<i>
+</I>&gt;<i>There is a debate going on on that list about the value of
+</I>&gt;<i>encrypting data at the disk-drive layer vs. encrypting at the
+</I>&gt;<i>application layer - I believe the latter is a more strategic
+</I>&gt;<i>solution - and the voices from the Crypto forum would be
+</I>&gt;<i>welcome on these issues.
+</I>
+One thing about drive-based encryption is that we're been proised this since 
+about 2000 or 2001, and it's always just another year or two away for various 
+reasons: standardisation, host controller support, OS support, phase of the 
+moon, ... .  The current reason seems to be FIPS 140: the turnaround time for 
+a FIPS 140 eval is significantly longer than the mean lifetime of any 
+particular hardware/firmware config, and the cost of the constant re-evals 
+doesn't help much either.  So drive-based FDE is currently awaiting the 
+loading of a compliment of small FIPS 140-soaked paper napkins.  Until then 
+there will be a short delay.  Please return to your seats.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

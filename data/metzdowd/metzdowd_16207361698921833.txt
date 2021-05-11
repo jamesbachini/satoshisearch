@@ -1,0 +1,35 @@
+<PRE>Hi,
+
+&gt;<i> Microsoft broke this in IE7... It is no longer possible to generate and
+</I>&gt;<i> enroll a client cert from a CA not on the trusted root list. So private
+</I>&gt;<i> label CAs can no longer enroll client certs. We have requested a fix,
+</I>&gt;<i> so this may come in the future, but the damage is already done...
+</I>&gt;<i>
+</I>&gt;<i> Also the IE7 browser APIs for this are completely different and rather
+</I>&gt;<i> minimally documented. The interfaces are not portable between browsers,
+</I>&gt;<i> ... It's a mess.
+</I>
+I can fully confirm this.
+
+Microsoft claimed that they had to rewrite the API to make it more secure, but 
+I only found one small security-relevant weakness that they fixed, the others 
+are still there. (And even that fix wouldn&#180;t have justified a rewrite of the 
+API for websites. They could have kept the frontend-API compatible in my 
+opinion.)
+
+I had the feeling that Microsoft wants to abandon the usage of client 
+certificates completely, and move the people to CardSpace instead.
+But how do you sign your emails with CardSpace? CardSpace only does the 
+realtime authentication part of the market ...
+
+If anyone needs more information how to upgrade your Web-based CA for IE7:
+<A HREF="http://wiki.cacert.org/wiki/IE7VistaSource">http://wiki.cacert.org/wiki/IE7VistaSource</A>
+
+Best regards,
+Philipp G&#252;hring
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

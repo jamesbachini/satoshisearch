@@ -1,0 +1,76 @@
+<PRE>On 07/10/2007 01:59 AM, Florian Weimer wrote:
+
+&gt;&gt;&gt;<i> It's also an open question whether network operators subject to
+</I>&gt;&gt;&gt;<i> interception requirements can legally offer built-in E2E encryption
+</I>&gt;&gt;&gt;<i> capabilities without backdoors.
+</I>
+I agree.  It's a tricky question;  see below
+
+JI responded:
+
+&gt;&gt;<i> You probably meant device vendors, not network operators. 
+</I>
+We all agree we can make a distinction between telcos and phone HW
+manufacturers.  But that may not be the relevant distinction.
+
+I know in the US, and I imagine elsewhere, telcos buy phones from
+the OEMs and then retail them to customers.  That makes them, in
+the eyes of the law, both telecommunication carriers *and* device
+vendors, even if they are not device OEMs.
+
+&gt;&gt;<i> The whole
+</I>&gt;&gt;<i> *point* of E2E security is that network operators are not involved. If
+</I>&gt;&gt;<i> they were, it wouldn't be end-to-end!
+</I>
+Well, that's logical, but who said the law has to be logical?
+
+IANAL but AFAICT the most sweeping parts of the CALEA law apply
+to &quot;telecommunication carriers&quot; as defined in section 1001:
+   <A HREF="http://www4.law.cornell.edu/uscode/html/uscode47/usc_sec_47_00001001----000-.html">http://www4.law.cornell.edu/uscode/html/uscode47/usc_sec_47_00001001----000-.html</A>
+
+Customer encryption is explicitly not included by the terms of
+section 1002:
+   <A HREF="http://www4.law.cornell.edu/uscode/html/uscode47/usc_sec_47_00001002----000-.html">http://www4.law.cornell.edu/uscode/html/uscode47/usc_sec_47_00001002----000-.html</A>
+&quot;... unless the encryption was provided by the carrier and
+the carrier possesses the information necessary to decrypt
+the communication.&quot;
+
+I repeat: &quot;... unless the encryption was provided by the carrier
+and the carrier possesses the information necessary to decrypt
+the communication.&quot;
+
+Following this line of thought leads to all sorts of illogical
+conclusions, including:
+  a) Arguably it might be OK to buy a backdoor-free crypto phone
+   from the grocery store, but not OK to buy or lease it from
+   the phone company.
+  b) Arguably you could buy a phone from the telco with no
+   crypto at all, and then take it to Orange County Choppers
+   and have them install backdoor-free crypto.
+  c) Arguably the OEM could have two product lines, one without
+   backdoors, to be sold via telcos, and one without backdoors,
+   to be sold otherwise.
+  d) Arguably everybody is OK provided the telco doesn't have
+   the keys.  Maybe you can use a crypto phone provided by a
+   US telco if you have a high-assurance way of changing the
+   keys to the back door as well as the front door.
+  e) We all know the laws differ wildly from one jurisdiction
+   to another ... and the laws can be changed at any time.
+
+The cost of the second product line (item b) might not be too
+much higher than the first product line (item a), since it
+could be considered a /byproduct/, such that all the big
+development costs are attributed to line (a) ... assuming
+there is a market for crypto phones of any kind.
+
+
+As to whether any such market will develop in the near future
+is another interesting question.  The fact that only a tiny
+fraction of present-day email is E2E encrypted is not an
+encouraging sign.  (Email is easier to encrypt than voice.)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

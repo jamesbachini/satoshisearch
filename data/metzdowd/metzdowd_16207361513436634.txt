@@ -1,0 +1,45 @@
+<PRE>Dave Korn wrote:
+
+&gt;<i> 
+</I>&gt;<i>   That's gotta stand out like a statistical sore thumb.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i>   The article is pretty poor if you ask me.  It outlines three techniques for
+</I>&gt;<i> stealth: steganography, using a shared email account as a dead-letter box, and
+</I>&gt;<i> blocking or redirecting known IP addresses from a mail server.  Then all of a
+</I>&gt;<i> sudden, there's this conclusion ...
+</I>&gt;<i> 
+</I>&gt;<i> &quot; Internet-based attacks are extremely popular with terrorist organizations
+</I>&gt;<i> because they are relatively cheap to perform, offer a high degree of
+</I>&gt;<i> anonymity, and can be tremendously effective. &quot;
+</I>&gt;<i> 
+</I>&gt;<i> ... that comes completely out of left-field and has nothing to do with
+</I>&gt;<i> anything the rest of the article mentioned.  I would conclude that someone's
+</I>&gt;<i> done ten minutes worth of web searching and dressed up a bunch of
+</I>&gt;<i> long-established facts as 'research', then slapped a &quot;The sky is falling!
+</I>&gt;<i> Hay-ulp, hay-ulp&quot; security dramaqueen ending on it and will now be busily
+</I>&gt;<i> pitching for government grants or contracts of some sort.
+</I>
+This struck me oddly as well. I cannot think of a single significant
+Internet attack which has been traced to any terrorist organizations. I
+would agree that this article seems to be designed to alarm rather than
+inform, and, no doubt, pick up a government contract.
+
+Additionally, the author seems to make a big deal about asymmetric
+encryption without considering how key exchange is accomplished. The
+logistics of key exchange remains one of the vulnerabilities any
+asymmetric encryption system.
+
+
+-- 
+-------------------------------------
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sjk at cupacoffee.net</A>
+No one can understand the truth until
+he drinks of coffee's frothy goodness.
+~~Sheik Abd-al-Kadir
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

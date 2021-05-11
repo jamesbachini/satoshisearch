@@ -1,0 +1,30 @@
+<PRE>* James A. Donald:
+
+&gt;<i> From time to time I hear that DNSSEC is working fine, and on examining
+</I>&gt;<i> the matter I find it is &quot;working fine&quot; except that ....
+</I>&gt;<i>
+</I>&gt;<i> Seems to me that if DNSSEC is actually working fine, I should be able
+</I>&gt;<i> to provide an authoritative public key for any domain name I control,
+</I>&gt;<i> and should be able to obtain such keys for other domain names, and use
+</I>&gt;<i> such keys for any purpose, not just those purposes envisaged in the
+</I>&gt;<i> DNSSEC specification.  Can I?  It is not apparent to me that I can.
+</I>
+DNS is hierarchical.  Nobody wants the DoD (who are traditionally quite
+good at keeping secret data) or any other institution to keep keys at
+important positions in the hierarchy.  And nobody wants to be the keep
+irreplaceable keys, either, which makes introduction at levels below the
+DNS root difficult.
+
+This is not a problem with the browser PKI because it's possible to
+replace root certificates with a software update (which can be automated
+in many cases).
+
+And as Bill pointed out, it's not possible to use the DNS keys directly.
+However, you can bootstrap another key based on data from DNS.  This
+even works without DNSSEC.  DKIM does that, for instance.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

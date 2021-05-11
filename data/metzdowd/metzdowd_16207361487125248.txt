@@ -1,0 +1,25 @@
+<PRE>
+
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A> said:
+&gt;<i> <A HREF="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=270146164488">http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=270146164488</A>
+</I>
+
+ebay now says (as of when this messge is sent):
+
+
+&gt;<i> 	This Listing Is Unavailable	
+</I>&gt;<i> This listing (270146164488) has been removed or is no longer available.
+</I>&gt;<i> Please make sure you entered the right item number. If the listing was
+</I>&gt;<i> removed by eBay, consider it canceled. Note: Listings that have ended more
+</I>&gt;<i> than 90 days ago will no longer appear on eBay.
+</I>
+
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

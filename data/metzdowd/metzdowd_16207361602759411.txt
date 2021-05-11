@@ -1,0 +1,82 @@
+<PRE>There's a dependency from &quot;negotiated capabililities&quot;
+to the cryptographic things included in the first message
+from client to server (since e.g. what algorithm is 
+used by the client, or even what certificate is selected,
+depends on these &quot;non-crypto&quot; capability/feature parts.)
+
+But as James pointed out, you could probably handle this 
+in &quot;optimistic&quot; mode; i.e. make a guess what the &quot;negotiated
+capabilities&quot; are likely to be, and fall back to more
+RTTs if the guess is wrong.
+
+(BTW, usually we also want the capability negotiation
+to be secure; SSL simply exchanges MACs of all messages
+once the key for MAC has been agreed on. Would this
+add 0.5 or 1RTT? Or perhaps there's some clever
+way to do it without additional RTT?)
+
+Best regards,
+Pasi
+
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: ext <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> 
+</I>&gt;<i> [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A>] 
+</I>&gt;<i> Sent: 14 November, 2007 21:46
+</I>&gt;<i> To: Eronen Pasi (Nokia-NRC/Helsinki)
+</I>&gt;<i> Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> Subject: Re: refactoring crypto handshakes (SSL in 3 easy steps)
+</I>&gt;<i> 
+</I>&gt;<i> On Tue, Nov 13, 2007 at 08:35:52AM +0200, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Pasi.Eronen at nokia.com</A> wrote:
+</I>&gt;<i> &gt; The &quot;extra messages&quot; might be irrelevant for cryptography,
+</I>&gt;<i> &gt; but they're not irrelevant for security or functionality.
+</I>&gt;<i> &gt; E.g. in SSL, you have capability/feature negotiation
+</I>&gt;<i> &gt; (cipher suites, trusted CAs, in TLS 1.2 also signature
+</I>&gt;<i> &gt; algorithms, etc.)
+</I>&gt;<i> 
+</I>&gt;<i> So, this is a good place to attempt to use this method.
+</I>&gt;<i> 
+</I>&gt;<i> Data to be sent:
+</I>&gt;<i> 
+</I>&gt;<i> 1) supported capabilities on the client
+</I>&gt;<i> 2) supported capabilities on the server
+</I>&gt;<i> 3) negotiated capabilities
+</I>&gt;<i> 
+</I>&gt;<i> Dependencies:
+</I>&gt;<i> 
+</I>&gt;<i> 1) No dependencies (first message from client to server)
+</I>&gt;<i> 2) No dependencies (first message from server to client)
+</I>&gt;<i> 3) Depends on #1 and #2
+</I>&gt;<i> 
+</I>&gt;<i> Results:
+</I>&gt;<i> 
+</I>&gt;<i> 3 messages
+</I>&gt;<i> 1-1.5 RTTs (one if there's a simultaneous open, which is rare)
+</I>&gt;<i> 
+</I>&gt;<i> So unless I'm missing something, we're still at 3 messages.
+</I>&gt;<i> 
+</I>&gt;<i> Aside:
+</I>&gt;<i> 
+</I>&gt;<i> I would like to point out that TCP-based protocols have the latency
+</I>&gt;<i> disadvantage of having to do a 3-way handshake before transferring any
+</I>&gt;<i> data.  If you were to design a new IP protocol, you could do the key
+</I>&gt;<i> exchange within the handshake, which would save 3 messages, but may be
+</I>&gt;<i> vulnerable to a resource-consumption attack on the CPU.
+</I>&gt;<i> 
+</I>&gt;<i> I wonder if we here could develop a handshake that was
+</I>&gt;<i> cryptographically secure, resistant to CPU DoS now, and would be
+</I>&gt;<i> possible to adjust as we get faster at doing crypto operations to
+</I>&gt;<i> reduce latency even further.  Basically an easy knob for balancing
+</I>&gt;<i> high latency and DoS resistance vs. crypto overhead and low latency.
+</I>&gt;<i> It should be adjustable on either end without altering the other.
+</I>&gt;<i> 
+</I>&gt;<i> -- 
+</I>&gt;<i> Life would be so much easier if it was open-source.
+</I>&gt;<i> &lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+</I>&gt;<i> For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

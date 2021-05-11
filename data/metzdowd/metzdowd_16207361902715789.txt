@@ -1,0 +1,52 @@
+<PRE>&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+
+&gt;<i>Visualize Obama, McCain, or Sarah Palin setting up your network security.
+</I>&gt;<i>Then realize that whoever they appoint as Czar in charge of network security
+</I>&gt;<i>is likely to be less competent than they are.
+</I>
+You're think about this from the wrong angle.  We don't need to legislate
+network security because, as you say, we'll never get a workable law, and even
+if we did we really have no idea how to build secure systems that users would
+actually want to use (although there are some good hypotheses out there).
+
+What we need is real-world controls (that have nothing to do with computers)
+to rein in the free hand that computerisation has given to attackers.  Credit
+freezes are the first step, although even then it's been a massive battle and
+most likely Congress will eventually pass a law that neutralises the various
+state laws, as it has for numerous other laws in the past (and even some of
+the state laws have been watered down with &quot;thaw&quot; provisions that take you
+right back to square one).
+
+Some examples that come to mind immediately for fighting phishing:
+
+- Credit freezes that are real freezes, and require a physical bank visit with
+ID to thaw.
+
+- COB and credit-limit-increase freezes that require physical presence to
+change (the first thing phishers do when they get your CC info is to wind the
+credit limit up to max and change the billing address).  The once a blue moon
+that you might want to change these details it's really not to hard to drop by
+a bank for a minute or two to authorise things.
+
+- Ability to specify floor limits for spending independent of the credit
+limit, e.g. with a credit limit of $10K you can't spend more than $2K
+domestically and $1K internationally.
+
+I think that should give you a general idea of where this is going.  At the
+moment the banks' fraud-guessing systems are really just that, guessing
+systems, and from numerous reports and assorted anecdotal evidence they're not
+very effective.  The user holds the &quot;position of the interior&quot;, they know
+better than any guessing system what's appropriate and what isn't for their
+financial transactions.  The rampant exploitation of the banking system by
+crooks works because all of the above are totally uncontrolled, and banks have
+no interest in controlling them.  That's what we need legislation for, not to
+require two-factor-authentication-that-isn't and other gimmicks but to get the
+banks and credit-reporting agencies to install effective internal controls.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

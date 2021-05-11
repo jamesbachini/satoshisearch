@@ -1,0 +1,28 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> IanG &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> 4.  Skype.  Doesn't do email, but aside from that minor character flaw, it
+</I>&gt;&gt;<i> cracked everything else.  It's the best example of what it should look like.
+</I>&gt;<i> 
+</I>&gt;<i> The UI still leaves quite a lot to be desired.  Try sitting a non-geek user in
+</I>&gt;<i> front of a fresh Skype install and see how long it takes them to figure out
+</I>&gt;<i> how to make a phonecall to (say) a Skype user name supplied via email.  I've
+</I>&gt;<i> seen times of 15+ minutes to make the first call (OK, so I treat neighbours
+</I>&gt;<i> and family as UI guinea pigs :-).  Skype still has a lot of fundamental
+</I>&gt;<i> usability flaws like the inability to remember a password (requiring it to be
+</I>&gt;<i> manually re-entered each time it's run unless you choose to start Skype on
+</I>&gt;<i> system boot) that make it a less-than-perfect example of usable security.
+</I>
+I don't know what OS you are running Skype on but for me on MacOS X I 
+never have to enter my Skype password because it is saved in the MacOS X 
+keyring and Skype isn't set to start at system boot (user login really) 
+for my account.
+
+-- 
+Darren J Moffat
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,98 @@
+<PRE>In 1951, John von Neumann wrote:
+
+&gt;<i> Any one who considers arithmetical methods of producing random digits
+</I>&gt;<i> is, of course, in a state of sin.
+</I>
+That may or may not be an overstatement.
+
+IMHO it all depends on what is meant by &quot;random&quot;.  The only notion 
+of randomness that I have found worthwhile is the notion of being 
+_random enough for the purpose_.
+
+  *) For some benign purposes, such as a Monte Carlo integration
+   routine, a simple linear congruence generator might suffice.
+   Such a generator would not withstand cryptanalysis for even
+   a moment, but it will not be subjected to cryptanalysis, so
+   we don't care.
+
+  *) At the other extreme, there are many high-stakes business,
+   military, and gambling applications where I would agree with 
+   von Neumann, and would shun absolutely all PRNGs.  I would 
+   rely exclusively on _hardware_ randomness generators, as
+   detailed at:
+      <A HREF="http://www.av8n.com/turbid/">http://www.av8n.com/turbid/</A>
+
+   The /seeding/ of PRNGs is a notorious problem;  the idea of
+   seeding one PRNG with another often reduces to the problem
+   previously _not_ solved.  Sooner or later you need a source
+   of high-grade randomness, not pseudo randomness, and sooner
+   is better than later.
+
+   For this reason, most so-called PRNGs are not really PRNGs
+   after all, since their foundations are seen to rest on a 
+   hardware randomness generator.  They are more usefully
+   considered schemes for _stretching_ the randomness of the 
+   underlying hardware.  I call them SRNGs, for &quot;stretched 
+   randomness generators&quot;.
+   
+
+On 07/30/2008 12:22 PM, Pierre-Evariste Dagand wrote:
+
+&gt;&gt;<i> I fear I was not clear: I don't see what is wrong in evaluating the
+</I>&gt;&gt;<i> quality of a random number generator with (an extensive set of)
+</I>&gt;&gt;<i> statistical tests.
+</I>
+How extensive?
+
+To paraphrase Dykstra:  Testing may prove the absence of randomness,
+but it cannot possibly prove the presence of randomness.
+
+Testing for high-grade randomness is not just a &quot;hard&quot; problem; it is 
+formally undecidable, in the same category as the halting problem.  
+Reference: Chaitin.  
+See also:
+  <A HREF="http://www.av8n.com/turbid/paper/turbid.htm#sec-limitations">http://www.av8n.com/turbid/paper/turbid.htm#sec-limitations</A>
+
+On 07/30/2008 01:33 PM, Ben Laurie replied:
+&gt;<i> 
+</I>&gt;<i> SHA-1(1), SHA-1(2), SHA-1(3), ... SHA-1(N) will look random, but clearly
+</I>&gt;<i> is not.
+</I>
+Quite so.
+
+&gt;&gt;<i> But, then, there is a &quot;the chicken or the egg&quot; problem: how would you
+</I>&gt;&gt;<i> ensure that a *new* RNG is a good source of &quot;randomness&quot; ? (it's not a
+</I>&gt;&gt;<i> rhetorical questions, I'm curious about other approaches).
+</I>&gt;<i> 
+</I>&gt;<i> By reviewing the algorithm and thinking hard.
+</I>
+Sometimes that's good enough, but sometimes it's not.  Or more to the
+point, often the cost of &quot;thinking hard&quot; enough exceeds the cost of 
+implementing a _hardware_ randomness generator that has a _provable_
+_lower bound_ on its entropy(*).
+
+To paraphrase the previous paraphrase:  Testing may provide an upper 
+bound on the randomness, but it cannot possibly provide a useful lower 
+bound.  In contrast, physics can provide a useful lower bound.
+
+Saying that this-or-that test &quot;measures&quot; the randomness is highly 
+misleading if you don't distinguish measuring an upper bound from 
+measuring a lower bound.  The test that judged a DNS server to be
+&quot;GREAT&quot; was making precisely this mistake.
+
+
+
+  *) NB: Whereas I mean something rather vague by &quot;randomness&quot; (i.e. 
+  &quot;random enough for the application&quot;) I mean something very specific 
+  by &quot;entropy&quot;.
+
+For details on all this, see
+  <A HREF="http://www.av8n.com/turbid/">http://www.av8n.com/turbid/</A>
+and in particular
+  <A HREF="http://www.av8n.com/turbid/paper/turbid.htm">http://www.av8n.com/turbid/paper/turbid.htm</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

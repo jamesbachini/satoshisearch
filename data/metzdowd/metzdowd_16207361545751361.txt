@@ -1,0 +1,27 @@
+<PRE>Ivan Krsti? wrote:
+&gt;<i> On Sep 6, 2007, at 6:14 PM, Jacob Appelbaum wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> other known good implementations of AES128 (CBC? I'm not
+</I>&gt;&gt;<i> sure...).
+</I>&gt;<i> 
+</I>&gt;<i> Plain AES-CBC is not a great choice for FDE. You can do whatever you'd 
+</I>&gt;<i> like to the bits of a given block at the cost of garbling the previous 
+</I>&gt;<i> block, which makes binaries a plausible target. Given the size of modern 
+</I>&gt;<i> OSes, it might even be an easy one.
+</I>&gt;<i> 
+</I>
+That's not the threat model; the main use of FDE is to protect the data 
+in a lost/stolen laptop.
+
+FWIW, a couple of days ago I got yet another of those letters where a 
+former employer is informing me that they lost my personal data; this 
+time it was AT&amp;T telling me that a laptop with employee benefits on it 
+got stolen.
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

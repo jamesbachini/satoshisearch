@@ -1,0 +1,42 @@
+<PRE>
+A couple of people have asked me why I have a policy against
+forwarding HTML email. Here is the rationale, roughly from most
+to least important.
+
+1) Many people still read their email in systems that handle only
+   plain text effectively. They're a large enough group that I don't
+   like disenfranchising them.*
+2) HTML email, like most machine parsable data, often has &quot;gotchas&quot;,
+   and as this is a security oriented list, I really don't want to
+   have to vet email for hacking attempts. Vetting real code is
+   unpleasant enough -- I don't want to have to look for attempted
+   buffer overflows and web bugs in email I'm forwarding.
+3) HTML email is harder to search, to edit down, to cut and paste
+   cleanly, etc.
+4) HTML email is often just plain ugly to look at.
+
+Perhaps someday I'll change my mind, but for the moment, please send
+only in plain text.
+
+In the same vein, keep in mind that although Microsoft Outlook won't
+show you that your lines are run on and include proprietary Microsoft
+characters for balanced quotes and such, for the sake of the rest of
+us, hit carriage return every 60 or 70 characters and don't send in
+proprietary character sets.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+(* I'm one of the group that reads email in a non-GUI. Please don't
+tell me to switch mail readers, because I've yet to find a GUI based
+one that will let me process hundreds to thousands of incoming emails
+a day efficiently, and without efficiency I'd stop getting any work
+done. Pretty toys are great if you're reading 20 messages a day and
+can't remember commands -- I need stuff that's fully programmable.)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

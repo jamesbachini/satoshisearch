@@ -1,0 +1,20 @@
+<PRE>On Mon, 14 Jul 2008 16:27:58 +0200
+Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; wrote:
+ 
+&gt;<i> On top of that, some operators decided not to offer TCP service at
+</I>&gt;<i> all.
+</I>
+Right.  There's a common misconception, on both security and network
+operator mailing lists, that DNS servers use TCP only for zone
+transfers, and that all such connection requests should be blocked.
+See, for example, the NANOG thread starting at
+<A HREF="http://mailman.nanog.org/pipermail/nanog/2008-June/001240.html">http://mailman.nanog.org/pipermail/nanog/2008-June/001240.html</A>
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

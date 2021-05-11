@@ -1,0 +1,21 @@
+<PRE>
+It seems that Donald Knuth had his bank accounts attacked not once but
+three times using his checking account number off of checks he sent
+out for bounties for flaws in his books and software, and is thus
+ending a practice of nearly 40 years. Rather sad.
+
+I mark this as another milestone in the slow destruction of the idea
+that it is okay for an account number to be the secret used to effect
+payment in a transaction system.
+
+<A HREF="http://www-cs-faculty.stanford.edu/~knuth/news08.html">http://www-cs-faculty.stanford.edu/~knuth/news08.html</A>
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

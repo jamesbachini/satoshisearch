@@ -1,0 +1,37 @@
+<PRE>A failure in implementation leads to the ability to eavesdrop on a
+quantum-secrecy based key exchange on 2/3 of the types of quantum
+equipment used.
+
+From: &lt;<A HREF="http://technology.newscientist.com/article/dn14866-laser-cracks-unbreakable-quantum-communications.html">http://technology.newscientist.com/article/dn14866-laser-cracks-unbreakable-quantum-communications.html</A>&gt;
+
+    Makarov and colleagues from Sweden and Russia have shown that Eve
+could control
+    Bob's equipment, so that they both decode exactly the same digits
+from Alice's
+    transmission...The method exploits the way a common type of photon
+counter can have
+    its sensitivity reduced by a very bright flash of light. The
+attack begins when Eve fires a
+    pulse of laser light to all four detectors in Bob's
+equipment...[Eve leverages this into
+    getting the key] by sending on a sequence of encoded photons that
+are identical to the
+    ones she receives from Alice, Eve can safely intercept a message
+without leaving the
+    tell-tale quantum errors...Makarov and colleagues have now uncovered such
+    vulnerabilities in two of the three types of quantum equipment
+commonly used. They
+    are now investigating ways to solve the flaw without introducing
+more weaknesses.
+
+A paper, &quot;Can Eve control PerkinElmer actively-quenched single-photon
+detector?&quot; is available at
+&lt;<A HREF="http://arxiv.org/ftp/arxiv/papers/0809/0809.3408.pdf">http://arxiv.org/ftp/arxiv/papers/0809/0809.3408.pdf</A>&gt;.
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

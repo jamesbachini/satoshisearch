@@ -1,0 +1,75 @@
+<PRE>
+Peter Gutmann writes, in part:
+-+----------------------------
+ | ... - the rate-limiting step is the fact that
+ | the crooks simply can't use all the stolen identities
+ | they have, not any security measures that may be present.
+ | ...
+
+
+To my knowledge, you are correct.  It seems that the
+price of stolen credentials (on the black market) is
+falling, which, as with the street price of heroin, would
+tend to indicate that the opposition is winning.
+
+I have a slide for this somewhere (not on this machine)
+and will dig it up if needed, but the disparity between
+actual crime and a naive estimate of the opportunity for
+crime seems to be widening.  If correct, then such a
+disparity would either indicate that our countermeasures
+are winning -or- the predators are leaving prey on the
+field.  I'm sadly of the opinion that it is the latter.
+
+In their Internet Security Threat Report, Symantec used
+to publish the number of bots detected.  The last one of
+those I have at hand showed a leveling out of the number
+found de novo per unit interval (per month).  Again, this
+permits two interpretations; on the one hand, we are winning
+in that we are preventing the problem from worsening while
+on the other hand it can be read to mean that as fast as
+we remove bots from hosts that other hosts are botted
+and, as such, the supply of bots being stable implies
+that it is easy enough to replace them that the lost of
+an individual host does not slow down our opposition.
+What does (in the Symantec graphs) vary is the variance
+of in-and-out-flow, but not the fraction that are botted.
+This would tend to strengthen the argument that any
+periodic sweep of bots off networks is compensated
+for relatively quickly.  In public health, widely
+varying incidence (new infection rate) but stable
+prevalence (infected fraction) tends to indicate
+a high degree of infectability and not a particularly
+effective immune response.  We see this in a way in
+the AIDS data -- every advance in treatability seems
+to be followed by increases in risky behavior while
+prevalence remains to a degree stable.
+
+This idea of replacement of cured machines by infected
+machines seems corroborated in a different way as well.
+The opposition seems to have lately decided that the
+advantages of stealth outway the advantages of persistence,
+which is to say that in-core-only infection is now the
+preferred mechanism and not writing to disk so as to
+preserve infected status through a reboot cycle.  If
+this is correct, then it signals that the opposition
+can replace machines lost through reboot easily enough
+that the availability of penetrated machines can be
+better enhanced through making infections harder to
+find (latent, in medical parlance) than through making
+a once penetrated machine stay penetrated as to do the
+latter you have to expose yourself to periodic clean-up
+of that which is persistent (on disk).
+
+For anyone looking ahead, the interaction between this
+phenomenon (if it is indeed a phenomenon) and the growing
+role of virtual machines should be of intense interest.
+
+Inferentially yours,
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

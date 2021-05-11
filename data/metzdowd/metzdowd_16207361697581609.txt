@@ -1,0 +1,44 @@
+<PRE>' =JeffH ' &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt;
+&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> said:
+</I>&gt;&gt;<i> I'm going to approach the answer somewhat differently: Why are you using
+</I>&gt;&gt;<i>this mechanism?
+</I>&gt;<i>
+</I>&gt;<i>Are you referring to the above mentioned mechanism of arriving at the ZZ
+</I>&gt;<i>value independently, which is implied in RFC2631?
+</I>
+I'm referring to the &quot;X9.42&quot; mechanism (as used in CMS) as a whole (see below
+for the reason why this is in quotes).
+
+&gt;<i>(btw, I am not myself designing anything at this time that uses DH, I'm
+</I>&gt;<i>reviewing/analyzing. I am _not_ reviewing RFC2630/2631 themselves, rather it's
+</I>&gt;<i>a (non-IETF) spec that references 2631)
+</I>
+Oh.  In that case you have my sympathy :-).
+
+&gt;<i>So by &quot;the spec&quot; you're referring to RFC2631 here?
+</I>&gt;<i>
+</I>&gt;<i>Or are you referring to X9.42?
+</I>
+I'm referring to the (old) CMS RFCs.  Even the RFCs themselves don't use
+proper X9.42, they were based on an old draft that floated around for awhile
+and was subsequently changed and updated.  You can see this if you look at the
+order of the DLP key parameters, everything else (e.g. FIPS 186) uses { p, q,
+g }, while the old CMS RFCs flip the second two values to use { p, g, q }.
+
+I think the definitive comment on this (which also talks about differences
+between FIPS 186, various X9.42 drafts, and the CMS use of those drafts) is by
+the former editor of X9.42, and is archived at
+<A HREF="http://www.vpnc.org/ietf-ipsec/99.ipsec/msg02018.html.">http://www.vpnc.org/ietf-ipsec/99.ipsec/msg02018.html.</A>
+
+&gt;<i>So here, and in the snippage, are you referring to X9.42 itself, or CMS
+</I>&gt;<i>(Cryptographic Message Syntax) ?
+</I>
+Specifically CMS, since X9.42 isn't necessarily what's used in CMS.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

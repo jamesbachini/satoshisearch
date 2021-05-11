@@ -1,0 +1,65 @@
+<PRE>On Wed, 30 Apr 2008 12:49:12 +0300 (IDT)
+Alexander Klimov &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alserkli at inbox.ru</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> &lt;<A HREF="http://www.securityfocus.com/columnists/421/2">http://www.securityfocus.com/columnists/421/2</A>&gt;:
+</I>&gt;<i> 
+</I>&gt;<i>   Lance Corporal Jennifer Long was issued a government computer
+</I>&gt;<i>   to use on a government military network. When she was
+</I>&gt;<i>   suspected of violations of the military drug use policies (and
+</I>&gt;<i>   of criminal laws related to drug use), Marine Corps criminal
+</I>&gt;<i>   investigators reviewed the contents of email messages she sent
+</I>&gt;<i>   to another military employee who was likewise using
+</I>&gt;<i>   a government issued computer over the same government network.
+</I>&gt;<i>   The messages were retrieved from the government mail server
+</I>&gt;<i>   and later used against Long. On September 27, 2006, the United
+</I>&gt;<i>   States Court of Appeals for the Armed forces had to decide
+</I>&gt;<i>   whether Long had any expectation of privacy in these e-mails.
+</I>&gt;<i> 
+</I>&gt;<i>   The starting point for any analysis is, of course, the DoD
+</I>&gt;<i>   policy expressed on its warning banner, which stated quite
+</I>&gt;<i>   explicitly:
+</I>&gt;<i> 
+</I>&gt;<i>     [...] All information, including personal information,
+</I>&gt;<i>     placed on or sent over this system may be monitored. Use of
+</I>&gt;<i>     this DoD computer system, authorized or unauthorized,
+</I>&gt;<i>     constitutes consent to monitoring of this system. [...]
+</I>&gt;<i> 
+</I>&gt;<i>   However, the military court, [...] found that Long did, in
+</I>&gt;<i>   fact have some privacy interests in the contents of her
+</I>&gt;<i>   communications. It noted that while the government said it
+</I>&gt;<i>   could monitor, it rarely did.
+</I>&gt;<i> 
+</I>The actual opinion is much more nuanced and case-specific.  In the
+first place, it demonstrated that the actual culture at that site was
+very different.  In particular, the administrator testified that &quot;it
+was general policy to avoid examining e-mails and their content
+because it was a 'privacy issue'.&quot;  The court might well have ruled
+differently were that not the case.
+
+Second, the court noted that the suspected misconduct was (a) for
+evidence of illegal behavior, and (b) unrelated to workplace misconduct.
+And the banner wasn't specific enough: &quot;The banner in the instant case
+did not provide Apellee with notice that she had no right of privacy.
+Instead, the banner focused on the idea that her use of the system may
+be monitored for limited purposes.&quot;
+
+In addition, because the employer in this case was the government,
+constitutional protections come into play, in a way that would not
+apply to a private sector employer.  The reasoning there is complex,
+especially since we're talking about the military (and soldiers have
+many fewer rights than do civilians), so I won't try to summarize it;
+let it suffice to say that generalizing from that case to an ordinary
+workplace environment is not simple.
+
+To sum up -- the court ruling in this particular case was very specific
+to the facts of the case.  It's far from clear that it's generally
+applicable.
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

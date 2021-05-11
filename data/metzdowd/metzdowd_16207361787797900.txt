@@ -1,0 +1,46 @@
+<PRE>On Mon, May 05, 2008 at 11:46:49AM +1000, James A. Donald wrote:
+&gt;<i> Thor Lancelot Simon wrote:
+</I>&gt;<i> &gt;And, in fact, most VPN software of any type fails this test.  My concern
+</I>&gt;<i> &gt;is that an excessive focus on &quot;how hard is it to set this thing up?&quot; can
+</I>&gt;<i> &gt;seriously obscure the important second half of the question &quot;and if you
+</I>&gt;<i> &gt;set it up in the easiest possible way, is it safe?&quot;
+</I>&gt;<i> 
+</I>&gt;<i> If there is a wrong way to do it, the end user will do it wrong.
+</I>
+No.  Your claim sounds plausible because it's a much, much stronger form
+of a claim which almost always _is_ true:  &quot;If there is a wrong way to
+do it, _some_ end users will do it wrong.&quot;
+
+But that is not the same claim as &quot;If there is a wrong way to do it,
+_most_ end users will do it wrong&quot;, a claim which usually seems to be
+made because someone who understood cryptography but not human factors
+just decided that the problem he didn't know how to solve wasn't
+important because he didn't know how to solve it.
+
+The fact that that mistake (in essence, assuming &quot;it is necessary that
+most users will get it wrong&quot; instead of &quot;it is possible that most users
+will get it wrong) is not pointed out when it is, so often, made, is,
+indeed, the typical excuse for security software not bothering to supply
+a good user interface such that most of the time, most users get it
+right.
+
+That in no way means that such a user interface is not desirable, any
+more than low standards in the area mean that it is not possible.
+
+I believe that those who supply security products have a responsibility
+to consider the knowledge, experience, and tendencies of their likely
+users to the greatest extent to which they're able, and supply products
+which will function properly _as users are likely to apply them_.  I
+believe that not considering those questions at all is irresponsible
+and in some cases much worse than that.  Pretending that the questions
+don't exist is _definitely_ worse than irresponsible; I've quit jobs
+when asked to behave that way, in the past, and I'd probably do so
+again.
+
+Thor
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,55 @@
+<PRE>I'd scrawled..
+&gt;<i> Other than for b perhaps wanting to verify the correctness of { p, q, g, 
+</I>&gt;<i> j } (&quot;group parameter validation&quot;), is there any reason to send q ? 
+</I>
+
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ashwood at msn.com</A> replied:
+&gt;<i> I would actually recommend sending all the public data. This does not take
+</I>&gt;<i> significant additional space and allows more verification to be performed.
+</I>
+That's what I thought. 
+
+BTW, I'm not myself working on something employing a DH exchange -- I'm 
+analyzing/reviewing something that does.
+
+
+&gt;<i> I would also suggest looking at what exactly the goal is. As written this
+</I>&gt;<i> provides no authentication just privacy, 
+</I>
+Indeed, b could be any entity because it isn't proving possession of any 
+known-only-to-it information.
+
+
+&gt;<i> and if b uses the same private key
+</I>&gt;<i> to generate multiple yb the value of b['s private key?] will slowly leak.
+</I>
+Yep, I suspected that too. Thanks.
+
+
+So, another question or two: 
+
+If a purportedly &quot;secure&quot; protocol employing a nominal DH exchange in order to 
+establish a shared secret key between a requester and responder, employs 
+widely known published (on the web) fixed values for g (&quot;2&quot;) and p (a 
+purportedly prime 1040 bit number) for many of it's implementations and 
+runtime invocations, what are the risks its designers are assuming with 
+respect to the resultant properties of ZZ?
+
+I suspect that many implementations will simply use the equivalent of whatever 
+rand() function is available to get the bits for their private keys directly, 
+and will likely not reallocate private keys unless the implementation or 
+machine are restarted. So if the random number generator has known flaws, then 
+there may be some predictability in both the public keys and in ZZ, yes? 
+Additionally there's the previously noted issue with the values of static 
+private keys slowly leaking.
+
+thanks again,
+
+=JeffH
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

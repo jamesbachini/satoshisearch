@@ -1,0 +1,43 @@
+<PRE>Aloha!
+
+Peter Gutmann skrev:
+&gt;<i> So RAM state is entropy chicken soup, you may as well use it because it can't
+</I>&gt;<i> make things any worse, but I wouldn't trust it as the sole source of entropy.
+</I>
+Ok, apart from the problems with reliable entropy generation. I'm I 
+right when I get a bad feeling when I think about the implications of 
+how the device ID is established.
+
+As I understand it, the device itself doesn't know it's ID. Instead you 
+repeatedly send over mem dumps to the reader which then extracts what it 
+(to some estimated degree) consider to be the correct ID.
+
+Wouldn't a &quot;simple&quot; thing like a challenge response and become much more 
+complicated - and insecure?
+
+Basically the device goes from saying: &quot;I'm ID XYZ and to prove it by 
+providing the following response to your challange&quot;, to &quot;I'm an amnesiac 
+device and here are my mem dump&quot;, please calculate my ID (please 
+remember to power-cycle me x times) and then I'll send a response.&quot;
+
+Also, wouldn't the ID-scheme presented in the paper take a very long 
+time. Transferring 256 Bytes * x times + hamming calc (by the host) vs 
+reading 64 bits (or similar ID length)?
+
+I give the paper plus marks for novelty, but can't see how to use this 
+in a secure, practical and cost efficient way.
+
+-- 
+Med v&#228;nlig h&#228;lsning, Yours
+
+Joachim Str&#246;mbergson - Alltid i harmonisk sv&#228;ngning.
+========================================================================
+Kryptoblog - IT-s&#228;kerhet p&#229; svenska
+<A HREF="http://www.strombergson.com/kryptoblog">http://www.strombergson.com/kryptoblog</A>
+========================================================================
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

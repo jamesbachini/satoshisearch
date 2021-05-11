@@ -1,0 +1,24 @@
+<PRE>In article &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">555200.58888.qm at web50203.mail.re2.yahoo.com</A>&gt;, Danilo
+Gligoroski &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">gligoroski at yahoo.com</A>&gt; writes
+
+&gt;<i>For example, I guess that stealing information of
+</I>&gt;<i>someone's &quot;face&quot; is easier than stealing information
+</I>&gt;<i>about someone's &quot;fingerprints&quot;,
+</I>&gt;<i>but stealing information about someone's &quot;retina&quot;
+</I>&gt;<i>would be much harder.
+</I>
+if you meant &quot;retina&quot; then yes, but if you meant &quot;iris&quot; then no
+
+  <A HREF="http://www.cl.cam.ac.uk/~jgd1000/afghan.html">http://www.cl.cam.ac.uk/~jgd1000/afghan.html</A>
+
+-- 
+richard                                              Richard Clayton
+
+They that can give up essential liberty to obtain a little temporary
+safety deserve neither liberty nor safety.         Benjamin Franklin
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

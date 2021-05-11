@@ -1,0 +1,43 @@
+<PRE>On Thu, 8 May 2008, Perry E. Metzger wrote:
+|<i> Quoting:
+</I>|<i> 
+</I>|<i>    It was one of the most iconic and heart-stopping movie images of
+</I>|<i>    2003: the Columbia Space Shuttle ignited, burning and crashing to
+</I>|<i>    earth in fragments.
+</I>|<i> 
+</I>|<i>    Now, amazingly, data from a hard drive recovered from the fragments
+</I>|<i>    has been used to complete a physics experiment - CXV-2 - that took
+</I>|<i>    place on the doomed Shuttle mission.
+</I>|<i> 
+</I>|<i> <A HREF="http://blocksandfiles.com/article/5056">http://blocksandfiles.com/article/5056</A>
+</I>|<i> 
+</I>|<i> Now, this article isn't written from a security perspective, but I
+</I>|<i> think the implications are pretty obvious: quite a bit can happen to a
+</I>|<i> hard drive before the data is no longer readable.
+</I>On the other hand ... from a report in Computerworld, we have:
+
+	[Jon] Edwards [a senior clean room engineer at Kroll
+	Ontrack, which did the recovery work] said the
+	circuit board on the bottom of the drive was &quot;burned
+	almost beyond recognition&quot; and that all of its
+	components had fallen off. Every piece of plastic on
+	the model ST9385AG hard drive melted, he noted, and
+	all the electronic chips inside had burned and come
+	loose.
+	
+	Edwards said the Seagate hard drive -- which was
+	about eight years old in 2003 -- featured much
+	greater fault tolerance and durability than current
+	hard drives of similar capacity.
+	
+	Two other hard drives aboard the Columbia were so
+	severely damaged that it was impossible to extract
+	any usable data, he added.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

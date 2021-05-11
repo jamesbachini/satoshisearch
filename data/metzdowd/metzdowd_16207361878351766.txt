@@ -1,0 +1,47 @@
+<PRE>Philipp G&#252;hring wote:
+
+&gt;<i> I am searching for symmetric encryption algorithms for decimal strings.
+</I>&gt;<i> 
+</I>&gt;<i> Let's say we have various 40-digit decimal numbers:
+</I>&gt;<i> 2349823966232362361233845734628834823823
+</I>&gt;<i> 3250920019325023523623692235235728239462
+</I>&gt;<i> 0198230198519248209721383748374928601923
+</I>&gt;<i> 
+</I>&gt;<i> As far as I calculated, a decimal has the equivalent of about 3,3219
+</I>&gt;<i> bits, so with 40 digits, we have about 132,877 bits.
+</I>
+English readers normally use &quot;.&quot; as the decimal point - you had me confused
+for a few seconds and maybe it wasn't only me.
+
+Regardless of the calculated bit-equivalent you aren't storing these strings
+in 132.877 bits - but possibly 40*8 bits, 40*4 bits or in some other way.
+ 
+&gt;<i> Now I would like to encrypt those numbers in a way that the result is a
+</I>&gt;<i> decimal number again (that's one of the basic rules of symmetric
+</I>&gt;<i> encryption algorithms as far as I remember).
+</I>
+I don't think that's a feature of the encryption as such.
+ 
+&gt;<i> Since the 132,877 bits is similar to 128 bit encryption (like eg. AES),
+</I>&gt;<i> I would like to use an algorithm with a somewhat comparable strength to AES.
+</I>&gt;<i> But the problem is that I have 132,877 bits, not 128 bits. And I can't
+</I>&gt;<i> cut it off or enhance it, since the result has to be a 40 digit decimal
+</I>&gt;<i> number again.
+</I>
+This sounds like possible confusion over block length and key size.  Then
+you get involved in padding and storage of a slightly larger ciphertext.
+ 
+&gt;<i> Does anyone know a an algorithm that has reasonable strength and is able
+</I>&gt;<i> to operate on non-binary data? Preferrably on any chosen number-base?
+</I>
+It sounds as if you want a stream cipher arrangement that you could make
+out of a normal binary stream cipher by:
+   read a byte of the keystream
+   if &gt; 9 reject it and take the next one (aiming for uniform distribution)
+   if the value is [0-9] add it to the current plaintext digit mod 10
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

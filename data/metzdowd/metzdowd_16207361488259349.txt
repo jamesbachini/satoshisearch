@@ -1,0 +1,48 @@
+<PRE>
+
+On Thu, 19 Jul 2007, Charles Jackson wrote:
+
+&gt;<i>An earlier post, talking about vulnerabilities and the lack of an
+</I>&gt;<i>appropriate market response, said:
+</I>&gt;<i>____________
+</I>&gt;<i>We're talking about phone calls -- did all of the well-publicized
+</I>&gt;<i>cellular eavesdropping (Prince Charles, Newt Gingrich (then a major US
+</I>&gt;<i>politician), and more) prompt a change?  Well, there are now US laws
+</I>&gt;<i>against that sort of phone eavesdropping gear -- a big help....
+</I>
+Halfway, I think.  ISTR there are laws against manufacture for sale,
+sale, purchase, or most usage of such gear - but no laws against
+manufacture without intent to sell, posession, or some exempted
+types of use of such gear.
+
+Basically, owning such devices is not a crime, nor is using them
+provided the &quot;target&quot; has been duly notified that their call will be
+or is being intercepted.  So you can build the gear, and you can demo
+the gear you've built on a call made for purposes of demo-ing the
+gear.
+
+Consult a lawyer first, but I believe it may also be legal to monitor
+calls made in a given location provided you first put up a sign that
+says &quot;all cell calls made on these premises will be monitored&quot; etc.
+But you can't legally buy or sell the equipment to do it.
+
+&gt;<i> I think the most publicized cases of cellular interception,
+</I>&gt;<i> including the two mentioned above, were interceptions of analog
+</I>&gt;<i> calls.  Such interception was not too hard to do.  In some cases you
+</I>&gt;<i> could pick up one side of such calls on old American TV sets (sets
+</I>&gt;<i> that tuned above channel 69 on the UHF dial).
+</I>
+The technical requirement was for a TV with a UHF analog *tuner* as
+opposed to a digital channel-selection dial.  The channels that the
+cellular network used (still uses?  I don't know) were inbetween the
+channels that were assigned whole numbers in TV tuning.  So you could
+pick up some cell traffic if you tuned, for example, to UHF TV
+&quot;channel&quot; 78.44.  But not if you tuned to channel 78 or channel 79.
+
+				Bear
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

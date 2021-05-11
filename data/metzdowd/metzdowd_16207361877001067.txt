@@ -1,0 +1,43 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> Greg Rose &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ggr at qualcomm.com</A>&gt; writes:
+</I>&gt;&gt;<i> His example was an insanely complicated theoretical LFSR-based stream
+</I>&gt;&gt;<i> cipher; recovers keys with 2^28 (from memory, I might be a little
+</I>&gt;&gt;<i> out), with 2^40 precomputation, from only about a million output
+</I>&gt;&gt;<i> bits. They are working on applying the technique to real
+</I>&gt;&gt;<i> ciphers... Trivium, which is a well-respected E*Stream cipher, is in
+</I>&gt;&gt;<i> their sights.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> My team's last LFSR-based cipher, SOBER-128, is I think well respected
+</I>&gt;&gt;<i> and fairly conservative. I can say that we are extremely lucky in the
+</I>&gt;&gt;<i> way we load the key and IV, that the degree of the polynomials piles
+</I>&gt;&gt;<i> up and is quite high; once the cipher is actually running, there are
+</I>&gt;&gt;<i> output bits which would have been attackable (degree 16 is certainly
+</I>&gt;&gt;<i> tractable), except for lucky use of addition as well as s-boxes... the
+</I>&gt;&gt;<i> addition carries represent high degree terms.
+</I>&gt;<i> 
+</I>&gt;<i> There are a bunch of deployed mobile phone ciphers that are in the
+</I>&gt;<i> stream cipher class -- any thoughts on whether any of them look
+</I>&gt;<i> vulnerable?
+</I>
+With the disclaimer that I think I understand the attack but might 
+nevertheless have misunderstood something:
+
+A5/1 is difficult for this attack to apply to because of the 
+clock-controlled shift registers (Adi said this).
+
+A5/3 and the current WCDMA f8/f9 is based on Kasumi, and I'd be 
+surprised if the attack applys. Ditto for the AES based CDMA security.
+
+The soon-to-be-adopted spare WCDMA algorithm, SNOW-3G, may be vulnerable 
+if used in other ways, but appears to me to be secure in the way it is 
+used in 3G phones. Again, somewhat lucky though, the attack comes very 
+close to working. I believe the appropriate standards committee is going 
+to go off and check this very closely (I spoke to one of the members).
+
+Greg.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

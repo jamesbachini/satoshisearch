@@ -1,0 +1,38 @@
+<PRE>On Jan 25, 2008, at 4:27 PM, Perry E. Metzger wrote:
+&gt;<i> However, you should be very skeptical when someone claims that they  
+</I>&gt;<i> &quot;need&quot; to use a home grown crypto algorithm or that they &quot;need&quot; to  
+</I>&gt;<i> use a home grown protocol instead of
+</I>&gt;<i> a well proven one.
+</I>
+
+I'm beginning to suspect that more often than not, this nonsense is a  
+result of market forces rather than idiot technologists. In my  
+experience, senior decision-maker types outside of the computer  
+industry (and even within it, but perhaps a tad less so) are  
+sufficiently non-technical as to never have heard of Kerckhoffs'  
+principle -- and to disbelieve it when they do, since it opposes their  
+intuition of what makes for secure systems. Various companies (or  
+departments) then emerge peddling their home-grown crypto and  
+trumpeting the fact that it's proprietary as a feature, commonly going  
+hand in hand with stupidly large key sizes.
+
+Some number of these muppets approached me over the last couple of  
+years offering to donate a free license for their excellent products.  
+I used to be more polite about it, but nowadays I ask that they Google  
+the famous Gutmann Sound Wave Therapy[0] and mail me afterwards.
+
+I've never heard back.
+
+
+
+
+[0] Last paragraph, <A HREF="http://diswww.mit.edu/bloom-picayune/crypto/14238">http://diswww.mit.edu/bloom-picayune/crypto/14238</A>
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

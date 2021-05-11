@@ -1,0 +1,14 @@
+<PRE>I often say, &quot;Rub a pair of cryptographers together, and you'll
+get three opinions.  Ask three, you'll get six opinions.&quot;  :-)
+
+However, he's talking about security, which often isn't quantifiable!
+
+And don't get me ranting about &quot;provable&quot; security....  Had a small
+disagreement with somebody at Google the other week, as he complained
+that variable moduli ruined the security proof (attempts) for SSH.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

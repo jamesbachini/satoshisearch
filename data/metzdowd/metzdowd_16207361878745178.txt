@@ -1,0 +1,43 @@
+<PRE>
+With the caveat that I am reading mail in 
+reverse order (i.e., panic-mode), I do have
+to say one thing and it isn't even to mount a
+stirring defense of Kerberos, which does not
+need defending anyhow...
+
+The design space for practical network security
+has always been:
+
+   I'm OK
+   You're OK
+   The Internet is a problem
+
+A gathering storm of compromised machines, now
+variously estimated in the 30-70% range depending
+on with whom you are talking, means that the 
+situation is now:
+
+   I'm OK, I think
+   I have to assume that you are 0wned
+   The Internet might make this worse
+
+Put differently, network security has now come
+close to Spaf's famous line about netsec in the
+absence of host security being assured delivery
+of gold bars from a guy living in a cardboard box
+to a guy sleeping on a park bench.
+
+BTW, it is probably time to turn off your software's
+autoupdate feature.
+
+<A HREF="http://www.infobyte.com.ar/down/isr-evilgrade-Readme.txt">http://www.infobyte.com.ar/down/isr-evilgrade-Readme.txt</A>
+
+Likely off-topic,
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

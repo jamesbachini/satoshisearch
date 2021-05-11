@@ -1,0 +1,72 @@
+<PRE>Adam Shostack wrote:
+&gt;<i> I'd suggest starting from the deployment, training, and help desk
+</I>&gt;<i> costs.  The technology is free, getting users to use it is not.  I
+</I>&gt;<i> helped several banks look at this stuff in the late 90s, when cost of
+</I>&gt;<i> a smartcard reader was order ~25, and deployment costs were estimated
+</I>&gt;<i> at $100, and help desk at $50/user/year.
+</I>
+re:
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#31">http://www.garlic.com/~lynn/aadsm27.htm#31</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#32">http://www.garlic.com/~lynn/aadsm27.htm#32</A> The bank fraud blame game
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#33">http://www.garlic.com/~lynn/aadsm27.htm#33</A> The bank fraud blame game
+
+there was a detailed analysis of the 99/00 smartcard deployments ... looking 
+at the most common causes for problems. this was overlapped with opinion
+claimed to be widely held among consumer financial institutions, that it had 
+been proven that smartcards were not practical in the consumer market segment.
+
+for something of a lark, at the annual smartcard conference, i went around to
+most of the booths asking people at the booth if they were 1) aware 
+that the financial industry considered smartcard not practical in the
+consumer market segment and 2) what was the cause of the majority of the
+problems.
+
+some of the major deployments selected to be pc/sc compliant ... which at the
+time only supported serial port attachment ... and did not support USB plug&amp;play.
+It turned out that the vast majority of smartcard deployment problems in that time-frame
+had to do with consumers trying to install serial port card readers, consumers
+that couldn't find the serial port, serial port connections that conflicted with
+something else, serial port conflicts, serial driver conflicts (large number of BSOD 
+and consumers having to re-install their systems from scratch).
+
+there was then a very complex and intricate series of negotiations getting
+agreement to upgrade pc/sc to support USB plug&amp;play (for starters, responses 
+like why even bother since it had been proven already that smartcards weren't 
+practical in the consumer marketplace ... ignoring for a moment that major
+factor in the failures was the pc/sc serial port limitations) . 
+
+There were also things like  alternative packaging ... USB keyboard with 
+built-in smartcard reader, display,  and PIN-pad cut-out switch ... where 
+keyboard incremental cost was more like $5  (but again, it required PC/SC 
+to be upgraded to USB plug&amp;play)
+
+however, by that time, nearly every where you went, there were echos that it (some
+deployment or another) had proven that smartcards were not practical in consumer 
+environment. Note that it wasn't just consumer limited, there were instances where 
+commercial  operations figured that it would be on the order of $500/PC to be able 
+to handle PC/SC serial port smartcard reader attachments.
+
+it was in the midst of these particular disasters that you also saw some of
+the smartcard operating system projects being canceled (again the spreading
+belief that smartcards were not practical in the consumer market place).
+All of this can be pretty much put at the doors of the institutions failing
+to understand some of the fundamental issues attempting to deploy serial-port
+PC/SC in the PC market place of the time (and/or understand that large
+driver behind doing the whole USB plug&amp;play thing was the significant problem
+and issues attempting to deal with the serial port implementation)
+
+some number of past posts mentioning the whole PC/SC serial port problems
+encountered with various attempts at smartcard deployments in the
+PC/consumer marketplace
+<A HREF="http://www.garlic.com/~lynn/aadsm10.htm#keygen2">http://www.garlic.com/~lynn/aadsm10.htm#keygen2</A> Welome to the Internet, here's your private key
+<A HREF="http://www.garlic.com/~lynn/aadsm23.htm#43">http://www.garlic.com/~lynn/aadsm23.htm#43</A> Spring is here - that means Pressed Flowers
+<A HREF="http://www.garlic.com/~lynn/aadsm23.htm#50">http://www.garlic.com/~lynn/aadsm23.htm#50</A> Status of SRP
+<A HREF="http://www.garlic.com/~lynn/2002m.html#37">http://www.garlic.com/~lynn/2002m.html#37</A> Convenient and secure eCommerce using POWF
+<A HREF="http://www.garlic.com/~lynn/2002m.html#39">http://www.garlic.com/~lynn/2002m.html#39</A> Convenient and secure eCommerce using POWF
+<A HREF="http://www.garlic.com/~lynn/2003n.html#35">http://www.garlic.com/~lynn/2003n.html#35</A> ftp authentication via smartcard
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

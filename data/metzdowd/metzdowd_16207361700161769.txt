@@ -1,0 +1,45 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;&gt;&gt;<i> SSL involves digital certificates.
+</I>&gt;&gt;<i> Not really, James Donald/George W. Bush. It involves public keys, and it
+</I>&gt;&gt;<i> provides a channel by which X.509 certificates can be exchanged,
+</I>&gt;<i> 
+</I>&gt;<i> Actually it doesn't even require X.509 certs.  TLS-SRP and TLS-PSK provide
+</I>&gt;<i> mutual authentication of client and server without any use of X.509.  The only
+</I>&gt;<i> problem has been getting vendors to support it, several smaller
+</I>&gt;<i> implementations support it, it's in the (still unreleased) OpenSSL 0.99, and
+</I>&gt;<i> the browser vendors don't seem to be interested at all, which is a pity
+</I>&gt;<i> because the mutual auth (the server has to prove possession of the shared
+</I>&gt;<i> secret before the client can connect) would significantly raise the bar for
+</I>&gt;<i> phishing attacks.
+</I>&gt;<i> 
+</I>&gt;<i> (Anyone have any clout with Firefox or MS?  Without significant browser
+</I>&gt;<i> support it's hard to get any traction, but the browser vendors are too busy
+</I>&gt;<i> chasing phantoms like EV certs).
+</I>
+That's actually a sad observation.
+
+I keep telling my colleagues that this technology is coming &quot;any day
+now&quot; to a browser near you - didn't realize that that there was no
+interest with the browser companies to add support for this...
+
+Why do the browser companies not care?
+What is the adoption issue?
+Still the dark cloud of patents looming over it?
+Not enough understanding about the benefits? (marketing)
+Economic reasons that we wouldn't buy anymore server certs?
+
+-Frank.
+
+-- 
+Frank Siebenlist               <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">franks at mcs.anl.gov</A>
+The Globus Alliance - Argonne National Laboratory
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/x-pkcs7-signature
+Size: 594 bytes
+Desc: S/MIME Cryptographic Signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080201/05a90f9d/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20080201/05a90f9d/attachment.bin</A>&gt;
+</PRE>

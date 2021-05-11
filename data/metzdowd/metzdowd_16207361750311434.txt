@@ -1,0 +1,50 @@
+<PRE>I believe ISC2 (<A HREF="https://www.isc2.org/">https://www.isc2.org/</A> ) did some testing and published
+their findings. Maybe someone from ISC2 on this list can give you the
+exact reference to that material.
+
+saqib
+<A HREF="http://doctrina.wordpress.com/">http://doctrina.wordpress.com/</A>
+
+On Mon, Mar 31, 2008 at 11:10 AM, Danilo Gligoroski
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">gligoroski at yahoo.com</A>&gt; wrote:
+&gt;<i> Hi,
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>  Probably you have heard about this:
+</I>&gt;<i>
+</I>&gt;<i>  CCC publishes fingerprints of German Home Secretary
+</I>&gt;<i>  Date: 31 March 2008
+</I>&gt;<i>  Source: Heise.de
+</I>&gt;<i>
+</I>&gt;<i>  In a protest against the use of biometric data, the
+</I>&gt;<i>  Chaos Computer Club (CCC) has taken a step that will
+</I>&gt;<i>  raise a few eyebrows &#173; in the current issue of its
+</I>&gt;<i>  club magazine Die Datenschleuder, the hackers have
+</I>&gt;<i>  published the fingerprint of German Home Secretary,
+</I>&gt;<i>  ...
+</I>&gt;<i>  Link: <A HREF="http://www.liveleak.com/view?i=b29_1206968252">http://www.liveleak.com/view?i=b29_1206968252</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>  QUESTION: Does anybody knows about the existence of a
+</I>&gt;<i>  security research in area of grading the easiness to
+</I>&gt;<i>  steel biometric data.
+</I>&gt;<i>  For example, I guess that stealing information of
+</I>&gt;<i>  someone's &quot;face&quot; is easier than stealing information
+</I>&gt;<i>  about someone's &quot;fingerprints&quot;,
+</I>&gt;<i>  but stealing information about someone's &quot;retina&quot;
+</I>&gt;<i>  would be much harder.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>  Such a scale can be useful in the design of secure
+</I>&gt;<i>  protocols and secured information systems.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>  Danilo Gligoroski!
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

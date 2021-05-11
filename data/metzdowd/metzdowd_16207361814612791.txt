@@ -1,0 +1,35 @@
+<PRE>&gt;<i>An object lesson in this just fell in my lap -- I just got my first
+</I>&gt;<i>email from a spammer that links to a web site that uses such a cert,
+</I>&gt;<i>certified by a CA I've never heard of (&quot;Starfield Technologies, Inc.&quot;)
+</I>
+Oh, you've heard of them, just not under that name.  It's GoDaddy.
+
+The green bar certs cost $500 for one year, $800 for two years, which
+make them way more expensive than the $25 normal ones, but still
+impressively cheap considering the claims made for them.
+
+&gt;<i>To be really sure, we'll make them fax said document in on genuine
+</I>&gt;<i>company letterhead, since no one can forge letterhead.
+</I>
+Now, now, their verification process apparently involves checking that
+the name of the organization you provide exists in the relevant
+business registry, so when you're picking a fake name, be sure to do a
+few wildcard lookups at the NYS DOS web site first.  They say their
+process is so stringent it can take as long as FOUR HOURS to issue
+your cert.  Wow!
+
+You know, when I got my first ordinary SSL cert, it cost about $200
+and I had to mail all sorts of paper documentation to Thawte in North
+Carolina.  Does anyone know when issuers stopped bothering to verify
+anything?
+
+R's,
+John
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

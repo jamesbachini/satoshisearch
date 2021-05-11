@@ -1,0 +1,45 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ken.buchanan at gmail.com</A> (Ken Buchanan) on Tuesday, August 26, 2008 wrote:
+
+&gt;<i>I think this is a bit different than what Michael Heyman said.  TxTag,
+</I>&gt;<i>IIRC, was implemented by the same company (Raytheon) that implemented
+</I>&gt;<i>the 407 ETR toll system in Toronto.  In the case of the 407, there is
+</I>&gt;<i>no image recognition done if the car has a valid transponder.  Only in
+</I>&gt;<i>the case of a missing or invalid transponder is the plate imagery
+</I>&gt;<i>used.  Supposedly the OCR has a high enough error rate that there is
+</I>&gt;<i>still manual verification of plates before sending a bill, and
+</I>&gt;<i>accordingly a $3.60 additional charge is applied per trip.
+</I>&gt;<i>
+</I>&gt;<i>If the images are used even when the vehicle has a valid transponder
+</I>&gt;<i>-- as Michael Heyman suggests is happening with E-ZPass -- then it
+</I>&gt;<i>might be feasible to have back end defenses against cloning, though
+</I>&gt;<i>not without inconvenience to customers who borrow cars, buy new cars,
+</I>&gt;<i>or rent cars while their own is getting serviced.  Also as Matt Blaze
+</I>&gt;<i>pointed out this makes the transponder wholly redundant.
+</I>
+I could see where knowing what the license plate should be, from
+the transponder code, could feed back into the OCR and only
+generate a hit when the disagreement was obvious.
+
+In the San Francisco Bay Area, they are using the transponder codes
+to measure how fast traffic is moving from place to place. They
+post the times to various destinations on the electric signs when
+there are no Amber alerts or other more important things to
+display. It is quite convenient, and they promise they don't use it
+to track people's trips.
+
+If one were paranoid, one could put a different ID into the
+transponder for each trip, and only put the one it was issued with
+into it for toll crossings. :-)
+
+Cheers - Bill
+
+---------------------------------------------------------------------------
+Bill Frantz        |&quot;We used to quip that &quot;password&quot; is the most common
+408-356-8506       | password. Now it's 'password1.' Who said users haven't
+www.periwinkle.com | learned anything about security?&quot; -- Bruce Schneier
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

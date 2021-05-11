@@ -1,0 +1,55 @@
+<PRE>|<i> By the way, it seems like one thing that might help with client certs
+</I>|<i> is if they were treated a bit like cookies.  Today, a website can set
+</I>|<i> a cookie in your browser, and that cookie will be returned every time
+</I>|<i> you later visit that website.  This all happens automatically.  Imagine
+</I>|<i> if a website could instruct your browser to transparently generate a
+</I>|<i> public/private keypair for use with that website only and send the
+</I>|<i> public key to that website.  Then, any time that the user returns to
+</I>|<i> that website, the browser would automatically use that private key to
+</I>|<i> authenticate itself.  For instance, boa.com might instruct my browser
+</I>|<i> to create one private key for use with *.boa.com; later,
+</I>|<i> citibank.com could instruct my browser to create a private key for
+</I>|<i> use with *.citibank.com.  By associating the private key with a specific
+</I>|<i> DNS domain (just as cookies are), this means that the privacy
+</I>|<i> implications of client authentication would be comparable to the
+</I>|<i> privacy implications of cookies.  Also, in this scheme, there wouldn't
+</I>|<i> be any need to have your public key signed by a CA; the site only needs
+</I>|<i> to know your public key (e.g., your browser could send self-signed
+</I>|<i> certs), which eliminates the dependence upon the third-party CAs.
+</I>|<i> Any thoughts on this?
+</I>While trying to find something else, I came across the following
+reference:
+
+	Title:   Sender driven certification enrollment system
+	Document Type and Number:  United States Patent 6651166
+	Link to this page:  <A HREF="http://www.freepatentsonline.com/6651166.html">http://www.freepatentsonline.com/6651166.html</A>
+	Abstract:
+	A sender driven certificate enrollment system and methods of its
+	use are provided, in which a sender controls the generation of a
+	digital certificate that is used to encrypt and send a document
+	to a recipient in a secure manner. The sender compares
+	previously stored recipient information to gathered information
+	from the recipient. If the information matches, the sender
+	transfers key generation software to the recipient, which
+	produces the digital certificate, comprising a public and
+	private key pair. The sender can then use the public key to
+	encrypt and send the document to the recipient, wherein the
+	recipient can use the matching private key to decrypt the
+	document.
+
+This was work done a Xerox.  I was trying to find a different report
+at Xerox in response to Peter Gutmann's comment that certificate aren't
+used because they are impractical/unusable.  Parc has done some wonderful
+work on deal with those problems.  See:
+
+    <A HREF="http://www.parc.com/research/projects/usablesecurity/wireless.html">http://www.parc.com/research/projects/usablesecurity/wireless.html</A>
+
+Not &quot;Internet scale&quot;, but in an enterprise, it should work.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,33 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> On Tue, 13 May 2008 23:27:52 +0100
+</I>&gt;<i> Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;&gt;&gt;&gt;<i> Ben: I haven't looked at the actual code in question -- are you
+</I>&gt;&gt;&gt;&gt;&gt;<i> saying that the *only* way to add more entropy is via this pool of
+</I>&gt;&gt;&gt;&gt;&gt;<i> uninitialized memory?
+</I>&gt;&gt;&gt;&gt;<i> No. That would be fantastically stupid.
+</I>&gt;&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> So why are are the keys so guessable?  Or did they delete other
+</I>&gt;&gt;&gt;<i> code?
+</I>&gt;&gt;<i> &quot;However, the Debian maintainers, instead of tracking down the source
+</I>&gt;&gt;<i> of the uninitialised memory instead chose to remove any possibility
+</I>&gt;&gt;<i> of adding memory to the pool at all.&quot;
+</I>&gt;&gt;<i>
+</I>&gt;<i> Ah -- you wrote &quot;adding memory&quot; rather than &quot;adding entropy&quot;, which I
+</I>&gt;<i> found ambiguous.
+</I>
+I must confess that I said that because I did not have the energy to 
+figure out the other routes to adding entropy, such as adding an int 
+(e.g. a PID, which I'm told still makes it in there).
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

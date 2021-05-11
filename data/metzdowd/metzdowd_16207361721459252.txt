@@ -1,0 +1,32 @@
+<PRE>
+
+Two papers of interest in evaluating the paper
+<A HREF="http://www.eecs.umich.edu/~imarkov/pubs/conf/date08-epic.pdf">http://www.eecs.umich.edu/~imarkov/pubs/conf/date08-epic.pdf</A>
+EPIC: Ending Piracy of Integrated Circuits
+Jarrod A. Roy?, Farinaz Koushanfar? and Igor L. Markov?
+?The University of Michigan, Department of EECS, 2260 Hayward Ave., Ann
+Arbor, MI 48109-2121
+?Rice University, ECE and CS Departments, 6100 South Main, Houston, TX 77005
+
+The two papers:
+
+<A HREF="http://www.usenix.org/events/sec07/tech/full_papers/alkabani/alkabani.pdf">http://www.usenix.org/events/sec07/tech/full_papers/alkabani/alkabani.pdf</A>
+Active Hardware Metering for Intellectual Property Protection and Security
+Yousra M. Alkabani and Farinaz Koushanfar, Rice University
+
+<A HREF="http://delivery.acm.org/10.1145/1330000/1326215/p674-alkabani.pdf?key1=1326215&amp;key2=5023225021&amp;coll=&amp;dl=GUIDE&amp;CFID=15151515&amp;CFTOKEN=6184618">http://delivery.acm.org/10.1145/1330000/1326215/p674-alkabani.pdf?key1=1326215&amp;key2=5023225021&amp;coll=&amp;dl=GUIDE&amp;CFID=15151515&amp;CFTOKEN=6184618</A>
+Remote Activation of ICs for Piracy Prevention and Digital Right Management
+Yousra Alkabani Computer Science Dept., Rice University
+Farinaz Koushanfar Electrical &amp; Computer Engineering and
+Computer Science Depts., Rice University
+Miodrag Potkonjak Computer Science Dept.,
+University of California, Los Angeles
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

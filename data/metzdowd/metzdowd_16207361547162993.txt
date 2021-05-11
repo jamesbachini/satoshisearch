@@ -1,0 +1,21 @@
+<PRE>On Tue, 11 Sep 2007, Aram Perez wrote:
+
+&gt;<i> The IronKey appears to provide decent security while it is NOT plugged into a
+</I>&gt;<i> PC. But as soon as you plug it in and you have to enter a password to unlock
+</I>&gt;<i> it, the security level quickly drops. This would be the case even if they
+</I>&gt;<i> supported Mac OS or *nix.
+</I>&gt;<i> 
+</I>&gt;<i> As I stated in my response to Jerry Leichter, in my opinion, their marketing
+</I>&gt;<i> department is selling snake oil.
+</I>
+It protects against the common threat model of lost/stolen USB keys. Why is
+this snake oil? Your criticism seems akin to calling a physical lock insecure
+because it doesn't protect you from burglars once you have unlocked it.
+
+-d
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

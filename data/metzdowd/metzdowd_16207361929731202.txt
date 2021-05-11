@@ -1,0 +1,53 @@
+<PRE>On Sat, 25 Oct 2008, John Denker wrote:
+
+|<i> On 10/25/2008 04:40 AM, IanG gave us some additional information.
+</I>|<i> 
+</I>|<i> Even so, it appears there is still some uncertainty as to
+</I>|<i> interpretation, i.e. some uncertainty as to the requirements
+</I>|<i> and objectives.
+</I>|<i> 
+</I>|<i> I hereby propose a new scenario.  It is detailed enough to
+</I>|<i> be amenable to formal analysis.  The hope is that it will
+</I>|<i> satisfy the requirements and objectives ... or at least
+</I>|<i> promote a more precise discussion thereof.
+</I>|<i> 
+</I>|<i> We start with a group comprising N members (machines or 
+</I>|<i> persons).  Each of them, on demand, puts out a 160 bit 
+</I>|<i> word, called a &quot;member&quot; word.  We wish to combine these 
+</I>|<i> to form a single word, the &quot;group&quot; word, also 160 bits 
+</I>|<i> in length.
+</I>This isn't enough.  Somehow, you have to state that the values emitted
+on demand in any given round i (where a round consists of exactly one
+demand on all N member and produces a single output result) cannot
+receive any input from any other members.  Otherwise, if N=2 and member
+0 produces true random values that member 1 can see before it responds
+to the demand it received, then member 1 can cause the final result to
+be anything it likes.
+
+This is an attack that must be considered because you already want to
+consider the case:
+
+|<i>  b) Some of [the members] are malicious.  Their outputs may appear
+</I>|<i>   random, but are in fact predictable by our adversary.
+</I>
+Stating this requirement formally seems to be quite difficult.  You can
+easily make it very strong - the members are to be modeled as
+probabilistic TM's with no input.  Then, certainly, no one can see
+anyone else's value, since they can't see *anything*.  But you really
+want to say something along the lines of &quot;no malicious member can see
+the value output by any non-malicious member&quot;, which gets you into
+requiring an explicit failure model - which doesn't fit comfortably with
+the underlying problem.
+
+If the issue is how to make sure you get out at least all the randomness
+that was there, where the only failures are that some of your sources
+become predictable, the XOR is fine.  But once you allow for more
+complicated failure/attack modes, it's really not clear what is going on
+and what the model should to be.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

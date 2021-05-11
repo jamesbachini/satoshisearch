@@ -1,0 +1,50 @@
+<PRE>Philipp G&#252;hring wrote:
+&gt;<i> I once implemented SSL over GSM data channel (without PPP and without
+</I>&gt;<i> TCP), and discovered that SSL needs better integrity protection than
+</I>&gt;<i> raw GSM delivers. (I am quite sure that&#180;s why people normally run PPP
+</I>&gt;<i> over GSM channels ...) SSH has the same problems. It also assumes an
+</I>&gt;<i> active attack in case of integrity problems of the lower layer, and
+</I>&gt;<i> terminates the connection.
+</I>
+TBH I can't see the problem - the unix philosophy of doing one thing
+well, and chaining simple tools to make complex ones, works well here.
+
+we have:
+
+TCP - well understood, has crude integrity and reliability checks built
+in, works reasonably well at converting a bunch of packets leaving and
+arriving via your network connection into something vaguely like a
+stream point-to-point connection. Provided by every ISP across the
+planet, problems at this level can be handed off to experienced network
+engineers who will at least understand the problem.
+
+SSL - Cludge thrown together by a browser manufacturer, probably to
+create a market for a bunch of companies who generated two prime numbers
+and now sell the answers to simple math queries involving the numbers.
+However, works reasonably well, has some crude authentication of the
+server built in (via the aformentioned bunch of companies) which at
+least limits potential hackers to those whose money the bunch of
+companies will accept ;)
+   Again, works well in its domain, but requires a reasonably reliable
+channel to talk over, and a message to carry. Effectively turns an
+unencrypted channel into an encrypted one, Would work as well over a
+serial link as a tcp link (modulo the domain name check in the cert)
+
+HTTP - pretty basic file transfer protocol, with limited scope for
+negotiation, but designed largely to move text files from a server to a
+client. requires transport, can use tcp, ssl-over-tcp, serial, whatever
+your server will listen on and your client request on.
+
+add them together and you get HTTPS. leave out the SSL, and you get HTTP
+as-normally-spoke, so the SSL and HTTP are pretty much drop in modules.
+you could define HTTPG (HTTP over a security protocol other than SSL)
+and if a browser could support it, both TCP and HTTP would still be
+happy. you could also define HTTPS-over-adis-lamp and provided the
+operators were sufficiently accurate, securely download your web page
+from a server on a nearby hilltop after dark by replacing the TCP layer :)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

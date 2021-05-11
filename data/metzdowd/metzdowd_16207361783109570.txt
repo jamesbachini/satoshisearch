@@ -1,0 +1,13 @@
+<PRE>Given the published list of bad ssh keys due to the Debian mistake (see
+<A HREF="http://metasploit.com/users/hdm/tools/debian-openssl/">http://metasploit.com/users/hdm/tools/debian-openssl/</A>), should sshd be
+updated to contain a blacklist of those keys?  I suspect that a Bloom
+filter would be quite compact and efficient.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,18 @@
+<PRE>* Ian Farquhar:
+
+&gt;<i> Crypto has been an IP minefield for some years.  With the expiry of
+</I>&gt;<i> certain patents, and the availability of other unencumbered crypto
+</I>&gt;<i> primitives (eg. AES), we may see this change.  But John's other
+</I>&gt;<i> points are well made, and still valid.  Downloadable MP3 ring tones
+</I>&gt;<i> are a selling point.  E2E security isn't (although I've got to
+</I>&gt;<i> wonder about certain teenage demographics... :)
+</I>
+It's also an open question whether network operators subject to
+interception requirements can legally offer built-in E2E encryption
+capabilities without backdoors.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

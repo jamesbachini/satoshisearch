@@ -1,0 +1,27 @@
+<PRE>On Fri, 21 Mar 2008 08:52:07 +1000
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; wrote:
+
+&gt;<i>  From time to time I hear that DNSSEC is working fine, and on
+</I>&gt;<i> examining the matter I find it is &quot;working fine&quot; except that ....
+</I>&gt;<i> 
+</I>&gt;<i> Seems to me that if DNSSEC is actually working fine, I should be able
+</I>&gt;<i> to provide an authoritative public key for any domain name I control,
+</I>&gt;<i> and should be able to obtain such keys for other domain names, and
+</I>&gt;<i> use such keys for any purpose, not just those purposes envisaged in
+</I>&gt;<i> the DNSSEC specification.  Can I?  It is not apparent to me that I
+</I>&gt;<i> can.
+</I>&gt;<i> 
+</I>You might want to look at RFC 3445 and draft-iab-dns-choices-05.txt.
+
+As for DNSSEC keys -- DNSSEC is for securing the DNS.  Once you've done
+that, you can put other records in the DNS, but there are some subtle
+points in DNS RR design that should be heeded.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

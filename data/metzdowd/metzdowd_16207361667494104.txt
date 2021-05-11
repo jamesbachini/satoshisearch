@@ -1,0 +1,19 @@
+<PRE>In article &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">87zluxfccw.fsf at snark.cb.piermont.com</A>&gt; you write:
+&gt;<i>
+</I>&gt;<i><A HREF="http://www.google.com/patents?vid=USPAT6993661">http://www.google.com/patents?vid=USPAT6993661</A>
+</I>
+Gee, the inventor is Simson Garfinkel, who's written a bunch of books
+including Database Nation, published in 2000 by O'Reilly, about all
+the way the public and private actors are spying on us.
+
+I wonder whether this was research to see how hard it was to
+get the PTO to grant an absurd patent.
+
+R's,
+John
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE>&gt;&gt;&gt;&gt;&gt;<i> &quot;Peter&quot; == Peter Gutmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A>&gt; writes:
+</I>
+    Peter&gt; On a semi-related topic, it'd be interesting to get some
+    Peter&gt; discussion about FF3 removing the FF2 SSL indicators of the
+    Peter&gt; padlock and (more visibly) the background colour-change for
+    Peter&gt; the URL bar when SSL is active and replacing it with a
+    Peter&gt; spoof-friendly indicator that's part of the favicon,
+    Peter&gt; i.e. part of the attacker-controlled content.  The URL bar
+    Peter&gt; colouring was by far the most visible security indicator
+    Peter&gt; that any web browser had, the giant leap backwards of
+    Peter&gt; moving to a near-invisible blue border around the favicon
+    Peter&gt; does nothing to indicate security and is trivially spoofed
+    Peter&gt; by putting a blue border around the favicon.  There's a
+    Peter&gt; bugzilla bug filed against it,
+    Peter&gt; <A HREF="https://bugzilla.mozilla.org/show_bug.cgi?id=430790">https://bugzilla.mozilla.org/show_bug.cgi?id=430790</A> (with
+    Peter&gt; inevitable dups,
+
+
+Peter, list, the W3C W Web Security Context working group is in the
+final week of a public last call on their user interface guidelines.
+These guidelines take a lookboth at the balance between EV-certs and
+at user interface for security indicators.
+
+Comments need to be received by September 15. The draft is at
+<A HREF="http://www.w3.org/TR/2008/WD-wsc-ui-20080724/">http://www.w3.org/TR/2008/WD-wsc-ui-20080724/</A> and my take is at
+<A HREF="http://www.painless-security.com/blog/2008/08/w3sc-lc/">http://www.painless-security.com/blog/2008/08/w3sc-lc/</A> .
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,37 @@
+<PRE>Interesting-looking paper from some guys in Israel:
+
+<A HREF="http://eprint.iacr.org/2007/419.pdf">http://eprint.iacr.org/2007/419.pdf</A>
+
+Quoting:
+
+We analyzed the security of the algorithm and found a non-trivial
+attack: given the internal state of the generator, the previous state
+can be computed in O(2^23) work (this is an attack on the
+forward-security of the generator, an O(1) attack on backward security
+is trivial). The attack on forward-security demonstrates that the
+design of the generator is flawed, since it is well known how to
+prevent such attacks.
+
+The generator is run in user mode rather than in kernel mode, and
+therefore it is easy to access its state even without administrator
+privileges.
+
+The implication of these findings is that a buffer overflow attack or
+a similar attack can be used to learn a single state of the generator,
+which can then be used to predict all random values, such as SSL keys,
+used by a process in all its past and future operation. This attack is
+more severe and more efficient than known attacks, in which an
+attacker can only learn SSL keys if it is controlling the attacked
+machine at the time the keys are used.
+-- 
+Life would be so much easier if it was open-source.
+&lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071112/2c8b4966/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071112/2c8b4966/attachment.pgp</A>&gt;
+</PRE>

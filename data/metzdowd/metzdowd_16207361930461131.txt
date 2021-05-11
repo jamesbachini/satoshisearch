@@ -1,0 +1,43 @@
+<PRE>On Mon, Oct 06, 2008 at 05:51:50PM +1300, Peter Gutmann wrote:
+&gt;<i> For the past several years I've been making a point of asking users of crypto
+</I>&gt;<i> on embedded systems (which would be particularly good targets for side-channel
+</I>&gt;<i> attacks, particularly ones that provide content-protection capabilities)
+</I>&gt;<i> whether they'd consider enabling side-channel attack (SCA - no, not that SCA)
+</I>&gt;<i> protection in their use of crypto.  So far I've never found anyone who's made
+</I>[...]
+
+&gt;<i> In other words the user has to make a conscious decision that SCA protection
+</I>&gt;<i> is important enough that performance/power consumption can be sacrificed for
+</I>&gt;<i> it.  Can anyone provide any data on users making this tradeoff?  And since
+</I>&gt;<i> negative results are also results, a response of &quot;I've never found anyone who
+</I>&gt;<i> cares either&quot; is also useful.  Since the information may be commercially
+</I>
+I have little experience on the embedded crypto side but I do maintain
+a crypto library that has some non-zero number of users on general
+desktop and server machines.
+
+Basic protections ala your point 2 are provided and enabled by default
+(blinding, and checking private key operations for consistency with
+the public, to prevent the really easy attacks). There used to be a
+toggle to disable blinding, which as far as I know was never used - or
+at least nobody complained when I removed the toggle.
+
+To my memory nobody has ever asked about what SCA measures are or are
+not enabled, or how to toggle them, though I do have a FAQ entry about
+it, so perhaps people who really wanted serious side-channel
+resistence just read that FAQ and moved on to another implementation
+without ever bothering to contact me - certainly there are some
+self-selection problems with my sampling.
+
+When FlexSecure wrote Botan's ECC implementation for BSI, they
+implemented a number of anti-timing attack countermeasures - but they
+were being paid to care about that, so this is probably not a valid
+datapoint.
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

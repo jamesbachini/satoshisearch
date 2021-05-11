@@ -1,0 +1,62 @@
+<PRE>Isn't this just a semantic game on the part of RIM and the government?
+
+The phrase &quot;enterprise customers&quot; would seem to isolate a class of  
+customers such that individual customers not using a corporate version  
+of the product would see their crypto weakened... and be subject to  
+monitoring through the &quot;service provider&quot;
+
+
+On May 27, 2008, at 12:21 PM, Dave Korn wrote:
+
+&gt;<i> Perry E. Metzger wrote on 27 May 2008 16:14:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Excerpt:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  In a major change of stance, Canada-based Research In Motion (RIM)
+</I>&gt;&gt;<i>  may allow the Indian government to intercept non-corporate emails
+</I>&gt;&gt;<i>  sent over BlackBerrys.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;<i> <A HREF="http://economictimes.indiatimes.com/Telecom/Govt_may_get_keys_to_your_BlackB">http://economictimes.indiatimes.com/Telecom/Govt_may_get_keys_to_your_BlackB</A>
+</I>&gt;<i> erry_mailbox_soon/articleshow/3041313.cms
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Hat tip: Bruce Schneier's blog.
+</I>&gt;<i>
+</I>&gt;<i> Although on the other hand:
+</I>&gt;<i>
+</I>&gt;<i> Excerpt:
+</I>&gt;<i>
+</I>&gt;<i> Research In Motion (RIM), the Canadian company behind the BlackBerry
+</I>&gt;<i> handheld, has refused to give the Indian government special access to
+</I>&gt;<i> its encrypted email services.   [ ... ]
+</I>&gt;<i>
+</I>&gt;<i> According to the Times of India, the company said in a statement:
+</I>&gt;<i>
+</I>&gt;<i>   The BlackBerry security architecture for enterprise customers is
+</I>&gt;<i> purposefully designed to exclude the capability for RIM or any third
+</I>&gt;<i> party to read encrypted information under any circumstances. We regret
+</I>&gt;<i> any concern prompted by incorrect speculation or rumours and wish to
+</I>&gt;<i> assure customers that RIM is committed to continue serving security-
+</I>&gt;<i> conscious business in the Indian market.
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.theregister.co.uk/2008/05/27/indian_gov_blackberry_blackball/">http://www.theregister.co.uk/2008/05/27/indian_gov_blackberry_blackball/</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> [  Hmm, two contradictory stories, whoever woulda thunk it?  There's
+</I>&gt;<i> probably some politicking going on, mixed up with marketeering and
+</I>&gt;<i> FUD-spinning.  ]
+</I>&gt;<i>
+</I>&gt;<i>   cheers,
+</I>&gt;<i>     DaveK
+</I>&gt;<i> -- 
+</I>&gt;<i> Can't think of a witty .sigline today....
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

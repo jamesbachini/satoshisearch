@@ -1,0 +1,58 @@
+<PRE>On Mon, 22 Oct 2007 17:55:39 -0700 plus or minus some time ' =JeffH '
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Jeff.Hodges at KingsMountain.com</A>&gt; wrote:
+...snip...
+&gt;<i> &gt; I will be presenting /some/ of this work at Toorcon in San Diego this
+</I>&gt;<i> &gt; Saturday:  
+</I>&gt;<i>   
+</I>&gt;<i> &gt; <A HREF="http://www.toorcon.org/2007/event.php?id=38">http://www.toorcon.org/2007/event.php?id=38</A>  
+</I>&gt;<i> 
+</I>&gt;<i> excellent, how'd it go? Anyone else present on Storm?  
+</I>
+Things went pretty smooth.  Storm is a complicated and evolving beast so a
+50 minute talk can't really go into the depth that is needed to really
+understand how it works.  There weren't any other presentations at Toorcon
+but it's a pretty hot topic so there should be more talks and papers coming
+out from various researchers in the coming weeks and months.
+
+It seems like whenever anyone says anything about Storm, the story gets
+picked up by some news service and makes its way to Slashdot.
+
+&gt;<i>   
+</I>&gt;<i> &gt; The presentation is not academic paper quality and takes more of a
+</I>&gt;<i> &gt; code-monkey approach to the network.  Real (sane and substantiated)
+</I>&gt;<i> &gt; numbers, stats, and graphs will be presented.  To the best of my
+</I>&gt;<i> &gt; knowledge, it will be the first publicly released estimates of the size
+</I>&gt;<i> &gt; of the network with actual supporting data and evidence.   
+</I>&gt;<i> 
+</I>&gt;<i> are your slides now available?  
+</I>
+They are:
+<A HREF="http://noh.ucsd.edu/~bmenrigh/exposing_storm.ppt">http://noh.ucsd.edu/~bmenrigh/exposing_storm.ppt</A>
+
+The link to the historical trends of the network is here:
+<A HREF="http://noh.ucsd.edu/~bmenrigh/storm_data.tar.bz2">http://noh.ucsd.edu/~bmenrigh/storm_data.tar.bz2</A>
+
+It can be very hard to track the size of a botnet, even in the case of
+Storm where I'm crawling the network.  Technologies like NAT can
+significantly complicate things.
+
+See
+<A HREF="http://www.usenix.org/events/hotbots07/tech/full_papers/rajab/rajab_html/">http://www.usenix.org/events/hotbots07/tech/full_papers/rajab/rajab_html/</A>
+for a discussion on tracking the size of botnets.
+
+&gt;<i> 
+</I>&gt;<i> =JeffH
+</I>&gt;<i>   
+</I>
+My slides should provide adequate detail for someone to understand how to
+interpret the graphs and data.  For specific questions, feel free to email
+me directly.
+
+Brandon
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

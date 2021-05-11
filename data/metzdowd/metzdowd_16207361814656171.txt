@@ -1,0 +1,34 @@
+<PRE>Bill Frantz wrote:
+&gt;<i> really used for strangers. For people we know, recognition and
+</I>&gt;<i> memory are more compelling ways of trusting.
+</I>&gt;<i>
+</I>&gt;<i> We can use this recognition and memory in the online world as well.
+</I>&gt;<i> SSH automatically recognizes previously used hosts. Programs such
+</I>&gt;<i> as the Pet Names Tool&lt;<A HREF="http://www.waterken.com/user/PetnameTool/">http://www.waterken.com/user/PetnameTool/</A>&gt;
+</I>&gt;<i> recognize public keys used by web sites, and provide us with a
+</I>&gt;<i> human-recognizable name so we can remember our previous
+</I>&gt;<i> interactions with that web site. Once we can securely recognize a
+</I>&gt;<i> site, we can form our own trust decisions, without the necessity of
+</I>&gt;<i> involving third parties.
+</I>&gt;<i>    
+</I>
+that was one of the business case problems early in SSL for
+electronic commerce ... namely majority of ecommerce was
+with repeat sites ... while design point of digital certificates
+is for first time communication between strangers.
+
+the other factor that bounded what merchants would pay
+was liability in electronic commerce ... there were already
+paying significant interchange fees as part of protecting
+the consumer. certification authorities weren't looking
+at taking on any of that aspect.
+
+the combination has been pushing digital certificates
+into the no-value market segment ... which, in turn,
+further limits what would could be charged for.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

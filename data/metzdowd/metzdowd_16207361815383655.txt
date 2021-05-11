@@ -1,0 +1,86 @@
+<PRE>On Mon, Jun 2, 2008 at 12:37 PM, Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+&gt;<i> In the essay &quot;Better Than Free&quot;, Kevin Kelly debates which concepts hold
+</I>&gt;<i> value online, and how to monetize those values. See
+</I>&gt;<i> www.kk.org/thetechnium/archives/2008/01/better_than_fre.php
+</I>&gt;<i>
+</I>&gt;<i> Kelly's point can be very useful: *When copies are free, you need to sell
+</I>&gt;<i> things which can not be copied.*
+</I>&gt;<i>
+</I>&gt;<i> The problem that I see and present to this list is when he discusses
+</I>&gt;<i> qualities that can't be copied and considers &quot;trust&quot; as something that
+</I>&gt;<i> cannot be copied.
+</I>&gt;<i>
+</I>Kelly says trust cannot be copied at the top of his missive then
+doesn't list it as one of the eight &quot;generatives&quot; (I may be missing
+something but I think &quot;generative&quot; is the wrong word for something
+that cannot be copied but Kelly makes up his own definition for
+&quot;generative&quot; as something generated uniquely in place).
+&gt;<i>
+</I>&gt;<i> Well, in the digital economy we had to learn how to copy trust and we did.
+</I>&gt;<i> For example, SSL would not work if trust could not be copied.
+</I>&gt;<i>
+</I>After this list has destroyed the as implemented SSL model of trust
+over and over again, I'd be wary of claiming that SSL allows trust to
+be copied.
+
+Even so, SSL doesn't really copy trust, it works by only trusting the
+root. You don't have to trust the target site's self assertions about
+its own identity because you trust the root to only validate for sites
+that are what they claim to be.
+
+On Mon, Jun 2, 2008 at 3:29 PM, Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+&gt;<i>
+</I>&gt;<i> A copy is something identical. So, in fact you can copy that server cert to
+</I>&gt;<i> another server that has the same domain (load balancing), and it will work.
+</I>&gt;<i> Web admins do it all the time. The user will not notice any difference in
+</I>&gt;<i> how the SSL will work.
+</I>&gt;<i>
+</I>Copying server certificates isn't copying trust either. In this case
+all servers with the same certificate are the same entity - at least
+to whatever needs to trust it.
+
+This whole thing with SSL and certificates is a red herring when it
+comes to copying trust.
+
+When I trust a site, that site doesn't have the trust, I do. To copy
+that trust, albeit with low fidelity, I merely have to communicate
+that trust to some other person.
+
+There are sites on the net that allow me to communicate my trust to
+others. eBay is probably making the most money at it with their seller
+reputation system. Sellers with a better reputation will attract more
+business and sell quicker and at higher prices. eBay makes more money
+when more product moves at higher prices but it cannot inflate
+seller's reputations because that would instantly be recognized by
+buyers and eBay would become a pariah and some other site would take
+over. Other sites like Amazon, Bizrate, and Angie's List provide
+similar trust distribution services with different underlying business
+models.
+
+This is a trust model that appears to work. If a eBayish/Verisigny
+company did an OCSP-like service that returned a current eBay-like
+&quot;reputation&quot; number for the trustworthiness of the site in question, I
+don't think we would need band aids like PetNames or even a
+hierarchical PKI. Sites could just use self-signed certificates with a
+field pointing to their reputation responder. Instead of trusted root
+certificates, browsers could have trusted reputation responder
+certificates. Microsoft would charge reputation responders to include
+their certificates, reputation responders would charge companies to
+maintain their reputations, everybody would make money. When a
+reputation responder goes bad, slashdot would have fun, Microsoft
+would pull their cert, there will be some vulnerable users that don't
+ever get updated responder certificate lists, and the entities that
+had trust housed at the bad responder will have to generate new certs
+and rebuild their reputation elsewhere.
+
+This, of course, doesn't have a chance of occuring because SSL works
+good enough and people will ignore the bad reputation warnings just
+like they ignore SSL warnings now.
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,33 @@
+<PRE>Saqib Ali writes:
+&gt;<i> This is interesting:
+</I>&gt;<i> <A HREF="http://tinyurl.com/2zko7n">http://tinyurl.com/2zko7n</A>
+</I>&gt;<i>
+</I>&gt;<i> Abstract
+</I>&gt;<i> The problem of a mice traveling through a maze is well known....
+</I>&gt;<i>
+</I>&gt;<i> The problem finds its origin in the problem of secure multiparty computation....
+</I>
+This was presented at Crypto this year. It was interesting that they were
+able to reduce this secure MPC problem to a very concrete graph coloring
+question. However they did not include the motivating example about the
+doctor visit, and just presented it in terms of MPC over non-abelian
+groups. I had the impression at the time that it was a pretty abstract
+problem. It's not clear to me how the doctor problem can be expressed
+as a non-abelian group operation.
+
+The one thing I understood from the talk is that the abelian group case
+(commutative and associative) is trivial. You want to do Z = X op Y, so
+you break X up into shares such that X = X1 op X2 op ... Xn and the same
+for Y1..Yn. Then the first guy does Z1 = X1 op Y1, and so on, and they
+all combine their results: Z = Z1 op Z2 op ... Zn. This trivially gets
+the right answer, but it doesn't work with non-abelian groups because
+you can't rearrange the terms. So they build a graph that shows how
+shares get joined, and that eventually leads to their coloring problem.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

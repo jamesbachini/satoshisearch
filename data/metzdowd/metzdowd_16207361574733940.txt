@@ -1,0 +1,35 @@
+<PRE>On Oct 24, 2007, at 1:21 PM, Steven M. Bellovin wrote:
+
+&gt;<i> I hope they don't get the patent.  The idea of using a GPU for
+</I>&gt;<i> cryptographic calculations isn't new; see, for example, &quot;Remotely  
+</I>&gt;<i> Keyed
+</I>&gt;<i> Cryptographics: Secure Remote Display Access Using (Mostly) Untrusted
+</I>&gt;<i> Hardware&quot; (<A HREF="http://www1.cs.columbia.edu/~angelos/Papers/2005/">http://www1.cs.columbia.edu/~angelos/Papers/2005/</A> 
+</I>&gt;<i> rkey_icics.pdf)
+</I>&gt;<i> Debra L. Cook, Ricardo Baratto, and Angelos D. Keromytis. In
+</I>&gt;<i> Proceedings of the 7th International Conference on Information and
+</I>&gt;<i> Communications Security (ICICS), pp. 363 - 375. December 2005,  
+</I>&gt;<i> Beijing,
+</I>&gt;<i> China. An older version is available as Columbia University Computer
+</I>&gt;<i> Science Department Technical Report CUCS-050-04
+</I>&gt;<i> (<A HREF="http://mice.cs.columbia.edu/getTechreport.php?">http://mice.cs.columbia.edu/getTechreport.php?</A> 
+</I>&gt;<i> techreportID=110&amp;format=pdf&amp;),
+</I>&gt;<i> December 2004.
+</I>
+I agree completely. If the PTO does their job, they won't get it.  
+This is like claiming that once we know that making daiquiris in a  
+blender is possible, it's patentable to improve that by making pina  
+coladas. If you're skilled in the art, you know that this is pretty  
+obvious. Crypto extended to cryptanalysis is less of a stretch than  
+strawberries extended to coconut and pineapple.
+
+Unfortunately, the PTO hands out patents for things like using a  
+laser pointer as a cat toy.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

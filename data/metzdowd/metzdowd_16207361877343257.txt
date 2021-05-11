@@ -1,0 +1,44 @@
+<PRE>|<i> &gt; You can get by with a lot less than 64 bits.  People see problems
+</I>|<i> &gt; like this and immediately think &quot;birthday paradox&quot;, but there is no
+</I>|<i> &gt; &quot;birthday paradox&quot; here:  You aren't look for pairs in an
+</I>|<i> &gt; ever-growing set, you're looking for matches against a fixed set.
+</I>|<i> &gt; If you use 30-bit hashes - giving you about a 120KB table - the
+</I>|<i> &gt; chance that any given key happens to hash to something in the table
+</I>|<i> &gt; is one in a billion, now and forever.  (Of course, if you use a
+</I>|<i> &gt; given key repeatedly, and it happens to be that 1 in a billion, it
+</I>|<i> &gt; will hit every time.  So an additional table of &quot;known good keys
+</I>|<i> &gt; that happen to collide&quot; is worth maintaining.  Even if you somehow
+</I>|<i> &gt; built and maintained that table for all the keys across all the
+</I>|<i> &gt; systems in the world - how big would it get, if only 1 in a billion
+</I>|<i> &gt; keys world-wide got entered?)
+</I>|<i> I don't believe your math is correct here. Or rather, it would
+</I>|<i> be correct if there was only one bad key.
+</I>|<i> 
+</I>|<i> Remember, there are N bad keys and you're using a b-bit hash, which
+</I>|<i> has 2^b distinct values. If you put N' entries in the hash table, the
+</I>|<i> probability that a new key will have the same digest as one of them is
+</I>|<i> N'/(2^b). If b is sufficiently large to make collisions rare, then
+</I>|<i> N'=~N and we get N/(2^b).
+</I>|<i> 
+</I>|<i> To be concrete, we have 2^15 distinct keys, so, the probability of a
+</I>|<i> false positive becomes (2^15)/(2^b)=2^(b-15).  To get that probability
+</I>|<i> below 1 billion, b+15 &gt;= 30, so you need about 45 bits. I chose 64
+</I>|<i> because it seemed to me that a false positive probability of 2^{-48}
+</I>|<i> or so was better.
+</I>You're right, of course - I considered 32,000 to be &quot;vanishingly small&quot;
+compared to the number of hash values, but of course it isn't.  The
+perils of looking at one number just as decimal and the other just in
+exponential form....
+
+In any case, I think it's clear that even for extremely conservative
+&quot;false hit&quot; ratios, the table size is quite reasonable.  You wouldn't
+want the table on your smart card or RFID chip, perhaps, but there even
+a low-end &quot;smartphone&quot; would have no problems.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,27 @@
+<PRE>&gt;<i>  <A HREF="http://amtrak.bfi0.com/.....">http://amtrak.bfi0.com/.....</A>
+</I>
+&gt;<i>Lesson for phishers: If you want your phish to seem more legit, outsource it
+</I>&gt;<i>to Bigfoot Interactive, which seems to lead back to Epsilon Agency Services,
+</I>&gt;<i>who specialise in... well, phishing, but for the good guys.  I bet the Russian
+</I>&gt;<i>Business Network could do it for less though :-).
+</I>
+Having dealt at length with people from BFI/Epsilon, I can confirm that
+many of them are not the sharpest needles in the etui.
+
+This problem is well known in the ESP (bulk mail for hire) industry,
+and the better ones know how to deal with it.  If you are on Orbitz'
+mailing list, for example, the mail comes from <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">orbitz at my.orbitz.com</A>,
+and the links in the mail all go to <A HREF="http://my.orbitz.com/whatever.">http://my.orbitz.com/whatever.</A>  Do
+a few DNS lookups and you'll find NS records from Orbitz that delegate
+my.orbitz.com to Responsys, their ESP.  This is a straightforward and
+effective way to manage the namespace for outsourced mail, and my
+biggest question is why so many ESPs don't do it yet.
+
+R's,
+John
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

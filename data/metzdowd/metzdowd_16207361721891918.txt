@@ -1,0 +1,41 @@
+<PRE>Dear all,
+
+[Apologies if you get multiple copies of this email.]
+
+Mixmaster 3.0 has been released this week. This is the first major version
+release since 2.9, and a continuation of that code, though it incorporates
+numerous improvements, feature enhancements, and bug-fixes. It is
+recommended that you upgrade your remailers to this version.
+
+For those of you running 3.0rc1 or one of the 3.0 beta releases, the
+changes are minor, though upgrading is still recommended.
+
+Please report any problems you experience to the Mixmaster maintainers
+through the bug tracker at SourceForge. (<A HREF="http://sf.net/projects/mixmaster">http://sf.net/projects/mixmaster</A>).
+
+The code can be found there as well, and is signed by the Mixmaster 3.x
+release key, found on <A HREF="http://mixmaster.sf.net">http://mixmaster.sf.net</A> and signed by myself and
+numerous other cypherpunks. Any questions regarding tampering with the
+source code should be reported as soon as noticed.
+
+There are some user-facing improvements as well, though most of the
+planned client improvements have been pushed off to 3.1. For stability
+reasons, users of the client are encouraged to upgrade as well. (Users of
+third-party GUIs for Mixmaster are encouraged to report their success or
+problems with detailed bug reports if applicable.)
+
+We're looking forward to your feedback!
+
+
+Best regards, on behalf of the Mixmaster Development Team:
+
+Steve Crook
+Peter Palfrader
+Len Sassaman
+Colin Tuckley
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

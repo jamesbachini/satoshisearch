@@ -1,0 +1,49 @@
+<PRE>Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; writes:
+&gt;<i>Peter Gutmann wrote:
+</I>&gt;&gt;<i> Given the string of
+</I>&gt;&gt;<i> attacks on crypto in embedded devices (XBox, iPhone, iOpener, Wii, some
+</I>&gt;&gt;<i> not-yet-published ones on HDCP devices :-), etc) this is by far the most
+</I>&gt;&gt;<i> at-risk category because there's a huge incentive to attack them, the result
+</I>&gt;&gt;<i> affects tens/hundreds of millions of devices, and the attacks are immediately
+</I>&gt;&gt;<i> and widely actively exploited (modchips/device unlocking/etc, an important
+</I>&gt;&gt;<i> difference between this and academic proof-of-concept attacks), so this is the
+</I>&gt;&gt;<i> one where I'd expect the vendors to care most.
+</I>&gt;<i>
+</I>&gt;<i>But they've all been unlocked using easier attacks, surely?
+</I>
+The published ones seem to be the (relatively) easy ones, but the ones that
+have been tried (and either not published or just had the easy outcome
+published) have been pretty amazing.  This is another one of these things
+where real figures are going to be near-impossible to come by, even harder
+than my hypothetical public vendor survey of who uses SCA protection.  You'd
+have to read about 20 blogs and a hundred mailing lists, many private, just to
+keep up, but from various informal contacts with people working in this area
+it seems you're not looking at anything like the conventional &quot;identify the
+weakest point, then attack there&quot; approach.  Instead what's being done is more
+like the Iraqi weapons program prior to 1991 where they were using every
+imaginable type of approach, including ones like calutrons that had been
+abandoned decades earlier by everyone else, for a first-past-the-post finish,
+they'd try anything and everything and whatever got them there first would be
+declared the winner.  It's the same with these attacks, whenever I've asked
+&quot;have you tried X&quot; the answer is invariably &quot;yes, we have&quot;.
+
+This style of attack is quite different from the usual academic model, it
+neatly illustrates Bruce Schneier's comment that a defender has to defend
+every single point along the line while an attacker only has to find a single
+weakness.  In this case it seems to be literally true, and the weakness won't
+necessarily be the actual weakest point but merely the point where an attacker
+with sufficient skill and access to the right tools got in.  Look at the XBox
+attacks for example, there's everything from security 101 lack of
+checking/validation and 1980s MSDOS-era A20# issues through to Bunnie Huang's
+FPGA-based homebrew logic analyser and use of timing attacks to recover device
+keys (oh, and there's an example of a real-world side-channel attack for you),
+there's no rhyme or reason to them, it's just &quot;hammer away at everything with
+anything you've got and exploit the first bit that fails&quot;.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

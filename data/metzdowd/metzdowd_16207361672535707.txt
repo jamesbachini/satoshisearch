@@ -1,0 +1,24 @@
+<PRE>* Ivan Krsti&#263;:
+
+&gt;<i> We've recently had to jump through the BIS crypto export hoops at
+</I>&gt;<i> OLPC. Our systems both ship with crypto built-in and, due to their
+</I>&gt;<i> Fedora underpinnings, allow end-user installation of various crypto
+</I>&gt;<i> libraries -- all open-source -- through our servers. It was a
+</I>&gt;<i> nightmare; the regulations and paperwork appear to be designed for the
+</I>&gt;<i> use case of individual applications that utilize a handful of
+</I>&gt;<i> primitives and attempt to keep the user from examining or modifying
+</I>&gt;<i> the utilized crypto. Trying to fit a Linux distribution into this
+</I>&gt;<i> model proved, er, challenging.
+</I>
+Debian has been filing notices for crypto export for years (at BXA for
+some time; nowadays, it's likely BIS).  So far, nobody there has
+complained that what is being done is insufficient.
+
+Here are some details: &lt;<A HREF="http://www.debian.org/legal/cryptoinmain">http://www.debian.org/legal/cryptoinmain</A>&gt;
+The actual process may have changed a bit over the years.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

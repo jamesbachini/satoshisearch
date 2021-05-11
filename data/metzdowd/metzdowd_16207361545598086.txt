@@ -1,0 +1,97 @@
+<PRE>|<i> &gt;Anyone know anything about the Yoggie Pico (www.yoggie.com)?  It
+</I>|<i> &gt;claims to do much more than the Ironkey, though the language is a bit
+</I>|<i> &gt;less &quot;marketing-speak&quot;.  On the other hand, once I got through the
+</I>|<i> &gt;marketing stuff to the technical discussions at Ironkey, I ended up
+</I>|<i> &gt;with much more in the way of warm fuzzies than I do with Yoggie.
+</I>|<i> 
+</I>|<i> Here's another secure USB flash drive:
+</I>|<i> &lt;<A HREF="http://www.kingston.com/flash/DTSPdemo/eval.asp">http://www.kingston.com/flash/DTSPdemo/eval.asp</A>&gt; with minimal
+</I>|<i> marketing-speak.
+</I>This is a representative of yet another class of &quot;secure&quot; USB devices:
+
+	- The Kingston encrypts data stored on it.  (Note that you
+		have to enter the decryption key from the system
+		keyboard when you plug the thing in.  If your threat
+		scenarios include usage in a compromised system, this
+		is not the device for you.
+
+	- The Ironkey does the same thing - though they don't emphasize
+		that aspect of things; such devices are pretty common.
+		(There are a bunch of companies that have USB memory
+		sticks with fingerprint sensors.  Who knows how easy
+		they are to spoof - likely not very).  Ironkey's claim
+		to fame is that it also acts as a key store that can be
+		used with on-device programs like a browser and to
+		connect to a Tor network.  In this configuration -
+		assuming it's implemented correctly - you can have a
+		secure connection to a remote site even if you plug the
+		USB into a compromised machine.  (Of course, this
+		doesn't solve the whole problem: You have to use the
+		machine for I/O.  The network traffic is secured between
+		the remote endpoint and the program in the key, but the
+		path from the key to the keyboard and screen is
+		unsecured.  A sophisticated attack could sniff or modify
+		the keyboard stream and replace the on-screen data.
+		We're probably talking about a highly targetted attack
+		here to get any useful information that way.  Certainly
+		possible, but a lot harder than simply sniffing the
+		password used to unlock the on-device memory and/or
+		copying all the contents once they've been unlocked.)
+
+	- The Yoggie is kind of a fancy firewall in a USB stick.  I
+		don't think there's any user-writable memory in it -
+		certainly not for files, probably not even for
+		secure storage of passwords.
+
+Historically, NSA has apparently never liked software implementations of
+cryptography - they wanted protected hardware.  Such hardware has been
+prohibitively expensive until quite recently.  These devices show that
+the price of such hardware is no longer a problem:  We can build very
+secure, very small pieces of hardware for not a lot of money.  What to
+*do* with those hardware capabilities is another question.  It's not
+easy to fit them safely into systems - and what problems can they solve
+in those systems.  Kingston and many other similar devices are a great
+solution to a problem very real problem:  When my 2GB memory stick falls
+out of my pocket, have I just given away 2GB of highly sensitive data
+to anyone who finds the thing?  They are *not* any kind of solution to
+the &quot;how can I access my data safely on a possibly-compromised system&quot;?
+
+The Ironkey guys have attacked a broader problem, and while they haven't
+completely solved it - it's not clear any solution exists! - they've
+provided a capability that is potentially useful.  (They aren't unique -
+people have built a bunch of devices that are basically outboard
+Linux boxes that rely on a guest box to provide network connectivity,
+a keyboard, and a screen.  But they have a commercially available low-
+cost product.)
+
+If you think about this in general terms, we're at the point where we
+can avoid having to trust the CPU, memory, disks, programs, OS, etc.,
+in the borrowed box, except to the degree that they give us access to
+the screen and keyboard.  (The problem of securing connections that
+go through a hostile intermediary we know how to solve.)  The keyboard
+problem is intractable, though it would certainly be a step forward
+if at least security information didn't go through there.  This could
+be done either by having a small data entry mechanism on the secure
+device itself, or by using some kind of challenge/response (an LCD
+on the device supplies a random value - not readable in any way by
+the connected machine - that you combine with your password before
+typing it in.)  Maybe HDMI will actually have some use in providing
+a secure path to the screen?  (Unlikely, unfortunately.)
+
+							-- Jerry
+
+|<i> 
+</I>|<i> Regards,
+</I>|<i> Aram
+</I>|<i> 
+</I>|<i> ---------------------------------------------------------------------
+</I>|<i> The Cryptography Mailing List
+</I>|<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>|<i> 
+</I>|<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,20 @@
+<PRE>
+On Aug 3, 2008, at 13:54, Alexander Klimov wrote:
+
+&gt;<i> If your p-value is smaller than the significance level (say, 1%)
+</I>&gt;<i> you should repeat the test with different data and see if the
+</I>&gt;<i> test persistently fails or it was just a fluke.
+</I>
+Or better still, make many tests and see if your p-values are  
+uniformly distributed in (0,1). [Hint: decide on a p-value for that  
+last equidistribution test *before* you compute that p-value.]
+
+Best,
+
+Stephan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

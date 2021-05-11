@@ -1,0 +1,62 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> <A HREF="http://www.eff.org/press/archives/2008/08/19">http://www.eff.org/press/archives/2008/08/19</A>
+</I>&gt;<i> 
+</I>
+You wonder if it was MTBA exhibit 4 that tipped their case against the
+MTBA's injunction, using Roblimo's article on Sklyarov, quoting reactions to
+Dmitry Sklyarov's arrest for a DMCA violation on July 16, 2001, wherein:
+
+  Jennifer Granick, the clinical director of Stanford University's Center
+  for Internet and Society, has also criticized the move by the software
+  industry and the FBI.
+
+  &quot;American corporations have never been shy about using taxpayer money to
+  enforce their rights,&quot; she said.
+
+Using a news article containing a quote from the defense's representation
+counter to your position doesn't sound like a winning strategy.  Ms. Granick
+is the Civil Liberties Director with the EFF and has filed a declaration in
+the case.
+
+The Wikipedia article <A HREF="http://en.wikipedia.org/wiki/Dmitry_Sklyarov">http://en.wikipedia.org/wiki/Dmitry_Sklyarov</A> has a
+succinct summary of the Sklyarov case, where charges against him were
+dropped in exchange for testimony (against his employer).  In December 2002,
+Elcomsoft (the employer) was found not guilty of violating the DMCA in a
+jury trial.
+
+Most notably:
+
+  On July 19, 2001, the Association of American Publishers issued a press
+  release announcing their support of his arrest. Adobe initially supported
+  the arrest, but after a meeting with the Electronic Frontier Foundation,
+  they issued a joint press release on July 23, 2001, recommending his
+  release. However, Adobe still supports the case against ElcomSoft.
+
+The MTBA had no organization or employer to fall back on in prosecution, and
+are still alleging CFAA violations against the defendants, undoubtedly
+stemming from the initial conference description of their presentation,
+mentioning free fares, and the slide presentation showing MTBA operations
+centers, possibly counterfeit transit authority identification, and
+surreptitious access to computing facilities.  The problem being either one
+of a bit too much security theater on the part of the defendants, or
+possible violations of the CFAA.
+
+It is notable that there is no criminal case to date.  One could also wonder
+if the MTBA is taking corrective actions to protect their system both
+through physical plant security and proper inclusion of cryptographic
+protection of their ticketing system, as well.
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

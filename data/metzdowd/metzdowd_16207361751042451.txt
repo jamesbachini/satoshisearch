@@ -1,0 +1,147 @@
+<PRE>
+
+On Wed, 23 Apr 2008, Alexander Klimov wrote:
+
+|<i> Date: Wed, 23 Apr 2008 12:53:56 +0300 (IDT)
+</I>|<i> From: Alexander Klimov &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alserkli at inbox.ru</A>&gt;
+</I>|<i> To: Cryptography &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+</I>|<i> Subject: no possible brute force Was: Cruising the stacks and finding stuff
+</I>|<i> 
+</I>|<i> On Tue, 22 Apr 2008, Leichter, Jerry wrote:
+</I>|<i> &gt; Interestingly, if you add physics to the picture, you can convert
+</I>|<i> &gt; &quot;no practical brute force attack&quot; into &quot;no possible brute force
+</I>|<i> &gt; attack given known physics&quot;.  Current physical theories all place a
+</I>|<i> &gt; granularity on space and time:  There is a smallest unit of space
+</I>|<i> &gt; beyond which you can't subdivide things, and a smallest unit of
+</I>|<i> &gt; time.
+</I>|<i> 
+</I>|<i> I guess you are talking about Planck units, so let's make the
+</I>|<i> calculations:
+</I>|<i> 
+</I>|<i>  Planck length is L = \sqrt{hbar G / c^3} ~ 1.6E-35 m,
+</I>|<i> 
+</I>|<i>  Planck time T = L/c ~ 5.4E-44 s,
+</I>|<i> 
+</I>|<i> so a cubic-meter-computer can have
+</I>|<i> 
+</I>|<i>  N = (1/L)^3 ~ 2.4E104 elements
+</I>|<i>
+</I>|<i> and thus
+</I>|<i> 
+</I>|<i>  N/T ~ 4.5E147 operations per second
+</I>|<i> 
+</I>|<i> that is approximately 2^{490} operations per second in a cubic meter
+</I>|<i> of &quot;Planck computer&quot;. Given a year (3.15E7 s) on a Earth-size
+</I>|<i> (1.08E21 m^3) Planck computer we can make approximately 2^{585}
+</I>|<i> operations.
+</I>Except that this doesn't quite work.  You can't actually have anywhere
+near that many distinct states in that volume of space.  The physics
+does indeed get bizarre here:  The maximum number of bits you can
+store in a given volume of space is determined by that space's
+*surface area*, not its volume.  So you actually &quot;only&quot; get around
+1E70 elements and 4.5E112 operations.  :-)
+
+|<i> OK, it was amusing to do these calculations, but does it mean
+</I>|<i> anything? I think it is more like garbage-in-garbage-out process.
+</I>|<i> 
+</I>|<i> If I understand correctly, L and T are not non-divisible units of
+</I>|<i> space-time, but rather boundaries for which we understand that our
+</I>|<i> current theories do not work, because this scale requires unification
+</I>|<i> of general relativity and quantum mechanics.
+</I>Kind of.
+
+|<i> Even more bizarre is to think about the above &quot;processing element&quot; as
+</I>|<i> representing a single bit: according to quantum mechanics, states of a
+</I>|<i> system are represented by unit vectors in associated Hilbert space of
+</I>|<i> the system and each observable is represented by a linear operator
+</I>|<i> acting on the state space. Even if we have only two qubits they are
+</I>|<i> not described by two complex numbers, but rather by 4:
+</I>|<i> 
+</I>|<i>  a_0|00&gt; + a_1|01&gt; + a_2|10&gt; + a_3|11&gt;
+</I>|<i> 
+</I>|<i> and thus description of the state of quantum registers requires
+</I>|<i> exponential number of complex numbers a_i and each operation
+</I>|<i> simultaneously process all those a_i. Since we cannot measure
+</I>|<i> them all, it is an open question whether quantum computations
+</I>|<i> provide exponential speed-up and all we know right now is that
+</I>|<i> they give at least quadratic one.
+</I>For simple search problems, where there are no shortcuts and you really
+can only do brute force, quadratic is the best you can do.
+
+|<i> By the way, if you have a computer with the processing power larger
+</I>|<i> than that of all the cryptanalysts in the world, it makes sense to use
+</I>|<i> your computer to &quot;think&quot; to find a better attack than a brute-force
+</I>|<i> search :-)
+</I>Of course.  But the mice are already running that computation.
+
+|<i> &gt; One place this shows up, as an example:  It turns out give a volume
+</I>|<i> &gt; of space, the configuration with the maximum entropy for that volume
+</I>|<i> &gt; of is exactly a black hole with that volume
+</I>|<i> 
+</I>|<i> [OT] This is a strange thesis because all black hole solutions in
+</I>|<i> general relativity can be completely characterized by only three
+</I>|<i> externally observable parameters: mass, electric charge, and angular
+</I>|<i> momentum (the no-hair theorem) and thus in some sense they have zero
+</I>|<i> entropy (it is not necessary a contradiction with something, because
+</I>|<i> it takes an infinite time for matter to reach the event horizon).
+</I>You're looking at this backwards.  Suppose I want to store a large
+amount of data in a given volume of space.  To be specific, I have a
+unit diameter sphere in which to build my memory device.  Initially, I
+fill it with magnetic domains, and see how many distinct bits I can
+store.  That gets me some huge number.  I replace that with
+racetrack-style memory, with information on the edges of the domains.
+Then with single electrons, with bits stored in multiple quantum states.
+Can I keep going indefinitely?  The answer is no:  There is in fact a
+limit, and it turns out to be the number of bits equivalent to the
+entropy of a black hole with a unit diameter sphere.  The entropy
+isn't given by the number of measurements I can make on my black
+hole - it's given by the number of possible precursor states that
+can produce the given black hole.  In fact, if you try to shove that
+much information into your initial volume, you will inevitably
+produce a black hole - not a good idea if what you want is a storage
+device, since the data will be there in some sense, but will be
+inaccessible!
+
+|<i> &gt; and its entropy turns out to be the area of the black hole, in units
+</I>|<i> &gt; of square Planck lengths.
+</I>|<i> 
+</I>|<i> [OT] Although Hawking showed that the total area of the event horizons
+</I>|<i> of a collection of black holes can never decrease, which is *similar*
+</I>|<i> to the second law of thermodynamics (with entropy replaced by area),
+</I>|<i> it is not clear that it allows to conclude that area *is* entropy.
+</I>The actual computation requires using either string theory or loop
+quantum gravity or, presumably, some other theory that combines GR
+and QM.  The entropy is proportional to the area by very general
+arguments, but to figure out the units, you have to make some more
+assumptions.  According to the &quot;Black Hole Thermodynamics&quot; article in
+Wikipedia, string theory implies that the units are exactly the Planck
+length squared, while loop quantum gravity makes it proportional to
+the single free parameter in that theory.
+
+No one really understands what this means in any deep sense.  It
+certainly doesn't say that a Planck-length x Planck-length square
+is &quot;a minimal bit&quot; in any physical sense.  That's just a suggestive
+interpretation.  If it were even approximately true ... that's
+a 2-d &quot;object&quot;.  Why can't I just stack a whole bunch of them in
+an arbitrary volume?
+
+What is important is the profound general principle that's emerged from
+70 years or so of work on QM, which physicists now take for granted but
+hasn't really made it into the general conciousness:  The universe is a
+fundamentally finite thing.  The amount of information that can be
+&quot;embedded&quot; into any finite volume of space and time is bounded.  (Note
+that in Newtonian mechanics, or in GR, the value of even the single
+gravitational field is given by a real number at every point in space
+and time, so an arbitrarily small volume of space-time can &quot;hold&quot; an
+arbitrary amount of information.  This is not the case in QM; in fact,
+it's inherently incompatible with it.  See the Bekenstein Bound.)  Given
+this and a limit on the speed at which information can propagate, that
+there are fundamental physical limits on any computation follows.  &quot;All
+the rest is just detail.&quot;  :-)
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

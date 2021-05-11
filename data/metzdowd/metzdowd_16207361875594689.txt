@@ -1,0 +1,59 @@
+<PRE>On Wed, 27 Aug 2008 07:10:51 -0400
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+
+&gt;<i> 
+</I>&gt;<i> Bill Frantz writes, in part:
+</I>&gt;<i> -+--------------------------
+</I>&gt;<i>  | In the San Francisco Bay Area, they are using the transponder codes
+</I>&gt;<i>  | to measure how fast traffic is moving from place to place. They
+</I>&gt;<i>  | post the times to various destinations on the electric signs when
+</I>&gt;<i>  | there are no Amber alerts or other more important things to
+</I>&gt;<i>  | display. It is quite convenient, and they promise they don't use it
+</I>&gt;<i>  | to track people's trips.
+</I>&gt;<i>  |
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Look for general tracking to appear everywhere.
+</I>&gt;<i> Fast declining gasoline tax revenues will be
+</I>&gt;<i> replaced with per-mile usage fees, i.e., every
+</I>&gt;<i> major road becomes a toll road.  Most likely
+</I>&gt;<i> first in will be California and/or Oregon.
+</I>&gt;<i> 
+</I>&gt;<i> The relationship to this list may then be thin
+</I>&gt;<i> excepting that the collection and handling of
+</I>&gt;<i> such data remains of substantial interest.  Of
+</I>&gt;<i> course, everyone who carries a cell phone has
+</I>&gt;<i> already decided that convenience trumps security,
+</I>&gt;<i> at least the kind of security that says &quot;they
+</I>&gt;<i> can't misuse what they ain't got.&quot;
+</I>&gt;<i> 
+</I>There's a limit to how far they can go with that, because of the fear
+of people abandoning the transponders.  For example -- they absolutely
+will not use it for automated speeding tickets on, say, the NJ
+Turnpike, because if they did people would stop using their EZPasses.
+Given what a high percentage of drivers use them, especially at rush
+hour, they make a significant improvement in throughput and safety at
+toll plazas.  On congested roads, throughput is *extremely* important.
+
+As for usage-based driving -- the first question is the political will
+to do so.  In NYC, there's been tremendous resistance to things like
+tolls over the East River bridges or congestion charges for driving
+into much of Manhattan during the business day -- the Mayor tried very
+hard, but was unable to push it through the state legislature.  That
+said, I've seen some papers on how use of these transponders has
+desensitized people towards the actual tolls they pay, and hence to
+toll increases.
+
+Finally, the transponders may not matter much longer; OCR on license
+plates is getting that good.  As has already been mentioned, the 407
+ETR road in Toronto already relies on this to some extent; it won't be
+too much longer before the human assist is all but unneeded.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

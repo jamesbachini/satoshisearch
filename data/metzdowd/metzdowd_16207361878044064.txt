@@ -1,0 +1,35 @@
+<PRE>these have been circulating for hours, but they are content-free title  
+slides...
+
+[Moderator's note: I've read them and they're far from content
+ free. They give you a recipe for doing things like rewriting the mag
+ stripes on stored value cards to give you arbitrary balances, and
+ they even include actual examples. Also, Please Don't Top
+ Post. Please cut down quoted material to just the important content,
+ too. -Perry]
+
+On Aug 9, 2008, at 7:38 PM, Ivan Krsti&#263; wrote:
+
+&gt;<i> On Sat, 09 Aug 2008 17:11:11 -0400, &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A> 
+</I>&gt;<i> &gt;
+</I>&gt;<i> wrote:
+</I>&gt;&gt;<i>    Las Vegas - Three students at the Massachusetts Institute of
+</I>&gt;&gt;<i>    Technology (MIT) were ordered this morning by a federal court
+</I>&gt;&gt;<i>    judge to cancel their scheduled presentation about vulnerabilities
+</I>&gt;&gt;<i>    in Boston's transit fare payment system, violating their First
+</I>&gt;&gt;<i>    Amendment right to discuss their important research.
+</I>&gt;<i>
+</I>&gt;<i> &lt;<A HREF="http://www-tech.mit.edu/V128/N30/subway/Defcon_Presentation.pdf">http://www-tech.mit.edu/V128/N30/subway/Defcon_Presentation.pdf</A>&gt;
+</I>&gt;<i>
+</I>&gt;<i> -- 
+</I>&gt;<i> Ivan Krsti? &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

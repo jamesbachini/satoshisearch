@@ -1,0 +1,55 @@
+<PRE>re:
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#31">http://www.garlic.com/~lynn/aadsm27.htm#31</A> The bank fraud blame game
+
+slight addendas ...
+
+1) EU finread
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#finread">http://www.garlic.com/~lynn/subintegrity.html#finread</A>
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#assurance">http://www.garlic.com/~lynn/subintegrity.html#assurance</A>
+
+one of the issues that we looked at early on in x9.59 standard ... somewhat related
+to the EU finread ... was what proof did the financial institution have as to the 
+integrity of the originating end-point (for doing risk assessment purposes). With
+this motivation, X9.59 standard allowed for multiple digital signatures ... which
+could include device authentication for finread-like devices (giving some assurance
+as to the integrity of the originating end-point)
+
+2) liability
+
+there appears to be a lot more motivation for improving assurance in the online
+banking scenario ... say, as opposed to e-commerce and retail payments. in the
+e-commerce and retail payments ... financial institutions can charge off a lot
+of fraud to the merchants (buried in things like interchange fees). in the online
+banking scenario, merchants aren't part of the scene ... just leaving the consumer
+and the financial institutions as the responsible parties.
+
+....
+
+misc. recent financial news items ...
+
+Police arrest three suspects in credit card investigation (fraud)
+<A HREF="http://www.redlandsdailyfacts.com/news/ci_6262066">http://www.redlandsdailyfacts.com/news/ci_6262066</A>
+ACH Fraud: Clearing House Aims To Clean House
+<A HREF="http://www.banktechnews.com/article.html?id=200706260ZQVU91V">http://www.banktechnews.com/article.html?id=200706260ZQVU91V</A>
+Mobile wallets to replace payment cards - report
+<A HREF="http://www.finextra.com/fullstory.asp?id=17116">http://www.finextra.com/fullstory.asp?id=17116</A>
+Debit Scam used 'parasite' pin pads
+<A HREF="http://www.canada.com/vancouversun/story.html?id=773122d5-556f-4b50-87bc-2dc2ad205126&amp;k=24040">http://www.canada.com/vancouversun/story.html?id=773122d5-556f-4b50-87bc-2dc2ad205126&amp;k=24040</A>
+Shoppers 'easy prey' for debit card fraud
+<A HREF="http://www.canada.com/vancouversun/news/story.html?id=8e460eed-1bab-4848-9f4c-eefbaecc5ab8">http://www.canada.com/vancouversun/news/story.html?id=8e460eed-1bab-4848-9f4c-eefbaecc5ab8</A>
+
+... 
+
+in the early aads chip strawman (from the 90s)
+<A HREF="http://www.garlic.com/~lynn/x959.html#aads">http://www.garlic.com/~lynn/x959.html#aads</A>
+
+form-factor agnostic in user &quot;owned&quot; pda/cellphone were countermeasure
+to foreign, unfamiliar POS-terminals that possibly were compromised
+(i.e. paranoid consumers could have some responsible control over
+their own devices ... as opposed to POS-terminals at random merchants)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

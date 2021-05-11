@@ -1,0 +1,27 @@
+<PRE>
+Apparently some pranksters hijacked Comcast's DNS entries for a few
+hours:
+
+<A HREF="http://www.heise-online.co.uk/security/Comcast-domain-diverted-by-crackers--/news/110831">http://www.heise-online.co.uk/security/Comcast-domain-diverted-by-crackers--/news/110831</A>
+
+[Hat tip to Bill Squier for pointing the article out.]
+
+This is hardly the first time such a thing has happened. No great harm
+was done, but considerable harm could have been done.
+
+For example, one wonders what would happen if bank like Chase that
+foolishly trains their users to type passwords into non-https
+protected pages had their DNS hijacked for a while. (Indeed, given the
+fact that most users always ignore certificate warnings, even a pretty
+good bank that consistently used https would have serious trouble.)
+
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

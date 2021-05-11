@@ -1,0 +1,25 @@
+<PRE>Stefan Kelm wrote:
+&gt;&gt;<i> Wells Fargo is requiring their online banking customers to provide 
+</I>&gt;&gt;<i> answers to security questions such as these:
+</I>&gt;<i> 
+</I>&gt;<i> Does Wells Fargo really use the term &quot;security question&quot; here?
+</I>
+Yes it does. I'm a Wells Fargo customer and I had to set my &quot;security 
+questions&quot; yesterday in order to keep using their online banking system. 
+The resulting email notification said in part:
+
+&quot;Thank you for taking the time to set up your security questions. If we 
+ever need to confirm your identity, your ability to give the correct 
+answers to these questions will help us verify it's you.&quot;
+
+/psa
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/x-pkcs7-signature
+Size: 7338 bytes
+Desc: S/MIME Cryptographic Signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080807/50c31ad9/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20080807/50c31ad9/attachment.bin</A>&gt;
+</PRE>

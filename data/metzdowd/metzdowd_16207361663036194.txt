@@ -1,0 +1,63 @@
+<PRE>Perry E. Metzger wrote:
+ &gt; I think Steve is completely correct in the case of
+ &gt; cryptography. We have a lot of experience of real
+ &gt; world security failures these days, and they're not
+ &gt; generally the sort that crypto would fix.
+
+They are the sort that a different sort of way of using
+crypto could fix.
+
+Jason:
+ &gt;&gt; Authentication is exactly what I need in the case of
+ &gt;&gt; spam/phishing:
+
+Perry E. Metzger wrote:
+ &gt; People have said that for quite some time. However, I
+ &gt; doubt it would actually help. In the case of spam, all
+ &gt; that would end up happening is vast amounts of CPU
+ &gt; time being spent demonstrating that the made up
+ &gt; addresses on spam were associated with actual RSA
+ &gt; keys. (There is no practical limit to the number of
+ &gt; RSA keys that may be generated.)
+
+First, the phishing case:
+
+Assume that instead of logging in through a possibly
+hostile web page, people login using SRP built into the
+browser chrome.  Then phishing goes away, because the
+man in the middle gets no shared secrets.
+
+Next, the spam case, including spam offering high yield
+investments, spam promising millions of dollars stolen
+from starving Africans, Indian made viagra, porn sites,
+and two hundred and seventy tons of sugar.
+
+To fix spam, we need automatic whitelisting plus
+aggressive Baysian filtering.  At present this works
+fine, no crypto needed, because the attacker seldom
+bothers to adapt to your particular profile.  Tons of
+spam descend upon me, and is magically banished, sight
+unseen. When impersonation spam attacks become a serious
+problem, then we will think about how to use
+cryptography to beat them.  Sometimes I have to manually
+whitelist people, which Grandma could not do, but that
+is a user interface problem - observe that most IM
+systems make whitelisting easy enough for Grandma.
+
+ &gt; I would actually agree that we can implement operating
+ &gt; system strategies that make malware harder to write. I
+ &gt; don't know if it is likely that any current
+ &gt; techniques, even including the nearly unheard of use
+ &gt; of formal verification, would actually eliminate
+ &gt; malware.
+
+OLPC seems very nearly malware proof.  Malware would
+require unusual privileges, and there is no easy way to
+install software that requires unusual privileges on
+OLPC.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

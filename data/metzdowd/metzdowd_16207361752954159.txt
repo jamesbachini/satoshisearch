@@ -1,0 +1,32 @@
+<PRE>Matt's blog post [1] gets to the heart of the matter of what we can trust.
+
+I may have missed the discussion, but I ran across Netronome's 'SSL
+Inspector' appliance [2] today and with the recent discussion on this list
+regarding malicious hardware, I find this appliance appalling. 
+
+Basically a corporation can inject a SSL Trusted CA key in the keystore
+within their corporate operating system image and have this device generate
+a new server certificate to every SSL enabled website, signed by the
+Trusted CA, and handed to the client.  The client does a validation check
+and trusts the generated certificate, since the CA is trusted.  A very nice
+man-in-the-middle and would trick most casual computer users.
+
+I'm guessing these bogus certificates can be forged to look like the real
+thing, but only differ by the fingerprint and root CA that was used to sign
+it.  
+
+What are people's opinions on corporations using this tactic?  I can't
+think of a great way of alerting the user, but I would expect a pretty
+reasonable level of privacy while using an SSL connection at work.  
+
+Regards,
+Ryan
+
+[1] <A HREF="http://www.crypto.com/blog/hardware_security/">http://www.crypto.com/blog/hardware_security/</A>
+[2] <A HREF="http://www.netronome.com/web/guest/products/ssl_appliance">http://www.netronome.com/web/guest/products/ssl_appliance</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

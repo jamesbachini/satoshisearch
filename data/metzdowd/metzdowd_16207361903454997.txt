@@ -1,0 +1,35 @@
+<PRE>At 11:21 PM +0100 9/9/08, Dave Howe wrote:
+&gt;<i>Darren J Moffat wrote:
+</I>&gt;&gt;<i>  Warnings aren't enough in this context [ whey already exists ] the
+</I>&gt;&gt;<i>  only thing that will work is stopping the page being seen - replacing
+</I>&gt;&gt;<i>  it with a clearly worded explanation with *no* way to pass through
+</I>&gt;&gt;<i>  and render the page (okay maybe with a debug build of the browser but
+</I>&gt;&gt;<i>  not in the shipped product).
+</I>&gt;<i>
+</I>&gt;<i>One thing that concerns me is that in the new release of firefox, there
+</I>&gt;<i>appears to be NO way to get to a site that has a bad certificate (or
+</I>&gt;<i>self signed certificate) other than overriding the warning permanently -
+</I>&gt;<i>no &quot;ok let me see it, I have seen the warning and want to look just this
+</I>&gt;<i>once&quot; that the &quot;remember mismatched domains&quot; plugin for 2.x gave you.
+</I>
+That may concern you, but I consider it a feature. Instead of 
+teaching users to &quot;always click through the damn dialog boxes&quot;, FF3 
+says &quot;if you fell for it once, you're going to always fall for it so 
+we won't teach you bad habits&quot;. There are arguments for either 
+strategy.
+
+Given that few or none of us on this list are actually trained 
+interface experts, I'm sure we could debate this until Perry pulls 
+the moderator switch again. The salient point is that people who have 
+more stake in the game (Mozilla Inc.) have spent longer thinking 
+about this than we give them credit for and come to the design 
+decisions that they have.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

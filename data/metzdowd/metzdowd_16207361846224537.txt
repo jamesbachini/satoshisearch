@@ -1,0 +1,72 @@
+<PRE>Ben Laurie wrote:
+&gt;<i> OK, so you still have a PKI problem, in that you have to issue and 
+</I>&gt;<i> manage client certificates. How is this done?
+</I>&gt;<i> 
+</I>One man's meat .... :-).  (I don't necessarily view this as a problem
+Ben.  I've built up a career and a small business in the last 9 years
+doing just that.)
+
+Nevertheless, to answer the question, the PKI deployment is not part
+of the SKSML prtocol (other than the WSS header that carries the XML
+Signature and/or XML Encryption of the SOAP Body), but it is part of
+an EKMI.  (EKMI = PKI + SKMS).  A company deploying an EKMI must have,
+or must build a PKI and deploy the client/server certificates separately
+from the SKMS.
+
+While this might be viewed as a problem for some/many companies in the
+short-term, I fully anticipate that vendor implementations of SKMS will
+integrate with PKI software to manage this process seamlessly in the
+future.
+
+&gt;<i> I do not believe this is the case. DRM fails because the attacker has 
+</I>&gt;<i> physical possession of the system he is attacking.
+</I>&gt;<i> 
+</I>
+Which is why we are recommending that SKMS clients use hardware based
+modules (be it TPMs, smartcards, HSMs, etc.) to generate and store the
+Private Key used by SKMS client to decrypt the symmetric keys.  While
+even these can be attacked, the problem is now in a different domain
+than the SKSML protocol.
+
+&gt;&gt;<i>
+</I>&gt;&gt;<i> EKMI's goals are not to provide bullet-proof security.  It has more
+</I>&gt;&gt;<i> modest ambitions - to provide a management framework for incremental
+</I>&gt;&gt;<i> security, targeted at the right resource: the data, rather than the 
+</I>&gt;&gt;<i> network.
+</I>&gt;<i> 
+</I>&gt;<i> Are there any even vaguely modern systems that target the network for 
+</I>&gt;<i> security, or is this a straw man?
+</I>&gt;<i> 
+</I>
+What I meant to say is that EKMI's goal is to protect the data and not
+the network.
+
+&gt;<i> 
+</I>&gt;<i> If it is up to them, then why bother with this verification process? 
+</I>&gt;<i> This sounds like yet more security theatre to me.
+</I>&gt;<i> 
+</I>
+I'm not sure which verification process you're referring to.
+
+No, this is not security theater.  EKMI does not guarantee anything, nor
+does it promise unbreakable anything.  Everything in EKMI is a choice.
+You get to choose the strength of your keys, your PKI, your policies,
+your procedures and your implementation.  All we're offering is a tool
+that does something specific to the extent that the specifications and
+the technology allows.  Nothing more, nothing less.  If you - as a
+cryptographer - say that AES-156 will do X under these conditions, then
+EKMI will support X under those conditions.  EKMI only adds the ability
+to manage a large number of keys centrally, and to ease many of the
+administrative burdens we see that large-scale key-management can cause.
+Everything it does is constrained by the limitations of the underlying
+technology components, polices and practices.  But you still have to
+make the choice.
+
+Arshad Noor
+StrongAuth, Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,26 @@
+<PRE>On Fri, Oct 24, 2008 at 03:20:24PM -0700, John Denker wrote:
+&gt;<i> On 10/24/2008 01:12 PM, Jack Lloyd wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; .... is a very different statement from saying that
+</I>&gt;<i> &gt; lacking such an attacker, you can safely assume your 'pools of
+</I>&gt;<i> &gt; entropy' (to quote the original question) are independent in the
+</I>&gt;<i> &gt; information-theoretic sense.
+</I>&gt;<i> 
+</I>&gt;<i> The question, according to the original poster, is not 
+</I>&gt;<i> whether it is &quot;safe&quot; to assume that one of the entropy
+</I>&gt;<i> sources can be trusted.  Safe or not, the question explicitly 
+</I>&gt;<i> assumed that one of the sources was trusted ... and asked 
+</I>&gt;<i> what the consequences of that assumption would be.
+</I>
+Perhaps our seeming disagreement is due to a differing interpretation
+of 'trusted'. I took it to mean that at least one pool had a
+min-entropy above some security bound. You appear to have taken it to
+mean that it will be uniform random?
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

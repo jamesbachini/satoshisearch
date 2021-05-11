@@ -1,0 +1,20 @@
+<PRE>Allen wrote:
+&gt;<i> During the transmission from an ATM machine 4 numeric characters are 
+</I>&gt;<i> probably safe because the machines use dedicated dry pair phone lines 
+</I>&gt;<i> for the most part, as I understand the system. This, combined with 
+</I>&gt;<i> triple DES, makes it very difficult to compromise or do a MIM attack 
+</I>&gt;<i> because one can not just tap into the lines remotely. 
+</I>
+We are in agreement. Even short PINs could be safe in a bank-side 
+authenticated (no MITM) SSL connection with 128-bit encryption. 
+What's also needed is to block multiple attempts after 3 or 4 tries, 
+in both the ATM and the SSL online scenarios.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,51 @@
+<PRE>On Tue, 13 May 2008 14:10:45 +0100
+Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+
+&gt;<i> Debian have a stunning example of how blindly fixing &quot;problems&quot;
+</I>&gt;<i> pointed out by security tools can be disastrous.
+</I>&gt;<i> 
+</I>&gt;<i> I've blogged about it here: <A HREF="http://www.links.org/?p=327">http://www.links.org/?p=327</A>
+</I>&gt;<i> 
+</I>&gt;<i> Vendors Are Bad For Security
+</I>&gt;<i> 
+</I>&gt;<i> I?ve ranted about this at length before, I?m sure - even in print, in 
+</I>&gt;<i> O?Reily?s Open Sources 2. But now Debian have proved me right (again) 
+</I>&gt;<i> beyond my wildest expectations. Two years ago, they ?fixed? a
+</I>&gt;<i> ?problem? in OpenSSL reported by valgrind[1] by removing any
+</I>&gt;<i> possibility of adding any entropy to OpenSSL?s pool of randomness[2].
+</I>&gt;<i> 
+</I>&gt;<i> The result of this is that for the last two years (from Debian?s
+</I>&gt;<i> ?Edgy? release until now), anyone doing pretty much any crypto on
+</I>&gt;<i> Debian (and hence Ubuntu) has been using easily guessable keys. This
+</I>&gt;<i> includes SSH keys, SSL keys and OpenVPN keys.
+</I>&gt;<i> 
+</I>....
+&gt;<i> 
+</I>&gt;<i> [2] Valgrind tracks the use of uninitialised memory. Usually it is
+</I>&gt;<i> bad to have any kind of dependency on uninitialised memory, but
+</I>&gt;<i> OpenSSL happens to include a rare case when its OK, or even a good
+</I>&gt;<i> idea: its randomness pool. Adding uninitialised memory to it can do
+</I>&gt;<i> no harm and might do some good, which is why we do it. It does cause
+</I>&gt;<i> irritating errors from some kinds of debugging tools, though,
+</I>&gt;<i> including valgrind and Purify. For that reason, we do have a flag
+</I>&gt;<i> (PURIFY) that removes the offending code. However, the Debian
+</I>&gt;<i> maintainers, instead of tracking down the source of the uninitialised
+</I>&gt;<i> memory instead chose to remove any possibility of adding memory to
+</I>&gt;<i> the pool at all. Clearly they had not understood the bug before
+</I>&gt;<i> fixing it.
+</I>&gt;<i> 
+</I>Ben: I haven't looked at the actual code in question -- are you saying
+that the *only* way to add more entropy is via this pool of
+uninitialized memory?  If so, is there any support in the relevant
+standards that dictate that this memory MUST NOT be cleared?  I was
+thinking of things like SELinux, which may (or may not) clear memory
+areas before handing it to an application.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

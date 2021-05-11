@@ -1,0 +1,50 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+&gt;<i> With the caveat that I am reading mail in 
+</I>&gt;<i> reverse order (i.e., panic-mode), I do have
+</I>&gt;<i> to say one thing and it isn't even to mount a
+</I>&gt;<i> stirring defense of Kerberos, which does not
+</I>&gt;<i> need defending anyhow...
+</I>&gt;<i> 
+</I>&gt;<i> The design space for practical network security
+</I>&gt;<i> has always been:
+</I>&gt;<i> 
+</I>&gt;<i>    I'm OK
+</I>&gt;<i>    You're OK
+</I>&gt;<i>    The Internet is a problem
+</I>&gt;<i> 
+</I>&gt;<i> A gathering storm of compromised machines, now
+</I>&gt;<i> variously estimated in the 30-70% range depending
+</I>&gt;<i> on with whom you are talking, means that the 
+</I>&gt;<i> situation is now:
+</I>&gt;<i> 
+</I>&gt;<i>    I'm OK, I think
+</I>&gt;<i>    I have to assume that you are 0wned
+</I>&gt;<i>    The Internet might make this worse
+</I>&gt;<i> 
+</I>&gt;<i> Put differently, network security has now come
+</I>&gt;<i> close to Spaf's famous line about netsec in the
+</I>&gt;<i> absence of host security being assured delivery
+</I>&gt;<i> of gold bars from a guy living in a cardboard box
+</I>&gt;<i> to a guy sleeping on a park bench.
+</I>
+BTW the original quote seems to be:
+
+&quot;Secure web servers are the equivalent of heavy armored cars. The 
+problem is, they are being used to transfer rolls of coins and checks 
+written in crayon by people on park benches to merchants doing business 
+in cardboard boxes from beneath highway bridges. Further, the roads are 
+subject to random detours, anyone with a screwdriver can control the 
+traffic lights, and there are no police.&quot;
+
+-- <A HREF="http://homes.cerias.purdue.edu/~spaf/quotes.html">http://homes.cerias.purdue.edu/~spaf/quotes.html</A>
+
+/psa
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/x-pkcs7-signature
+Size: 7338 bytes
+Desc: S/MIME Cryptographic Signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080804/4003967c/attachment.bin">http://www.metzdowd.com/pipermail/cryptography/attachments/20080804/4003967c/attachment.bin</A>&gt;
+</PRE>

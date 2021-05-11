@@ -1,0 +1,49 @@
+<PRE>On Tue, 11 Dec 2007 13:49:19 +1000
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; wrote:
+
+&gt;<i> Steven M. Bellovin wrote:
+</I>&gt;<i> &gt; It's moderately complex if you're trying to conserve bandwidth
+</I>&gt;<i> &gt; (which translates to power) and preserve a datagram model.  The
+</I>&gt;<i> &gt; latter constraint generally rules out stream ciphers; the former
+</I>&gt;<i> &gt; rules out things like encrypting the keystroke plus seven random
+</I>&gt;<i> &gt; bytes with a 64-bit block cipher.  Power is also an issue if your
+</I>&gt;<i> &gt; cipher uses very much CPU time or custom hardware.
+</I>&gt;<i> &gt; &gt; I&quot;m sure most readers of this list can propose *some* solution.
+</I>&gt;<i> &gt; &gt; It's
+</I>&gt;<i> &gt; instructive, though, to consider everything that needs to go into a
+</I>&gt;<i> &gt; full system solution, including the ability to resynchronize cipher
+</I>&gt;<i> &gt; states and the need to avoid confusing naive users if the cat
+</I>&gt;<i> &gt; happened to fall asleep on the space bar while the CPU was turned
+</I>&gt;<i> &gt; off.
+</I>&gt;<i> 
+</I>&gt;<i> Use CFB mode.  That takes care of all the above problems.  You can
+</I>&gt;<i> transmit any small bunch of bits, don't need to transmit a complete
+</I>&gt;<i> block, and if the keyboard and the receiver get out sync, the
+</I>&gt;<i> keyboard's signal will be decrypted as garbage for the first 128
+</I>&gt;<i> bits.  If one has the keyboard regularly transmit &quot;no key's pressed&quot;
+</I>&gt;<i> from time to time, and if valid key press representations have a
+</I>&gt;<i> couple of check bits redundancy, with several keypresses being
+</I>&gt;<i> ignored after any invalid key signal, keyboard and receiver will
+</I>&gt;<i> synchronize with no fuss.
+</I>&gt;<i> 
+</I>
+Believe it or not, I thought of CFB...
+
+Sending keep-alives will do nasties to battery lifetime, I suspect;
+most of the time, you're not typing.  As for CFB -- with a 64-bit block
+cipher (you want them to use DES? they're not going to think of anything
+different), it will take 9 keypresses to flush the buffer.  With AES
+(apparently your assumption), it will take 17 keypresses.  This isn't
+exactly muggle-friendly.  Just think of the text in the instructions...
+Redundancy?  I wonder how much is needed to avoid problems.  It has to
+be a divisor of the cipher block size, which more or less means 8 extra
+bits.  How much will that cost in battery life?
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

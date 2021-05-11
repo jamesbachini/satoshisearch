@@ -1,0 +1,27 @@
+<PRE>On Fri, 8 Aug 2008, Dave Korn wrote:
+|<i> &gt; Isn't this a good argument for blacklisting the keys on the client
+</I>|<i> &gt; side?
+</I>|<i> 
+</I>|<i> Isn't that exactly what &quot;Browsers must check CRLs&quot; means in this
+</I>|<i> context anyway?  What alternative client-side blacklisting mechanism
+</I>|<i> do you suggest?
+</I>Since the list of bad keys is known and fairly short, one could
+explicitly check for them in the browser code, without reference to
+any external CRL.
+
+Of course, the browser itself may not see the bad key - it may see key
+for something that *contains* a bad key.  So such a check would not be
+complete.  Still, it couldn't hurt.
+
+One could put similar checks everywhere that keys are used.  Think of it
+as the modern version of code that checks for and rejects DES weak and
+semi-weak keys.  The more code out there that does the check, the faster
+bad keys will be driven out of use.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

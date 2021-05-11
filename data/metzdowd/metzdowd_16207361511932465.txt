@@ -1,0 +1,30 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+&gt;<i> I think it might be fun to start up a collection of snake oil
+</I>&gt;<i> cryptographic methods and cryptanalytic attacks against them.  It
+</I>&gt;<i> would be more fun for me than crossword puzzles, and educational for
+</I>&gt;<i> all the would-be cryptographers.
+</I>
+One good candidate would be Enigma 2000, now available as Enigma 2000 Plus:
+
+<A HREF="http://www.drchip.de/html/enigma_2000_plus.html">http://www.drchip.de/html/enigma_2000_plus.html</A>
+
+Unfortunately, there is little information available, but from what I 
+saw a few years ago, this is a polyalphabetic cipher with a large key.
+
+ From the web site: &quot;Die Kombination aus der Vernam-Codierung 
+(One-Time-Pad) und des von T. Heidel zum Patent angemeldeten Verfahrens 
+macht eine &quot;bis zu beweisbar sichere Dateiverschl&#252;sselung&quot; m&#246;glich.&quot;
+
+Or, in English: &quot;The combination of Vernam encoding (One-Time-Pad) and 
+the patent-pending approach by T. Heidel enables &quot;up to provably secure 
+data encryption&quot;.&quot;
+
+Fun,
+
+Stephan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,28 @@
+<PRE>Ben Laurie wrote:
+ &gt; Then we get to the next problem: we don't trust the
+ &gt; device with the keypad and display. So, we need to add
+ &gt; that to the GTCYM (Gadget That Controls Your Money).
+ &gt;
+ &gt; And so we end up at the position that we have ended up
+ &gt; at so many times before: the GTCYM has to have a
+ &gt; decent processor, a keyboard and a screen, and must be
+ &gt; portable and secure.
+
+Sounds remarkably like a cell phone with an NFC
+
+ &gt; One day we'll stop concluding this and actually do
+ &gt; something about it.
+
+Some of the poorest third world countries and some ex
+communist countries are adopting mobile phone banking,
+for example &lt;<A HREF="https://www.mpay.pl/en/">https://www.mpay.pl/en/</A>&gt;, perhaps because
+they are not weighed down with twentieth century
+infrastructure, but until cell phones come routinely
+equipped with NFC, you cannot use a cell phone to pay
+for groceries.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

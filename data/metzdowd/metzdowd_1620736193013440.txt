@@ -1,0 +1,51 @@
+<PRE>L.S.,
+
+&gt;<i> If I have N pools of entropy (all same size X) and I pool them
+</I>&gt;<i> together with XOR, is that as good as it gets?
+</I>&gt;<i> 
+</I>&gt;<i> My assumptions are:
+</I>&gt;<i> 
+</I>&gt;<i>  * I trust no single source of Random Numbers.
+</I>&gt;<i>  * I trust at least one source of all the sources.
+</I>&gt;<i>  * no particular difficulty with lossy combination.
+</I>I take the last item to mean that you do not mind wasting entropy but
+want to be sure the resulting random number is unpredictable.
+
+If you add one additional assumption:
+* The sources are independent of each other
+then the XOR of the random sources will be at least as unpredictable as
+the most unpredictable individual random source (to keep away from the
+entropy discussion). As far as I can se, this the &quot;if at least one
+source is unpredictable for a workload of x, the resulting random is
+also at least that unpredictable&quot; property that you seem to be looking
+for.
+
+If the sources are not independent, in the most extreme case: the sources
+are the same, the result is not so good. XORing in the same RNG stream
+twice, however good the RNG, is not so useful ;-)
+
+Without the threatmodel, I am not sure if this is a problem for you, but 
+if the attacker has control or knowledge of some of the sources, he 
+also knows the XOR of the remaining ones. In the case he knows all but
+one sources, and the remaining source is not so unpredictable (LFSR,
+poorly biased noise source), the result can be quite predictable (and in
+weak RNG designs, the remaining source might be compromised).
+Note that this could also be used to force the combined RNG to more
+likely generate a chosen output.
+
+Using hashfunctions to combine the randoms makes it computationally
+harder for such chosen results to be generated, it quickly becomes
+effectively a search problem for hash-collisions where you have only
+limited choice on the input. Also temporary lulls in the quality of the
+random sources are much better handled. Peter Gutmann's dissertation
+has a very good description of what he did for hardening his cryptolib's
+the random generation from many such attacks/mistakes.
+
+With kind regards,
+Wouter Slegers
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

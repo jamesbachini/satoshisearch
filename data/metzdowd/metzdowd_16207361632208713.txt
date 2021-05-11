@@ -1,0 +1,66 @@
+<PRE>What puzzles me in all this long and rather arcane discussion is 
+why isn't the solution of using a double hash - MD5 *and* SHA 
+whatever. The odds of find a double collision go way up.
+
+Some open source software people are already doing this. I've 
+played around with the sample files that are out there and find 
+an easy way to do this but I don't have either the horsepower or 
+skill to be at all definitive.
+
+My gut tells me that using two processes that use different 
+algorithms, even though compromised, will raise the bar so high 
+that it would be secure for a long time.
+
+At my skill level and horsepower I can't find even a single way 
+to do this with CRC32 and MD5. Granted, that certainly doesn't 
+mean a whole lot.
+
+But to take a real world example, a safety deposit box, the two 
+keys have to work together to open the box. It really does not 
+matter is one is a Yale and the other a combination, either one 
+of which are easily compromised by themselves, but together you 
+would have to find both at the same time to open the box, a lot 
+tougher problem.
+
+Best,
+
+Allen
+
+Francois Grieu wrote:
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">william.allen.simpson at gmail.com</A> wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i>  Dp := any electronic document submitted by some person, converted to its
+</I>&gt;&gt;<i>        canonical form
+</I>&gt;&gt;<i>  Cp := a electronic certificate irrefutably identifying the other person
+</I>&gt;&gt;<i>        submitting the document
+</I>&gt;&gt;<i>  Cn := certificate of the notary
+</I>&gt;&gt;<i>  Tn := timestamp of the notary
+</I>&gt;&gt;<i>  S() := signature of the notary
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>  S( MD5(Tn || Dp || Cp || Cn) ).
+</I>&gt;<i> 
+</I>&gt;<i> In this context, the only thing that guards agains an attack by
+</I>&gt;<i> &quot;some person&quot; is the faint hope that she can't predict the Tn
+</I>&gt;<i> that the notary will use for a Dp that she submits.
+</I>&gt;<i> 
+</I>&gt;<i> That's because if Tn is known (including chosen) to &quot;some person&quot;,
+</I>&gt;<i> then (due to the weakness in MD5 we are talking about), she can
+</I>&gt;<i> generate Dp and Dp' such that
+</I>&gt;<i>   S( MD5(Tn || Dp || Cp || Cn) ) = S( MD5(Tn || Dp' || Cp || Cn) )
+</I>&gt;<i> whatever Cp, Cn and S() are.
+</I>&gt;<i> 
+</I>&gt;<i> If Tn was hashed after Dp rather than before, poof goes security.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i>   Francois Grieu
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

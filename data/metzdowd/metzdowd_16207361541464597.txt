@@ -1,0 +1,13 @@
+<PRE>Note in the following Blog entry Mr. Schneier is criticizing NOT the
+product but idiotic media coverage:
+<A HREF="http://www.schneier.com/blog/archives/2007/09/idiotic_cryptog.html">http://www.schneier.com/blog/archives/2007/09/idiotic_cryptog.html</A>
+
+
+saqib
+<A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

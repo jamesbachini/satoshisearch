@@ -1,0 +1,37 @@
+<PRE>[British shoppers were promised high security by switching from credit
+cards to cards that have a chip in them and require that a PIN be entered
+for each transaction.  That was the reason for changing everything over,
+at high cost in both money and inconvenience to shops and shoppers.  Perhaps
+chip-and-pin HAS reduced overall fraud -- but check out this elaborate 
+scheme that beat their security for tens of millions of UK pounds.  
+
+Now, why is this being announced by the US National Counter-
+intelligence Executive, Joel Brenner?  Because none of the banks or
+stores is willing to admit it?  Still, why publicize it at all?  I
+find his quote very telling: &quot;Previously only a nation state's
+intelligence service would have been capable of pulling off this type
+of operation.&quot;  How would he know this?  Which nation-states have done
+similar types of operation, and why isn't he telling the public about
+THEM instead of about these other criminals?
+
+I've long suspected that NSA's (still secret) budget (approved by a
+tiny number of manipulated Congressmen) has been, uh, augmented, by
+its ability to manipulate financial markets using inside information
+obtained from domestic and global mass wiretaps.  You don't suppose
+NSA is behind the recent market volatility, do you?  It's easiest to
+skim off billions when trillions are hurriedly sloshing around in a
+panic.  --gnu]
+
+Forwarded-By: Kurt Albershardt &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">kurt at nv.net</A>&gt;
+
+Clever (and a tad frightening)
+
+<A HREF="http://www.telegraph.co.uk/news/newstopics/politics/lawandorder/3173346/Chip-and-pin-scam-has-netted-millions-from-British-shoppers.html">http://www.telegraph.co.uk/news/newstopics/politics/lawandorder/3173346/Chip-and-pin-scam-has-netted-millions-from-British-shoppers.html</A>
+
+<A HREF="http://www.telegraph.co.uk/news/worldnews/asia/pakistan/3173161/Credit-card-scam-How-it-works.html">http://www.telegraph.co.uk/news/worldnews/asia/pakistan/3173161/Credit-card-scam-How-it-works.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

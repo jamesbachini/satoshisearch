@@ -1,0 +1,29 @@
+<PRE>On 31 August 2007 02:44, travis+ml-cryptography wrote:
+
+&gt;<i> I think it might be fun to start up a collection of snake oil
+</I>&gt;<i> cryptographic methods and cryptanalytic attacks against them.
+</I>
+  I was going to post about &quot;crypto done wrong&quot; after reading this item[*]:
+<A HREF="http://www.f-secure.com/weblog/archives/archive-082007.html#00001263">http://www.f-secure.com/weblog/archives/archive-082007.html#00001263</A>
+
+  I can't tell exactly what, but they have to be doing *something* wrong if
+they think it's necessary to use file-hiding hooks to conceal... well,
+anything really.  The hash of the fingerprint should be the symmetric key used
+to encrypt either files and folders directly on the thumbdrive, or perhaps a
+keyring file containing ADKs of some description, but if you do crypto right,
+you shouldn't have to conceal or obfuscate anything at all.
+
+
+    cheers,
+      DaveK
+[*] - See also 
+<A HREF="http://www.f-secure.com/weblog/archives/archive-082007.html#00001264">http://www.f-secure.com/weblog/archives/archive-082007.html#00001264</A>
+<A HREF="http://www.f-secure.com/weblog/archives/archive-082007.html#00001266">http://www.f-secure.com/weblog/archives/archive-082007.html#00001266</A> 
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

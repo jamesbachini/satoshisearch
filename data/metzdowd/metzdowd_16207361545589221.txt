@@ -1,0 +1,23 @@
+<PRE>On Sep 12, 2007, at 7:06 AM, Udhay Shankar N wrote:
+&gt;<i> Sounds like an interesting idea - using SRAM state as a source of  
+</I>&gt;<i> randomness. Any of the folks here willing to comment on this?
+</I>
+If you care about your randomness, you don't want to be making the  
+assumption that a source is random because &quot;it sometimes looks that  
+way, sort of&quot;. You want to be using a source that's assumed random  
+because, as far as you know, it's very hard for it to be any other way.
+
+Clearly, SRAM state falls into the former category, and there are  
+lots and lots of variables keeping it firmly outside the latter. This  
+means the usual wisdom applies: if you really need the extra entropy,  
+mix some of these SRAM state bits into your pool, but make sure  
+you're also feeding the pool from at least one source about whose  
+randomness you can reason strongly.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

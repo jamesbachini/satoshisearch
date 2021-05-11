@@ -1,0 +1,53 @@
+<PRE>Hi Jeff -
+&gt;<i> How wise (in a real-world sense) is it, in a protocol specification, to 
+</I>&gt;<i> specify that one simply obtain an ostensibly random value, and then use that 
+</I>&gt;<i> value directly as the signature key in, say, an HMAC-based signature, without 
+</I>&gt;<i> any further stipulated checking and/or massaging of the value before such use?
+</I>
+I think it's OK, as long as it is understood that the random number
+generator should be of good quality. If it is not, I don't know that
+checking and/or massaging will help much.
+
+&gt;<i> E.g., here's such a specfication excerpt and is absolutely everything said in 
+</I>&gt;<i> the spec wrt obtaining said signature keys:
+</I>&gt;<i>
+</I>&gt;<i>   When generating MAC keys, the recommendations in [RFC1750] SHOULD be 
+</I>&gt;<i> followed.
+</I>
+One point, RFC1750 has been superceded by RFC4086.
+
+&gt;<i>   ...
+</I>&gt;<i>   The quality of the protection provided by the MAC depends on the randomness of
+</I>&gt;<i>   the shared MAC key, so it is important that an unguessable value be used.
+</I>&gt;<i>
+</I>&gt;<i> How (un)wise is this, in a real-world sense? 
+</I>
+It seems pretty reasonable to me. They are referring to an RFC with
+lots of good advice about random number generators, and they emphasize
+that the key value should be unguessable. It's probably out of scope to
+go into a lot more detail than that. Referring to other standards like
+RFC1750/4086 is the right way to handle this kind of issue.
+
+&gt;<i> [yes, I'm aware that using a only a SHOULD here leaves a huge door open 
+</I>&gt;<i> compliance-wise, but that's a different issue]
+</I>
+I am the co-author of the OpenPGP Standard, RFC4880. All we say is:
+
+       The sending OpenPGP generates a random number to be used as a
+       session key for this message only.
+
+and
+
+   * Certain operations in this specification involve the use of random
+     numbers.  An appropriate entropy source should be used to generate
+     these numbers (see [RFC4086]).
+
+Not all that different in thrust than the spec you are looking at.
+
+Hal
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

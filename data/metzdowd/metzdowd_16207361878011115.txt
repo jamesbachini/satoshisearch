@@ -1,0 +1,20 @@
+<PRE>On Thu, 2008-08-21 at 10:26 -0700, &quot;Hal Finney&quot; wrote:
+&gt;<i> Ron Rivest presented his (along with a dozen other people's) new hash,
+</I>&gt;<i> MD6, yesterday at Crypto.
+</I>
+The slides for this presentation are available from Ronald's website:
+
+<A HREF="http://people.csail.mit.edu/rivest/Rivest-TheMD6HashFunction.ppt">http://people.csail.mit.edu/rivest/Rivest-TheMD6HashFunction.ppt</A>
+
+-- 
+Dustin D. Trammell
+Security Researcher
+BreakingPoint Systems, Inc.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080822/fc64e234/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080822/fc64e234/attachment.pgp</A>&gt;
+</PRE>

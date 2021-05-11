@@ -1,0 +1,16 @@
+<PRE>
+Nothing terribly new here -- short interview with someone who bought
+an RFID credit card reader on ebay for $8 and demonstrates getting
+people's credit card information at short distances using it. Still,
+it is interesting to see how trivial it is to do.
+
+<A HREF="http://www.boingboing.net/2008/03/19/bbtv-how-to-hack-an.html">http://www.boingboing.net/2008/03/19/bbtv-how-to-hack-an.html</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

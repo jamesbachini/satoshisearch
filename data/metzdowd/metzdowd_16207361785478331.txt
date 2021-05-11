@@ -1,0 +1,14 @@
+<PRE>
+I'd been wondering for years when someone would set malware up to run
+in systems management mode on x86 processors. Now someone has done it:
+
+<A HREF="http://www.pcworld.com/businesscenter/article/145703/hackers_find_a_new_place_to_hide_rootkits.html">http://www.pcworld.com/businesscenter/article/145703/hackers_find_a_new_place_to_hide_rootkits.html</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

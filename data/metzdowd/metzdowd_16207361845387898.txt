@@ -1,0 +1,23 @@
+<PRE>First off, big props to Dan for getting this problem fixed in a 
+responsible manner. If there were widespread real attacks first, it 
+would take forever to get fixes out into the field.
+
+However, we in the security circles don't need to spread the 
+&quot;Kaminsky finds&quot; meme. Take a look at 
+&lt;<A HREF="http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/">http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/</A>&gt;. 
+The first draft of this openly-published document was in January 
+2007. It is now in WG last call.
+
+The take-away here is not that &quot;Dan didn't discover the problem&quot;, but 
+&quot;Dan got it fixed&quot;. An alternate take-away is that IETF BCPs don't 
+make nearly as much difference as a diligent security expert with a 
+good name.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

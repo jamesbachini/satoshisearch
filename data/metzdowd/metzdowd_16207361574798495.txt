@@ -1,0 +1,85 @@
+<PRE>No comment from me on the appropriateness.  From Computerworld.
+
+ 							-- Jerry
+
+
+Quantum cryptography to secure ballots in Swiss election
+
+Ellen Messmer
+
+October 11, 2007 (Network World) Swiss officials are using quantum
+cryptography technology to protect voting ballots cast in the Geneva
+region of Switzerland during parliamentary elections to be held Oct. 21,
+marking the first time this type of advanced encryption will be used for
+election protection purposes.
+
+Still considered an area of advanced research, quantum cryptography uses
+photons to carry encryption keys to secure communications over
+fiber-optic lines and can automatically detect if anyone is trying to
+eavesdrop on a communications stream. For the Swiss ballot-collection
+process, the quantum cryptography system made by id Quantique will be
+used to secure the link between the central ballot-counting station in
+downtown Geneva and a government data center in the suburbs.
+
+&quot;We would like to provide optimal security conditions for the work of
+counting the ballots,&quot; said Robert Hensler, the Geneva State Chancellor,
+in a statement issued today. &quot;In this context, the value added by
+quantum cryptography concerns not so much protection from outside
+attempts to interfere as the ability to verify that the data have not
+been corrupted in transit between entry and storage.&quot;
+
+The use of quantum cryptography in the voting process will showcase
+technology developed in Switzerland. The firm id Quantique, based in
+Carouge, grew out of research done at the University of Geneva by
+Professor Nicolas Gisin and his team back in the mid-1990s.
+
+According to id Quantique's CEO Gregoire Ribordy, the firm's Cerberis
+product, developed in collaboration with Australian company Senetas,
+will be used for the point-to-point encryption of ballot information
+sent over a telecommunications line from the central ballot-counting
+station to the government data center.
+
+Ribordy said the Swiss canton of Geneva -- there are 26 cantons
+throughout all Switzerland -- has about 200,000 registered voters who
+will either go to the polls on Oct. 21 and cast their vote, or vote by
+mail. &quot;The votes cast by mail are all collected in the days before the
+election and all brought to the central counting station on Oct. 21,&quot;
+Ribordy said.
+
+&quot;Once the election is closed -- at noon on Sunday, Oct. 21 -- the sealed
+ballot boxes of all the polling stations are brought to the central
+counting station, where they are opened and where the votes are mixed
+with the mail votes. Counting them is then manually done at the central
+counting station. People counting the votes at this central station use
+computers to transfer the counts to the data center of the canton of
+Geneva,&quot; Ribordy explained.
+
+He said the quantum cryptography system is ready to be put into
+action. Ribordy doesn't think the high-speed link has been encrypted by
+any means in the past, but he added that the IT department of the Swiss
+government is not sharing a lot of information on certain details for
+security reasons.
+
+The use of quantum cryptography in the Swiss election marks the start of
+the &quot;SwissQuantum&quot; project managed by Professor Gisin, with support from
+the National Center of Competence in Quantum Photonics Research in
+Switzerland.
+
+&quot;Protection of the federal elections is of historical importance in the
+sense that, after several years of development and experimentation, this
+will be the first use of the 1GHz quantum encrypter, which is
+transparent for the user, and an ordinary fiber-optic line to send data
+endowed with relevance and purpose,&quot; said Professor Gisin in a prepared
+statement. &quot;So this occasion marks quantum technology's real debut.&quot;
+
+The SwissQuantum project aims to set up a pilot communications network
+throughout Geneva. Supporters compare it with that of the first Internet
+links in the United States in the 1970s. The Swiss are also expected to
+showcase the quantum cryptography project during the ITU Telecom World
+event being held in Geneva this week.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

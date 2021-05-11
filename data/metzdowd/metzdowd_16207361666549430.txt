@@ -1,0 +1,24 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> 
+</I>&gt;<i> That's not practical. If you're a large online merchant, and your
+</I>&gt;<i> automated systems are picking up lots of fraud, you want an automated
+</I>&gt;<i> system for reporting it. Having a team of people on the phone 24x7
+</I>&gt;<i> talking to your acquirer and reading them credit card numbers over the
+</I>&gt;<i> phone, and then expecting the acquirer to do something with them when
+</I>&gt;<i> they don't have an automated system either, is just not reasonable.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>
+But how can the issuer know that the merchant's fraud detection systems 
+work, for any value of &quot;work&quot;? This could just become one more avenue 
+for denial of service, where a hacked online merchant suddenly reports 
+millions of cards as compromised.  I'm sure there is some interesting 
+work to be done here.
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

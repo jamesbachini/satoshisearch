@@ -1,0 +1,53 @@
+<PRE>
+&quot;Steven M. Bellovin&quot; writes, in part:
+-+-----------------------------------
+ | There's a limit to how far they can go with that, because of the fear
+ | of people abandoning the transponders.
+ | &lt;snip&gt;
+ | As for usage-based driving -- the first question is the political will
+ | to do so.
+ | &lt;snip&gt;
+ | Finally, the transponders may not matter much longer; OCR on license
+ | plates is getting that good.
+ | 
+
+
+I don't think whether it is a transponder or not
+actually matters, Steve, since, as you say, OCR
+of the license plates makes whether a transponder
+is in place totally irrelevant.
+
+As to public resistance -- look at the revenue
+coming in to, say, Chicago from the red-light
+cameras and tell me that this won't spread.
+Similarly, per-mile road-use pricing will be
+all about revenue enhancement but it will be
+painted DHS-faireness-green (&quot;So as to fairly
+fund the maintainance of this State's critical
+infrastructure, this Act converts the funding
+mechanisms over to a fairer road-use policy
+but, at the same time, it leaves in place the
+State gasoline tax, thereby penalizing the
+people who continue to drive gas guzzlers&quot;).
+
+Which leads back to the recording of travel
+and the handling of those recordings.  When
+New Jersey signed up with EZ-Pass it required
+the company involved to retain toll records
+for ten years (as an aid to law enforcement).
+Since that is the same company in lots of
+states even if it is called something else
+(like FastLane in Massachusetts), the rational
+thing for the company to do is to just keep
+everything forever.  With disk prices falling
+as they are, keeping everything is cheaper
+than careful selective deletion, that's for
+sure.
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,97 @@
+<PRE>On 10/25/2008 04:40 AM, IanG gave us some additional information.
+
+Even so, it appears there is still some uncertainty as to
+interpretation, i.e. some uncertainty as to the requirements
+and objectives.
+
+I hereby propose a new scenario.  It is detailed enough to
+be amenable to formal analysis.  The hope is that it will
+satisfy the requirements and objectives ... or at least
+promote a more precise discussion thereof.
+
+We start with a group comprising N members (machines or 
+persons).  Each of them, on demand, puts out a 160 bit 
+word, called a &quot;member&quot; word.  We wish to combine these 
+to form a single word, the &quot;group&quot; word, also 160 bits 
+in length.
+
+We must find a combining function.  The primary objective
+is to maximize the entropy of the group word.  A secondary
+objective is computational simplicity.
+
+The members can be categorized as follows:
+ a) Some of them are abjectly broken.  Their outputs have
+  zero entropy density.  Constant outputs and/or predictable
+  outputs fall into this category.
+ b) Some of them are malicious.  Their outputs may appear
+  random, but are in fact predictable by our adversary.
+ c) M of them have an entropy density greater than XX.
+  As a concrete example, we consider the case where XX=50%, 
+  i.e. 80 bits of entropy in a 160 bit word.
+ d) Some of them could contain a high entropy density,
+  very close to 100%.  For our example, we assume there
+  are none of these;  otherwise the problem would be
+  too easy.
+
+If we do things properly, case (b) is no worse than case
+(a), for reasons that will become apparent shortly, so
+we can lump these cases together.
+
+We don't know which generator falls into which category.
+All we need to know is that M of the generators are
+putting out useful entropy.
+
+I recommend the following combining function:  concatenate
+all N of the member words, and then feed that through a
+hash function to produce the group word.  Since SHA-1 is
+efficient and has a 160 bit output word, it will serve 
+nicely in our example.
+
+In the sub-case where M=1, the recommended hash-based
+procedure produces a group word with 80 bits of entropy, 
+i.e. a 50% entropy density, which is the best we can 
+do.  In this sub-case, SHA-1 is no better than XOR.
+
+As M increases, the entropy density of the output word
+converges rather rapidly to 100%.  This is subject to
+mild assumptions about the hash function actually working
+as a hash function, i.e. not being grossly broken.
+
+When M is greater than 1, the hash function approach
+is much better than the XOR approach.  Here is an
+easy proof:  Consider the case where each member in
+category (c) puts out a 160 bit word consisting of 80 
+totally random bits in the left half and 80 constant
+bits in the right half.  XORing these together only
+gets you to 80 bits of entropy in the group word,
+whereas hashing is better by a factor of 2.  Actually
+(2 minus epsilon) if you want to be fussy about it.
+
+In the case where the entropy is evenly distributed
+within the member word, i.e. 160 bits each with a 50%
+entropy density, the result is more subtle:  The group
+word will converge to 100% entropy density, but the
+hash version converges _faster_ than the XOR version.
+Here &quot;faster&quot; means you can get by with a smaller M.
+Considerably smaller.  Also (!) beware that to get XOR 
+to converge at all, this paragraph depends on some 
+properties of the members that may be hard to realize 
+in practice ... whereas the hash approach has no
+such dependence.
+
+=========
+
+To summarize:  In the special sub-case where M=1, XOR
+is as good as it gets.  In all other cases I can think
+of, the hash approach is much better.
+
+My analysis applies to a specific set of requirements.
+If somebody wants to discuss other requirements, please
+be specific about what the requirements are.  There
+are innumerable creeping features that we could discuss.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,70 @@
+<PRE>On Wed, Jan 30, 2008 at 06:08:37PM -0000, Dave Korn wrote:
+
+&gt;<i> On 30 January 2008 17:01, Jim Cheesman wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; James A. Donald:
+</I>&gt;<i> &gt;&gt;&gt;&gt; SSL is layered on top of TCP, and then one layers
+</I>&gt;<i> &gt;&gt;&gt;&gt; one's actual protocol on top of SSL, with the result
+</I>&gt;<i> &gt;&gt;&gt;&gt; that a transaction involves a painfully large number
+</I>&gt;<i> &gt;&gt;&gt;&gt; of round trips.
+</I>
+Jumping in late, but the idea that *TCP* (and not TLS protocol design)
+adds round-trips to SSL warrants some evidence (it is very temping to
+express this skepticism more bluntly).
+
+With unextended SMTP for example, the minimum RTT count is:
+
+	0. SYN	SYN-ACK
+	1. ACK	220
+	2. HELO 250
+	3. MAIL 250
+	4. RCPT 250
+	... n recipients
+	   RCPT 250
+	4+n DATA 354
+	5+n ... stream of message content segments &lt;CRLF.CRLF&gt;
+		 250
+
+so it takes at least 6 RTTs to perform a delivery (of a short
+single-recipient message), but only 1 of the 6 RTTs is TCP
+&quot;overhead&quot;. This is improved with PIPELINING:
+
+	0. SYN				SYN-ACK
+	1. ACK				220
+	2. EHLO				250 ... PIPELINING ...
+	3. MAIL RCPT(n times) DATA	250 250 (n times) 354
+	4. ... stream of message content segments &lt;CRLF.CRLF&gt;
+		 			250
+
+Here the application protocol is pipelined, and 5+n RTTs becomes 4 RTTs.
+The solution is not replacing TCP, but reducing the number of lock-step
+interactions in the application protocol.
+
+If someone has a faster than 3-way handshake connection establishment
+protocol that SSL could leverage instead of TCP, please explain the
+design.
+
+The TCP handshake adds a 1-RTT delay at the start of the connection.
+What 0-RTT algorithm will allow the server to delay creating expensive
+connections to clients until the client acks the server response or
+discover the MSS before sending the first segment? With TCP, at least
+SYN floods require unspoofed client IPs.
+
+Most of the application protocols we wrap in TLS are not DNS. Sure if
+you can guarantee a single packet response to a single packet request,
+TCP is not the answer. Otherwise, claiming that SSL is less efficient
+over TCP smacks of arrogance.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

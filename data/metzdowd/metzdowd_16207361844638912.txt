@@ -1,0 +1,17 @@
+<PRE>
+For some reason, Microsoft's anti-spam filter at microsoft.com is
+rejecting a large fraction of the list's traffic as spam. I've looked
+at the messages in question carefully and can't for the life of me
+figure out why. We're not getting bounced regularly anywhere else.
+
+If you're at Microsoft and missing some fraction of list traffic, now
+you know why.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

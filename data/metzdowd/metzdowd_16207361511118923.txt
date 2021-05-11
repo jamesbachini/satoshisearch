@@ -1,0 +1,25 @@
+<PRE>On Fri, Aug 31, 2007 at 06:23:57PM +1200, Peter Gutmann wrote:
+&gt;<i> 128K CPU cores.  Using the figures from Valve's online survey,
+</I>&gt;<i> <A HREF="http://www.steampowered.com/status/survey.html,">http://www.steampowered.com/status/survey.html,</A> for which the typical machine
+</I>&gt;<i> has a 2.3 - 3.3 GHz single core CPU with about 1GB of RAM, the Storm cluster
+</I>&gt;<i> has the equivalent of 1-10M (approximately) 2.8 GHz P4s with 1-10 petabytes of
+</I>&gt;<i> RAM (BlueGene/L has a paltry 32 terabytes).
+</I>
+The Steam survey is going to overestimate the power of the average
+machine because it is only sampling machines which are capable of
+playing Half-Life 2 (or other equally resource intensive games). The
+recommended machine for Half-Life 2 is a 2.4 GHz CPU with 512 Mbytes
+RAM. No surprise that most of the machines surveyed hit that minimum.
+
+As for &quot;most powerful supercomputer&quot; - that ignores that the
+interconnect used (the Internet) is going to be 2 to 4 orders of
+magnitude slower in bandwidth and latency than that used in any modern
+supercomputer.
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

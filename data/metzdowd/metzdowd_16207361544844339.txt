@@ -1,0 +1,36 @@
+<PRE>On 24 September 2007 18:50, Florian Weimer wrote:
+
+&gt;<i> * Steven M. Bellovin:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> If done properly -- i.e., with cryptographic protection against new
+</I>&gt;&gt;<i> firmware or policy uploads to it -- it's immune to host or user
+</I>&gt;&gt;<i> compromise as a way to disable the filter.
+</I>&gt;<i> 
+</I>&gt;<i> Some of the models only have got a single USB connector.  I can't see
+</I>&gt;<i> how they can ensure that they are always on the forwarding path.
+</I>
+  The first review I read didn't make it clear, but browsing the
+manufacturer's website and glossy pdfs suggests that there is indeed only a
+single USB connector - but there's an ethernet connector too.  You use it as
+an inline device and leave your normal ethernet NIC unplugged.  This is what
+they refer to as &quot;wired&quot; operating mode, and given Steven's proviso about
+controlling the firmware (and let's hope there's no holes or overflows in the
+web admin interface either...) I think that this mode could just about be made
+secure.
+
+  The alternative, &quot;wireless&quot; mode, which was what initially I thought it did
+all the time, does indeed rely on proxying your network traffic out over the
+usb, then back to the main computer, then out over its own NIC - and that, of
+course, can easily be bypassed.
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

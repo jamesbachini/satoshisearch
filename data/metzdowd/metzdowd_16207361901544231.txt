@@ -1,0 +1,24 @@
+<PRE>IanG &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">iang at systemics.com</A>&gt; writes:
+
+&gt;<i>4.  Skype.  Doesn't do email, but aside from that minor character flaw, it
+</I>&gt;<i>cracked everything else.  It's the best example of what it should look like.
+</I>
+The UI still leaves quite a lot to be desired.  Try sitting a non-geek user in
+front of a fresh Skype install and see how long it takes them to figure out
+how to make a phonecall to (say) a Skype user name supplied via email.  I've
+seen times of 15+ minutes to make the first call (OK, so I treat neighbours
+and family as UI guinea pigs :-).  Skype still has a lot of fundamental
+usability flaws like the inability to remember a password (requiring it to be
+manually re-entered each time it's run unless you choose to start Skype on
+system boot) that make it a less-than-perfect example of usable security.
+
+The scary thing though is that even with all its flaws, it's still more usable
+than virtually all other crypto-using apps around.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

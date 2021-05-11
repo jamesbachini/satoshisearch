@@ -1,0 +1,55 @@
+<PRE>	on a similar topic as Greek.
+
+	i was in Shinsen and DongAng, mainland china (right next to HongKong).
+	i was able to experience GSM/GPRS Internet as well as hotel wired
+	Internet (both are IPv4, sigh).
+
+	in both cases, TCP port 80 (http) was sucked into transparent web proxy
+	(squid).  i was careful enough not to type offensive words, but
+	zh.wikipedia.org was invisible (squid raises some kind of connection
+	error, always).  ja.wikipedia.org and en.wikipedia.org were visible.
+	luckily TCP port 22 was open.  the hotel net was behind NAT so i could
+	not use IPsec VPN.  i did not have enough time to configure NAT
+	traversal stuff.
+
+	from my past experience with chinese academic network operated in
+	some university in Beijing (i forgot the name of the network/
+	university), i know that every connectivity from china goes out of
+	Beijing.  at least in year 2000-2002 timeframe.
+	so if it is still true (inject me some clue if you know about the
+	current situation), all the traffic that go out of china are tapped
+	in Beijing.  i'm wondering what kind of server farm they are
+	operating which are able to suck all TCP port 80 traffic from the
+	entire china...  i forgot to run nmap OS fingerprint :-(
+
+	also, my friend in china was using Skype from Tom Online on top of
+	Windows.  i did not believe it until i see it, but ContentFilter.exe
+	was really there.  it is the backdoor process for Tom Online Skype
+	which transmits cleartext content to somewhere, which is likely to be
+	some law enforcement or government organization.  otherwise, Skype
+	traffic is totally encrypted - see &quot;silver needle in skype&quot; paper.
+
+	i was informed that it is a common practice for south east asian
+	nations to run censorship on the internet.  for instance, in thai
+	www.youtube.com is not accessible.  they have never seen dodolook,
+	very cute taiwanese girl from canada (IIRC) i guess.
+
+	for more info, the following URL would be useful.  Japanese content
+	and English content are a bit different so if possible be sure to
+	check both of them (and other languages if possible).  the email is
+	encoded in iso-2022-jp (Japanese standard encoding for email) but when
+	you click it please click it Japanese URL in utf-8.
+
+	<A HREF="http://en.wikipedia.org/wiki/Golden_Shield_Project">http://en.wikipedia.org/wiki/Golden_Shield_Project</A>
+	<A HREF="http://ja.wikipedia.org/wiki/&#37329;&#30462;">http://ja.wikipedia.org/wiki/&#37329;&#30462;</A>
+	<A HREF="http://en.wikipedia.org/wiki/Internet_censorship_in_the_People%27s_Republic_of_China#International_corporations">http://en.wikipedia.org/wiki/Internet_censorship_in_the_People%27s_Republic_of_China#International_corporations</A>
+	<A HREF="http://ja.wikipedia.org/wiki/&#20013;&#22269;&#12398;&#12493;&#12483;&#12488;&#26908;&#38322;">http://ja.wikipedia.org/wiki/&#20013;&#22269;&#12398;&#12493;&#12483;&#12488;&#26908;&#38322;</A>
+	<A HREF="http://ice.citizenlab.org/?p=219">http://ice.citizenlab.org/?p=219</A>
+
+itojun
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

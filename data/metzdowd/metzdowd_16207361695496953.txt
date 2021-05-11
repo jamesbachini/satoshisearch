@@ -1,0 +1,38 @@
+<PRE>Philipp =?iso-8859-1?q?G=FChring?= &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pg at futureware.at</A>&gt; writes:
+
+&gt;<i>I had the feeling that Microsoft wants to abandon the usage of client
+</I>&gt;<i>certificates completely, and move the people to CardSpace instead.
+</I>
+While there's an obvious interpretation of that (&quot;Microsoft want to lock
+everyone into CardSpace&quot;), there's a second interpretation that's equally
+likely: After &gt; 10 years of effort and getting almost exactly nowhere with
+client certs, Microsoft are moving on to something more likely to succeed
+(actually I have no idea how workable CardSpace is since I don't think
+anyone's done any usability studies on it, but I doubt it's more unworkable
+than client certs.  Is anyone aware of any third-party usability studies on
+CardSpace, OpenID, ...?).
+
+&gt;<i>But how do you sign your emails with CardSpace?
+</I>
+Does anyone care that you can't sign your emails with CardSpace?
+
+(I could post my standard reference on this here again :-).  The unwashed
+masses don't even know what signed email is, let alone care about using it.  I
+know that there are assorted corporates and so on that are still keen on email
+signing, but they can keep playing with PKI for that.  CardSpace/Liberty/
+OpenID/SAML/whatever[0] should handle the rest.
+
+Eventually.
+
+Peter.
+
+[0] I'm not sure whether putting &quot;CardSpace&quot; and &quot;Liberty&quot; in such close
+    proximity in the above line was a good idea.  If your monitor starts 
+    smoking due to the friction generated, please cut&amp;paste one of the two 
+    elsewhere.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

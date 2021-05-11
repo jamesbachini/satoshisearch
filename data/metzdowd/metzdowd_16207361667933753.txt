@@ -1,0 +1,98 @@
+<PRE>On Wed, 23 Jan 2008 08:10:01 -0800
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+
+&gt;<i> Steven M. Bellovin wrote:
+</I>&gt;<i> &gt; On Tue, 22 Jan 2008 21:49:32 -0800
+</I>&gt;<i> &gt; Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+</I>&gt;<i> &gt; &gt;&gt; As I commented in the
+</I>&gt;<i> &gt;&gt; second paragraph, an attack at the ISP (where SSL/TLS is
+</I>&gt;<i> &gt;&gt; of no help) has been the dominant threat -- and that is
+</I>&gt;<i> &gt;&gt; why one of the main problems is called &quot;warrantless
+</I>&gt;<i> &gt;&gt; wiretapping&quot;. Further, because US law does /not/ protect
+</I>&gt;<i> &gt;&gt; data at rest, anyone claiming &quot;authorized process&quot; (which
+</I>&gt;<i> &gt;&gt; the ISP itself may) can eavesdrop without any required
+</I>&gt;<i> &gt;&gt; formality.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt; Please justify this.  Email stored at the ISP is protected in the
+</I>&gt;<i> &gt; U.S. by the Stored Communications Act, 18 USC 2701
+</I>&gt;<i> &gt; (<A HREF="http://www4.law.cornell.edu/uscode/18/2701.html">http://www4.law.cornell.edu/uscode/18/2701.html</A>).  While it's not a
+</I>&gt;<i> &gt; well-drafted piece of legislation and has been the subject of much
+</I>&gt;<i> &gt; litigation, from the Steve Jackson Games case
+</I>&gt;<i> &gt; (<A HREF="http://w2.eff.org/legal/cases/SJG/">http://w2.eff.org/legal/cases/SJG/</A>) to Warshak v. United States
+</I>&gt;<i> &gt; (<A HREF="http://www.cs.columbia.edu/~smb/blog/2007-06/2007-06-19.html">http://www.cs.columbia.edu/~smb/blog/2007-06/2007-06-19.html</A>), I
+</I>&gt;<i> &gt; don't see how you can say stored email isn't protected at all.
+</I>&gt;<i> 
+</I>&gt;<i> As you wrote in your blog, &quot;users really need to read those boring
+</I>&gt;<i> [ISP] licenses carefully.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> ISP service terms grant the disclosure right on the basis of
+</I>&gt;<i> something broadly called &quot;valid legal process&quot; or any such
+</I>&gt;<i> term as defined /by the ISP/. Management access to the account
+</I>&gt;<i> (including email data) is a valid legal process (authorized by the
+</I>&gt;<i> service terms as a private contract) that can be used without
+</I>&gt;<i> any required formality, for example to verify compliance to the
+</I>&gt;<i> service terms or something else [1].
+</I>&gt;<i> 
+</I>&gt;<i> Frequently, &quot;common sense&quot; and &quot;standard use&quot; are used to
+</I>&gt;<i> justify such access but, technically, no justification is
+</I>&gt;<i> actually needed.
+</I>&gt;<i> 
+</I>&gt;<i> Further, when an ISP such as google says &quot;Google does not share
+</I>&gt;<i> or reveal email content or personal information with third
+</I>&gt;<i> parties.&quot; one usually forgets that (1) third parties may actually
+</I>&gt;<i> mean everyone on the planet but you; (2) third parties also
+</I>&gt;<i> have third parties; and (3) #2 is recursive.
+</I>
+You're confusing two concepts.  &quot;Warrants&quot; apply to government
+behavior; terming something a &quot;wireless wiretap&quot; carries the clear
+implication of government action.  Private action may or may not
+violate the wiretap act or the Stored Communications Act, but it has
+nothing to do with warrants.
+&gt;<i> 
+</I>&gt;<i> Mr. Councilman's case and his lawyer's declaration that &quot;Congress
+</I>&gt;<i> recognized that any time you store communication, there is an
+</I>&gt;<i> inherent loss of privacy&quot; was not in your blog, though. Did I
+</I>&gt;<i> miss something?
+</I>
+Since the Councilman case took place several years before I started my
+blog, it's hardly surprising that I didn't blog on it.  And it turns out
+that Councilman -- see <A HREF="http://epic.org/privacy/councilman/">http://epic.org/privacy/councilman/</A> for a
+summary -- isn't very interesting any more.  The original district
+court ruling, upheld by three judges of the Court of Appeals,
+significantly weakened privacy protections for email.  It was indeed an
+important and controversial ruling.  However, case was reheard en banc;
+the full court ruled that the earlier decisions were incorrect, which
+left previous interpretations of the wiretap law intact.  As far as I
+can tell, it was never appealed to the Supreme Court.  (The ultimate
+outcome, which isn't very interesting to this list, is discussed in
+<A HREF="http://pacer.mad.uscourts.gov/dc/opinions/ponsor/pdf/councilman%20mo.pdf">http://pacer.mad.uscourts.gov/dc/opinions/ponsor/pdf/councilman%20mo.pdf</A>)
+
+You are, of course, quite correct that ISP terms of service need to be
+read carefully.
+
+&gt;<i> 
+</I>&gt;<i> Cheers,
+</I>&gt;<i> Ed Gerck
+</I>&gt;<i> 
+</I>&gt;<i> [1] in <A HREF="http://mail.google.com/mail/help/about_privacy.html">http://mail.google.com/mail/help/about_privacy.html</A> :
+</I>&gt;<i> Of course, the law and common sense dictate some exceptions. These
+</I>&gt;<i> exceptions include requests by users that Google's support staff
+</I>&gt;<i> access their email messages in order to diagnose problems; when
+</I>&gt;<i> Google is required by law to do so; and when we are compelled to
+</I>&gt;<i> disclose personal information because we reasonably believe it's
+</I>&gt;<i> necessary in order to protect the rights, property or safety of
+</I>&gt;<i> Google, its users and the public. For full details, please refer to
+</I>&gt;<i> the &quot;When we may disclose your personal information&quot; section of our
+</I>&gt;<i> privacy policy. These exceptions are standard across the industry and
+</I>&gt;<i> are necessary for email providers to assist their users and to meet
+</I>&gt;<i> legal requirements.
+</I>
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

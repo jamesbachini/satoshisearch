@@ -1,0 +1,36 @@
+<PRE>This doesn't seem to have received much attention, but the world's most
+powerful supercomputer entered operation recently.  Comprising between 1 and
+10 million CPUs (depending on whose estimates you believe), the Storm botnet
+easily outperforms the currently top-ranked system, BlueGene/L, with a mere
+128K CPU cores.  Using the figures from Valve's online survey,
+<A HREF="http://www.steampowered.com/status/survey.html,">http://www.steampowered.com/status/survey.html,</A> for which the typical machine
+has a 2.3 - 3.3 GHz single core CPU with about 1GB of RAM, the Storm cluster
+has the equivalent of 1-10M (approximately) 2.8 GHz P4s with 1-10 petabytes of
+RAM (BlueGene/L has a paltry 32 terabytes).  In fact this composite system has
+better hardware resources than what's listed at <A HREF="http://www.top500.org">http://www.top500.org</A> for the
+entire world's top 10 supercomputers:
+
+  BlueGene/L: 128K CPUs, 32TB
+  Jaguar: 22K CPUs, 46TB
+  Red Storm: 26K CPUs, 40TB
+  BGW: 40K CPUs, 10TB
+  New York Blue: 37K CPUs, 18TB
+  ASC Purple: 12K CPUs, 49TB
+  eServer Blue Gene: ?
+  Abe: 10K CPUs, 10TB
+  MareNostrum: 10K CPUs, 20GB
+  HLRB-II: 10K CPUs, 39GB
+
+This may be the first time that a top 10 supercomputer has been controlled not
+by a government or megacorporation but by criminals.  The question remains,
+now that they have the world's most powerful supercomputer system at their
+disposal, what are they going to do with it?  And I wonder what the LINPACK 
+rating for Storm is?
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

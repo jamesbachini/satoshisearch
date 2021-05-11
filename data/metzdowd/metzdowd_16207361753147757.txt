@@ -1,0 +1,34 @@
+<PRE><A HREF="http://www.kurzweilai.net/news/frame.html?main=/news/news_single.html?id%3D8471">http://www.kurzweilai.net/news/frame.html?main=/news/news_single.html?id%3D8471</A>
+
+Quantum cryptography broken
+KurzweilAI.net, April 20, 2008
+
+Two Swedish scientsts, Jorgen Cederlof, now of Google, and Jan-Ake
+Larsson of Link In a paper published in IEEE Trans. Inf Theory, 54:
+1735-1741 (2008), they point out that an eavesdropper could gain
+partial knowledge on the key in quantum cryptography that may have an
+effect on the security of the authentication in the later round.
+
+By accessing the quantum channel used in quantum cryptography, the
+attacker can change the message to be authenticated (since the message
+is influenced by attacker-initiated events on the quantum
+channel). This, combined with partial knowledge of the key
+(transmitted on the quantum channel), creates a potential security
+gap, they suggest.
+
+Their proposed solution: simply transmit an extra exchange of a small
+amount of random bits on the classical (Internet) channel.
+
+FAQ:
+
+<A HREF="http://www.mai.liu.se/~jalar/qkg/faq.html">http://www.mai.liu.se/~jalar/qkg/faq.html</A>
+-- 
+Crypto ergo sum.  <A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>
+My password is easy to remember; it's the digits of Pi.  All of them.
+If you are a spammer, please email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org</A> to get blacklisted.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,25 @@
+<PRE>Nate Lawson &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">nate at root.org</A>&gt; writes:
+
+&gt;<i>All this attack allows is for one side of a DH exchange to intentionally
+</I>&gt;<i>downgrade the security,
+</I>
+You've forgotten Hanlon's razor, &quot;Never attribute to malice that which can be
+adequately explained by stupidity&quot;.  So the comment should really be:
+
+  All this attack allows is for one side of a DH exchange to inadvertently
+  downgrade the security,
+
+This sort of thing has happened several times in the past (with RSA, not DH in
+this case), one example being the CA-issued exponent-one certs that I
+mentioned previously, the other being an implementation that shall go unnamed
+that sent out plaintext because the developers didn't do key paramter
+validation.  So the problem isn't a deliberate attack, it's screwups by people
+implementing or deploying the crypto.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

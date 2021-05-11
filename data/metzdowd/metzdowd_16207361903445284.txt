@@ -1,0 +1,43 @@
+<PRE>Jerry Leichter wrote:
+
+&gt;<i> At ThinkGeek, you can now, for only $6.99, buy yourself a USB-powered
+</I>&gt;<i> mini lava lamp (see <A HREF="http://www.thinkgeek.com/gadgets/lights/7825/">http://www.thinkgeek.com/gadgets/lights/7825/</A>). 
+</I>&gt;<i> &quot;All you need&quot; is some way to watch the thing - perhaps a USB camera -
+</I>&gt;<i> and some software to extract random bits.  (This isn't *really* a lava
+</I>&gt;<i> lamp - the lamp is filled with a fluid containing many small reflective
+</I>&gt;<i> plastic chips, lit from below by a small incandescent bulb which also
+</I>&gt;<i> generates the heat that keeps the fluid circulating.  From any given
+</I>&gt;<i> vantage point, you get flashes as one of the plastic chips gets into
+</I>&gt;<i> just the right position to give you a reflected view of the bulb.  These
+</I>&gt;<i> should be pretty easy to extract, and should be quite  random.  Based on
+</I>&gt;<i> observation, the bit rate won't be very high - a bit every couple of
+</I>&gt;<i> seconds - though perhaps you can use cameras at a couple of vantage
+</I>&gt;<i> points.  Still, worth it for the bragging rights.)
+</I>
+
+Does anyone know of a cheap USB random number source?
+
+As a meandering comment, it would be extremely good for us if we had
+cheap pocket random number sources of arguable quality [1].
+
+I've often thought that if we had an open source hardware design of
+a USB random number generator ... that cost a few pennies to add
+onto any other USB toy ... then we could ask the manufacturers to
+throw it in for laughs.  Something like a small mountable disk that
+returns randoms on every block read, so the interface is trivial.
+
+Then, when it comes time to generate those special keys, we could
+simply plug it in, run it, clean up the output in software and use
+it.  Hey presto, all those nasty software and theoretical
+difficulties evaporate.
+
+iang
+
+[1] the competitive process and a software clean-up would sort out
+any quality issues.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,25 @@
+<PRE>&gt;<i> So, is anyone else as amused as I am that Apple can release an EFI  
+</I>&gt;<i> firmware update to zeroize MacBook Air memory at boot-time, turning  
+</I>&gt;<i> the heretofore widely-decried inability to upgrade that laptop's RAM  
+</I>&gt;<i> -- due to the chips being soldered to the motherboard -- into an  
+</I>&gt;<i> advantage, and making the Air the laptop of choice for  
+</I>&gt;<i> discriminating, fashion-aware, security-conscious professionals the  
+</I>&gt;<i> world over?
+</I>
+
+No. Apple (or anyone doing EFI boot, for example, someone doing WDE  
+for OS X) can easily modify the EFI boot to zero memory. It isn't just  
+the Air, it's any Intel Mac, but remember those are just Intel EFI  
+systems.
+
+Note, however, that this does not completely solve the attack. If  
+someone hits the reset button or yanks power, then you don't get to  
+erase.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

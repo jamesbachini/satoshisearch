@@ -1,0 +1,48 @@
+<PRE>Leichter, Jerry wrote:
+&gt;<i> I suspect the only heavy-weight defense is the same one we use against
+</I>&gt;<i> the &quot;Trusting Trust&quot; hook-in-the-compiler attack:  Cross-compile on
+</I>&gt;<i> as many compilers from as many sources as you can, on the assumption
+</I>&gt;<i> that not all compilers contain the same &quot;hook&quot;. 
+</I>&gt;<i>...
+</I>&gt;<i> Of course, you'd end up with a machine no faster than your slowest
+</I>&gt;<i> chip, and you'd have to worry about the correctness of the glue
+</I>&gt;<i> circuitry that compares the results. 
+</I>
+Each chip does not have to be 100% independent, and does not have to 
+be used 100% of the time.
+
+Assuming a random selection of both outputs and chips for testing, and 
+a finite set of possible outputs, it is possible to calculate what 
+sampling ratio would provide an adequate confidence level -- a good 
+guess is 5% sampling.
+
+This should not create a significant impact on average speed, as 95% 
+of the time the untested samples would not have to wait for 
+verification (from the slower chips). One could also trust-certify 
+each chip based on its positive, long term performance -- which could 
+allow that chip to run with much less sampling, or none at all.
+
+In general, this approach is based on the properties of trust when 
+viewed in terms of Shannon's IT method, as explained in [*]. Trust is 
+seen not as a subjective property, but as something that can be 
+communicated and measured. One of the resulting rules is that trust 
+cannot be communicated by self-assertions (ie, asking the same chip) 
+[**]. Trust can be positive (what we call trust), negative (distrust), 
+and zero (atrust -- there is no trust value associated with the 
+information, neither trust nor distrust). More in [*].
+
+Cheers,
+Ed Gerck
+
+  References:
+[*] www.nma.com/papers/it-trust-part1.pdf
+www.mcwg.org/mcg-mirror/trustdef.htm
+
+[**] Ken's paper title (op. cit.) is, thus, identified to be part of 
+the very con game described in the paper.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

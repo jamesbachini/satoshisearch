@@ -1,0 +1,47 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> My bank doesn't provide any sort of authentication for logging in to
+</I>&gt;<i> bank accounts other than passwords. However, Blizzard now allows you
+</I>&gt;<i> to get a one time password keychain frob to log in to your World of
+</I>&gt;<i> Warcraft account.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>    
+</I>
+post in thread here a yr ago (1jul07) about financial institutions 
+attempting some
+(disastrous) deployments in the 99/00 time-frame ... and then instead of 
+taking
+blame for deployment problems ... there was quickly spreading opinion 
+that hardware
+tokens weren't practical in the consumer market place
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#34">http://www.garlic.com/~lynn/aadsm27.htm#34</A> The bank fraud blame game
+
+as noted in another post ... the disastrous failures were somewhat a case of
+institutional knowledge not permeating different part of the organizations.
+
+banking conferences in the mid-90s were attributing the existing online 
+banking
+migration to the internet in large part motivated by significant 
+customer support
+problems with serial port modems (mostly with the serial port part).
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#38">http://www.garlic.com/~lynn/aadsm27.htm#38</A> The bank fraud blame game
+
+that even if a little bit of the experience form the earlier online banking
+programs had carried over into the later hardware token deployments ...
+much of the deployment problems could have been averted.
+
+In any case, the claim could be made that the industry is still attempting
+to recover from those disasters.
+
+a couple other posts on the same subject in other threads:
+<A HREF="http://www.garlic.com/~lynn/2007n.html#65">http://www.garlic.com/~lynn/2007n.html#65</A> Poll: oldest computer thing 
+you still use
+<A HREF="http://www.garlic.com/~lynn/2007t.html#22">http://www.garlic.com/~lynn/2007t.html#22</A> 'Man in the browser' is new 
+threat to online banking
+<A HREF="http://www.garlic.com/~lynn/2007u.html#11">http://www.garlic.com/~lynn/2007u.html#11</A> Public Computers
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,16 @@
+<PRE>On May 24, 2008, at 9:18 PM, Steven M. Bellovin wrote:
+
+&gt;<i> I believe that all open source Unix-like systems have /dev/random
+</I>&gt;<i> and /dev/urandom; Solaris does as well.
+</I>
+By the way, Solaris is an open source Unix-like system nowadays.  ;-)
+
+Regards,
+
+Zooko
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

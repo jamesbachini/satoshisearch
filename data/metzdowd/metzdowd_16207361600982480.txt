@@ -1,0 +1,21 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Pasi.Eronen at nokia.com</A> wrote:
+ &gt; The &quot;extra messages&quot; might be irrelevant for
+ &gt; cryptography, but they're not irrelevant for security
+ &gt; or functionality.
+ &gt;
+ &gt; E.g. in SSL, you have capability/feature negotiation
+ &gt; (cipher suites, trusted CAs, in TLS 1.2 also signature
+ &gt; algorithms, etc.)
+
+You can handle this by client making a guess, perhaps
+based on past experience, as to whether its initial
+request for preferred protocol is likely to be accepted,
+and if it thinks it probably will be, going ahead on the
+assumption it will be, rather than waiting for the round
+trips to complete.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

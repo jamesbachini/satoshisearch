@@ -1,0 +1,23 @@
+<PRE>Jonathan S. Shapiro wrote:
+&gt;<i> On Wed, 2008-05-14 at 10:34 +0100, Ben Laurie wrote:
+</I>&gt;&gt;<i> Jonathan S. Shapiro wrote:
+</I>&gt;&gt;&gt;<i> Ben: I'm idly curious. Was this exceptionally unusual case where use of
+</I>&gt;&gt;&gt;<i> uninitialized memory was valid properly commented in the code?
+</I>&gt;&gt;<i> Well. Kinda. It didn't really explain why...
+</I>&gt;<i> 
+</I>&gt;<i> Then you got what you deserved.
+</I>
+_I_ didn't get anything. And _I_ didn't deserve anything: I did not 
+write the code.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

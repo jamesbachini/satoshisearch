@@ -1,0 +1,124 @@
+<PRE>
+&gt;<i>From the No Comment Department:
+</I>
+Date: Tue, 10 Jun 2008 11:01:06 -0400
+Message-Id: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">TA08-162A.1166 at us-cert.gov</A>&gt;
+From: CERT Advisory &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cert-advisory at cert.org</A>&gt;
+Subject: US-CERT Technical Cyber Security Alert TA08-162A -- SNMPv3 Authentication Bypass Vulnerability
+
+
+         National Cyber Alert System
+
+   Technical Cyber Security Alert TA08-162A
+
+
+SNMPv3 Authentication Bypass Vulnerability
+
+   Original release date: June 10, 2008
+   Last revised: --
+   Source: US-CERT
+
+
+Systems Affected
+
+     * Multiple Implementations of SNMPv3
+
+
+Overview
+
+   A  vulnerability in the way implementations of SNMPv3 handle specially
+   crafted packets may allow authentication bypass.
+
+
+I. Description
+
+   The  Simple  Network  Management  Protocol (SNMP) is a widely deployed
+   protocol  that is commonly used to monitor and manage network devices.
+   SNMPv3  (  RFC  3410)  supports a user-based security model (RFC 3414)
+   that incorporates security features such as authentication and privacy
+   control.  Authentication  for  SNMPv3 is done using keyed-hash message
+   authentication  code  (HMAC), a message authentication code calculated
+   using  a cryptographic hash function in combination with a secret key.
+   Implementations  of  SNMPv3  may  allow  a  shortened HMAC code in the
+   authenticator field to authenticate to an agent or a trap daemon using
+   a  minimum HMAC of one byte. Reducing the HMAC to one-byte HMAC makes
+   brute-force  authentication  trivial.  This  issue  is known to affect
+   Net-SNMP   and  UCD-SNMP.  Other  SNMP  implementations  may  also  be
+   affected.
+
+
+II. Impact
+
+   This vulnerability allows attackers to read and modify any SNMP object
+   that  can  be  accessed  using the authentication credentials that got
+   them into the system. Attackers exploiting this vulnerability can view
+   and  modify  the  configuration  of these devices. Attackers must gain
+   access  using  credentials  with  write  privileges in order to modify
+   configurations.
+
+
+III. Solution
+
+Upgrade
+
+   Please consult your vendor for more information.
+
+Apply a patch
+
+   Net-SNMP  has  released  a  patch  to  address  this  issue.  For more
+   information,  refer  to  SECURITY  RELEASE: Multiple Net-SNMP Versions
+   Released. Users are encouraged to apply the patch as soon as possible.
+   Note that patch should apply cleanly to UCD-snmp too.
+
+Enable the SNMPv3 privacy subsystem
+
+   The  configuration  should  be  modified  to enable the SNMPv3 privacy
+   subsystem  to  encrypt the SNMPv3 traffic using a secret, private key.
+   This  option does not encrypt the HMAC, but does minimize the possible
+   affects from this vulnerability.
+
+
+IV. References
+
+     * RFC 3410 - &lt;<A HREF="http://tools.ietf.org/html/rfc3410">http://tools.ietf.org/html/rfc3410</A>&gt;
+
+     * RFC 3414 - &lt;<A HREF="http://tools.ietf.org/html/rfc3414">http://tools.ietf.org/html/rfc3414</A>&gt;
+
+     * SECURITY   RELEASE:   Multiple   Net-SNMP   Versions   Released  -
+       &lt;<A HREF="http://sourceforge.net/forum/forum.php?forum_id=833770">http://sourceforge.net/forum/forum.php?forum_id=833770</A> &gt;
+
+     * US-CERT Vulnerability Note -
+       &lt;<A HREF="http://www.kb.cert.org/vuls/id/878044">http://www.kb.cert.org/vuls/id/878044</A>&gt;
+ 
+ ____________________________________________________________________
+
+   The most recent version of this document can be found at:
+
+     &lt;<A HREF="http://www.us-cert.gov/cas/techalerts/TA08-162A.html">http://www.us-cert.gov/cas/techalerts/TA08-162A.html</A>&gt;
+ ____________________________________________________________________
+
+   Feedback can be directed to US-CERT Technical Staff. Please send
+   email to &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cert at cert.org</A>&gt; with &quot;TA08-162A Feedback VU#878044&quot; in the
+   subject.
+ ____________________________________________________________________
+
+   For instructions on subscribing to or unsubscribing from this
+   mailing list, visit &lt;<A HREF="http://www.us-cert.gov/cas/signup.html">http://www.us-cert.gov/cas/signup.html</A>&gt;.
+ ____________________________________________________________________
+
+   Produced 2008 by US-CERT, a government organization.
+
+   Terms of use:
+
+     &lt;<A HREF="http://www.us-cert.gov/legal.html">http://www.us-cert.gov/legal.html</A>&gt;
+ ____________________________________________________________________
+
+
+   Revision History
+
+   June 10 2008: Initial release
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

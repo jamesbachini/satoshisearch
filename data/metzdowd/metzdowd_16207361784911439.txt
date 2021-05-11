@@ -1,0 +1,69 @@
+<PRE>
+On May 6, 2008, at 1:14 AM, James A. Donald wrote:
+
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> &gt; What you can't do, full stop, is
+</I>&gt;&gt;<i> &gt; know that there are no unexpected security related behaviors in the
+</I>&gt;&gt;<i> &gt; hardware or software. That's just not possible.
+</I>&gt;<i>
+</I>&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;<i> Rice's theorem says you can't _always_ solve this problem. It says  
+</I>&gt;&gt;<i> nothing about figuring out special cases.
+</I>&gt;<i>
+</I>&gt;<i> True, but the propensity of large teams of experts to issue horribly  
+</I>&gt;<i> flawed protocols, and for the flaws in those protocols to go  
+</I>&gt;<i> undiscovered for many years, despite the fact that once discovered  
+</I>&gt;<i> they look glaringly obvious in retrospect, indicates that this  
+</I>&gt;<i> problem, though not provably always hard, is in practice quite hard.
+</I>
+Yes, but.
+
+I tend to agree with Marcos, Ben, and others.
+
+It is certainly true that detecting an evil actor is ultimately  
+impossible because it's equivalent to a non-computable function. It  
+doesn't matter whether that actor is a virus, an evil vm, evil  
+hardware, or whatever.
+
+That doesn't mean that you can't be successful at virus scanning or  
+other forms of evil detection. People do that all the time.
+
+Ben perhaps over-simplified by noting that a single gate isn't  
+applicable to Rice's Theorem, but he pointed the way out. The way out  
+is that you simply declare that if a problem doesn't halt before time  
+T, or can't find a decision before T, you make an arbitrary decision.  
+If you're optimistic, you just decide it's good. If you're  
+pessimistic, you decide it's bad. You can even flip a coin.
+
+These correspond to the adage I last heard from Dan Geer that you can  
+make a secure system either by making it so simple you know it's  
+secure, or so complex that no one can find an exploit.
+
+So it is perfectly reasonable to turn a smart analyzer like Marcos on  
+a system, and check in with him a week later. If he says, &quot;Man, this  
+thing is so hairy that I can't figure out which end us up,&quot; then  
+perhaps it is a reasonable decision to just assume it's flawed.  
+Perhaps you give him more time, but by observing the lack of a halt or  
+the lack of a decision, you know something, and that feeds into your  
+pessimism or optimism. Those are policies driven by the data. You just  
+have to decide that no data is data.
+
+The history of secure systems has plenty of examples of things that  
+were so secure they were not useful, or so useful they were not  
+secure. You can, for example, create a policy system that is not  
+Turing-complete, and then on to being decideably secure. The problem  
+is that people will want to do cool things with your system than it  
+supports, so they will extend it. It's possible they'll extend it so  
+it is more-or-less secure, but usable. It's likely they'll make it  
+insecure, and decideably so.
+
+	Jon
+
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

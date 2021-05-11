@@ -1,0 +1,67 @@
+<PRE>I thought this list might be interested in a mini-rant about DNS source 
+port randomness on my blog: <A HREF="http://www.links.org/?p=352.">http://www.links.org/?p=352.</A>
+
+Ever since the recent DNS alert people have been testing their DNS 
+servers with various cute things that measure how many source ports you 
+use, and how &quot;random&quot; they are. Not forgetting the command line 
+versions, of course
+
+dig +short porttest.dns-oarc.net TXT
+dig +short txidtest.dns-oarc.net TXT
+
+which yield output along the lines of
+
+&quot;aaa.bbb.ccc.ddd is GREAT: 27 queries in 12.7 seconds from 27 ports with 
+std dev 15253&quot;
+
+But just how GREAT is that, really? Well, we don'
+t know. Why? Because there isn't actually a way test for randomness. 
+Your DNS resolver could be using some easily predicted random number 
+generator like, say, a linear congruential one, as is common in the 
+rand() library function, but DNS-OARC would still say it was GREAT. 
+Believe them when they say it isn't GREAT, though! Non-randomness we can 
+test for.
+
+So, how do you tell? The only way to know for sure is to review the code 
+(or the silicon, see below). If someone tells you &quot;don't worry, we did 
+statistical checks and it's random&quot; then make sure you're holding on to 
+your wallet - he'll be selling you a bridge next.
+
+But, you may say, we already know all the major caching resolvers have 
+been patched and use decent randomness, so why is this an issue?
+
+It is an issue because of NAT. If your resolver lives behind NAT (which 
+is probably way more common since this alert, as many people's reactions 
+[mine included] was to stop using their ISP's nameservers and stand up 
+their own to resolve directly for them) and the NAT is doing source port 
+translation (quite likely), then you are relying on the NAT gateway to 
+provide your randomness. But random ports are not the best strategy for 
+NAT. They want to avoid re-using ports too soon, so they tend to use an 
+LRU queue instead. Pretty clearly an LRU queue can be probed and 
+manipulated into predictability.
+
+So, if your NAT vendor is telling you not to worry, because the 
+statistics say they are &quot;random&quot;, then I would start worrying a lot: 
+your NAT vendor doesn't understand the problem. It's also pretty 
+unhelpful for the various testers out there not to mention this issue, I 
+must say.
+
+Incidentally, I'm curious how much this has impacted the DNS 
+infrastructure in terms of traffic - anyone out there got some statistics?
+
+Oh, and I should say that number of ports and standard deviation are not 
+a GREAT way to test for &quot;randomness&quot;. For example, the sequence 1000, 
+2000, ..., 27000 has 27 ports and a standard deviation of over 7500, 
+which looks pretty GREAT to me. But not very &quot;random&quot;.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

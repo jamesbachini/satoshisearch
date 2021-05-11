@@ -1,0 +1,30 @@
+<PRE>Ben Laurie wrote, On 21/9/07 1:34 AM:
+&gt;<i> It seems to me that the requirement cited:
+</I>&gt;<i> 
+</I>&gt;<i> &quot;Entity i cannot be coerced into sharing a key with entity j without i&#8217;s
+</I>&gt;<i> knowledge, ie, when i believes the key is shared with some entity l != j.&quot;
+</I>
+The &quot;without i's knowledge&quot; part is critical to the argument, as the
+author is assuming that entity i is monitoring all of entity j's
+channels of communication and either entity j has no communication of
+any kind outside of that used for the DH protocol with entity i, or else
+entity i would be able to recognize whether any other communication with
+anyone is a revelation of the secret session key that entity i is
+sharing with entity j.
+
+Note that entity i would even have to be sure that entity j is not using
+any side channels such as variations in the timing of response packets
+during the subsequent encrypted session to communicate with a colluding
+passive attacker who is eavesdropping.
+
+That is an awfully impractical constraint on the threat model, which
+makes this issue moot in practice.
+
+ Sidney Markowitz
+ <A HREF="http://www.sidney.com">http://www.sidney.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

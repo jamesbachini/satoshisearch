@@ -1,0 +1,27 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+&gt;<i> May I point out that if voting systems have a level
+</I>&gt;<i> of flaw that says only an idiot would use them, then
+</I>&gt;<i> how can you explain electronic commerce, FaceBook,
+</I>&gt;<i> or gambling sites?  More people use just those three
+</I>&gt;<i> than will *ever* vote.
+</I>
+The answer is NO, and that is so because it's different.
+
+In elections, you must have a &quot;Chinese wall&quot; between the voter and the ballot. If I get the vote I don't know who the voter is, if I get the voter I don't know what the vote is. And that doesn't happen in e-commerce. In e-commerce I have a traceable credit card. I have a traceable name, I have an address for delivery. Anything that's bought must be delivered. I have a pattern of buying, if you go to Amazon.com, they will suggest the next book to you if you want, based on what you bought. They may know a lot more about you than you think they know.
+
+And so there is a basic difference between e-commerce and Internet voting, which must not be ignored, otherwise ignorance is bliss, we don't see it.
+
+In e-commerce there must be no privacy, the merchant must know who I am, my credit card must be valid. There are laws against [fraud in] this. So there is a basic divide here, which you need to take into account. There is a paradigm shift, there is a very strong technological point which those on the political side don't see, because that's natural. And there is a very strong political side that us, on the technological side don't see. For us, yes, voter participation is very good, or don't we all care if voter participation may decrease?
+
+So the point that I wanted to make is that it [Internet voting] is not as easy [as in e-commerce], because it's a fundamentally different problem. The solution is not the same, what we have today [for e-commerce] does not transpose, and the solution, the final comment, the solution that we have today for e-commerce is not cryptography, is insurance, for 20 percent of fraud that is the Internet fraud in credit cards. And how is that paid? By us, cardholders, we socialize the cost. Imagine telling, yes, you were elected president, but you know, there was a fraud, here is our insurance policy. You collect your million dollars, next time play again. You know, we cannot socialize fraud in elections. We cannot accept 20 percent of fraud paid for by insurance, which is what happens today. We did solve the e-commerce security problem, by putting in insurance. We can not solve it that way [for elections].
+
+(from my Brookings Symposium comment, Washington, DC, January 2000).
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

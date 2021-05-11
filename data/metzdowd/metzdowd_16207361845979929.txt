@@ -1,0 +1,79 @@
+<PRE>I've changed the subject.  Some of my own rants are about mathematical
+cryptographers that are looking for the &quot;perfect&quot; solution, instead of
+practical security solution.  Always think about the threat first!
+
+In this threat environment, the attacker is unlikely to have perfect
+knowledge of the sequence.  Shared resolvers are the most critical
+vulnerability, but the attacker isn't necessarily in the packet path, and
+cannot discern more than a few scattered numbers in the sequence.  The
+more sharing (and greater impact), the more sparse the information.
+
+In any case, the only &quot;perfect&quot; solution is DNS-security.  Over many
+years, I've given *many* lectures to local university, network, and
+commercial institutions about the need to upgrade and secure our zones.
+But the standards kept changing, and the roots and TLDs were not secured.
+
+Now, the lack of collective attention to known security problems has
+bitten us collectively.
+
+Never-the-less, with rephrasing, Ben has some good points....
+
+Ben Laurie wrote:
+&gt;<i> But just how GREAT is that, really? Well, we don't know. Why? 
+</I>&gt;<i> Because there isn't actually a way test for randomness. ...
+</I>
+While randomness is sufficient for &quot;perfect&quot; unpredictability, it isn't
+necessary in this threat environment.
+
+Keep in mind that the likely unpredictability is about 2**24.  In many
+or most cases, that will be implementation limited to 2**18 or less.
+
+
+&gt;<i> Your DNS resolver could be using some easily predicted random number 
+</I>&gt;<i> generator like, say, a linear congruential one, as is common in the 
+</I>&gt;<i> rand() library function, but DNS-OARC would still say it was GREAT.
+</I>
+In this threat environment, a better test would be for determination of a
+possible seed for any of several common PRNG.  Or lack of PRNG.
+
+How many samples would be needed?  That's the mathematical limitation.
+
+Is it less than 2**9 (birthday attack on 2**18)?
+
+
+&gt;<i> It is an issue because of NAT. If your resolver lives behind NAT (which 
+</I>&gt;<i> is probably way more common since this alert, as many people's reactions 
+</I>&gt;<i> [mine included] was to stop using their ISP's nameservers and stand up 
+</I>&gt;<i> their own to resolve directly for them) and the NAT is doing source port 
+</I>&gt;<i> translation (quite likely), then you are relying on the NAT gateway to 
+</I>&gt;<i> provide your randomness. But random ports are not the best strategy for 
+</I>&gt;<i> NAT. They want to avoid re-using ports too soon, so they tend to use an 
+</I>&gt;<i> LRU queue instead. Pretty clearly an LRU queue can be probed and 
+</I>&gt;<i> manipulated into predictability.
+</I>&gt;<i> 
+</I>Agreed!  All my tests of locally accessible NATs (D-Link and Linksys) show
+that the sequence is fairly predictable.  And no code updates available....
+
+
+&gt;<i> Incidentally, I'm curious how much this has impacted the DNS 
+</I>&gt;<i> infrastructure in terms of traffic - anyone out there got some statistics?
+</I>&gt;<i> 
+</I>Some are coming in on another private security list where I and some
+others here are vetted, but everything is very preliminary.
+
+In addition to the publicized attacks on major ISP infrastructure, there
+are verified scans and attacks against end user home NATs.
+
+
+&gt;<i> Oh, and I should say that number of ports and standard deviation are not 
+</I>&gt;<i> a GREAT way to test for &quot;randomness&quot;. For example, the sequence 1000, 
+</I>&gt;<i> 2000, ..., 27000 has 27 ports and a standard deviation of over 7500, 
+</I>&gt;<i> which looks pretty GREAT to me. But not very &quot;random&quot;.
+</I>&gt;<i> 
+</I>Again, the question is not randomness, but unpredictability.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

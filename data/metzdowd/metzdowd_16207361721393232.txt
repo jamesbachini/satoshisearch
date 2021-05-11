@@ -1,0 +1,25 @@
+<PRE>Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; writes:
+
+&gt;<i>And so we end up at the position that we have ended up at so many times
+</I>&gt;<i>before: the GTCYM has to have a decent processor, a keyboard and a screen,
+</I>&gt;<i>and must be portable and secure.
+</I>&gt;<i>
+</I>&gt;<i>One day we'll stop concluding this and actually do something about it.
+</I>
+Actually there are already companies doing something like this, but they've
+run into a problem that no-one has ever considered so far: The GTCYM needs a
+(relatively) high-bandwidth connection to a remote server, and there's no easy
+way to do this.
+
+(Hint: You can't use anything involving USB because many corporates lock down
+USB ports to prevent data leaking onto other corporates' networks, or
+conversely to prevent other corporates' data leaking onto their networks. Same
+for Ethernet, Firewire, ...).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

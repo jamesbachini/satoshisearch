@@ -1,0 +1,75 @@
+<PRE>Arshad Noor wrote:
+&gt;<i> Florian Weimer wrote:
+</I>&gt;&gt;<i> * Arshad Noor:
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> <A HREF="http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937">http://www.informationweek.com/shared/printableArticle.jhtml?articleID=208800937</A> 
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On a more serious note, I think the criticism probably refers to the
+</I>&gt;&gt;<i> fact that SKSML does not cryptopgrahically enforce proper key
+</I>&gt;&gt;<i> management.  If a participant turns bad (for instance, by storing key
+</I>&gt;&gt;<i> material longer than permitted by the protocol), there's nothing in the
+</I>&gt;&gt;<i> protocol that stops them.
+</I>&gt;<i> 
+</I>&gt;<i> Thank you for your comment, Florian.
+</I>&gt;<i> 
+</I>&gt;<i> I may be a little naive, but can a protocol itself enforce proper
+</I>&gt;<i> key-management?  I can certainly see it facilitating the required
+</I>&gt;<i> discipline, but I can't see how a protocol alone can enforce it.
+</I>&gt;<i> Any examples you can cite where this has been done, would be very
+</I>&gt;<i> helpful.
+</I>
+I find the question difficult to understand. Before I could even begin 
+to answer, you'd have to define what &quot;proper key management&quot; actually is.
+
+That said, EKMI (from my brief reading) has a view of key management 
+that is only &quot;proper&quot; in quite constrained circumstances. In particular, 
+keys are available to participants other than those who are 
+communicating, which is general considered to be a very bad idea. This 
+is fine if you are a corporation wanting to achieve escrow, of course. 
+Though that can be done without requiring a central server to remember 
+all the keys, of course.
+
+&gt;<i> The design paradigm we chose for EKMI was to have:
+</I>&gt;<i> 
+</I>&gt;<i> 1) the centralized server be the focal point for defining policy;
+</I>&gt;<i> 2) the protocol carry the payload with its corresponding policy;
+</I>&gt;<i> 3) and the client library enforce the policy on client devices;
+</I>&gt;<i> 
+</I>&gt;<i> In some form or another, don't all cryptographic systems follow a
+</I>&gt;<i> similar paradigm?
+</I>
+Well. You said &quot;centralized server&quot;. Many cryptographic systems don't 
+have one of those.
+
+Also, the idea of a client library enforcing policy is DRM all over 
+again. Which, as we all know, will never work.
+
+So, in short: no, they don't.
+
+&gt;<i> Arshad Noor
+</I>&gt;<i> StrongAuth, Inc.
+</I>&gt;<i> 
+</I>&gt;<i> P.S. Companies deploying an EKMI must have an external process in
+</I>&gt;<i> place to ensure their applications are using &quot;verified&quot; libraries
+</I>&gt;<i> on the client devices, so their polices are not subverted.
+</I>
+Ha ha. Like that's going to work. Even if we assume that libraries are 
+verified (fat chance, IMO), how are you going to stop, for example, 
+cut'n'paste? Employees reading things out over the phone? Bugs? Etc.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

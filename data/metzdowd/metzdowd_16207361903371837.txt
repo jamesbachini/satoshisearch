@@ -1,0 +1,40 @@
+<PRE>Paul Hoffman wrote:
+&gt;<i> At 11:21 PM +0100 9/9/08, Dave Howe wrote:
+</I>&gt;&gt;<i> Darren J Moffat wrote:
+</I>&gt;&gt;&gt;<i>  Warnings aren't enough in this context [ whey already exists ] the
+</I>&gt;&gt;&gt;<i>  only thing that will work is stopping the page being seen - replacing
+</I>&gt;&gt;&gt;<i>  it with a clearly worded explanation with *no* way to pass through
+</I>&gt;&gt;&gt;<i>  and render the page (okay maybe with a debug build of the browser but
+</I>&gt;&gt;&gt;<i>  not in the shipped product).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> One thing that concerns me is that in the new release of firefox, there
+</I>&gt;&gt;<i> appears to be NO way to get to a site that has a bad certificate (or
+</I>&gt;&gt;<i> self signed certificate) other than overriding the warning permanently -
+</I>&gt;&gt;<i> no &quot;ok let me see it, I have seen the warning and want to look just this
+</I>&gt;&gt;<i> once&quot; that the &quot;remember mismatched domains&quot; plugin for 2.x gave you.
+</I>&gt;<i> 
+</I>&gt;<i> That may concern you, but I consider it a feature. Instead of teaching
+</I>&gt;<i> users to &quot;always click through the damn dialog boxes&quot;, FF3 says &quot;if you
+</I>&gt;<i> fell for it once, you're going to always fall for it so we won't teach
+</I>&gt;<i> you bad habits&quot;. There are arguments for either strategy.
+</I>
+True enough, but the &quot;clickthru bandits&quot; will just see a button that
+reads to them &quot;make this error go away&quot; then next time will forget they
+did it - and will take the fact that they went straight into the site to
+mean the problem was &quot;fixed&quot; or simply not remember there ever was a
+problem.
+
+In the meantime, a choice I *used to have* is now taken from me, in the
+interests of selling more EV certificates.
+
+&gt;<i> Given that few or none of us on this list are actually trained interface
+</I>&gt;<i> experts, I'm sure we could debate this until Perry pulls the moderator
+</I>&gt;<i> switch again. The salient point is that people who have more stake in
+</I>&gt;<i> the game (Mozilla Inc.) have spent longer thinking about this than we
+</I>&gt;<i> give them credit for and come to the design decisions that they have.
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

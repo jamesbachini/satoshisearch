@@ -1,0 +1,33 @@
+<PRE>|<i> &gt; Exactly what makes this problem so difficult eludes me, although one
+</I>|<i> &gt; suspects that the savage profit margins on consumables like
+</I>|<i> &gt; keyboards and mice might have something to do with it.
+</I>|<i> &gt; 
+</I>|<i> It's moderately complex if you're trying to conserve bandwidth (which
+</I>|<i> translates to power) and preserve a datagram model.  The latter
+</I>|<i> constraint generally rules out stream ciphers; the former rules out
+</I>|<i> things like encrypting the keystroke plus seven random bytes with a
+</I>|<i> 64-bit block cipher.  Power is also an issue if your cipher uses very
+</I>|<i> much CPU time or custom hardware.
+</I>|<i> 
+</I>|<i> I&quot;m sure most readers of this list can propose *some* solution.  It's
+</I>|<i> instructive, though, to consider everything that needs to go into a
+</I>|<i> full system solution, including the ability to resynchronize cipher
+</I>|<i> states and the need to avoid confusing naive users if the cat happened
+</I>|<i> to fall asleep on the space bar while the CPU was turned off.
+</I>Somewhere - perhaps in the Computerworld article - someone mentions that
+some devices use Bluetooth, &quot;and are therefore much more secure&quot;.
+
+In practice, most Bluetooth devices don't even agree on a non-zero
+key when pairing, so just using Bluetooth is no promise of anything.
+Does anyone know how good Bluetooth security can potentially be -
+and is it practically attainable in the low power/lost message
+context that would be needed here?  How are some of the emerging
+low-power protocols (e.g., ZigBee) dealing with this?
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,40 @@
+<PRE>Hi,
+
+
+Probably you have heard about this:
+
+CCC publishes fingerprints of German Home Secretary
+Date: 31 March 2008
+Source: Heise.de
+
+In a protest against the use of biometric data, the
+Chaos Computer Club (CCC) has taken a step that will
+raise a few eyebrows &#173; in the current issue of its
+club magazine Die Datenschleuder, the hackers have
+published the fingerprint of German Home Secretary,
+...
+Link: <A HREF="http://www.liveleak.com/view?i=b29_1206968252">http://www.liveleak.com/view?i=b29_1206968252</A>
+
+
+
+QUESTION: Does anybody knows about the existence of a
+security research in area of grading the easiness to
+steel biometric data.
+For example, I guess that stealing information of
+someone's &quot;face&quot; is easier than stealing information
+about someone's &quot;fingerprints&quot;,
+but stealing information about someone's &quot;retina&quot;
+would be much harder.
+
+
+Such a scale can be useful in the design of secure
+protocols and secured information systems.
+
+
+Danilo Gligoroski!
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

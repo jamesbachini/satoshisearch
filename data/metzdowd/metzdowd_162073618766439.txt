@@ -1,0 +1,39 @@
+<PRE>Eric Young wrote:
+&gt;<i> Eric Young wrote:
+</I>&gt;&gt;<i> I've not looked at it enough yet, but currently I'm doing an AES round
+</I>&gt;&gt;<i> in about 140 cycles a block (call it 13 per round plus overhead) on a
+</I>&gt;&gt;<i> AMD64, (220e6 bytes/sec on a 2ghz cpu) using normal instructions. 
+</I>&gt;<i> Urk, correction, I forgot I've recently upgraded from a 2ghz machine to
+</I>&gt;<i> 2.5ghz.
+</I>&gt;<i> So that should read about 182 cycles per block, and 18 cycles per round.
+</I>&gt;<i> I though the number seems strange :-(.  I tent to always quote numbers
+</I>&gt;<i> from a 2-3 second run encrypting a 4k buffer, not a machine cycle
+</I>&gt;<i> counter over one or two blocks, so I leave myself open to this kind of
+</I>&gt;<i> error :-(
+</I>
+The best figure I obtain on an AMD64 system is 11 cycles/byte, which
+matches your results (you had me worried for a while with 9 cycles/byte!)
+
+To go 5 times faster than this would mean close to 2 cycles/byte, a
+speed that I find hard to believe without hardware acceleration
+
+But a fully byte oriented implementation runs at about 140 cycles/byte
+and here the S-Box substitution step is a significant bottleneck.  I too
+think the PPERM instruction could be used for this and it seems possible
+that this would produce large savings.  So 30 cycles/byte might well be
+achievable in this case.
+
+I hence wonder whether this is the comparison that AMD are making.
+
+It is also possible that the PPERM instruction could be used to speed up
+the Galois field calculations to produce the S-Box mathematically rather
+than by table lookup. I have tried this in the past but it has not
+proved competitive.  But PPERM looks interesting here as well.
+
+   Brian Gladman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

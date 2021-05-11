@@ -1,0 +1,29 @@
+<PRE>&gt;<i> 2. E2E crypto on mobiles would require cross-vendor support, which would mean that it
+</I>&gt;<i> would have to go into the standard.  Unfortunately, standards in the mobile world are
+</I>&gt;<i> heavily influenced by governmnets, and the four horsemen of the apocalypse (drug
+</I>&gt;<i> dealers, paedophiles, spies, and terrorists) are still being used by government types
+</I>&gt;<i> to nix any attempts at crypto they can't break or intercept.
+</I>
+Handset suppliers are traditionally uncomfortable with licensing fees for non-core function.  This is why, for example, memory
+card support has been needed for so long, but is a relatively recent phenomenon.  The suppliers didn't want to pay licensing
+fees to the card standards bodies, despite the massively increased data storage needs which were coincident with the addition of
+camera functionality to phones.
+
+Crypto has been an IP minefield for some years.  With the expiry of certain patents, and the availability of other unencumbered
+crypto primitives (eg. AES), we may see this change.  But John's other points are well made, and still valid.  Downloadable MP3
+ring tones are a selling point.  E2E security isn't (although I've got to wonder about certain teenage demographics... :)
+
+And don't forget, some of the biggest markets are still crypto-phobic.  Every time I enter China I have to tick a box on the
+entry form indicating that I am not carrying any &quot;communications security equipment&quot;.  When my GSM mobile roams onto China
+Telecom, the &quot;unlocked paddlock&quot; logo appears denoting that even A5/2 isn't allowed.  Yet China has mandated full cellphone
+coverage, even in rural areas, and for companies like Motorola and Nokia, it's a must-own marketplace.  Features which may worry
+the often inconsistent and capricious State Encryption Management Committee (SEMC), who can block the entry of your product into
+China, is going to be pruned from the product list pretty damn quickly.
+
+Ian.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

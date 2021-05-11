@@ -1,0 +1,54 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> &quot;Nash Foster&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leaf at google.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> <A HREF="http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/">http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Any actual cryptographers care to comment on this? I don't feel qualified to
+</I>&gt;&gt;<i> judge.
+</I>&gt;<i> 
+</I>&gt;<i> It's quite possible that many implementations do this.  When the Mozilla folks
+</I>&gt;<i> changed their code a year or two back to reject RSA keys with an exponent of
+</I>&gt;<i> one (which in itself means that they'd been accepting those keys for years), a
+</I>&gt;<i> number of certs broke because CAs were issuing exponent-one keys, which in
+</I>&gt;<i> turn means that many other implementations that never complained about these
+</I>&gt;<i> certs were freely accepting them.  Windows CryptoAPI, for example, still
+</I>&gt;<i> allows exponent-one keys as a by-design feature to allow the export of
+</I>&gt;<i> &quot;wrapped&quot; keys in plaintext form.  So it's quite believable that a number of
+</I>&gt;<i> DH implementations allow bad key parameter values, and that this has been
+</I>&gt;<i> going on for years.
+</I>&gt;<i> 
+</I>&gt;<i> (Even the level of validation discussed on the web page doesn't help entirely,
+</I>&gt;<i> FIPS 186 provides extra parameters that you can use for checking the key
+</I>&gt;<i> (p,q,g) while the still widely-used PKCS #3 doesn't (p,g), so even just using
+</I>&gt;<i> PKCS #3 rather than FIPS 186 is a problem).
+</I>
+I wrote a series of articles on the problem of not verifying padding
+with small-exponent RSA.  In the conclusion, it listed a number of
+well-known attacks against other public key systems, including small
+subgroup confinement.
+
+<A HREF="http://www.matasano.com/log/528/rsa-signature-forgery-explained-with-nate-lawson-part-vi/">http://www.matasano.com/log/528/rsa-signature-forgery-explained-with-nate-lawson-part-vi/</A>
+
+The author of the Mu article does not list all the verification steps
+needed, and even seems to infer that the values g and p are negotiated
+between the two parties.  This would be a bad idea, versus choosing a
+set of values that were pre-verified.
+
+This type of attack was even discussed in the realm of IPSEC back in 1997:
+<A HREF="http://www.vpnc.org/ietf-ipsec/97.ipsec/msg00629.html">http://www.vpnc.org/ietf-ipsec/97.ipsec/msg00629.html</A>
+
+All this attack allows is for one side of a DH exchange to intentionally
+downgrade the security, but there's no reason one of them couldn't just
+publish the &quot;secure&quot; derived value AFTER completing the entire exchange.
+ Or, publish their secret exponent.
+
+If this is not authenticated DH, then you have other problems.
+
+-- 
+Nate
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

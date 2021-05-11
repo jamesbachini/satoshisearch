@@ -1,0 +1,69 @@
+<PRE>Jim Youll wrote:
+&gt;<i> these have been circulating for hours, but they are content-free title
+</I>&gt;<i> slides...
+</I>&gt;<i> 
+</I>&gt;<i> On Aug 9, 2008, at 7:38 PM, Ivan Krsti&#196;&#8225; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> On Sat, 09 Aug 2008 17:11:11 -0400, &quot;Perry E. Metzger&quot;
+</I>&gt;&gt;<i> &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt;
+</I>&gt;&gt;<i> wrote:
+</I>&gt;&gt;&gt;<i>    Las Vegas - Three students at the Massachusetts Institute of
+</I>&gt;&gt;&gt;<i>    Technology (MIT) were ordered this morning by a federal court
+</I>&gt;&gt;&gt;<i>    judge to cancel their scheduled presentation about vulnerabilities
+</I>&gt;&gt;&gt;<i>    in Boston's transit fare payment system, violating their First
+</I>&gt;&gt;&gt;<i>    Amendment right to discuss their important research.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> &lt;<A HREF="http://www-tech.mit.edu/V128/N30/subway/Defcon_Presentation.pdf">http://www-tech.mit.edu/V128/N30/subway/Defcon_Presentation.pdf</A>&gt;
+</I>
+There's also the synopsis as an exhibit to the case found in the Wired
+article.  Note the recommendations for corrective action are familiar from
+the  previous reported weaknesses to the MIFARE system.
+
+
+<A HREF="http://blog.wired.com/27bstroke6/2008/08/injunction-requ.html">http://blog.wired.com/27bstroke6/2008/08/injunction-requ.html</A>
+DefCon: Boston Subway Officials Sue to Stop Talk on Fare Card Hacks --
+Update: Restraining Order Issued; Talk Cancelled
+
+<A HREF="http://blog.wired.com/27bstroke6/files/vulnerability_assessment_of_the_mtba_system.pdf">http://blog.wired.com/27bstroke6/files/vulnerability_assessment_of_the_mtba_system.pdf</A>
+Vulnerability Assessment of the MTBA System (Exhibit 1 to Case
+1:08-cv-11364-GAO).
+
+A report on the Dutch Public Transit Card:
+<A HREF="http://staff.science.uva.nl/~delaat/sne-2006-2007/p41/report.pdf">http://staff.science.uva.nl/~delaat/sne-2006-2007/p41/report.pdf</A>
+
+Recently updated Dutch information by Andy Tanenbaum:
+<A HREF="http://www.cs.vu.nl/~ast/ov-chip-card/">http://www.cs.vu.nl/~ast/ov-chip-card/</A>
+
+The fellows at Raboud University Nijmegan:
+<A HREF="http://www.ru.nl/ds/research/rfid/">http://www.ru.nl/ds/research/rfid/</A>
+
+(Where we'll probably be able to find the Esorics 2008 presentation.
+'Dismantling MIFARE Classic', in October.)
+
+I'd imagine there is sufficient information available to replicate the
+attack, there's info on the MIFARE Classic cryptographic algorithm.
+
+<A HREF="http://www.cs.virginia.edu/~kn5f/pdf/Mifare.Cryptanalysis.pdf">http://www.cs.virginia.edu/~kn5f/pdf/Mifare.Cryptanalysis.pdf</A>
+<A HREF="http://www.cs.virginia.edu/~kn5f/pdf/OV-card_security.pdf">http://www.cs.virginia.edu/~kn5f/pdf/OV-card_security.pdf</A>
+
+Algebraic Attacks on the Crypto-1 Stream Cipher in MiFare Classic
+<A HREF="http://eprint.iacr.org/2008/166.pdf">http://eprint.iacr.org/2008/166.pdf</A>
+
+Security Evalution of the disposable OV-chipkaart v1.7  updated 13 April 08
+<A HREF="http://staff.science.uva.nl/~delaat/sne-2006-2007/p41/Report.pdf">http://staff.science.uva.nl/~delaat/sne-2006-2007/p41/Report.pdf</A>
+(which has a description of the memory structure found on the cards as well
+as a lot of useful protocol information.)
+
+And the Translink Netherlands report on why disclosure doesn't matter:
+<A HREF="http://www.translink.nl/media/bijlagen/nieuws/TNO_ICT_-_Security_Analysis_OV-Chipkaart_-_public_report.pdf">http://www.translink.nl/media/bijlagen/nieuws/TNO_ICT_-_Security_Analysis_OV-Chipkaart_-_public_report.pdf</A>
+(translation: security through obscurity? still obscure enough)
+
+And of course we've seen the Raboud video link found on Youtube:
+<A HREF="http://www.youtube.com/v/NW3RGbQTLhE&amp;hl=en">http://www.youtube.com/v/NW3RGbQTLhE&amp;hl=en</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

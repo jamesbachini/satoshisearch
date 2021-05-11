@@ -1,0 +1,37 @@
+<PRE>Comments inline.
+
+On Feb 3, 2008, at 5:56 PM, Eric Rescorla wrote:
+&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> - If you use DTLS with AES in CBC mode, you have the 4 byte DTLS
+</I>&gt;<i> header, plus a 16 byte IV, plus 10 bytes of MAC (in truncated MAC
+</I>&gt;<i> mode), plus 2 bytes of padding to bring you up to the AES block
+</I>&gt;<i> boundary: DTLS adds 32 bytes of overhead, increasing packet
+</I>&gt;<i> size by over 50%. The IPsec situation is similar.
+</I>&gt;<i>
+</I>&gt;<i> - If you use CTR mode and use the RTP header to form the initial
+</I>&gt;<i> CTR state, you can remove all the overhead but the MAC itself,
+</I>&gt;<i> reducing the overhead down to 10 bytes with only 17% packet
+</I>&gt;<i> expansion (this is how SRTP works)
+</I>&gt;<i>
+</I>
+Depending on the lifetime of the keys involved, you can probably  
+truncate the MAC tags much more than this.  Using the RTP counter for  
+use in some appropriate stateful MAC may mean a 3- or 4-byte tag is  
+enough security.  Additionally, in order to conserve bandwidth you  
+might want to make a trade-off where some packets may be forged with  
+small probability (in the VOIP case, that means an attacker gets to  
+select a fraction of a second of sound, which is probably harmless),  
+but it is hard to forge many packets.
+
+In (<A HREF="http://eprint.iacr.org/2006/095">http://eprint.iacr.org/2006/095</A>), John Black and I treat this  
+model in depth, and suggest a MAC scheme which may be most appropriate  
+for this scenario.  A stateful, highly-truncated HMAC will also work  
+fine, but is slower than the scheme we propose.
+
+Martin Cochran
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,57 @@
+<PRE>On Sun, Feb 03, 2008 at 09:24:48PM +1000, James A. Donald wrote:
+&gt;<i> Nicolas Williams wrote:
+</I>&gt;<i> &gt;What, specifically, are you proposing?
+</I>&gt;<i> 
+</I>&gt;<i> I am still writing it up.
+</I>&gt;<i> 
+</I>&gt;<i> &gt; Running the web over UDP?
+</I>&gt;<i> 
+</I>&gt;<i> In a sense.
+</I>&gt;<i> 
+</I>&gt;<i> That should have been done from the beginning, even before security 
+</I>&gt;<i> became a problem.  TCP is a poor fit to a transactional protocol, as the 
+</I>&gt;<i> gyrations with &quot;Keep-alive&quot; and its successors illustrate.
+</I>
+In the beginning most pages were simple enough that to speak of
+&quot;transactional protocol&quot; is almost an exageration.  Web techonologies
+grew organically.  Solutions to the various resulting problems will, I
+bet, also grow organically.
+
+A complete revamping is probably not in the cards.  But if one should be
+then it should not surprise you that I'm all in favor of piercing
+abstraction layers.  User authentication should happen that the
+application layer, and session crypto should happen at the transport
+layer, with everything cryptographically bound up.  In any case we
+should re-use what we know works (e.g., ESP/AH for transport session
+crypto, IKEv2/TLS/DTLS for key exchange, ...).
+
+&gt;<i> In rough summary outline, what I propose is to introduce a distinction 
+</I>&gt;<i> between connections and streams, that a single long lasting connection 
+</I>&gt;<i> contains many transient streams.  This is equivalent to TCP in the case 
+</I>&gt;<i> that a single connection always contains exactly two streams, one in 
+</I>&gt;<i> each direction, and the two streams are created when the connection is 
+</I>&gt;<i> created and shut down when the connection is shut down, but the main 
+</I>&gt;<i> objective is to support usages that are not equivalent to TCP. This is 
+</I>&gt;<i> pretty much the same thing as T/TCP, except that a &quot;connection&quot; can have 
+</I>&gt;<i> a large shared secret associated with it to encrypt the streams.  For an 
+</I>&gt;<i> unencrypted connection, it can be spoof flooded the same way as T/TCP 
+</I>&gt;<i> can be spoof flooded, 
+</I>
+Sounds a bit like SCTP, with crypto thrown in.
+
+&gt;<i>                       but the main design objective is to make 
+</I>&gt;<i> encryption efficient enough that one always encrypts everything.
+</I>
+I thought it was the latency cause by unnecessary round-trips and
+expensive key exchange crypto that motivated your proposal.  The cost of
+session crypto is probably not as noticeable as that of the latency of
+key exchange and authentication.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

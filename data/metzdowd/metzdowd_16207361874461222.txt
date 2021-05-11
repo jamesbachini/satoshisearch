@@ -1,0 +1,29 @@
+<PRE>On Thu, 28 Aug 2008 17:55:57 +0200
+Stefan Kelm &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stefan.kelm at secorvo.de</A>&gt; wrote:
+
+&gt;<i> &gt;&gt; <A HREF="http://en.wikipedia.org/wiki/Toll_Collect">http://en.wikipedia.org/wiki/Toll_Collect</A> is in operation in entire
+</I>&gt;<i> &gt;&gt; Germany. It does OCR on all license plates (also used for police
+</I>&gt;<i> &gt;&gt; purposes in realtime, despite initial vigorous denial) but
+</I>&gt;<i> &gt;&gt; currently is only used for truck toll.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt; How well does that actually work?  There were many articles in RISKS
+</I>&gt;<i> &gt; Digest about problems with the early deployment.
+</I>&gt;<i> 
+</I>&gt;<i> That's true wrt to early deployment. Given that the Toll Collect
+</I>&gt;<i> system has been up and running since January 2005 it (technically)
+</I>&gt;<i> runs surprisingly well. They have improved tremendously and are
+</I>&gt;<i> likely to sell their technology to other european countries.
+</I>&gt;<i> 
+</I>I confess that from a privacy perspective, I'd prefer if it didn't work
+that well...
+
+Thanks.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

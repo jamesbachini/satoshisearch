@@ -1,0 +1,31 @@
+<PRE>On Fri, 7 Mar 2008 15:04:49 +0100
+COMINT &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">comint at gmail.com</A>&gt; wrote:
+
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> This may be out of the remit of the list, if so a pointer to a more
+</I>&gt;<i> appropriate forum would be welcome.
+</I>&gt;<i> 
+</I>&gt;<i> In Applied Crypto, the use of padding for CBC encryption is suggested
+</I>&gt;<i> to be met by ending the data block with a 1 and then all 0s to the end
+</I>&gt;<i> of the block size.
+</I>&gt;<i> 
+</I>&gt;<i> Is this not introducing a risk as you are essentially introducing a
+</I>&gt;<i> large amount of guessable plaintext into the ciphertext.
+</I>&gt;<i> 
+</I>&gt;<i> Is it not wiser to use RNG data as the padding, and using some kind of
+</I>&gt;<i> embedded packet size header to tell the system what is padding?
+</I>&gt;<i> 
+</I>Maybe -- but you probably have enough guessable plaintext elsewhere
+that a bit more simply doesn't matter much.  See, for example, my 1997
+paper &quot;Probable Plaintext Cryptanalysis of the IP Security Protocols,&quot;
+<A HREF="http://www.cs.columbia.edu/~smb/papers/probtxt.pdf">http://www.cs.columbia.edu/~smb/papers/probtxt.pdf</A>
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

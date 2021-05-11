@@ -1,0 +1,32 @@
+<PRE>
+I just got called by an autodialer -- the Caller ID was faked (and in
+any case didn't point at a real number since area codes don't start
+with &quot;0&quot; -- probably a mistake by the scammers).
+
+After I answered, a tape of a cheerful woman informed me this was my
+&quot;last chance to lower the rate on my credit card&quot;, and asked me to
+press one to continue.
+
+You can fill in the rest of the script on your own.
+
+I'm sure this happens all the time now and I was just unaware of it,
+but it is always more vivid when you see it yourself.
+
+I'm certain this scenario would get enough average people to hand over
+their credit card data to more than pay for itself, and smart scammers
+are probably using VOIP accounts they got with stolen credit card
+numbers to do this anyway.
+
+One can also imagine using this technique for a wide variety of spear
+phishing attacks. For example, say you stole a large number of credit
+card numbers but didn't have the CVV2s -- you could set up an IVR
+system to automatically collect them from your victims.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

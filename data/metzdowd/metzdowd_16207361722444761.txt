@@ -1,0 +1,27 @@
+<PRE>Dave Howe wrote:
+&gt;<i> James A. Donald wrote:
+</I>&gt;&gt;<i>  From time to time I hear that DNSSEC is working fine, and on 
+</I>&gt;&gt;<i> examining the matter I find it is &quot;working fine&quot; except that ....
+</I>&gt;<i> 
+</I>&gt;<i> DNSSEC is &quot;working fine&quot; as a technology. However, it is worth 
+</I>&gt;<i> remembering that it works based on digitally signing an entire zone - 
+</I>&gt;<i> the state of the world being what it is, most people prohibit xfer so 
+</I>&gt;<i> any other technology that would allow a zonewalk is not going to be 
+</I>&gt;<i> deployed.
+</I>&gt;<i> 
+</I>&gt;<i> as far as I can tell, this is a basic design flaw, so isn't going to be 
+</I>&gt;<i> rectified anytime soon.
+</I>
+RFC 5155 rectifies this design flaw.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

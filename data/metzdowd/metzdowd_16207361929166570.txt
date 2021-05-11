@@ -1,0 +1,30 @@
+<PRE>Forwarded with permission.
+
+
+-----------
+From: &quot;Sieg, Kent G&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">kgsieg at nsa.gov</A>&gt;
+Subject: Symposium Call for Papers
+Date: Mon, 27 Oct 2008 10:23:50 -0400
+
+Just sending notice of our upcoming Symposium, especially if you can
+present or know of a colleague who would like to do so.  Dr. Kent Sieg  
+
+The Center for Cryptologic History announces a call for papers for its
+biennial Symposium on Cryptologic History.  The Symposium will occur on
+15-16 October 2009 in Laurel, Maryland, at the Johns-Hopkins Applied
+Physics Laboratory located in the Baltimore-Washington corridor.  The
+theme for the Symposium will be &quot;Global Perspectives on Cryptologic
+History&quot;.  We will consider all proposals relating to any aspect of
+cryptologic history.  The deadline for submission of proposals, to
+include a minimum two-page topic prospectus, a brief source list, and a
+biography, is 10 January 2009.  Selected presenters will received
+notification by 1 March 2009.  For further information, contact Dr.
+Kent Sieg, Symposium coordinator, at 301-688-2336 or <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">kgsieg at nsa.gov.</A>
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,27 @@
+<PRE>&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; writes:
+
+&gt;<i>All your data belong to us.  From Computerworld.
+</I>&gt;<i>
+</I>&gt;<i>Trusted Computing Group turns attention to storage
+</I>
+I think it's more like &quot;There must be some business case for these things
+somewhere, surely.  Let's try a breadth-first search...&quot;.
+
+&quot;David G. Koontz&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">david_koontz at xtra.co.nz</A>&gt; writes:
+
+&gt;<i>Even conservatively there is in the tens of millions of these devices sold,
+</I>&gt;<i>although we have no indication how many were actually used for Trusted
+</I>&gt;<i>Computing purposes.
+</I>
+I have a friend who implemented a basic trusted-boot mechanism for a student
+project, so we have evidence of at least one use of a TPM for TC, and I know
+some folks at IBM Research were playing with one a few years ago, so that's at
+least two users so far.  Anyone else?
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,121 @@
+<PRE>Little progress on government-wide smart card initiative, and little
+surprise
+
+November 14, 2007 (Computerworld) More than three years after a
+presidential directive requiring federal government agencies to issue
+new smart-card identity credentials to all employees and contractors,
+progress on the mandate continues to be tediously slow.
+
+Most agencies appear to have missed by a wide margin an October 27
+deadline by which they were supposed to have completed background checks
+and issued smart-ID credentials to all employees and contractors with 15
+years or less of service.
+
+The so-called Personal Identity Verification (PIV) cards are supposed to
+be tamper-proof and to support biometric authentication features. PIV
+cards are designed to control access to federal computer networks and
+facilities and can be used across agencies. Federal agencies are
+mandated to issue them to all employees and contractor under Homeland
+Security Presidential Directive-12 of August 2004. Under the multi-phase
+initiative, agencies have until October 2008 to issue PIV cards to all
+their employees and contractors.
+
+Several government agencies contacted for this story did not respond to
+request for information on their implementation status. But an
+inspection of publicly posted information at IDmanagement.gov, a federal
+identity management site, showed that a large number of government
+agencies had barely begun issuing the cards just prior to the October
+deadline.
+
+
+Well below the Mendoza line
+
+For example, as of Sept. 1, the U.S. Department of Commerce had not
+issued even one PIV credential, though it listed over 40,000 employees
+as requiring it. As of October 19, the Social Security Administration
+had issued cards to 300 of its 65,000 employees, and to 429 of its
+approximately 20,000 contractors. On July 1, the U.S. Department of
+Energy had issued the new cards to 5 out of its 13,500 employees, and
+not a single one to its 98,000 or so contractors.
+
+Doing slightly better was the Department of State, which has issued the
+new ID credentials to 4450 of its 19,865 employees and to more than a
+quarter of its 7000 contractors by Sept. 14. Similarly, the Department
+of Labor has issued cards to 6450 of its 15,600 employees and about 400
+of its 3000 contractors as of Sept. 1
+
+Though the numbers are a far cry from where the agencies were required
+to be, they are not entirely unexpected. From the program's outset,
+security analysts and government IT managers warned that agencies would
+have a hard time meeting HSPD-12 implementation deadlines for a variety
+of technological and logistical reasons.
+
+&quot;This is a classic example of politically established deadlines that are
+not based on any reality at all. It is no more complicated than that,&quot;
+said Franklin Reeder an independent consultant and a former chief of
+information policy at the U.S. Office of Management and Budget (OMB).
+
+&quot;As best as I can tell, HSPD-12 deadlines were set without any real
+understanding of the enormity of what needed to be done or the costs&quot;
+involved in doing so, said Reeder, who is also chairman for the Center
+for Internet Security.
+
+The National Institute for Standards and Technology (NIST), which was
+originally entrusted with the task of coming up with the technical
+specifications for HSPD-12, did a great job in delivering the standards
+on schedule, Reeder said. Since then, agencies have been left with the
+unenviable task of trying in an unreasonably short time frame to replace
+their existing physical and logical access infrastructures with that
+required for the PIV cards, Reeder said.
+
+&quot;It's one of those situations where the technology itself is not
+complicated, but it does comprise many different pieces that have to be
+carefully integrated,&quot; said Hord Tipton, a former CIO with the
+U.S. Department of the Interior. The task involves a lot of cooperation
+between different groups within agencies that have traditionally not
+worked with each other, such as human resources, physical security and
+IT, he said, and sometimes it can also mean replacing ongoing agency
+efforts with the standards mandated by HSPD-12. The biggest example of
+this is the U.S. Department of Defense, which rolled out millions of its
+own IDs, called Common Access Cards. Those were based on a different
+standard, and the DoD is currently in the process of migrating their
+system to the PIV standard.
+
+
+Interoperability looms
+
+In addition to the internal issues, agencies also need to make sure
+their PIV card infrastructures are interoperable with those of other
+government agencies, Tipton said. This raises a whole set of other
+technology, standards, trust, control and political issues that agencies
+need to navigate.
+
+A shared service set up by the General Services Administration (GSA) to
+help agencies enroll employees into the PIV program and issue the new
+cards to them is also still in the process of ramping up according to
+Neville Pattison, vice president of business development and government
+affairs at smartcard vendor Gemalto Inc.
+
+This may have had an impact on the 63 or so federal agencies,
+representing over 800,000 government employees, that are depending on
+GSA to issue PIV cards, he said. Pattison says he expects the GSA shared
+service to eventually achieve a run rate of around 10,000 cards per day,
+&quot;but that's going to be a good five years&quot; from now.
+
+Some of the bigger agencies are also using the HSPD-12 mandate as an
+opportunity to roll out robust long-term ID management programs
+requiring considerably longer implementation schedules, Pattison said.
+
+One example is the Department of Homeland Security, which has managed to
+get the approval of the OMB for a full compliance deadline of 2010.
+
+Larry Orluskie, a DHS spokesman, said the agency received OMB approval
+for the revised implementation schedule &quot;so that it could most
+effectively develop and deploy a scalable agency-wide solution&quot; that
+would form the foundation for ongoing security efforts at DHS.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

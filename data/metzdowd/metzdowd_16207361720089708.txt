@@ -1,0 +1,46 @@
+<PRE>Hello,
+
+As if the latest research (which showed that RAM contents can be 
+recovered after power-down) was not enough, it seems as Firewire ports 
+can form yet an easier attack vector into FDE-locked laptops.
+
+Windows hacked in seconds via Firewire
+<A HREF="http://www.techworld.com/security/news/index.cfm?RSS&amp;NewsID=11615">http://www.techworld.com/security/news/index.cfm?RSS&amp;NewsID=11615</A>
+
+	The attack takes advantage of the fact that Firewire can
+	directly read and write to a system's memory, adding extra speed
+	to data transfer.
+
+IIUC, the tool mentioned only bypasses the Win32 unlock screen, but 
+given the free access to RAM, exploit code that digs out FDE keys is a 
+matter of very little extra work.
+
+This is nothing new. The concept was presented a couple of years ago, 
+but I haven't seen most FDE enthusiasts disable their Firewire ports yet.
+
+Unsurprisingly:
+
+	Microsoft downplayed the problem, noting that the Firewire
+	attack is just one of many that could be carried out if an
+	attacker already has physical access to the system.
+
+	&quot;The claims [...] are not software vulnerabilities,
+	but reflect a hardware design industry issue that affects
+	multiple operating systems,&quot; Bill Sisk, Microsoft's security
+	response communications	manager, told Techworld.
+
+It is not *their* fault, but being a company that pretends to take 
+users' security seriously, and being at a position that allows them to 
+block this attack vector elegantly, I would have gone that extra 
+half-mile rather than come up with excuses why not to fix it. All they 
+need to do is make sure (through a user-controlled but default-on 
+feature) that when the workstation is locked, new Firewire or PCMCIA 
+devices cannot be introduced. That hard?
+
+Hagai.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

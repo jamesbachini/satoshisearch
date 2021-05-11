@@ -1,0 +1,21 @@
+<PRE>I forgot to add the links...
+	<A HREF="http://people.redhat.com/drepper/sha-crypt.html">http://people.redhat.com/drepper/sha-crypt.html</A>
+	<A HREF="http://people.redhat.com/drepper/SHA-crypt.txt">http://people.redhat.com/drepper/SHA-crypt.txt</A>
+
+On Oct 11, 2007, at 10:19 PM, james hughes wrote:
+
+&gt;<i> A proposal for a new password hashing based on SHA-256 or SHA-512  
+</I>&gt;<i> has been proposed by RedHat but to my knowledge has not had any  
+</I>&gt;<i> rigorous analysis. The motivation for this is to replace MD-5 based  
+</I>&gt;<i> password hashing at banks where MD-5 is on the list of &quot;do not use&quot;  
+</I>&gt;<i> algorithms. I would prefer not to have the discussion &quot;MD-5 is good  
+</I>&gt;<i> enough for this algorithm&quot; since it is not an argument that the  
+</I>&gt;<i> customers requesting these changes are going to accept.
+</I>&gt;<i>
+</I>&gt;<i> Jim
+</I>&gt;<i>
+</I>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071011/5220c600/attachment.html">http://www.metzdowd.com/pipermail/cryptography/attachments/20071011/5220c600/attachment.html</A>&gt;
+</PRE>

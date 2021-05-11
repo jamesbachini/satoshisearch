@@ -1,0 +1,239 @@
+<PRE>Dear Perry Metzger:
+
+Jim McCoy asked me to forward this, as he is not subscribed to  
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>, so his posting bounced.
+
+Regards,
+
+Zooko
+
+
+Begin forwarded message:
+
+&gt;<i> From: Jim McCoy &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mccoy at mad-scientist.com</A>&gt;
+</I>&gt;<i> Date: March 20, 2008 10:56:58 PM MDT
+</I>&gt;<i> To: theory and practice of decentralized computer networks &lt;p2p- 
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hackers at lists.zooko.com</A>&gt;
+</I>&gt;<i> Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tahoe-dev at allmydata.org</A>, Cryptography &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+</I>&gt;<i> Subject: Re: [tahoe-dev] [p2p-hackers] convergent encryption  
+</I>&gt;<i> reconsidered
+</I>&gt;<i> Reply-To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tahoe-dev at allmydata.org</A>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> On Mar 20, 2008, at 12:42 PM, zooko wrote:
+</I>&gt;<i>
+</I>&gt;&gt;<i>   Security engineers have always appreciated that convergent
+</I>&gt;&gt;<i>   encryption allows an attacker to perform a
+</I>&gt;&gt;<i>   confirmation-of-a-file attack -- if the attacker already knows
+</I>&gt;&gt;<i>   the full plaintext of a file, then they can check whether a
+</I>&gt;&gt;<i>   given user has a copy of that file.
+</I>&gt;<i>
+</I>&gt;<i> The truth of this depends on implementation details, and is an
+</I>&gt;<i> assertion that cannot be said to cover all or even most of the
+</I>&gt;<i> potential use-cases for this technique.  This property only holds if
+</I>&gt;<i> it is possible for the attacker to link a selected ciphertext/file to
+</I>&gt;<i> a user.  Systems which use convergent encryption to populate a shared
+</I>&gt;<i> storage pool _might_ have this property, but is my no means a
+</I>&gt;<i> certainty; if a system is implemented correctly is is not necessary
+</I>&gt;<i> for users to expose their list of files in order to maintain this
+</I>&gt;<i> shared storage space.
+</I>&gt;<i>
+</I>&gt;&gt;<i>   basically people can tell which files you are storing if they
+</I>&gt;&gt;<i>   are &quot;publically known&quot; files, but they can't learn anything
+</I>&gt;&gt;<i>   about your own personal files.
+</I>&gt;<i>
+</I>&gt;<i> It sounds like you have a design problem.  If nodes that participate
+</I>&gt;<i> in the system can distinguish between publication and _re_- 
+</I>&gt;<i> publication/
+</I>&gt;<i> replication (or whatever you want to call the random sharing of
+</I>&gt;<i> arbitrary data blocks for the purposes of increasing file
+</I>&gt;<i> availability) then you have a problem.  If these two activities are
+</I>&gt;<i> indistinguishable then an observer knows you have some blocks to a
+</I>&gt;<i> file but should not be able to distinguish between you publishing the
+</I>&gt;<i> blocks and the act of re-distribution to increase block availability.
+</I>&gt;<i>
+</I>&gt;&gt;<i>  The Learn-Partial-Information Attack [...]
+</I>&gt;<i>
+</I>&gt;<i> A better title for this would be &quot;Chosen-Plaintext attack on
+</I>&gt;<i> Convergent Encryption&quot;, since what you are talking about is really a
+</I>&gt;<i> chosen plaintext attack.  To be a bit more specific, this is really
+</I>&gt;<i> just a version of a standard dictionary attack.  The solution to this
+</I>&gt;<i> problem is to look at similar systems that suffered from dictionary
+</I>&gt;<i> attacks an see what solutions were created to solve the problem.
+</I>&gt;<i>
+</I>&gt;<i> The most widely known and studied version of this is the old crypt()/
+</I>&gt;<i> passwd problem.
+</I>&gt;<i>
+</I>&gt;&gt;<i>   For another example, if you use Tahoe to backup your entire
+</I>&gt;&gt;<i>   home directory, or your entire filesystem, then the attacker
+</I>&gt;&gt;<i>   gains the opportunity to try to learn partial information about
+</I>&gt;&gt;<i>   various files which are of predictable format but have
+</I>&gt;&gt;<i>   sensitive fields in them, such as .my.cnf (MySQL configuration
+</I>&gt;&gt;<i>   files), .htpasswd, .cvspass, .netrc, web browser cookie files,
+</I>&gt;&gt;<i>   etc..
+</I>&gt;<i>
+</I>&gt;<i> The problem with this imagined attack are twofold.  I will use your
+</I>&gt;<i> Tahoe example for my explanations because I have a passing familiarity
+</I>&gt;<i> with the architecture.  The first problem is isolating the original
+</I>&gt;<i> ciphertext in the pool of storage.  If a file is encrypted using
+</I>&gt;<i> convergent encryption and then run through an error-correction
+</I>&gt;<i> mechanism to generate a number of shares that make up the file an
+</I>&gt;<i> attacker first needs to be able to isolate these shares to generate
+</I>&gt;<i> the orginal ciphertext.  FEC decoding speeds may be reasonably fast,
+</I>&gt;<i> but they are not without some cost.  If the storage pool is
+</I>&gt;<i> sufficiently large and you are doing your job to limit the ability of
+</I>&gt;<i> an attacker to see which blocks are linked to the same FEC operation
+</I>&gt;<i> then the computational complexity of this attack is significantly
+</I>&gt;<i> higher than you suggest.
+</I>&gt;<i>
+</I>&gt;<i> Assuming an all-seeing oracle who can watch every bit sent into the
+</I>&gt;<i> storage pool will get us around this first problem, but it does raise
+</I>&gt;<i> the bar for potential attackers.
+</I>&gt;<i>
+</I>&gt;<i> The second problem an attacker now faces is deciding what sort of
+</I>&gt;<i> format a file might have, what the low-entropy content might be, and
+</I>&gt;<i> then filling in values for these unknowns.  If your block size is
+</I>&gt;<i> small (and I mean &quot;really small&quot; in the context of the sort of systems
+</I>&gt;<i> we are talking about) there might be only a few kilobits of entropy in
+</I>&gt;<i> the first couple of blocks of a file so either a rainbow-table attack
+</I>&gt;<i> on known file formats or a dedicated effort to grab a specific file
+</I>&gt;<i> might be possible, but this is by no means certain.  Increase your
+</I>&gt;<i> block size and this problem becomes much harder for the attacker.
+</I>&gt;<i>
+</I>&gt;&gt;<i>  Defense Against Both Attacks
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>   [...]
+</I>&gt;&gt;<i>   However, we can do better than that by creating a secret value
+</I>&gt;&gt;<i>   and mixing that value into the per-file encryption key (so
+</I>&gt;&gt;<i>   instead of symmetric_key = H(plaintext), you have symmetric_key
+</I>&gt;&gt;<i>   = H(added_secret, plaintext), where &quot;,&quot; denotes an unambiguous
+</I>&gt;&gt;<i>   encoding of both operands). This idea is due to Brian Warner
+</I>&gt;&gt;<i>   and Drew Perttula.
+</I>&gt;<i>
+</I>&gt;<i> Bad idea, for a couple of reasons.  This first problem is that you are
+</I>&gt;<i> assuming the added secret is adding a significant amount of entropy
+</I>&gt;<i> and the second is that you are throwing out the advantage of
+</I>&gt;<i> convergent encryption.  If the secret is shared across multiple files
+</I>&gt;<i> then I can run a known-plaintext attack on your system using a file
+</I>&gt;<i> that I assume I have in common with my target (e.g. a standard, small,
+</I>&gt;<i> OS file) to get their added_secret and then once I know my target's
+</I>&gt;<i> secret I move on to the file I really want to go after.  If your
+</I>&gt;<i> userbase consists of paranoid cyperpunks then the added secret just
+</I>&gt;<i> becomes a lookup in a rainbow table, and if they are the sort of
+</I>&gt;<i> userbase that some people like to call &quot;the consumer market&quot; then the
+</I>&gt;<i> entropy being added here is negligible.
+</I>&gt;<i>
+</I>&gt;<i> A better solution would be to look at something like bcrypt() (see &quot;A
+</I>&gt;<i> Future-Adaptable Password Scheme&quot;) and use this mechanism for files
+</I>&gt;<i> below a certain threshold.  I do not think that the expensive key
+</I>&gt;<i> scheduling operation discounts the use of CTR mode, so you are safe on
+</I>&gt;<i> that side of things, but it would mean that you step away from AES...
+</I>&gt;<i>
+</I>&gt;&gt;<i>  A Comment About Space Savings
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>   One of the original motivations for convergent encryption, as
+</I>&gt;&gt;<i>   expressed in Doceur's technical report, is to conserve storage
+</I>&gt;&gt;<i>   space by coalescing identical files. [...] My suspicion is
+</I>&gt;&gt;<i>   that the gains available for modern uses are nowhere near that
+</I>&gt;&gt;<i>   good -- I wouldn't be surprised if it were less than 5% [...]
+</I>&gt;<i>
+</I>&gt;<i> I would be very, very surprised if you were correct.
+</I>&gt;<i>
+</I>&gt;&gt;<i>   My reasoning is:
+</I>&gt;&gt;<i>    1. The Doceur et al. test set was probably the ideal test set
+</I>&gt;&gt;<i>       to highlight the advantages of coalescing: it was hundreds
+</I>&gt;&gt;<i>       of workstations, which probably all followed the same
+</I>&gt;&gt;<i>       Information Technology Department policies, which were
+</I>&gt;&gt;<i>       probably homogeneous, and which were probably packed with
+</I>&gt;&gt;<i>       many of the same software products (especially Microsoft
+</I>&gt;&gt;<i>       products).
+</I>&gt;<i>
+</I>&gt;<i> Are you suggesting the rest of the world uses software products that
+</I>&gt;<i> are radically different than those used in a corporate environment :)
+</I>&gt;<i> We all use a small set of operating systems, that share the same basic
+</I>&gt;<i> set of files.  We all use the same small set of application software
+</I>&gt;<i> and even if there is a &quot;long tail&quot; in application software the amount
+</I>&gt;<i> of storage this occupies compared to the operating system and most
+</I>&gt;<i> common applications is likely to be a very small fraction of the total
+</I>&gt;<i> being stored.
+</I>&gt;<i>
+</I>&gt;&gt;<i>    2. Movies and music. In 2002, on Windows workstations in an
+</I>&gt;&gt;<i>       office at Microsoft, there probably weren't any movies. For
+</I>&gt;&gt;<i>       some of the probable use cases for Tahoe, movies and
+</I>&gt;&gt;<i>       collections of music are the largest component. The
+</I>&gt;&gt;<i>       presence of movie files, which are large, could increase or
+</I>&gt;&gt;<i>       decrease the proportion of savings from coalescing files,
+</I>&gt;&gt;<i>       depending on the degree to which those files are shared
+</I>&gt;&gt;<i>       among multiple users, which brings us to the next point:
+</I>&gt;<i>
+</I>&gt;<i> This was actually a concern of mine when originally designing the
+</I>&gt;<i> system, but for a different reason.  At that time the large content
+</I>&gt;<i> files we were concerned with were music.  We knew that the amount of
+</I>&gt;<i> available music was a bounded total, but at that point in time the
+</I>&gt;<i> world had not converged on a standard set of codecs and standard
+</I>&gt;<i> bitrates for these codecs.  We worried about the fact that the same
+</I>&gt;<i> song would end up with multiple copies in the pool because some people
+</I>&gt;<i> would use LAME, some would use WinAMP, others a pirated Fraunhofer
+</I>&gt;<i> codec, and none of them would use the same bitrate.  This problem
+</I>&gt;<i> still exists somewhat, but the fact that most people use only a few
+</I>&gt;<i> packages for CD ripping, codecs have standardized, and most encoding
+</I>&gt;<i> uses only a few standard bitrates makes the job much easier and the
+</I>&gt;<i> storage savings to be realized significantly larger.
+</I>&gt;<i>
+</I>&gt;<i> When it comes to movies, the fact that a lot of them are *cough*
+</I>&gt;<i> &quot;distributed&quot; from a few master copies and seldom re-encoded means
+</I>&gt;<i> that you are likely to see many copies of the same bits when it comes
+</I>&gt;<i> to this category.  DVD ripping is also a fairly standardized process,
+</I>&gt;<i> so you win again.
+</I>&gt;<i>
+</I>&gt;<i> Given the fact that people are not buying terabyte drives to store
+</I>&gt;<i> their scans of Proust folios I think we can make an educated guess as
+</I>&gt;<i> to what is taking up a lot of space on these drives and how much
+</I>&gt;<i> duplication there is among these bits.
+</I>&gt;<i>
+</I>&gt;&gt;<i>    3. The Long Tail; Today there seems to be a more diverse set
+</I>&gt;&gt;<i>      of things taking up a bigger portion of the total.
+</I>&gt;<i>
+</I>&gt;<i> For all the talk of &quot;the long tail&quot; it seems that we all tend to visit
+</I>&gt;<i> the same set of YouTube clips and archive a lot of the same
+</I>&gt;<i> information.  More info is being generated by diverse groups, but the
+</I>&gt;<i> amount being generated still seems to be growing a lot slower than
+</I>&gt;<i> available storage capacity.  One side-effect of the long-tail is that
+</I>&gt;<i> as groups become more diverse in their taste in information they still
+</I>&gt;<i> tend to share the information that is specific to their interests.
+</I>&gt;<i> You might see the storage advantages decline somewhat until you have a
+</I>&gt;<i> significant userbase, but when considered in relation to point #2 this
+</I>&gt;<i> is really a minor issue.
+</I>&gt;<i>
+</I>&gt;&gt;<i>    4. Personally-produced photos and movies. It seems like some
+</I>&gt;&gt;<i>       of the files that people are most eager to back up and to
+</I>&gt;&gt;<i>       share are the product of their own cameras. Such files will
+</I>&gt;&gt;<i>       typically be shared by only one or a few users.
+</I>&gt;<i>
+</I>&gt;<i> This is the only point I can agree upon.  Personally-generated media
+</I>&gt;<i> (which is distinct from &quot;user-generated content&quot;) is what makes
+</I>&gt;<i> individual systems unique.  On a generic user's computer this breaks
+</I>&gt;<i> down into three basic categories:
+</I>&gt;<i>
+</I>&gt;<i> 	-Personal documents
+</I>&gt;<i> 	-Photos
+</I>&gt;<i> 	-&quot;Home&quot; movies
+</I>&gt;<i>
+</I>&gt;<i> The size of the first is negligible.  The second is large and getting
+</I>&gt;<i> larger, and the third is probably a lot smaller than most of us
+</I>&gt;<i> think.  Photos are really the only one that will skew this result.
+</I>&gt;<i>
+</I>&gt;<i> In conclusion I would have to say that the sky is not really falling.
+</I>&gt;<i> The attack outlined is a known problem that can be solved in ways that
+</I>&gt;<i> still preserve the advantages of convergent encryption.
+</I>&gt;<i>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> tahoe-dev mailing list
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tahoe-dev at allmydata.org</A>
+</I>&gt;<i> <A HREF="http://allmydata.org/cgi-bin/mailman/listinfo/tahoe-dev">http://allmydata.org/cgi-bin/mailman/listinfo/tahoe-dev</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

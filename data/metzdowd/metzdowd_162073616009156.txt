@@ -1,0 +1,75 @@
+<PRE>ASSUMPTIONS:
+
+Network latency is important, and will only become more so, since
+light won't go faster in a given medium, and we can't do better than
+c, ever.
+
+PROPOSED SOLUTION:
+
+Refactor protocol to minimize number of interlocked steps.
+Specifically, reduce the number of messages.
+
+METHODOLOGY:
+
+Identify data which must be transmitted, and identify their
+dependencies.  Send data on first outbound message to peer after all
+its dependencies are available (i.e. on the step after it is
+received).  Each transmission is a sweep of one level of the
+dependency tree, starting at the root and working downward.
+
+PREVIOUS WORK:
+
+Three messages is the proven minimum for mutual authentication.  Last
+two messages all depend on the previous message, so minimum handshake
+time is 1.5 RTTs.
+
+EXAMPLE:
+
+First examine SSL with Mutual Auth, which is detailed here:
+
+<A HREF="http://en.wikipedia.org/wiki/Image:Ssl_handshake_with_two_way_authentication_with_certificates.png">http://en.wikipedia.org/wiki/Image:Ssl_handshake_with_two_way_authentication_with_certificates.png</A>
+
+Here is a refactored version of the important messages:
+
+C-&gt;S: hello, RNc, client cert, enc_S(client_cert)
+S-&gt;C: server cert
+C-&gt;S: enc_S(PMS)
+
+DISCUSSION:
+
+Providing the datum as soon as its dependencies are satisfied is
+well-studied in processor design.
+
+One may have extra messages, but they are implementation artifacts,
+completely irrelevant to the cryptography.
+
+Network protocol libraries advance through time monotonically and thus
+are analogous to LR(1) language parsers which parse from left to right
+and are only able to look at the next token (message); perhaps we can
+apply what we already know about them to create unambiguous crypto
+handshakes with respectable error handling.
+
+Sending one layer of the dependency tree at once is like a synchronous
+circuit; one could also fire off messages as soon the data becomes
+available, like an asynchronous circuit, which may reduce overall time
+of the handshake due to computation by the endpoints.  However, it is
+an implementation detail, not important to this analysis.
+
+OPEN QUESTIONS:
+
+When would a handshake require more?  Is there such a thing, in any
+extant ZKS or PFS systems?
+
+COMMENTS?
+-- 
+Life would be so much easier if it was open-source.
+&lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071108/8894bcfa/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071108/8894bcfa/attachment.pgp</A>&gt;
+</PRE>

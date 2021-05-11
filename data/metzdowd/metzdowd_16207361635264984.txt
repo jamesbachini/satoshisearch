@@ -1,0 +1,22 @@
+<PRE>On Wed, Dec 26, 2007 at 04:34:55PM -0500, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+|<i> Quoting my friend Marcus Ranum, the Internet
+</I>|<i> will remain as insecure as it can and still
+</I>|<i> apparently function.  Why should voting be
+</I>|<i> different?
+</I>
+Voting is different (by which I mean worse) because the requirements
+are hard.
+
+Should voters and ballots be identified? Should you be required to
+show up in person? What about confirmability? How important is that
+versus usability?
+
+Electronic commerce, by comparison, is a walk in the park.
+
+Adam
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

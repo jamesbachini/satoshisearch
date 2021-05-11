@@ -1,0 +1,29 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> No. It really does not. Shannon's tenth theorem is about correcting
+</I>&gt;<i> lossy channels with statistically random noise. This is about making
+</I>&gt;<i> sure something bad doesn't happen to your computer like having someone
+</I>&gt;<i> transmit blocks of your hard drive out on the network. I assure you
+</I>&gt;<i> that Shannon's theorem doesn't speak about that possibility. 
+</I>
+Yet, Shannons' tenth theorem can be proven without a hypothesis that 
+noise is random, or that the signal is anything in particular.
+
+Using intuition, because no formality is really needed, just consider 
+that the noise is a well-defined sinus function. The error-correcting 
+channel provides the same sinus function in counter phase. You will 
+see that the less random the noise is, the easier it gets. Not the 
+other around.
+
+How about an active adversary? You just need to consider the 
+adversary's reaction time and make sure that the error-correcting 
+channel has enough capacity to counter-react within that reaction 
+time. For chip fabrication, this may be quite long.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

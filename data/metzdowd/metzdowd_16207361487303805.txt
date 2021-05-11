@@ -1,0 +1,50 @@
+<PRE>(I don't have access to windoze... cannot verify if my suggestion would
+work...)
+
+Can't you replace the installed root certs with empty files or bogus
+content such that they will fail path validation and still trick MS not
+to re-install them?
+
+-Frank.
+
+
+
+
+Jeffrey Altman wrote:
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> wrote:
+</I>&gt;&gt;<i> The executive summary, so I've got something to reply to:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>   In the default configuration for Windows XP with Service Pack 2 (SP2),
+</I>&gt;&gt;<i> if a
+</I>&gt;&gt;<i>   user removes one of the trusted root certificates, and the certifier who
+</I>&gt;&gt;<i>   issued that root certificate is trusted by Microsoft, Windows will
+</I>&gt;&gt;<i> silently
+</I>&gt;&gt;<i>   add the root certificate back into the user's store and use the original
+</I>&gt;&gt;<i>   trust settings.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> While I don't agree with this behaviour, I can see why Microsoft would do
+</I>&gt;&gt;<i> this, and I can't see them changing it at any time in the future.  It's the
+</I>&gt;&gt;<i> same reason why they ignore key usage restrictions and allow (for
+</I>&gt;&gt;<i> example) an
+</I>&gt;&gt;<i> encryption-only key to be used for signatures, and a thousand other
+</I>&gt;&gt;<i> breaches
+</I>&gt;&gt;<i> of PKI etiquette: There'd be too many user complaints if they didn't.
+</I>&gt;<i> 
+</I>&gt;<i> The real flaw that I see in their design is that they permit
+</I>&gt;<i> certificates that they installed to be removed.  Instead they should
+</I>&gt;<i> have provided a &quot;disabled&quot; feature so that those who wish to disable
+</I>&gt;<i> installed certs can do so and thereby ensure that in the future they
+</I>&gt;<i> won't be restored.
+</I>&gt;<i> 
+</I>&gt;<i> Jeffrey Altman
+</I>&gt;<i> 
+</I>
+-- 
+Frank Siebenlist               <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">franks at mcs.anl.gov</A>
+The Globus Alliance - Argonne National Laboratory
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

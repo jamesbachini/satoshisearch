@@ -1,0 +1,76 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> On Sat, 03 May 2008 17:00:48 -0400
+</I>&gt;<i> &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+</I>&gt;&gt;&gt;&gt;<i> I am left with the strong suspicion that SSL VPNs are &quot;easier to
+</I>&gt;&gt;&gt;&gt;<i> configure and use&quot; because a large percentage of their user
+</I>&gt;&gt;&gt;&gt;<i> population simply is not very sensitive to how much security is
+</I>&gt;&gt;&gt;&gt;<i> actually provided.
+</I>&gt;&gt;&gt;<i> They're &quot;easier to configure and use&quot; because most users don't want
+</I>&gt;&gt;&gt;<i> to have to rebuild their entire world around PKI just to set up a
+</I>&gt;&gt;&gt;<i> tunnel from A to B.
+</I>&gt;&gt;<i> I'm one of those people who uses OpenVPN instead of IPSEC, and I'm one
+</I>&gt;&gt;<i> of the people who helped create IPSEC.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Right now, to use SSH to remotely connect to a machine using public
+</I>&gt;&gt;<i> keys, all I have to do is type &quot;ssh-keygen&quot; and copy the locally
+</I>&gt;&gt;<i> generated public key to a remote machine's authorized keys file.
+</I>&gt;&gt;<i> When there is an IPSEC system that is equally easy to use I'll switch
+</I>&gt;&gt;<i> to it.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Until then, OpenVPN let me get started in about five minutes, and the
+</I>&gt;&gt;<i> fact that it is less than completely secure doesn't matter much to me
+</I>&gt;&gt;<i> as I'm running SSH under it anyway.
+</I>&gt;&gt;<i>
+</I>&gt;<i> There's a technical/philosophical issue lurking here.  We tried to
+</I>&gt;<i> solve it in IPsec; not only do I think we didn't succeed, I'm not at
+</I>&gt;<i> all clear we could or should have succeeded.
+</I>&gt;<i> 
+</I>&gt;<i> IPsec operates at layer 3, where there are (generally) no user
+</I>&gt;<i> contexts.  This makes it difficult to bind IPsec credentials to a user,
+</I>&gt;<i> which means that it inherently can't be as simple to configure as ssh.
+</I>&gt;<i> 
+</I>&gt;<i> Put another way, when you tell an sshd whom you wish to log in as, it
+</I>&gt;<i> consults that user's home directory and finds an authorized_keys file.
+</I>&gt;<i> How can IPsec -- or rather, any key management daemon for IPsec -- do
+</I>&gt;<i> that?  Per-user SPDs?  Is this packet for port 80 for user pat or user
+</I>&gt;<i> chris?
+</I>&gt;<i> 
+</I>&gt;<i> I can envision ways around this (especially if we have an IP address
+</I>&gt;<i> per user of a system -- I've been writing about fine-grained IP address
+</I>&gt;<i> assignment for years), but they're inherently a lot more complex than
+</I>&gt;<i> ssh.
+</I>
+I don't see why.
+
+The ssh server determines who the packets are for from information sent 
+to it by the ssh client.
+
+The ssh client knows on whose behalf it is acting by virtue of being 
+invoked by that user (I'll admit this is a simplification of the most 
+general case, but I assert my argument is unaffected), and thus is able 
+to include the information when it talks to the server.
+
+Similarly, the client end of an IPSEC connection knows who opened the 
+connection and could, similarly, convey that information. That data may 
+not be available in some OSes by the time it gets to the IPSEC stack, 
+but that's a deficiency of the OS, not a fundamental problem.
+
+It seems to me there's no real difference between the two cases.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

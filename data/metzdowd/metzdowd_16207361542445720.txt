@@ -1,0 +1,46 @@
+<PRE>There are pdf viewers and pdf image and text extraction tools for
+various platforms that allow you to extract content despite the
+document Security Methods specification of Document Restrictions. 
+Failing that you could always do screen grabs and Optical Character
+Recognition.
+
+DRM failing because they let people actually see their super-Sekrets.
+
+Saw a fun one recently, watermarks whose text becomes opaque after
+printing once.  Gee, you make the file ugo-w, or should you start
+looking out for signs of a root kit?
+
+D.
+
+
+
+--- Peter Gutmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A>&gt; wrote:
+
+&gt;<i> Lets say you've been tasked with implementing a DRM system.  So you
+</I>&gt;<i> go to the
+</I>&gt;<i> Digital Content Protection LLC site and download the HDCP spec, which
+</I>&gt;<i> contains
+</I>&gt;<i> all the test vectors, sample keys, and whatnot, that you need for
+</I>&gt;<i> HDCP.
+</I>&gt;<i> 
+</I>&gt;<i> However, since it's from Digital Content Protection LLC, the docs are
+</I>&gt;<i> DRM'd
+</I>&gt;<i> (PDF-protected from copying).  So you can eyeball the key tables and
+</I>&gt;<i> test
+</I>&gt;<i> vectors that you need to implement the DRM, you just can't use them.
+</I>&gt;<i> 
+</I>&gt;<i> DRM, helping prevent... DRM.
+</I>&gt;<i> 
+</I>&gt;<i> Peter.
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

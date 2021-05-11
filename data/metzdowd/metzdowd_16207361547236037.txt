@@ -1,0 +1,44 @@
+<PRE>Hi,
+
+On 12/09/07 08:56, Aram Perez wrote:
+&gt;<i> The IronKey appears to provide decent security while it is NOT plugged
+</I>&gt;<i> into a PC. But as soon as you plug it in and you have to enter a
+</I>&gt;<i> password to unlock it, the security level quickly drops. This would be
+</I>&gt;<i> the case even if they supported Mac OS or *nix.
+</I>&gt;<i> 
+</I>&gt;<i> As I stated in my response to Jerry Leichter, in my opinion, their
+</I>&gt;<i> marketing department is selling snake oil.
+</I>
+I think there is a difference between a product that is susceptible to
+an attack and the pure distilled 100% natural snake oil, as we usually
+define it.
+
+Indeed, the encrypted USB token is susceptible to sniffing of the
+password on the PC where it is entered. But in my opinion this is not
+the type of flaw that snake oils the product, because:
+
+1. It's a limitation that also exists in the state of the art products
+of its type. That is, nobody could ever do better (I think).
+2. It therefore does not reflect complete lack of understanding on the
+developer's side...
+
+So perhaps it's not pure snake oil but just a product with an attack
+vector; most products have at least one.
+
+Actually, this product is (almost) the first one that I saw which
+actually bothers to deal with the brute-force attack vector, which does
+exist in many other similar products. So it's not perfect, and I would
+certainly not bet my life on it, probably not even my life's data, but
+it's reasonable.
+
+Hagai.
+
+-- 
+Hagai Bar-El - Information Security Analyst
+T/F: 972-8-9354152 Web: www.hbarel.com
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

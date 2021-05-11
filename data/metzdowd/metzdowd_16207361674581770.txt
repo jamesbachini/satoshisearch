@@ -1,0 +1,94 @@
+<PRE>
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> (No, I'm not a fan of X.509 certs, but those are not
+</I>&gt;&gt;<i> core to the protocol, and you can think of them as
+</I>&gt;&gt;<i> nothing more than a fancy key container format if you
+</I>&gt;&gt;<i> like. Key management is not addressed by SSL, so there
+</I>&gt;&gt;<i> is no reason that fixing key management has anything
+</I>&gt;&gt;<i> to do with SSL per se.)
+</I>&gt;<i>
+</I>&gt;<i> The two actually working, widely used, secure systems
+</I>&gt;<i> are SSH and Skype,
+</I>
+SSL is in use just about everywhere, James. https: is used constantly,
+and there are many other applications that make use of it. My mom uses
+SSL regularly, but by contrast I don't think she's ever touched SSH.
+
+Perhaps you argue that SSL is not secure, but it appears to have
+withstood all attacks to date. You might claim that it does not
+prevent phishing attacks or some such, but then you are making a claim
+about how people use https in practice,, not about SSL at all. The SSL
+part of that protocol is fine, just as the RSA and AES or 3DES parts
+of that protocol are fine.
+
+&gt;<i> neither of which uses SSL/TLS/PKI
+</I>
+I'm going to start referring to you as James Donald/George W. Bush.
+
+Why does James Donald/George W. Bush persist in involving us in wars
+in foreign countries, I wonder? Please don't claim that you're not
+somehow part of James Donald/George W. Bush, because as you see I've
+juxtaposed your names, which is proof that you must be part of the
+same entity.
+
+If you don't like my doing that, then stop referring to SSL/TLS/PKI
+because SSL has nothing to do with PKI.
+
+SSL has nothing to do with PKI. X.509 certs are just a key container
+format. The applications get to decide what to do with them. You
+persistently claim that SSL has something to do with public key
+infrastructure, but it has no more to do with public key
+infrastructure at all. You shouldn't mention them at the same
+time. You are free to write applications that use SSL with a PKI, or
+without it -- the two have nothing to do with each other whatsoever. I
+know of many apps that use SSL and don't touch PKI at all.
+
+Constantly mentioning PKI and SSL at the same time betrays a
+substantial ignorance of the system architecture we're mentioning --
+it would make as much sense to claim that SSL has something to do with
+IKE because both use X.509 certificates.
+
+&gt;<i> The proof of the pudding is in the eating.  When large
+</I>&gt;<i> numbers of people use cryptography that really does make
+</I>&gt;<i> them secure, they are not using SSL/TLS/PKI.
+</I>
+Well, James Donald/George W. Bush, I presume this means that you have
+a way of breaking SSL. Could you share it with us? If not, please stop
+conflating things that are unconnected.
+
+&gt;<i> SSL involves digital certificates.
+</I>
+Not really, James Donald/George W. Bush. It involves public keys, and
+it provides a channel by which X.509 certificates can be exchanged,
+but by the same token, SSH also provides a channel by which X.509
+certs can be exchanged. Should we therefore refer to SSH/PKI
+
+&gt;<i> The particular digital certificate format necessarily imply a PKI
+</I>&gt;<i> structure
+</I>
+No, James Donald/George W. Bush, that's not even remotely true. There
+is no requirement that you use the certs as anything other than key
+containers.
+
+&gt;&gt;<i> My opinion (and just about everyone else's) is well
+</I>&gt;&gt;<i> known.
+</I>&gt;<i>
+</I>&gt;<i> There is a serious security problem in the network.  It
+</I>&gt;<i> needs fixing. SSL/TLS/PKI exists, yet is entirely
+</I>&gt;<i> ineffectual in fixing it.
+</I>
+Well, James Donald/George W. Bush, perhaps that is because SSL has
+nothing to do with the issue. SSL works perfectly so far as we
+know. The issue is that higher levels of the stack (like key
+management) aren't properly designed, but SSL itself is just fine.
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

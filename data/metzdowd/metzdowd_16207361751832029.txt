@@ -1,0 +1,71 @@
+<PRE>
+Jacob Appelbaum wrote:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> A pretty scary paper from the Usenix LEET conference:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> <A HREF="http://www.usenix.org/event/leet08/tech/full_papers/king/king_html/">http://www.usenix.org/event/leet08/tech/full_papers/king/king_html/</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> The paper describes how, by adding a very small number of gates to a
+</I>&gt;&gt;<i> microprocessor design (small enough that it would be hard to notice
+</I>&gt;&gt;<i> them), you can create a machine that is almost impossible to defend
+</I>&gt;&gt;<i> against an attacker who possesses a bit of secret knowledge. I suggest
+</I>&gt;&gt;<i> reading it -- I won't do it justice with a small summary.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> It is about the most frightening thing I've seen in years -- I have no
+</I>&gt;&gt;<i> idea how one might defend against it.
+</I>&gt;&gt;<i>
+</I>&gt;<i> 
+</I>&gt;<i> &quot;Silicon has no secrets.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> I spent last weekend in Seattle and Bunnie (of XBox hacking fame/Chumby)
+</I>&gt;<i> gave a workshop with Karsten Nohl (who recently cracked MiFare).
+</I>&gt;<i> 
+</I>&gt;<i> In a matter of an hour, all of the students were able to take a
+</I>&gt;<i> selection of a chip (from an OK photograph) and walk through the
+</I>&gt;<i> transistor layout to describe the gate configuration. I was surprised
+</I>&gt;<i> (not being an EE person by training) at how easy it can be to understand
+</I>&gt;<i> production hardware. Debug pads, automated masking, etc. Karsten has
+</I>&gt;<i> written a set of MatLab extensions that he used to automatically
+</I>&gt;<i> describe the circuits of the mifare devices. Automation is key though, I
+</I>&gt;<i> think doing it by hand is the path of madness.
+</I>&gt;<i> 
+</I>&gt;<i> If we could convince (this is the hard part) companies to publish what
+</I>&gt;<i> they think their chips should look like, we'd have a starting point.
+</I>&gt;<i> 
+</I>&gt;<i> Perhaps,
+</I>&gt;<i> Jacob
+</I>
+Silicon has no secrets, indeed. But it's also much too complex for 
+exhaustive functionality tests; in particular if the tests are open 
+ended as they need to be when hunting for backdoors.
+
+While a single chip designer will perhaps not have the authority needed 
+to significantly alter functionality, a small team of designers could 
+very well adopt &quot;their&quot; part of a design and introduce a backdoor.
+
+Hardware designs currently move away from what in software would be open 
+source. Chip obfuscation meant to protect IP combined with the ever 
+increasing size of chips makes it almost impossible to reverse-engineer 
+an entire chip.
+
+Bunnie pointed out that the secret debugging features of current 
+processors perhaps already include functionality that breaks process 
+separation. The fact that these features stay secret suggest that it is 
+in fact hard to detect any undocumented functionality.
+
+Assuming that hardware backdoors can be build, the interesting question 
+becomes how to defeat against them. Even after a particular triggering 
+string is identified, it is not clear whether software can be used to 
+detect malicious programs. It almost appears as if the processor would 
+need a hardware-based virus-scanner or sorts. This scanner could be 
+simple as it only has to match known signatures, but would need have 
+access to a large number of internal data structures while being 
+developed by a completely separate team of designers.
+
+	-Karsten
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

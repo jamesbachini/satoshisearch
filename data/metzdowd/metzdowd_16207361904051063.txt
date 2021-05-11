@@ -1,0 +1,68 @@
+<PRE>On Sep 24, 2008, at 5:45 PM, Perry E. Metzger wrote:
+
+&gt;<i> Jim Youll &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jim at cr-labs.com</A>&gt; writes:
+</I>&gt;&gt;<i> I think it's got to be said that it's not apparent that the end-users
+</I>&gt;&gt;<i> are the /idiots/ who should be called out for &quot;failing&quot; this study.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> &quot;We&quot; gave them these interfaces, protocols and technologies that
+</I>&gt;&gt;<i> allow for things to go so badly wrong. Nothing in the world required
+</I>&gt;&gt;<i> the technology ecosystem to become what it is, except design
+</I>&gt;&gt;<i> decisions that were (and are) made well out of the sphere of
+</I>&gt;&gt;<i> influence of mere &quot;idiot users.&quot;
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> This stuff was designed and shepherded to market by the modern
+</I>&gt;&gt;<i> captains of industry, by rock star developers and w&#252;nderkinden.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> When a real engineer builds a bridge that falls down, we blame the
+</I>&gt;&gt;<i> engineer, not gravity.
+</I>&gt;<i>
+</I>&gt;<i> 419 scams are not caused by bad interfaces or bad engineering.
+</I>&gt;<i> Phishing is, but clearly not all con games are, and con games are
+</I>&gt;<i> remarkably profitable.
+</I>
+The article and the study concerned user vulnerabilities compounded
+by poor user interfaces and poor underlying architectures. I was  
+addressing
+my comments toward the study generally, and to the inappropriate but
+common tone of the article, in particular, not to other out-of-band
+issues. There are many risks in the world. I see in that study some  
+confirmation
+that poor design has made certain of those risks worse.
+
+&gt;<i> I was having a discussion over lunch about a week ago with a couple of
+</I>&gt;<i> pretty well known security people (one of them might pipe up on the
+</I>&gt;<i> list). We were considering what would happen in a particular seemingly
+</I>&gt;<i> foolproof system with a trusted channel if someone got a message via
+</I>&gt;<i> an untrusted channel saying...
+</I>&gt;<i>
+</I>&gt;<i>  &quot;Now, to complete your book purchase, the trusted system is going to
+</I>&gt;<i>   say &quot;If you press &quot;YES&quot;, you're going to send all the money you
+</I>&gt;<i>   have in the world to a con man in Nigeria&quot; -- this is
+</I>&gt;<i>   normal. Please press yes when it says that.&quot;
+</I>&gt;<i>
+</I>&gt;<i> ...a large fraction of users would just press &quot;YES&quot;.
+</I>
+Straw man.
+
+&gt;<i> I don't want to claim that there is no place for better human factors
+</I>&gt;<i> work in security engineering. There clearly is. However, I will
+</I>&gt;<i> repeat, that is not the only story here, and it is not unreasonable to
+</I>&gt;<i> note that there are people who are clearly nearly impossible to
+</I>&gt;<i> protect with almost any level of human factors engineering and
+</I>&gt;<i> security technology.
+</I>
+Considering the magnitude and frequency of losses that apparently occur
+through these technologies, and the fact that the crypto and security
+technologies are pretty far evolved and seem to work well if used  
+well, I
+would counter that human factors are just about all we should be  
+worrying
+about right now, if we hope to ever make online activities as safe as  
+they
+should be.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

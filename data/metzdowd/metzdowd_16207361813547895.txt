@@ -1,0 +1,22 @@
+<PRE>On Fri, Jun 27, 2008 at 12:19:04PM -0700, zooko wrote:
+&gt;<i> and probably other commodity products).  Likewise newfangled ciphers like 
+</I>&gt;<i> Salsa20 and EnRUPT will be considered by me to be faster than AES (because 
+</I>&gt;<i> they are faster in software) rather than slower (because AES might be built 
+</I>&gt;<i> into the commodity hardware).
+</I>
+The calculus on AES may change in the nearish future: Intel is adding
+AES instructions in upcoming processors, and AMD is adding another set
+of instructions in SSE5 to assist AES implementations. AMD claims a 5x
+speedup for AES using SSE5 versus plain x86-64 instructions [2], I
+have not yet seen performance estimates for the Intel instructions.
+
+-Jack
+
+[1]: <A HREF="http://softwarecommunity.intel.com/articles/eng/3788.htm">http://softwarecommunity.intel.com/articles/eng/3788.htm</A>
+[2]: <A HREF="http://www.ddj.com/hpc-high-performance-computing/201803067">http://www.ddj.com/hpc-high-performance-computing/201803067</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

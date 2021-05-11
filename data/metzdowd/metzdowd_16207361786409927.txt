@@ -1,0 +1,86 @@
+<PRE>Jonathan Katz wrote:
+&gt;<i> On Mon, 5 May 2008, Ariel Waissbein wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> [Moderator's note: Again, top posting is discouraged, and not editing
+</I>&gt;&gt;<i> quoted material is also discouraged. --Perry]
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Hi list,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Interesting. Great work! I had been looking *generic* predicate
+</I>&gt;&gt;<i> encryption for some time. Encryption over specific predicates is much
+</I>&gt;&gt;<i> older. Malware (e.g., virus) and software protection schemes have been
+</I>&gt;&gt;<i> using some sort of &quot;predicate encryption&quot; or &quot;trigger&quot; for over two
+</I>&gt;&gt;<i> decades in order to obfuscate code. For example, an old virus used to
+</I>&gt;&gt;<i> scan hard drives looking for a BBS configuration files in a similar
+</I>&gt;&gt;<i> manner and some software protection schemes have encrypted pieces of
+</I>&gt;&gt;<i> code that are decrypted only if some integrity checks (predicates) over
+</I>&gt;&gt;<i> other pieces of the program are passed.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Triggers/predicates are very promising. Yet, they are only useful in
+</I>&gt;&gt;<i> certain applications, since eavesdropping one decryption is enough to
+</I>&gt;&gt;<i> recover the keys and plaintext.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> I co-authored a paper were we used this same concept in a software
+</I>&gt;&gt;<i> protection application ([1]) and later we formalized this concept, that
+</I>&gt;&gt;<i> we called secure triggers, in a paper eventually publised at TISSEC
+</I>&gt;&gt;<i> ([2]). We were only able to construct triggers for very specific
+</I>&gt;&gt;<i> predicate families, e.g.,
+</I>&gt;&gt;<i>  - p(x)=1 iff x=I for some I in {0,1}^k
+</I>&gt;&gt;<i>  - q(x,y,z,...)=1 iff x=I_1, y=I_2, z=I_3,...; and finally
+</I>&gt;&gt;<i>  - r(x)=1 iff x_{j_1}=b_1,...,x_{j_k}=b_k for some b_1,...,b_k in {0,1}
+</I>&gt;&gt;<i>    and indexes i_1,...,i_k (|x|&gt;=k).
+</I>&gt;&gt;<i> While these predicates do not cover arbitrary large possibilities, they
+</I>&gt;&gt;<i> are implemented by efficient algorithms and require assuming only the
+</I>&gt;&gt;<i> existence of IND-CPA secure symmetric ciphers. In [2] we came up with
+</I>&gt;&gt;<i> more applications other than sofprot;)
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> [1] Diego Bendersky, Ariel Futoransky, Luciano Notarfrancesco, Carlos
+</I>&gt;&gt;<i> Sarraute and Ariel Waissbein. &quot;Advanced Software Protection Now&quot;. Core
+</I>&gt;&gt;<i> Security Technologies Tech report.
+</I>&gt;&gt;<i> <A HREF="http://www.coresecurity.com/index.php5?module=ContentMod&amp;action=item&amp;id=491">http://www.coresecurity.com/index.php5?module=ContentMod&amp;action=item&amp;id=491</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> [2] Ariel Futoransky, Emiliano Kargieman, Carlos Sarraute, Ariel
+</I>&gt;&gt;<i> Waissbein. Foundations and applications for secure triggers. ACM TISSEC,
+</I>&gt;&gt;<i> Vol 9(1) (February 2006).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Cheers,
+</I>&gt;&gt;<i> Ariel
+</I>&gt;<i> 
+</I>&gt;<i> Predicate encryption sounds very different from the work you are
+</I>&gt;<i> referencing above. (In particular, as we discuss in the paper, predicate
+</I>&gt;<i> encryption for equality tests is essentially identity-based encryption.)
+</I>&gt;<i> I refer you to the Introduction and Definition 2.1 of our paper, which
+</I>&gt;<i> should give a pretty good high-level overview.
+</I>&gt;<i> 
+</I>
+Hi Jonathan,
+
+and thanks for taking your time to answer. I had already read the
+Introduction and had a quick --i admit-- read over the paper before
+posting to the list. I think that the main difference are the
+applications we are looking at (and I know Sahai's earlier work in
+obfuscation). Take a look at the first three sentences of our article:
+
+&gt;<i> Fix a bitstring, that we regard as a secret. Let be given a family of predicates, and
+</I>&gt;<i> secretly draw a predicate from this family according to a known distribution. Think
+</I>&gt;<i> of predicates as functions with range in {true, false}. We consider algorithms that
+</I>&gt;<i> return the secret if their input evaluates to true on the chosen predicate, else they
+</I>&gt;<i> return nothing.
+</I>
+Of course, the main difference is that one must hold SK (and f) in order
+to decrypt messages according to the predicate encryption scheme. Note
+that if the adversary is given the algorithm i\mapsto SK_{f_i} then
+predicate encryption turns out to be similar to generic secure triggers.
+However, we didn't cover predicates evaluating inner product so that's
+what caught my interest, why I want to analyze how your work applies to
+other problems (and why I think that the schemes are similar).
+
+Cheers,
+Ariel
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

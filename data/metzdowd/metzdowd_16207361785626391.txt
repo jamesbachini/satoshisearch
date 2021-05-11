@@ -1,0 +1,58 @@
+<PRE>On Mon, 5 May 2008, Ariel Waissbein wrote:
+
+&gt;<i> [Moderator's note: Again, top posting is discouraged, and not editing
+</I>&gt;<i> quoted material is also discouraged. --Perry]
+</I>&gt;<i>
+</I>&gt;<i> Hi list,
+</I>&gt;<i>
+</I>&gt;<i> Interesting. Great work! I had been looking *generic* predicate
+</I>&gt;<i> encryption for some time. Encryption over specific predicates is much
+</I>&gt;<i> older. Malware (e.g., virus) and software protection schemes have been
+</I>&gt;<i> using some sort of &quot;predicate encryption&quot; or &quot;trigger&quot; for over two
+</I>&gt;<i> decades in order to obfuscate code. For example, an old virus used to
+</I>&gt;<i> scan hard drives looking for a BBS configuration files in a similar
+</I>&gt;<i> manner and some software protection schemes have encrypted pieces of
+</I>&gt;<i> code that are decrypted only if some integrity checks (predicates) over
+</I>&gt;<i> other pieces of the program are passed.
+</I>&gt;<i>
+</I>&gt;<i> Triggers/predicates are very promising. Yet, they are only useful in
+</I>&gt;<i> certain applications, since eavesdropping one decryption is enough to
+</I>&gt;<i> recover the keys and plaintext.
+</I>&gt;<i>
+</I>&gt;<i> I co-authored a paper were we used this same concept in a software
+</I>&gt;<i> protection application ([1]) and later we formalized this concept, that
+</I>&gt;<i> we called secure triggers, in a paper eventually publised at TISSEC
+</I>&gt;<i> ([2]). We were only able to construct triggers for very specific
+</I>&gt;<i> predicate families, e.g.,
+</I>&gt;<i>  - p(x)=1 iff x=I for some I in {0,1}^k
+</I>&gt;<i>  - q(x,y,z,...)=1 iff x=I_1, y=I_2, z=I_3,...; and finally
+</I>&gt;<i>  - r(x)=1 iff x_{j_1}=b_1,...,x_{j_k}=b_k for some b_1,...,b_k in {0,1}
+</I>&gt;<i>    and indexes i_1,...,i_k (|x|&gt;=k).
+</I>&gt;<i> While these predicates do not cover arbitrary large possibilities, they
+</I>&gt;<i> are implemented by efficient algorithms and require assuming only the
+</I>&gt;<i> existence of IND-CPA secure symmetric ciphers. In [2] we came up with
+</I>&gt;<i> more applications other than sofprot;)
+</I>&gt;<i>
+</I>&gt;<i> [1] Diego Bendersky, Ariel Futoransky, Luciano Notarfrancesco, Carlos
+</I>&gt;<i> Sarraute and Ariel Waissbein. &quot;Advanced Software Protection Now&quot;. Core
+</I>&gt;<i> Security Technologies Tech report.
+</I>&gt;<i> <A HREF="http://www.coresecurity.com/index.php5?module=ContentMod&amp;action=item&amp;id=491">http://www.coresecurity.com/index.php5?module=ContentMod&amp;action=item&amp;id=491</A>
+</I>&gt;<i>
+</I>&gt;<i> [2] Ariel Futoransky, Emiliano Kargieman, Carlos Sarraute, Ariel
+</I>&gt;<i> Waissbein. Foundations and applications for secure triggers. ACM TISSEC,
+</I>&gt;<i> Vol 9(1) (February 2006).
+</I>&gt;<i>
+</I>&gt;<i> Cheers,
+</I>&gt;<i> Ariel
+</I>
+Predicate encryption sounds very different from the work you are 
+referencing above. (In particular, as we discuss in the paper, predicate 
+encryption for equality tests is essentially identity-based encryption.) 
+I refer you to the Introduction and Definition 2.1 of our paper, which 
+should give a pretty good high-level overview.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

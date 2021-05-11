@@ -1,0 +1,86 @@
+<PRE>On Sat, 21 Jul 2007 04:46:51 -0700 (PDT)
+bear &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bear at sonic.net</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> On Thu, 19 Jul 2007, Charles Jackson wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;An earlier post, talking about vulnerabilities and the lack of an
+</I>&gt;<i> &gt;appropriate market response, said:
+</I>&gt;<i> &gt;____________
+</I>&gt;<i> &gt;We're talking about phone calls -- did all of the well-publicized
+</I>&gt;<i> &gt;cellular eavesdropping (Prince Charles, Newt Gingrich (then a major
+</I>&gt;<i> &gt;US politician), and more) prompt a change?  Well, there are now US
+</I>&gt;<i> &gt;laws against that sort of phone eavesdropping gear -- a big help....
+</I>&gt;<i> 
+</I>&gt;<i> Halfway, I think.  ISTR there are laws against manufacture for sale,
+</I>&gt;<i> sale, purchase, or most usage of such gear - but no laws against
+</I>&gt;<i> manufacture without intent to sell, posession, or some exempted
+</I>&gt;<i> types of use of such gear.
+</I>&gt;<i> 
+</I>&gt;<i> Basically, owning such devices is not a crime, nor is using them
+</I>&gt;<i> provided the &quot;target&quot; has been duly notified that their call will be
+</I>&gt;<i> or is being intercepted.  So you can build the gear, and you can demo
+</I>&gt;<i> the gear you've built on a call made for purposes of demo-ing the
+</I>&gt;<i> gear.
+</I>
+Not as I read the statute (and of course I'm not a lawyer).  Have a
+look at 18 USC 2512
+(<A HREF="http://www4.law.cornell.edu/uscode/html/uscode18/usc_sec_18_00002512----000-.html">http://www4.law.cornell.edu/uscode/html/uscode18/usc_sec_18_00002512----000-.html</A>)
+
+	any person who intentionally ...
+
+	manufactures, assembles, possesses, or sells any electronic,
+	mechanical, or other device, knowing or having reason to know
+that the design of such device renders it primarily useful for the
+	purpose of the surreptitious interception of wire, oral, or
+	electronic communications, and that such device or any component
+	thereof has been or will be sent through the mail or transported
+	in interstate or foreign commerce;
+
+	...
+
+So simple possession of a surreptitious interception device is illegal,
+with exceptions for things like sale to law enforcement or
+communications companies.
+
+&gt;<i> 
+</I>&gt;<i> Consult a lawyer first, but I believe it may also be legal to monitor
+</I>&gt;<i> calls made in a given location provided you first put up a sign that
+</I>&gt;<i> says &quot;all cell calls made on these premises will be monitored&quot; etc.
+</I>&gt;<i> But you can't legally buy or sell the equipment to do it.
+</I>
+Probably -- that's not surreptitious.
+&gt;<i> 
+</I>&gt;<i> &gt; I think the most publicized cases of cellular interception,
+</I>&gt;<i> &gt; including the two mentioned above, were interceptions of analog
+</I>&gt;<i> &gt; calls.  Such interception was not too hard to do.  In some cases you
+</I>&gt;<i> &gt; could pick up one side of such calls on old American TV sets (sets
+</I>&gt;<i> &gt; that tuned above channel 69 on the UHF dial).
+</I>&gt;<i> 
+</I>&gt;<i> The technical requirement was for a TV with a UHF analog *tuner* as
+</I>&gt;<i> opposed to a digital channel-selection dial.  The channels that the
+</I>&gt;<i> cellular network used (still uses?  I don't know) were inbetween the
+</I>&gt;<i> channels that were assigned whole numbers in TV tuning.  So you could
+</I>&gt;<i> pick up some cell traffic if you tuned, for example, to UHF TV
+</I>&gt;<i> &quot;channel&quot; 78.44.  But not if you tuned to channel 78 or channel 79.
+</I>
+The specific law I had in mind when I posted that note was the
+ban on scanners capable of picking up cellular bands, as well as
+decoders to convert digital cellular signals to analog.  See
+<A HREF="http://findarticles.com/p/articles/mi_m3457/is_n17_v11/ai_13701996">http://findarticles.com/p/articles/mi_m3457/is_n17_v11/ai_13701996</A>
+and <A HREF="http://www.eff.org/Legislation/?f=bills_affect_online.notice.txt">http://www.eff.org/Legislation/?f=bills_affect_online.notice.txt</A>
+
+There are other provisions in the law that bar interception of
+encrypted or scrambled signals, but I haven't waded through the
+verbiage enough to know if they apply here.
+
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,33 @@
+<PRE>William Allen Simpson wrote:
+ &gt; The whole point of a notary is to bind a document to a
+ &gt; person.  That the person submitted two or more
+ &gt; different documents at different times is readily
+ &gt; observable.  After all, the notary has the
+ &gt; document(s)!
+
+The notary does not want to have the documents, or to
+have the necessary apparatus to produce them on demand.
+Actually existent notaries do not keep the documents.
+
+Again, you are trying to invent a protocol that works
+around the flaws in MD5.  No doubt a competent engineer
+can create such a protocol, but a competent engineer
+would much prefer not to have flaws he needs to work
+around.
+
+Further, there is a long history of cryptographic
+disasters, such as WiFi, where supposedly competent
+engineers set to working around flaws, and instead
+created more and bigger flaws.  Even if someone really
+is a competent engineer, and perfectly capable of
+producing a protocol that works around the known flaws,
+it is hard for anyone else to tell if he really is
+competent enough to work around the flaws, or has
+produced, like WiFi and so many Microsoft projects, an
+even bigger hole than that which he was trying to fix.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

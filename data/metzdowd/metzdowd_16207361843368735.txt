@@ -1,0 +1,29 @@
+<PRE>Florian Weimer &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">fw at deneb.enyo.de</A>&gt; writes:
+
+&gt;<i>Let me rephrase my remark: The trust anchor is conceptually separate
+</I>&gt;<i>from a root CA certificate.
+</I>
+Conceptually yes, in the same way that the Soviet constitition was 
+conceptually quite liberal and protective of individual rights.
+
+In practice, no.  Look at your browser, email app, ... to see how it's reaally 
+done.
+
+&gt;<i>Nothing in that section gives you permission to ignore extensions on the CA 
+</I>&gt;<i>certificate (skipping the first entry in the certification path).  In 
+</I>&gt;<i>addition, the trust anchor cannot be used directly to verify certificates 
+</I>&gt;<i>issued by the CA because the subject DN does not match.  Ergo, the extensions 
+</I>&gt;<i>on the CA certificate are still in force.
+</I>
+I think people might be getting a bit tired of this discussion of PKI quirks 
+so how about the following: you go to the X.509 standards folks and convince 
+them that your interpretation of the spec as given above is the correct one.  
+Once that's done, we can continue.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

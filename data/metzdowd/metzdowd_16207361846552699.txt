@@ -1,0 +1,25 @@
+<PRE>* Allen:
+
+&gt;<i> Interesting tidbit:
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://www.epaynews.com/index.cgi?survey=&amp;ref=browse&amp;f=view&amp;id=121516308313743148197&amp;block=">http://www.epaynews.com/index.cgi?survey=&amp;ref=browse&amp;f=view&amp;id=121516308313743148197&amp;block=</A>
+</I>&gt;<i>
+</I>&gt;<i> &quot;Nick Ogden, a Briton who launched one of the world's first e-commerce
+</I>&gt;<i> processors in 1994, has developed a system for voice-signed financial
+</I>&gt;<i> transactions. The Voice Transact platform was developed by Ogden's
+</I>&gt;<i> Voice Commerce Group in partnership with U.S. speech software firm
+</I>&gt;<i> Nuance Communications.&quot;
+</I>
+Looks a bit fishy because Nuance Communications hasn't issued a similar
+press release about their cooperation.  There's also a total lack of
+technical content.
+
+And calling voice recordings &quot;biometrics&quot; is a bit of a stretch--you
+could ask your customer about color preferences and label it
+&quot;biometrics&quot;, too.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

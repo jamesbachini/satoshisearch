@@ -1,0 +1,21 @@
+<PRE>Steven M. Bellovin wrote:
+ &gt; There's another issue: initial account setup.  [Even
+ &gt; with SRP] people will still need to rely on
+ &gt; certificate-checking for that.  It's a real problem at
+ &gt; some hotspots, where Evil Twin attacks are easy and
+ &gt; lots of casual users are signing up for the first
+ &gt; time.
+
+For banks and health care, initial account setup always
+involves out of band communication, so certificate
+checking not needed.
+
+We need to build our security mechanisms to fit
+characteristic human out of band security, rather than
+trying to force humans to imitate computers.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,27 @@
+<PRE>Thor Lancelot Simon &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">tls at rek.tjls.com</A>&gt; writes:
+
+&gt;<i>The upshot is that, indeed, at least as shown here, this particular
+</I>&gt;<i>configuration frontend to OpenVPN is very easy to configure -- if you are
+</I>&gt;<i>willing to settle for much less security than OpenVPN was designed to
+</I>&gt;<i>provide,
+</I>
+I think you mean:
+
+]... if you're willing to avoid a huge pile of pointless PKI cruft.
+
+which is a major feature of OpenVPN.
+
+&gt;<i>I am left with the strong suspicion that SSL VPNs are &quot;easier to configure
+</I>&gt;<i>and use&quot; because a large percentage of their user population simply is not
+</I>&gt;<i>very sensitive to how much security is actually provided.
+</I>
+They're &quot;easier to configure and use&quot; because most users don't want to have to
+rebuild their entire world around PKI just to set up a tunnel from A to B.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

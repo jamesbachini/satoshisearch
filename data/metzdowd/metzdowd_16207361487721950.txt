@@ -1,0 +1,18 @@
+<PRE>Florian Weimer wrote:
+
+&gt;<i> It's also an open question whether network operators subject to
+</I>&gt;<i> interception requirements can legally offer built-in E2E encryption
+</I>&gt;<i> capabilities without backdoors.
+</I>&gt;<i> 
+</I>
+You probably meant device vendors, not network operators. The whole 
+*point* of E2E security is that network operators are not involved. If 
+they were, it wouldn't be end-to-end!
+
+/ji
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

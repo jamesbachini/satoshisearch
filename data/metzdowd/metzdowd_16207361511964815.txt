@@ -1,0 +1,18 @@
+<PRE>That's quite an interesting thing to ponder, but don't forget that only 
+some supercomputer applications (like crypto!) can be handled well by this 
+sort of highly distributed system.  There is more to most &quot;real 
+supercomputers&quot; than just MHz times number of CPUs - there is also very 
+high-speed data communications and sharing between those multiple CPUs. 
+The botnet does not have that, so it is limited to working on problems 
+that can be completely divided into independent pieces of work where there 
+is little or no need to pass data between the CPUs.  If you're trying to 
+do an exhaustive key search, however, it looks like a pretty attractive 
+thing to use.
+
+-------------------------------------------------------------------
+Todd Arnold
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

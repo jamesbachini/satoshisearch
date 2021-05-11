@@ -1,0 +1,27 @@
+<PRE>Ben Laurie wrote:
+&gt;<i> Ed Gerck wrote:
+</I>&gt;&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;&gt;<i> But doesn't that prove the point? The trust that you consequently 
+</I>&gt;&gt;&gt;<i> place in the web server because of the certificate _cannot_ be copied 
+</I>&gt;&gt;&gt;<i> to another webserver. That other webserver has to go out and buy its 
+</I>&gt;&gt;&gt;<i> own copy, with its own domain name it it.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> A copy is something identical. So, in fact you can copy that server 
+</I>&gt;&gt;<i> cert to another server that has the same domain (load balancing), and 
+</I>&gt;&gt;<i> it will work. Web admins do it all the time. The user will not notice 
+</I>&gt;&gt;<i> any difference in how the SSL will work.
+</I>&gt;<i> 
+</I>&gt;<i> Obviously. Clearly I am talking about a server in a different domain.
+</I>
+Up until recently, you could buy a cert for one domain, use *it* to 
+issue a cert for another domain, and the major web browsers wouldn't 
+kick at the traces provided you sent both certs in the ssl handshake.
+
+Thankfully, they fixed that before *too* many phishers figured it out.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

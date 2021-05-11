@@ -1,0 +1,29 @@
+<PRE>Peter Saint-Andre wrote:
+
+[list of security questions snipped]
+&gt;<i> ***
+</I>&gt;<i> 
+</I>&gt;<i> It strikes me that the answers to many of these questions might be 
+</I>&gt;<i> public information or subject to social engineering attacks...
+</I>
+You might enjoy reading Ari Rabkin's recent paper at SOUPS 2008
+on this issue:
+
+&quot;Personal knowledge questions for fallback authentication:
+Security questions in the era of Facebook&quot;
+Ariel Rabkin
+<A HREF="http://www.cs.berkeley.edu/~asrabkin/bankauth.pdf">http://www.cs.berkeley.edu/~asrabkin/bankauth.pdf</A>
+
+He has slides as well:
+<A HREF="http://www.eecs.berkeley.edu/~asrabkin/rabkin.pdf">http://www.eecs.berkeley.edu/~asrabkin/rabkin.pdf</A>
+
+-David Molnar
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 250 bytes
+Desc: OpenPGP digital signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080806/fa5c6bcc/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080806/fa5c6bcc/attachment.pgp</A>&gt;
+</PRE>

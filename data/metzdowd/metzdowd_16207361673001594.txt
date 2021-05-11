@@ -1,0 +1,41 @@
+<PRE>On Tue, Jan 29, 2008 at 06:34:29PM +0000, The Fungi wrote:
+&gt;<i> On Mon, Jan 28, 2008 at 03:56:11PM -0700, John Denker wrote:
+</I>&gt;<i> &gt; So now I throw it open for discussion.  Is there any significant
+</I>&gt;<i> &gt; value in two-person login?  That is, can you identify any threat 
+</I>&gt;<i> &gt; that is alleviated by two-person login, that is not more wisely 
+</I>&gt;<i> &gt; alleviated in some other way?
+</I>&gt;<i> [...]
+</I>&gt;<i> 
+</I>&gt;<i> I don't think it's security theater at all, as long as established
+</I>&gt;<i> procedure backs up this implementation in a sane way. For example,
+</I>&gt;<i> in my professional life, we use this technique for commiting changes
+</I>...
+
+I think you missed John's point, which is that two-person *login* says
+*nothing* about what happens once logged in -- logging in enables
+arbitrary subsequent transactions that may not require two people to
+acquiesce.
+
+What if one of the persons leaves the other alone to do whatever they
+wish with the system?  Or are the two persons chained to each other?
+(And even then, there's no guarantee that they are both conscious at the
+same time, that no third person shows up and knocks them out *after*
+they've logged in, ...)
+
+&gt;<i> Technology can't effectively *force* procedure (ingenious people
+</I>&gt;<i> will always find a way around the better mousetrap), but it can help
+</I>&gt;<i> remind them how they are expected to interact with systems.
+</I>
+When you force two people to participate on a *per-transaction* basis
+then you probably get both of them to pay attention, though such schemes
+might not scale to thousands, or even hundreds of transactions per-team,
+per-day.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

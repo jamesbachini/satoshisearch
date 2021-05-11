@@ -1,0 +1,115 @@
+<PRE>
+
+On Fri, 22 Jun 2007, Alex Alten wrote:
+
+
+&gt;<i> Actually I think we need a shadow Internet that is used only for
+</I>&gt;<i> security purposes (and is fully encrypted).  It is sort of like the
+</I>&gt;<i> old SS7 signaling infrastructure of the phone network.  It doesn't
+</I>&gt;<i> need the same bandwidth, maybe 1/1000 or 1/10,000 as much.  It would
+</I>&gt;<i> use strictly cryptographic protocols for identity &amp; authentication
+</I>&gt;<i> and key management, etc..
+</I>
+I don't think I agree that a fully encrypted net is for a &quot;security&quot;
+network only.  Most of the attacks we see on protocols require one
+of the following properties:
+
+  * packets can be inserted into the network that do not come from the
+      machines they claim to have come from (spammers exploit SMTP)
+  * packets are readable somewhere besides their intended destination.
+      (criminals eavesdropping on &quot;secure&quot; transactions and logins)
+  * packets can be easily modified in-flight
+      (unethical ISPs or others exploit HTTP by inserting ads into
+      documents that aren't supposed to have them).
+  * authorization information is available in plaintext packets
+      (killed telnet)
+
+These are (or were) protocols that EVERYBODY uses; not just security
+applications.  If someone develops SIP (Secure Internet Protocol,
+in which all payload packets are encrypted end-to-end and completion
+of a secure key agreement protocol is required to initiate every payload
+packet stream)  then running our network on TCP/SIP solves all of these
+issues.
+
+Further, merely encrypting a network doesn't make it suitable for a
+&quot;security&quot; network.  Although that would solve a lot of problems with
+common protocol attacks, it doesn't really address authorization issues.
+
+It makes them easier to address, but by itself it doesn't do it. We
+think of security problems as being associated with machines, but
+security problems are really associated with users.  What keys &amp;c are
+stored on the machine, in a &quot;security&quot; network, is not really
+appropriate information to rely on if a different user is sitting in
+front of it.
+
+A &quot;security&quot; network (or VPN done right) needs two more things:
+someone issuing fully revocable is-a-person credentials (indicating,
+roughly, that the bearer *IS* authorized to use this particular
+secure-net), and strict standards for how secured applications must
+work. Every packet needs to be traceable to the is-a-person credential
+(not just the machine) that was used to enter it on the network.  I
+would be happiest if this credential were hardware: a passcard that
+you stick into a slot in the side of the machine in order to enable
+the secure-net, for example.
+
+But you still need support from secure applications.  The applications
+must guarantee that the is-a-person credential is NEVER stored on the
+hard drive; your participant should have to enter it each time they
+enable the secure-net.  And all the &quot;user profile&quot; information,
+browser settings, etc, should key off the is-a-person credential.  If
+someone who is not using that credential changes a setting, it should
+have absolutely no effect on someone who is using that credential.
+And of course, 100% standard checking is required.  Rejecting any
+non-standard-conforming packet or payload is flatly necessary.
+
+Once you have a secure-net, you kill another common problem:
+
+  * problematic users can't be effectively and selectively banned -
+    they just come back under a new pseudonym/account.
+     (killing NNTP, SMTP, creating severe problems for SSL)
+
+The secure-net, without further modification, is then effectively an
+&quot;island&quot; within which NNTP, SMTP, FTP, SSL, HTTP, etc, can only see
+other systems on the same secure-net.  I'm going to let other people
+think hard about the problems of establishing and controlling gateways
+between secure-nets.
+
+
+&gt;<i> SSL seems to be hanging by a thread, mainly the name to public key
+</I>&gt;<i> mapping depends on how thorough the checking is done in to SSL vs
+</I>&gt;<i> application layers inside of the web browser.  If this is hosed then
+</I>&gt;<i> unrestricted MITM is in the cards sometime in the near future.
+</I>
+SSL is dying because the trust model implemented by its key
+certification process is horrifically clumsy from the user POV and the
+choices it presents are not meaningful to most people nor based on
+distinctions they can practically make.
+
+No information about the signing or trust policies in use by different
+signing authorities is generally available, and sadly, this is largely
+because there _is_ no information to convey about it.
+
+The sole thing that an SSL key establishes is that someone paid the
+signing authority money.  Further, the signing authority is often some
+random unknown person whose name doesn't even appear on the cert, but
+who bought the key on a secondary market.  Further still, the SSL keys
+themselves are bought and sold -- an SSL key is frequently in use by a
+person other than the person whose name appears on the cert, and the
+signing authorities do not track these further transfers nor revoke
+transferred keys.
+
+There is no root key whose further key-signing is controlled by any
+process related to security, nor is keysigning halted or signed keys
+revoked in the case of users who have perpetrated or permitted known
+security abuses.
+
+It should therefore be no surprise that SSL is nearly useless.
+
+				Bear
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

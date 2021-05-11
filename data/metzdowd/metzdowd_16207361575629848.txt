@@ -1,0 +1,29 @@
+<PRE>On 10/24/07, Jon Callas &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jon at callas.org</A>&gt; wrote:
+&gt;<i>
+</I>&gt;<i> Unfortunately, the PTO hands out patents for things like using a
+</I>&gt;<i> laser pointer as a cat toy.
+</I>&gt;<i>
+</I>There is the newish &quot;Peer to Patent&quot; system to help with this.
+Unfortunately, it is voluntary. I just took a quick look and the
+Elcomsoft patent application has not shown up there yet.
+
+I did find a crypto related patent application on &quot;Peer to Patent&quot;,
+&quot;Cipher method and system for verifying a decryption of an encrypted
+user data key&quot; &lt;<A HREF="http://www.peertopatent.org/patent/20070160202/activity">http://www.peertopatent.org/patent/20070160202/activity</A>&gt;.
+You can view the application and existing comments (and comment
+yourself).
+
+The &quot;Peer to Patent&quot; system is only a pilot program. It works by
+people submitting evidence about a patent and the ten most voted for
+pieces of evidence get submitted along with the patent application to
+the examiner. For participating, an inventor gets expedited patent
+examination. There have been blogs saying &quot;Peer to Patent&quot; aspires to
+be a reputation-based system but I don't see it there yet.
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,21 @@
+<PRE>On Wed, Dec 26, 2007 at 09:57:52AM -0800, Ed Gerck wrote:
+
+&gt;<i> In e-commerce there must be no privacy, the merchant must know who I am, my 
+</I>&gt;<i> credit card must be valid.
+</I>
+The only reason this 'must' be true is because an anonymous and secure
+payment system is a terror which thankfully our federal governments
+and central banks protect us from. While Amazon and others obviously
+like being able to build customer profiles of everyone, I don't doubt
+that they would be perfectly willing to accept an anonymous payment as
+long as the money is good (and, of course, that the transaction costs
+are no more than a credit card and/or the order flow is sufficient
+that it is worth building support for it).
+
+Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE>Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; writes:
+
+&gt;<i>I don't propose to get into an extended debate about whether it is better to
+</I>&gt;<i>use SRTP or to use generic DTLS. That debate has already happened in IETF and
+</I>&gt;<i>SRTP is what the VoIP vendors are doing. However, the good news here is that
+</I>&gt;<i>you can use DTLS to key SRTP (draft-ietf-avt-dtls-srtp), so there's no need
+</I>&gt;<i>to invent a new key management scheme.
+</I>
+Hmm, given this X-to-key-Y pattern (your DTLS-for-SRTP example, as well as
+OpenVPN using ESP with TLS keying), I wonder if it's worth unbundling the key
+exchange from the transport?  At the moment there's (at least):
+
+  TLS-keying --+-- TLS transport
+               |
+               +-- DTLS transport
+               |
+               +-- IPsec (ESP) transport
+               |
+               +-- SRTP transport
+               |
+               +-- Heck, SSH transport if you really want
+
+Is the TLS handshake the universal impedance-matcher of secure-session
+mechanisms?
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

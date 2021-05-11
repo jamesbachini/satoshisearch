@@ -1,0 +1,91 @@
+<PRE>&gt;<i>  SHA-1(1), SHA-1(2), SHA-1(3), ... SHA-1(N) will look random, but clearly is
+</I>&gt;<i> not.
+</I>
+Just by curiosity, I ran the Diehard tests on /dev/random (FreeBSD
+7.0) and a sha1 sequence of [ 1 ... N ]. Both random files are 63 Mb.
+I know that there has been some controversy about /dev/random of
+FreeBSD on this list in the past, I don't know if the &quot;issues&quot; has
+been solved, though. I do not have any other OS at hand right now.
+
+To interpret the results, quoting DieHard presentation:
+
+        Most of the tests in DIEHARD return a p-value, which
+	should be uniform on [0,1) if the input file contains truly
+	independent random bits.   Those p-values are obtained by
+	p=1-F(X), where F is the assumed distribution of the sample
+	random variable X---often normal. But that assumed F is often just
+	an asymptotic approximation, for which the fit will be worst
+	in the tails. Thus you should not be surprised with  occasion-
+	al p-values near 0 or 1, such as .0012 or .9983. When a bit
+	stream really FAILS BIG, you will get p`s of 0 or 1 to six
+	or more places.  By all means, do not, as a Statistician
+	might, think that a p &lt; .025 or p&gt; .975 means that the RNG
+	has &quot;failed the test at the .05 level&quot;.  Such p`s happen
+	among the hundreds that DIEHARD produces, even with good RNGs.
+	 So keep in mind that &quot;p happens&quot;
+
+For /dev/random, I get:
+
+Birthday spacing:                              0.323220
+Overlapping 5-permutations:            0.483655
+                                                          0.215005
+Binary rank:                                       0.405667
+Count the 1's:                                    0.379616
+Parking lot:                                        0.993189
+Minimum distance:                            0.580824
+3D-spheres:					 0.616398
+Squeeze:                                           0.195228
+Overlapping sums:                            0.010507
+Runs:                                                 0.233353
+                                                          0.274341
+                                                          0.719427
+                                                          0.749529
+Craps:                                                0.480129
+                                                          0.650224
+
+Sum-up for /dev/random:
+&quot;Abnormally&quot; high value: 0.993189 [1]
+&quot;Abnormally&quot; low value: 0.010507 [1]
+Total: 2
+
+For sha1(n), I get:
+
+Birthday spacing:                                       0.810196
+Overlapping 5-permutations:                     0.717577
+                                                                   0.645166
+Binary rank:                                                0.891962
+Count the 1's:                                             0.377828
+Parking lot:                                                 0.188993
+Minimum distance:                                     0.138668
+3D-spheres:                                                0.087107
+Squeeze:                                                    0.377509
+Overlapping sums:                                     0.091750
+Runs:                                                          0.938376
+                                                                   0.060212
+                                                                   0.050921
+                                                                   0.210624
+Craps:                                                         0.927501
+                                                                   0.827696
+
+Sum up for Sha1(n):
+&quot;Abnormally&quot; high values: 0.938376, 0.927501 [2]
+&quot;Abnormally&quot; low values: 0.087107, 0.091750, 0.060212, 0.050921 [4]
+Total: 6
+
+So, I would say that Sha1(n) does not pass DieHard (while /dev/random
+does). But this would require further examination, in particular to
+understand why some tests failed. And, in fact, I have no clue why
+they failed...
+
+
+Regards,
+
+-- 
+Pierre-Evariste DAGAND
+<A HREF="http://perso.eleves.bretagne.ens-cachan.fr/~dagand/">http://perso.eleves.bretagne.ens-cachan.fr/~dagand/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

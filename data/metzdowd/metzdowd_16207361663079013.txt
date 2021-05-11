@@ -1,0 +1,47 @@
+<PRE>On Thu, Jan 31, 2008 at 02:28:30PM -0500, Anne &amp; Lynn Wheeler wrote:
+
+&gt;<i> TCP requires minimum of seven message exchange for reliable transport
+</I>&gt;<i> .... VMTP (rfc 1045) got that down to minimum of five messages, and XTP 
+</I>&gt;<i> then
+</I>&gt;<i> got it down to three messages minimum for reliable transport (disclaimer
+</I>&gt;<i> we were on the XTP technical advisory board).
+</I>&gt;<i> 
+</I>
+SMTP does not need TCP to provide reliability for the tail of the session,
+the application-level &quot;.&quot; (end-of-data) and server &quot;250&quot; response complete
+a transaction, everything after that is optional, so for example Postfix
+will send (when PIPELINING).
+
+	DATA &lt;CRLF&gt;		354 Go ahead
+	Message-Content		Lots of acks
+	.&lt;CRLF&gt;QUIT&lt;CRLF&gt;	250 Ok
+
+and will disconnect after reading the &quot;250 response&quot; without waiting
+for the 221 response. The TCP 3-way shutdown (FIN, FIN-ACK, ACK) happens
+in the kernel in the background, the SMTP server and client are by that
+point handling different connections. So the reliable shutdown latency
+is of no consequence for application throughput.
+
+A pipelined SMTP delivery can be completed over TCP in 5 RTTs not 7.
+
+	0. SYN			SYN-ACK
+	1. ACK			220
+	2. EHLO			250
+	3. MAIL RCPT DATA	250 250 354
+	4. MSG . QUIT		250 221
+	5. close socket
+
+TCP is fine, latency is primarily the result of application protocol
+details, not TCP overhead. The only TCP overhead above is 1 extra RTT
+for the connection setup. Everything else is SMTP not TCP, and running
+SMTP over UDP (with ideal conditions and no lost packets, ...) would
+save just 1 RTT.
+
+-- 
+	Viktor.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

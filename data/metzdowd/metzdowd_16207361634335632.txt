@@ -1,0 +1,62 @@
+<PRE>
+I don't know if people have been following this, but it is interesting
+from the point of view of studying how the FIPS process does (or does
+not) interact with the underlying goal of producing assured systems.
+
+Begin Forwarded Message:
+
+Return-Path: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-mmx-openssl-announce at mmx1.engelschall.com</A>&gt;
+Message-ID: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">47540D31.80002 at oss-institute.org</A>&gt;
+Date: Mon, 03 Dec 2007 09:05:37 -0500
+From: Steve Marquess &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">marquess at oss-institute.org</A>&gt;
+To:  <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">openssl-announce at openssl.org</A>
+Subject: Fwd: Flaw in OpenSSL FIPS Object Module v1.1.1 - Update
+
+The vulnerability reported earlier
+(<A HREF="http://openssl.org/news/secadv_20071129.txt">http://openssl.org/news/secadv_20071129.txt</A>) cannot be patched in the
+usual way due to the requirements of the FIPS 140-2 validation program
+(the CMVP).  Discussions on ways to craft a fix that will satisfy FIPS
+140-2 with the least delay in approval have been underway for several days.
+
+The situation is complicated by the fact that there is a second bug in
+the FIPS 140-2 mandated continuous PRNG self-test.  This other bug does
+not constitute a security vulnerability, but the CMVP understandably
+requires that both bugs be corrected at the same time.  FIPS 140-2 has
+the concept of an algorithm boundary around each separate algorithm
+implementation in addition to the overall crypto module boundary.
+Changes to code inside an algorithm boundary require considerably more
+time and effort for approval.  We can implement a workaround for the
+CVE-2007-5502 vulnerability outside of any algorithm boundary, but
+cannot do the same for the self-test bug.
+
+As a consequence approval of a new distribution will take longer.  How
+long is hard to estimate, perhaps as little as a couple of weeks.
+
+In the meantime the CMVP has effectively revoked the current v1.1.1
+validation
+(<A HREF="http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm#733">http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm#733</A>)
+by declaring the PRNG as non-compliant.  Since essentially all
+cryptographic applications utilize a PRNG the entire v1.1.1 module is
+for all practical purposes revoked as well.  This means vendors of
+software products using or based on the v1.1.1 PRNG will need to be
+patched or updated with the new v1.1.2 of the OpenSSL FIPS Object Module
+once that becomes available.  It would be prudent to anticipate
+additional quasi-revocations of other validations for products derived
+from the v1.1.1 baseline.
+
+-Steve M.
+
+-- 
+Steve Marquess
+Open Source Software Institute
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">marquess at oss-institute.org</A>
+______________________________________________________________________
+OpenSSL Project                                 <A HREF="http://www.openssl.org">http://www.openssl.org</A>
+Announcement Mailing List                 <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">openssl-announce at openssl.org</A>
+Automated List Manager                           <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at openssl.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

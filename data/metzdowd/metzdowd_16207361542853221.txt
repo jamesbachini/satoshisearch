@@ -1,0 +1,86 @@
+<PRE>|<i> &gt; | Hi Martin,
+</I>|<i> &gt; | 
+</I>|<i> &gt; | I did forget to say that it would be salted so that throws it off by
+</I>|<i> &gt; | 2^12
+</I>|<i> &gt; | 
+</I>|<i> &gt; | A couple of questions. How did you come up with the ~2.5 bits per
+</I>|<i> &gt; | word? Would a longer word have more bits?
+</I>|<i> &gt; He misapplied an incorrect estimate!  :-) The usual estimate - going
+</I>|<i> &gt; back to Shannon's original papers on information theory, actually - is
+</I>|<i> &gt; that natural English text has about 2.5 (I think it's usually given as
+</I>|<i> &gt; 2.4) bits of entropy per *character*.  There are several problems
+</I>|<i> &gt; here:
+</I>|<i> 
+</I>|<i> It's less than that.  See, for example, the bottom of the first page of
+</I>|<i> <A HREF="http://www.cs.brown.edu/courses/cs195-5/extras/shannon-1951.pdf">http://www.cs.brown.edu/courses/cs195-5/extras/shannon-1951.pdf</A> :
+</I>Interesting paper - I hadn't seen that one, only the earlier one that
+got an estimate - cited in this one - for 2.3 (not 2.4) bits per
+character for samples of length 8 (*very* roughly).
+
+|<i> 	From this analysis it appears that, in ordinary literary
+</I>|<i> 	English, the long range statistical effects (up to 100 letters)
+</I>|<i> 	reduce the entropy to something of the order of one bit per
+</I>|<i> 	letter, with a corresponding redundancy of roughly 75%. The
+</I>|<i> 	redundancy may be still higher when structure extending over
+</I>|<i> 	paragraphs, chapters, etc. is included.
+</I>|<i> 
+</I>|<i> &gt; 
+</I>|<i> &gt; 	- The major one is that the estimate should be for
+</I>|<i> &gt; *characters*, not *words*.  So the number of bits of entropy in
+</I>|<i> &gt; 		a 55-character phrase is about 137 (132, if you use
+</I>|<i> &gt; 		2.4 bits/character), not 30.
+</I>|<i> &gt; 
+</I>|<i> &gt; 	- The minor one is that the English entropy estimate looks
+</I>|<i> &gt; just at letters and spaces, not punctuation and capitalization.
+</I>|<i> &gt; 		So it's probably low anyway.  However, this is a much
+</I>|<i> &gt; 		smaller effect.
+</I>|<i> 
+</I>|<i> The interesting question is whether or not one can effectively
+</I>|<i> enumerate candidate phrases for a guessing program.  For that problem,
+</I>|<i> punctuation and capitalization are important.
+</I>Well, for *general purpose* algorithms, you can get a rough idea by
+looking at how well the best compressors do.  zip deflate on a random
+selection of English text I used managed to reduce the text to about 31%
+of its original size.  You can't easily compare this to Shannon's 25%
+estimate because zup had an easy job:  The input was 7-bit ASCII, the
+top bit of every byte was always 0; and of the remaining 128 possible
+bytes, at least 30 (probably more) never occur.  If we assume the
+input text had only 70 possible characters in it, then there are
+&quot;really&quot; only a little more than 6 bits of true entropy per byte
+of input.  This brings the effective compression from the &quot;smart&quot;
+parts of the algorithm down to about from 69% to 60%.
+
+zip deflate isn't the state of the art in compression algorithms, but
+nothing does all *that* much better.
+
+I suspect the best first-try algorithm for generating attacks would be
+an analogue of using a dictionary to guess passwords:  Extract phrases
+of the appropriate length from the huge volume of data that is now
+readily available on line.  This is likely to catch many pass phrases.
+
+The example in the original message shows how to avoid such an attack:
+Don't use &quot;Mary had a little lamb, it's fleece was white as snow&quot;;
+use a semantic equivalant &quot;Mary had one tiny lamb, with fleece that
+were white as snow&quot;.  One can probably generate many such variants
+algorithmically with little trouble, though.  (What's hard is
+eliminating the ones no human would likely use for deep semantic
+reasons, but for an attack like this, generating extra ones only
+cost you time.)
+
+Probably out of reach today for reasonably long phrases, but I
+wouldn't give it very much time.
+
+(It would be interesting to do a detailed analysis for the often-
+recommended approach of picking a phrase and using the first letters
+of successive words.  Just the distribution of first letters of
+words is probably biased, and what the correlation of successive
+first letters looks like is anyone's guess - though given the
+ready availability of data, it's trivially easy to compute.)
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

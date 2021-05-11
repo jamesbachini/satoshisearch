@@ -1,0 +1,16 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> Is there some feature of multicore CPUs that I'm missing, or is it a case of
+</I>&gt;<i> cryptographers abstracting a bit too much away?  And if it's the latter,
+</I>&gt;<i> should someone tell them that multicore CPUs don't actually work that way?
+</I>&gt;<i>   
+</I>I can't speak to the former issue, but I seem to remember that the 
+numbers Rivest showed at the talk were actual performance measurements, 
+not projections, and that it was basically linear.
+
+Kevin
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

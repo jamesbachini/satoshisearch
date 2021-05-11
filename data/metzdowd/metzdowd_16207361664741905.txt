@@ -1,0 +1,41 @@
+<PRE>On 22 January 2008 18:38, Ed Gerck wrote:
+
+&gt;<i> It is misleading to claim that port 587 solves the security problem of
+</I>&gt;<i> email eavesdropping, and gives people a false sense of security. It is
+</I>&gt;<i> worse than using a 56-bit DES key -- the email is in plaintext where it is
+</I>&gt;<i> most vulnerable.   
+</I>
+  Well, yes: it would be misleading to claim that end-to-end security protects
+you against an insecure or hostile endpoint.  But it's a truism, and it's not
+right to say that there is a security gap that is any part of the remit of
+SSL/TLS to alleviate; the insecurity - the untrusted endpoint - is the same
+regardless of whether you use end-to-end security or not.
+
+  It's probably also not inaccurate to say that SSL/TLS protects you against
+warrantless wiretapping; the warrantless wiretap program is implemented by
+mass surveillance of backbone traffic, even AT+T doesn't actually forward the
+traffic to their mail servers, decrypt it and then send it back to the tap
+point - as far as we know.  When the spooks want your traffic as decrypted by
+your ISP server, that's when they *do* go get a warrant, but the broad mass
+warrantless wiretapping program is just that, and it'd done by sniffing the
+traffic in the middle.  SSL/TLS *does* protect you against that, and the only
+time it won't is if you're singled out for investigation.
+
+  This is not to say that it wouldn't be possible for all ISPs to collaborate
+with the TLAs to log, sniff or forward the decrypted traffic from their
+servers, but if they can't even set up central tapping at a couple of core
+transit sites of one ISP without someone spilling the beans, it seems
+improbable that every ISP everywhere is sending them copies of all the traffic
+from every server...
+
+    cheers,
+      DaveK
+-- 
+
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

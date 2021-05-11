@@ -1,0 +1,49 @@
+<PRE>an G wrote:
+ &gt;&gt; I was involved in one case where super-secret stuff
+ &gt;&gt; was shared through hushmail, and was also dual
+ &gt;&gt; encrypted with non-hushmail-PGP for added security.
+ &gt;&gt; In the end, the lawyers came in and scarfed up the
+ &gt;&gt; lot with subpoenas ... all the secrets were revealed
+ &gt;&gt; to everyone they should never have been revealed to.
+ &gt;&gt; We don't have a crypto tool for embarrassing secrets
+ &gt;&gt; to fade away.
+
+Adam Back wrote:
+ &gt; What about deleting the private key periodically?
+
+Mail should have the following security properties:
+
+Mail that appears to come from an entity really did come
+from that entity.
+
+Though the recipient can prove to himself the mail came
+from that sender, he cannot prove it to third parties
+unless the sender cooperates.
+
+If the sender and the recipient discard their copies,
+that mail is gone forever.  No one can reconstruct it,
+even though they have a complete record of the bits
+passed between the sender and recipient and complete
+access at a later date to the machines of the sender and
+recipient and the complete cooperation, possibly under
+extreme duress, of both sender and recipient.
+
+If the sender or the recipient keep a copy that they can
+access, then the guys with rubber hoses can shake it out
+of them, but they can only see this stuff with the
+cooperation, possibly under duress, of the sender or the
+recipient - and they only have the sender or the
+recipients word that this is the real stuff.  If the
+recipient deleted his stuff, and the guys with rubber
+hoses look at the sender's sent box, they cannot know it
+is the original and unmodified sent box, and vice versa
+for the recipient's in box.
+
+We have the technology to accomplish all this, but not
+with the present store and forward architecture.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,54 @@
+<PRE>On Sat, Jul 14, 2007 at 11:43:53AM -0700, Ed Gerck wrote:
+&gt;<i> SSH (OpenSSH) is routinely used in secure access for remote server
+</I>&gt;<i> maintenance. However, as I see it, SSH has a number of security issues
+</I>&gt;<i> that have not been addressed (as far I know), which create unnecessary
+</I>&gt;<i> vulnerabilities.
+</I>&gt;<i> 
+</I>&gt;<i> Some issues could be minimized by turning off password authentication,
+</I>&gt;<i> which is not practical in many cases. Other issues can be addressed by
+</I>&gt;<i> additional means, for example:
+</I>&gt;<i> 
+</I>&gt;<i> 1. firewall port-knocking to block scanning and attacks
+</I>
+That is, security by obscurity and either adding another dependency
+(libpcap) or code involving many incompatibilities between systems which
+OpenSSH portable is ported to (raw sockets interface). I think this
+can explain why it wasn't included in OpenSSH.
+
+&gt;<i> 2. firewall logging and IP disabling for repeated attacks (prevent DoS,
+</I>&gt;<i> block dictionary attacks)
+</I>
+Actually, this can be done at PAM library level with similar
+effectiveness and greater simplicity (I did it some time ago as a PoC).
+Dictionary attacks, however, should be prevented from by forcing users
+to select strong passwords (appropriate PAM module, again).
+
+&gt;<i> 3. pre- and post-filtering to prevent SSH from advertising itself and
+</I>&gt;<i> server OS
+</I>
+Something like tcpwrappers? I think, this would be pre-filtering. How
+would you want to do post-filtering?
+And why not to advertise SSH version? There are as many pros as cons.
+
+&gt;<i> 4. block empty authentication requests
+</I>
+What kind of requests are you talking about?
+
+&gt;<i> 5. block sending host key fingerprint for invalid or no username
+</I>&gt;<i> 6. drop SSH reply (send no response) for invalid or no username
+</I>
+...so one can easily enumerate existing system users.
+
+And you didn't mention about 7. removing subliminal channels in D-H key
+agreement and IV choosing for CBC and CTR modes. This issue was brought
+up (for SSH, SSL and IKE/ESP) about year ago in Poland. You know,
+kleptography is a funny thing.
+
+-- 
+Stanislaw Klekot
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

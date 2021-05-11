@@ -1,0 +1,20 @@
+<PRE>|<i> &gt; ...  What's wrong with starting
+</I>|<i> &gt; with input SALT || PASSWORD and iterating N times, ....
+</I>|<i> 
+</I>|<i> Shouldn't it be USERID || SALT || PASSWORD to guarantee that if
+</I>|<i> two users choose the same password they get different hashes?
+</I>|<i> It looks to me like this wold make dictionary attacks harder too.
+</I>As others have pointed out, with a large enough salt, dictionary attacks
+become impossible.  But it's worth mentioning another issue:  People's
+userid's do change and it's nice not to have the hashed passwords break
+as a result.  (This is pretty counter-intuitive to users who change their 
+names, and a disaster if a large organization needs to do a mass renaming
+and somehow has to coordinate a mass password update at the same time.)
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

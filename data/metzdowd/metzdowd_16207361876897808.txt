@@ -1,0 +1,62 @@
+<PRE>At Tue, 19 Aug 2008 20:57:33 -0700,
+Alex Pankratov wrote:
+&gt;<i> 
+</I>&gt;<i> CC'ing cryptography mail list as it may be of some interest to the 
+</I>&gt;<i> folks over there.
+</I>&gt;<i> 
+</I>&gt;<i> &gt; -----Original Message-----
+</I>&gt;<i> &gt; From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">p2p-hackers-bounces at lists.zooko.com</A> [mailto:p2p-hackers-
+</I>&gt;<i> &gt; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bounces at lists.zooko.com</A>] On Behalf Of Lars Eggert
+</I>&gt;<i> &gt; Sent: August 19, 2008 5:34 PM
+</I>&gt;<i> &gt; To: David Barrett; theory and practice of decentralized computer
+</I>&gt;<i> &gt; networks
+</I>&gt;<i> &gt; Subject: Re: [p2p-hackers] IETF rejects Obfuscated TCP
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; On 2008-8-19, at 17:20, ext David Barrett wrote:
+</I>&gt;<i> &gt; &gt; On Tue, 19 Aug 2008 4:19 pm, Lars Eggert wrote:
+</I>&gt;<i> &gt; &gt;&gt; Actually, in 1994, the IETF standardized Transactional TCP (T/TCP)
+</I>&gt;<i> &gt; in
+</I>&gt;<i> &gt; &gt;&gt; RFC1644, which allows just that. However, there are serious DDoS
+</I>&gt;<i> &gt; &gt;&gt; issues with T/TCP which have prevented it seeing significant
+</I>&gt;<i> &gt; &gt;&gt; deployment.
+</I>&gt;<i> &gt; &gt;
+</I>&gt;<i> &gt; &gt; Hm, I'm sorry I don't know the history there -- why is this more
+</I>&gt;<i> &gt; &gt; costly
+</I>&gt;<i> &gt; &gt; or abusive than SSL over standard TCP?  Is it due to something
+</I>&gt;<i> &gt; &gt; specific
+</I>&gt;<i> &gt; &gt; to SSL, or due to it a simple lack of congestion control on those
+</I>&gt;<i> &gt; &gt; first
+</I>&gt;<i> &gt; &gt; payloads?
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; The issue is unrelated to a specific kind of SYN payload (SSL or
+</I>&gt;<i> &gt; otherwise.) The issue is that a SYN flood of SYNs with data consumes
+</I>&gt;<i> &gt; much more memory on the receiver than a regular SYN flood, because the
+</I>&gt;<i> &gt; receiver is obligated to cache the data if a T/TCP liveness check
+</I>&gt;<i> &gt; fails. You can't use SYN cookies with data SYNs, either.
+</I>&gt;<i> 
+</I>&gt;<i> This is just a quick thought, but a variation of SYN cookies for TLS
+</I>&gt;<i> appears to be quite easy to do. It does require defining new record 
+</I>&gt;<i> type, but latter is permitted by TLS spec as per Section 6, RFC 2246.
+</I>&gt;<i> 
+</I>&gt;<i> The idea, obviously, is to include a copy of ClientHello message in a
+</I>&gt;<i> second batch of records sent by the client. This should allow server
+</I>&gt;<i> to generate ServerKeyExchange parameters from the original ClientHello
+</I>&gt;<i> message (ClientHello.random + IP/port quintet + server &quot;cookie secret&quot;),
+</I>&gt;<i> then discard ClientHello and delay creating the state .. exactly the
+</I>&gt;<i> same way SYN cookies mechanism does it.
+</I>
+May I ask what you're trying to accomplish? Recall that TLS doesn't
+start until a TCP connection has been established, so there's
+aready a proof of the round trip.
+
+That said, a mechanism of this type has already been described
+for DTLS (RFC 4347), so no new invention would be needed.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

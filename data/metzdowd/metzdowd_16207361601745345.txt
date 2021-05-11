@@ -1,0 +1,21 @@
+<PRE>&gt;<i>Since email between hushmail accounts is generally PGPed.  (That is 
+</I>&gt;<i>the point, right?)
+</I>
+Hushmail is actually kind of a scam.  In its normal configuration,
+it's in effect just webmail with an HTTPS connection and a long
+password.  It will generate and verify PGP signatures and encryption
+for mail it sends and receives, but they generate and maintain their
+users' PGP keys.
+
+There's a Java applet that's supposed to do end to end encryption, but
+since it's with the same key that Hushmail knows, what's the point?
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

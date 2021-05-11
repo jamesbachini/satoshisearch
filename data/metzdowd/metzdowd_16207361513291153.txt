@@ -1,0 +1,34 @@
+<PRE>That's a pretty in-credible report.
+
+Emphasis on &quot;in-&quot;.
+
+It's disturbing to see &quot;Security Researchers&quot; so willing to trade on  
+rumors in order to be quoted in the press.
+
+The conclusion is pretty confusing.
+
+&gt;<i>  Conclusion
+</I>&gt;<i> Internet-based attacks are extremely popular with terrorist  
+</I>&gt;<i> organizations because they are relatively cheap to perform, offer a  
+</I>&gt;<i> high degree of anonymity, and can be tremendously effective.
+</I>
+Perhaps author Jeffrey Carr should stick to coverage of 'semantic and  
+geospatial intelligence applications'.
+
+I'd sure like credible details...
+
+
+
+On Aug 20, 2007, at 10:59 AM, Steven M. Bellovin wrote:
+
+&gt;<i> <A HREF="http://www.esecurityplanet.com/prevention/article.php/3694711">http://www.esecurityplanet.com/prevention/article.php/3694711</A>
+</I>&gt;<i>
+</I>&gt;<i> I'd sure like technical details...
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> 		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+</I>---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

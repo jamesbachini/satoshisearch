@@ -1,0 +1,54 @@
+<PRE>On 20 August 2007 16:00, Steven M. Bellovin wrote:
+
+&gt;<i> <A HREF="http://www.esecurityplanet.com/prevention/article.php/3694711">http://www.esecurityplanet.com/prevention/article.php/3694711</A>
+</I>&gt;<i> 
+</I>&gt;<i> I'd sure like technical details...
+</I>
+
+  Well, how about 'it can't possibly work [well]'?
+
+ &quot; [ ... ] The article provides a detailed example of how 20 messages can be
+hidden in a 100 x 50 pixel picture [ ... ] &quot;
+
+  That's gotta stand out like a statistical sore thumb.
+
+
+  The article is pretty poor if you ask me.  It outlines three techniques for
+stealth: steganography, using a shared email account as a dead-letter box, and
+blocking or redirecting known IP addresses from a mail server.  Then all of a
+sudden, there's this conclusion ...
+
+&quot; Internet-based attacks are extremely popular with terrorist organizations
+because they are relatively cheap to perform, offer a high degree of
+anonymity, and can be tremendously effective. &quot;
+
+... that comes completely out of left-field and has nothing to do with
+anything the rest of the article mentioned.  I would conclude that someone's
+done ten minutes worth of web searching and dressed up a bunch of
+long-established facts as 'research', then slapped a &quot;The sky is falling!
+Hay-ulp, hay-ulp&quot; security dramaqueen ending on it and will now be busily
+pitching for government grants or contracts of some sort.
+
+
+
+  So as far as &quot;technical details&quot;, I'd say you take half-a-pound of security
+theater, stir in a bucket or two of self-publicity, season with a couple of
+megabucks of goverment pork, and hey presto!  Tasty terror-spam!
+
+  BTW, I can't help but wonder if &quot;Secrets of the Mujahideen&quot; refuses to allow
+you to use representational images for stego?  ;-)
+
+  (BTW2, does anyone have a download URL for it?  The description makes it
+sound just like every other bit of crypto snakeoil; it might be fun to reverse
+engineer.)
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

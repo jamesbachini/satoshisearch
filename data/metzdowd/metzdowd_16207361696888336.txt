@@ -1,0 +1,35 @@
+<PRE>On Wed, Feb 06, 2008 at 09:21:47AM -0800, Frank Siebenlist wrote:
+
+&gt;<i> With the big browser war still going strong, wouldn't that provide 
+</I>&gt;<i> fantastic marketing opportunities for Firefox?
+</I>&gt;<i> 
+</I>&gt;<i> If Firefox would support these secure password protocols, and the banks 
+</I>&gt;<i> would openly recommend their customers to use Firefox because its safer 
+</I>&gt;<i> and protects them better from phishing, that would be great publicity 
+</I>&gt;<i> for Firefox, draw more users, and force M$ to support it too in the long 
+</I>&gt;<i> run...
+</I>
+It is a bit early. OpenSSL 0.9.9 is not yet released. I wish OpenSSL
+releases were more frequent, and each added fewer features, allowing
+features to be released as they mature, this would also reduce pressure
+to add features to stable releases (which occasionally break binary
+compatibility, and lead to vendors back-porting fixes rather than deploying
+the next patch level of the stable release).
+
+While Firefox should ideally be developing and testing PSK now, without
+stable libraries to use in servers and browsers, we can't yet expect
+anything to be released.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

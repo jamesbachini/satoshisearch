@@ -1,0 +1,22 @@
+<PRE>
+&gt;<i> Crypto solves certain problems very well.  Against others, it's worse
+</I>&gt;<i> than useless -- &quot;worse&quot;, because it blocks out friendly IDSs as well as
+</I>&gt;<i> hostile parties.
+</I>&gt;<i>
+</I>&gt;<i>   
+</I>Yawn.  IDS is dead, has been for a while now.  The bottom line discovery
+has been that:
+
+1) Anomaly detection doesn't work because anomalies are normal, and
+2) Unless you're scrubbing up and down the application and network
+stacks, you just have no idea what the host endpoint is parsing.
+
+At the point where crypto shows up, it's already too late.
+
+--Dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

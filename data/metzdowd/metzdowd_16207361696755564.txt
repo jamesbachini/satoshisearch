@@ -1,0 +1,31 @@
+<PRE>
+&quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; writes:
+&gt;&gt;<i> When tinc 2.0 will ever come out (unfortunately I don't have a lot of
+</I>&gt;&gt;<i> time to work on it these days), it will probably use the GnuTLS library
+</I>&gt;&gt;<i> and authenticate and connect daemons with TLS. For performance reasons,
+</I>&gt;&gt;<i> you want to tunnel network packets via UDP instead of TCP, so hopefully
+</I>&gt;&gt;<i> there is a working DTLS implementation as well then.
+</I>&gt;<i>
+</I>&gt;<i> I have been considering the problem of encrypted channels over UDP or
+</I>&gt;<i> IP.  TLS will not work for this, since it assumes and provides a
+</I>&gt;<i> reliable, and therefore non timely channel, whereas what one wishes to
+</I>&gt;<i> provide is a channel where timeliness may be required at the expense
+</I>&gt;<i> of reliability.
+</I>
+DTLS does not assume a reliable channel -- it is designed for
+applications that use UDP. Perhaps you are not familiar with it.
+
+&gt;<i> I have figured out a solution, which I may post here if you are interested.
+</I>
+With respect, James, I think they'd be better off using DTLS. It was
+designed by experts and it shares the same security properties as TLS.
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

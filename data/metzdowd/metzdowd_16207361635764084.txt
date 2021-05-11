@@ -1,0 +1,30 @@
+<PRE>Weger, B.M.M. de wrote:
+&gt;<i> See <A HREF="http://www.win.tue.nl/hashclash/TargetCollidingCertificates/">http://www.win.tue.nl/hashclash/TargetCollidingCertificates/</A>
+</I>&gt;<i>...
+</I>&gt;<i> Our first chosen-prefix collision attack has complexity of about
+</I>&gt;<i> 2^50, as described in our EuroCrypt 2007 paper. This has been 
+</I>&gt;<i> considerably improved since then. In the full paper that is in
+</I>&gt;<i> preparation we'll give details of those improvements.
+</I>&gt;<i> 
+</I>Much more interesting.  Looks like the death knell of X.509.  Why
+didn't you say so earlier?
+
+(It's a long known design flaw in X.509 that it doesn't provide
+integrity for all its internal fields.)
+
+Where are MD2, MD4, SHA1, and others on this continuum?
+
+And based on the comments in the page above, the prefix is quite large!
+Optimally, shouldn't it be &lt;= the internal chaining variables?  512 bits
+for MDx.  So, the attacks need two values for comparison: the complexity
+versus the length of the chosen prefix.
+
+Let me know when you get the chosen prefix down to 64-bits, so I can say
+&quot;I told you so&quot; to Bellovin again.  I was strongly against adding the
+&quot;random&quot; IV field to IPsec....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,52 @@
+<PRE>James A. Donald wrote:
+&gt;&gt;<i>  Not true.  Because they are notarizing a signature, not
+</I>&gt;&gt;<i> a document, they  check my supporting identification,
+</I>&gt;&gt;<i> but never read the document being signed.
+</I>
+
+William Allen Simpson wrote:
+&gt;<i> This will be my last posting.  You have refused several requests to stick
+</I>&gt;<i> to the original topic at hand.
+</I>&gt;<i> 
+</I>&gt;<i> Apparently, you have no actual experience with the legal system, or
+</I>&gt;<i> are from such a different legal jurisdiction that your scenario is
+</I>&gt;<i> somehow related to MD5 hashes of software and code distribution.
+</I>&gt;<i> 
+</I>&gt;<i> Because human beings often try to skirt the rules, there's a long
+</I>&gt;<i> history of detailed notarization requirements.  How it works here:
+</I>&gt;<i> 
+</I>&gt;<i> (1) You prepare the document(s).  They are in the form prescribed by law
+</I>&gt;<i> -- for example, Michigan Court Rule (MCR 2.114) &quot;SIGNATURES OF ATTORNEYS
+</I>&gt;<i> AND PARTIES; VERIFICATION; EFFECT; SANCTIONS&quot;
+</I>&gt;<i> 
+</I>&gt;<i> (2) The clerk checks for the prescribed form and content.
+</I>&gt;<i> 
+</I>&gt;<i> (3) You sign and date the document(s) before the notary (using a pen
+</I>&gt;<i> supplied by the notary, no disappearing ink allowed).
+</I>&gt;<i> 
+</I>&gt;<i> (4) The notary signs and dates their record of your signature, optionally
+</I>&gt;<i> impressing the document(s) with an embossing stamp (making it physically
+</I>&gt;<i> difficult to erase).
+</I>&gt;<i> 
+</I>&gt;<i> You have now attested to the content of the documents, and the notary has
+</I>&gt;<i> attested to your signature (not the veracity of the documents).  Note
+</I>&gt;<i> that we get both integrity and non-repudiation....
+</I>&gt;<i> 
+</I>&gt;<i> The only acceptable computer parallel would require you to bring the
+</I>&gt;<i> documents to the notary, using a digital format supplied by the notary,
+</I>
+You mean *specified* by the notary - which would presumably be PDF or RTF.
+
+&gt;<i> generate the digital signature on the notary's equipment, and then the
+</I>&gt;<i> notary indempotently certify your signature (on the same equipment).
+</I>
+And if the format is PDF or RDF, none of this will prevent the problem 
+with MD5 - the problem being that a notarization of one document will 
+also notarize as many other of my documents as I please.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,29 @@
+<PRE>
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+&gt;&gt;<i>I am left with the strong suspicion that SSL VPNs are &quot;easier to configure
+</I>&gt;&gt;<i>and use&quot; because a large percentage of their user population simply is not
+</I>&gt;&gt;<i>very sensitive to how much security is actually provided.
+</I>&gt;<i>
+</I>&gt;<i> They're &quot;easier to configure and use&quot; because most users don't want to have to
+</I>&gt;<i> rebuild their entire world around PKI just to set up a tunnel from A to B.
+</I>
+I'm one of those people who uses OpenVPN instead of IPSEC, and I'm one
+of the people who helped create IPSEC.
+
+Right now, to use SSH to remotely connect to a machine using public
+keys, all I have to do is type &quot;ssh-keygen&quot; and copy the locally
+generated public key to a remote machine's authorized keys file.
+When there is an IPSEC system that is equally easy to use I'll switch
+to it.
+
+Until then, OpenVPN let me get started in about five minutes, and the
+fact that it is less than completely secure doesn't matter much to me
+as I'm running SSH under it anyway.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

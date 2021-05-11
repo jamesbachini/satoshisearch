@@ -1,0 +1,46 @@
+<PRE>
+
+William Allen Simpson wrote:
+
+[snip]
+
+&gt;<i> Actually, I deal with notaries regularly.  I've always had to
+</I>&gt;<i> physically sign while watched by the notary.  They always
+</I>&gt;<i> read the stuff notarized, and my supporting identification,
+</I>&gt;<i> because they are notarizing a signature (not a document).
+</I>&gt;<i> 
+</I>&gt;<i> And yes, they always generate the stamp or imprint they sign.
+</I>&gt;<i> To do otherwise would be irresponsible (and illegal).
+</I>
+Having been a notary in the State of California (Shocked myself, 
+got 100% on the test!) I can attest that the contents of the 
+document are looked at, but only so that I could record what 
+*type* of document I was notarizing, not the exact textual 
+meaning of the content or whether it might or might not allege 
+something that is untrue.
+
+The description of the document in my log book was always 
+relatively short as there was only space for about 20 words.
+
+The requirements are simple, see that the document you are 
+notarizing has as many pages it says it does so that the count 
+can't be changed without arousing suspicion, and the the person 
+who is signing the paper is identified by enough documentation 
+that I could be assured, within the limits of my ability to give 
+a superficial, not expert, less than ten minutes perusal of the 
+identification documents presented match the person presenting 
+them to the best of my ability to judge.
+
+Best,
+
+Allen
+
+It always was a good faith certification, not a proof beyond 
+challenge.
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,52 @@
+<PRE>On Tue, 11 Dec 2007, Steven M. Bellovin wrote:
+|<i> On Tue, 11 Dec 2007 13:49:19 +1000
+</I>|<i> &quot;James A. Donald&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jamesd at echeque.com</A>&gt; wrote:
+</I>|<i> &gt; Use CFB mode.  That takes care of all the above problems...
+</I>|<i> Believe it or not, I thought of CFB...
+</I>|<i> 
+</I>|<i> Sending keep-alives will do nasties to battery lifetime, I suspect;
+</I>|<i> most of the time, you're not typing.  As for CFB -- with a 64-bit
+</I>|<i> block cipher (you want them to use DES? they're not going to think of
+</I>|<i> anything different), it will take 9 keypresses to flush the buffer.
+</I>|<i> With AES (apparently your assumption), it will take 17 keypresses.
+</I>|<i> This isn't exactly muggle-friendly.  Just think of the text in the
+</I>|<i> instructions...  Redundancy?  I wonder how much is needed to avoid
+</I>|<i> problems.  It has to be a divisor of the cipher block size, which more
+</I>|<i> or less means 8 extra bits.  How much will that cost in battery life?
+</I>Keep-alives are a bad idea.  It's interesting how they keep hitting
+limitations of various tecshnologies.  Back in the '70's, I worked on
+the design of some protocols to be used by terminals.  In Europe, the
+only remote access mechanism you could use was X.25, provided by the
+local PTT.  If you had two buildings across the street from each other,
+you were legally forbidden from running a wire between them - the PTT
+had a monopoly.  An X.25 charges were per packet - a keep-alive would
+cost you a fortune.  In fact, sending ACK's could double your costs!
+
+I don't know enough about low-power design to guess where the power
+costs actually go.  If there is a significant cost in just starting
+the transmitter, then sending two bytes might not use up anything
+like twice the energy of sending just one (though it will certainly
+use *some* more).
+
+Realistically, some key codes are much, much more frequent than others.
+A simple Huffman encoding of the keycodes should let you get an average
+message length well below the two bytes that I think are the standard.
+(Yes, there are variations due to keyboard usage, but even a fairly
+generic encoding should give you reasonable compression.)
+
+No Huffman code is a prefix of another, so you can tell when you've
+reached the end of a code.  Then you can use the remaining bits of a
+2-byte block for redundancy.  (Of course, some rare keys will require
+sending an extra block.)  Just sending as many bits as you can of a
+count of messages the keyboard thinks it sent would probably be a pretty
+effective check.
+
+These days, you can probably cost-effectively put enough memory
+in a keyboard to make this possible.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

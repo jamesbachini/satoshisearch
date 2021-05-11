@@ -1,0 +1,34 @@
+<PRE>At Fri, 27 Jun 2008 07:52:59 -0700 (PDT),
+Erik Ostermueller wrote:
+&gt;<i> If I exchange messages with a system and the messages are encrypted
+</I>&gt;<i> with a symmetric key, what further benefit would we get by using a
+</I>&gt;<i> MAC (Message Authentication Code) along with the message encryption?
+</I>&gt;<i> Being new to all this, using the encrytpion and MAC together seem
+</I>&gt;<i> redundant.
+</I>
+Encryption doesn't necessarily provide integrity.
+
+Consider the case of a stream cipher like RC4, where you have
+a function RC4(K) which generates a string of bytes from the
+key K.
+
+The encryption function is then:
+
+Ciphertext[i] = RC4(K)[i] XOR Plaintext[i]
+
+
+It should be apparent that an attacker can make targeted
+modifications to the plaintext. Say he knows that plaintext
+byte i is 'A' and he wants it to be 'B', he just changed
+Ciphertext[i]' = Ciphertext[i] XOR 'A' XOR 'B'. Mission
+accomplished.
+
+-Ekr
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

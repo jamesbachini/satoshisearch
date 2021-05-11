@@ -1,0 +1,34 @@
+<PRE>[Moderator's Note: Top posting is discouraged. --Perry]
+
+
+What I meant was that the crypogram decrypted with a correct f(I)=1 key
+yields the encrypted message &quot;Meet you at Starbucks at noon 0000000000000&quot;
+whereas decryption with a wrong, f(I)=0, key yields &quot;Let's go down to Taco
+Bell at midnight&quot;.  Padding with 0's doesn't help.
+
+Cheers, Scott 
+
+-----Original Message-----
+From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>
+[mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>] On Behalf Of Jonathan Katz
+Sent: Sunday, May 04, 2008 1:20 PM
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+Subject: RE: New result in predicate encryption: disjunction support
+
+On Sun, 4 May 2008, Scott Guthery wrote:
+
+&gt;<i> One useful application of the Katz/Sahai/Waters work is a counter to 
+</I>&gt;<i> traffic analysis.  One can send the same message to everyone but 
+</I>&gt;<i> ensure that only a defined subset can read the message by proper key 
+</I>&gt;<i> management.  What is less clear is how to ensure that decrytion with 
+</I>&gt;<i> the wrong key doesn't yield an understandable (and actionable) message.
+</I>
+This is actually pretty easy to do by, e.g., padding all valid messages with
+sufficiently-many 0s. Decryption with an incorrect key will result in
+something &quot;random&quot; that is unlikely to end with the requisite number of 0s
+(and so will be discarded).
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

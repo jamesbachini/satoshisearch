@@ -1,0 +1,34 @@
+<PRE>The below USB drive manufacture claims FIPS 140-2
+certification.  Encryption is now required for USB
+thumb drives used on DoD computer.   This one is
+being used by the Military.
+
+<A HREF="http://www.kanguru.com/kanguruusbflash.html">http://www.kanguru.com/kanguruusbflash.html</A>
+
+Thomas
+
+On 9/13/07, Ali, Saqib &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+&gt;<i> On 13 Sep 2007 13:45:42 -0000, John Levine &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">johnl at iecc.com</A>&gt; wrote:
+</I>&gt;<i> &gt; I always understood snake oil crypto to refer to products that were of
+</I>&gt;<i> &gt; no value to anyone, e.g., products that claim to have secret
+</I>&gt;<i> &gt; unbreakable encryption, million bit keys, or &quot;one time pads&quot; produced
+</I>&gt;<i> &gt; by PRNGs.
+</I>&gt;<i> hear hear!
+</I>&gt;<i> I think in the zeal for criticism of the IronDrive, folks have
+</I>&gt;<i> expanded the definition of Snake Oil to include &quot;All&quot; security
+</I>&gt;<i> products.
+</I>&gt;<i> I don't like the &quot;Military Grade AES Encryption&quot; phrase that IronDrive
+</I>&gt;<i> uses on their website, cause that implies they know what Military is
+</I>&gt;<i> using. Maybe somebody should notify DoD that these IronDrive folks
+</I>&gt;<i> know what Military uses to encrypt info ;-)
+</I>&gt;<i>
+</I>&gt;<i> But other then that I don't see any Snake Oil Crypto like
+</I>&gt;<i> techno-babble used by IronDrive Marketing.
+</I>&gt;<i> saqib
+</I>&gt;<i> <A HREF="http://security-basics.blogspot.com/">http://security-basics.blogspot.com/</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

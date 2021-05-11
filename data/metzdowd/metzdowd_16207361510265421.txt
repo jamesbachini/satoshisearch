@@ -1,0 +1,16 @@
+<PRE>At 11:00 PM -0700 8/13/07, Aram Perez wrote:
+&gt;<i>Anyone know more about this?
+</I>
+I have the same question. I could not find any description of *why* 
+they think that finding near-misses is going to help the research. 
+It's not clear if they are taking their own path, or trying to 
+improve Wang's path, or what.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

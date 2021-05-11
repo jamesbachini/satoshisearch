@@ -1,0 +1,29 @@
+<PRE>Paul Crowley wrote, On 24/8/08 1:00 AM:
+&gt;<i> <A HREF="http://www.ddj.com/hpc-high-performance-computing/201803067">http://www.ddj.com/hpc-high-performance-computing/201803067</A>
+</I>&gt;<i> [...] However, glancing through the SSE5 specification, I 
+</I>&gt;<i> can't see at all how such a dramatic speedup might be achieved
+</I>
+A commenter on slashdot hinted at the vector permutation instructions, 
+similar to those on Altivec, being useful:
+
+<A HREF="http://developers.slashdot.org/comments.pl?sid=284695&amp;cid=20423869">http://developers.slashdot.org/comments.pl?sid=284695&amp;cid=20423869</A>
+
+Altivec is also known as VMX
+<A HREF="http://en.wikipedia.org/wiki/AltiVec">http://en.wikipedia.org/wiki/AltiVec</A>
+
+That led me to this paper with a section on use of VMX vector operations 
+in an AES implementation:
+
+<A HREF="http://diploma-thesis.siewior.net/html/diplomarbeitch3.html">http://diploma-thesis.siewior.net/html/diplomarbeitch3.html</A>
+
+I didn't see performance comparisons or anything specific to SSE5, but 
+it looks like the kind of thing that AMD might have meant.
+
+  -- Sidney Markowitz
+     <A HREF="http://www.sidney.com">http://www.sidney.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,20 @@
+<PRE>List,
+
+Thanks everyone for the feedback. There are now some
+ideas how things could be improved using crypto. I 
+prepared a summary of the public and private responses, 
+and clarifications, at:
+
+<A HREF="http://email-security.blogspot.com/2007_07_01_archive.html">http://email-security.blogspot.com/2007_07_01_archive.html</A>
+
+Comments are welcome in here (if crypto) an in the blog in
+general.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

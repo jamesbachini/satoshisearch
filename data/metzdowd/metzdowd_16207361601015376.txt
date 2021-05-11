@@ -1,0 +1,55 @@
+<PRE>On Tue, Nov 13, 2007 at 08:35:52AM +0200, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Pasi.Eronen at nokia.com</A> wrote:
+&gt;<i> The &quot;extra messages&quot; might be irrelevant for cryptography,
+</I>&gt;<i> but they're not irrelevant for security or functionality.
+</I>&gt;<i> E.g. in SSL, you have capability/feature negotiation
+</I>&gt;<i> (cipher suites, trusted CAs, in TLS 1.2 also signature
+</I>&gt;<i> algorithms, etc.)
+</I>
+So, this is a good place to attempt to use this method.
+
+Data to be sent:
+
+1) supported capabilities on the client
+2) supported capabilities on the server
+3) negotiated capabilities
+
+Dependencies:
+
+1) No dependencies (first message from client to server)
+2) No dependencies (first message from server to client)
+3) Depends on #1 and #2
+
+Results:
+
+3 messages
+1-1.5 RTTs (one if there's a simultaneous open, which is rare)
+
+So unless I'm missing something, we're still at 3 messages.
+
+Aside:
+
+I would like to point out that TCP-based protocols have the latency
+disadvantage of having to do a 3-way handshake before transferring any
+data.  If you were to design a new IP protocol, you could do the key
+exchange within the handshake, which would save 3 messages, but may be
+vulnerable to a resource-consumption attack on the CPU.
+
+I wonder if we here could develop a handshake that was
+cryptographically secure, resistant to CPU DoS now, and would be
+possible to adjust as we get faster at doing crypto operations to
+reduce latency even further.  Basically an easy knob for balancing
+high latency and DoS resistance vs. crypto overhead and low latency.
+It should be adjustable on either end without altering the other.
+
+-- 
+Life would be so much easier if it was open-source.
+&lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071114/ef6cda53/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071114/ef6cda53/attachment.pgp</A>&gt;
+</PRE>

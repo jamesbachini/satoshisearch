@@ -1,0 +1,20 @@
+<PRE>Dave Korn writes:
+ &gt;   So by your exacting standards, PGP, gpg, openssh, in fact basically
+ &gt; _everything_ is snake oil.
+
+No.  In fact Aram is saying nothing of interest.  Cryptography without
+a threat model is like motherhood without apple pie.  Can't say that
+enough times.  More generally, security without a threat model is by
+definition going to fail.
+
+-- 
+--my blog is at    <A HREF="http://blog.russnelson.com">http://blog.russnelson.com</A>   | People have strong opinions
+Crynwr sells support for free software  | PGPok | about economics even though
+521 Pleasant Valley Rd. | +1 315-323-1241       | they've never studied it.
+Potsdam, NY 13676-3213  |     Sheepdog          | Curious how that is!
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

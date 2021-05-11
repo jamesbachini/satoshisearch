@@ -1,0 +1,32 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> writes:
+
+&gt;<i>Second, as soon as one of these guys figures out how to hook the memory
+</I>&gt;<i>manager (which may already have happened),
+</I>
+It's been done for awhile by various rootkits.  The first AFAIK was
+ShadowWalker, which marked pages to be hidden as non-present and used a custom
+page fault handler to allow it to slip in whatever it wanted the victim to
+see.
+
+&gt;<i>then the ability to find the otherwise in-core-only malware goes away as your
+</I>&gt;<i>act of scanning memory will be seen by the now-corrupted memory manager and
+</I>&gt;<i>the malware will be thus relocated as you search such that you are playing
+</I>&gt;<i>blindman's bluff without knowing that you are.
+</I>
+There's a large number of variants of this sort of thing.  Some of the most
+deviously elegant rootkits use anti-anti-virus scanners to detect antivirus
+software from underneath before the AV software detects it.  They then either
+de-fang the AV software in some way, or unhook themselves until the AV scan
+has passed.  One neat trick used by... ah, forgotton the particular malware,
+but it swaps the handle of the process the AV software is trying to terminate
+and the AV software itself, so the AV program ends up terminating itself.
+
+There's lots more like this.  You name it, they've done it.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

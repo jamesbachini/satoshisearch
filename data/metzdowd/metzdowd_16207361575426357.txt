@@ -1,0 +1,44 @@
+<PRE>On Mon, May 21, 2007 at 04:32:10PM -0400, Victor Duchovni wrote:
+&gt;<i> On Mon, May 21, 2007 at 02:44:28PM -0400, Perry E. Metzger wrote:
+</I>&gt;<i> &gt; My take: clearly, 1024 bits is no longer sufficient for RSA use for
+</I>&gt;<i> &gt; high value applications, though this has been on the horizon for some
+</I>&gt;<i> &gt; time. Presumably, it would be a good idea to use longer keys for all
+</I>&gt;<i> &gt; applications, including &quot;low value&quot; ones, provided that the slowdown
+</I>&gt;<i> &gt; isn't prohibitive. As always, I think the right rule is &quot;encrypt until
+</I>&gt;<i> &gt; it hurts, then back off until it stops hurting&quot;...
+</I>&gt;<i> 
+</I>&gt;<i> When do the Certicom patents expire? I really don't see ever longer RSA
+</I>&gt;<i> keys as the answer, and the patents are I think holding back adoption...
+</I>
+They already expired.
+
+Some EC primitives in the latest OpenSSL.
+
+But why assume short ECC keys are stronger than long RSA?
+
+AFAIK, the only advantage of ECC is that the keys are shorter.
+The disadvantage is that it isn't as well studied.
+
+Although every time I read up on ECC, I understand it, and then within
+a few days I don't remember anything about it.  I think they teflon
+coated those ideas somehow, because they don't stick.
+
+&gt;<i> With EECDH one can use ECDH handshakes signed with RSA keys, but that
+</I>&gt;<i> does not really address any looming demise of 1024 bit RSA.
+</I>
+Why can't they do something like El-Gamal?
+
+I'm not comfortable with RSA somehow.  It seems fundamentally more
+complicated to me than DLP, and it's hard to get right - look at how
+many things there are in the PKCS for it.
+-- 
+&lt;URL:<A HREF="http://www.subspacefield.org/~travis/">http://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071009/08d80fa3/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071009/08d80fa3/attachment.pgp</A>&gt;
+</PRE>

@@ -1,0 +1,27 @@
+<PRE>On Fri, 04 Jul 2008 20:46:13 -0700
+Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; wrote:
+
+&gt;<i> Is there an upper limit on the number of RSA Public/Private 1024 bit 
+</I>&gt;<i> key pairs possible? If so what is the relationship of the number of 
+</I>&gt;<i> 1024 bit to the number of 2048 and 4096 bit key pairs?
+</I>&gt;<i> 
+</I>There are limits, but they're not particularly important.
+
+I'll oversimplify.  Roughly speaking, a 1024-bit RSA public key is the
+product of two 512-bit primes.  According to the Prime Number Theorem,
+the number of primes &lt; n is approximately n/log(n).  Actually, what we
+need is the number of primes &gt;2^511 and &lt;2^512, but that correction
+doesn't make much differences -- work through the math yourself to see
+that.  Call the number of such primes P.
+
+Now, we need two such primes.  There are therefore P^2 pairs, more than
+2^1000.  The numbers are very much larger for 2048- and 4096-bit keys,
+but I'll leave those as an exercise for the reader.
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,24 @@
+<PRE>
+Steve Bellovin documents on his blog a recent attempt by Amtrak to
+teach its customers to be phishing victims:
+
+<A HREF="http://www.cs.columbia.edu/~smb/blog/2008-02/2008-02-13.html">http://www.cs.columbia.edu/~smb/blog/2008-02/2008-02-13.html</A>
+
+My comments:
+
+&quot;Phish someone, and you inconvenience him for a week.
+ Teach a man to be phished, and you screw him for the rest of his life.&quot;
+                --me
+
+I got the exact same email from Amtrak. It is pretty disappointing to
+me, but sadly not surprising, that big organizations are still
+conditioning their users to become fraud victims.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

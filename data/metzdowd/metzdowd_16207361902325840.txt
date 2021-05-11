@@ -1,0 +1,40 @@
+<PRE>Dan Geer's comment about the street price of heroin as a metric for 
+success has me thinking - are people tracking the street prices of 
+digital underground goods over time? The Symantec Threat Reports do seem 
+to report advertised prices for a basket of goods, starting in Volume XI 
+(March 2007) and running through the present. For example, Volume XI 
+Table 3 states a Skype account is worth $12, valid Hotmail cookie $3, 
+etc. These are interesting, but it's hard to see changes since they're 
+reported as a band of prices presumably aggregated from many different 
+sources.
+
+I've also seen price anecdotes from Team Cymru. Plus of course the 
+&quot;Nature and Causes of the Wealth of Internet Miscreants&quot; paper from CCS 
+2007. Is there a continuous feed of prices published anywhere (besides 
+the underground servers, of course), or is this still something where 
+you have to go gather data yourself if you want it?
+
+I'm curious because it would be interesting to look at the &quot;street 
+price&quot; for a specific online bank's logins before and after the bank 
+makes a change to its security practices. (One not particularly great 
+example of a change: adopting EV certs.) Alternatively, look at the 
+price of some good before and after a prosecution. If this has already 
+been done, my apologies, I'd appreciate the pointer.
+
+finally, does anyone happen to know of a good review of how the focus on 
+street price has performed as a metric for drug interdiction? that is, I 
+could imagine cases where some specific intervention causes street price 
+to rise but this doesn't lead to a corresponding improvement in things 
+like deaths from drug overdose, number of people using, etc. Does that 
+happen in practice so far as we know or not?
+
+-David Molnar
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 250 bytes
+Desc: OpenPGP digital signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080910/e69d9704/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080910/e69d9704/attachment.pgp</A>&gt;
+</PRE>

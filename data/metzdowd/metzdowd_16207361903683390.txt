@@ -1,0 +1,15 @@
+<PRE>At 11:08 AM -0700 8/21/08, Greg Rose wrote:
+&gt;<i>Adi mentioned that the slides and paper will go online around the 
+</I>&gt;<i>deadline for Eurocrypt submission; it will all become much clearer 
+</I>&gt;<i>than my wounded explanations then.
+</I>
+There now: &lt;<A HREF="http://eprint.iacr.org/2008/385">http://eprint.iacr.org/2008/385</A>&gt;
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

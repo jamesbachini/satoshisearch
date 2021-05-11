@@ -1,0 +1,36 @@
+<PRE>On Fri, May 30, 2008 at 02:58:15PM -0400, Arshad Noor wrote:
+
+&gt;<i> So, what is it on the device that is using the 3DES key to encrypt
+</I>&gt;<i> chunks to send to the RIM messaging gateway? 
+</I>
+Not &quot;to the RIM gateway&quot;, &quot;via the RIM gateway&quot; the payload is destined
+for a corporate messaging server.
+
+&gt;<i> Something on the 
+</I>&gt;<i> device has to encrypt/decrypt the data sent to/from the messaging
+</I>&gt;<i> server?  Doesn't that constitute a session even if the 3DES keys
+</I>&gt;<i> are rotated frequently?  (And, if they are, how are the 3DES keys
+</I>&gt;<i> agreed upon?  Doesn't that imply public/private key-pairs or a
+</I>&gt;<i> master-key?)
+</I>
+Presumably the device has a KEK, and generates a session key for each
+message, encrypting that under the KEK. The KEK is used for a long time
+(~90 days) and periodically renegotiated. I don't recall how the KEK is
+agreed to. Perhaps there is PKI involved in that step, or it could just
+negotiate the new KEK using the current KEK. There is not in practice
+any need for a PKI in this context, it looks rather a lot more like
+Kerberos than PKI.
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

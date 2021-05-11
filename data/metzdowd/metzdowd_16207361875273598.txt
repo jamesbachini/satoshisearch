@@ -1,0 +1,43 @@
+<PRE>
+On Aug 6, 2008, at 12:17 PM, Leichter, Jerry wrote:
+
+&gt;<i> For Web sites these days, I generate random strong passwords and keep
+</I>&gt;<i> them on a keychain on my Mac.  Actually, the keychain gets  
+</I>&gt;<i> synchronized
+</I>&gt;<i> automatically across all my Mac's using .mac/MobileMe (for all their
+</I>&gt;<i> flaws).  When I do this, I enter random values that I don't even
+</I>&gt;<i> record for the security questions.  Should something go wrong, I'm
+</I>&gt;<i> going to end up on the phone with a rep anyway, and they will have
+</I>&gt;<i> some other method for authenticating me (or, of course, a clever
+</I>&gt;<i> social-engineering attacker).
+</I>
+
+An except from my recent blog post:
+
+Now, this topic is not new. Bruce Schneier wrote about it a few years  
+ago [2]. Schneier says that he &#8220;type[s] a completely random answer,&#8221;  
+but consider this anecdote: a colleague of mine uses the same  
+technique. He called up customer service once, who then asked him,  
+&#8220;what&#8217;s the answer to your security question?&#8221; He said, &#8220;some random  
+numbers.&#8221; The response was &#8220;okay.&#8221; So picking random numbers might be  
+less secure than picking a realistic answer? :-)
+
+[2] <A HREF="http://www.computerworld.com/securitytopics/security/story/0,,99628,00.html">http://www.computerworld.com/securitytopics/security/story/0,,99628,00.html</A>
+
+-- 
+Apu Kapadia, Ph.D. UIUC 2005
+Research Assistant Professor
+Department of Computer Science, Dartmouth College, USA
+<A HREF="http://www.cs.dartmouth.edu/~akapadia/">http://www.cs.dartmouth.edu/~akapadia/</A>
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

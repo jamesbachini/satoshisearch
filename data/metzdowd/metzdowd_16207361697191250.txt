@@ -1,0 +1,28 @@
+<PRE>
+Ed Felten blogs on his latest research:
+
+<A HREF="http://www.freedom-to-tinker.com/?p=1257">http://www.freedom-to-tinker.com/?p=1257</A>
+
+Excerpt:
+
+    Today eight colleagues and I are releasing a significant new
+    research result. We show that disk encryption, the standard
+    approach to protecting sensitive data on laptops, can be defeated
+    by relatively simple methods. We demonstrate our methods by using
+    them to defeat three popular disk encryption products: BitLocker,
+    which comes with Windows Vista; FileVault, which comes with MacOS
+    X; and dm-crypt, which is used with Linux.
+
+More info: <A HREF="http://citp.princeton.edu/memory">http://citp.princeton.edu/memory</A>
+
+Paper: <A HREF="http://citp.princeton.edu.nyud.net/pub/coldboot.pdf">http://citp.princeton.edu.nyud.net/pub/coldboot.pdf</A>
+
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

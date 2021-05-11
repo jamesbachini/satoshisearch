@@ -1,0 +1,102 @@
+<PRE>From:    <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dewayne at warpspeed.com</A> (Dewayne Hendricks)
+Subject: [Dewayne-Net] Encrypted laptop poses legal dilemma
+To:      Dewayne-Net Technology List &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">xyzzy at warpspeed.com</A>&gt;
+Date:    Thu, 07 Feb 2008 15:38:22 -0800
+
+
+[Note:  This item comes from reader Randall.  DLH]
+
+From: Randall &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rvh40 at insightbb.com</A>&gt;
+Date: February 7, 2008 1:53:24 PM PST
+To: David Farber &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dave at farber.net</A>&gt;, Dewayne Hendricks &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dewayne at warpspeed.com</A>&gt;
+
+&lt;<A HREF="http://news.yahoo.com/s/ap/computer_privacy">http://news.yahoo.com/s/ap/computer_privacy</A>&gt;
+
+&lt;<A HREF="http://snipurl.com/1z7t0">http://snipurl.com/1z7t0</A>&gt;
+
+
+Encrypted laptop poses legal dilemma
+
+By JOHN CURRAN, Associated Press Writer
+
+When Sebastien Boucher stopped at the U.S.-Canadian border, agents who  
+inspected his laptop said they found files containing child pornography.
+
+But when they tried to examine the images after his arrest,  
+authorities were stymied by a password-protected encryption program.
+
+Now Boucher is caught in a cyber-age quandary: The government wants  
+him to give up the password, but doing so could violate his Fifth  
+Amendment right against self-incrimination by revealing the contents  
+of the files.
+
+Experts say the case could have broad computer privacy implications  
+for people who cross borders with computers, PDAs and other devices  
+that are subject to inspection.
+
+&quot;It's a very, very interesting and novel question, and the courts have  
+never really dealt with it,&quot; said Lee Tien, an attorney with the  
+Electronic Frontier Foundation, a San Francisco-based group focused on  
+civil liberties in the digital world.
+
+For now, the law's on Boucher's side: A federal magistrate here has  
+ruled that forcing Boucher to surrender the password would be  
+unconstitutional.
+
+The case began Dec. 17, 2006, when Boucher and his father were stopped  
+at a Derby Line, Vt., checkpoint as they entered the U.S.
+
+Boucher, a 30-year-old drywall installer in Derry, N.H., waived his  
+Miranda rights and cooperated with agents, telling them he downloads  
+pornography from news groups and sometimes unknowingly acquires images  
+that contain child pornography.
+
+Boucher said he deletes those images when he realizes it, according to  
+an affidavit filed by Immigration and Customs Enforcement.
+
+At the border, he helped an agent access the computer for an initial  
+inspection, which revealed files with names such as &quot;Two year old  
+being raped during diaper change&quot; and &quot;pre teen bondage,&quot; according to  
+the affidavit.
+
+Boucher, a Canadian with U.S. residency, was accused of transporting  
+child pornography in interstate or foreign commerce, which carries up  
+to 20 years in prison. He is free on his own recognizance.
+
+The laptop was seized, but when an investigator later tried to access  
+a particular drive, he was thwarted by encryption software from a  
+company called Pretty Good Privacy, or PGP.
+
+A grand jury subpoena to force Boucher to reveal the password was  
+quashed by federal Magistrate Jerome Niedermeier on Nov. 29.
+
+&quot;Producing the password, as if it were a key to a locked container,  
+forces Boucher to produce the contents of his laptop,&quot; Niedermeier  
+wrote. &quot;The password is not a physical thing. If Boucher knows the  
+password, it only exists in his mind.&quot;
+
+Niedermeier said a Secret Service computer expert testified that the  
+only way to access Boucher's computer without knowing the password  
+would be to use an automated system that guesses passwords, but that  
+process could take years.
+
+The government has appealed the ruling.
+
+Neither defense attorney James Budreau nor Vermont U.S. Attorney  
+Thomas Anderson would discuss the charge.
+
+&quot;This has been the case we've all been expecting,&quot; said Michael  
+Froomkin, a professor at the University of Miami School of Law. &quot;As  
+encryption grows, it was inevitable there'd be a case where the  
+government wants someone's keys.&quot;
+
+[snip]
+
+
+----------
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

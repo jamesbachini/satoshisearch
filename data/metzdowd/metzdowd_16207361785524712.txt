@@ -1,0 +1,42 @@
+<PRE>
+Jacob Appelbaum &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jacob at appelbaum.net</A>&gt; writes:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i> Until then, OpenVPN let me get started in about five minutes, and the
+</I>&gt;&gt;<i> fact that it is less than completely secure doesn't matter much to me
+</I>&gt;&gt;<i> as I'm running SSH under it anyway.
+</I>[...]
+&gt;<i> I'm always curious to hear what designers of protocols actually use on a
+</I>&gt;<i> daily basis. I'm also really curious how said designers evaluate their
+</I>&gt;<i> choices.
+</I>&gt;<i>
+</I>&gt;<i> I really like OpenVPN. It's really smooth to setup, it's very easy to
+</I>&gt;<i> use on the Big Three Platforms.
+</I>&gt;<i>
+</I>&gt;<i> Have you read the source to OpenVPN? Do you think that it's
+</I>&gt;<i> cryptographically sound? Is it properly implemented?
+</I>&gt;<i>
+</I>&gt;<i> I've found some stuff I wonder about and I'm curious if anyone else has?
+</I>
+I can't claim to like the innards, and it seems bizarre to me that the
+designers didn't simply use IPSec encapsulated in UDP as the
+underlying protocol. (Were I writing such a thing today, I might use
+DTLS.)
+
+That said, in my usage pattern, I don't care much about the possible
+security flaws. I would not recommend the package to clients, however.
+
+It is obvious to anyone using modern IPSec implementations that their
+configuration files are a major source of pain. In spite of this, the
+designers don't seem to see any problem. The result has been that
+people see IPSec as unpleasant and write things like OpenVPN when the
+underlying IPSec protocol is just fine and it is the implementations
+that are unpleasant.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

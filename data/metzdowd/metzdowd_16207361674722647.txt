@@ -1,0 +1,124 @@
+<PRE>another term you might look for (used in physical security and
+financial controls)  is  &quot;dual custody&quot; or sometimes &quot;double custody&quot;.
+
+		(if you're searching, add &quot; -child&quot;  or &quot;security&quot; for better search  
+quality)
+
+i don't see why the analogies are not apt.
+
+one question is whether the two people can both perform their  
+respective act independently
+or whether they need to perform their act within a bounded time.
+
+in the case of auditcon locks, for example, often used on the money  
+safe part of atms:
+<A HREF="http://www.kaba.co.uk/products/auditcon-2-series-model-252.asp">http://www.kaba.co.uk/products/auditcon-2-series-model-252.asp</A>
+
+these features are called
+
+&quot;Supervisor/Subordinate Mode
+Allows access by a subordinate only after being enabled by a  
+supervisory combination. Once enabled, a subordinate user has access  
+to the lock during any valid opening time.&quot;
+[for example, this would be used in a supermarket if a manager wants  
+to allow a subordinate to open the safe the next morning]
+or
+
+&quot;Dual Custody
+Two Person Integrity, which requires two users to open the lock.&quot;
+
+the x-09 (approved for use in us top secret) has three modes:
+A-single combination code
+b-Dual combination mode which allows access only when two different  
+three number combinations are dialed within 10 seconds of one another
+c-Supervisory/subordinate mode
+
+On Jan 28, 2008, at 2:56 PM, John Denker wrote:
+
+&gt;<i> Hi Folks --
+</I>&gt;<i>
+</I>&gt;<i> I have been asked to opine on a system that requires a
+</I>&gt;<i> &quot;two-person login&quot;.  Some AIX documents refer to this as
+</I>&gt;<i> a &quot;common method of increasing login security&quot;
+</I>&gt;<i>  <A HREF="http://www.redbooks.ibm.com/redbooks/pdfs/sg245962.pdf">http://www.redbooks.ibm.com/redbooks/pdfs/sg245962.pdf</A>
+</I>&gt;<i>
+</I>&gt;<i> However, I don't think it is very common;  I get only five hits
+</I>&gt;<i> from
+</I>&gt;<i>  <A HREF="http://www.google.com/search?q=two-person-login">http://www.google.com/search?q=two-person-login</A>
+</I>&gt;<i>
+</I>&gt;<i> By way of not-very-apt analogy:
+</I>&gt;<i> -- I am aware of business checks that require two signatures;
+</I>&gt;<i> -- I am aware that purchase orders are commonly signed by 
+</I>&gt;<i>   two persons (the initiator and the approver);
+</I>&gt;<i> -- I am aware of missile-launch procedures that require two
+</I>&gt;<i>  persons using two keys;
+</I>&gt;<i> -- I am aware of software development procedures where a patch
+</I>&gt;<i>  is submitted (and signed) by one person, tested (and signed
+</I>&gt;<i>  off) by another, and committed to the official repository by
+</I>&gt;<i>  a third person.
+</I>&gt;<i> -- et cetera.
+</I>&gt;<i>
+</I>&gt;<i> However, it is important to note that the aforementioned examples
+</I>&gt;<i> all share an important property, as we see from the following:
+</I>&gt;<i>  *) The parties give their approval _after_ the semantics has
+</I>&gt;<i>   been fully determined.  It would defeat all security if two
+</I>&gt;<i>   signatures were attached to a blank check or a blank PO.
+</I>&gt;<i>  *) As a related point, the approval is attached to a particular
+</I>&gt;<i>   transaction.  The approver is not merely certifying that Joe
+</I>&gt;<i>   is really Joe, and is generally allowed to write checks
+</I>&gt;<i>   (mere identification);  the approver is certifying that this
+</I>&gt;<i>   particular check is OK.
+</I>&gt;<i>  *) To say the same thing another way, there is no pretexting.
+</I>&gt;<i>   There is no pretext for turning the keys on the missile launcher
+</I>&gt;<i>   unless you intend to launch a missile.  The semantics of the
+</I>&gt;<i>   keys is clear.
+</I>&gt;<i>
+</I>&gt;<i> We need to talk about threat models:
+</I>&gt;<i>  a) The purveyors of the system in question don't have any clue
+</I>&gt;<i>   as to what their threat model is.  I conjecture that they might
+</I>&gt;<i>   be motivated by the non-apt analogies itemized above.
+</I>&gt;<i>  b) In the system in question, there are myriad reasons why Joe
+</I>&gt;<i>   would need to log in.  If Joe wanted to do something nefarious,
+</I>&gt;<i>   it would take him less than a second to come up with a seemingly
+</I>&gt;<i>   non-nefarious pretext.  When the approver approves Joe's login,
+</I>&gt;<i>   the approver has no idea what the consequences of that approval
+</I>&gt;<i>   will be.  The two-person login requires the approver to be
+</I>&gt;<i>   present at login time, but does not require the approver to
+</I>&gt;<i>   remain present, let alone take responsibility what Joe does
+</I>&gt;<i>   after login.
+</I>&gt;<i>  c) The only threat model I can come up with is the case where
+</I>&gt;<i>   Joe's password has been compromised, and nobody else's has.
+</I>&gt;<i>   Two-person login would provide an extra layer of security
+</I>&gt;<i>   in this case.  This threat is real, but there are other ways
+</I>&gt;<i>   of dealing with this threat (e.g. two-factor authentication)
+</I>&gt;<i>   ... so this seems like quite a lame justification for the
+</I>&gt;<i>   two-person login.
+</I>&gt;<i>  d) Or have I overlooked something?
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i> From the foregoing, you might conclude that the two-person login
+</I>&gt;<i> system is worthless security theater ... but harmless security
+</I>&gt;<i> theater, and therefore not worth worrying about either way.
+</I>&gt;<i>
+</I>&gt;<i> But the plot thickens.  The purveyors have implemented two-person
+</I>&gt;<i> login in a way that manifestly /reduces/ security.  Details
+</I>&gt;<i> available on request.
+</I>&gt;<i>
+</I>&gt;<i> So now I throw it open for discussion.  Is there any significant
+</I>&gt;<i> value in two-person login?  That is, can you identify any threat
+</I>&gt;<i> that is alleviated by two-person login, that is not more wisely
+</I>&gt;<i> alleviated in some other way?
+</I>&gt;<i>
+</I>&gt;<i> If so, is there any advice you can give on how to do this right?
+</I>&gt;<i> Any DOs and DON&quot;Ts?
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

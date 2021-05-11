@@ -1,0 +1,22 @@
+<PRE>Pat Farrell &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pfarrell at pfarrell.com</A>&gt; writes:
+
+&gt;<i>At CyberCash, where we had real RSA/DES in the system, we found that &quot;users
+</I>&gt;<i>want convenience, not security&quot;
+</I>
+I think that's phrasing it a bit badly, it'd be better put as &quot;without
+usability, you won't have users&quot; (see the Tor paper &quot;Challenges in deploying
+low-latency anonymity&quot; for more thoughts on this).  This is why Skype is the
+dominant internet phone protocol and every attempt at building encrypted VoIP
+phones in the past ten years or so (anyone else here remember brew-a-stu?) has
+languished among a small set of crypto geeks.  As Ian Grigg put it on his blog
+a few years ago, &quot;It took longer to do the setting up of some security options
+[in other software] than it takes to download, install, and initiate an
+encrypted VoIP call over Skype with someone who has never used Skype before&quot;.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

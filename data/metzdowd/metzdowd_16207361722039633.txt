@@ -1,0 +1,28 @@
+<PRE>
+
+Ben Laurie wrote:
+
+[snip]
+
+&gt;<i> And so we end up at the position that we have ended up at so many times 
+</I>&gt;<i> before: the GTCYM has to have a decent processor, a keyboard and a 
+</I>&gt;<i> screen, and must be portable and secure.
+</I>&gt;<i> 
+</I>&gt;<i> One day we'll stop concluding this and actually do something about it.
+</I>
+And it can almost certainly be done with the current technology. 
+Arnnei Speiser at <A HREF="http://www.megaas.co.nz/">http://www.megaas.co.nz/</A> has a two factor one 
+time password application that runs on a java enabled cellphone. 
+If he can do this I suspect it is but short hop to what you suggest.
+
+He has a bank demo that is worth looking at as a potential model.
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

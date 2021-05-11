@@ -1,0 +1,20 @@
+<PRE>&quot;David G. Koontz&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">david_koontz at xtra.co.nz</A>&gt; writes:
+
+&gt;<i>Military silicon already has RNG on chip (e.g. AIM, Advanced INFOSEC Machine,
+</I>&gt;<i>Motorola),
+</I>
+That's only a part of it.  Military silicon has a hardware RNG on chip
+alongside a range of other things because they know full well that you can't
+trust only a hardware/noise-based RNG, there are too many variables and too
+many things that can go wrong with that single source.  That's why I was
+sceptical of the &quot;we've solved the RNG problem with our custom hardware&quot;
+claim, they've created one possible source of input but not a universal
+solution.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

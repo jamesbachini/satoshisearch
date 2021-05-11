@@ -1,0 +1,25 @@
+<PRE>Quick system scenario:
+
+You have packet [A].
+
+It gets encrypted using an AES algo in a particular mode and we are
+left with [zA].
+
+More data [B] is added to that encrypted packet.
+
+Now I have [zA]+[B] in one packet and I re-encrypt it with the same
+algo/key/mode.
+
+Have I just compromised the security somehow? I wasn't aware of
+anything but something about this double encryption made something
+ring in my mind so I wanted to double check...
+
+Many thanks,
+
+Mr Pink
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

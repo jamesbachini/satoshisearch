@@ -1,0 +1,34 @@
+<PRE>Ivan Krsti? wrote:
+&gt;<i> On Sep 19, 2007, at 5:01 PM, Nash Foster wrote:
+</I>&gt;&gt;<i> Any actual cryptographers care to comment on this? I don't feel
+</I>&gt;&gt;<i> qualified to judge.
+</I>&gt;<i> 
+</I>&gt;<i> If the affected software is doing DH with a malicious/compromised peer, 
+</I>&gt;<i> the peer can make it arrive at a predictable secret -- which would be 
+</I>&gt;<i> known to some passive listener. But hey, if the peer is malicious or 
+</I>&gt;<i> compromised to begin with, it could just as well do DH normally and 
+</I>&gt;<i> explicitly send the secret to the listener when it's done. Not much to 
+</I>&gt;<i> see here.
+</I>
+
+I agree that this is minutia, but there is a difference.  If 
+the peer can arrange the key to be some predictable secret, 
+it can do so without revealing itself.  Eve is happy.  If 
+however it has to leak the key some other way, it needs some 
+covert channel.  This channel is the sort of thing that 
+security reviews might more easily stumble over.  E.g., IDS 
+guy asking why these strange packets emanate from the crypto 
+server...
+
+Which is to say, it's worth closing off this particular form 
+of attack if it can be done without undue cost.  When I did 
+a key exchange last in a protocol design, I attempted to 
+address it by inserting some hashing steps.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

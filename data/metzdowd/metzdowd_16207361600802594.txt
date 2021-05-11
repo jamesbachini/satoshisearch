@@ -1,0 +1,31 @@
+<PRE>' =JeffH ' wrote:
+&gt;<i> From: John Young &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptome at earthlink.net</A>&gt;
+</I>&gt;<i> Subject: Adi Shamir's microprocessor bug attack
+</I>&gt;<i> To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ukcrypto at chiark.greenend.org.uk</A>
+</I>&gt;<i> Date: Sat, 17 Nov 2007 09:50:31 -0500 (GMT-05:00)
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Adi Shamir's note on a microprocessor bug attack on public key cryptography 
+</I>&gt;<i> featured in the NY Times today:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://cryptome.org/bug-attack.htm">http://cryptome.org/bug-attack.htm</A>
+</I>&gt;<i> 
+</I>&gt;<i> The NYT report:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.nytimes.com/2007/11/17/technology/17code.html">http://www.nytimes.com/2007/11/17/technology/17code.html</A>
+</I>&gt;<i> 
+</I>
+Can anyone think of a deployed implementation of RSA signatures that 
+would be vulnerable to the attack Shamir mentions?  Hashing and message 
+blinding would seem to thwart it.
+
+Incidentally, in the 2001 Boneh-DeMillo-Lipton paper they do mention the 
+Intel floating point division bug.
+
+-James
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

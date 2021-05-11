@@ -1,0 +1,12 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+&gt;<i>  More people use just those three
+</I>&gt;<i> than will *ever* vote.
+</I>More people under 40, certainly.  But in '04 there were 36 million
+people over 65, most of whom are eligible to vote.  You know a lot of
+70-year old e-gamblers or FaceBook members?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

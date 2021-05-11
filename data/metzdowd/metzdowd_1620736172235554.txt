@@ -1,0 +1,26 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bmanning at vacation.karoshi.com</A> wrote:
+&gt;<i> 	Er... Allow me the option o fdisbeleiving your assertion.
+</I>&gt;<i> 	PTR records can and do point to mutiple names.  Some narrow
+</I>&gt;<i> 	implementations have assumed that there will only be a single
+</I>&gt;<i> 	data element and this myth - that PTRs only point to a single
+</I>&gt;<i> 	name - is and has been spread widely.
+</I>
+You can disbelieve my assertion if you wish, but I am only quoting the 
+RFC. RFC 1035, to be precise:
+
+&quot;Address nodes are used to hold pointers to primary host names
+in the normal domain space.&quot;
+
+(section 3.5. IN-ADDR.ARPA domain). So, the &quot;myth&quot; is in the scripture.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

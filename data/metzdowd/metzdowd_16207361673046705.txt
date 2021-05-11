@@ -1,0 +1,80 @@
+<PRE>On Tue, Jan 29, 2008 at 12:26:21PM -0500, Perry E. Metzger wrote:
+
+&gt;<i> Clearly, more people need to know about &quot;Gutmann Soundwave Therapy&quot;.
+</I>&gt;<i> 
+</I>&gt;<i> Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; writes:
+</I>[...]
+&gt;<i> &gt; [0] Last paragraph, <A HREF="http://diswww.mit.edu/bloom-picayune/crypto/14238">http://diswww.mit.edu/bloom-picayune/crypto/14238</A>
+</I>&gt;<i> 
+</I>&gt;<i> As it turns out, the central image of Peter's post was popularized
+</I>&gt;<i> earlier*.
+</I>&gt;<i> 
+</I>&gt;<i> However, Peter clearly said this first in a security context, and I
+</I>&gt;<i> hope that the term &quot;Gutmann Soundwave Therapy&quot; spreads widely within
+</I>&gt;<i> our field as a way of ridiculing the desire to invent your own crypto
+</I>&gt;<i> algorithms and protocols. When it gets to the point where salesmen are
+</I>&gt;<i> vaguely aware of the phrase and fear it, we will know we have done our
+</I>&gt;<i> job successfully.
+</I>
+As one of the main developers of tinc, I have been at the receiving end
+of Gutmann's therapy, or &quot;drive-by shooting&quot; as I experienced it at that
+time.
+
+Peter sent us his write-up up via private email a few days before he
+posted it to this list (which got it on Slashdot). I had little time to
+think about the issues he mentioned before his write-up became public.
+When it did, I (and others too) felt attacked in a cruel way. Peter
+ignored all the reasons *why* we used the kind of crypto we did at
+that moment, compared it to a very high standard, and made it feel like
+every thing we didn't do or didn't do as well as SSL made our crypto
+worthless. 
+
+We had some other people sending us security reviews of tinc, Jerome
+Etienne for example. With them, we never had that feeling of being
+&quot;attacked&quot;. The conversations we had with them encouraged us to improve
+tinc.
+
+Peter's write-up was the reason I subscribed to this cryptography
+mailing list. After a while the anger/hurt feelings I had disappeared.
+I knew then that Peter was right in his arguments. Nowadays I can look
+at Peter's write-up more objectively and I can see that it is not as
+ad-hominem as it felt back then, although the whole soundwave paragraph
+still sounds very childish ;)
+
+When tinc 2.0 will ever come out (unfortunately I don't have a lot of
+time to work on it these days), it will probably use the GnuTLS library
+and authenticate and connect daemons with TLS. For performance reasons,
+you want to tunnel network packets via UDP instead of TCP, so hopefully
+there is a working DTLS implementation as well then.
+
+I hope that in the future, if you see an application doing something
+wrong, you don't immediately give the developers the soundwave therapy.
+Be a little bit more gentle and try to find out why it was written that
+way in the first place. It will create a lot more understanding and
+willingness from the developers to fix the problems.
+
+Also, from experimenting with a version of tinc that uses TLS, I can
+tell you that it not the perfect solution for our problem. The main
+issue I see with SSL and TLS is with the credentials. Both X.509 and
+OpenPGP are focussed on URLs or email addresses. It is not clear to me
+how to store other information (like which subnets a node on the VPN is
+authorised to use) in such credentials in a nice way, other than
+shoehorning it into a CN (X.509) or uid (OpenPGP) field. Certificate
+chain verification is something that often goes wrong; some SSL libraries do
+not offer that functionality, or only do it when an application
+explicitly requests it. With OpenPGP you can have a web of trust, but
+how do you make use of it in an automated way? I expect that the next
+round of penis-shaped soundwave therapy will not be focussed on
+whether or not an application uses SSL, but on how it (mis)uses SSL.
+
+-- 
+Met vriendelijke groet / with kind regards,
+      Guus Sliepen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">guus at sliepen.org</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: Digital signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080131/7dad8362/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080131/7dad8362/attachment.pgp</A>&gt;
+</PRE>

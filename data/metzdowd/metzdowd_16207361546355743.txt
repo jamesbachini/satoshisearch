@@ -1,0 +1,42 @@
+<PRE>On Wed, 19 Sep 2007, Nash Foster wrote:
+
+&gt;<i> <A HREF="http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/">http://labs.musecurity.com/2007/09/18/widespread-dh-implementation-weakness/</A>
+</I>&gt;<i> 
+</I>&gt;<i> Any actual cryptographers care to comment on this? I don't feel
+</I>&gt;<i> qualified to judge.
+</I>
+I &quot;discovered&quot; this minor weakness in most of the open source IPSec
+implementations in May of last year (identical checks for degenerate
+exponents are actually recommended in RFC2142 section 2.3.1.1). 
+
+It didn't seem like this weakness could be used for much - an evil IKE
+endpoint could use it to force disclosure of symmetrically encrypted
+exchanges that were keyed from DH, but such an endpoint has a myriad 
+of other ways they could disclose this same information. Protocols that
+do not perform authentication after DH (e.g. Tor) get bit much harder
+though.
+
+Anyway, I fixed OpenBSD's isakmpd[1], tighened the checks in OpenSSH[2]
+and reported the problem to the security contacts of ipsec-tools/racoon
+and openswan (two other open source IKE implementations).
+
+Racoon and openswan never bothered bother to fix it despite me sending a
+patch for racoon at least.  I recall a rather bizarre conversation with
+an openswan developer who said he would only accept a patch if I wrote
+him a testcase to go with it.
+
+OTOH Racoon/ipsec-tools would benefit from the extra sanity checks
+that Ben Laurie added to OpenSSL for the 0.9.8a release[3], assuming
+it was compiled against that version or later.
+
+-d
+
+[1] <A HREF="http://marc.info/?l=openbsd-cvs&amp;m=114675357804837&amp;w=2">http://marc.info/?l=openbsd-cvs&amp;m=114675357804837&amp;w=2</A>
+[2] <A HREF="http://www.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/dh.c.diff?r1=1.35&amp;r2=1.36">http://www.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/dh.c.diff?r1=1.35&amp;r2=1.36</A>
+[3] <A HREF="http://cvs.openssl.org/chngview?cn=14375">http://cvs.openssl.org/chngview?cn=14375</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

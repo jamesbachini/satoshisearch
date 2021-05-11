@@ -1,0 +1,49 @@
+<PRE>
+
+  I've been through the code.  As far as I can see, there's nothing in
+expand_builtin_memset_args that treats any value differently, so there can't be
+anything special about memset(x, 0, y).  Also as far as I can tell, gcc doesn't
+optimise out calls to memset, not even thoroughly dead ones: for example -
+
+
+/artimi/software/firmware $ cat memstst.c
+
+#include &lt;string.h&gt;
+int foo (void);
+int main (int argc, const char **argv)
+{
+  int var[100];
+  memset (var, 0, sizeof var);
+  foo ();
+  return 0;
+}
+
+int foo (void)
+{
+  int var[100];
+  memset (var, 0, sizeof var);
+  return 0;
+}
+
+/artimi/software/firmware $ gcc -O2 memstst.c -o mt
+/artimi/software/firmware $ gcc -O2 memstst.c -S -o memstst.s
+/artimi/software/firmware $ grep memset memstst.s
+        call    _memset
+        call    _memset
+        .def    _memset;        .scl    3;      .type   32;     .endef
+/artimi/software/firmware $
+
+
+  This is not entirely unexpected; memset, even when expanded inline as a
+builtin, still has libcall behaviour.
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,23 @@
+<PRE>At 1:47 PM -0500 8/8/08, Nicolas Williams wrote:
+&gt;<i>On Fri, Aug 08, 2008 at 02:08:37PM -0400, Perry E. Metzger wrote:
+</I>&gt;&gt;<i>  The kerberos style of having credentials expire very quickly is one
+</I>&gt;&gt;<i>  (somewhat less imperfect) way to deal with such things, but it is far
+</I>&gt;&gt;<i>  from perfect and it could not be done for the ad-hoc certificate
+</I>&gt;&gt;<i>  system https: depends on -- the infrastructure for refreshing all the
+</I>&gt;&gt;<i>  world's certs every eight hours doesn't exist, and if it did imagine
+</I>&gt;&gt;<i>  the chaos if it failed for a major CA one fine morning.
+</I>&gt;<i>
+</I>&gt;<i>The PKIX moral equivalent of Kerberos V tickets would be OCSP Responses.
+</I>&gt;<i>
+</I>&gt;<i>I understand most current browsers support OCSP.
+</I>
+...and only a tiny number of CAs do so.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

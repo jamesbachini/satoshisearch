@@ -1,0 +1,51 @@
+<PRE>Eric Rescorla wrote on 08 August 2008 17:58:
+
+&gt;<i> At Fri, 8 Aug 2008 17:31:15 +0100,
+</I>&gt;<i> Dave Korn wrote:
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i> Eric Rescorla wrote on 08 August 2008 16:06:
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;&gt;<i> At Fri, 8 Aug 2008 11:50:59 +0100,
+</I>&gt;&gt;&gt;<i> Ben Laurie wrote:
+</I>&gt;&gt;&gt;&gt;<i> However, since the CRLs will almost certainly not be checked, this
+</I>&gt;&gt;&gt;&gt;<i> means the site will still be vulnerable to attack for the lifetime of
+</I>&gt;&gt;&gt;&gt;<i> the certificate (and perhaps beyond, depending on user
+</I>&gt;&gt;&gt;&gt;<i> behaviour). Note that shutting down the site DOES NOT prevent the
+</I>&gt;&gt;&gt;&gt;<i> attack. 
+</I>&gt;&gt;&gt;&gt;<i> 
+</I>&gt;&gt;&gt;&gt;<i> Therefore mitigation falls to other parties.
+</I>&gt;&gt;&gt;&gt;<i> 
+</I>&gt;&gt;&gt;&gt;<i> 1. Browsers must check CRLs by default.
+</I>&gt;&gt;&gt;<i> 
+</I>&gt;&gt;&gt;<i> Isn't this a good argument for blacklisting the keys on the client
+</I>&gt;&gt;&gt;<i> side?
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i>   Isn't that exactly what &quot;Browsers must check CRLs&quot; means in this
+</I>&gt;&gt;<i> context anyway?  What alternative client-side blacklisting mechanism do
+</I>&gt;&gt;<i> you suggest? 
+</I>&gt;<i> 
+</I>&gt;<i> It's easy to compute all the public keys that will be generated
+</I>&gt;<i> by the broken PRNG. The clients could embed that list and refuse
+</I>&gt;<i> to accept any certificate containing one of them. So, this
+</I>&gt;<i> is distinct from CRLs in that it doesn't require knowing
+</I>&gt;<i> which servers have which cert...
+</I>
+&lt;scurries off to read CRL format in RFC&gt;
+
+  Oh, you can't specify them solely by key, you have to have all the
+associated metadata.  That's annoying, yes, I understand your point now.
+
+  IIRC various of the vendors' sshd updates released in the immediate wake
+of the Debian catastrophe do indeed block all the weak keys.
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,76 @@
+<PRE>R. Hirschfeld wrote:
+&gt;<i> - differential pricing: electronic purse payments are potentially
+</I>&gt;<i>   cheaper to process than those of debit cards because they are
+</I>&gt;<i>   offline, but consumers find it more convenient to keep money in
+</I>&gt;<i>   their bank account than on a smart card and will likely continue to
+</I>&gt;<i>   do so as long as it costs no more.  (This may become less of an
+</I>&gt;<i>   issue if/when all vending machines and parking meters are on the
+</I>&gt;<i>   internet anyway.)
+</I>
+re:
+<A HREF="http://www.garlic.com/~lynn/aadsm27.htm#41">http://www.garlic.com/~lynn/aadsm27.htm#41</A> The bank fraud blame game
+
+in the mid-90s a number of US financial institutions looked at the economics
+of the EU chipcard electronic purses (modulo the float issue ... which could
+be made to work) the issue was that the (much more) expensive chips were
+being used to offset the significantly higher PTT costs (and/or just plain
+PTT availability) in Europe.
+
+The US could deploy a magstripe authentication card for stored-value ... that
+did online transactions using much of the existing online point-of-sale
+infrastructure ... for significantly lower overall infrastructure costs
+than the EU chip-based offline stored value. The magstripe card basically
+became a &quot;something you have&quot; authentication mechanism. The primary trade-off
+issue was that the US telecom pricing was so much lower than in Europe
+(and lots of 80s &amp; 90s design in europe was being driven by the extremely
+high PTT costs and/or, in some cases, lack of PTT availability).
+
+Note, however, the internet along with various telcom and technology changes 
+around the world have contributed to significantly changing the online/offline 
+economic trade-off considerations.
+
+Independent of the online/offline economic issues ... there are some fraud
+and security issues that could drive towards using chips for a more secure
+&quot;something you have&quot; authentication device.
+
+however, there is some lingering effects from the older high PTT costs
+related to chip-based architectures ... and whether there are any residual
+design features related to (originally) supporting offline operation.
+
+Part of this could be seen in the &quot;yes card&quot; exploits ... where, transaction
+&quot;business rules&quot; were left in the chip implementation (as oppsed to the chip
+being purely an authentication mechanism) ... contributing to the enormous 
+vulnerability increase
+<A HREF="http://www.garlic.com/~lynn/subintegrity.html#yescard">http://www.garlic.com/~lynn/subintegrity.html#yescard</A>
+
+For the float issue with regard to this class of US gift/stored-value cards 
+... they are sold as &quot;merchant&quot; cards ... i.e. the kind of gift &amp; stored-value cards
+you see used by coffee shops, video rental, grocery stores, large department
+stores, etc. Possibly, in part, because they are &quot;merchant&quot; cards ... as
+opposed to &quot;bank&quot; cards ... the associated accounts and balances are
+pretty far removed from any jurisdiction that might impose payment of
+interest. 
+
+misc. past posts about how the large difference in telecom costs drove different
+solutions
+<A HREF="http://www.garlic.com/~lynn/aepay11.htm#28">http://www.garlic.com/~lynn/aepay11.htm#28</A> Solving the problem of micropayments
+<A HREF="http://www.garlic.com/~lynn/aepay11.htm#70">http://www.garlic.com/~lynn/aepay11.htm#70</A> Confusing Authentication and Identiification? (addenda)
+<A HREF="http://www.garlic.com/~lynn/aadsm16.htm#12">http://www.garlic.com/~lynn/aadsm16.htm#12</A> Difference between TCPA-Hardware and a smart card (was: example: secure computing kernel needed)
+<A HREF="http://www.garlic.com/~lynn/aadsm18.htm#39">http://www.garlic.com/~lynn/aadsm18.htm#39</A> Financial identity is *dangerous*? (was re: Fake companies, real money)
+<A HREF="http://www.garlic.com/~lynn/aadsm21.htm#12">http://www.garlic.com/~lynn/aadsm21.htm#12</A> Payment Tokens
+<A HREF="http://www.garlic.com/~lynn/aadsm6.htm#digcash">http://www.garlic.com/~lynn/aadsm6.htm#digcash</A> IP: Re: Why we don't use digital cash
+<A HREF="http://www.garlic.com/~lynn/2001m.html#4">http://www.garlic.com/~lynn/2001m.html#4</A> Smart Card vs. Magnetic Strip Market
+<A HREF="http://www.garlic.com/~lynn/2002c.html#22">http://www.garlic.com/~lynn/2002c.html#22</A> Opinion on smartcard security requested
+<A HREF="http://www.garlic.com/~lynn/2002c.html#23">http://www.garlic.com/~lynn/2002c.html#23</A> Opinion on smartcard security requested
+<A HREF="http://www.garlic.com/~lynn/2002d.html#41">http://www.garlic.com/~lynn/2002d.html#41</A> Why?
+<A HREF="http://www.garlic.com/~lynn/2002e.html#22">http://www.garlic.com/~lynn/2002e.html#22</A> Opinion  on smartcard security requested
+<A HREF="http://www.garlic.com/~lynn/2003h.html#54">http://www.garlic.com/~lynn/2003h.html#54</A> Smartcards and devices
+<A HREF="http://www.garlic.com/~lynn/2004j.html#39">http://www.garlic.com/~lynn/2004j.html#39</A> Methods of payment
+<A HREF="http://www.garlic.com/~lynn/2004j.html#43">http://www.garlic.com/~lynn/2004j.html#43</A> Methods of payment
+<A HREF="http://www.garlic.com/~lynn/2005g.html#34">http://www.garlic.com/~lynn/2005g.html#34</A> Maximum RAM and ROM for smartcards
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

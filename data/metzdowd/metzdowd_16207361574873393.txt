@@ -1,0 +1,21 @@
+<PRE>On Thu, 18 Oct 2007 12:49:40 -0700
+Jon Callas &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jon at callas.org</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> &gt; Ah, there are some trustworthy photons.  Oops, we can trust them,
+</I>&gt;<i> &gt; but we don't know if they are relevant.  Ah, there's a relevant
+</I>&gt;<i> &gt; photon....
+</I>&gt;<i> 
+</I>&gt;<i> And we know they are trustworthy photons because they have
+</I>&gt;<i> certificates signed by an accredited third-party boson.
+</I>&gt;<i> 
+</I>Boson or bogon?
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,58 @@
+<PRE>Had to remove the link so it would get past the spam-filters;
+apologies if you see multiple postings.
+
+Arshad Noor wrote:
+&gt;<i> Fascinating!
+</I>&gt;<i> 
+</I>&gt;<i> This may be the first phishing e-mail I've seen that uses
+</I>&gt;<i> a message related to digital certificates for attacking the
+</I>&gt;<i> client; I am not a customer of Comerica.
+</I>&gt;<i> 
+</I>&gt;<i> Has anyone else seen this before?
+</I>&gt;<i> 
+</I>&gt;<i> Arshad Noor
+</I>&gt;<i> StrongAuth, Inc.
+</I>&gt;<i> 
+</I>&gt;<i> -------- Original Message --------
+</I>&gt;<i> Subject:     Secure Server e-Cert &amp; Developer e-Cert. Comerica TM Connect
+</I>&gt;<i> Web Bank
+</I>&gt;<i> Date:     Tue, 22 Apr 2008 14:40:39 +0000
+</I>&gt;<i> From:     Digital Certificate Update &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">digitalsecurity at comerica.com</A>&gt;
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Comerica TM Connect Web Bank Renewal
+</I>&gt;<i> 
+</I>&gt;<i> Certificate Renewal
+</I>&gt;<i> Personal (Smartcard) e-Cert &amp; Personal e-Cert
+</I>&gt;<i> Certificate owner must renew the certificate before expiry date.
+</I>&gt;<i> Your certificate expiration date - 1may 2008.
+</I>&gt;<i> The system will send email (Certificate Renewal Notice) to the
+</I>&gt;<i> certificate owner ten
+</I>&gt;<i> days and 3 hours before the certificate is due to expire, if it has not
+</I>&gt;<i> been renewed.
+</I>&gt;<i> Upon receiving the renewal notice, certificate owner is required to
+</I>&gt;<i> connect to
+</I>&gt;<i> Comerica Bank Certificate Management System and present the client
+</I>&gt;<i> certificate.
+</I>&gt;<i> Secure Server e-Cert &amp; Developer e-Cert
+</I>&gt;<i> Certificate owner has the responsibility to renew the certificate before
+</I>&gt;<i> expiry date.
+</I>&gt;<i> Successful renewed application will receive an email notification from
+</I>&gt;<i> Comerica Bank.
+</I>&gt;<i> Applicant can just browse to the URL stated in the email and then
+</I>&gt;<i> download the certificate.
+</I>&gt;<i> 
+</I>&gt;<i> Download now&gt;&gt;
+</I>&gt;<i> &lt;Link removed to get past spam-filters&gt; 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 2008 Comerica Treasury Management Connect Web (SM) Version 4.2
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

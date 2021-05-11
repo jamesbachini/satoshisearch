@@ -1,0 +1,44 @@
+<PRE>
+
+On Mon, 9 Jun 2008, John Ioannidis wrote:
+
+|<i> Date: Mon, 09 Jun 2008 15:08:03 -0400
+</I>|<i> From: John Ioannidis &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ji at tla.org</A>&gt;
+</I>|<i> To: &quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt;
+</I>|<i> Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>|<i> Subject: Re: Ransomware
+</I>|<i> 
+</I>|<i> Leichter, Jerry wrote:
+</I>|<i> &gt; Computerworld reports:
+</I>|<i> &gt; 
+</I>|<i> &gt; <A HREF="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9094818</A> 
+</I>|<i> &gt; 
+</I>|<i> 
+</I>|<i> This is no different than suffering a disk crash.  That's what backups are
+</I>|<i> for.
+</I>|<i> 
+</I>|<i> /ji
+</I>|<i> 
+</I>|<i> PS: Oh, backups you say.
+</I>Bontochev's comment as well.
+
+Of course, there is one way this can be much worse than a disk crash:  A
+clever bit of malware can sit there silently and encrypt files you don't
+seem to be using much.  By the time it makes its ransom demands, you
+may find you have to go back days or even weeks in your backups to get
+valuable data back.
+
+Even worse, targeted malwared could attack your backups.  If it encrypted
+the data on the way to the backup device, it could survive silently for
+months, by which time encrypting the live data and demanding the
+ransom would be a very credible threat.  (Since many backup programs
+already offer encryption, hooking it might just involve changing the
+key.  It's always so nice when your opponent provides the mechanisms
+needed to attack him....)
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

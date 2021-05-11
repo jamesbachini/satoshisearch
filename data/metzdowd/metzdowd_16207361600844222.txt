@@ -1,0 +1,22 @@
+<PRE>Hi all,
+
+We (Marc Stevens, Arjen Lenstra and me) have used a Sony PlayStation 3 
+to correctly predict the outcome of the 2008 US presidential elections.
+See <A HREF="http://www.win.tue.nl/hashclash/Nostradamus">http://www.win.tue.nl/hashclash/Nostradamus</A> if you want to know
+the details of what this has to do with cryptography.
+
+We also announce two different Win32 executables that have identical 
+MD5 hash values. This can be made to happen for any two executable
+files.
+This implies a vulnerability in software integrity protection and 
+code signing schemes that still use MD5.
+See <A HREF="http://www.win.tue.nl/hashclash/SoftIntCodeSign">http://www.win.tue.nl/hashclash/SoftIntCodeSign</A> for details.
+
+Grtz,
+Benne de Weger
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

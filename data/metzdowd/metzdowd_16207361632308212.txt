@@ -1,0 +1,84 @@
+<PRE>Anne &amp; Lynn Wheeler wrote:
+&gt;<i> Virtualization still hot, death of antivirus software imminent, VC says
+</I>&gt;<i> <A HREF="http://www.networkworld.com/news/2007/121707-crystal-ball-virtualization.html">http://www.networkworld.com/news/2007/121707-crystal-ball-virtualization.html</A>
+</I>
+Interesting how &quot;virtualization&quot; seems to imply &quot;safe&quot; in the public
+mind (and explicitly in that article) right now.... I'm sure with the
+increasing use of virtualization, we'll start to see more VMware-aware
+malware and virtual machine escapes in the wild. Another example of
+putting many, many eggs in the same basket.
+
+Here's a good article about the first public VMware escape, which
+Intelguardians demonstrated at SANSFIRE this summer:
+(Note: I'm biased, having worked on this project.)
+<A HREF="http://www.pauldotcom.com/2007/07/">http://www.pauldotcom.com/2007/07/</A>
+
+What boggles my mind is that despite this, the DoD has still decided to
+rely on virtualization software to keep classified and unclassified info
+on the same physical systems:
+<A HREF="http://www.internetnews.com/storage/article.php/3696996">http://www.internetnews.com/storage/article.php/3696996</A>
+
+Sherri
+
+
+
+Anne &amp; Lynn Wheeler wrote:
+&gt;<i> re:
+</I>&gt;<i> Storm, Nugache lead dangerous new botnet barrage
+</I>&gt;<i> <A HREF="http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci1286808,00.html">http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci1286808,00.html</A>
+</I>&gt;<i> 
+</I>&gt;<i> from above:
+</I>&gt;<i> 
+</I>&gt;<i> The creators of these Trojans and bots not only have very strong software development and testing skills, but also clearly know how security vendors operate and how to outmaneuver defenses such as antivirus software, IDS and firewalls, experts say. They know that they simply need to alter their code and the messages carrying it in small ways in order to evade signature-based defenses. Dittrich and other researchers say that when they analyze the code these malware authors are putting out, what emerges is a picture of a group of skilled, professional software developers learning from their mistakes, improving their code on a weekly basis and making a lot of money in the process.
+</I>&gt;<i> 
+</I>&gt;<i> ... snip ...
+</I>&gt;<i> 
+</I>&gt;<i> ... and somewhat related
+</I>&gt;<i> 
+</I>&gt;<i> Virtualization still hot, death of antivirus software imminent, VC says
+</I>&gt;<i> <A HREF="http://www.networkworld.com/news/2007/121707-crystal-ball-virtualization.html">http://www.networkworld.com/news/2007/121707-crystal-ball-virtualization.html</A>
+</I>&gt;<i> 
+</I>&gt;<i> from above:
+</I>&gt;<i> 
+</I>&gt;<i> Another trend Maeder predicts for 2008 is, at long last, the death of antivirus software and other security products that allow employees to install and download any programs they'd like onto their PCs, and then attempt to weed out the malicious code. Instead, products that protect endpoints by only allowing IT-approved code to be installed will become the norm.
+</I>&gt;<i> 
+</I>&gt;<i> ... snip ...
+</I>&gt;<i> 
+</I>&gt;<i> and post about dealing with compromised machines
+</I>&gt;<i> <A HREF="http://www.garlic.com/~lynn/2007u.html#771">http://www.garlic.com/~lynn/2007u.html#771</A> folklore indeed
+</I>&gt;<i> 
+</I>&gt;<i> mentioning sophistication in other ways:
+</I>&gt;<i> 
+</I>&gt;<i> Botnet-controlled Trojan robbing online bank customers
+</I>&gt;<i> <A HREF="http://www.networkworld.com/news/2007/121307-zbot-trojan-robbing-banks.htm">http://www.networkworld.com/news/2007/121307-zbot-trojan-robbing-banks.htm</A>
+</I>&gt;<i> 
+</I>&gt;<i> from above:
+</I>&gt;<i> 
+</I>&gt;<i> If the attacker succeeds in getting the Trojan malware onto the victim's
+</I>&gt;<i> computer, he can piggyback on a session of online banking without even
+</I>&gt;<i> having to use the victim's name and password. The infected computer
+</I>&gt;<i> communicates back to the Trojan's command-and-controller exactly which
+</I>&gt;<i> bank the victim has an account with. It then automatically feeds code
+</I>&gt;<i> that tells the Trojan how to mimic actual online transactions with a
+</I>&gt;<i> particular bank to do wire transfers or bill payments
+</I>&gt;<i> 
+</I>&gt;<i> ... snip ...
+</I>&gt;<i> 
+</I>&gt;<i> there have been some number of online banking countermeasures for
+</I>&gt;<i> specific kinds of system compromises .... like keyloggers ... but they
+</I>&gt;<i> apparently didn't bother to get promises from the crooks to only limit
+</I>&gt;<i> the kinds of attacks to those exploits.
+</I>&gt;<i> 
+</I>&gt;<i> some related comments on such compromised machines
+</I>&gt;<i> <A HREF="http://www.garlic.com/~lynn/aadsm27.htm#66">http://www.garlic.com/~lynn/aadsm27.htm#66</A> 2007: year in review
+</I>&gt;<i> <A HREF="http://www.garlic.com/~lynn/aadsm28.htm#0">http://www.garlic.com/~lynn/aadsm28.htm#0</A> 2007: year in review
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

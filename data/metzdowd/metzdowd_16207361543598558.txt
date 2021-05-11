@@ -1,0 +1,83 @@
+<PRE>|<i> Aloha!
+</I>|<i> 
+</I>|<i> Peter Gutmann skrev:
+</I>|<i> &gt; So RAM state is entropy chicken soup, you may as well use it because
+</I>|<i> &gt; it can't make things any worse, but I wouldn't trust it as the sole
+</I>|<i> &gt; source of entropy.
+</I>|<i> 
+</I>|<i> Ok, apart from the problems with reliable entropy generation. I'm I
+</I>|<i> right when I get a bad feeling when I think about the implications of
+</I>|<i> how the device ID is established.
+</I>|<i> 
+</I>|<i> As I understand it, the device itself doesn't know it's ID. Instead
+</I>|<i> you repeatedly send over mem dumps to the reader which then extracts
+</I>|<i> what it (to some estimated degree) consider to be the correct ID.
+</I>I don't think that's what they are suggesting.  My understanding is
+that their experiments show that, for any *particular instance* of
+a chip, you can divide memory into two categories:
+
+	1. Some memory locations will come up with same value
+		every time you boot;
+
+	2. Some memory locations will come up with an essentially
+		random value each time you boot.
+
+In reality, this is a spectrum - e.g., some locations may come up as
+0 95% of the time and as 1 the other 5% of the time.  You could make
+a Class 3 for those; members of that class would likely be ignored
+in the following.  Which class a particular memory cell on a particular
+chip falls into appears to be due to random process variations during
+manufacture, and is alleged to be unpredictable and fixed for the life
+of the chip.
+
+So presumably the model is:  Put each manufactured chip into a testing
+device that repeatedly power cycles it and reads all of memory.  By
+simply comparing values on multiple cycles, it assigns locations to
+Class 1 or 2 (or 3, if you like).  Once you've done this enough to have
+reasonable confidence in your assignments, you pick a bunch of Class 1
+locations and use them for the id; and a bunch of Class 2 locations and
+call them the entropy source.  You burn the chosen locations into ROM on
+the chip.  At power up, the chip checks the ROM, and constructs an ID
+from the list of Class 1 locations and a random value from the list of
+Class 2 locations.  (Obviously, you want to be a bit more clever - e.g.,
+if all your Class 1 locations hold the same value on every power up,
+something is wrong with your assumptions and you reject the chip rather
+than using an ID of all 0's or all 1's.  The paper is asserting that
+this won't happen often enough to matter.)
+
+|<i> Wouldn't a &quot;simple&quot; thing like a challenge response and become much
+</I>|<i> more complicated - and insecure?
+</I>|<i> 
+</I>|<i> Basically the device goes from saying: &quot;I'm ID XYZ and to prove it by
+</I>|<i> providing the following response to your challange&quot;, to &quot;I'm an
+</I>|<i> amnesiac device and here are my mem dump&quot;, please calculate my ID
+</I>|<i> (please remember to power-cycle me x times) and then I'll send a
+</I>|<i> response.&quot;
+</I>|<i> 
+</I>|<i> Also, wouldn't the ID-scheme presented in the paper take a very long
+</I>|<i> time.  Transferring 256 Bytes * x times + hamming calc (by the host)
+</I>|<i> vs reading 64 bits (or similar ID length)?
+</I>This is only done during manufacturing.  Presumably it would be
+integrated into the testing process, which you're doing anyway.
+
+|<i> I give the paper plus marks for novelty, but can't see how to use this
+</I>|<i> in a secure, practical and cost efficient way.
+</I>The unique ID stuff is clever, but it's not clear how much it gains
+you:  Since you need to do some final per-device programming anyway to
+identify the locations to be used for the ID, why not just burn in a
+unique ID?  The random generator is clever, but the question is whether
+&quot;produces an unpredictable result&quot; is really a stable characteristic
+of memory.  For example, it could be that those memory locations
+initially are quite random, but if they are used to hold constant
+values for long periods of time during operation, may build up a
+remnance that destroys the initial randomness.  Ultimately, the nice
+thing being relied on here - random process variations - also make
+the approach vulnerable to any change in the process.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

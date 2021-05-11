@@ -1,0 +1,74 @@
+<PRE>James A. Donald wrote:
+
+&gt;<i> I have been considering the problem of encrypted channels over UDP or 
+</I>&gt;<i> IP.  TLS will not work for this, since it assumes and provides a 
+</I>&gt;<i> reliable, and therefore non timely channel, whereas what one wishes to 
+</I>&gt;<i> provide is a channel where timeliness may be required at the expense of 
+</I>&gt;<i> reliability.
+</I>
+
+This is what Guus was getting at:
+
+
+- We needed to tunnel data over UDP, with UDP semantics.
+   SSL requires a reliable stream. Therefore, we had to
+   use something other that SSL to tunnel data.
+
+
+To put it in more fundamental terms, TLS assumes that what 
+you want is a stream.  If you want packets, then TLS is a 
+millstone around your neck.  It's not that it can't deliver 
+packets, but that it forces all your application to think in 
+stream-mode, which results in messes up and down the stack 
+(including the human).
+
+The vast majority of applications are not pure stream.  The 
+vast majority are not pure packet, either ... so they are 
+all somewhere in between.
+
+The selection of where your app is on the spectrum and what 
+tools you need is the job of the protocol architect; 
+unfortunately, the prevailing wisdom is that as we only have 
+a widely deployed stream protocol (TLS) then that should be 
+used for everything.  This has resulted in some &quot;easy wins&quot; 
+and some &quot;intractable messes&quot; as well the current thread 
+(repeated into the past and will be repeated into the future).
+
+Advising TLS for a packet delivery requirement is simply 
+&quot;wrong.&quot;  You might be &quot;wise&quot; to give that advice, if you 
+can show some other factors, but that requires ... more 
+subtlety than simply repeating that TLS has to be used for 
+everything.
+
+
+&gt;<i> I have figured out a solution, which I may post here if you are interested.
+</I>
+
+I'm interested.  FTR, zooko and I worked on part of the 
+problem, documented briefly here: 
+<A HREF="http://www.webfunds.org/guide/sdp/index.html">http://www.webfunds.org/guide/sdp/index.html</A>
+
+I've successfully got that going in 3 UDP transport 
+scenarios, with different key exchange scenarios and 
+languages.  (I was never able to deploy it tho, for business 
+reasons.)  For the most part, the requirements include no 
+relationship between packets, but an expectation of a return 
+path  ... a.k.a. connections, but without the streaming 
+assumption ... which means having to relearn how to do 
+&quot;context&quot; over UDP.
+
+One can compare that approach to the DTLS, which has the 
+benefit of leveraging SSL technology and history.  My 
+impression was that it assumed too much of the nature of SSL 
+at the core, so it didn't cover enough of the territory to 
+satisfy me.  But if it becomes widely deployed, that may be 
+the better bet than designing another one or a home-brew. 
+Deployment counts over elegance, most times.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

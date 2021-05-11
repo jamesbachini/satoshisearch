@@ -1,0 +1,44 @@
+<PRE>
+The &quot;signature&quot; in the microcode update has not the same
+meaning as within crypto. For intel chips it has 31bits and basically
+contains a revision number. The requirements for the BIOS for
+checking microcode updates are in short: check the crc and ensure
+that older revisions cant replace new ones by comparing the &quot;signature&quot;.
+I did not try myself, but I think one can probably update anything
+if you just hexedit the update header.
+Afaik these chips do not own any crypto-related functionallity
+or storage capability (except precise timing and rand maybe) and
+they are not tamper-proof. Thats why TPM was invented :-)
+
+l8er,
+Sebastian
+
+On Mon, Apr 28, 2008 at 06:16:12PM -0400, John Ioannidis wrote:
+
+&gt;<i> Intel and AMD processors can have new microcode loaded to them, and this 
+</I>&gt;<i> is usually done by the BIOS.  Presumably there is some asymmetric crypto 
+</I>&gt;<i> involved with the processor doing the signature validation.
+</I>&gt;<i> 
+</I>&gt;<i> A major power that makes a good fraction of the world's laptops and 
+</I>&gt;<i> desktops (and hence controls the circuitry and the BIOS, even if they do 
+</I>&gt;<i> not control the chip manufacturing process) would be in a good place to 
+</I>&gt;<i> introduce problems that way, no?
+</I>&gt;<i> 
+</I>&gt;<i> /ji
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+-- 
+~~
+~~ perl self.pl
+~~ $_='print&quot;\$_=\47$_\47;eval&quot;';eval
+~~ <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krahmer at suse.de</A> - SuSE Security Team
+~~ SUSE LINUX Products GmbH, GF: Markus Rex, HRB 16746 (AG Nuernberg)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

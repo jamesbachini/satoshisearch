@@ -1,0 +1,41 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+
+&gt;<i>It appears that disk encryption techniques are spawning technical responses.
+</I>&gt;<i>This gadget lets law enforcement take a computer without ever turning off the
+</I>&gt;<i>power.
+</I>
+For those who don't want to plough through the docs, it looks like a static
+transfer switch that requires you to take a tap from a mains line and feed it
+to a UPS.  The &quot;tap&quot; relies on either having the PC on a power strip or
+stripping the mains flex and attaching jumpers.  So the setup before is:
+
+  Mains -------------------+------ PC
+                           |
+  UPS   ------- STS -------+
+
+When you unplug the resulting setup from the wall, the HotPlug device detects
+the voltage loss (in other words it contains a portion of a UPS switchover
+circuit, the static transfer switch, which is just some SCRs operating as a
+zero-crossing switch and a controller IC) and switches over to the UPS:
+
+                           +------ PC
+                           |
+  UPS   ------- STS -------+
+
+and you can remove the PC.
+
+I was going to suggest that given the usual LE-targeted device pricing (five
+figures and up) it'd probably be cheaper to buy a commercial STS, but at only
+$500 it's quite reasonably priced.
+
+&gt;<i>Countermeasures are, of course, quite possible.
+</I>
+And successively more Rube-Goldberg :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

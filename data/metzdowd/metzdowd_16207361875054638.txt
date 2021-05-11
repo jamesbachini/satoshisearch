@@ -1,0 +1,24 @@
+<PRE>Speaking of CPU-specific optimisations, I've seen a few algorithm proposals
+from the last few years that assume that an algorithm can be scaled linearly
+in the number of CPU cores, treating a multicore CPU as some kind of SIMD
+engine with all cores operating in lock-step, or at least engaging in some
+kind of rendezvous every couple of cycles (for example the recently-discussed
+MD6 uses a round of 16 steps, if I read the description correctly) to exchange
+data.  This abstraction seems to be particularly convenient when dealing with
+things like hash trees.  However I'm not aware of any multicore CPU that
+actually works this way, you'd need to have exclusive use of each core by one
+thread and use incredibly expensive (compared to the other primitive CPU
+operations used in hashing) barriers or something similar to ensure
+synchronisation.
+
+Is there some feature of multicore CPUs that I'm missing, or is it a case of
+cryptographers abstracting a bit too much away?  And if it's the latter,
+should someone tell them that multicore CPUs don't actually work that way?
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

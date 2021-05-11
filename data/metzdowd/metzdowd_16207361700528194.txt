@@ -1,0 +1,17 @@
+<PRE>On Fri, Feb 01, 2008 at 09:24:10AM -0500, Perry E. Metzger wrote:
+&gt;<i> &gt; Does tinc do something that IPsec cannot?
+</I>&gt;<i> 
+</I>&gt;<i> I use a VPN system other than IPSec on a regular basis. The reason is
+</I>&gt;<i> simple: it is easy to configure for my application and my OS native
+</I>&gt;<i> IPsec tools are very difficult to configure.
+</I>&gt;<i> 
+</I>&gt;<i> There is a lesson in this, I think.
+</I>
+I agree wholeheartedly.  I'm trying to fix this too.  But for web stuff,
+IPsec won't have a chance for a long time, maybe never.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

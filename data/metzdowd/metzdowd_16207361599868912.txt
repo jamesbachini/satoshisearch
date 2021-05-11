@@ -1,0 +1,27 @@
+<PRE>Weger, B.M.M. de wrote:
+ &gt; We also announce two different Win32 executables that
+ &gt; have identical MD5 hash values. This can be made to
+ &gt; happen for any two executable files. This implies a
+ &gt; vulnerability in software integrity protection and
+ &gt; code signing schemes that still use MD5. See
+ &gt; <A HREF="http://www.win.tue.nl/hashclash/SoftIntCodeSign">http://www.win.tue.nl/hashclash/SoftIntCodeSign</A> for
+ &gt; details.
+
+That MD5 is broken is of course old news.
+
+I observe that US authorities have decided on a hash,
+found it was broken, decided on a new hash, found it was
+broken also, and are now where we are.
+
+Russian authorities decided on a 256 bit hash in 1990:
+GOST R 34.11-94.  It is still good as far as anyone
+knows, and has never needed to be changed.
+
+This entirely confirms my prejudices about the US
+government cryptographers.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

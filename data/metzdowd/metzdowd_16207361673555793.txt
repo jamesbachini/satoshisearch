@@ -1,0 +1,30 @@
+<PRE>Hello.
+
+Russian government accepted a changes in laws about licensing
+cryptographic algorithms and devices. The statement in Russian
+language:
+  <A HREF="http://www.garant.ru/hotlaw/doc/109485.htm">http://www.garant.ru/hotlaw/doc/109485.htm</A>
+
+Essential in English:
+
+You do not need to license staff which uses:
+
+    *  symmetric ciphers with key length less 56 bits;
+    * assymetric ciphers with key length less 128 bits based on
+factoring or discrete logarithms;
+
+The origin news from:
+  <A HREF="http://www.opennet.ru/opennews/art.shtml?num=13683">http://www.opennet.ru/opennews/art.shtml?num=13683</A>
+(in russian as well)
+
+
+-- 
+Best regards.
+Gleb Pakharenko.
+<A HREF="http://gpaharenko.livejournal.com">http://gpaharenko.livejournal.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

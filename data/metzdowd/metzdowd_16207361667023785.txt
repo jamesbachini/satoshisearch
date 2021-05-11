@@ -1,0 +1,79 @@
+<PRE>On Fri, 4 Jan 2008, Alex Alten wrote:
+&gt;<i> I think that we will have to move toward encrypting more data at
+</I>&gt;<i> rest in some manner that is that is easy for the user to use (like
+</I>&gt;<i> ATM cash cards) yet difficult for a malicious piece of software on
+</I>&gt;<i> the user's machine to circumvent.  This will require that all PC's
+</I>&gt;<i> ship with a trusted hardware/firmware chip AKA a reference monitor
+</I>&gt;<i> on the motherboard that can safely handle any red keys.  This also
+</I>&gt;<i> means the PC needs a trusted path to the user like the pin pad in
+</I>&gt;<i> ATM machines.  Many laptops now ship with fingerprint scanners, so
+</I>&gt;<i> maybe these things are not such an onerous requirement on PC
+</I>&gt;<i> manufacturers anymore.  Also the reference monitor could be used to
+</I>&gt;<i> prevent viruses being able to completely taking over the user's
+</I>&gt;<i> machine (maybe at least to maintain some sort of host IDS
+</I>&gt;<i> capability).
+</I>
+It sounds like: we cannot make secure OS because it is too large --
+let us don't bother to make a smaller secure OS, just add some more
+software and hardware to an existent system and then it will be
+secure. Sounds like a fairytale :-)
+
+Data at rest encryption is good since it protects data on lost
+laptops, but it does not work against malware (if power is off,
+malware does not run as well), especially if the data is used in
+decrypted form on the running system. Probably with data at rest
+encryption you can protect rarely used sensitive data, but not the
+data you use regularly (by the way, how you are going to make sure
+that you remove all malware when you work with that sensitive data?).
+
+Now consider trusted paths: adding an additional `secure' button is
+easy (MS was able to add more keys to our keyboards), but how you make
+sure that (1) there is a trusted path from computer to user and (2)
+users understand how to use and actually use it? There are many ideas
+how to achieve the former, but apparently the latter always fails.
+
+Fingerprint readers are added not because this adds much security (it
+is reported to be easy to fool them once an attacker has a sample of
+the fingerprint, and you are very unlikely to keep your computer free
+from your fingerprints), but because USERS LIKE THEM: finger scanning
+is faster than entering the password and seems to be more secure. I
+suspect that if you use some data at rest protection and lose your
+laptop while it is not completely off, the fingerprint reader is
+counterproductive.
+
+Using embedded hardware to scan for viruses seems not very realistic:
+you probably can use it to check parts of RAM that are not supposed to
+be changed, but a lot of malware live outside of those areas.
+
+&gt;<i> We need really good IDS tools that track down the control lines of
+</I>&gt;<i> the botnets, etc., back to their actual handlers.  This may mean
+</I>&gt;<i> that each carrier must archive large amounts of either netflow data
+</I>&gt;<i> or even raw packets (say for non-TCP traffic) so that detailed L7
+</I>&gt;<i> analysis can take place to track botnet control lines back to their
+</I>&gt;<i> handlers in after-the-fact investigations.
+</I>
+Malware already evolved to P2P communication and thus it is
+almost impossible to find the real master by tracing local
+connections between hosts.
+
+&gt;<i> Also, I hate to say this, we may need to also require that all
+</I>&gt;<i> encrypted traffic allow inspection of their contents under proper
+</I>&gt;<i> authority (CALEA essentially).  If we can do this then we can put
+</I>&gt;<i> real policing pressure on these virus writers, essentially removing
+</I>&gt;<i> them from being able to attack us over the Internet.
+</I>
+That is you propose to create a law that all malware must have some
+key escrow mechanism? Or you mean that police should be able to force
+every user to decrypt data sent to/from their computer? Both are
+hilarious, but the sad thing is that in some countries each of them
+can become a real law.
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

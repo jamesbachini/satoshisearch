@@ -1,0 +1,61 @@
+<PRE>Thierry Moreau &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>&gt; writes:
+
+&gt;<i>I find the question should be refined.
+</I>
+It could if there was a large enough repondent base to draw samples from :-). 
+This is one of those surveys that can never be done because no vendor will 
+publicly talk to you about security measures in their embedded systems.
+
+In fact none of the people/organisations I queried about this fitted into any 
+of the proposed categories, it was all embedded devices, typically SCADA 
+systems, home automation, consumer electronics, that sort of thing, so it was 
+really a single category which was &quot;Embedded systems&quot;.  Given the string of 
+attacks on crypto in embedded devices (XBox, iPhone, iOpener, Wii, some 
+not-yet-published ones on HDCP devices :-), etc) this is by far the most 
+at-risk category because there's a huge incentive to attack them, the result 
+affects tens/hundreds of millions of devices, and the attacks are immediately 
+and widely actively exploited (modchips/device unlocking/etc, an important 
+difference between this and academic proof-of-concept attacks), so this is the 
+one where I'd expect the vendors to care most.
+
+&gt;<i>Also, for organizations mandated to comply with IT security 
+</I>&gt;<i>certification/guidelines/best-practice, a risk analysis is performed to 
+</I>&gt;<i>keep the auditor at bay, in which SCA protection has very little chance 
+</I>&gt;<i>of even merely being mentioned. How can the SCA protection mechanism fit 
+</I>&gt;<i>the risk analysis discipline? I.e., is it possible to even define SCA 
+</I>&gt;<i>protection in a way that might trigger interest from security 
+</I>&gt;<i>consultants or their clients?
+</I>
+Actually that's a special case, or more generally having certification/ 
+auditing requirements (which a private-email responder also mentioned) is a 
+special case in that the risk analysis is now &quot;if I don't do this I don't get 
+sign-off&quot; rather than &quot;it makes good security sense to do this so we'll do 
+it&quot;.  In the immortal words of the Bastard Operator from Hell, when you have 
+the audit/certification gun pointed at someone's head you can pretty much 
+&quot;[get them to] to run naked across campus with a power-cord rammed up [their] 
+backside&quot; and they'd do it not because they thought it was a terribly good 
+idea but because they had a gun pointed at their head.
+
+An associated problem with this is that if vendors are motivated solely by 
+checkbox requirements then they'll often ship the product in a non-approved 
+mode (coughFIPS140cough) to reduce manufacturing or support costs/increase 
+performance/increase ease of use/whatever.  It's a nasty catch-22, hold a gun 
+to someone's head and they'll only do what you tell them for as long as the 
+gun is applied.
+
+Getting back to the SCADA/home automation/consumer electronics embedded 
+market, the only certification that applies is the likes of FCC Class B, ROHS, 
+CE, and UL.  This is why I was interested in finding cases (or 
+counterexamples) of informed-consent use of SCA countermeasures, because in 
+the general embedded-systems case vendor cost/benefit analysis is the only 
+deciding factor on whether it gets used or not, and vendors seem to be 
+deciding (from my own experience and some private-email replies) that it's not 
+worth it.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

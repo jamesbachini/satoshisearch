@@ -1,0 +1,28 @@
+<PRE>On 7/9/07, alan &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alan at clueserver.org</A>&gt; wrote:
+&gt;<i> Makes me wonder how this will effect the OpenMoko phone if someone builds
+</I>&gt;<i> an encryption layer for it. (OpenMoko is a totally open sourced phone.)
+</I>&gt;<i>
+</I>
+Leigh Honeywell and Paul Wouters presented a 'crypto-phone' effort
+they have been working on at CCC in Germany last December.
+
+They later presented an update at a meeting in Toronto:
+<A HREF="http://www.task.to/events/presentations/securephone-task.pdf">http://www.task.to/events/presentations/securephone-task.pdf</A>
+
+They are building on OpenMoko and the Neo1973 phone
+(<A HREF="http://wiki.openmoko.org/wiki/Neo1973">http://wiki.openmoko.org/wiki/Neo1973</A>), because it is the only phone
+they could find that allows OS modifications without breaking code
+signing.
+
+As I understand it, it's not true end-to-end.  It makes a 'VPN'
+connection to an Asterisk PBX that you have configured somewhere in
+the world, presumably on a phone network trusted more than the
+wireless one you are currently on.  If the PBX has to route the call
+back into public infrastructure to the other endpoint, then there is
+cleartext exposure again.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

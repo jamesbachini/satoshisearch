@@ -1,0 +1,16 @@
+<PRE>On Oct 11, 2007, at 3:43 PM, James A. Donald wrote:
+
+&gt;<i> A 307 digit number is 1024 bits, near enough.  1024 bits
+</I>&gt;<i> was scheduled to fail in 2013.  It has failed early, due
+</I>&gt;<i> to modest advances in factorization.
+</I>
+The 307 digit number had a special form (2^{1039} - 1) - the authors  
+are careful to point out that their techniques would not be as  
+effective on an RSA modulus.  But then they go on to argue the  
+current practical feasibility of factoring a 1024-bit RSA modulus.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

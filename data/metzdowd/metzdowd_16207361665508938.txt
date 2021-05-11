@@ -1,0 +1,60 @@
+<PRE>|<i> Date: Fri, 04 Jan 2008 16:38:07 +1300
+</I>|<i> From: Peter Gutmann &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A>&gt;
+</I>|<i> To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>|<i> Subject: DRM for batteries
+</I>|<i> 
+</I>|<i> <A HREF="http://www.intersil.com/cda/deviceinfo/0,1477,ISL6296,0.html">http://www.intersil.com/cda/deviceinfo/0,1477,ISL6296,0.html</A>
+</I>|<i> 
+</I>|<i> At $1.40 each (at least in sub-1K quantities) you wonder whether it's
+</I>|<i> costing them more to add the DRM (spread over all battery sales) than
+</I>|<i> any marginal gain in preventing use of third-party batteries by a
+</I>|<i> small subset of users.
+</I>For laptop batteries - which can cost $100 each - some might see it as
+a win.  Of course, if you can eliminate the competition, you can also
+raise prices.
+
+The spec sheets have links to PDF description of the algorithm, but
+distribution of that is restricted - talk to your salesman.
+
+Can anyone make any sense of the following claim:
+
+	Non-unique mapping of the secret key to an 8-Bit
+	authentication code maximizes hacking difficulty due
+	to need for exhaustive key search (superior to
+	SHA-1).
+
+The only thing I can come up with is the old idea that you compute (say)
+a 32-bit keyed MAC but then only use the bottom 16 bits.  This makes it
+more difficult for an attacker to use the MAC on some data to determine
+the key - on average, you'd probably need about 2^16 samples to give
+a unique key.  This was use in some old X.something-or-other bank
+hashing algorithm, which predates functions that we believe to be
+one-way.
+
+Over all, I find it hard to see how such a product can really make
+sense, however.  If there's enough money to make it worth trying to keep
+the clone makers out, there's enough money in it for the clone makers to
+be willing to invest in determining the secret information.  Given the
+nature of the proposed solution, all batteries (or other protected
+objects) have to have the same secret - break into one, and you can make
+as many as you like, so any cost for breaking in is amortized over
+however many of the things you can sell.  There's no effective way to
+change the secret - even if you could somehow make a patch to the
+devices involved, you couldn't change it in such a way that it would
+refuse to use the batteries already in it (with the old secret).
+
+Meanwhile, at $1.40 a unit, you can't make anything really tamper
+protected.  (Given some of the reverse engineering expertise already out
+there, it's not clear how &quot;tamper protected&quot; you can really make
+something these days at *any* cost.  But you certainly can't do it on
+the cheap.)
+
+Still, I'm sure people will try - and life will become even more
+annoying.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

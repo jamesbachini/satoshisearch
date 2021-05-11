@@ -1,0 +1,36 @@
+<PRE>|<i> Their key recovery technique gets a lot of mileage from using the
+</I>|<i> computed key schedule for each round of AES or DES to provide
+</I>|<i> redundant copies of the bits of the key.  If the computer cleared
+</I>|<i> the key schedule storage, while keeping the key itself when the
+</I>|<i> system is in sleep mode, or when the screen-saver password mode
+</I>|<i> kicks in, this attack would be less possible.
+</I>We've viewed &quot;screen locked&quot; and &quot;sleep mode&quot; (with forced screen lock
+on wake) as equivalent to &quot;off&quot;.  Clearly that's no longer a tenable
+position.  Sensitive data in memory must be cleared or encrypted,
+with decryption requiring externally-entered information, whenever
+the screen is locked or sleep mode initiated.  This would actually
+make them *safer* than the &quot;off&quot; state, since at least you know
+your software can gain control while entering those states!
+
+|<i> If, in addition, the key was kept XORed with the secure hash of a
+</I>|<i> large block of random memory, as suggested in their countermeasures
+</I>|<i> section, their attacks would be considerably more difficult.
+</I>|<i> 
+</I>|<i> These seem to be simple, low overhead countermeasures that provide
+</I>|<i> value for machines like laptops in transit.
+</I>I suspect GPS chip sets will become a standard part of laptops
+in the future.  One can imagine some interesting techniques based
+on them.  Even now, most laptops have motion sensors (used to
+&quot;safe&quot; the disks), which could be used.
+
+I seem to recall some (IBM?) research in which you wore a ring
+with an RFID-like chip in it.  Move away from your machine for
+more than some preset time and it locks.  I'm sure we'll see
+many similar ideas come into use.
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,31 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A> (Perry E. Metzger) on Wednesday, September 24, 2008 wrote:
+
+&gt;<i>I don't want to claim that there is no place for better human factors
+</I>&gt;<i>work in security engineering. There clearly is. However, I will
+</I>&gt;<i>repeat, that is not the only story here, and it is not unreasonable to
+</I>&gt;<i>note that there are people who are clearly nearly impossible to
+</I>&gt;<i>protect with almost any level of human factors engineering and
+</I>&gt;<i>security technology.
+</I>
+I would suggest that, in the &quot;real world&quot;, most of the people that
+are nearly impossible to protect, don't have much money. Now &quot;real
+world&quot; scams have been around for quite a while, and we teach about
+them in school. However they still work with some people, which is
+why those people don't have much money.
+
+Online scams are newer, and many of their victims left school long
+before the scams became popular. I expect the online situation will
+stabilize in about the same way as the &quot;real world&quot; one has.
+
+Cheers - Bill
+
+-------------------------------------------------------------------------
+Bill Frantz        | The first thing you need when  | Periwinkle
+(408)356-8506      | using a perimeter defense is a | 16345 Englewood Ave
+www.pwpconsult.com | perimeter.                     | Los Gatos, CA 95032
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

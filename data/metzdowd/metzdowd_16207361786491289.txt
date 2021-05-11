@@ -1,0 +1,10 @@
+<PRE><A HREF="http://www.symmetrymagazine.org/breaking/2008/05/15/code-crackers-wanted/">http://www.symmetrymagazine.org/breaking/2008/05/15/code-crackers-wanted/</A>
+
+Though it now looks like they are well on their way to solving it, Fermilab
+requested help decoding a coded letter they received.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

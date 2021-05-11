@@ -1,0 +1,43 @@
+<PRE>
+Aram Perez &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">aramperez at mac.com</A>&gt; writes:
+&gt;&gt;<i> Ed Felten has an interesting post on his blog about a Dutch smartcard
+</I>&gt;&gt;<i> based transportation payment system that has been broken. Among other
+</I>&gt;&gt;<i> foolishness, the designers used a custom cryptosystem and 48 bit keys.
+</I>&gt;<i>
+</I>&gt;<i> Not to defend the designers in any way or fashion, but I'd like to
+</I>&gt;<i> ask, How much security can you put into a plastic card, the size of a
+</I>&gt;<i> credit card, that has to perform its function in a secure manner, all
+</I>&gt;<i> in under 2 seconds (in under 1 second in parts of Asia)?
+</I>
+Several other transit systems have payment cards that have proven
+remarkably resilient to attack. For example, the NYC &quot;Metrocard&quot;
+system has been attacked repeatedly without significant breaks (but it
+does not rely on its cards being tamperproof -- it is an online system
+using magstripes.)
+
+The authors of the paper on the Dutch break claim that it would have
+been possible to use far more secure means even given the basic
+design, such as a non-proprietary crypto algorithm and longer keys. I
+see no real reason to disbelieve this. In any case, if it was not
+possible to do this with smartcards, existing, well proven mechanisms
+that are in use in other transit systems could have been adopted. It
+is not necessary to use an unimplementable architecture when
+implementable and proven architectures exist.
+
+Often we hear of a false need for &quot;engineering tradeoffs&quot; in such
+circumstances. Engineering tradeoffs do indeed sometimes become
+critical in security design. However, you should be very skeptical
+when someone claims that they &quot;need&quot; to use a home grown crypto
+algorithm or that they &quot;need&quot; to use a home grown protocol instead of
+a well proven one. Generally these are not &quot;engineering tradeoffs&quot; but
+reflections of ignorance on the part of the designers.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

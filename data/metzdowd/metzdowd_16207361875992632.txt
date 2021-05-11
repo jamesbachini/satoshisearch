@@ -1,0 +1,25 @@
+<PRE>Brian Gladman wrote:
+&gt;<i> But a fully byte oriented implementation runs at about 140 cycles/byte
+</I>&gt;<i> and here the S-Box substitution step is a significant bottleneck.
+</I>&gt;<i> ...
+</I>&gt;<i> It is also possible that the PPERM instruction could be used to speed up
+</I>&gt;<i> the Galois field calculations to produce the S-Box mathematically rather
+</I>&gt;<i> than by table lookup. I have tried this in the past but it has not
+</I>&gt;<i> proved competitive.  But PPERM looks interesting here as well.
+</I>
+This is where the following may be handy:
+<A HREF="http://www.literatecode.com/2007/11/11/aes256/">http://www.literatecode.com/2007/11/11/aes256/</A>
+
+It is a byte-oriented AES-256 implementation without S-box tables.
+Although I doubt it can be speeded up that much.
+
+Regards,
+Ilya
+-- 
+<A HREF="http://www.literatecode.com">http://www.literatecode.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

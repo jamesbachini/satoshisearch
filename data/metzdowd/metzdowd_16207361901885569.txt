@@ -1,0 +1,33 @@
+<PRE>&gt;<i> to make it easy to login to participating web sites.  However, I don't
+</I>&gt;<i> see any details of the protocols or algorithms.
+</I>
+The service looks very user friendly and secure (i.e. if implemented properly)
+
+It is unfortunate that being a security aware company they don't
+provide information about the protocols or algorithms. I haven't used
+the service either. So I am as clueless as anyone else. But I won't
+let that stop me from making some speculations ;-)
+
+Note: The following are pure speculations and wild guesses:
+
+The service seems to incorporate a technology similar to RSA's
+passmark to perform mutual authentication i.e. authenticate the client
+machine to the server to prevent phishing. In addition, it appears,
+they are also utilizing host-proof hosting AJAX paradigm such that
+your login information is never sent to the Usable's cloud servers in
+clear-text.
+
+Both of these technologies are well-defined and, if implemented
+properly, provide reasonable amount of security.
+
+BankOfAmerica utilizes RSA's Passmark for Logons. Passpack utilizes
+Host-proof hosting AJAX paradigm.
+
+saqib
+<A HREF="http://doctrina.wordpress.com/">http://doctrina.wordpress.com/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

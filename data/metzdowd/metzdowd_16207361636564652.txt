@@ -1,0 +1,73 @@
+<PRE>
+Jack:
+
+Thank you for pointing this. I must admit you point to an inescapable 
+counter-example for my analysis.
+
+Maybe global optimization was not a significant factor in the 1980's 
+when the C standard language was established -- it does refer to 
+external linkage and &quot;genuine function&quot;.
+
+In the case of volatile declaration, the GCC 4.2.2 compiler gave me a 
+warning that the volatile qualifier was ignored because the memset 
+formal parameter declaration does not match. At least, as a compiler 
+user I get a proper warning message.
+
+Regards
+
+  - Thierry Moreau
+
+
+Original message:
+
+Jack Lloyd wrote:
+
+&gt;<i> On Wed, Dec 12, 2007 at 05:27:38PM -0500, Thierry Moreau wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i>As a consequence of alleged consensus above, my understanding of the C 
+</I>&gt;&gt;<i>standard would prevail and (memset)(?,0,?) would refer to an external 
+</I>&gt;&gt;<i>linkage function, which would guarantee (to the sterngth of the above 
+</I>&gt;&gt;<i>consensus) resetting an arbitrary memory area for secret intermediate 
+</I>&gt;&gt;<i>result protection.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> GCC on x86-64 (-O2) compiles this function to the same machine code
+</I>&gt;<i> regardless of the value of ZEROIZE:
+</I>&gt;<i> 
+</I>&gt;<i> #include &lt;string.h&gt;
+</I>&gt;<i> 
+</I>&gt;<i> int sensitive(int key)
+</I>&gt;<i>    {
+</I>&gt;<i>    char buf[16];
+</I>&gt;<i>    int result = 0;
+</I>&gt;<i>    size_t j;
+</I>&gt;<i> 
+</I>&gt;<i>    for(j = 0; j != sizeof(buf); j++)
+</I>&gt;<i>       buf[j] = key + j;
+</I>&gt;<i> 
+</I>&gt;<i>    for(j = 0; j != sizeof(buf); j++)
+</I>&gt;<i>       result += buf[j];
+</I>&gt;<i> 
+</I>&gt;<i> #if ZEROIZE
+</I>&gt;<i>    (memset)(buf, 0, sizeof(buf));
+</I>&gt;<i> #endif
+</I>&gt;<i> 
+</I>&gt;<i>    return result;
+</I>&gt;<i>    }
+</I>&gt;<i> 
+</I>&gt;<i> Even if (memset) must refer to a function with external linkage (an
+</I>&gt;<i> analysis I find dubious), there is nothing stopping the compiler from
+</I>&gt;<i> doing IPA/whole program optimization - especially with a very basic
+</I>&gt;<i> function like memset (in the code above, if buf is declared volatile,
+</I>&gt;<i> GCC does do the memset: but it does it by moving immediate zero values
+</I>&gt;<i> directly to the memory locations, not by actually jumping to any
+</I>&gt;<i> external function).
+</I>&gt;<i> 
+</I>&gt;<i> Regards,
+</I>&gt;<i>   Jack
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

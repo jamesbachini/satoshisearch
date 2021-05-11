@@ -1,0 +1,40 @@
+<PRE>
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+&gt;<i> Each chip does not have to be 100% independent, and does not have to
+</I>&gt;<i> be used 100% of the time.
+</I>&gt;<i>
+</I>&gt;<i> Assuming a random selection of both outputs and chips for testing, and
+</I>&gt;<i> a finite set of possible outputs, it is possible to calculate what
+</I>&gt;<i> sampling ratio would provide an adequate confidence level -- a good
+</I>&gt;<i> guess is 5% sampling.
+</I>
+Not likely.
+
+Sampling will not work. Sampling theory assumes statistical
+independence and that the events that you're looking for are randomly
+distributed. We're dealing with a situation in which the opponent is
+doing things that are very much in violation of those assumptions.
+
+The opponent is, on very very rare occasions, going to send you a
+malicious payload that will do something bad. Almost all the time
+they're going to do nothing at all. You need to be watching 100% of
+the time if you're going to catch him with reasonable confidence, but
+of course, I doubt even that will work given a halfway smart attacker.
+
+The paper itself describes reasonable ways to prevent detection on the
+basis of most other obvious methods -- power utilization, timing
+issues, etc, can all be patched over well enough to render the
+malhardware invisible to ordinary methods of analysis.
+
+Truth be told, I think there is no defense against malicious hardware
+that I've heard of that will work reliably, and indeed I'm not sure
+that one can be devised.
+
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

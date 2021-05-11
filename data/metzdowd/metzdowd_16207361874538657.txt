@@ -1,0 +1,14 @@
+<PRE>I'm a bit surprised no one has mentioned the Red Hat server being 
+hacked and the certificated being compromised on Fedora.
+
+<A HREF="http://www.eweek.com/c/a/Security/Red-Hat-Digital-Keys-Violated-By-Intruder/">http://www.eweek.com/c/a/Security/Red-Hat-Digital-Keys-Violated-By-Intruder/</A>
+
+Best,
+
+Allen
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

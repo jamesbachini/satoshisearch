@@ -1,0 +1,125 @@
+<PRE>
+Call for Participation
+
+MetriCon 3.0
+Third Workshop on Security Metrics
+Tuesday, 29 July 2008, San Jose, California
+Overview
+
+Security metrics -- an idea whose time has come. No matter whether you 
+read the technical or the business press, there is a desire for 
+converting security from a world of adjectives to a world of numbers. 
+The question is, of course, how exactly to do that. The advantage of 
+starting early is, as ever, harder problems but a clearer field though 
+it is very nearly too late to start early. MetriCon is where hard 
+progress is made and harder problems brought forward.
+
+The MetriCon Workshops offer lively, practical discussion in the area of 
+security metrics. It is a, if not the, forum for quantifiable approaches 
+and results to problems afflicting information security today, with a 
+bias towards practical, specific implementations. Topics and 
+presentations will be selected for their potential to stimulate 
+discussion in the Workshop. Past events are detailed here [1] and here 
+[2]; see, especially, the meeting Digests on those pages.
+
+MetriCon 3.0 will be a one-day event, Tuesday, July 29, 2008, in San 
+Jose, California, USA. The Workshop begins first thing in the morning, 
+meals are taken in the meeting room, and work/discussion extends into 
+the evening. As this is a workshop, attendance is by invitation (and 
+limited to 60 participants). Participants are expected to &quot;come with 
+findings,&quot; to &quot;come with problems,&quot; or, better still, both. Participants 
+should be willing to discuss what they have and need, i.e., to address 
+the group in some fashion, formally or not. Preference will naturally be 
+given to the authors of position papers/presentations who have actual 
+work in progress.
+
+Presenters will each have a short 10-15 minutes to present his or her 
+idea, followed by a another 10-15 minutes of discussion. If you would 
+like to propose a panel or a group of related presentations on different 
+approaches to the same problem, then please do so. Also consistent with 
+a Workshop format, the Program Committee will be steered by what sorts 
+of proposals come in response to this Call.
+
+Goals and Topics
+
+Our goal is to stimulate discussion of, and thinking about, security 
+metrics and to do so in ways that lead to realistic, early results of 
+lasting value. Potential attendees are invited to submit position papers 
+to be shared with all, with or without discussion on the day of the 
+Workshop. Such position papers are expected to address security metrics 
+in one of the following categories:
+
+Benchmarking of security technologies
+Empirical studies in specific subject matter areas
+Financial planning
+Long-term trend analysis and forecasts
+Metrics definitions that can be operationalized
+Security and risk modeling including calibrations
+Tools, technologies, tips, and tricks
+Visualization methods both for insight and lay audiences
+Data and analyses emerging from ongoing metrics efforts
+Other novel areas where security metrics may apply
+Practical implementations, real world case studies, and detailed models 
+will be preferred over broader models or general ideas.
+
+How to Participate
+
+Submit a short position paper or description of work done or ongoing. 
+Your submission must be brief -- no longer than five (5) paragraphs or 
+presentation slides. Author names and affiliations should appear first 
+in or on the submission. Submissions may be in PDF, PowerPoint, HTML, or 
+plaintext email and must be submitted to metricon3 AT 
+securitymetrics.org. These requests to participate are due no later than 
+noon GMT, Monday, May 12, 2008 (a hard deadline).
+
+The Program Committee will invite both attendees and presenters. 
+Participants of either sort will be notified of acceptance quickly -- by 
+June 2, 2008. Presenters who want hardcopy materials to be distributed 
+at the Workshop must provide originals of those materials to the Program 
+Committee by July 21, 2008. All slides, position papers, and what-not 
+will be made available to all participants at the Workshop. No formal 
+academic proceedings are intended, but a digest of the meeting will be 
+prepared and distributed to participants and the general public. 
+(Digests for previous MetriCon meetings are on the past event pages 
+mentioned above.) Plagiarism is dishonest, and the organizers of this 
+Workshop will take appropriate action if dishonesty of this sort is 
+found. Submission of recent, previously published work as well as 
+simultaneous submissions to multiple venues is entirely acceptable, but 
+only if you disclose this in your proposal.
+
+Location
+
+MetriCon 3.0 will be co-located with the 17th USENIX Security Symposium 
+at the Fairmont Hotel in San Jose, California.
+
+Cost
+
+$225 all-inclusive of meeting space, materials preparation, and meals 
+for the day.
+
+Important Dates
+
+Requests to participate: by May 12, 2008
+Notification of acceptance: by June 2, 2008
+Materials for distribution: by July 21, 2008
+Workshop Organizers
+
+Dan Geer, Geer Risk Services, Chair
+Bob Blakley, The Burton Group
+Fred Cohen, Fred Cohen &amp; Associates &amp; California Sciences Institute
+Dan Conway, Indiana University
+Lloyd Ellam, Iceberg Networks
+Andrew Jaquith, The Yankee Group
+Elizabeth Nichols, PlexLogic
+Gunnar Peterson, Arctec Group
+Bryan Ware, Digital Sandbox
+Christine Whalley, Pfizer
+
+1 <A HREF="http://securitymetrics.org/content/Wiki.jsp?page=Metricon1.0">http://securitymetrics.org/content/Wiki.jsp?page=Metricon1.0</A>
+2 <A HREF="http://securitymetrics.org/content/Wiki.jsp?page=Metricon2.0">http://securitymetrics.org/content/Wiki.jsp?page=Metricon2.0</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

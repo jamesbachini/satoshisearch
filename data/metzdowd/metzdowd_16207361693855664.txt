@@ -1,0 +1,111 @@
+<PRE>----- Original Message ----- 
+From: &quot;&quot;Hal Finney&quot;&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hal at finney.org</A>&gt;
+To: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ashwood at msn.com</A>&gt;; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+Sent: Wednesday, February 06, 2008 8:54 AM
+Subject: Re: questions on RFC2631 and DH key agreement
+
+
+&gt;<i> Joseph Ashwood writes, regarding unauthenticated DH:
+</I>&gt;&gt;<i> I would actually recommend sending all the public data. This does not 
+</I>&gt;&gt;<i> take
+</I>&gt;&gt;<i> significant additional space and allows more verification to be 
+</I>&gt;&gt;<i> performed. I
+</I>&gt;&gt;<i> would also suggest looking at what exactly the goal is. As written this
+</I>&gt;&gt;<i> provides no authentication just privacy, and if b uses the same private 
+</I>&gt;&gt;<i> key
+</I>&gt;&gt;<i> to generate multiple yb the value of b will slowly leak.
+</I>&gt;<i>
+</I>&gt;<i> I'm not familiar with this last claim, that the value of b's private key
+</I>&gt;<i> (presuming that is what you mean) would slowly leak if it were reused for
+</I>&gt;<i> many DH exchanges. Can you explain what you mean? Are you talking about
+</I>&gt;<i> Lim&amp;Lee style attacks where the recipient does not check the parameters
+</I>&gt;<i> for validity? In that case I would say the private exponent would leak
+</I>&gt;<i> quickly rather than slowly. But if the parameters are checked, I don't
+</I>&gt;<i> see how that would leak a reused exponent.
+</I>
+I am not immediately aware of any known attacks that have been published 
+about it, but it is fairly obvious that Eve has more information about the 
+private key by having a second key set with the same unknown. With only a 
+single pair Eve's information set is:
+g_1,p_1,q_1,y_1 where y_1 = g_1^x mod p_1
+
+By adding the second key set Eve now has
+g_1,p_1,q_1,y_1 where y_1 = g_1^x mod p_1
+g_2,p_2,q_2,y_2 where y_2 = g_2^x mod p_2
+
+This is obviously additional information, and with addition key set _i 
+eventually Eve has the information to guess x with improves probability.
+
+&gt;<i>
+</I>&gt;&gt;<i> You can then use the gpb trio for DSA, leveraging the key set for more
+</I>&gt;&gt;<i> capabilities.
+</I>&gt;<i>
+</I>&gt;<i> Presuming here you mean (g,p,q) as suitable for reuse. This raises the
+</I>&gt;<i> question, is the same set of (g,p,q) parameters suitable for use in both
+</I>&gt;<i> DH exchange and DSA signatures?
+</I>&gt;<i>
+</I>&gt;<i> From the security engineering perspective, I'd suggest that the goals and
+</I>&gt;<i> threat models for encryption vs signatures are different enough that one
+</I>&gt;<i> would prefer different parameters for the two.
+</I>
+I agree with that, presuming that the private key values are different, 
+there is at least no harm in using different parameters, and it avoids some 
+possible avenues of attack.
+
+&gt;<i> For DSA signatures, we'd
+</I>&gt;<i> like small subgroups, since the subgroup size determines the signature
+</I>&gt;<i> size. This constraint is not present with DH encryption, where a large
+</I>&gt;<i> subgroup will work as well as a small one. Large subgroups can then
+</I>&gt;<i> support larger private exponents in the DH exchange.
+</I>
+Actually there is nothing stopping parameters for DSA from being prime(160 
+bit)*prime(50000 bit)*2+1 which would have a large enough subgroup as to be 
+effectively unbreakable. Now obviously 50000 bits is excessive, but my point 
+is that finding p with a moderately sized subgroup q and a large additional 
+subgroup is entirely possible, even though it is arguably unnecessary.
+
+
+&gt;<i>
+</I>&gt;<i> Now it may be argued that large subgroups do not actually increase
+</I>&gt;<i> security in the DH exchange, because index calculus methods are
+</I>&gt;<i> independent of subgroup size. In fact, parameters for DSA signatures
+</I>&gt;<i> are typically chosen so that subgroup based methods such as Shanks that
+</I>&gt;<i> take sqrt(q) cost are balanced against estimates of index calculus
+</I>&gt;<i> work to break p. However, this balancing is inherently uncertain and
+</I>&gt;<i> it's possible that p-based attacks will turn out to be harder than ones
+</I>&gt;<i> based on q. Hence one would prefer to use a larger q to provide a margin
+</I>&gt;<i> of safety if the costs are not too high.
+</I>
+I would consider that except for (semi)ephemeral parameters the cost of 
+finding an appropriate prime are minor relative to the other considerations. 
+This is especially true with signature parameters where a signing pair can 
+be worth more than all the data authenticated by it.
+
+&gt;<i> While there is a computational
+</I>&gt;<i> cost to using a larger subgroup for DH exchange, there is no data cost,
+</I>&gt;<i> while for DSA there are both computational and data costs. Therefore the
+</I>&gt;<i> tradeoffs for DH would tend to be different than for DSA, and a larger
+</I>&gt;<i> q would be preferred for DH, all else equal. In fact it is rather common
+</I>&gt;<i> in DH parameter sets to use Sophie-Germain primes for q.
+</I>
+I don't know if they are &quot;common&quot; but they are definitely a good idea, or at 
+the very least using parameters with very large factors of p-1. Primes of 
+the form q*k+1 for small k are certainly a good idea.
+
+&gt;<i> We may also consider that breaking encryption keys is a passive
+</I>&gt;<i> attack which can be mounted over a larger period of time (potentially
+</I>&gt;<i> providing useful information even years after the keys were retired)
+</I>&gt;<i> and is largely undetectable; while breaking signatures, to be useful,
+</I>&gt;<i> must be performed actively, carries risks of detection, and must be
+</I>&gt;<i> completed within a limited time frame. All these considerations motivate
+</I>&gt;<i> using larger parameter sets for DH encryption than for DSA signatures.
+</I>
+I'm not as certain about that last point. My experience has been that on 
+most occassions the parameters are close to the same size.
+                        Joe 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

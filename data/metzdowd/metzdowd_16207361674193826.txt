@@ -1,0 +1,34 @@
+<PRE>
+Clearly, more people need to know about &quot;Gutmann Soundwave Therapy&quot;.
+
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; writes:
+&gt;<i> [...] but nowadays I ask that they Google the famous Gutmann Sound
+</I>&gt;<i> Wave Therapy[0] and mail me afterwards.
+</I>&gt;<i>
+</I>&gt;<i> I've never heard back.
+</I>&gt;<i>
+</I>&gt;<i> [0] Last paragraph, <A HREF="http://diswww.mit.edu/bloom-picayune/crypto/14238">http://diswww.mit.edu/bloom-picayune/crypto/14238</A>
+</I>
+As it turns out, the central image of Peter's post was popularized
+earlier*.
+
+However, Peter clearly said this first in a security context, and I
+hope that the term &quot;Gutmann Soundwave Therapy&quot; spreads widely within
+our field as a way of ridiculing the desire to invent your own crypto
+algorithms and protocols. When it gets to the point where salesmen are
+vaguely aware of the phrase and fear it, we will know we have done our
+job successfully.
+
+Perry
+
+[* see <A HREF="http://jwz.livejournal.com/123070.html#t521918">http://jwz.livejournal.com/123070.html#t521918</A> for its
+use in a different context. (Hat tip to Ekr and indirectly to Need to
+Know: <A HREF="http://www.ntk.net/2004/01/09/">http://www.ntk.net/2004/01/09/</A> )]
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,58 @@
+<PRE>On Jun 26, 2008, at 6:55 PM, David G. Koontz wrote:
+
+&gt;<i> [Moderator's note: this seems to be much more about the open source
+</I>&gt;<i>  wars and such than about crypto and security. I'm not going to
+</I>&gt;<i>  forward replies on this topic that don't specifically address
+</I>&gt;<i>  security issues -- those who were not interested in the original
+</I>&gt;<i>  thread may want to skip this message, too. --Perry]
+</I>
+
+The high-order bit here is that the reason Sun has not open sourced  
+the crypto module of the Sparc T2 along with all the other modules is  
+the US government's export restrictions and their extra-legal  
+implicit threats.  I've received another e-mail from a Sun employee  
+stating that crypto export restrictions are the issue and that Sun  
+management feels that it is too risky to defy the government's  
+pressure because the government has the power to do billions of  
+dollars in damage to the company by temporarily suspending their  
+export licences for their whole suite of products.
+
+My conclusions are:
+
+1.  We didn't exactly win the free-crypto struggle after all (see Ian  
+Grigg's and Sameer Parekh's comments [1, 2]), and
+
+2.  I'm going to keep designing my security systems to be optimized  
+for software crypto and not to rely on hardware acceleration.  In  
+particular, that means that I can continue to consider the Tiger hash  
+(faster in software but not available in commodity hardware) to be  
+faster than the SHA-256 hash (slower in software but available in  
+hardware in the Sparc T2 and probably other commodity products).   
+Likewise newfangled ciphers like Salsa20 and EnRUPT will be  
+considered by me to be faster than AES (because they are faster in  
+software) rather than slower (because AES might be built into the  
+commodity hardware).
+
+Note that it would also be a reasonable stance to rely on hardware  
+implementations of crypto even though there are not commodity open  
+source hardware implementations.  The beginning of this thread was  
+the question of how to weigh the threat of hardware backdoors, and  
+what countermeasures we can use to gain assurance that we're not  
+vulnerable to hardware backdoors.  I'm not saying that having the  
+source code for your hardware is either necessary or sufficient to  
+protect yourself from that threat, but it might help, and I currently  
+think it is a better strategy to design around the assumptions of  
+software crypto.
+
+Regards,
+
+Zooko
+
+[1] <A HREF="https://financialcryptography.com/mt/archives/001064.html">https://financialcryptography.com/mt/archives/001064.html</A>
+[2] <A HREF="http://www.creativedestruction.com/archives/000937.html">http://www.creativedestruction.com/archives/000937.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

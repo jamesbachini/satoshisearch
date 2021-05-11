@@ -1,0 +1,25 @@
+<PRE>On Mon, 4 Feb 2008 09:33:37 -0500 (EST)
+&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; wrote:
+
+&gt;<i> The NSA quote someone - Steve Bellovin? - has repeated comes to mind:
+</I>&gt;<i> Amateurs talk about algorithms.  Professionals talk about economics.
+</I>&gt;<i> Using DTLS for VOIP provides you with an extremely high level of
+</I>&gt;<i> security, but costs you 50% packet overhead.  Is that worth it to you?
+</I>&gt;<i> It really depends - and making an intelligent choice requires that
+</I>&gt;<i> various alternatives along the cost/safety curve actually be
+</I>&gt;<i> available.
+</I>&gt;<i>
+</I>Precisely.
+
+Some years ago, I did a crypto design for a potential product.  As best
+we could figure it, the extra overhead for a standard mechanism versus
+a custom one was greater than the profit margin for this product.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

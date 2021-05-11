@@ -1,0 +1,24 @@
+<PRE>
+A pretty scary paper from the Usenix LEET conference:
+
+<A HREF="http://www.usenix.org/event/leet08/tech/full_papers/king/king_html/">http://www.usenix.org/event/leet08/tech/full_papers/king/king_html/</A>
+
+The paper describes how, by adding a very small number of gates to a
+microprocessor design (small enough that it would be hard to notice
+them), you can create a machine that is almost impossible to defend
+against an attacker who possesses a bit of secret knowledge. I suggest
+reading it -- I won't do it justice with a small summary.
+
+It is about the most frightening thing I've seen in years -- I have no
+idea how one might defend against it.
+
+Hat tip: Bruce Schneier's blog.
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

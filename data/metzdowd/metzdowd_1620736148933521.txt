@@ -1,0 +1,223 @@
+<PRE>&gt;<i>From CIO magazine.  For the record, I, like the author, am a Bank of
+</I>America customer, but unlike her I've started using their on-line
+services.  What got me to do it was descriptions of the increasing
+vulnerability of traditional paper-based mechanisms:  If I pay a
+credit card by mail, I leave in my mailbox an envelope with my
+credit card account number, my address, a check with all the
+banking information needed to transfer money - and probably a
+bunch of other envelopes with similar information.  Yes, I could
+carry it to a post box or even a post office, but the inconvenience
+is getting pretty large at that point.  Meanwhile, the on-line
+services have some unique security features of their own, like
+the ability to send me an email notification when various conditions
+are met, like large transactions.
+ 							-- Jerry
+
+
+From: www.cio.com
+What Banks Tell Online Customers About Their Security
+
+- Sarah D. Scalet, CIO
+
+May 29, 2007
+By the end of 2006, U.S. banks were supposed to have implemented &quot;strong
+authentication&quot; for online banking - in other words, they needed to put
+something besides a user name and password in between any old Internet
+user and all the money in a customer's banking account.
+
+The most obvious way to meet the guidance, issued by the U.S. Federal
+Financial Institutions Examination Council (FFIEC), would have been to
+issue one-time password devices or set up another form of two-factor
+authentication.  But last summer, when I did a preliminary evaluation of
+security offerings at the country's largest banks, I was pretty
+unimpressed. (See Two-Factor Too Scarce at Consumer Banks
+<A HREF="http://www.cio.com/article/113750/.">http://www.cio.com/article/113750/.</A>)
+
+Since then, I've given up on getting a one-time-password device,
+and have accepted the fact that banks are instead moving toward what
+might diplomatically be called &quot;creative&quot; authentication.
+(See Strong Authentication: Success Factors
+<A HREF="http://www.csoonline.com/read/110106/fea_strong_auth.html.">http://www.csoonline.com/read/110106/fea_strong_auth.html.</A>) Given that
+man-in-the-middle attacks can circumvent two-factor authentication, a
+combination of device authentication, additional security questions and
+extra fraud controls doesn't seem like a bad approach.
+
+But, I wondered, almost six months past the FFIEC deadline, what are
+banks telling customers about online security?  As the chief financial
+officer of Chateau Scalet - and as a working mother about to have baby
+No. 2 - I wanted to know if any of them could offer me enough assurance
+that I would take the online banking plunge as a way to simplify my
+life. I decided it was time to update my research from last year.
+
+I called the call centers at each of the top three banks, identified
+myself as a customer with a checking and savings account, and told them
+I was interested in online banking but concerned about security. The
+point, yes, was to see what type of security each bank had in
+place. More than that, however, I wanted to see how well each bank was
+able to communicate about security through its call center. After all,
+what good is good security if you can't explain it to your customers?
+Here's what I learned. Citibank My first call was to Citibank. I started
+with my standard question: &quot;How can I be assured that my online banking
+transactions are secure and private?&quot;  The call center rep said that
+Citibank uses 128-bit encryption, which &quot;verifies that you have a
+maximum level of security.&quot; End of answer. Pause. I asked what kinds of
+protections Citibank had in place for making sure that it would really
+be me logging onto my account. &quot;I'm sorry,&quot; he said, &quot;but I don't
+understand your question.&quot;
+
+We had a language barrier, he and I. The call-center rep, in India, was
+not a native English speaker. The call went poorly, and I have no way of
+knowing whether this was because of our communications barrier or simply
+because Citibank hadn't instructed him how to answer questions about
+security. I repeated my question a couple times, and he finally said,
+&quot;Let me look into that, ma'am.&quot; I waited on hold more than a minute, and
+when he came back, he told me I could go online and read all about
+online banking. &quot;All the information is there, ma'am,&quot; he said politely.
+
+I kept prodding. I asked if Citibank offered tokens or did device
+recognition of some sort, and he told me I could log on with a user name
+and password.
+
+&quot;At any computer where I punch in my user name and password, I'll have
+full access to my account?&quot; I asked.
+
+&quot;Yes, ma'am, anyplace you have Internet access,&quot; he answered. He finally
+did say that in certain situations I would be asked extra security
+questions, but he wouldn't or couldn't explain when that happened or
+why. I asked if it was unusual for him to field calls about security,
+and he said yes. I finally ended the call in frustration.  Chase Next I
+called Chase. This time I got a woman in Michigan, who at least didn't
+try to shunt me off onto the Internet - well, at least right away. But
+she seemed to interpret my every question about security as one about
+how, precisely, I could sign up for online banking. In fact, the first
+thing she did was congratulate me on being interested in the service.
+
+When I asked how I could be assured that my transactions would be secure
+and private, she said that when I signed up, I would select a user name
+and password. &quot;Once you're enrolled, as long as you're not giving out
+your user ID and password, you should be safe,&quot; she said. At least she
+said should and not will.
+
+Then I asked if Chase would do any authentication beyond user name and
+password, like identifying my computer or giving me a one-time password
+device. She seemed to think that I was worried about the log-on process
+being burdensome or confusing - and proceeded to make the process even
+more burdensome and confusing, with a convoluted answer about speeding
+up the telephone verification process. At one point, she had me so
+utterly baffled that she asked, &quot;Are you O.K.?&quot;
+
+One thing I did manage to glean - I think - is that there would be some
+kind of activation code involved if tried to log on at a library or a
+friend's house.  Her explanation: &quot;It's called an activation code
+because it's like a reset,&quot; she said. &quot;That is for security purposes.&quot;
+She said this code could be sent by e-mail or text message, or that I
+could call in to get it. But she wouldn't or couldn't explain its
+purpose.
+
+It wasn't until 10 minutes into the call that she mentioned that I might
+have to answer extra security questions on occasion, and again, she
+couldn't or didn't explain what these questions were for, or even
+reassure me that the measures were there to protect me. When I asked
+what would happen if someone else transferred money out of my account,
+she said, &quot;That's not going to happen, ma'am, unless you give that
+information out to somebody.&quot; Then she warned me to be careful about
+giving out my information - to merchants, of all places.
+
+Credit her with being a diligent salesperson, though. Throughout the
+process, she kept trying to get me to establish an online account, right
+then and there, so that the first time I went onto Chase.com, all I'd
+need would be that precious user name and password.  Bank of America My
+call with Bank of America also got off to a rocky start. I wanted to
+record all three phone calls. (Why not?  The banks do it for &quot;quality
+assurance purposes&quot;.) Both the Citibank and Chase representatives agreed
+to this without hesitation. The Bank of America rep, however, put me on
+hold for more than seven minutes, before coming back and saying I
+couldn't record the call - something something the bank only records
+calls for training purposes something something. Oh well. It didn't seem
+worth arguing.
+
+Things got better after that. When I asked how I could be assured that
+my online transactions would be private and secure, the call center rep
+seemed to understand exactly what I was asking. First, she said that I
+should look for the lock at the bottom of my browser window, indicating
+a secure site, and noted that the encryption that Bank of America uses
+is &quot;one of the highest.&quot;  (Neither of these are perfect indicators of
+security, of course, but it's a logical place to start the
+conversation.) Then, she told me that, usually, the only time my account
+wouldn't be secure is if I gave out my user name and password, or
+&quot;answered a spam e-mail&quot; where I clicked a link and entered my user name
+and password. This made her the only rep to actually warn about phishing
+attacks; she gets extra points for not using the silly term phishing.
+
+Next, she launched into a very plain-English description of SiteKey,
+Bank of America's system of allowing customers to verify that they are
+at the valid website by selecting a picture that will come up each time
+they log on. &quot;If you don't see the picture, don't enter your password,&quot;
+she told me. She also explained that when I signed up for the first
+time, I'd have to answer three extra security questions. If I (or anyone
+else) ever tried to access my account from a different computer, I would
+first be asked a security question.  If I answered correctly, I'd see my
+security picture and then be asked for my user name and password. If I
+answered it incorrectly a certain number of times, I would be locked out
+and have to go through extra verification at the call center to have the
+account unlocked.
+
+Overall, I was impressed at how comfortable she was talking about
+security. It seemed to be part of the training she had gone through, and
+she also made several references to how she used the service
+herself. Call it a subtle kind of marketing if you will, but I actually
+liked to hear her admit, &quot;A lot of times people say they have a hard
+time getting into our site as opposed to other sites, and that's because
+it's a very secure site.&quot;  The Verdict Here's the recap:
+
+    1. Citibank: Call-center rep did not seem to understand my questions
+       and tried to refer me to the website for answers.
+    2. Chase: Call-center rep didn't offer clear explanations but kept
+       trying to get me to sign up anyway.
+    3. Bank of America: Call-center rep understood my questions,
+       explained customer-facing security mechanisms and offered advice
+       about how I could protect myself.
+
+After the calls, I rang Larry Freed, president of the research group
+ForeSee Results (<A HREF="http://www.foreseeresults.com/">http://www.foreseeresults.com/</A>), to see what he
+thought. Freed is a former banking CTO who does a regular survey on
+banking customer satisfaction in conjunction with Forbes.com. He has
+told me in the past that customers who have not signed up for online
+banking often cite security as a factor.
+
+Online banking is a huge area of growth for banks - if they can get it
+right.  According to Freed's latest survey, customers who are not doing
+online banking report an overall satisfaction level of 70 on a scale of
+0 to 100. For those who do online banking and bill pay, the satisfaction
+level jumps to 79. What's more, those who are doing online banking and
+bill pay are much more likely to purchase additional services from the
+bank - 59 percent likely, rather than 36 percent.
+
+Nevertheless, Freed didn't seem surprised that the banks, for the most
+part, had so little to say about online security. &quot;The education and
+communication of security is not done very well,&quot; he said. &quot;For
+converting non-online banking customers, I think that's a critical
+step. But it's a balance between putting the fear in them and educating
+them.&quot;
+
+Right now, I'd say, the banks are doing neither.
+
+As for me, if I had a Bank of America account already, I think I'd give
+online banking a try. It's not so much that I'm convinced Bank of
+America actually has better security than Citibank or Chase. The
+call-center rep doesn't know that, and none of the banks are going to
+talk about all their security mechanisms anyway. But I'm heartened that
+they're teaching their call-center reps how to explain their security
+mechanisms to customers. At this point in history, it's a sad fact that
+merely being willing and able to talk about security in plain English
+(even if they don't want the call to be recorded) puts Bank of America
+well ahead of its competitors. That's just not enough to make me change
+banks, though. Guess I'll keep buying stamps after all.
+
+  2007 CXO Media Inc.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

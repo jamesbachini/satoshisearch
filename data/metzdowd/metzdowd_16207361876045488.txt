@@ -1,0 +1,46 @@
+<PRE>On Wed, Aug 27, 2008 at 11:05 AM, Philipp G&#252;hring &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pg at futureware.at</A>&gt; wrote:
+&gt;<i> I am searching for symmetric encryption algorithms for decimal strings.
+</I>
+&gt;<i> Since the 132,877 bits is similar to 128 bit encryption (like eg. AES),
+</I>&gt;<i> I would like to use an algorithm with a somewhat comparable strength to AES.
+</I>&gt;<i> But the problem is that I have 132,877 bits, not 128 bits. And I can't
+</I>&gt;<i> cut it off or enhance it, since the result has to be a 40 digit decimal
+</I>&gt;<i> number again.
+</I>
+I believe the most straightforward thing to do is to build a balanced
+4-round Feistel cipher [ <A HREF="http://en.wikipedia.org/wiki/Feistel_cipher">http://en.wikipedia.org/wiki/Feistel_cipher</A> ]
+that uses AES as its mixing function, but which operates within a
+field of 10^20; you can then encrypt a value within F_10^40 as a
+single block operation (ECB mode), taking 4 AES operations and some
+other math do to so.
+
+In this usage, each 20-digit side of the cipher would be expressed as
+a bit string with ~66 bits, zero-padded to make a 128-bit block. You
+should also use the round number in the input; you can put it in the
+top 2 bits of the block. This block would then be encrypted with AES,
+resulting in a 128-bit output block. You would then reduce this
+128-bit value modulo 10^20 to give you a 20-digit output value from
+your f() function; that value can be added, modulo 10^20, into the
+other 20-digit side of the network (or subtracted on decryption).
+
+A couple of notes:
+ - I believe 4 rounds should be secure, but someone else on this list
+should validate this.
+ - As simply described here, this is unbalanced, because 2^128 is not
+an even multiple of 10^20, so some 20-digit output values of f() are
+more likely than others. To avoid this problem, if the 128-bit result
+of the AES encryption is less than 2^128 % 10^20
+(63374607431768211456), reencrypt the 128-bit output block with AES
+again and iterate. This will happen approximately one time in 5e18, so
+it's not clear that it's a real vulnerability; it's certainly not a
+performance problem.
+
+Good luck; please feel free to ask if any of this isn't clear.
+
+ - Tim
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

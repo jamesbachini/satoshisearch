@@ -1,0 +1,44 @@
+<PRE>Frank Siebenlist &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">franks at mcs.anl.gov</A>&gt; writes:
+
+&gt;<i>With the big browser war still going strong, wouldn't that provide fantastic
+</I>&gt;<i>marketing opportunities for Firefox?
+</I>
+There's always the problem of politics.  You'd think that support for a free
+CA like CAcert would also provide fantastic marketing opportunities for free
+browser like Firefox, but this seems to be stalled pretty much idefinitely
+because since CAcert doesn't charge for certificates, including it in Firefox
+would upset the commercial CAs that do (there's actually a lot more to it than
+this, see the interminable flamewars on this topic on blogs and whatnot for
+more information).
+
+&gt;<i>If Firefox would support these secure password protocols, and the banks would
+</I>&gt;<i>openly recommend their customers to use Firefox because its safer and
+</I>&gt;<i>protects them better from phishing, that would be great publicity for
+</I>&gt;<i>Firefox, draw more users, and force M$ to support it too in the long run...
+</I>
+Here's a suggestion to list members:
+
+- If you know a Firefox developer, go to them and tell them that TLS-PSK and
+  TLS-SRP support would be a fantastic selling point and would allow Firefox
+  to trump IE in terms of resisting phishing, which might encourage banks to
+  recommend it to users in place of IE.
+
+- If you know anyone with some clout at Microsoft, tell them that your
+  organisation is thinking of mandating a switch to Firefox because IE doesn't
+  support phish-resistant authentication like TLS-PSK/TLS-SRP, and since you
+  have x million paying customers this won't look good for MS.
+
+- If you work for any banking regulators (for example the FFIEC), require
+  failsafe authentication (in which the remote site doesn't get a copy of your
+  credentials if the authentication fails) rather than the current two-factor
+  auth (which has lead to farcical &quot;two-factor&quot; mechanisms like SiteKey).
+
+Oh, and don't tell them I put you up to this :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

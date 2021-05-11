@@ -1,0 +1,123 @@
+<PRE><A HREF="http://blog.wired.com/27bstroke6/hushmail-privacy.html">http://blog.wired.com/27bstroke6/hushmail-privacy.html</A>
+
+I was impressed by Hushmail?s candor in the above email exchange.  
+They generally have been open with their statements.  OTOH I was 
+quite disappointed, actually worse than that, about the content of 
+their answers.  Hushmail seemed to have a philosophy of doing 
+things ?right?.  They developed a product based upon strong, peer 
+reviewed algorithms, used well known, common and trusted PGP as a 
+design, created an open source implementation, moved ?encryption 
+for the masses? closer to reality by addressing some of the 
+inconveniences of PKI, located their servers in areas outside of 
+the US, were open in discussing the threat models, trust models, 
+design and implementation, had people associated with them who were 
+known for their commitment to privacy, were adamant about not 
+allowing Carnivore to be attached to their systems, were open about 
+complying with court orders by saying that the stored data would be 
+turned over, but that emails which used PGP in some form would only 
+be available in encrypted form.  For all the Snake Oil out there, 
+Hushmail seemed to at least have the right attitude and philosophy; 
+ they ?got it?.
+
+Now it appears that this attitude and philosophy have changed.  
+They didn?t just passively turn over stored encrypted data in 
+complying with court requests, but have, at the very least, 
+allowed, and much more likely, assisted in the compromising of 
+their own systems.  The first decision was to allow a version which 
+exposed the passphrase on their servers and make it the default 
+configuration.  This opened things up for the second decision, to 
+modify their own systems to provide access to the very limited 
+window and then actively collect cleartext during this small 
+window.  It would be one thing to find out that Hushmail had lax 
+security and their systems had been hacked.  But to find out that 
+that Hushmail had hacked their own systems, had actively 
+compromised their own servers in direct violation of the purpose of 
+their business is quite a betrayal.  One not just of the user, but 
+of principle.
+
+I know that Phillip Zimmerman was associated with Hushmail for at 
+least some portion of time.  IMHO these actions by Hushmail are in 
+strong contrast to his essay, ?Why I Wrote PGP.?  and are much more 
+in line with the linking of Donald Kerr, the principal deputy 
+director of [US] national intelligence,  ?Privacy no longer can 
+mean anonymity ?Instead, it should mean that government and 
+businesses properly safeguard people's private communications and 
+financial information.?  
+<A HREF="http://www.cnn.com/2007/POLITICS/11/11/terrorist.surveillance.ap/ind">http://www.cnn.com/2007/POLITICS/11/11/terrorist.surveillance.ap/ind</A>
+ex.html
+
+Furthermore, I conjecture that the complicity of Hushmail has 
+significantly weakened the entire PGP system.  The active 
+compromising of their servers and weak implementation of PGP 
+provides an opening for organizations to look at the contents of 
+PGP?d email which has been sent to a Hushmail user.  The PGP 
+community may now assume that the passphrases of any Hushmail user 
+have been compromised.  The number of Hushmail users means that the 
+affect to the PGP system is much greater than a keylogger installed 
+on a single PGP users machine. 
+
+rearden
+
+On Thu, 08 Nov 2007 14:41:35 -0500 Sidney Markowitz 
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">sidney at sidney.com</A>&gt; wrote:
+&gt;<i>There's an informative article in a Wired blog in which Hushmail 
+</I>&gt;<i>CTO
+</I>&gt;<i>Brian Smith provides some information that hints at what happened 
+</I>&gt;<i>in
+</I>&gt;<i>this case, although he would not speak specifically about the 
+</I>&gt;<i>case.
+</I>&gt;<i>
+</I>&gt;<i>See <A HREF="http://blog.wired.com/27bstroke6/2007/11/encrypted-e-mai.html">http://blog.wired.com/27bstroke6/2007/11/encrypted-e-mai.html</A>
+</I>&gt;<i>
+</I>&gt;<i>His implication is that the target was using their simplified 
+</I>&gt;<i>version of
+</I>&gt;<i>Hushmail that encrypts on the server, using an SSL connection to 
+</I>&gt;<i>send
+</I>&gt;<i>passphrase from the client to the server then providing an 
+</I>&gt;<i>interface
+</I>&gt;<i>similar to ordinary webmail. The court order may have required 
+</I>&gt;<i>Hushmail
+</I>&gt;<i>to save and hand over the password and/or the decrypted mail. 
+</I>&gt;<i>Since
+</I>&gt;<i>Brian Smith would not say exactly what happened in this case, we 
+</I>&gt;<i>can't
+</I>&gt;<i>tell if they modified the system to save the target's password the 
+</I>&gt;<i>next
+</I>&gt;<i>time they used it and handed that over along with historical 
+</I>&gt;<i>stored
+</I>&gt;<i>encrypted mail, or if the modification was to save unencrypted 
+</I>&gt;<i>mail sent
+</I>&gt;<i>after the court order was received, or something else I haven't 
+</I>&gt;<i>thought
+</I>&gt;<i>of. In any case, Smith said that Hushmail only complies with court
+</I>&gt;<i>orders that target specific accounts and would not take any action 
+</I>&gt;<i>that
+</I>&gt;<i>would affect users not specifically targeted by a court order.
+</I>&gt;<i>
+</I>&gt;<i>My reading of Smith's statements in interview is that Hushmail 
+</I>&gt;<i>would be
+</I>&gt;<i>subject to a court order requiring them to supply a hacked Java 
+</I>&gt;<i>applet
+</I>&gt;<i>to someone who is using their Java based client-side encryption. 
+</I>&gt;<i>There
+</I>&gt;<i>is no doubt that would be technically feasible, it is mentioned  
+</I>&gt;<i>and
+</I>&gt;<i>would fall within the guidelines for court orders that Smith said 
+</I>&gt;<i>that
+</I>&gt;<i>Hushmail would comply with.
+</I>&gt;<i>
+</I>&gt;<i>-------------------------------------------------------------------
+</I>&gt;<i>--
+</I>&gt;<i>The Cryptography Mailing List
+</I>&gt;<i>Unsubscribe by sending &quot;unsubscribe cryptography&quot; to 
+</I>&gt;<i><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+--
+Fast Computer Training. Click here.
+<A HREF="http://tagline.hushmail.com/fc/Ioyw6h4dFuZ2H6sbXBpxssrALSRUivVFLJRbKtGKuTsdMxxGnl9uQI/">http://tagline.hushmail.com/fc/Ioyw6h4dFuZ2H6sbXBpxssrALSRUivVFLJRbKtGKuTsdMxxGnl9uQI/</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

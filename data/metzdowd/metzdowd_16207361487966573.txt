@@ -1,0 +1,21 @@
+<PRE>
+A blog entry which claims that the proprietary &quot;Push IMAP&quot; protocol
+that Apple and Yahoo came up with is deeply flawed -- the entry states
+that the entire thing is vulnerable to trivial replay attacks.
+
+<A HREF="http://blog.dave.cridland.net/?p=32">http://blog.dave.cridland.net/?p=32</A>
+
+Hat tip: Marshall Rose
+
+If true, this is yet more evidence for the ancient hypothesis that it
+is foolish to roll your own security protocols.
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

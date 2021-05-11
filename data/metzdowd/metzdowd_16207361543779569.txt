@@ -1,0 +1,27 @@
+<PRE>|<i> &gt; If you think about this in general terms, we're at the point where we
+</I>|<i> &gt; can avoid having to trust the CPU, memory, disks, programs, OS, etc.,
+</I>|<i> &gt; in the borrowed box, except to the degree that they give us access to
+</I>|<i> &gt; the screen and keyboard.  (The problem of securing connections that
+</I>|<i> &gt; go through a hostile intermediary we know how to solve.)  The keyboard
+</I>|<i> &gt; problem is intractable, though it would certainly be a step forward
+</I>|<i> &gt; if at least security information didn't go through there.  This could
+</I>|<i> &gt; be done either by having a small data entry mechanism on the secure
+</I>|<i> &gt; device itself, or by using some kind of challenge/response (an LCD
+</I>|<i> &gt; on the device supplies a random value - not readable in any way by
+</I>|<i> &gt; the connected machine - that you combine with your password before
+</I>|<i> &gt; typing it in.)  Maybe HDMI will actually have some use in providing
+</I>|<i> &gt; a secure path to the screen?  (Unlikely, unfortunately.)
+</I>|<i> 
+</I>|<i> Would it not be possible to solve the keyboard problem by allowing a
+</I>|<i> keyboard (e.g. USB) to be plugged directly into the device?
+</I>Perhaps.  Public systems usually don't have &quot;unpluggable&quot; keyboards.
+If I have to carry my own, I'm well on my way to just having my
+own portable system (which may be the way things end up anyway).
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

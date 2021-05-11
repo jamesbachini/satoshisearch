@@ -1,0 +1,36 @@
+<PRE>John Ioannidis wrote:
+&gt;<i> Perry E. Metzger wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> That's not practical. If you're a large online merchant, and your
+</I>&gt;&gt;<i> automated systems are picking up lots of fraud, you want an automated
+</I>&gt;&gt;<i> system for reporting it. Having a team of people on the phone 24x7
+</I>&gt;&gt;<i> talking to your acquirer and reading them credit card numbers over the
+</I>&gt;&gt;<i> phone, and then expecting the acquirer to do something with them when
+</I>&gt;&gt;<i> they don't have an automated system either, is just not reasonable.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;<i> 
+</I>&gt;<i> But how can the issuer know that the merchant's fraud detection systems 
+</I>&gt;<i> work, for any value of &quot;work&quot;? This could just become one more avenue 
+</I>&gt;<i> for denial of service, where a hacked online merchant suddenly reports 
+</I>&gt;<i> millions of cards as compromised.  I'm sure there is some interesting 
+</I>&gt;<i> work to be done here.
+</I>
+
+There is an interesting analogue in the area of SAR 
+(suspicious activity report) filings through financial 
+services.  This has been in place with various providers for 
+maybe a decade or so.  I'm not aware of any serious economic 
+analysis that would suggest copying the lessons, though.
+
+There is a philosophical problem with suggesting an 
+automated protocol method for reporting fraud, in that one 
+might be better off ... fixing the underlying fraud.
+
+iang
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

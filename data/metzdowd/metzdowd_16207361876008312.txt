@@ -1,0 +1,37 @@
+<PRE>On Fri, Aug 8, 2008 at 5:57 PM, Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; wrote:
+&gt;<i> At Fri, 8 Aug 2008 17:31:15 +0100,
+</I>&gt;<i> Dave Korn wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Eric Rescorla wrote on 08 August 2008 16:06:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> &gt; At Fri, 8 Aug 2008 11:50:59 +0100,
+</I>&gt;&gt;<i> &gt; Ben Laurie wrote:
+</I>&gt;&gt;<i> &gt;&gt; However, since the CRLs will almost certainly not be checked, this
+</I>&gt;&gt;<i> &gt;&gt; means the site will still be vulnerable to attack for the lifetime of
+</I>&gt;&gt;<i> &gt;&gt; the certificate (and perhaps beyond, depending on user
+</I>&gt;&gt;<i> &gt;&gt; behaviour). Note that shutting down the site DOES NOT prevent the attack.
+</I>&gt;&gt;<i> &gt;&gt;
+</I>&gt;&gt;<i> &gt;&gt; Therefore mitigation falls to other parties.
+</I>&gt;&gt;<i> &gt;&gt;
+</I>&gt;&gt;<i> &gt;&gt; 1. Browsers must check CRLs by default.
+</I>&gt;&gt;<i> &gt;
+</I>&gt;&gt;<i> &gt; Isn't this a good argument for blacklisting the keys on the client
+</I>&gt;&gt;<i> &gt; side?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>   Isn't that exactly what &quot;Browsers must check CRLs&quot; means in this context
+</I>&gt;&gt;<i> anyway?  What alternative client-side blacklisting mechanism do you suggest?
+</I>&gt;<i>
+</I>&gt;<i> It's easy to compute all the public keys that will be generated
+</I>&gt;<i> by the broken PRNG. The clients could embed that list and refuse
+</I>&gt;<i> to accept any certificate containing one of them. So, this
+</I>&gt;<i> is distinct from CRLs in that it doesn't require knowing
+</I>&gt;<i> which servers have which cert...
+</I>
+It also only fixes this single type of key compromise. Surely it is
+time to stop ignoring CRLs before something more serious goes wrong?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

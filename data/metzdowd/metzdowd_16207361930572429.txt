@@ -1,0 +1,62 @@
+<PRE>On Sun, Oct 12, 2008 at 7:39 AM, Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; wrote:
+&gt;<i>
+</I>&gt;<i> One argument that I
+</I>&gt;<i> have increasing sympathy with is that SSO (or if you want to be modern,
+</I>&gt;<i> federated login)
+</I>
+Federated identity is the fancy modern term for cross-domain SSO.
+
+&gt;<i> Obviously the end game here is that the user only has to protect his
+</I>&gt;<i> login to a small number of sites - i.e. those that provide the IdP. Once
+</I>&gt;<i> we get there, perhaps users can be persuaded to authenticate to those
+</I>&gt;<i> sites using something stronger than username/password.
+</I>
+I think this is putting the cart before the horse.  Today I don't see
+many IdPs (OpenID, SAML, or otherwise) that support more than
+username/password.  Until that happens, the relying party will
+continue to maintain its own username/passwords since there's little
+incentive to federate.
+
+&gt;<i> A sidenote that provides me with some amusement: although the modern
+</I>&gt;<i> trend is towards using OpenID, no-one wants to use it in the mode it is
+</I>&gt;<i> designed for, i.e. where the user can pick any old IdP and the RP will
+</I>&gt;<i> just trust it. In practice where we seem to be headed is that RPs will
+</I>&gt;<i> trust some smallish number of trusted IdPs. This is, of course, exactly
+</I>&gt;<i> what the Liberty guys have been working on all along. I predict that
+</I>&gt;<i> over time, most of the elements of Liberty will be incorporated into OpenID.
+</I>
+I mostly agree with this observation, but I'd replace the word
+&quot;Liberty&quot; with &quot;SAML&quot; throughout the above paragraph.  The Liberty
+Identity Federation Framework (ID-FF) was donated to the OASIS
+Security Services Technical Committee in late 2003.  This gave rise to
+SAML V2.0 in March 2005.  For all practical purposes, Liberty ID-FF is
+dead.
+
+If RPs end up trusting a small number of IdPs, then there is much to
+be gained (obviously) by being one of those IdPs.  Thus there are
+strong forces at work to *prevent* federated identity from taking hold
+since everyone is competing to be one of those IdPs.  I wonder what it
+will take to break the log-jam that holds back the anticipated rise of
+federated identity?
+
+&gt;<i> Which makes me think that if Liberty had done what it claimed to be
+</I>&gt;<i> doing when it started, i.e. be a community-based, open-source-friendly
+</I>&gt;<i> protocol suite, it would have worked much better.
+</I>
+I'm not sure I follow that line of reasoning.  Are you referring to
+Liberty the specification or Liberty the implementation?  In any
+event, it is better to talk about SAML, not Liberty, since the latter
+is history with respect to browser-based federated identity.
+
+I agree with you that the goal is to replace username/password with
+something stronger, but evidently neither OpenID nor SAML are helping
+us get there.  I still have some hope that information cards will make
+a dent in this problem, but who knows.
+
+Tom
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

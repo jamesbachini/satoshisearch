@@ -1,0 +1,40 @@
+<PRE>
+&gt;<i> Imagine if a website could instruct your browser to transparently 
+</I>&gt;<i> generate a public/private keypair for use with that website only and 
+</I>&gt;<i> send the public key to that website.  Then, any time that the user 
+</I>&gt;<i> returns to that website, the browser would automatically use that 
+</I>&gt;<i> private key to authenticate itself.  For instance, boa.com might 
+</I>&gt;<i> instruct my browser to create one private key for use with *.boa.com; 
+</I>&gt;<i> later, citibank.com could instruct my browser to create a private key 
+</I>&gt;<i> for use with *.citibank.com.  By associating the private key with a 
+</I>&gt;<i> specific DNS domain (just as cookies are), this means that the privacy 
+</I>&gt;<i> implications of client authentication would be comparable to the privacy 
+</I>&gt;<i> implications of cookies.  Also, in this scheme, there wouldn't be any 
+</I>&gt;<i> need to have your public key signed by a CA; the site only needs to know 
+</I>&gt;<i> your public key (e.g., your browser could send self-signed certs), which 
+</I>&gt;<i> eliminates the dependence upon the third-party CAs. Any thoughts on 
+</I>&gt;<i> this?
+</I>
+You don't have to imagine this.  It is exactly how Infocard (the generic 
+name of the technology of which Microsoft's CardSpace is one 
+implementation of one component) works in its most common mode (the 
+personal or self-issued card).  It has lots of other benefits as well even 
+in this mode (user-managed attributes, graphical UI) as well as other 
+modes to support identity providers (managed cards).
+
+Lest you think that this is Microsoft-only, be assured that there is a 
+large community building implementations for many other platforms and 
+systems.  OSIS (<A HREF="http://osis.idcommons.net/">http://osis.idcommons.net/</A>) is the prime venue for people 
+to work on interoperability across the spectrum of implementations. 
+There's a big interop event coming up at the RSA conference in April.
+
+If you'd like to help make your scenario a pervasive reality, check it 
+out.
+
+  - RL &quot;Bob&quot;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

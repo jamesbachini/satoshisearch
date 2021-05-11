@@ -1,0 +1,28 @@
+<PRE>On Sun, Feb 10, 2008 at 07:27:28PM +0100, Werner Koch wrote:
+
+&gt;<i> On Thu,  7 Feb 2008 16:37, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">Victor.Duchovni at MorganStanley.com</A> said:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; I don't have any idea why or why not, but all they can release now is
+</I>&gt;<i> &gt; source code with #ifdef openssl &gt;= 0.9.9  ... do PSK stuff ... #endif,
+</I>&gt;<i> 
+</I>&gt;<i> The last time I checked the Mozilla code they used their own crypto
+</I>&gt;<i> stuff.  When did they switched to OpenSSL and how do they solve the
+</I>&gt;<i> GPL/OpenSSL license incompatibility?
+</I>&gt;<i> 
+</I>
+You are probably right about that, they use the &quot;NSS&quot; library. It is
+sometimes easy to forget that not all the world is OpenSSL...
+
+-- 
+
+ /&quot;\ ASCII RIBBON                  NOTICE: If received in error,
+ \ / CAMPAIGN     Victor Duchovni  please destroy and notify
+  X AGAINST       IT Security,     sender. Sender does not waive
+ / \ HTML MAIL    Morgan Stanley   confidentiality or privilege,
+                                   and use is prohibited.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

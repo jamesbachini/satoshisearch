@@ -1,0 +1,70 @@
+<PRE>One of the less-discussed risks of widespread surveillance is
+not just the abuse or misuse of intercepted content and meta-
+data by the government, but its accidental disclosure. As
+more and more private data gets collected, and as it sits
+around for longer and longer, it becomes inevitable that some
+of it will end up in surprising places.  No malice is required;
+it's practically impossible to avoid.  And this is not merely
+a hypothetical concern.  Case in point:
+
+I recently indulged myself with a used Nagra SNST tape
+recorder, a beautifully-engineered miniature reel-to-reel
+device that was especially popular with law enforcement and
+intelligence agencies from the 70's to the 90's.  (Hey, I'm a
+old-school geek -- I like gadgets.)
+
+The recorder came with with a tape reel, which I had assumed
+was blank or erased. But a couple of days ago, I decided to
+double check just to be sure.  To my surprise, the the tape
+wasn't blank at all.  It contained a recording of a &quot;wired&quot;
+confidential informant being sent out to buy drugs on behalf
+of a state police agency in 1996.
+
+The recording was pretty innocuous and boring, to be honest
+(the deal never happened, and most of the tape is the sound
+of a car being driven to the buy location).  But there was
+a disturbing element: the tape contained the full names of both
+the suspect and the supposedly &quot;confidential&quot; informant!
+
+I've got an MP3 of the tape on my blog.  The names of the
+hapless informant and suspect have been muted out in the name
+of good sense:
+   <A HREF="http://www.crypto.com/blog/watching_the_watchers_via_ebay/">http://www.crypto.com/blog/watching_the_watchers_via_ebay/</A>
+
+Unfortunately, this is hardly an isolated incident; this sort of
+inadvertent disclosure of sensitive information -- stuff that
+could cause people real harm -- happens all the time.  And law
+enforcement agencies can be among the most carless offenders.  A
+couple of years ago, when my grad students and I were studying
+telephone wiretaps and were buying up surplus law enforcement
+wiretapping gear, we were disturbed to discover that almost none
+of the equipment we bought had been sanitized before being sold
+off.  Pen registers bought from several different agencies (on
+ebay and other places) generally were delivered in the state in
+which they were last used, configured complete with suspect's
+telephone numbers and call detail records
+
+None of this should be terribly surprising.  It's becoming harder
+and harder to destroy data, even when it's as carefully controlled
+as confidential legal evidence. Aside from copies and backups made
+in the normal course of business, there's the problem of obsolete
+media in obsolete equipment; there may be no telling what
+information is on that old PC being sent to the dump, where it
+might end up, or who might eventually read it.   More secure storage
+practices -- particularly transparent encryption -- can help here,
+but they won't make the problem go away entirely.   Once sensitive
+or personal data is captured, it stays around forever, and the
+longer it does, the more likely it is that it will end up somewhere
+unexpected.  This is yet another reason why everyone should be
+concerned about large-scale surveillance of the kind recently
+authorized by Congress; it's simply unrealistic to expect that the
+personal information collected will remain confidential for very
+long.
+
+-matt
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

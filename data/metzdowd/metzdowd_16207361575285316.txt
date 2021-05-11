@@ -1,0 +1,45 @@
+<PRE> 
+
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: pgut001 [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A>] 
+</I>&gt;<i> Sent: Monday, October 08, 2007 7:52 PM
+</I>&gt;<i> To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ap at poneyhot.org</A>; <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>
+</I>&gt;<i> Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> Subject: Re: Trillian Secure IM
+</I>&gt;<i> 
+</I>&gt;<i> Marcos el Ruptor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>&gt; writes:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;I found those threads:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;<A HREF="http://forums.ceruleanstudios.com/showthread.php?t=53433">http://forums.ceruleanstudios.com/showthread.php?t=53433</A>
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;<A HREF="http://forums.ceruleanstudios.com/showthread.php?t=56207">http://forums.ceruleanstudios.com/showthread.php?t=56207</A>
+</I>&gt;<i> 
+</I>&gt;<i> One of them contains a link to an older thread:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.ceruleanstudios.com/forums/showthread.php?s=&amp;threadid=33279">http://www.ceruleanstudios.com/forums/showthread.php?s=&amp;threadid=33279</A>
+</I>&gt;<i> 
+</I>&gt;<i> with this gem:
+</I>&gt;<i> 
+</I>&gt;<i> Speaking as a software developer, if I ever had someone on 
+</I>&gt;<i> my forums who's posts consisted solely of questions about 
+</I>&gt;<i> how my private encryption systems work [an earlier post by 
+</I>&gt;<i> a crypto-savvy person had asked about use of DH primes, the 
+</I>&gt;<i> block cipher encryption mode used, and so on], I would ban 
+</I>&gt;<i> them and report them to their ISP without a second thought.
+</I>&gt;<i> 
+</I>&gt;<i> If you're interested in creating good encryption, learn the 
+</I>&gt;<i> principles: encryption schemes are weakened when they are based 
+</I>&gt;<i> on someone else's work. So if you're honestly wanting to make 
+</I>&gt;<i> good encryption for Trillian, its a bad idea to try to use CS's 
+</I>&gt;<i> work as a base.
+</I>
+Funny enough, his conclusion *is* correct :)
+
+Alex
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

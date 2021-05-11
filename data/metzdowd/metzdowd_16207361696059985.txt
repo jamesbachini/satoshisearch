@@ -1,0 +1,74 @@
+<PRE>Nicolas Williams wrote:
+ &gt; Sounds a bit like SCTP, with crypto thrown in.
+
+SCTP is what we should have done http over, though of
+course SCTP did not exist back then.  Perhaps, like
+quite a few other standards, it still does not quite
+exist.
+
+ &gt; I thought it was the latency cause by unnecessary
+ &gt; round-trips and expensive key exchange crypto that
+ &gt; motivated your proposal.  The cost of session crypto
+ &gt; is probably not as noticeable as that of the latency
+ &gt; of key exchange and authentication.
+
+The big problem is that between the time one logs on to
+one's bank, and the time one logs off, one is apt to
+have done lots and lots of cryptographic key exchanges.
+One key exchange per customer session is a really small
+cost, but we have a storm of them.
+
+Whenever the web page shows what is particular to the
+individual rather than universal, it uses a session
+cookie, visible to server side web page code.
+Encryption, the bundle of shared secrets that enable
+encrypted communications, should be visible at that
+level, should be a session cookie characteristic rather
+than a low level transport characteristic, should have
+the durability and scope of a session cookie, instead of
+the durability and scope of a transaction.
+
+Because we use encryption merely at a level where it is
+logically transient, because it protects transactions
+rather than relationships, the connections are too
+costly, and fail to provide the information about
+relationships that are needed to protect the user.
+
+If we had implemented http over something like SCTP,
+then an SCTPlike connection value should have been a
+cookie.  One should have been able to look at the
+SCTPlike connection value in the server side page code,
+and be pretty sure that if the person is the same, the
+connection value will be unchanged, so that one could
+then associate additional state with the connection
+value - encryption being some more state.
+
+Encryption parameters have more in common with session
+cookies than with transactions.  They should be about
+relationships, not data transport.
+
+If encryption setups were made and discarded only as
+often as session cookies, not so costly.  It is making
+them and discarding them as often as transactions that
+hurts. Also, the fact that they are so frequently
+discarded means that scope information is unavailable to
+secure relationships, means we cannot provide useful
+information to the end user about who he is really
+talking to, because the encryption does not know about
+relationships, even though encryption should be about
+relationships.
+
+With encryption merely at the transactional level, the
+browser can know the true name of website you are
+looking at, that being merely a page property, but
+cannot know what relationship you think you are
+participating in.  To provide security, client side
+code, browser chrome, needs to know not the true name of
+the web site, but if you are at a web site where you
+have user name or durable user ID.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

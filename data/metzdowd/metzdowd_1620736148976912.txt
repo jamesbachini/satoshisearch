@@ -1,0 +1,35 @@
+<PRE>Paul Hoffman &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">paul.hoffman at vpnc.org</A>&gt; writes:
+&gt;<i> At 2:45 AM +1200 7/20/07, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> wrote:
+</I>&gt;<i> |From a security point of view, this is really bad.  From a usability 
+</I>&gt;<i> point of
+</I>&gt;<i> |view, it's necessary.
+</I>&gt;<i>
+</I>&gt;<i> As you can see from my list of proposed solutions, I disagree. I see no
+</I>&gt;<i> reason not to to alert a user *who has removed a root* that you are about to
+</I>&gt;<i> put it back in.
+</I>
+It depends on what you mean by &quot;user&quot;.  You're assuming that direct action by
+the wetware behind the keyboard resulted in its removal.  However given how
+obscure and well-hidden this capability is, it's more likely that a user agent
+acting with the user's rights caused the problem.  So the message you end up
+communicating to the user is:
+
+   &quot;Something you've never heard of before has changed a setting you've never
+   heard of before that affects the operation of something you've never heard
+   of before and probably wouldn't understand no matter how patiently we
+   explain it&quot;.
+
+(those things are, in order &quot;some application or script&quot;, &quot;the cert trust
+setting&quot;, &quot;certificates&quot;, and &quot;PKI&quot;).
+
+I guess we'd need word from MS on whether this is by design or by accident,
+but I can well see that quietly unbreaking something that's broken for some
+reason would be seen as desirable behaviour.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

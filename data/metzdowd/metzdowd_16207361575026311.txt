@@ -1,0 +1,29 @@
+<PRE>Say, we have a random value of 4 kilobits that someone wants 
+to keep secret by the means of protecting it with a password. 
+
+Empirical entropy estimate for an English text is 1.3 bits of 
+randomness per character, IIRC.
+
+Assuming the password is an English word or a phrase, and the 
+secret is truly random, does it mean that the password needs 
+to be 3100+ characters in size in order to provide a &quot;proper&quot;
+degree of protection to the value ? 
+
+Or, rephrasing, what should the entropy of the password be 
+compared to the entropy of the value being protected (under
+whatever keying/encryption scheme) ? 
+
+I realize that this is rather .. err .. open-ended question, 
+and it depends on what one means by &quot;protected&quot;, but I'm sure 
+you can see the gist of the question. How would one deem a
+password random enough to be fit for protecting an equivalent
+of N bits of random data ? Is it a 1-to-1 ratio ?
+
+Thanks,
+Alex
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

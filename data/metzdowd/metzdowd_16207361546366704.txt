@@ -1,0 +1,41 @@
+<PRE>On Sat, Sep 01, 2007 at 03:46:45PM +1200, Peter Gutmann wrote:
+
+&gt;<i> I feel I should add a followup to the earlier post, this was implied by the
+</I>&gt;<i> rhetorical question about what the LINPACK performance of a botnet is, but
+</I>&gt;<i> I'll make it explicit here:
+</I>&gt;<i> 
+</I>&gt;<i> The standard benchmark for supercomputers is the LINPACK linear-algebra
+</I>&gt;<i> mathematical benchmark.  Now in practice the LINPACK performance of a botnet
+</I>&gt;<i> is likely to be nowhere near that of a specially-designed supercomputer, since
+</I>&gt;<i> it's more a distributed grid than a monolithic system.  On the other hand bot-
+</I>&gt;<i> herders are unlikely to care much about the linear algebra performance of
+</I>&gt;<i> their botnet since it doesn't represent the workload of any of the tasks that
+</I>&gt;<i> such a system would be used for.
+</I>
+Another interesting use may be data hiding. The botnet software could
+store information in RAM (never on disk), and replicate it to other
+nodes. If one node goes down, other nodes will still have the
+information. If one node detects that virusscanners or forensic tools
+are being used, it can easily wipe the information from RAM or just
+reboot the machine without fear that the information would really be
+lost.=20
+
+Experience with tinc (a VPN daemon with peer-to-peer like architecture,
+which replicates certain information to all daemons in a single VPN),
+showed that even in a network with only 20 nodes, it is extremely hard
+to get rid of information.  You either need to shut down all daemons at
+the same time to make sure all state is lost, or modify the software to
+allow explicit deletion of certain information. With more that 1 million
+nodes it will be even harder to delete data.
+
+-- 
+Met vriendelijke groet / with kind regards,
+      Guus Sliepen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">guus at sliepen.org</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: Digital signature
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070902/42af4820/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20070902/42af4820/attachment.pgp</A>&gt;
+</PRE>

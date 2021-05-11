@@ -1,0 +1,27 @@
+<PRE>On Wed, Aug 6, 2008 at 8:23 AM, Peter Saint-Andre &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">stpeter at stpeter.im</A>&gt; wrote:
+&gt;<i> Wells Fargo is requiring their online banking customers to provide answers
+</I>&gt;<i> to security questions such as these:
+</I>&gt;<i>
+</I>&gt;<i> ***
+</I>&gt;<i> ...
+</I>&gt;<i> ***
+</I>&gt;<i>
+</I>&gt;<i> It strikes me that the answers to many of these questions might be public
+</I>&gt;<i> information or subject to social engineering attacks...
+</I>
+Lie.
+
+I don't actually give the real answers to those questions for just
+that reason. Make up some plausible and memorable words (maybe using a
+tool like &quot;yould&quot;), and pick your mother a new random name from the
+phone book.
+
+
+-- 
+GDB has a 'break' feature; why doesn't it have 'fix' too?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,46 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A> (Ivan Krsti) on Thursday, January 3, 2008 wrote:
+
+&gt;<i>On Dec 31, 2007, at 4:46 PM, Bill Frantz wrote:
+</I>&gt;&gt;<i> My favorite virtual machine use is for the virus to install itself
+</I>&gt;&gt;<i> as a virtual machine, and run the OS in the virtual machine.  This
+</I>&gt;&gt;<i> technique should be really good for hiding from virus scanners.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>It's not, and despite the press handwaving about hypervisor rootkits  
+</I>&gt;<i>being the death of all security as we know it, this attack is largely  
+</I>&gt;<i>uninteresting in practice. Repeat after me: it's not a real problem,  
+</I>&gt;<i>and it's unlikely to become a real problem.
+</I>
+If, as seems likely, we are moving into a world where virtual
+machines are a popular security mechanism, the problem isn't
+detecting if you are on a virtual machine, because all useful OSes
+will expect to be running on a virtual machine.  The problem will be
+to detect if the virtual machine is hostile.  That code will
+probably have to be part of the virtual machine monitor (VMM)
+implementation.  There may be less use for running VMMs in virtual
+machines, although we got a lot of use from the ability to run
+VM/370 in a VM/370 virtual machine back in the 70's and 80's.
+
+
+&gt;<i>A walkthrough with pretty pictures, courtesy of the Matasano folk:
+</I>&gt;<i>&lt;<A HREF="http://www.matasano.com/log/930/side-channel-detection-attacks-against-unauthorized-hypervisors/">http://www.matasano.com/log/930/side-channel-detection-attacks-against-unauthorized-hypervisors/</A>&gt;
+</I>
+Neat.  An interrupt at the wrong time would also upset the
+TLB/Mapping table mismatch.  I wonder if a VMM could be built to
+simulate the mismatch?  Note that on the Intel architecture, there
+are certain instructions that behave differently in supervisor mode
+and user mode.  These instructions can also be used to leverage VM
+detection.
+
+Cheers - Bill
+
+---------------------------------------------------------------------------
+Bill Frantz        |&quot;We used to quip that &quot;password&quot; is the most common
+408-356-8506       | password. Now it's 'password1.' Who said users haven't
+www.periwinkle.com | learned anything about security?&quot; -- Bruce Schneier
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

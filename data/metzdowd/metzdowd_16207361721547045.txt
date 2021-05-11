@@ -1,0 +1,35 @@
+<PRE>While the presentations are useful in identifying various
+encrypted storage technologies, Travis, there is little
+mention of key-management in them.
+
+If you are interested in enhancing your presentations and
+your book to mention a specific implementation, there is a
+fair amount of material available on a new protocol (in the
+process of becoming an OASIS standard) and an open-source
+solution that has implemented it. You will find more details
+on both at:
+
+<A HREF="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ekmi">http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ekmi</A>
+<A HREF="http://www.strongkey.org.">http://www.strongkey.org.</A>
+
+Finally, a first Key Management Summit is scheduled to be held
+in Baltimore, MD this fall, that should be of interest to
+people in this forum:
+
+<A HREF="http://www.keymanagementsummit.com/2008/">http://www.keymanagementsummit.com/2008/</A>
+
+Arshad Noor
+StrongAuth, Inc.
+
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+&gt;<i> I've got two presentations I've given on encrypted storage technologies here:
+</I>&gt;<i> 
+</I>&gt;<i> <A HREF="http://www.subspacefield.org/security/">http://www.subspacefield.org/security/</A>
+</I>&gt;<i> 
+</I>&gt;<i> There's also a book I'm writing, if anyone is interested.
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

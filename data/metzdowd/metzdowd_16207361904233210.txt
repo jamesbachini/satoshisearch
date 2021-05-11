@@ -1,0 +1,87 @@
+<PRE>Dear security experts:
+
+Suppose I want to use the HTML syntax and a plain web browser as a user 
+interface for a secure application. By &quot;secure&quot;, I mean, among other 
+things, that the application service provider is confident that the user 
+sees the HTML contents without integrity vulnerabilities. Of course, 
+https is the only allowed protocol for reaching this web page, and the 
+only protocol present in any link from this page to a next one.
+
+
+I am now concerned about the default and implicit style sheets that the 
+web browser uses for HTML content rendering.
+
+
+Here is a simple exploit which alters the ietf.org main page. Insert the 
+following four lines
+
+a[title=&quot;IETF Secretariat&quot;]:before
+{content: &quot;Don't trust the &quot;}
+a[title=&quot;IETF Secretariat&quot;]:after
+{content: &quot; for anything security-critical.&quot;}
+
+to the file /usr/lib/firefox/res/html.css
+
+then restart the Mozilla Firefox and bingo, the itef.org main page is 
+subrepticiously changed. I.e. the link to &quot;IETF Secretariat&quot; is canged 
+to &quot;Don't trust the IETF Secretariat for anything security-critical.&quot;
+
+
+OK, this requires root access because the Linux community is generally 
+security-conscious. But you should see the general idea: paranoia leads 
+me to think of an adversary who would threatens application integrity 
+(such as the above) without leaving much trace of computer system 
+penetration.
+
+
+This attack vector is trivial based on the HTML markup language 
+philosophy - the above &quot;exploit&quot; merely alters default settings in a 
+parameter specifications language (css) having a fine grained 
+expressivity potential. CSS is about what the user sees when HTML 
+contents is displayed on a media (typically a web browser.
+
+
+Does anybody have any tip about how to mitigate this vulnerability, with 
+minimal assumptions about the client web browser?
+
+
+The basic idea would be to &quot;patch&quot; any default setting (that could alter 
+the user display ...) in the CSS specifications with explicit parameter 
+setting associated with the HTML contents. In the above case, the IETF 
+can protect itself with the following HTML markup text near the 
+beginning of the file:
+
+&lt;STYLE type=&quot;text/css&quot;&gt;:before{content:&quot;&quot;}:after{content:&quot;&quot;}&lt;/STYLE&gt;
+
+
+The habit of storing css style information in various style sheets files 
+separate from the HTML contents is worrysome as each stylesheet 
+retrieval operation is a potential attack vector.
+
+
+Thanks in advance. More specifically, with the hope that paranoia can 
+sometimes be a productive state of mind, I remain paranoid-ly grateful 
+for your answers.
+
+
+-- 
+
+- Thierry Moreau
+
+CONNOTECH Experts-conseils inc.
+9130 Place de Montgolfier
+Montreal, Qc
+Canada   H2M 2A1
+
+Tel.: (514)385-5691
+Fax:  (514)385-5900
+
+web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

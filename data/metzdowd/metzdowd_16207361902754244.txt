@@ -1,0 +1,43 @@
+<PRE>On 09/20/2008 12:09 AM, IanG wrote:
+
+&gt;<i> Does anyone know of a cheap USB random number source?
+</I>
+Is $7.59 cheap enough?  
+  <A HREF="http://www.geeks.com/details.asp?invtid=HE-280B&amp;cat=GDT">http://www.geeks.com/details.asp?invtid=HE-280B&amp;cat=GDT</A>
+
+For that you get a USB audio adapter with mike jack, and
+then you can run turbid(tm) to produce high-quality randomness.
+
+Reference, including analytical paper plus code:
+  <A HREF="http://www.av8n.com/turbid/">http://www.av8n.com/turbid/</A>
+
+
+&gt;<i> As a meandering comment, it would be extremely good for us if we had
+</I>&gt;<i> cheap pocket random number sources of arguable quality [1].
+</I>
+If the above is not good enough, please explain.
+
+&gt;<i> I've often thought that if we had an open source hardware design of
+</I>&gt;<i> a USB random number generator ... that cost a few pennies to add
+</I>&gt;<i> onto any other USB toy ... then we could ask the manufacturers to
+</I>&gt;<i> throw it in for laughs.  Something like a small mountable disk that
+</I>&gt;<i> returns randoms on every block read, so the interface is trivial.
+</I>
+I think the turbid solution is much better than a disk.
+ -- Unlimited long-term capacity.
+ -- Perfect forward secrecy, unlike a disk, unless you do a 
+  really good job of erasing each block after use.
+ -- Perfect secrecy in the other direction, period.
+ 
+&gt;<i> Then, when it comes time to generate those special keys, we could
+</I>&gt;<i> simply plug it in, run it, clean up the output in software and use
+</I>&gt;<i> it.  Hey presto, all those nasty software and theoretical
+</I>&gt;<i> difficulties evaporate.
+</I>
+If the above is not good enough, please explain.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

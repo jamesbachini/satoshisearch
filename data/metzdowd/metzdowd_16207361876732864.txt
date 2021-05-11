@@ -1,0 +1,31 @@
+<PRE>On Wed, 27 Aug 2008, Eric Rescorla wrote:
+
+&gt;<i> At Wed, 27 Aug 2008 16:10:51 -0400 (EDT),
+</I>&gt;<i> Jonathan Katz wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> On Wed, 27 Aug 2008, Eric Rescorla wrote:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> At Wed, 27 Aug 2008 17:05:44 +0200,
+</I>&gt;&gt;&gt;<i> There are a set of techniques that allow you to encrypt elements of
+</I>&gt;&gt;&gt;<i> arbitrary sets back onto that set.
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;&gt;<i> The original paper on this is:
+</I>&gt;&gt;&gt;<i> John Black and Phillip Rogaway. Ciphers with arbitrary ?nite domains. In
+</I>&gt;&gt;&gt;<i> CT-RSA, pages 114?130, 2002.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> But he probably wants an encryption scheme, not a cipher.
+</I>&gt;<i>
+</I>&gt;<i> Hmm... I'm not sure I recognize the difference between encryption
+</I>&gt;<i> scheme and cipher. Can you elaborate?
+</I>
+A block cipher is a primitive that can be used, in particular, to 
+construct encryption schemes. But you can construct encryption schemes 
+without block ciphers, and you can use block ciphers to construct other 
+things besides encryption. Moreover, &quot;good&quot; encryption should generally 
+be randomized, while a block cipher is deterministic.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

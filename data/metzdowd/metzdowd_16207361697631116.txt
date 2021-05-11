@@ -1,0 +1,30 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+
+&gt;<i>Steve Bellovin documents on his blog a recent attempt by Amtrak to teach its
+</I>&gt;<i>customers to be phishing victims:
+</I>&gt;<i>
+</I>&gt;<i><A HREF="http://www.cs.columbia.edu/~smb/blog/2008-02/2008-02-13.html">http://www.cs.columbia.edu/~smb/blog/2008-02/2008-02-13.html</A>
+</I>
+&gt;<i>From the blog:
+</I>
+  The next problem, though, is that the message asks people to log in by
+  clicking a link in the message:
+
+  Go to Amtrak.com now and update your profile
+  <A HREF="http://amtrak.bfi0.com/.....">http://amtrak.bfi0.com/.....</A>
+
+It's not just Amtrak that do that, CapitalOne also send out phishing email
+directing users to bfi0.com.
+
+Lesson for phishers: If you want your phish to seem more legit, outsource it
+to Bigfoot Interactive, which seems to lead back to Epsilon Agency Services,
+who specialise in... well, phishing, but for the good guys.  I bet the Russian
+Business Network could do it for less though :-).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

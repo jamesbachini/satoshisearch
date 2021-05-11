@@ -1,0 +1,24 @@
+<PRE>On 10/3/07, Saqib Ali &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+&gt;<i> <A HREF="http://www.freepatentauction.com/patent.php?nb=950">http://www.freepatentauction.com/patent.php?nb=950</A>
+</I>&gt;<i>
+</I>&gt;<i> Snake Oil Keywords:
+</I>&gt;<i> 1) Breach-proof Encryption,
+</I>&gt;<i> 2) landmark invention in Cryptography and Information Security
+</I>&gt;<i>
+</I>The basic details seem to be that data in flight gets protected by
+splitting the message, encrypting each half protected by a different
+RSA key, and sending each half along a different route using source
+routing.
+
+This means that if an attacker gets the stream on one route, they
+cannot get the message even if they have one private key (or both
+private keys but that never seems to get mentioned in the docs). This
+is where &quot;breach proof&quot; comes from.
+
+-Michael Heyman
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

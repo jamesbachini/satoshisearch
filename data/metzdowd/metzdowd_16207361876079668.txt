@@ -1,0 +1,29 @@
+<PRE>Looking a little more closely, I found this paper by Patarin from
+Crypto 2005 which describes security bounds for higher round Feistel
+constructions:
+
+<A HREF="http://www.springerlink.com/content/gtcabev3ucv8apdu/">http://www.springerlink.com/content/gtcabev3ucv8apdu/</A>
+
+As we know, the Luby-Rackoff 4 round construction gives you basically
+2^(n/2) security in the number of messages, where n is half the
+width of the output (i.e. n is the size of each half in the Feistel
+construction). In our case, n = 66, allowing roughly 2^33 or a few
+billion messages.
+
+Patarin's analysis shows that we basically have 2^n security against just
+chosen plaintext attacks with 4 rounds; just chosen ciphertext attacks
+with 7 rounds; and both forms of attacks together with 10 rounds. That
+means we could encrypt a full 2^64 messages with full security if we
+use 10 rounds.
+
+It also proves that we have 2^(5n/6) security against CPA in 5 rounds,
+and against both CPA and CCA in 6 rounds. So if 2^53 encryptions is
+enough, then 6 rounds will suffice.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

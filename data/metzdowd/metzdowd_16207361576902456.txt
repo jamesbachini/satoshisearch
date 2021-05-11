@@ -1,0 +1,22 @@
+<PRE>On Oct 3, 2007, at 4:39 AM, Florian Weimer wrote:
+&gt;<i> But this exhibits an issue with disk-based encryption: you can't
+</I>&gt;<i> really know what they are doing, and if they are doing it right.
+</I>&gt;<i> (Given countless examples of badly-deployed cryptography, this isn't
+</I>&gt;<i> just paranoia, but a real concern.)
+</I>
+Precisely. If you're keeping secrets from your nosy siblings and  
+coworkers, hardware FDE is more than adequate. If you have reason to  
+believe someone skilled and resourceful might really want your data,  
+you almost certainly have no business using a blackbox encryption  
+system operating in a way that's not publicly documented -- even if  
+the system is buzzword-compliant -- and implemented by a company  
+(hard disk vendor) where crypto is about as far from their core  
+competency as you can get.
+
+--
+Ivan Krsti&#263; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">krstic at solarsail.hcs.harvard.edu</A>&gt; | <A HREF="http://radian.org">http://radian.org</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

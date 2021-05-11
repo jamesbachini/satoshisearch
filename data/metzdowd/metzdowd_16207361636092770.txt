@@ -1,0 +1,70 @@
+<PRE>James A. Donald wrote:
+&gt;<i>  Not true.  Because they are notarizing a signature, not
+</I>&gt;<i> a document, they  check my supporting identification,
+</I>&gt;<i> but never read the document being signed.
+</I>&gt;<i> 
+</I>This will be my last posting.  You have refused several requests to stick
+to the original topic at hand.
+
+Apparently, you have no actual experience with the legal system, or
+are from such a different legal jurisdiction that your scenario is
+somehow related to MD5 hashes of software and code distribution.
+
+Because human beings often try to skirt the rules, there's a long
+history of detailed notarization requirements.  How it works here:
+
+(1) You prepare the document(s).  They are in the form prescribed by law
+-- for example, Michigan Court Rule (MCR 2.114) &quot;SIGNATURES OF ATTORNEYS
+AND PARTIES; VERIFICATION; EFFECT; SANCTIONS&quot;
+
+(2) The clerk checks for the prescribed form and content.
+
+(3) You sign and date the document(s) before the notary (using a pen
+supplied by the notary, no disappearing ink allowed).
+
+(4) The notary signs and dates their record of your signature, optionally
+impressing the document(s) with an embossing stamp (making it physically
+difficult to erase).
+
+You have now attested to the content of the documents, and the notary has
+attested to your signature (not the veracity of the documents).  Note
+that we get both integrity and non-repudiation....
+
+The only acceptable computer parallel would require you to bring the
+documents to the notary, using a digital format supplied by the notary,
+generate the digital signature on the notary's equipment, and then the
+notary indempotently certify your signature (on the same equipment).
+
+In the real world, the emphasis is on binding a document to a person, and
+vice versa.  Any digital system that does not tie the physical person to
+the virtual document is not equivalent.
+
+This is simply not equivalent to a site producing its own software and
+generating a hash of its own content.  There should be no third party
+involved as a certifier.
+
+
+&gt;<i> If they were to generate an MD5 hash of documents
+</I>&gt;<i> prepared by someone else, then the attack described
+</I>&gt;<i> (eight different human readable documents with the same
+</I>&gt;<i> MD5 hash) works.
+</I>&gt;<i> 
+</I>If a notary were to do that, they'd be looking at a fairly severe penalty.
+By definition, such a notary was compromised.
+
+But nothing like the prison sentence that you'd be facing for presenting
+the false documents to the court.  And I'd be pushing the prosecutor for
+consecutive sentences for all 8 fraudulent documents, with enhancements.
+
+Nobody has given any examples of &quot;human readable documents&quot; that will
+produce the same hash when re-typed into the system.  All those proposed
+require an invisible component.  They are &quot;machine readable&quot; only.
+
+That's why we, as security analysts, don't design or approve such systems.
+We're not (supposed to be) fooled by parlor tricks.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

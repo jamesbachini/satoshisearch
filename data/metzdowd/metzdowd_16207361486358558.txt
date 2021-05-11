@@ -1,0 +1,32 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+&gt;<i> (The usage model is that you do the UI portion on the PC, but perform the
+</I>&gt;<i> actual transaction on the external device, which has a two-line LCD display
+</I>&gt;<i> for source and destination of transaction, amount, and purpose of the
+</I>&gt;<i> transaction.  All communications enter and leave the device encrypted, with
+</I>&gt;<i> the PC acting only as a proxy.  Bill of materials shouldn't be more than about
+</I>&gt;<i> $20).
+</I>
+In theory the TPM was supposed to allow this kind of thing.  The idea
+was that the OS would support secure applets that could not be molested
+by legacy software.  Only such an applet would have access to your
+payment information.  Some specialized, perhaps customized screen would
+be displayed by the applet to get you to authorize the final transfer.
+
+This was one of the main goals of the TPM as I understood the concept.
+Unfortunately everyone got focused on the DRM aspect and that largely
+torpedoed the whole idea.  Still we might see it eventually.  Research
+in this direction is still going on, particularly in IBM's Integrity
+Measurement Architecture[1] and some of the new security extensions to
+the Xen virtualization software[2].
+
+Hal Finney
+
+[1] <A HREF="http://domino.research.ibm.com/comm/research_people.nsf/pages/sailer.ima.html">http://domino.research.ibm.com/comm/research_people.nsf/pages/sailer.ima.html</A>
+[2] <A HREF="http://xensource.com/files/xs0106_security_print.pdf">http://xensource.com/files/xs0106_security_print.pdf</A> , also
+    <A HREF="http://www.hpl.hp.com/techreports/2007/HPL-2007-69.pdf">http://www.hpl.hp.com/techreports/2007/HPL-2007-69.pdf</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

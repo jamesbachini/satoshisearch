@@ -1,0 +1,57 @@
+<PRE>Alex Alten wrote:
+&gt;<i> Generally any standard encrypted protocols will
+</I>&gt;<i> probably eventually have to support some sort of CALEA
+</I>&gt;<i> capability. For example, using a Verisign ICA
+</I>&gt;<i> certificate to do MITM of SSL, or possibly requiring
+</I>&gt;<i> Ebay to provide some sort of legal access to Skype
+</I>&gt;<i> private keys.
+</I>
+I can certainly imagine various countries legislating such backdoors,
+and other countries quietly installing them (assuming they aren't
+already there for Skype).  And that will certainly help in catching
+some fraction of unsophisticated crooks.
+
+But botnets-for-rent are currently making pretty substantial amounts
+of money (eg for sending spam, or ddos attacks, or as phishing hosts),
+and are increasingly using professionally written malware.
+(<A HREF="http://www.cs.auckland.ac.nz/~pgut001/pubs/malware_biz.pdf">http://www.cs.auckland.ac.nz/~pgut001/pubs/malware_biz.pdf</A>)
+
+Given the lure of this much &quot;easy money&quot;, I think it's much more
+likely that the cleverer bad guys will just wrap an un-backdoored ssh
+or ssl or ipsec or &lt;other good crypto protocol that's already widely
+available&gt; layer inside the backdoored one(s), giving them (continued)
+full security.  For better or worse, I think the &quot;bad buys can use
+strong crypto&quot; horse left the barn a long time ago.
+
+
+In a more recent message, Alex Alten wrote:
+&gt;<i> the criminals have to design their security system with
+</I>&gt;<i> severe disadvantages; they don't own the machines they
+</I>&gt;<i> attack/take over so they can't control its software/hardware
+</I>&gt;<i> contents easily
+</I>
+I don't see your point -- surely once a machine is &quot;recruited&quot; into
+a botnet, the botnet herder can and does load any software s/he wants
+onto the &quot;new recruit&quot;.
+
+
+&gt;<i> they can't screw around too much with the IP
+</I>&gt;<i> protocol headers or they lose communications with them, and
+</I>&gt;<i> they don't have physical access to the slave/owned machines.
+</I>
+In what way has this stopped (or even slowed) the Storm worm,
+to name one notorious example?
+
+-- 
+-- Jonathan Thornburg (remove -animal to reply) &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">J.Thornburg at soton.ac-zebra.uk</A>&gt;
+   School of Mathematics, U of Southampton, England
+   &quot;Washing one's hands of the conflict between the powerful and the
+    powerless means to side with the powerful, not to be neutral.&quot;
+                                      -- quote by Freire / poster by Oxfam
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,33 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> Greg, assorted folks noted, way back when, that Skipjack looked a lot
+</I>&gt;<i> like a stream cipher.  Might it be vulnerable?
+</I>
+Hmmm, interesting. I'm getting increasingly closer to talking through my 
+hat, but...
+
+Skipjack has an 8x8 S-box, so by definition the maximum degree of the 
+polynomials for a trip through the S-box is 8 (but it could be lower... 
+I don't know off the top of my head). There are 32 rounds, but each word 
+gets hit only in every fourth round... that is, each word gets hit 8 
+times. So the degree from beginning to end should be 64, probably out of 
+range. However Adi mentioned a variant where you sort of &quot;meet in the 
+middle&quot;, where you have one set of equations to get to some particular 
+bit in the middle from the plaintext, and you get to the same bit 
+backwards from the output bits, and by definition the two polynomials 
+are equal. This should halve the degree, to around 32, if I've 
+understood correctly. With an 80 bit key the attack might be more 
+efficient than brute force. Again from memory the complexity was 
+O(n*2^2d+n^2), (n-bit key, d degree) for skipjack this might be about 
+2^70. Skipjack's nearly non-existent key schedule really helps. This 
+might be a good project for a grad student.
+
+Enough speculation from me... but I'll try to corner Adi later and ask 
+him some of the questions that have been burning in my mind.
+
+Greg.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

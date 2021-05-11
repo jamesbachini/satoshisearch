@@ -1,0 +1,53 @@
+<PRE>
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) writes:
+</I>&gt;&gt;<i> (The usage model is that you do the UI portion on the PC, but perform the
+</I>&gt;&gt;<i> actual transaction on the external device, which has a two-line LCD display
+</I>&gt;&gt;<i> for source and destination of transaction, amount, and purpose of the
+</I>&gt;&gt;<i> transaction.  All communications enter and leave the device encrypted, with
+</I>&gt;&gt;<i> the PC acting only as a proxy. [...]
+</I>
+On Sun, 1 Jul 2007, Hal Finney wrote:
+&gt;<i> In theory the TPM was supposed to allow this kind of thing. [...] 
+</I>&gt;<i> This was one of the main goals of the TPM as I understood the concept.
+</I>&gt;<i> Unfortunately everyone got focused on the DRM aspect and that largely
+</I>&gt;<i> torpedoed the whole idea.
+</I>
+There is a big difference between a TPM providing this kind of service, 
+and Peter's device. The TPM is supposed to be hard-wired into a PC -- so 
+if you are using it to safe your banking applications, you can do banking 
+at one single PC. On the other hand, Peter's device is portable, you can 
+use it to do safe banking from your PC at home, or in the office (only 
+during lunch-breaks with the employer's permission of course), or even at 
+a public internet cafe. To this end, Peter's device would be much more 
+useful for the customer than a TPM ever could be.
+
+BTW, Peter, are you aware that your device looks similar to the one 
+proposed in the context of the CAFE project? See
+   <A HREF="http://citeseer.ist.psu.edu/48859.html">http://citeseer.ist.psu.edu/48859.html</A>
+
+This has been a more ambitious project, not just supporting secure banking 
+applications at an insecure host PC, but rather a digital wallet.
+
+Nevertheless, it may be interesting to study why the project failed (or 
+ended without follow-on projects). I have no quick answer to this 
+question, but as much as I understand, the banks where just not interested 
+in deploying such a device. I guess, it was much too expensive at that 
+time. Instead, in Germany we got the &quot;Geldkarte&quot;, a simple and very cheap 
+smartcard for payment purposes with neither a display nor a keyboard. The 
+&quot;Geldkarte&quot; has been around us for about ten years, and, as far as I can 
+tell, hardly any customer is interested in using it.
+
+So long
+
+
+-- 
+Stefan Lucks      (moved to Bauhaus-University Weimar, Germany)
+ 		       &lt;Stefan.Lucks(at)medien.uni-weimar.de&gt;
+------  I  love  the  taste  of  Cryptanalysis  in  the  morning!  ------
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

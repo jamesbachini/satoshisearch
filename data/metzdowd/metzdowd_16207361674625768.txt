@@ -1,0 +1,29 @@
+<PRE>
+Jerry,
+
+It is always possible that I misunderstand the McCabe
+score which may come from the fact that so many build
+environments compute it along with producing the binary,
+i.e., independent of human eyeballs.  If complexity
+scoring requires human eyeballs or the presence of the
+designer's flow charts, then will we ever get meaningful
+numbers (sans artificial intelilgence) for code we did
+not write ourselves?  [...yes, this parallels the many
+arguments about how can you trust crypto code you didn't
+write, either...]
+
+If McCabe scoring is your area, do you agree with the
+rule that a McCabe score of &lt;10 is essential -- an argument
+that I am quoting from some NASA spec I read a while ago
+and can dig up again if that turns out to be necessary.
+
+Always ready for re-education, but wary of the best
+being the enemy of the good,
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

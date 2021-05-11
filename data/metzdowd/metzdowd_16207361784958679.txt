@@ -1,0 +1,84 @@
+<PRE>Note the reference to recent results on &quot;spiking&quot; hardware.  (From some
+IDG journal - I forget which.)
+
+ 							-- Jerry
+
+---------- Forwarded message ----------
+FBI Worried as DoD Sold Counterfeit Networking Gear
+Stephen Lawson and Robert McMillan, IDG News Service
+
+Friday, May 09, 2008 5:10 PM PDT
+The U.S. Federal Bureau of Investigation is taking the issue of
+counterfeit Cisco equipment very seriously, according to a leaked FBI
+presentation that underscores problems in the Cisco supply chain.
+
+The presentation gives an overview of the FBI Cyber Division's effort to
+crack down on counterfeit network hardware, the FBI said Friday in a
+statement. &quot;It was never intended for broad distribution across the
+Internet.&quot;
+
+In late February the FBI broke up a counterfeit distribution network,
+seizing an estimated US$3.5 million worth of components manufactured in
+China. This two-year FBI effort, called Operation Cisco Raider, involved
+15 investigations run out of nine FBI field offices.
+
+According to the FBI presentation, the fake Cisco routers, switches and
+cards were sold to the U.S. Navy, the U.S. Marine Corps., the U.S. Air
+Force, the U.S. Federal Aviation Administration, and even the FBI
+itself.
+
+One slide refers to the problem as a &quot;critical infrastructure threat.&quot;
+
+The U.S. Department of Defense is taking the issue seriously. Since
+2007, the Defense Advanced Research Projects Agency has funded a program
+called Trust in IC, which does research in this area.
+
+Last month, researcher Samuel King demonstrated how it was possible to
+alter a computer chip to give attackers virtually undetectable back-door
+access to a computer system.
+
+King, an assistant professor in the University of Illinois at Urbana-
+Champaign's computer science department, has argued that by tampering
+with equipment, spies could open up a back door to sensitive military
+systems.
+
+In an interview on Friday, he said the slides show that this is clearly
+something that has the FBI worried.
+
+The Department of Defense is concerned, too. In 2005 its Science Board
+cited concerns over just such an attack in a report.
+
+Cisco believes the counterfeiting is being done to make money. The
+company investigates and tests counterfeit equipment it finds and has
+never found a &quot;back door&quot; in any counterfeit hardware or software, said
+spokesman John Noh.  &quot;Cisco is working with law enforcement agencies
+around the world on this issue.&quot;
+
+The company monitors its channel partners and will take action,
+including termination of a contract, if it finds a partner selling
+counterfeit equipment, he said. &quot;Cisco Brand Protection coordinates and
+collaborates with our sales organizations, including government sales,
+across the world, and it's a very tight integration.&quot;
+
+The best way for channel partners and customers to avoid counterfeit
+products is to buy only from authorized channel partners and
+distributors, Noh said.  They have the right to demand written proof
+that a seller is authorized.
+
+The FBI doesn't seem satisfied with this advice, however. According to
+the presentation, Cisco's gold and silver partners have purchased
+counterfeit equipment and sold it to the government and defense
+contractors.
+
+Security researcher King believes that the government is better off
+focusing on detection rather than trying to secure the IT supply chain,
+because there are strong economic incentives to keep it open and
+flexible -- even if this means there may be security problems. &quot;There
+are so many good reasons for this global supply chain; I just think
+there's no way we can secure it.&quot;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

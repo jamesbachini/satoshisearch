@@ -1,0 +1,28 @@
+<PRE>Hagai Bar-El wrote on 18 March 2008 10:17:
+
+&gt;<i> All they
+</I>&gt;<i> need to do is make sure (through a user-controlled but default-on
+</I>&gt;<i> feature) that when the workstation is locked, new Firewire or PCMCIA
+</I>&gt;<i> devices cannot be introduced. That hard?
+</I>
+  Yes it is, without redesigning the PCI bus.  A bus-mastering capable
+device doesn't need any interaction with or acknowledgement from the host,
+it doesn't need any driver to be loaded and running, it just needs
+electrical connectivity in order to control the entire system.  (I suppose
+you could disable the BAR mappings when you go to locked mode, but that's
+liable to mess up any integrated graphics set that uses system memory for
+the frame buffer, and you'd better not lock your terminal while your SCSI
+drives are in operation...)
+
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

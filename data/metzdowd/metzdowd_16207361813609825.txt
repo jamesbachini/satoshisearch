@@ -1,0 +1,43 @@
+<PRE>
+Forwarded message:
+
+----------------------------------------------------------------------
+From: Morris Dworkin &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dworkin at nist.gov</A>&gt;
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">EncryptionModes at nist.gov</A>
+Subject: NIST considering submissions of block cipher modes
+Date: Sun, 08 Jun 2008 19:28:06 -0400
+Message-ID: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">484C6B06.3080402 at nist.gov</A>&gt;
+
+FYI, in recent months, NIST received submissions for three new modes of 
+operation for the AES, one of which NIST is now proposing to approve for 
+government use.
+
+In particular, on Thursday NIST initiated a 90-day period of public 
+comment  (ending September 3, 2008), on the XTS encryption mode of the 
+AES, submitted by the P1619 Task Group of the IEEE Security in Storage 
+Working Group.  NIST proposes to approve the algorithm by reference to 
+IEEE Stnd 1619-2007.  For additional information, see the Request for 
+Public Comment on XTS, at 
+<A HREF="http://www.csrc.nist.gov/groups/ST/documents/Request-for-Public-Comment-on_XTS.pdf">http://www.csrc.nist.gov/groups/ST/documents/Request-for-Public-Comment-on_XTS.pdf</A>  
+.  The request includes a link to the relevant extract of IEEE Stnd 
+1619, which IEEE has agreed to make available free of charge during the 
+public comment period.
+
+NIST also would welcome public input on whether to propose either of the 
+other two modes for approval:
+   1.  Synthetic IV (SIV), an authenticated encryption mode submitted by 
+Rogaway and Shrimpton, and
+   2.  Feistel Finite Set Encryption Mode (FFSEM), submitted by Spies.
+Both submissions are available on the &quot;Modes Development&quot; page of the 
+NIST website, 
+<A HREF="http://csrc.nist.gov/groups/ST/toolkit/BCM/modes_development.html.">http://csrc.nist.gov/groups/ST/toolkit/BCM/modes_development.html.</A>
+Comments may be submitted to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">EncryptionModes at nist.gov</A>; please identify 
+the mode(s) somewhere in the subject line.
+
+----------------------------------------------------------------------
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

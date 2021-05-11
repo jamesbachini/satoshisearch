@@ -1,0 +1,29 @@
+<PRE>Ben Laurie writes:
+&gt;<i> Oh, and I should say that number of ports and standard deviation are not 
+</I>&gt;<i> a GREAT way to test for &quot;randomness&quot;. For example, the sequence 1000, 
+</I>&gt;<i> 2000, ..., 27000 has 27 ports and a standard deviation of over 7500, 
+</I>&gt;<i> which looks pretty GREAT to me. But not very &quot;random&quot;.
+</I>
+That's a good point, Ben. Dan Kaminsky's DNS tester at <A HREF="http://www.doxpara.com/">http://www.doxpara.com/</A>
+does include output like this:
+
+Your name server, at 1.2.3.4, appears to be safe, but make sure the
+ports listed below aren't following an obvious pattern (:1001, :1002,
+:<i>1003, or :30000, :30020, :30100...).
+</I>Requests seen for dae687514c50.doxdns5.com:
+1.2.3.4:34023 TXID=64660
+1.2.3.4:50662 TXID=51678
+1.2.3.4:55984 TXID=49711
+1.2.3.4:17745 TXID=12263
+1.2.3.4:26318 TXID=59610 
+
+This shows only the last 5 ports so it won't detect an LCG, but at least
+it can detect some of the more obvious patterns.
+
+Hal Finney
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

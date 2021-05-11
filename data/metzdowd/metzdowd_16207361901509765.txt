@@ -1,0 +1,27 @@
+<PRE>Peter Gutmann wrote:
+&gt;<i> The problem is that the default has always been to be insecure, and there's no
+</I>&gt;<i> effective way to get people to move to the secure non-default, or at least
+</I>&gt;<i> none that isn't relatively easily circumvented by a bit of creative thinking
+</I>&gt;<i> and/or social engineering. 
+</I>
+If the user is used to logging in by a user interface that is not easy 
+for forge remotely - click on bookmark to bring up a user interface that 
+is difficult to remotely forge - then this does indeed work.
+
+There is always the give-your-password-over-the-phone attack, but the 
+fact that phishers seeking WoW gold actually have to use the 
+give-your-password-over-the-phone attack against WoW players shows the 
+potency of a deliberately non standard, difficult to forge, user interface.
+
+WoW security does not stop phishing, but it makes phishers work for 
+their money. WoW keeps telling users &quot;never give your password to 
+another person, no one at WoW will ever ask you for your password&quot;. 
+Obvious advice, easy to understand and follow.
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

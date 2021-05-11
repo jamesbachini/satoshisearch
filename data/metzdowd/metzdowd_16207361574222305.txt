@@ -1,0 +1,63 @@
+<PRE>Actually, there's a slightly earlier paper:
+
+&quot;CryptoGraphics: Secret Key Cryptography Using Graphics Cards&quot;
+Debra L. Cook, John Ioannidis, Angelos D. Keromytis, and Jake Luck. In 
+Proceedings of the RSA Conference, Cryptographer's Track (CT-RSA), pp. 
+334 - 350. February 2005, San Francisco, CA. An older version is 
+available as Columbia University Computer Science Department Technical 
+Report CUCS-002-04.
+
+You can get it from 
+<A HREF="http://www1.cs.columbia.edu/~angelos/Papers/2004/gc_ctrsa.pdf">http://www1.cs.columbia.edu/~angelos/Papers/2004/gc_ctrsa.pdf</A>
+-Angelos
+
+Steven M. Bellovin wrote:
+&gt;<i> On Wed, 24 Oct 2007 13:25:29 -0400
+</I>&gt;<i> &quot;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A>&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> From:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>    &lt;<A HREF="http://www.elcomsoft.com/EDPR/gpu_en.pdf">http://www.elcomsoft.com/EDPR/gpu_en.pdf</A>&gt;
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>   Moscow, Russia - October 22, 2007 - ElcomSoft Co. Ltd. has
+</I>&gt;&gt;<i>   discovered and filed for a US patent...Using the &quot;brute force&quot;
+</I>&gt;&gt;<i>   technique of recovering passwords, it was possible, though
+</I>&gt;&gt;<i>   time-consuming, to recover passwords from popular
+</I>&gt;&gt;<i>   applications. For example...Windows Vista uses NTLM hashing
+</I>&gt;&gt;<i>   by default, so using a modern dual-core PC you could test up to
+</I>&gt;&gt;<i>   10,000,000 passwords per second, and perform a complete
+</I>&gt;&gt;<i>   analysis in about two months. With ElcomSoft's new technology,
+</I>&gt;&gt;<i>   the process would take only three to five days..Today's [GPU]
+</I>&gt;&gt;<i>   chips can process fixed-point calculations. And with as much as
+</I>&gt;&gt;<i>   1.5 Gb of onboard video memory and up to 128 processing
+</I>&gt;&gt;<i>   units, these powerful GPU chips are much more effective than
+</I>&gt;&gt;<i>   CPUs in performing many of these calculations...Preliminary
+</I>&gt;&gt;<i>   tests using Elcomsoft Distributed Password Recovery product
+</I>&gt;&gt;<i>   to recover Windows NTLM logon passwords show that the
+</I>&gt;&gt;<i>   recovery speed has increased by a factor of twenty, simply by
+</I>&gt;&gt;<i>   hooking up with a $150 video card's onboard GPU.
+</I>&gt;&gt;<i>
+</I>&gt;<i> I hope they don't get the patent.  The idea of using a GPU for
+</I>&gt;<i> cryptographic calculations isn't new; see, for example, &quot;Remotely Keyed
+</I>&gt;<i> Cryptographics: Secure Remote Display Access Using (Mostly) Untrusted
+</I>&gt;<i> Hardware&quot; (<A HREF="http://www1.cs.columbia.edu/~angelos/Papers/2005/rkey_icics.pdf">http://www1.cs.columbia.edu/~angelos/Papers/2005/rkey_icics.pdf</A>)
+</I>&gt;<i> Debra L. Cook, Ricardo Baratto, and Angelos D. Keromytis. In
+</I>&gt;<i> Proceedings of the 7th International Conference on Information and
+</I>&gt;<i> Communications Security (ICICS), pp. 363 - 375. December 2005, Beijing,
+</I>&gt;<i> China. An older version is available as Columbia University Computer
+</I>&gt;<i> Science Department Technical Report CUCS-050-04
+</I>&gt;<i> (<A HREF="http://mice.cs.columbia.edu/getTechreport.php?techreportID=110&amp;format=pdf&amp;">http://mice.cs.columbia.edu/getTechreport.php?techreportID=110&amp;format=pdf&amp;</A>),
+</I>&gt;<i> December 2004.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,32 @@
+<PRE>Arshad Noor wrote:
+&gt;<i> A more optimal solution is to have this vulnerability accepted by
+</I>&gt;<i> the OWASP community as a &quot;Top 10&quot; security vulnerability; it will
+</I>&gt;<i> have the appropriate intended effect since mitigation to the OWASP
+</I>&gt;<i> defined vulnerabilities is required in PCI-DSS:
+</I>&gt;<i> 
+</I>&gt;<i> &quot;6.5 Develop all web applications based on secure coding guidelines
+</I>&gt;<i> such as the Open Web Application Security Project guidelines&quot;
+</I>&gt;<i> 
+</I>
+Isn't this vulnerability already in the Top 10, specifically &quot;A7 - Broken 
+Authentication and Session Management&quot; (
+<A HREF="http://www.owasp.org/index.php/Top_10_2007-A7">http://www.owasp.org/index.php/Top_10_2007-A7</A>)?
+
+&gt;<i>From the &quot;Protection&quot; section for A7:
+</I>
+&quot;Do not allow the login process to start from an unencrypted page. Always 
+start the login process from a second, encrypted page with a fresh or new 
+session token to prevent credential or session stealing, phishing attacks 
+and session fixation attacks.&quot;
+
+Best regards,
+Darren Lasko
+Principal Engineer
+Advanced Development Group, Storage Products
+Fujitsu Computer Products of America
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

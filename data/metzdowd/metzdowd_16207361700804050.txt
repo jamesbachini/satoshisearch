@@ -1,0 +1,34 @@
+<PRE>|<i> ...I imagine this will eventually have a big impact on the way organizations
+</I>|<i> respond to stolen mobile device incidents. With the current technology, if a
+</I>|<i> laptop or mobile device is on when it's stolen, companies will need to assume
+</I>|<i> that the data is gone, regardless of whether or not encryption products have
+</I>|<i> been deployed.
+</I>|<i> 
+</I>|<i> Anyone familar with the laws in the arena? Are there regulations which require
+</I>|<i> reporting only if data on a stolen device is not encrypted?
+</I>I believe something like this has been written into law.  The reporting
+laws are all state laws, so of course vary.  The Federal laws often
+have &quot;safe harbor&quot; provisions for encrypted data.
+
+Regardless of the law, the broad public perception is that &quot;encrypted&quot;
+means &quot;safe&quot;.  After one too many embarrasments, corporations (and
+governments) have learned that &quot;Oh, yes, 150,000 credit card numbers
+were stolen but there's no evidence anyone is using them&quot; no longer
+works as damage control; but &quot;Oh, yes, 150,000 credit card numbers
+were stolen but that's OK - they were encrypted&quot; works fine.  (Note
+that these announcements don't even bother to discuss what the
+encryption mechanism might be - ROT13, anyone?)
+
+Unfortunately, the technical nature of these results - combined with
+the &quot;We told you to encrypt everything to make it safe; now we tell
+you encryption isn't safe&quot; nature of the debate, is unlikely to produce 
+anything positive in the general public sphere.  People will probably
+just shrug their shoulders, figure nothing can be done, and move on.
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

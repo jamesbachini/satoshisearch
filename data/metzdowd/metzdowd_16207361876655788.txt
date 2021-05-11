@@ -1,0 +1,26 @@
+<PRE>John Denker &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jsd at av8n.com</A>&gt; writes:
+
+&gt;<i>  *) At the other extreme, there are many high-stakes business,
+</I>&gt;<i>   military, and gambling applications where I would agree with 
+</I>&gt;<i>   von Neumann, and would shun absolutely all PRNGs.  I would 
+</I>&gt;<i>   rely exclusively on _hardware_ randomness generators, as
+</I>&gt;<i>   detailed at:
+</I>&gt;<i>      <A HREF="http://www.av8n.com/turbid/">http://www.av8n.com/turbid/</A>
+</I>
+I would never rely *exclusively* on any source because then a failure in your 
+exclusive source, no matter how magical it is, will bring down your entire 
+system.  Use a hardware RNG if you want to, but also XOR in the output from a 
+PRNG, and a block cipher in counter mode, and a MAC of the time.  And apply 
+the NIST tests on the data you're using, and on the generator output.  And 
+don't forget to do [...].
+
+A good randomness/key generator is more an engineering problem than an 
+algorithmic one.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

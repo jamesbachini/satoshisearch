@@ -1,0 +1,16 @@
+<PRE>Actually the correct URL is:
+<A HREF="http://www.sscnet.ucla.edu/geog/gessler/collections/cryptology.htm">http://www.sscnet.ucla.edu/geog/gessler/collections/cryptology.htm</A>
+
+On Wed, Jun 4, 2008 at 1:59 PM, Ali, Saqib &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">docbook.xml at gmail.com</A>&gt; wrote:
+&gt;<i> Here is another site that has a lot more details and photographs:
+</I>&gt;<i> <A HREF="http://www.sscnet.ucla.edu/geog/gessler/collections/crypto-hebern.htm">http://www.sscnet.ucla.edu/geog/gessler/collections/crypto-hebern.htm</A>
+</I>&gt;<i>
+</I>&gt;<i> saqib
+</I>&gt;<i> <A HREF="http://doctrina.wordpress.com/">http://doctrina.wordpress.com/</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

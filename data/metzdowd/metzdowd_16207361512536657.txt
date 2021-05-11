@@ -1,0 +1,22 @@
+<PRE>At 10:17 AM -0400 8/22/07, Perry E. Metzger wrote:
+&gt;<i>Ekr's blog notes a rumor that more progress has been made on attacking SHA-1:
+</I>&gt;<i>
+</I>&gt;<i><A HREF="http://www.educatedguesswork.org/movabletype/archives/2007/08/sha1_rumors.html">http://www.educatedguesswork.org/movabletype/archives/2007/08/sha1_rumors.html</A>
+</I>&gt;<i>
+</I>&gt;<i>Anyone know anything about this?
+</I>
+This is a continuation of the thread on this list from last week.
+
+I watched the webcast of the rump session, and Christian Rechberger 
+said that they think they will get 2^60ish with a new technique. He 
+did not describe the technique in any detail. Offline, he has told me 
+that there will be papers published.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

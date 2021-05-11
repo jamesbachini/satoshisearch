@@ -1,0 +1,18 @@
+<PRE>&gt;|<i> Presumably the value they add is that they keep browsers from popping
+</I>&gt;|<i> up scary warning messages....
+</I>&gt;<i>Apple's Mail.app checks certs on SSL-based mail server connections.
+</I>&gt;<i>It has the good - but also bad - feature that it *always* asks for
+</I>&gt;<i>user approval if it gets a cert it doesn't like.
+</I>
+Good point -- other mail programs such as Thunderbird also pop up
+the scary warnings.  I've paid the $15 protection money for the certs
+on my mail servers.
+
+R's,
+John
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

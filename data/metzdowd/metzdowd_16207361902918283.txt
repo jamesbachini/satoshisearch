@@ -1,0 +1,73 @@
+<PRE>At Mon, 1 Sep 2008 21:56:52 +0100,
+Ben Laurie wrote:
+&gt;<i> 
+</I>&gt;<i> On Mon, Sep 1, 2008 at 9:49 PM, Eric Rescorla &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ekr at networkresonance.com</A>&gt; wrote:
+</I>&gt;<i> &gt; At Mon, 1 Sep 2008 21:00:55 +0100,
+</I>&gt;<i> &gt; Ben Laurie wrote:
+</I>&gt;<i> &gt;&gt; The core issue is that HTTPS is used to establish end-to-end security,
+</I>&gt;<i> &gt;&gt; meaning, in particular, authentication and secrecy. If the MitM can
+</I>&gt;<i> &gt;&gt; disable the upgrade to HTTPS then he defeats this aim. The fact that
+</I>&gt;<i> &gt;&gt; the server declines to serve an HTTP page is irrelevant: it is the
+</I>&gt;<i> &gt;&gt; phisher that will be serving the HTTP page, and he will have no such
+</I>&gt;<i> &gt;&gt; compunction.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; The traditional fix is to have the client require HTTPS, which the
+</I>&gt;<i> &gt;&gt; MitM is powerless to interfere with. Upgrades would work fine if the
+</I>&gt;<i> &gt;&gt; HTTPS protocol said &quot;connect on port 80, ask for an upgrade, and if
+</I>&gt;<i> &gt;&gt; you don't get it, fail&quot;, however as it is upgrades work at the behest
+</I>&gt;<i> &gt;&gt; of the server. And therefore don't work.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Even without an active attacker, this is a problem if there is
+</I>&gt;<i> &gt; sensitive information in the request, since that will generally
+</I>&gt;<i> &gt; be transmitted prior to discovering the server can upgrade.
+</I>&gt;<i> 
+</I>&gt;<i> Obviously we can fix this at the protocol level.
+</I>&gt;<i> 
+</I>&gt;<i> &gt;&gt; Why don't we? Cost. It takes far more tin to serve HTTPS than HTTP.
+</I>&gt;<i> &gt;&gt; Even really serious modern processors can only handle a few thousand
+</I>&gt;<i> &gt;&gt; new SSL sessions per second. New plaintext sessions can be dealt with
+</I>&gt;<i> &gt;&gt; in their tens of thousands.
+</I>&gt;<i> &gt;&gt;
+</I>&gt;<i> &gt;&gt; Perhaps we should focus on this problem: we need cheap end-to-end
+</I>&gt;<i> &gt;&gt; encryption. HTTPS solves this problem partially through session
+</I>&gt;<i> &gt;&gt; caching, but it can't easily be shared across protocols, and sessions
+</I>&gt;<i> &gt;&gt; typically last on the order of five minutes, an insanely conservative
+</I>&gt;<i> &gt;&gt; figure.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Session caches are often dialed this low, but it's not really necessary
+</I>&gt;<i> &gt; in most applications. First, a session cache entry isn't really that
+</I>&gt;<i> &gt; big. It easily fits into 100 bytes on the server, so you can serve
+</I>&gt;<i> &gt; a million concurrent user for a measly 100M.
+</I>&gt;<i> 
+</I>&gt;<i> But if the clients drop them after five minutes, this gets you
+</I>&gt;<i> nowhere.
+</I>
+Agreed. I thought we were contemplating protocol changes in
+any case, so I figured having clients just use a longer session
+cache (5 minutes is silly for a client anyway, since the amount
+of memory consumed on the client is miniscule) wasn't much
+of an obstacle.
+
+
+&gt;<i> BTW, sessions are only that small if there are no client
+</I>&gt;<i> certs.
+</I>
+True enough, though that's the common case right now.
+
+
+&gt;<i> &gt; Second, you can use
+</I>&gt;<i> &gt; CSSC/Tickets [RFC5077] to offload all the information onto the client.
+</I>&gt;<i> 
+</I>&gt;<i> Likewise.
+</I>
+Except that CSSC actually looks better when client certs are used, since
+you can offload the entire cert storage to the client, so you get
+more memory savings.
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

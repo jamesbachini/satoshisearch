@@ -1,0 +1,50 @@
+<PRE>&lt;<A HREF="http://news.bbc.co.uk/2/hi/business/7255685.stm">http://news.bbc.co.uk/2/hi/business/7255685.stm</A>&gt;
+
+Excerpt:
+
+    An internal investigation into billions of euros of losses at
+    Societe Generale has found that controls at the French bank
+    &quot;lacked depth&quot;.
+
+    The results of the investigation also show that rogue trades
+    were first made back in 2005.
+
+&lt;<A HREF="http://news.bbc.co.uk/2/hi/business/7256102.stm">http://news.bbc.co.uk/2/hi/business/7256102.stm</A>&gt;
+
+Excerpt:
+
+    Societe Generale made a profit in 2007 despite a trading scandal  
+that
+    cost the bank 4.9bn euros ($7bn; &#163;3.7bn).
+
+    The French bank said it made a net profit of 947m euros for the  
+year,
+    although this was down 82% from 2006.
+
+I think these two things are very interesting from a viewpoint of  
+security and economics. This fellow had been making unauthorized  
+trades for two to three years, and when it all came tumbling down, it  
+knocked off at most 82% of one year's profits. (I say at most because  
+it's reasonable to think that in a year of subprime issues, they'd  
+have been down 30-50%.)
+
+Compare and contrast with Nick Leeson's sinking of Baring's, which was  
+a mere $1.4bn. We can even double-ish that to say $3bn to account for  
+the intervening time.
+
+Both cases were unauthorized trades spinning out of control in  
+attempts to cover small losses, but Baring's was sunk for the  
+(adjusted) $3bn and SocGen merely loses 80% of one year's profits at  
+$5bn.
+
+Does this suggest that what is really needed is a way to detect losses  
+that could spin out of control before they do, as opposed to direct  
+security mechanisms?
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

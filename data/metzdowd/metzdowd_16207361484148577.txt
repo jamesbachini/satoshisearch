@@ -1,0 +1,23 @@
+<PRE>&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; writes:
+
+&gt;<i>A fascinating IEEE Spectrum article on the incident in which lawful intercept
+</I>&gt;<i>facilities were hacked to permit the secret tapping of the mobile phones of a
+</I>&gt;<i>large number of Greek government officials, including the Prime Minister:
+</I>
+Some years ago I talked to an ex-GTE person about law enforcement requiring
+intercept capabilities to be built into phone switches.  His comments about
+their approach to security (which he was responsible for) was: &quot;They were
+absolutely clueless, they assumed you could put 'Police line do not cross'
+tape on the intercept portions and everyone would dutifully keep out&quot;.  He'd
+left by the time it was implemented, but since there was never any significant
+budget allocated to securing the intercept capabilities the impression I got
+was that it only had whatever the developers could bolt on with the least cost
+and effort.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

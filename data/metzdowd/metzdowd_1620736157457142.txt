@@ -1,0 +1,14 @@
+<PRE>
+&gt;<i> Ah, there are some trustworthy photons.  Oops, we can trust them, but
+</I>&gt;<i> we don't know if they are relevant.  Ah, there's a relevant photon....
+</I>
+And we know they are trustworthy photons because they have  
+certificates signed by an accredited third-party boson.
+
+	Jon
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

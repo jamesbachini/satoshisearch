@@ -1,0 +1,27 @@
+<PRE>At 4:27 PM +0200 7/14/08, Florian Weimer wrote:
+&gt;<i>Implementors say that in many cases, their software as it's currently
+</I>&gt;<i>implemented can't take the load.  It's not much worse than web traffic,
+</I>&gt;<i>that's why I think it can be made to work (perhaps easier with kernel
+</I>&gt;<i>support, who knows).  But code changes are apparently required.
+</I>
+That whole paragraph, taken together, makes no sense.
+
+&gt;<i>And once you need code changes, you can roll out DNSSEC--or some
+</I>&gt;<i>extended query ID with 64 additional bits of entropy.
+</I>
+There is a difference between code changes in the kernel for some 
+systems (which you allude to above), code changes and a universal 
+rollout in all DNS software (which you allude to at the end), and 
+stable rollout of the DNSSEC trust anchor system in every significant 
+zone and all resolvers.
+
+FWIW, only the latter has anything to do with this mailing list...
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

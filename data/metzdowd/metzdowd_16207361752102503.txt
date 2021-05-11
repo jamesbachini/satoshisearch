@@ -1,0 +1,50 @@
+<PRE>If your original mode of operation is secure, then this should be  
+secure.
+
+The reduction:
+
+Consider algorithm A that tries to break the double encryption mode of  
+operation (DM) in the IND-CPA setting.  We can construct an algorithm  
+B that tries to break the original mode of operation (OM) in the IND- 
+CPA setting.  B simply runs A and responds to A's queries by querying  
+B's oracle twice to simulate A's oracle, and returning the result.  B  
+returns the output of A.
+
+If A breaks the encryption, so does B.  So if the original mode is IND- 
+CPA secure, this double encryption should be okay.
+
+Note that the examples given, OCB and CTR with repeated counters, are  
+not IND-CPA secure.
+
+Martin Cochran
+
+On Apr 11, 2008, at 8:30 AM, COMINT wrote:
+&gt;<i> Quick system scenario:
+</I>&gt;<i>
+</I>&gt;<i> You have packet [A].
+</I>&gt;<i>
+</I>&gt;<i> It gets encrypted using an AES algo in a particular mode and we are
+</I>&gt;<i> left with [zA].
+</I>&gt;<i>
+</I>&gt;<i> More data [B] is added to that encrypted packet.
+</I>&gt;<i>
+</I>&gt;<i> Now I have [zA]+[B] in one packet and I re-encrypt it with the same
+</I>&gt;<i> algo/key/mode.
+</I>&gt;<i>
+</I>&gt;<i> Have I just compromised the security somehow? I wasn't aware of
+</I>&gt;<i> anything but something about this double encryption made something
+</I>&gt;<i> ring in my mind so I wanted to double check...
+</I>&gt;<i>
+</I>&gt;<i> Many thanks,
+</I>&gt;<i>
+</I>&gt;<i> Mr Pink
+</I>&gt;<i>
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

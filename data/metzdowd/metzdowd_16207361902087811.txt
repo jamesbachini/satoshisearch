@@ -1,0 +1,33 @@
+<PRE>On Thu, 18 Sep 2008 17:18:00 +1200
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pgut001 at cs.auckland.ac.nz</A> (Peter Gutmann) wrote:
+
+&gt;<i> - Use TLS-PSK, which performs mutual auth of client and server
+</I>&gt;<i> without ever communicating the password.  This vastly complicated
+</I>&gt;<i> phishing since the phisher has to prove advance knowledge of your
+</I>&gt;<i> credentials in order to obtain your credentials (there are a pile of
+</I>&gt;<i> nitpicks that people will come up with for this, I can send you a
+</I>&gt;<i> link to a longer writeup that addresses them if you insist, I just
+</I>&gt;<i> don't want to type in pages of stuff here).
+</I>&gt;<i> 
+</I>Once upon a time, this would have been possible, I think.  Today,
+though, the problem is the user entering their key in a box that is (a)
+not remotely forgeable by a web site that isn't using the browser's
+TLS-PSK mechanism; and (b) will *always* be recognized by users, even
+dumb ones.  Today, sites want *pretty* login screens, with *friendly*
+ways to recover your (or Palin's) password, and not just generic grey
+boxes.  Then imagine the phishing page that displays an artistic but
+purely imaginary &quot;login&quot; screen, with a message about &quot;NEW!  Better
+naviation on our login page!&quot;
+
+If this had been done in the beginning, before users -- and web site
+designers, and browser vendors -- were mistrained, it might have
+worked.  Now, though?  I'm skeptical.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

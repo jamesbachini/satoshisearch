@@ -1,0 +1,34 @@
+<PRE>[Moderator's note: Please do not top post. --Perry]
+
+Here's another approach to password authenticated key exchange with similar security claims. The underlying mechanism is under consideration for inclusion in by the 802.11s group in IEEE:
+
+<A HREF="http://www.ietf.org/internet-drafts/draft-harkins-emu-eap-pwd-01.txt">http://www.ietf.org/internet-drafts/draft-harkins-emu-eap-pwd-01.txt</A>
+
+
+
+-----Original Message-----
+&gt;<i>From: &quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt;
+</I>&gt;<i>Sent: May 30, 2008 2:27 PM
+</I>&gt;<i>To: Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt;
+</I>&gt;<i>Cc: Cryptography &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+</I>&gt;<i>Subject: Re: Unpatented PAKE!
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>Ben Laurie &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>&gt; writes:
+</I>&gt;&gt;<i> <A HREF="http://grouper.ieee.org/groups/1363/passwdPK/submissions/hao-ryan-2008.pdf">http://grouper.ieee.org/groups/1363/passwdPK/submissions/hao-ryan-2008.pdf</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> At last.
+</I>&gt;<i>
+</I>&gt;<i>See also:
+</I>&gt;<i>
+</I>&gt;<i><A HREF="http://www.lightbluetouchpaper.org/2008/05/29/j-pake/">http://www.lightbluetouchpaper.org/2008/05/29/j-pake/</A>
+</I>&gt;<i>
+</I>&gt;<i>Looks quite interesting indeed.
+</I>&gt;<i>
+</I>&gt;<i>Perry
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

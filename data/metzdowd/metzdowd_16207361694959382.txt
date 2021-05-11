@@ -1,0 +1,53 @@
+<PRE>Guus Sliepen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">guus at sliepen.org</A>&gt; writes:
+
+&gt;<i>Peter sent us his write-up up via private email a few days before he posted
+</I>&gt;<i>it to this list (which got it on Slashdot). I had little time to think about
+</I>&gt;<i>the issues he mentioned before his write-up became public.
+</I>
+I should provide some background for the writeup, it started when someone sent
+me a link to some VPN software they were using and asked whether it was
+actually secure.  I looked at it, found that it was, well, pretty awful, and
+told them so.
+
+So they sent me a link to another VPN app.  I had a look at it and it was just
+as bad.
+
+By this time it'd turned into an ongoing discussion/attempt to track down some
+sort of decent easy-to-use secure-VPN app.  The more we found, the more
+discouraged I became.  Initially we'd tried to contact developers but didn't
+get much (if any) response, so that towards the end (after getting to the n-th
+broken VPN app), to quote the VAX assembler manual, &quot;little sympathy was
+extended&quot;.  After the initial writeup ended up on Slashdot I did a bit more
+googling and found out that some of the problems had been pointed out by
+others years before I noted them with no action from the application authors
+to fix anything.  This, again, didn't inspire much confidence.
+
+In terms of problems, it wasn't just the homebrew crypto mechanisms, there
+were also numerous problems with careless implementations.  One thing that was
+very common was to find very little error- or sanity-checking.  Function
+return calls weren't checked, critical errors like crypto failures were logged
+but the app continued anyway (!!), operations were assumed to have succeeded
+at all times, even minor things like checking for an error return with a check
+for '== -1' when the function could also fail with a return status of zero (so
+only some failures were caught and the code could continue with ininitialised
+crypto), the list just went on and on.
+
+&gt;<i>When tinc 2.0 will ever come out (unfortunately I don't have a lot of time to
+</I>&gt;<i>work on it these days), it will probably use the GnuTLS library and
+</I>&gt;<i>authenticate and connect daemons with TLS. For performance reasons, you want
+</I>&gt;<i>to tunnel network packets via UDP instead of TCP, so hopefully there is a
+</I>&gt;<i>working DTLS implementation as well then.
+</I>
+I think OpenVPN took the right approach here, they took the part of IPsec that
+works well (the ESP transport mechanism) and bolted on the TLS handshake to
+replace IKE (DTLS has only appeared quite recently).  They didn't have to
+invent their own mechanisms for anything, but took tried-and-tested crypto
+mechanisms and code and just went with that.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

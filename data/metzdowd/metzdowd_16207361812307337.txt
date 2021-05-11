@@ -1,0 +1,51 @@
+<PRE>In the essay &quot;Better Than Free&quot;, Kevin Kelly debates which concepts hold 
+value online, and how to monetize those values. See 
+www.kk.org/thetechnium/archives/2008/01/better_than_fre.php
+
+Kelly's point can be very useful: *When copies are free, you need to 
+sell things which can not be copied.*
+
+The problem that I see and present to this list is when he discusses 
+qualities that can't be copied and considers &quot;trust&quot; as something that 
+cannot be copied.
+
+Well, in the digital economy we had to learn how to copy trust and we 
+did. For example, SSL would not work if trust could not be copied.
+
+How do we copy trust? By recognizing that because trust cannot be 
+communicated by self-assertions (*), trust cannot be copied by 
+self-assertions either.
+
+To trust something, you need to receive information from sources OTHER 
+than the source you want to trust, and from as many other sources as 
+necessary according to the extent of the trust you want. With more trust 
+extent, you are more likely to need more independent sources of 
+verification.
+
+To copy trust, all you do is copy the information from those channels in 
+a verifiable way and add that to the original channel information. We do 
+this all the time in scientific work: we provide our findings, we 
+provide the way to reproduce the findings, and we provide the published 
+references that anyone can verify.
+
+To copy trust in the digital economy, we provide  digital signatures 
+from one or more third-parties that most people will trust.
+
+This is how SSL works. The site provides a digital certificate signed by 
+a CA that most browsers trust, providing an independent channel to 
+verify that the web address is correct -- in addition to what the 
+browser's location line says.
+
+Cheers,
+Ed Gerck
+
+(*) &quot;Trust as qualified reliance on information&quot; in 
+<A HREF="http://nma.com/papers/it-trust-part1.pdf">http://nma.com/papers/it-trust-part1.pdf</A> and
+Digital Certificates: Applied Internet Security by J. Feghhi, J. Feghhi 
+and P. Williams, Addison-Wesley, ISBN 0-20-130980-7, 1998.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

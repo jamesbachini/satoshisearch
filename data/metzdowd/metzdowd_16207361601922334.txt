@@ -1,0 +1,26 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">auto37159 at hushmail.com</A> wrote:
+&gt;<i> Maybe this is off topic, but I think it does relate to the 
+</I>&gt;<i> implementation of cryptography.
+</I>&gt;<i> 
+</I>&gt;<i> I stumbled across this filing:  
+</I>&gt;<i> <A HREF="http://static.bakersfield.com/smedia/2007/09/25/15/steroids.source.p">http://static.bakersfield.com/smedia/2007/09/25/15/steroids.source.p</A>
+</I>&gt;<i> rod_affiliate.25.pdf
+</I>&gt;<i> 
+</I>&gt;<i> relating to a drug case where the defendant and others used 
+</I>&gt;<i> Hushmail.
+</I>
+For an earlier case where the defendents used Hushmail, we have:
+
+<A HREF="http://www.news.com/8301-10784_3-9741357-7.html">http://www.news.com/8301-10784_3-9741357-7.html</A>
+
+Posted in July by Declan McCullagh of Politech fame....
+
+I suspect we are just seeing the same invasive keylogging techniques 
+trickling down to steroid abuse as have been previously used for more 
+high profile drug barons....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

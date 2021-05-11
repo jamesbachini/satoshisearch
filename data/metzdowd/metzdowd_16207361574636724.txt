@@ -1,0 +1,68 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">travis+ml-cryptography at subspacefield.org</A> wrote:
+&gt;<i> On Mon, May 21, 2007 at 04:32:10PM -0400, Victor Duchovni wrote:
+</I>&gt;&gt;<i> On Mon, May 21, 2007 at 02:44:28PM -0400, Perry E. Metzger wrote:
+</I>&gt;&gt;&gt;<i> My take: clearly, 1024 bits is no longer sufficient for RSA use for
+</I>&gt;&gt;&gt;<i> high value applications, though this has been on the horizon for some
+</I>&gt;&gt;&gt;<i> time. Presumably, it would be a good idea to use longer keys for all
+</I>&gt;&gt;&gt;<i> applications, including &quot;low value&quot; ones, provided that the slowdown
+</I>&gt;&gt;&gt;<i> isn't prohibitive. As always, I think the right rule is &quot;encrypt until
+</I>&gt;&gt;&gt;<i> it hurts, then back off until it stops hurting&quot;...
+</I>&gt;&gt;<i> When do the Certicom patents expire? I really don't see ever longer RSA
+</I>&gt;&gt;<i> keys as the answer, and the patents are I think holding back adoption...
+</I>&gt;<i> 
+</I>&gt;<i> They already expired.
+</I>
+Not true (counterexample: ECMQV).
+
+&gt;<i> Some EC primitives in the latest OpenSSL.
+</I>
+Because various standard forms of EC were never covered by patents.
+This has been rehashed many times, for example:
+<A HREF="http://www.xml-dev.com/pipermail/fde/2007-July/000450.html">http://www.xml-dev.com/pipermail/fde/2007-July/000450.html</A>
+
+&gt;<i> But why assume short ECC keys are stronger than long RSA?
+</I>&gt;<i> 
+</I>&gt;<i> AFAIK, the only advantage of ECC is that the keys are shorter.
+</I>&gt;<i> The disadvantage is that it isn't as well studied.
+</I>
+Again, this is well covered.  The reason is the fundamental difference
+in the performance of the best-known attacks (GNFS vs. Pollard's rho).
+<A HREF="http://www.vaf.sk/download/keysize.pdf">http://www.vaf.sk/download/keysize.pdf</A>
+
+Also, EC public operations are typically faster than private, although
+not on the order of the difference between RSA public and private ops.
+
+&gt;<i> Although every time I read up on ECC, I understand it, and then within
+</I>&gt;<i> a few days I don't remember anything about it.  I think they teflon
+</I>&gt;<i> coated those ideas somehow, because they don't stick.
+</I>&gt;<i> 
+</I>&gt;&gt;<i> With EECDH one can use ECDH handshakes signed with RSA keys, but that
+</I>&gt;&gt;<i> does not really address any looming demise of 1024 bit RSA.
+</I>&gt;<i> 
+</I>&gt;<i> Why can't they do something like El-Gamal?
+</I>&gt;<i> 
+</I>&gt;<i> I'm not comfortable with RSA somehow.  It seems fundamentally more
+</I>&gt;<i> complicated to me than DLP, and it's hard to get right - look at how
+</I>&gt;<i> many things there are in the PKCS for it.
+</I>
+The RSA or EC primitives are *not* usable cryptographic schemes by
+themselves, thus it isn't fair to compare them this way (RSA+PKCS#1 !=
+EC point multiplication).
+
+ECDSA, for example, is intentionally constrained to be signing-only and
+the hash signed is a fixed size.  It's more fair to compare RSA+PKCS#1
+with EC+DSA/DH.  In that sense, I think the complexity of implementation
+is similar.
+
+I'm not saying that one of these schemes is better than the other.  They
+each have their own tradeoffs.  I just object to your methodology of
+claiming RSA is fundamentally more problematic than EC.
+
+-- 
+Nate
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

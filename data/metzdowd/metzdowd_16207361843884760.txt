@@ -1,0 +1,139 @@
+<PRE>
+On Jul 8, 2008, at 2:21 PM, RISKS List Owner wrote:
+
+&gt;<i> Date: Thu, 03 Jul 2008 11:06:12 -0800
+</I>&gt;<i> From: Rob Slade &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rmslade at shaw.ca</A>&gt;
+</I>&gt;<i> Subject: REVIEW: &quot;The dotCrime Manifesto&quot;, Phillip Hallam-Baker
+</I>&gt;<i>
+</I>&gt;<i> BKDCRMNF.RVW   20080317
+</I>&gt;<i>
+</I>&gt;<i> &quot;The dotCrime Manifesto&quot;, Phillip Hallam-Baker, 2008, 0-321-50358-9,
+</I>&gt;<i> U$29.99/C$32.99
+</I>&gt;<i> %A   Phillip Hallam-Baker dotcrimemanifesto.com <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hallam at gmail.com</A>
+</I>&gt;<i> %C   P.O. Box 520, 26 Prince Andrew Place, Don Mills, Ontario  M3C 2T8
+</I>&gt;<i> %D   2008
+</I>&gt;<i> %G   978-0-321-50358-9 0-321-50358-9
+</I>&gt;<i> %I   Addison-Wesley Publishing Co.
+</I>&gt;<i> %O   U$29.99/C$32.99 416-447-5101 fax: 416-443-0948 800-822-6339
+</I>&gt;<i> %O  <A HREF="http://www.amazon.com/exec/obidos/ASIN/0321503589/robsladesinterne">http://www.amazon.com/exec/obidos/ASIN/0321503589/robsladesinterne</A>
+</I>&gt;<i>  <A HREF="http://www.amazon.co.uk/exec/obidos/ASIN/0321503589/robsladesinte-21">http://www.amazon.co.uk/exec/obidos/ASIN/0321503589/robsladesinte-21</A>
+</I>&gt;<i> %O   <A HREF="http://www.amazon.ca/exec/obidos/ASIN/0321503589/robsladesin03-20">http://www.amazon.ca/exec/obidos/ASIN/0321503589/robsladesin03-20</A>
+</I>&gt;<i> %O   Audience n+ Tech 2 Writing 2 (see revfaq.htm for explanation)
+</I>&gt;<i> %P   415 p.
+</I>&gt;<i> %T   &quot;The dotCrime Manifesto: How to Stop Internet Crime&quot;
+</I>&gt;<i>
+</I>&gt;<i> In the preface, the author notes that network and computer crime is a
+</I>&gt;<i> matter of people, not of technology.  However, he also notes that
+</I>&gt;<i> changes to the network infrastructure, as well as improvements in
+</I>&gt;<i> accountability, would assist in reducing user risk on the net.
+</I>&gt;<i>
+</I>&gt;<i> Section one enlarges on the theme that people are more important than
+</I>&gt;<i> machines or protocols.  Chapter one looks at the motive for Internet  
+</I>&gt;<i> crime
+</I>&gt;<i> (money, just like non-computer crime), and repeats the motifs of the
+</I>&gt;<i> preface.  The text goes on to list various categories and examples of
+</I>&gt;<i> network fraud.  The content of chapter two is very interesting, but  
+</I>&gt;<i> it is
+</I>&gt;<i> hard to find a central thread.  Overall it appears to be saying that
+</I>&gt;<i> computer criminals are not the masterminds implied by media  
+</I>&gt;<i> portrayals, but
+</I>&gt;<i> that the problem of malfeasance is growing and needs to be seriously
+</I>&gt;<i> addressed.  What Hallam-Baker seems to mean by &quot;Learning from  
+</I>&gt;<i> Mistakes,&quot; in
+</I>&gt;<i> chapter three, is that security professionals often rely too much on  
+</I>&gt;<i> general
+</I>&gt;<i> principles, rather than accepting a functional, if imperfect,  
+</I>&gt;<i> solution that
+</I>&gt;<i> reduces the severity of the problem.  Chapter four presents the  
+</I>&gt;<i> standard (if
+</I>&gt;<i> you'll pardon the expression) discussion of change and the  
+</I>&gt;<i> acceptance of new
+</I>&gt;<i> technologies.  A process for driving change designed to improve the  
+</I>&gt;<i> Internet
+</I>&gt;<i> infrastructure is proposed in chapter five.
+</I>&gt;<i>
+</I>&gt;<i> Section two examines ways to address some of the major network crime  
+</I>&gt;<i> risks.
+</I>&gt;<i> Chapter six notes the problems with many common means of handling  
+</I>&gt;<i> spam.
+</I>&gt;<i> SenderID and SPF is promoted in chapter seven (without expanding the  
+</I>&gt;<i> acronym
+</I>&gt;<i> to Sender Policy Framework anywhere in the book that I could find).
+</I>&gt;<i> Phishing, and protection against it, is discussed in chapter eight.   
+</I>&gt;<i> Chapter
+</I>&gt;<i> nine is supposed to deal with botnets, but concentrates on trojans and
+</I>&gt;<i> firewalls (although I was glad to see a mention of &quot;reverse  
+</I>&gt;<i> firewalls,&quot; or
+</I>&gt;<i> egress scanning, which is too often neglected).
+</I>&gt;<i>
+</I>&gt;<i> Section three details the security tools of cryptography and trust.   
+</I>&gt;<i> Chapter
+</I>&gt;<i> ten outlines some history and concepts of cryptography.  Trust, in  
+</I>&gt;<i> chapter
+</I>&gt;<i> eleven, is confined to the need for aspects of public key  
+</I>&gt;<i> infrastructure
+</I>&gt;<i> (PKI).
+</I>&gt;<i>
+</I>&gt;<i> Section four presents thoughts on accountability.  Secure transport,  
+</I>&gt;<i> in
+</I>&gt;<i> chapter twelve, starts with thoughts on SSL (Secure Sockets Layer),  
+</I>&gt;<i> and then
+</I>&gt;<i> moves to more characteristics of certificates and the Extended  
+</I>&gt;<i> Verification
+</I>&gt;<i> certificates.  (The promotion of Verisign, infrequent and somewhat  
+</I>&gt;<i> amusing
+</I>&gt;<i> in the earlier chapters is, by this point in the book, becoming  
+</I>&gt;<i> increasingly
+</I>&gt;<i> annoying.  The author is also starting to make more subjective  
+</I>&gt;<i> assertions,
+</I>&gt;<i> such as boosting the trusted computing platform initiative.)  Domain  
+</I>&gt;<i> Keys
+</I>&gt;<i> Identified Mail (DKIM) is the major technology promoted in support  
+</I>&gt;<i> of secure
+</I>&gt;<i> messaging, in chapter thirteen.  Chapter fourteen, about secure  
+</I>&gt;<i> identity,
+</I>&gt;<i> has an analysis of a variety of technologies.  (The recommendations  
+</I>&gt;<i> about
+</I>&gt;<i> technologies are supported even less than before, and the work now  
+</I>&gt;<i> starts to
+</I>&gt;<i> sound rather doctrinaire.)  It may seem rather odd to talk about  
+</I>&gt;<i> secure
+</I>&gt;<i> names as opposed to identities, but Hallam-Baker is dealing with  
+</I>&gt;<i> identifiers
+</I>&gt;<i> such as email addresses and domain names in chapter fifteen.  Chapter
+</I>&gt;<i> sixteen looks at various considerations in regard to securing  
+</I>&gt;<i> networks,
+</I>&gt;<i> mostly in terms of authentication.  Random thoughts on operating  
+</I>&gt;<i> system,
+</I>&gt;<i> hardware, or application security make up chapter seventeen.  The  
+</I>&gt;<i> author
+</I>&gt;<i> stresses, in chapter eighteen, that the law, used in conjunction with
+</I>&gt;<i> security technologies, can help in reducing overall threat levels.   
+</I>&gt;<i> Chapter
+</I>&gt;<i> nineteen finishes off the text with a proposed outline of action  
+</I>&gt;<i> that recaps
+</I>&gt;<i> the major points.
+</I>&gt;<i>
+</I>&gt;<i> Hallam-Baker uses a dry wit well, and to good effect in the book.  The
+</I>&gt;<i> humour supports and reinforces the points being made.  So does his
+</I>&gt;<i> extensive and generally reliable knowledge of computer technology and
+</I>&gt;<i> history.  In certain areas the author is either less knowledgeable or
+</I>&gt;<i> careless in his wording, and, unfortunately, the effect is to lessen
+</I>&gt;<i> the reader's confidence in his conclusions.  This is a pity, since
+</I>&gt;<i> Hallam-Baker is championing a number of positions that would promote
+</I>&gt;<i> much greater safety and security on the Internet.  Overall this work
+</I>&gt;<i> is, for the non-specialist, a much-better-than-average introduction to
+</I>&gt;<i> the issue of Internet crime and protection, and is also worth serious
+</I>&gt;<i> consideration by security professionals for the thought-provoking
+</I>&gt;<i> challenges to standard approaches to the problems examined.
+</I>&gt;<i>
+</I>&gt;<i> copyright Robert M. Slade, 2008   BKDCRMNF.RVW   2008031
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rslade at vcn.bc.ca</A>     <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">slade at victoria.tc.ca</A>     <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">rslade at computercrime.org</A>
+</I>&gt;<i> <A HREF="http://victoria.tc.ca/techrev/rms.htm">http://victoria.tc.ca/techrev/rms.htm</A>
+</I>&gt;<i>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

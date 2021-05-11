@@ -1,0 +1,51 @@
+<PRE>Bill Frantz wrote:
+&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A> (Ed Gerck) on Monday, June 2, 2008 wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> To trust something, you need to receive information from sources OTHER 
+</I>&gt;&gt;<i> than the source you want to trust, and from as many other sources as 
+</I>&gt;&gt;<i> necessary according to the extent of the trust you want. With more trust 
+</I>&gt;&gt;<i> extent, you are more likely to need more independent sources of 
+</I>&gt;&gt;<i> verification.
+</I>&gt;<i> 
+</I>&gt;<i> In my real-world experience, this way of gaining trust is only
+</I>&gt;<i> really used for strangers. For people we know, recognition and
+</I>&gt;<i> memory are more compelling ways of trusting.
+</I>
+Recognition = a channel of information
+memory = a channel of information
+
+When you look at trust in various contexts, you will still find the 
+need to receive information from sources OTHER than the source you 
+want to trust. You may use these channels under different names, such 
+as memory which is a special type of output that serves as input at a 
+later point in time.
+
+The distinguishing aspect between information and trust is this: 
+&quot;trust is that which is essential to a communication channel but 
+cannot be transferred from a source to a destination using that 
+channel&quot;. In other words, self-assertions cannot transfer trust. 
+&quot;Trust me&quot; is, actually, a good indication not to trust.
+
+&gt;<i> We can use this recognition and memory in the online world as well.
+</I>&gt;<i> SSH automatically recognizes previously used hosts. Programs such
+</I>&gt;<i> as the Pet Names Tool &lt;<A HREF="http://www.waterken.com/user/PetnameTool/">http://www.waterken.com/user/PetnameTool/</A>&gt;
+</I>&gt;<i> recognize public keys used by web sites, and provide us with a
+</I>&gt;<i> human-recognizable name so we can remember our previous
+</I>&gt;<i> interactions with that web site. Once we can securely recognize a
+</I>&gt;<i> site, we can form our own trust decisions, without the necessity of
+</I>&gt;<i> involving third parties.
+</I>
+Yes, where recognition is the OTHER channel that tells you that the 
+value (given in the original channel) is correct. Just the value by 
+itself is not useful for communicating trust -- you also need 
+something else (eg, a digital sig) to provide the OTHER channel of 
+information.
+
+Cheers,
+Ed Gerck
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

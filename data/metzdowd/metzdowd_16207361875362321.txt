@@ -1,0 +1,24 @@
+<PRE>On Mon, 4 Aug 2008, Stephan Neuhaus wrote:
+&gt;<i> Or better still, make many tests and see if your p-values are
+</I>&gt;<i> uniformly distributed in (0,1). [Hint: decide on a p-value for that
+</I>&gt;<i> last equidistribution test *before* you compute that p-value.]
+</I>
+Of course, there are many tests for goodness of fit (Kolmogorov-
+Smirnov, chi-square, etc.) and also you can calculate for a given
+number of tests how many tests should have p-value below the
+significance level. And after making hundred tests you ask yourself
+what you gonna do once your test gives &quot;good uniformity&quot;, say p-value
+is 0.23, but the proportion is 0.95, while the minimum pass rate for
+1% is 0.96.
+
+Only a bad statistician cannot justify any predefined answer :-)
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,44 @@
+<PRE>Hi,
+
+The problem I found (during my research for 
+<A HREF="http://www.cacert.at/svn/sourcerer/CAcert/SecureClient.pdf">http://www.cacert.at/svn/sourcerer/CAcert/SecureClient.pdf</A> )
+for Smartcards and other external devices for secure banking is the following:
+
+About 50% of the online-banking users are doing personal online banking on 
+company PCs, while they are at work. Company PCs have a special property: 
+They are secured against their users. A user can&#180;t attach any device to a 
+company PC that would need a driver installed. 
+So any solution like Smartcard-readers, or USB Tokens that needs any special 
+application or driver will not work for 50% of the online-banking customers.
+(And the banks aren&#180;t that happy about loosing 50% of their customers).
+
+So I would say there are 2 possibilities left:
+
+* An external device, where you have to enter the transaction details a second 
+time to generate some security code
+(Can you show me the user that wants to enter each transaction twice?)
+
+* An external device that lets the user verify the transaction independently 
+from the PC.
+
+The second possiblity has been realized by some european banks now, based on 
+SMS and mobile phones, which sends the important transaction details together 
+with a random authorisation code, that is bound to the transaction in the 
+bank&#180;s database. The user can then verify the transaciton, and then has to 
+enter the authorisation code on the webinterface.
+(And the good thing is that they succeeded to get the usability so good that 
+it&#180;s more convenient than the previous TAN solution, and the cost increase of 
+SMS compared to paper TANs is irrelevant)
+
+So I personally would declare the online-banking problem solved (with SMS as 
+second channel), but I am still searching for solutions for all others, 
+especially non-transactional applications.
+
+Best regards,
+Philipp G&#252;hring
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

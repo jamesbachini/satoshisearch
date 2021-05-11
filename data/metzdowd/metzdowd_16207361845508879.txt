@@ -1,0 +1,113 @@
+<PRE>
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; writes:
+&gt;&gt;<i> In any case, there are a large number of reasons US banks don't
+</I>&gt;&gt;<i> (generally) require or even allow anyone to enter PINs for
+</I>&gt;&gt;<i> authentication over the internet. 
+</I>&gt;<i>
+</I>&gt;<i> Wells Fargo allows PINs for user authentication.
+</I>
+No they don't. The new users of their online system get a temporary
+password by phone or in the mail, and Wells Fargo requires that they
+change it on first log in. The temporaries expire after 30 days,
+too. They don't their bank account numbers as account names,
+either.
+
+Where did you get the idea that they'd use 4-digit PINS from? It is
+totally false.
+
+(Anyone who doesn't believe me can just go through their web site --
+it explains all of this to their customers.)
+
+The system you propose as &quot;safe&quot; isn't used by anyone that I'm aware
+of, and for good reason, too -- people who've done things like that
+have been successfully attacked.
+
+BTW, if anyone was this foolish, the fun you could have would be
+amazing. You could rent a botnet for a few bucks and lock out half the
+customer accounts on the site in a matter of hours. You could ruin
+banks at will. It would be great fun -- only it isn't possible. No one
+is stupid enough to set themselves up for that.
+
+&gt;&gt;<i> I suspect that currently invalid accounts are probably even cheaper
+</I>&gt;&gt;<i> than valid ones
+</I>&gt;<i>
+</I>&gt;<i> we all know that invalid accounts are of no use to attack, so this
+</I>&gt;<i> issue is not relevant here.
+</I>
+You would use the invalid accounts to reverse engineer the account
+number format so you don't have to do exhaustive search. Any
+practitioner in this field can tell you how useful intelligence like
+that would be. I suggest you consult one.
+
+&gt;<i> Dan's question has to do with how to protect online access from
+</I>&gt;<i> multiple tries on the account number for a given PIN. Of course, the
+</I>&gt;<i> reverse (repeated use of the same account for different wrong PINs)
+</I>&gt;<i> can easily trigger a block.
+</I>&gt;<i>
+</I>&gt;<i> As I replied to Dan, a counter-measure is for the server to
+</I>&gt;<i> selectively block IP numbers for the /same/ browser and /same/ PIN
+</I>&gt;<i> after 4 or 3 wrong attempts.
+</I>
+But in an age where an attacker has millions of IP addresses at their
+disposal thanks to botnets and IP block hijacking and can fake
+anything they like, this is meaningless.
+
+&gt;<i> You present a valid objection in that there are people hijacking huge
+</I>&gt;<i> IP blocks for brief periods for spamming. People also hijack vast
+</I>&gt;<i> numbers of zombie machines. Either technology is easily used to
+</I>&gt;<i> prevent block-by-IP from doing squat for you, you wrote.
+</I>&gt;<i>
+</I>&gt;<i> Not so fast.  Block-by-IP is not that useless. Many anti-spam
+</I>&gt;<i> blacklists use block-by-IP and it works.
+</I>
+It is easy enough to blacklist all of the cable modems in the world
+for SMTP service. ISPs voluntarily list their cable modem and DSL
+blocks. It is a lot harder to explain to people that they can't do
+their at-home banking from home, though. With half the windows boxes
+in the world as part of botnets, and with dynamic address assignment,
+it is hard to know who's computer *wouldn't* be on the blacklists
+anyway...
+
+&gt;<i> Further, if the PIN is held constant (eg, a common PIN such as 1111)
+</I>&gt;<i> and the IP as well as the browser identification are changed while
+</I>&gt;<i> different account numbers are targeted, this pattern can trigger a
+</I>&gt;<i> block by that PIN that repeatedly (3 or more times) causes an access
+</I>&gt;<i> error, for any IP number and browser. Excessive errors/minute can
+</I>&gt;<i> also trigger inspection and blocks.
+</I>
+You have 10,000 PINs, and 10 million customers logging in a day. Every
+PIN that gets attacked means a thousand of those customers can't get
+to their account. They call up, which costs you $10 to $100 a pop in
+customer service. So for every PIN someone tries hacking, you take a
+$10,000 to $100,000 customer service cost. Since there are thousands
+of PINs that will be attacked a day, this adds up fast, and you find
+more or less none of your customers able to log in and almost all of
+them angry as all hell at you.
+
+Ed, there is a reason no one in the US, not even Wells Fargo which you
+falsely cited, does what you suggest. None of them use 4 digit PINs,
+none of them use customer account numbers as account names. (It is
+possible SOMEONE out there does this, but I'm not aware of it.)  You
+would impose enormous costs on yourself for almost no advantage. It is
+trivial to make people use passwords that are harder to guess than a 4
+digit number, so why cost yourself your whole retail operation for no
+perceivable benefit?
+
+Banks aren't stupid. They want to minimize their costs, not increase
+them. Most banks aren't even happy using PASSWORDS any more -- they're
+using &quot;pick the face&quot; systems, issuing Secure IDs, and I understand
+some European banks even do stuff like mailing people cards with one
+time passwords. The ones still using passwords are seriously looking
+at the alternatives, though many of them consider the current losses
+sufficiently low that they're not rushing.
+
+I'll give you a chance for one more reply, but you might want to quit
+while you're behind. I suspect you won't though.
+
+Perry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

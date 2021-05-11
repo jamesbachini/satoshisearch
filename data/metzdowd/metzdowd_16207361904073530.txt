@@ -1,0 +1,33 @@
+<PRE>On Mon, Sep 08, 2008 at 04:16:46PM +0100, Darren J Moffat wrote:
+|<i> 
+</I>|<i> I believe the only way both of these highly dubious deployment practices 
+</I>|<i> will be stamped out is when the browsers stop allowing users to see such 
+</I>|<i> web pages. So that there becomes a directly attributable financial 
+</I>|<i> impact to the sites that deploy in that way.
+</I>|<i> 
+</I>|<i> As much as I like Firefox &amp; Safari [ the only two browsers I use now ] 
+</I>|<i> this has to be led by Microsoft with Internet Explorer since that will 
+</I>|<i> have the biggest impact, given IE 8 is in beta this seems like a perfect 
+</I>|<i> opportunity to get this in as a change for the next version.
+</I>
+Not speaking for my employer here.
+
+Most browser vendors try to display pages as best they can.  Both end
+users and businesses get very upset at browser makers who push
+security improvements by breaking existing practices.
+
+If such changes were to happen, then they should either be emergency
+(seems unlikely, given how long this has been around) or planned and
+communicated.  Adding something high impact after beta 2 doesn't seem
+like good communication.
+
+What makes now the perfect time to address an issue which has been
+present for quite soem time?
+
+Adam
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

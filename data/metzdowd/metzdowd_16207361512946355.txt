@@ -1,0 +1,48 @@
+<PRE>|<i> Jerry/Hal,
+</I>|<i> 
+</I>|<i> This lemon-car analogy is interesting.
+</I>|<i> 
+</I>|<i> One sidebar that might be worked into the argument is the
+</I>|<i> apparently widespread side-line business where a car is
+</I>|<i> auctioned on eBay but before the sale is consumated the
+</I>|<i> buyer engages a mechanic to check the car out pre-sale.
+</I>|<i> The car and the mechanic are generally remote from the
+</I>|<i> buyer but local to each other, and the mechanic is paid
+</I>|<i> by the prospective buyer.  The prospective buyer does not
+</I>|<i> know the mechanic and is instead relying on some (to me)
+</I>|<i> unknown combination of eBay endorsement and personal
+</I>|<i> reputation.  Note that all of what I just said is hearsay,
+</I>|<i> though my office-mate says that he has bought three cars
+</I>|<i> by this method.  It almost causes me to say &quot;relying party&quot;
+</I>|<i> out loud...
+</I>|<i> 
+</I>|<i> If this idea is a rathole, then my fault and my apology.
+</I>The whole eBay model hearken's back to traditional approaches
+centering on trusted third parties and &quot;letters of introduction&quot;,
+which morph into the eBay reputation system.  Not too surprising -
+the problems are the same:  Dealing at very-long-arms-length with
+others with whom you may never establish an ongoing relationship -
+so that the traditional controls based on trade-offs between
+today's gain and lost future dealings with the cheated customer
+don't apply.
+
+eBay is by no means perfect, but their reputation system does
+surprisingly well.  It's not something that is likely to warm a
+true anarchist's/pure capitalist's heart, though:  It works
+because eBay - a government in most practical senses - polices
+quite aggressively and sometimes arbitrarily.
+
+I wonder if there's a business to be made in running an eBay-style
+reputation system for web sites in general....
+
+							-- Jerry
+|<i> --dan
+</I>|<i> 
+</I>|<i> 
+</I>|<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

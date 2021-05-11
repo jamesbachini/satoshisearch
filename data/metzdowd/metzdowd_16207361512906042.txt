@@ -1,0 +1,19 @@
+<PRE><A HREF="http://www.tgdaily.com/content/view/33425/118/">http://www.tgdaily.com/content/view/33425/118/</A>
+
+&quot;Ann Arbor (MI) - University of Michigan scientists have discovered a
+breakthrough way to utilize light in cryptography. The new technique
+can crack even complex codes in a matter of seconds. Scientists believe
+this technique offers much advancement over current solutions and could
+serve to foil national and personal security threats if employed.&quot;...
+
+I'll let those who know more physics comment in detail; from reading
+the article, it appears to lead to a way to construct quantum computers.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

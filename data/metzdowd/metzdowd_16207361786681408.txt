@@ -1,0 +1,118 @@
+<PRE>&gt;<i> On Sun, May 18, 2008 at 4:55 PM, &quot;Hal Finney&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">hal at finney.org</A>&gt; wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> A simple trick can be used to help immunize DSA signatures against
+</I>&gt;&gt;<i> these kinds of failures. I first learned of this idea many years ago
+</I>&gt;&gt;<i> from Phil Zimmermann, and a varient has been used for a long time in
+</I>&gt;&gt;<i> PGP and probably other code, but aparently not OpenSSL. The idea is
+</I>&gt;&gt;<i> to base the random k not just on the output of your RNG, but also on
+</I>&gt;&gt;<i> the private key x. Something like:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> k = hash (x, rng()).
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Of course it is still necessary that k be uniformly distributed mod q
+</I>&gt;&gt;<i> (the DSA subgroup prime order), so this can't be just a straight hash.
+</I>&gt;&gt;<i> It might be a separate PRNG instance which gets seeded with the data
+</I>&gt;&gt;<i> values shown.  But the idea is to mix in the secret key value, x, in
+</I>&gt;&gt;<i> addition to data from the RNG.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> I've used this idea before, although in the form of using the private
+</I>&gt;<i> key as part of the PRNG seed -- which isn't of much use if the PRNG
+</I>&gt;<i> ignores its seeding as in this case.  However, even the form
+</I>&gt;<i> 
+</I>&gt;<i>     k = hash (x, rng())
+</I>&gt;<i> 
+</I>&gt;<i> isn't good enough if the PRNG is sufficiently broken.  The Debian code
+</I>&gt;<i> generated an output that was not merely predictable, but also prone to
+</I>&gt;<i> repetition if you run a binary multiple times.  With typically just
+</I>&gt;<i> 2^15 different byte streams from the PRNG, by the birthday paradox
+</I>&gt;<i> you'd have to expect to have been reusing some k after around 2^8
+</I>&gt;<i> iterations or so.  So your DSA key would still be at risk!
+</I>
+While mixing in more entropy is a good idea in general, I'd like to 
+caution against just throwing things in without knowing the full design 
+end-to-end.  For example, if the environment is an embedded device and 
+hash() introduces visible power or timing side channels, you may not 
+want to do this exact construction.  Most of the time it is fine, though.
+
+DSA is especially vulnerable to all kinds of subtleties with k.  As you 
+point out, it is fatal to replay k for a given private key x.  But even 
+worse, it is fatal if some small number of bits of k are *predictable*. 
+  This means even if the output wasn't completely predictable, but had 
+merely become somewhat predictable, it would still be exploitable.
+
+<A HREF="http://crypto.stanford.edu/~dabo/abstracts/dhmsb.html">http://crypto.stanford.edu/~dabo/abstracts/dhmsb.html</A>
+<A HREF="http://cat.inist.fr/?aModele=afficheN&amp;cpsidt=13872268">http://cat.inist.fr/?aModele=afficheN&amp;cpsidt=13872268</A>
+
+Mark Marson at Cryptography Research has done some great work 
+implementing these attacks.  They're quite practical.  I hope he'll give 
+a public talk about it some day.
+
+&gt;<i> You could also make k message-dependant -- i.e., feed both x and k
+</I>&gt;<i> into the hash function:
+</I>&gt;<i> 
+</I>&gt;<i>     k = hash (x, rng(), m)
+</I>&gt;<i> 
+</I>&gt;<i> This avoids that problem, and is likely to remain unbreakable even if
+</I>&gt;<i> rng() returns just some constant.  However, then you lose one
+</I>&gt;<i> advantage of DSA, namely being able to do most of the computation in
+</I>&gt;<i> advance, before you've even seen the message to be signed: If you've
+</I>&gt;<i> obtained k and done the DSA exponentiation beforehand, you can create
+</I>&gt;<i> signatures almost instantaneously; but this won't work if k depends on
+</I>&gt;<i> the message.
+</I>
+This assumes the message always changes.  Isn't this just getting back 
+to padding schemes, where you build something like PSS under your DSA to 
+protect against signing identical messages?
+
+Since it appears some OpenSSL people are on this list, I'd like to ask 
+for more openness in the PRNG design and seeding.  The current code is 
+crufty and arbitrary.  Some minor but careful additions could have 
+helped reveal this bug earlier.
+
+The code should generate warnings in the case of PURIFY being defined. 
+A comment should explain the security relevance of the seeding.  For 
+example:
+
+#ifndef PURIFY
+     /* SECURITY: add entropy to our pool.  This is essential. (more) */
+     seed_PRNG(buf);
+#else
+     #warning PRNG seeding disabled for Purify, do NOT use PRNG output!
+     printf(&quot;WARNING: PRNG seeding disabled for Purify, do NOT use PRNG 
+output!\n&quot;);
+#endif
+
+Also, there should be a TEST_MODE_INSECURE flag that outputs a debug 
+print of each time the PRNG is seeded and the data itself.  This should 
+be run on a regular basis as part of automated tests.  For example:
+
+init()
+{
+#ifdef TEST_MODE_INSECURE
+#warning PRNG seeding debug prints enabled, do NOT use PRNG output!
+printf(&quot;WARNING: PRNG seeding debug prints enabled, do NOT use PRNG 
+output!\n&quot;);
+#endif
+}
+
+seed_PRNG(src_name, buf)
+{
+#ifdef TEST_MODE_INSECURE
+printf(&quot;PRNG seeding from %s: %s\n&quot;, src_name, hex_dump(buf));
+#endif
+
+     ... do seeding ...
+}
+
+Anyway, I hope this incident helps us all add more openness and paranoia 
+to our designs.
+
+-- 
+Nate
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,43 @@
+<PRE><A HREF="http://www.airtightnetworks.net/knowledgecenter/wep-caffelatte.html">http://www.airtightnetworks.net/knowledgecenter/wep-caffelatte.html</A>
+
+
+The Caffe Latte attack debunks the age old myth that to crack WEP, the
+attacker needs to be in the RF vicinity of the authorized network,
+with at least one functional AP up and running. We demonstrate that it
+is possible to retrieve the WEP key from an isolated Client - the
+Client can be on the Moon! - using a new technique called &quot;AP-less WEP
+Cracking&quot;. With this discovery Pen-testers will realize that a hacker
+no longer needs to drive up to a parking lot to crack
+WEP. Corporations still stuck with using WEP, will realize that their
+WEP keys can be cracked while one of their employees is transiting
+through an airport, having a cup of coffee, or is catching some sleep
+in a hotel room. Interestingly, Caffe Latte also has a great impact on
+the way Honey-pots work today and takes them to the next level of
+sophistication.
+
+At its core, the attack uses various behavioral characteristics of the
+Windows Wireless stack along with already known flaws in WEP to pull
+off this feat! We have considered all combinations of network
+configurations and shown how it is possible to retrieve the WEP key in
+matter of less than 6 minutes in each case. We exploit the shared key
+authentication flaw and the message modification flaw in 802.11 WEP,
+to send a flood of encrypted ARP requests to the isolated Client. The
+Client replies to these requests with a barrage of encrypted ARP
+responses. We use these ARP responses and plug them into the PTW
+cryptographic attack and recover the WEP key in less than 6
+minutes. It is important to note that though our talk will center on
+wireless Clients which run a Windows operating system, the core idea
+presented can be easily used to find similar attacks for other
+operating systems.
+-- 
+Life would be so much easier if it was open-source.
+&lt;URL:<A HREF="https://www.subspacefield.org/~travis/">https://www.subspacefield.org/~travis/</A>&gt; Eff the ineffable!
+For a good time on my UBE blacklist, email <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">john at subspacefield.org.</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 825 bytes
+Desc: not available
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20071109/66799658/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20071109/66799658/attachment.pgp</A>&gt;
+</PRE>

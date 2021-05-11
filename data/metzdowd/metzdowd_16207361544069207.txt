@@ -1,0 +1,40 @@
+<PRE>Sounds like an interesting idea - using SRAM state as a source of 
+randomness. Any of the folks here willing to comment on this?
+
+Udhay
+
+<A HREF="http://prisms.cs.umass.edu/~kevinfu/papers/holcomb-FERNS-RFIDSec07.pdf">http://prisms.cs.umass.edu/~kevinfu/papers/holcomb-FERNS-RFIDSec07.pdf</A>
+
+Initial SRAM State as a Fingerprint and Source
+of True Random Numbers for RFID Tags
+
+Daniel E. Holcomb, Wayne P. Burleson, and Kevin Fu
+University of Massachusetts, Amherst MA 01002, USA,
+{dholcomb, burleson}@ecs.umass.edu, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">kevinfu at cs.umass.edu</A>
+<A HREF="http://www.rfid-cusp.org/">http://www.rfid-cusp.org/</A>
+
+Abstract.
+
+RFID applications create a need for low-cost security and
+privacy in potentially hostile environments. Our measurements show
+that initialization of SRAM produces a physical fingerprint. We propose
+a system of Fingerprint Extraction and Random Numbers in SRAM
+(FERNS) that harvests static identity and randomness from existing
+volatileCMOSstorage.Theidentityresultsfrommanufacture-timephys-
+icallyrandomdevicethresholdmismatch,andtherandomnumbersresult
+from run-time physically random noise. We use experimental data from
+virtual tags, microcontroller memory, and the WISP UHF RFID tag to
+validate the principles behind FERNS. We show that a 256byte SRAM
+can be used to identify circuits among a population of 160 virtual tags,
+and can potentially produce 128bit random numbers capable of passing
+cryptographic statistical tests.
+
+
+-- 
+((Udhay Shankar N)) ((udhay @ pobox.com)) ((www.digeratus.com))
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,13 @@
+<PRE>What are the rules these days on crypto exports.  Is a review still
+required?  If so, what gets rejected?
+
+Just wondering...  I have people at work ask me what the rules are and I
+have not kept up with them.  If GnuPG can ship, what gets rejected?  Is
+there some magic cryptotech I am not aware of?  (Or is it just theater at
+this point?)
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

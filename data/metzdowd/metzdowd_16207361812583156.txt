@@ -1,0 +1,20 @@
+<PRE>At 11:36 AM -0400 6/1/08, Ivan Krsti&#231; wrote:
+&gt;<i>The easiest thing for people who _do_ care is still running their 
+</I>&gt;<i>own mail server.
+</I>
+Fully agree. You're in control, all the way to root of the box.
+
+&gt;<i>The emergence of reasonably priced VM hosting providers (e.g. 
+</I>&gt;<i>slicehost.com) makes it fairly uncomplicated, modulo initial setup.
+</I>
+And, if you want to host on FreeBSD instead of Linux, see 
+&lt;<A HREF="http://www.rootbsd.net/">http://www.rootbsd.net/</A>&gt;. Same price, good service.
+
+--Paul Hoffman, Director
+--VPN Consortium
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

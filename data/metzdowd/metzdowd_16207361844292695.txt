@@ -1,0 +1,27 @@
+<PRE>On 07/23/2008 12:44 AM, Steven M. Bellovin wrote:
+&gt;&gt;<i> Niels Provos has a web page up with some javascript that automatically
+</I>&gt;&gt;<i> checks if your DNS caching server has been properly patched or not.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> <A HREF="http://www.provos.org/index.php?/pages/dnstest.html">http://www.provos.org/index.php?/pages/dnstest.html</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> It is worth telling people to try.
+</I>&gt;&gt;<i>
+</I>&gt;<i> Those who prefer command lines can try 
+</I>&gt;<i> 
+</I>&gt;<i> 	dig +short porttest.dns-oarc.net TXT
+</I>
+Thanks, that's helpful.
+
+Note that the command-line version accepts the &quot;@server&quot; option,
+which is useful if you have to deal with a mess of primaries, 
+secondaries, forwarders, et cetera:
+
+   dig @NS1 +short porttest.dns-oarc.net TXT
+   dig @NS2 +short porttest.dns-oarc.net TXT
+   dig @NS3 +short porttest.dns-oarc.net TXT
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

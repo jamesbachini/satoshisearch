@@ -1,0 +1,70 @@
+<PRE>On Tue, 17 Jul 2007 13:11:41 -0400 (EDT)
+&quot;Leichter, Jerry&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; wrote:
+
+&gt;<i> 
+</I>&gt;<i> I'd guess that the next step will be in the business community.  All
+</I>&gt;<i> it will take is one case where a deal is visibly lost because of
+</I>&gt;<i> &quot;proven&quot; eavesdropping (&quot;proven&quot; in quotes because it's unlikely that
+</I>&gt;<i> there will really be any proof - just a *perception* of a smoking gun
+</I>&gt;<i> - and in fact it could well be that the trigger case will really be
+</I>&gt;<i> someone covering his ass over a loss for entirely different reasons)
+</I>&gt;<i> and all of a sudden there will be a demand for strong crypto on every
+</I>&gt;<i> Blackberry phone link. Things have a way of spreading from there:  If
+</I>&gt;<i> the CEO's need this, then maybe I need it, too.  If &quot;it&quot; is expensive
+</I>&gt;<i> or inconvenient, I may feel the need, but I won't act on it.  But the
+</I>&gt;<i> CEO's will ensure that it isn't inconvenient - they won't put up with
+</I>&gt;<i> anything that isn't invisible to them - and technology will quickly
+</I>&gt;<i> drive down the cost.
+</I>
+You're an optimist.  There was the Israeli case of the tailored virus.
+I haven't noticed any rush to get rid of insecure operating systems,
+mailers, and word processors.  Or have a look at
+<A HREF="http://fe24.news.re3.yahoo.com/s/nm/20070717/tc_nm/internet_attack_dc">http://fe24.news.re3.yahoo.com/s/nm/20070717/tc_nm/internet_attack_dc</A>
+and ask if that will do it.  (Department of Transportation?  Department
+of Defenses, more likely, from that list of businesses...)  Today's
+Wall Street Journal reported on &quot;new&quot; threats from ads on the Internet,
+and loudly worried why ad companies and web sites weren't doing more to
+filter their offerings.  But an ad is just web content, which means
+that the real problem is the web browser and host OS.  Will that prompt
+a switch?
+
+We're talking about phone calls -- did all of the well-publicized
+cellular eavesdropping (Prince Charles, Newt Gingrich (then a major US
+politician), and more) prompt a change?  Well, there are now US laws
+against that sort of phone eavesdropping gear -- a big help....
+
+Want another example?  How many US corporations have major operations
+in China?  What are the odds that the Chinese government is listening
+in?  If you're uncertain, see (a) the posting on this list a few days
+ago about the landing declaration about communications security devices
+and yesterday's news story about email problems to China because of
+apparent problems with the Great Firewall
+(<A HREF="http://www.cnn.com/2007/TECH/07/18/china.email.reut/index.html">http://www.cnn.com/2007/TECH/07/18/china.email.reut/index.html</A>).  None
+of his seems to have affected business there.  (Nor are corporations
+unaware of this; I was advising people on this close to 20 years ago.)
+
+I agree that it will take a trigger.  I don't know what that trigger
+will be, but it won't be something as simple as a proven case.  It's
+hard to predict what will get enough people upset; sometimes, it's
+nothing at all.  (Remember the Pentium serial number case?  Objectively,
+that was a complete non-issue, but enough people got upset about it
+that Intel had to back off.)
+
+It will also have to be dead simple.  It can't happen on the POTS
+network, because modem handshaking takes too long.  It can't happen on
+conventional cellular unless the voice is traveling over a
+clear-channel end-to-end data connection, not something that the
+carrier's equipment &quot;knows&quot; is voice.  (There's also the question of
+phone CPU access to the voice channel, per Bill Stewart's post.)  It
+could happen for VoIP if done properly, as others have pointed out.  It
+has to be easy to use, which means that things like PKIs are, shall we
+say, obstacles.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

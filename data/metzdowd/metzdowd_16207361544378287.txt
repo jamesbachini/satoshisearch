@@ -1,0 +1,17 @@
+<PRE>Leichter, Jerry wrote:
+&gt;<i> First off, it depends on how the thing is implemented.  Since the entire
+</I>&gt;<i> drive is apparently encrypted, and you have to enter a password just to
+</I>&gt;<i> boot from it, some of the support is in an extended BIOS or some very
+</I>&gt;<i> early boot code, which is &quot;below&quot; any OS you might actually have on the
+</I>&gt;<i> disk.  
+</I>If I had to guess, I would suggest they were using the ATA &quot;secure&quot; hd 
+password api, and really providing security rather than the 
+firmware-lock usually associated with such passwords. That would allow 
+you to retrofit it to a lot of laptops which already use that 
+functionality, in a plug-and-play manner.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

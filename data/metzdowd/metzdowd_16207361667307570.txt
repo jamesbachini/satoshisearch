@@ -1,0 +1,50 @@
+<PRE>On Thu, 17 Jan 2008, Gleb Paharenko wrote:
+&gt;<i> Russian government accepted a changes in laws about licensing
+</I>&gt;<i> cryptographic algorithms and devices. The statement in Russian
+</I>&gt;<i> language:
+</I>&gt;<i>   <A HREF="http://www.garant.ru/hotlaw/doc/109485.htm">http://www.garant.ru/hotlaw/doc/109485.htm</A>
+</I>&gt;<i>
+</I>&gt;<i> Essential in English:
+</I>&gt;<i>
+</I>&gt;<i> You do not need to license staff which uses:
+</I>&gt;<i>
+</I>&gt;<i>     * symmetric ciphers with key length less 56 bits;
+</I>&gt;<i>     * assymetric ciphers with key length less 128 bits based on
+</I>&gt;<i>       factoring or discrete logarithms;
+</I>
+In my opinion such a &quot;summary&quot; is very confusing, I suspect that
+for ordinary people item &quot;1.b&quot; is more important. The document
+says (my translation):
+
+  1. This document is not applicable to distribution of:
+  [...]
+
+  b) cryptographic means which are available without limit for
+  retail distribution, or thru mail orders, or electronic deals,
+  or deals by telephone software operating systems,
+  cryptographic capabilities of which cannot be changed by
+  customers, which are developed for installation by customers
+  without additional significant support by supplier and which
+  have technical documentation (description of algorithms of
+  cryptographic transformations, communication protocols,
+  interface descriptions, etc.) which is available for
+  audits.
+
+That is, if I understand correctly, this document is not
+applicable to GnuPG or other such tools.
+
+Given what is required to get a license (for example, 4.b in the
+first document, says that one must have people trained in
+information security), I guess the new law is not supposed to
+limit use of cryptography by ordinary people, but to limit
+distribution of snake-oil by self-proclaimed &quot;professionals&quot;.
+
+-- 
+Regards,
+ASK
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

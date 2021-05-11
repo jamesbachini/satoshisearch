@@ -1,0 +1,42 @@
+<PRE>Our IBM cryptographic processors (HSMs) have been using this technique 
+since around 1996 - data that is stored in flash memory is encrypted with 
+a key that is destroyed on any attempt to tamper with the security module.
+
+-------------------------------------------------------------------
+Todd W. Arnold, STSM
+IBM Cryptographic Technology Development
+(704) 594-8253   FAX 594-8336
+-------------------------------------------------------------------
+email:  <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arnoldt at us.ibm.com</A>
+
+
+
+&quot;Perry E. Metzger&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>&gt; 
+Sent by: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">owner-cryptography at metzdowd.com</A>
+01/22/2008 10:29 PM
+
+To
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+cc
+
+Subject
+patent of the day
+
+
+
+
+
+
+
+<A HREF="http://www.google.com/patents?vid=USPAT6993661">http://www.google.com/patents?vid=USPAT6993661</A>
+
+Hat tip to a party who prefers to remain anonymous who sent me the
+patent number.
+
+-- 
+Perry E. Metzger                                 <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,36 @@
+<PRE>Ilya Levin wrote:
+&gt;<i> I'm not affiliated with Elcomsoft and don't know their real
+</I>&gt;<i> intentions, but what they are trying to do is perfectly reasonable.
+</I>&gt;<i> Once they release a commercial product with such feature it is only a
+</I>&gt;<i> matter of time until Microsoft or some other patent troll will run for
+</I>&gt;<i> a patent and start suing. So, having the patent beforehand will
+</I>&gt;<i> address this matter. It still would be beneficial even if Elcomsoft
+</I>&gt;<i> will fail this patent application, because it will make any future
+</I>&gt;<i> such applications disputable.
+</I>
+I never understand these long threads about patents.  They always follow
+the same course.  I address the following to the whole list, not just you.
+
+Fact: Most patents get granted, even for things you might consider
+trivial.  Instead of complaining about it, work for patent reform.  How
+about an open review process where the public can submit prior art via
+the web?  EU patents face a similar challenge period.  So go help make
+this happen!
+
+Fact: Most patents are never used, meaning no lawsuit is filed against
+someone based on infringement.  Most are kept in reserve in case the
+company is sued for their product infringing something else or for
+negotiating leverage in business deals.
+
+Given these two things, it makes little sense to whine about a single
+patent on an obscure mailing list.  Instead, go do something about the
+process as a whole.
+
+-- 
+Nate
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

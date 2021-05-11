@@ -1,0 +1,31 @@
+<PRE>On Tue, May 06, 2008 at 03:40:46PM +0000, Steven M. Bellovin wrote:
+&gt;<i> Experiment part two: implement remote login (or remote IMAP, or remote
+</I>&gt;<i> Web with per-user privileges, etc.) under similar conditions.  Recall
+</I>&gt;<i> that being able to do this was a goal of the IPsec working group.
+</I>&gt;<i> 
+</I>&gt;<i> I think that part one is doable, though possibly the existing APIs are
+</I>&gt;<i> incomplete.  I don't think that part two is doable, and certainly not
+</I>&gt;<i> with high assurance.  In particular, with TLS the session key can be
+</I>&gt;<i> negotiated between two user contexts; with IPsec/IKE, it's negotiated
+</I>&gt;<i> between a user and a system.  (Yes, I'm oversimplifying here.)
+</I>
+&quot;Connection latching&quot; and &quot;connection-oriented&quot; IPsec APIs can address
+this problem.
+
+Solaris, and at least one other IPsec implementation (OpenSwan?  I
+forget) makes sure that all packets for any one TCP connection (or UDP
+&quot;connection&quot;) are protected (or bypassed) the same way during their
+lifetime.  &quot;The same way&quot; -&gt; by similar SAs, that is, SAs with the same
+algorithms, same peers, and various other parameters.
+
+A WGLC is about to start in the IETF BTNS WG on an I-D that describes
+this.
+
+Nico
+-- 
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

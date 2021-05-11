@@ -1,0 +1,135 @@
+<PRE>From: John Young &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptome at earthlink.net</A>&gt;
+Subject: Adi Shamir's microprocessor bug attack
+To: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ukcrypto at chiark.greenend.org.uk</A>
+Date: Sat, 17 Nov 2007 09:50:31 -0500 (GMT-05:00)
+
+
+Adi Shamir's note on a microprocessor bug attack on public key cryptography 
+featured in the NY Times today:
+
+<A HREF="http://cryptome.org/bug-attack.htm">http://cryptome.org/bug-attack.htm</A>
+
+The NYT report:
+
+<A HREF="http://www.nytimes.com/2007/11/17/technology/17code.html">http://www.nytimes.com/2007/11/17/technology/17code.html</A>
+
+
+----------
+
+
+Research Announcement: Microprocessor Bugs Can Be Security Disasters
+
+[reformatted to 64 cols single-spaced]
+
+Adi Shamir
+Computer Science Department
+The Weizmann Institute of Science
+Israel
+
+With the increasing word size and sophisticated optimizations of
+multiplication units in modern microprocessors, it becomes
+increasingly likely that they contain some undetected bugs. This
+was demonstrated by the accidental discovery of the obscure
+Pentium division bug in the mid 1990's, and by the recent
+discovery of a multiplication bug in the Microsoft Excel
+program. In this note we show that if some intelligence
+organization discovers (or secretly plants) even one pair of
+integers a and b whose product is computed incorrectly (even in
+a single low order bit) by a popular microprocessor, then ANY
+key in ANY RSA-based security program running on ANY one of the
+millions of PC's that contain this microprocessor can be
+trivially broken with a single chosen message. A similar attack
+can be applied to any security scheme based on discrete logs
+modulo a prime, and to any security scheme based on elliptic
+curves (in which we can also exploit division bugs), and thus
+almost all the presently deployed public key schemes will become
+vulnerable to such an attack.  
+
+The new attack (which we call a &quot;Bug Attack&quot;) is related to the
+notion of fault attacks discovered by Boneh, Demillo and Lipton
+in 1996, but seems to be much more dangerous in its
+implications. The original fault attack required physical
+possession of the computing device by the attacker, and the
+deliberate injection of a transient fault by operating this
+device in an unusual way (in a microwave oven, at high
+temperature, with high frequency clock, or with a sudden spike
+in the power supply). Such attacks are feasible against smart
+cards, but are much harder to carry out against PC's. In the new
+bug attack, the target PC can be located at a secure location
+half a world away, and the attacker has no way of influencing
+its operating environment in order to trigger a fault. In
+addition, millions of PC's can be attacked simultaneously,
+without having to manipulate the operating environment of each
+one of them individually.
+
+We now describe the basic idea of the new attack. We assume that
+the RSA decryption (or signature generation) is using the
+Chinese Remainder Theorem (CRT) which speeds up the operation by
+a factor of 4 compared to naive implementations, that each
+multiplication of big  operation by a factor of 4 compared to
+naive implementations, that each multiplication of big numbers
+proceeds by breaking them into the largest words which can be
+handled by the native multiplier in that microprocessor
+(typically 32 or 64 bits), and that all pairs of such words from
+the two numbers will be multiplied in some order. Knowing the
+target's public key n, the attacker can easily compute a half
+size number c which is guaranteed to be between the two secret
+factors p and q of n. For example, a number c which is the
+square root of n (rounded to the nearest integer) always
+satisfies p&lt;c&lt;q, and any number close to c is also likely to
+satisfy this condition. The attacker now chooses a message m
+which is equal to c, except that two low order words in it are
+replaced by a and b, and submits this &quot;poisoned input&quot; to the
+target PC.  
+
+The first step in the CRT computation is to reduce the input m
+modulo p and q. Due to its choice, m will be randomized mod the
+smaller p, but remain unchanged mod the larger q. The next step
+in RSA-CRT is always to square the reduced inputs mod p and q,
+respectively. Since a and b are unlikely to remain in the
+randomized value of m (mod p), the computation mod p is likely
+to be correct. However, mod q the squaring operation will
+contain a step in which the word a is multiplied by the word b,
+and by our assumption the result will be incorrect in at least
+one bit. Assuming that the rest of the two computations mod p
+and q will be correct, the final result of the two
+exponentiations will be combined into a single output y which is
+likely to be correct mod p, but incorrect mod q. The attacker
+can then finish off his attack in the same way as the original
+fault attack, by computing the gcd of n with y^e-m, where e is
+the public exponent of the attacked RSA key. With very high
+probability, this gcd will be the secret factor p of n. This
+completely breaks the security of this key.  
+
+How easy is it to verify that such a single multiplication bug
+does not exist in a modern  microprocessor, when its exact
+design is kept as a trade secret? There are 2^128 pairs of 
+inputs in a 64x64 bit multiplier, so we cannot try them all in
+an exhaustive search. Even if we assume that Intel had learned
+its lesson and meticulously verified the correctness of its
+multipliers, there are many smaller manufacturers of
+microprocessors who may be less careful with their design. In
+addition, the problem is not limited to microprocessors: Many
+cellular telephones are running RSA or elliptic curve
+computations on signal processors made by TI and others, FPGA or
+ASIC devices can embed in their design flawed multipliers from
+popular libraries of standard cell designs, and many security
+programs use optimized &quot;bignum packages&quot; written by others
+without being able to fully verify their correctness. As we have
+demonstrated in this note, even a single (innocent or
+intentional) bug in any one of these multipliers can lead to a
+huge security disaster, which can be secretly exploited in an
+essentially undetectable way by a sophisticated intelligence
+organization. 
+
+
+
+---
+end
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

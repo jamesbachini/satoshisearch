@@ -1,0 +1,36 @@
+<PRE>On Tuesday 02 Oct 2007 09:28:09 -0700 Peter Gutmann wrote:
+
+&gt;<i> [Linus quote...]
+</I>&gt;<i> So the difference between them is simple: one is 'hard science'. The 
+</I>&gt;<i> is 'people wanking around with their opinions'.&quot;
+</I>
+Just to clarify: this line of discussion arose from my advocacy of the 
+Linux kernel having a flexible, designed, analyzable and cohesive access 
+control framework, rather than the semantically weak pile o' hooks 
+provided by LSM.
+
+Here's my posting which set Linus off, which itself is a brief summary of 
+already discussed points:
+<A HREF="http://kerneltrap.org/mailarchive/linux-kernel/2007/10/1/326293">http://kerneltrap.org/mailarchive/linux-kernel/2007/10/1/326293</A>
+
+This is not to argue with Linus' point here (which was tangential), just 
+to clarify the context, which I suspect may also be of interest to Peter 
+(at least), as I've been reading his work on the need for properly 
+designed cryptographic architecture rather than e.g. simple APIs.
+
+Unfortunately, there's some very long standing and entrenched confusion 
+over SELinux: that it is a specific access control model, rather than an 
+architecture.  This is somewhat our fault for not demonstrating this 
+concept, and only explaining it, which may be a good lesson for others :-)
+
+
+- James
+-- 
+James Morris
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">jmorris at namei.org</A>&gt;
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

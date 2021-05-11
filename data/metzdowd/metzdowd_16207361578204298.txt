@@ -1,0 +1,28 @@
+<PRE>|<i> Xerox Unveils Technology That Blocks Access to Sensitive Data in
+</I>|<i> Documents to Prevent Security Leaks
+</I>|<i> <A HREF="http://www.parc.com/about/pressroom/news/2007-10-15-redaction.html">http://www.parc.com/about/pressroom/news/2007-10-15-redaction.html</A>
+</I>|<i> 
+</I>|<i> The Innovation: The technology includes a detection software tool that
+</I>|<i> uses content analysis and an intelligent user interface to easily
+</I>|<i> protect sensitive information. It can encrypt only the sensitive
+</I>|<i> sections or paragraphs of a document, a capability previously not
+</I>|<i> available.
+</I>Actually, it looks as if Xerox has been doing a bunch of very
+interesting work on the borderlines of security, privacy,
+cryptography, and human factors.  I hadn't noticed it before.
+
+Look, for example, at:
+
+	<A HREF="http://www.parc.com/research/projects/security/default.html">http://www.parc.com/research/projects/security/default.html</A>
+
+(Now, can anyone account for the bizarre very light gray pattern
+of lines that appear behind the top half or so of this page?)
+
+
+							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,33 @@
+<PRE>Matt Blaze wrote:
+&gt;<i> Once sensitive or personal data is captured, it stays around forever,
+</I>&gt;<i> and the longer it does, the more likely it is that it will end up
+</I>&gt;<i> somewhere unexpected.
+</I>
+Great point, and a fundamental lesson-of-the-moment for the security
+industry. To take it one step further: The amount of sensitive
+information an organization stores is roughly proportional to the number
+of data leaks it initiates. We already know that information &quot;wants&quot; to
+be free, and if you keep information around, sooner or later, it's going
+to leak out. (There's probably some mathematical way to describe this
+relationship.)
+
+Rather than expecting companies to keep data totally secure and then
+send apologetic letters when it gets lost, perhaps we should start
+taxing companies in proportion to the amount of sensitive information
+they store, and use that tax to assist victims of identity theft. This
+would have the double benefit of giving companies immediate incentive to
+reduce the amount of information they store, and would also provide
+appropriate public funding for incident recovery.
+
+Sherri
+
+
+-- 
+<A HREF="http://philosecurity.org">http://philosecurity.org</A>
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

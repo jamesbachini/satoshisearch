@@ -1,0 +1,25 @@
+<PRE>
+Quoting:
+
+    New microchipped passports designed to be foolproof against
+    identity theft can be cloned and manipulated in minutes and
+    accepted as genuine by the computer software recommended for use
+    at international airports.
+
+    Tests for The Times exposed security flaws in the microchips
+    introduced to protect against terrorism and organised crime. The
+    flaws also undermine claims that 3,000 blank passports stolen last
+    week were worthless because they could not be forged.
+
+<A HREF="http://www.timesonline.co.uk/tol/news/uk/crime/article4467106.ece">http://www.timesonline.co.uk/tol/news/uk/crime/article4467106.ece</A>
+
+Hat tip: Bruce Schneier's blog
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

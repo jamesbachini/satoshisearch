@@ -1,0 +1,18 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A> wrote:
+&gt;<i> In a video, Christopher Tarnovsky, shows a physical attack on a smart card:
+</I>&gt;<i>    &lt;<A HREF="http://blog.wired.com/27bstroke6/2008/05/hacker-at-cente.html">http://blog.wired.com/27bstroke6/2008/05/hacker-at-cente.html</A>&gt;
+</I>&gt;<i> 
+</I>&gt;<i> I couldn't tell from the video how long it takes but it doesn't appear
+</I>&gt;<i> to take more than an hour or so.
+</I>
+I had written up some analysis here:
+<A HREF="http://rdist.root.org/2008/05/30/chris-tarnovsky-demos-smart-card-hacking/">http://rdist.root.org/2008/05/30/chris-tarnovsky-demos-smart-card-hacking/</A>
+
+-- 
+Nate
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

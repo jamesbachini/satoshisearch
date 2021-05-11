@@ -1,0 +1,64 @@
+<PRE>Eric Young wrote:
+&gt;&gt;<i>   #ifndef PURIFY
+</I>&gt;&gt;<i>                 MD_Update(&amp;m,buf,j); /* purify complains */
+</I>&gt;&gt;<i>   #endif
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>   
+</I>&gt;<i> 
+</I>&gt;<i> I just re-checked, this code was from SSLeay, so it pre-dates OpenSSL
+</I>&gt;<i> taking over from me
+</I>&gt;<i> (about 10 years ago, after I was assimilated by RSA Security).
+</I>&gt;<i> 
+</I>&gt;<i> So in some ways I'm the one at fault for not being clear enough about
+</I>&gt;<i> why 'purify complains' and why it was not relevant.
+</I>&gt;<i> Purify also incorrectly companied about a construct used in the digest
+</I>&gt;<i> gathering code which functioned correctly, but purify was
+</I>&gt;<i> also correct (a byte in a read word was uninitialised, but it was later
+</I>&gt;<i> overwritten by a shifted byte).
+</I>&gt;<i> 
+</I>&gt;<i> One of the more insidious things about Purify is that once its
+</I>&gt;<i> complaints are investigated, and deemed irrelevant (but left in the
+</I>&gt;<i> library),
+</I>&gt;<i> anyone who subsequently runs purify on an application linking in the
+</I>&gt;<i> library will get the same purify warning.
+</I>&gt;<i> This leads to rather distressed application developers.  Especially if
+</I>&gt;<i> their company has a policy of 'no purify warnings'.
+</I>&gt;<i> 
+</I>&gt;<i> One needs to really ship the 'warning ignore' file for purify (does
+</I>&gt;<i> valgrind have one?).
+</I>&gt;<i> 
+</I>&gt;<i> I personally do wonder why, if the original author had purify related
+</I>&gt;<i> comments, which means he was aware of the issues,
+</I>&gt;<i> but had still left the code in place, the reviewer would not consider
+</I>&gt;<i> that the code did some-thing important enough to
+</I>&gt;<i> ignore purify's complaints.
+</I>
+I think the core point is that 10+ years ago, when this code was 
+written, randomness was actually quite hard to come by. Daemons like EGD 
+had to be installed and fed and cared for. So, even a little entropy 
+from &quot;uninitialised&quot; memory (I use the quotes because I do appreciate 
+that the memory probably has somewhat predictable content) was worth having.
+
+Of course, we have now persuaded even the most stubborn OS that 
+randomness matters, and most of them make it available, so perhaps this 
+concern is moot.
+
+Though I would be interested to know how well they do it! I did have 
+some input into the design for FreeBSD's, so I know it isn't completely 
+awful, but how do other OSes stack up?
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

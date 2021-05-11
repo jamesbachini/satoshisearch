@@ -1,0 +1,17 @@
+<PRE>Also from the NewScientist article that I just posted, another paper
+from completely different researchers arriving at the same result:
+
+<A HREF="http://arxiv.org/pdf/0705.1398">http://arxiv.org/pdf/0705.1398</A>
+
+-- 
+Dustin D. Trammell
+Product Security Analyst
+TippingPoint, a division of 3Com
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: This is a digitally signed message part
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20070913/df6aa366/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20070913/df6aa366/attachment.pgp</A>&gt;
+</PRE>

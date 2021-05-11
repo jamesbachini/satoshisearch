@@ -1,0 +1,22 @@
+<PRE>Alex Pankratov wrote:
+&gt;&gt;<i> I want to make this distinction because I'd like to talk 
+</I>&gt;&gt;<i> about secret keys, which have to be rather larger than 4 
+</I>&gt;&gt;<i> kbits to have 4kbits of entropy for modular arithmetic stuff.
+</I>&gt;<i> 
+</I>&gt;<i> Are you referring to RSA-like secrets that involve prime
+</I>&gt;<i> numbers, which are therefore selected from a smaller subset
+</I>&gt;<i> of Z(n) ?
+</I>
+Yes.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

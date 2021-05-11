@@ -1,0 +1,23 @@
+<PRE>Ah, where the web is going.  8e6 Technologies sells a hardware box
+that it claims does signature analysis to detect HTTP proxies and
+blocks them.  It can also block HTTPS proxies &quot;that do not have a
+valid certificate&quot; (whatever that means), as well as do such things
+as block IM, force Google and Yahoo searches to be done in Safe
+mode, and so on.
+
+They're marketing this to the education community (with the typical
+horror stories of the problems your school district can run into
+if students use proxies to get around your rules).
+
+What I find most interesting, though, is that the company, based
+in California, has an overseas presence in exactly two other
+countries:  Taiwan and China.  One doesn't need much imagination
+to see what market they are going after there....
+
+ 							-- Jerry
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,22 @@
+<PRE>On Mon, Apr 28, 2008 at 10:03:38PM -0400, Victor Duchovni wrote:
+&gt;<i> On Mon, Apr 28, 2008 at 03:12:31PM -0700, Ryan Phillips wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt; What are people's opinions on corporations using this tactic?  I can't
+</I>&gt;<i> &gt; think of a great way of alerting the user, but I would expect a pretty
+</I>&gt;<i> &gt; reasonable level of privacy while using an SSL connection at work.  
+</I>&gt;<i> 
+</I>&gt;<i> Expectations of privacy at work vary by jurisdiction and industry. In
+</I>&gt;<i> the US, and say in the financial services industry, any such expectations
+</I>&gt;<i> are groundless (IANAL).
+</I>
+Most places I have worked (all in the US) explicitly required consent
+to more or less arbitrary amounts of monitoring as a condition of
+employment.
+
+-Jack
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,20 @@
+<PRE>Some colleagues (Hovav Shacham, Brandon Enright, Scott Yikel, and
+Stefan Savage) and I have been doing some followup work on the Debian
+OpenSSL PRNG bug. Perry suggested that some cryptography readers
+might be interested in our preliminary analysis of the DHE angle,
+which can be found here:
+
+<A HREF="http://www.educatedguesswork.org/2008/08/the_debian_openssl_prng_bug_an.html">http://www.educatedguesswork.org/2008/08/the_debian_openssl_prng_bug_an.html</A>
+
+Also, Hovav gave a WIP on this topic at USENIX Security. The slides are at:
+
+<A HREF="http://cs.ucsd.edu/~hovav/dist/debianwip.pdf">http://cs.ucsd.edu/~hovav/dist/debianwip.pdf</A>
+
+
+-Ekr
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

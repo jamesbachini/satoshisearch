@@ -1,0 +1,29 @@
+<PRE>Allen &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">netsecurity at sound-by-design.com</A>&gt; wrote:
+&gt;<i> Agreed, but..., well there is the small matter of figuring out /who/ is
+</I>&gt;<i> doing it and that just might require some small bit of technology.
+</I>
+Certainly, it is not mutual exclusive. However factor an RSA key
+hardly can help with that.
+
+&gt;<i> At least two defects in this thinking. A) How do we know *a* person did the
+</I>&gt;<i> coding? B) Who defines what is &quot;illegal&quot; code?
+</I>
+A) All the authorities ever need is always *a* person, and then they can do
+the rest. In this particular case the *real* solution of the problem would be
+trace the money dropper and bust the chain. The only required cryptanalysis
+here is a thermo-rectal one.
+
+B) It not about legal or illegal code, it is not about a code at all.
+Blackmailing
+for ransom is a crime and demanding a ransom for digital assets does not
+make this any different. A crime must be addressed as a crime in a first place.
+
+Ilya
+-- 
+<A HREF="http://www.literatecode.com">http://www.literatecode.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

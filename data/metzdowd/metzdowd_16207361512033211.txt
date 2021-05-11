@@ -1,0 +1,30 @@
+<PRE>* Peter Gutmann:
+
+&gt;<i> This doesn't seem to have received much attention, but the world's
+</I>&gt;<i> most powerful supercomputer entered operation recently.  Comprising
+</I>&gt;<i> between 1 and 10 million CPUs (depending on whose estimates you
+</I>&gt;<i> believe), the Storm botnet easily outperforms the currently
+</I>&gt;<i> top-ranked system, BlueGene/L, with a mere 128K CPU cores.
+</I>
+It's a bit unfair to compare those numbers with single-image systems
+or tightly-coupled clusters.  Grids are the more apt comparison.
+
+&gt;<i> This may be the first time that a top 10 supercomputer has been
+</I>&gt;<i> controlled not by a government or megacorporation but by criminals.
+</I>
+Doubt it.  If I recall the confirmed Phatbot numbers correctly, they
+where pretty substantial, too, especially for that time.  And this was
+the first time when I came across that &quot;botnets are grids plus
+scalability and security&quot; joke.
+
+Some of the HTTP-based botnets advertised pretty high infection
+numbers, too, but such claims are difficult to verify.
+
+On the other hand, LINPACK numbers for a botnet would likely be much
+lower than what is suggested by the raw CPU count.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

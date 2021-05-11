@@ -1,0 +1,44 @@
+<PRE>
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: Ben Laurie [mailto:<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ben at links.org</A>] 
+</I>&gt;<i> Sent: Friday, October 26, 2007 3:56 PM
+</I>&gt;<i> To: Alex Pankratov
+</I>&gt;<i> Cc: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>
+</I>&gt;<i> Subject: Re: Password vs data entropy
+</I>&gt;<i> 
+</I>[snip]
+&gt;<i> 
+</I>&gt;<i> In other words, your password needs to be x/y times the size of the
+</I>&gt;<i> secret (in bits), where x and y are the costs of attacking the secret
+</I>&gt;<i> and the password respectively.
+</I>
+Essentially the entropy measure alone is not sufficient to 
+make a decision, we should also account for the algorithms 
+being used. This certainly makes sense .. now that you said 
+it :)
+
+Is there any published research into entropy estimates of 
+PBKDF2 transformation ? Perhaps, for specific PRF(s) and 
+fixed iteration counts. I.e. if I have a password with N 
+bits of entropy in a password, what the entropy of the key 
+going to be like given *this* set of PBKDF2 parameters.
+
+Also, can you elaborate on this remark ? Specifically, the
+second part of it -
+
+&gt;<i> I want to make this distinction because I'd like to talk 
+</I>&gt;<i> about secret keys, which have to be rather larger than 4 
+</I>&gt;<i> kbits to have 4kbits of entropy for modular arithmetic stuff.
+</I>
+Are you referring to RSA-like secrets that involve prime
+numbers, which are therefore selected from a smaller subset
+of Z(n) ?
+
+Thanks,
+Alex
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

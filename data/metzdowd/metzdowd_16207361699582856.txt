@@ -1,0 +1,25 @@
+<PRE>  <A HREF="http://eprint.iacr.org/2008/058">http://eprint.iacr.org/2008/058</A>
+  
+  Physical Cryptanalysis of KeeLoq Code Hopping Applications
+
+  Recently, some mathematical weaknesses of the KeeLoq algorithm have been
+  reported. All of the proposed attacks need at least 2^16 known or chosen
+  plaintexts. In real-world applications of KeeLoq, especially in remote
+  keyless entry systems using a so-called code hopping mechanism, obtaining
+  this amount of plaintext-ciphertext pairs is rather impractical. We present
+  the first successful DPA attacks on numerous commercially available products
+  employing KeeLoq code hopping. Using our proposed techniques we are able to
+  reveal not only the secret key of remote transmitters in less that one hour,
+  but also the manufacturer key of receivers in less than one day. Knowing the
+  manufacturer key allows for creating an arbitrary number of valid
+  transmitter keys.
+
+KeeLoq is used in large numbers of car keyless-entry systems.  Ouch.
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

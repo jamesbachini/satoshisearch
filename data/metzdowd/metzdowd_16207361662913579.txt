@@ -1,0 +1,46 @@
+<PRE>Peter Gutmann:
+ &gt; &gt; That's because there's nothing much to publish: In
+ &gt; &gt; the US, notify the BIS via email.
+
+Ivan Krstic' wrote:
+ &gt; Our outside counsel -- specializing in this area --
+ &gt; thought this was insufficient.
+
+You were probably asking your counsel the wrong
+question.  Never ever ask the question &quot;is this legal&quot;,
+for you will always find that the answer to that is that
+NOTHING is legal, and hearing your counsel tell you that
+puts you in trouble.  The question should have been &quot;Has
+anyone got in trouble for doing this, and if so, how big
+a trouble, and what attracted the attention of the man?
+
+Had you asked that question instead, you would have
+heard the answer that no one ever gets in trouble for
+minimalist compliance with the export laws - an answer
+that cannot get you, or your counsel, in trouble.
+
+Legislation and regulation, though never revealing what
+is legal, frequently forbids and commands all sorts of
+things quite clearly, telling us all sort of things are
+forbidden and yet ninety nine percent of such
+legislation and regulation is dead as a doornail.
+
+It is never possible to know what is permitted, so you
+must never ask your counsel about what is permitted,
+since he is legally required to give answers that create
+problems.  Legal uncertainty and capricious enforcement
+of obscure, unclear  and incomprehensible laws is simply
+a cost of doing business.  No legal counsel can reduce
+this cost, and if asked to do so, is legally required to
+give answers that increase, rather than reduce this
+cost.
+
+When you ask a counsel to provide legal certainty, you
+ask him for what can never exist, and what he is
+forbidden to provide.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

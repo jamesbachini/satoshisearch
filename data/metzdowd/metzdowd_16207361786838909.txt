@@ -1,0 +1,46 @@
+<PRE>Florian Weimer wrote on 27 May 2008 18:49:
+
+&gt;<i> * Dave Korn:
+</I>&gt;<i> 
+</I>&gt;&gt;&gt;<i>    In a major change of stance, Canada-based Research In Motion (RIM)
+</I>&gt;&gt;&gt;<i>    may allow the Indian government to intercept non-corporate emails
+</I>&gt;<i>                                                    ********************
+</I>&gt;&gt;&gt;<i>    sent over BlackBerrys.
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;&gt;<i>   Research In Motion (RIM), the Canadian company behind the BlackBerry
+</I>&gt;&gt;<i>   handheld, has refused to give the Indian government special access to
+</I>&gt;<i>                                                         **************
+</I>&gt;&gt;<i>   its encrypted email services.   [ ... ]
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i>   According to the Times of India, the company said in a statement:
+</I>&gt;&gt;<i> 
+</I>&gt;&gt;<i>     The BlackBerry security architecture for enterprise customers is
+</I>&gt;<i>                                                ********************
+</I>&gt;&gt;<i>   purposefully designed to exclude the capability for RIM or any third
+</I>&gt;&gt;<i>   party to read encrypted information under any circumstances. We regret
+</I>&gt;<i> 
+</I>&gt;&gt;<i>   [  Hmm, two contradictory stories, whoever woulda thunk it?  There's
+</I>&gt;&gt;<i> probably some politicking going on, mixed up with marketeering and
+</I>&gt;&gt;<i> FUD-spinning.  ]
+</I>&gt;<i> 
+</I>&gt;<i> If you look closely, there's no contradiction.
+</I>
+  Well spotted.  Yes, I guess that's what Jim Youll was asking.  And I
+should have said &quot;seemingly-contradictory&quot;.  This is, of course, what I
+meant by &quot;marketeering&quot;: when someone asks if your service is insecure and
+interceptable, you don't say &quot;Yes, our ordinary service will give you up to
+the filth at the drop of a hat&quot;, you spin it as &quot;No, our enterprise service
+is completely secure [...other details elided...]&quot;.
+
+
+    cheers,
+      DaveK
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,50 @@
+<PRE>On Wed, 27 Aug 2008 17:05:44 +0200
+Philipp G__hring &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">pg at futureware.at</A>&gt; wrote:
+
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> I am searching for symmetric encryption algorithms for decimal
+</I>&gt;<i> strings.
+</I>&gt;<i> 
+</I>&gt;<i> Let's say we have various 40-digit decimal numbers:
+</I>&gt;<i> 2349823966232362361233845734628834823823
+</I>&gt;<i> 3250920019325023523623692235235728239462
+</I>&gt;<i> 0198230198519248209721383748374928601923
+</I>&gt;<i> 
+</I>&gt;<i> As far as I calculated, a decimal has the equivalent of about 3,3219
+</I>&gt;<i> bits, so with 40 digits, we have about 132,877 bits.
+</I>&gt;<i> 
+</I>&gt;<i> Now I would like to encrypt those numbers in a way that the result is
+</I>&gt;<i> a decimal number again (that's one of the basic rules of symmetric
+</I>&gt;<i> encryption algorithms as far as I remember).
+</I>&gt;<i> 
+</I>&gt;<i> Since the 132,877 bits is similar to 128 bit encryption (like eg.
+</I>&gt;<i> AES), I would like to use an algorithm with a somewhat comparable
+</I>&gt;<i> strength to AES. But the problem is that I have 132,877 bits, not 128
+</I>&gt;<i> bits. And I can't cut it off or enhance it, since the result has to
+</I>&gt;<i> be a 40 digit decimal number again.
+</I>&gt;<i> 
+</I>&gt;<i> Does anyone know a an algorithm that has reasonable strength and is
+</I>&gt;<i> able to operate on non-binary data? Preferrably on any chosen
+</I>&gt;<i> number-base?
+</I>&gt;<i> 
+</I>Do you want a stream cipher or a block cipher?  For the former, it's
+easy.  Use something like rc4, which produces a sequence of keystream
+bytes.  Retrieve the low-order N bits from each key stream byte, where N
+is large enough for the base you're using.  If the value is greater
+than or equal to the base you're using, discard that byte and try
+again.  For your example, you'd use the low-order 4 bits, but discard
+any bytes whose value is &gt;= 10.  Add this value, discarding the carry,
+to the digit to be encrypted.
+
+You're running RC4 at 5/8 efficiency; unless you have a *lot* of data,
+that almost certainly doesn't matter.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

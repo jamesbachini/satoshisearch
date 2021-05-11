@@ -1,0 +1,51 @@
+<PRE>
+<A HREF="http://en.wikipedia.org/wiki/Storm_Worm">http://en.wikipedia.org/wiki/Storm_Worm</A>
+
+
+Dark Reading Keywords : Attacks / Exploits / Threats : Botnets 
+<A HREF="http://www.darkreading.com/topics.asp?node_id=1801">http://www.darkreading.com/topics.asp?node_id=1801</A>
+
+
+Dark Reading News Analysis: Storm Hits Blogger
+  	August 30, 2007 : The ubiquitous Storm Trojan has found a new home    
+                          on spam blog sites in Google's Blogger network
+<A HREF="http://www.darkreading.com/document.asp?doc_id=132793">http://www.darkreading.com/document.asp?doc_id=132793</A>
+
+
+Storm Botnet sends spoofed YouTube spam
+Author: Phil Cogar
+Published: 29th Aug 2007
+<A HREF="http://www.bit-tech.net/news/2007/08/29/storm_botnet_sends_spoofed_botnet_spam/">http://www.bit-tech.net/news/2007/08/29/storm_botnet_sends_spoofed_botnet_spam/</A>
+1
+
+
+ Storm Botnet Is Behind Two New Attacks
+ Posted by kdawson on Sunday August 26, @12:51PM
+from the do-not-click-here dept. 
+<A HREF="http://it.slashdot.org/article.pl?sid=07/08/26/1558245">http://it.slashdot.org/article.pl?sid=07/08/26/1558245</A>
+
+
+Storm Botnet Puts Up Defenses And Starts Attacking Back
+Researchers are warning universities that they're at risk of being hit with 
+massive distributed denial-of-service attacks when they scan their own 
+networks.
+By Sharon Gaudin
+InformationWeek
+August 16, 2007 04:23 PM 
+<A HREF="http://www.informationweek.com/story/showArticle.jhtml?articleID=201800635">http://www.informationweek.com/story/showArticle.jhtml?articleID=201800635</A>
+
+
+lots more...
+
+<A HREF="http://www.google.com/search?hl=en&amp;q=storm+botnet&amp;btnG=Google+Search">http://www.google.com/search?hl=en&amp;q=storm+botnet&amp;btnG=Google+Search</A>
+
+
+---
+end
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

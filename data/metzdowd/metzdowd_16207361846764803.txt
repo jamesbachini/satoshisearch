@@ -1,0 +1,15 @@
+<PRE>* Paul Hoffman:
+
+&gt;<i> The take-away here is not that &quot;Dan didn't discover the problem&quot;, but
+</I>&gt;<i> &quot;Dan got it fixed&quot;.
+</I>
+I haven't seen credible claims that the underlying issue can actually be
+fixed in the classic DNS protocol.  There are workarounds on top of
+workarounds.  A real fix requires more or less incompatible protocol
+changes, and at that point, it might be easier to deploy DNSSEC instead.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

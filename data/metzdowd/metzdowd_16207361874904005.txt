@@ -1,0 +1,64 @@
+<PRE><A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+&gt;<i> Look for general tracking to appear everywhere.
+</I>
+Anonymous travel is dead. Even for subway riders who still use tokens
+and citizens that bicycle around town, the proliferation of cameras,
+facial recognition technology, biometrics and RFID tagging will render
+anonymity obsolete within a generation.
+
+I believe the public's next battleground is to gain control over what
+*happens* to our data, and how it's used. Right now there is very little
+transparency. Transportation organizations are collecting a lot of
+information about people, and there is very little public input or
+disclosure regarding uses, length of storage time, or standards for
+securing this data.
+
+Boston's MBTA, for example, does not consider the CharlieCard's serial
+number to be personal information, and it therefore reserves the right
+to store rider histories associated with each card *indefinitely*. Even
+when CharlieCards are obtained &quot;anonymously&quot; (not the majority) they can
+always be linked to the financial transactions DB which also stores the
+card serial number (ie. if you even once pay with credit card, your
+CharlieCard is not anonymous any more). This isn't publicized; it's
+information I obtained by doggedly calling the MBTA's IT department.
+
+I believe the public should have the following rights:
+
+- The public should have regular input on how long personal data is
+stored and how it is managed.
+
+- Disabled people and senior citizens should have access to the same
+level of privacy as everyone else. (Right now in Boston, they cannot
+obtain a CharlieCard without having their personal information
+associated with the card and permanently stored by the MBTA.)
+
+- Transportation organizations should be required to publicly disclose
+what data is collected about individuals, and how long that data is stored.
+
+- Individuals should be able to easily find out who has accessed their
+travel histories and the purpose of disclosure.
+
+- Transportation organizations that store personal data should be
+subject to regular external audits to ensure that they are in compliance
+with standards, and that they have implemented appropriate measures to
+secure personal data. A summary of these results should be made public.
+
+Personally, I don't want to have a history of my travel stored in any
+database. Right now, purchasing a one-time CharlieTicket is a 30 cent
+surcharge per ride, but it is the only way to take the subway in Boston
+without creating a travel history. Privacy in public transportation
+should be equally accessible to all citizens, regardless of financial
+resources.
+
+Sherri
+
+
+
+-- 
+<A HREF="http://philosecurity.org">http://philosecurity.org</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

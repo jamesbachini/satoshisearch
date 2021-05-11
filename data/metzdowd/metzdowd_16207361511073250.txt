@@ -1,0 +1,73 @@
+<PRE>Steven M. Bellovin wrote:
+&gt;<i> <A HREF="http://www.fcw.com/article103563-08-27-07-Print">http://www.fcw.com/article103563-08-27-07-Print</A>
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> 		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+</I>
+
+An interview with DIRNSA, a bit on the subject of cryptomod:
+<A HREF="http://www.military-information-technology.com/article.cfm?DocID=389">http://www.military-information-technology.com/article.cfm?DocID=389</A>
+
+Straight from the horses mouth:
+<A HREF="https://www.cryptomod.org/frontpage.htm">https://www.cryptomod.org/frontpage.htm</A>  (unfortunately you have to
+be a member, which is essentially by invitation only.  If you're a
+member it appears the content is dynamic, and has more of interest
+than the neophyte can see.
+
+There's the wiki page:
+<A HREF="http://en.wikipedia.org/wiki/Cryptographic_Modernization_Program">http://en.wikipedia.org/wiki/Cryptographic_Modernization_Program</A>
+
+They're purportedly talking about reconfigurable crypto to be able to
+run different algorithms:
+<A HREF="http://edageek.com/2007/02/21/xilinx-virtex-4-fpga-nsa-crypto/">http://edageek.com/2007/02/21/xilinx-virtex-4-fpga-nsa-crypto/</A>
+<A HREF="http://www.xilinx.com/prs_rls/2007/end_markets/0713_v4nsa.htm">http://www.xilinx.com/prs_rls/2007/end_markets/0713_v4nsa.htm</A>
+Xilinx, NSA Create Virtex-4 FPGA-based Cryptographic Solution
+Posted in FPGAs on Wednesday, February 21, 2007
+
+<A HREF="http://www.mil-embedded.com/PDFs/NSA.Mar07.pdf">http://www.mil-embedded.com/PDFs/NSA.Mar07.pdf</A>
+FPGA-BASED SINGLE CHIP CRYPTOGRAPHIC SOLUTION (U)
+
+I ran into something talking about a next generation secure identification
+friend or foe (SIFF), that if I recall correctly was saying that it was KI-1
+backward compatible, sounded reconfigurable.  I know there are other single
+chip implementations of older Type I originally using permuters.
+
+Articles with some equipment and process replacements:;
+<A HREF="http://findarticles.com/p/articles/mi_m0EIN/is_2005_May_6/ai_n13674881">http://findarticles.com/p/articles/mi_m0EIN/is_2005_May_6/ai_n13674881</A>
+<A HREF="http://findarticles.com/p/articles/mi_m0EIN/is_2005_June_10/ai_n13807215">http://findarticles.com/p/articles/mi_m0EIN/is_2005_June_10/ai_n13807215</A>
+(Safenet bought Mykotronx/Rainbow?)
+<A HREF="http://findarticles.com/p/articles/mi_m0PAA/is_3_31/ai_n16740679">http://findarticles.com/p/articles/mi_m0PAA/is_3_31/ai_n16740679</A>
+
+John Young's cryptome:
+<A HREF="http://cryptome.org/kg30-library.htm">http://cryptome.org/kg30-library.htm</A>
+U) NSA/CSS Policy 3-9, Cryptographic Modernization Initiative Requirements
+for Type 1 Cryptographic Products, National Security Agency, Information
+Assurance Directorate, 28 Mar 2003 (U//FOUO Document - NSA)
+You can see that the cryptomod has been underway for a while.
+
+Saw something last week saying the KG-30 family was retired.
+
+There appears to be either two or three cryptoprocessors, too.
+<A HREF="http://www.l-3com.com/products-services/docoutput.aspx?id=805">http://www.l-3com.com/products-services/docoutput.aspx?id=805</A>
+(Hadn't seen this one before.)
+
+You can find lots of interesting things by pursuing the latest buzz phrase,
+Information Assurance:
+<A HREF="http://www.military-information-technology.com/article.cfm?DocID=1932">http://www.military-information-technology.com/article.cfm?DocID=1932</A>
+(This one is very interesting)
+
+Literally everyone is jumping on the bandwagon.
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

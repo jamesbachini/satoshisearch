@@ -1,0 +1,92 @@
+<PRE>On Fri, 2008-01-18 at 02:31 -0800, Alex Alten wrote:
+&gt;<i> At 07:35 PM 1/18/2008 +1000, James A. Donald wrote:
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;And all the criminals will of course obey the law.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;Why not just require them to set an evil flag on all
+</I>&gt;<i> &gt;their packets?
+</I>&gt;<i> 
+</I>&gt;<i> These are trite responses.  Of course not.  My point is
+</I>&gt;<i> that if the criminals are lazy enough to use a standard
+</I>&gt;<i> security protocol then they can't expect us not to put
+</I>&gt;<i> something in place to decrypt that traffic at will if necessary.
+</I>
+I see your point, but I can't help feeling that it's a 
+lot like requiring all houses to be designed and built with 
+a backdoor that the police have a key to, in order to 
+guarantee that the police can come in to investigate crimes. 
+
+The problem is that the existence of that extra door, and 
+the inability of people to control their own keys to lock 
+it, makes crimes drastically easier to commit.  You think 
+police don't use DMV records to harass ex-girlfriends or 
+make life hard for people they don't like?  You think 
+Private investigators and other randoms who somehow &quot;finesse&quot; 
+access to that data all have the best interests of the public 
+at heart?  You think the contractor who builds the house 
+will somehow forget where the door is, or will turn over 
+*all* copies of the keys? 
+
+And stepping away from quasi-legit access used for illegitimate
+purposes, you think there're no locksmiths whose services the 
+outright criminals can't buy?  You think the existence of a 
+backdoor won't inspire criminal efforts to get the key (by 
+reading a binary dump if need be) and go through it?
+
+&gt;<i> &gt;I guarantee I can make any payload look like any other
+</I>&gt;<i> &gt;payload.  If the only permitted communications are
+</I>&gt;<i> &gt;prayers to Allah, I can encode key exchange in prayers
+</I>&gt;<i> &gt;to Allah.
+</I>
+&gt;<i> Look, the criminals have to design their security system with
+</I>&gt;<i> severe disadvantages; they don't own the machines they
+</I>&gt;<i> attack/take over so they can't control its software/hardware
+</I>&gt;<i> contents easily, they can't screw around too much with the IP
+</I>&gt;<i> protocol headers or they lose communications with them, and
+</I>&gt;<i> they don't have physical access to the slave/owned machines.
+</I>
+That is a very petty class of criminal.  While the aggregate 
+thefts (of computer power, bandwidth, etc) are impressive, 
+they're stealing nothing that isn't a cheap commodity anyway 
+and the threat to lives and real property that would justify 
+the kind of backdoors we're talking about just isn't there. 
+Being subject to botnets and their ilk is more like the 
+additional cost of doing business in bad weather, than it 
+is like being the victim of a planned and premeditated 
+crime with a particular high-value target.  
+
+Moreover, we know how to weatherproof our systems.  
+Seriously.  We know where the vulnerabilities are and we 
+know how to create systems that don't have them.  And we 
+don't need to install backdoors or allocate law enforcement 
+budget to do it.  More than half the servers on the Internet - 
+the very most desirable machines for botnet operators, 
+because they have huge storage and huge bandwidth - run 
+some form of Unix, and yet, since 1981 and the Morris Worm, 
+you've never heard of a botnet composed of Unix machines!  
+Think about that!  They do business in the same bad weather 
+as everyone else, but it costs them very little, because 
+they have ROOFS!
+
+I submit that the sole reason Botnet operation even exists 
+is because so many people are continuing to use an operating 
+system and software whose security is known to be inferior. 
+A(nother) backdoor in that system won't help.
+
+The criminals whose activities do justify the sort of backdoors 
+you're talking about - the bombers, the kidnappers, the 
+extortionists, even the kiddie porn producers and that ilk - 
+won't be much affected by them, because they *do* take the 
+effort to get hard crypto working in addition to standard 
+protocols, they *do* own their own machines and get to pick 
+and choose what software goes on them, and if they're 
+technically bent they can roll their own protocols. 
+
+			Bear
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,64 @@
+<PRE>Hi Martin,
+
+I did forget to say that it would be salted so that throws it off 
+by 2^12
+
+A couple of questions. How did you come up with the ~2.5 bits per 
+word? Would a longer word have more bits?
+
+Why are you using entropy rather than 2^(keyspace)? With 55 
+possible characters per each individual character space, a 12 
+character password would have 766,217,865,410,400,000,000
+possible combinations without a salt.
+
+Tom Sullivan's Excel spreadsheet for calculating Rainbow Tables, 
+as corrected by Philippe Oechlin, and based on Philippe's 
+optimization in the following reference:
+
+<A HREF="http://lasecwww.epfl.ch/php_code/publications/search.php?ref=Oech03">http://lasecwww.epfl.ch/php_code/publications/search.php?ref=Oech03</A>
+
+says that it would take 180.341 years to crack with an 86% chance 
+of success at a hash calculation rate of 100,000,000/sec.
+
+Based on the same speed it would take only 247,465.463 years to 
+calculate the Rainbow Tables.
+
+So what it boils down to is what is the calculation rate of a 
+1000 CPU botnet in reality? I chose the 100,000,000 rate sort of 
+arbitrarily, making assumptions about the hours of real use and 
+the % of CPU time that would be devoted to creating the Rainbow 
+Tables.
+
+Even if one were to assume that the real rate would be 1,000 
+times faster, it still would take nearly 25 years to create the 
+tables for a twelve character password. If you go to 15 
+characters then it says it is a mere 4 million years to generate 
+the tables.
+
+Best,
+
+Allen
+
+
+
+
+mtd wrote:
+&gt;<i> Allen wrote:
+</I>&gt;&gt;<i> Now take the phrase &quot;Mary had a lamb, and its fleece was as white as
+</I>&gt;&gt;<i> snow.&quot; Not counting the quotes it is 52 characters and has both upper
+</I>&gt;&gt;<i> and lower case characters, spaces and two specials or a total of 55 key
+</I>&gt;&gt;<i> space. How big would the rainbow table be to contain that? How long
+</I>&gt;&gt;<i> would it take to compute with 1,000 3 GHz CPUs?
+</I>&gt;<i> 
+</I>&gt;<i> You have given english sentence of 12 words as passphrase. If we count
+</I>&gt;<i> about 2.5bits of information per word and hash without adding salt, it
+</I>&gt;<i> results in about 2^30 combinations. When we divide it over botnet of
+</I>&gt;<i> 1000 computers, each must try about 10^6 hashes. I guess you can
+</I>&gt;<i> calculate the rest of the anwers.
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

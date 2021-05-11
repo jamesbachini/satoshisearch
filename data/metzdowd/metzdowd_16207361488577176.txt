@@ -1,0 +1,72 @@
+<PRE>On Mon, Jul 09, 2007 at 04:08:33PM -0600, Darren Lasko wrote:
+&gt;<i> However, it seems pretty nebulous about how
+</I>&gt;<i> they expect you to measure the number of operations required to
+</I>&gt;<i> compromise the security of the key generation method.  Do you know
+</I>&gt;<i> what kind of documentation the labs require?
+</I>
+The requirements are broadly worded, which means that just about any
+detectable security problem in the RNG seeding should result in the
+module being non-compliant.  This broad wording also makes formulating
+(and evaluating) arguments for compliance with this requirement fairly
+difficult.
+
+The entropy requirements in section 8 of SP800-90 are (sadly) not enforced
+(as per IG 1.12).  There is no CMVP-wide requirement for describing the
+computational resistance to attack of the RNG seed using min-entropy,
+though this entropy measure is well suited to the task.  (Should I perform
+some sort of ritual to ward off the &quot;If it's not Shannon entropy, it's
+not entropy&quot; discussion?)
+
+An excellent way of approaching these requirements is to:
+ 1) Understand the underlying physical process that produces uncertainty,
+ and develop a statistical model for this process.
+ 2) Use this statistical model to calculate the min-entropy of the source.
+ 3) Test bulk data output from your system to verify that the data
+ supports your min-entropy estimate.
+
+It can be quite difficult to produce this style of argument (and in some
+cases not feasible, as in the case where the vendor is using an RNG from
+another company).
+
+In any case, I suspect that you'll be well served by doing as much of
+this process as you can (in coordination with your testing lab) and
+hope that CMVP agrees with your reasoning.  Sadly, there has been no
+firm guidance from CMVP that really tells the labs precisely what CMVP
+expects to happen.
+
+&gt;<i> Is the &quot;NIST Statistical Test Suite&quot; sufficient for evaluating your
+</I>&gt;<i> entropy source, and will the certification labs accept results from
+</I>&gt;<i> the STS as an assessment of the entropy source?
+</I>
+sts does a fairly good job at testing to see if the RNG under test
+produces data that appears to be statistically random.  If you know a
+priori that your seed information is not full entropy, then you don't
+gain much by passing the seed data through sts, as the sts testing result
+will almost certainly be a 'fail&quot;, perhaps spectacularly so.
+
+Of course, if you pass almost any seed data through a cryptographic
+process, it will look statistically random, and will pass sts testing.
+This &quot;pass&quot; is also meaningless, as you could have effectively 0
+min-entropy, and still pass sts testing.
+
+As a practical matter, I view passing sts testing with some suspicion.
+In my experience, entropy sources with perfect statistical properties
+are rare, but inclusion of cryptographic processing within the seeding
+process is common.  As such, a passing sts test result is more likely
+to mean that the data has been cryptographically processed (and thus
+the test results are meaningless) than the seed inputs are full entropy.
+
+Additionally, sts is easy to misuse, and it seems that many users of the
+tool don't read through the SP800-22 document prior to using the tool.
+As a result, sts users often select some fairly odd testing parameters
+that yield results that are not statistically meaningful.  Recent versions
+of sts catch many of these problems, but not all of them, so it's still
+important to read through the SP800-22 document prior to using the tool.
+
+			Josh
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

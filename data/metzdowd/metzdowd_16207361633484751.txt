@@ -1,0 +1,19 @@
+<PRE>On Dec 29, 2007, at 6:37 PM, Anne &amp; Lynn Wheeler wrote:
+&gt;<i> Virtualization still hot, death of antivirus software imminent
+</I>
+My favorite virtual machine use is for the virus to install itself
+as a virtual machine, and run the OS in the virtual machine.  This
+technique should be really good for hiding from virus scanners.
+
+Cheers - Bill
+
+-----------------------------------------------------------------------
+Bill Frantz        | I like the farmers' market   | Periwinkle
+(408)356-8506      | because I can get fruits and | 16345 Englewood Ave
+www.pwpconsult.com | vegetables without stickers. | Los Gatos, CA 95032
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

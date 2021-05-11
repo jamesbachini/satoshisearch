@@ -1,0 +1,50 @@
+<PRE>----- Original Message ----- 
+From: &quot;Alex Pankratov&quot; &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ap at poneyhot.org</A>&gt;
+To: &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">cryptography at metzdowd.com</A>&gt;
+Sent: Thursday, October 25, 2007 9:16 PM
+Subject: Password vs data entropy
+
+
+&gt;<i> Say, we have a random value of 4 kilobits that someone wants
+</I>&gt;<i> to keep secret by the means of protecting it with a password.
+</I>&gt;<i>
+</I>&gt;<i> Empirical entropy estimate for an English text is 1.3 bits of
+</I>&gt;<i> randomness per character, IIRC.
+</I>&gt;<i>
+</I>&gt;<i> Assuming the password is an English word or a phrase, and the
+</I>&gt;<i> secret is truly random, does it mean that the password needs
+</I>&gt;<i> to be 3100+ characters in size in order to provide a &quot;proper&quot;
+</I>&gt;<i> degree of protection to the value ?
+</I>&gt;<i>
+</I>&gt;<i> Or, rephrasing, what should the entropy of the password be
+</I>&gt;<i> compared to the entropy of the value being protected (under
+</I>&gt;<i> whatever keying/encryption scheme) ?
+</I>&gt;<i>
+</I>&gt;<i> I realize that this is rather .. err .. open-ended question,
+</I>&gt;<i> and it depends on what one means by &quot;protected&quot;, but I'm sure
+</I>&gt;<i> you can see the gist of the question. How would one deem a
+</I>&gt;<i> password random enough to be fit for protecting an equivalent
+</I>&gt;<i> of N bits of random data ? Is it a 1-to-1 ratio ?
+</I>
+
+There are two answers:
+
+1) Attacker has no oracle to tell him it is correct, information with 
+probility is useless
+It is only necessary that entropy(plaintext)+entropy(password) &gt;= 
+sizeof(ciphertext). As a result the password only needs 1 bit of entropy, 
+and the combiner to generate the ciphertext MUST decrypt to at least two 
+different plaintexts based on the password.
+
+2) an oracle is available, or probability matters
+It is necessary that entropy(password) exceed the computation efforts for 
+the attacker. This is more difficult to determine because it changes 
+continually, but 128-bits of entropy is a &quot;good&quot; estimate. It is always at 
+least difficult, possibly impossible, to prove a useful limit here.
+            Joe
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

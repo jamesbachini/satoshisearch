@@ -1,0 +1,47 @@
+<PRE>
+Arshad Noor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">arshad.noor at strongauth.com</A>&gt; writes:
+&gt;<i> That said, Kerberos clearly has the benefit of 20+ years of research
+</I>&gt;<i> and use in the field.  However, there are two fundamental differences
+</I>&gt;<i> between SKSML and Kerberos, IMHO:
+</I>&gt;<i>
+</I>&gt;<i> 1) The design goals for Kerberos were very different from SKSML.  The
+</I>&gt;<i>    former solves the problem of network-authentication in the face of
+</I>&gt;<i>    insecure hosts/networks, while the latter focuses on long-term key
+</I>&gt;<i>    management.
+</I>
+Well, kerberos does both, really. It also has the advantage that it
+is fully specified and integrates with GSSAPI.
+
+&gt;<i>    That they both use very similiar concepts &amp; components
+</I>&gt;<i>    to deliver quite different benefits to applications is testament to
+</I>&gt;<i>    the strength and flexibility of the underlying components rather
+</I>&gt;<i>    than to a weakness of SKSML.
+</I>&gt;<i>
+</I>&gt;<i> 2) AFAIK, Kerberos clients cannot deliver their stated benefit (network
+</I>&gt;<i>    authentication) in the absence of the network or the Kerberos server.
+</I>
+It is generally hard to deliver network authentication without a
+network. That said, kerberos tickets can persist even in the face of
+disconnects, so once you've connected tickets can survive as long as
+you wish.
+
+&gt;<i>    SKSML is designed to allow disconnected EKMI clients to continue
+</I>&gt;<i>    providing cryptographic services to applications even in the absence
+</I>&gt;<i>    of the network or the key-management server.  However, it does
+</I>&gt;<i>    require that the Symmetric Key Client Library (SKCL) have connected
+</I>&gt;<i>    to the Symmetric Key Services (SKS) server at least once before it
+</I>&gt;<i>    can use this capability.
+</I>
+That's no different from Kerberos, and kerberos works quite well
+already.
+
+
+Perry
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

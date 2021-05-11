@@ -1,0 +1,29 @@
+<PRE>On Tue, 22 Jan 2008 21:49:32 -0800
+Ed Gerck &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">edgerck at nma.com</A>&gt; wrote:
+
+&gt;<i> As I commented in the
+</I>&gt;<i> second paragraph, an attack at the ISP (where SSL/TLS is
+</I>&gt;<i> of no help) has been the dominant threat -- and that is
+</I>&gt;<i> why one of the main problems is called &quot;warrantless
+</I>&gt;<i> wiretapping&quot;. Further, because US law does /not/ protect
+</I>&gt;<i> data at rest, anyone claiming &quot;authorized process&quot; (which
+</I>&gt;<i> the ISP itself may) can eavesdrop without any required
+</I>&gt;<i> formality.
+</I>&gt;<i> 
+</I>Please justify this.  Email stored at the ISP is protected in the U.S.
+by the Stored Communications Act, 18 USC 2701
+(<A HREF="http://www4.law.cornell.edu/uscode/18/2701.html">http://www4.law.cornell.edu/uscode/18/2701.html</A>).  While it's not a
+well-drafted piece of legislation and has been the subject of much
+litigation, from the Steve Jackson Games case
+(<A HREF="http://w2.eff.org/legal/cases/SJG/">http://w2.eff.org/legal/cases/SJG/</A>) to Warshak v. United States
+(<A HREF="http://www.cs.columbia.edu/~smb/blog/2007-06/2007-06-19.html">http://www.cs.columbia.edu/~smb/blog/2007-06/2007-06-19.html</A>), I don't
+see how you can say stored email isn't protected at all.
+
+
+		--Steve Bellovin, <A HREF="http://www.cs.columbia.edu/~smb">http://www.cs.columbia.edu/~smb</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,51 @@
+<PRE>
+Alexander Klimov writes, in part:
+-+-------------------------------
+ | It sounds like: we cannot make secure OS because it is too
+ | large -- let us don't bother to make a smaller secure OS,
+ | just add some more software and hardware to an existent
+ | system and then it will be secure. Sounds like a fairytale :-)
+
+
+As yet another variation on the theme &quot;complexity is the
+enemy of security,&quot; consider patches.  Patches tend to
+add complexity to the code they patch, viz., it is the
+rare patch indeed that simply elides some non-working
+feature.
+
+Taking as our metric the venerable McCabe score:
+
+   v(G) = e - n + 2
+
+where e and n are the number of edges and nodes in the
+control flow graph, and where you are in trouble when
+v(G)&gt;10 in a single module, the simplest patch adds two
+edges and one node, i.e., v'(G)=v(G)+1, and that minimum
+obtains only for patches with no conditional branches in
+the patch.
+
+If someone wanted to have fun, it would be to examine
+what fraction of patches are themselves re-patched at
+a later date -- as in Fred Brooks' famous dictum in
+_The Mythical Man Month_ where, in paraphrase, he said
+that you should stop patching when the probability of
+fixing a known problem is no longer substantially
+greater than the probability of simultaneously creating
+an unknown problem.
+
+Yet security patches are a special case: no vendor can
+obey Brooks' Law, and so they will inevitably over-run
+the boundary condition where the known flaw the new
+patch patches is no longer likely to be substantially
+more probable than the inadvertent introduction of an
+unknown flaw at the same time.  As such, I would guess
+that the more often an application receives security
+patches the less secure it is, at least at the limit.
+
+--dan
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

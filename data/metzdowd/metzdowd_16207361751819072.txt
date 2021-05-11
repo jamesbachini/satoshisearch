@@ -1,0 +1,26 @@
+<PRE>
+On Apr 28, 2008, at 23:56, Perry E. Metzger wrote:
+
+&gt;<i> If you have a rotten apple engineer, he will be able to hide what he's
+</I>&gt;<i> trying to do and make it look completely legit. If he's really good,
+</I>&gt;<i> it may not be possible to catch what he's done EVEN IN PRINCIPLE.
+</I>
+Fred Cohen proved in 1984 in his &quot;Computer Viruses, Theory and  
+Experiments&quot;[1] that &quot;Program P is a virus&quot; is undecidable. I assume  
+that this result can be applied to hardware in the form that &quot;Chip C  
+contains malicious gates&quot; is also undecidable. (Caveat: Cohen seems to  
+make the fundamental assumption that there is no fundamental  
+distinction between code and data, something that need not necessarily  
+hold everywhere inside a computer chip.)
+
+Fun,
+
+Stephan
+
+[1] See for example <A HREF="http://vx.netlux.org/lib/afc01.html">http://vx.netlux.org/lib/afc01.html</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

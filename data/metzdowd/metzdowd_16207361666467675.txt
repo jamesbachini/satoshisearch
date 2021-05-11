@@ -1,0 +1,75 @@
+<PRE>Hi,
+
+&gt;<i> SSL key distribution and management is horribly broken,
+</I>&gt;<i> with the result that everyone winds up using plaintext
+</I>&gt;<i> when they should not.
+</I>
+Yes, sending client certificates in plaintext while claiming that SSL/TLS is 
+secure doesn&#180;t work in a world of phishing and identity theft anymore.
+
+We have the paradox situation that I have to tell people that they should use 
+HTTPS with server-certificates and username+password inside the HTTPS 
+session, because that&#180;s more secure than client certificates ...
+
+Does anyone have an idea how we can fix this flaw within SSL/TLS within a 
+reasonable timeframe, so that it can be implemented and shipped by the 
+vendors in this century?
+
+(I don&#180;t think that starting from scratch and replacing SSL makes much sense, 
+since it&#180;s just one huge flaw ...)
+
+&gt;<i> SSL is layered on top of TCP, and then one layers one's
+</I>&gt;<i> actual protocol on top of SSL, with the result that a
+</I>&gt;<i> transaction involves a painfully large number of round
+</I>&gt;<i> trips.
+</I>
+SSL already looks quite round-trip optimized to me (at least the key-agreement 
+part)
+
+&gt;<i> We really do need to reinvent and replace SSL/TCP,
+</I>&gt;<i> though doing it right is a hard problem that takes more
+</I>&gt;<i> than morning coffee.
+</I>
+TCP could need some stronger integrity protection. 8 Bits of checksum isn&#180;t 
+enough in reality. (1 out of 256 broken packets gets injected into your TCP 
+stream)  Does IPv6 have a stronger TCP?
+
+&gt;<i> As discussed earlier on this list, layering induces
+</I>&gt;<i> excessive round trips.
+</I>
+The SSL implementations I analyzed behaved quite nicely, I didn&#180;t noticed any 
+round trip problems there. (But feel free to send me a traffic capture file 
+that shows the problem)
+
+I once implemented SSL over GSM data channel (without PPP and without TCP), 
+and discovered that SSL needs better integrity protection than raw GSM 
+delivers. (I am quite sure that&#180;s why people normally run PPP over GSM 
+channels ...)
+SSH has the same problems. It also assumes an active attack in case of 
+integrity problems of the lower layer, and terminates the connection.
+
+&gt;<i> Layering communications 
+</I>&gt;<i> protocols is analogous to having a high level
+</I>&gt;<i> interpreter written in a low level language. What we
+</I>&gt;<i> need instead of layering is a protocol compiler,
+</I>&gt;<i> analogous to the Microsoft IDL compiler.  The Microsoft
+</I>&gt;<i> IDL compiler automatically generates a C++ interface
+</I>&gt;<i> that correctly handles run time version negotiation,
+</I>&gt;<i> which hand generated interfaces always screw up, with
+</I>&gt;<i> the result that hand generated interfaces result in
+</I>&gt;<i> forward and backward incompatibility, resulting in the
+</I>&gt;<i> infamous Microsoft DLL hell.  Similarly we want a
+</I>&gt;<i> compiler that automatically generates secure message
+</I>&gt;<i> exchange and reliable transactions from unreliable
+</I>&gt;<i> packets. (And of course, run time version negotiation)
+</I>
+Sounds like an interesting idea to me.
+
+Best regards,
+Philipp G&#252;hring
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

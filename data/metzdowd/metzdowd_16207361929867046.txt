@@ -1,0 +1,13 @@
+<PRE>On Tue, Oct 28, 2008 at 7:55 PM, Leichter, Jerry
+&lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">leichter_jerrold at emc.com</A>&gt; wrote:
+&gt;<i>        2.  The Byzantine model.  Failed modules can do anything
+</I>&gt;<i>                including cooperating by exchanging arbitrary
+</I>&gt;<i>                information and doing infinite computation.
+</I>
+So in the Byzantine model I can crack RSA?
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

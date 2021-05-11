@@ -1,0 +1,47 @@
+<PRE>This does not extend the discussion at hand, but it might be useful to
+some here who may have to deal with FIPS 140-2.
+
+On 13 Oct 2007 09:32:44 +1000, Damien Miller wrote:
+&gt;<i> Some comments:
+</I>&gt;<i> 
+</I>&gt;<i> * Use of an off-the-shelf algorithm like SHA1 might be nice for &quot;tick here
+</I>&gt;<i>   for FIPS certification&quot;, but they render the hashing scheme more
+</I>&gt;<i>   vulnerable to dictionary attacks assisted by (near-)commodity hardware.
+</I>&gt;<i>   Contrast with OpenBSD's blowfish scheme, which is deliberately designed
+</I>&gt;<i>   to not be implementable using off-the-shelf crypto accelerator chips.
+</I>
+Although there are password hashing mechanisms built from FIPS-approved
+algorithms (e.g., SHA-1 HMAC), there are no FIPS-approved password
+hashing mechanisms specifically defined. Meaning, I think there is some
+room to move here.
+
+Now, assuming passwords are a critical security parameter (CSP) for a
+module, password hashing built from non-FIPS-approved algorithms
+automatically means the generated password hashes are considered to be
+CSPs in the clear for FIPS 140-2 purposes (i.e., the password hashes are
+just considered to an obfuscated form of the plaintext password), and so
+we have to deal with the requirements revolving around plaintext CSPs
+for those password hashes. Inside of the cryptographic boundary of a
+module, CSPs can be maintained in plaintext, as they are considered
+protected by the security mechanisms of the module, which gives us a
+foothold for using such password hashing mechanisms.
+
+However, while the passwords are considered in the clear, the fact they
+are undergoing password hashing is not ignored - the authentication
+mechanism must still meet the applicable authentication requirements of
+FIPS 140-2, so the password hashing must not cause the password-based
+authentication to fail to meet those FIPS 140-2 requirements. And, I
+think password hashing mechanisms built from non-FIPS-approved
+algorithms can still be used to help meet some FIPS 140-2 authentication
+requirements - e.g, I can envision bcrypt being configured such that,
+given a particular module's hardware, it slows does authentication
+attempts sufficiently to satisfy some strength of authentication
+requirements.
+
+-Andrew
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

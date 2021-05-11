@@ -1,0 +1,36 @@
+<PRE>Joseph Ashwood writes:
+&gt;<i> On NetBSD HMAC-SHA1:
+</I>&gt;<i> There is a shortcut in the design as listed, using the non-changing password 
+</I>&gt;<i> as the key allows for the optimization that a single HMAC can be keyed, then 
+</I>&gt;<i> copied and reused with each seed. this shortcut actually speeds attack by a 
+</I>&gt;<i> factor of 3. The fix is to use the salt as the HMAC key, this assumes much 
+</I>&gt;<i> less of the hash function.
+</I>
+When you are trying to crack password, you do know the SALT and
+iteration count. You do not know the password. You need to try all
+possible passwords with different salts. As we use the password we are
+trying as an input to our test function we need to initialize
+hmac_sha1 again for each pasword we are guessing. Or did I understand
+something wrong.
+
+With your fix I could take the SALT from the passwd string and
+initialize first level of hmac with it and then feed different
+password to it.
+
+&gt;<i> On USERID || SALT || PASSWORD:
+</I>
+Adding USERID to the calculations will firstly break API
+compatibility, as the crypt function do not know the userid. It will
+also break the ability to copy the encrypted passwords from one
+machine to other, even when you would need to change user id in the
+progress (If I need to set up account for someone on my machines, I
+usually either ask them to send me already encrypted password I can
+put in to my /etc/password, or ask them to send me ssh public key... 
+-- 
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">kivinen at safenet-inc.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

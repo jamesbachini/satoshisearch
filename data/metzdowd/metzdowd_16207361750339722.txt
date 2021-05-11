@@ -1,0 +1,177 @@
+<PRE>Hi,
+
+I find it odd that the responses all seem to focus on pure brute 
+force when I did mention three other factors that might be in 
+play: a defect in the algorithm much like the attack on MD5 which 
+reduces it to an effective length of about 80 bits, if I recall 
+correctly, and/or a different analytical tool/approach much like 
+differential analysis has had an affect on cryptanalysis as a 
+whole, and a purpose built machine.
+
+As to using DES as a measuring stick, it was first cracked in 
+1997 using a software approach which was state as not being as 
+fast as a hardware solution. In the process of straight brute 
+force Rock Verser came up with a faster method:
+
+<A HREF="http://www.cs.cmu.edu/~dkindred/des/rocke-alg.html">http://www.cs.cmu.edu/~dkindred/des/rocke-alg.html</A>
+
+which uses some of the weaknesses of DES to speed the crack
+
+At the end of the original challenge they were trying about 7 
+billion keys per second when the time that the solution was found 
+in June 1997. Granted this was a whole bunch of low end machines 
+working in parallel.
+
+Then there is a table at:
+
+<A HREF="http://www.interhack.net/projects/deschall/what.html">http://www.interhack.net/projects/deschall/what.html</A>
+
+Then they say, &quot;So, while it's infeasible for DESCHALL to crack a 
+72 bit key, it seems that 64 might be within reach, by adding 
+more machines. (We probably used between 15,000 and 20,000 
+machines.) Consider that the RC5-32/12/5 (40 bits) key crack took 
+three and a half hours. The distributed computer we put together 
+could do it in about 78 seconds.
+
+The RC5-32/12/6 (48 bits) key crack took 13 days. A 
+DESCHALL-sized effort could do it in 5 hours.&quot;
+
+They have a table that estimates that a $300 million AISC machine 
+could crack DES in 38 seconds back in 1995!
+
+In 1998 DESIII did it in less than 24 hours.
+
+<A HREF="http://www.distributed.net/des/">http://www.distributed.net/des/</A>
+
+The key point is: &quot;Despite the immense power of the EFF Deep 
+Crack, distributed.net's thousands of deployed clients still 
+surpassed the EFF hardware by more than a factor of 2 in speed.&quot;
+
+So Moore's law since then, 9 years 3 months: 111 months, say 
+about 64 times as powerful (actually it is more but let's stick 
+with a strict Moore's Law) and now factor in drop in prices at 
+the same time. If we assume the same factor as Moore's law, and 
+divide the price by 64, let's say 60 for simplicity. So not even 
+counting 1995 to 1999, the machine would take about a half second 
+on a &lt;$5 million dollar machine today. Probably both less time 
+and money.
+
+Today running the RSA-72 DNETC on a single 2.8G dual core machine 
+that is almost three years old it is getting 13^6/second with a 
+software program, not hardware.
+
+Also the largest known group of cryptanalysts is at NSA with a 
+big budget to find weaknesses so I would not assume none will be 
+found, just not made public. Sure, it took 400 years to figure 
+out an answer to Fermat's Last Theorem. But we know more today 
+and have more tools so progress (if we can call it that) is 
+faster now.
+
+Given all of this, I'm not sure of the value of arguing 128 bit 
+is good enough when 256 is not all that much harder to implement 
+and with in a couple of years will be just as fast in processing 
+while even now, for the size of files being protected, such as 
+credit card data and such, is small enough that the wait time 
+probably wouldn't be noticed in network latency.
+
+I see the argument as much like the way the Titanic was built. 
+The double hull stopped short of the waterline and the breach was 
+above it. Total fluke, but it the double hull had been about 8 
+feet higher up the side we wouldn't have had so many stories to 
+tell and adventures to watch in awe on the tube. The reality is 
+it was not the technology that failed, but rather human error in 
+not going further to meet the risk than was seen at the time. The 
+bizarre thing is the same basic error was the cause of the Exon 
+Valdez disaster. Not protecting against a well know risk, drunk 
+captains. Funny how almost all tankers have double hulls now. But 
+that still didn't prevent the Busan from spilling 58,000 gallons 
+of bunker oil in the San Francisco Bay. If they hadn't had a 
+double hull, how much would the have spilled?
+
+Oh, well, given how risk adverse we tend to be it is odd the 
+choices we make.
+
+Best,
+
+Allen
+
+Leichter, Jerry wrote:
+&gt;<i> | ...How bad is brute force here for AES? Say you have a chip that can do
+</I>&gt;<i> | ten billion test keys a second -- far beyond what we can do now. Say
+</I>&gt;<i> | you have a machine with 10,000 of them in it. That's 10^17 years worth
+</I>&gt;<i> | of machine time, or about 7 million times the lifetime of the universe
+</I>&gt;<i> | so far (about 13x10^9 years).
+</I>&gt;<i> | 
+</I>&gt;<i> | Don't believe me? Just get out calc or bc and try
+</I>&gt;<i> |   ((2^128/10^14)/(60*60*24*365))
+</I>&gt;<i> | 
+</I>&gt;<i> | I don't think anyone will be brute force cracking AES with 128 bit
+</I>&gt;<i> | keys any time soon, and I doubt they will ever be brute forcing AES
+</I>&gt;<i> | with 256 bit keys unless very new and unanticipated technologies
+</I>&gt;<i> | arise.
+</I>&gt;<i> | 
+</I>&gt;<i> | Now, it is entirely possible that someone will come up with a much
+</I>&gt;<i> | smarter attack against AES than brute force. I'm just speaking of how
+</I>&gt;<i> | bad brute force is. The fact that brute force is so bad is why people
+</I>&gt;<i> | go for better attacks, and even the A5/1 attackers do not use brute
+</I>&gt;<i> | force.
+</I>&gt;<i> Interestingly, if you add physics to the picture, you can convert &quot;no
+</I>&gt;<i> practical brute force attack&quot; into &quot;no possible brute force attack given
+</I>&gt;<i> known physics&quot;.  Current physical theories all place a granularity on
+</I>&gt;<i> space and time:  There is a smallest unit of space beyond which you
+</I>&gt;<i> can't subdivide things, and a smallest unit of time.  One place this
+</I>&gt;<i> shows up, as an example:  It turns out give a volume of space, the
+</I>&gt;<i> configuration with the maximum entropy for that volume of is exactly a
+</I>&gt;<i> black hole with that volume, and its entropy turns out to be the area
+</I>&gt;<i> of the black hole, in units of square Planck lengths.  So, in effect,
+</I>&gt;<i> the smallest you can squeeze a bit is a Planck length by Planck length
+</I>&gt;<i> square.  (Yes, even in 3-d space, the constraint is on an area - you'd
+</I>&gt;<i> think the entropy would depend on the volume, but in fact it doesn't,
+</I>&gt;<i> bizarre as that sounds.)
+</I>&gt;<i> 
+</I>&gt;<i> So suppose you wanted to build the ultimate computer to brute-force
+</I>&gt;<i> DES.  Suppose you want your answer within 200 years.  Since information
+</I>&gt;<i> can't propagate faster than light, anything further than 100 years
+</I>&gt;<i> from the point where you pose the question is irrelevant - it can't
+</I>&gt;<i> causally affect the result.  So you computer is (at most, we'll
+</I>&gt;<i> ignore the time it takes to get parts of that space into the
+</I>&gt;<i> computation) a 100-light-year diameter sphere that exists for 200
+</I>&gt;<i> years.  This is a bounded piece of space-time, and can hold a huge,
+</I>&gt;<i> but finite, number of bits which can flip at most a huge, but finite,
+</I>&gt;<i> number of times.  If a computation requires more bit flips than that,
+</I>&gt;<i> it cannot, even in *physical* principle, be carried out.
+</I>&gt;<i> 
+</I>&gt;<i> I ran across a paper discussing this a couple of years back, in a
+</I>&gt;<i> different context.  The authors were the ones who made the argument
+</I>&gt;<i> that we need to be wary of &quot;in principle&quot; arguments:  What's
+</I>&gt;<i> possible &quot;in principle&quot; depends on what assumptions you make.  Given
+</I>&gt;<i> an appropriate oracle, the halting problem is &quot;in principle&quot; easy to
+</I>&gt;<i> solve.
+</I>&gt;<i> 
+</I>&gt;<i> The paper discussed something else, but I made some rough estimates
+</I>&gt;<i> (details long forgotten) of the &quot;in principle&quot; limits on brute force
+</I>&gt;<i> attacks.  As I recall, for a 100-year computation, a 128-bit key
+</I>&gt;<i> is just barely attackable; a 256-bit key is way out of the realm of
+</I>&gt;<i> possibility.  Given all the hand-waving in my calculation, I didn't
+</I>&gt;<i> try to determine where in that range the cut-over occurs.  Someone
+</I>&gt;<i> better than me at the physics should be able to compute much tighter
+</I>&gt;<i> bounds.  Even if I'm off by quite a bit, it's certain that the key
+</I>&gt;<i> lengths we are using today are already near fundamental physical
+</I>&gt;<i> limits.  Brute force is simply not an interesting mode of attack
+</I>&gt;<i> against decently engineered modern systems.
+</I>&gt;<i> 
+</I>&gt;<i> Of course, this says - and can say - absolutely nothing about the
+</I>&gt;<i> possibility of analytic or side-channel or any of a variety of other
+</I>&gt;<i> intelligent attacks....
+</I>&gt;<i> 							-- Jerry
+</I>&gt;<i> 
+</I>&gt;<i> ---------------------------------------------------------------------
+</I>&gt;<i> The Cryptography Mailing List
+</I>&gt;<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

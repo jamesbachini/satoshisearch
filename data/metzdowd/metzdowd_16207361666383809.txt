@@ -1,0 +1,26 @@
+<PRE>There's a great exchange in &quot;Never Say Never Again&quot; that pokes fun at
+unnecessary secrecy preventing access by legitimate users:
+
+Bond: &quot;Commander Peterson are you equipped with the new XT-7B's?&quot;
+Peterson: &quot;That's top secret.  How do you know about them?&quot;
+Bond: &quot;From the Russian translation of one of your service manuals&quot;
+
+Reading through a recent malware paper I think I've found the computer
+equivalent: &quot;An Inquiry into the Nature and Causes of the Wealth of Internet
+Miscreants&quot; contains a section (section 3.1.1) in which the researchers try to
+determine compromised card information by country:
+
+  The official BIN number database is not available to the public.  We use a
+  BIN list containing information for 52,492 banks [...] which we acquired as
+  part of the source code of a channel service bot.
+
+(&quot;From the Russian source code of the people the security measure is designed
+ to protect against&quot;).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

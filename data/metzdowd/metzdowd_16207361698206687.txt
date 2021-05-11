@@ -1,0 +1,144 @@
+<PRE>&quot;It&quot; is a number of things that I will elucidate, Jon; but &quot;it&quot; is
+definitely not raw security.
+
+&quot;It&quot; is:
+
+* a recognition that a company in business using other people's
+   money has a fiduciary responsibility for managing it with prudence;
+* an awareness that computerized trading has the potential to
+   dramatically reduce visibility of those who have the responsibility
+   to protect shareholders' and customers' assets;
+* an understanding that computers and networks are far less safe than
+   they were 30 years ago when they operated from &quot;glass houses&quot;;
+* knowledge of the debacles at LTCM, Enron, Global Crossing, Barings,
+   Adelphia, etc. and how a lack of controls destroyed so many human
+   lives (literally, financially and psychologically);
+* an appreciation that a failure of controls designed to protect
+   financial markets can lead to losses of confidence, market-runs,
+   depressions and potentially, social upheaval;
+* an acknowledgment that while it is impossible to stop a determined
+   rogue trader, trading systems can be easily programmed to trigger
+   alerts to higher and higher levels of management as trades exceed
+   preset limits, so they may exercise over-riding controls on the
+   trades if needed;
+
+This is &quot;it&quot;; if business people truly got this, we wouldn't see what
+we're seeing in the marketplace today.
+
+You have defined some very clever formulae showing the opportunity
+cost of using too much security and would have us believe that
+decision-makers at such companies actually do something like this when
+making decisions on how much risk-mitigation to put in place.
+
+If they were endowed with so much intelligence, I would argue that they
+might also have calculated the probability of a rogue within the ranks,
+the probability of losses resulting from rogue-trades, the probability
+of a loss of confidence in the company, the resulting opportunity cost
+of lost business,  the increased cost of implementing new controls
+across the industry (and the opportunity cost of those investments),
+the resulting opportunity cost of lost economic value as people pull
+back from financial markets, the resulting opportunity cost of
+legitimate companies being unable to raise capital in markets to invent
+that new life-saving drug or the new carbon-free energy source or .... 
+you get the picture.
+
+I would, but I won't because you and I know they do nothing like this
+when making these security decisions.  It is mostly a &quot;gut feeling&quot;,
+made-up ROI numbers that are mostly meaningless, what the rest of the
+lemmings are doing in the industry, what the press is screaming about
+this year and who just got burned and for what.
+
+One hopes that as society evolves, with better levels of education,
+better tools, technologies and standards of living, we would recognize
+the need to invest &quot;ounces of prevention&quot; to avoid the &quot;pounds of cure&quot;.
+Sadly, I find that the &quot;Las Vegas&quot; mentality has permeated businesses
+to the point that we're taking bigger and bigger risks without really
+doing the analysis - going on just &quot;gut feel&quot; - resulting in situations
+like at Societe' Generale.
+
+Arshad Noor
+StrongAuth, Inc.
+
+
+Jon Callas wrote:
+&gt;<i> 
+</I>&gt;<i> On Feb 4, 2008, at 1:55 PM, Arshad Noor wrote:
+</I>&gt;<i> 
+</I>&gt;&gt;<i> Do business people get it?  Do security professionals get it?
+</I>&gt;&gt;<i> Apparently not.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Arshad Noor
+</I>&gt;&gt;<i> StrongAuth, Inc.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Huge losses reported by Soci&#233;t&#233; G&#233;n&#233;rale were apparently enabled
+</I>&gt;&gt;<i> by forgotten low-level IT chores such as password management.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> <A HREF="http://www.infoworld.com/article/08/02/04/Poor-password-management-may-have-led-to-bank-meltdown_1.html">http://www.infoworld.com/article/08/02/04/Poor-password-management-may-have-led-to-bank-meltdown_1.html</A> 
+</I>&gt;&gt;<i>
+</I>&gt;<i> 
+</I>&gt;<i> Yes, but get what? &quot;It&quot; is a vague noun.
+</I>&gt;<i> 
+</I>&gt;<i> The reporter showed some wit by using the word &quot;may.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> This was an attack by an evil (or crazy) insider. Evil insider attacks 
+</I>&gt;<i> are the hardest to protect against. If the insider decided that he was 
+</I>&gt;<i> going to start making trades for whatever reason, then he'd find a weak 
+</I>&gt;<i> point that would allow him to make trades, and use it, no matter what it 
+</I>&gt;<i> is. (My personal hypothesis is a variant of a mad-scientist attacker -- 
+</I>&gt;<i> &quot;They laughed at me when I told them my trading theories! Laughed! But 
+</I>&gt;<i> I'll show them! I'll show them ALL!!!&quot;)
+</I>&gt;<i> 
+</I>&gt;<i> If this person had worked for 1000 hours to get a hardware token, he 
+</I>&gt;<i> would have just done the work. The result may have been an order of 
+</I>&gt;<i> magnitude more. High-security procedures tend to be more brittle for 
+</I>&gt;<i> psychological reasons. If you have the magic dingus, then you are 
+</I>&gt;<i> authorized, and no one ever questions the dingus.
+</I>&gt;<i> 
+</I>&gt;<i> Also, one must look at the economics and psychology of the situation. 
+</I>&gt;<i> Traders are prima-donna adrenaline junkies who trade vast sums of money 
+</I>&gt;<i> all the time and are not shy about expressing their frustrations. 
+</I>&gt;<i> Looking at the sheer economics first:
+</I>&gt;<i> 
+</I>&gt;<i> * A trader trades C units of currency every hour, with an average profit 
+</I>&gt;<i> of P (for example 5% profit is P=1.05).
+</I>&gt;<i> 
+</I>&gt;<i> * There are T traders in the organization.
+</I>&gt;<i> 
+</I>&gt;<i> * The extra authentication produces a productivity drop of D. For 
+</I>&gt;<i> example, let us suppose a trader has to authenticate once per hour, and 
+</I>&gt;<i> it takes 10 seconds to authenticate. This gives us a D of .9972 or 
+</I>&gt;<i> 3590/3600.
+</I>&gt;<i> 
+</I>&gt;<i> So the operational cost of your authentication is (1-D)*T*C*P per hour. 
+</I>&gt;<i> Divide &#8364;4.9G by that, and you get the number of hours for the raw 
+</I>&gt;<i> break-even time on this.
+</I>&gt;<i> 
+</I>&gt;<i> Add to this the probability that the hassle will convince a trader to 
+</I>&gt;<i> jump ship to another firm (J), times the number hours of trading lost 
+</I>&gt;<i> until you find a replacement (H). We'll assume the replacement needs no 
+</I>&gt;<i> spinup time to become as productive as the previous trader. That's an 
+</I>&gt;<i> additional cost of J*H*T*C*P. This is the psychological factor. As I 
+</I>&gt;<i> said, traders are prima donnas who are used to getting their own way.
+</I>&gt;<i> 
+</I>&gt;<i> People have criticized post-9/11 airline security on similar grounds. 
+</I>&gt;<i> They observe that some number of people drive rather than fly, and 
+</I>&gt;<i> calculate out the difference in deaths-per-passenger-mile. I've seen 
+</I>&gt;<i> numbers that work out to a handful of 9/11s per year caused by traffic 
+</I>&gt;<i> displacement. They also observe that large numbers of people spend extra 
+</I>&gt;<i> time in lines, which works out to a &quot;lost life&quot; number. For example, if 
+</I>&gt;<i> you assume that passengers spend 10 extra minutes clearing security and 
+</I>&gt;<i> a life is 70 years, then roughly 6 million passengers represents one 
+</I>&gt;<i> lost life.
+</I>&gt;<i> 
+</I>&gt;<i> There's always much to criticize in these models. I could write a reply 
+</I>&gt;<i> to this message with criticisms, and so can you. Nonetheless, the models 
+</I>&gt;<i> show that there's more than just the raw security to think about.
+</I>&gt;<i> 
+</I>&gt;<i>     Jon
+</I>&gt;<i> 
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

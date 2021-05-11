@@ -1,0 +1,36 @@
+<PRE>Ben Laurie wrote:
+&gt;<i> Paul Hoffman wrote:
+</I>&gt;&gt;<i> First off, big props to Dan for getting this problem fixed in a 
+</I>&gt;&gt;<i> responsible manner. If there were widespread real attacks first, it 
+</I>&gt;&gt;<i> would take forever to get fixes out into the field.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> However, we in the security circles don't need to spread the &quot;Kaminsky 
+</I>&gt;&gt;<i> finds&quot; meme. Take a look at 
+</I>&gt;&gt;<i> &lt;<A HREF="http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/">http://tools.ietf.org/wg/dnsext/draft-ietf-dnsext-forgery-resilience/</A>&gt;. 
+</I>&gt;&gt;<i> The first draft of this openly-published document was in January 2007. 
+</I>&gt;&gt;<i> It is now in WG last call.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> The take-away here is not that &quot;Dan didn't discover the problem&quot;, but 
+</I>&gt;&gt;<i> &quot;Dan got it fixed&quot;. An alternate take-away is that IETF BCPs don't 
+</I>&gt;&gt;<i> make nearly as much difference as a diligent security expert with a 
+</I>&gt;&gt;<i> good name.
+</I>&gt;<i> 
+</I>&gt;<i> Guess you need to tell Dan that - he seems to think he did discover it.
+</I>
+Well, he does seem to credit quite a few people and companies on his own 
+blog entry about the matter: &lt;<A HREF="http://www.doxpara.com/?p=1162">http://www.doxpara.com/?p=1162</A>&gt;
+
+It does seem he would like an air of some mystery to exist though until 
+he makes his presentation about the issue at Defcon - did he, himself, 
+discover something new? We'll just have to wait, unless we go play with 
+the BIND code ourselves.
+
+Regards,
+
+- johnk
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

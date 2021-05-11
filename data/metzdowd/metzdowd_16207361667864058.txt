@@ -1,0 +1,15 @@
+<PRE>
+    WASHINGTON (AP) - Telephone companies have cut off FBI wiretaps
+    used to eavesdrop on suspected criminals because of the bureau's
+    repeated failures to pay phone bills on time.
+
+<A HREF="http://apnews.myway.com/article/20080110/D8U35C500.html">http://apnews.myway.com/article/20080110/D8U35C500.html</A>
+
+-- 
+Perry E. Metzger		<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">perry at piermont.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

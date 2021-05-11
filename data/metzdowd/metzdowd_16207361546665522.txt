@@ -1,0 +1,19 @@
+<PRE> &gt; I'd like to start with the really simple stuff; classical
+ &gt; cryptography, systems with clean and obvious &quot;breaks&quot;.
+
+You can start with RSA SecurID, Texas Instruments DST40, Microchip  
+Technologies KeeLoq, Philips/NXP Hitag2, WEP RC4, Bluetooth E0, GSM  
+A5... It's much harder to find a product or technology that  
+implements proper ciphers, proper hashes, proper RNGs or proper  
+protocols. And I don't mean small mistakes like in SSH1 or SSL. I  
+mean look at all those proprietary weak ciphers sold for millions!  
+Will they ever learn?
+
+Ruptor
+<A HREF="http://defectoscopy.com/">http://defectoscopy.com/</A> - There is no need to design weak ciphers.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

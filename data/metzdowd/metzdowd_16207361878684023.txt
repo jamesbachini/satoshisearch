@@ -1,0 +1,60 @@
+<PRE>Paul Crowley wrote:
+&gt;<i> <A HREF="http://www.ddj.com/hpc-high-performance-computing/201803067">http://www.ddj.com/hpc-high-performance-computing/201803067</A>
+</I>&gt;<i>
+</I>&gt;<i> In the above Dr Dobb's article from a little over a year ago, AMD
+</I>&gt;<i> Senior Fellow Leendert vanDoorn states &quot;the Advanced Encryption
+</I>&gt;<i> Standard (AES) algorithm gets a factor of 5 performance improvement by
+</I>&gt;<i> using the new SSE5 extension&quot;.  However, glancing through the SSE5
+</I>&gt;<i> specification, I can't see at all how such a dramatic speedup might be
+</I>&gt;<i> achieved.  Does anyone know any more, or can anyone see more than I
+</I>&gt;<i> can in the spec?
+</I>&gt;<i>
+</I>&gt;<i> <A HREF="http://developer.amd.com/cpu/SSE5/Pages/default.aspx">http://developer.amd.com/cpu/SSE5/Pages/default.aspx</A>
+</I>
+I've only just seen this, but I've been playing with the VIA's AES and
+looking at Intels AES instructions.
+
+I believe the PPERM instruction will be rather important.  Combined with
+the packed byte rotate and shift some rather
+interesting SIMD byte fiddles should be possible.
+
+&gt;<i>From my initial look, it should be possible to implement AES without
+</I>tables, doing SIMD operations on all 16 bytes at once.
+I've not looked at it enough yet, but currently I'm doing an AES round
+in about 140 cycles a block (call it 13 per round plus overhead) on a
+AMD64, (220e6 bytes/sec on a 2ghz cpu) using normal instructions.  I
+don't believe they will be taking 30 instructions , so they probably
+have 4-8 SSE instructions per round, it then comes down to how many SSE
+execution units there are to execute in parallel.
+
+As for VIA, on a 1ghz C7 part, cbc mode, 128bit key, for 16byte aligned,
+I'm getting about 24 cycles per block, for unaligned, about 67 cycles. 
+The chip does ECB mode at 12.6 cycles a block if aligned (2 at a time). 
+It does not handle unaligned ECB, so with manual alignment, 75 cycles. 
+Not bad for a single issue cpu considering the x86 instruction version
+of AES I have
+takes 1010 cycles per block.
+
+For the intel AES instructions, from my readings, it will be able to do
+a single AES (128bit) in a bit more that 60 cycles
+(10 rounds, 6 cycle latency for the instructions).  The good part is
+that they will pipeline.  So if you say do 6
+AES ecb blocks at once, you can get a throughput of about 12 cycles a
+block (intel's figures).  This is obviously of relevance for counter
+mode, cbc decrypt and more recent standards like xts and gcm mode.
+
+Part of the intel justification for the AES instruction seems to stop
+cache timing attacks.  If the SSE5 instructions allow AES
+to be done with SIMD instead of tables, they will achieve the same
+affect, but without as much parallel upside.
+
+It also looks like the  GF(2^8) maths will also benefit.
+
+
+eric (who has only been able to play with via hardware :-(
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

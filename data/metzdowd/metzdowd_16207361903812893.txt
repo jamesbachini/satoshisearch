@@ -1,0 +1,51 @@
+<PRE>
+
+Weger, B.M.M. de wrote:
+
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> There's a new biggest known RSA modulus.
+</I>&gt;<i> It is (in hexadecimal notation):
+</I>&gt;<i> 
+</I>&gt;<i> FF...(total of 9289166 F's)...FFDFF...(total of 1488985
+</I>&gt;<i> F's)...FF800...(total of 9289165 0's)...001
+</I>&gt;<i> 
+</I>&gt;<i> It is guaranteed to be the product of two different large primes, 
+</I>&gt;<i> and it has more than 80 million bits. Impressive security...
+</I>&gt;<i> 
+</I>
+But it is trivially factored as (2^43112609-1) * (2^37156667-1)
+
+Factorization based modulus need to be drawn from a pool of numbers 
+&quot;without special properties&quot;, so that their factorization is not 
+facilitated by special-purpose algorithms. There is ample academic work 
+aiming to refine &quot;without special properties&quot;, and there is also ample 
+(debated) academic work which assumes that &quot;without special property&quot; is 
+a reasonable assumption in practice.
+
+The fun part is to reconcile theory and practice, e.g. a decade of RSA 
+industrial application before retrofitting the probabilistic property in 
+RSA, while probabilistic cryptosystems has been around in academic work 
+amost since the early days of published work on PK crypto.
+
+Regards,
+
+
+- Thierry Moreau
+
+CONNOTECH Experts-conseils inc.
+9130 Place de Montgolfier
+Montreal, Qc
+Canada   H2M 2A1
+
+Tel.: (514)385-5691
+Fax:  (514)385-5900
+
+web site: <A HREF="http://www.connotech.com">http://www.connotech.com</A>
+e-mail: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">thierry.moreau at connotech.com</A>
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

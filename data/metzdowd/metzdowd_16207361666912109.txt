@@ -1,0 +1,34 @@
+<PRE>On 30 January 2008 17:03, Perry E. Metzger wrote:
+
+&gt;<i> My main point here was, in fact, quite related to yours, and one that
+</I>&gt;<i> we make over and over again -- innovation in such systems for its own
+</I>&gt;<i> sake is also not economically efficient or engineering smart. 
+</I>
+  Hear hear!  This maxim should be burned into the frontal lobes of every
+single member of Microsoft's engineering (and marketing) teams with a red-hot
+poker[*].
+
+[  Over-engineered solutions to non-problems and gratuitous marketing-driven
+featuritis have been the root cause of almost every windows security disaster
+ever - e.g., email featuring 'rich content' such as scripts; web browsers that
+download and locally run active-x from random websites; lots of vulnerable RPC
+services installed and enabled by default on home user PCs; ... etc etc.;
+certainly they have far outnumbered the occasional flaws in core kernel
+services.  But - economics again!, and a tip'o the hat to Schneier and his
+externalities argument - as long as the extra sales go to Microsoft's coffers,
+and the extra costs are all imposed on their victims^Wusers, there's no
+incentive for them to do otherwise.  Hence my suggestion that they need a
+red-hot one (incentive, that is).  ]
+
+    cheers,
+      DaveK
+
+[*] - or red-hot Gutmann soundwave ....
+-- 
+Can't think of a witty .sigline today....
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

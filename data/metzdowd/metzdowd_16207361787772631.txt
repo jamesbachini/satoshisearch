@@ -1,0 +1,36 @@
+<PRE>My understanding, based mostly on what I've read in the press, is that
+COFFEE is a set of scripts that run existing tools, making it easier
+for law enforcement to do things which are already known to be
+possible.  Note the words &quot;executing 150 seperate commands,&quot; which, I
+think, would be odd if this was something other than scripts, but
+appear in a lot of the news stories.
+
+For example, I believe that there are several freely available
+password cracking tools and some commercial ones. For example, you can
+order John the Ripper to decrypt a system password on some operating
+systems.  I have no idea if a password cracker is included.
+
+Speaking for me.
+
+Adam
+
+On Wed, Apr 30, 2008 at 03:36:28PM -0400, Arshad Noor wrote:
+|<i> It can be &quot;ordered to decrypt system passwords&quot;???  So, I wonder
+</I>|<i> what attackers can do with this...
+</I>|<i> 
+</I>|<i> Arshad Noor
+</I>|<i> StrongAuth, Inc.
+</I>|<i> 
+</I>|<i> &quot;Microsoft revealed its development of a digital forensic analysis toolkit at a security conference yesterday as part of a wider discussion of how technology can be used to fight crime. The Computer Online Forensic Evidence Extractor, or COFEE for short, is a USB thumb drive that contains software capable of executing approximately 150 separate commands. Once plugged in, COFEE can be ordered to decrypt system passwords, display a history of internet activity, and search the system for evidence....&quot;
+</I>|<i> 
+</I>|<i> <A HREF="http://arstechnica.com/news.ars/post/20080429-new-microsoft-law-enforcement-tool-bypasses-pc-security.html">http://arstechnica.com/news.ars/post/20080429-new-microsoft-law-enforcement-tool-bypasses-pc-security.html</A>
+</I>|<i> 
+</I>|<i> ---------------------------------------------------------------------
+</I>|<i> The Cryptography Mailing List
+</I>|<i> Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

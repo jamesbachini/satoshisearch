@@ -1,0 +1,25 @@
+<PRE>The usual excuse, Dan: ignorance.
+
+Those of us who know how companies maintain the security
+of their systems minimize the use of, or eschew, such
+sites.  We also always ask for an Absentee (paper) ballot
+in places where electronic voting is the only choice at
+the polling booth.
+
+Arshad Noor
+StrongAuth, Inc.
+
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">dan at geer.org</A> wrote:
+&gt;<i> May I point out that if voting systems have a level
+</I>&gt;<i> of flaw that says only an idiot would use them, then
+</I>&gt;<i> how can you explain electronic commerce, FaceBook,
+</I>&gt;<i> or gambling sites?  More people use just those three
+</I>&gt;<i> than will *ever* vote.
+</I>&gt;<i> 
+</I>&gt;<i> --dan
+</I>
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,42 @@
+<PRE>Perry E. Metzger wrote:
+&gt;<i> Marcos el Ruptor &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">ruptor at cryptolib.com</A>&gt; writes:
+</I>&gt;&gt;&gt;<i> To be sure that implementation does not contain back-doors, one needs
+</I>&gt;&gt;&gt;<i> not only some source code but also a proof that the source code one
+</I>&gt;&gt;&gt;<i> has is the source of the implementation.
+</I>&gt;&gt;<i> Nonsense. Total nonsense. A half-decent reverse engineer does not
+</I>&gt;&gt;<i> need the source code and can easily determine the exact operation of
+</I>&gt;&gt;<i> all the security-related components from the compiled executables,
+</I>&gt;&gt;<i> extracted ROM/EPROM code or reversed FPGA/ASIC layout
+</I>&gt;<i> 
+</I>&gt;<i> I'm glad to know that you have managed to disprove Rice's
+</I>&gt;<i> Theorem. Could you explain to us how you did it? I suspect there's an
+</I>&gt;<i> ACM Turing Award awaiting you.
+</I>&gt;<i> 
+</I>&gt;<i> Being slightly less sarcastic for the moment, I'm sure that a good
+</I>&gt;<i> reverse engineer can figure out approximately what a program does by
+</I>&gt;<i> looking at the binaries and approximately what an ASIC does given
+</I>&gt;<i> good equipment to get the layout. What you can't do, full stop, is
+</I>&gt;<i> know that there are no unexpected security related behaviors in the
+</I>&gt;<i> hardware or software. That's just not possible.
+</I>
+I think that's blatantly untrue. For example, if I look at an AND gate, 
+I can be absolutely sure about its security properties.
+
+Rice's theorem says you can't _always_ solve this problem. It says 
+nothing about figuring out special cases.
+
+Cheers,
+
+Ben.
+
+-- 
+<A HREF="http://www.apache-ssl.org/ben.html">http://www.apache-ssl.org/ben.html</A>           <A HREF="http://www.links.org/">http://www.links.org/</A>
+
+&quot;There is no limit to what a man can do or how far he can go if he
+doesn't mind who gets the credit.&quot; - Robert Woodruff
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

@@ -1,0 +1,16 @@
+<PRE>* Ben Laurie:
+
+&gt;<i> I must confess that I said that because I did not have the energy to
+</I>&gt;<i> figure out the other routes to adding entropy, such as adding an int
+</I>&gt;<i> (e.g. a PID, which I'm told still makes it in there).
+</I>
+The PID dependency is there because of the need for fork
+support--obviously, the PRNG must return a different key stream in the
+parent and child process, but the two cannot communicate with each
+other.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

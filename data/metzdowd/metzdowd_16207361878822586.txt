@@ -1,0 +1,34 @@
+<PRE>
+yet another proprietary symmetric cipher ?
+
+<A HREF="http://www.pureentropy.com">http://www.pureentropy.com</A>
+
+...
+
+Encryption Security Solutions provides unprecedented encryption
+security, efficiency, and performance for business applications ensuring
+critical information is secure.
+
+Encryption Security Solutions, LLC (ES&#194;&#178;) has developed an
+innovative, proprietary symmetrical encryption algorithm (JUMBLE) for
+commercial applications. This algorithm provides an end-to-end or site
+solution, for use by individuals or across an enterprise environment.
+
+Using the newly developed and proprietary JUMBLE encryption engine
+allows ES&#194;&#178; to provide multiple encryption solutions for all
+digital data formats, including real-time streaming high definition
+digital video. The JUMBLE engine can be integrated directly in the
+client, at the web server, application server, or database layer. This
+unique software solution goes beyond current platforms that contain such
+things as centralized cryptographic processing, key management, policy
+management, and security administration because it does not rely on
+human procedure-based security practices. JUMBLE provides unprecedented
+advantages in security, scalability and manageability.
+
+...
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

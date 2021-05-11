@@ -1,0 +1,38 @@
+<PRE>On Tue, 2008-08-26 at 10:52 -0400, Matt Blaze wrote:
+&gt;<i> On Aug 26, 2008, at 10:15, <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">mheyman at gmail.com</A> wrote:
+</I>&gt;<i> &gt; So, I believe, at least for E-Z Pass, the attack would have to include
+</I>&gt;<i> &gt; cloning the license plate and pictures may still be available whenever
+</I>&gt;<i> &gt; a victim realizes they have been charged for trips they did not take.
+</I>&gt;<i> 
+</I>&gt;<i> I believe that's correct.  In fact, the plate recognition technology  
+</I>&gt;<i> they
+</I>&gt;<i> use seems to be good enough to make the transponder itself redundant.
+</I>&gt;<i> I know several people with E-Z Pass who disconnected the internal
+</I>&gt;<i> battery of their transponder (out of concern that there might be
+</I>&gt;<i> hidden readers around town that track vehicles at places other than
+</I>&gt;<i> toll gates).   Even with dead transponders, their accounts are still
+</I>&gt;<i> charged accurately when they pass toll gates.  (The sign displays &quot;EZ  
+</I>&gt;<i> Pass
+</I>&gt;<i> not read&quot; or some such thing, but the account is debited within a day
+</I>&gt;<i> or two anyway).
+</I>
+This is the same for the state-wide Texas tag, TxTag[1].  If your tag
+doesn't register, or you disable or remove it, the toll system can still
+accurately bill you based on your license plate and vehicle
+registration.  If you're not in the TxTag system at all, they simply
+mail you a bill.
+
+[1] <A HREF="http://www.txtag.org/">http://www.txtag.org/</A>
+
+-- 
+Dustin D. Trammell
+Security Researcher
+BreakingPoint Systems, Inc.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part
+URL: &lt;<A HREF="http://www.metzdowd.com/pipermail/cryptography/attachments/20080826/7e303ec0/attachment.pgp">http://www.metzdowd.com/pipermail/cryptography/attachments/20080826/7e303ec0/attachment.pgp</A>&gt;
+</PRE>

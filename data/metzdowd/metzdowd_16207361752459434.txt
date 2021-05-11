@@ -1,0 +1,20 @@
+<PRE>In my collection I have : 
+TextTell - 1983 - Encrypted Text Transmission via Acoustic Coupler to 
+Telephone mouthpiece (  for Transmission ) and Telephone receiver ( for
+Reception ) 
+Forbidden by the (then West) German BKA for showing at CeBIT 1983 fair 
+at Hannover 
+Photos on <A HREF="http://picasaweb.google.nl/nap210534/TextTell">http://picasaweb.google.nl/nap210534/TextTell</A> 
+Hope that someone can inform me on which algorithm and which keylenght 
+was used on these units. 
+T.I.A. 
+Nap van Zuuren - Gent - Belgium 
+<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">nap.van.zuuren at pandora.be</A> 
+
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

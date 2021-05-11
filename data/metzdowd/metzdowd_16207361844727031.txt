@@ -1,0 +1,34 @@
+<PRE>Sherri Davidoff &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">alien at MIT.EDU</A>&gt; writes:
+&gt;<i> For this paper, I specifically examined the case where memory was dumped
+</I>&gt;<i> while the applications were still active. The snapshots were taken up to
+</I>&gt;<i> 45 minutes after the passwords were entered. (See Appendix A for the
+</I>&gt;<i> full testing procedure.)  Given that users keep applications such as
+</I>&gt;<i> SSH, Truecrypt, email, etc open for a significant percentage of time
+</I>&gt;<i> that they use their systems, I do think it's important for applications
+</I>&gt;<i> to zero sensitive data immediately after it is used rather than waiting
+</I>&gt;<i> until the process is closed.
+</I>
+I think it'd be good to distinguish between cases where keeping
+cryptovariables around is a bug and where it's by design.  For example SSL
+caches the shared secret information for later use in session resumption
+so finding a copy of that in memory while an SSL client or server is
+running isn't a bug.  Finding it after it's exited is.  Even then though,
+some apps include daemons that cache credentials and whatnot for ongoing
+use by the app (e.g. the assorted 'xyz-agent' helpers for things like
+various SSH clients or GPG) so finding the information in memory when the
+app has exited but the cacheing daemon hasn't isn't necessarily a bug.
+
+&gt;<i> As a next step, it would be great to follow the same procedure, but
+</I>&gt;<i> image all of memory after the applications have been closed.
+</I>
+That'd be the interesting one, because keys left lying around in memory
+afterwards is definitely a sign of a problem (but be careful about the
+cacheing issue mentioned above).
+
+Peter.
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

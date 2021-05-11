@@ -1,0 +1,21 @@
+<PRE>On Tue, 29 Apr 2008, Ivan Krsti&#196;~G wrote:
+&gt;<i> On Apr 28, 2008, at 12:58 PM, John Denker wrote:
+</I>&gt;<i> &gt; Of course we should insist on an open-source boot ROM code:
+</I>&gt;<i> &gt; The boot ROM should check the pgp signature of each PCI card's
+</I>&gt;<i> &gt; BIOS code before letting it get control.  And then it should
+</I>&gt;<i> &gt; check the pgp signature of the operating system before booting
+</I>&gt;<i> &gt; it.  I don't know of any machine that actually does this
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> The OLPC XO-1 laptop has an open-source bootloader (Open Firmware) which
+</I>&gt;<i> checks the operating system signature before passing control to it.
+</I>
+If the bootloader is running on malicious hardware I don't think that
+test can be trusted. :(
+
+-- Jonathan Thornburg (remove -animal to reply) &lt;<A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">J.Thornburg at soton.ac-zebra.uk</A>&gt;
+   School of Mathematics, U of Southampton, England
+   &quot;C++ is to programming as sex is to reproduction. Better ways might
+    technically exist but they're not nearly as much fun.&quot; -- Nikolai Irgens
+
+</PRE>

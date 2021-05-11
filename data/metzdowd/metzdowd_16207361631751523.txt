@@ -1,0 +1,103 @@
+<PRE>Storm, Nugache lead dangerous new botnet barrage
+By Dennis Fisher, Executive Editor
+19 Dec 2007 | SearchSecurity.com
+&lt;<A HREF="http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci1286808">http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci1286808</A>
+,00.html?track=NL-358&amp;ad=614777&amp;asrc=EM_NLN_2785475&amp;uid=1408222&gt;
+
+In early 2006, Dave Dittrich, a senior security engineer and researcher at the 
+University of Washington in Seattle, got a sample of a new strain of malware 
+from a colleague, and began monitoring its activity. The Trojan was a bit lazy 
+at first, making just a few outbound connections. But it quickly became 
+obvious that this was no ordinary piece of malware, because each of the 
+connections was to a peer and not a central command and control server.
+
+This was strange behavior for PCs that have been compromised by this type of 
+malware. The members of a distributed network like this typically communicate 
+only with one central machine, called the command and control server. It's a 
+top-down structure; the C&amp;C server gives the commands and the compromised PCs 
+carry them out. However, this new network didn't seem to have one C&amp;C server 
+that was running the show, and the malware itself couldn't really even be 
+classified as a bot as it didn't make its first IRC connection for more than a 
+month. IRC, or Internet Relay Chat, is the preferred method of communication 
+for botnet controllers.
+
+But with this network, in lieu of one C&amp;C server, there were a number of peers 
+around the network that were sending out commands and serving as download 
+sites for various pieces of the network. So if one of the peers in the network 
+that the attacker is using to issue commands to the rest of the network is 
+shut down, the attacker could simply begin sending orders through another 
+peer. This made the entire network of compromised PCs equal partners and made 
+the prospect of disabling the network incredibly daunting.
+
+As troubling as this new development was, more troubling was the fact that the 
+peers sending out the commands changed on the fly and, as Dittrich watched, 
+various members of the network would drop off botnet, only to reappear days or 
+weeks later. So the shape and size of the botnet was changing almost 
+constantly, with entire branches going dark for extended periods of time and 
+peers jumping from one portion of the network to another seemingly on a whim. 
+And, to add to the pile of bad news, the bots were communicating with each 
+other over an encrypted channel, making it all but impossible to listen in on 
+their conversations.
+
+Dittrich, one of the top botnet researchers in the world, has been tracking 
+botnets for close to a decade and has seen it all. But this new piece of 
+malware, which came to be known as Nugache, was a game-changer. With no C&amp;C 
+server to target, bots capable of sending encrypted packets and the 
+possibility of any peer on the network suddenly becoming the de facto leader 
+of the botnet, Nugache, Dittrich knew, would be virtually impossible to stop.
+
+&quot;The authors are making these subtle little changes to keep it under the 
+radar, and they're succeeding,&quot; said Dittrich.
+
+This is the future of malware and it's not a pretty picture. What it is, is a 
+nightmare: a new breed of malicious software developed, tested and sold by 
+professionals and engineered to change on the fly, adapt to its environment 
+and evade traditional defenses.
+
+Nugache, and its more famous cousin, the Storm Trojan, are not simply the next 
+step in the evolution of malware. They represent a major step forward in both 
+the quality of software that malware authors are producing and in the 
+sophistication of their tactics. Although they're often referred to as worms, 
+Storm and Nugache are actually Trojans. The Storm creator, for example, sends 
+out millions of spam messages on a semi-regular basis, each containing a link 
+to content on some remote server, normally disguised in a fake pitch for a 
+penny stock, Viagra or relief for victims of a recent natural disaster. When a 
+user clicks on the link, the attacker's server installs the Storm Trojan on 
+the user's PC and it's off and running.
+
+Various worms, viruses, bots and Trojans over the years have had one or two of 
+the features that Storm, Nugache, Rbot and other such programs possess, but 
+none has approached the breadth and depth of their feature sets. Rbot, for 
+example, has more than 100 features that users can choose from when compiling 
+the bot. This means that two different bots compiled from an identical source 
+could have nearly identical feature sets, yet look completely different to an 
+antivirus engine.
+	
+
+The creators of these Trojans and bots not only have very strong software 
+development and testing skills, but also clearly know how security vendors 
+operate and how to outmaneuver defenses such as antivirus software, IDS and 
+firewalls, experts say. They know that they simply need to alter their code 
+and the messages carrying it in small ways in order to evade signature-based 
+defenses. Dittrich and other researchers say that when they analyze the code 
+these malware authors are putting out, what emerges is a picture of a group of 
+skilled, professional software developers learning from their mistakes, 
+improving their code on a weekly basis and making a lot of money in the 
+process.
+
+&quot;If you look at the way [Storm] is used, it's clear that money is changing 
+hands and that the software has gone through a testing and revision process,&quot; 
+said Phillip Porras, a program director at SRI International in Menlo Park, 
+Calif., who has studied Storm's behavior. &quot;The botnet is out there to help 
+some group of people make money. This kind of malware is an economy now. Storm 
+is not meant to spread across the entire Internet. It's meant to compromise 
+specific targets. It's a network that is very good at producing money.&quot;
+
+&lt;snip/&gt;
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

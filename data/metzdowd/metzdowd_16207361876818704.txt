@@ -1,0 +1,65 @@
+<PRE>CC'ing cryptography mail list as it may be of some interest to the 
+folks over there.
+
+&gt;<i> -----Original Message-----
+</I>&gt;<i> From: <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">p2p-hackers-bounces at lists.zooko.com</A> [mailto:p2p-hackers-
+</I>&gt;<i> <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">bounces at lists.zooko.com</A>] On Behalf Of Lars Eggert
+</I>&gt;<i> Sent: August 19, 2008 5:34 PM
+</I>&gt;<i> To: David Barrett; theory and practice of decentralized computer
+</I>&gt;<i> networks
+</I>&gt;<i> Subject: Re: [p2p-hackers] IETF rejects Obfuscated TCP
+</I>&gt;<i> 
+</I>&gt;<i> On 2008-8-19, at 17:20, ext David Barrett wrote:
+</I>&gt;<i> &gt; On Tue, 19 Aug 2008 4:19 pm, Lars Eggert wrote:
+</I>&gt;<i> &gt;&gt; Actually, in 1994, the IETF standardized Transactional TCP (T/TCP)
+</I>&gt;<i> in
+</I>&gt;<i> &gt;&gt; RFC1644, which allows just that. However, there are serious DDoS
+</I>&gt;<i> &gt;&gt; issues with T/TCP which have prevented it seeing significant
+</I>&gt;<i> &gt;&gt; deployment.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Hm, I'm sorry I don't know the history there -- why is this more
+</I>&gt;<i> &gt; costly
+</I>&gt;<i> &gt; or abusive than SSL over standard TCP?  Is it due to something
+</I>&gt;<i> &gt; specific
+</I>&gt;<i> &gt; to SSL, or due to it a simple lack of congestion control on those
+</I>&gt;<i> &gt; first
+</I>&gt;<i> &gt; payloads?
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> The issue is unrelated to a specific kind of SYN payload (SSL or
+</I>&gt;<i> otherwise.) The issue is that a SYN flood of SYNs with data consumes
+</I>&gt;<i> much more memory on the receiver than a regular SYN flood, because the
+</I>&gt;<i> receiver is obligated to cache the data if a T/TCP liveness check
+</I>&gt;<i> fails. You can't use SYN cookies with data SYNs, either.
+</I>
+This is just a quick thought, but a variation of SYN cookies for TLS
+appears to be quite easy to do. It does require defining new record 
+type, but latter is permitted by TLS spec as per Section 6, RFC 2246.
+
+The idea, obviously, is to include a copy of ClientHello message in a
+second batch of records sent by the client. This should allow server
+to generate ServerKeyExchange parameters from the original ClientHello
+message (ClientHello.random + IP/port quintet + server &quot;cookie secret&quot;),
+then discard ClientHello and delay creating the state .. exactly the
+same way SYN cookies mechanism does it.
+
+This still doesn't protect against host CPU exhaustion attacks, because
+ServerKeyExchange may require some heavy crypto. But since all this is
+being discussed in a context of &quot;obfuscated TCP&quot; and &quot;opportunistic
+encryption&quot;, then using anonymous DH suite might be a feasible option.
+
+The above is trivial to implement, it is backward compatible with existing 
+TLS implementations (as per the same section of RFC - records of unknown
+types are silently discarded) and all it requires little standardization
+effort.
+
+As I said, this is just a quick thought, so in all likelihood I might be
+reinventing a (broken) bike here.
+
+Alex
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

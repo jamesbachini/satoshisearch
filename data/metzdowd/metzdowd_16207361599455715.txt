@@ -1,0 +1,29 @@
+<PRE>On Fri, Nov 02, 2007 at 06:23:30PM +0100, Ian G wrote:
+&gt;<i> I was involved in one case where super-secret stuff was shared
+</I>&gt;<i> through hushmail, and was also dual encrypted with non-hushmail-PGP
+</I>&gt;<i> for added security.  In the end, the lawyers came in and scarfed up
+</I>&gt;<i> the lot with subpoenas ... all the secrets were revealed to everyone
+</I>&gt;<i> they should never have been revealed to.  We don't have a crypto
+</I>&gt;<i> tool for embarrassing secrets to fade away.
+</I>
+What about deleting the private key periodically?
+
+Like issue one pgp sub-key per month, make sure it has expiry date etc
+appropriately, and the sending client will be smart enough to not use
+expired keys.
+
+Need support for that kind of thing in the PGP clients.
+
+And hope your months key expires before the lawyers get to it.
+
+Companies have document retention policies for stuff like
+this... dictating that data with no current use be deleted within some
+time-period to avoid subpoenas reaching back too far.
+
+Adam
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

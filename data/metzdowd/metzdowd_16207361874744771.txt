@@ -1,0 +1,39 @@
+<PRE>On Mon, Aug 18, 2008 at 09:24:33AM -0700, Eric Rescorla wrote:
+[...]
+&gt;<i> Without directly addressing the question of the quality of Diebold's
+</I>&gt;<i> offerings, I actually don't think the criticism implied here is
+</I>&gt;<i> entirely fair. If you're going to have voting machines, even precinct
+</I>&gt;<i> count optical scanners (and because of the complexity of US elections,
+</I>&gt;<i> hand counting is quite expensive), you likely want to machine
+</I>&gt;<i> tabulate, and that means an EMS. Though you certainly should make
+</I>&gt;<i> serious attempts to keep the EMS from coming in contact with outside
+</I>&gt;<i> data (see [HRS+08] for some discussion of how difficult this actually
+</I>&gt;<i> is), there is always some chance that there will be some
+</I>&gt;<i> contact. Generic AV probably isn't that great at detecting or stopping
+</I>&gt;<i> this, but it may well be better than nothing, and it's certainly an
+</I>&gt;<i> arguable point.
+</I>[...]
+
+This raises the very real question of what exactly went wrong that
+caused the AV software to freak out and &quot;lose&quot; votes. Did the vote
+data have a virus signature pattern and get quarantined?!?
+
+-- 
+				- Adam
+
+** Expert Technical Project and Business Management
+**** System Performance Analysis and Architecture
+****** [ <A HREF="http://www.adamfields.com">http://www.adamfields.com</A> ]
+
+[ <A HREF="http://www.morningside-analytics.com">http://www.morningside-analytics.com</A> ] .. Latest Venture
+[ <A HREF="http://www.confabb.com">http://www.confabb.com</A> ] ................ Founder
+[ <A HREF="http://www.aquick.org/blog">http://www.aquick.org/blog</A> ] ............ Blog
+[ <A HREF="http://www.adamfields.com/resume.html">http://www.adamfields.com/resume.html</A> ].. Experience
+[ <A HREF="http://www.flickr.com/photos/fields">http://www.flickr.com/photos/fields</A> ] ... Photos
+[ <A HREF="http://www.aquicki.com/wiki">http://www.aquicki.com/wiki</A> ].............Wiki
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>

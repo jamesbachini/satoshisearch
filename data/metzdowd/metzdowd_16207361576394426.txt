@@ -1,0 +1,27 @@
+<PRE>Aloha!
+
+Nate Lawson skrev:
+&gt;&gt;<i> Some EC primitives in the latest OpenSSL.
+</I>&gt;<i> 
+</I>&gt;<i> Because various standard forms of EC were never covered by patents.
+</I>&gt;<i> This has been rehashed many times, for example:
+</I>&gt;<i> <A HREF="http://www.xml-dev.com/pipermail/fde/2007-July/000450.html">http://www.xml-dev.com/pipermail/fde/2007-July/000450.html</A>
+</I>
+IANAL but IMHO this is only partially true. Try doing an efficient 
+implementation in HW of ECC and not stepping on Certicom patent toes. SW 
+implementations are probably ok though.
+
+-- 
+Med v&#228;nlig h&#228;lsning, Yours
+
+Joachim Str&#246;mbergson - Alltid i harmonisk sv&#228;ngning.
+========================================================================
+Kryptoblog - IT-s&#228;kerhet p&#229; svenska
+<A HREF="http://www.strombergson.com/kryptoblog">http://www.strombergson.com/kryptoblog</A>
+========================================================================
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending &quot;unsubscribe cryptography&quot; to <A HREF="http://www.metzdowd.com/mailman/listinfo/cryptography">majordomo at metzdowd.com</A>
+
+</PRE>
