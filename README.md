@@ -19,6 +19,7 @@ Additional weight on very unique words that are uncommon and not likely to be wi
 I had some data given to me from an anonymous researcher which I've added to the list of words/phrases that Satoshi used. I reran the test and the result was as follows:
 
 #Score - Name - [newPhrasesFound / numberOfEmailsInDataset]
+
 34 - Satoshi Nakamoto - [3 / 1]
 
 28 - Trei, Peter - [5 / 1]
